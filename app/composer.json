@@ -18,6 +18,7 @@
 	},
 	"require-dev": {
 		"google/apiclient": "^2.7",
+		"roave/security-advisories": "dev-master",
 		"signpostmarv/php-cs-fixer-config": "^0.18.0"
 	}
 }
