@@ -1,0 +1,23 @@
+{
+	"name": "signpostmarv/twitch-clip-notes",
+	"description": "Notes for twitch clips",
+	"type": "project",
+	"license": "Apache-2.0",
+	"authors": [
+		{
+			"name": "SignpostMarv",
+			"email": "me@signpostmarv.name"
+		}
+	],
+	"config": {
+		"classmap-authoritative": true,
+		"sort-packages": true
+	},
+	"require": {
+		"php": "^7.4"
+	},
+	"require-dev": {
+		"cocur/slugify": "^4.0",
+		"google/apiclient": "^2.7"
+	}
+}
