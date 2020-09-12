@@ -6,11 +6,21 @@ declare(strict_types=1);
 
 namespace SignpostMarv\TwitchClipNotes;
 
+use function array_diff;
+use function array_filter;
+use function array_keys;
 use Cocur\Slugify\Slugify;
-use DirectoryIterator;
+use const FILE_APPEND;
+use function file_get_contents;
 use function file_put_contents;
 use Google_Client;
 use Google_Service_YouTube;
+use function http_build_query;
+use function implode;
+use function in_array;
+use function is_file;
+use function ksort;
+use function preg_match_all;
 
 require_once(__DIR__ . '/vendor/autoload.php');
 
@@ -45,9 +55,9 @@ $already_in_markdown = [];
 /** @var list<string> */
 $autocategorise = [];
 
-$fetch_videos = function(array $args, string $playlist_id, array & $videos) use (
+$fetch_videos = static function (array $args, string $playlist_id, array &$videos) use (
 	$service,
-	& $fetch_videos
+	&$fetch_videos
 ) : void {
 	$args['playlistId'] = $playlist_id;
 
@@ -101,8 +111,8 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 	$already_in_markdown[$playlist_id] = $matches[1];
 }
 
-$fetch_all_playlists = function (array $args) use (
-	& $other_playlists_on_channel,
+$fetch_all_playlists = static function (array $args) use (
+	&$other_playlists_on_channel,
 	$service,
 	$fetch_videos,
 	$playlists
@@ -116,7 +126,7 @@ $fetch_all_playlists = function (array $args) use (
 		if ( ! isset($playlists[$playlist->id])) {
 			$other_playlists_on_channel[$playlist->id] = [
 				$playlist->snippet->title,
-				[]
+				[],
 			];
 
 			$fetch_videos(
