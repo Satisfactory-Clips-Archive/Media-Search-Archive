@@ -17,7 +17,6 @@
 		"php": "^7.4"
 	},
 	"require-dev": {
-		"cocur/slugify": "^4.0",
 		"google/apiclient": "^2.7",
 		"signpostmarv/php-cs-fixer-config": "^0.18.0"
 	}

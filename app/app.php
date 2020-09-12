@@ -9,7 +9,6 @@ namespace SignpostMarv\TwitchClipNotes;
 use function array_diff;
 use function array_filter;
 use function array_keys;
-use Cocur\Slugify\Slugify;
 use const FILE_APPEND;
 use function file_get_contents;
 use function file_put_contents;
@@ -23,8 +22,6 @@ use function ksort;
 use function preg_match_all;
 
 require_once(__DIR__ . '/vendor/autoload.php');
-
-$slugify = new Slugify();
 
 $client = new Google_Client();
 $client->setApplicationName('Twitch Clip Notes');
