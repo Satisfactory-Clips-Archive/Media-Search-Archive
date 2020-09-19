@@ -41,6 +41,7 @@ $other_playlists_on_channel = [];
 $playlists = [
 	'PLbjDnnBIxiEoaZoarNpiJyV5QJ_pYIRyW' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-09-01.md',
 	'PLbjDnnBIxiEpupaMEI10RkF5iaX8X89fF' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-09-08.md',
+	'PLbjDnnBIxiEpYksFx1ybkbcrRmNylKVCO' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-09-15.md',
 ];
 
 /** @var array<string, array<string, string>> */
