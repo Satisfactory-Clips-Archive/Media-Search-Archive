@@ -49,12 +49,27 @@ $playlists = [
 $videos = [];
 
 /** @var array<string, list<string>> */
+$video_tags = [];
+
+$exclude_from_absent_tag_check = [
+	'4_cYnq746zk', // official merch announcement video
+];
+
+/** @var array<string, list<string>> */
 $already_in_markdown = [];
 
 /** @var list<string> */
 $autocategorise = [];
 
-$fetch_videos = static function (array $args, string $playlist_id, array &$videos) use (
+/** @var list<string> */
+$already_in_faq = [];
+
+$fetch_videos = static function (
+	array $args,
+	string $playlist_id,
+	array &$videos,
+	array &$video_tags
+) use (
 	$service,
 	&$fetch_videos
 ) : void {
@@ -70,15 +85,30 @@ $fetch_videos = static function (array $args, string $playlist_id, array &$video
 	);
 
 	foreach ($response->items as $video) {
+		$video_id = $video->snippet->resourceId->videoId;
+
+		$tag_response = $service->videos->listVideos(
+			'snippet',
+			[
+				'id' => $video_id,
+			]
+		);
+
+		if (isset($tag_response->items[0]->snippet->tags)) {
+			$video_tags[$video_id] = $tag_response->items[0]->snippet->tags;
+		} else {
+			$video_tags[$video_id] = [];
+		}
+
 		$videos[$playlist_id][
-			$video->snippet->resourceId->videoId
+			$video_id
 		] = $video->snippet->title;
 	}
 
 	if (isset($response->nextPageToken)) {
 		$args['pageToken'] = $response->nextPageToken;
 
-		$fetch_videos($args, $playlist_id, $videos);
+		$fetch_videos($args, $playlist_id, $videos, $video_tags);
 	}
 };
 
@@ -90,7 +120,8 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 			'maxResults' => 50,
 		],
 		$playlist_id,
-		$videos
+		$videos,
+		$video_tags
 	);
 
 	if ( ! is_file($markdown_path)) {
@@ -110,8 +141,20 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 	$already_in_markdown[$playlist_id] = $matches[1];
 }
 
+preg_match_all(
+	'/https:\/\/www\.youtube\.com\/watch\?v=([^\n\s\*]+)/',
+	file_get_contents(
+		__DIR__ .
+		'/../coffeestainstudiosdevs/satisfactory/FAQ.md'
+	),
+	$matches
+);
+
+$already_in_faq = $matches[1];
+
 $fetch_all_playlists = static function (array $args) use (
 	&$other_playlists_on_channel,
+	&$video_tags,
 	$service,
 	$fetch_videos,
 	$playlists
@@ -131,7 +174,8 @@ $fetch_all_playlists = static function (array $args) use (
 			$fetch_videos(
 				['maxResults' => 50],
 				$playlist->id,
-				$other_playlists_on_channel[$playlist->id][1]
+				$other_playlists_on_channel[$playlist->id][1],
+				$video_tags
 			);
 
 			$other_playlists_on_channel[$playlist->id][1] = array_keys(
@@ -239,5 +283,101 @@ foreach ($videos_to_add as $playlist_id => $video_ids) {
 			),
 			FILE_APPEND
 		);
+	}
+}
+
+/** @var array<string, list<array{0:string, 1:string}>> */
+$absent_from_faq = [];
+
+foreach ($already_in_faq as $id) {
+	if (in_array($id, $exclude_from_absent_tag_check, true)) {
+		continue;
+	}
+
+	if (
+		! isset($video_tags[$id]) ||
+		! in_array('faq', $video_tags[$id], true)
+	) {
+		echo
+			'Missing FAQ tag: ',
+			' https://www.youtube.com/watch?',
+			http_build_query([
+				'v' => $id,
+			]),
+			"\n";
+	}
+}
+
+foreach ($video_tags as $id => $tags) {
+	if (
+		in_array('faq', $tags, true)
+		&& ! in_array($id, $already_in_faq, true)
+	) {
+		foreach ($videos as $playlist_id => $video_ids) {
+			if (isset($video_ids[$id])) {
+				$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
+
+				if ( ! isset($absent_from_faq[$date])) {
+					$absent_from_faq[$date] = [];
+				}
+
+				$absent_from_faq[$date][] = [$playlist_id, $id];
+			}
+		}
+	}
+}
+
+if (count($absent_from_faq) > 0) {
+	file_put_contents(
+		(
+			__DIR__ .
+			'/../coffeestainstudiosdevs/satisfactory/FAQ.md'
+		),
+		(
+			"\n" .
+			'# Pending categorisation in FAQ' .
+			"\n" .
+			"\n"
+		),
+		FILE_APPEND
+	);
+
+	ksort($absent_from_faq);
+
+	foreach ($absent_from_faq as $date => $video_ids) {
+		file_put_contents(
+			(
+				__DIR__ .
+				'/../coffeestainstudiosdevs/satisfactory/FAQ.md'
+			),
+			(
+				"\n" .
+				'## ' .
+				date('F jS, Y', (int) strtotime($date)) .
+				"\n"
+			),
+			FILE_APPEND
+		);
+
+		foreach ($video_ids as $data) {
+			[$playlist_id, $video_id] = $data;
+
+			file_put_contents(
+				(
+					__DIR__ .
+					'/../coffeestainstudiosdevs/satisfactory/FAQ.md'
+				),
+				(
+					'* ' .
+					$videos[$playlist_id][$video_id] .
+					' https://www.youtube.com/watch?' .
+					http_build_query([
+						'v' => $video_id,
+					]) .
+					"\n"
+				),
+				FILE_APPEND
+			);
+		}
 	}
 }
