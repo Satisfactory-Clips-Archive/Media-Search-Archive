@@ -18,6 +18,7 @@ use function file_get_contents;
 use function file_put_contents;
 use Google_Client;
 use Google_Service_YouTube;
+use GuzzleHttp\Exception\ClientException;
 use function http_build_query;
 use function implode;
 use function in_array;
@@ -102,6 +103,7 @@ $fetch_videos = static function (
 		if (isset($playlists[$playlist_id]) && ! is_file($subtitles_file)) {
 			$captions = $service->captions->listCaptions($video_id, 'snippet');
 
+			try {
 			$captions = $http->request(
 				'GET',
 				sprintf(
@@ -119,6 +121,19 @@ $fetch_videos = static function (
 				$subtitles_file,
 				$captions->getBody()->getContents()
 			);
+			} catch (ClientException $e) {
+				echo
+					'Could not download subtitles for ' .
+					(
+						'https://www.youtube.com/watch?' .
+						http_build_query([
+							'v' => $video_id,
+						])
+					),
+					"\n",
+					$e->getMessage(),
+					"\n";
+			}
 		}
 
 		$tag_response = $service->videos->listVideos(
