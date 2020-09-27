@@ -138,7 +138,7 @@ $fetch_videos = static function (
 			$video_id
 		] = $video->snippet->title;
 
-		if (isset($playlists[$playlist_id])) {
+		if (isset($playlists[$playlist_id]) && is_file($subtitles_file)) {
 			$parser = new Parser();
 
 			$parser->loadFile($subtitles_file);
