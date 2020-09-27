@@ -104,23 +104,23 @@ $fetch_videos = static function (
 			$captions = $service->captions->listCaptions($video_id, 'snippet');
 
 			try {
-			$captions = $http->request(
-				'GET',
-				sprintf(
-					'/youtube/v3/captions/%s',
-					rawurlencode($captions->items[0]->id)
-				),
-				[
-					'query' => [
-						'tfmt' => 'srt',
-					],
-				]
-			);
+				$captions = $http->request(
+					'GET',
+					sprintf(
+						'/youtube/v3/captions/%s',
+						rawurlencode($captions->items[0]->id)
+					),
+					[
+						'query' => [
+							'tfmt' => 'srt',
+						],
+					]
+				);
 
-			file_put_contents(
-				$subtitles_file,
-				$captions->getBody()->getContents()
-			);
+				file_put_contents(
+					$subtitles_file,
+					$captions->getBody()->getContents()
+				);
 			} catch (ClientException $e) {
 				echo
 					'Could not download subtitles for ' .
