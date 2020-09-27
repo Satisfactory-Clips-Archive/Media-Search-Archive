@@ -19,6 +19,7 @@ use function implode;
 use function in_array;
 use function is_file;
 use function ksort;
+use Benlipp\SrtParser\Parser;
 use function preg_match_all;
 
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -27,6 +28,7 @@ $client = new Google_Client();
 $client->setApplicationName('Twitch Clip Notes');
 $client->setScopes([
 	'https://www.googleapis.com/auth/youtube.readonly',
+    'https://www.googleapis.com/auth/youtube.force-ssl',
 ]);
 
 $client->setAuthConfig(__DIR__ . '/google-auth.json');
@@ -70,6 +72,8 @@ $fetch_videos = static function (
 	array &$videos,
 	array &$video_tags
 ) use (
+	$http,
+	$playlists,
 	$service,
 	&$fetch_videos
 ) : void {
@@ -86,6 +90,29 @@ $fetch_videos = static function (
 
 	foreach ($response->items as $video) {
 		$video_id = $video->snippet->resourceId->videoId;
+		$subtitles_file = __DIR__ . '/captions/' . $video_id . '.srt';
+
+		if ( isset($playlists[$playlist_id]) && ! is_file($subtitles_file)) {
+			$captions = $service->captions->listCaptions($video_id, 'snippet');
+
+			$captions = $http->request(
+				'GET',
+				sprintf(
+					'/youtube/v3/captions/%s',
+					rawurlencode($captions->items[0]->id)
+				),
+				[
+					'query' => [
+						'tfmt' => 'srt',
+					]
+				]
+			);
+
+			file_put_contents(
+				$subtitles_file,
+				$captions->getBody()->getContents()
+			);
+		}
 
 		$tag_response = $service->videos->listVideos(
 			'snippet',
@@ -103,6 +130,53 @@ $fetch_videos = static function (
 		$videos[$playlist_id][
 			$video_id
 		] = $video->snippet->title;
+
+
+		if (isset($playlists[$playlist_id])) {
+			$parser = new Parser();
+
+			$parser->loadFile($subtitles_file);
+
+			$transcriptions_file = (
+				__DIR__ .
+				'/../coffeestainstudiosdevs/satisfactory/transcriptions/yt-' .
+				$video_id .
+				'.md'
+			);
+
+			$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
+
+			file_put_contents(
+				$transcriptions_file,
+				(
+					'# [' . date('F jS, Y', (int) strtotime($date)) .
+					' livestream](../' . $date . '.md)' .
+					"\n" .
+					'## ' . $video->snippet->title .
+					"\n" .
+					(
+						'https://www.youtube.com/watch?' .
+						http_build_query([
+							'v' => $video_id,
+						])
+					) .
+					"\n"
+				)
+			);
+
+			foreach ($parser->parse() as $caption_line) {
+				file_put_contents(
+					$transcriptions_file,
+					(
+						'> ' . $caption_line->text .
+						"\n" .
+						'> ' .
+						"\n"
+					),
+					FILE_APPEND
+				);
+			}
+		}
 	}
 
 	if (isset($response->nextPageToken)) {
