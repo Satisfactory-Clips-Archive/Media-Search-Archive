@@ -9,6 +9,10 @@ namespace SignpostMarv\TwitchClipNotes;
 use function array_diff;
 use function array_filter;
 use function array_keys;
+use function basename;
+use Benlipp\SrtParser\Parser;
+use function count;
+use function date;
 use const FILE_APPEND;
 use function file_get_contents;
 use function file_put_contents;
@@ -19,8 +23,11 @@ use function implode;
 use function in_array;
 use function is_file;
 use function ksort;
-use Benlipp\SrtParser\Parser;
+use function mb_substr;
 use function preg_match_all;
+use function rawurlencode;
+use function sprintf;
+use function strtotime;
 
 require_once(__DIR__ . '/vendor/autoload.php');
 
@@ -28,7 +35,7 @@ $client = new Google_Client();
 $client->setApplicationName('Twitch Clip Notes');
 $client->setScopes([
 	'https://www.googleapis.com/auth/youtube.readonly',
-    'https://www.googleapis.com/auth/youtube.force-ssl',
+	'https://www.googleapis.com/auth/youtube.force-ssl',
 ]);
 
 $client->setAuthConfig(__DIR__ . '/google-auth.json');
@@ -92,7 +99,7 @@ $fetch_videos = static function (
 		$video_id = $video->snippet->resourceId->videoId;
 		$subtitles_file = __DIR__ . '/captions/' . $video_id . '.srt';
 
-		if ( isset($playlists[$playlist_id]) && ! is_file($subtitles_file)) {
+		if (isset($playlists[$playlist_id]) && ! is_file($subtitles_file)) {
 			$captions = $service->captions->listCaptions($video_id, 'snippet');
 
 			$captions = $http->request(
@@ -104,7 +111,7 @@ $fetch_videos = static function (
 				[
 					'query' => [
 						'tfmt' => 'srt',
-					]
+					],
 				]
 			);
 
@@ -130,7 +137,6 @@ $fetch_videos = static function (
 		$videos[$playlist_id][
 			$video_id
 		] = $video->snippet->title;
-
 
 		if (isset($playlists[$playlist_id])) {
 			$parser = new Parser();
