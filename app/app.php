@@ -74,6 +74,18 @@ $autocategorise = [];
 /** @var list<string> */
 $already_in_faq = [];
 
+$cache = json_decode(
+	file_get_contents(__DIR__ . '/cache.json') ?: '[]',
+	true
+);
+
+$update_cache = function () use (&$cache) : void {
+	file_put_contents(
+		__DIR__ . '/cache.json',
+		json_encode($cache, JSON_PRETTY_PRINT)
+	);
+};
+
 $fetch_videos = static function (
 	array $args,
 	string $playlist_id,
@@ -83,9 +95,14 @@ $fetch_videos = static function (
 	$http,
 	$playlists,
 	$service,
+	&$cache,
+	$update_cache,
 	&$fetch_videos
 ) : void {
 	$args['playlistId'] = $playlist_id;
+	$cache['playlistItems'] = $cache['playlistItems'] ?? [];
+	$cache['captions'] = $cache['captions'] ?? [];
+	$cache['videoTags'] = $cache['videoTags'] ?? [];
 
 	$response = $service->playlistItems->listPlaylistItems(
 		implode(',', [
@@ -102,7 +119,12 @@ $fetch_videos = static function (
 
 		if (isset($playlists[$playlist_id]) && ! is_file($subtitles_file)) {
 			$captions = $service->captions->listCaptions($video_id, 'snippet');
+			$etag = $captions->items[0]->etag;
 
+			if (
+				! isset($cache['captions'][$video_id])
+				|| $cache['captions'][$video_id] !== $etag
+			) {
 			try {
 				$captions = $http->request(
 					'GET',
@@ -134,8 +156,17 @@ $fetch_videos = static function (
 					$e->getMessage(),
 					"\n";
 			}
+				$cache['captions'][$video_id] = $etag;
+				$update_cache();
+			} else {
+				var_dump(__LINE__);exit(1);
+			}
 		}
 
+		if (
+			! isset($cache['playlistItems'][$video_id])
+			|| $cache['playlistItems'][$video_id][0] !== $video->etag
+		) {
 		$tag_response = $service->videos->listVideos(
 			'snippet',
 			[
@@ -143,15 +174,42 @@ $fetch_videos = static function (
 			]
 		);
 
-		if (isset($tag_response->items[0]->snippet->tags)) {
-			$video_tags[$video_id] = $tag_response->items[0]->snippet->tags;
+			if (
+				! isset($cache['videoTags'][$video_id])
+				|| $cache['videoTags'][$video_id][0] !== $tag_response->etag
+			) {
+				if (isset($tag_response->items[0]->snippet->tags)) {
+					$cache['videoTags'][$video_id] = [
+						$tag_response->etag,
+						$tag_response->items[0]->snippet->tags,
+					];
+				} else {
+					$cache['videoTags'][$video_id] = [
+						$tag_response->etag,
+						[],
+					];
+				}
+
+				$update_cache();
+			} else {
+				$video_tags[$video_id] = $cache['videoTags'][$video_id][1];
+			}
+
+			$cache['playlistItems'][$video_id] = [
+				$video->etag,
+				$video->snippet->title,
+			];
+
+			$update_cache();
 		} else {
-			$video_tags[$video_id] = [];
+			$videos[$playlist_id][
+				$video_id
+			] = $cache['videoTags'][$video_id][1];
+			$video_tags[$video_id] = $cache['videoTags'][$video_id][1];
 		}
 
-		$videos[$playlist_id][
-			$video_id
-		] = $video->snippet->title;
+		$videos[$playlist_id][$video_id] = $cache['videoTags'][$video_id][1];
+		$video_tags[$video_id] = $cache['videoTags'][$video_id][1];
 
 		if (isset($playlists[$playlist_id]) && is_file($subtitles_file)) {
 			$parser = new Parser();
@@ -252,6 +310,8 @@ $fetch_all_playlists = static function (array $args) use (
 	&$video_tags,
 	$service,
 	$fetch_videos,
+	&$cache,
+	$update_cache,
 	$playlists
 ) : void {
 	$response = $service->playlists->listPlaylists(
@@ -277,12 +337,16 @@ $fetch_all_playlists = static function (array $args) use (
 				$other_playlists_on_channel[$playlist->id][1][$playlist->id]
 			);
 		}
+
+		var_dump('foo');exit(1);
 	}
 
 	if (isset($response->nextPageToken)) {
 		$args['pageToken'] = $response->nextPageToken;
 
 		$fetch_all_playlists($args);
+	} else {
+		var_dump('bar');exit(1);
 	}
 };
 
