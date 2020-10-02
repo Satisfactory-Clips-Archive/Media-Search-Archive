@@ -100,6 +100,7 @@ $fetch_videos = static function (
 	&$fetch_videos
 ) : void {
 	$args['playlistId'] = $playlist_id;
+	$cache['playlists'] = $cache['playlists'] ?? [];
 	$cache['playlistItems'] = $cache['playlistItems'] ?? [];
 	$cache['captions'] = $cache['captions'] ?? [];
 	$cache['videoTags'] = $cache['videoTags'] ?? [];
@@ -158,8 +159,6 @@ $fetch_videos = static function (
 			}
 				$cache['captions'][$video_id] = $etag;
 				$update_cache();
-			} else {
-				var_dump(__LINE__);exit(1);
 			}
 		}
 
@@ -265,9 +264,23 @@ $fetch_videos = static function (
 	}
 };
 
+$cache['playlists'] = $cache['playlists'] ?? [];
+
 foreach ($playlists as $playlist_id => $markdown_path) {
 	$videos[$playlist_id] = [];
 
+	$response = $service->playlists->listPlaylists(
+		'id,snippet',
+		[
+			'maxResults' => 1,
+			'id' => $playlist_id,
+		]
+	);
+
+	if (
+		! isset($cache['playlists'][$playlist_id])
+		|| $cache['playlists'][$playlist_id][0] !== $response->etag
+	) {
 	$fetch_videos(
 		[
 			'maxResults' => 50,
@@ -276,6 +289,16 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 		$videos,
 		$video_tags
 	);
+		$cache['playlists'][$playlist_id] = [
+			$response->etag,
+			$response->items[0]->snippet->title,
+		];
+
+		$update_cache();
+		var_dump('playlist cached');exit(1);
+	} else {
+		var_dump('playlist cached');exit(1);
+	}
 
 	if ( ! is_file($markdown_path)) {
 		file_put_contents($markdown_path, "\n");
@@ -326,12 +349,35 @@ $fetch_all_playlists = static function (array $args) use (
 				[],
 			];
 
+			$cache_response = $service->playlists->listPlaylists(
+				'id,snippet',
+				[
+					'maxResults' => 1,
+					'id' => $playlist_id,
+				]
+			);
+
+			if (
+				! isset($cache['playlists'][$playlist_id])
+				|| $cache['playlists'][$playlist_id][0] !== $cache_response->etag
+			) {
 			$fetch_videos(
 				['maxResults' => 50],
 				$playlist->id,
 				$other_playlists_on_channel[$playlist->id][1],
 				$video_tags
 			);
+
+				$cache['playlists'][$playlist_id] = [
+					$cache_response->etag,
+					$playlist->snippet->title,
+				];
+
+				$update_cache();
+				var_dump('playlist cached');exit(1);
+			} else {
+				var_dump('playlist already cached');exit(1);
+			}
 
 			$other_playlists_on_channel[$playlist->id][1] = array_keys(
 				$other_playlists_on_channel[$playlist->id][1][$playlist->id]
