@@ -295,9 +295,6 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 		];
 
 		$update_cache();
-		var_dump('playlist cached');exit(1);
-	} else {
-		var_dump('playlist cached');exit(1);
 	}
 
 	if ( ! is_file($markdown_path)) {
