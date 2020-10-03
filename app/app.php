@@ -134,41 +134,41 @@ $fetch_videos = static function (
 				count($captions->items) > 0
 				&& ($etag = $captions->items[0]->etag)
 				&& (
-				! isset($cache['captions'][$video_id])
-				|| $cache['captions'][$video_id] !== $etag
+					! isset($cache['captions'][$video_id])
+					|| $cache['captions'][$video_id] !== $etag
 				)
 			) {
-			try {
-				$captions = $http->request(
-					'GET',
-					sprintf(
-						'/youtube/v3/captions/%s',
-						rawurlencode($captions->items[0]->id)
-					),
-					[
-						'query' => [
-							'tfmt' => 'srt',
-						],
-					]
-				);
+				try {
+					$captions = $http->request(
+						'GET',
+						sprintf(
+							'/youtube/v3/captions/%s',
+							rawurlencode($captions->items[0]->id)
+						),
+						[
+							'query' => [
+								'tfmt' => 'srt',
+							],
+						]
+					);
 
-				file_put_contents(
-					$subtitles_file,
-					$captions->getBody()->getContents()
-				);
-			} catch (ClientException $e) {
-				echo
-					'Could not download subtitles for ' .
-					(
-						'https://www.youtube.com/watch?' .
-						http_build_query([
-							'v' => $video_id,
-						])
-					),
-					"\n",
-					$e->getMessage(),
-					"\n";
-			}
+					file_put_contents(
+						$subtitles_file,
+						$captions->getBody()->getContents()
+					);
+				} catch (ClientException $e) {
+					echo
+						'Could not download subtitles for ' .
+						(
+							'https://www.youtube.com/watch?' .
+							http_build_query([
+								'v' => $video_id,
+							])
+						),
+						"\n",
+						$e->getMessage(),
+						"\n";
+				}
 				$cache['captions'][$video_id] = $etag;
 				$update_cache();
 			} else {
@@ -180,12 +180,12 @@ $fetch_videos = static function (
 			! isset($cache['playlistItems'][$video_id])
 			|| $cache['playlistItems'][$video_id][0] !== $video->etag
 		) {
-		$tag_response = $service->videos->listVideos(
-			'snippet',
-			[
-				'id' => $video_id,
-			]
-		);
+			$tag_response = $service->videos->listVideos(
+				'snippet',
+				[
+					'id' => $video_id,
+				]
+			);
 
 			if (
 				! isset($cache['videoTags'][$video_id])
