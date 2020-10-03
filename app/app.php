@@ -379,12 +379,12 @@ $fetch_all_playlists = static function (array $args) use (
 				! isset($cache['playlists'][$playlist_id])
 				|| $cache['playlists'][$playlist_id][0] !== $cache_response->etag
 			) {
-			$fetch_videos(
-				['maxResults' => 50],
-				$playlist->id,
-				$other_playlists_on_channel[$playlist->id][1],
-				$video_tags
-			);
+				$fetch_videos(
+					['maxResults' => 50],
+					$playlist->id,
+					$other_playlists_on_channel[$playlist->id][1],
+					$video_tags
+				);
 
 				$cache['playlists'][$playlist_id] = [
 					$cache_response->etag,
