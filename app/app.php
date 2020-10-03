@@ -131,8 +131,12 @@ $fetch_videos = static function (
 			}
 
 			if (
+				count($captions->items) > 0
+				&& ($etag = $captions->items[0]->etag)
+				&& (
 				! isset($cache['captions'][$video_id])
 				|| $cache['captions'][$video_id] !== $etag
+				)
 			) {
 			try {
 				$captions = $http->request(
