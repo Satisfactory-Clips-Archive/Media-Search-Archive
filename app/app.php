@@ -171,6 +171,8 @@ $fetch_videos = static function (
 			}
 				$cache['captions'][$video_id] = $etag;
 				$update_cache();
+			} else {
+				file_put_content($subtitles_file, 'nope');
 			}
 		}
 
@@ -223,6 +225,7 @@ $fetch_videos = static function (
 		$video_tags[$video_id] = $cache['videoTags'][$video_id][1];
 
 		if (isset($playlists[$playlist_id]) && is_file($subtitles_file)) {
+			var_dump('test for nope now');exit(1);
 			$parser = new Parser();
 
 			$parser->loadFile($subtitles_file);
