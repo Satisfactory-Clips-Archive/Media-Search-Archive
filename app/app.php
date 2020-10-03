@@ -86,6 +86,9 @@ $update_cache = function () use (&$cache) : void {
 	);
 };
 
+$object_cache_captions = [];
+$object_cache_videos = [];
+
 $fetch_videos = static function (
 	array $args,
 	string $playlist_id,
@@ -97,6 +100,7 @@ $fetch_videos = static function (
 	$service,
 	&$cache,
 	$update_cache,
+	&$object_cache_captions,
 	&$fetch_videos
 ) : void {
 	$args['playlistId'] = $playlist_id;
@@ -119,8 +123,12 @@ $fetch_videos = static function (
 		$subtitles_file = __DIR__ . '/captions/' . $video_id . '.srt';
 
 		if (isset($playlists[$playlist_id]) && ! is_file($subtitles_file)) {
+			if ( ! isset($object_cache_captions[$video_id])) {
 			$captions = $service->captions->listCaptions($video_id, 'snippet');
-			$etag = $captions->items[0]->etag;
+				$object_cache_captions[$video_id] = $captions;
+			} else {
+				$captions = $object_cache_captions[$video_id];
+			}
 
 			if (
 				! isset($cache['captions'][$video_id])
