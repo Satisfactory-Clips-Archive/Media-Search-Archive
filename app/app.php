@@ -296,14 +296,14 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 		! isset($cache['playlists'][$playlist_id])
 		|| $cache['playlists'][$playlist_id][0] !== $response->etag
 	) {
-	$fetch_videos(
-		[
-			'maxResults' => 50,
-		],
-		$playlist_id,
-		$videos,
-		$video_tags
-	);
+		$fetch_videos(
+			[
+				'maxResults' => 50,
+			],
+			$playlist_id,
+			$videos,
+			$video_tags
+		);
 		$cache['playlists'][$playlist_id] = [
 			$response->etag,
 			$response->items[0]->snippet->title,
