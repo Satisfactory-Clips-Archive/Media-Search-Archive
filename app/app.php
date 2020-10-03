@@ -27,6 +27,7 @@ use function ksort;
 use function mb_substr;
 use function preg_match_all;
 use function rawurlencode;
+use function sha1_file;
 use function sprintf;
 use function strtotime;
 
@@ -224,8 +225,13 @@ $fetch_videos = static function (
 		$videos[$playlist_id][$video_id] = $cache['videoTags'][$video_id][1];
 		$video_tags[$video_id] = $cache['videoTags'][$video_id][1];
 
-		if (isset($playlists[$playlist_id]) && is_file($subtitles_file)) {
-			var_dump('test for nope now');exit(1);
+		if (
+			isset($playlists[$playlist_id])
+			&& is_file($subtitles_file)
+			&& '76272dc4faf660733711f58c736830d27159fb55' !== sha1_file(
+				$subtitles_file
+			)
+		) {
 			$parser = new Parser();
 
 			$parser->loadFile($subtitles_file);
