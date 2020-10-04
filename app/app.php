@@ -183,7 +183,7 @@ $fetch_videos = static function (
 				$cache['captions'][$video_id] = $etag;
 				$update_cache();
 			} else {
-				file_put_content($subtitles_file, 'nope');
+				file_put_contents($subtitles_file, 'nope');
 			}
 		}
 
