@@ -31,6 +31,8 @@ use function sha1_file;
 use function sprintf;
 use function strtotime;
 
+$transcriptions = ($argv[1] ?? null) === '--transcriptions';
+
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $client = new Google_Client();
@@ -109,6 +111,7 @@ $fetch_videos = static function (
 	&$cache,
 	$update_cache,
 	&$object_cache_captions,
+	$transcriptions,
 	&$fetch_videos
 ) : void {
 	$args['playlistId'] = $playlist_id;
@@ -130,7 +133,7 @@ $fetch_videos = static function (
 		$video_id = $video->snippet->resourceId->videoId;
 		$subtitles_file = __DIR__ . '/captions/' . $video_id . '.srt';
 
-		if (isset($playlists[$playlist_id]) && ! is_file($subtitles_file)) {
+		if ($transcriptions && isset($playlists[$playlist_id]) && ! is_file($subtitles_file)) {
 			if ( ! isset($object_cache_captions[$video_id])) {
 			$captions = $service->captions->listCaptions($video_id, 'snippet');
 				$object_cache_captions[$video_id] = $captions;
