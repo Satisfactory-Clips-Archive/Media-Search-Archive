@@ -80,6 +80,12 @@ $cache = json_decode(
 	true
 );
 
+foreach (($cache['videoTags'] ?? []) as $video_id => $data) {
+	[$etag, $tags] = $data;
+
+	$video_tags[$video_id] = $tags;
+}
+
 $update_cache = function () use (&$cache) : void {
 	file_put_contents(
 		__DIR__ . '/cache.json',
@@ -205,8 +211,6 @@ $fetch_videos = static function (
 				}
 
 				$update_cache();
-			} else {
-				$video_tags[$video_id] = $cache['videoTags'][$video_id][1];
 			}
 
 			$cache['playlistItems'][$video_id] = [
@@ -215,15 +219,9 @@ $fetch_videos = static function (
 			];
 
 			$update_cache();
-		} else {
-			$videos[$playlist_id][
-				$video_id
-			] = $cache['videoTags'][$video_id][1];
-			$video_tags[$video_id] = $cache['videoTags'][$video_id][1];
 		}
 
-		$videos[$playlist_id][$video_id] = $cache['videoTags'][$video_id][1];
-		$video_tags[$video_id] = $cache['videoTags'][$video_id][1];
+		$videos[$playlist_id][$video_id] = $cache['playlistItems'][$video_id][1];
 
 		if (
 			isset($playlists[$playlist_id])
@@ -313,9 +311,14 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 		$cache['playlists'][$playlist_id] = [
 			$response->etag,
 			$response->items[0]->snippet->title,
+			array_keys($videos[$playlist_id]),
 		];
 
 		$update_cache();
+	} else {
+		foreach ($cache['playlists'][$playlist_id][2] as $video_id) {
+			$videos[$playlist_id][$video_id] = $cache['playlistItems'][$video_id][1];
+		}
 	}
 
 	if ( ! is_file($markdown_path)) {
@@ -353,6 +356,7 @@ $fetch_all_playlists = static function (array $args) use (
 	$fetch_videos,
 	&$cache,
 	$update_cache,
+	&$videos,
 	$playlists
 ) : void {
 	$response = $service->playlists->listPlaylists(
@@ -371,13 +375,13 @@ $fetch_all_playlists = static function (array $args) use (
 				'id,snippet',
 				[
 					'maxResults' => 1,
-					'id' => $playlist_id,
+					'id' => $playlist->id,
 				]
 			);
 
 			if (
-				! isset($cache['playlists'][$playlist_id])
-				|| $cache['playlists'][$playlist_id][0] !== $cache_response->etag
+				! isset($cache['playlists'][$playlist->id])
+				|| $cache['playlists'][$playlist->id][0] !== $cache_response->etag
 			) {
 				$fetch_videos(
 					['maxResults' => 50],
@@ -386,31 +390,30 @@ $fetch_all_playlists = static function (array $args) use (
 					$video_tags
 				);
 
-				$cache['playlists'][$playlist_id] = [
+				$cache['playlists'][$playlist->id] = [
 					$cache_response->etag,
 					$playlist->snippet->title,
+					array_keys($other_playlists_on_channel[$playlist->id][1][$playlist->id]),
 				];
 
 				$update_cache();
-				var_dump('playlist cached');exit(1);
-			} else {
-				var_dump('playlist already cached');exit(1);
-			}
 
 			$other_playlists_on_channel[$playlist->id][1] = array_keys(
 				$other_playlists_on_channel[$playlist->id][1][$playlist->id]
 			);
+			} else {
+				foreach ($cache['playlists'][$playlist->id][2] as $video_id) {
+					$videos[$playlist->id][$video_id] = $cache['playlistItems'][$video_id][1];
+					$other_playlists_on_channel[$playlist->id][1][] = $video_id;
+				}
+			}
 		}
-
-		var_dump('foo');exit(1);
 	}
 
 	if (isset($response->nextPageToken)) {
 		$args['pageToken'] = $response->nextPageToken;
 
 		$fetch_all_playlists($args);
-	} else {
-		var_dump('bar');exit(1);
 	}
 };
 
@@ -537,7 +540,7 @@ foreach ($video_tags as $id => $tags) {
 		&& ! in_array($id, $already_in_faq, true)
 	) {
 		foreach ($videos as $playlist_id => $video_ids) {
-			if (isset($video_ids[$id])) {
+			if (isset($video_ids[$id]) && isset($playlists[$playlist_id])) {
 				$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
 
 				if ( ! isset($absent_from_faq[$date])) {
