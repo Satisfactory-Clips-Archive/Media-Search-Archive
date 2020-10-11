@@ -521,7 +521,7 @@ if ($transcriptions) {
 
 			if ( ! is_file($subtitles_file)) {
 				if ( ! isset($object_cache_captions[$video_id])) {
-				$captions = $service->captions->listCaptions($video_id, 'snippet');
+					$captions = $service->captions->listCaptions($video_id, 'snippet');
 					$object_cache_captions[$video_id] = $captions;
 				} else {
 					$captions = $object_cache_captions[$video_id];
