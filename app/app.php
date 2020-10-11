@@ -540,6 +540,15 @@ if ($transcriptions) {
 					$captions = $object_cache_captions[$video_id];
 				}
 
+				if (count($captions->items) <= 0) {
+					echo
+						sprintf(
+							'Subtitles needed: https://studio.youtube.com/video/%s/translations',
+							rawurlencode($video_id)
+						),
+						"\n";
+				}
+
 				if (
 					count($captions->items) > 0
 					&& ($etag = $captions->items[0]->etag)
