@@ -507,8 +507,11 @@ if (count($absent_from_faq) > 0) {
 }
 
 if ($transcriptions) {
+	$checked = 0;
+
 	foreach(array_keys($playlists) as $playlist_id) {
 		if ( ! isset($videos[$playlist_id])) {
+			echo 'skipping: ', $playlist_id, "\n";
 			continue;
 		}
 
@@ -620,6 +623,16 @@ if ($transcriptions) {
 					);
 				}
 			}
+
+			++$checked;
 		}
 	}
+
+	echo
+		sprintf(
+			'%s subtitles checked of %s videos cached',
+			$checked,
+			count($cache['playlistItems'])
+		),
+		"\n";
 }
