@@ -31,7 +31,8 @@ use function sha1_file;
 use function sprintf;
 use function strtotime;
 
-$transcriptions = ($argv[1] ?? null) === '--transcriptions';
+$transcriptions = in_array('--transcriptions', $argv, true);
+$clear_nopes = in_array('--clear-nopes', $argv, true);
 
 require_once(__DIR__ . '/vendor/autoload.php');
 
@@ -518,6 +519,18 @@ if ($transcriptions) {
 		foreach(array_keys($videos[$playlist_id]) as $video_id) {
 
 			$subtitles_file = __DIR__ . '/captions/' . $video_id . '.srt';
+
+			if (
+				$clear_nopes
+				&& is_file($subtitles_file)
+				&& '76272dc4faf660733711f58c736830d27159fb55' === sha1_file(
+					$subtitles_file
+				)
+			) {
+				unlink($subtitles_file);
+
+				echo 'cleared: ', $subtitles_file, "\n";
+			}
 
 			if ( ! is_file($subtitles_file)) {
 				if ( ! isset($object_cache_captions[$video_id])) {
