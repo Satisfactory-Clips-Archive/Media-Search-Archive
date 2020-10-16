@@ -298,9 +298,9 @@ $fetch_all_playlists = static function (array $args) use (
 
 				$update_cache();
 
-			$other_playlists_on_channel[$playlist->id][1] = array_keys(
-				$other_playlists_on_channel[$playlist->id][1][$playlist->id]
-			);
+				$other_playlists_on_channel[$playlist->id][1] = array_keys(
+					$other_playlists_on_channel[$playlist->id][1][$playlist->id]
+				);
 			} else {
 				foreach ($cache['playlists'][$playlist->id][2] as $video_id) {
 					$videos[$playlist->id][$video_id] = $cache['playlistItems'][$video_id][1];
