@@ -92,6 +92,16 @@ foreach (($cache['videoTags'] ?? []) as $video_id => $data) {
 	$video_tags[$video_id] = $tags;
 }
 
+foreach (($cache['playlists'] ?? []) as $playlist_id => $data) {
+	if (isset($playlists[$playlist_id])) {
+		continue;
+	}
+
+	[$etag, $title, $video_ids] = $data;
+
+	$other_playlists_on_channel[$playlist_id] = [$title, $video_ids];
+}
+
 $update_cache = function () use (&$cache) : void {
 	file_put_contents(
 		__DIR__ . '/cache.json',
