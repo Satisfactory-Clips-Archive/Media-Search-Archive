@@ -29,6 +29,7 @@ use function preg_match_all;
 use function rawurlencode;
 use function sha1_file;
 use function sprintf;
+use function strnatcasecmp;
 use function strtotime;
 
 $transcriptions = in_array('--transcriptions', $argv, true);
@@ -332,6 +333,24 @@ $fetch_all_playlists([
 	'channelId' => 'UCJamaIaFLyef0HjZ2LBEz1A',
 	'maxResults' => 50,
 ]);
+
+uksort($videos, static function (string $a, string $b) use ($cache) : int {
+	return strnatcasecmp(
+		$cache['playlists'][$a][1],
+		$cache['playlists'][$b][1]
+	);
+});
+
+$videos = array_map(
+	static function (array $in) : array {
+		uasort($in, static function(string $a, string $b) : int {
+			return strnatcasecmp($a, $b);
+		});
+
+		return $in;
+	},
+	$videos
+);
 
 $videos_to_add = [];
 
