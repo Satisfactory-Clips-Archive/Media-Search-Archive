@@ -60,6 +60,7 @@ $playlists = [
 	'PLbjDnnBIxiEoPGFyx8wiNv4pEg4BAUD5g' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-09-29.md',
 	'PLbjDnnBIxiEry9tVPDAYqaNR7TEIw0lrs' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-10-06.md',
 	'PLbjDnnBIxiEq7lNu6NUJUNoxX_juk7mbg' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-10-13.md',
+	'PLbjDnnBIxiErTVgwyqmO-o_Jho2Fi0l5b' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-10-20.md',
 ];
 
 /** @var array<string, array<string, string>> */
