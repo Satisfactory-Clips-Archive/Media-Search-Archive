@@ -269,6 +269,7 @@ $fetch_all_playlists = static function (array $args) use (
 	&$cache,
 	$update_cache,
 	&$videos,
+	&$fetch_all_playlists,
 	$playlists
 ) : void {
 	$response = $service->playlists->listPlaylists(
