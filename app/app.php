@@ -368,6 +368,22 @@ foreach ($videos_to_add as $playlist_id => $video_ids) {
 		'Single video clips' => [],
 	];
 
+	file_put_contents(
+		$playlists[$playlist_id],
+		date(
+			'F jS, Y',
+			(int) strtotime(
+				mb_substr(
+					basename($playlists[$playlist_id]),
+					0,
+					-3
+				)
+			)
+		) .
+		' livestream clips (non-exhaustive)' .
+		"\n"
+	);
+
 	foreach ($video_ids as $video_id) {
 		$found = false;
 
