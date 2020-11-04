@@ -34,6 +34,7 @@ use function strtotime;
 
 $transcriptions = in_array('--transcriptions', $argv, true);
 $clear_nopes = in_array('--clear-nopes', $argv, true);
+$unset_other_playlists = in_array('--unset-other-playlists', $argv, true);
 
 require_once(__DIR__ . '/vendor/autoload.php');
 
@@ -93,6 +94,23 @@ $cache = json_decode(
 	true
 );
 
+$update_cache = function () use (&$cache) : void {
+	file_put_contents(
+		__DIR__ . '/cache.json',
+		json_encode($cache, JSON_PRETTY_PRINT)
+	);
+};
+
+if ($unset_other_playlists && isset($cache['playlists'])) {
+	foreach (array_keys($cache['playlists']) as $playlist_id) {
+		if ( ! isset($playlists[$playlist_id])) {
+			unset($cache['playlists'][$playlist_id]);
+		}
+	}
+
+	$update_cache();
+}
+
 foreach (($cache['videoTags'] ?? []) as $video_id => $data) {
 	[$etag, $tags] = $data;
 
@@ -109,12 +127,6 @@ foreach (($cache['playlists'] ?? []) as $playlist_id => $data) {
 	$other_playlists_on_channel[$playlist_id] = [$title, $video_ids];
 }
 
-$update_cache = function () use (&$cache) : void {
-	file_put_contents(
-		__DIR__ . '/cache.json',
-		json_encode($cache, JSON_PRETTY_PRINT)
-	);
-};
 
 $object_cache_captions = [];
 $object_cache_videos = [];
