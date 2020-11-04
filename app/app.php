@@ -53,17 +53,21 @@ $service = new Google_Service_YouTube($client);
 
 $other_playlists_on_channel = [];
 
-$playlists = [
-	'PLbjDnnBIxiEoaZoarNpiJyV5QJ_pYIRyW' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-09-01.md',
-	'PLbjDnnBIxiEpupaMEI10RkF5iaX8X89fF' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-09-08.md',
-	'PLbjDnnBIxiEpYksFx1ybkbcrRmNylKVCO' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-09-15.md',
-	'PLbjDnnBIxiErSNk3fWuh3ghlsE-l9lAvi' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-09-22.md',
-	'PLbjDnnBIxiEoPGFyx8wiNv4pEg4BAUD5g' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-09-29.md',
-	'PLbjDnnBIxiEry9tVPDAYqaNR7TEIw0lrs' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-10-06.md',
-	'PLbjDnnBIxiEq7lNu6NUJUNoxX_juk7mbg' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-10-13.md',
-	'PLbjDnnBIxiErTVgwyqmO-o_Jho2Fi0l5b' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-10-20.md',
-	'PLbjDnnBIxiEo7_egXLBLNqFzOWlZRee_Z' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/2020-10-27.md',
+$playlist_metadata = [
+	__DIR__ . '/playlists/coffeestainstudiosdevs/satisfactory.json' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/',
 ];
+
+/** @var array<string, string> */
+$playlists = [
+];
+
+foreach ($playlist_metadata as $metadata_path => $prepend_path) {
+	$data = json_decode(file_get_contents($metadata_path), true);
+
+	foreach ($data as $playlist_id => $markdown_path) {
+		$playlists[$playlist_id] = $prepend_path . $markdown_path;
+	}
+}
 
 /** @var array<string, array<string, string>> */
 $videos = [];
