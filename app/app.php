@@ -37,6 +37,7 @@ $clear_nopes = in_array('--clear-nopes', $argv, true);
 $unset_other_playlists = in_array('--unset-other-playlists', $argv, true);
 
 require_once(__DIR__ . '/vendor/autoload.php');
+require_once(__DIR__ . '/captions.php');
 
 $client = new Google_Client();
 $client->setApplicationName('Twitch Clip Notes');
@@ -582,100 +583,21 @@ if ($transcriptions) {
 		}
 
 		foreach(array_keys($videos[$playlist_id]) as $video_id) {
-
-			$subtitles_file = __DIR__ . '/captions/' . $video_id . '.srt';
-
-			if (
-				$clear_nopes
-				&& is_file($subtitles_file)
-				&& '76272dc4faf660733711f58c736830d27159fb55' === sha1_file(
-					$subtitles_file
-				)
-			) {
-				unlink($subtitles_file);
-
-				echo 'cleared: ', $subtitles_file, "\n";
-			}
-
-			if ( ! is_file($subtitles_file)) {
-				if ( ! isset($object_cache_captions[$video_id])) {
-					$captions = $service->captions->listCaptions($video_id, 'snippet');
-					$object_cache_captions[$video_id] = $captions;
-				} else {
-					$captions = $object_cache_captions[$video_id];
-				}
-
-				if (count($captions->items) <= 0) {
-					echo
-						sprintf(
-							'Subtitles needed: https://studio.youtube.com/video/%s/translations',
-							rawurlencode($video_id)
-						),
-						"\n";
-				}
-
-				if (
-					count($captions->items) > 0
-					&& ($etag = $captions->items[0]->etag)
-					&& (
-						! isset($cache['captions'][$video_id])
-						|| $cache['captions'][$video_id] !== $etag
-					)
-				) {
-					try {
-						$captions = $http->request(
-							'GET',
-							sprintf(
-								'/youtube/v3/captions/%s',
-								rawurlencode($captions->items[0]->id)
-							),
-							[
-								'query' => [
-									'tfmt' => 'srt',
-								],
-							]
-						);
-
-						file_put_contents(
-							$subtitles_file,
-							$captions->getBody()->getContents()
-						);
-					} catch (ClientException $e) {
-						echo
-							'Could not download subtitles for ' .
-							(
-								'https://www.youtube.com/watch?' .
-								http_build_query([
-									'v' => $video_id,
-								])
-							),
-							"\n",
-							$e->getMessage(),
-							"\n";
-					}
-					$cache['captions'][$video_id] = $etag;
-					$update_cache();
-				} else {
-					file_put_contents($subtitles_file, 'nope');
-				}
-			}
-
-			if (
-				is_file($subtitles_file)
-				&& '76272dc4faf660733711f58c736830d27159fb55' !== sha1_file(
-					$subtitles_file
-				)
-			) {
-				$parser = new Parser();
-
-				$parser->loadFile($subtitles_file);
-
 				$transcriptions_file = (
 					__DIR__ .
 					'/../coffeestainstudiosdevs/satisfactory/transcriptions/yt-' .
 					$video_id .
 					'.md'
 				);
+
+			if ( ! is_file($transcriptions_file)) {
+				$caption_lines = captions($video_id);
+
+				if (count($caption_lines) < 1) {
+					echo 'skipping captions for ', $video_id, "\n";
+
+					continue;
+				}
 
 				$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
 
@@ -697,11 +619,11 @@ if ($transcriptions) {
 					)
 				);
 
-				foreach ($parser->parse() as $caption_line) {
+				foreach ($caption_lines as $caption_line) {
 					file_put_contents(
 						$transcriptions_file,
 						(
-							'> ' . $caption_line->text .
+							'> ' . $caption_line .
 							"\n" .
 							'> ' .
 							"\n"
@@ -710,8 +632,6 @@ if ($transcriptions) {
 					);
 				}
 			}
-
-			++$checked;
 		}
 	}
 
