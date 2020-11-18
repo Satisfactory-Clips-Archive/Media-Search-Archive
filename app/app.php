@@ -117,10 +117,8 @@ $preloaded_faq = [
 			'Q&A: Will Drones be added to the game for aerial travel? https://clips.twitch.tv/CredulousWimpyMosquitoResidentSleeper',
 		],
 		'2020-08-25' => [
-			'[various Q&A clips](2020-08-25.md#flying-vehicles)',
-		],
-		'2020-09-08' => [
-			'[various Q&A clips](2020-09-08.md#aerial-travel)',
+			'Q&A: Implement some kind of hire spaceship thingy for better exploration & faster travelling ? https://clips.twitch.tv/TrappedFaintBulgogiBigBrother',
+			'Q&A: How about a drone to fly around? https://clips.twitch.tv/SteamyViscousGoshawkDancingBaby',
 		],
 	],
 	'Console Release' => [
@@ -147,9 +145,6 @@ $preloaded_faq = [
 			'Q&A: Linux would be useful for Servers https://clips.twitch.tv/UglyAwkwardCiderSSSsss',
 			'Q&A: Will the Server source code be available for Custom Mods, or with pre-compiled binaries? https://clips.twitch.tv/ShinyFunnyJellyfishSMOrc',
 		],
-		'2020-09-08' => [
-			'[various clips](2020-09-08.md#dedicated-servers)',
-		],
 	],
 	'World Map' => [
 		'2020-07-28' => [
@@ -169,12 +164,6 @@ $preloaded_faq = [
 		'2020-08-25' => [
 			'[various clips](2020-08-25.md#world-map)',
 		],
-		'2020-09-01' => [
-			'[various clips](2020-09-01.md#world-map)',
-		],
-		'2020-09-08' => [
-			'[various clips](2020-09-08.md#world-map)',
-		],
 	],
 	'Mass Building' => [
 		'2020-07-08' => [
@@ -189,9 +178,6 @@ $preloaded_faq = [
 		'2020-08-18' => [
 			'Q&A: Any plans for 1-click multi-building? https://clips.twitch.tv/CheerfulLightAsteriskGOWSkull',
 		],
-		'2020-09-01' => [
-			'[various clips](2020-09-01.md#mass-building)',
-		],
 	],
 	'Merch' => [
 		'*Please note that Merch has since been launched https://www.youtube.com/watch?v=4_cYnq746zk*',
@@ -204,9 +190,6 @@ $preloaded_faq = [
 		'2020-08-18' => [
 			'Q&A: Is there a Merch Store? https://clips.twitch.tv/CleanCarefulMoonAMPEnergyCherry',
 			'Q&A: When will have Merch? https://clips.twitch.tv/FunOriginalPistachioNerfRedBlaster',
-		],
-		'2020-09-01' => [
-			'[various clips](2020-09-01.md#merch)',
 		],
 	],
 ];
