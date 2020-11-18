@@ -408,6 +408,21 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 	$already_in_markdown[$playlist_id] = $matches[1];
 }
 
+if (
+	! is_file(
+		__DIR__ .
+		'/../coffeestainstudiosdevs/satisfactory/FAQ.md'
+	)
+) {
+	file_put_contents(
+		(
+			__DIR__ .
+			'/../coffeestainstudiosdevs/satisfactory/FAQ.md'
+		),
+		''
+	);
+}
+
 preg_match_all(
 	'/https:\/\/www\.youtube\.com\/watch\?v=([^\n\s\*]+)/',
 	file_get_contents(
