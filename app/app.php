@@ -535,7 +535,7 @@ foreach ($videos_to_add as $playlist_id => $video_ids) {
 				)
 			)
 		) .
-		' livestream clips (non-exhaustive)' .
+		' Livestream clips (non-exhaustive)' .
 		"\n"
 	);
 
@@ -688,7 +688,7 @@ if ($transcriptions) {
 					$transcriptions_file,
 					(
 						'# [' . date('F jS, Y', (int) strtotime($date)) .
-						' livestream](../' . $date . '.md)' .
+						' Livestream](../' . $date . '.md)' .
 						"\n" .
 						'## ' . $videos[$playlist_id][$video_id] .
 						"\n" .
