@@ -909,3 +909,99 @@ foreach ($faq_topics as $faq_topic) {
 		FILE_APPEND
 	);
 }
+
+$index_prefill = [
+	'satisfactory' => [
+		'',
+		'## July 2020',
+		'* [July 8th, 2020](satisfactory/2020-07-08.md)',
+		'* [July 21st, 2020](satisfactory/2020-07-21.md)',
+		'* [July 28th, 2020](satisfactory/2020-07-28.md)',
+		'',
+		'## August 2020',
+		'* [August 11th, 2020](satisfactory/2020-08-11.md)',
+		'* [August 18th, 2020](satisfactory/2020-08-18.md)',
+		'* [August 25th, 2020](satisfactory/2020-08-25.md)',
+	],
+];
+
+foreach ($playlist_metadata as $json_file => $save_path) {
+	$data = json_decode(file_get_contents($json_file), true);
+
+	$basename = basename($save_path);
+
+	$file_path = $save_path . '/../' . $basename . '.md';
+
+	file_put_contents($file_path, '');
+
+	if (is_file($save_path . '/FAQ.md')) {
+		file_put_contents(
+			$file_path,
+			sprintf('[FAQ](%s/FAQ.md)' . "\n\n", $basename)
+		);
+	}
+
+	file_put_contents($file_path, '# Archives' . "\n", FILE_APPEND);
+
+	foreach (($index_prefill[$basename] ?? []) as $prefill_line) {
+		file_put_contents($file_path, $prefill_line . "\n", FILE_APPEND);
+	}
+
+	$grouped = [];
+
+	$sortable = [];
+
+	foreach ($data as $filename) {
+		$unix = strtotime(mb_substr($filename, 0, -3));
+		$readable_month = date('F Y', $unix);
+		$readable_date = date('F jS, Y', $unix);
+
+		if ( ! isset($grouped[$readable_month])) {
+			$grouped[$readable_month] = [];
+			$sortable[$readable_month] = strtotime(date('Y-m-01', $unix));
+		}
+
+		$grouped[$readable_month][] = [$readable_date, $filename, $unix];
+	}
+
+	$grouped = array_map(
+		static function (array $month) : array {
+			usort(
+				$month,
+				static function (array $a, array $b) : int {
+					return $a[2] - $b[2];
+				}
+			);
+
+			return $month;
+		},
+		$grouped
+	);
+
+	uasort($sortable, static function(int $a, int $b) : int {
+		return $a - $b;
+	});
+
+	foreach (array_keys($sortable) as $readable_month) {
+		file_put_contents(
+			$file_path,
+			sprintf("\n" . '## %s' . "\n", $readable_month),
+			FILE_APPEND
+		);
+
+		foreach ($grouped[$readable_month] as $line_data) {
+			[$readable_date, $filename] = $line_data;
+
+			file_put_contents(
+				$file_path,
+				sprintf(
+					'* [%s](%s/%s)' . "\n",
+					$readable_date,
+					$basename,
+					$filename
+				),
+				FILE_APPEND
+			);
+		}
+	}
+}
