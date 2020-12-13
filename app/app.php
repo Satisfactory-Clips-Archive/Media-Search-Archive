@@ -1671,26 +1671,32 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEp9MC5RZraDAl95pvC0YVvW' => [ // Satisfactory Update 3
 			2,
 			'Satisfactory Updates',
+			'Released',
 		],
 		'PLbjDnnBIxiEq_0QTxH7_C0c8quZsI1uMu' => [ // Satisfactory Fluids Update
 			3,
 			'Satisfactory Updates',
+			'Released',
 		],
 		'PLbjDnnBIxiEpH9vCWSguzYfXrsjagXgyE' => [ // Satisfactory Update 4
 			4,
 			'Satisfactory Updates',
+			'Pending',
 		],
 		'PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6' => [ // Satisfactory Update 5
 			5,
 			'Satisfactory Updates',
+			'Speculative',
 		],
 		'PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR' => [ // Satisfactory Update 6
 			6,
 			'Satisfactory Updates',
+			'Speculative',
 		],
 		'PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo' => [ // Satisfactory Update 8
 			7,
 			'Satisfactory Updates',
+			'Speculative',
 		],
 		'PLbjDnnBIxiEqrvp3UlLgVHZbY9Yb045zj' => [ // Release Builds
 			8,
@@ -1699,6 +1705,7 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT' => [ // Satisfactory 1.0
 			9,
 			'Satisfactory Updates',
+			'Pending',
 		],
 		'PLbjDnnBIxiErq1cTFe-14F7UISclc1uc-' => [ // Seasonal Events
 			10,
