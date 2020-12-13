@@ -1998,7 +1998,13 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		foreach ($playlist_items_data as $playlist_id => $video_ids) {
 			file_put_contents(
 				$slug_path,
-				"\n" . '# ' . $data_by_date[$playlist_id][1] . "\n",
+				(
+					"\n" .
+					'# ' .
+					$data_by_date[$playlist_id][1] .
+					' Livestream' .
+					"\n"
+				),
 				FILE_APPEND
 			);
 
