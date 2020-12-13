@@ -1661,36 +1661,47 @@ $global_topic_append = [
 $global_topic_hierarchy = [
 	'satisfactory' => [
 		'PLbjDnnBIxiEo8RlgfifC8OhLmJl8SgpJE' => [ // State of Dev
+			0,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEp3nVij0OnuqpiuBFlKDB-K' => [ // Satisfactory 2017
+			1,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEp9MC5RZraDAl95pvC0YVvW' => [ // Satisfactory Update 3
+			2,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEq_0QTxH7_C0c8quZsI1uMu' => [ // Satisfactory Fluids Update
+			3,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEpH9vCWSguzYfXrsjagXgyE' => [ // Satisfactory Update 4
+			4,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6' => [ // Satisfactory Update 5
+			5,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR' => [ // Satisfactory Update 6
+			6,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo' => [ // Satisfactory Update 8
+			7,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEqrvp3UlLgVHZbY9Yb045zj' => [ // Release Builds
+			8,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT' => [ // Satisfactory 1.0
+			9,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiErq1cTFe-14F7UISclc1uc-' => [ // Seasonal Events
+			10,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEq84iBBkP2g69rPYXD-yWMy' => [ // FICS⁕MAS
@@ -1701,7 +1712,7 @@ $global_topic_hierarchy = [
 			'Coffeestainers',
 		],
 		'PLbjDnnBIxiErABErNV8_bjXIF_CFZILeP' => [ // Mods
-			'',
+			'Mods',
 		],
 		'PLbjDnnBIxiEr8o-WHAZJf8lAVaNJlbHmH' => [ // Mods vs. Features
 			'Mods',
@@ -1928,8 +1939,11 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	$topic_hierarchy_keys = array_keys($topic_hierarchy);
 
 	usort($playlist_ids, static function (string $a, string $b) use ($topic_hierarchy, $topic_hierarchy_keys, $cache) : int {
-		$a_chunks = $topic_hierarchy[$a] ?? [$cache['playlists'][$a][1]];
-		$b_chunks = $topic_hierarchy[$b] ?? [$cache['playlists'][$b][1]];
+		$a_chunks = $topic_hierarchy[$a] ?? [];
+		$b_chunks = $topic_hierarchy[$b] ?? [];
+
+		$a_chunks[] = $cache['playlists'][$a][1];
+		$b_chunks[] = $cache['playlists'][$b][1];
 
 		if ([''] === $a_chunks) {
 			$a_chunks = [$cache['playlists'][$a][1]];
@@ -1939,8 +1953,29 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			$b_chunks = [$cache['playlists'][$b][1]];
 		}
 
-		if (isset($topic_hierarchy[$a], $topic_hierarchy[$b])) {
-			return array_search($a, $topic_hierarchy_keys) - array_search($b, $topic_hierarchy_keys);
+		if (is_int($a_chunks[0]) || is_int($b_chunks[0])) {
+			$a_int = is_int($a_chunks[0]) ? $a_chunks[0] : null;
+			$b_int = is_int($b_chunks[0]) ? $b_chunks[0] : null;
+
+			if (is_int($a_int)) {
+				array_shift($a_chunks);
+			}
+
+			if (is_int($b_int)) {
+				array_shift($b_chunks);
+			}
+
+			if (is_int($a_int) && is_int($b_int)) {
+				$a_pop = array_pop($a_chunks);
+				$b_pop = array_pop($b_chunks);
+
+				if (implode(' > ', $a_chunks) === implode(' > ', $b_chunks)) {
+					return $a_int - $b_int;
+				}
+
+				$a_chunks[] = $a_pop;
+				$b_chunks[] = $b_pop;
+			}
 		}
 
 		return strnatcasecmp(
@@ -1959,9 +1994,12 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		[, $playlist_title, $playlist_items] = $playlist_data;
 
 		$slug = $topic_hierarchy[$playlist_id] ?? [];
-		$slug[] = $playlist_title;
 
-		$slug = array_filter($slug);
+		if (($slug[0] ?? '') !== $playlist_title) {
+			$slug[] = $playlist_title;
+		}
+
+		$slug = array_filter(array_filter($slug, 'is_string'));
 
 		$slug_count = count($slug);
 
