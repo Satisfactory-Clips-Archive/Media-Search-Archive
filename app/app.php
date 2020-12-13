@@ -36,6 +36,7 @@ use function strtotime;
 $transcriptions = in_array('--transcriptions', $argv, true);
 $clear_nopes = in_array('--clear-nopes', $argv, true);
 $unset_other_playlists = in_array('--unset-other-playlists', $argv, true);
+$skip_fetch = in_array('--skip-fetch', $argv, true);
 
 require_once(__DIR__ . '/vendor/autoload.php');
 require_once(__DIR__ . '/captions.php');
@@ -269,8 +270,13 @@ $fetch_videos = static function (
 	$update_cache,
 	&$object_cache_captions,
 	$transcriptions,
+	$skip_fetch,
 	&$fetch_videos
 ) : void {
+	if ($skip_fetch) {
+		return;
+	}
+
 	$args['playlistId'] = $playlist_id;
 	$cache['playlists'] = $cache['playlists'] ?? [];
 	$cache['playlistItems'] = $cache['playlistItems'] ?? [];
@@ -340,6 +346,10 @@ $fetch_videos = static function (
 $cache['playlists'] = $cache['playlists'] ?? [];
 
 foreach ($playlists as $playlist_id => $markdown_path) {
+	if ($skip_fetch) {
+		continue;
+	}
+
 	$videos[$playlist_id] = [];
 
 	$response = $service->playlists->listPlaylists(
@@ -427,8 +437,13 @@ $fetch_all_playlists = static function (array $args) use (
 	$update_cache,
 	&$videos,
 	&$fetch_all_playlists,
+	$skip_fetch,
 	$playlists
 ) : void {
+	if ($skip_fetch) {
+		return;
+	}
+
 	$response = $service->playlists->listPlaylists(
 		'id,snippet',
 		$args
