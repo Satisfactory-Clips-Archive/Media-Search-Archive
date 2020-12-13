@@ -1916,6 +1916,8 @@ $global_topic_hierarchy = array_map(
 $slugify = new Slugify();
 
 foreach ($playlist_metadata as $json_file => $save_path) {
+	$categorised = [];
+
 	$data = json_decode(file_get_contents($json_file), true);
 
 	$basename = basename($save_path);
@@ -1945,52 +1947,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	$topic_hierarchy_keys = array_keys($topic_hierarchy);
 
-	usort($playlist_ids, static function (string $a, string $b) use ($topic_hierarchy, $topic_hierarchy_keys, $cache) : int {
-		$a_chunks = $topic_hierarchy[$a] ?? [];
-		$b_chunks = $topic_hierarchy[$b] ?? [];
-
-		$a_chunks[] = $cache['playlists'][$a][1];
-		$b_chunks[] = $cache['playlists'][$b][1];
-
-		if ([''] === $a_chunks) {
-			$a_chunks = [$cache['playlists'][$a][1]];
-		}
-
-		if ([''] === $b_chunks) {
-			$b_chunks = [$cache['playlists'][$b][1]];
-		}
-
-		if (is_int($a_chunks[0]) || is_int($b_chunks[0])) {
-			$a_int = is_int($a_chunks[0]) ? $a_chunks[0] : null;
-			$b_int = is_int($b_chunks[0]) ? $b_chunks[0] : null;
-
-			if (is_int($a_int)) {
-				array_shift($a_chunks);
-			}
-
-			if (is_int($b_int)) {
-				array_shift($b_chunks);
-			}
-
-			if (is_int($a_int) && is_int($b_int)) {
-				$a_pop = array_pop($a_chunks);
-				$b_pop = array_pop($b_chunks);
-
-				if (implode(' > ', $a_chunks) === implode(' > ', $b_chunks)) {
-					return $a_int - $b_int;
-				}
-
-				$a_chunks[] = $a_pop;
-				$b_chunks[] = $b_pop;
-			}
-		}
-
-		return strnatcasecmp(
-			implode(' > ', $a_chunks),
-			implode(' > ', $b_chunks)
-		);
-	});
-
 	foreach ($playlist_ids as $playlist_id) {
 		if (isset($data[$playlist_id])) {
 			continue;
@@ -2001,6 +1957,22 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		[, $playlist_title, $playlist_items] = $playlist_data;
 
 		$slug = $topic_hierarchy[$playlist_id] ?? [];
+
+		$categorised_dest = & $categorised;
+
+		foreach ($slug as $slug_part) {
+			if (is_int($slug_part)) {
+				continue;
+			}
+
+			if ( ! isset($categorised_dest[$slug_part])) {
+				$categorised_dest[$slug_part] = [];
+			}
+
+			$categorised_dest = & $categorised_dest[$slug_part];
+		}
+
+		$categorised_dest[] = $playlist_id;
 
 		if (($slug[0] ?? '') !== $playlist_title) {
 			$slug[] = $playlist_title;
@@ -2050,12 +2022,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			)
 		);
 
-		file_put_contents(
-			$file_path,
-			'* [' . $slug_title . '](./topics/' . implode('/', $slug) . '.md)' . "\n",
-			FILE_APPEND
-		);
-
 		foreach ($playlist_items_data as $playlist_id => $video_ids) {
 			file_put_contents(
 				$slug_path,
@@ -2097,6 +2063,71 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				);
 			}
 		}
+	}
+
+	$decategorise = function (
+		array $to_flatten,
+		array $pending = [],
+		$depth = 0
+	) use (
+		$topic_hierarchy,
+		$cache,
+		$slugify,
+		& $decategorise
+	) : array {
+		ksort($to_flatten);
+
+		$but_first = array_filter(
+			$to_flatten,
+			'is_int',
+			ARRAY_FILTER_USE_KEY
+		);
+
+		$but_first = array_combine($but_first, array_map(
+			static function (string $playlist_id) use ($cache) : string {
+				return $cache['playlists'][$playlist_id][1];
+			},
+			$but_first
+		));
+		$and_then = array_filter(
+			$to_flatten,
+			'is_string',
+			ARRAY_FILTER_USE_KEY
+		);
+
+		asort($but_first);
+
+		foreach ($but_first as $playlist_id => $playlist_title) {
+			$slug = $topic_hierarchy[$playlist_id] ?? [];
+
+			if (($slug[0] ?? '') !== $playlist_title) {
+				$slug[] = $playlist_title;
+			}
+
+			$slug = array_map(
+				[$slugify, 'slugify'],
+				$slug
+			);
+
+			$pending[] = '* [' . $playlist_title . '](./topics/' . implode('/', $slug) . '.md)';
+		}
+
+		if (count($and_then) > 0) {
+			foreach ($and_then as $section => $subsection) {
+				$pending[] = '';
+				$pending[] = str_repeat('#', $depth + 1) . ' ' . $section;
+
+				$pending = $decategorise($subsection, $pending, $depth + 1);
+			}
+		}
+
+		return $pending;
+	};
+
+	file_put_contents($file_path, '');
+
+	foreach ($decategorise($categorised) as $line) {
+		file_put_contents($file_path, $line . "\n", FILE_APPEND);
 	}
 }
 
