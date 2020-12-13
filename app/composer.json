@@ -14,7 +14,8 @@
 		"sort-packages": true
 	},
 	"require": {
-		"php": "^7.4"
+		"php": "^7.4",
+		"cocur/slugify": "^4.0"
 	},
 	"require-dev": {
 		"benlipp/srt-parser": "^1.1",

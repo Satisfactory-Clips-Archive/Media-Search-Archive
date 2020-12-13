@@ -12,6 +12,7 @@ use function array_keys;
 use function basename;
 use Benlipp\SrtParser\Parser;
 use function count;
+use Cocur\Slugify\Slugify;
 use function date;
 use const FILE_APPEND;
 use function file_get_contents;
@@ -925,6 +926,370 @@ $index_prefill = [
 	],
 ];
 
+$topic_prefill = [
+	'satisfactory' => [
+	],
+];
+
+$global_topic_hierarchy = [
+	'satisfactory' => [
+		'PLbjDnnBIxiEo8RlgfifC8OhLmJl8SgpJE' => [ // State of Dev
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEp3nVij0OnuqpiuBFlKDB-K' => [ // Satisfactory 2017
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEp9MC5RZraDAl95pvC0YVvW' => [ // Satisfactory Update 3
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEq_0QTxH7_C0c8quZsI1uMu' => [ // Satisfactory Fluids Update
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEpH9vCWSguzYfXrsjagXgyE' => [ // Satisfactory Update 4
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6' => [ // Satisfactory Update 5
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR' => [ // Satisfactory Update 6
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo' => [ // Satisfactory Update 8
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEqrvp3UlLgVHZbY9Yb045zj' => [ // Release Builds
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT' => [ // Satisfactory 1.0
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiErq1cTFe-14F7UISclc1uc-' => [ // Seasonal Events
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEq84iBBkP2g69rPYXD-yWMy' => [ // FICS⁕MAS
+			'Satisfactory Updates',
+			'Seasonal Events',
+		],
+		'PLbjDnnBIxiEo6wrqcweq2pi9HmfRJdkME' => [ // Simon
+			'Coffeestainers',
+		],
+		'PLbjDnnBIxiEolhfvxFmSHBd2Ct-lyZW6N' => [ // Official Mod Support
+			'Mods',
+		],
+		'PLbjDnnBIxiEpeblSG5B1RXiCAdeDiTQPp' => [ // Accessibility
+			'Features',
+		],
+		'PLbjDnnBIxiEqhhpjoy5eqGRQQGUItie6A' => [ // Buildings
+			'Features',
+		],
+		'PLbjDnnBIxiEpz0p3GUy76rNNYI0kiJ0iW' => [ // The HUB
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEo-kXF1M3ONmu_VdZKJyQNc' => [ // Packager
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiErABErNV8_bjXIF_CFZILeP' => [ // Mods
+			'',
+		],
+		'PLbjDnnBIxiEr8o-WHAZJf8lAVaNJlbHmH' => [ // Mods vs. Features
+			'Mods',
+		],
+		'PLbjDnnBIxiEosbWcrHc-p6N-xeS77Rv5P' => [ // Trains
+			'Features',
+			'Transportation',
+		],
+		'PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl' => [ // Dedicated Servers
+			'Features',
+			'Planned Features',
+		],
+		'PLbjDnnBIxiEqn_GaVtEJZl0kP0-zlNlDa' => [ // DLC
+			'Features',
+			'Possible Features', // to later be moved under planned features
+		],
+		'PLbjDnnBIxiEoqQvPLEn3mTEcUnBX4Osqd' => [ // Multiplayer
+			'Features',
+		],
+		'PLbjDnnBIxiEoUH4kdC1Vuc8zUrwXyfmUB' => [ // Paint
+			'Features',
+		],
+		'PLbjDnnBIxiEr_y5FuYy4mEW7F87dLs1ve' => [ // Photo Mode
+			'Features',
+		],
+		'PLbjDnnBIxiEqbVv5qFvJ7SDFemhz9imET' => [ // Power Management
+			'Features',
+		],
+		'PLbjDnnBIxiEq5jpYwmYkaBeX-9e9HSPYf' => [ // Geothermal Energy
+			'Features',
+			'Power Management',
+		],
+		'PLbjDnnBIxiEoxt-MkPSDtxi9DBMOneqyT' => [ // Green Energy
+			'Features',
+			'Power Management',
+		],
+		'PLbjDnnBIxiEqykvbeU5B1yvLZ3EI1NSC6' => [ // Nuclear Energy
+			'Features',
+			'Power Management',
+		],
+		'PLbjDnnBIxiEoiskJRYH3hrAA192_4QTQ_' => [ // Console Release
+			'Features',
+			'Possible Features',
+		],
+		'PLbjDnnBIxiEqVTlmqhbpntiX-LNPSHZqz' => [ // Decor
+			'Features',
+			'Possible Features',
+		],
+		'PLbjDnnBIxiEr4RIwd7JK5NWkjYLh0-Wg1' => [ // Mass Building
+			'Features',
+			'Unplanned Features',
+		],
+		'PLbjDnnBIxiEp81cEwQOHVVRhOUNWWsrWT' => [ // Unreleased Content
+			'Features',
+			'Unreleased Features',
+		],
+		'PLbjDnnBIxiEpmT1vmxxciR96Op1TkWR8J' => [ // Walls
+			'Features',
+			'Buildables',
+		],
+		'PLbjDnnBIxiEpED5R4C4489wyekiGkNVe2' => [ // Creatures
+			'Environment',
+		],
+		'PLbjDnnBIxiEq1P6bQ-17tMjKuFJyxcfSU' => [ // Plants
+			'Environment'
+		],
+		'PLbjDnnBIxiErB8M3t_-CDtAh-q9TXdooO' => [ // Polution
+			'Environment',
+		],
+		'PLbjDnnBIxiEr1a23kLgbSYkwgfuD1tQao' => [ // Resources
+			'Environment',
+		],
+		'PLbjDnnBIxiErbdgIq2TL2rTjyGvOiwC9O' => [ // Pioneer
+			'Features',
+		],
+		'PLbjDnnBIxiEqjQuyYsNElrE2MqzMywC4c' => [ // Emotes
+			'Features',
+		],
+		'PLbjDnnBIxiErmYlQEEHD-GrNpRC1_6R9b' => [ // Third-Party Service Integration
+			'Features',
+			'Possible Features',
+		],
+		'PLbjDnnBIxiErdYb5Nn5q1dZBDC_ktf1h_' => [ // Signs
+			'Features',
+			'Planned Features',
+		],
+		'PLbjDnnBIxiEp3QMTxKRnehenCwo17MuJy' => [ // Conveyor Belts
+			'Features',
+			'Buildables',
+		],
+		'PLbjDnnBIxiEq1lyHQw0wVik2U0W0lmO1p' => [ // Foundations
+			'Features',
+			'Buildables',
+		],
+		'PLbjDnnBIxiEpVKlAtlIftyOD0SUkwZuNw' => [ // Jump Pads
+			'Features',
+			'Buildables',
+		],
+		'PLbjDnnBIxiEq2Ir2tWVfwVVZJnnYr127W' => [ // Ladders
+			'Features',
+			'Buildables',
+		],
+		'PLbjDnnBIxiEr5Ks1V8bqkO3qCZeI796Xk' => [ // Pipes
+			'Features',
+			'Fluids',
+		],
+		'PLbjDnnBIxiErgJbWa-PCNwFesV_2X2VPp' => [ // Pumps
+			'Features',
+			'Fluids',
+		],
+		'PLbjDnnBIxiEomyjHFvEis2-_puqS6kLbl' => [ // Valves
+			'Features',
+			'Fluids',
+		],
+		'PLbjDnnBIxiErakQW-p-n78uCwn21Irv7v' => [ // Character Customisation
+			'Features',
+			'Possible Features', // to later be moved under Pioneer
+		],
+		'PLbjDnnBIxiEpZqJYXU-zIKp_92qIaMC3F' => [ // Equipment
+			'Features',
+		],
+		'PLbjDnnBIxiEqIkJnV32EKANow9vvvZtgO' => [ // Chainsaw
+			'Features',
+			'Equipment',
+		],
+		'PLbjDnnBIxiEolThmLnFdhDVd_6guCwPXS' => [ // Fluids
+			'Features',
+		],
+		'PLbjDnnBIxiEovsoSQPihKXk6g7ttQ95sI' => [ // Weather
+			'Features', // to later be moved under environment
+			'Possible Features', // to later be removed once under environment
+		],
+		'PLbjDnnBIxiEqkzbujtsOp2ySj671M8CR3' => [ // Crafting
+			'Features',
+		],
+		'PLbjDnnBIxiEqOZ_KZZ80tAfzJmF5RNakK' => [ // Tiers
+			'Features',
+		],
+		'PLbjDnnBIxiEqkVCgSUhCfhs0up_sRMN2L' => [ // Graphics
+			'Technology',
+		],
+		'PLbjDnnBIxiEp5eh0gKJcMENUPjCcoHNVH' => [ // Unreal Engine
+			'Technology',
+		],
+		'PLbjDnnBIxiErigMS9awrudaD0lSjyUN13' => [ // User Interface
+			'Technology',
+		],
+		'PLbjDnnBIxiEoi-oa-SAwEGKc4YFrkMVvd' => [ // Aerial Travel
+			'Features',
+			'Unplanned Features',
+		],
+		'PLbjDnnBIxiEr97STV5beB_aCFM6jZaVDL' => [ // Vehicles
+			'Features',
+			'Transportation',
+		],
+		'PLbjDnnBIxiEralVcWNAwdbnP_tRGbAhFx' => [ // Game Modes
+			'Features',
+			'Possible Features',
+		],
+		'PLbjDnnBIxiErqg0B590-PblxF9Yu5aGnR' => [ // World Map
+			'Environment',
+		],
+	],
+];
+
+$global_topic_hierarchy = array_map(
+	static function (array $in) : array {
+		uasort($in, static function (array $a, array $b) : int {
+			return strnatcasecmp(implode('/', $a), implode('/', $b));
+		});
+
+		return $in;
+	},
+	$global_topic_hierarchy
+);
+
+$slugify = new Slugify();
+
+foreach ($playlist_metadata as $json_file => $save_path) {
+	$data = json_decode(file_get_contents($json_file), true);
+
+	$basename = basename($save_path);
+
+	$topic_hierarchy = $global_topic_hierarchy[$basename] ?? [];
+
+	$file_path = $save_path . '/../' . $basename . '/topics.md';
+
+	file_put_contents($file_path, '');
+
+	$data_by_date = [];
+
+	$playlists_by_date = [];
+
+	foreach ($data as $playlist_id => $filename) {
+		$unix = strtotime(mb_substr($filename, 0, -3));
+		$readable_date = date('F jS, Y', $unix);
+
+		$data_by_date[$playlist_id] = [$unix, $readable_date];
+
+		$playlists_by_date[$playlist_id] = ((($cache['playlists'] ?? [])[$playlist_id] ?? [])[2] ?? []);
+	}
+
+	$playlist_ids = array_keys(($cache['playlists'] ?? []));
+
+	usort($playlist_ids, static function (string $a, string $b) use ($topic_hierarchy) : int {
+		if (isset($topic_hierarchy[$a], $topic_hierarchy[$b])) {
+			return array_search($a, $topic_hierarchy) - array_search($b, $topic_hierarchy);
+		}
+
+		return 0;
+	});
+
+	foreach ($playlist_ids as $playlist_id) {
+		if (isset($data[$playlist_id])) {
+			continue;
+		}
+
+		$playlist_data = $cache['playlists'][$playlist_id];
+
+		[, $playlist_title, $playlist_items] = $playlist_data;
+
+		$slug = $topic_hierarchy[$playlist_id] ?? [];
+		$slug[] = $playlist_title;
+
+		$slug = array_filter($slug);
+
+		$slug_count = count($slug);
+
+		$slug_title = implode(' > ', $slug);
+
+		$slug = array_map(
+			[$slugify, 'slugify'],
+			$slug
+		);
+
+		$slug_path = $save_path . '/../' . $basename . '/topics/' . implode('/', $slug) . '.md';
+
+		$playlist_items_data = [];
+
+		foreach ($playlists_by_date as $other_playlist_id => $other_playlist_items) {
+			foreach ($playlist_items as $video_id) {
+				if (in_array($video_id, $other_playlist_items, true)) {
+					if ( ! isset($playlist_items_data[$other_playlist_id])) {
+						$playlist_items_data[$other_playlist_id] = [];
+					}
+					$playlist_items_data[$other_playlist_id][] = $video_id;
+				}
+			}
+		}
+
+		$slug_dir = dirname($slug_path);
+
+		if ( ! is_dir($slug_dir)) {
+			mkdir($slug_dir, 0755, true);
+		}
+
+		file_put_contents(
+			$slug_path,
+			(
+				'[Topics](' . str_repeat('../', $slug_count) . 'topics.md)' .
+				' > ' .
+				$slug_title .
+				"\n"
+			)
+		);
+
+		file_put_contents(
+			$file_path,
+			'* [' . $slug_title . '](./topics/' . implode('/', $slug) . '.md)' . "\n",
+			FILE_APPEND
+		);
+
+		foreach ($playlist_items_data as $playlist_id => $video_ids) {
+			file_put_contents(
+				$slug_path,
+				"\n" . '# ' . $data_by_date[$playlist_id][1] . "\n",
+				FILE_APPEND
+			);
+
+			foreach ($video_ids as $video_id) {
+				file_put_contents(
+					$slug_path,
+					(
+						'* ' .
+						$cache['playlistItems'][$video_id][1] .
+						' https://www.youtube.com/watch?' .
+						http_build_query([
+							'v' => $video_id,
+						]) .
+						"\n"
+					),
+					FILE_APPEND
+				);
+			}
+		}
+	}
+}
+
 foreach ($playlist_metadata as $json_file => $save_path) {
 	$data = json_decode(file_get_contents($json_file), true);
 
@@ -938,6 +1303,13 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		file_put_contents(
 			$file_path,
 			sprintf('[FAQ](%s/FAQ.md)' . "\n\n", $basename)
+		);
+	}
+
+	if (is_file($save_path . '/topics.md')) {
+		file_put_contents(
+			$file_path,
+			sprintf('[Topics](%s/topics.md)' . "\n\n", $basename)
 		);
 	}
 
