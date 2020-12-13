@@ -1700,6 +1700,12 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEo6wrqcweq2pi9HmfRJdkME' => [ // Simon
 			'Coffeestainers',
 		],
+		'PLbjDnnBIxiErABErNV8_bjXIF_CFZILeP' => [ // Mods
+			'',
+		],
+		'PLbjDnnBIxiEr8o-WHAZJf8lAVaNJlbHmH' => [ // Mods vs. Features
+			'Mods',
+		],
 		'PLbjDnnBIxiEolhfvxFmSHBd2Ct-lyZW6N' => [ // Official Mod Support
 			'Mods',
 		],
@@ -1716,12 +1722,6 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEo-kXF1M3ONmu_VdZKJyQNc' => [ // Packager
 			'Features',
 			'Buildings',
-		],
-		'PLbjDnnBIxiErABErNV8_bjXIF_CFZILeP' => [ // Mods
-			'',
-		],
-		'PLbjDnnBIxiEr8o-WHAZJf8lAVaNJlbHmH' => [ // Mods vs. Features
-			'Mods',
 		],
 		'PLbjDnnBIxiEosbWcrHc-p6N-xeS77Rv5P' => [ // Trains
 			'Features',
@@ -1925,12 +1925,28 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	$playlist_ids = array_keys(($cache['playlists'] ?? []));
 
-	usort($playlist_ids, static function (string $a, string $b) use ($topic_hierarchy) : int {
-		if (isset($topic_hierarchy[$a], $topic_hierarchy[$b])) {
-			return array_search($a, $topic_hierarchy) - array_search($b, $topic_hierarchy);
+	$topic_hierarchy_keys = array_keys($topic_hierarchy);
+
+	usort($playlist_ids, static function (string $a, string $b) use ($topic_hierarchy, $topic_hierarchy_keys, $cache) : int {
+		$a_chunks = $topic_hierarchy[$a] ?? [$cache['playlists'][$a][1]];
+		$b_chunks = $topic_hierarchy[$b] ?? [$cache['playlists'][$b][1]];
+
+		if ([''] === $a_chunks) {
+			$a_chunks = [$cache['playlists'][$a][1]];
 		}
 
-		return 0;
+		if ([''] === $b_chunks) {
+			$b_chunks = [$cache['playlists'][$b][1]];
+		}
+
+		if (isset($topic_hierarchy[$a], $topic_hierarchy[$b])) {
+			return array_search($a, $topic_hierarchy_keys) - array_search($b, $topic_hierarchy_keys);
+		}
+
+		return strnatcasecmp(
+			implode(' > ', $a_chunks),
+			implode(' > ', $b_chunks)
+		);
 	});
 
 	foreach ($playlist_ids as $playlist_id) {
