@@ -1423,7 +1423,7 @@ $global_topic_append = [
 			'# August 11th, 2020 Livestream',
 			'* Q&A: Anything inside the HUB where the MAM used to be? https://clips.twitch.tv/RespectfulDreamyHabaneroMrDestructoid',
 		],
-		'coffeestainers.md' => [
+		'coffee-stainers.md' => [
 			'# August 25th, 2020 Livestream',
 			'* Q&A: Are the Devs back from vacation? https://clips.twitch.tv/SeductiveImpartialCobblerOptimizePrime',
 			'',
@@ -1716,7 +1716,7 @@ $global_topic_hierarchy = [
 			'Seasonal Events',
 		],
 		'PLbjDnnBIxiEo6wrqcweq2pi9HmfRJdkME' => [ // Simon
-			'Coffeestainers',
+			'Coffee Stainers',
 		],
 		'PLbjDnnBIxiErABErNV8_bjXIF_CFZILeP' => [ // Mods
 			'Mods',
@@ -1898,6 +1898,35 @@ $global_topic_hierarchy = [
 		],
 		'PLbjDnnBIxiErqg0B590-PblxF9Yu5aGnR' => [ // World Map
 			'Environment',
+		],
+		'PLbjDnnBIxiErQ8_2rnJ749i4017On9Ss3' => [ // Dylan
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEoKp-47IB5MQO0gc_m6I_k6' => [ // Hyper Tubes
+			'Features',
+			'Transportation',
+		],
+		'PLbjDnnBIxiEqC9fXtj3M18h0ZeCfZ2u6I' => [ // Jace
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEogzZ5ihqFGBEDRmk9cEgAk' => [ // Jetpack
+			'Features',
+			'Equipment',
+		],
+		'PLbjDnnBIxiEp_OX3mKaOyTdkVijB78MU4' => [ // Radar Tower
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEoAqIqsBIdN_uoV-HsP8YDJ' => [ // Snutt
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiErau2lNl-y0Uv9FHhiZc6Pl' => [ // Storage Containers
+			'Features',
+			'Buildables',
+		],
+		'PLbjDnnBIxiErkd_71h9F1jHbOJBnku5mI' => [ // Superposition Oscillators
+			'Features',
+			'Crafting',
 		],
 	],
 ];
