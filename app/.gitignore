@@ -3,3 +3,6 @@
 /.php_cs.cache
 /captions/
 /cache.json
+/node_modules/
+/lunr-docs-prebuilt.json
+/lunr-docs-preload.json
