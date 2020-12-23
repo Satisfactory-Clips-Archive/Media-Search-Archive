@@ -38,7 +38,7 @@
       <code>$video_id</code>
       <code>$videos</code>
     </MixedArgumentTypeCoercion>
-    <MixedArrayAccess occurrences="48">
+    <MixedArrayAccess occurrences="46">
       <code>$cache['captions']</code>
       <code>$cache['playlistItems']</code>
       <code>$cache['playlistItems']</code>
@@ -78,8 +78,6 @@
       <code>$other_playlist_video_ids</code>
       <code>$playlist_items</code>
       <code>$playlist_title</code>
-      <code>$response-&gt;items[0]</code>
-      <code>$tag_response-&gt;items[0]</code>
       <code>$tags</code>
       <code>$title</code>
       <code>$title</code>
@@ -148,7 +146,7 @@
       <code>$topic_hierarchy[$playlist_id]</code>
       <code>$topic_hierarchy[$playlist_id]</code>
     </MixedArrayTypeCoercion>
-    <MixedAssignment occurrences="58">
+    <MixedAssignment occurrences="51">
       <code>$args['pageToken']</code>
       <code>$args['pageToken']</code>
       <code>$cache</code>
@@ -157,7 +155,6 @@
       <code>$cache['playlists']</code>
       <code>$cache['playlists']</code>
       <code>$cache['videoTags']</code>
-      <code>$cache_response</code>
       <code>$cached_playlist_data</code>
       <code>$cached_playlist_id</code>
       <code>$data</code>
@@ -175,7 +172,6 @@
       <code>$other_playlist_items</code>
       <code>$other_playlists_on_channel[$playlist-&gt;id][1][]</code>
       <code>$pending</code>
-      <code>$playlist</code>
       <code>$playlist_data</code>
       <code>$playlist_data</code>
       <code>$playlist_id</code>
@@ -184,14 +180,9 @@
       <code>$playlist_id</code>
       <code>$playlist_items_data[$other_playlist_id][]</code>
       <code>$playlists_by_date[$playlist_id]</code>
-      <code>$response</code>
-      <code>$response</code>
-      <code>$response</code>
       <code>$slug[]</code>
       <code>$subsection</code>
-      <code>$tag_response</code>
       <code>$tags</code>
-      <code>$video</code>
       <code>$video_id</code>
       <code>$video_id</code>
       <code>$video_id</code>
@@ -238,27 +229,6 @@
       <code>$videos[$playlist_id][$video_id]</code>
       <code>$videos[$playlist_id][$video_id]</code>
     </MixedOperand>
-    <MixedPropertyFetch occurrences="19">
-      <code>$cache_response-&gt;etag</code>
-      <code>$cache_response-&gt;etag</code>
-      <code>$playlist-&gt;id</code>
-      <code>$playlist-&gt;snippet</code>
-      <code>$response-&gt;etag</code>
-      <code>$response-&gt;etag</code>
-      <code>$response-&gt;items</code>
-      <code>$response-&gt;items</code>
-      <code>$response-&gt;items</code>
-      <code>$response-&gt;nextPageToken</code>
-      <code>$response-&gt;nextPageToken</code>
-      <code>$tag_response-&gt;etag</code>
-      <code>$tag_response-&gt;etag</code>
-      <code>$tag_response-&gt;etag</code>
-      <code>$tag_response-&gt;items</code>
-      <code>$video-&gt;etag</code>
-      <code>$video-&gt;etag</code>
-      <code>$video-&gt;snippet</code>
-      <code>$video-&gt;snippet-&gt;title</code>
-    </MixedPropertyFetch>
     <MixedReturnStatement occurrences="3">
       <code>$a[2] - $b[2]</code>
       <code>$cache['playlists'][$playlist_id][1]</code>

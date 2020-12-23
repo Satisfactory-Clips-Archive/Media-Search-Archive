@@ -19,6 +19,15 @@ use function file_get_contents;
 use function file_put_contents;
 use Google_Client;
 use Google_Service_YouTube;
+use Google_Service_YouTube_Playlist;
+use Google_Service_YouTube_PlaylistItem;
+use Google_Service_YouTube_PlaylistItemListResponse;
+use Google_Service_YouTube_PlaylistListResponse;
+use Google_Service_YouTube_PlaylistSnippet;
+use Google_Service_YouTube_ResourceId;
+use Google_Service_YouTube_Video;
+use Google_Service_YouTube_VideoSnippet;
+use Google_Service_YouTube_VideoListResponse;
 use GuzzleHttp\Exception\ClientException;
 use function http_build_query;
 use function implode;
@@ -282,6 +291,7 @@ $fetch_videos = static function (
 	$cache['captions'] = $cache['captions'] ?? [];
 	$cache['videoTags'] = $cache['videoTags'] ?? [];
 
+	/** @var Google_Service_YouTube_PlaylistItemListResponse */
 	$response = $service->playlistItems->listPlaylistItems(
 		implode(',', [
 			'id',
@@ -291,13 +301,23 @@ $fetch_videos = static function (
 		$args
 	);
 
-	foreach ($response->items as $video) {
-		$video_id = $video->snippet->resourceId->videoId;
+	/** @var iterable<Google_Service_YouTube_PlaylistItem> */
+	$response_items = $response->items;
+
+	foreach ($response_items as $video) {
+		/** @var Google_Service_YouTube_VideoSnippet */
+		$video_snippet = $video->snippet;
+
+		/** @var Google_Service_YouTube_ResourceId */
+		$video_snippet_resourceId = $video_snippet->resourceId;
+
+		$video_id = $video_snippet_resourceId->videoId;
 
 		if (
 			! isset($cache['playlistItems'][$video_id])
 			|| $cache['playlistItems'][$video_id][0] !== $video->etag
 		) {
+			/** @var Google_Service_YouTube_VideoListResponse */
 			$tag_response = $service->videos->listVideos(
 				'snippet',
 				[
@@ -309,10 +329,17 @@ $fetch_videos = static function (
 				! isset($cache['videoTags'][$video_id])
 				|| $cache['videoTags'][$video_id][0] !== $tag_response->etag
 			) {
-				if (isset($tag_response->items[0]->snippet->tags)) {
+				/**
+				 * @var array{0:object{
+				 *	snippet:Google_Service_YouTube_VideoSnippet
+				 * }}
+				 */
+				$tag_response_items = $tag_response->items;
+
+				if (isset($tag_response_items[0]->snippet->tags)) {
 					$cache['videoTags'][$video_id] = [
 						$tag_response->etag,
-						$tag_response->items[0]->snippet->tags,
+						$tag_response_items[0]->snippet->tags,
 					];
 				} else {
 					$cache['videoTags'][$video_id] = [
@@ -326,7 +353,7 @@ $fetch_videos = static function (
 
 			$cache['playlistItems'][$video_id] = [
 				$video->etag,
-				$video->snippet->title,
+				$video_snippet->title,
 			];
 
 			$update_cache();
@@ -351,6 +378,7 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 
 	$videos[$playlist_id] = [];
 
+	/** @var Google_Service_YouTube_PlaylistListResponse */
 	$response = $service->playlists->listPlaylists(
 		'id,snippet',
 		[
@@ -363,6 +391,12 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 		! isset($cache['playlists'][$playlist_id])
 		|| $cache['playlists'][$playlist_id][0] !== $response->etag
 	) {
+		/** @var array{0:Google_Service_YouTube_Playlist} */
+		$response_items = $response->items;
+
+		/** @var Google_Service_YouTube_PlaylistSnippet */
+		$playlist_snippet = $response_items[0]->snippet;
+
 		$fetch_videos(
 			[
 				'maxResults' => 50,
@@ -373,7 +407,7 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 		);
 		$cache['playlists'][$playlist_id] = [
 			$response->etag,
-			$response->items[0]->snippet->title,
+			$playlist_snippet->title,
 			array_keys($videos[$playlist_id]),
 		];
 
@@ -443,18 +477,26 @@ $fetch_all_playlists = static function (array $args) use (
 		return;
 	}
 
+	/** @var Google_Service_YouTube_PlaylistListResponse */
 	$response = $service->playlists->listPlaylists(
 		'id,snippet',
 		$args
 	);
 
-	foreach ($response->items as $playlist) {
+	/** @var list<Google_Service_YouTube_Playlist> */
+	$response_items = $response->items;
+
+	foreach ($response_items as $playlist) {
 		if ( ! isset($playlists[$playlist->id])) {
+			/** @var Google_Service_YouTube_PlaylistSnippet */
+			$playlist_snippet = $playlist->snippet;
+
 			$other_playlists_on_channel[$playlist->id] = [
-				$playlist->snippet->title,
+				$playlist_snippet->title,
 				[],
 			];
 
+			/** @var Google_Service_YouTube_PlaylistListResponse */
 			$cache_response = $service->playlists->listPlaylists(
 				'id,snippet',
 				[
@@ -476,7 +518,7 @@ $fetch_all_playlists = static function (array $args) use (
 
 				$cache['playlists'][$playlist->id] = [
 					$cache_response->etag,
-					$playlist->snippet->title,
+					$playlist_snippet->title,
 					array_keys($other_playlists_on_channel[$playlist->id][1][$playlist->id]),
 				];
 
