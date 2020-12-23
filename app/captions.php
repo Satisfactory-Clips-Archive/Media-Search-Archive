@@ -17,6 +17,9 @@ use function preg_quote;
 use function preg_replace_callback;
 use SimpleXMLElement;
 
+/**
+ * @return list<string>
+ */
 function captions(string $video_id) : array
 {
 	$html_cache = __DIR__ . '/captions/' . $video_id . '.html';

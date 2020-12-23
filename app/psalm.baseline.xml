@@ -148,7 +148,7 @@
       <code>$topic_hierarchy[$playlist_id]</code>
       <code>$topic_hierarchy[$playlist_id]</code>
     </MixedArrayTypeCoercion>
-    <MixedAssignment occurrences="59">
+    <MixedAssignment occurrences="58">
       <code>$args['pageToken']</code>
       <code>$args['pageToken']</code>
       <code>$cache</code>
@@ -160,7 +160,6 @@
       <code>$cache_response</code>
       <code>$cached_playlist_data</code>
       <code>$cached_playlist_id</code>
-      <code>$caption_line</code>
       <code>$data</code>
       <code>$data</code>
       <code>$data</code>
@@ -227,11 +226,10 @@
       <code>listPlaylists</code>
       <code>listVideos</code>
     </MixedMethodCall>
-    <MixedOperand occurrences="11">
+    <MixedOperand occurrences="10">
       <code>$a[2]</code>
       <code>$cache['playlistItems'][$video_id][1]</code>
       <code>$cache['playlistItems'][$video_id][1]</code>
-      <code>$caption_line</code>
       <code>$depth</code>
       <code>$depth</code>
       <code>$line</code>
