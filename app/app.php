@@ -269,7 +269,6 @@ $fetch_videos = static function (
 	&$cache,
 	$update_cache,
 	&$object_cache_captions,
-	$transcriptions,
 	$skip_fetch,
 	&$fetch_videos
 ) : void {
