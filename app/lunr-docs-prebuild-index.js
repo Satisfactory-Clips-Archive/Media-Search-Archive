@@ -1,5 +1,9 @@
 const lunr = require('lunr');
-const documents = require('./lunr-docs-preload.json');
+const documents = Object.entries(require('./lunr-docs-preload.json')).map(
+	(e) => {
+		return e[1];
+	}
+);
 
 const stdout = process.stdout;
 

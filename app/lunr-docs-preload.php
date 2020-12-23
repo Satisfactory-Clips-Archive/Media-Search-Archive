@@ -252,5 +252,5 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 
 file_put_contents(
 	__DIR__ . '/lunr-docs-preload.json',
-	json_encode(array_values($out), JSON_PRETTY_PRINT)
+	json_encode($out, JSON_PRETTY_PRINT)
 );
