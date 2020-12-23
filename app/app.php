@@ -759,7 +759,7 @@ foreach ($preloaded_faq as $topic => $values) {
 $faq_playlist_data = [];
 $faq_playlist_data_dates = [];
 
-foreach ($playlist_metadata as $metadata_path => $prepend_path) {
+foreach (array_keys($playlist_metadata) as $metadata_path) {
 	/** @var array<string, string> */
 	$faq_playlist_data = json_decode(file_get_contents($metadata_path), true);
 
@@ -1972,8 +1972,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	}
 
 	$playlist_ids = array_keys(($cache['playlists'] ?? []));
-
-	$topic_hierarchy_keys = array_keys($topic_hierarchy);
 
 	foreach ($playlist_ids as $playlist_id) {
 		if (isset($data[$playlist_id])) {

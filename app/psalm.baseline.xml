@@ -274,7 +274,7 @@
     <RedundantCondition occurrences="1">
       <code>is_array($v)</code>
     </RedundantCondition>
-    <UnusedVariable occurrences="13">
+    <UnusedVariable occurrences="11">
       <code>$already_in_faq</code>
       <code>$autocategorise</code>
       <code>$clear_nopes</code>
@@ -286,8 +286,6 @@
       <code>$k</code>
       <code>$object_cache_videos</code>
       <code>$playlists</code>
-      <code>$prepend_path</code>
-      <code>$topic_hierarchy_keys</code>
     </UnusedVariable>
   </file>
 </files>
