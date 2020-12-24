@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Q&A Clips Archive Search</title>
+<style>
+*
+{
+	box-sizing: border-box ;
+	margin: 0 ;
+	padding: 0 ;
+	font: inherit ;
+	color: inherit ;
+	font-size: 1em ;
+}
+
+ol, ul
+{
+	list-style: inside none ;
+}
+
+.results > ol
+{
+	padding: .5em ;
+}
+
+.results > ol > li
+{
+	padding: 1em ;
+	margin: .5em ;
+	border: 1px solid #000 ;
+}
+
+h1,
+h2,
+h3
+{
+	font-weight: bolder ;
+	margin-top: .25em ;
+}
+
+h1
+{
+	font-size: 2em ;
+}
+h2
+{
+	font-size: 1.6em ;
+}
+h3
+{
+	font-size: 1.2em ;
+}
+
+aside
+{
+	white-space: pre-wrap ;
+	font-family: monospace ;
+}
+</style>
+<script src="./lunr.min.js"></script>
+<script src="./mark.es6.min.js"></script>
+<link rel="preload" as="fetch" crossorigin="anonymous" href="./lunr.json">
+<link rel="preload" as="fetch" crossorigin="anonymous" href="./docs.json">
+<template id="loading">
+	<section>
+		<header>Loading</header>
+		<section>
+			<p>Please be patient while the application loads.</p>
+		</section>
+	</section>
+</template>
+<template id="ready">
+	<section>
+		<header>
+			<h1>Q&A Clips Archive Search <output for="search"></h1>
+		</header>
+		<section>
+			<input type="search" id="search">
+		</section>
+		<section class="results">
+		</section>
+	</section>
+</template>
+<template id="document-result">
+	<li>
+		<section>
+			<h1></h1>
+			<h2></h2>
+			<div></div>
+			<h3>Topics</h3>
+			<ul></ul>
+			<h3>Transcript</h3>
+			<aside></aside>
+		</section>
+		<!--
+		<button class="copy" type="button">Copy to Clipboard</button>
+		-->
+	</li>
+</template>
+</head>
+<body>
+<section id="not-ready">
+	<header>
+		<h1>JavaScript Required</h1>
+	</header>
+	<section>
+		<p>JavaScript is required for this application to function.</p>
+		<p>If you can still see this notice,
+			then the application is either not ready,
+			or your browser is not supported.</p>
+	</section>
+</section>
+<script async defer>
+(async () => {
+	const not_ready = document.getElementById('not-ready');
+	const loading = document.getElementById('loading').content.cloneNode(
+		true
+	);
+	const ready = document.getElementById('ready').content.cloneNode(
+		true
+	);
+	const search_result_template = document.getElementById(
+		'document-result'
+	).content;
+
+	not_ready.parentNode.replaceChild(loading, not_ready);
+
+	const fetch_prebuilt_index = fetch('./lunr.json');
+	const fetch_docs = fetch('./docs.json');
+
+	const [
+		prebuilt_index,
+		docs,
+	] = await Promise.all((await Promise.all([
+		fetch_prebuilt_index,
+		fetch_docs,
+	])).map((e) => e.json()));
+
+	const index = lunr.Index.load(prebuilt_index);
+
+	const searchbar = ready.querySelector('input[type="search"]');
+	const results_container = ready.querySelector('.results');
+	const result_count = ready.querySelector('header output[for="search"]');
+
+	let timeout;
+
+	function search (query) {
+		return index.search(query).map((result) => {
+			return docs[result.ref];
+		});
+	};
+
+	function perform_search () {
+		results_container.textContent = '';
+
+		cancelAnimationFrame(timeout);
+
+		timeout = requestAnimationFrame(() => {
+			const query = searchbar.value;
+			document.head.querySelector('title').textContent = `Q&A Clips Archive Search - ${query}`;
+			location.hash = '?q=' + encodeURIComponent(query);
+
+			const docs_results = search(query);
+
+			result_count.textContent = '(' + docs_results.length + ' results found)';
+
+			if (docs_results.length > 0) {
+				const frag = document.createElement('ol');
+
+				docs_results.map((doc) => {
+					const node = search_result_template.cloneNode(true);
+
+					node.querySelector('h1').textContent = (new Date(doc.date)).toLocaleDateString(
+						'en-GB',
+						{ year: 'numeric', month: 'long', day: 'numeric' }
+					) + ' Livestream';
+					node.querySelector('h2').textContent = doc.title;
+
+					if (doc.urls.length > 1) {
+						var urls_dest = document.createElement('ol');
+
+						doc.urls.map((url, i) => {
+							const anchor = document.createElement('a');
+							const part = document.createElement('li');
+
+							anchor.rel = 'noopener';
+							anchor.target = '_blank';
+							anchor.textContent = url;
+							anchor.href = url;
+
+							part.textContent = `Part ${i + 1}`;
+							part.appendChild(anchor);
+
+							return part;
+						}).forEach((subnode) => {
+							urls_dest.appendChild(subnode);
+						});
+					} else {
+						var urls_dest = document.createElement('p');
+						const anchor = document.createElement('a');
+
+						anchor.rel = 'noopener';
+						anchor.target = '_blank';
+						anchor.textContent = doc.urls[0];
+						anchor.href = doc.urls[0];
+
+						urls_dest.appendChild(anchor);
+					}
+
+					doc.topics.map((topic) => {
+						const subnode = document.createElement('li');
+						const anchor = document.createElement('a');
+
+						anchor.rel = 'noopener';
+						anchor.target = 'blank';
+						anchor.textContent = topic;
+						anchor.href = `https://github.com/SignpostMarv/twitch-clip-notes/blob/main/coffeestainstudiosdevs/satisfactory/topics/${topic}.md`;
+
+						subnode.appendChild(anchor);
+
+						return subnode
+					}).forEach((subnode) => {
+						node.querySelector('ul').appendChild(subnode);
+					});
+
+					node.querySelector('section').replaceChild(urls_dest, node.querySelector('div'));
+
+					node.querySelector('aside').textContent = doc.transcription;
+
+					(new Mark(node.querySelector('aside'))).mark(query);
+
+					return node;
+				}).forEach((node) => {
+					frag.appendChild(node);
+				});
+
+				results_container.appendChild(frag);
+			}
+		});
+	};
+
+	searchbar.addEventListener('keyup', perform_search);
+	searchbar.addEventListener('blur', perform_search);
+	searchbar.addEventListener('change', perform_search);
+
+	if (location.hash.match(/^#\?q=.*/)) {
+		searchbar.value = decodeURIComponent(location.hash.substr(4));
+		perform_search();
+	}
+
+	document.body.firstElementChild.parentNode.replaceChild(
+		ready,
+		document.body.firstElementChild
+	);
+
+	/**
+	document.body.addEventListener(
+		'click',
+		(e) => {
+			console.log('foo');
+			if ((e.target instanceof HTMLButtonElement) && e.target.classList.contains('copy')) {
+				navigator.clipboard.writeText(e.target.parentNode.querySelector('section').textContent);
+			}
+		},
+		{
+			capture: true,
+			passive: true,
+		}
+	);
+	*/
+})();
+</script>
+</body>
+</html>

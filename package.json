@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lunr": "^2.3.9",
+    "mark.js": "^8.11.1"
+  }
+}
