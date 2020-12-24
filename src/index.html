@@ -62,6 +62,7 @@ aside
 <script src="./mark.es6.min.js"></script>
 <link rel="preload" as="fetch" crossorigin="anonymous" href="./lunr.json">
 <link rel="preload" as="fetch" crossorigin="anonymous" href="./docs.json">
+<link rel="preload" as="fetch" crossorigin="anonymous" href="./synonyms.json">
 <template id="loading">
 	<section>
 		<header>Loading</header>
@@ -76,7 +77,10 @@ aside
 			<h1>Q&A Clips Archive Search <output for="search"></h1>
 		</header>
 		<section>
-			<input type="search" id="search">
+			<form>
+				<input type="search" id="search" required>
+				<button type="submit" title="Search">🔎</button>
+			</form>
 		</section>
 		<section class="results">
 		</section>
@@ -128,17 +132,38 @@ aside
 
 	const fetch_prebuilt_index = fetch('./lunr.json');
 	const fetch_docs = fetch('./docs.json');
+	const fetch_synonyms = fetch('./synonyms.json');
 
 	const [
 		prebuilt_index,
 		docs,
+		synonyms,
 	] = await Promise.all((await Promise.all([
 		fetch_prebuilt_index,
 		fetch_docs,
+		fetch_synonyms,
 	])).map((e) => e.json()));
+
+	const synonym_keys = Object.keys(synonyms);
+
+	lunr.Pipeline.registerFunction(
+		(token) => {
+			const lowercase = token.toString().toLowerCase();
+
+			if (synonym_keys.includes(synonyms)) {
+				return token.update(() => {
+					return synonyms[lowercase];
+				});
+			}
+
+			return token;
+		},
+		'aliasSatisfactoryVocabulary'
+	);
 
 	const index = lunr.Index.load(prebuilt_index);
 
+	const form = ready.querySelector('form');
 	const searchbar = ready.querySelector('input[type="search"]');
 	const results_container = ready.querySelector('.results');
 	const result_count = ready.querySelector('header output[for="search"]');
@@ -161,7 +186,9 @@ aside
 			document.head.querySelector('title').textContent = `Q&A Clips Archive Search - ${query}`;
 			location.hash = '?q=' + encodeURIComponent(query);
 
-			const docs_results = search(query);
+			const docs_results = search(query.split(' ').map((e) => {
+				return e.replace(/\.+$/, '');
+			}).join(' '));
 
 			result_count.textContent = '(' + docs_results.length + ' results found)';
 
@@ -228,7 +255,12 @@ aside
 
 					node.querySelector('aside').textContent = doc.transcription;
 
-					(new Mark(node.querySelector('aside'))).mark(query);
+					(new Mark(node.querySelector('aside'))).mark(query, {
+						accuracy: 'complementary',
+						caseSensitive: false,
+						separateWordSearch: true,
+						synonyms,
+					});
 
 					return node;
 				}).forEach((node) => {
@@ -240,14 +272,27 @@ aside
 		});
 	};
 
+	/*
 	searchbar.addEventListener('keyup', perform_search);
 	searchbar.addEventListener('blur', perform_search);
 	searchbar.addEventListener('change', perform_search);
+	*/
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
+		if (searchbar.checkValidity()) {
+			perform_search();
+		}
+	});
 
+	function hashsearch() {
 	if (location.hash.match(/^#\?q=.*/)) {
 		searchbar.value = decodeURIComponent(location.hash.substr(4));
 		perform_search();
 	}
+	}
+
+	addEventListener('hashchange', hashsearch, false);
+	hashsearch();
 
 	document.body.firstElementChild.parentNode.replaceChild(
 		ready,
