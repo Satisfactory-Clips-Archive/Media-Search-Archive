@@ -78,7 +78,7 @@ aside
 		</header>
 		<section>
 			<form>
-				<input type="search" id="search" required>
+				<input type="search" id="search" required name="q">
 				<button type="submit" title="Search">🔎</button>
 			</form>
 		</section>
@@ -169,6 +169,7 @@ aside
 	const result_count = ready.querySelector('header output[for="search"]');
 
 	let timeout;
+	let last_query = '';
 
 	function search (query) {
 		return index.search(query).map((result) => {
@@ -183,8 +184,16 @@ aside
 
 		timeout = requestAnimationFrame(() => {
 			const query = searchbar.value;
-			document.head.querySelector('title').textContent = `Q&A Clips Archive Search - ${query}`;
-			location.hash = '?q=' + encodeURIComponent(query);
+
+			if (query === last_query) {
+				return;
+			}
+
+			last_query = query;
+
+			const title = `Q&A Clips Archive Search - ${query}`;
+			document.head.querySelector('title').textContent = title;
+			history.replaceState({}, title, '?q=' + query);
 
 			const docs_results = search(query.split(' ').map((e) => {
 				return e.replace(/\.+$/, '');
@@ -285,13 +294,22 @@ aside
 	});
 
 	function hashsearch() {
-		if (location.hash.match(/^#\?q=.*/)) {
-			searchbar.value = decodeURIComponent(location.hash.substr(4));
+		const regex = /^#?\?q=([^&]*)/;
+
+		let match = regex.exec(location.hash);
+
+		match = match || /^#?\?q=([^&]*)/.exec(location.search);
+
+		if (match) {
+			searchbar.value = decodeURIComponent(match[1]);
 			perform_search();
 		}
 	}
 
 	addEventListener('hashchange', hashsearch, false);
+	window.onpopstate = () => {
+		hashsearch();
+	};
 	hashsearch();
 
 	document.body.firstElementChild.parentNode.replaceChild(
