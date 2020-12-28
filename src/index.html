@@ -285,10 +285,10 @@ aside
 	});
 
 	function hashsearch() {
-	if (location.hash.match(/^#\?q=.*/)) {
-		searchbar.value = decodeURIComponent(location.hash.substr(4));
-		perform_search();
-	}
+		if (location.hash.match(/^#\?q=.*/)) {
+			searchbar.value = decodeURIComponent(location.hash.substr(4));
+			perform_search();
+		}
 	}
 
 	addEventListener('hashchange', hashsearch, false);
