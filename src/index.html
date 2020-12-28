@@ -80,6 +80,19 @@ aside
 			<form>
 				<input type="search" id="search" required name="q">
 				<button type="submit" title="Search">🔎</button>
+				<fieldset>
+					<legend>Dates</legend>
+					<ul>
+						<li>
+							<label for="date-from">Date From</label>
+							<input id="date-from" name="df" type="date" min="2020-09-01" step="7">
+						</li>
+						<li>
+							<label for="date-to">Date To</label>
+							<input id="date-to" name="dt" type="date" min="2020-09-01" step="7">
+						</li>
+					</ul>
+				</fieldset>
 			</form>
 		</section>
 		<section class="results">
@@ -168,6 +181,33 @@ aside
 	const results_container = ready.querySelector('.results');
 	const result_count = ready.querySelector('header output[for="search"]');
 
+	const maybe_date_max = [0, 20200901];
+
+	for (const doc_entry of Object.entries(docs)) {
+		const [, doc] = doc_entry;
+		const maybe = parseInt(doc.date.replace(/\-/g, ''), 10);
+
+		if ( ! maybe_date_max.includes(maybe)) {
+			maybe_date_max.push(maybe);
+		}
+	}
+
+	const date_max_parts = /^(\d+)(\d{2})(\d{2})$/.exec(Math.max(...maybe_date_max).toString(10));
+	const date_max = `${
+			date_max_parts[1]
+		}-${
+			date_max_parts[2]
+		}-${
+			date_max_parts[3]
+		}`;
+
+	const date_from = form.querySelector('#date-from');
+	const date_to = form.querySelector('#date-to');
+
+	date_from.max = date_to.max = date_max;
+	date_from.value = '2020-09-01';
+	date_to.value = date_to.max;
+
 	let timeout;
 	let last_query = '';
 
@@ -184,20 +224,48 @@ aside
 
 		timeout = requestAnimationFrame(() => {
 			const query = searchbar.value;
-
-			if (query === last_query) {
-				return;
-			}
+			const title = `Q&A Clips Archive Search - ${query}`;
 
 			last_query = query;
 
-			const title = `Q&A Clips Archive Search - ${query}`;
+			const formdata = new FormData(form);
+			const filter_date_from = parseInt(
+				formdata.get('df').replace(/\-/g, ''),
+				10
+			);
+			const filter_date_to = parseInt(
+				formdata.get('dt').replace(/\-/g, ''),
+				10
+			);
+
+			console.log(filter_date_from, filter_date_to);
+
 			document.head.querySelector('title').textContent = title;
-			history.replaceState({}, title, '?q=' + query);
+			history.replaceState(
+				{},
+				title,
+				`?q=${
+					encodeURIComponent(last_query)
+				}&df=${
+					encodeURIComponent(formdata.get('df'))
+				}&dt=${
+					encodeURIComponent(formdata.get('dt'))
+				}`
+			);
 
 			const docs_results = search(query.split(' ').map((e) => {
 				return e.replace(/\.+$/, '');
-			}).join(' '));
+			}).join(' ')).filter((doc) => {
+				const dateint = parseInt(doc.date.replace(/\-/g, ''), 10);
+
+				if (doc.date === '2020-12-15') {
+					console.log(dateint, filter_date_from, filter_date_to);
+				}
+
+				return dateint >= filter_date_from && dateint <= filter_date_to;
+			});
+
+			console.log(docs_results);
 
 			result_count.textContent = '(' + docs_results.length + ' results found)';
 
