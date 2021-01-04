@@ -93,6 +93,25 @@ aside
 						</li>
 					</ul>
 				</fieldset>
+				<fieldset>
+					<legend>Advanced</legend>
+					<p>Advanced settings for the client-side search.</p>
+					<ul>
+						<li>
+							<label
+								for="min-score"
+								title="Minimum Search Score"
+							>min. score</label>
+							<input
+								id="min-score"
+								name="ms"
+								inputmode="numeric"
+								pattern="[0-9]+\.[0-9]+"
+								value="0.0"
+							>
+						</li>
+					</ul>
+				</fieldset>
 			</form>
 		</section>
 		<section class="results">
@@ -130,6 +149,10 @@ aside
 </section>
 <script async defer>
 (async () => {
+	if ( ! (URLSearchParams)) {
+		throw new Error('Unsupported');
+	}
+
 	const not_ready = document.getElementById('not-ready');
 	const loading = document.getElementById('loading').content.cloneNode(
 		true
@@ -203,6 +226,7 @@ aside
 
 	const date_from = form.querySelector('#date-from');
 	const date_to = form.querySelector('#date-to');
+	const score_filter = form.querySelector('#min-score');
 
 	date_from.max = date_to.max = date_max;
 	date_from.value = '2020-09-01';
@@ -237,6 +261,7 @@ aside
 				formdata.get('dt').replace(/\-/g, ''),
 				10
 			);
+			const filter_min_score = parseFloat(formdata.get('ms'));
 
 			document.head.querySelector('title').textContent = title;
 			history.replaceState(
@@ -248,16 +273,22 @@ aside
 					encodeURIComponent(formdata.get('df'))
 				}&dt=${
 					encodeURIComponent(formdata.get('dt'))
+				}&ms=${
+					encodeURIComponent(formdata.get('ms'))
 				}`
 			);
 
 			const docs_results = search(query.split(' ').map((e) => {
 				return e.replace(/\.+$/, '');
 			}).join(' ')).filter((e) => {
-				const [doc] = e;
+				const [doc, result] = e;
 				const dateint = parseInt(doc.date.replace(/\-/g, ''), 10);
 
-				return dateint >= filter_date_from && dateint <= filter_date_to;
+				return (
+					dateint >= filter_date_from
+					&& dateint <= filter_date_to
+					&& result.score >= filter_min_score
+				);
 			});
 
 			result_count.textContent = '(' + docs_results.length + ' results found)';
@@ -365,19 +396,33 @@ aside
 	});
 
 	function hashsearch() {
-		const regex = /^#?\?q=([^&]*)/;
+		const params = new URLSearchParams(location.search);
 
-		let match = regex.exec(location.hash);
+		if (params.has('q')) {
+			searchbar.value = params.get('q');
 
-		match = match || /^#?\?q=([^&]*)/.exec(location.search);
+			if (params.has('df')) {
+				date_from.value = params.get('df');
+			} else {
+				date_from.value = date_from.min;
+			}
 
-		if (match) {
-			searchbar.value = decodeURIComponent(match[1]);
+			if (params.has('dt')) {
+				date_to.value = params.get('dt');
+			} else {
+				date_to.value = date_to.max;
+			}
+
+			if (params.has('ms')) {
+				score_filter.value = params.get('ms');
+			} else {
+				score_filter.value = '0.0';
+			}
+
 			perform_search();
 		}
 	}
 
-	addEventListener('hashchange', hashsearch, false);
 	window.onpopstate = () => {
 		hashsearch();
 	};
