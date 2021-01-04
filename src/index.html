@@ -212,7 +212,6 @@ aside
 	let last_query = '';
 
 	function search (query) {
-		console.log(index.search(query));
 		return index.search(query).map((result) => {
 			return [docs[result.ref], result];
 		});
