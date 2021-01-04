@@ -331,10 +331,10 @@ fieldset:not(:focus-within) > legend ~ *
 						doc_date.getDate() +
 						ordinals[doc_date.getDate() % 10] +
 						' ' +
-					doc_date.toLocaleDateString(
+						doc_date.toLocaleDateString(
 						'en-GB',
-						{ year: 'numeric', month: 'long'}
-					) + ' Livestream';
+							{ year: 'numeric', month: 'long'}
+						) + ' Livestream';
 					node.querySelector('h2').textContent = doc.title;
 
 					if (doc.urls.length > 1) {
