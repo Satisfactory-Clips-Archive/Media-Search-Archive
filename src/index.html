@@ -59,7 +59,7 @@ aside
 }
 </style>
 <script src="./lunr.min.js"></script>
-<script src="./mark.es6.min.js"></script>
+<script src="./lunr-highlighter.js"></script>
 <link rel="preload" as="fetch" crossorigin="anonymous" href="./lunr.json">
 <link rel="preload" as="fetch" crossorigin="anonymous" href="./docs.json">
 <link rel="preload" as="fetch" crossorigin="anonymous" href="./synonyms.json">
@@ -212,8 +212,9 @@ aside
 	let last_query = '';
 
 	function search (query) {
+		console.log(index.search(query));
 		return index.search(query).map((result) => {
-			return docs[result.ref];
+			return [docs[result.ref], result];
 		});
 	};
 
@@ -238,8 +239,6 @@ aside
 				10
 			);
 
-			console.log(filter_date_from, filter_date_to);
-
 			document.head.querySelector('title').textContent = title;
 			history.replaceState(
 				{},
@@ -255,24 +254,20 @@ aside
 
 			const docs_results = search(query.split(' ').map((e) => {
 				return e.replace(/\.+$/, '');
-			}).join(' ')).filter((doc) => {
+			}).join(' ')).filter((e) => {
+				const [doc] = e;
 				const dateint = parseInt(doc.date.replace(/\-/g, ''), 10);
-
-				if (doc.date === '2020-12-15') {
-					console.log(dateint, filter_date_from, filter_date_to);
-				}
 
 				return dateint >= filter_date_from && dateint <= filter_date_to;
 			});
-
-			console.log(docs_results);
 
 			result_count.textContent = '(' + docs_results.length + ' results found)';
 
 			if (docs_results.length > 0) {
 				const frag = document.createElement('ol');
 
-				docs_results.map((doc) => {
+				docs_results.map((e) => {
+					const [doc, result] = e;
 					const node = search_result_template.cloneNode(true);
 
 					node.querySelector('h1').textContent = (new Date(doc.date)).toLocaleDateString(
@@ -328,16 +323,25 @@ aside
 						node.querySelector('ul').appendChild(subnode);
 					});
 
+
 					node.querySelector('section').replaceChild(urls_dest, node.querySelector('div'));
 
-					node.querySelector('aside').textContent = doc.transcription;
+					const transcription = node.querySelector('aside');
+					transcription.textContent = doc.transcription;
 
-					(new Mark(node.querySelector('aside'))).mark(query, {
-						accuracy: 'complementary',
-						caseSensitive: false,
-						separateWordSearch: true,
-						synonyms,
+					const positions = [];
+
+					Object.keys(result.matchData.metadata).forEach((term) => {
+						positions.push(...(
+								result.matchData.metadata[term].transcription
+								|| {position:[]}
+							).position
+						);
 					});
+						lunrhighlighter(
+							transcription,
+							positions
+						);
 
 					return node;
 				}).forEach((node) => {
