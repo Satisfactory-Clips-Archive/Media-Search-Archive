@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "lunr": "^2.3.9"
+  },
+  "devDependencies": {
+    "wasm-brotli": "^2.0.2",
+    "wasm-zopfli": "^1.0.2"
   }
 }

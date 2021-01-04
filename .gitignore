@@ -3,3 +3,5 @@
 /src/lunr.json
 /src/lunr.min.js
 /src/mark.es6.min.js
+/src/*.br
+/src/*.gz
