@@ -13,10 +13,6 @@ const {
 const write = promisify(writeFile);
 const read = promisify(readFile);
 
-	async function squish(path) {
-		const uncompressed = await readFile(path);
-	}
-
 (async () => {
 	const uncompressed = await Promise.all([
 		read('./src/docs.json'),
