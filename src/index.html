@@ -241,6 +241,19 @@ fieldset:not(:focus-within) > legend ~ *
 	const date_to = form.querySelector('#date-to');
 	const score_filter = form.querySelector('#min-score');
 
+	const ordinals = [
+		'th',
+		'st',
+		'nd',
+		'rd',
+		'th',
+		'th',
+		'th',
+		'th',
+		'th',
+		'th',
+	];
+
 	date_from.max = date_to.max = date_max;
 	date_from.value = '2020-09-01';
 	date_to.value = date_to.max;
@@ -312,10 +325,15 @@ fieldset:not(:focus-within) > legend ~ *
 				docs_results.map((e) => {
 					const [doc, result] = e;
 					const node = search_result_template.cloneNode(true);
+					const doc_date = new Date(doc.date);
 
-					node.querySelector('h1').textContent = (new Date(doc.date)).toLocaleDateString(
+					node.querySelector('h1').textContent =
+						doc_date.getDate() +
+						ordinals[doc_date.getDate() % 10] +
+						' ' +
+					doc_date.toLocaleDateString(
 						'en-GB',
-						{ year: 'numeric', month: 'long', day: 'numeric' }
+						{ year: 'numeric', month: 'long'}
 					) + ' Livestream';
 					node.querySelector('h2').textContent = doc.title;
 
