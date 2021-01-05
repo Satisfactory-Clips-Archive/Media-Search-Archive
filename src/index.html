@@ -386,6 +386,18 @@ fieldset:not(:focus-within) > legend ~ *
 		}
 	}
 
+	function aliasSatisfactoryVocabulary (token) {
+		const lowercase = token.toString().toLowerCase();
+
+		if (synonym_keys.includes(synonyms)) {
+			return token.update(() => {
+				return synonyms[lowercase];
+			});
+		}
+
+		return token;
+	}
+
 	//#region template & output
 
 	const not_ready = document.getElementById('not-ready');
@@ -442,17 +454,7 @@ fieldset:not(:focus-within) > legend ~ *
 	not_ready.parentNode.replaceChild(loading, not_ready);
 
 	lunr.Pipeline.registerFunction(
-		(token) => {
-			const lowercase = token.toString().toLowerCase();
-
-			if (synonym_keys.includes(synonyms)) {
-				return token.update(() => {
-					return synonyms[lowercase];
-				});
-			}
-
-			return token;
-		},
+		aliasSatisfactoryVocabulary,
 		'aliasSatisfactoryVocabulary'
 	);
 
