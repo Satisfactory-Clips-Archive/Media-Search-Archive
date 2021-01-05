@@ -267,7 +267,7 @@ fieldset:not(:focus-within) > legend ~ *
 		});
 	};
 
-	function perform_search () {
+	function perform_search (modify_state = true) {
 		results_container.textContent = '';
 
 		cancelAnimationFrame(timeout);
@@ -290,7 +290,8 @@ fieldset:not(:focus-within) > legend ~ *
 			const filter_min_score = parseFloat(formdata.get('ms'));
 
 			document.head.querySelector('title').textContent = title;
-			history.replaceState(
+			if (modify_state) {
+			history.pushState(
 				{},
 				title,
 				`?q=${
@@ -303,6 +304,7 @@ fieldset:not(:focus-within) > legend ~ *
 					encodeURIComponent(formdata.get('ms'))
 				}`
 			);
+			}
 
 			const docs_results = search(query.split(' ').map((e) => {
 				return e.replace(/\.+$/, '');
@@ -426,7 +428,7 @@ fieldset:not(:focus-within) > legend ~ *
 		}
 	});
 
-	function hashsearch() {
+	function hashsearch(modify_state = true) {
 		const params = new URLSearchParams(location.search);
 
 		if (params.has('q')) {
@@ -450,12 +452,12 @@ fieldset:not(:focus-within) > legend ~ *
 				score_filter.value = '0.0';
 			}
 
-			perform_search();
+			perform_search(modify_state);
 		}
 	}
 
 	window.onpopstate = () => {
-		hashsearch();
+		hashsearch(false);
 	};
 	hashsearch();
 
