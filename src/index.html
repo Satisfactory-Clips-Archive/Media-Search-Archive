@@ -191,6 +191,8 @@ fieldset:not(:focus-within) > legend ~ *
 		'th',
 	];
 	const maybe_date_max = [0, 20200901];
+	const topic_prefix = 'https://github.com/SignpostMarv/twitch-clip-notes/blob/main/coffeestainstudiosdevs/satisfactory/topics/';
+	const topic_suffix = '.md';
 
 	let timeout;
 	let last_query = '';
@@ -320,7 +322,7 @@ fieldset:not(:focus-within) > legend ~ *
 						anchor.rel = 'noopener';
 						anchor.target = 'blank';
 						anchor.textContent = topic;
-						anchor.href = `https://github.com/SignpostMarv/twitch-clip-notes/blob/main/coffeestainstudiosdevs/satisfactory/topics/${topic}.md`;
+						anchor.href = `${topic_prefix}${topic}${topic_suffix}`;
 
 						subnode.appendChild(anchor);
 
