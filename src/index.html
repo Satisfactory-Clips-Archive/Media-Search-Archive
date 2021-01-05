@@ -290,6 +290,7 @@ fieldset:not(:focus-within) > legend ~ *
 			const filter_min_score = parseFloat(formdata.get('ms'));
 
 			document.head.querySelector('title').textContent = title;
+
 			if (modify_state) {
 				history.pushState(
 					{},
@@ -386,7 +387,6 @@ fieldset:not(:focus-within) > legend ~ *
 						node.querySelector('ul').appendChild(subnode);
 					});
 
-
 					node.querySelector('section').replaceChild(urls_dest, node.querySelector('div'));
 
 					const transcription = node.querySelector('aside');
@@ -416,11 +416,6 @@ fieldset:not(:focus-within) > legend ~ *
 		});
 	};
 
-	/*
-	searchbar.addEventListener('keyup', perform_search);
-	searchbar.addEventListener('blur', perform_search);
-	searchbar.addEventListener('change', perform_search);
-	*/
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 		if (searchbar.checkValidity()) {
