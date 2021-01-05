@@ -97,11 +97,23 @@ fieldset:not(:focus-within) > legend ~ *
 					<ul>
 						<li>
 							<label for="date-from">Date From</label>
-							<input id="date-from" name="df" type="date" min="2020-09-01" step="7">
+							<input
+								id="date-from"
+								name="df"
+								type="date"
+								min="2020-09-01"
+								step="7"
+							>
 						</li>
 						<li>
 							<label for="date-to">Date To</label>
-							<input id="date-to" name="dt" type="date" min="2020-09-01" step="7">
+							<input
+								id="date-to"
+								name="dt"
+								type="date"
+								min="2020-09-01"
+								step="7"
+							>
 						</li>
 					</ul>
 				</fieldset>
@@ -228,7 +240,9 @@ fieldset:not(:focus-within) > legend ~ *
 		}
 	}
 
-	const date_max_parts = /^(\d+)(\d{2})(\d{2})$/.exec(Math.max(...maybe_date_max).toString(10));
+	const date_max_parts = /^(\d+)(\d{2})(\d{2})$/.exec(
+		Math.max(...maybe_date_max).toString(10)
+	);
 	const date_max = `${
 			date_max_parts[1]
 		}-${
@@ -320,7 +334,12 @@ fieldset:not(:focus-within) > legend ~ *
 				);
 			});
 
-			result_count.textContent = '(' + docs_results.length + ' results found)';
+			result_count.textContent =
+				(
+					'('
+					+ docs_results.length
+					+ ' results found)'
+				);
 
 			if (docs_results.length > 0) {
 				const frag = document.createElement('ol');
