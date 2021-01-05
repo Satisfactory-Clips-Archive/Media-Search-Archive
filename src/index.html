@@ -291,19 +291,19 @@ fieldset:not(:focus-within) > legend ~ *
 
 			document.head.querySelector('title').textContent = title;
 			if (modify_state) {
-			history.pushState(
-				{},
-				title,
-				`?q=${
-					encodeURIComponent(last_query)
-				}&df=${
-					encodeURIComponent(formdata.get('df'))
-				}&dt=${
-					encodeURIComponent(formdata.get('dt'))
-				}&ms=${
-					encodeURIComponent(formdata.get('ms'))
-				}`
-			);
+				history.pushState(
+					{},
+					title,
+					`?q=${
+						encodeURIComponent(last_query)
+					}&df=${
+						encodeURIComponent(formdata.get('df'))
+					}&dt=${
+						encodeURIComponent(formdata.get('dt'))
+					}&ms=${
+						encodeURIComponent(formdata.get('ms'))
+					}`
+				);
 			}
 
 			const docs_results = search(query.split(' ').map((e) => {
