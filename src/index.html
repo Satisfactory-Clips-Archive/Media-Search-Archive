@@ -178,83 +178,6 @@ fieldset:not(:focus-within) > legend ~ *
 		throw new Error('Unsupported');
 	}
 
-	const not_ready = document.getElementById('not-ready');
-	const loading = document.getElementById('loading').content.cloneNode(
-		true
-	);
-	const ready = document.getElementById('ready').content.cloneNode(
-		true
-	);
-	const search_result_template = document.getElementById(
-		'document-result'
-	).content;
-
-	not_ready.parentNode.replaceChild(loading, not_ready);
-
-	const fetch_prebuilt_index = fetch('./lunr.json');
-	const fetch_docs = fetch('./docs.json');
-	const fetch_synonyms = fetch('./synonyms.json');
-
-	const [
-		prebuilt_index,
-		docs,
-		synonyms,
-	] = await Promise.all((await Promise.all([
-		fetch_prebuilt_index,
-		fetch_docs,
-		fetch_synonyms,
-	])).map((e) => e.json()));
-
-	const synonym_keys = Object.keys(synonyms);
-
-	lunr.Pipeline.registerFunction(
-		(token) => {
-			const lowercase = token.toString().toLowerCase();
-
-			if (synonym_keys.includes(synonyms)) {
-				return token.update(() => {
-					return synonyms[lowercase];
-				});
-			}
-
-			return token;
-		},
-		'aliasSatisfactoryVocabulary'
-	);
-
-	const index = lunr.Index.load(prebuilt_index);
-
-	const form = ready.querySelector('form');
-	const searchbar = ready.querySelector('input[type="search"]');
-	const results_container = ready.querySelector('.results');
-	const result_count = ready.querySelector('header output[for="search"]');
-
-	const maybe_date_max = [0, 20200901];
-
-	for (const doc_entry of Object.entries(docs)) {
-		const [, doc] = doc_entry;
-		const maybe = parseInt(doc.date.replace(/\-/g, ''), 10);
-
-		if ( ! maybe_date_max.includes(maybe)) {
-			maybe_date_max.push(maybe);
-		}
-	}
-
-	const date_max_parts = /^(\d+)(\d{2})(\d{2})$/.exec(
-		Math.max(...maybe_date_max).toString(10)
-	);
-	const date_max = `${
-			date_max_parts[1]
-		}-${
-			date_max_parts[2]
-		}-${
-			date_max_parts[3]
-		}`;
-
-	const date_from = form.querySelector('#date-from');
-	const date_to = form.querySelector('#date-to');
-	const score_filter = form.querySelector('#min-score');
-
 	const ordinals = [
 		'th',
 		'st',
@@ -267,21 +190,18 @@ fieldset:not(:focus-within) > legend ~ *
 		'th',
 		'th',
 	];
-
-	date_from.max = date_to.max = date_max;
-	date_from.value = '2020-09-01';
-	date_to.value = date_to.max;
+	const maybe_date_max = [0, 20200901];
 
 	let timeout;
 	let last_query = '';
 
-	function search (query) {
-		return index.search(query).map((result) => {
+	function search (query, on_index) {
+		return on_index.search(query).map((result) => {
 			return [docs[result.ref], result];
 		});
 	};
 
-	function perform_search (modify_state = true) {
+	function perform_search (on_index, modify_state = true) {
 		results_container.textContent = '';
 
 		cancelAnimationFrame(timeout);
@@ -321,9 +241,12 @@ fieldset:not(:focus-within) > legend ~ *
 				);
 			}
 
-			const docs_results = search(query.split(' ').map((e) => {
-				return e.replace(/\.+$/, '');
-			}).join(' ')).filter((e) => {
+			const docs_results = search(
+				query.split(' ').map((e) => {
+					return e.replace(/\.+$/, '');
+				}).join(' '),
+				on_index
+			).filter((e) => {
 				const [doc, result] = e;
 				const dateint = parseInt(doc.date.replace(/\-/g, ''), 10);
 
@@ -435,14 +358,7 @@ fieldset:not(:focus-within) > legend ~ *
 		});
 	};
 
-	form.addEventListener('submit', (e) => {
-		e.preventDefault();
-		if (searchbar.checkValidity()) {
-			perform_search();
-		}
-	});
-
-	function hashsearch(modify_state = true) {
+	function hashsearch(on_index, modify_state = true) {
 		const params = new URLSearchParams(location.search);
 
 		if (params.has('q')) {
@@ -466,14 +382,117 @@ fieldset:not(:focus-within) > legend ~ *
 				score_filter.value = '0.0';
 			}
 
-			perform_search(modify_state);
+			perform_search(on_index, modify_state);
 		}
 	}
 
+	//#region template & output
+
+	const not_ready = document.getElementById('not-ready');
+	const loading = document.getElementById('loading').content.cloneNode(
+		true
+	);
+	const search_result_template = document.getElementById(
+		'document-result'
+	).content;
+
+	//#region page ready
+
+	const ready = document.getElementById('ready').content.cloneNode(
+		true
+	);
+
+	const searchbar = ready.querySelector('input[type="search"]');
+	const results_container = ready.querySelector('.results');
+	const result_count = ready.querySelector('header output[for="search"]');
+
+	//#region form
+
+	const form = ready.querySelector('form');
+	const date_from = form.querySelector('#date-from');
+	const date_to = form.querySelector('#date-to');
+	const score_filter = form.querySelector('#min-score');
+
+	//#endregion
+
+	//#endregion
+
+	//#endregion
+
+	//#region fetches
+
+	const fetch_prebuilt_index = fetch('./lunr.json');
+	const fetch_docs = fetch('./docs.json');
+	const fetch_synonyms = fetch('./synonyms.json');
+
+	const [
+		prebuilt_index,
+		docs,
+		synonyms,
+	] = await Promise.all((await Promise.all([
+		fetch_prebuilt_index,
+		fetch_docs,
+		fetch_synonyms,
+	])).map((e) => e.json()));
+
+	const synonym_keys = Object.keys(synonyms);
+
+	//#endregion
+
+	not_ready.parentNode.replaceChild(loading, not_ready);
+
+	lunr.Pipeline.registerFunction(
+		(token) => {
+			const lowercase = token.toString().toLowerCase();
+
+			if (synonym_keys.includes(synonyms)) {
+				return token.update(() => {
+					return synonyms[lowercase];
+				});
+			}
+
+			return token;
+		},
+		'aliasSatisfactoryVocabulary'
+	);
+
+	const index = lunr.Index.load(prebuilt_index);
+
+	for (const doc_entry of Object.entries(docs)) {
+		const [, doc] = doc_entry;
+		const maybe = parseInt(doc.date.replace(/\-/g, ''), 10);
+
+		if ( ! maybe_date_max.includes(maybe)) {
+			maybe_date_max.push(maybe);
+		}
+	}
+
+	const date_max_parts = /^(\d+)(\d{2})(\d{2})$/.exec(
+		Math.max(...maybe_date_max).toString(10)
+	);
+	const date_max = `${
+			date_max_parts[1]
+		}-${
+			date_max_parts[2]
+		}-${
+			date_max_parts[3]
+		}`;
+
+	date_from.max = date_to.max = date_max;
+	date_from.value = '2020-09-01';
+	date_to.value = date_to.max;
+
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
+		if (searchbar.checkValidity()) {
+			perform_search(index);
+		}
+	});
+
 	window.onpopstate = () => {
-		hashsearch(false);
+		hashsearch(index, false);
 	};
-	hashsearch();
+	hashsearch(index);
 
 	document.body.firstElementChild.parentNode.replaceChild(
 		ready,
