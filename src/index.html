@@ -306,9 +306,11 @@ fieldset:not(:focus-within) > legend ~ *
 			last_query = query;
 
 			const formdata = new FormData(form);
+			const a = date_values_sorted[parseInt(formdata.get('df'), 10)];
+			const b = date_values_sorted[parseInt(formdata.get('dt'), 10)];
 
-			formdata.set('df', date_int_to_date(date_values_sorted[parseInt(formdata.get('df'), 10)]));
-			formdata.set('dt', date_int_to_date(date_values_sorted[parseInt(formdata.get('dt'), 10)]));
+			formdata.set('df', date_int_to_date(Math.min(a, b)));
+			formdata.set('dt', date_int_to_date(Math.max(a, b)));
 
 			const filter_date_from = parseInt(
 				formdata.get('df').replace(/\-/g, ''),
