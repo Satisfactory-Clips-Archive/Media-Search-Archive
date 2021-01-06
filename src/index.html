@@ -52,6 +52,14 @@ h3
 	font-size: 1.2em ;
 }
 
+form h1,
+form h2,
+form h3
+{
+	font-size: 1em ;
+	font-weight: inherit ;
+}
+
 aside
 {
 	white-space: pre-wrap ;
@@ -63,9 +71,82 @@ legend[tabindex]
 	cursor: pointer ;
 }
 
+/*
 fieldset:not(:focus-within) > legend ~ *
 {
 	display: none ;
+}
+*/
+
+[aria-labelledby="date-slider-label"]
+{
+	display: grid ;
+	grid-template-rows: max-content 1em ;
+	width: 20em ;
+	overflow: hidden ;
+	position: relative ;
+	background: linear-gradient(to top, #ccc 1em, transparent 0) ;
+}
+
+[aria-labelledby="date-slider-label"] label
+{
+	position: absolute ;
+	clip-path: inset(50%) ;
+}
+
+[aria-labelledby="date-slider-label"] input
+{
+	grid-column: 1 ;
+	grid-row: 2 ;
+	background: none ;
+	pointer-events: none ;
+	z-index: 1 ;
+
+}
+
+[aria-labelledby="date-slider-label"] input:focus
+{
+	z-index: 2 ;
+	outline: dotted 1px currentcolor ;
+}
+
+[aria-labelledby="date-slider-label"] input,
+[aria-labelledby="date-slider-label"] input::-webkit-slider-runnable-track,
+[aria-labelledby="date-slider-label"] input::-webkit-slider-thumb
+{
+	-webkit-appearance: none ;
+}
+
+[aria-labelledby="date-slider-label"] input::-webkit-slider-runnable-track
+{
+	background: none ;
+	height: 100% ;
+	width: 100% ;
+}
+[aria-labelledby="date-slider-label"] input::-moz-range-track
+{
+	background: none ;
+	height: 100% ;
+	width: 100% ;
+}
+
+[aria-labelledby="date-slider-label"] input::-webkit-slider-thumb
+{
+	background: currentcolor ;
+	border: none ;
+	border-radius: 0 ;
+	pointer-events: auto ;
+	width: 1em ;
+	height: 1em ;
+}
+[aria-labelledby="date-slider-label"] input::-moz-range-thumb
+{
+	background: currentcolor ;
+	border: none ;
+	border-radius: 0 ;
+	pointer-events: auto ;
+	width: 1em ;
+	height: 1em ;
 }
 </style>
 <script src="./lunr.min.js"></script>
@@ -92,31 +173,29 @@ fieldset:not(:focus-within) > legend ~ *
 				<button type="submit" title="Search">🔎</button>
 				<fieldset>
 					<legend tabindex="0">Search Settings</legend>
-				<fieldset>
-					<legend tabindex="0">Dates</legend>
-					<ul>
-						<li>
+				<section
+					role="group"
+					aria-labelledby="date-slider-label"
+				>
+					<h1 id="date-slider-label">Date Range</h1>
 							<label for="date-from">Date From</label>
 							<input
 								id="date-from"
 								name="df"
-								type="date"
-								min="2020-09-01"
-								step="7"
+								type="range"
 							>
-						</li>
-						<li>
 							<label for="date-to">Date To</label>
 							<input
 								id="date-to"
 								name="dt"
-								type="date"
-								min="2020-09-01"
-								step="7"
+								type="range"
 							>
-						</li>
-					</ul>
-				</fieldset>
+					<output for="date-from date-to">
+						<output for="date-from"></output>
+						-
+						<output for="date-to"></output>
+					</output>
+				</section>
 				<fieldset>
 					<legend tabindex="0">Advanced</legend>
 					<p>Advanced settings for the client-side search.</p>
@@ -191,6 +270,9 @@ fieldset:not(:focus-within) > legend ~ *
 		'th',
 	];
 	const maybe_date_max = [0, 20200901];
+	const maybe_date_min = [Infinity, 20200901];
+	const date_values = [];
+	const date_values_sorted = [];
 	const topic_prefix = 'https://github.com/SignpostMarv/twitch-clip-notes/blob/main/coffeestainstudiosdevs/satisfactory/topics/';
 	const topic_suffix = '.md';
 
@@ -215,6 +297,10 @@ fieldset:not(:focus-within) > legend ~ *
 			last_query = query;
 
 			const formdata = new FormData(form);
+
+			formdata.set('df', date_int_to_date(date_values_sorted[parseInt(formdata.get('df'), 10)]));
+			formdata.set('dt', date_int_to_date(date_values_sorted[parseInt(formdata.get('dt'), 10)]));
+
 			const filter_date_from = parseInt(
 				formdata.get('df').replace(/\-/g, ''),
 				10
@@ -367,15 +453,15 @@ fieldset:not(:focus-within) > legend ~ *
 			searchbar.value = params.get('q');
 
 			if (params.has('df')) {
-				date_from.value = params.get('df');
+				date_from_value_by_date(params.get('df'));
 			} else {
-				date_from.value = date_from.min;
+				date_from_value_by_index(date_from.min);
 			}
 
 			if (params.has('dt')) {
-				date_to.value = params.get('dt');
+				date_to_value_by_date(params.get('dt'));
 			} else {
-				date_to.value = date_to.max;
+				date_to_value_by_index(date_to.min);
 			}
 
 			if (params.has('ms')) {
@@ -384,6 +470,8 @@ fieldset:not(:focus-within) > legend ~ *
 				score_filter.value = '0.0';
 			}
 
+			date_from_output_update();
+			date_to_output_update();
 			perform_search(on_index, modify_state);
 		}
 	}
@@ -398,6 +486,12 @@ fieldset:not(:focus-within) > legend ~ *
 		}
 
 		return token;
+	}
+
+	function date_int_to_date(int) {
+		const parts = /^(\d+)(\d{2})(\d{2})$/.exec(int.toString(10));
+
+		return `${parts[1]}-${parts[2]}-${parts[3]}`;
 	}
 
 	//#region template & output
@@ -426,6 +520,56 @@ fieldset:not(:focus-within) > legend ~ *
 	const date_from = form.querySelector('#date-from');
 	const date_to = form.querySelector('#date-to');
 	const score_filter = form.querySelector('#min-score');
+	const date_output = form.querySelector('output[for="date-from date-to"]');
+	const date_from_output = date_output.querySelector('[for="date-from"]');
+	const date_to_output = date_output.querySelector('[for="date-to"]');
+	const date_from_output_update = () => {
+		let value = date_values_sorted[date_from.value] || 'n/a';
+
+		if (Number.isInteger(value)) {
+			value = date_int_to_date(value);
+		}
+
+		date_from_output.textContent = value;
+	};
+	const date_to_output_update = () => {
+		let value = date_values_sorted[date_to.value] || 'n/a';
+
+		if (Number.isInteger(value)) {
+			value = date_int_to_date(value);
+		}
+
+		date_to_output.textContent = value;
+	};
+
+	date_from.addEventListener('change', date_from_output_update);
+	date_to.addEventListener('change', date_to_output_update);
+
+	function date_from_value_by_index(index) {
+		date_from.value = index;
+		date_from_output_update();
+	}
+
+	function date_from_value_by_date(date) {
+		date_from_value_by_index(
+			date_values_sorted.indexOf(
+				parseInt(date.replace(/\-/g, ''), 10)
+			)
+		);
+	}
+
+	function date_to_value_by_index(index) {
+		date_to.value = index;
+		date_to_output_update();
+	}
+
+	function date_to_value_by_date(date) {
+		date_to_value_by_index(
+			date_values_sorted.indexOf(
+				parseInt(date.replace(/\-/g, ''), 10)
+			)
+		);
+	}
 
 	//#endregion
 
@@ -468,23 +612,25 @@ fieldset:not(:focus-within) > legend ~ *
 
 		if ( ! maybe_date_max.includes(maybe)) {
 			maybe_date_max.push(maybe);
+			maybe_date_min.push(maybe);
+			date_values.push(maybe);
 		}
 	}
 
-	const date_max_parts = /^(\d+)(\d{2})(\d{2})$/.exec(
+	const date_max = (
 		Math.max(...maybe_date_max).toString(10)
 	);
-	const date_max = `${
-			date_max_parts[1]
-		}-${
-			date_max_parts[2]
-		}-${
-			date_max_parts[3]
-		}`;
+	const date_min = (
+		Math.min(...maybe_date_min).toString(10)
+	);
+	date_values.sort().forEach((e) => {
+		date_values_sorted.push(e);
+	});
 
-	date_from.max = date_to.max = date_max;
-	date_from.value = '2020-09-01';
-	date_to.value = date_to.max;
+	date_from.value = date_from.min = date_to.min = 0;
+	date_to.value = date_from.max = date_to.max = (date_values.length - 1);
+	date_from_output_update();
+	date_to_output_update();
 
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
@@ -496,7 +642,7 @@ fieldset:not(:focus-within) > legend ~ *
 	window.onpopstate = () => {
 		hashsearch(index, false);
 	};
-	hashsearch(index);
+	hashsearch(index, false);
 
 	document.body.firstElementChild.parentNode.replaceChild(
 		ready,
