@@ -165,7 +165,16 @@ fieldset:not(:focus-within) > legend ~ *
 <template id="ready">
 	<section>
 		<header>
-			<h1>Q&A Clips Archive Search <output for="search"></h1>
+			<h1>Q&A Clips Archive Search</h1>
+			<p>
+				<output for="search"></output>
+				covering the period
+				<output for="date-from date-to">
+					<output for="date-from"></output>
+					to
+					<output for="date-to"></output>
+				</output>
+			</p>
 		</header>
 		<section>
 			<form>
@@ -345,12 +354,13 @@ fieldset:not(:focus-within) > legend ~ *
 				);
 			});
 
-			result_count.textContent =
-				(
-					'('
-					+ docs_results.length
-					+ ' results found)'
-				);
+			result_count.textContent = `${
+					docs_results.length
+				} results found matching the term "${
+					query
+				}"`;
+			date_from_output_update(true);
+			date_to_output_update(true);
 
 			if (docs_results.length > 0) {
 				const frag = document.createElement('ol');
@@ -360,14 +370,10 @@ fieldset:not(:focus-within) > legend ~ *
 					const node = search_result_template.cloneNode(true);
 					const doc_date = new Date(doc.date);
 
-					node.querySelector('h1').textContent =
-						doc_date.getDate() +
-						ordinals[doc_date.getDate() % 10] +
-						' ' +
-						doc_date.toLocaleDateString(
-						'en-GB',
-							{ year: 'numeric', month: 'long'}
-						) + ' Livestream';
+					node.querySelector('h1').textContent = (
+						date_format(doc_date)
+						+ ' Livestream'
+					);
 					node.querySelector('h2').textContent = doc.title;
 
 					if (doc.urls.length > 1) {
@@ -523,7 +529,10 @@ fieldset:not(:focus-within) > legend ~ *
 	const date_output = form.querySelector('output[for="date-from date-to"]');
 	const date_from_output = date_output.querySelector('[for="date-from"]');
 	const date_to_output = date_output.querySelector('[for="date-to"]');
-	const date_from_output_update = () => {
+	const readable_date_output = ready.querySelector('output[for="date-from date-to"]');
+	const readable_date_from_output = readable_date_output.querySelector('[for="date-from"]');
+	const readable_date_to_output = readable_date_output.querySelector('[for="date-to"]');
+	const date_from_output_update = (update_readable = false) => {
 		let value = date_values_sorted[date_from.value] || 'n/a';
 
 		if (Number.isInteger(value)) {
@@ -531,8 +540,12 @@ fieldset:not(:focus-within) > legend ~ *
 		}
 
 		date_from_output.textContent = value;
+
+		if (update_readable) {
+			readable_date_from_output.textContent = date_format(new Date(value));
+		}
 	};
-	const date_to_output_update = () => {
+	const date_to_output_update = (update_readable = false) => {
 		let value = date_values_sorted[date_to.value] || 'n/a';
 
 		if (Number.isInteger(value)) {
@@ -540,12 +553,16 @@ fieldset:not(:focus-within) > legend ~ *
 		}
 
 		date_to_output.textContent = value;
+
+		if (update_readable) {
+			readable_date_to_output.textContent = date_format(new Date(value));
+		}
 	};
 
-	date_from.addEventListener('change', date_from_output_update);
-	date_to.addEventListener('change', date_to_output_update);
-	date_from.addEventListener('input', date_from_output_update);
-	date_to.addEventListener('input', date_to_output_update);
+	date_from.addEventListener('change', () => {date_from_output_update(); });
+	date_to.addEventListener('change', () => {date_to_output_update(); });
+	date_from.addEventListener('input', () => {date_from_output_update(); });
+	date_to.addEventListener('input', () => {date_to_output_update(); });
 
 	function date_from_value_by_index(index) {
 		date_from.value = index;
@@ -569,6 +586,18 @@ fieldset:not(:focus-within) > legend ~ *
 		date_to_value_by_index(
 			date_values_sorted.indexOf(
 				parseInt(date.replace(/\-/g, ''), 10)
+			)
+		);
+	}
+
+	function date_format (date) {
+		return (
+			date.getDate() +
+			ordinals[date.getDate() % 10] +
+			' ' +
+			date.toLocaleDateString(
+			'en-GB',
+				{ year: 'numeric', month: 'long'}
 			)
 		);
 	}
