@@ -544,6 +544,8 @@ fieldset:not(:focus-within) > legend ~ *
 
 	date_from.addEventListener('change', date_from_output_update);
 	date_to.addEventListener('change', date_to_output_update);
+	date_from.addEventListener('input', date_from_output_update);
+	date_to.addEventListener('input', date_to_output_update);
 
 	function date_from_value_by_index(index) {
 		date_from.value = index;
