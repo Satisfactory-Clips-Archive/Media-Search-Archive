@@ -1003,6 +1003,35 @@ $global_topic_hierarchy = array_map(
 
 $slugify = new Slugify();
 
+$topics_json = [];
+
+foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $hierarchy) {
+	$slug = $hierarchy;
+
+	$playlist_data = $cache['playlists'][$playlist_id];
+
+	[, $playlist_title, $playlist_items] = $playlist_data;
+
+	if (($slug[0] ?? '') !== $playlist_title) {
+		$slug[] = $playlist_title;
+	}
+
+	$slug = array_values(array_filter(array_filter($slug, 'is_string')));
+
+	$slugged = array_map(
+		[$slugify, 'slugify'],
+		$slug
+	);
+
+	$slug_string = implode('/', $slugged);
+
+	$topics_json[$slug_string] = $slug;
+}
+
+ksort($topics_json);
+
+file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_json, JSON_PRETTY_PRINT));
+
 foreach ($playlist_metadata as $json_file => $save_path) {
 	$categorised = [];
 
