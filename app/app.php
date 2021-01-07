@@ -1023,9 +1023,14 @@ foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $hierarchy) 
 		$slug
 	);
 
-	$slug_string = implode('/', $slugged);
+	while(count($slug) > 0) {
+		$slug_string = implode('/', $slugged);
 
-	$topics_json[$slug_string] = $slug;
+		$topics_json[$slug_string] = $slug;
+
+		array_pop($slug);
+		array_pop($slugged);
+	}
 }
 
 ksort($topics_json);
