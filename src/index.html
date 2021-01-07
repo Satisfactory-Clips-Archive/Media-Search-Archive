@@ -182,48 +182,48 @@ fieldset:not(:focus-within) > legend ~ *
 				<button type="submit" title="Search">🔎</button>
 				<fieldset>
 					<legend tabindex="0">Search Settings</legend>
-				<section
-					role="group"
-					aria-labelledby="date-slider-label"
-				>
-					<h1 id="date-slider-label">Date Range</h1>
-							<label for="date-from">Date From</label>
-							<input
-								id="date-from"
-								name="df"
-								type="range"
-							>
-							<label for="date-to">Date To</label>
-							<input
-								id="date-to"
-								name="dt"
-								type="range"
-							>
-					<output for="date-from date-to">
-						<output for="date-from"></output>
-						-
-						<output for="date-to"></output>
-					</output>
-				</section>
-				<fieldset>
-					<legend tabindex="0">Advanced</legend>
-					<p>Advanced settings for the client-side search.</p>
-					<ul>
-						<li>
-							<label
-								for="min-score"
-								title="Minimum Search Score"
-							>min. score</label>
-							<input
-								id="min-score"
-								name="ms"
-								inputmode="numeric"
-								pattern="[0-9]+\.[0-9]+"
-								value="0.0"
-							>
-						</li>
-					</ul>
-				</fieldset>
+					<section
+						role="group"
+						aria-labelledby="date-slider-label"
+					>
+						<h1 id="date-slider-label">Date Range</h1>
+								<label for="date-from">Date From</label>
+								<input
+									id="date-from"
+									name="df"
+									type="range"
+								>
+								<label for="date-to">Date To</label>
+								<input
+									id="date-to"
+									name="dt"
+									type="range"
+								>
+						<output for="date-from date-to">
+							<output for="date-from"></output>
+							-
+							<output for="date-to"></output>
+						</output>
+					</section>
+					<fieldset>
+						<legend tabindex="0">Advanced</legend>
+						<p>Advanced settings for the client-side search.</p>
+						<ul>
+							<li>
+								<label
+									for="min-score"
+									title="Minimum Search Score"
+								>min. score</label>
+								<input
+									id="min-score"
+									name="ms"
+									inputmode="numeric"
+									pattern="[0-9]+\.[0-9]+"
+									value="0.0"
+								>
+							</li>
+						</ul>
+					</fieldset>
 				</fieldset>
 			</form>
 		</section>
