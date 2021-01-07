@@ -14,20 +14,33 @@
 	font-size: 1em ;
 }
 
+html
+{
+	font-family: system-ui, sans-serif ;
+}
+
 ol, ul
 {
 	list-style: inside none ;
 }
 
+body > section > header,
+body > section > header + section,
 .results > ol
 {
 	padding: .5em ;
 }
 
+body > section > header,
+body > section > header + section,
+.results > ol > li
+{
+	margin: .5em ;
+}
+
 .results > ol > li
 {
 	padding: 1em ;
-	margin: .5em ;
 	border: 1px solid #000 ;
 }
 
