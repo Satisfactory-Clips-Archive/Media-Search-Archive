@@ -17,6 +17,7 @@ const read = promisify(readFile);
 	const uncompressed = await Promise.all([
 		read('./src/docs.json'),
 		read('./src/lunr.json'),
+		read('./src/topics.json'),
 	]);
 
 	const compressed = await Promise.all([
@@ -24,6 +25,8 @@ const read = promisify(readFile);
 		brotli(Buffer.from(uncompressed[1], 'utf8')),
 		gzip(Buffer.from(uncompressed[0], 'utf8')),
 		gzip(Buffer.from(uncompressed[1], 'utf8')),
+		brotli(Buffer.from(uncompressed[2], 'utf8')),
+		gzip(Buffer.from(uncompressed[2], 'utf8')),
 	]);
 
 	await Promise.all([
@@ -31,6 +34,8 @@ const read = promisify(readFile);
 		write('./src/lunr.json.br', compressed[1]),
 		write('./src/docs.json.gz', compressed[2]),
 		write('./src/lunr.json.gz', compressed[3]),
+		write('./src/topics.json.br', compressed[4]),
+		write('./src/topics.json.gz', compressed[5]),
 	]);
 
 	console.log('done');

@@ -1,6 +1,7 @@
 /node_modules/
 /src/docs.json
 /src/lunr.json
+/src/topics.json
 /src/lunr.min.js
 /src/mark.es6.min.js
 /src/*.br
