@@ -79,6 +79,25 @@ aside
 	font-family: monospace ;
 }
 
+form
+{
+	display: flex ;
+	flex-wrap: wrap ;
+	background: #ccc ;
+}
+
+form > *
+{
+	border: 1px solid ;
+	margin: .25em ;
+}
+
+form > fieldset
+{
+	flex-basis: 100% ;
+	display: none ;
+}
+
 legend[tabindex]
 {
 	cursor: pointer ;
@@ -93,12 +112,18 @@ fieldset:not(:focus-within) > legend ~ *
 
 [aria-labelledby="date-slider-label"]
 {
-	display: grid ;
-	grid-template-rows: max-content 1em ;
-	width: 20em ;
+	display: inline-grid ;
+	grid-template-columns: max-content max-content;
+	grid-template-rows: max-content ;
 	overflow: hidden ;
 	position: relative ;
-	background: linear-gradient(to top, #ccc 1em, transparent 0) ;
+	background: #fff linear-gradient(to bottom, transparent .4em, #aaa .4em, #aaa .8em, transparent .8em) ;
+	align-items: center ;
+}
+
+[aria-labelledby="date-slider-label"] > h1
+{
+	display: none ;
 }
 
 [aria-labelledby="date-slider-label"] label
@@ -110,11 +135,10 @@ fieldset:not(:focus-within) > legend ~ *
 [aria-labelledby="date-slider-label"] input
 {
 	grid-column: 1 ;
-	grid-row: 2 ;
+	grid-row: 1 ;
 	background: none ;
 	pointer-events: none ;
 	z-index: 1 ;
-
 }
 
 [aria-labelledby="date-slider-label"] input:focus
@@ -161,6 +185,14 @@ fieldset:not(:focus-within) > legend ~ *
 	width: 1em ;
 	height: 1em ;
 }
+
+[aria-labelledby="date-slider-label"] output
+{
+	grid-row: 1 ;
+	grid-column: 2 ;
+	background: #fff ;
+	padding-left: .5em ;
+}
 </style>
 <script src="./lunr.min.js"></script>
 <script src="./lunr-highlighter.js"></script>
@@ -193,38 +225,35 @@ fieldset:not(:focus-within) > legend ~ *
 		<section>
 			<form>
 				<input type="search" id="search" required name="q" title="Search Query">
+				<section
+					role="group"
+					aria-labelledby="date-slider-label"
+				>
+					<h1 id="date-slider-label">Date Range</h1>
+							<label for="date-from">Date From</label>
+							<input
+								id="date-from"
+								name="df"
+								type="range"
+							>
+							<label for="date-to">Date To</label>
+							<input
+								id="date-to"
+								name="dt"
+								type="range"
+							>
+					<output for="date-from date-to">
+						<output for="date-from"></output>
+						-
+						<output for="date-to"></output>
+					</output>
+				</section>
 				<select name="t" title="Topic Filter">
 					<option value="" selected>All</option>
 				</select>
 				<button type="submit" title="Search">🔎</button>
 				<fieldset>
 					<legend tabindex="0">Search Settings</legend>
-					<section
-						role="group"
-						aria-labelledby="date-slider-label"
-					>
-						<h1 id="date-slider-label">Date Range</h1>
-								<label for="date-from">Date From</label>
-								<input
-									id="date-from"
-									name="df"
-									type="range"
-								>
-								<label for="date-to">Date To</label>
-								<input
-									id="date-to"
-									name="dt"
-									type="range"
-								>
-						<output for="date-from date-to">
-							<output for="date-from"></output>
-							-
-							<output for="date-to"></output>
-						</output>
-					</section>
-					<fieldset>
-						<legend tabindex="0">Advanced</legend>
-						<p>Advanced settings for the client-side search.</p>
 						<ul>
 							<li>
 								<label
@@ -240,7 +269,6 @@ fieldset:not(:focus-within) > legend ~ *
 								>
 							</li>
 						</ul>
-					</fieldset>
 				</fieldset>
 			</form>
 		</section>
