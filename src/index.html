@@ -718,12 +718,17 @@ fieldset:not(:focus-within) > legend ~ *
 
 	function date_format (date) {
 		return (
-			date.getDate() +
-			ordinals[date.getDate() % 10] +
-			' ' +
-			date.toLocaleDateString(
-			'en-GB',
-				{ year: 'numeric', month: 'long'}
+			date.getDate()
+			+ ordinals[date.getDate() % 10]
+			+ ' '
+			+ date.toLocaleDateString(
+				'en-GB',
+				{ month: 'long'}
+			)
+			+ ', '
+			+ date.toLocaleDateString(
+				'en-GB',
+				{ year: 'numeric'}
 			)
 		);
 	}
