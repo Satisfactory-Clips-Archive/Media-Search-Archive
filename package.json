@@ -3,6 +3,7 @@
     "lunr": "^2.3.9"
   },
   "devDependencies": {
+    "html-minifier": "^4.0.0",
     "wasm-brotli": "^2.0.2",
     "wasm-zopfli": "^1.0.2"
   }
