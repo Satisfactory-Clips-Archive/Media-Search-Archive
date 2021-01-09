@@ -91,6 +91,7 @@ form > *
 {
 	border: 1px solid ;
 	margin: .25em ;
+	max-width: calc(100% - .5em) ;
 }
 
 form > fieldset
