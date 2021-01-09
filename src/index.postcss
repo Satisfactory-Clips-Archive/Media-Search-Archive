@@ -87,17 +87,17 @@ form
 	}
 
 	> *
-{
-	border: 1px solid ;
-	margin: .25em ;
-	max-width: calc(100% - .5em) ;
-}
+	{
+		border: 1px solid ;
+		margin: .25em ;
+		max-width: calc(100% - .5em) ;
+	}
 
 	> fieldset
-{
-	flex-basis: 100% ;
-	display: none ;
-}
+	{
+		flex-basis: 100% ;
+		display: none ;
+	}
 }
 
 legend[tabindex]
@@ -123,77 +123,77 @@ fieldset:not(:focus-within) > legend ~ *
 	align-items: center ;
 
 	> h1
-{
-	display: none ;
-}
+	{
+		display: none ;
+	}
 
 	label
-{
-	position: absolute ;
-	clip-path: inset(50%) ;
-}
+	{
+		position: absolute ;
+		clip-path: inset(50%) ;
+	}
 
 	input
-{
-	grid-column: 1 ;
-	grid-row: 1 ;
-	background: none ;
-	pointer-events: none ;
-	z-index: 1 ;
+	{
+		grid-column: 1 ;
+		grid-row: 1 ;
+		background: none ;
+		pointer-events: none ;
+		z-index: 1 ;
 
-	&:focus
-{
-	z-index: 2 ;
-	outline: dotted 1px currentcolor ;
-}
+		&:focus
+		{
+			z-index: 2 ;
+			outline: dotted 1px currentcolor ;
+		}
 
-	&,
-	&::-webkit-slider-runnable-track,
-	&::-webkit-slider-thumb
-{
-	-webkit-appearance: none ;
-}
+		&,
+		&::-webkit-slider-runnable-track,
+		&::-webkit-slider-thumb
+		{
+			-webkit-appearance: none ;
+		}
 
-	&::-webkit-slider-runnable-track
-{
-	background: none ;
-	height: 100% ;
-	width: 100% ;
-}
+		&::-webkit-slider-runnable-track
+		{
+			background: none ;
+			height: 100% ;
+			width: 100% ;
+		}
 
-	&::-moz-range-track
-{
-	background: none ;
-	height: 100% ;
-	width: 100% ;
-}
+		&::-moz-range-track
+		{
+			background: none ;
+			height: 100% ;
+			width: 100% ;
+		}
 
-	&::-webkit-slider-thumb
-{
-	background: currentcolor ;
-	border: none ;
-	border-radius: 0 ;
-	pointer-events: auto ;
-	width: 1em ;
-	height: 1em ;
-}
+		&::-webkit-slider-thumb
+		{
+			background: currentcolor ;
+			border: none ;
+			border-radius: 0 ;
+			pointer-events: auto ;
+			width: 1em ;
+			height: 1em ;
+		}
 
-	&::-moz-range-thumb
-{
-	background: currentcolor ;
-	border: none ;
-	border-radius: 0 ;
-	pointer-events: auto ;
-	width: 1em ;
-	height: 1em ;
-}
-}
+		&::-moz-range-thumb
+		{
+			background: currentcolor ;
+			border: none ;
+			border-radius: 0 ;
+			pointer-events: auto ;
+			width: 1em ;
+			height: 1em ;
+		}
+	}
 
 	output
-{
-	grid-row: 1 ;
-	grid-column: 2 ;
-	background: #fff ;
-	padding-left: .5em ;
-}
+	{
+		grid-row: 1 ;
+		grid-column: 2 ;
+		background: #fff ;
+		padding-left: .5em ;
+	}
 }
