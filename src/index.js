@@ -482,17 +482,53 @@
 
 	const topic_filter_frag = document.createDocumentFragment();
 
+	const optgroups = {};
+
 	Object.entries(topics).forEach((e) => {
 		const [slug, unslugged] = e;
+
+		let optgroup_label = [unslugged[0]];
+
+		for (let i=1;i<(unslugged.length - 1); ++i) {
+			optgroup_label.push(unslugged[i]);
+		}
+
+		const optgroup_label_joined = optgroup_label.join(' > ');
+
+		if ( ! (optgroup_label_joined in optgroups)) {
+			optgroups[optgroup_label_joined] = [];
+		}
+
+		optgroups[optgroup_label_joined].push(e);
+	});
+
+	Object.entries(optgroups).forEach((e) => {
+		const optgroup = document.createElement('optgroup');
+		const [label, grouped_topics] = e;
+
+		optgroup.label = label;
+
+		optgroup.appendChild(grouped_topics.reduce(
+			(out, topic) => {
+				const [slug, unslugged] = topic;
+
 		const option = document.createElement('option');
 
 		option.value = slug;
-		option.textContent = unslugged.join(' > ');
+				option.textContent = (
+					(1 === unslugged.length ? 'All in ' : '')
+					+ unslugged[unslugged.length - 1]
+				);
 
-		topic_filter_frag.appendChild(option);
+				out.appendChild(option);
+
+				return out;
+			},
+			document.createDocumentFragment()
+		));
+
+		topic_filter.appendChild(optgroup);
 	});
-
-	topic_filter.appendChild(topic_filter_frag);
 
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
