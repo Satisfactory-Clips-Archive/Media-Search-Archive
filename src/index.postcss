@@ -122,6 +122,13 @@ fieldset:not(:focus-within) > legend ~ *
 	background: #fff linear-gradient(to bottom, transparent .4em, #aaa .4em, #aaa .8em, transparent .8em) ;
 	align-items: center ;
 
+	@media (max-width:500px)
+	{
+		grid-template-columns: 100% ;
+		grid-template-rows: max-content max-content ;
+		width: 100% ;
+	}
+
 	> h1
 	{
 		display: none ;
@@ -195,5 +202,11 @@ fieldset:not(:focus-within) > legend ~ *
 		grid-column: 2 ;
 		background: #fff ;
 		padding-left: .5em ;
+
+		@media (max-width: 500px)
+		{
+			grid-row: 2 ;
+			grid-column: 1 ;
+		}
 	}
 }
