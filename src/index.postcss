@@ -66,14 +66,6 @@ h3
 	font-size: 1.2em ;
 }
 
-form h1,
-form h2,
-form h3
-{
-	font-size: 1em ;
-	font-weight: inherit ;
-}
-
 aside
 {
 	white-space: pre-wrap ;
@@ -85,19 +77,27 @@ form
 	display: flex ;
 	flex-wrap: wrap ;
 	background: #ccc ;
-}
 
-form > *
+	h1,
+	h2,
+	h3
+	{
+		font-size: 1em ;
+		font-weight: inherit ;
+	}
+
+	> *
 {
 	border: 1px solid ;
 	margin: .25em ;
 	max-width: calc(100% - .5em) ;
 }
 
-form > fieldset
+	> fieldset
 {
 	flex-basis: 100% ;
 	display: none ;
+}
 }
 
 legend[tabindex]
@@ -121,64 +121,54 @@ fieldset:not(:focus-within) > legend ~ *
 	position: relative ;
 	background: #fff linear-gradient(to bottom, transparent .4em, #aaa .4em, #aaa .8em, transparent .8em) ;
 	align-items: center ;
-}
 
-[aria-labelledby="date-slider-label"] > h1
+	> h1
 {
 	display: none ;
 }
 
-[aria-labelledby="date-slider-label"] label
+	label
 {
 	position: absolute ;
 	clip-path: inset(50%) ;
 }
 
-[aria-labelledby="date-slider-label"] input
+	input
 {
 	grid-column: 1 ;
 	grid-row: 1 ;
 	background: none ;
 	pointer-events: none ;
 	z-index: 1 ;
-}
 
-[aria-labelledby="date-slider-label"] input:focus
+	&:focus
 {
 	z-index: 2 ;
 	outline: dotted 1px currentcolor ;
 }
 
-[aria-labelledby="date-slider-label"] input,
-[aria-labelledby="date-slider-label"] input::-webkit-slider-runnable-track,
-[aria-labelledby="date-slider-label"] input::-webkit-slider-thumb
+	&,
+	&::-webkit-slider-runnable-track,
+	&::-webkit-slider-thumb
 {
 	-webkit-appearance: none ;
 }
 
-[aria-labelledby="date-slider-label"] input::-webkit-slider-runnable-track
-{
-	background: none ;
-	height: 100% ;
-	width: 100% ;
-}
-[aria-labelledby="date-slider-label"] input::-moz-range-track
+	&::-webkit-slider-runnable-track
 {
 	background: none ;
 	height: 100% ;
 	width: 100% ;
 }
 
-[aria-labelledby="date-slider-label"] input::-webkit-slider-thumb
+	&::-moz-range-track
 {
-	background: currentcolor ;
-	border: none ;
-	border-radius: 0 ;
-	pointer-events: auto ;
-	width: 1em ;
-	height: 1em ;
+	background: none ;
+	height: 100% ;
+	width: 100% ;
 }
-[aria-labelledby="date-slider-label"] input::-moz-range-thumb
+
+	&::-webkit-slider-thumb
 {
 	background: currentcolor ;
 	border: none ;
@@ -188,10 +178,22 @@ fieldset:not(:focus-within) > legend ~ *
 	height: 1em ;
 }
 
-[aria-labelledby="date-slider-label"] output
+	&::-moz-range-thumb
+{
+	background: currentcolor ;
+	border: none ;
+	border-radius: 0 ;
+	pointer-events: auto ;
+	width: 1em ;
+	height: 1em ;
+}
+}
+
+	output
 {
 	grid-row: 1 ;
 	grid-column: 2 ;
 	background: #fff ;
 	padding-left: .5em ;
+}
 }
