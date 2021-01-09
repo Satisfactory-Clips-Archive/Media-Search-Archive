@@ -512,9 +512,10 @@
 			(out, topic) => {
 				const [slug, unslugged] = topic;
 
-		const option = document.createElement('option');
+				const option = document.createElement('option');
 
-		option.value = slug;
+				option.value = slug;
+
 				option.textContent = (
 					(1 === unslugged.length ? 'All in ' : '')
 					+ unslugged[unslugged.length - 1]
