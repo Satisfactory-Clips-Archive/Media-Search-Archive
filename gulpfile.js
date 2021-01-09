@@ -6,6 +6,29 @@ const newer = require('gulp-newer');
 const changed = require('gulp-changed');
 const brotli = require('gulp-brotli');
 const zopfli = require('gulp-zopfli-green');
+const postcss = require('gulp-postcss');
+const postcss_plugins = {
+	nested: require('postcss-nested'),
+};
+const cssnano = require('cssnano');
+const rename = require('gulp-rename');
+
+gulp.task('css', () => {
+	return gulp.src('./src/**/*.postcss').pipe(
+		postcss([
+			postcss_plugins.nested(),
+			cssnano({
+				cssDeclarationSorter: 'concentric-css',
+			}),
+		])
+	).pipe(
+		rename({
+			extname: '.css'
+		})
+	).pipe(
+		gulp.dest('./src/')
+	)
+});
 
 gulp.task('rev', () => {
 	return gulp.src('./src/**/*.{js,json,css}').pipe(
@@ -100,6 +123,7 @@ gulp.task('sync-tmp-to-store', () => {
 });
 
 gulp.task('build', gulp.series(
+	'css',
 	'rev',
 	'html',
 	gulp.parallel(
