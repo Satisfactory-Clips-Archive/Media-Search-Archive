@@ -1,0 +1,196 @@
+*
+{
+	box-sizing: border-box ;
+	margin: 0 ;
+	padding: 0 ;
+	font: inherit ;
+	color: inherit ;
+	font-size: 1em ;
+}
+
+html
+{
+	font-family: system-ui, sans-serif ;
+}
+
+nav a:not(:first-child)
+{
+	margin-left: 1em ;
+}
+
+ol, ul
+{
+	list-style: inside none ;
+}
+
+body > section > header,
+body > section > header + section,
+body > footer,
+.results > ol
+{
+	padding: .5em ;
+}
+
+body > section > header,
+body > section > header + section,
+body > footer,
+.results > ol > li
+{
+	margin: .5em ;
+}
+
+.results > ol > li
+{
+	padding: 1em ;
+	border: 1px solid #000 ;
+}
+
+h1,
+h2,
+h3
+{
+	font-weight: bolder ;
+	margin-top: .25em ;
+}
+
+h1
+{
+	font-size: 2em ;
+}
+h2
+{
+	font-size: 1.6em ;
+}
+h3
+{
+	font-size: 1.2em ;
+}
+
+form h1,
+form h2,
+form h3
+{
+	font-size: 1em ;
+	font-weight: inherit ;
+}
+
+aside
+{
+	white-space: pre-wrap ;
+	font-family: monospace ;
+}
+
+form
+{
+	display: flex ;
+	flex-wrap: wrap ;
+	background: #ccc ;
+}
+
+form > *
+{
+	border: 1px solid ;
+	margin: .25em ;
+}
+
+form > fieldset
+{
+	flex-basis: 100% ;
+	display: none ;
+}
+
+legend[tabindex]
+{
+	cursor: pointer ;
+}
+
+/*
+fieldset:not(:focus-within) > legend ~ *
+{
+	display: none ;
+}
+*/
+
+[aria-labelledby="date-slider-label"]
+{
+	display: inline-grid ;
+	grid-template-columns: max-content max-content;
+	grid-template-rows: max-content ;
+	overflow: hidden ;
+	position: relative ;
+	background: #fff linear-gradient(to bottom, transparent .4em, #aaa .4em, #aaa .8em, transparent .8em) ;
+	align-items: center ;
+}
+
+[aria-labelledby="date-slider-label"] > h1
+{
+	display: none ;
+}
+
+[aria-labelledby="date-slider-label"] label
+{
+	position: absolute ;
+	clip-path: inset(50%) ;
+}
+
+[aria-labelledby="date-slider-label"] input
+{
+	grid-column: 1 ;
+	grid-row: 1 ;
+	background: none ;
+	pointer-events: none ;
+	z-index: 1 ;
+}
+
+[aria-labelledby="date-slider-label"] input:focus
+{
+	z-index: 2 ;
+	outline: dotted 1px currentcolor ;
+}
+
+[aria-labelledby="date-slider-label"] input,
+[aria-labelledby="date-slider-label"] input::-webkit-slider-runnable-track,
+[aria-labelledby="date-slider-label"] input::-webkit-slider-thumb
+{
+	-webkit-appearance: none ;
+}
+
+[aria-labelledby="date-slider-label"] input::-webkit-slider-runnable-track
+{
+	background: none ;
+	height: 100% ;
+	width: 100% ;
+}
+[aria-labelledby="date-slider-label"] input::-moz-range-track
+{
+	background: none ;
+	height: 100% ;
+	width: 100% ;
+}
+
+[aria-labelledby="date-slider-label"] input::-webkit-slider-thumb
+{
+	background: currentcolor ;
+	border: none ;
+	border-radius: 0 ;
+	pointer-events: auto ;
+	width: 1em ;
+	height: 1em ;
+}
+[aria-labelledby="date-slider-label"] input::-moz-range-thumb
+{
+	background: currentcolor ;
+	border: none ;
+	border-radius: 0 ;
+	pointer-events: auto ;
+	width: 1em ;
+	height: 1em ;
+}
+
+[aria-labelledby="date-slider-label"] output
+{
+	grid-row: 1 ;
+	grid-column: 2 ;
+	background: #fff ;
+	padding-left: .5em ;
+}

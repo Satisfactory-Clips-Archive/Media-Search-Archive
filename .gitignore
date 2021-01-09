@@ -2,3 +2,4 @@
 /src/lunr.min.js
 /dist/*
 /src/*.json
+/tmp/
