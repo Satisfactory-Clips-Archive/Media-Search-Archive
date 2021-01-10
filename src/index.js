@@ -47,7 +47,7 @@
 
 		timeout = requestAnimationFrame(() => {
 			const query = searchbar.value;
-			const title = `Q&A Clips Archive Search - ${query}`;
+			const title = `Q&A Clips Archive - Search - ${query}`;
 
 			last_query = query;
 

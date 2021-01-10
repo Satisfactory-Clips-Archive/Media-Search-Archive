@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "eleventy && gulp build"
+		"build": "eleventy && eleventy --config=.eleventy.index.js && touch ./src/index.html && rm ./src/index.html && mv ./src/satisfactory/index.html ./src/ && gulp build"
   },
   "dependencies": {
     "lunr": "^2.3.9"

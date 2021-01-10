@@ -4,4 +4,5 @@
 /src/*.json
 /tmp/
 /src/*.css
-/src/satisfactory/
+/src/*/
+/src/index.html

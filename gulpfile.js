@@ -17,7 +17,7 @@ const replace = require('gulp-replace');
 const sitemap = require('gulp-sitemap');
 
 gulp.task('css', () => {
-	return gulp.src('./src/{index,browse}.postcss').pipe(
+	return gulp.src('./src/*.postcss').pipe(
 		postcss([
 			postcss_plugins.import(),
 			postcss_plugins.nested(),
@@ -87,14 +87,32 @@ gulp.task('zopfli', () => {
 
 gulp.task('html', () => {
 	return gulp.src(
-		'./src/index.html'
+		'./src/**/*.html'
 	).pipe(
 		rev_replace({
 			manifest: gulp.src('./tmp/asset.manifest'),
 		})
 	).pipe(
+		replace('.md', '/')
+	).pipe(
+		replace('"satisfactory/', '"/')
+	).pipe(
+		replace('"./topics/', '"/topics/')
+	).pipe(
+		replace(/"(?:\.\.\/)+topics\/?/g, '"/topics/')
+	).pipe(
+		replace(
+			/https:\/\/(clips\.twitch\.tv\/(?:[a-zA-Z0-9]+))/g,
+			'<a rel="noopener" target="_blank" href="https://$1">https://$1</a>'
+		)
+	).pipe(
+		replace(
+			/https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([^\n\s\*\<]+)/g,
+			'<a rel="noopener" target="_blank" href="https://youtu.be/$1">https://youtu.be/$1</a>'
+		)
+	).pipe(
 		htmlmin({
-			collapseInlineTagWhitespace: true,
+			collapseInlineTagWhitespace: false,
 			collapseWhitespace: true,
 			minifyCSS: true,
 			minifyJs: true,
@@ -104,38 +122,6 @@ gulp.task('html', () => {
 		})
 	).pipe(
 		gulp.dest('./tmp')
-	);
-});
-
-gulp.task('html-11ty', () => {
-	return gulp.src(
-		'./src/satisfactory/**/*.html'
-	).pipe(
-		newer('./tmp/satisfactory/')
-	).pipe(
-		rev_replace({
-			manifest: gulp.src('./tmp/asset.manifest'),
-		})
-	).pipe(
-		replace('.md', '/')
-	).pipe(
-		replace('"satisfactory/', '"/satisfactory/')
-	).pipe(
-		replace('"./topics/', '"/satisfactory/topics/')
-	).pipe(
-		replace(/"(?:\.\.\/)+topics\/?/g, '"/satisfactory/topics/')
-	).pipe(
-		htmlmin({
-			collapseInlineTagWhitespace: true,
-			collapseWhitespace: true,
-			minifyCSS: true,
-			minifyJs: true,
-			removeAttributeQuotes: true,
-			removeComments: true,
-			useShortDoctype: true,
-		})
-	).pipe(
-		gulp.dest('./tmp/satisfactory/')
 	);
 });
 
@@ -173,10 +159,7 @@ gulp.task('sync-tmp-to-store', () => {
 gulp.task('build', gulp.series(
 	'css',
 	'rev',
-	gulp.parallel(
 	'html',
-		'html-11ty'
-	),
 	'sitemap',
 	gulp.parallel(
 		'zopfli',
