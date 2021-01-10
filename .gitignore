@@ -3,4 +3,5 @@
 /dist/*
 /src/*.json
 /tmp/
-/src/index.css
+/src/*.css
+/src/satisfactory/
