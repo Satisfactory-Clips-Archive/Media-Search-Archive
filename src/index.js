@@ -372,13 +372,13 @@
 
 	function date_format (date) {
 		return (
-			date.getDate()
-			+ ordinals[date.getDate() % 10]
-			+ ' '
-			+ date.toLocaleDateString(
+			date.toLocaleDateString(
 				'en-GB',
 				{ month: 'long'}
 			)
+			+ ' '
+			+ date.getDate()
+			+ ordinals[date.getDate() % 10]
 			+ ', '
 			+ date.toLocaleDateString(
 				'en-GB',
