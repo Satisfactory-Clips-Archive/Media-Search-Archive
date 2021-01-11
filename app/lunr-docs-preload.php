@@ -218,7 +218,7 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 	);
 
 	if (is_file($transcription_file)) {
-		$transcription = trim(implode(' ', array_map(
+		$transcription = trim(implode("\n", array_map(
 			static function (string $line) : string {
 				$line = preg_replace('/^> /', '', $line);
 
