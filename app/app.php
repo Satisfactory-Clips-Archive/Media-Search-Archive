@@ -723,12 +723,12 @@ if ($transcriptions) {
 		}
 
 		foreach(array_keys($videos[$playlist_id]) as $video_id) {
-				$transcriptions_file = (
-					__DIR__ .
-					'/../coffeestainstudiosdevs/satisfactory/transcriptions/yt-' .
-					$video_id .
-					'.md'
-				);
+			$transcriptions_file = (
+				__DIR__ .
+				'/../coffeestainstudiosdevs/satisfactory/transcriptions/yt-' .
+				$video_id .
+				'.md'
+			);
 
 			if ( ! is_file($transcriptions_file)) {
 				$caption_lines = captions($video_id);
