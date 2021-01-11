@@ -717,12 +717,7 @@ if ($transcriptions) {
 	$checked = 0;
 
 	foreach(array_keys($playlists) as $playlist_id) {
-		if ( ! isset($videos[$playlist_id])) {
-			echo 'skipping: ', $playlist_id, "\n";
-			continue;
-		}
-
-		foreach(array_keys($videos[$playlist_id]) as $video_id) {
+		foreach($cache['playlists'][$playlist_id][2] as $video_id) {
 			$transcriptions_file = (
 				__DIR__ .
 				'/../coffeestainstudiosdevs/satisfactory/transcriptions/yt-' .
@@ -747,7 +742,7 @@ if ($transcriptions) {
 						'# [' . date('F jS, Y', (int) strtotime($date)) .
 						' Livestream](../' . $date . '.md)' .
 						"\n" .
-						'## ' . $videos[$playlist_id][$video_id] .
+						'## ' . $cache['playlistItems'][$video_id][1] .
 						"\n" .
 						(
 							'https://www.youtube.com/watch?' .
