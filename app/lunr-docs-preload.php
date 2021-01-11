@@ -230,8 +230,8 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 			},
 			array_slice(
 				explode(
-				"\n",
-				file_get_contents($transcription_file)
+					"\n",
+					file_get_contents($transcription_file)
 				),
 				3
 			)
