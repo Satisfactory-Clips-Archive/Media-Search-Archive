@@ -1255,17 +1255,17 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	file_put_contents($file_path, '# Archives' . "\n");
 
-		file_put_contents(
-			$file_path,
-			sprintf('* [FAQ](%s/FAQ.md)' . "\n", $basename),
-			FILE_APPEND
-		);
+	file_put_contents(
+		$file_path,
+		sprintf('* [FAQ](%s/FAQ.md)' . "\n", $basename),
+		FILE_APPEND
+	);
 
-		file_put_contents(
-			$file_path,
-			sprintf('* [Topics](%s/topics.md)' . "\n", $basename),
-			FILE_APPEND
-		);
+	file_put_contents(
+		$file_path,
+		sprintf('* [Topics](%s/topics.md)' . "\n", $basename),
+		FILE_APPEND
+	);
 
 	file_put_contents($file_path, "\n", FILE_APPEND);
 	file_put_contents($file_path, '# Archives By Date' . "\n", FILE_APPEND);
