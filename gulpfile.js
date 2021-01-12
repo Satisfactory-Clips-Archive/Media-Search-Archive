@@ -117,6 +117,7 @@ gulp.task('html', () => {
 			minifyCSS: true,
 			minifyJs: true,
 			removeAttributeQuotes: true,
+			preserveLineBreaks: true,
 			removeComments: true,
 			useShortDoctype: true,
 		})
