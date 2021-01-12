@@ -84,6 +84,35 @@
 				<select name="t" title="Topic Filter">
 					<option value="" selected>All</option>
 				</select>
+				<section
+					role="group"
+					aria-labelledby="sort-order"
+				>
+					<h1 id="sort-order">Sort Order</h1>
+					<input
+						id="sort-by-relevance"
+						type="radio"
+						name="s"
+						value="r"
+						checked
+					>
+					<input
+						id="sort-by-date"
+						type="radio"
+						name="s"
+						value="d"
+					>
+					<label
+						tabindex="0"
+						for="sort-by-relevance"
+						title="Sort by relevance"
+					>🔢</label>
+					<label
+						tabindex="0"
+						for="sort-by-date"
+						title="Sort by date"
+					>📅</label>
+				</section>
 				<button type="submit" title="Search">🔎</button>
 			</form>
 		</section>

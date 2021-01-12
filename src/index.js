@@ -67,6 +67,9 @@
 				10
 			);
 			const filter_topic = formdata.get('t');
+			const sort_by_relevance = 'd' !== formdata.get('s');
+
+			formdata.set('s', sort_by_relevance ? 'r' : 'd');
 
 			document.head.querySelector('title').textContent = title;
 
@@ -82,11 +85,13 @@
 						encodeURIComponent(formdata.get('dt'))
 					}&t=${
 						encodeURIComponent(formdata.get('t'))
+					}&s=${
+						encodeURIComponent(formdata.get('s'))
 					}`
 				);
 			}
 
-			const docs_results = search(
+			let docs_results = search(
 				query.split(' ').map((e) => {
 					return e.replace(/\.+$/, '');
 				}).join(' '),
@@ -104,6 +109,15 @@
 					)
 				);
 			});
+
+			if ( ! sort_by_relevance) {
+				docs_results = docs_results.sort((a, b) => {
+					const aint = parseInt(a[0].date.replace(/\-/g, ''), 10);
+					const bint = parseInt(b[0].date.replace(/\-/g, ''), 10);
+
+					return bint - aint;
+				});
+			}
 
 			result_count.textContent = `${
 					docs_results.length
@@ -243,6 +257,14 @@
 				topic_filter.querySelector('[value=""]').selected = true;
 			}
 
+			if (params.has('s')) {
+				if ('d' === params.get('s')) {
+					sort_by_date_input.checked = true;
+				} else {
+					sort_by_relevance_input.checked = true;
+				}
+			}
+
 			date_from_output_update();
 			date_to_output_update();
 			perform_search(on_index, modify_state);
@@ -295,6 +317,12 @@
 	const date_from = form.querySelector('#date-from');
 	const date_to = form.querySelector('#date-to');
 	const topic_filter = form.querySelector('[name="t"]');
+	const sort_by_relevance_input = form.querySelector(
+		'[name="s"][value="r"]'
+	);
+	const sort_by_date_input = form.querySelector(
+		'[name="s"][value="d"]'
+	);
 	const date_output = form.querySelector('output[for="date-from date-to"]');
 	const date_from_output = date_output.querySelector('[for="date-from"]');
 	const date_to_output = date_output.querySelector('[for="date-to"]');
@@ -531,6 +559,13 @@
 		hashsearch(index, false);
 	};
 	hashsearch(index, false);
+
+	sort_by_relevance_input.addEventListener('input', () => {
+		perform_search(index, false);
+	});
+	sort_by_date_input.addEventListener('input', () => {
+		perform_search(index, false);
+	});
 
 	document.body.firstElementChild.parentNode.replaceChild(
 		ready,
