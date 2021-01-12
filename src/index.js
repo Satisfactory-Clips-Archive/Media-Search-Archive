@@ -66,7 +66,6 @@
 				formdata.get('dt').replace(/\-/g, ''),
 				10
 			);
-			const filter_min_score = parseFloat(formdata.get('ms'));
 			const filter_topic = formdata.get('t');
 
 			document.head.querySelector('title').textContent = title;
@@ -81,8 +80,6 @@
 						encodeURIComponent(formdata.get('df'))
 					}&dt=${
 						encodeURIComponent(formdata.get('dt'))
-					}&ms=${
-						encodeURIComponent(formdata.get('ms'))
 					}&t=${
 						encodeURIComponent(formdata.get('t'))
 					}`
@@ -101,7 +98,6 @@
 				return (
 					dateint >= filter_date_from
 					&& dateint <= filter_date_to
-					&& result.score >= filter_min_score
 					&& (
 						'' === filter_topic
 						|| doc.topics.includes(filter_topic)
@@ -233,12 +229,6 @@
 				date_to_value_by_index(date_to.min);
 			}
 
-			if (params.has('ms')) {
-				score_filter.value = params.get('ms');
-			} else {
-				score_filter.value = '0.0';
-			}
-
 			if (params.has('t')) {
 				const maybe_topic = topic_filter.querySelector(
 					`[value="${params.get('t')}"]`
@@ -304,7 +294,6 @@
 	const form = ready.querySelector('form');
 	const date_from = form.querySelector('#date-from');
 	const date_to = form.querySelector('#date-to');
-	const score_filter = form.querySelector('#min-score');
 	const topic_filter = form.querySelector('[name="t"]');
 	const date_output = form.querySelector('output[for="date-from date-to"]');
 	const date_from_output = date_output.querySelector('[for="date-from"]');
