@@ -1312,7 +1312,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			. '---' . "\n"
 			. '# Archives' . "\n"
 			. sprintf('* [FAQ](%s/FAQ.md)' . "\n", $basename)
-			. "\n"
 			. sprintf('* [Topics](%s/topics.md)' . "\n", $basename)
 		)
 	);
