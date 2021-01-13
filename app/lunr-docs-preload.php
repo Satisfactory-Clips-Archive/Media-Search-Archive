@@ -240,8 +240,8 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 
 				return trim($line);
 			},
-				explode(
-					"\n",
+			explode(
+				"\n",
 				$transcription_raw
 			)
 		)));
