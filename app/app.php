@@ -435,21 +435,6 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 	$already_in_markdown[$playlist_id] = $matches[1];
 }
 
-if (
-	! is_file(
-		__DIR__ .
-		'/../coffeestainstudiosdevs/satisfactory/FAQ.md'
-	)
-) {
-	file_put_contents(
-		(
-			__DIR__ .
-			'/../coffeestainstudiosdevs/satisfactory/FAQ.md'
-		),
-		''
-	);
-}
-
 preg_match_all(
 	'/https:\/\/www\.youtube\.com\/watch\?v=([^\n\s\*]+)/',
 	file_get_contents(
@@ -574,26 +559,64 @@ foreach ($already_in_markdown as $playlist_id => $videos_in_markdown) {
 
 $videos_to_add = array_filter($videos_to_add, 'count');
 
-foreach ($videos_to_add as $playlist_id => $video_ids) {
+$video_playlists = [];
+
+foreach ($cache['playlists'] as $playlist_id => $data) {
+	[,, $video_ids] = $data;
+
+	foreach ($video_ids as $video_id) {
+		if ( ! isset($video_playlists[$video_id])) {
+			$video_playlists[$video_id] = [];
+		}
+
+		$video_playlists[$video_id][] = $playlist_id;
+	}
+}
+
+foreach (array_keys($playlists) as $playlist_id) {
+	$video_ids = $cache['playlists'][$playlist_id][2];
+
+	usort($video_ids, static function (string $a, string $b) use($cache) : int {
+		return strnatcasecmp(
+			$cache['playlistItems'][$a][1],
+			$cache['playlistItems'][$b][1]
+		);
+	});
+
 	$content_arrays = [
 		'Related answer clips' => [],
 		'Single video clips' => [],
 	];
 
-	file_put_contents(
-		$playlists[$playlist_id],
-		date(
-			'F jS, Y',
+	$title_unix =
 			(int) strtotime(
 				mb_substr(
 					basename($playlists[$playlist_id]),
 					0,
 					-3
 				)
-			)
+	);
+
+	$title = (
+		date(
+			'F jS, Y',
+			$title_unix
 		) .
 		' Livestream clips (non-exhaustive)' .
-		"\n"
+		''
+	);
+
+	file_put_contents(
+		$playlists[$playlist_id],
+		(
+			'---' . "\n"
+			. sprintf('title: "%s"' . "\n", $title)
+			. sprintf('date: "%s"' . "\n", date('Y-m-d', $title_unix))
+			. 'layout: livestream' . "\n"
+			. '---' . "\n"
+			. $title
+			. "\n"
+		)
 	);
 
 	foreach ($video_ids as $video_id) {
@@ -637,7 +660,7 @@ foreach ($videos_to_add as $playlist_id => $video_ids) {
 				$playlists[$playlist_id],
 				(
 					'* ' .
-					$videos[$playlist_id][$video_id] .
+					$cache['playlistItems'][$video_id][1] .
 					' https://www.youtube.com/watch?' .
 					http_build_query([
 						'v' => $video_id,
@@ -660,7 +683,7 @@ foreach ($videos_to_add as $playlist_id => $video_ids) {
 			$playlists[$playlist_id],
 			(
 				'* ' .
-				$videos[$playlist_id][$video_id] .
+				$cache['playlistItems'][$video_id][1] .
 				' https://www.youtube.com/watch?' .
 				http_build_query([
 					'v' => $video_id,
@@ -713,6 +736,64 @@ foreach ($video_tags as $id => $tags) {
 	}
 }
 
+/** @var array{satisfactory:array<string, list<string>>} */
+$global_topic_append = json_decode(
+	file_get_contents(__DIR__ . '/global-topic-append.json'),
+	true
+);
+
+require_once(__DIR__ . '/global-topic-hierarchy.php');
+
+$global_topic_hierarchy = array_map(
+	static function (array $in) : array {
+		uasort($in, static function (array $a, array $b) : int {
+			return strnatcasecmp(implode('/', $a), implode('/', $b));
+		});
+
+		return $in;
+	},
+	$global_topic_hierarchy
+);
+
+$slugify = new Slugify();
+
+$topics_json = [];
+$playlist_topic_strings = [];
+
+foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $hierarchy) {
+	$slug = $hierarchy;
+
+	$playlist_data = $cache['playlists'][$playlist_id];
+
+	[, $playlist_title, $playlist_items] = $playlist_data;
+
+	if (($slug[0] ?? '') !== $playlist_title) {
+		$slug[] = $playlist_title;
+	}
+
+	$slug = array_values(array_filter(array_filter($slug, 'is_string')));
+
+	$slugged = array_map(
+		[$slugify, 'slugify'],
+		$slug
+	);
+
+	$playlist_topic_strings[$playlist_id] = implode('/', $slugged);
+
+	while(count($slug) > 0) {
+		$slug_string = implode('/', $slugged);
+
+		$topics_json[$slug_string] = $slug;
+
+		array_pop($slug);
+		array_pop($slugged);
+	}
+}
+
+ksort($topics_json);
+
+file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_json, JSON_PRETTY_PRINT));
+
 if ($transcriptions) {
 	$checked = 0;
 
@@ -739,7 +820,48 @@ if ($transcriptions) {
 				file_put_contents(
 					$transcriptions_file,
 					(
-						'# [' . date('F jS, Y', (int) strtotime($date)) .
+						'---' . "\n"
+						. sprintf(
+							'title: "%s"' . "\n",
+							str_replace(
+								'"',
+								'\\"',
+								$cache['playlistItems'][$video_id][1]
+							)
+						)
+						. sprintf(
+							'date: "%s"' . "\n",
+							date('Y-m-d', (int) strtotime($date))
+						)
+						. 'layout: transcript' . "\n"
+						. sprintf(
+							'topics:' . "\n" . '    - "%s"' . "\n",
+							implode('"' . "\n" . '    - "', array_map(
+								static function (
+									string $playlist_id
+								) use (
+									$playlist_topic_strings
+								) {
+									return $playlist_topic_strings[
+										$playlist_id
+									];
+								},
+								array_filter(
+									$video_playlists[$video_id],
+									static function (
+										string $playlist_id
+									) use ($playlist_topic_strings) : bool {
+										return isset(
+											$playlist_topic_strings[
+												$playlist_id
+											]
+										);
+									}
+								)
+							))
+						)
+						. '---' . "\n"
+						. '# [' . date('F jS, Y', (int) strtotime($date)) .
 						' Livestream](../' . $date . '.md)' .
 						"\n" .
 						'## ' . $cache['playlistItems'][$video_id][1] .
@@ -815,7 +937,15 @@ $faq_filepath = __DIR__ . '/../coffeestainstudiosdevs/satisfactory/FAQ.md';
 
 usleep(100);
 
-file_put_contents($faq_filepath, '');
+file_put_contents(
+	$faq_filepath,
+	(
+		'---' . "\n"
+		. 'title: "Q&A Clips Archive - Frequently Asked Questions"' . "\n"
+		. 'date: Last Modified' . "\n"
+		. '---' . "\n"
+	)
+);
 
 foreach ($cache['playlists'] as $cached_playlist_id => $cached_playlist_data) {
 	if (isset($faq_playlist_data_dates[$cached_playlist_id])) {
@@ -977,61 +1107,6 @@ $index_prefill = [
 	],
 ];
 
-/** @var array{satisfactory:array<string, list<string>>} */
-$global_topic_append = json_decode(
-	file_get_contents(__DIR__ . '/global-topic-append.json'),
-	true
-);
-
-require_once(__DIR__ . '/global-topic-hierarchy.php');
-
-$global_topic_hierarchy = array_map(
-	static function (array $in) : array {
-		uasort($in, static function (array $a, array $b) : int {
-			return strnatcasecmp(implode('/', $a), implode('/', $b));
-		});
-
-		return $in;
-	},
-	$global_topic_hierarchy
-);
-
-$slugify = new Slugify();
-
-$topics_json = [];
-
-foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $hierarchy) {
-	$slug = $hierarchy;
-
-	$playlist_data = $cache['playlists'][$playlist_id];
-
-	[, $playlist_title, $playlist_items] = $playlist_data;
-
-	if (($slug[0] ?? '') !== $playlist_title) {
-		$slug[] = $playlist_title;
-	}
-
-	$slug = array_values(array_filter(array_filter($slug, 'is_string')));
-
-	$slugged = array_map(
-		[$slugify, 'slugify'],
-		$slug
-	);
-
-	while(count($slug) > 0) {
-		$slug_string = implode('/', $slugged);
-
-		$topics_json[$slug_string] = $slug;
-
-		array_pop($slug);
-		array_pop($slugged);
-	}
-}
-
-ksort($topics_json);
-
-file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_json, JSON_PRETTY_PRINT));
-
 foreach ($playlist_metadata as $json_file => $save_path) {
 	$categorised = [];
 
@@ -1044,8 +1119,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	$topic_append = $global_topic_append[$basename] ?? [];
 
 	$file_path = $save_path . '/../' . $basename . '/topics.md';
-
-	file_put_contents($file_path, '');
 
 	$data_by_date = [];
 
@@ -1130,7 +1203,11 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		file_put_contents(
 			$slug_path,
 			(
-				'[Topics](' . str_repeat('../', $slug_count) . 'topics.md)' .
+				'---' . "\n"
+				. sprintf('title: "%s"' . "\n", $slug_title)
+				. 'date: Last Modified' . "\n"
+				. '---' . "\n"
+				. '[Topics](' . str_repeat('../', $slug_count) . 'topics.md)' .
 				' > ' .
 				$slug_title .
 				"\n"
@@ -1239,7 +1316,15 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		return $pending;
 	};
 
-	file_put_contents($file_path, '');
+	file_put_contents(
+		$file_path,
+		(
+			'---' . "\n"
+			. 'title: "Q&A Clips Archive - Browse Topics"' . "\n"
+			. 'date: Last Modified' . "\n"
+			. '---' . "\n"
+		)
+	);
 
 	foreach ($decategorise($categorised) as $line) {
 		file_put_contents($file_path, $line . "\n", FILE_APPEND);
@@ -1257,14 +1342,16 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	file_put_contents(
 		$file_path,
-		sprintf('* [FAQ](%s/FAQ.md)' . "\n", $basename),
-		FILE_APPEND
-	);
-
-	file_put_contents(
-		$file_path,
-		sprintf('* [Topics](%s/topics.md)' . "\n", $basename),
-		FILE_APPEND
+		(
+			'---' . "\n"
+			. 'title: Q&A Clips Archive - Browse' . "\n"
+			. 'date: Last Modified' . "\n"
+			. '---' . "\n"
+			. '# Archives' . "\n"
+			. sprintf('* [FAQ](%s/FAQ.md)' . "\n", $basename)
+			. "\n"
+			. sprintf('* [Topics](%s/topics.md)' . "\n", $basename)
+		)
 	);
 
 	file_put_contents($file_path, "\n", FILE_APPEND);
