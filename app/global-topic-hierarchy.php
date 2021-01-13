@@ -274,5 +274,23 @@ $global_topic_hierarchy = [
 			'Features',
 			'Crafting',
 		],
+		'PLbjDnnBIxiEr8-tKvQxrwXxCKw4R5_PoP' => [ // Arachnophobia Mode
+			'Accessibility',
+		],
+		'PLbjDnnBIxiEprHLlT4mBHmpA1Hbsdd9TV' => [ // Procedural Generation
+			'Features',
+			'Unplanned Features',
+		],
+		'PLbjDnnBIxiEo_Z7JjldxMswBGTxOI9cDH' => [ // Terraforming
+			'Features',
+			'Unplanned Features',
+		],
+		'PLbjDnnBIxiEq2kx3e7IHxW0MNZocN_pup' => [ // Tim
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEqVBjXPO21-ZkvLV76plSGV' => [ // Blender
+			'Features',
+			'Buildings',
+		],
 	],
 ];
