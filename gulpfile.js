@@ -15,6 +15,19 @@ const cssnano = require('cssnano');
 const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 const sitemap = require('gulp-sitemap');
+const clean = require('gulp-clean');
+const json_transform = require('gulp-json-transform');
+const {readFileSync} = require('fs');
+
+gulp.task('clean', () => {
+	return gulp.src('./tmp/', {read: false}).pipe(clean());
+});
+
+gulp.task('lunr', () => {
+	return gulp.src('./twitch-clip-notes/app/lunr/*.json').pipe(
+		gulp.dest('./src/lunr/')
+	);
+});
 
 gulp.task('css', () => {
 	return gulp.src('./src/*.postcss').pipe(
@@ -44,6 +57,32 @@ gulp.task('rev', () => {
 	).pipe(
 		gulp.dest('./tmp/')
 	);
+});
+
+gulp.task('lunr-rev', () => {
+	const manifest = JSON.parse(readFileSync('./tmp/asset.manifest'));
+
+	return gulp.src('./src/lunr/search.json').pipe(
+		json_transform((data) => {
+			const entries = Object.entries(data);
+
+			return JSON.stringify(
+				Object.fromEntries(entries.map(
+					(e) => {
+						const [key, val] = e;
+
+						return [
+							manifest['lunr/' + key].substr(5),
+							manifest['lunr/' + val].substr(5),
+						];
+					}
+				))
+			);
+		})
+	).pipe(gulp.dest('./src/lunr/'));
+});
+gulp.task('lunr-clean', () => {
+	return gulp.src('./tmp/lunr/search-*.json').pipe(clean());
 });
 
 gulp.task('brotli', () => {
@@ -156,7 +195,14 @@ gulp.task('sync-tmp-to-store', () => {
 });
 
 gulp.task('build', gulp.series(
+	'clean',
+	gulp.parallel(
 	'css',
+		'lunr'
+	),
+	'rev',
+	'lunr-rev',
+	'lunr-clean',
 	'rev',
 	'html',
 	'sitemap',

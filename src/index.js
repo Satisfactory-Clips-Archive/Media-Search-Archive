@@ -21,11 +21,12 @@
 	const date_values_sorted = [];
 	const topic_prefix = 'https://github.com/SignpostMarv/twitch-clip-notes/blob/main/coffeestainstudiosdevs/satisfactory/topics/';
 	const topic_suffix = '.md';
+	const searches_cache = {};
 
 	let timeout;
 	let last_query = '';
 
-	function search (query, on_index) {
+	function search (query, on_index, docs) {
 		return on_index.search(query).map((result) => {
 			return [docs[result.ref], result];
 		});
@@ -39,13 +40,38 @@
 		);
 	}
 
+	async function merge_search(query, for_dates) {
+		for_dates.forEach((date) => {
+			if ( ! (date in searches_cache)) {
+				searches_cache[date] = [
+					searches_dates[date][0](),
+					searches_dates[date][1]().then((prebuilt) => {
+						return lunr.Index.load(prebuilt);
+					}),
+				];
+			}
+		});
+
+		const merged_result = [];
+
+		for (let i = 0; i < for_dates.length; i++) {
+			const [docs, index] = await Promise.all(
+				searches_cache[for_dates[i]]
+			);
+
+			merged_result.push(...search(query, index, docs));
+		}
+
+		return merged_result;
+	}
+
 	function perform_search (on_index, modify_state = true) {
 		results_container.textContent = '';
 
 		cancelAnimationFrame(timeout);
 		nudge_visibility();
 
-		timeout = requestAnimationFrame(() => {
+		timeout = requestAnimationFrame(async () => {
 			const query = searchbar.value;
 			const title = `Q&A Clips Archive - Search - ${query}`;
 
@@ -91,12 +117,32 @@
 				);
 			}
 
-			let docs_results = search(
+			const dates_for_search = Object.keys(Object.fromEntries(
+				Object.entries(
+					Object.keys(searches_dates).reduce(
+						(out, date) => {
+							out[date] = parseInt(date.replace(/\-/g, ''), 10);
+
+							return out;
+						},
+						{}
+					)
+				).filter((e) => {
+					const [, date_as_int] = e;
+
+					return (
+						date_as_int >= filter_date_from
+						&& date_as_int <= filter_date_to
+					);
+				})
+			));
+
+			let docs_results = (await merge_search(
 				query.split(' ').map((e) => {
 					return e.replace(/\.+$/, '');
 				}).join(' '),
-				on_index
-			).filter((e) => {
+				dates_for_search
+			)).filter((e) => {
 				const [doc, result] = e;
 				const dateint = parseInt(doc.date.replace(/\-/g, ''), 10);
 
@@ -116,6 +162,10 @@
 					const bint = parseInt(b[0].date.replace(/\-/g, ''), 10);
 
 					return bint - aint;
+				});
+			} else {
+				docs_results = docs_results.sort((a, b) => {
+					return b[1].score - a[1].score;
 				});
 			}
 
@@ -415,8 +465,7 @@
 	const fetches = {};
 
 	[
-		'./lunr.json',
-		'./docs.json',
+		'./lunr/search.json',
 		'./synonyms.json',
 		'./topics.json'
 	].forEach((path) => {
@@ -437,24 +486,47 @@
 		fetches[path] = preload.href;
 	});
 
-	const fetch_prebuilt_index = fetch(fetches['./lunr.json']);
-	const fetch_docs = fetch(fetches['./docs.json']);
+	const fetch_searches = fetch(fetches['./lunr/search.json']);
 	const fetch_synonyms = fetch(fetches['./synonyms.json']);
 	const fetch_topics = fetch(fetches['./topics.json']);
 
 	const [
-		prebuilt_index,
-		docs,
+		searches,
 		synonyms,
 		topics,
 	] = await Promise.all((await Promise.all([
-		fetch_prebuilt_index,
-		fetch_docs,
+		fetch_searches,
 		fetch_synonyms,
 		fetch_topics,
 	])).map((e) => e.json()));
 
 	const synonym_keys = Object.keys(synonyms);
+
+	const searches_entries = Object.entries(searches);
+
+	const searches_dates = Object.keys(searches).map(
+		(filename) => {
+			return filename.replace(
+				/^docs-(\d{4,}\-\d{2}-\d{2}).+$/,
+				'$1'
+			);
+		}
+	).reduce(
+		(out, date, i) => {
+			const [docs_path, lunr_path] = searches_entries[i];
+			out[date] = [
+				async () => {
+					return await (await fetch('/lunr/' + docs_path)).json();
+				},
+				async () => {
+					return await (await fetch('/lunr/' + lunr_path)).json();
+				},
+			];
+
+			return out;
+		},
+		{}
+	);
 
 	//#endregion
 
@@ -465,13 +537,14 @@
 		'aliasSatisfactoryVocabulary'
 	);
 
+	/*
 	const index = lunr.Index.load(prebuilt_index);
+	*/
 
 	//#region date min/max
 
-	for (const doc_entry of Object.entries(docs)) {
-		const [, doc] = doc_entry;
-		const maybe = parseInt(doc.date.replace(/\-/g, ''), 10);
+	for (const date of Object.keys(searches_dates)) {
+		const maybe = parseInt(date.replace(/\-/g, ''), 10);
 
 		if ( ! maybe_date_max.includes(maybe)) {
 			maybe_date_max.push(maybe);
@@ -480,12 +553,6 @@
 		}
 	}
 
-	const date_max = (
-		Math.max(...maybe_date_max).toString(10)
-	);
-	const date_min = (
-		Math.min(...maybe_date_min).toString(10)
-	);
 	date_values.sort().forEach((e) => {
 		date_values_sorted.push(e);
 	});
@@ -496,8 +563,6 @@
 	date_to_output_update();
 
 	//#endregion
-
-	const topic_filter_frag = document.createDocumentFragment();
 
 	const optgroups = {};
 
@@ -551,20 +616,20 @@
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 		if (searchbar.checkValidity()) {
-			perform_search(index);
+			perform_search(false);
 		}
 	});
 
 	window.onpopstate = () => {
-		hashsearch(index, false);
+		hashsearch(false, false);
 	};
-	hashsearch(index, false);
+	hashsearch(false, false);
 
 	sort_by_relevance_input.addEventListener('input', () => {
 		const params = new URLSearchParams(location.search);
 
 		if (params.has('q')) {
-			perform_search(index, false);
+			perform_search(false, false);
 		}
 	});
 	sort_by_date_input.addEventListener('input', () => {
