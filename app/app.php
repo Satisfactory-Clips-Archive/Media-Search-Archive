@@ -1301,7 +1301,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	$basename = basename($save_path);
 
-	$file_path = $save_path . '/../' . $basename . '.md';
+	$file_path = $save_path . '/../' . $basename . '/index.md';
 
 	file_put_contents($file_path, '# Archives' . "\n");
 
@@ -1313,8 +1313,8 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			. 'date: Last Modified' . "\n"
 			. '---' . "\n"
 			. '# Archives' . "\n"
-			. sprintf('* [FAQ](%s/FAQ.md)' . "\n", $basename)
-			. sprintf('* [Topics](%s/topics.md)' . "\n", $basename)
+			. '* [FAQ](FAQ.md)' . "\n"
+			. '* [Topics](topics.md)' . "\n"
 		)
 	);
 
@@ -1383,9 +1383,8 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			file_put_contents(
 				$file_path,
 				sprintf(
-					'* [%s](%s/%s)' . "\n",
+					'* [%s](%s)' . "\n",
 					$readable_date,
-					$basename,
 					$filename
 				),
 				FILE_APPEND
