@@ -767,10 +767,14 @@ if ($transcriptions) {
 						'---' . "\n"
 						. sprintf(
 							'title: "%s"' . "\n",
-							str_replace(
+							(
+								date('F jS, Y', (int) strtotime($date))
+								. ' Livestream '
+								. str_replace(
 								'"',
 								'\\"',
 								$cache['playlistItems'][$video_id][1]
+							)
 							)
 						)
 						. sprintf(
