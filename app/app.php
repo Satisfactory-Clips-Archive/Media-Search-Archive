@@ -751,7 +751,6 @@ if ($transcriptions) {
 				'.md'
 			);
 
-			if ( ! is_file($transcriptions_file)) {
 				$caption_lines = captions($video_id);
 
 				if (count($caption_lines) < 1) {
@@ -833,7 +832,6 @@ if ($transcriptions) {
 						FILE_APPEND
 					);
 				}
-			}
 		}
 	}
 
