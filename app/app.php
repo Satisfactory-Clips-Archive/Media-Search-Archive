@@ -221,9 +221,6 @@ $already_in_markdown = [];
 /** @var list<string> */
 $autocategorise = [];
 
-/** @var list<string> */
-$already_in_faq = [];
-
 $cache = json_decode(
 	file_get_contents(__DIR__ . '/cache.json') ?: '[]',
 	true
@@ -434,17 +431,6 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 
 	$already_in_markdown[$playlist_id] = $matches[1];
 }
-
-preg_match_all(
-	'/https:\/\/www\.youtube\.com\/watch\?v=([^\n\s\*]+)/',
-	file_get_contents(
-		__DIR__ .
-		'/../coffeestainstudiosdevs/satisfactory/FAQ.md'
-	),
-	$matches
-);
-
-$already_in_faq = $matches[1];
 
 $fetch_all_playlists = static function (array $args) use (
 	&$other_playlists_on_channel,
@@ -692,47 +678,6 @@ foreach (array_keys($playlists) as $playlist_id) {
 			),
 			FILE_APPEND
 		);
-	}
-}
-
-/** @var array<string, list<array{0:string, 1:string}>> */
-$absent_from_faq = [];
-
-foreach ($already_in_faq as $id) {
-	if (in_array($id, $exclude_from_absent_tag_check, true)) {
-		continue;
-	}
-
-	if (
-		! isset($video_tags[$id]) ||
-		! in_array('faq', $video_tags[$id], true)
-	) {
-		echo
-			'Missing FAQ tag: ',
-			' https://www.youtube.com/watch?',
-			http_build_query([
-				'v' => $id,
-			]),
-			"\n";
-	}
-}
-
-foreach ($video_tags as $id => $tags) {
-	if (
-		in_array('faq', $tags, true)
-		&& ! in_array($id, $already_in_faq, true)
-	) {
-		foreach ($videos as $playlist_id => $video_ids) {
-			if (isset($video_ids[$id]) && isset($playlists[$playlist_id])) {
-				$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
-
-				if ( ! isset($absent_from_faq[$date])) {
-					$absent_from_faq[$date] = [];
-				}
-
-				$absent_from_faq[$date][] = [$playlist_id, $id];
-			}
-		}
 	}
 }
 
