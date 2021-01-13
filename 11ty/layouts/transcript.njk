@@ -4,7 +4,10 @@
 <meta charset="utf-8">
 <title>{{title}}</title>
 {% include 'head.njk' %}
-<meta property="og:article:modified_time" content="{{page.date.toUTCString()}}">
+<meta property="og:article:release_date" content="{{date}}">
+{% for topic in topics %}
+<meta property="og:article:tag" content="{{topic}}">
+{% endfor %}
 </head>
 <body>
 <header>
