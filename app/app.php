@@ -1255,6 +1255,8 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		foreach ($but_first as $playlist_id => $playlist_title) {
 			$slug = $topic_hierarchy[$playlist_id] ?? [];
 
+			$slug = array_filter($slug, 'is_string');
+
 			if (($slug[0] ?? '') !== $playlist_title) {
 				$slug[] = $playlist_title;
 			}
