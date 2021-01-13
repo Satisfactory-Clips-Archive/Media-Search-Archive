@@ -1311,6 +1311,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			'---' . "\n"
 			. 'title: Q&A Clips Archive - Browse' . "\n"
 			. 'date: Last Modified' . "\n"
+			. 'layout: index' . "\n"
 			. '---' . "\n"
 			. '# Archives' . "\n"
 			. '* [FAQ](FAQ.md)' . "\n"
