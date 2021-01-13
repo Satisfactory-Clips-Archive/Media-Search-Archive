@@ -95,8 +95,6 @@ gulp.task('html', () => {
 	).pipe(
 		replace('.md', '/')
 	).pipe(
-		replace('"satisfactory/', '"/')
-	).pipe(
 		replace('"./topics/', '"/topics/')
 	).pipe(
 		replace(/"(?:\.\.\/)+topics\/?/g, '"/topics/')
