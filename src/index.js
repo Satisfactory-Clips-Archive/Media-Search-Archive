@@ -564,14 +564,14 @@
 		const params = new URLSearchParams(location.search);
 
 		if (params.has('q')) {
-		perform_search(index, false);
+			perform_search(index, false);
 		}
 	});
 	sort_by_date_input.addEventListener('input', () => {
 		const params = new URLSearchParams(location.search);
 
 		if (params.has('q')) {
-		perform_search(index, false);
+			perform_search(index, false);
 		}
 	});
 
