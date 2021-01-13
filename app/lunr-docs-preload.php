@@ -259,7 +259,42 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 	];
 }
 
+$dated = [];
+
+foreach ($out as $id => $data) {
+	$date = $data['date'];
+
+	if ( ! isset($dated[$date])) {
+		$dated[$date] = [];
+	}
+
+	$dated[$date][$id] = $data;
+}
+
+foreach ($dated as $date => $data) {
+	file_put_contents(
+		(__DIR__ . '/lunr/docs-' . $date . '.json'),
+		json_encode($data, JSON_PRETTY_PRINT)
+	);
+}
+
 file_put_contents(
-	__DIR__ . '/lunr-docs-preload.json',
-	json_encode($out, JSON_PRETTY_PRINT)
+	__DIR__ . '/lunr/search.json',
+	json_encode(
+		array_combine(
+			array_map(
+				static function (string $date) : string {
+					return 'docs-' . $date . '.json';
+				},
+				array_keys($dated)
+			),
+			array_map(
+				static function (string $date) : string {
+					return 'lunr-' . $date . '.json';
+				},
+				array_keys($dated)
+			)
+		),
+		JSON_PRETTY_PRINT
+	)
 );
