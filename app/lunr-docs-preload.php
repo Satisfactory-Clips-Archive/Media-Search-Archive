@@ -218,6 +218,18 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 	);
 
 	if (is_file($transcription_file)) {
+		$transcription_raw = file_get_contents($transcription_file);
+
+		$transcription_raw = mb_substr(
+			$transcription_raw,
+			mb_strpos($transcription_raw, '---', 4)
+		);
+
+		$transcription_raw = mb_substr(
+			$transcription_raw,
+			mb_strpos($transcription_raw, '>')
+		);
+
 		$transcription = trim(implode("\n", array_map(
 			static function (string $line) : string {
 				$line = preg_replace('/^> /', '', $line);
@@ -228,12 +240,9 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 
 				return trim($line);
 			},
-			array_slice(
 				explode(
 					"\n",
-					file_get_contents($transcription_file)
-				),
-				3
+				$transcription_raw
 			)
 		)));
 	}
