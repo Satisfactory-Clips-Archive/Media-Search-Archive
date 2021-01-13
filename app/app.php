@@ -751,91 +751,91 @@ if ($transcriptions) {
 				'.md'
 			);
 
-				$caption_lines = captions($video_id);
+			$caption_lines = captions($video_id);
 
-				if (count($caption_lines) < 1) {
-					echo 'skipping captions for ', $video_id, "\n";
+			if (count($caption_lines) < 1) {
+				echo 'skipping captions for ', $video_id, "\n";
 
-					continue;
-				}
+				continue;
+			}
 
-				$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
+			$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
 
+			file_put_contents(
+				$transcriptions_file,
+				(
+					'---' . "\n"
+					. sprintf(
+						'title: "%s"' . "\n",
+						(
+							date('F jS, Y', (int) strtotime($date))
+							. ' Livestream '
+							. str_replace(
+							'"',
+							'\\"',
+							$cache['playlistItems'][$video_id][1]
+						)
+						)
+					)
+					. sprintf(
+						'date: "%s"' . "\n",
+						date('Y-m-d', (int) strtotime($date))
+					)
+					. 'layout: transcript' . "\n"
+					. sprintf(
+						'topics:' . "\n" . '    - "%s"' . "\n",
+						implode('"' . "\n" . '    - "', array_map(
+							static function (
+								string $playlist_id
+							) use (
+								$playlist_topic_strings
+							) {
+								return $playlist_topic_strings[
+									$playlist_id
+								];
+							},
+							array_filter(
+								$video_playlists[$video_id],
+								static function (
+									string $playlist_id
+								) use ($playlist_topic_strings) : bool {
+									return isset(
+										$playlist_topic_strings[
+											$playlist_id
+										]
+									);
+								}
+							)
+						))
+					)
+					. '---' . "\n"
+					. '# [' . date('F jS, Y', (int) strtotime($date)) .
+					' Livestream](../' . $date . '.md)' .
+					"\n" .
+					'## ' . $cache['playlistItems'][$video_id][1] .
+					"\n" .
+					(
+						'https://www.youtube.com/watch?' .
+						http_build_query([
+							'v' => $video_id,
+						])
+					) .
+					"\n"
+				)
+			);
+
+			foreach ($caption_lines as $caption_line) {
 				file_put_contents(
 					$transcriptions_file,
 					(
-						'---' . "\n"
-						. sprintf(
-							'title: "%s"' . "\n",
-							(
-								date('F jS, Y', (int) strtotime($date))
-								. ' Livestream '
-								. str_replace(
-								'"',
-								'\\"',
-								$cache['playlistItems'][$video_id][1]
-							)
-							)
-						)
-						. sprintf(
-							'date: "%s"' . "\n",
-							date('Y-m-d', (int) strtotime($date))
-						)
-						. 'layout: transcript' . "\n"
-						. sprintf(
-							'topics:' . "\n" . '    - "%s"' . "\n",
-							implode('"' . "\n" . '    - "', array_map(
-								static function (
-									string $playlist_id
-								) use (
-									$playlist_topic_strings
-								) {
-									return $playlist_topic_strings[
-										$playlist_id
-									];
-								},
-								array_filter(
-									$video_playlists[$video_id],
-									static function (
-										string $playlist_id
-									) use ($playlist_topic_strings) : bool {
-										return isset(
-											$playlist_topic_strings[
-												$playlist_id
-											]
-										);
-									}
-								)
-							))
-						)
-						. '---' . "\n"
-						. '# [' . date('F jS, Y', (int) strtotime($date)) .
-						' Livestream](../' . $date . '.md)' .
+						'> ' . $caption_line .
 						"\n" .
-						'## ' . $cache['playlistItems'][$video_id][1] .
-						"\n" .
-						(
-							'https://www.youtube.com/watch?' .
-							http_build_query([
-								'v' => $video_id,
-							])
-						) .
+						'> ' .
 						"\n"
-					)
+					),
+					FILE_APPEND
 				);
-
-				foreach ($caption_lines as $caption_line) {
-					file_put_contents(
-						$transcriptions_file,
-						(
-							'> ' . $caption_line .
-							"\n" .
-							'> ' .
-							"\n"
-						),
-						FILE_APPEND
-					);
-				}
+			}
 		}
 	}
 
