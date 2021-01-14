@@ -820,6 +820,44 @@ if ($transcriptions) {
 							'v' => $video_id,
 						])
 					) .
+					''
+					. "\n\n"
+					. '### Topics' . "\n"
+					. implode("\n", array_map(
+						static function (
+							string $playlist_id
+						) use (
+							$topics_json,
+							$playlist_topic_strings
+						) {
+							return (
+								'* ['
+								. implode(' > ', $topics_json[$playlist_topic_strings[
+									$playlist_id
+								]])
+								. '](../topics/'
+								. $playlist_topic_strings[
+									$playlist_id
+								]
+								. '.md)'
+							);
+						},
+						array_filter(
+							$video_playlists[$video_id],
+							static function (
+								string $playlist_id
+							) use ($playlist_topic_strings) : bool {
+								return isset(
+									$playlist_topic_strings[
+										$playlist_id
+									]
+								);
+							}
+						)
+					))
+					. "\n\n"
+					. '### Transcript' . "\n"
+					. '' .
 					"\n"
 				)
 			);
@@ -1196,8 +1234,16 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				file_put_contents(
 					$slug_path,
 					(
-						'* ' .
+						'* ['
+						. '' .
 						$cache['playlistItems'][$video_id][1] .
+						''
+						. ']('
+						. str_repeat('../', $slug_count)
+						. 'transcriptions/yt-'
+						. $video_id
+						. '.md)'
+						. '' .
 						' https://www.youtube.com/watch?' .
 						http_build_query([
 							'v' => $video_id,
