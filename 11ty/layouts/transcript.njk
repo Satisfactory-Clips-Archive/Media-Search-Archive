@@ -9,12 +9,45 @@
 <meta property="og:article:tag" content="{{topic}}">
 {% endfor %}
 </head>
+{% if r/Q&A: /.test(title) %}
+<body itemscope itemtype="https://schema.org/QAPage">
+{% else %}
 <body>
+{% endif %}
 <header>
 	<h1>{{title}}</h1>
 {% include 'nav.njk' %}
 </header>
+{% if r/Q&A: /.test(title) %}
+<main
+	itemprop="mainEntity"
+	itemscope
+	itemtype="https://schema.org/Question"
+><meta
+	itemprop="answerCount" content="1"
+><meta itemprop="dateCreated" content="{{date}}">{{
+	content
+	| safe
+	| replace(
+		'<h2>Q&amp;A:',
+		'<h2 itemprop="name">Q&amp;A:'
+	)
+	| replace(
+		'<blockquote>',
+		'<div
+			itemprop="suggestedAnswer"
+			itemscope
+			itemtype="https://schema.org/Answer"
+		><blockquote itemprop="text">'
+	)
+	| replace(
+		'</blockquote>',
+		'</blockquote><meta itemprop="dateCreated" content="' + date + '"></div>'
+	)
+}}</main>
+{% else %}
 <main>{{content | safe}}</main>
+{% endif %}
 {% include 'footer.njk' %}
 </body>
 </html>

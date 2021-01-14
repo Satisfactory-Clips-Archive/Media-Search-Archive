@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2020-01-14
+* Implemented more structured data
+
 ## 2020-01-13
 * Fixed bugs.
 
