@@ -135,8 +135,10 @@ gulp.task('html', () => {
 		replace('.md', '/')
 	).pipe(
 		replace('"./topics/', '"/topics/')
+		).pipe(
+			replace(/"(?:\.\.\/)+topics\/?/g, '"/topics/')
 	).pipe(
-		replace(/"(?:\.\.\/)+topics\/?/g, '"/topics/')
+		replace(/"(?:\.\.\/)+transcriptions\/?/g, '"/transcriptions/')
 	).pipe(
 		replace(
 			/https:\/\/(clips\.twitch\.tv\/(?:[a-zA-Z0-9]+))/g,

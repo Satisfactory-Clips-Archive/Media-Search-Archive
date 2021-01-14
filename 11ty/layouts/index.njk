@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+{% include 'head.njk' %}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"url": "https://clips.satisfactory.signpostmarv.name/",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "https://clips.satisfactory.signpostmarv.name/search.html?q={search_term_string}",
+		"query-input": "required name=search_term_string"
+	}
+}
+</script>
+<meta property="og:article:modified_time" content="{{page.date.toUTCString()}}">
+</head>
+<body>
+<header>
+	<h1>{{title}}</h1>
+{% include 'nav.njk' %}
+</header>
+<main>{{content | safe}}</main>
+{% include 'footer.njk' %}
+</body>
+</html>

@@ -11,7 +11,9 @@ Static site generator for
 # Changelog
 
 ## 2020-01-13
-Implemented a change to the client-side search index,
+* Fixed bugs.
+
+* Implemented a change to the client-side search index,
 	where the data was split by date to aid in browser caching.
 
 	Splitting by date means not having to discard the previous search index when a new livestream comes out.
