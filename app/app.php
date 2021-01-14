@@ -1210,10 +1210,12 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				. sprintf('title: "%s"' . "\n", $slug_title)
 				. 'date: Last Modified' . "\n"
 				. '---' . "\n"
-				. '[Topics](' . str_repeat('../', $slug_count) . 'topics.md)' .
-				' > ' .
-				$slug_title .
-				"\n"
+				. '[Topics]('
+				. str_repeat('../', $slug_count)
+				. 'topics.md)'
+				. ' > '
+				. $slug_title
+				. "\n"
 			)
 		);
 
@@ -1235,20 +1237,17 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 					$slug_path,
 					(
 						'* ['
-						. '' .
-						$cache['playlistItems'][$video_id][1] .
-						''
+						. $cache['playlistItems'][$video_id][1]
 						. ']('
 						. str_repeat('../', $slug_count)
 						. 'transcriptions/yt-'
 						. $video_id
 						. '.md)'
-						. '' .
-						' https://www.youtube.com/watch?' .
-						http_build_query([
+						. ' https://www.youtube.com/watch?'
+						. http_build_query([
 							'v' => $video_id,
-						]) .
-						"\n"
+						])
+						. "\n"
 					),
 					FILE_APPEND
 				);
