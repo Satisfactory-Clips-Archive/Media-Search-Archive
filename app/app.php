@@ -780,7 +780,11 @@ if ($transcriptions) {
 							date('F jS, Y', (int) strtotime($date))
 							. (
 								isset($not_a_livestream[$playlist_id])
-									? (' ' . $not_a_livestream[$playlist_id])
+									? (
+										' '
+										. $not_a_livestream[$playlist_id]
+										. ' '
+									)
 									: ' Livestream '
 							)
 							. str_replace(
