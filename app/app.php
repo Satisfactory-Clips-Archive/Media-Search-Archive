@@ -215,6 +215,11 @@ $exclude_from_absent_tag_check = [
 	'4_cYnq746zk', // official merch announcement video
 ];
 
+$not_a_livestream = [
+	'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ' => 'Teasers',
+	'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
+];
+
 /** @var array<string, list<string>> */
 $already_in_markdown = [];
 
@@ -588,8 +593,12 @@ foreach (array_keys($playlists) as $playlist_id) {
 			'F jS, Y',
 			$title_unix
 		) .
-		' Livestream clips (non-exhaustive)' .
-		''
+		'' .
+		(
+			isset($not_a_livestream[$playlist_id])
+				? (' ' . $not_a_livestream[$playlist_id])
+				: ' Livestream clips (non-exhaustive)'
+		)
 	);
 
 	file_put_contents(
@@ -769,7 +778,11 @@ if ($transcriptions) {
 						'title: "%s"' . "\n",
 						(
 							date('F jS, Y', (int) strtotime($date))
-							. ' Livestream '
+							. (
+								isset($not_a_livestream[$playlist_id])
+									? (' ' . $not_a_livestream[$playlist_id])
+									: ' Livestream '
+							)
 							. str_replace(
 								'"',
 								'\\"',
@@ -810,7 +823,14 @@ if ($transcriptions) {
 					)
 					. '---' . "\n"
 					. '# [' . date('F jS, Y', (int) strtotime($date)) .
-					' Livestream](../' . $date . '.md)' .
+					''
+					. ' '
+					. (
+						isset($not_a_livestream[$playlist_id])
+							? $not_a_livestream[$playlist_id]
+							: 'Livestream'
+					)
+					. '](../' . $date . '.md)' .
 					"\n" .
 					'## ' . $cache['playlistItems'][$video_id][1] .
 					"\n" .
@@ -1226,7 +1246,14 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 					"\n" .
 					'# ' .
 					$data_by_date[$playlist_id][1] .
-					' Livestream' .
+					''
+					. ' '
+					. (
+						isset($not_a_livestream[$playlist_id])
+							? $not_a_livestream[$playlist_id]
+							: 'Livestream'
+					)
+					. '' .
 					"\n"
 				),
 				FILE_APPEND

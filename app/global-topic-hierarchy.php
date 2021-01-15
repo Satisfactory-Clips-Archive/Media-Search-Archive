@@ -292,5 +292,19 @@ $global_topic_hierarchy = [
 			'Features',
 			'Buildings',
 		],
+		'PLbjDnnBIxiEp-vHRgDqKw29M-XZJOd8D7' => [ // Ben
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEq3TKcPLzSagH1kjcX0FieC' => [ // Gases
+			'Features',
+		],
+		'PLbjDnnBIxiEr_8eU2Hmzfvu1fyz46917f' => [ // Resource Well Extractor
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEosnfIbQBLgkkxOx-UNe6t8' => [ // Resource Well Pressurizer
+			'Features',
+			'Buildings',
+		],
 	],
 ];
