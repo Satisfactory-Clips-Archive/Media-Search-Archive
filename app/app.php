@@ -771,10 +771,10 @@ if ($transcriptions) {
 							date('F jS, Y', (int) strtotime($date))
 							. ' Livestream '
 							. str_replace(
-							'"',
-							'\\"',
-							$cache['playlistItems'][$video_id][1]
-						)
+								'"',
+								'\\"',
+								$cache['playlistItems'][$video_id][1]
+							)
 						)
 					)
 					. sprintf(
