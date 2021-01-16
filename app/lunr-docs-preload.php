@@ -227,7 +227,7 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 
 		$transcription_raw = mb_substr(
 			$transcription_raw,
-			mb_strpos($transcription_raw, '>')
+			mb_strpos($transcription_raw, "\n" . '>')
 		);
 
 		$transcription = trim(implode("\n", array_map(
