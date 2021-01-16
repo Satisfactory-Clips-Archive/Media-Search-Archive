@@ -605,7 +605,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 		$playlists[$playlist_id],
 		(
 			'---' . "\n"
-			. sprintf('title: "%s"' . "\n", $title)
+			. sprintf('title: "%s"' . "\n", 'Q&A Clips Archive - ' . $title)
 			. sprintf('date: "%s"' . "\n", date('Y-m-d', $title_unix))
 			. 'layout: livestream' . "\n"
 			. '---' . "\n"
@@ -777,6 +777,8 @@ if ($transcriptions) {
 					. sprintf(
 						'title: "%s"' . "\n",
 						(
+							'Q&A Clips Archive - '
+							.
 							date('F jS, Y', (int) strtotime($date))
 							. (
 								isset($not_a_livestream[$playlist_id])
@@ -1231,7 +1233,10 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			$slug_path,
 			(
 				'---' . "\n"
-				. sprintf('title: "%s"' . "\n", $slug_title)
+				. sprintf(
+					'title: "%s"' . "\n",
+					('Q&A Clips Archive - ' . $slug_title)
+				)
 				. 'date: Last Modified' . "\n"
 				. '---' . "\n"
 				. '[Topics]('
