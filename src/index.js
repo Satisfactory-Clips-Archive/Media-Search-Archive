@@ -260,10 +260,14 @@
 							).position
 						);
 					});
+					try {
 					lunrhighlighter(
 						transcription,
 						positions
 					);
+					} catch (err) {
+						console.error(err);
+					}
 
 					return node;
 				}).forEach((node) => {
