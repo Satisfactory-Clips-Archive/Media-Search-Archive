@@ -18,6 +18,7 @@ const sitemap = require('gulp-sitemap');
 const clean = require('gulp-clean');
 const json_transform = require('gulp-json-transform');
 const {readFileSync} = require('fs');
+const inline_source = require('gulp-inline-source');
 
 gulp.task('clean', () => {
 	return gulp.src('./tmp/', {read: false}).pipe(clean());
@@ -44,6 +45,8 @@ gulp.task('css', () => {
 		})
 	).pipe(
 		gulp.dest('./src/')
+	).pipe(
+		gulp.dest('./tmp-error_docs/')
 	)
 });
 
@@ -217,3 +220,24 @@ gulp.task('build', gulp.series(
 	),
 	'sync-tmp-to-store'
 ));
+
+gulp.task('html-error_docs', () => {
+	return gulp.src('./tmp-error_docs/**/*.html').pipe(
+		replace('.css">', '.css" inline>')
+	).pipe(
+		inline_source()
+	).pipe(
+		htmlmin({
+			collapseInlineTagWhitespace: false,
+			collapseWhitespace: true,
+			minifyCSS: true,
+			minifyJs: true,
+			removeAttributeQuotes: true,
+			preserveLineBreaks: true,
+			removeComments: true,
+			useShortDoctype: true,
+		})
+	).pipe(
+		gulp.dest('./error_docs')
+	);
+});

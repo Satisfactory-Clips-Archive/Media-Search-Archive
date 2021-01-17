@@ -6,3 +6,5 @@
 /src/*.css
 /src/*/
 /src/index.html
+/error_docs/
+/tmp-error_docs/

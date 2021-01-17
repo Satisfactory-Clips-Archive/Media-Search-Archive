@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "error_docs": "eleventy --config=./.eleventy.error_docs.js && gulp html-error_docs",
     "build": "eleventy && gulp build"
   },
   "dependencies": {
@@ -13,6 +14,7 @@
     "gulp-changed": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-inline-source": "^4.0.0",
     "gulp-json-transform": "^0.4.7",
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "^9.0.0",
