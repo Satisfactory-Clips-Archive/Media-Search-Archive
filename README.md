@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2020-01-17
+* Implemented additional structured data & other metadata.
+
 ## 2020-01-16
 * Implemented ability to specify structured data not sourced from markdown front matter.
 * Moved search page to avoid inclusion of html extension.

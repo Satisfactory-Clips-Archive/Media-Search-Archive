@@ -1,15 +1,31 @@
-{
+const topics = require('../../src/topics.json');
+
+const coffee_stain = {
+	"@type" : "Organization",
+	"name": "Coffee Stain Studios AB",
+	"url" : "https://www.coffeestainstudios.com/"
+};
+
+const satisfactory = {
+	"@type": "VideoGame",
+	"name": "Satisfactory",
+	"author": coffee_stain,
+	"operatingSystem": "Windows",
+	"applicationCategory": [
+		"Game",
+		"Factory Construction"
+	]
+};
+
+module.exports = () => {
+	const out = {
 	"/topics/coffee-stainers/ben/": [
 		{
 			"@context": "https://schema.org",
 			"@type": "Person",
 			"name": "Ben de Hullu",
 			"jobTitle": "Tech Artist",
-			"worksFor": {
-				"@type" : "Organization",
-				"name": "Coffee Stain Studios AB",
-				"url" : "https://www.coffeestainstudios.com/"
-			},
+			"worksFor": coffee_stain,
 			"subjectOf": [
 				{
 					"@type": "VideoObject",
@@ -32,11 +48,7 @@
 			"@type": "Person",
 			"name": "Dylan Kelly",
 			"jobTitle": "Programmer",
-			"worksFor": {
-				"@type" : "Organization",
-				"name": "Coffee Stain Studios AB",
-				"url" : "https://www.coffeestainstudios.com/"
-			},
+			"worksFor": coffee_stain,
 			"url": [
 				"https://twitter.com/SnyggLich"
 			]
@@ -48,11 +60,7 @@
 			"@type": "Person",
 			"name": "Jace Varlet",
 			"jobTitle": "Community Manager",
-			"worksFor": {
-				"@type" : "Organization",
-				"name": "Coffee Stain Studios AB",
-				"url" : "https://www.coffeestainstudios.com/"
-			},
+			"worksFor": coffee_stain,
 			"subjectOf": [
 				{
 					"@type": "VideoObject",
@@ -63,6 +71,9 @@
 					"url": "https://www.youtube.com/watch?v=v2JdPmTvQKg",
 					"embedUrl": "https://www.youtube.com/embed/v2JdPmTvQKg"
 				}
+			],
+			"image": [
+				"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/51/Jace.jpg"
 			],
 			"url": [
 				"https://twitter.com/jembawls"
@@ -75,11 +86,7 @@
 			"@type": "Person",
 			"name": "Simon Begby",
 			"jobTitle": "VFX Artist",
-			"worksFor": {
-				"@type" : "Organization",
-				"name": "Coffee Stain Studios AB",
-				"url" : "https://www.coffeestainstudios.com/"
-			},
+			"worksFor": coffee_stain,
 			"subjectOf": [
 				{
 					"@type": "CreativeWorkSeries",
@@ -100,11 +107,7 @@
 			"@type": "Person",
 			"name": "Snutt Treptow",
 			"jobTitle": "Community Manager",
-			"worksFor": {
-				"@type" : "Organization",
-				"name": "Coffee Stain Studios AB",
-				"url" : "https://www.coffeestainstudios.com/"
-			},
+			"worksFor": coffee_stain,
 			"subjectOf": [
 				{
 					"@type": "VideoObject",
@@ -126,7 +129,25 @@
 			"@context": "https://schema.org",
 			"@type": "Person",
 			"name": "Tim Badylak",
-			"jobTitle": "Producer"
+			"jobTitle": "Producer",
+			"image": [
+				"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a7/Tim_Badylak.png"
+			]
+		}
+	],
+	"/topics/features/power-management/nuclear-energy/": [
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Nuclear Energy",
+			"description": "Satisfactory Livestream clips about Nuclear Energy",
+			"image": [
+				"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/46/Nuclear_Power_Plant.png",
+				"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a1/Nuclear_Waste.png"
+			],
+			"about": [
+				satisfactory,
+			]
 		}
 	],
 	"/": [
@@ -141,4 +162,92 @@
 			}
 		}
 	]
-}
+	};
+
+	Object.entries(topics).forEach((e) => {
+		const [slug, data] = e;
+		const permalink = `/topics/${slug}/`;
+
+		if ( ! (permalink in out)) {
+			out[permalink] = [
+				{
+					"@context": "https://schema.org",
+					"@type": "WebPage",
+					"name": data[data.length - 1],
+					"description": `Satisfactory Livestream clips about ${
+						data[data.length - 1]
+					}`,
+					"about": [
+						satisfactory,
+					]
+				}
+			];
+		}
+	});
+
+	Object.entries(out).forEach((e) => {
+		const [permalink, data] = e;
+		const subslugs = [];
+
+		const breadcrumbs = [];
+
+		const maybe_topic_slugs = /^\/topics\/(.+)\//.exec(permalink);
+
+		if (maybe_topic_slugs) {
+			breadcrumbs.push(...maybe_topic_slugs[1].split('/').map(
+				(subslug) => {
+					subslugs.push(subslug);
+
+					const topic = topics[subslugs.join('/')];
+
+					return [
+						topic[topic.length - 1],
+						`https://clips.satisfactory.signpostmarv.name/topics/${
+							subslugs.join('/')
+						}/`
+					];
+				}
+			));
+		}
+
+		if (
+			('@type' in data[0])
+			&& ['Person'].includes(data[0]['@type'])
+		) {
+			data[0] = {
+				"@context": "https://schema.org",
+				"@type": "WebPage",
+				"name": data[0].name,
+				"description": `Satisfactory Livestream clips about ${
+					data[0].name
+				}`,
+				"about": [
+					data[0],
+				]
+			}
+		}
+
+		if (
+			breadcrumbs.length > 0
+			&& ('@type' in data[0])
+			&& ['WebPage'].includes(data[0]['@type'])
+			&& ! ('breadcrumb' in data[0])
+		) {
+			data[0]['breadcrumb'] = {
+				'@type': 'BreadcrumbList',
+				'itemListElement': breadcrumbs.map((breadcrumb, i) => {
+					return {
+						'@type': 'ListItem',
+						'additionalType': 'WebPage',
+						item: breadcrumb[1],
+						url: breadcrumb[1],
+						name: breadcrumb[0],
+						position: i,
+					};
+				}),
+			};
+		}
+	})
+
+	return out;
+};

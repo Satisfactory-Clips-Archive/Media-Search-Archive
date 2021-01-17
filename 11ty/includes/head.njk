@@ -1,12 +1,23 @@
 <meta property="og:title" content="{{title}}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta
+{% if page.url in jsonld %}<meta
+	name="description"
+	content="{jsonld[page.url] | jsonld-description }"
+>{% else %}<meta
 	name="description"
 	content="Serves as an unofficial archive for Q&A Clips for Coffee Stain Studio's Satisfactory-related livestreams"
->
+>{% endif %}
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/common.css">
 <link rel="stylesheet" href="/browse.css">
 {% if page.url in jsonld %}{% for chunk in jsonld[page.url] %}<script
 	type="application/ld+json"
 >{{chunk | json | safe}}</script>{% endfor %}{% endif %}
+{% if page.url in opengraph %}{% for pair in opengraph[page.url] %}<meta
+	property="{{pair[0]}}"
+	content="{{pair[1]}}"
+>{% endfor %}{% endif %}
+{% if page.url in twitter %}{% for key,value in twitter[page.url] %}<meta
+	name="{{key}}"
+	content="{{value}}"
+>{% endfor %}{% endif %}
