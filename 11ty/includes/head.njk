@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% if page.url in jsonld %}<meta
 	name="description"
-	content="{jsonld[page.url] | jsonld-description }"
+	content="{{jsonld[page.url] | jsonld_description }}"
 >{% else %}<meta
 	name="description"
 	content="Serves as an unofficial archive for Q&A Clips for Coffee Stain Studio's Satisfactory-related livestreams"

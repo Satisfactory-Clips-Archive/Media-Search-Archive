@@ -3,7 +3,7 @@ module.exports = (e) => {
 		return JSON.stringify(value, null, "\t");
 	});
 
-	e.addFilter('jsonld-description', (value) => {
+	e.addFilter('jsonld_description', (value) => {
 		let maybe = value.find((e) => {
 			return 'description' in e;
 		});
