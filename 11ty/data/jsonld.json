@@ -1,0 +1,144 @@
+{
+	"/topics/coffee-stainers/ben/": [
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Ben de Hullu",
+			"jobTitle": "Tech Artist",
+			"worksFor": {
+				"@type" : "Organization",
+				"name": "Coffee Stain Studios AB",
+				"url" : "https://www.coffeestainstudios.com/"
+			},
+			"subjectOf": [
+				{
+					"@type": "VideoObject",
+					"name": "Dev Vlog: Tech Art & Optimisation with Ben!",
+					"description": "save the frames",
+					"uploadDate": "2020-11-05",
+					"thumbnailUrl": "http://i3.ytimg.com/vi/omjFqZQV9fI/hqdefault.jpg",
+					"url": "https://www.youtube.com/watch?v=omjFqZQV9fI",
+					"embedUrl": "https://www.youtube.com/embed/omjFqZQV9fI"
+				}
+			],
+			"url": [
+				"https://twitter.com/BenHullu"
+			]
+		}
+	],
+	"/topics/coffee-stainers/dylan/": [
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Dylan Kelly",
+			"jobTitle": "Programmer",
+			"worksFor": {
+				"@type" : "Organization",
+				"name": "Coffee Stain Studios AB",
+				"url" : "https://www.coffeestainstudios.com/"
+			},
+			"url": [
+				"https://twitter.com/SnyggLich"
+			]
+		}
+	],
+	"/topics/coffee-stainers/jace/": [
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Jace Varlet",
+			"jobTitle": "Community Manager",
+			"worksFor": {
+				"@type" : "Organization",
+				"name": "Coffee Stain Studios AB",
+				"url" : "https://www.coffeestainstudios.com/"
+			},
+			"subjectOf": [
+				{
+					"@type": "VideoObject",
+					"name": "Game Dev Circle - Episode 1 - Jace Varlet",
+					"description": "This is Jace Varlet, he's a community manager and colleague at Coffee Stain Studios. Follow Jace as he talks about his story leading up until this point, including his time in Japan where he started his game development career after having moved from his home country Australia.",
+					"uploadDate": "2019-07-26",
+					"thumbnailUrl": "http://i3.ytimg.com/vi/v2JdPmTvQKg/hqdefault.jpg",
+					"url": "https://www.youtube.com/watch?v=v2JdPmTvQKg",
+					"embedUrl": "https://www.youtube.com/embed/v2JdPmTvQKg"
+				}
+			],
+			"url": [
+				"https://twitter.com/jembawls"
+			]
+		}
+	],
+	"/topics/coffee-stainers/simon/": [
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Simon Begby",
+			"jobTitle": "VFX Artist",
+			"worksFor": {
+				"@type" : "Organization",
+				"name": "Coffee Stain Studios AB",
+				"url" : "https://www.coffeestainstudios.com/"
+			},
+			"subjectOf": [
+				{
+					"@type": "CreativeWorkSeries",
+					"name": "Simon Saga",
+					"startDate": "2018-10-17",
+					"endDate": "2019-03-04",
+					"url": "https://www.youtube.com/playlist?list=PLzGEn7MzkWRsyTI-94PoqpuRh9a2YcKXK"
+				}
+			],
+			"url": [
+				"https://twitter.com/SBegby"
+			]
+		}
+	],
+	"/topics/coffee-stainers/snutt/": [
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Snutt Treptow",
+			"jobTitle": "Community Manager",
+			"worksFor": {
+				"@type" : "Organization",
+				"name": "Coffee Stain Studios AB",
+				"url" : "https://www.coffeestainstudios.com/"
+			},
+			"subjectOf": [
+				{
+					"@type": "VideoObject",
+					"name": "I was a SPEAKER at a GAME DEV CONFERENCE",
+					"description": "They invited me to speak at a game developer conference! Weird. Here's a video about that!",
+					"uploadDate": "2020-03-02",
+					"thumbnailUrl": "http://i3.ytimg.com/vi/N6yki_HwBNQ/hqdefault.jpg",
+					"url": "https://www.youtube.com/watch?v=N6yki_HwBNQ",
+					"embedUrl": "https://www.youtube.com/embed/N6yki_HwBNQ"
+				}
+			],
+			"url": [
+				"https://twitter.com/BustaSnutt"
+			]
+		}
+	],
+	"/topics/coffee-stainers/tim/": [
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Tim Badylak",
+			"jobTitle": "Producer"
+		}
+	],
+	"/": [
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"url": "https://clips.satisfactory.signpostmarv.name/",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://clips.satisfactory.signpostmarv.name/search?q={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		}
+	]
+}

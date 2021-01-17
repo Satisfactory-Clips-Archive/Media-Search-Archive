@@ -8,14 +8,14 @@
 	name="description"
 	content="Serves as an archive for Q&A Clips for Coffee Stain Studio's Satisfactory-related livestreams"
 >
-<link rel="shortcut icon" href="./favicon.ico" />
+<link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/common.css">
 <link rel="stylesheet" href="/search.css">
-<script src="./lunr.min.js"></script>
-<script src="./lunr-highlighter.js"></script>
-<link rel="preload" as="fetch" crossorigin="anonymous" href="./lunr/search.json">
-<link rel="preload" as="fetch" crossorigin="anonymous" href="./synonyms.json">
-<link rel="preload" as="fetch" crossorigin="anonymous" href="./topics.json">
+<script src="/lunr.min.js"></script>
+<script src="/lunr-highlighter.js"></script>
+<link rel="preload" as="fetch" crossorigin="anonymous" href="/lunr/search.json">
+<link rel="preload" as="fetch" crossorigin="anonymous" href="/synonyms.json">
+<link rel="preload" as="fetch" crossorigin="anonymous" href="/topics.json">
 <template id="loading">
 	<section>
 		<header>Loading</header>
@@ -55,7 +55,7 @@
 			</p>
 		</header>
 		<section>
-			<form action="/search.html">
+			<form action="/search">
 				<input type="search" id="search" required name="q" title="Search Query">
 				<section
 					role="group"
@@ -200,6 +200,6 @@
 			href="https://discord.com/invite/satisfactory"
 		>Official Discord</a></p>
 </footer>
-<script async defer src="./index.js"></script>
+<script async defer src="/index.js"></script>
 </body>
 </html>

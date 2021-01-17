@@ -465,9 +465,9 @@
 	const fetches = {};
 
 	[
-		'./lunr/search.json',
-		'./synonyms.json',
-		'./topics.json'
+		'/lunr/search.json',
+		'/synonyms.json',
+		'/topics.json'
 	].forEach((path) => {
 		const parts = /^(.+)(\.[a-z]+)$/.exec(path);
 
@@ -486,9 +486,9 @@
 		fetches[path] = preload.href;
 	});
 
-	const fetch_searches = fetch(fetches['./lunr/search.json']);
-	const fetch_synonyms = fetch(fetches['./synonyms.json']);
-	const fetch_topics = fetch(fetches['./topics.json']);
+	const fetch_searches = fetch(fetches['/lunr/search.json']);
+	const fetch_synonyms = fetch(fetches['/synonyms.json']);
+	const fetch_topics = fetch(fetches['/topics.json']);
 
 	const [
 		searches,

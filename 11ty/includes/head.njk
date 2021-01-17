@@ -7,3 +7,6 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/common.css">
 <link rel="stylesheet" href="/browse.css">
+{% if page.url in jsonld %}{% for chunk in jsonld[page.url] %}<script
+	type="application/ld+json"
+>{{chunk | json | safe}}</script>{% endfor %}{% endif %}
