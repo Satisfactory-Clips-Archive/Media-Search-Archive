@@ -216,7 +216,7 @@ module.exports = () => {
 		) {
 			data[0] = {
 				"@context": "https://schema.org",
-				"@type": "WebPage",
+				"@type": "CreativeWork",
 				"name": data[0].name,
 				"description": `Satisfactory Livestream clips about ${
 					data[0].name
@@ -224,6 +224,10 @@ module.exports = () => {
 				"about": [
 					data[0],
 				]
+			};
+
+			if ('image' in data[0].about[0]) {
+				data[0].image = data[0].about[0].image;
 			}
 		}
 

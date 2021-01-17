@@ -1,4 +1,4 @@
-const jsonld = require('./jsonld.js');
+const jsonld = require('./jsonld.js')();
 
 module.exports = () => {
 	const out = Object.entries(jsonld).reduce(
