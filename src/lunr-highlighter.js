@@ -2,6 +2,7 @@
  * Adapted from https://olivernn.github.io/moonwalkers/index.js
  */
 function lunrhighlighter (element, unsorted) {
+	requestIdleCallback(() => {
 	const nodeFilter = {
 		acceptNode: function (node) {
 			if (/^[\t\n\r ]*$/.test(node.nodeValue)) {
@@ -53,4 +54,5 @@ function lunrhighlighter (element, unsorted) {
 			index = nodeEndIndex
 		}
 	}
+	});
 }
