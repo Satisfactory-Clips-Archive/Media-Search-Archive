@@ -42,9 +42,11 @@ const index = lunr(function () {
 	*/
 	this.field('quotes');
 	this.use(aliasSatisfactoryVocabulary);
+	/*
 	this.metadataWhitelist = [
 		'position',
 	];
+	*/
 
 	documents.forEach((doc) => {
 		this.add(doc);
