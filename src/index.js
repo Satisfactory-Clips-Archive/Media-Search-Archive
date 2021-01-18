@@ -251,6 +251,7 @@
 					const transcription = node.querySelector('aside');
 					transcription.textContent = doc.transcription;
 
+					/*
 					const positions = [];
 
 					Object.keys(result.matchData.metadata).forEach((term) => {
@@ -268,6 +269,7 @@
 					} catch (err) {
 						console.error(err);
 					}
+					*/
 
 					return node;
 				}).forEach((node) => {
