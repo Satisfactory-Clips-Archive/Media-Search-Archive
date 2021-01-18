@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2020-01-18
+* Adjusted opengraph data
+
 ## 2020-01-17
 * Implemented additional structured data & other metadata.
 
