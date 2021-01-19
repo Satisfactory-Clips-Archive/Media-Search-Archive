@@ -306,5 +306,27 @@ $global_topic_hierarchy = [
 			'Features',
 			'Buildings',
 		],
+		'PLbjDnnBIxiEp2Wt-93hcr6HjooDor6QYr' => [ // Birk
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEo8-KZTgxIJ71UXOd1d9Vn9' => [ // Goat Simulator
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiEqWsWfqsODRxzdiXYbKbHzX' => [ // Hannah
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEqV2RcUFiWJFx2JzyJMRdNX' => [ // Kristoffer
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEoYdHzkwIdOZJ_4WfDeAB-z' => [ // Nathalie
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEqr7yS5ijjDUeaivXoHd4Rm' => [ // Pizza
+			'Pizza',
+		],
+		'PLbjDnnBIxiEp8wlgAM7rcgGivq1zvs1Do' => [ // S.A.M. Ore
+			'Environment',
+			'Resources',
+		],
 	],
 ];

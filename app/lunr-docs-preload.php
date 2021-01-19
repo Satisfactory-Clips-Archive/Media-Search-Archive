@@ -4,7 +4,7 @@
  */
 declare(strict_types=1);
 
-use Cocur\Slugify\Slugify;
+namespace SignpostMarv\TwitchClipNotes;
 
 require_once(__DIR__ . '/vendor/autoload.php');
 require_once(__DIR__ . '/global-topic-hierarchy.php');

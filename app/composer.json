@@ -9,6 +9,13 @@
 			"email": "me@signpostmarv.name"
 		}
 	],
+	"autoload-dev": {
+		"psr-4": {
+			"SignpostMarv\\TwitchClipNotes\\": [
+				"./src/"
+			]
+		}
+	},
 	"config": {
 		"classmap-authoritative": true,
 		"sort-packages": true

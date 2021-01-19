@@ -12,7 +12,6 @@ use function array_keys;
 use function basename;
 use Benlipp\SrtParser\Parser;
 use function count;
-use Cocur\Slugify\Slugify;
 use function date;
 use const FILE_APPEND;
 use function file_get_contents;
