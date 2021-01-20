@@ -653,8 +653,16 @@ foreach (array_keys($playlists) as $playlist_id) {
 			file_put_contents(
 				$playlists[$playlist_id],
 				(
-					'* ' .
+					'* ['
+					.
+					'' .
 					$cache['playlistItems'][$video_id][1] .
+					''
+					. ']('
+					. '/transcriptions/yt-'
+					. $video_id
+					. '.md)'
+					. '' .
 					' https://www.youtube.com/watch?' .
 					http_build_query([
 						'v' => $video_id,
