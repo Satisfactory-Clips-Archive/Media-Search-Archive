@@ -328,5 +328,63 @@ $global_topic_hierarchy = [
 			'Environment',
 			'Resources',
 		],
+		'PLbjDnnBIxiErjDwRaqXFiQTvINaWCY2Ne' => [ // Assembler
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEoavILe5ochrdZT10xLLyV9' => [ // AWESOME Sink
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEr6Nss4Y03AxUncqfZfcu1L' => [ // AWESOME Store
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEoD25ogJ2FI5QrNv6DMLSO_' => [ // Biomes
+			'Environment',
+		],
+		'PLbjDnnBIxiErkd_Mfx2t-MUAbsERuK3fd' => [ // Fuel
+			'Features',
+			'Crafting',
+		],
+		'PLbjDnnBIxiEpeue2wFBDqf_qrb1h1Fvgs' => [ // Lizard Doggo
+			'Environment',
+			'Creatures',
+		],
+		'PLbjDnnBIxiEpNdRJ8p4FPF7P0Ll5YIpYV' => [ // M.A.M.
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEpy0dbl8UJNZFunrmillCCR' => [ // Mark
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEoqeifeAJSpwnQVcQUC0FzZ' => [ // Oil
+			'Environment',
+			'Resources',
+		],
+		'PLbjDnnBIxiEoUp0wJsZwKk1B0FacoYg-T' => [ // Oil Extractor
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEqr7yS5ijjDUeaivXoHd4Rm' => [ // Pizza
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiErPq-K_XJmklK3wFLBycvVr' => [ // Refinery
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEo-t9KKeKOJS_Q_pVDfTt9i' => [ // Resource Wells
+			'Environment',
+		],
+		'PLbjDnnBIxiEp9qgkHSjAgFlLTm5-ZWSQD' => [ // Sanctum
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiErRO8WsKyL84ktw50L1KBD9' => [ // Space Elevator
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiErFYB5etMa4dBURmJ9kDAH-' => [ // Valheim
+			'Off-Topic',
+		],
 	],
 ];

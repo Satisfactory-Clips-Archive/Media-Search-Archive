@@ -16,12 +16,14 @@ class Slugify extends Base
 		RuleProviderInterface $provider = null
 	) {
 		$this->rules = [
-			'ruleset' => [
 				'S.A.M.' => 'sam',
 				's.a.m.' => 'sam',
 				'S.A.M' => 'sam',
 				's.a.m' => 'sam',
-			],
+				'm.A.M.' => 'mam',
+				'm.a.m.' => 'mam',
+				'm.A.M' => 'mam',
+				'm.a.m' => 'mam',
 		];
 
 		parent::__construct($options, $provider);
