@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+# 2020-01-20
+* Updated site build with latest livestream data
+* Tweaked template output
+
 ## 2020-01-18
 * Adjusted opengraph data
 
