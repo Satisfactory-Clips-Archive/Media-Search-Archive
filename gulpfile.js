@@ -21,7 +21,7 @@ const {readFileSync} = require('fs');
 const inline_source = require('gulp-inline-source');
 
 gulp.task('clean', () => {
-	return gulp.src('./tmp/', {read: false}).pipe(clean());
+	return gulp.src('{./tmp/,./src/topics.json}', {read: false}).pipe(clean());
 });
 
 gulp.task('lunr', () => {
@@ -31,8 +31,10 @@ gulp.task('lunr', () => {
 });
 
 gulp.task('topics', () => {
-	return gulp.src('./twitc-clip-notes/app/topics-satisfactory.json').pipe(
-		gulp.dest('./src/topics.json')
+	return gulp.src('./twitch-clip-notes/app/topics-satisfactory.json').pipe(
+		rename('topics.json')
+	).pipe(
+		gulp.dest('./src/')
 	);
 });
 
