@@ -659,7 +659,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 					$cache['playlistItems'][$video_id][1] .
 					''
 					. ']('
-					. '/transcriptions/yt-'
+					. './transcriptions/yt-'
 					. $video_id
 					. '.md)'
 					. '' .
