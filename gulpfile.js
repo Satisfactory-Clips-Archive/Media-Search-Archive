@@ -30,6 +30,12 @@ gulp.task('lunr', () => {
 	);
 });
 
+gulp.task('topics', () => {
+	return gulp.src('./twitc-clip-notes/app/topics-satisfactory.json').pipe(
+		gulp.dest('./src/topics.json')
+	);
+});
+
 gulp.task('css', () => {
 	return gulp.src('./src/*.postcss').pipe(
 		postcss([
@@ -203,6 +209,7 @@ gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
 	'css',
+		'topics',
 		'lunr'
 	),
 	'rev',
