@@ -149,7 +149,7 @@ gulp.task('html', () => {
 		).pipe(
 			replace(/"(?:\.\.\/)+topics\/?/g, '"/topics/')
 	).pipe(
-		replace(/"(?:\.\.\/)+transcriptions\/?/g, '"/transcriptions/')
+		replace(/"(?:(?:\.\.\/)+|\.\/)transcriptions\/?/g, '"/transcriptions/')
 	).pipe(
 		replace(
 			/https:\/\/(clips\.twitch\.tv\/(?:[a-zA-Z0-9]+))/g,
