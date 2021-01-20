@@ -92,7 +92,8 @@ module.exports = () => {
 					],
 					"discussionUrl": [
 						"https://satisfactory.gamepedia.com/File_talk:Jace.jpg"
-					]
+					],
+					"url": "https://satisfactory.gamepedia.com/File:Jace.jpg"
 				}
 			],
 			"url": [
@@ -170,7 +171,8 @@ module.exports = () => {
 					],
 					"discussionUrl": [
 						"https://satisfactory.gamepedia.com/File_talk:Tim_Badylak.png"
-					]
+					],
+					"url": "https://satisfactory.gamepedia.com/File:Tim_Badylak.png"
 				}
 			]
 		}
@@ -201,7 +203,8 @@ module.exports = () => {
 					],
 					"discussionUrl": [
 						"https://satisfactory.gamepedia.com/File_talk:Nuclear_Power_Plant.png"
-					]
+					],
+					"url": "https://satisfactory.gamepedia.com/File:Nuclear_Power_Plant.png"
 				},
 				{
 					"@type": "ImageObject",
@@ -222,7 +225,8 @@ module.exports = () => {
 					],
 					"discussionUrl": [
 						"https://satisfactory.gamepedia.com/File_talk:Nuclear_Waste.png"
-					]
+					],
+					"url": "https://satisfactory.gamepedia.com/File:Nuclear_Waste.png"
 				}
 			],
 			"about": [
