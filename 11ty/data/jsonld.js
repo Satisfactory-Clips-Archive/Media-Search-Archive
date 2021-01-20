@@ -73,7 +73,27 @@ module.exports = () => {
 				}
 			],
 			"image": [
-				"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/51/Jace.jpg"
+				{
+					"@type": "ImageObject",
+					"name": "our lord and savior Jace",
+					"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/51/Jace.jpg/revision/latest/scale-to-width-down/400?cb=20180706203523",
+					"encodingFormat": "image/jpeg",
+					"width": {
+						"@type": "QuantitativeValue",
+						"value": 400
+					},
+					"height": {
+						"@type": "QuantitativeValue",
+						"value": 400
+					},
+					"usageInfo": [
+						"https://satisfactory.gamepedia.com/Template:Copyright_first-party",
+						"https://www.fandom.com/licensing"
+					],
+					"discussionUrl": [
+						"https://satisfactory.gamepedia.com/File_talk:Jace.jpg"
+					]
+				}
 			],
 			"url": [
 				"https://twitter.com/jembawls"
@@ -131,7 +151,27 @@ module.exports = () => {
 			"name": "Tim Badylak",
 			"jobTitle": "Producer",
 			"image": [
-				"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a7/Tim_Badylak.png"
+				{
+					"@type": "ImageObject",
+					"name": "Tim's only known sighting whilst working at Coffee Stain.",
+					"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a7/Tim_Badylak.png/revision/latest?cb=20201201220500&format=original",
+					"encodingFormat": "image/png",
+					"width": {
+						"@type": "QuantitativeValue",
+						"value": 726
+					},
+					"height": {
+						"@type": "QuantitativeValue",
+						"value": 428
+					},
+					"usageInfo": [
+						"https://satisfactory.gamepedia.com/Template:Copyright_first-party",
+						"https://www.fandom.com/licensing"
+					],
+					"discussionUrl": [
+						"https://satisfactory.gamepedia.com/File_talk:Tim_Badylak.png"
+					]
+				}
 			]
 		}
 	],
@@ -142,8 +182,48 @@ module.exports = () => {
 			"name": "Nuclear Energy",
 			"description": "Satisfactory Livestream clips about Nuclear Energy",
 			"image": [
-				"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/46/Nuclear_Power_Plant.png",
-				"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a1/Nuclear_Waste.png"
+				{
+					"@type": "ImageObject",
+					"name": "In-game building icon for the Nuclear Power Plant.",
+					"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/46/Nuclear_Power_Plant.png/revision/latest?cb=20200311145339&format=original",
+					"encodingFormat": "image/png",
+					"width": {
+						"@type": "QuantitativeValue",
+						"value": 512
+					},
+					"height": {
+						"@type": "QuantitativeValue",
+						"value": 512
+					},
+					"usageInfo": [
+						"https://satisfactory.gamepedia.com/Template:Copyright_first-party",
+						"https://www.fandom.com/licensing"
+					],
+					"discussionUrl": [
+						"https://satisfactory.gamepedia.com/File_talk:Nuclear_Power_Plant.png"
+					]
+				},
+				{
+					"@type": "ImageObject",
+					"name": "In-game item icon for Nuclear Waste.",
+					"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a1/Nuclear_Waste.png/revision/latest?cb=20190626163606&format=original",
+					"encodingFormat": "image/png",
+					"width": {
+						"@type": "QuantitativeValue",
+						"value": 256
+					},
+					"height": {
+						"@type": "QuantitativeValue",
+						"value": 256
+					},
+					"usageInfo": [
+						"https://satisfactory.gamepedia.com/Template:Copyright_first-party",
+						"https://www.fandom.com/licensing"
+					],
+					"discussionUrl": [
+						"https://satisfactory.gamepedia.com/File_talk:Nuclear_Waste.png"
+					]
+				}
 			],
 			"about": [
 				satisfactory,

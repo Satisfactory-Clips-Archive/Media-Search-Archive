@@ -102,7 +102,11 @@ module.exports = () => {
 					}
 
 					if ( ! ('twitter:image' in out[permalink])) {
-						out[permalink]['twitter:image'] = row.image[0];
+						const ImageObject = row.image[0];
+						out[permalink][
+							'twitter:image'
+						] = ImageObject.contentUrl;
+						out[permalink]['twitter:image:alt'] = ImageObject.name;
 					}
 				}
 

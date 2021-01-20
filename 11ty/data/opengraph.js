@@ -11,8 +11,14 @@ module.exports = () => {
 						out[permalink] = [];
 					}
 
-					row.image.forEach((url) => {
-						out[permalink].push(['og:image', url]);
+					row.image.forEach((ImageObject) => {
+						out[permalink].push(
+							['og:image:url', ImageObject.contentUrl],
+							['og:image:type', ImageObject.encodingFormat],
+							['og:image:width', ImageObject.width.value],
+							['og:image:height', ImageObject.height.value],
+							['og:image:alt', ImageObject.name],
+						);
 					});
 				}
 			});
