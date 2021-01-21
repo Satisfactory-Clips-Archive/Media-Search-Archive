@@ -19,6 +19,7 @@ Static site generator for
 	to [modular data defined in a separate repo](
 		https://github.com/Satisfactory-Clips-Archive/Media-Archive-Metadata
 	)
+* Updated portions of site build to use consistently sorted topic metadata
 
 ## 20201-01-20
 * Updated site build with latest livestream data
