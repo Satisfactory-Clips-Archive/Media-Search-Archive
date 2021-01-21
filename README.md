@@ -12,7 +12,7 @@ Static site generator for
 
 # 2021-01-21
 * Added Icons
-* refactored search page to be built by eleventy for template reuse
+* Refactored search page to be built by eleventy for template reuse
 
 # 2020-01-20
 * Updated site build with latest livestream data
