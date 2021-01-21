@@ -777,6 +777,40 @@ if ($transcriptions) {
 
 			$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
 
+			$transcript_topic_strings = array_filter(
+				$video_playlists[$video_id],
+				static function (
+					string $playlist_id
+				) use ($playlist_topic_strings) : bool {
+					return isset(
+						$playlist_topic_strings[
+							$playlist_id
+						]
+					);
+				}
+			);
+
+			usort(
+				$transcript_topic_strings,
+				static function (
+					string $a,
+					string $b
+				) use ($playlist_topic_strings) : int {
+					return strnatcasecmp(
+						$playlist_topic_strings[
+							$a
+						],
+						$playlist_topic_strings[
+							$b
+						]
+					);
+				}
+			);
+
+			$transcript_topic_strings = array_values(
+				$transcript_topic_strings
+			);
+
 			file_put_contents(
 				$transcriptions_file,
 				(
@@ -818,18 +852,7 @@ if ($transcriptions) {
 									$playlist_id
 								];
 							},
-							array_filter(
-								$video_playlists[$video_id],
-								static function (
-									string $playlist_id
-								) use ($playlist_topic_strings) : bool {
-									return isset(
-										$playlist_topic_strings[
-											$playlist_id
-										]
-									);
-								}
-							)
+							$transcript_topic_strings
 						))
 					)
 					. '---' . "\n"
