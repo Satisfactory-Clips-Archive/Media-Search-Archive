@@ -386,5 +386,13 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiErFYB5etMa4dBURmJ9kDAH-' => [ // Valheim
 			'Off-Topic',
 		],
+		'PLbjDnnBIxiErDOgZMrAyAUG1I0PWgMobn' => [ // Space Giraffe-Tick-Penguin-Whale Thing
+			'Environment',
+			'Creatures',
+		],
+		'PLbjDnnBIxiEpWutLTcipkGc48H1VdSe2K' => [ // Crab Boss
+			'Environment',
+			'Creatures',
+		],
 	],
 ];
