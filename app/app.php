@@ -1479,7 +1479,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	);
 
 	uasort($sortable, static function(int $a, int $b) : int {
-		return $a - $b;
+		return $b - $a;
 	});
 
 	foreach (array_keys($sortable) as $readable_month) {
