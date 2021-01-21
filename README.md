@@ -13,25 +13,26 @@ Static site generator for
 # 2021-01-21
 * Added Icons
 * Refactored search page to be built by eleventy for template reuse
+* Corrected dates in changelog
 
-# 2020-01-20
+## 20201-01-20
 * Updated site build with latest livestream data
 * Tweaked template output
 
-## 2020-01-18
+## 20201-01-18
 * Adjusted opengraph data
 
-## 2020-01-17
+## 20201-01-17
 * Implemented additional structured data & other metadata.
 
-## 2020-01-16
+## 20201-01-16
 * Implemented ability to specify structured data not sourced from markdown front matter.
 * Moved search page to avoid inclusion of html extension.
 
-## 2020-01-14
+## 20201-01-14
 * Implemented more structured data.
 
-## 2020-01-13
+## 20201-01-13
 * Fixed bugs.
 
 * Implemented a change to the client-side search index,
