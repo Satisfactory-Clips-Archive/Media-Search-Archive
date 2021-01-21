@@ -15,6 +15,10 @@ Static site generator for
 * Refactored search page to be built by eleventy for template reuse
 * Corrected dates in changelog
 * Updated github repo links
+* Switched from what would've been an ever-expanding monolithic JSON-LD file
+	to [modular data defined in a separate repo](
+		https://github.com/Satisfactory-Clips-Archive/Media-Archive-Metadata
+	)
 
 ## 20201-01-20
 * Updated site build with latest livestream data
