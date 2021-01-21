@@ -217,6 +217,7 @@ $exclude_from_absent_tag_check = [
 $not_a_livestream = [
 	'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ' => 'Teasers',
 	'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
+	'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO' => 'Teasers',
 ];
 
 /** @var array<string, list<string>> */
