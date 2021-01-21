@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+# 2021-01-21
+* Added Icons
+* refactored search page to be built by eleventy for template reuse
+
 # 2020-01-20
 * Updated site build with latest livestream data
 * Tweaked template output

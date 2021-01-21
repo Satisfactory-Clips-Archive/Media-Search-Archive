@@ -9,9 +9,30 @@
 	name="description"
 	content="Serves as an unofficial archive for Q&A Clips for Coffee Stain Studio's Satisfactory-related livestreams"
 >{% endif %}
-<link rel="shortcut icon" href="/favicon.ico" />
+{% for icondata in icon %}
+<link
+	rel="icon"
+	type="{{icondata[1]}}"
+	sizes="{{icondata[2]}}x{{icondata[2]}}"
+	href="{{icondata[0]}}"
+>
+{% endfor %}
+<link
+	rel="icon"
+	type="image/png"
+	sizes="16x16"
+	href="https://i.img.clips.satisfactory.signpostmarv.name/favicon.png"
+/>
+<link
+	rel="shortcut icon"
+	href="https://i.img.clips.satisfactory.signpostmarv.name/favicon.ico"
+/>
 <link rel="stylesheet" href="/common.css">
+{% if '/search/' === page.url %}
+<link rel="stylesheet" href="/search.css">
+{% else %}
 <link rel="stylesheet" href="/browse.css">
+{% endif %}
 {% if page.url in jsonld %}{% for chunk in jsonld[page.url] %}<script
 	type="application/ld+json"
 >{{chunk | json | safe}}</script>{% endfor %}{% endif %}

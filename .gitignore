@@ -6,5 +6,8 @@
 /src/*.css
 /src/*/
 /src/index.html
+/src/search/index.html
 /error_docs/
 /tmp-error_docs/
+/images/**/*.br
+/images/**/*.gz

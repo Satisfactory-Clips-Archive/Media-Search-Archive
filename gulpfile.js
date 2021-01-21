@@ -95,6 +95,11 @@ gulp.task('lunr-rev', () => {
 gulp.task('lunr-clean', () => {
 	return gulp.src('./tmp/lunr/search-*.json').pipe(clean());
 });
+gulp.task('sync-browserconfig', () => {
+	return gulp.src('./src/browserconfig.xml').pipe(
+		gulp.dest('./tmp/')
+	);
+});
 
 gulp.task('brotli', () => {
 	return gulp.src(
@@ -177,7 +182,7 @@ gulp.task('html', () => {
 });
 
 gulp.task('sync-favicon', () => {
-	return gulp.src('./src/favicon.ico').pipe(gulp.dest('./dist/'));
+	return gulp.src('./images/internal/favicon.ico').pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('sitemap', () => {
@@ -212,6 +217,7 @@ gulp.task('build', gulp.series(
 	gulp.parallel(
 	'css',
 		'topics',
+		'sync-browserconfig',
 		'lunr'
 	),
 	'rev',
@@ -250,3 +256,51 @@ gulp.task('html-error_docs', () => {
 		gulp.dest('./error_docs')
 	);
 });
+
+
+
+gulp.task('brotli-images', () => {
+	return gulp.src(
+		'./images/**/*.svg'
+	).pipe(
+		newer({
+			dest: './images/',
+			ext: '.br',
+		})
+	).pipe(
+		brotli.compress({
+			quality: 11,
+		})
+	).pipe(
+		gulp.dest('./images/')
+	)
+});
+
+gulp.task('zopfli-images', () => {
+	return gulp.src(
+		'./images/**/*.svg'
+	).pipe(
+		newer({
+			dest: './images/',
+			ext: '.gz',
+		})
+	).pipe(
+		zopfli({
+			verbose: false,
+			verbose_more: false,
+			numiterations: 15,
+			blocksplitting: true,
+			blocksplittinglast: false,
+			blocksplittingmax: 15,
+		})
+	).pipe(
+		gulp.dest('./images/')
+	)
+});
+
+gulp.task('images', gulp.series(
+	gulp.parallel(
+		'brotli-images',
+		'zopfli-images'
+	)
+));

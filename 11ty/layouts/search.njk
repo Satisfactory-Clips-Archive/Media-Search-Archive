@@ -2,15 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Q&amp;A Clips Archive - Search</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta
-	name="description"
-	content="Serves as an archive for Q&A Clips for Coffee Stain Studio's Satisfactory-related livestreams"
->
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="stylesheet" href="/common.css">
-<link rel="stylesheet" href="/search.css">
+<title>Q&amp;A Clips Archive - {{title}}</title>
+{% include 'head.njk' %}
+<meta property="og:article:modified_time" content="{{page.date.toUTCString()}}">
+
 <script src="/lunr.min.js"></script>
 <script src="/lunr-highlighter.js"></script>
 <link rel="preload" as="fetch" crossorigin="anonymous" href="/lunr/search.json">
@@ -135,71 +130,9 @@
 		-->
 	</li>
 </template>
-<script type="application/ld+json">
-{
-	"@context": "https://schema.org",
-	"@type": "WebSite",
-	"url": "https://clips.satisfactory.signpostmarv.name/",
-	"potentialAction": {
-		"@type": "SearchAction",
-		"target": "https://clips.satisfactory.signpostmarv.name/search.html?q={search_term_string}",
-		"query-input": "required name=search_term_string"
-	}
-}
-</script>
 </head>
 <body>
-<section id="not-ready">
-	<header>
-		<h1>Q&amp;A Clips Archive - Search - JavaScript Required</h1>
-		<nav>
-			<a
-				rel="noopener"
-				target="_blank"
-				href=""
-			>Browse Index</a>
-			<a
-				rel="noopener"
-				target="_blank"
-				href="/topics"
-			>Browse Topics</a>
-		</nav>
-	</header>
-	<section>
-		<p>JavaScript is required for this application to function.</p>
-		<p>If you can still see this notice,
-			then the application is either not ready,
-			or your browser is not supported.</p>
-	</section>
-</section>
-<footer>
-	<h1>Q&amp;A Clips Archive</h1>
-	<p>&copy; SignpostMarv 2021</p>
-	<p>
-		<a
-			rel="noopener"
-			target="_blank"
-			href="https://github.com/SignpostMarv/twitch-clip-notes/issues"
-		>Report issues with/ make suggestions for transcriptions &amp; other data</a>
-		or
-		<a
-			rel="noopener"
-			target="_blank"
-			href="https://github.com/SignpostMarv/media-search-archive/issues"
-		>report issues with/ make suggestions for this tool</a>.</p>
-	<p>
-		<a
-			rel="noopener"
-			target="_blank"
-			href="https://www.twitch.tv/coffeestainstudiosdevs"
-		>Official Twitch Livestreams</a></p>
-	<p>
-		<a
-			rel="noopener"
-			target="_blank"
-			href="https://discord.com/invite/satisfactory"
-		>Official Discord</a></p>
-</footer>
-<script async defer src="/index.js"></script>
+{{content | safe}}{% include 'footer.njk'
+%}<script async defer src="/index.js"></script>
 </body>
 </html>
