@@ -20,6 +20,7 @@ Static site generator for
 		https://github.com/Satisfactory-Clips-Archive/Media-Archive-Metadata
 	)
 * Updated portions of site build to use consistently sorted topic metadata
+* Finally got around to updating the search tool's topics url prefix
 
 ## 20201-01-20
 * Updated site build with latest livestream data
