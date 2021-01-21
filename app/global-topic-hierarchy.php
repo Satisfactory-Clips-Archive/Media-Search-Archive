@@ -275,6 +275,7 @@ $global_topic_hierarchy = [
 			'Crafting',
 		],
 		'PLbjDnnBIxiEr8-tKvQxrwXxCKw4R5_PoP' => [ // Arachnophobia Mode
+			'Features',
 			'Accessibility',
 		],
 		'PLbjDnnBIxiEprHLlT4mBHmpA1Hbsdd9TV' => [ // Procedural Generation
