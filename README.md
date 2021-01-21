@@ -14,6 +14,7 @@ Static site generator for
 * Added Icons
 * Refactored search page to be built by eleventy for template reuse
 * Corrected dates in changelog
+* Updated github repo links
 
 ## 20201-01-20
 * Updated site build with latest livestream data
