@@ -410,5 +410,10 @@ $global_topic_hierarchy = [
 			'Transportation',
 			'Vehicles',
 		],
+		'PLbjDnnBIxiErrg7lK40K9vEj_Jl2dS1hd' => [ // Train Signals
+			'Features',
+			'Transportation',
+			'Trains',
+		],
 	],
 ];
