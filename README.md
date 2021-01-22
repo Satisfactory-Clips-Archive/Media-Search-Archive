@@ -10,7 +10,11 @@ Static site generator for
 
 # Changelog
 
-# 2021-01-21
+## 2021-01-22
+* Updated build to reflect changes in topic metadata
+* Corrected typo in changelog
+
+## 2021-01-21
 * Added Icons
 * Refactored search page to be built by eleventy for template reuse
 * Corrected dates in changelog
