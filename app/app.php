@@ -1415,8 +1415,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	$file_path = $save_path . '/../' . $basename . '/index.md';
 
-	file_put_contents($file_path, '# Archives' . "\n");
-
 	file_put_contents(
 		$file_path,
 		(
@@ -1425,14 +1423,8 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			. 'date: Last Modified' . "\n"
 			. 'layout: index' . "\n"
 			. '---' . "\n"
-			. '# Archives' . "\n"
-			. '* [FAQ](FAQ.md)' . "\n"
-			. '* [Topics](topics.md)' . "\n"
 		)
 	);
-
-	file_put_contents($file_path, "\n", FILE_APPEND);
-	file_put_contents($file_path, '# Archives By Date' . "\n", FILE_APPEND);
 
 	$grouped = [];
 
@@ -1486,7 +1478,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	foreach (array_keys($sortable) as $readable_month) {
 		file_put_contents(
 			$file_path,
-			sprintf("\n" . '## %s' . "\n", $readable_month),
+			sprintf("\n" . '# %s' . "\n", $readable_month),
 			FILE_APPEND
 		);
 
