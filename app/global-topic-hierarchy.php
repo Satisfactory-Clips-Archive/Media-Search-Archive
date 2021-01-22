@@ -419,5 +419,95 @@ $global_topic_hierarchy = [
 			'Features',
 			'Unplanned Features',
 		],
+		'PLbjDnnBIxiEqrupg1p4jryyE_AvpWTWzF' => [ // Truck
+			'Features',
+			'Transportation',
+			'Vehicles',
+		],
+		'PLbjDnnBIxiEoYQyB8xMKJc0fOKdwncF5o' => [ // Explorer
+			'Features',
+			'Transportation',
+			'Vehicles',
+		],
+		'PLbjDnnBIxiEojsQkXgy-tvIIjyMK_7x4n' => [ // Nuclear Waste
+			'Features',
+			'Power Management',
+			'Nuclear Energy',
+		],
+		'PLbjDnnBIxiErz2wvc36rgBLUdiLdLIQdb' => [ // Autosave
+			'Features',
+		],
+		'PLbjDnnBIxiEqDSLRIdyHmUlI71j458DqR' => [ // Lights
+			'Features',
+			'Planned Features',
+		],
+	],
+];
+
+$injected_global_topic_hierarchy = [
+	'satisfactory' => [
+		'Buildables' => [
+			'Features',
+		],
+		'FICSIT Cup Prototypes' => [
+			'Merch',
+			'Merch Prototypes',
+		],
+		'Pending' => [
+			'Satisfactory Updates',
+		],
+		'Planned Features' => [
+			'Features',
+		],
+		'Possible Features' => [
+			'Satisfactory Updates',
+		],
+		'Released' => [
+			'Satisfactory Updates',
+		],
+		'Space Exploration' => [
+			'Features',
+			'Unplanned Features',
+		],
+		'Speculative' => [
+			'Satisfactory Updates',
+		],
+		'Transportation' => [
+			'Features',
+		],
+		'Unplanned Biomes' => [
+			'Environment',
+			'Biomes',
+		],
+		'Unplanned Features' => [
+			'Features',
+		],
+		'Unreleased Features' => [
+			'Features',
+		],
+		'Cyber Wagon' => [
+			'Features',
+			'Transportation',
+			'Vehicles',
+		],
+		'Tier 7' => [
+			'Features',
+			'Tiers',
+		],
+		'Tier 8' => [
+			'Features',
+			'Tiers',
+		],
+		'Tier 9' => [
+			'Features',
+			'Tiers',
+		],
+		'Tier 10' => [
+			'Features',
+			'Tiers',
+		],
+		'Free Wekends' => [
+			'Satisfactory Updates',
+		],
 	],
 ];
