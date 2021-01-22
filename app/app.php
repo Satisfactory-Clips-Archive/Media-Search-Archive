@@ -464,7 +464,39 @@ foreach ($injected_cache['playlists'] as $playlist_id => $injected_data) {
 	}
 }
 
-$cache = array_merge_recursive($cache, $injected_cache);
+foreach ($injected_cache['playlists'] as $playlist_id => $playlist_data) {
+	if ( ! isset($cache['playlists'][$playlist_id])) {
+		$cache['playlists'][$playlist_id] = $playlist_data;
+	} else {
+		$cache['playlists'][$playlist_id][2] = array_unique(
+			array_merge(
+				$cache['playlists'][$playlist_id][2],
+				$playlist_data[2]
+			)
+		);
+	}
+}
+
+foreach ($injected_cache['playlistItems'] as $video_id => $video_data) {
+	if ( ! isset($cache['playlistItems'][$video_id])) {
+		$cache['playlistItems'][$video_id] = $video_data;
+	}
+}
+
+foreach ($injected_cache['videoTags'] as $video_id => $video_data) {
+	if ( ! isset($cache['videoTags'][$video_id])) {
+		$cache['videoTags'][$video_id] = $video_id;
+	} else {
+		$cache['videoTags'][$video_id][1] = array_unique(
+			array_merge(
+				$cache['videoTags'][$video_id][1],
+				$video_data[1]
+			)
+		);
+	}
+}
+
+$cache['stubPlaylists'] = $injected_cache['stubPlaylists'];
 
 uksort($videos, static function (string $a, string $b) use ($cache) : int {
 	return strnatcasecmp(
@@ -565,9 +597,6 @@ foreach (array_keys($playlists) as $playlist_id) {
 		}
 
 		if ( ! $found) {
-			if ($video_id === 'tc-NimbleAgitatedPeanutNotLikeThis') {
-				var_dump($other_playlists_on_channel['PLbjDnnBIxiEr4RIwd7JK5NWkjYLh0-Wg1']);exit(1);
-			}
 			$content_arrays['Single video clips'][] = $video_id;
 		}
 	}
@@ -626,12 +655,6 @@ foreach (array_keys($playlists) as $playlist_id) {
 		);
 	}
 }
-
-/** @var array{satisfactory:array<string, list<string>>} */
-$global_topic_append = json_decode(
-	file_get_contents(__DIR__ . '/global-topic-append.json'),
-	true
-);
 
 $global_topic_hierarchy = array_map(
 	static function (array $in) : array {
@@ -1066,7 +1089,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		__DIR__ .
 		'/playlists/coffeestainstudiosdevs/satisfactory.json'
 	)) {
-		$data = array_merge_recursive(
+		$data = array_merge(
 			$data,
 			json_decode(
 				file_get_contents(
@@ -1082,8 +1105,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	$topic_hierarchy = $global_topic_hierarchy[$basename] ?? [];
 
-	$topic_append = $global_topic_append[$basename] ?? [];
-
 	$file_path = $save_path . '/../' . $basename . '/topics.md';
 
 	$data_by_date = [];
@@ -1091,15 +1112,12 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	$playlists_by_date = [];
 
 	foreach ($data as $playlist_id => $filename) {
-		if ( ! is_string($filename)) {
-			var_dump($filename);exit(1);
-		}
 		$unix = strtotime(mb_substr($filename, 0, -3));
 		$readable_date = date('F jS, Y', $unix);
 
 		$data_by_date[$playlist_id] = [$unix, $readable_date];
 
-		$playlists_by_date[$playlist_id] = ((($cache['playlists'] ?? [])[$playlist_id] ?? [])[2] ?? []);
+		$playlists_by_date[$playlist_id] = $cache['playlists'][$playlist_id][2];
 	}
 
 	$playlist_ids = array_keys(($cache['playlists'] ?? []));
@@ -1148,7 +1166,16 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 		$slug_string = implode('/', $slug);
 
-		$slug_path = $save_path . '/../' . $basename . '/topics/' . $slug_string . '.md';
+		$slug_path =
+			realpath(
+				$save_path
+				. '/../'
+				. $basename
+				. '/topics/'
+			)
+			. '/'
+			. $slug_string
+			. '.md';
 
 		$playlist_items_data = [];
 
@@ -1220,18 +1247,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 						)
 						. "\n"
 					),
-					FILE_APPEND
-				);
-			}
-		}
-
-		if (isset($topic_append[$slug_string . '.md'])) {
-			file_put_contents($slug_path, "\n", FILE_APPEND);
-
-			foreach ($topic_append[$slug_string . '.md'] as $append_this) {
-				file_put_contents(
-					$slug_path,
-					$append_this . "\n",
 					FILE_APPEND
 				);
 			}
