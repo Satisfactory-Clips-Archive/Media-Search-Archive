@@ -449,6 +449,12 @@ $injected_global_topic_hierarchy = [
 		'Buildables' => [
 			'Features',
 		],
+		'Merch Prototypes' => [
+			'Merch',
+		],
+		'FICSIT Cup Prototypes' => [
+			'Merch',
+		],
 		'FICSIT Cup Prototypes' => [
 			'Merch',
 			'Merch Prototypes',
@@ -479,6 +485,9 @@ $injected_global_topic_hierarchy = [
 			'Environment',
 			'Biomes',
 		],
+		'Planned Features' => [
+			'Features',
+		],
 		'Unplanned Features' => [
 			'Features',
 		],
@@ -506,7 +515,7 @@ $injected_global_topic_hierarchy = [
 			'Features',
 			'Tiers',
 		],
-		'Free Wekends' => [
+		'Free Weekends' => [
 			'Satisfactory Updates',
 		],
 	],

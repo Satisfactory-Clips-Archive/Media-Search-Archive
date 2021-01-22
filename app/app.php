@@ -66,7 +66,10 @@ $service = new Google_Service_YouTube($client);
 $other_playlists_on_channel = [];
 
 $playlist_metadata = [
-	__DIR__ . '/playlists/coffeestainstudiosdevs/satisfactory.json' => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/',
+	realpath(
+		__DIR__ .
+		'/playlists/coffeestainstudiosdevs/satisfactory.json'
+	) => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/',
 ];
 
 /** @var array<string, string> */
@@ -80,129 +83,6 @@ foreach ($playlist_metadata as $metadata_path => $prepend_path) {
 		$playlists[$playlist_id] = $prepend_path . $markdown_path;
 	}
 }
-
-$preloaded_faq = [
-	'Satisfactory Update 4' => [
-		'2020-07-28' => [
-			'Q&A: update 4 will rethink power situation? https://clips.twitch.tv/ProudRockyInternTooSpicy',
-		],
-		'2020-08-11' => [
-			'Q&A: Next Update? https://clips.twitch.tv/CrunchyMistyAsparagus4Head',
-		],
-		'2020-08-18' => [
-			'Q&A: When is Update 4 pencilled for? https://clips.twitch.tv/RelievedTawdryEelDogFace',
-			'Snutt Talk: There\'s also discussions about how we release Update 4 https://clips.twitch.tv/FaintToughRingYee',
-			'Q&A: What are some of the priorities for the next update? https://clips.twitch.tv/SneakyLovelyCrabsAMPEnergyCherry',
-			'Q&A: How often will there be updates to the game? https://clips.twitch.tv/CheerfulZanyWebVoteYea',
-		],
-		'2020-08-25' => [
-			'[ETA for Update 4](2020-08-25.md#eta-for-update-4)',
-			'[additional clips](2020-08-25.md#update-4-single-clip-videos)',
-		],
-	],
-	'Tiers' => [
-		'2020-07-28' => [
-			'Jace Talk: Content & Tiers https://clips.twitch.tv/SwissFurryPlumPlanking',
-		],
-		'2020-08-18' => [
-			'Q&A: Might we see additions to Tier 7 before the end of the year? https://clips.twitch.tv/DoubtfulNaiveCroquettePeoplesChamp',
-			'Q&A: Tier 8 before 1.0? https://clips.twitch.tv/AgreeableTentativeBeeCurseLit',
-			'Q&A: What\'s in Tier 8? (part 1) https://clips.twitch.tv/RelievedRelievedCroissantMingLee',
-			'Q&A: What\'s in Tier 8? (part 2) https://clips.twitch.tv/AwkwardBloodyNightingaleShadyLulu',
-		],
-		'2020-09-08' => [
-			'Q&A: What additions to Tier 7 might be coming & when ? https://www.youtube.com/watch?v=lGbJwWh5W_I',
-		],
-	],
-	'Space Exploration' => [
-		'2020-07-28' => [
-			'Q&A: Signs & Planets https://clips.twitch.tv/ArtisticTrustworthyHamOSkomodo',
-		],
-	],
-	'Aerial Travel' => [
-		'2020-07-28' => [
-			'Jace Talk: Flight & map size perception https://clips.twitch.tv/ElatedBlueNightingaleMau5',
-		],
-		'2020-08-11' => [
-			'Q&A: Will Drones be added to the game for aerial travel? https://clips.twitch.tv/CredulousWimpyMosquitoResidentSleeper',
-		],
-		'2020-08-25' => [
-			'Q&A: Implement some kind of hire spaceship thingy for better exploration & faster travelling ? https://clips.twitch.tv/TrappedFaintBulgogiBigBrother',
-			'Q&A: How about a drone to fly around? https://clips.twitch.tv/SteamyViscousGoshawkDancingBaby',
-		],
-	],
-	'Console Release' => [
-		'2020-07-28' => [
-			'Q&A: Satisfactory Console Release https://clips.twitch.tv/FragileNimbleEggnogDatSheffy',
-		],
-		'2020-08-18' => [
-			'Q&A: Are there any plans to port the game to console? https://clips.twitch.tv/CogentRichJackalHeyGirl',
-		],
-	],
-	'Dedicated Servers' => [
-		'2020-09-28' => [
-			'Q&A: Dedicated Server cost https://clips.twitch.tv/ConfidentLittleSnood4Head',
-		],
-		'2020-08-11' => [
-			'Q&A: Are Dedicated Servers coming? https://clips.twitch.tv/BigDeadPhoneKappaWealth',
-			'Q&A: What\'s the hold-up on Dedicated Servers? https://clips.twitch.tv/ShinyAthleticCrocodileKappaPride',
-			'Jace Talk: Massive Bases, Multiplayer lag, and Dedicated Servers https://clips.twitch.tv/RealPrettiestKoalaBloodTrail',
-			'Q&A: Dedicated Servers, start building a community around that? https://clips.twitch.tv/EagerPeacefulMonkeyDoubleRainbow',
-		],
-		'2020-08-25' => [
-			'Q&A: Dedicated Servers update? https://clips.twitch.tv/AgitatedAltruisticAnacondaStinkyCheese',
-			'Q&A: Will Dedicated Servers be available on Linux, or Windows? https://clips.twitch.tv/SeductiveInnocentFerretHeyGirl',
-			'Q&A: Linux would be useful for Servers https://clips.twitch.tv/UglyAwkwardCiderSSSsss',
-			'Q&A: Will the Server source code be available for Custom Mods, or with pre-compiled binaries? https://clips.twitch.tv/ShinyFunnyJellyfishSMOrc',
-		],
-	],
-	'World Map' => [
-		'2020-07-28' => [
-			'Jace Talk: Flight & map size perception https://clips.twitch.tv/ElatedBlueNightingaleMau5',
-		],
-		'2020-08-11' => [
-			'Q&A: Randomly Generated Maps: https://clips.twitch.tv/OilyBloodyMangoFutureMan',
-			'Q&A: Do you plan to release a World Editor? https://clips.twitch.tv/AnnoyingImpartialGaurChefFrank',
-		],
-		'2020-08-18' => [
-			'Q&A: Will there be any underwater resources? https://clips.twitch.tv/RelievedCleanBibimbapDancingBanana',
-			'Q&A: Terraforming? https://clips.twitch.tv/AmericanSpineyWitchTinyFace',
-			'Q&A: Any ice/snow biome plans? https://clips.twitch.tv/AlluringScrumptiousBaboonHeyGirl',
-			'Q&A: Any different maps planned? https://clips.twitch.tv/PlausibleEnthusiasticGrassRedCoat',
-			'Q&A: Will you be able to create your own map? https://clips.twitch.tv/ChillyRockyWalrusUnSane',
-		],
-		'2020-08-25' => [
-			'[various clips](2020-08-25.md#world-map)',
-		],
-	],
-	'Mass Building' => [
-		'2020-07-08' => [
-			'Snutt & Jace Talk: not adding mass building tools into the vanilla game https://clips.twitch.tv/NimbleAgitatedPeanutNotLikeThis',
-		],
-		'2020-07-21' => [
-			'Q&A: Why no mass building? https://clips.twitch.tv/SoftBovineArmadilloNerfRedBlaster',
-		],
-		'2020-08-11' => [
-			'Q&A: Any plans to make vertical building easier? https://clips.twitch.tv/ImpartialHardSageBigBrother',
-		],
-		'2020-08-18' => [
-			'Q&A: Any plans for 1-click multi-building? https://clips.twitch.tv/CheerfulLightAsteriskGOWSkull',
-		],
-	],
-	'Merch' => [
-		'*Please note that Merch has since been launched https://www.youtube.com/watch?v=4_cYnq746zk*',
-		'2020-07-28' => [
-			'Q&A: Coffee Mug? https://clips.twitch.tv/SpunkyHyperWasabi4Head',
-		],
-		'2020-08-11' => [
-			'[in-depth discussion over various clips](2020-08-11.md#merch)',
-		],
-		'2020-08-18' => [
-			'Q&A: Is there a Merch Store? https://clips.twitch.tv/CleanCarefulMoonAMPEnergyCherry',
-			'Q&A: When will have Merch? https://clips.twitch.tv/FunOriginalPistachioNerfRedBlaster',
-		],
-	],
-];
 
 /** @var array<string, array<string, string>> */
 $videos = [];
@@ -219,9 +99,6 @@ $not_a_livestream = [
 	'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
 	'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO' => 'Teasers',
 ];
-
-/** @var array<string, list<string>> */
-$already_in_markdown = [];
 
 /** @var list<string> */
 $autocategorise = [];
@@ -425,16 +302,6 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 
 		$autocategorise[] = $playlist_id;
 	}
-
-	$contents = file_get_contents($markdown_path);
-
-	preg_match_all(
-		'/https:\/\/www\.youtube\.com\/watch\?v=([^\n\s\*]+)/',
-		$contents,
-		$matches
-	);
-
-	$already_in_markdown[$playlist_id] = $matches[1];
 }
 
 $fetch_all_playlists = static function (array $args) use (
@@ -524,6 +391,81 @@ $fetch_all_playlists([
 	'maxResults' => 50,
 ]);
 
+require_once(__DIR__ . '/global-topic-hierarchy.php');
+
+$global_topic_hierarchy = array_merge_recursive(
+	$global_topic_hierarchy,
+	$injected_global_topic_hierarchy
+);
+
+$injected_playlists = array_map(
+	static function (string $filename) : string {
+		return
+			__DIR__ .
+			'/../coffeestainstudiosdevs/satisfactory/' .
+			$filename;
+	},
+	json_decode(
+		file_get_contents(
+			__DIR__ .
+			'/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+		),
+		true
+	)
+);
+
+$playlists = array_map(
+	'realpath',
+	array_merge($playlists, $injected_playlists)
+);
+
+asort($playlists);
+
+$playlists = array_reverse($playlists);
+
+$injected_cache = json_decode(
+	file_get_contents(__DIR__ . '/cache-injection.json'),
+	true
+);
+
+foreach ($injected_cache['playlists'] as $playlist_id => $injected_data) {
+	if ( ! isset($videos[$playlist_id])) {
+		$videos[$playlist_id] = [];
+	}
+
+	if (
+		! isset(
+			$other_playlists_on_channel[$playlist_id],
+		)
+		&& ! isset(
+			$playlists[$playlist_id]
+		)
+		&& count($injected_data[2]) > 0
+	) {
+		$other_playlists_on_channel[$playlist_id] = [
+			$injected_data[1],
+			$injected_data[2],
+		];
+	} elseif (
+		isset(
+			$other_playlists_on_channel[$playlist_id],
+		)
+	) {
+		$other_playlists_on_channel[$playlist_id][1] = array_merge(
+			$other_playlists_on_channel[$playlist_id][1],
+			$injected_data[2]
+		);
+	}
+
+	foreach ($injected_data[2] as $video_id) {
+		$videos[$playlist_id][$video_id] = (
+			$injected_cache['playlistItems'][$video_id][1]
+		);
+	}
+}
+
+$cache = array_merge_recursive($cache, $injected_cache);
+
 uksort($videos, static function (string $a, string $b) use ($cache) : int {
 	return strnatcasecmp(
 		$cache['playlists'][$a][1],
@@ -541,14 +483,6 @@ $videos = array_map(
 	},
 	$videos
 );
-
-$videos_to_add = [];
-
-foreach ($already_in_markdown as $playlist_id => $videos_in_markdown) {
-	$videos_to_add[$playlist_id] = array_diff(array_keys($videos[$playlist_id]), $videos_in_markdown);
-}
-
-$videos_to_add = array_filter($videos_to_add, 'count');
 
 $video_playlists = [];
 
@@ -631,6 +565,9 @@ foreach (array_keys($playlists) as $playlist_id) {
 		}
 
 		if ( ! $found) {
+			if ($video_id === 'tc-NimbleAgitatedPeanutNotLikeThis') {
+				var_dump($other_playlists_on_channel['PLbjDnnBIxiEr4RIwd7JK5NWkjYLh0-Wg1']);exit(1);
+			}
 			$content_arrays['Single video clips'][] = $video_id;
 		}
 	}
@@ -654,20 +591,12 @@ foreach (array_keys($playlists) as $playlist_id) {
 			file_put_contents(
 				$playlists[$playlist_id],
 				(
-					'* ['
-					.
-					'' .
-					$cache['playlistItems'][$video_id][1] .
-					''
-					. ']('
-					. './transcriptions/yt-'
-					. $video_id
-					. '.md)'
+					'* '
+					. maybe_transcript_link_and_video_url(
+						$video_id,
+						$cache['playlistItems'][$video_id][1]
+					)
 					. '' .
-					' https://www.youtube.com/watch?' .
-					http_build_query([
-						'v' => $video_id,
-					]) .
 					"\n"
 				),
 				FILE_APPEND
@@ -687,10 +616,10 @@ foreach (array_keys($playlists) as $playlist_id) {
 			(
 				'* ' .
 				$cache['playlistItems'][$video_id][1] .
-				' https://www.youtube.com/watch?' .
-				http_build_query([
-					'v' => $video_id,
-				]) .
+				''
+				. ' '
+				. video_url_from_id($video_id)
+				. '' .
 				"\n"
 			),
 			FILE_APPEND
@@ -703,8 +632,6 @@ $global_topic_append = json_decode(
 	file_get_contents(__DIR__ . '/global-topic-append.json'),
 	true
 );
-
-require_once(__DIR__ . '/global-topic-hierarchy.php');
 
 $global_topic_hierarchy = array_map(
 	static function (array $in) : array {
@@ -725,7 +652,7 @@ $playlist_topic_strings = [];
 foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $hierarchy) {
 	$slug = $hierarchy;
 
-	$playlist_data = $cache['playlists'][$playlist_id];
+	$playlist_data = $cache['playlists'][$playlist_id] ?? $cache['stubPlaylists'][$playlist_id];
 
 	[, $playlist_title, $playlist_items] = $playlist_data;
 
@@ -761,12 +688,7 @@ if ($transcriptions) {
 
 	foreach(array_keys($playlists) as $playlist_id) {
 		foreach($cache['playlists'][$playlist_id][2] as $video_id) {
-			$transcriptions_file = (
-				__DIR__ .
-				'/../coffeestainstudiosdevs/satisfactory/transcriptions/yt-' .
-				$video_id .
-				'.md'
-			);
+			$transcriptions_file = transcription_filename($video_id);
 
 			$caption_lines = captions($video_id);
 
@@ -869,12 +791,9 @@ if ($transcriptions) {
 					"\n" .
 					'## ' . $cache['playlistItems'][$video_id][1] .
 					"\n" .
-					(
-						'https://www.youtube.com/watch?' .
-						http_build_query([
-							'v' => $video_id,
-						])
-					) .
+					''
+					. video_url_from_id($video_id)
+					. '' .
 					''
 					. "\n\n"
 					. '### Topics' . "\n"
@@ -944,16 +863,6 @@ if ($transcriptions) {
 /** @var list<string> */
 $faq_dates = [];
 $faq_patch = [];
-
-foreach ($preloaded_faq as $topic => $values) {
-	$faq_patch[$topic] = [];
-
-	foreach (array_keys($values) as $key) {
-		if (is_string($key)) {
-			$faq_dates[] = $key;
-		}
-	}
-}
 
 $faq_playlist_data = [];
 $faq_playlist_data_dates = [];
@@ -1032,11 +941,10 @@ foreach ($cache['playlists'] as $cached_playlist_id => $cached_playlist_data) {
 				}
 
 				$faq_patch[$cached_playlist_data[1]][$faq_video_date][] = (
-					$cache['playlistItems'][$video_id][1] .
-					' https://www.youtube.com/watch?' .
-					http_build_query([
-						'v' => $video_id,
-					])
+					maybe_transcript_link_and_video_url(
+						$video_id,
+						$cache['playlistItems'][$video_id][1]
+					)
 				);
 			}
 		}
@@ -1045,7 +953,7 @@ foreach ($cache['playlists'] as $cached_playlist_id => $cached_playlist_data) {
 
 $faq_topics = array_unique(
 	array_merge(
-		array_keys($preloaded_faq),
+		[],
 		array_keys($faq_patch)
 	)
 );
@@ -1059,25 +967,9 @@ foreach ($faq_topics as $faq_topic) {
 		FILE_APPEND
 	);
 
-	if (isset($preloaded_faq[$faq_topic])) {
-		foreach ($preloaded_faq[$faq_topic] as $k => $v) {
-			if (is_string($v)) {
-				file_put_contents(
-					$faq_filepath,
-					$v . "\n",
-					FILE_APPEND
-				);
-			}
-		}
-	}
-
 	if (isset($faq_patch[$faq_topic])) {
 		foreach ($faq_dates as $faq_date) {
 			$lines = [];
-
-			if (isset($preloaded_faq[$faq_topic][$faq_date])) {
-				$lines = $preloaded_faq[$faq_topic][$faq_date];
-			}
 
 			if (
 				isset(
@@ -1170,6 +1062,22 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	$data = json_decode(file_get_contents($json_file), true);
 
+	if ($json_file === realpath(
+		__DIR__ .
+		'/playlists/coffeestainstudiosdevs/satisfactory.json'
+	)) {
+		$data = array_merge_recursive(
+			$data,
+			json_decode(
+				file_get_contents(
+					__DIR__ .
+					'/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+				),
+				true
+			)
+		);
+	}
+
 	$basename = basename($save_path);
 
 	$topic_hierarchy = $global_topic_hierarchy[$basename] ?? [];
@@ -1183,6 +1091,9 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	$playlists_by_date = [];
 
 	foreach ($data as $playlist_id => $filename) {
+		if ( ! is_string($filename)) {
+			var_dump($filename);exit(1);
+		}
 		$unix = strtotime(mb_substr($filename, 0, -3));
 		$readable_date = date('F jS, Y', $unix);
 
@@ -1301,17 +1212,12 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				file_put_contents(
 					$slug_path,
 					(
-						'* ['
-						. $cache['playlistItems'][$video_id][1]
-						. ']('
-						. str_repeat('../', $slug_count)
-						. 'transcriptions/yt-'
-						. $video_id
-						. '.md)'
-						. ' https://www.youtube.com/watch?'
-						. http_build_query([
-							'v' => $video_id,
-						])
+						'* '
+						. maybe_transcript_link_and_video_url(
+							$video_id,
+							$cache['playlistItems'][$video_id][1],
+							$slug_count
+						)
 						. "\n"
 					),
 					FILE_APPEND

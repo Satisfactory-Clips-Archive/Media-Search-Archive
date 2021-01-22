@@ -9,6 +9,11 @@ namespace SignpostMarv\TwitchClipNotes;
 require_once(__DIR__ . '/vendor/autoload.php');
 require_once(__DIR__ . '/global-topic-hierarchy.php');
 
+$global_topic_hierarchy = array_merge_recursive(
+	$global_topic_hierarchy,
+	$injected_global_topic_hierarchy
+);
+
 $slugify = new Slugify();
 
 /** @var array{satisfactory:array<string, list<string>>} */
@@ -35,100 +40,6 @@ $title = '';
 $urls = [];
 $quotes = [];
 
-$is_multipart = false;
-$append = false;
-
-$do_append = static function (
-	array $out,
-	string $date,
-	string $title,
-	array $urls,
-	array $quotes,
-	string $topic_path
-) : array {
-	$id = 'tc-' . implode(':', array_map(
-		static function (string $url) : string {
-			return mb_substr($url, 24);
-		},
-		$urls
-	));
-
-	if ( ! isset($out[$id])) {
-		$out[$id] = [
-			'id' => $id,
-			'game' => 'satisfactory',
-			'date' => $date,
-			'title' => $title,
-			'transcription' => '',
-			'urls' => $urls,
-			'topics' => [],
-			'quotes' => $quotes,
-		];
-	}
-
-	$out[$id]['topics'][] = mb_substr($topic_path, 0, -3);
-
-	return [
-		$out,
-	];
-};
-
-foreach ($global_topic_append as $game => $game_data) {
-	foreach ($game_data as $topic_path => $topic_lines) {
-		$append = true;
-
-		foreach ($topic_lines as $line) {
-			if ('' === $line) {
-				[$out] = $do_append(
-					$out,
-					$date,
-					$title,
-					$urls,
-					$quotes,
-					$topic_path
-				);
-			} elseif (preg_match('/^# /', $line)) {
-				$date = date('Y-m-d', (int) strtotime(mb_substr($line, 2, -11)));
-			} elseif (preg_match('/^(?:## (.+)|### (Q&A: .+))/', $line, $matches)) {
-				$title = $matches[1];
-				$is_multipart = true;
-				$urls = [];
-				$quotes = [];
-			} elseif (preg_match('/^\* Part \d+: (.+)/', $line, $matches)) {
-				if ($is_multipart) {
-					$urls[] = $matches[1];
-				} else {
-					var_dump($line);exit(1);
-				}
-			} elseif (preg_match('/^\* (.+) (https:.+)$/', $line, $matches)) {
-				$urls = [$matches[2]];
-				$title = $matches[1];
-				$quotes = [];
-			} elseif ('### Quotes' === $line) {
-				$quotes = [];
-			} elseif (preg_match('/^> (.+)$/', $line)) {
-				$quotes[] = mb_substr($line, 2);
-			} elseif (
-				'---' === $line
-				|| '*answers in these clips are impaired by the technical difficulties experienced by Snutt throughout the stream.*' === $line
-			) {
-				continue;
-			}
-		}
-
-		if ($append) {
-			[$out] = $do_append(
-				$out,
-				$date,
-				$title,
-				$urls,
-				$quotes,
-				$topic_path
-			);
-		}
-	}
-}
-
 /**
  * @var array{
  *	playlists: array<string, array{0:string, 1:string, 2:list<string>}>,
@@ -138,6 +49,11 @@ foreach ($global_topic_append as $game => $game_data) {
  */
 $cache = json_decode(file_get_contents(__DIR__ . '/cache.json'), true);
 
+$cache = array_merge_recursive(
+	$cache,
+	json_decode(file_get_contents(__DIR__ . '/cache-injection.json'), true)
+);
+
 /** @var array<string, string> */
 $dated_playlists = json_decode(
 	file_get_contents(
@@ -145,6 +61,17 @@ $dated_playlists = json_decode(
 		'/playlists/coffeestainstudiosdevs/satisfactory.json'
 	),
 	true
+);
+
+$dated_playlists = array_merge(
+	$dated_playlists,
+	json_decode(
+		file_get_contents(
+			__DIR__ .
+			'/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+		),
+		true
+	)
 );
 
 $dated_playlists = array_map(
@@ -183,7 +110,7 @@ foreach (
 foreach ($cache['playlistItems'] as $video_id => $video_data) {
 	[, $title] = $video_data;
 
-	$urls = [sprintf('https://youtu.be/%s', rawurlencode($video_id))];
+	$urls = [video_url_from_id($video_id)];
 	$quotes = [];
 	$transcription = '';
 	$date = '0000-00-00';
@@ -210,12 +137,7 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 		}
 	}
 
-	$transcription_file = (
-		__DIR__ .
-		'/../coffeestainstudiosdevs/satisfactory/transcriptions/yt-' .
-		$video_id .
-		'.md'
-	);
+	$transcription_file = transcription_filename($video_id);
 
 	if (is_file($transcription_file)) {
 		$transcription_raw = file_get_contents($transcription_file);
@@ -247,8 +169,10 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 		)));
 	}
 
-	$out['yt-' . $video_id] = [
-		'id' => 'yt-' . $video_id,
+	$vendor_video_id = vendor_prefixed_video_id($video_id);
+
+	$out[$vendor_video_id] = [
+		'id' => $vendor_video_id,
 		'game' => 'satisfactory',
 		'date' => $date,
 		'title' => $title,
