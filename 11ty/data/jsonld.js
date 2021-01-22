@@ -26,10 +26,10 @@ module.exports = () => {
 				{
 					"@context": "https://schema.org",
 					"@type": "WebSite",
-					"url": "https://clips.satisfactory.signpostmarv.name/",
+					"url": "https://archive.satisfactory.video/",
 					"potentialAction": {
 						"@type": "SearchAction",
-						"target": "https://clips.satisfactory.signpostmarv.name/search?q={search_term_string}",
+						"target": "https://archive.satisfactory.video/search?q={search_term_string}",
 						"query-input": "required name=search_term_string"
 					}
 				}
@@ -75,7 +75,7 @@ module.exports = () => {
 
 					return [
 						topic[topic.length - 1],
-						`https://clips.satisfactory.signpostmarv.name/topics/${
+						`https://archive.satisfactory.video/topics/${
 							subslugs.join('/')
 						}/`
 					];

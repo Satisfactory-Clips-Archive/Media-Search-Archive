@@ -6,7 +6,7 @@ Static site generator for
 
 # See Also
 
-* [Satisfactory Q&A Clips Archive](https://clips.satisfactory.signpostmarv.name/) - Serves as an archive for Q&A Clips for Coffee Stain Studio's Satisfactory-related livestream
+* [Satisfactory Q&A Clips Archive](https://archive.satisfactory.video/) - Serves as an archive for Q&A Clips for Coffee Stain Studio's Satisfactory-related livestream
 
 # Changelog
 
@@ -14,6 +14,9 @@ Static site generator for
 * Updated build to reflect changes in topic metadata
 * Corrected typo in changelog
 * Updated build to refactor headings & navigation
+* Corrected typo in navigation link
+* Updated build to rely less on hardcoded legacy twitch clips, favouring partially dynamic injection
+* Moved site to a new domain
 
 ## 2021-01-21
 * Added Icons

@@ -3,10 +3,10 @@
 <browserconfig>
   <msapplication>
     <tile>
-      <square70x70logo src="https://i.img.clips.satisfactory.signpostmarv.name/tile-70x70.png"/>
-      <square150x150logo src="https://i.img.clips.satisfactory.signpostmarv.name/tile-150x150.png"/>
-      <wide310x150logo src="https://i.img.clips.satisfactory.signpostmarv.name/tile-310x150.png"/>
-      <square310x310logo src="https://i.img.clips.satisfactory.signpostmarv.name/tile-310x310.png"/>
+      <square70x70logo src="https://i.img.archive.satisfactory.video/tile-70x70.png"/>
+      <square150x150logo src="https://i.img.archive.satisfactory.video/tile-150x150.png"/>
+      <wide310x150logo src="https://i.img.archive.satisfactory.video/tile-310x150.png"/>
+      <square310x310logo src="https://i.img.archive.satisfactory.video/tile-310x310.png"/>
     </tile>
   </msapplication>
 </browserconfig>

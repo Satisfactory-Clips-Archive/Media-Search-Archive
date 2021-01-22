@@ -19,7 +19,7 @@
 	const maybe_date_min = [Infinity, 20200901];
 	const date_values = [];
 	const date_values_sorted = [];
-	const topic_prefix = 'https://clips.satisfactory.signpostmarv.name/topics/';
+	const topic_prefix = 'https://archive.satisfactory.video/topics/';
 	const topic_suffix = '/';
 	const searches_cache = {};
 
