@@ -395,5 +395,20 @@ $global_topic_hierarchy = [
 			'Environment',
 			'Creatures',
 		],
+		'PLbjDnnBIxiEpKl9s2jfplHWpckgIRIh32' => [ // Underwater
+			'Environment',
+			'Biomes',
+			'Unplanned Biomes',
+		],
+		'PLbjDnnBIxiEoJtf2OIfMXFmMDHaxZJBfg' => [ // Snow
+			'Environment',
+			'Biomes',
+			'Unplanned Biomes',
+		],
+		'PLbjDnnBIxiEolepny6NyMIt3ItHySMb-x' => [ // Factory Cart
+			'Features',
+			'Transportation',
+			'Vehicles',
+		],
 	],
 ];
