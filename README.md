@@ -17,6 +17,8 @@ Static site generator for
 * Corrected typo in navigation link
 * Updated build to rely less on hardcoded legacy twitch clips, favouring partially dynamic injection
 * Moved site to a new domain
+* Amended 404 page
+* Amended generated page titles for the FAQ
 
 ## 2021-01-21
 * Added Icons
