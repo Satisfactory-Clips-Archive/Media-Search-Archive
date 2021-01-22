@@ -415,5 +415,9 @@ $global_topic_hierarchy = [
 			'Transportation',
 			'Trains',
 		],
+		'PLbjDnnBIxiEqp_c5jfKfMjjFOjbTAWrFE' => [ // Base Defense
+			'Features',
+			'Unplanned Features',
+		],
 	],
 ];
