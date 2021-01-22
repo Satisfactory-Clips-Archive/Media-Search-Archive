@@ -13,6 +13,7 @@ Static site generator for
 ## 2021-01-22
 * Updated build to reflect changes in topic metadata
 * Corrected typo in changelog
+* Updated build to refactor headings & navigation
 
 ## 2021-01-21
 * Added Icons
