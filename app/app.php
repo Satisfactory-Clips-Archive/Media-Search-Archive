@@ -67,6 +67,7 @@ $skip_fetch = in_array('--skip-fetch', $argv, true);
 
 require_once(__DIR__ . '/vendor/autoload.php');
 require_once(__DIR__ . '/captions.php');
+require_once(__DIR__ . '/global-topic-hierarchy.php');
 
 $client = new Google_Client();
 $client->setApplicationName('Twitch Clip Notes');
@@ -111,13 +112,6 @@ $video_tags = [];
 
 $exclude_from_absent_tag_check = [
 	'4_cYnq746zk', // official merch announcement video
-];
-
-$not_a_livestream = [
-	'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ' => 'Teasers',
-	'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
-	'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO' => 'Teasers',
-	'2021-01-22' => 'Instagram AMA',
 ];
 
 /** @var list<string> */
@@ -410,8 +404,6 @@ $fetch_all_playlists([
 	'maxResults' => 50,
 ]);
 
-require_once(__DIR__ . '/global-topic-hierarchy.php');
-
 $global_topic_hierarchy = array_merge_recursive(
 	$global_topic_hierarchy,
 	$injected_global_topic_hierarchy
@@ -673,7 +665,9 @@ foreach ($all_topic_ids as $topic_id) {
 		$slugify
 	);
 
+	if ( ! isset($playlists[$topic_id])) {
 	$topics_json[$slug_string] = $slug;
+	}
 	$playlist_topic_strings[$topic_id] = $slug_string;
 }
 

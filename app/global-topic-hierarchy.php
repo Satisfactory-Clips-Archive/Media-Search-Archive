@@ -444,6 +444,20 @@ $global_topic_hierarchy = [
 	],
 ];
 
+$not_a_livestream = [
+	'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ' => 'Teasers',
+	'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
+	'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO' => 'Teasers',
+	'2021-01-22' => 'Instagram AMA',
+];
+
+$not_a_livestream_date_lookup = [
+	'2021-01-22' => '2021-01-22',
+	'2021-01-15' => 'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ',
+	'2020-12-11' => 'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW',
+	'2020-09-04' => 'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO',
+];
+
 $injected_global_topic_hierarchy = [
 	'satisfactory' => [
 		'Buildables' => [
