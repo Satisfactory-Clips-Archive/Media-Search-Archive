@@ -48,7 +48,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 
 function transcription_filename(string $video_id) : string
 {
-	if (preg_match('/^(tc|is)\-/', $video_id)) {
+	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
 		return (
 			__DIR__
 			. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
@@ -78,7 +78,7 @@ function maybe_transcript_link_and_video_url(
 			? str_repeat('../', $repeat_directory_up)
 			: './';
 
-	if (preg_match('/^(tc|is)\-/', $video_id)) {
+	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
 		if (is_file(transcription_filename($video_id))) {
 			$initial_segment = (
 				'['
@@ -109,7 +109,7 @@ function maybe_transcript_link_and_video_url(
 
 function vendor_prefixed_video_id(string $video_id) : string
 {
-	if (preg_match('/^(tc|is)\-/', $video_id)) {
+	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
 		return $video_id;
 	}
 
