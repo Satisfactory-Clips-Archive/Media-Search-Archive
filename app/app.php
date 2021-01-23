@@ -98,6 +98,7 @@ $not_a_livestream = [
 	'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ' => 'Teasers',
 	'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
 	'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO' => 'Teasers',
+	'2021-01-22' => 'Community Highlights',
 ];
 
 /** @var list<string> */
