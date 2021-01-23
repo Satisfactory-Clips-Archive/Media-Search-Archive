@@ -15,6 +15,7 @@ Static site generator for
 * Implemented dark mode
 * Dropped relevance search in favour of chronological
 * Added site description to page footer
+* Updated build to reflect topic changes
 
 ## 2021-01-22
 * Updated build to reflect changes in topic metadata
