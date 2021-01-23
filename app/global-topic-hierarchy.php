@@ -480,7 +480,7 @@ $injected_global_topic_hierarchy = [
 			'Features',
 		],
 		'Possible Features' => [
-			'Satisfactory Updates',
+			'Features',
 		],
 		'Released' => [
 			'Satisfactory Updates',
