@@ -529,5 +529,8 @@ $injected_global_topic_hierarchy = [
 		'Free Weekends' => [
 			'Satisfactory Updates',
 		],
+		'PLbjDnnBIxiErS9sKol90eUQvUOe0Bl_GI' => [
+			'Community',
+		],
 	],
 ];
