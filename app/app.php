@@ -660,34 +660,21 @@ $slugify = new Slugify();
 $topics_json = [];
 $playlist_topic_strings = [];
 
-foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $hierarchy) {
-	$slug = $hierarchy;
+$all_topic_ids = array_merge(
+	array_keys($cache['playlists']),
+	array_keys($cache['stubPlaylists'] ?? [])
+);
 
-	$playlist_data = $cache['playlists'][$playlist_id] ?? $cache['stubPlaylists'][$playlist_id];
-
-	[, $playlist_title, $playlist_items] = $playlist_data;
-
-	if (($slug[0] ?? '') !== $playlist_title) {
-		$slug[] = $playlist_title;
-	}
-
-	$slug = array_values(array_filter(array_filter($slug, 'is_string')));
-
-	$slugged = array_map(
-		[$slugify, 'slugify'],
-		$slug
+foreach ($all_topic_ids as $topic_id) {
+	[$slug_string, $slug] = topic_to_slug(
+		$topic_id,
+		$cache,
+		$global_topic_hierarchy['satisfactory'],
+		$slugify
 	);
 
-	$playlist_topic_strings[$playlist_id] = implode('/', $slugged);
-
-	while (count($slug) > 0) {
-		$slug_string = implode('/', $slugged);
-
-		$topics_json[$slug_string] = $slug;
-
-		array_pop($slug);
-		array_pop($slugged);
-	}
+	$topics_json[$slug_string] = $slug;
+	$playlist_topic_strings[$topic_id] = $slug_string;
 }
 
 ksort($topics_json);

@@ -7,6 +7,7 @@ declare(strict_types=1);
 namespace SignpostMarv\TwitchClipNotes;
 
 use function file_get_contents;
+use InvalidArgumentException;
 use function json_decode;
 
 function video_url_from_id(string $video_id, bool $short = false) : string
@@ -189,4 +190,44 @@ function inject_caches(array $cache, array ...$caches) : array
 	}
 
 	return $cache;
+}
+
+/**
+ * @return array{0:string, 1:list<string>}
+ */
+function topic_to_slug(
+	string $topic_id,
+	array $cache,
+	array $topics_hierarchy,
+	Slugify $slugify
+) : array {
+	if (
+		! isset($cache['playlists'][$topic_id])
+		&& ! isset($cache['stubPlaylists'][$topic_id])
+	) {
+		throw new InvalidArgumentException(
+			'Topic not in cache!'
+		);
+	} elseif (isset($cache['playlists'][$topic_id])) {
+		$topic_data = $cache['playlists'][$topic_id];
+	} else {
+		$topic_data = $cache['stubPlaylists'][$topic_id];
+	}
+
+	[, $topic_title] = $topic_data;
+
+	$slug = $topics_hierarchy[$topic_id] ?? [];
+
+	if (($slug[0] ?? '') !== $topic_title) {
+		$slug[] = $topic_title;
+	}
+
+	$slug = array_values(array_filter(array_filter($slug, 'is_string')));
+
+	$slugged = array_map(
+		[$slugify, 'slugify'],
+		$slug
+	);
+
+	return [implode('/', $slugged), $slug];
 }
