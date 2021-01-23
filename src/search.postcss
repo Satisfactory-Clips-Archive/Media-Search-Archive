@@ -2,6 +2,11 @@
 {
 	padding: 1em ;
 	border: 1px solid #000 ;
+
+	@media (prefers-color-scheme: dark)
+	{
+		border-color: #fff ;
+	}
 }
 
 form
@@ -9,6 +14,11 @@ form
 	display: flex ;
 	flex-wrap: wrap ;
 	background: #ccc ;
+
+	@media (prefers-color-scheme: dark)
+	{
+		background: #333 ;
+	}
 
 	h1,
 	h2,
@@ -23,6 +33,17 @@ form
 		border: 1px solid ;
 		margin: .25em ;
 		max-width: calc(100% - .5em) ;
+	}
+
+	input,
+	select
+	{
+		padding: 0 .25em ;
+
+		@media (prefers-color-scheme: dark)
+		{
+			background: #141414 ;
+		}
 	}
 
 	[aria-labelledby]
@@ -53,6 +74,11 @@ form
 		width: 100% ;
 	}
 
+	@media (prefers-color-scheme: dark)
+	{
+		background: #000 linear-gradient(to bottom, transparent .65em, #545454 .65em, #545454 1.05em, transparent 1.05em) ;
+	}
+
 	label
 	{
 		position: absolute ;
@@ -66,6 +92,12 @@ form
 		background: none ;
 		pointer-events: none ;
 		z-index: 1 ;
+		padding: 0 ;
+
+		@media (prefers-color-scheme: dark)
+		{
+			color: inherit ;
+		}
 
 		&:focus
 		{
@@ -126,6 +158,11 @@ form
 		{
 			grid-row: 2 ;
 			grid-column: 1 ;
+		}
+
+		@media (prefers-color-scheme: dark)
+		{
+			background: #000 ;
 		}
 	}
 }
