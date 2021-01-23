@@ -93,9 +93,9 @@
 				10
 			);
 			const filter_topic = formdata.get('t');
-			const sort_by_relevance = 'd' !== formdata.get('s');
+			const sort_by_ascending = 'd' !== formdata.get('s');
 
-			formdata.set('s', sort_by_relevance ? 'r' : 'd');
+			formdata.set('s', sort_by_ascending ? 'b' : 'd');
 
 			document.head.querySelector('title').textContent = title;
 
@@ -156,18 +156,21 @@
 				);
 			});
 
-			if ( ! sort_by_relevance) {
-				docs_results = docs_results.sort((a, b) => {
+			const sorter = sort_by_ascending
+				? (a, b) => {
+					const aint = parseInt(a[0].date.replace(/\-/g, ''), 10);
+					const bint = parseInt(b[0].date.replace(/\-/g, ''), 10);
+
+					return aint - bint;
+				}
+				: (a, b) => {
 					const aint = parseInt(a[0].date.replace(/\-/g, ''), 10);
 					const bint = parseInt(b[0].date.replace(/\-/g, ''), 10);
 
 					return bint - aint;
-				});
-			} else {
-				docs_results = docs_results.sort((a, b) => {
-					return b[1].score - a[1].score;
-				});
-			}
+				};
+
+				docs_results = docs_results.sort(sorter);
 
 			result_count.textContent = `${
 					docs_results.length
@@ -314,10 +317,10 @@
 			}
 
 			if (params.has('s')) {
-				if ('d' === params.get('s')) {
+				if ('b' !== params.get('s')) {
 					sort_by_date_input.checked = true;
 				} else {
-					sort_by_relevance_input.checked = true;
+					sort_by_date_ascending_input.checked = true;
 				}
 			}
 
@@ -373,8 +376,8 @@
 	const date_from = form.querySelector('#date-from');
 	const date_to = form.querySelector('#date-to');
 	const topic_filter = form.querySelector('[name="t"]');
-	const sort_by_relevance_input = form.querySelector(
-		'[name="s"][value="r"]'
+	const sort_by_date_ascending_input = form.querySelector(
+		'[name="s"][value="b"]'
 	);
 	const sort_by_date_input = form.querySelector(
 		'[name="s"][value="d"]'
@@ -631,7 +634,7 @@
 	};
 	hashsearch(false, false);
 
-	sort_by_relevance_input.addEventListener('input', () => {
+	sort_by_date_ascending_input.addEventListener('input', () => {
 		const params = new URLSearchParams(location.search);
 
 		if (params.has('q')) {

@@ -181,17 +181,19 @@ form
 		position: absolute ;
 		clip-path: inset(50%) ;
 
-		&[value="r"]:not(:checked) ~ label[for="sort-by-relevance"],
+		&[value="b"]:not(:checked) ~ label[for="sort-by-date-ascending"],
 		&[value="d"]:not(:checked) ~ label[for="sort-by-date"]
 		{
 			background: #000 ;
+			color: #fff ;
 			filter: grayscale(1) ;
 		}
 	}
 
 	> label
 	{
-		background: #fff ;
+		background: #BBDE92 ;
+		color: #000 ;
 		padding: .25em ;
 		display: block ;
 		transition:
