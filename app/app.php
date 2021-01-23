@@ -6,13 +6,22 @@ declare(strict_types=1);
 
 namespace SignpostMarv\TwitchClipNotes;
 
-use function array_diff;
+use function array_combine;
 use function array_filter;
+use const ARRAY_FILTER_USE_KEY;
 use function array_keys;
+use function array_map;
+use function array_merge;
+use function array_merge_recursive;
+use function array_pop;
+use function array_reverse;
+use function array_unique;
+use function array_values;
+use function asort;
 use function basename;
-use Benlipp\SrtParser\Parser;
 use function count;
 use function date;
+use function dirname;
 use const FILE_APPEND;
 use function file_get_contents;
 use function file_put_contents;
@@ -24,22 +33,32 @@ use Google_Service_YouTube_PlaylistItemListResponse;
 use Google_Service_YouTube_PlaylistListResponse;
 use Google_Service_YouTube_PlaylistSnippet;
 use Google_Service_YouTube_ResourceId;
-use Google_Service_YouTube_Video;
-use Google_Service_YouTube_VideoSnippet;
 use Google_Service_YouTube_VideoListResponse;
-use GuzzleHttp\Exception\ClientException;
-use function http_build_query;
+use Google_Service_YouTube_VideoSnippet;
 use function implode;
 use function in_array;
+use function is_array;
+use function is_dir;
 use function is_file;
+use function is_int;
+use function is_string;
+use function json_decode;
+use function json_encode;
+use const JSON_PRETTY_PRINT;
 use function ksort;
 use function mb_substr;
-use function preg_match_all;
-use function rawurlencode;
-use function sha1_file;
+use function mkdir;
+use function natsort;
+use function realpath;
 use function sprintf;
+use function str_repeat;
+use function str_replace;
 use function strnatcasecmp;
 use function strtotime;
+use function uasort;
+use function uksort;
+use function usleep;
+use function usort;
 
 $transcriptions = in_array('--transcriptions', $argv, true);
 $clear_nopes = in_array('--clear-nopes', $argv, true);
@@ -109,7 +128,7 @@ $cache = json_decode(
 	true
 );
 
-$update_cache = function () use (&$cache) : void {
+$update_cache = static function () use (&$cache) : void {
 	file_put_contents(
 		__DIR__ . '/cache.json',
 		json_encode($cache, JSON_PRETTY_PRINT)
@@ -141,7 +160,6 @@ foreach (($cache['playlists'] ?? []) as $playlist_id => $data) {
 
 	$other_playlists_on_channel[$playlist_id] = [$title, $video_ids];
 }
-
 
 $object_cache_captions = [];
 $object_cache_videos = [];
@@ -476,7 +494,7 @@ uksort($videos, static function (string $a, string $b) use ($cache) : int {
 
 $videos = array_map(
 	static function (array $in) : array {
-		uasort($in, static function(string $a, string $b) : int {
+		uasort($in, static function (string $a, string $b) : int {
 			return strnatcasecmp($a, $b);
 		});
 
@@ -502,7 +520,7 @@ foreach ($cache['playlists'] as $playlist_id => $data) {
 foreach (array_keys($playlists) as $playlist_id) {
 	$video_ids = $cache['playlists'][$playlist_id][2];
 
-	usort($video_ids, static function (string $a, string $b) use($cache) : int {
+	usort($video_ids, static function (string $a, string $b) use ($cache) : int {
 		return strnatcasecmp(
 			$cache['playlistItems'][$a][1],
 			$cache['playlistItems'][$b][1]
@@ -662,7 +680,7 @@ foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $hierarchy) 
 
 	$playlist_topic_strings[$playlist_id] = implode('/', $slugged);
 
-	while(count($slug) > 0) {
+	while (count($slug) > 0) {
 		$slug_string = implode('/', $slugged);
 
 		$topics_json[$slug_string] = $slug;
@@ -679,8 +697,8 @@ file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_jso
 if ($transcriptions) {
 	$checked = 0;
 
-	foreach(array_keys($playlists) as $playlist_id) {
-		foreach($cache['playlists'][$playlist_id][2] as $video_id) {
+	foreach (array_keys($playlists) as $playlist_id) {
+		foreach ($cache['playlists'][$playlist_id][2] as $video_id) {
 			$transcriptions_file = transcription_filename($video_id);
 
 			$caption_lines = captions($video_id);
@@ -776,9 +794,8 @@ if ($transcriptions) {
 					''
 					. ' '
 					. (
-						isset($not_a_livestream[$playlist_id])
-							? $not_a_livestream[$playlist_id]
-							: 'Livestream'
+						$not_a_livestream[$playlist_id]
+							?? 'Livestream'
 					)
 					. '](../' . $date . '.md)' .
 					"\n" .
@@ -797,7 +814,7 @@ if ($transcriptions) {
 							$topics_json,
 							$playlist_topic_strings
 						) {
-							return (
+							return
 								'* ['
 								. implode(' > ', $topics_json[$playlist_topic_strings[
 									$playlist_id
@@ -806,8 +823,7 @@ if ($transcriptions) {
 								. $playlist_topic_strings[
 									$playlist_id
 								]
-								. '.md)'
-							);
+								. '.md)';
 						},
 						array_filter(
 							$video_playlists[$video_id],
@@ -897,7 +913,7 @@ foreach ($cache['playlists'] as $cached_playlist_id => $cached_playlist_data) {
 	foreach ($cached_playlist_data[2] as $video_id) {
 		if (
 			isset($video_tags[$video_id])
-			&& in_array('faq', $video_tags[$video_id])
+			&& in_array('faq', $video_tags[$video_id], true)
 		) {
 			/** @var string|null */
 			$faq_video_date = null;
@@ -1005,7 +1021,6 @@ foreach ($faq_topics as $faq_topic) {
 		foreach ($faq_patch[$faq_topic] as $k => $v) {
 			if (is_array($v)) {
 				natsort($v);
-
 			}
 		}
 	}
@@ -1077,7 +1092,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 		$slug = $topic_hierarchy[$playlist_id] ?? [];
 
-		$categorised_dest = & $categorised;
+		$categorised_dest = &$categorised;
 
 		foreach ($slug as $slug_part) {
 			if (is_int($slug_part)) {
@@ -1088,7 +1103,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				$categorised_dest[$slug_part] = [];
 			}
 
-			$categorised_dest = & $categorised_dest[$slug_part];
+			$categorised_dest = &$categorised_dest[$slug_part];
 		}
 
 		$categorised_dest[] = $playlist_id;
@@ -1169,9 +1184,8 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 					''
 					. ' '
 					. (
-						isset($not_a_livestream[$playlist_id])
-							? $not_a_livestream[$playlist_id]
-							: 'Livestream'
+						$not_a_livestream[$playlist_id]
+							?? 'Livestream'
 					)
 					. '' .
 					"\n"
@@ -1197,7 +1211,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		}
 	}
 
-	$decategorise = function (
+	$decategorise = static function (
 		array $to_flatten,
 		array $pending = [],
 		$depth = 0
@@ -1205,7 +1219,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		$topic_hierarchy,
 		$cache,
 		$slugify,
-		& $decategorise
+		&$decategorise
 	) : array {
 		ksort($to_flatten);
 
@@ -1338,7 +1352,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		$grouped
 	);
 
-	uasort($sortable, static function(int $a, int $b) : int {
+	uasort($sortable, static function (int $a, int $b) : int {
 		return $b - $a;
 	});
 
