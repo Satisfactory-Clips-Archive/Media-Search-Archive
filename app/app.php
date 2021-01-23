@@ -620,7 +620,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 			$playlists[$playlist_id],
 			(
 				"\n"
-				. '# Single video clips'
+				. '## Uncategorised'
 				. "\n"
 			),
 			FILE_APPEND
