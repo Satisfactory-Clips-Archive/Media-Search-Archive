@@ -544,6 +544,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 			. sprintf('date: "%s"' . "\n", date('Y-m-d', $title_unix))
 			. 'layout: livestream' . "\n"
 			. '---' . "\n"
+			. '# '
 			. $title
 			. "\n"
 		)
@@ -572,12 +573,6 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	ksort($content_arrays['Related answer clips']);
 
-	file_put_contents(
-		$playlists[$playlist_id],
-		"\n" . '# Related answer clips' . "\n",
-		FILE_APPEND
-	);
-
 	foreach ($content_arrays['Related answer clips'] as $title => $video_ids) {
 		file_put_contents(
 			$playlists[$playlist_id],
@@ -602,6 +597,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 		}
 	}
 
+	if (count($content_arrays['Single video clips']) > 0) {
 	file_put_contents(
 		$playlists[$playlist_id],
 		(
@@ -611,6 +607,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 		),
 		FILE_APPEND
 	);
+	}
 
 	foreach ($content_arrays['Single video clips'] as $video_id) {
 		file_put_contents(
