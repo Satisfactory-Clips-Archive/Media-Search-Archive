@@ -464,39 +464,7 @@ foreach ($injected_cache['playlists'] as $playlist_id => $injected_data) {
 	}
 }
 
-foreach ($injected_cache['playlists'] as $playlist_id => $playlist_data) {
-	if ( ! isset($cache['playlists'][$playlist_id])) {
-		$cache['playlists'][$playlist_id] = $playlist_data;
-	} else {
-		$cache['playlists'][$playlist_id][2] = array_unique(
-			array_merge(
-				$cache['playlists'][$playlist_id][2],
-				$playlist_data[2]
-			)
-		);
-	}
-}
-
-foreach ($injected_cache['playlistItems'] as $video_id => $video_data) {
-	if ( ! isset($cache['playlistItems'][$video_id])) {
-		$cache['playlistItems'][$video_id] = $video_data;
-	}
-}
-
-foreach ($injected_cache['videoTags'] as $video_id => $video_data) {
-	if ( ! isset($cache['videoTags'][$video_id])) {
-		$cache['videoTags'][$video_id] = $video_id;
-	} else {
-		$cache['videoTags'][$video_id][1] = array_unique(
-			array_merge(
-				$cache['videoTags'][$video_id][1],
-				$video_data[1]
-			)
-		);
-	}
-}
-
-$cache['stubPlaylists'] = $injected_cache['stubPlaylists'];
+$cache = inject_caches($cache, $injected_cache);
 
 uksort($videos, static function (string $a, string $b) use ($cache) : int {
 	return strnatcasecmp(

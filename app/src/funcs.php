@@ -114,3 +114,79 @@ function vendor_prefixed_video_id(string $video_id) : string
 
 	return 'yt-' . $video_id;
 }
+
+/**
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 1:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 1:list<string>}>
+ * }
+ *
+ * @param CACHE $cache
+ * @param CACHE ...$caches
+ *
+ * @return array{
+ *	playlists:array<string, array{0:string, 1:string, 1:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists:array<string, array{0:string, 1:string, 1:list<string>}>
+ * }
+ */
+function inject_caches(array $cache, array ...$caches) : array
+{
+	if ( ! isset($cache['stubPlaylists'])) {
+		$cache['stubPlaylists'] = [];
+	}
+
+	foreach ($caches as $inject) {
+		foreach ($inject['playlists'] as $playlist_id => $playlist_data) {
+			if ( ! isset($cache['playlists'][$playlist_id])) {
+				$cache['playlists'][$playlist_id] = $playlist_data;
+			} else {
+				$cache['playlists'][$playlist_id][2] = array_unique(
+					array_merge(
+						$cache['playlists'][$playlist_id][2],
+						$playlist_data[2]
+					)
+				);
+			}
+		}
+
+		foreach ($inject['playlistItems'] as $video_id => $video_data) {
+			if ( ! isset($cache['playlistItems'][$video_id])) {
+				$cache['playlistItems'][$video_id] = $video_data;
+			}
+		}
+
+		foreach ($inject['videoTags'] as $video_id => $video_data) {
+			if ( ! isset($cache['videoTags'][$video_id])) {
+				$cache['videoTags'][$video_id] = $video_id;
+			} else {
+				$cache['videoTags'][$video_id][1] = array_unique(
+					array_merge(
+						$cache['videoTags'][$video_id][1],
+						$video_data[1]
+					)
+				);
+			}
+		}
+
+		if (isset($inject['stubPlaylists'])) {
+			foreach ($inject['stubPlaylists'] as $playlist_id => $playlist_data) {
+				if ( ! isset($cache['stubPlaylists'][$playlist_id])) {
+					$cache['stubPlaylists'][$playlist_id] = $playlist_data;
+				} else {
+					$cache['stubPlaylists'][$playlist_id][2] = array_unique(
+						array_merge(
+							$cache['stubPlaylists'][$playlist_id][2],
+							$playlist_data[2]
+						)
+					);
+				}
+			}
+		}
+	}
+
+	return $cache;
+}

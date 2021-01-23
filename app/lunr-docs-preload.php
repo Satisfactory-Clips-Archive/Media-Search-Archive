@@ -49,7 +49,7 @@ $quotes = [];
  */
 $cache = json_decode(file_get_contents(__DIR__ . '/cache.json'), true);
 
-$cache = array_merge_recursive(
+$cache = inject_caches(
 	$cache,
 	json_decode(file_get_contents(__DIR__ . '/cache-injection.json'), true)
 );
