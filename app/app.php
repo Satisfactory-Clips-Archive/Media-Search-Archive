@@ -604,7 +604,11 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	file_put_contents(
 		$playlists[$playlist_id],
-		"\n" . '# Single video clips' . "\n",
+		(
+			"\n"
+			. '# Single video clips'
+			. "\n"
+		),
 		FILE_APPEND
 	);
 
