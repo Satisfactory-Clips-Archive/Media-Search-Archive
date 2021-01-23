@@ -14,6 +14,7 @@ Static site generator for
 * Updated build to reflect support for additional clip sources
 * Implemented dark mode
 * Dropped relevance search in favour of chronological
+* Added site description to page footer
 
 ## 2021-01-22
 * Updated build to reflect changes in topic metadata
