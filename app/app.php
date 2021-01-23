@@ -666,7 +666,7 @@ foreach ($all_topic_ids as $topic_id) {
 	);
 
 	if ( ! isset($playlists[$topic_id])) {
-	$topics_json[$slug_string] = $slug;
+		$topics_json[$slug_string] = $slug;
 	}
 	$playlist_topic_strings[$topic_id] = $slug_string;
 }
