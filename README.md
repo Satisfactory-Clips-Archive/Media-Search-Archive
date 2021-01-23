@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2021-01-23
+* Updated build to reflect support for additional clip sources
+* Implemented dark mode
+
 ## 2021-01-22
 * Updated build to reflect changes in topic metadata
 * Corrected typo in changelog
