@@ -1047,39 +1047,6 @@ foreach ($faq_topics as $faq_topic) {
 	);
 }
 
-$index_prefill = [
-	'satisfactory' => [
-		'July 2020' => [
-			[
-				'July 8th, 2020',
-				'2020-07-08.md',
-			],
-			[
-				'July 21st, 2020',
-				'2020-07-21.md',
-			],
-			[
-				'July 28th, 2020',
-				'2020-07-28.md',
-			],
-		],
-		'August 2020' => [
-			[
-				'August 11th, 2020',
-				'2020-08-11.md',
-			],
-			[
-				'August 18th, 2020',
-				'2020-08-18.md',
-			],
-			[
-				'August 25th, 2020',
-				'2020-08-25.md',
-			],
-		],
-	],
-];
-
 foreach ($playlist_metadata as $json_file => $save_path) {
 	$categorised = [];
 
@@ -1332,6 +1299,22 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 foreach ($playlist_metadata as $json_file => $save_path) {
 	$data = json_decode(file_get_contents($json_file), true);
 
+	if ($json_file === realpath(
+		__DIR__ .
+		'/playlists/coffeestainstudiosdevs/satisfactory.json'
+	)) {
+		$data = array_merge(
+			$data,
+			json_decode(
+				file_get_contents(
+					__DIR__ .
+					'/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+				),
+				true
+			)
+		);
+	}
+
 	$basename = basename($save_path);
 
 	$file_path = $save_path . '/../' . $basename . '/index.md';
@@ -1350,20 +1333,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	$grouped = [];
 
 	$sortable = [];
-
-	foreach ($index_prefill[$basename] as $readable_month => $prefilled_data) {
-		foreach ($prefilled_data as $prefilled_data_row) {
-			[$readable_date, $filename] = $prefilled_data_row;
-			$unix = strtotime(mb_substr($filename, 0, -3));
-
-			if ( ! isset($grouped[$readable_month])) {
-				$grouped[$readable_month] = [];
-				$sortable[$readable_month] = strtotime(date('Y-m-01', $unix));
-			}
-
-			$grouped[$readable_month][] = [$readable_date, $filename, $unix];
-		}
-	}
 
 	foreach ($data as $filename) {
 		$unix = strtotime(mb_substr($filename, 0, -3));

@@ -299,6 +299,44 @@ function add_youtube_video_from_single_string(
 	);
 }
 
+function add_instagram_stories_video(
+	string $id,
+	string $title,
+	bool $faq,
+	string $playlist_id,
+	array $cache
+) : array {
+	if ( ! isset($cache['playlists'][$playlist_id])) {
+		throw new RuntimeException(
+			'Could not find playlist destination!'
+		);
+	} elseif (0 !== mb_strpos($id, 'is-') ) {
+		throw new RuntimeException(
+			'Instagram Story ID needs have the prefix "is-"!'
+		);
+	}
+
+	if ( ! in_array($id, $cache['playlists'][$playlist_id][2], true)) {
+		$cache['playlists'][$playlist_id][2][] = $id;
+	}
+
+	if ( ! isset($cache['playlistItems'][$id])) {
+		$cache['playlistItems'][$id] = ['', ''];
+	}
+
+	if ( ! isset($cache['videoTags'][$id])) {
+		$cache['videoTags'][$id] = ['', []];
+	}
+
+	if ($faq && ! in_array('faq', $cache['videoTags'][$id][1], true)) {
+		$cache['videoTags'][$id][1][] = 'faq';
+	}
+
+	$cache['playlistItems'][$id][1] = $title;
+
+	return $cache;
+}
+
 $dated_glob = array_map(
 	static function (string $path) : string {
 		return mb_substr(basename($path), 0, -3);
@@ -1681,6 +1719,42 @@ $from_markdown = [
 	],
 ];
 
+const auto_FAQ_topics = [
+	'Mass Building',
+	'Dedicated Servers',
+	'Console Release',
+	'Base Defense',
+	'Nuclear Waste',
+];
+
+/**
+ * @param list<string|true> $maybe
+ *
+ * @return array{0:bool, 1:list<string>}
+ */
+function is_topic_FAQ(array $maybe) : array {
+	$is_faq = in_array(true, $maybe, true);
+
+	$topics = array_filter($maybe, 'is_string');
+
+	if ( ! $is_faq) {
+		foreach ($topics as $topic) {
+			if (
+				in_array(
+					$topic,
+					auto_FAQ_topics,
+					true
+				)
+			) {
+				$is_faq = true;
+				break;
+			}
+		}
+	}
+
+	return [$is_faq, $topics];
+}
+
 foreach ($from_markdown as $date => $data) {
 	$cache = add_playlist(
 		$date,
@@ -1697,30 +1771,7 @@ foreach ($from_markdown as $date => $data) {
 	);
 
 	foreach ($data as $twitch_line => $topics) {
-		$is_faq = in_array(true, $topics, true);
-
-		$topics = array_filter($topics, 'is_string');
-
-		if ( ! $is_faq) {
-			foreach ($topics as $topic) {
-				if (
-					in_array(
-						$topic,
-						[
-							'Mass Building',
-							'Dedicated Servers',
-							'Console Release',
-							'Base Defense',
-							'Nuclear Waste',
-						],
-						true
-					)
-				) {
-					$is_faq = true;
-					break;
-				}
-			}
-		}
+		[$is_faq, $topics] = is_topic_FAQ($topics);
 
 		$cache = add_twitch_video_from_single_string(
 			$twitch_line,
@@ -1746,6 +1797,88 @@ foreach ($from_markdown as $date => $data) {
 
 			$cache = add_twitch_video_from_single_string(
 				$twitch_line,
+				$is_faq,
+				$topic_playlist_id,
+				$cache
+			);
+		}
+	}
+}
+
+$from_instagram = [
+	'2021-01-22' => [
+		[
+			'is-2492189517450884896',
+			'Q&A: Is there a plan for automatize the base defense?',
+			[
+				true,
+				'Base Defense',
+			],
+		],
+		[
+			'is-2492188879363090116',
+			'Q&A: When is update 4!!!!!',
+			[
+				true,
+				'Satisfactory Update 4',
+			],
+		],
+		[
+			'is-2492243863408545767',
+			'Q&A: Will you add a lore or a secret story to satisfactory?',
+			[
+				true,
+				'Story & Lore',
+			],
+		],
+	],
+];
+
+foreach ($from_instagram as $date => $data) {
+	$cache = add_playlist(
+		$date,
+		$cache,
+		$main,
+		$global_topic_hierarchy
+	);
+
+	[$date_playlist_id] = determine_playlist_id(
+		$date,
+		$cache,
+		$main,
+		$global_topic_hierarchy
+	);
+
+	foreach ($data as $entry) {
+		[$video_id, $title, $topics] = $entry;
+		[$is_faq, $topics] = is_topic_FAQ($topics);
+
+		$cache = add_instagram_stories_video(
+			$video_id,
+			$title,
+			$is_faq,
+			$date_playlist_id,
+			$cache
+		);
+
+		foreach ($topics as $topic) {
+			$cache = add_playlist(
+				$topic,
+				$cache,
+				$main,
+				$global_topic_hierarchy
+			);
+
+			[$topic_playlist_id] = determine_playlist_id(
+				$topic,
+				$cache,
+				$main,
+				$global_topic_hierarchy
+			);
+
+			$cache = add_instagram_stories_video(
+				$video_id,
+				$title,
 				$is_faq,
 				$topic_playlist_id,
 				$cache

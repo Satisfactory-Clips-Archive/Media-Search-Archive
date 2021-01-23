@@ -6,8 +6,28 @@ declare(strict_types=1);
 
 namespace SignpostMarv\TwitchClipNotes;
 
+use function file_get_contents;
+use function json_decode;
+
 function video_url_from_id(string $video_id, bool $short = false) : string
 {
+	/** @var null|array<string, string> */
+	static $overrides = null;
+
+	if (null === $overrides) {
+		$overrides = json_decode(
+			file_get_contents(
+				__DIR__
+				. '/../playlists/coffeestainstudiosdevs/satisfactory.url-overrides.json'
+			),
+			true
+		);
+	}
+
+	if (isset($overrides[$video_id])) {
+		return $overrides[$video_id];
+	}
+
 	if (0 === mb_strpos($video_id, 'tc-')) {
 		return sprintf(
 			'https://clips.twitch.tv/%s',
@@ -27,7 +47,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 
 function transcription_filename(string $video_id) : string
 {
-	if (0 === mb_strpos($video_id, 'tc-')) {
+	if (preg_match('/^(tc|is)\-/', $video_id)) {
 		return (
 			__DIR__
 			. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
@@ -57,7 +77,7 @@ function maybe_transcript_link_and_video_url(
 			? str_repeat('../', $repeat_directory_up)
 			: './';
 
-	if (0 === mb_strpos($video_id, 'tc-')) {
+	if (preg_match('/^(tc|is)\-/', $video_id)) {
 		if (is_file(transcription_filename($video_id))) {
 			$initial_segment = (
 				'['
@@ -88,7 +108,7 @@ function maybe_transcript_link_and_video_url(
 
 function vendor_prefixed_video_id(string $video_id) : string
 {
-	if (0 === mb_strpos($video_id, 'tc-')) {
+	if (preg_match('/^(tc|is)\-/', $video_id)) {
 		return $video_id;
 	}
 
