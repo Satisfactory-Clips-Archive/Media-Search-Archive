@@ -1056,6 +1056,13 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		$playlists_by_date[$playlist_id] = $cache['playlists'][$playlist_id][2];
 	}
 
+	uksort(
+		$playlists_by_date,
+		static function (string $a, string $b) use ($data_by_date) : int {
+			return $data_by_date[$b][0] - $data_by_date[$a][0];
+		}
+	);
+
 	$playlist_ids = array_keys(($cache['playlists'] ?? []));
 
 	foreach ($playlist_ids as $playlist_id) {
