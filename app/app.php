@@ -598,15 +598,15 @@ foreach (array_keys($playlists) as $playlist_id) {
 	}
 
 	if (count($content_arrays['Single video clips']) > 0) {
-	file_put_contents(
-		$playlists[$playlist_id],
-		(
-			"\n"
-			. '# Single video clips'
-			. "\n"
-		),
-		FILE_APPEND
-	);
+		file_put_contents(
+			$playlists[$playlist_id],
+			(
+				"\n"
+				. '# Single video clips'
+				. "\n"
+			),
+			FILE_APPEND
+		);
 	}
 
 	foreach ($content_arrays['Single video clips'] as $video_id) {
