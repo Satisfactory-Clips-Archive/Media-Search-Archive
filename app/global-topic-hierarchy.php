@@ -64,9 +64,6 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEo6wrqcweq2pi9HmfRJdkME' => [ // Simon
 			'Coffee Stainers',
 		],
-		'PLbjDnnBIxiErABErNV8_bjXIF_CFZILeP' => [ // Mods
-			'Mods',
-		],
 		'PLbjDnnBIxiEr8o-WHAZJf8lAVaNJlbHmH' => [ // Mods vs. Features
 			'Mods',
 		],

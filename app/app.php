@@ -49,6 +49,7 @@ use function mb_substr;
 use function mkdir;
 use function natsort;
 use function realpath;
+use RuntimeException;
 use function sprintf;
 use function str_repeat;
 use function str_replace;
@@ -67,6 +68,8 @@ $skip_fetch = in_array('--skip-fetch', $argv, true);
 require_once(__DIR__ . '/vendor/autoload.php');
 require_once(__DIR__ . '/captions.php');
 require_once(__DIR__ . '/global-topic-hierarchy.php');
+
+$slugify = new Slugify();
 
 $client = new Google_Client();
 $client->setApplicationName('Twitch Clip Notes');
@@ -476,6 +479,147 @@ foreach ($injected_cache['playlists'] as $playlist_id => $injected_data) {
 
 $cache = inject_caches($cache, $injected_cache);
 
+$all_topic_ids = array_merge(
+	array_keys($cache['playlists']),
+	array_keys($cache['stubPlaylists'] ?? [])
+);
+
+$topic_nesting = [];
+
+foreach ($all_topic_ids as $topic_id) {
+	$topic_nesting['satisfactory'][$topic_id] = [
+		'children' => [],
+		'left' => -1,
+		'right' => -1,
+		'level' => -1,
+	];
+}
+
+uksort(
+	$topic_nesting['satisfactory'],
+	static function (
+		string $a,
+		string $b
+	) use ($cache) : int {
+		$a_sorter = determine_topic_name($a, $cache);
+		$b_sorter = determine_topic_name($b, $cache);
+
+		return strnatcasecmp($a_sorter, $b_sorter);
+	}
+);
+
+foreach ($global_topic_hierarchy as $basename => $topics) {
+
+	foreach ($topics as $topic_id => $topic_ancestors) {
+		if ( ! isset($topic_nesting[$basename][$topic_id])) {
+			throw new RuntimeException('topic not already added!');
+		}
+
+		$topic_nesting[$basename][$topic_id]['level'] = count($topic_ancestors);
+
+		$topic_ancestors = array_filter($topic_ancestors, 'is_string');
+
+		$topic_ancestors = array_reverse($topic_ancestors);
+
+		$topic_descendant_id = $topic_id;
+
+		foreach ($topic_ancestors as $i => $topic_ancestor_name) {
+			[$topic_ancestor_id] = determine_playlist_id(
+				$topic_ancestor_name,
+				[],
+				$cache,
+				$global_topic_hierarchy,
+				$not_a_livestream,
+				$not_a_livestream_date_lookup
+			);
+
+			if (
+				! in_array(
+					$topic_descendant_id,
+					$topic_nesting[$basename][$topic_ancestor_id]['children'],
+					true
+				)
+			) {
+
+				$topic_nesting[$basename][$topic_ancestor_id]['children'][] =
+					$topic_descendant_id
+				;
+			}
+
+			$topic_descendant_id = $topic_ancestor_id;
+		}
+	}
+
+	$basename_topics_nesting_ids = array_keys($topic_nesting[$basename]);
+
+	$topic_nesting[$basename] = array_map(
+		static function (
+			array $data
+		) use (
+			$basename_topics_nesting_ids
+		) : array {
+			usort(
+				$data['children'],
+				static function (
+					string $a,
+					string $b
+				) use (
+					$basename_topics_nesting_ids
+				) : int {
+					return
+						(int) array_search(
+							$a,
+							$basename_topics_nesting_ids
+						) - (int) array_search(
+							$b,
+							$basename_topics_nesting_ids
+						);
+				}
+			);
+
+			return $data;
+		},
+		$topic_nesting[$basename]
+	);
+
+	$topic_nesting_roots = array_keys(array_filter(
+		$topic_nesting[$basename],
+		static function (array $maybe) : bool {
+			return -1 === $maybe['level'];
+		}
+	));
+
+	$current_left = 0;
+
+	foreach ($topic_nesting_roots as $topic_id) {
+		[$current_left, $topic_nesting[$basename]] = adjust_nesting(
+			$topic_nesting[$basename],
+			$topic_id,
+			$current_left,
+			$global_topic_hierarchy[$basename]
+		);
+	}
+
+	$topics = $topic_nesting[$basename];
+
+	uasort(
+		$topics,
+		static function (
+			array $a,
+			array $b
+		) : int {
+			return $a['left'] - $b['left'];
+		}
+	);
+
+	$topic_nesting[$basename] = $topics;
+}
+
+file_put_contents(
+	__DIR__ . '/topics-nested.json',
+	json_encode($topic_nesting, JSON_PRETTY_PRINT)
+);
+
 uksort($videos, static function (string $a, string $b) use ($cache) : int {
 	return strnatcasecmp(
 		$cache['playlists'][$a][1],
@@ -580,12 +724,108 @@ foreach (array_keys($playlists) as $playlist_id) {
 		}
 	}
 
-	ksort($content_arrays['Related answer clips']);
+	$basename_topic_nesting = $topic_nesting['satisfactory'];
+
+	foreach (array_keys($content_arrays['Related answer clips']) as $title) {
+		foreach (
+			nesting_parents(
+				determine_playlist_id(
+					$title,
+					[],
+					$cache,
+					$global_topic_hierarchy,
+					$not_a_livestream,
+					$not_a_livestream_date_lookup
+				)[0],
+				$basename_topic_nesting
+			) as $title_parent_id
+		) {
+			$title_parent_title = determine_topic_name(
+				$title_parent_id,
+				$cache
+			);
+
+			if (
+				! isset(
+					$content_arrays[
+						'Related answer clips'
+						][
+							$title_parent_title
+							]
+				)
+			) {
+				$content_arrays[
+					'Related answer clips'
+					][
+						$title_parent_title
+						] = [];
+			}
+		}
+	}
+
+	uksort(
+		$content_arrays['Related answer clips'],
+		static function (
+			string $a,
+			string $b
+		) use (
+			$basename_topic_nesting,
+			$cache,
+			$global_topic_hierarchy,
+			$not_a_livestream,
+			$not_a_livestream_date_lookup
+		) : int {
+			[$a_id] = determine_playlist_id(
+				$a,
+				[],
+				$cache,
+				$global_topic_hierarchy,
+				$not_a_livestream,
+				$not_a_livestream_date_lookup
+			);
+			[$b_id] = determine_playlist_id(
+				$b,
+				[],
+				$cache,
+				$global_topic_hierarchy,
+				$not_a_livestream,
+				$not_a_livestream_date_lookup
+			);
+
+			return
+				$basename_topic_nesting[$a_id]['left'] -
+				$basename_topic_nesting[$b_id]['left'];
+		}
+	);
 
 	foreach ($content_arrays['Related answer clips'] as $title => $video_ids) {
+		[$topic_id] = determine_playlist_id(
+			$title,
+			[],
+			$cache,
+			$global_topic_hierarchy,
+			$not_a_livestream,
+			$not_a_livestream_date_lookup
+		);
+		$depth = min(6, $basename_topic_nesting[$topic_id]['level'] + 2);
+
 		file_put_contents(
 			$playlists[$playlist_id],
-			"\n" . '## ' . $title . "\n",
+			(
+				"\n"
+				. str_repeat('#', $depth)
+				. ' ['
+				. $title
+				. '](./topics/'
+				. topic_to_slug(
+					$topic_id,
+					$cache,
+					$global_topic_hierarchy['satisfactory'],
+					$slugify
+				)[0]
+				. '.md)'
+				. "\n"
+			),
 			FILE_APPEND
 		);
 
@@ -610,7 +850,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 		file_put_contents(
 			$playlists[$playlist_id],
 			(
-				"\n"
+				''
 				. '## Uncategorised'
 				. "\n"
 			),
@@ -646,15 +886,8 @@ $global_topic_hierarchy = array_map(
 	$global_topic_hierarchy
 );
 
-$slugify = new Slugify();
-
 $topics_json = [];
 $playlist_topic_strings = [];
-
-$all_topic_ids = array_merge(
-	array_keys($cache['playlists']),
-	array_keys($cache['stubPlaylists'] ?? [])
-);
 
 foreach ($all_topic_ids as $topic_id) {
 	[$slug_string, $slug] = topic_to_slug(
@@ -1191,67 +1424,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		}
 	}
 
-	$decategorise = static function (
-		array $to_flatten,
-		array $pending = [],
-		$depth = 0
-	) use (
-		$topic_hierarchy,
-		$cache,
-		$slugify,
-		&$decategorise
-	) : array {
-		ksort($to_flatten);
-
-		$but_first = array_filter(
-			$to_flatten,
-			'is_int',
-			ARRAY_FILTER_USE_KEY
-		);
-
-		$but_first = array_combine($but_first, array_map(
-			static function (string $playlist_id) use ($cache) : string {
-				return $cache['playlists'][$playlist_id][1];
-			},
-			$but_first
-		));
-		$and_then = array_filter(
-			$to_flatten,
-			'is_string',
-			ARRAY_FILTER_USE_KEY
-		);
-
-		asort($but_first);
-
-		foreach ($but_first as $playlist_id => $playlist_title) {
-			$slug = $topic_hierarchy[$playlist_id] ?? [];
-
-			$slug = array_filter($slug, 'is_string');
-
-			if (($slug[0] ?? '') !== $playlist_title) {
-				$slug[] = $playlist_title;
-			}
-
-			$slug = array_map(
-				[$slugify, 'slugify'],
-				$slug
-			);
-
-			$pending[] = '* [' . $playlist_title . '](./topics/' . implode('/', $slug) . '.md)';
-		}
-
-		if (count($and_then) > 0) {
-			foreach ($and_then as $section => $subsection) {
-				$pending[] = '';
-				$pending[] = str_repeat('#', $depth + 1) . ' ' . $section;
-
-				$pending = $decategorise($subsection, $pending, $depth + 1);
-			}
-		}
-
-		return $pending;
-	};
-
 	file_put_contents(
 		$file_path,
 		(
@@ -1262,8 +1434,53 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		)
 	);
 
-	foreach ($decategorise($categorised) as $line) {
-		file_put_contents($file_path, $line . "\n", FILE_APPEND);
+	$basename_topic_nesting = $topic_nesting[$basename];
+
+	$past_first = false;
+
+	foreach ($basename_topic_nesting as $topic_id => $nesting_data) {
+		if (isset($playlists[$topic_id])) {
+			continue;
+		}
+
+		$include_heading = count($nesting_data['children']) > 0;
+
+		if ($include_heading) {
+			$depth = min(6, $nesting_data['level'] + 1);
+
+			if ($past_first) {
+				file_put_contents($file_path, "\n", FILE_APPEND);
+			} else {
+				$past_first = true;
+			}
+
+			file_put_contents(
+				$file_path,
+				(
+					str_repeat('#', $depth)
+					. ' ['
+					. determine_topic_name($topic_id, $cache)
+					. '](./topics/'
+					. $playlist_topic_strings[$topic_id]
+					. '.md)'
+					. "\n"
+				),
+				FILE_APPEND
+			);
+		} else {
+			file_put_contents(
+				$file_path,
+				(
+					'* ['
+					. determine_topic_name($topic_id, $cache)
+					. '](./topics/'
+					. $playlist_topic_strings[$topic_id]
+					. '.md)'
+					. "\n"
+				),
+				FILE_APPEND
+			);
+		}
 	}
 }
 

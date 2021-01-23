@@ -318,3 +318,97 @@ function determine_playlist_id(
 
 	return [$maybe_playlist_id, $friendly];
 }
+
+function adjust_nesting(
+	array $data,
+	string $current,
+	int $current_left,
+	array $topics_hierarchy,
+	int $level = 0
+) : array {
+	$data[$current]['left'] = $current_left;
+	$data[$current]['level'] = $level;
+
+	++$current_left;
+
+	$all_have_custom_sort = count(
+		array_filter(
+			$data[$current]['children'],
+			static function (string $maybe) use ($topics_hierarchy) : bool {
+				return is_int($topics_hierarchy[$maybe][0]);
+			}
+		)
+	) === count($data[$current]['children']);
+
+	if (count($data[$current]['children']) > 0 && $all_have_custom_sort) {
+		usort(
+			$data[$current]['children'],
+			static function (
+				string $a,
+				string $b
+			) use ($topics_hierarchy) : int {
+				return $topics_hierarchy[$a][0] - $topics_hierarchy[$b][0];
+			}
+		);
+	}
+
+	foreach ($data[$current]['children'] as $child) {
+		[$current_left, $data] = adjust_nesting(
+			$data,
+			$child,
+			$current_left,
+			$topics_hierarchy,
+			$level + 1
+		);
+	}
+
+	$data[$current]['right'] = $current_left + 1;
+
+	return [$current_left, $data];
+}
+
+/**
+ * @param array<string, array{
+ *	children: list<string>,
+ *	left: positive-int,
+ *	right: positive-int,
+ *	level: int
+ * }> $data
+ *
+ * @return list<string>
+ */
+function nesting_parents(
+	string $target,
+	array $data
+) : array {
+	if ( ! isset($data[$target])) {
+		throw new InvalidArgumentException(
+			'Target not found on data!'
+		);
+	}
+
+	$left = $data[$target]['left'];
+	$right = $data[$target]['right'];
+
+	$parents = array_keys(array_filter(
+		$data,
+		/**
+		 * @param array{
+		 *	children: list<string>,
+		 *	left: positive-int,
+		 *	right: positive-int,
+		 *	level: int
+		 * } $maybe
+		 */
+		static function (array $maybe) use ($left, $right) : bool {
+			return $maybe['left'] <= $left && $maybe['right'] >= $right;
+		}
+	));
+
+	return $parents;
+}
+
+function determine_topic_name(string $topic, array $cache) : string
+{
+	return ($cache['playlists'][$topic] ?? $cache['stubPlaylists'][$topic])[1];
+}
