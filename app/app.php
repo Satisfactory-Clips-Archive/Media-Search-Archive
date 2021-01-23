@@ -888,6 +888,7 @@ $global_topic_hierarchy = array_map(
 
 $topics_json = [];
 $playlist_topic_strings = [];
+$playlist_topic_strings_reverse_lookup = [];
 
 foreach ($all_topic_ids as $topic_id) {
 	[$slug_string, $slug] = topic_to_slug(
@@ -901,11 +902,48 @@ foreach ($all_topic_ids as $topic_id) {
 		$topics_json[$slug_string] = $slug;
 	}
 	$playlist_topic_strings[$topic_id] = $slug_string;
+	$playlist_topic_strings_reverse_lookup[$slug_string] = $topic_id;
 }
 
 ksort($topics_json);
+ksort($playlist_topic_strings_reverse_lookup);
 
 file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_json, JSON_PRETTY_PRINT));
+
+$topic_slug_history = json_decode(
+	file_get_contents(__DIR__ . '/topic-slug-history.json'),
+	true
+);
+
+$now = time();
+
+foreach ($playlist_topic_strings_reverse_lookup as $slug_string => $topic_id) {
+	if ( ! isset($topics_json[$slug_string])) {
+		continue;
+	}
+
+	if ( ! isset($topic_slug_history[$topic_id])) {
+		$topic_slug_history[$topic_id] = [];
+	}
+
+	if ( ! isset($topic_slug_history[$topic_id][$slug_string])) {
+		$topic_slug_history[$topic_id][$slug_string] = $now;
+	}
+}
+
+$topic_slug_history = array_map(
+	static function (array $to_sort) : array {
+		asort($to_sort);
+
+		return $to_sort;
+	},
+	$topic_slug_history
+);
+
+file_put_contents(__DIR__ . '/topic-slug-history.json', json_encode(
+	$topic_slug_history,
+	JSON_PRETTY_PRINT
+));
 
 if ($transcriptions) {
 	$checked = 0;
