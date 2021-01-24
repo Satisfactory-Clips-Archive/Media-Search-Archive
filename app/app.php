@@ -6,14 +6,13 @@ declare(strict_types=1);
 
 namespace SignpostMarv\TwitchClipNotes;
 
-use function array_combine;
 use function array_filter;
-use const ARRAY_FILTER_USE_KEY;
 use function array_keys;
 use function array_map;
 use function array_merge;
 use function array_merge_recursive;
 use function array_reverse;
+use function array_search;
 use function array_unique;
 use function array_values;
 use function asort;
@@ -46,6 +45,7 @@ use function json_encode;
 use const JSON_PRETTY_PRINT;
 use function ksort;
 use function mb_substr;
+use function min;
 use function mkdir;
 use function natsort;
 use function realpath;
@@ -55,6 +55,7 @@ use function str_repeat;
 use function str_replace;
 use function strnatcasecmp;
 use function strtotime;
+use function time;
 use function uasort;
 use function uksort;
 use function usleep;
@@ -509,7 +510,6 @@ uksort(
 );
 
 foreach ($global_topic_hierarchy as $basename => $topics) {
-
 	foreach ($topics as $topic_id => $topic_ancestors) {
 		if ( ! isset($topic_nesting[$basename][$topic_id])) {
 			throw new RuntimeException('topic not already added!');
@@ -540,10 +540,8 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 					true
 				)
 			) {
-
 				$topic_nesting[$basename][$topic_ancestor_id]['children'][] =
-					$topic_descendant_id
-				;
+					$topic_descendant_id;
 			}
 
 			$topic_descendant_id = $topic_ancestor_id;
@@ -569,10 +567,10 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 					return
 						(int) array_search(
 							$a,
-							$basename_topics_nesting_ids
+							$basename_topics_nesting_ids, true
 						) - (int) array_search(
 							$b,
-							$basename_topics_nesting_ids
+							$basename_topics_nesting_ids, true
 						);
 				}
 			);
