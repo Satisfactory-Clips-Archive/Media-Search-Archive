@@ -1,6 +1,6 @@
-const jsonld = require('./jsonld.js')();
+module.exports = async () => {
+	const jsonld = await require('./jsonld.js')();
 
-module.exports = () => {
 	const out = Object.entries(jsonld).reduce(
 		(out, e) => {
 			const [permalink, data] = e;

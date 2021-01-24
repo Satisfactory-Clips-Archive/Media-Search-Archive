@@ -1,11 +1,12 @@
-const jsonld = require('./jsonld.js')();
 const twitter_card_defaults = [
 	['twitter:card', 'summary'],
 ];
 const twitter_url_regex = /^https\:\/\/(?:mobile\.|www\.)?twitter\.com\/([^?]+)$/;
 const page_about_thing_regex = /^Satisfactory Livestream clips about (.+)$/;
 
-module.exports = () => {
+module.exports = async () => {
+	const jsonld = await require('./jsonld.js')();
+
 	const out = Object.entries(jsonld).reduce(
 		(out, e) => {
 			const [permalink, data] = e;
