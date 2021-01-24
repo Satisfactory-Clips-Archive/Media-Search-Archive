@@ -1,26 +1,21 @@
-const {sync:glob} = require('glob');
 const topics = require('../../src/topics.json');
 
-const satisfactory = require(
-	'../../Media-Archive-Metadata/src/common/satisfactory'
-);
+module.exports = async () => {
+	const [
+		{default:satisfactory},
+		{default:data},
+	] = await Promise.all([
+		import(
+			'../../Media-Archive-Metadata/src/common/satisfactory.js'
+		),
+		import(
+			'../../Media-Archive-Metadata/index.js'
+		),
+	]);
 
-module.exports = () => {
 	const out = Object.assign(
 		{},
-		glob('./Media-Archive-Metadata/src/permalinked/**/*.js').reduce(
-			(out, current) => {
-				const path = current.replace(
-					/^\.\/Media-Archive-Metadata\/src\/permalinked/,
-					''
-				).replace(/\.js$/, '/');
-
-				out[path] = require(current.replace(/^\.\//, '../../'));
-
-				return out;
-			},
-			{}
-		),
+		data,
 		{
 			"/": [
 				{

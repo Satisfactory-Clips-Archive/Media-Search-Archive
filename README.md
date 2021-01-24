@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2021-01-24
 * Switched exact match to `startsWith` check for topics
+* Updated build to use es6 imported metadata
 
 ## 2021-01-23
 * Updated build to reflect support for additional clip sources
