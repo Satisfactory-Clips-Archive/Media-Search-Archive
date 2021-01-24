@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-01-24
+* Switched exact match to `startsWith` check for topics
+
 ## 2021-01-23
 * Updated build to reflect support for additional clip sources
 * Implemented dark mode
