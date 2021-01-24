@@ -21,6 +21,8 @@ use RuntimeException;
 use function strnatcasecmp;
 use function strtotime;
 
+require_once(__DIR__ . '/vendor/autoload.php');
+
 $cache = json_decode(
 	file_get_contents(__DIR__ . '/cache-injection.json'),
 	true
@@ -1847,6 +1849,66 @@ foreach ($from_instagram as $date => $data) {
 				$topic_playlist_id,
 				$cache
 			);
+		}
+	}
+}
+
+$manually_inject_videos_to_topics = [
+	/*
+	'Tier 3' => [
+		'-pXuWOzgCyQ',
+	],
+	'Tier 4' => [
+		'dWt4mf9am90',
+	],
+	'Tier 6' => [
+		'2LczuvKevK4',
+	],
+	*/
+	'Tier 7' => [
+		'lGbJwWh5W_I',
+		'X9X9MsVbDAk',
+		'2LczuvKevK4',
+		'xmZ--a6nkQU',
+		'YIGc6e8zwYs',
+	],
+	'Tier 8' => [
+		'FhoIzj_QLm0',
+		'fmE3DQFeVGk',
+		'HjiEL3hWZd4',
+		'Ii-CZGy8-7A',
+	],
+];
+
+foreach ($manually_inject_videos_to_topics as $topic => $video_ids) {
+	[$topic_id] = determine_playlist_id(
+		$topic,
+		$cache,
+		$main,
+		$global_topic_hierarchy,
+		$not_a_livestream,
+		$not_a_livestream_date_lookup
+	);;
+
+	if ( ! isset($cache['playlists'][$topic_id])) {
+		$cache['playlists'][$topic_id] = ['', $topic, []];
+	}
+
+	foreach ($video_ids as $video_id) {
+		if (
+			! in_array($video_id,$cache['playlists'][$topic_id][2], true)
+			&& (
+				! isset($main['playlists'][$topic_id])
+				|| ! in_array(
+					$video_id,
+					$main['playlists'][$topic_id][2],
+					true
+				)
+			)
+		) {
+			$cache['playlists'][$topic_id][2][] = $video_id;
+			$cache['playlistItems'][$video_id] =
+				$main['playlistItems'][$video_id];
 		}
 	}
 }
