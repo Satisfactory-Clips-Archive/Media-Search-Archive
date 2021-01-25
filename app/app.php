@@ -725,8 +725,11 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	$basename_topic_nesting = $topic_nesting['satisfactory'];
 
+	$topics_for_date = [];
+
 	foreach (array_keys($content_arrays['Related answer clips']) as $title) {
-		foreach (
+		$topics_for_date = array_merge(
+			$topics_for_date,
 			nesting_parents(
 				determine_playlist_id(
 					$title,
@@ -737,64 +740,90 @@ foreach (array_keys($playlists) as $playlist_id) {
 					$not_a_livestream_date_lookup
 				)[0],
 				$basename_topic_nesting
-			) as $title_parent_id
-		) {
-			$title_parent_title = determine_topic_name(
-				$title_parent_id,
-				$cache
-			);
-
-			if (
-				! isset(
-					$content_arrays[
-						'Related answer clips'
-						][
-							$title_parent_title
-							]
-				)
-			) {
-				$content_arrays[
-					'Related answer clips'
-					][
-						$title_parent_title
-						] = [];
-			}
-		}
+			)
+		);
 	}
 
-	uksort(
-		$content_arrays['Related answer clips'],
-		static function (
-			string $a,
-			string $b
-		) use (
-			$basename_topic_nesting,
-			$cache,
-			$global_topic_hierarchy,
-			$not_a_livestream,
-			$not_a_livestream_date_lookup
-		) : int {
-			[$a_id] = determine_playlist_id(
-				$a,
-				[],
-				$cache,
-				$global_topic_hierarchy,
-				$not_a_livestream,
-				$not_a_livestream_date_lookup
-			);
-			[$b_id] = determine_playlist_id(
-				$b,
-				[],
-				$cache,
-				$global_topic_hierarchy,
-				$not_a_livestream,
-				$not_a_livestream_date_lookup
+	$topics_for_date = array_unique($topics_for_date);
+	natcasesort($topics_for_date);
+
+	$topics_for_date = array_combine(
+		$topics_for_date,
+		array_map(
+			static function (string $topic_id) use ($cache) : string {
+				return determine_topic_name($topic_id, $cache);
+			},
+			$topics_for_date
+		)
+	);
+
+	$topics_for_date = array_filter(
+		$basename_topic_nesting,
+		static function (string $maybe) use ($topics_for_date) : bool {
+			return isset($topics_for_date[$maybe]);
+		},
+		ARRAY_FILTER_USE_KEY
+	);
+
+	$topics_for_date = array_map(
+		static function (array $data) use ($topics_for_date) : array {
+			/*
+			$data['left'] = -1;
+			$data['right'] = -1;
+			*/
+			$data['children'] = array_filter(
+				$data['children'],
+				static function (string $maybe) use ($topics_for_date) : bool {
+					return isset($topics_for_date[$maybe]);
+				}
 			);
 
-			return
-				$basename_topic_nesting[$a_id]['left'] -
-				$basename_topic_nesting[$b_id]['left'];
+			return $data;
+		},
+		$topics_for_date
+	);
+
+	$current_left = 0;
+
+	$topic_nesting_roots = array_keys(array_filter(
+		$topics_for_date,
+		static function (array $maybe) : bool {
+			return 0 === $maybe['level'];
 		}
+	));
+
+	foreach ($topic_nesting_roots as $topic_id) {
+		[$current_left, $topics_for_date] = adjust_nesting(
+			$topics_for_date,
+			$topic_id,
+			$current_left,
+			$global_topic_hierarchy[$basename],
+			$cache
+		);
+	}
+
+	uasort(
+		$topics_for_date,
+		static function (array $a, array $b) : int {
+			return $a['left'] - $b['left'];
+		}
+	);
+
+	$topics_for_date = array_map(
+		static function (string $topic_id) use ($cache) : string {
+			return determine_topic_name($topic_id, $cache);
+		},
+		array_keys($topics_for_date)
+	);
+
+	$content_arrays['Related answer clips'] = array_combine(
+		$topics_for_date,
+		array_map(
+			static function (string $title) use ($content_arrays) : array {
+				return $content_arrays['Related answer clips'][$title] ?? [];
+			},
+			$topics_for_date
+		)
 	);
 
 	foreach ($content_arrays['Related answer clips'] as $title => $video_ids) {
