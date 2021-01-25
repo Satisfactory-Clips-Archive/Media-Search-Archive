@@ -807,13 +807,16 @@ foreach (array_keys($playlists) as $playlist_id) {
 		);
 		$depth = min(6, $basename_topic_nesting[$topic_id]['level'] + 2);
 
-		file_put_contents(
-			$playlists[$playlist_id],
-			(
-				"\n"
-				. str_repeat('#', $depth)
-				. ' ['
-				. $title
+
+		if (
+			! isset($cache['playlists'][$topic_id])
+			|| count($cache['playlists'][$topic_id][2]) < 1
+		) {
+			$topic_title = ' ' . determine_topic_name($topic_id, $cache);
+		} else {
+			$topic_title =
+				' ['
+				. determine_topic_name($topic_id, $cache)
 				. '](./topics/'
 				. topic_to_slug(
 					$topic_id,
@@ -821,7 +824,15 @@ foreach (array_keys($playlists) as $playlist_id) {
 					$global_topic_hierarchy['satisfactory'],
 					$slugify
 				)[0]
-				. '.md)'
+				. '.md)';
+		}
+
+		file_put_contents(
+			$playlists[$playlist_id],
+			(
+				"\n"
+				. str_repeat('#', $depth)
+				. $topic_title
 				. "\n"
 			),
 			FILE_APPEND
@@ -1481,6 +1492,20 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 		$include_heading = count($nesting_data['children']) > 0;
 
+		if (
+			! isset($cache['playlists'][$topic_id])
+			|| count($cache['playlists'][$topic_id][2]) < 1
+		) {
+			$topic_title = ' ' . determine_topic_name($topic_id, $cache);
+		} else {
+			$topic_title =
+				' ['
+				. determine_topic_name($topic_id, $cache)
+				. '](./topics/'
+				. $playlist_topic_strings[$topic_id]
+				. '.md)';
+		}
+
 		if ($include_heading) {
 			$depth = min(6, $nesting_data['level'] + 1);
 
@@ -1494,11 +1519,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				$file_path,
 				(
 					str_repeat('#', $depth)
-					. ' ['
-					. determine_topic_name($topic_id, $cache)
-					. '](./topics/'
-					. $playlist_topic_strings[$topic_id]
-					. '.md)'
+					. $topic_title
 					. "\n"
 				),
 				FILE_APPEND
@@ -1507,11 +1528,8 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			file_put_contents(
 				$file_path,
 				(
-					'* ['
-					. determine_topic_name($topic_id, $cache)
-					. '](./topics/'
-					. $playlist_topic_strings[$topic_id]
-					. '.md)'
+					'*'
+					. $topic_title
 					. "\n"
 				),
 				FILE_APPEND
