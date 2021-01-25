@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-01-25
+* Updated build to skip linking to empty topics
+
 ## 2021-01-24
 * Switched exact match to `startsWith` check for topics
 * Updated build to use es6 imported metadata
