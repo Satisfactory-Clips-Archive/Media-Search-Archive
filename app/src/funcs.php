@@ -324,6 +324,7 @@ function adjust_nesting(
 	string $current,
 	int $current_left,
 	array $topics_hierarchy,
+	array $cache,
 	int $level = 0
 ) : array {
 	$data[$current]['left'] = $current_left;
@@ -350,6 +351,32 @@ function adjust_nesting(
 				return $topics_hierarchy[$a][0] - $topics_hierarchy[$b][0];
 			}
 		);
+	} else {
+		usort(
+			$data[$current]['children'],
+			static function (
+				string $a,
+				string $b
+			) use ($cache, $data) : int {
+				$maybe_a = count($data[$a]['children']) > 0;
+				$maybe_b = count($data[$b]['children']) > 0;
+
+				if ( ! $maybe_a && $maybe_b) {
+					return -1;
+				} elseif ($maybe_a && ! $maybe_b) {
+					return 1;
+				}
+
+				return strnatcasecmp(
+					(
+						$cache['playlists'][$a] ?? $cache['stubPlaylists'][$a]
+					)[1],
+					(
+						$cache['playlists'][$b] ?? $cache['stubPlaylists'][$b]
+					)[1]
+				);
+			}
+		);
 	}
 
 	foreach ($data[$current]['children'] as $child) {
@@ -358,6 +385,7 @@ function adjust_nesting(
 			$child,
 			$current_left,
 			$topics_hierarchy,
+			$cache,
 			$level + 1
 		);
 	}

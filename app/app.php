@@ -594,7 +594,8 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 			$topic_nesting[$basename],
 			$topic_id,
 			$current_left,
-			$global_topic_hierarchy[$basename]
+			$global_topic_hierarchy[$basename],
+			$cache
 		);
 	}
 
