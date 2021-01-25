@@ -496,19 +496,6 @@ foreach ($all_topic_ids as $topic_id) {
 	];
 }
 
-uksort(
-	$topic_nesting['satisfactory'],
-	static function (
-		string $a,
-		string $b
-	) use ($cache) : int {
-		$a_sorter = determine_topic_name($a, $cache);
-		$b_sorter = determine_topic_name($b, $cache);
-
-		return strnatcasecmp($a_sorter, $b_sorter);
-	}
-);
-
 foreach ($global_topic_hierarchy as $basename => $topics) {
 	foreach ($topics as $topic_id => $topic_ancestors) {
 		if ( ! isset($topic_nesting[$basename][$topic_id])) {
@@ -586,6 +573,19 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 			return -1 === $maybe['level'];
 		}
 	));
+
+	usort(
+		$topic_nesting_roots,
+		static function (
+			string $a,
+			string $b
+		) use ($cache) : int {
+			return strnatcasecmp(
+				determine_topic_name($a, $cache),
+				determine_topic_name($b, $cache)
+			);
+		}
+	);
 
 	$current_left = 0;
 

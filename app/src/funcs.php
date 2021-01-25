@@ -368,12 +368,8 @@ function adjust_nesting(
 				}
 
 				return strnatcasecmp(
-					(
-						$cache['playlists'][$a] ?? $cache['stubPlaylists'][$a]
-					)[1],
-					(
-						$cache['playlists'][$b] ?? $cache['stubPlaylists'][$b]
-					)[1]
+					determine_topic_name($a, $cache),
+					determine_topic_name($b, $cache)
 				);
 			}
 		);
