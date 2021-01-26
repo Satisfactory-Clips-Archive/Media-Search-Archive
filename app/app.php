@@ -1215,131 +1215,225 @@ file_put_contents(
 	)
 );
 
-foreach ($cache['playlists'] as $cached_playlist_id => $cached_playlist_data) {
-	if (isset($faq_playlist_data_dates[$cached_playlist_id])) {
-		continue;
+$faq_video_ids = [];
+foreach ($cache['videoTags'] as $video_id => $tags) {
+	if (in_array('faq', $tags[1], true)) {
+		$faq_video_ids[] = $video_id;
 	}
+}
+$faq_video_topics = [];
 
-	foreach ($cached_playlist_data[2] as $video_id) {
-		if (
-			isset($video_tags[$video_id])
-			&& in_array('faq', $video_tags[$video_id], true)
-		) {
-			/** @var string|null */
-			$faq_video_date = null;
+foreach ($cache['playlists'] as $topic_id => $data) {
+	$faq_video_topics[$topic_id] = array_intersect($faq_video_ids, $data[2]);
+}
 
-			foreach (array_keys($faq_playlist_data) as $playlist_id) {
-				if (
-					isset(
-						$cache['playlists'][$playlist_id],
-						$faq_playlist_data_dates[$playlist_id]
-					)
-					&& in_array(
-						$video_id,
-						$cache['playlists'][$playlist_id][2],
-						true
-					)
-				) {
-					$faq_video_date = $faq_playlist_data_dates[$playlist_id];
+$faq_video_topic_nesting = array_keys(array_filter(
+	$faq_video_topics,
+	static function (array $data, string $maybe) use ($playlists) : bool {
+		return count($data) > 0 && ! isset($playlists[$maybe]);
+	},
+	ARRAY_FILTER_USE_BOTH
+));
 
-					break;
-				}
-			}
-
-			if (is_string($faq_video_date)) {
-				if ( ! isset($faq_patch[$cached_playlist_data[1]])) {
-					$faq_patch[$cached_playlist_data[1]] = [];
-				}
-
-				if (
-					! isset(
-						$faq_patch[$cached_playlist_data[1]][$faq_video_date]
-					)
-				) {
-					$faq_patch[$cached_playlist_data[1]][$faq_video_date] = [];
-				}
-
-				$faq_patch[$cached_playlist_data[1]][$faq_video_date][] = (
-					maybe_transcript_link_and_video_url(
-						$video_id,
-						$cache['playlistItems'][$video_id][1]
-					)
-				);
-			}
+foreach (array_values($faq_video_topic_nesting) as $topic_id) {
+	foreach (
+		nesting_parents(
+			$topic_id,
+			$topic_nesting['satisfactory']
+		) as $maybe
+	) {
+		if ( ! in_array($maybe, $faq_video_topic_nesting, true)) {
+			$faq_video_topic_nesting[] = $maybe;
 		}
 	}
 }
 
-$faq_topics = array_unique(
-	array_merge(
-		[],
-		array_keys($faq_patch)
+$faq_video_topic_nesting = array_combine(
+	$faq_video_topic_nesting,
+	array_map(
+		static function (
+			string $topic_id
+		) use (
+			$topic_nesting,
+			$faq_video_topic_nesting
+		) : array {
+			$existing = $topic_nesting['satisfactory'][$topic_id];
+
+			return [
+				'children' => array_filter(
+					$existing['children'],
+					static function (
+						string $maybe
+					) use(
+						$faq_video_topic_nesting
+					) : bool {
+						return in_array(
+							$maybe,
+							$faq_video_topic_nesting,
+							true
+						);
+					}
+				),
+				'level' => $existing['level'],
+				'left' => -1,
+				'right' => -1,
+			];
+		},
+		$faq_video_topic_nesting
 	)
 );
 
-natsort($faq_topics);
+$faq_video_topic_nesting_roots = array_keys(array_filter(
+	$faq_video_topic_nesting,
+	static function (array $maybe) : bool {
+		return 0 === $maybe['level'];
+	}
+));
 
-foreach ($faq_topics as $faq_topic) {
-	file_put_contents(
-		$faq_filepath,
-		sprintf('# %s' . "\n\n", $faq_topic),
-		FILE_APPEND
+usort(
+	$faq_video_topic_nesting_roots,
+	static function (string $a, string $b) use ($cache) : int {
+		return strnatcasecmp(
+			determine_topic_name($a, $cache),
+			determine_topic_name($b, $cache),
+		);
+	}
+);
+
+$current_left = 0;
+
+foreach ($faq_video_topic_nesting_roots as $topic_id) {
+	[$current_left, $faq_video_topic_nesting] = adjust_nesting(
+		$faq_video_topic_nesting,
+		$topic_id,
+		$current_left,
+		$global_topic_hierarchy[$basename],
+		$cache
 	);
+}
 
-	if (isset($faq_patch[$faq_topic])) {
-		foreach ($faq_dates as $faq_date) {
-			$lines = [];
+uasort(
+	$faq_video_topic_nesting,
+	static function (array $a, array $b) : int {
+		return $a['left'] - $b['left'];
+	}
+);
 
-			if (
-				isset(
-					$faq_patch[$faq_topic],
-					$faq_patch[$faq_topic][$faq_date]
-				)
-			) {
-				$patch_lines = $faq_patch[$faq_topic][$faq_date];
-				natsort($patch_lines);
+$past_first = false;
 
-				$lines = array_merge($lines, $patch_lines);
-			}
+foreach ($faq_video_topic_nesting as $topic_id => $data) {
+	$depth = min(6, $data['level'] + 1);
 
-			if (count($lines) > 0) {
-				file_put_contents(
-					$faq_filepath,
-					sprintf(
-						'## %s' . "\n",
-						date('F jS, Y', (int) strtotime($faq_date))
-					),
-					FILE_APPEND
-				);
+	if (
+		! isset($cache['playlists'][$topic_id])
+		|| count($cache['playlists'][$topic_id][2]) < 1
+	) {
+		$topic_title = determine_topic_name($topic_id, $cache);
+	} else {
+		$topic_title =
+			'['
+			. determine_topic_name($topic_id, $cache)
+			. '](./topics/'
+			. $playlist_topic_strings[$topic_id]
+			. '.md)';
+	}
 
-				foreach ($lines as $line) {
-					file_put_contents(
-						$faq_filepath,
-						sprintf('* %s' . "\n", $line),
-						FILE_APPEND
-					);
-				}
-
-				file_put_contents(
-					$faq_filepath,
-					"\n",
-					FILE_APPEND
-				);
-			}
-		}
-
-		foreach ($faq_patch[$faq_topic] as $k => $v) {
-			if (is_array($v)) {
-				natsort($v);
-			}
-		}
+	if ($past_first) {
+		file_put_contents($faq_filepath, "\n", FILE_APPEND);
+	} else {
+		$past_first = true;
 	}
 
 	file_put_contents(
 		$faq_filepath,
-		"\n",
+		sprintf(
+			'%s %s' . "\n",
+			str_repeat('#', $depth),
+			$topic_title
+		),
 		FILE_APPEND
 	);
+
+	$faq_topic_videos = ($faq_video_topics[$topic_id] ?? []);
+
+	if (count($faq_topic_videos)) {
+		$grouped_faq_videos = array_keys($playlists);
+
+		$grouped_faq_videos = array_filter(array_combine(
+			array_keys($playlists),
+			array_map(
+				static function (
+					string $dated_id
+				) use ($faq_topic_videos, $cache) : array {
+					return array_filter(
+						$cache['playlists'][$dated_id][2],
+						static function(
+							string $video_id
+						) use (
+							$faq_topic_videos
+						) : bool {
+							return in_array(
+								$video_id,
+								$faq_topic_videos,
+								true
+							);
+						}
+					);
+				},
+				array_keys($playlists)
+			)
+		));
+
+		foreach ($grouped_faq_videos as $dated_id => $video_ids) {
+			$topic_title =
+				'['
+				. determine_topic_name($dated_id, $cache)
+				. '](./'
+				. basename($playlists[$dated_id])
+				. ')';
+
+			if ($past_first) {
+				file_put_contents($faq_filepath, "\n", FILE_APPEND);
+			} else {
+				$past_first = true;
+			}
+
+			if (6 === $depth) {
+				file_put_contents(
+					$faq_filepath,
+					sprintf(
+						'**%s**' . "\n",
+						$topic_title
+					),
+					FILE_APPEND
+				);
+			} else {
+				file_put_contents(
+					$faq_filepath,
+					sprintf(
+						'%s %s' . "\n",
+						str_repeat('#', $depth + 1),
+						$topic_title
+					),
+					FILE_APPEND
+				);
+			}
+
+			foreach ($video_ids as $video_id) {
+				file_put_contents(
+					$faq_filepath,
+					sprintf(
+						'* %s' . "\n",
+						maybe_transcript_link_and_video_url(
+							$video_id,
+							$cache['playlistItems'][$video_id][1]
+						)
+					),
+					FILE_APPEND
+				);
+			}
+		}
+	}
 }
 
 foreach ($playlist_metadata as $json_file => $save_path) {
