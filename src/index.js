@@ -4,16 +4,26 @@
 	}
 
 	const ordinals = [
-		'th',
-		'st',
-		'nd',
-		'rd',
-		'th',
-		'th',
-		'th',
-		'th',
-		'th',
-		'th',
+		'th', // 0th
+		'st', // 1st
+		'nd', // 2nd
+		'rd', // 3rd
+		'th', // 4th
+		'th', // 5th
+		'th', // 6th
+		'th', // 7th
+		'th', // 8th
+		'th', // 9th
+		'th', // 10th
+		'th', // 11th
+		'th', // 12th
+		'th', // 13th
+		'th', // 14th
+		'th', // 15th
+		'th', // 16th
+		'th', // 17th
+		'th', // 18th
+		'th', // 19th
 	];
 	const maybe_date_max = [0, 20200901];
 	const maybe_date_min = [Infinity, 20200901];
@@ -454,7 +464,7 @@
 			)
 			+ ' '
 			+ date.getDate()
-			+ ordinals[date.getDate() % 10]
+			+ ordinals[date.getDate() % 20]
 			+ ', '
 			+ date.toLocaleDateString(
 				'en-GB',

@@ -12,6 +12,8 @@ Static site generator for
 
 ## 2021-01-26
 * Updated build with n-level sorting code for FAQ
+* Fix linkification bug
+* Fix ordinal suffixes in client search
 
 ## 2021-01-25
 * Updated build to skip linking to empty topics
