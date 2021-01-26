@@ -478,6 +478,18 @@ foreach ($injected_cache['playlists'] as $playlist_id => $injected_data) {
 	}
 }
 
+foreach ($injected_cache['videoTags'] as $video_id => $data) {
+	if ( ! isset($cache['videoTags'][$video_id])) {
+		$cache['videoTags'][$video_id] = ['', []];
+	}
+
+	foreach ($data[1] as $tag) {
+		if ( ! in_array($tag, $cache['videoTags'][$video_id], true)) {
+			$cache['videoTags'][$video_id][] = $tag;
+		}
+	}
+}
+
 $cache = inject_caches($cache, $injected_cache);
 
 $all_topic_ids = array_merge(
