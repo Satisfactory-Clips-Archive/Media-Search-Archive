@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-01-26
+* Updated build with n-level sorting code for FAQ
+
 ## 2021-01-25
 * Updated build to skip linking to empty topics
 * Reused n-level sorting code for dated indices
