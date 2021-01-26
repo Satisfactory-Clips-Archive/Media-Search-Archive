@@ -13,6 +13,7 @@ Static site generator for
 ## 2021-01-25
 * Updated build to skip linking to empty topics
 * Reused n-level sorting code for dated indices
+* Fixed a bug identified with linkification
 
 ## 2021-01-24
 * Switched exact match to `startsWith` check for topics

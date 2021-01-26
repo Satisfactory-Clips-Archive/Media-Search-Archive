@@ -157,13 +157,13 @@ gulp.task('html', () => {
 		replace(/"(?:(?:\.\.\/)+|\.\/)transcriptions\/?/g, '"/transcriptions/')
 	).pipe(
 		replace(
-			/https:\/\/(clips\.twitch\.tv\/(?:[a-zA-Z0-9]+))/g,
-			'<a rel="noopener" target="_blank" href="https://$1">https://$1</a>'
+			/ https:\/\/(clips\.twitch\.tv\/(?:[a-zA-Z0-9]+))/g,
+			' <a rel="noopener" target="_blank" href="https://$1">https://$1</a>'
 		)
 	).pipe(
 		replace(
-			/https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([^\n\s\*\<]+)/g,
-			'<a rel="noopener" target="_blank" href="https://youtu.be/$1">https://youtu.be/$1</a>'
+			/ https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([^\n\s\*\<]+)/g,
+			' <a rel="noopener" target="_blank" href="https://youtu.be/$1">https://youtu.be/$1</a>'
 		)
 	).pipe(
 		htmlmin({
