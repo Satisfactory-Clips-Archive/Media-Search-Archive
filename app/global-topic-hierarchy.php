@@ -14,13 +14,18 @@ $global_topic_hierarchy = [
 			1,
 			'Satisfactory Updates',
 		],
-		'PLbjDnnBIxiEp9MC5RZraDAl95pvC0YVvW' => [ // Satisfactory Update 3
+		'PLbjDnnBIxiEprAq_zqoVsjr3Cii2tpty-' => [ // Satisfactory Update 2
 			2,
 			'Satisfactory Updates',
 			'Released',
 		],
-		'PLbjDnnBIxiEq_0QTxH7_C0c8quZsI1uMu' => [ // Satisfactory Fluids Update
+		'PLbjDnnBIxiEp9MC5RZraDAl95pvC0YVvW' => [ // Satisfactory Update 3
 			3,
+			'Satisfactory Updates',
+			'Released',
+		],
+		'PLbjDnnBIxiEq_0QTxH7_C0c8quZsI1uMu' => [ // Satisfactory Fluids Update
+			4,
 			'Satisfactory Updates',
 			'Released',
 		],
