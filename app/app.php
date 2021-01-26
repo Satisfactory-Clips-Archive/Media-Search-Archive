@@ -1005,8 +1005,10 @@ if ($transcriptions) {
 				$video_playlists[$video_id],
 				static function (
 					string $playlist_id
-				) use ($playlist_topic_strings) : bool {
-					return isset(
+				) use ($playlist_topic_strings, $playlists) : bool {
+					return
+						! isset($playlists[$playlist_id])
+						&& isset(
 						$playlist_topic_strings[
 							$playlist_id
 						]
@@ -1119,8 +1121,14 @@ if ($transcriptions) {
 							$video_playlists[$video_id],
 							static function (
 								string $playlist_id
-							) use ($playlist_topic_strings) : bool {
+							) use (
+								$playlist_topic_strings,
+								$topics_json
+							) : bool {
 								return isset(
+									$topics_json[$playlist_topic_strings[
+										$playlist_id
+									]],
 									$playlist_topic_strings[
 										$playlist_id
 									]
