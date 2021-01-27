@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2021-01-27
+* Updated build with n-level filtering for livestream documents
+* Added parent & child topic listings
+
 ## 2021-01-26
 * Updated build with n-level sorting code for FAQ
 * Fix linkification bug
