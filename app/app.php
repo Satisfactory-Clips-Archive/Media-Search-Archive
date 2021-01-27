@@ -44,7 +44,6 @@ use function implode;
 use function in_array;
 use function is_dir;
 use function is_file;
-use function is_int;
 use function json_decode;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
