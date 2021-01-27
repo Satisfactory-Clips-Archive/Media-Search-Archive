@@ -163,7 +163,7 @@ gulp.task('html', () => {
 	).pipe(
 		replace(
 			/( |<p>)https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([^\n\s\*\<]+)/g,
-			'$1<a rel="noopener" target="_blank" href="https://youtu.be/$1">https://youtu.be/$2</a>'
+			'$1<a rel="noopener" target="_blank" href="https://youtu.be/$2">https://youtu.be/$2</a>'
 		)
 	).pipe(
 		htmlmin({

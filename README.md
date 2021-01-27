@@ -13,6 +13,7 @@ Static site generator for
 ## 2021-01-27
 * Updated build with n-level filtering for livestream documents
 * Added parent & child topic listings
+* Fix linkification bug *properly*
 
 ## 2021-01-26
 * Updated build with n-level sorting code for FAQ
