@@ -1414,33 +1414,18 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 		[, $playlist_title, $playlist_items] = $playlist_data;
 
-		$slug = $topic_hierarchy[$playlist_id] ?? [];
-
-		$categorised_dest = &$categorised;
-
-		foreach ($slug as $slug_part) {
-			if (is_int($slug_part)) {
-				continue;
-			}
-
-			if ( ! isset($categorised_dest[$slug_part])) {
-				$categorised_dest[$slug_part] = [];
-			}
-
-			$categorised_dest = &$categorised_dest[$slug_part];
-		}
-
-		$categorised_dest[] = $playlist_id;
-
-		if (($slug[0] ?? '') !== $playlist_title) {
-			$slug[] = $playlist_title;
-		}
-
-		$slug = array_filter(array_filter($slug, 'is_string'));
+		[$slug_string, $slug] = topic_to_slug(
+			$playlist_id,
+			$cache,
+			$global_topic_hierarchy[$basename],
+			$slugify
+		);
 
 		$slug_count = count($slug);
 
 		$slug_title = implode(' > ', $slug);
+
+		$slug_parents = array_slice($slug, 0, -1);
 
 		$slug = array_map(
 			[$slugify, 'slugify'],
@@ -1492,8 +1477,47 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				. '# [Topics]('
 				. str_repeat('../', $slug_count)
 				. 'topics.md)'
+				. implode(' > ', array_map(
+					static function (
+						string $slug_parent
+					) use (
+						$cache,
+						$global_topic_hierarchy,
+						$not_a_livestream,
+						$not_a_livestream_date_lookup,
+						$slug_count,
+						$slug,
+						$slugify,
+						$basename
+					) : string {
+						[$parent_id] = determine_playlist_id(
+							$slug_parent,
+							[],
+							$cache,
+							$global_topic_hierarchy,
+							$not_a_livestream,
+							$not_a_livestream_date_lookup
+						);
+
+						[$parent_string, $parent_parts] = topic_to_slug(
+							$parent_id,
+							$cache,
+							$global_topic_hierarchy[$basename],
+							$slugify
+						);
+
+						return
+							' > ['
+							. $slug_parent
+							. ']('
+							. str_repeat('../', $slug_count - count($parent_parts))
+							. $slugify->slugify($slug_parent)
+							. '.md)';
+					},
+					$slug_parents
+				))
 				. ' > '
-				. $slug_title
+				. $playlist_title
 				. "\n"
 			)
 		);
