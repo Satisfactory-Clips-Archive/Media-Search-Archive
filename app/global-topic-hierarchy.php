@@ -443,6 +443,62 @@ $global_topic_hierarchy = [
 			'Features',
 			'Planned Features',
 		],
+		'PLbjDnnBIxiErLIqP7klFJBCBImVRLTrqD' => [ // Linus
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEquIZfkx9IHxCSgbaA1JK7r' => [ // Tier 0
+			'Features',
+			'Tiers',
+		],
+		'PLbjDnnBIxiEqKW01FG2TkgBDQO9NtmuJx' => [ // Tier 1
+			'Features',
+			'Tiers',
+		],
+		'PLbjDnnBIxiEotFjYXBVhIYTrMvWMYeDfw' => [ // Tier 2
+			'Features',
+			'Tiers',
+		],
+		'PLbjDnnBIxiEqY2nvhibREOqsw2uQ7lXJV' => [ // Tier 3
+			'Features',
+			'Tiers',
+		],
+		'PLbjDnnBIxiEroI7PiwagLCfedWDhcakIN' => [ // Tier 4
+			'Features',
+			'Tiers',
+		],
+		'PLbjDnnBIxiErC6mOXeFD7RPvN8qZaju8f' => [ // Tier 5
+			'Features',
+			'Tiers',
+		],
+		'PLbjDnnBIxiEp40Wz_gOPUUxdAb9fDf9QG' => [ // Tier 6
+			'Features',
+			'Tiers',
+		],
+		'PLbjDnnBIxiEqZ6jA6KOjykO3SA7o4k5NL' => [ // Tier 7
+			'Features',
+			'Tiers',
+		],
+		'PLbjDnnBIxiEruS8Xi3bkV9I-Hi-0E8DO7' => [ // Tier 8
+			'Features',
+			'Tiers',
+		],
+		'Tier 9' => [
+			'Features',
+			'Tiers',
+		],
+		'Tier 10' => [
+			'Features',
+			'Tiers',
+		],
+		'PLbjDnnBIxiEoXhNOpIRZfGPOUVxgPQFBa' => [ // Physics
+			'Technology',
+		],
+		'PLbjDnnBIxiErS9sKol90eUQvUOe0Bl_GI' => [ // Wiki
+			'Community',
+		],
+		'PLbjDnnBIxiEps-bmHeQJHnTRQ-AsP3YfL' => [ // Joshie
+			'Community',
+		],
 	],
 ];
 
@@ -466,9 +522,6 @@ $injected_global_topic_hierarchy = [
 			'Features',
 		],
 		'Merch Prototypes' => [
-			'Merch',
-		],
-		'FICSIT Cup Prototypes' => [
 			'Merch',
 		],
 		'FICSIT Cup Prototypes' => [
@@ -515,27 +568,8 @@ $injected_global_topic_hierarchy = [
 			'Transportation',
 			'Vehicles',
 		],
-		'Tier 7' => [
-			'Features',
-			'Tiers',
-		],
-		'Tier 8' => [
-			'Features',
-			'Tiers',
-		],
-		'Tier 9' => [
-			'Features',
-			'Tiers',
-		],
-		'Tier 10' => [
-			'Features',
-			'Tiers',
-		],
 		'Free Weekends' => [
 			'Satisfactory Updates',
-		],
-		'PLbjDnnBIxiErS9sKol90eUQvUOe0Bl_GI' => [
-			'Community',
 		],
 	],
 ];

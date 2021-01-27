@@ -341,9 +341,6 @@ $preloaded_faq = [
 		'2020-08-18' => [
 			'Q&A: Might we see additions to Tier 7 before the end of the year? https://clips.twitch.tv/DoubtfulNaiveCroquettePeoplesChamp',
 		],
-		'2020-09-08' => [
-			'Q&A: What additions to Tier 7 might be coming & when ? https://www.youtube.com/watch?v=lGbJwWh5W_I',
-		],
 	],
 	'Tier 8' => [
 		'2020-08-18' => [
@@ -1853,31 +1850,12 @@ foreach ($from_instagram as $date => $data) {
 	}
 }
 
+/**
+ * @var array<string, list<string>>
+ *
+ * An array of video id lists, with the playlist *name* as the initial key
+ */
 $manually_inject_videos_to_topics = [
-	/*
-	'Tier 3' => [
-		'-pXuWOzgCyQ',
-	],
-	'Tier 4' => [
-		'dWt4mf9am90',
-	],
-	'Tier 6' => [
-		'2LczuvKevK4',
-	],
-	*/
-	'Tier 7' => [
-		'lGbJwWh5W_I',
-		'X9X9MsVbDAk',
-		'2LczuvKevK4',
-		'xmZ--a6nkQU',
-		'YIGc6e8zwYs',
-	],
-	'Tier 8' => [
-		'FhoIzj_QLm0',
-		'fmE3DQFeVGk',
-		'HjiEL3hWZd4',
-		'Ii-CZGy8-7A',
-	],
 ];
 
 foreach ($manually_inject_videos_to_topics as $topic => $video_ids) {

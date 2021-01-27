@@ -267,10 +267,12 @@
         "features\/tiers\/tier-10": 1611444659
     },
     "Tier 7": {
-        "features\/tiers\/tier-7": 1611444659
+        "features\/tiers\/tier-7": 1611444659,
+        "tier-7": 1611729936
     },
     "Tier 8": {
-        "features\/tiers\/tier-8": 1611444659
+        "features\/tiers\/tier-8": 1611444659,
+        "tier-8": 1611729936
     },
     "Tier 9": {
         "features\/tiers\/tier-9": 1611444659
@@ -446,5 +448,41 @@
     },
     "PLbjDnnBIxiEprAq_zqoVsjr3Cii2tpty-": {
         "satisfactory-updates\/released\/satisfactory-update-2": 1611636607
+    },
+    "PLbjDnnBIxiErLIqP7klFJBCBImVRLTrqD": {
+        "coffee-stainers\/linus": 1611729936
+    },
+    "PLbjDnnBIxiEps-bmHeQJHnTRQ-AsP3YfL": {
+        "community\/joshie": 1611729936
+    },
+    "PLbjDnnBIxiEquIZfkx9IHxCSgbaA1JK7r": {
+        "features\/tiers\/tier-0": 1611729936
+    },
+    "PLbjDnnBIxiEqKW01FG2TkgBDQO9NtmuJx": {
+        "features\/tiers\/tier-1": 1611729936
+    },
+    "PLbjDnnBIxiEotFjYXBVhIYTrMvWMYeDfw": {
+        "features\/tiers\/tier-2": 1611729936
+    },
+    "PLbjDnnBIxiEqY2nvhibREOqsw2uQ7lXJV": {
+        "features\/tiers\/tier-3": 1611729936
+    },
+    "PLbjDnnBIxiEroI7PiwagLCfedWDhcakIN": {
+        "features\/tiers\/tier-4": 1611729936
+    },
+    "PLbjDnnBIxiErC6mOXeFD7RPvN8qZaju8f": {
+        "features\/tiers\/tier-5": 1611729936
+    },
+    "PLbjDnnBIxiEp40Wz_gOPUUxdAb9fDf9QG": {
+        "features\/tiers\/tier-6": 1611729936
+    },
+    "PLbjDnnBIxiEqZ6jA6KOjykO3SA7o4k5NL": {
+        "features\/tiers\/tier-7": 1611729936
+    },
+    "PLbjDnnBIxiEruS8Xi3bkV9I-Hi-0E8DO7": {
+        "features\/tiers\/tier-8": 1611729936
+    },
+    "PLbjDnnBIxiEoXhNOpIRZfGPOUVxgPQFBa": {
+        "technology\/physics": 1611729936
     }
 }
