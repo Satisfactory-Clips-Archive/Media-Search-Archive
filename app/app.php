@@ -1498,6 +1498,9 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 							$not_a_livestream,
 							$not_a_livestream_date_lookup
 						);
+						if (count(($cache['playlists'][$parent_id] ?? [2 => []])[2]) < 1) {
+							return ' > ' . $slug_parent;
+						}
 
 						[$parent_string, $parent_parts] = topic_to_slug(
 							$parent_id,
