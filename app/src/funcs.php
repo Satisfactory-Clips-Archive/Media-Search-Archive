@@ -358,8 +358,8 @@ function adjust_nesting(
 				string $a,
 				string $b
 			) use ($cache, $data) : int {
-				$maybe_a = count($data[$a]['children']) > 0;
-				$maybe_b = count($data[$b]['children']) > 0;
+				$maybe_a = count($data[$a]['children'] ?? []) > 0;
+				$maybe_b = count($data[$b]['children'] ?? []) > 0;
 
 				if ( ! $maybe_a && $maybe_b) {
 					return -1;
@@ -435,4 +435,149 @@ function nesting_parents(
 function determine_topic_name(string $topic, array $cache) : string
 {
 	return ($cache['playlists'][$topic] ?? $cache['stubPlaylists'][$topic])[1];
+}
+
+/**
+ * @param array{
+ *	children: list<string>,
+ *	left: positive-int,
+ *	right: positive-int,
+ *	level: int
+ * } $nested
+ *
+ * @return array<string, array{
+ *	children: list<string>,
+ *	videos: list<string>,
+ *	left: positive-int,
+ *	right: positive-int,
+ *	level: int
+ * }>
+ */
+function filter_nested(
+	string $playlist_id,
+	array $nested,
+	array $cache,
+	array $topic_hierarchy,
+	string $video_id,
+	string ...$video_ids
+) : array {
+	$video_ids[] = $video_id;
+
+	$filtered = $nested;
+
+	foreach (array_keys($filtered) as $topic_id) {
+		$filtered[$topic_id]['videos'] = array_values(array_filter(
+			($cache['playlists'][$topic_id] ?? [2 => []])[2],
+			static function (string $video_id) use ($video_ids) : bool {
+				return in_array($video_id, $video_ids, true);
+			}
+		));
+	}
+
+	$too_few = array_filter($filtered, static function (array $maybe) : bool {
+		return count($maybe['videos']) < 3 && $maybe['level'] > 0;
+	});
+
+	foreach ($too_few as $topic_id => $data) {
+		$parents = nesting_parents($topic_id, $nested);
+		$previous = $topic_id;
+		array_pop($parents);
+		$checking = end($parents);
+
+		if ( ! $checking) {
+			continue;
+		}
+
+		$filtered[$topic_id]['videos'] = [];
+
+		$filtered[$checking]['videos'] = array_values(
+			array_unique(
+				array_merge(
+					$filtered[$checking]['videos'] ?? [],
+					$data['videos']
+				)
+			)
+		);
+	}
+
+	$filtered = array_filter(
+		$filtered,
+		static function (array $data) : bool {
+			return count($data['videos']) > 0;
+		}
+	);
+
+	foreach (array_keys($filtered) as $topic_id) {
+		foreach (nesting_parents($topic_id, $nested) as $parent_id) {
+			if ( ! isset($filtered[$parent_id])) {
+				$filtered[$parent_id] = $nested[$parent_id];
+				$filtered[$parent_id]['videos'] = [];
+			}
+		}
+	}
+
+	$filtered = array_map(
+		static function (array $data) use ($filtered, $cache) : array {
+			$data['children'] = array_filter(
+				$data['children'],
+				static function (string $maybe) use ($filtered) : bool {
+					return isset($filtered[$maybe]);
+				}
+			);
+
+			usort(
+				$data['videos'],
+				static function (string $a, string $b) use ($cache) : int {
+					return strnatcasecmp(
+						$cache['playlistItems'][$a][1],
+						$cache['playlistItems'][$b][1]
+					);
+				}
+			);
+
+			return $data;
+		},
+		$filtered
+	);
+
+	$roots = array_keys(array_filter(
+		$filtered,
+		static function (array $maybe) : bool {
+			return 0 === $maybe['level'];
+		}
+	));
+
+	$current_left = 0;
+
+	usort(
+		$roots,
+		static function (
+			string $a,
+			string $b
+		) use ($cache) : int {
+			return strnatcasecmp(
+				determine_topic_name($a, $cache),
+				determine_topic_name($b, $cache)
+			);
+		}
+	);
+
+	foreach ($roots as $topic_id) {
+		[$current_left, $filtered] = adjust_nesting(
+			$filtered,
+			$topic_id,
+			$current_left,
+			$topic_hierarchy,
+			$cache
+		);
+	}
+
+	uasort(
+		$filtered,
+		static function (array $a, array $b) : int {
+			return $a['left'] - $b['left'];
+		}
+	);
+
+	return $filtered;
 }
