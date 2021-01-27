@@ -432,6 +432,58 @@ function nesting_parents(
 	return $parents;
 }
 
+/**
+ * @param array<string, array{
+ *	children: list<string>,
+ *	left: positive-int,
+ *	right: positive-int,
+ *	level: int
+ * }> $data
+ *
+ * @return list<string>
+ */
+function nesting_children(
+	string $target,
+	array $data,
+	bool $all_the_way_down = true
+) : array {
+	if ( ! isset($data[$target])) {
+		throw new InvalidArgumentException(
+			'Target not found on data!'
+		);
+	}
+
+	$left = $data[$target]['left'];
+	$right = $data[$target]['right'];
+
+	$children = array_keys(array_filter(
+		$data,
+		/**
+		 * @param array{
+		 *	children: list<string>,
+		 *	left: positive-int,
+		 *	right: positive-int,
+		 *	level: int
+		 * } $maybe
+		 */
+		static function (array $maybe) use ($left, $right) : bool {
+			return $maybe['left'] > $left && $maybe['right'] <= $right;
+		}
+	));
+
+	if ( ! $all_the_way_down) {
+		$children = array_filter(
+			$children,
+			static function (string $maybe) use ($data, $target) : bool {
+				return
+					$data[$maybe]['level'] === $data[$target]['level'] + 1;
+			}
+		);
+	}
+
+	return $children;
+}
+
 function determine_topic_name(string $topic, array $cache) : string
 {
 	return ($cache['playlists'][$topic] ?? $cache['stubPlaylists'][$topic])[1];

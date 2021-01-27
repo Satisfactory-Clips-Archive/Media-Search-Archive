@@ -1484,7 +1484,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				)
 				. 'date: Last Modified' . "\n"
 				. '---' . "\n"
-				. '[Topics]('
+				. '# [Topics]('
 				. str_repeat('../', $slug_count)
 				. 'topics.md)'
 				. ' > '
@@ -1493,12 +1493,60 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			)
 		);
 
+		$topic_children = nesting_children(
+			$playlist_id,
+			$topic_nesting[$basename],
+			false
+		);
+
+		if (count($topic_children) > 0) {
+			file_put_contents(
+				$slug_path,
+				(
+					implode("\n", array_map(
+						static function (
+							string $subtopic_id
+						) use (
+							$basename,
+							$cache,
+							$global_topic_hierarchy,
+							$slugify,
+							$slug_count,
+							$slug
+						) : string {
+							[$slug_string, $sub_slug] = topic_to_slug(
+								$subtopic_id,
+								$cache,
+								$global_topic_hierarchy[$basename],
+								$slugify
+							);
+
+							$sub_slug = array_slice($sub_slug, $slug_count - 1);
+
+							return
+								'* ['
+								. implode(' > ', array_slice($sub_slug, 1))
+								. '](./'
+								. implode('/', array_map(
+									[$slugify, 'slugify'],
+									$sub_slug
+								))
+								. '.md)';
+						},
+						$topic_children
+					))
+					. "\n"
+				),
+				FILE_APPEND
+			);
+		}
+
 		foreach ($playlist_items_data as $playlist_id => $video_ids) {
 			file_put_contents(
 				$slug_path,
 				(
 					"\n" .
-					'# ' .
+					'## ' .
 					$data_by_date[$playlist_id][1] .
 					''
 					. ' '
