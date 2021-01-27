@@ -1470,14 +1470,14 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				'---' . "\n"
 				. sprintf(
 					'title: "%s"' . "\n",
-					$slug_title
+					$playlist_title
 				)
 				. 'date: Last Modified' . "\n"
 				. '---' . "\n"
 				. '# [Topics]('
 				. str_repeat('../', $slug_count)
 				. 'topics.md)'
-				. implode(' > ', array_map(
+				. implode('', array_map(
 					static function (
 						string $slug_parent
 					) use (
@@ -1510,8 +1510,12 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 							' > ['
 							. $slug_parent
 							. ']('
-							. str_repeat('../', $slug_count - count($parent_parts))
-							. $slugify->slugify($slug_parent)
+							. str_repeat('../', $slug_count)
+							. 'topics/'
+							. implode('/', array_map(
+								[$slugify, 'slugify'],
+								$parent_parts
+							))
 							. '.md)';
 					},
 					$slug_parents
@@ -1550,12 +1554,12 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 								$slugify
 							);
 
-							$sub_slug = array_slice($sub_slug, $slug_count - 1);
-
 							return
 								'* ['
-								. implode(' > ', array_slice($sub_slug, 1))
-								. '](./'
+								. determine_topic_name($subtopic_id, $cache)
+								. ']('
+								. str_repeat('../', $slug_count)
+								. 'topics/'
 								. implode('/', array_map(
 									[$slugify, 'slugify'],
 									$sub_slug
