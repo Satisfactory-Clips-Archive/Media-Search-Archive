@@ -6,13 +6,20 @@ declare(strict_types=1);
 
 namespace SignpostMarv\TwitchClipNotes;
 
+use function array_combine;
+use function array_diff;
 use function array_filter;
+use const ARRAY_FILTER_USE_BOTH;
+use const ARRAY_FILTER_USE_KEY;
+use function array_intersect;
 use function array_keys;
 use function array_map;
 use function array_merge;
 use function array_merge_recursive;
+use function array_reduce;
 use function array_reverse;
 use function array_search;
+use function array_slice;
 use function array_unique;
 use function array_values;
 use function asort;
@@ -35,11 +42,9 @@ use Google_Service_YouTube_VideoListResponse;
 use Google_Service_YouTube_VideoSnippet;
 use function implode;
 use function in_array;
-use function is_array;
 use function is_dir;
 use function is_file;
 use function is_int;
-use function is_string;
 use function json_decode;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
@@ -727,7 +732,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	$nested_video_ids = array_unique(array_reduce(
 		$topics_for_date,
-		static function (array $out, array $data) : array{
+		static function (array $out, array $data) : array {
 			foreach ($data['videos'] as $video_id) {
 				if ( ! in_array($video_id, $out, true)) {
 					$out[] = $video_id;
@@ -1179,7 +1184,7 @@ $faq_video_topic_nesting = array_combine(
 					$existing['children'],
 					static function (
 						string $maybe
-					) use(
+					) use (
 						$faq_video_topic_nesting
 					) : bool {
 						return in_array(
@@ -1282,7 +1287,7 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 				) use ($faq_topic_videos, $cache) : array {
 					return array_filter(
 						$cache['playlists'][$dated_id][2],
-						static function(
+						static function (
 							string $video_id
 						) use (
 							$faq_topic_videos
