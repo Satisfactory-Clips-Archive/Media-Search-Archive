@@ -22,6 +22,15 @@ use SimpleXMLElement;
  */
 function captions(string $video_id) : array
 {
+	if (
+		! preg_match(
+			'/^https:\/\/youtu\.be\//',
+			video_url_from_id($video_id, true)
+		)
+	) {
+		return [];
+	}
+
 	$html_cache = __DIR__ . '/captions/' . $video_id . '.html';
 
 	if ( ! is_file($html_cache)) {
