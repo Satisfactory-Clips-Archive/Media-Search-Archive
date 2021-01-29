@@ -1061,13 +1061,14 @@ if ($transcriptions) {
 					) {
 						return
 							'* ['
-							. implode(' > ', $topics_json[$playlist_topic_strings[
-								$playlist_id
-							]])
+							. implode(
+								' > ',
+								$topics_json[$playlist_topic_strings[
+									$playlist_id
+								]]
+							)
 							. '](../topics/'
-							. $playlist_topic_strings[
-								$playlist_id
-							]
+							. $playlist_topic_strings[$playlist_id]
 							. '.md)';
 					},
 					array_filter(
