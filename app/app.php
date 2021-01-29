@@ -1080,9 +1080,7 @@ if ($transcriptions) {
 							$topics_json
 						) : bool {
 							return isset(
-								$playlist_topic_strings[
-									$playlist_id
-								],
+								$playlist_topic_strings[$playlist_id],
 								$topics_json[$playlist_topic_strings[
 									$playlist_id
 								]]
@@ -1101,7 +1099,8 @@ if ($transcriptions) {
 			file_put_contents(
 				$transcriptions_file,
 				(
-					'> ' . $caption_line .
+					'> ' .
+					$caption_line .
 					"\n" .
 					'> ' .
 					"\n"
