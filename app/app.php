@@ -94,8 +94,8 @@ $other_playlists_on_channel = [];
 
 $playlist_metadata = [
 	realpath(
-		__DIR__ .
-		'/playlists/coffeestainstudiosdevs/satisfactory.json'
+		__DIR__
+		. '/playlists/coffeestainstudiosdevs/satisfactory.json'
 	) => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/',
 ];
 
@@ -419,14 +419,14 @@ $global_topic_hierarchy = array_merge_recursive(
 $injected_playlists = array_map(
 	static function (string $filename) : string {
 		return
-			__DIR__ .
-			'/../coffeestainstudiosdevs/satisfactory/' .
-			$filename;
+			__DIR__
+			. '/../coffeestainstudiosdevs/satisfactory/'
+			. $filename;
 	},
 	json_decode(
 		file_get_contents(
-			__DIR__ .
-			'/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+			__DIR__
+			. '/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
 		),
 		true
 	)
@@ -698,9 +698,8 @@ foreach (array_keys($playlists) as $playlist_id) {
 		date(
 			'F jS, Y',
 			$title_unix
-		) .
-		'' .
-		(
+		)
+		. (
 			isset($not_a_livestream[$playlist_id])
 				? (' ' . $not_a_livestream[$playlist_id])
 				: ' Livestream clips (non-exhaustive)'
@@ -808,8 +807,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 				(
 					'* '
 					. $video_line
-					. '' .
-					"\n"
+					. "\n"
 				),
 				FILE_APPEND
 			);
@@ -832,13 +830,11 @@ foreach (array_keys($playlists) as $playlist_id) {
 		file_put_contents(
 			$playlists[$playlist_id],
 			(
-				'* ' .
-				$cache['playlistItems'][$video_id][1] .
-				''
+				'* '
+				. $cache['playlistItems'][$video_id][1]
 				. ' '
 				. video_url_from_id($video_id)
-				. '' .
-				"\n"
+				. "\n"
 			),
 			FILE_APPEND
 		);
@@ -1035,21 +1031,17 @@ if ($transcriptions) {
 					))
 				)
 				. '---' . "\n"
-				. '# [' . date('F jS, Y', (int) strtotime($date)) .
-				''
+				. '# [' . date('F jS, Y', (int) strtotime($date))
 				. ' '
 				. (
 					$not_a_livestream[$playlist_id]
 						?? 'Livestream'
 				)
-				. '](../' . $date . '.md)' .
-				"\n" .
-				'## ' . $cache['playlistItems'][$video_id][1] .
-				"\n" .
-				''
+				. '](../' . $date . '.md)'
+				. "\n"
+				. '## ' . $cache['playlistItems'][$video_id][1]
+				. "\n"
 				. video_url_from_id($video_id)
-				. '' .
-				''
 				. "\n\n"
 				. '### Topics' . "\n"
 				. implode("\n", array_map(
@@ -1089,9 +1081,8 @@ if ($transcriptions) {
 					)
 				))
 				. "\n\n"
-				. '### Transcript' . "\n"
-				. '' .
-				"\n"
+				. '### Transcript'
+				. "\n\n"
 			)
 		);
 
@@ -1099,11 +1090,11 @@ if ($transcriptions) {
 			file_put_contents(
 				$transcriptions_file,
 				(
-					'> ' .
-					$caption_line .
-					"\n" .
-					'> ' .
-					"\n"
+					'> '
+					. $caption_line
+					. "\n"
+					. '> '
+					. "\n"
 				),
 				FILE_APPEND
 			);
@@ -1382,15 +1373,15 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	$data = json_decode(file_get_contents($json_file), true);
 
 	if ($json_file === realpath(
-		__DIR__ .
-		'/playlists/coffeestainstudiosdevs/satisfactory.json'
+		__DIR__
+		. '/playlists/coffeestainstudiosdevs/satisfactory.json'
 	)) {
 		$data = array_merge(
 			$data,
 			json_decode(
 				file_get_contents(
-					__DIR__ .
-					'/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+					__DIR__
+					. '/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
 				),
 				true
 			)
@@ -1601,17 +1592,16 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			file_put_contents(
 				$slug_path,
 				(
-					"\n" .
-					'## ' .
-					$data_by_date[$playlist_id][1] .
-					''
+					"\n"
+					. '## '
+					. $data_by_date[$playlist_id][1]
 					. ' '
 					. (
 						$not_a_livestream[$playlist_id]
 							?? 'Livestream'
 					)
-					. '' .
-					"\n"
+					. ''
+					. "\n"
 				),
 				FILE_APPEND
 			);
@@ -1705,15 +1695,15 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	$data = json_decode(file_get_contents($json_file), true);
 
 	if ($json_file === realpath(
-		__DIR__ .
-		'/playlists/coffeestainstudiosdevs/satisfactory.json'
+		__DIR__
+		. '/playlists/coffeestainstudiosdevs/satisfactory.json'
 	)) {
 		$data = array_merge(
 			$data,
 			json_decode(
 				file_get_contents(
-					__DIR__ .
-					'/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+					__DIR__
+					. '/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
 				),
 				true
 			)
