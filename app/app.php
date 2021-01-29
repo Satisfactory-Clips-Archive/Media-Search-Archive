@@ -918,8 +918,11 @@ file_put_contents(__DIR__ . '/topic-slug-history.json', json_encode(
 if ($transcriptions) {
 	$checked = 0;
 
-	foreach (array_keys($playlists) as $playlist_id) {
-		foreach ($cache['playlists'][$playlist_id][2] as $video_id) {
+	$all_video_ids = array_keys($video_playlists);
+
+	natcasesort($all_video_ids);
+
+	foreach ($all_video_ids as $video_id) {
 			$transcriptions_file = transcription_filename($video_id);
 
 			$caption_lines = captions($video_id);
@@ -929,6 +932,25 @@ if ($transcriptions) {
 
 				continue;
 			}
+
+			$maybe_playlist_id = array_values(array_filter(
+				$video_playlists[$video_id],
+				static function (string $maybe) use ($playlists) : bool {
+					return isset($playlists[$maybe]);
+				}
+			));
+
+			if (count($maybe_playlist_id) > 1) {
+				throw new RuntimeException(
+					'Video found on multiple dates!'
+				);
+			} elseif (count($maybe_playlist_id) < 1) {
+				throw new RuntimeException(
+					'Video found on no dates!'
+				);
+			}
+
+			[$playlist_id] = $maybe_playlist_id;
 
 			$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
 
@@ -1086,7 +1108,6 @@ if ($transcriptions) {
 					FILE_APPEND
 				);
 			}
-		}
 	}
 
 	echo
