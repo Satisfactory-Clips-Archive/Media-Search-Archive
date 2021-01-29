@@ -1080,12 +1080,12 @@ if ($transcriptions) {
 							$topics_json
 						) : bool {
 							return isset(
-								$topics_json[$playlist_topic_strings[
-									$playlist_id
-								]],
 								$playlist_topic_strings[
 									$playlist_id
-								]
+								],
+								$topics_json[$playlist_topic_strings[
+									$playlist_id
+								]]
 							);
 						}
 					)
