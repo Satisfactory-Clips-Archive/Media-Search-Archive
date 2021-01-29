@@ -499,6 +499,32 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEps-bmHeQJHnTRQ-AsP3YfL' => [ // Joshie
 			'Community',
 		],
+		'PLbjDnnBIxiEob8i8BnGXs3MaviNDLKxQ5' => [ // Mercer Sphere
+			'Environment',
+			'Resources',
+		],
+		'PLbjDnnBIxiErVEFr3VZqHIAHfUd0Z7AUj' => [ // Somersloop
+			'Environment',
+			'Resources',
+		],
+		'PLbjDnnBIxiEqfFrKHQh-XOvtmMN7F0Rqa' => [ // Deep Rock Galactic
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiEp0LTS_gLsiacb7JQimuAra' => [ // The Cycle
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiEqKzRDBMtWg2XJqwJzLgmQY' => [ // G2
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEri_ODC3QlSZgQ1QsAKEX4K' => [ // Markus
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiErkymYcX3dP0NvEKzXeYON8' => [ // Panakotta
+			'Community',
+		],
+		'PLbjDnnBIxiEq-TyD3B3FYRk-YaTyPt7_k' => [ // Semlor
+			'Off-Topic',
+		],
 	],
 ];
 
