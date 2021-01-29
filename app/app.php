@@ -923,191 +923,191 @@ if ($transcriptions) {
 	natcasesort($all_video_ids);
 
 	foreach ($all_video_ids as $video_id) {
-			$transcriptions_file = transcription_filename($video_id);
+		$transcriptions_file = transcription_filename($video_id);
 
-			$caption_lines = captions($video_id);
+		$caption_lines = captions($video_id);
 
-			if (count($caption_lines) < 1) {
-				echo 'skipping captions for ', $video_id, "\n";
+		if (count($caption_lines) < 1) {
+			echo 'skipping captions for ', $video_id, "\n";
 
-				continue;
+			continue;
+		}
+
+		$maybe_playlist_id = array_values(array_filter(
+			$video_playlists[$video_id],
+			static function (string $maybe) use ($playlists) : bool {
+				return isset($playlists[$maybe]);
 			}
+		));
 
-			$maybe_playlist_id = array_values(array_filter(
-				$video_playlists[$video_id],
-				static function (string $maybe) use ($playlists) : bool {
-					return isset($playlists[$maybe]);
-				}
-			));
+		if (count($maybe_playlist_id) > 1) {
+			throw new RuntimeException(
+				'Video found on multiple dates!'
+			);
+		} elseif (count($maybe_playlist_id) < 1) {
+			throw new RuntimeException(
+				'Video found on no dates!'
+			);
+		}
 
-			if (count($maybe_playlist_id) > 1) {
-				throw new RuntimeException(
-					'Video found on multiple dates!'
-				);
-			} elseif (count($maybe_playlist_id) < 1) {
-				throw new RuntimeException(
-					'Video found on no dates!'
+		[$playlist_id] = $maybe_playlist_id;
+
+		$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
+
+		$transcript_topic_strings = array_filter(
+			$video_playlists[$video_id],
+			static function (
+				string $playlist_id
+			) use ($playlist_topic_strings, $playlists) : bool {
+				return
+					! isset($playlists[$playlist_id])
+					&& isset(
+					$playlist_topic_strings[
+						$playlist_id
+					]
 				);
 			}
+		);
 
-			[$playlist_id] = $maybe_playlist_id;
+		usort(
+			$transcript_topic_strings,
+			static function (
+				string $a,
+				string $b
+			) use ($playlist_topic_strings) : int {
+				return strnatcasecmp(
+					$playlist_topic_strings[
+						$a
+					],
+					$playlist_topic_strings[
+						$b
+					]
+				);
+			}
+		);
 
-			$date = mb_substr(basename($playlists[$playlist_id]), 0, -3);
+		$transcript_topic_strings = array_values(
+			$transcript_topic_strings
+		);
 
-			$transcript_topic_strings = array_filter(
-				$video_playlists[$video_id],
-				static function (
-					string $playlist_id
-				) use ($playlist_topic_strings, $playlists) : bool {
-					return
-						! isset($playlists[$playlist_id])
-						&& isset(
-						$playlist_topic_strings[
-							$playlist_id
-						]
-					);
-				}
-			);
-
-			usort(
-				$transcript_topic_strings,
-				static function (
-					string $a,
-					string $b
-				) use ($playlist_topic_strings) : int {
-					return strnatcasecmp(
-						$playlist_topic_strings[
-							$a
-						],
-						$playlist_topic_strings[
-							$b
-						]
-					);
-				}
-			);
-
-			$transcript_topic_strings = array_values(
-				$transcript_topic_strings
-			);
-
-			file_put_contents(
-				$transcriptions_file,
-				(
-					'---' . "\n"
-					. sprintf(
-						'title: "%s"' . "\n",
-						(
-							date('F jS, Y', (int) strtotime($date))
-							. (
-								isset($not_a_livestream[$playlist_id])
-									? (
-										' '
-										. $not_a_livestream[$playlist_id]
-										. ' '
-									)
-									: ' Livestream '
-							)
-							. str_replace(
-								'"',
-								'\\"',
-								$cache['playlistItems'][$video_id][1]
-							)
+		file_put_contents(
+			$transcriptions_file,
+			(
+				'---' . "\n"
+				. sprintf(
+					'title: "%s"' . "\n",
+					(
+						date('F jS, Y', (int) strtotime($date))
+						. (
+							isset($not_a_livestream[$playlist_id])
+								? (
+									' '
+									. $not_a_livestream[$playlist_id]
+									. ' '
+								)
+								: ' Livestream '
+						)
+						. str_replace(
+							'"',
+							'\\"',
+							$cache['playlistItems'][$video_id][1]
 						)
 					)
-					. sprintf(
-						'date: "%s"' . "\n",
-						date('Y-m-d', (int) strtotime($date))
-					)
-					. 'layout: transcript' . "\n"
-					. sprintf(
-						'topics:' . "\n" . '    - "%s"' . "\n",
-						implode('"' . "\n" . '    - "', array_map(
-							static function (
-								string $playlist_id
-							) use (
-								$playlist_topic_strings
-							) {
-								return $playlist_topic_strings[
-									$playlist_id
-								];
-							},
-							$transcript_topic_strings
-						))
-					)
-					. '---' . "\n"
-					. '# [' . date('F jS, Y', (int) strtotime($date)) .
-					''
-					. ' '
-					. (
-						$not_a_livestream[$playlist_id]
-							?? 'Livestream'
-					)
-					. '](../' . $date . '.md)' .
-					"\n" .
-					'## ' . $cache['playlistItems'][$video_id][1] .
-					"\n" .
-					''
-					. video_url_from_id($video_id)
-					. '' .
-					''
-					. "\n\n"
-					. '### Topics' . "\n"
-					. implode("\n", array_map(
+				)
+				. sprintf(
+					'date: "%s"' . "\n",
+					date('Y-m-d', (int) strtotime($date))
+				)
+				. 'layout: transcript' . "\n"
+				. sprintf(
+					'topics:' . "\n" . '    - "%s"' . "\n",
+					implode('"' . "\n" . '    - "', array_map(
 						static function (
 							string $playlist_id
 						) use (
-							$topics_json,
 							$playlist_topic_strings
 						) {
-							return
-								'* ['
-								. implode(' > ', $topics_json[$playlist_topic_strings[
+							return $playlist_topic_strings[
+								$playlist_id
+							];
+						},
+						$transcript_topic_strings
+					))
+				)
+				. '---' . "\n"
+				. '# [' . date('F jS, Y', (int) strtotime($date)) .
+				''
+				. ' '
+				. (
+					$not_a_livestream[$playlist_id]
+						?? 'Livestream'
+				)
+				. '](../' . $date . '.md)' .
+				"\n" .
+				'## ' . $cache['playlistItems'][$video_id][1] .
+				"\n" .
+				''
+				. video_url_from_id($video_id)
+				. '' .
+				''
+				. "\n\n"
+				. '### Topics' . "\n"
+				. implode("\n", array_map(
+					static function (
+						string $playlist_id
+					) use (
+						$topics_json,
+						$playlist_topic_strings
+					) {
+						return
+							'* ['
+							. implode(' > ', $topics_json[$playlist_topic_strings[
+								$playlist_id
+							]])
+							. '](../topics/'
+							. $playlist_topic_strings[
+								$playlist_id
+							]
+							. '.md)';
+					},
+					array_filter(
+						$video_playlists[$video_id],
+						static function (
+							string $playlist_id
+						) use (
+							$playlist_topic_strings,
+							$topics_json
+						) : bool {
+							return isset(
+								$topics_json[$playlist_topic_strings[
 									$playlist_id
-								]])
-								. '](../topics/'
-								. $playlist_topic_strings[
+								]],
+								$playlist_topic_strings[
 									$playlist_id
 								]
-								. '.md)';
-						},
-						array_filter(
-							$video_playlists[$video_id],
-							static function (
-								string $playlist_id
-							) use (
-								$playlist_topic_strings,
-								$topics_json
-							) : bool {
-								return isset(
-									$topics_json[$playlist_topic_strings[
-										$playlist_id
-									]],
-									$playlist_topic_strings[
-										$playlist_id
-									]
-								);
-							}
-						)
-					))
-					. "\n\n"
-					. '### Transcript' . "\n"
-					. '' .
-					"\n"
-				)
-			);
+							);
+						}
+					)
+				))
+				. "\n\n"
+				. '### Transcript' . "\n"
+				. '' .
+				"\n"
+			)
+		);
 
-			foreach ($caption_lines as $caption_line) {
-				file_put_contents(
-					$transcriptions_file,
-					(
-						'> ' . $caption_line .
-						"\n" .
-						'> ' .
-						"\n"
-					),
-					FILE_APPEND
-				);
-			}
+		foreach ($caption_lines as $caption_line) {
+			file_put_contents(
+				$transcriptions_file,
+				(
+					'> ' . $caption_line .
+					"\n" .
+					'> ' .
+					"\n"
+				),
+				FILE_APPEND
+			);
+		}
 	}
 
 	echo
