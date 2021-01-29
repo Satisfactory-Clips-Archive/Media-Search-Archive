@@ -51,6 +51,7 @@ use function ksort;
 use function mb_substr;
 use function min;
 use function mkdir;
+use function natcasesort;
 use function natsort;
 use function realpath;
 use RuntimeException;
