@@ -1901,6 +1901,14 @@ $cache['stubPlaylists'] = array_filter(
 	}
 );
 
+$cache['stubPlaylists'] = array_filter(
+	$cache['stubPlaylists'],
+	static function (string $maybe) use ($dated_glob) : bool {
+		return ! in_array($maybe, $dated_glob, true);
+	},
+	ARRAY_FILTER_USE_KEY
+);
+
 $cache['playlists'] = array_filter(
 	$cache['playlists'],
 	static function (array $maybe) : bool {

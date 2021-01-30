@@ -525,6 +525,24 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEq-TyD3B3FYRk-YaTyPt7_k' => [ // Semlor
 			'Off-Topic',
 		],
+		'PLbjDnnBIxiEpWd9yLFdA-rdx0uR6EJfRh' => [ // Farming
+			'Features',
+			'Possible Features',
+		],
+		'PLbjDnnBIxiErj1SNTDxK3-OgUFy3b9x9U' => [ // Ficsit Farming
+			'Mods',
+		],
+		'PLbjDnnBIxiEpT_HG6yiXztZ5oNXPOutgR' => [ // Space Exploration
+			'Features',
+			'Unplanned Features',
+		],
+		'PLbjDnnBIxiErZY7hh-HMSgx77BlCLUgRb' => [ // ADA
+			'Story & Lore',
+			'Characters',
+		],
+		'PLbjDnnBIxiEpCVGFI_9IN1KQVz_CTwCRP' => [ // Marie
+			'Coffee Stainers',
+		],
 	],
 ];
 
@@ -566,10 +584,6 @@ $injected_global_topic_hierarchy = [
 		'Released' => [
 			'Satisfactory Updates',
 		],
-		'Space Exploration' => [
-			'Features',
-			'Unplanned Features',
-		],
 		'Speculative' => [
 			'Satisfactory Updates',
 		],
@@ -596,6 +610,9 @@ $injected_global_topic_hierarchy = [
 		],
 		'Free Weekends' => [
 			'Satisfactory Updates',
+		],
+		'Characters' => [
+			'Story & Lore',
 		],
 	],
 ];
