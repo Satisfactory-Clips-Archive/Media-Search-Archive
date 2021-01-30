@@ -57,7 +57,7 @@ module.exports = async () => {
 		const [permalink, data] = e;
 		const subslugs = [];
 
-		const breadcrumbs = [];
+		let breadcrumbs = [];
 
 		const maybe_topic_slugs = /^\/topics\/(.+)\//.exec(permalink);
 
@@ -68,6 +68,12 @@ module.exports = async () => {
 
 					const topic = topics[subslugs.join('/')];
 
+					if ( ! topic) {
+						console.log('Topic not found!', [...subslugs]);
+
+						return [];
+					}
+
 					return [
 						topic[topic.length - 1],
 						`https://archive.satisfactory.video/topics/${
@@ -77,6 +83,10 @@ module.exports = async () => {
 				}
 			));
 		}
+
+		breadcrumbs = breadcrumbs.filter((entry) => {
+			return 2 === entry.length;
+		});
 
 		if (
 			('@type' in data[0])

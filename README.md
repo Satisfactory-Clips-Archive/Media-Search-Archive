@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-01-30
+* Updated build with workarounds for topics that don't exist yet
+
 ## 2021-01-27
 * Updated build with n-level filtering for livestream documents
 * Added parent & child topic listings
