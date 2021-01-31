@@ -969,7 +969,7 @@ $from_markdown = [
 			'Pipes',
 		],
 		'Q&A: Will you plan to add Steam Workshop support? https://clips.twitch.tv/SwissTameCoffeeDansGame' => [
-			'Mods',
+			'Steam Workshop',
 		],
 		'Q&A: Is Satisfactory affected by Epic vs. Apple? https://clips.twitch.tv/FurryAwkwardStrawberryWoofer' => [
 			'Off-Topic',

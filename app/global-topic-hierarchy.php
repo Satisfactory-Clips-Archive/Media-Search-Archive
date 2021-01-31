@@ -543,6 +543,13 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEpCVGFI_9IN1KQVz_CTwCRP' => [ // Marie
 			'Coffee Stainers',
 		],
+		'PLbjDnnBIxiEontiBSe54bXKMMdsRG7Q3_' => [ // Josh
+			'Community',
+		],
+		'PLbjDnnBIxiEopIEcpam21k5zDe3w-I0oA' => [ // Steam Workshop
+			'Mods',
+			'Official Mod Support',
+		],
 	],
 ];
 
