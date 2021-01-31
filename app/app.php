@@ -671,6 +671,35 @@ foreach ($cache['playlists'] as $playlist_id => $data) {
 	}
 }
 
+$topics_json = [];
+$playlist_topic_strings = [];
+$playlist_topic_strings_reverse_lookup = [];
+
+foreach ($all_topic_ids as $topic_id) {
+	[$slug_string, $slug] = topic_to_slug(
+		$topic_id,
+		$cache,
+		$global_topic_hierarchy['satisfactory'],
+		$slugify
+	);
+
+	if ( ! isset($playlists[$topic_id])) {
+		$topics_json[$slug_string] = $slug;
+	}
+	$playlist_topic_strings[$topic_id] = $slug_string;
+	$playlist_topic_strings_reverse_lookup[$slug_string] = $topic_id;
+}
+
+ksort($topics_json);
+ksort($playlist_topic_strings_reverse_lookup);
+
+file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_json, JSON_PRETTY_PRINT));
+
+$topic_slug_history = json_decode(
+	file_get_contents(__DIR__ . '/topic-slug-history.json'),
+	true
+);
+
 if ($transcriptions) {
 	$checked = 0;
 
@@ -1040,46 +1069,6 @@ foreach (array_keys($playlists) as $playlist_id) {
 		);
 	}
 }
-
-$global_topic_hierarchy = array_map(
-	static function (array $in) : array {
-		uasort($in, static function (array $a, array $b) : int {
-			return strnatcasecmp(implode('/', $a), implode('/', $b));
-		});
-
-		return $in;
-	},
-	$global_topic_hierarchy
-);
-
-$topics_json = [];
-$playlist_topic_strings = [];
-$playlist_topic_strings_reverse_lookup = [];
-
-foreach ($all_topic_ids as $topic_id) {
-	[$slug_string, $slug] = topic_to_slug(
-		$topic_id,
-		$cache,
-		$global_topic_hierarchy['satisfactory'],
-		$slugify
-	);
-
-	if ( ! isset($playlists[$topic_id])) {
-		$topics_json[$slug_string] = $slug;
-	}
-	$playlist_topic_strings[$topic_id] = $slug_string;
-	$playlist_topic_strings_reverse_lookup[$slug_string] = $topic_id;
-}
-
-ksort($topics_json);
-ksort($playlist_topic_strings_reverse_lookup);
-
-file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_json, JSON_PRETTY_PRINT));
-
-$topic_slug_history = json_decode(
-	file_get_contents(__DIR__ . '/topic-slug-history.json'),
-	true
-);
 
 $now = time();
 
