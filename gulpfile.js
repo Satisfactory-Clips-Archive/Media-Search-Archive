@@ -21,7 +21,7 @@ const {readFileSync} = require('fs');
 const inline_source = require('gulp-inline-source');
 
 gulp.task('clean', () => {
-	return gulp.src('{./tmp/,./src/topics.json}', {read: false}).pipe(clean());
+	return gulp.src('{./tmp/,./src/topics.json,./dist/**/*.gz}', {read: false}).pipe(clean());
 });
 
 gulp.task('lunr', () => {
@@ -227,7 +227,9 @@ gulp.task('build', gulp.series(
 	'html',
 	'sitemap',
 	gulp.parallel(
+		/*
 		'zopfli',
+		*/
 		'brotli'
 	),
 	gulp.parallel(
@@ -300,7 +302,9 @@ gulp.task('zopfli-images', () => {
 
 gulp.task('images', gulp.series(
 	gulp.parallel(
-		'brotli-images',
-		'zopfli-images'
+		/*
+		'zopfli-images',
+		*/
+		'brotli-images'
 	)
 ));

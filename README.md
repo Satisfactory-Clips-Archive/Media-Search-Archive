@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-02-01
+* Updated build without static gzip assets due to widespread support for brotli
+
 ## 2021-01-30
 * Updated build with workarounds for topics that don't exist yet
 
