@@ -442,6 +442,39 @@ asort($playlists);
 
 $playlists = array_reverse($playlists);
 
+$playlist_history = json_decode(
+	file_get_contents(__DIR__ . '/playlist-date-history.json'),
+	true
+);
+
+foreach ($playlists as $playlist_id => $path) {
+	$playlist_date = mb_substr(basename($path), 0, -3);
+
+	if ( ! isset($playlist_history[$playlist_id])) {
+		$playlist_history[$playlist_id] = [];
+	}
+
+	if ( ! in_array($playlist_date, $playlist_history[$playlist_id], true)) {
+		$playlist_history[$playlist_id][] = [$playlist_date, time()];
+	}
+}
+
+$playlist_history = array_map(
+	static function (array $data) : array {
+		usort($data, static function (array $a, array $b) : int {
+			return $a[1] - $b[1];
+		});
+
+		return $data;
+	},
+	$playlist_history
+);
+
+file_put_contents(__DIR__ . '/playlist-date-history.json', json_encode(
+	$playlist_history,
+	JSON_PRETTY_PRINT
+));
+
 $injected_cache = json_decode(
 	file_get_contents(__DIR__ . '/cache-injection.json'),
 	true
