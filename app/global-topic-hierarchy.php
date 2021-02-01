@@ -482,7 +482,7 @@ $global_topic_hierarchy = [
 			'Features',
 			'Tiers',
 		],
-		'Tier 9' => [
+		'PLbjDnnBIxiEp4Qe-sQjkMStIywC-iIGDR' => [ // Tier 9
 			'Features',
 			'Tiers',
 		],
@@ -549,6 +549,13 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEopIEcpam21k5zDe3w-I0oA' => [ // Steam Workshop
 			'Mods',
 			'Official Mod Support',
+		],
+		'PLbjDnnBIxiEpwHLyUK0939CsZtMpZgu56' => [ // Crossplay
+			'Features',
+			'Multiplayer',
+		],
+		'PLbjDnnBIxiEqaTHSimlEIVkVtJC8gMWrh' => [ // Smerkin
+			'Community',
 		],
 	],
 ];
