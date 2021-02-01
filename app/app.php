@@ -454,7 +454,14 @@ foreach ($playlists as $playlist_id => $path) {
 		$playlist_history[$playlist_id] = [];
 	}
 
-	if ( ! in_array($playlist_date, $playlist_history[$playlist_id], true)) {
+	$playlist_dates = array_map(
+		static function (array $data) : string {
+			return $data[0];
+		},
+		$playlist_history[$playlist_id]
+	);
+
+	if ( ! in_array($playlist_date, $playlist_dates, true)) {
 		$playlist_history[$playlist_id][] = [$playlist_date, time()];
 	}
 }
