@@ -1047,13 +1047,13 @@ $from_markdown = [
 		'Q&A: State of things = 🤷? (Part 2) https://clips.twitch.tv/EndearingBlitheTruffleJebaited' => [
 			'State of Dev',
 		],
-		'Quality-of-live update? (Part 1): https://clips.twitch.tv/RudeSpoopyAlligatorVoteYea' => [
+		'Quality-of-life update? (Part 1): https://clips.twitch.tv/RudeSpoopyAlligatorVoteYea' => [
 			'Satisfactory Fluids Update',
 		],
-		'Quality-of-live update? (Part 2): https://clips.twitch.tv/AlertFancyAxeFUNgineer' => [
+		'Quality-of-life update? (Part 2): https://clips.twitch.tv/AlertFancyAxeFUNgineer' => [
 			'Satisfactory Fluids Update',
 		],
-		'Quality-of-live update? (Part 3): https://clips.twitch.tv/CrunchyGlutenFreeNuggetsMingLee' => [
+		'Quality-of-life update? (Part 3): https://clips.twitch.tv/CrunchyGlutenFreeNuggetsMingLee' => [
 			'Satisfactory Fluids Update',
 		],
 		'ETA for Update 4? (Part 1) https://clips.twitch.tv/DeadPrettySaladMoreCowbell' => [
