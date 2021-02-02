@@ -561,6 +561,9 @@ $global_topic_hierarchy = [
 			'Story & Lore',
 			'Characters',
 		],
+		'PLbjDnnBIxiEpZz_Py2KcHNItA7jY1nTrB' => [ // Factorio
+			'Off-Topic',
+		],
 		'PLbjDnnBIxiEqRTal-bQ-tlGQPcGhOg1UL' => [ // FicsIt-Networks
 			'Mods',
 		],
