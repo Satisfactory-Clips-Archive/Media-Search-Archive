@@ -557,6 +557,41 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEqaTHSimlEIVkVtJC8gMWrh' => [ // Smerkin
 			'Community',
 		],
+		'PLbjDnnBIxiEqHIuDkJqcpobQ_z7NknHVJ' => [ // Caterina Parks
+			'Story & Lore',
+			'Characters',
+		],
+		'PLbjDnnBIxiEqRTal-bQ-tlGQPcGhOg1UL' => [ // FicsIt-Networks
+			'Mods',
+		],
+		'PLbjDnnBIxiErs1LeFED3Y0pNoUtFtZHNu' => [ // Infinifactory
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiErdRwJCqU5y5d6Hxm2lKd46' => [ // Kibitz
+			'Community',
+		],
+		'PLbjDnnBIxiErSWX2noEv1twPQ9F4lRZi1' => [ // Neshkor
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEqq2pvrf2fFltB6Nq9SX_4H' => [ // Ros
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEoePaWQkbGQfaANu4qRPb6C' => [ // Steel
+			'Environment',
+			'Resources',
+		],
+		'PLbjDnnBIxiEr4KkkPWBDMJdu4Y4S3Pn7x' => [ // Steve
+			'Story & Lore',
+			'Characters',
+		],
+		'PLbjDnnBIxiEoNob1WtMvqzwc3KqxW9dvM' => [ // VR
+			'Features',
+			'Unplanned Features',
+		],
+		'PLbjDnnBIxiEqV3H-fkFZVMqPZZ8M-Sexh' => [ // Water Extractor
+			'Features',
+			'Buildings',
+		],
 	],
 ];
 

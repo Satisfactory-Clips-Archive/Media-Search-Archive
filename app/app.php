@@ -537,6 +537,35 @@ foreach ($injected_cache['videoTags'] as $video_id => $data) {
 
 $cache = inject_caches($cache, $injected_cache);
 
+$no_topics = [];
+
+foreach (
+	array_unique(array_merge(
+		array_keys($cache['playlistItems']),
+		array_keys($cache['videoTags']),
+		array_keys($cache['legacyAlts'])
+	)) as $video_id
+) {
+	$found = false;
+
+	foreach ($cache['playlists'] as $topic_id => $data) {
+		$found = in_array($video_id, $data[2], true);
+
+		if ($found) {
+			break;
+		}
+	}
+
+	if ( ! $found) {
+		$no_topics[] = $video_id;
+	}
+}
+
+if (count($no_topics)) {
+	echo "\n", implode("\n", $no_topics), "\n";
+	throw new RuntimeException('Found video with no topics!');
+}
+
 $all_topic_ids = array_merge(
 	array_keys($cache['playlists']),
 	array_keys($cache['stubPlaylists'] ?? [])
@@ -941,6 +970,28 @@ if ($transcriptions) {
 
 foreach (array_keys($playlists) as $playlist_id) {
 	$video_ids = $cache['playlists'][$playlist_id][2];
+
+	$has_legacy_alts = array_filter(
+		$video_ids,
+		static function (string $maybe) use ($cache) : bool {
+			return isset($cache['legacyAlts'][$maybe]);
+		}
+	);
+
+	if (count($has_legacy_alts)) {
+		$legacy_alts = array_unique(array_reduce(
+			$has_legacy_alts,
+			static function (
+				array $out,
+				string $video_id
+			) use ($cache) : array {
+				return array_merge($out, $cache['legacyAlts'][$video_id]);
+			},
+			[]
+		));
+
+		$video_ids = array_diff($video_ids, $legacy_alts);
+	}
 
 	usort($video_ids, static function (string $a, string $b) use ($cache) : int {
 		return strnatcasecmp(

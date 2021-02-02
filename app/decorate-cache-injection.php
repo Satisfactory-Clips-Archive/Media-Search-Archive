@@ -1034,7 +1034,7 @@ $from_markdown = [
 			'Console Release',
 		],
 	],
-	'2020-08-25' => [
+	'PLbjDnnBIxiEpedXSy2z8IQtNu98_FXFyy' => [
 		'Snutt Talk: State of Development (Part 1) https://clips.twitch.tv/WealthyModernInternDogFace' => [
 			'State of Dev',
 		],
@@ -1930,6 +1930,506 @@ uksort(
 		return strnatcasecmp($a, $b);
 	}
 );
+
+$legacy_alt_forms_of_video = [
+	'2020-08-25' => [
+		'e-51TRYTVg8' => [
+			'tc-WealthyModernInternDogFace',
+			'tc-SuaveChillyGrouseSaltBae',
+		],
+		'5SH9eySqDzU' => [
+			'tc-WealthyStormySnakeOptimizePrime',
+			'tc-EndearingBlitheTruffleJebaited',
+		],
+		'cwWUYRciIoc' => [
+			'tc-RudeSpoopyAlligatorVoteYea',
+			'tc-AlertFancyAxeFUNgineer',
+			'tc-CrunchyGlutenFreeNuggetsMingLee',
+		],
+		'3xgs6Y-ZSe8' => [
+			'tc-DeadPrettySaladMoreCowbell',
+			'tc-SavageBenevolentEndiveChocolateRain',
+			'tc-GoodSaltyPepperoniPunchTrees',
+			'tc-UnsightlyApatheticHornetKreygasm',
+			'tc-AmazingEagerGorillaHeyGuys',
+		],
+		'tNgHT-JIuvE' => [
+			'tc-TangentialHyperFlyBigBrother',
+			'tc-PlumpEntertainingSandstormYee',
+			'tc-EntertainingTentativeGaurSmoocherZ',
+		],
+		'0lYeX6eduFM' => [
+			'tc-AttractiveFrailRaisinKAPOW',
+		],
+		'qEiYxLhX3CM' => [
+			'tc-FrozenLuckyRamenDxCat',
+			'tc-BrainySecretiveSquidChefFrank',
+			'tc-SpunkyFlirtySoybeanJebaited',
+			'tc-EnjoyableCrazyVanillaStinkyCheese',
+			'tc-CharmingObservantLardSMOrc',
+			'tc-LachrymoseCourteousDoveDxAbomb',
+		],
+		'PVf-pBNYO_M' => [
+			'tc-CarelessDepressedShingleHassanChop',
+			'tc-LuckyMushyShingleTBTacoRight',
+			'tc-SincereProductiveScallionLeeroyJenkins',
+		],
+		'JSdd9fpzhK4' => [
+			'tc-PerfectNurturingTrollRiPepperonis',
+		],
+		'GbggTKLCQtc' => [
+			'tc-FrozenEndearingCodEleGiggle',
+		],
+		'G7k6pjP1nK8' => [
+			'tc-GleamingCheerfulWatercressRaccAttack',
+		],
+		'-b2L_nlW_Fo' => [
+			'tc-ArtisticGlutenFreeSpindleDxAbomb',
+		],
+		'I59oaCtgopI' => [
+			'tc-BlitheKitschySnoodTwitchRaid',
+		],
+		'k6hkL7fE6OQ' => [
+			'tc-OriginalMuddyDogePeteZaroll',
+			'tc-DistinctConcernedPlumageWow',
+			'tc-AmazonianAnnoyingSushiUncleNox',
+		],
+		'aaP5_tXPthI' => [
+			'tc-FuriousRockyDuckPRChase',
+		],
+		'xYwIsp94W7c' => [
+			'tc-FurtiveHealthyRhinocerosJonCarnage',
+		],
+		'WjVP7rOR38M' => [
+			'tc-SarcasticNeighborlyPigTebowing',
+		],
+		'IPmVdCgi2_A' => [
+			'tc-TenderSuspiciousSashimiEleGiggle',
+			'tc-FunSparklyFishRedCoat',
+		],
+		'WQH5cWS3s2s' => [
+			'tc-OriginalAntsySmoothieStoneLightning',
+		],
+		'v6sWQLM4fMM' => [
+			'tc-GleamingHyperBottleRickroll',
+		],
+		'PY6wf7cvjgM' => [
+			'tc-ImpartialEnchantingCider4Head',
+		],
+		'A10cQzT6TpU' => [
+			'tc-EasyEnticingBearM4xHeh',
+		],
+		'VaEaP9IBe08' => [
+			'tc-WildHonorableCakeGrammarKing',
+		],
+		'mAA2oX9mDOw' => [
+			'tc-TrappedFaintBulgogiBigBrother',
+		],
+		'1msTsQksmbI' => [
+			'tc-SteamyViscousGoshawkDancingBaby',
+		],
+		'Ds9NIPna9_4' => [
+			'tc-AbstruseFrailKathyMrDestructoid',
+			'tc-SourManlyMochaBudStar',
+			'tc-PowerfulFriendlyKoalaANELE',
+			'tc-PoliteEnergeticGrouseHassaanChop',
+		],
+		'ExsAYB92whs' => [
+			'tc-SpeedyAssiduousCrabKevinTurtle',
+		],
+		'mL4yeGMg3ms' => [
+			'tc-SuperHappyEmuOMGScoots',
+		],
+		'fufH5ltdn7E' => [
+			'tc-CrepuscularEnergeticPartridgePanicVis',
+			'tc-SparklingGiftedDumplingsSquadGoals',
+		],
+		'rr1UWnrs0d4' => [
+			'tc-TentativeHardPlumberYee',
+			'tc-SquareLovelyFriesBudBlast',
+			'tc-TemperedEnchantingOrangeTBCheesePull',
+			'tc-FrigidFragileCucumberOneHand',
+		],
+		'pKZc4ciFu6Q' => [
+			'tc-HonorableCautiousDonutStoneLightning',
+		],
+		'B5cAjdFTltY' => [
+			'tc-CourageousTardyLarkShazBotstix',
+		],
+		'7EM97GvjRGY' => [
+			'tc-VastAlertBadgerTF2John',
+		],
+		'Yhtu3NBv2NM' => [
+			'tc-HeartlessAntsyMelonCharlieBitMe',
+		],
+		'gNfCEV1J-2Q' => [
+			'tc-ArtisticAthleticCroissantRalpherZ',
+		],
+		'oYVWBcgkahY' => [
+			'tc-ProtectiveWonderfulFrogVoteYea',
+		],
+		'vvRPYyc7sb8' => [
+			'tc-ApatheticExpensiveDiscPeoplesChamp',
+			'tc-WiseToughOstrichYouWHY',
+		],
+		'UjOVdR5tNSw' => [
+			'tc-TsundereProudKiwiRaccAttack',
+			'tc-RichResourcefulSwanRlyTho',
+		],
+		'b7ZVifJXBBg' => [
+			'tc-SavorySlickWombatOSkomodo',
+		],
+		'btJHOT-HkO0' => [
+			'tc-LightAcceptableCheesePermaSmug',
+		],
+		'UOhRWdHvGzc' => [
+			'tc-PlayfulConfidentRabbitCurseLit',
+		],
+		'mf-PgMUVTiI' => [
+			'tc-HomelyHyperGnatDoritosChip',
+			'tc-SpinelessTsundereBurritoDxAbomb',
+		],
+		'wvFR-VL4nc8' => [
+			'tc-BraveThankfulBeefFreakinStinkin',
+		],
+		'omtlLJxraPk' => [
+			'tc-OnerousGlamorousMoonAllenHuhu',
+		],
+		'20nzwUoDWuA' => [
+			'tc-SlickEsteemedTriangleVoteNay',
+		],
+		'uACIFWnIlY0' => [
+			'tc-UglyRacyCaribouYouWHY',
+		],
+		'mZ4l1leFAWY' => [
+			'tc-MildNurturingWoodcockYouWHY',
+			'tc-CoweringHotZebraTheTarFu',
+		],
+		'oYFn3xvAOHs' => [
+			'tc-EnergeticInexpensiveDillCurseLit',
+		],
+		'UhehbJ9kR2c' => [
+			'tc-ElegantKawaiiGnatOneHand',
+		],
+		'My4e5HOzxLc' => [
+			'tc-RespectfulGiftedStaplePicoMause',
+		],
+		'sAHdYX0iwIg' => [
+			'tc-ExuberantAmorphousCarrotNononoCat',
+		],
+		'DTZz5jdnn_s' => [
+			'tc-GoodAnimatedSproutPipeHype',
+		],
+		'AgdOGd32U3w' => [
+			'tc-GeniusConcernedEggDogFace',
+		],
+		'e2YhcCwJNNg' => [
+			'tc-LuckyNastyLionDogFace',
+			'tc-FreezingCuriousHeronDatBoi',
+			'tc-CrunchyGlamorousQuailSwiftRage',
+		],
+		'EbTEcw5zg8k' => [
+			'tc-RacyHilariousMangoStinkyCheese',
+		],
+		'x07FQZjbA_c' => [
+			'tc-CrispySaltyOcelotOSfrog',
+			'tc-CooperativeCrackyAyeayeTheTarFu',
+			'tc-SmallProductiveKaleCclamChamp',
+			'tc-BoredThankfulPistachioJKanStyle',
+		],
+		'ZUAoFCpE1vY' => [
+			'tc-LongOpenFlamingoSMOrc',
+		],
+		'KzQ1E8V06zA' => [
+			'tc-FilthyPerfectDragonSwiftRage',
+		],
+		'85XNSiDpeZw' => [
+			'tc-ConcernedStylishTomatoBabyRage',
+			'tc-PrettyBelovedTermiteOptimizePrime',
+			'tc-PoorAlluringHerdRitzMitz',
+		],
+		'0mvgvUhbUuI' => [
+			'tc-BovineConsiderateSangMVGame',
+			'tc-GrossPoisedAardvarkChocolateRain',
+		],
+		'GaId9klI7ho' => [
+			'tc-FrozenVivaciousLaptopGivePLZ',
+		],
+		'gj-NgdVYap8' => [
+			'tc-FancyPiercingLardOneHand',
+		],
+		'_H3wk4VfjIY' => [
+			'tc-SoftTangentialGaurJonCarnage',
+		],
+		'xFZfkjY3J0c' => [
+			'tc-WanderingBashfulGoatTBCheesePull',
+		],
+		'FUMyJYJr88Y' => [
+			'tc-DarlingSteamyCourgetteOneHand',
+			'tc-HorribleToughMouseThunBeast',
+			'tc-SullenWittyBearHassanChop',
+			'tc-QuaintBeautifulMetalWoofer',
+		],
+		'MmiaI_vhyI0' => [
+			'tc-GoldenTenuousLemurDAESuppy',
+		],
+		'535Zu17HOlQ' => [
+			'tc-ConfidentImpossibleShingleTBTacoLeft',
+			'tc-SnappyExpensiveDootMVGame',
+		],
+		'C1XaJJmvg1M' => [
+			'tc-CleverPluckyOctopusRedCoat',
+		],
+		'_IJsp-Fy1zw' => [
+			'tc-DeliciousStylishOctopusTBTacoRight',
+		],
+		'bvMAe2VTC5A' => [
+			'tc-TriangularColdShingleSquadGoals',
+		],
+		'kZAnBqZybhs' => [
+			'tc-SmokyBreakableAyeayeEagleEye',
+			'tc-SassyLightSkirretOSsloth',
+		],
+		'CN2G6ZH6bmA' => [
+			'tc-KawaiiOddGrasshopperMrDestructoid',
+			'tc-ElegantNaivePorpoiseTF2John',
+		],
+		'TDbNru0heoU' => [
+			'tc-WonderfulNurturingYamYouWHY',
+		],
+		'shEKhZakMxQ' => [
+			'tc-GrotesqueDelightfulLyrebirdPrimeMe',
+		],
+		'xgdgen43IzQ' => [
+			'tc-KathishConcernedWalrusRedCoat',
+		],
+		'-kovZdz9IS8' => [
+			'tc-NeighborlyEnticingMarrowResidentSleeper',
+		],
+		'plexfdPIaSw' => [
+			'tc-BlueMildLaptopHassaanChop',
+		],
+		'EAOiEQn7E5A' => [
+			'tc-FrigidWiseSnakeOSfrog',
+			'tc-ThoughtfulDepressedAlfalfaOSfrog',
+		],
+		'mtE-rHjMsn4' => [
+			'tc-AgitatedAltruisticAnacondaStinkyCheese',
+		],
+		'4f7KWwnXhoU' => [
+			'tc-SeductiveInnocentFerretHeyGirl',
+		],
+		'ITkosdWcGbA' => [
+			'tc-UglyAwkwardCiderSSSsss',
+		],
+		'B5BoBKZ8SF8' => [
+			'tc-ShinyFunnyJellyfishSMOrc',
+		],
+		'y3w-vPtVjog' => [
+			'tc-SpinelessUnsightlyVanillaKeyboardCat',
+		],
+		'SFKNdledOaA' => [
+			'tc-CrypticUnusualPandaArsonNoSexy',
+		],
+		'BmSeFBv2rAQ' => [
+			'tc-FairCallousStingrayHeyGuys',
+		],
+		'iOk7KMpNMEo' => [
+			'tc-OnerousDeterminedMoonRlyTho',
+			'tc-CreativeOptimisticWalrusSwiftRage',
+			'tc-HumbleRenownedTofuLitty',
+		],
+		'vZxhnaT88dc' => [
+			'tc-SparklingFilthyKathyBleedPurple',
+		],
+		'ZnuY8kzdKQU' => [
+			'tc-DullSmokyWaffleDoggo',
+		],
+		'-AjFbGOOAQI' => [
+			'tc-CharmingHeadstrongAsparagusBCouch',
+		],
+		'gAO072mzibQ' => [
+			'tc-BrainyArbitraryEagleBrokeBack',
+			'tc-HomelyCovertParrotNinjaGrumpy',
+			'tc-SmellyCarefulRuffPastaThat',
+			'tc-GenerousSlickKimchiResidentSleeper',
+		],
+		'lVjzwGuhM5I' => [
+			'tc-DifficultDependableGooseAMPEnergyCherry',
+		],
+		'Lk34vKl94hI' => [
+			'tc-ShyDifferentOcelotRalpherZ',
+		],
+		'0S3NrfwpV0c' => [
+			'tc-FreezingBovineRutabagaFutureMan',
+		],
+		'AwfR7ExmwJ0' => [
+			'tc-SeductiveAbstemiousBisonDerp',
+		],
+		'EGl4PxUS0J8' => [
+			'tc-CarefulBashfulHyenaWOOP',
+		],
+		'21diy9LWH8g' => [
+			'tc-InventiveStylishGerbilWow',
+		],
+		'ap-EONXus_4' => [
+			'tc-ThirstyTubularHamMikeHogu',
+		],
+		'HXXn10GhRWU' => [
+			'tc-PeacefulInventiveDogWOOP',
+			'tc-FrailSuaveBeanImGlitch',
+		],
+		'FuUHMwoNA0s' => [
+			'tc-FunOilyWolverineCorgiDerp',
+			'tc-NeighborlyCharmingBasenjiRlyTho',
+			'tc-AbnegateEndearingBottleKlappa',
+		],
+		'LSc7QIlaGg4' => [
+			'tc-AlertPleasantReindeerPupper',
+		],
+		'TPuPvbEh3dQ' => [
+			'tc-ArtisticCrispyGrasshopperBrainSlug',
+		],
+		'xdj5fWV5VK8' => [
+			'tc-EmpathicExuberantWeaselAllenHuhu',
+		],
+		'Kk0ULnBXeXE' => [
+			'tc-CourteousSmellyNewtTTours',
+		],
+		'vg0kvdyXANY' => [
+			'tc-UgliestArbitraryOwlDatBoi',
+		],
+		'lXL_N-a887E' => [
+			'tc-AltruisticSuperBobaBudBlast',
+		],
+		'jJOvimJ-Jcc' => [
+			'tc-EntertainingTenuousCasettePeteZaroll',
+		],
+		'YwYLlE8veKs' => [
+			'tc-ShakingBlushingLampNerfRedBlaster',
+		],
+		's55I90_ELrQ' => [
+			'tc-VibrantExpensiveRaisinStinkyCheese',
+		],
+		'dfHUHMQ9JQE' => [
+			'tc-SeductiveImpartialCobblerOptimizePrime',
+		],
+		'3b1QpgsICwA' => [
+			'tc-AdventurousUninterestedBasenji4Head',
+		],
+		'aSiqmneWXcg' => [
+			'tc-ExuberantDeadDinosaurBatChest',
+		],
+		'v2qV7Kfbcac' => [
+			'tc-InexpensiveChillyWheelItsBoshyTime',
+		],
+		'aDlrBrPtdfw' => [
+			'tc-PoliteTallLocustStoneLightning',
+		],
+		'k6ZS5wzlNKs' => [
+			'tc-ArtisticCoweringTortoiseRitzMitz',
+		],
+		'r6XZwAA1Cvk' => [
+			'tc-BusyPowerfulWombatSoonerLater',
+		],
+		'hRe0QvJDjsg' => [
+			'tc-CulturedEnthusiasticNoodleWTRuck',
+		],
+		'QyKyNbHPaHg' => [
+			'tc-CharmingRespectfulFlyFUNgineer',
+		],
+		'RuQcbza7pVw' => [
+			'tc-LivelyHeartlessRutabagaWholeWheat',
+		],
+		'dTd-M1qGkfU' => [
+			'tc-WanderingLitigiousDurianRalpherZ',
+		],
+		'1uYhNDc8E1M' => [
+			'tc-WealthyPunchyAxePeoplesChamp',
+		],
+		'e4iY6zivsbU' => [
+			'tc-CrowdedRespectfulNostrilNotATK',
+		],
+		'_IL63Q90d1k' => [
+			'tc-ArbitraryIronicClipsdadPicoMause',
+		],
+		'GgoQS6sOADQ' => [
+			'tc-BusyHandsomeSmoothiePartyTime',
+		],
+		'73nEuwO7HTA' => [
+			'tc-HandsomeAnnoyingLEDPraiseIt',
+		],
+		'8Igl_hPAXPs' => [
+			'tc-DarlingPoisedPotCopyThis',
+		],
+		'ZHumj5MeIcw' => [
+			'tc-DullScrumptiousEagleStinkyCheese',
+		],
+		'6Tt6xgjgn7k' => [
+			'tc-TsundereOutstandingNuggetsFUNgineer',
+		],
+		'08PQFXaEac8' => [
+			'tc-VenomousProtectiveDonutTheTarFu',
+		],
+		'DdGctBLngpE' => [
+			'tc-GeniusInventiveMomPRChase',
+		],
+		'vSFTo-1j-SA' => [
+			'tc-DiligentDeafMangoPogChamp',
+		],
+		'wTbRzvQ8ZLY' => [
+			'tc-WanderingGloriousWallabyPunchTrees',
+		],
+		'AgdOGd32U3w' => [
+			'tc-GeniusConcernedEggDogFace',
+		],
+		'ScNrW0Th3wg' => [
+			'tc-SpinelessSneakySalsifyNerfRedBlaster',
+		],
+		'eSN0HQlSJBs' => [
+			'tc-AgitatedProtectiveBaguetteRiPepperonis',
+			'tc-NaiveProudZebraWOOP',
+		],
+	],
+];
+
+$cache['legacyAlts'] = $cache['legacyAlts'] ?? [];
+
+foreach ($legacy_alt_forms_of_video as $date => $data) {
+	foreach ($data as $video_id => $legacy_ids) {
+		if (
+			! isset($cache['playlistItems'][$video_id])
+			&& ! isset($main['playlistItems'][$video_id])
+		) {
+			echo
+				$video_id,
+				' not in cache!',
+				"\n";
+		}
+
+		foreach ($legacy_ids as $legacy_video_id) {
+			if (
+				! isset($cache['playlistItems'][$legacy_video_id])
+				&& ! isset($main['playlistItems'][$legacy_video_id])
+			) {
+				throw new RuntimeException(
+					'Legacy ID not found!'
+				);
+			}
+		}
+
+		if ( ! isset($cache['legacyAlts'][$video_id])) {
+			$cache['legacyAlts'][$video_id] = [];
+		}
+
+		$cache['legacyAlts'][$video_id] = array_unique(array_merge(
+			$cache['legacyAlts'][$video_id],
+			$legacy_ids
+		));
+
+		sort($cache['legacyAlts'][$video_id]);
+	}
+}
 
 file_put_contents(
 	__DIR__ . '/cache-injection.json',

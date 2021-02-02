@@ -140,6 +140,10 @@ function inject_caches(array $cache, array ...$caches) : array
 		$cache['stubPlaylists'] = [];
 	}
 
+	if ( ! isset($cache['legacyAlts'])) {
+		$cache['legacyAlts'] = [];
+	}
+
 	foreach ($caches as $inject) {
 		foreach ($inject['playlists'] as $playlist_id => $playlist_data) {
 			if ( ! isset($cache['playlists'][$playlist_id])) {
@@ -185,6 +189,21 @@ function inject_caches(array $cache, array ...$caches) : array
 						)
 					);
 				}
+			}
+		}
+
+		if (isset($inject['legacyAlts'])) {
+			foreach ($inject['legacyAlts'] as $video_id => $legacy_ids) {
+				if ( ! isset($cache['legacyAlts'][$video_id])) {
+					$cache['legacyAlts'][$video_id] = [];
+				}
+
+				$cache['legacyAlts'][$video_id] = array_unique(array_merge(
+					$cache['legacyAlts'][$video_id],
+					$legacy_ids
+				));
+
+				sort($cache['legacyAlts'][$video_id]);
 			}
 		}
 	}
