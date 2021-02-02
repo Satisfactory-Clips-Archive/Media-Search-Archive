@@ -107,7 +107,32 @@ foreach (
 	$topics[$playlist_id] = implode('/', array_map([$slugify, 'slugify'], $slug));
 }
 
-foreach ($cache['playlistItems'] as $video_id => $video_data) {
+$video_ids = array_keys($cache['playlistItems']);
+
+$has_legacy_alts = array_filter(
+	$video_ids,
+	static function (string $maybe) use ($cache) : bool {
+		return isset($cache['legacyAlts'][$maybe]);
+	}
+);
+
+if (count($has_legacy_alts)) {
+	$legacy_alts = array_unique(array_reduce(
+		$has_legacy_alts,
+		static function (
+			array $out,
+			string $video_id
+		) use ($cache) : array {
+			return array_merge($out, $cache['legacyAlts'][$video_id]);
+		},
+		[]
+	));
+
+	$video_ids = array_diff($video_ids, $legacy_alts);
+}
+
+foreach ($video_ids as $video_id) {
+	$video_data = $cache['playlistItems'][$video_id];
 	[, $title] = $video_data;
 
 	$urls = [video_url_from_id($video_id)];
@@ -180,6 +205,10 @@ foreach ($cache['playlistItems'] as $video_id => $video_data) {
 		'urls' => $urls,
 		'topics' => $topics_for_video,
 		'quotes' => $quotes,
+		'alts' => array_map(
+			__NAMESPACE__ . '\\vendor_prefixed_video_id',
+			($cache['legacyAlts'][$video_id] ?? [])
+		),
 	];
 }
 
