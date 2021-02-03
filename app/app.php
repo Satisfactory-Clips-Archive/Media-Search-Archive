@@ -770,6 +770,11 @@ $topic_slug_history = json_decode(
 );
 
 if ($transcriptions) {
+	$skipping = json_decode(
+		file_get_contents(__DIR__ . '/skipping-transcriptions.json'),
+		true
+	);
+
 	$checked = 0;
 
 	$all_video_ids = array_keys($video_playlists);
@@ -777,12 +782,24 @@ if ($transcriptions) {
 	natcasesort($all_video_ids);
 
 	foreach ($all_video_ids as $video_id) {
+		if (in_array($video_id, $skipping, true)) {
+			echo
+				'skipping captions for ',
+				$video_id,
+				' (pre-flagged)',
+				"\n";
+
+			continue;
+		}
+
 		$transcriptions_file = transcription_filename($video_id);
 
 		$caption_lines = captions($video_id);
 
 		if (count($caption_lines) < 1) {
 			echo 'skipping captions for ', $video_id, "\n";
+
+			$skipping[] = $video_id;
 
 			continue;
 		}
@@ -958,6 +975,14 @@ if ($transcriptions) {
 			);
 		}
 	}
+
+	$skipping = array_unique($skipping);
+	sort($skipping);
+
+	file_put_contents(__DIR__ . '/skipping-transcriptions.json', json_encode(
+		$skipping,
+		JSON_PRETTY_PRINT
+	));
 
 	echo
 		sprintf(
