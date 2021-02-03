@@ -996,28 +996,7 @@ if ($transcriptions) {
 
 foreach (array_keys($playlists) as $playlist_id) {
 	$video_ids = $cache['playlists'][$playlist_id][2];
-
-	$has_legacy_alts = array_filter(
-		$video_ids,
-		static function (string $maybe) use ($cache) : bool {
-			return isset($cache['legacyAlts'][$maybe]);
-		}
-	);
-
-	if (count($has_legacy_alts)) {
-		$legacy_alts = array_unique(array_reduce(
-			$has_legacy_alts,
-			static function (
-				array $out,
-				string $video_id
-			) use ($cache) : array {
-				return array_merge($out, $cache['legacyAlts'][$video_id]);
-			},
-			[]
-		));
-
-		$video_ids = array_diff($video_ids, $legacy_alts);
-	}
+	$video_ids = filter_video_ids_for_legacy_alts($cache, ...$video_ids);
 
 	usort($video_ids, static function (string $a, string $b) use ($cache) : int {
 		return strnatcasecmp(

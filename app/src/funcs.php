@@ -652,3 +652,35 @@ function filter_nested(
 
 	return $filtered;
 }
+
+/**
+ * @param array{legacyAlts:array<string, list<string>} $cache
+ */
+function filter_video_ids_for_legacy_alts(
+	array $cache,
+	string ...$video_ids
+) : array {
+	$has_legacy_alts = array_filter(
+		$video_ids,
+		static function (string $maybe) use ($cache) : bool {
+			return isset($cache['legacyAlts'][$maybe]);
+		}
+	);
+
+	if (count($has_legacy_alts)) {
+		$legacy_alts = array_unique(array_reduce(
+			$has_legacy_alts,
+			static function (
+				array $out,
+				string $video_id
+			) use ($cache) : array {
+				return array_merge($out, $cache['legacyAlts'][$video_id]);
+			},
+			[]
+		));
+
+		$video_ids = array_diff($video_ids, $legacy_alts);
+	}
+
+	return $video_ids;
+}
