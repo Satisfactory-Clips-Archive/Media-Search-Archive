@@ -1675,6 +1675,11 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		}
 
 		foreach ($playlist_items_data as $playlist_id => $video_ids) {
+			$video_ids = filter_video_ids_for_legacy_alts(
+				$cache,
+				...$video_ids
+			);
+
 			file_put_contents(
 				$slug_path,
 				(
