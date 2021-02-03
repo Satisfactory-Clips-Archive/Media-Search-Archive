@@ -595,6 +595,13 @@ $global_topic_hierarchy = [
 			'Features',
 			'Buildings',
 		],
+		'PLbjDnnBIxiEoN8SCD5zn_8BK5d2HV34sw' => [ // Baine
+			'Community',
+		],
+		'PLbjDnnBIxiEr6QJ8QlJx7grzrcplzUTDt' => [ // Zip Lines
+			'Features',
+			'Equipment',
+		],
 	],
 ];
 
