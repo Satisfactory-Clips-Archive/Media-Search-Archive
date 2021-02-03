@@ -816,9 +816,10 @@ if ($transcriptions) {
 				'Video found on multiple dates!'
 			);
 		} elseif (count($maybe_playlist_id) < 1) {
-			throw new RuntimeException(
-				'Video found on no dates!'
-			);
+			throw new RuntimeException(sprintf(
+				'Video found on no dates! (%s)',
+				$video_id
+			));
 		}
 
 		[$playlist_id] = $maybe_playlist_id;
