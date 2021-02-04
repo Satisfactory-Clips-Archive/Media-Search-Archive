@@ -623,6 +623,10 @@ $global_topic_hierarchy = [
 			'Transportation',
 			'Vehicles',
 		],
+		'PLbjDnnBIxiEopYhuGHxbk-YOT6Fyy0pU8' => [ // Custom Component: Instanced Spline Mesh
+			'Technology',
+			'Unreal Engine',
+		],
 	],
 ];
 
