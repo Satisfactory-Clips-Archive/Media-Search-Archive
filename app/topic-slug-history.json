@@ -96,7 +96,8 @@
         "features\/accessibility\/arachnophobia-mode": 1611444659
     },
     "PLbjDnnBIxiErz2wvc36rgBLUdiLdLIQdb": {
-        "features\/autosave": 1611444659
+        "features\/autosave": 1611444659,
+        "features\/save-system\/autosave": 1612473037
     },
     "Buildables": {
         "features\/buildables": 1611444659
@@ -601,5 +602,26 @@
     },
     "PLbjDnnBIxiEr6QJ8QlJx7grzrcplzUTDt": {
         "features\/equipment\/zip-lines": 1612350490
+    },
+    "PLbjDnnBIxiEopYhuGHxbk-YOT6Fyy0pU8": {
+        "custom-component-instanced-spline-mesh": 1612473037
+    },
+    "PLbjDnnBIxiEoVPxq0wwyMpJfdC5xitGeZ": {
+        "features\/save-system": 1612473037
+    },
+    "PLbjDnnBIxiEpO7bRoOBAsKPkxnUtC0Rdp": {
+        "features\/save-system\/cloud-sync": 1612473037
+    },
+    "PLbjDnnBIxiEqPm28aPUU6rg5QQLbrnpRy": {
+        "features\/transportation\/vehicles\/autopilot": 1612473037
+    },
+    "PLbjDnnBIxiEqfDAWTcOyXdQBpZx1oiEim": {
+        "features\/transportation\/vehicles\/tractor": 1612473037
+    },
+    "PLbjDnnBIxiEo9zj7d7p7rxPjqfaVlOwuo": {
+        "october-9th-2020-programming-stream": 1612473037
+    },
+    "PLbjDnnBIxiEozm5BT2Qi4Mvu9uI6ga2uJ": {
+        "technology\/linux": 1612473037
     }
 }

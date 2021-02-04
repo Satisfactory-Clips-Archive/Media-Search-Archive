@@ -438,6 +438,7 @@ $global_topic_hierarchy = [
 		],
 		'PLbjDnnBIxiErz2wvc36rgBLUdiLdLIQdb' => [ // Autosave
 			'Features',
+			'Save System',
 		],
 		'PLbjDnnBIxiEqDSLRIdyHmUlI71j458DqR' => [ // Lights
 			'Features',
@@ -601,6 +602,26 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEr6QJ8QlJx7grzrcplzUTDt' => [ // Zip Lines
 			'Features',
 			'Equipment',
+		],
+		'PLbjDnnBIxiEozm5BT2Qi4Mvu9uI6ga2uJ' => [ // Linux
+			'Technology',
+		],
+		'PLbjDnnBIxiEoVPxq0wwyMpJfdC5xitGeZ' => [ // Save System
+			'Features',
+		],
+		'PLbjDnnBIxiEpO7bRoOBAsKPkxnUtC0Rdp' => [ // Cloud Sync
+			'Features',
+			'Save System',
+		],
+		'PLbjDnnBIxiEqfDAWTcOyXdQBpZx1oiEim' => [ // Tractor
+			'Features',
+			'Transportation',
+			'Vehicles',
+		],
+		'PLbjDnnBIxiEqPm28aPUU6rg5QQLbrnpRy' => [ // Autopilot
+			'Features',
+			'Transportation',
+			'Vehicles',
 		],
 	],
 ];

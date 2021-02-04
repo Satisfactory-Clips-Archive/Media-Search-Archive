@@ -448,6 +448,13 @@ $playlist_history = json_decode(
 );
 
 foreach ($playlists as $playlist_id => $path) {
+	if ( ! is_string($path)) {
+		throw new RuntimeException(sprintf(
+			'Invalid path? %s',
+			$playlist_id
+		));
+	}
+
 	$playlist_date = mb_substr(basename($path), 0, -3);
 
 	if ( ! isset($playlist_history[$playlist_id])) {
