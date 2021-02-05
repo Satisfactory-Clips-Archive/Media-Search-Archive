@@ -1879,3 +1879,234 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		}
 	}
 }
+
+
+$externals = get_externals();
+
+foreach ($externals as $date => $externals_data) {
+	[$video_id, $externals_csv, $data] = $externals_data;
+
+	$captions = raw_captions($video_id);
+
+	$filename = (
+		__DIR__
+		. '/../coffeestainstudiosdevs/satisfactory/'
+		. $date .
+		'.md'
+	);
+
+	$friendly_date = date('F jS, Y', (int) strtotime($date));
+
+	file_put_contents(
+		$filename,
+		(
+			'---' . "\n"
+			. sprintf('title: "%s"', $data['title']) . "\n"
+			. sprintf('date: "%s"', $date) . "\n"
+			. 'layout: livestream' . "\n"
+			. '---' . "\n"
+			. sprintf(
+				'# %s %s' . "\n",
+				$friendly_date,
+				$data['title']
+			)
+		)
+	);
+
+	$captions_with_start_time = [];
+
+	foreach ($captions[1] as $caption_line) {
+
+		$attrs = iterator_to_array(
+			$caption_line->attributes()
+		);
+
+		$captions_with_start_time[] = [
+			(string) $attrs['start'],
+			(string) $attrs['dur'],
+			preg_replace_callback(
+				'/&#(\d+);/',
+				static function (array $match) : string {
+					return chr((int) $match[1]);
+				},
+				(string) $caption_line
+			),
+		];
+	}
+
+	$csv_captions = array_map(
+		static function (array $csv_line) use ($captions_with_start_time) : array {
+			$csv_line_captions = implode("\n", array_map(
+				static function (array $data) : string {
+					return $data[2];
+				},
+				array_filter(
+					$captions_with_start_time,
+					/**
+					 * @param array{0:numeric-string, 1:numeric-string, 2:string} $maybe
+					 */
+					static function (array $maybe) use ($csv_line) : bool {
+						[$start, $end] = $csv_line;
+
+						$start = (float) $start;
+
+						$from = (float) $maybe[0];
+						$to = $from + (float) $maybe[1];
+
+						if ('' === $end) {
+							return $from >= $start;
+						}
+
+						return ($from >= $start && $to <= (float) $end);
+					}
+				)
+			));
+
+			$csv_line[] = $csv_line_captions;
+
+			return $csv_line;
+		},
+		array_filter(
+			$externals_csv,
+			static function (int $k) use ($data) : bool {
+				return ! $data['skip'][$k];
+			},
+			ARRAY_FILTER_USE_KEY
+		)
+	);
+
+	foreach ($externals_csv as $i => $line) {
+		[$start, $end, $clip_title] = $line;
+
+		$start = (float) ($start ?: '0.0');
+
+		$start_minutes = str_pad((string) floor($start / 60), 2, '0', STR_PAD_LEFT);
+		$start_seconds = str_pad((string) ($start % 60), 2, '0', STR_PAD_LEFT);
+
+		$clip_title_maybe = $clip_title;
+
+		if (isset($csv_captions[$i])) {
+			$basename = sprintf(
+				'%s,%s.md',
+				$video_id,
+				$start . ('' === $end ? '' : (',' . $end))
+			);
+
+			$clip_title_maybe = sprintf(
+				'[%s](./transcriptions/%s)',
+				$clip_title,
+				$basename
+			);
+
+			file_put_contents(
+				(
+					__DIR__
+					. '/../coffeestainstudiosdevs/satisfactory/transcriptions/'
+					. $basename
+				),
+				(
+					'---' . "\n"
+					. sprintf(
+						'title: "%s"' . "\n",
+						$friendly_date,
+						$clip_title
+					)
+					. sprintf('date: "%s"', $date) . "\n"
+					. 'layout: transcript' . "\n"
+					. 'topics: ' . "\n"
+					. '    - "'
+					. implode('"' . "\n" . '    - "', array_map(
+						static function (
+							string $topic
+						) use (
+							$cache,
+							$global_topic_hierarchy,
+							$not_a_livestream,
+							$not_a_livestream_date_lookup,
+							$slugify
+						) : string {
+							return topic_to_slug(
+								determine_playlist_id(
+									$topic,
+									[],
+									$cache,
+									$global_topic_hierarchy,
+									$not_a_livestream,
+									$not_a_livestream_date_lookup
+								)[0],
+								$cache,
+								$global_topic_hierarchy['satisfactory'],
+								$slugify
+							)[0];
+						},
+						$data['topics'][$i]
+					))
+					. '"' . "\n"
+					. '---' . "\n"
+					. sprintf(
+						'# [%s %s](../%s.md)' . "\n",
+						$friendly_date,
+						$data['title'],
+						$date
+					)
+					. sprintf('## %s', $clip_title) .  "\n"
+					. '### Topics' . "\n"
+					. implode("\n", array_map(
+						static function (
+							string $topic
+						) use (
+							$cache,
+							$global_topic_hierarchy,
+							$not_a_livestream,
+							$not_a_livestream_date_lookup,
+							$slugify
+						) : string {
+							[$slug, $parts] = topic_to_slug(
+								determine_playlist_id(
+									$topic,
+									[],
+									$cache,
+									$global_topic_hierarchy,
+									$not_a_livestream,
+									$not_a_livestream_date_lookup
+								)[0],
+								$cache,
+								$global_topic_hierarchy['satisfactory'],
+								$slugify
+							);
+
+							return sprintf(
+								'* [%s](../topics/%s.md)',
+								implode(' > ', $parts),
+								$slug
+							);
+						},
+						$data['topics'][$i]
+					))
+					. "\n\n"
+					. '### Transcript' . "\n\n"
+					. implode("\n", array_map(
+						static function (string $line) : string {
+							return sprintf('> %s', $line);
+						},
+						explode("\n", $csv_captions[$i][3])
+					))
+					. "\n"
+				)
+			);
+		}
+
+		file_put_contents(
+			$filename,
+			sprintf(
+				'* [%s:%s](https://youtu.be/%s?t=%s) %s' . "\n",
+				$start_minutes,
+				$start_seconds,
+				$video_id,
+				floor($start),
+				$clip_title_maybe
+			),
+			FILE_APPEND
+		);
+	}
+}

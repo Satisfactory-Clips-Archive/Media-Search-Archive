@@ -708,9 +708,42 @@ function captions(string $video_id) : array
 		return [];
 	}
 
-	$html_cache = __DIR__ . '/captions/' . $video_id . '.html';
+	$maybe = raw_captions($video_id);
+
+	if ([] === $maybe) {
+		return [];
+	}
+
+	[, $xml_lines] = $maybe;
+
+	$lines = [];
+
+	foreach ($xml_lines as $line) {
+		$lines[] = preg_replace_callback(
+			'/&#(\d+);/',
+			static function (array $match) : string {
+				return chr((int) $match[1]);
+			},
+			(string) $line
+		);
+	}
+
+	return $lines;
+}
+
+/**
+ * @return array<empty, empty>|array{0:SimpleXMLElement, 1:list<SimpleXMLElement>}
+ */
+function raw_captions(string $video_id) : array
+{
+	$video_id = preg_replace('/^yt-(.{11})/', '$1', $video_id);
+
+	$html_cache = __DIR__ . '/../captions/' . $video_id . '.html';
+
 
 	if ( ! is_file($html_cache)) {
+
+
 		$page = file_get_contents(
 			'https://youtube.com/watch?' .
 			http_build_query([
@@ -737,7 +770,7 @@ function captions(string $video_id) : array
 		return [];
 	}
 
-	$tt_cache = __DIR__ . '/captions/' . $video_id . '.xml';
+	$tt_cache = __DIR__ . '/../captions/' . $video_id . '.xml';
 
 	if ( ! is_file($tt_cache)) {
 		$tt = file_get_contents(str_replace('\u0026', '&', $matches[0][1]));
@@ -747,20 +780,122 @@ function captions(string $video_id) : array
 		$tt = file_get_contents($tt_cache);
 	}
 
-	/** @var list<string> */
+	/** @var list<SimpleXMLElement> */
 	$lines = [];
 
 	$xml = new SimpleXMLElement($tt);
 
 	foreach ($xml->children() as $line) {
-		$lines[] = preg_replace_callback(
-			'/&#(\d+);/',
-			static function (array $match) : string {
-				return chr((int) $match[1]);
-			},
-			(string) $line
-		);
+		$lines[] = $line;
 	}
 
-	return $lines;
+	return [$xml, $lines];
+}
+
+
+/**
+ * @return array<
+ *	string,
+ *	array{
+ *		0:string,
+ *		1:list<array{
+ *			0:numeric-string|empty-string,
+ *			1:numeric-string|empty-string,
+ *			2:string
+ *		}>,
+ *		2:array{
+ *			title:string,
+ *			skip:list<bool>,
+ *			topics:array<int, list<string>
+ *		}
+ *	}
+ * >
+ */
+function get_externals() : array
+{
+	return array_reduce(
+		array_filter(
+			glob(__DIR__ . '/../data/*/*.csv'),
+			static function (string $maybe) : bool {
+				$dir = dirname($maybe);
+				$info = pathinfo($maybe, PATHINFO_FILENAME);
+
+				return
+					preg_match('/^(?:yt)\-/', $info)
+					&& is_file($dir . '/' . $info . '.json');
+			}
+		),
+		/**
+		 * @param array<
+		 *	string,
+		 *	array{
+		 *		0:string,
+		 *		1:list<array{
+		 *			0:numeric-string|empty-string,
+		 *			1:numeric-string|empty-string,
+		 *			2:string
+		 *		}>,
+		 *		2:array{
+		 *			title:string,
+		 *			skip:list<bool>,
+		 *			topics:array<int, list<string>
+		 *		}
+		 *	}
+		 * > $out
+		 * @return array<
+		 *	string,
+		 *	array{
+		 *		0:string,
+		 *		1:list<array{
+		 *			0:numeric-string|empty-string,
+		 *			1:numeric-string|empty-string,
+		 *			2:string
+		 *		}>,
+		 *		2:array{
+		 *			title:string,
+		 *			skip:list<bool>,
+		 *			topics:array<int, list<string>
+		 *		}
+		 *	}
+		 * >
+		 */
+		static function (array $out, string $path) : array {
+			$date = pathinfo(dirname($path), PATHINFO_FILENAME);
+			$unix = strtotime($date);
+
+			if (false === $unix) {
+				throw new RuntimeException(sprintf(
+					'Unsupported date found for: %s',
+					$path
+				));
+			}
+
+			$video_id = pathinfo($path, PATHINFO_FILENAME);
+
+			$fp = fopen($path, 'rb');
+
+			$csv = [];
+
+			while($csv[] = fgetcsv($fp, 0, ',', '"', '"')) {}
+
+			fclose($fp);
+
+			$out[$date] = [
+				$video_id,
+				array_filter($csv, 'is_array'),
+				json_decode(
+					file_get_contents(
+						dirname($path)
+						. '/'
+						. $video_id
+						. '.json'
+					),
+					true
+				),
+			];
+
+			return $out;
+		},
+		[]
+	);
 }
