@@ -2,6 +2,7 @@
 <meta property="og:url" content="https://archive.satisfactory.video{{page.url}}">
 <meta property="og:title" content="{{title}}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://archive.satisfactory.video{{page.url}}">
 {% if page.url in jsonld %}<meta
 	name="description"
 	content="{{jsonld[page.url] | jsonld_description }}"
@@ -43,4 +44,8 @@
 {% if page.url in twitter %}{% for key,value in twitter[page.url] %}<meta
 	name="{{key}}"
 	content="{{value}}"
+>{% endfor %}{% endif %}
+{% if page.url in tcn %}{% for alt_video_url in tcn[page.url].alts %}<link
+	rel="alternate"
+	href="{{alt_video_url}}"
 >{% endfor %}{% endif %}

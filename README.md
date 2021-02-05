@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2021-02-05
+* Updated build to use alternate urls from legacy urls
+* Added source video url to transcripts
+
 ## 2021-02-01
 * Updated build without static gzip assets due to widespread support for brotli
 
