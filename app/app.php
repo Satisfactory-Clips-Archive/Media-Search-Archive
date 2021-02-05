@@ -24,12 +24,15 @@ use function array_unique;
 use function array_values;
 use function asort;
 use function basename;
+use function chr;
 use function count;
 use function date;
 use function dirname;
+use function explode;
 use const FILE_APPEND;
 use function file_get_contents;
 use function file_put_contents;
+use function floor;
 use Google_Client;
 use Google_Service_YouTube;
 use Google_Service_YouTube_Playlist;
@@ -44,6 +47,8 @@ use function implode;
 use function in_array;
 use function is_dir;
 use function is_file;
+use function is_string;
+use function iterator_to_array;
 use function json_decode;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
@@ -53,9 +58,13 @@ use function min;
 use function mkdir;
 use function natcasesort;
 use function natsort;
+use function preg_replace_callback;
 use function realpath;
 use RuntimeException;
+use function sort;
 use function sprintf;
+use function str_pad;
+use const STR_PAD_LEFT;
 use function str_repeat;
 use function str_replace;
 use function strnatcasecmp;
@@ -1880,7 +1889,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	}
 }
 
-
 $externals = get_externals();
 
 foreach ($externals as $date => $externals_data) {
@@ -1916,7 +1924,6 @@ foreach ($externals as $date => $externals_data) {
 	$captions_with_start_time = [];
 
 	foreach ($captions[1] as $caption_line) {
-
 		$attrs = iterator_to_array(
 			$caption_line->attributes()
 		);
@@ -1957,7 +1964,7 @@ foreach ($externals as $date => $externals_data) {
 							return $from >= $start;
 						}
 
-						return ($from >= $start && $to <= (float) $end);
+						return $from >= $start && $to <= (float) $end;
 					}
 				)
 			));
@@ -2049,7 +2056,7 @@ foreach ($externals as $date => $externals_data) {
 						$data['title'],
 						$date
 					)
-					. sprintf('## %s', $clip_title) .  "\n"
+					. sprintf('## %s', $clip_title) . "\n"
 					. '### Topics' . "\n"
 					. implode("\n", array_map(
 						static function (
