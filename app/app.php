@@ -1986,12 +1986,15 @@ foreach ($externals as $date => $externals_data) {
 		[$start, $end, $clip_title] = $line;
 
 		$embed_data = [
-			'start' => $start ?: '0',
+			'autoplay' => 1,
+			'start' => floor($start ?: '0'),
 			'end' => $end,
 		];
 
 		if ('' === $embed_data['end']) {
 			unset($embed_data['end']);
+		} else {
+			$embed_data['end'] = ceil($embed_data['end']);
 		}
 
 		$start = (float) ($start ?: '0.0');
