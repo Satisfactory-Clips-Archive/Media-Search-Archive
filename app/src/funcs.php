@@ -73,6 +73,28 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		return $overrides[$video_id];
 	}
 
+	if (preg_match('/^yt-.{11},\d+(?:\.\d+)(?:,\d+(?:\.\d+))/', $video_id)) {
+		$parts = explode(',', $video_id);
+		[$video_id, $start] = $parts;
+
+		$end = $parts[2] ?? null;
+
+		$embed_data = [
+			'autoplay' => 1,
+			'start' => floor($start ?: '0'),
+		];
+
+		if (isset($end)) {
+			$embed_data['end'] = ceil($end);
+		}
+
+		return sprintf(
+			'https://youtube.com/embed/%s?%s' . "\n",
+			preg_replace('/^yt-(.{11})/', '$1', $video_id),
+			http_build_query($embed_data)
+		);
+	}
+
 	if (0 === mb_strpos($video_id, 'tc-')) {
 		return sprintf(
 			'https://clips.twitch.tv/%s',
@@ -118,6 +140,29 @@ function maybe_transcript_link_and_video_url(
 		(1 <= $repeat_directory_up)
 			? str_repeat('../', $repeat_directory_up)
 			: './';
+
+	if (preg_match('/^yt-.{11},\d+(?:\.\d+)(?:,\d+(?:\.\d+))/', $video_id)) {
+		if (
+			is_file(
+				__DIR__
+				. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
+				. $video_id
+				. '.md'
+			)
+		) {
+			$initial_segment = (
+				'['
+				. $title
+				. ']('
+				. $directory_up
+				. 'transcriptions/'
+				. $video_id
+				. '.md)'
+			);
+		}
+
+		return $initial_segment . ' ' . $url;
+	}
 
 	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
 		if (is_file(transcription_filename($video_id))) {
@@ -207,7 +252,7 @@ function inject_caches(array $cache, array ...$caches) : array
 
 		foreach ($inject['videoTags'] as $video_id => $video_data) {
 			if ( ! isset($cache['videoTags'][$video_id])) {
-				$cache['videoTags'][$video_id] = $video_id;
+				$cache['videoTags'][$video_id] = $video_data;
 			} else {
 				$cache['videoTags'][$video_id][1] = array_unique(
 					array_merge(
@@ -928,14 +973,27 @@ function get_externals() : array
 	);
 }
 
+/**
+ * @return array{
+ *	playlists:array<string, array{0:string, 1:string, 1:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>
+ * }
+ */
 function process_externals(
 	array $cache,
 	array $global_topic_hierarchy,
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup,
 	Slugify $slugify
-) : void {
+) : array {
 	$externals = get_externals();
+
+	$inject = [
+		'playlists' => [],
+		'playlistItems' => [],
+		'videoTags' => [],
+	];
 
 	foreach ($externals as $date => $externals_data) {
 		[$video_id, $externals_csv, $data] = $externals_data;
@@ -1028,8 +1086,26 @@ function process_externals(
 			)
 		);
 
+		$inject['playlists'][$date] = ['', $data['title'], array_map(
+			static function (int $i) use ($externals_csv, $video_id) : string {
+				[$start, $end, $clip_title] = $externals_csv[$i];
+
+				return sprintf(
+					'%s,%s',
+					$video_id,
+					$start . ('' === $end ? '' : (',' . $end))
+				);;
+			},
+			array_keys($csv_captions)
+		)];
+
 		foreach ($externals_csv as $i => $line) {
 			[$start, $end, $clip_title] = $line;
+			$clip_id = sprintf(
+				'%s,%s',
+				$video_id,
+				$start . ('' === $end ? '' : (',' . $end))
+			);
 
 			$embed_data = [
 				'autoplay' => 1,
@@ -1054,16 +1130,35 @@ function process_externals(
 
 			if (isset($csv_captions[$i])) {
 				$basename = sprintf(
-					'%s,%s.md',
-					$video_id,
-					$start . ('' === $end ? '' : (',' . $end))
+					'%s.md',
+					$clip_id
 				);
+
+				$inject['playlistItems'][$clip_id] = ['', $clip_title];
+				$inject['videoTags'][$clip_id] = ['', []];
 
 				$clip_title_maybe = sprintf(
 					'[%s](./transcriptions/%s)',
 					$clip_title,
 					$basename
 				);
+
+				foreach ($data['topics'][$i] as $topic) {
+					[$playlist_id] = determine_playlist_id(
+						$topic,
+						[],
+						$cache,
+						$global_topic_hierarchy,
+						$not_a_livestream,
+						$not_a_livestream_date_lookup
+					);
+
+					if ( ! isset($inject['playlists'][$playlist_id])) {
+						$inject['playlists'][$playlist_id] = ['', $topic, []];
+					}
+
+					$inject['playlists'][$playlist_id][2][] = $clip_id;
+				}
 
 				file_put_contents(
 					(
@@ -1182,4 +1277,6 @@ function process_externals(
 			);
 		}
 	}
+
+	return $inject;
 }

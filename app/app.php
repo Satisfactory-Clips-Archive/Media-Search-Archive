@@ -552,6 +552,16 @@ foreach ($injected_cache['videoTags'] as $video_id => $data) {
 
 $cache = inject_caches($cache, $injected_cache);
 
+$externals_cache = process_externals(
+	$cache,
+	$global_topic_hierarchy,
+	$not_a_livestream,
+	$not_a_livestream_date_lookup,
+	$slugify
+);
+
+$cache = inject_caches($cache, $externals_cache);
+
 $no_topics = [];
 
 foreach (
@@ -1010,6 +1020,10 @@ if ($transcriptions) {
 }
 
 foreach (array_keys($playlists) as $playlist_id) {
+	if (isset($externals_cache['playlists'][$playlist_id])) {
+		continue;
+	}
+
 	$video_ids = $cache['playlists'][$playlist_id][2];
 	$video_ids = filter_video_ids_for_legacy_alts($cache, ...$video_ids);
 
@@ -1888,11 +1902,3 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		}
 	}
 }
-
-process_externals(
-	$cache,
-	$global_topic_hierarchy,
-	$not_a_livestream,
-	$not_a_livestream_date_lookup,
-	$slugify
-);
