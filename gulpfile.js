@@ -25,13 +25,13 @@ gulp.task('clean', () => {
 });
 
 gulp.task('lunr', () => {
-	return gulp.src('./twitch-clip-notes/app/lunr/*.json').pipe(
+	return gulp.src('./video-clip-notes/app/lunr/*.json').pipe(
 		gulp.dest('./src/lunr/')
 	);
 });
 
 gulp.task('topics', () => {
-	return gulp.src('./twitch-clip-notes/app/topics-satisfactory.json').pipe(
+	return gulp.src('./video-clip-notes/app/topics-satisfactory.json').pipe(
 		rename('topics.json')
 	).pipe(
 		gulp.dest('./src/')
@@ -157,7 +157,7 @@ gulp.task('html', () => {
 		replace(/"(?:(?:\.\.\/)+|\.\/)transcriptions\/?/g, '"/transcriptions/')
 	).pipe(
 		replace(
-			/ https:\/\/(clips\.twitch\.tv\/(?:[a-zA-Z0-9]+))/g,
+			/ https:\/\/(clips\.twitch\.tv\/(?:[a-zA-Z0-9]+)|youtube\.com\/embed\/.+\d+)/g,
 			' <a rel="noopener" target="_blank" href="https://$1">https://$1</a>'
 		)
 	).pipe(

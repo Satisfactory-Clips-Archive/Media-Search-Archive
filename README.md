@@ -1,7 +1,7 @@
 # Media Search Archive
 
 Static site generator for
-	[twitch-clip-notes](https://github.com/SignpostMarv/twitch-clip-notes)
+	[video-clip-notes](https://github.com/Satisfactory-Clips-Archive/video-clip-notes)
 	data.
 
 # See Also
@@ -13,6 +13,7 @@ Static site generator for
 ## 2021-02-05
 * Updated build to use alternate urls from legacy urls
 * Added source video url to transcripts
+* Added support for external clips
 
 ## 2021-02-01
 * Updated build without static gzip assets due to widespread support for brotli
