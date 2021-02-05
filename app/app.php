@@ -72,7 +72,6 @@ $unset_other_playlists = in_array('--unset-other-playlists', $argv, true);
 $skip_fetch = in_array('--skip-fetch', $argv, true);
 
 require_once(__DIR__ . '/vendor/autoload.php');
-require_once(__DIR__ . '/captions.php');
 require_once(__DIR__ . '/global-topic-hierarchy.php');
 
 $slugify = new Slugify();

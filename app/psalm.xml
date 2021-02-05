@@ -10,7 +10,7 @@
 >
 	<projectFiles>
 		<file name="app.php" />
-		<file name="captions.php" />
+		<directory name="src" />
 		<ignoreFiles>
 			<directory name="vendor" />
 		</ignoreFiles>
