@@ -8,6 +8,7 @@ namespace SignpostMarv\TwitchClipNotes;
 
 use function array_diff;
 use function array_filter;
+use const ARRAY_FILTER_USE_KEY;
 use function array_keys;
 use function array_map;
 use function array_merge;
@@ -15,15 +16,19 @@ use function array_pop;
 use function array_reduce;
 use function array_unique;
 use function array_values;
+use function ceil;
 use function chr;
 use function count;
 use function date;
 use function dirname;
 use function end;
+use function explode;
 use function fclose;
 use function fgetcsv;
+use const FILE_APPEND;
 use function file_get_contents;
 use function file_put_contents;
+use function floor;
 use function fopen;
 use function glob;
 use function http_build_query;
@@ -32,6 +37,7 @@ use function in_array;
 use InvalidArgumentException;
 use function is_file;
 use function is_int;
+use function iterator_to_array;
 use function json_decode;
 use function mb_strlen;
 use function mb_strpos;
@@ -47,6 +53,8 @@ use function rawurlencode;
 use SimpleXMLElement;
 use function sort;
 use function sprintf;
+use function str_pad;
+use const STR_PAD_LEFT;
 use function str_repeat;
 use function str_replace;
 use function strnatcasecmp;
@@ -1105,7 +1113,7 @@ function process_externals(
 					'%s,%s',
 					$video_id,
 					$start . ('' === $end ? '' : (',' . $end))
-				);;
+				);
 			},
 			array_keys($csv_captions)
 		)];
