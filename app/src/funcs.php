@@ -6,22 +6,57 @@ declare(strict_types=1);
 
 namespace SignpostMarv\TwitchClipNotes;
 
+use function array_diff;
+use function array_filter;
+use function array_keys;
+use function array_map;
+use function array_merge;
+use function array_pop;
+use function array_reduce;
+use function array_unique;
 use function array_values;
-use function basename;
+use function chr;
+use function count;
+use function date;
+use function dirname;
+use function end;
+use function fclose;
+use function fgetcsv;
 use function file_get_contents;
 use function file_put_contents;
+use function fopen;
+use function glob;
 use function http_build_query;
+use function implode;
+use function in_array;
 use InvalidArgumentException;
 use function is_file;
+use function is_int;
 use function json_decode;
+use function mb_strlen;
+use function mb_strpos;
+use function mb_substr;
+use function pathinfo;
+use const PATHINFO_FILENAME;
 use function preg_match;
+use function preg_match_all;
 use function preg_quote;
+use function preg_replace;
 use function preg_replace_callback;
+use function rawurlencode;
 use SimpleXMLElement;
+use function sort;
+use function sprintf;
+use function str_repeat;
+use function str_replace;
+use function strnatcasecmp;
+use function strtotime;
+use function uasort;
+use function usort;
 
 function video_url_from_id(string $video_id, bool $short = false) : string
 {
-	/** @var null|array<string, string> */
+	/** @var array<string, string>|null */
 	static $overrides = null;
 
 	if (null === $overrides) {
@@ -47,31 +82,28 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		return sprintf('https://youtu.be/%s', rawurlencode($video_id));
 	}
 
-	return (
+	return
 		'https://www.youtube.com/watch?' .
 		http_build_query([
 			'v' => $video_id,
-		])
-	);
+		]);
 }
 
 function transcription_filename(string $video_id) : string
 {
 	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
-		return (
+		return
 			__DIR__
 			. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
 			. $video_id
-			. '.md'
-		);
+			. '.md';
 	}
 
-	return (
+	return
 		__DIR__
 		. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/yt-'
 		. $video_id
-		. '.md'
-	);
+		. '.md';
 }
 
 function maybe_transcript_link_and_video_url(
@@ -295,12 +327,11 @@ function determine_playlist_id(
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup
 ) : array {
-
 	/** @var string|null */
 	$maybe_playlist_id = null;
 	$friendly = $playlist_name;
 
-	if (\preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $playlist_name)) {
+	if (preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $playlist_name)) {
 		$unix = strtotime($playlist_name);
 
 		if (false === $unix) {
@@ -320,8 +351,7 @@ function determine_playlist_id(
 		$friendly =
 			date('F jS, Y', $unix)
 			. ' '
-			. $suffix
-		;
+			. $suffix;
 
 		$maybe_playlist_id = try_find_main_playlist($friendly, $main);
 
@@ -740,10 +770,7 @@ function raw_captions(string $video_id) : array
 
 	$html_cache = __DIR__ . '/../captions/' . $video_id . '.html';
 
-
 	if ( ! is_file($html_cache)) {
-
-
 		$page = file_get_contents(
 			'https://youtube.com/watch?' .
 			http_build_query([
@@ -791,7 +818,6 @@ function raw_captions(string $video_id) : array
 
 	return [$xml, $lines];
 }
-
 
 /**
  * @return array<
@@ -842,6 +868,7 @@ function get_externals() : array
 		 *		}
 		 *	}
 		 * > $out
+		 *
 		 * @return array<
 		 *	string,
 		 *	array{
@@ -876,7 +903,8 @@ function get_externals() : array
 
 			$csv = [];
 
-			while($csv[] = fgetcsv($fp, 0, ',', '"', '"')) {}
+			while ($csv[] = fgetcsv($fp, 0, ',', '"', '"')) {
+			}
 
 			fclose($fp);
 

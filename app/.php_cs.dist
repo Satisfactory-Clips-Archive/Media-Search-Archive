@@ -11,4 +11,5 @@ namespace SignpostMarv\CS;
 return ConfigUsedWithStaticAnalysis::createWithPaths(...[
 	__FILE__,
 	__DIR__ . '/app.php',
+	__DIR__ . '/src/',
 ]);
