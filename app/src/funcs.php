@@ -1019,21 +1019,21 @@ function process_externals(
 		$friendly_date = date('F jS, Y', (int) strtotime($date));
 
 		if ($write_files) {
-		file_put_contents(
-			$filename,
-			(
-				'---' . "\n"
-				. sprintf('title: "%s"', $data['title']) . "\n"
-				. sprintf('date: "%s"', $date) . "\n"
-				. 'layout: livestream' . "\n"
-				. '---' . "\n"
-				. sprintf(
-					'# %s %s' . "\n",
-					$friendly_date,
-					$data['title']
+			file_put_contents(
+				$filename,
+				(
+					'---' . "\n"
+					. sprintf('title: "%s"', $data['title']) . "\n"
+					. sprintf('date: "%s"', $date) . "\n"
+					. 'layout: livestream' . "\n"
+					. '---' . "\n"
+					. sprintf(
+						'# %s %s' . "\n",
+						$friendly_date,
+						$data['title']
+					)
 				)
-			)
-		);
+			);
 		}
 
 		$captions_with_start_time = [];
@@ -1172,123 +1172,123 @@ function process_externals(
 				}
 
 				if ($write_files) {
-				file_put_contents(
-					(
-						__DIR__
-						. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
-						. $basename
-					),
-					(
-						'---' . "\n"
-						. sprintf(
-							'title: "%s"' . "\n",
-							$friendly_date,
-							$clip_title
-						)
-						. sprintf('date: "%s"', $date) . "\n"
-						. 'layout: transcript' . "\n"
-						. 'topics: ' . "\n"
-						. '    - "'
-						. implode('"' . "\n" . '    - "', array_map(
-							static function (
-								string $topic
-							) use (
-								$cache,
-								$global_topic_hierarchy,
-								$not_a_livestream,
-								$not_a_livestream_date_lookup,
-								$slugify
-							) : string {
-								return topic_to_slug(
-									determine_playlist_id(
-										$topic,
-										[],
-										$cache,
-										$global_topic_hierarchy,
-										$not_a_livestream,
-										$not_a_livestream_date_lookup
-									)[0],
+					file_put_contents(
+						(
+							__DIR__
+							. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
+							. $basename
+						),
+						(
+							'---' . "\n"
+							. sprintf(
+								'title: "%s"' . "\n",
+								$friendly_date,
+								$clip_title
+							)
+							. sprintf('date: "%s"', $date) . "\n"
+							. 'layout: transcript' . "\n"
+							. 'topics: ' . "\n"
+							. '    - "'
+							. implode('"' . "\n" . '    - "', array_map(
+								static function (
+									string $topic
+								) use (
 									$cache,
-									$global_topic_hierarchy['satisfactory'],
+									$global_topic_hierarchy,
+									$not_a_livestream,
+									$not_a_livestream_date_lookup,
 									$slugify
-								)[0];
-							},
-							$data['topics'][$i]
-						))
-						. '"' . "\n"
-						. '---' . "\n"
-						. sprintf(
-							'# [%s %s](../%s.md)' . "\n",
-							$friendly_date,
-							$data['title'],
-							$date
-						)
-						. sprintf('## %s', $clip_title) . "\n"
-						. sprintf(
-							'https://youtube.com/embed/%s?%s' . "\n",
-							preg_replace('/^yt-(.{11})/', '$1', $video_id),
-							$embed
-						)
-						. '### Topics' . "\n"
-						. implode("\n", array_map(
-							static function (
-								string $topic
-							) use (
-								$cache,
-								$global_topic_hierarchy,
-								$not_a_livestream,
-								$not_a_livestream_date_lookup,
-								$slugify
-							) : string {
-								[$slug, $parts] = topic_to_slug(
-									determine_playlist_id(
-										$topic,
-										[],
+								) : string {
+									return topic_to_slug(
+										determine_playlist_id(
+											$topic,
+											[],
+											$cache,
+											$global_topic_hierarchy,
+											$not_a_livestream,
+											$not_a_livestream_date_lookup
+										)[0],
 										$cache,
-										$global_topic_hierarchy,
-										$not_a_livestream,
-										$not_a_livestream_date_lookup
-									)[0],
+										$global_topic_hierarchy['satisfactory'],
+										$slugify
+									)[0];
+								},
+								$data['topics'][$i]
+							))
+							. '"' . "\n"
+							. '---' . "\n"
+							. sprintf(
+								'# [%s %s](../%s.md)' . "\n",
+								$friendly_date,
+								$data['title'],
+								$date
+							)
+							. sprintf('## %s', $clip_title) . "\n"
+							. sprintf(
+								'https://youtube.com/embed/%s?%s' . "\n",
+								preg_replace('/^yt-(.{11})/', '$1', $video_id),
+								$embed
+							)
+							. '### Topics' . "\n"
+							. implode("\n", array_map(
+								static function (
+									string $topic
+								) use (
 									$cache,
-									$global_topic_hierarchy['satisfactory'],
+									$global_topic_hierarchy,
+									$not_a_livestream,
+									$not_a_livestream_date_lookup,
 									$slugify
-								);
+								) : string {
+									[$slug, $parts] = topic_to_slug(
+										determine_playlist_id(
+											$topic,
+											[],
+											$cache,
+											$global_topic_hierarchy,
+											$not_a_livestream,
+											$not_a_livestream_date_lookup
+										)[0],
+										$cache,
+										$global_topic_hierarchy['satisfactory'],
+										$slugify
+									);
 
-								return sprintf(
-									'* [%s](../topics/%s.md)',
-									implode(' > ', $parts),
-									$slug
-								);
-							},
-							$data['topics'][$i]
-						))
-						. "\n\n"
-						. '### Transcript' . "\n\n"
-						. implode("\n", array_map(
-							static function (string $line) : string {
-								return sprintf('> %s', $line);
-							},
-							explode("\n", $csv_captions[$i][3])
-						))
-						. "\n"
-					)
-				);
+									return sprintf(
+										'* [%s](../topics/%s.md)',
+										implode(' > ', $parts),
+										$slug
+									);
+								},
+								$data['topics'][$i]
+							))
+							. "\n\n"
+							. '### Transcript' . "\n\n"
+							. implode("\n", array_map(
+								static function (string $line) : string {
+									return sprintf('> %s', $line);
+								},
+								explode("\n", $csv_captions[$i][3])
+							))
+							. "\n"
+						)
+					);
 				}
 			}
 
 			if ($write_files) {
-			file_put_contents(
-				$filename,
-				sprintf(
-					'* [%s:%s](https://youtu.be/%s?t=%s) %s' . "\n",
-					$start_minutes,
-					$start_seconds,
-					preg_replace('/^yt-(.{11})/', '$1', $video_id),
-					floor($start),
-					$clip_title_maybe
-				),
-				FILE_APPEND
-			);
+				file_put_contents(
+					$filename,
+					sprintf(
+						'* [%s:%s](https://youtu.be/%s?t=%s) %s' . "\n",
+						$start_minutes,
+						$start_seconds,
+						preg_replace('/^yt-(.{11})/', '$1', $video_id),
+						floor($start),
+						$clip_title_maybe
+					),
+					FILE_APPEND
+				);
 			}
 		}
 	}
