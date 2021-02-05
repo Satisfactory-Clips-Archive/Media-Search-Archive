@@ -1985,7 +1985,18 @@ foreach ($externals as $date => $externals_data) {
 	foreach ($externals_csv as $i => $line) {
 		[$start, $end, $clip_title] = $line;
 
+		$embed_data = [
+			'start' => $start ?: '0',
+			'end' => $end,
+		];
+
+		if ('' === $embed_data['end']) {
+			unset($embed_data['end']);
+		}
+
 		$start = (float) ($start ?: '0.0');
+
+		$embed = http_build_query($embed_data);
 
 		$start_minutes = str_pad((string) floor($start / 60), 2, '0', STR_PAD_LEFT);
 		$start_seconds = str_pad((string) ($start % 60), 2, '0', STR_PAD_LEFT);
@@ -2057,6 +2068,11 @@ foreach ($externals as $date => $externals_data) {
 						$date
 					)
 					. sprintf('## %s', $clip_title) . "\n"
+					. sprintf(
+						'https://youtube.com/embed/%s?%s' . "\n",
+						preg_replace('/^yt-(.{11})/', '$1', $video_id),
+						$embed
+					)
 					. '### Topics' . "\n"
 					. implode("\n", array_map(
 						static function (
