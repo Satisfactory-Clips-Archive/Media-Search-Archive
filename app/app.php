@@ -2109,7 +2109,7 @@ foreach ($externals as $date => $externals_data) {
 				'* [%s:%s](https://youtu.be/%s?t=%s) %s' . "\n",
 				$start_minutes,
 				$start_seconds,
-				$video_id,
+				preg_replace('/^yt-(.{11})/', '$1', $video_id),
 				floor($start),
 				$clip_title_maybe
 			),
