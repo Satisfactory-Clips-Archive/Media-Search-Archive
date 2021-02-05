@@ -54,6 +54,18 @@ $cache = inject_caches(
 	json_decode(file_get_contents(__DIR__ . '/cache-injection.json'), true)
 );
 
+$cache = inject_caches(
+	$cache,
+	process_externals(
+		$cache,
+		$global_topic_hierarchy,
+		$not_a_livestream,
+		$not_a_livestream_date_lookup,
+		$slugify,
+		false
+	)
+);
+
 /** @var array<string, string> */
 $dated_playlists = json_decode(
 	file_get_contents(

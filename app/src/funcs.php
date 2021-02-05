@@ -113,6 +113,14 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 
 function transcription_filename(string $video_id) : string
 {
+	if (preg_match('/^yt-.{11},\d+(?:\.\d+)(?:,\d+(?:\.\d+))/', $video_id)) {
+		return
+			__DIR__
+			. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
+			. $video_id
+			. '.md';
+	}
+
 	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
 		return
 			__DIR__
@@ -985,7 +993,8 @@ function process_externals(
 	array $global_topic_hierarchy,
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup,
-	Slugify $slugify
+	Slugify $slugify,
+	bool $write_files = true
 ) : array {
 	$externals = get_externals();
 
@@ -1009,6 +1018,7 @@ function process_externals(
 
 		$friendly_date = date('F jS, Y', (int) strtotime($date));
 
+		if ($write_files) {
 		file_put_contents(
 			$filename,
 			(
@@ -1024,6 +1034,7 @@ function process_externals(
 				)
 			)
 		);
+		}
 
 		$captions_with_start_time = [];
 
@@ -1160,6 +1171,7 @@ function process_externals(
 					$inject['playlists'][$playlist_id][2][] = $clip_id;
 				}
 
+				if ($write_files) {
 				file_put_contents(
 					(
 						__DIR__
@@ -1261,8 +1273,10 @@ function process_externals(
 						. "\n"
 					)
 				);
+				}
 			}
 
+			if ($write_files) {
 			file_put_contents(
 				$filename,
 				sprintf(
@@ -1275,6 +1289,7 @@ function process_externals(
 				),
 				FILE_APPEND
 			);
+			}
 		}
 	}
 
