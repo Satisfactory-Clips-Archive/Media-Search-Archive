@@ -1,4 +1,12 @@
 module.exports = (e) => {
+	const markdownIt = require('markdown-it');
+
+	e.setLibrary('md', markdownIt({
+		html: false,
+		breaks: true,
+		linkify: true,
+	}));
+
 	e.addFilter('json', (value) => {
 		return JSON.stringify(value, null, "\t");
 	});

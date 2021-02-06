@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-02-06
+* Fixed linkification
+
 ## 2021-02-05
 * Updated build to use alternate urls from legacy urls
 * Added source video url to transcripts
