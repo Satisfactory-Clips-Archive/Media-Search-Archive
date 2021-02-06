@@ -301,6 +301,21 @@ foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $prefiltered
 			$not_a_livestream_date_lookup
 		);
 	}
+
+	if (
+		isset(
+			$injected_global_topic_hierarchy['satisfactory'][$playlist_id]
+		)
+	) {
+		$cache = add_playlist(
+			$playlist_id,
+			$cache,
+			$main,
+			$global_topic_hierarchy,
+			$not_a_livestream,
+			$not_a_livestream_date_lookup
+		);
+	}
 }
 
 

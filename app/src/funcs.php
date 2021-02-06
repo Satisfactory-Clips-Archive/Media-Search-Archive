@@ -326,9 +326,10 @@ function topic_to_slug(
 		! isset($cache['playlists'][$topic_id])
 		&& ! isset($cache['stubPlaylists'][$topic_id])
 	) {
-		throw new InvalidArgumentException(
-			'Topic not in cache!'
-		);
+		throw new InvalidArgumentException(sprintf(
+			'Topic not in cache! (%s)',
+			$topic_id
+		));
 	} elseif (isset($cache['playlists'][$topic_id])) {
 		$topic_data = $cache['playlists'][$topic_id];
 	} else {
@@ -1163,7 +1164,7 @@ function process_externals(
 					$basename
 				);
 
-				foreach ($data['topics'][$i] as $topic) {
+				foreach (($data['topics'][$i] ?? []) as $topic) {
 					[$playlist_id] = determine_playlist_id(
 						$topic,
 						[],
@@ -1222,7 +1223,7 @@ function process_externals(
 										$slugify
 									)[0];
 								},
-								$data['topics'][$i]
+								($data['topics'][$i] ?? [])
 							))
 							. '"' . "\n"
 							. '---' . "\n"
@@ -1269,7 +1270,7 @@ function process_externals(
 										$slug
 									);
 								},
-								$data['topics'][$i]
+								($data['topics'][$i] ?? [])
 							))
 							. "\n\n"
 							. '### Transcript' . "\n\n"

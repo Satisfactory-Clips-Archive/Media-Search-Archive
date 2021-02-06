@@ -627,6 +627,19 @@ $global_topic_hierarchy = [
 			'Technology',
 			'Unreal Engine',
 		],
+		'PLbjDnnBIxiEqt8EmeHWLHcgo5uLhafUAi' => [ // Microtransactions
+			'Features',
+			'Unplanned Features',
+		],
+		'PLbjDnnBIxiEqv3IjSWWO1kTyDloN8abwF' => [ // Loot Boxes
+			'Features',
+			'Unplanned Features',
+		],
+		'PLbjDnnBIxiErF6kzFEUGxmP_TLQUXbkxm' => [ // Food Court
+			'Features',
+			'Buildings',
+			'Space Elevator',
+		],
 	],
 ];
 
@@ -697,6 +710,9 @@ $injected_global_topic_hierarchy = [
 		],
 		'Characters' => [
 			'Story & Lore',
+		],
+		'Oscar' => [
+			'Coffee Stainers',
 		],
 	],
 ];
