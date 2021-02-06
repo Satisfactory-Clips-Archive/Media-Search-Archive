@@ -324,9 +324,6 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEoYdHzkwIdOZJ_4WfDeAB-z' => [ // Nathalie
 			'Coffee Stainers',
 		],
-		'PLbjDnnBIxiEqr7yS5ijjDUeaivXoHd4Rm' => [ // Pizza
-			'Pizza',
-		],
 		'PLbjDnnBIxiEp8wlgAM7rcgGivq1zvs1Do' => [ // S.A.M. Ore
 			'Environment',
 			'Resources',
