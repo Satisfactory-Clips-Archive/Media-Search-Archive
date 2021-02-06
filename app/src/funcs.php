@@ -964,7 +964,8 @@ function get_externals() : array
 
 			$csv = [];
 
-			while ($csv[] = fgetcsv($fp, 0, ',', '"', '"')) {
+			while (false !== ($line = fgetcsv($fp, 0, ',', '"', '"'))) {
+				$csv[] = $line;
 			}
 
 			fclose($fp);
