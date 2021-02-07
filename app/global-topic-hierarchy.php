@@ -7,11 +7,16 @@ declare(strict_types=1);
 $global_topic_hierarchy = [
 	'satisfactory' => [
 		'PLbjDnnBIxiEo8RlgfifC8OhLmJl8SgpJE' => [ // State of Dev
-			0,
+			-3,
 			'Satisfactory Updates',
 		],
+		'PLbjDnnBIxiEoe5rHqE8w9OpWENlICvWKD' => [ // Satisfactory Alpha
+			-2,
+			'Satisfactory Updates',
+			'Released',
+		],
 		'PLbjDnnBIxiEp3nVij0OnuqpiuBFlKDB-K' => [ // Satisfactory 2017
-			1,
+			-1,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEprAq_zqoVsjr3Cii2tpty-' => [ // Satisfactory Update 2
