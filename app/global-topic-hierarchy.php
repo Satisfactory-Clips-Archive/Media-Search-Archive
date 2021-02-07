@@ -637,6 +637,11 @@ $global_topic_hierarchy = [
 			'Buildings',
 			'Space Elevator',
 		],
+		'PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK' => [ // Achievements
+			'Features',
+			'Possible Features',
+			'Third-Party Service Integration',
+		],
 	],
 ];
 

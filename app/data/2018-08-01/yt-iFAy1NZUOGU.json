@@ -1,0 +1,98 @@
+{
+	"title": "Q&A #3: Pipes, Research, Vehicles + more!",
+	"skip": [
+		true,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		true,
+		true
+	],
+	"topics": {
+		"1": [
+			"Game Modes"
+		],
+		"2": [
+			"User Interface"
+		],
+		"3": [
+			"Weather Systems"
+		],
+		"4": [
+			"Pollution"
+		],
+		"5": [
+			"Terraforming"
+		],
+		"6": [
+			"VR"
+		],
+		"8": [
+			"Buildings",
+			"Foundations",
+			"Vehicles",
+			"Resources"
+		],
+		"9": [
+			"Satisfactory 1.0",
+			"Trolling",
+			"Microtransactions"
+		],
+		"10": [
+			"Achievements"
+		],
+		"11": [
+			"Vehicles"
+		],
+		"12": [
+			"Tiers",
+			"Equipment",
+			"Buildings",
+			"Resources"
+		],
+		"13": [
+			"World Map",
+			"Vehicles"
+		],
+		"14": [
+			"Arachnophobia Mode"
+		],
+		"15": [
+			"Arachnophobia Mode",
+			"Simon"
+		],
+		"16": [
+			"Arachnophobia Mode"
+		],
+		"17": [
+			"Arachnophobia Mode"
+		],
+		"18": [
+			"Creatures"
+		],
+		"19": [
+			"Arachnophobia Mode"
+		],
+		"20": [
+			"Pipes",
+			"Trolling"
+		]
+	}
+}
