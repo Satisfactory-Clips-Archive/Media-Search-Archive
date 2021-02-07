@@ -1,0 +1,22 @@
+{"title": "~SOME~ Satisfactory Alpha Info", "skip": [true,
+		false,
+		false,
+		false,
+		true,
+		true
+	],
+	"topics": {
+		"1": [
+			"Satisfactory Updates"
+		],
+		"2": [
+			"Satisfactory Updates"
+		],
+		"3": [
+			"Satisfactory Updates",
+			"Biomes",
+			"World Map",
+			"Tiers"
+		]
+	}
+}
