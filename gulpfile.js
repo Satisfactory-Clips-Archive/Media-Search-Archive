@@ -210,7 +210,7 @@ gulp.task('sync-tmp-to-store', () => {
 gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
-	'css',
+		'css',
 		'topics',
 		'sync-browserconfig',
 		'lunr'
