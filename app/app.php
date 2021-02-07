@@ -1860,7 +1860,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			usort(
 				$month,
 				static function (array $a, array $b) : int {
-					return $a[2] - $b[2];
+					return $b[2] - $a[2];
 				}
 			);
 
