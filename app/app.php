@@ -384,13 +384,13 @@ $fetch_all_playlists = static function (array $args) use (
 				$cache['playlists'][$playlist->id] = [
 					$cache_response->etag,
 					$playlist_snippet->title,
-					array_keys($other_playlists_on_channel[$playlist->id][1][$playlist->id]),
+					array_keys($other_playlists_on_channel[$playlist->id][1][$playlist->id] ?? []),
 				];
 
 				$update_cache();
 
 				$other_playlists_on_channel[$playlist->id][1] = array_keys(
-					$other_playlists_on_channel[$playlist->id][1][$playlist->id]
+					$other_playlists_on_channel[$playlist->id][1][$playlist->id] ?? []
 				);
 			} else {
 				foreach ($cache['playlists'][$playlist->id][2] as $video_id) {
