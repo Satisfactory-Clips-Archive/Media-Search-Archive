@@ -1893,10 +1893,18 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		$sortable
 	);
 
+	$past_first = false;
+
 	foreach ($sortable as $year => $months) {
+		if ($past_first) {
+			file_put_contents($file_path, "\n", FILE_APPEND);
+		} else {
+			$past_first = true;
+		}
+
 		file_put_contents(
 			$file_path,
-			sprintf('# %s' . "\n", $year),
+			sprintf('# %s', $year),
 			FILE_APPEND
 		);
 
