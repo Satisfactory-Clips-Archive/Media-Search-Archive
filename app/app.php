@@ -1844,18 +1844,28 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	foreach ($data as $filename) {
 		$unix = strtotime(mb_substr($filename, 0, -3));
-		$readable_month = date('F Y', $unix);
-		$readable_date = date('F jS, Y', $unix);
+		$year = (int) date('Y', $unix);
+		$readable_month = date('F', $unix);
+		$readable_date = date('F jS', $unix);
 
-		if ( ! isset($grouped[$readable_month])) {
-			$grouped[$readable_month] = [];
-			$sortable[$readable_month] = strtotime(date('Y-m-01', $unix));
+		if ( ! isset($grouped[$year])) {
+			$grouped[$year] = [];
+			$sortable[$year] = [];
 		}
 
-		$grouped[$readable_month][] = [$readable_date, $filename, $unix];
+		if ( ! isset($grouped[$year][$readable_month])) {
+			$grouped[$year][$readable_month] = [];
+			$sortable[$year][$readable_month] = strtotime(date('Y-m-01', $unix));
+		}
+
+		$grouped[$year][$readable_month][] = [$readable_date, $filename, $unix];
 	}
 
+	$grouped = array_reverse($grouped, true);
+
 	$grouped = array_map(
+		static function (array $year) : array {
+			return array_map(
 		static function (array $month) : array {
 			usort(
 				$month,
@@ -1866,21 +1876,38 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 			return $month;
 		},
+				$year
+			);
+		},
 		$grouped
 	);
 
-	uasort($sortable, static function (int $a, int $b) : int {
+	$sortable = array_map(
+		static function (array $year) : array {
+			uasort($year, static function (int $a, int $b) : int {
 		return $b - $a;
 	});
 
-	foreach (array_keys($sortable) as $readable_month) {
+			return $year;
+		},
+		$sortable
+	);
+
+	foreach ($sortable as $year => $months) {
 		file_put_contents(
 			$file_path,
-			sprintf("\n" . '# %s' . "\n", $readable_month),
+			sprintf('# %s' . "\n", $year),
 			FILE_APPEND
 		);
 
-		foreach ($grouped[$readable_month] as $line_data) {
+		foreach (array_keys($months) as $readable_month) {
+			file_put_contents(
+				$file_path,
+				sprintf("\n" . '## %s' . "\n", $readable_month),
+				FILE_APPEND
+			);
+
+			foreach ($grouped[$year][$readable_month] as $line_data) {
 			[$readable_date, $filename] = $line_data;
 
 			file_put_contents(
@@ -1892,6 +1919,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				),
 				FILE_APPEND
 			);
+		}
 		}
 	}
 }
