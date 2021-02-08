@@ -1866,16 +1866,16 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	$grouped = array_map(
 		static function (array $year) : array {
 			return array_map(
-		static function (array $month) : array {
-			usort(
-				$month,
-				static function (array $a, array $b) : int {
-					return $b[2] - $a[2];
-				}
-			);
+				static function (array $month) : array {
+					usort(
+						$month,
+						static function (array $a, array $b) : int {
+							return $b[2] - $a[2];
+						}
+					);
 
-			return $month;
-		},
+					return $month;
+				},
 				$year
 			);
 		},
@@ -1885,8 +1885,8 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	$sortable = array_map(
 		static function (array $year) : array {
 			uasort($year, static function (int $a, int $b) : int {
-		return $b - $a;
-	});
+				return $b - $a;
+			});
 
 			return $year;
 		},
@@ -1916,18 +1916,18 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			);
 
 			foreach ($grouped[$year][$readable_month] as $line_data) {
-			[$readable_date, $filename] = $line_data;
+				[$readable_date, $filename] = $line_data;
 
-			file_put_contents(
-				$file_path,
-				sprintf(
-					'* [%s](%s)' . "\n",
-					$readable_date,
-					$filename
-				),
-				FILE_APPEND
-			);
-		}
+				file_put_contents(
+					$file_path,
+					sprintf(
+						'* [%s](%s)' . "\n",
+						$readable_date,
+						$filename
+					),
+					FILE_APPEND
+				);
+			}
 		}
 	}
 }
