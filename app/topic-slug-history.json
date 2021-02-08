@@ -657,5 +657,15 @@
     },
     "PLbjDnnBIxiEqf-Zh7cNTVq_Ad6E6PgK3r": {
         "features\/buildings\/smelter": 1612770325
+    },
+    "PLbjDnnBIxiEqDcbJ-gfxVZx50FGEyT-9a": {
+        "embracer-group": 1612780350
+    },
+    "THQ Nordic": {
+        "embracer-group\/thq-nordic": 1612780350
+    },
+    "Lars": {
+        "thq-nordic\/lars": 1612780350,
+        "embracer-group\/thq-nordic\/lars": 1612781221
     }
 }

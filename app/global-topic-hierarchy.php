@@ -741,5 +741,12 @@ $injected_global_topic_hierarchy = [
 		'Oscar' => [
 			'Coffee Stainers',
 		],
+		'Lars' => [
+			'Embracer Group',
+			'THQ Nordic',
+		],
+		'THQ Nordic' => [
+			'Embracer Group',
+		],
 	],
 ];
