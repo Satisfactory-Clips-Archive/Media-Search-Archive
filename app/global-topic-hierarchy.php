@@ -647,6 +647,26 @@ $global_topic_hierarchy = [
 			'Possible Features',
 			'Third-Party Service Integration',
 		],
+		'PLbjDnnBIxiEoIpaioyzE9nqrU_5CxfkUC' => [ // Miner
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEqRBeGXVroVP5HrbSUxSTz6' => [ // Biomass Burner
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEp472ylbvaGd3FDUiIP7MbR' => [ // Non Flying Bird
+			'Environment',
+			'Creatures',
+		],
+		'PLbjDnnBIxiEqf-Zh7cNTVq_Ad6E6PgK3r' => [ // Smelter
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEqRDaqJAxsDu8ejfRc_h1fn' => [ // Constructor
+			'Features',
+			'Buildings',
+		],
 	],
 ];
 

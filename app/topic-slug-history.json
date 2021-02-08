@@ -642,5 +642,20 @@
     },
     "PLbjDnnBIxiEoe5rHqE8w9OpWENlICvWKD": {
         "satisfactory-updates\/released\/satisfactory-alpha": 1612719557
+    },
+    "PLbjDnnBIxiEp472ylbvaGd3FDUiIP7MbR": {
+        "environment\/creatures\/non-flying-bird": 1612770325
+    },
+    "PLbjDnnBIxiEqRBeGXVroVP5HrbSUxSTz6": {
+        "features\/buildings\/biomass-burner": 1612770325
+    },
+    "PLbjDnnBIxiEqRDaqJAxsDu8ejfRc_h1fn": {
+        "features\/buildings\/constructor": 1612770325
+    },
+    "PLbjDnnBIxiEoIpaioyzE9nqrU_5CxfkUC": {
+        "features\/buildings\/miner": 1612770325
+    },
+    "PLbjDnnBIxiEqf-Zh7cNTVq_Ad6E6PgK3r": {
+        "features\/buildings\/smelter": 1612770325
     }
 }
