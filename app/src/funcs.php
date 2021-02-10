@@ -1201,53 +1201,53 @@ function process_dated_csv(
 		)];
 	}
 
-		foreach ($externals_csv as $i => $line) {
-			[$start, $end, $clip_title] = $line;
-			$clip_id = sprintf(
-				'%s,%s',
-				$video_id,
-				$start . ('' === $end ? '' : (',' . $end))
+	foreach ($externals_csv as $i => $line) {
+		[$start, $end, $clip_title] = $line;
+		$clip_id = sprintf(
+			'%s,%s',
+			$video_id,
+			$start . ('' === $end ? '' : (',' . $end))
+		);
+
+		$embed_data = [
+			'autoplay' => 1,
+			'start' => floor($start ?: '0'),
+			'end' => $end,
+		];
+
+		if ('' === $embed_data['end']) {
+			unset($embed_data['end']);
+		} else {
+			$embed_data['end'] = ceil($embed_data['end']);
+		}
+
+		$start = (float) ($start ?: '0.0');
+
+		$embed = http_build_query($embed_data);
+
+		$start_minutes = str_pad((string) floor($start / 60), 2, '0', STR_PAD_LEFT);
+		$start_seconds = str_pad((string) ($start % 60), 2, '0', STR_PAD_LEFT);
+
+		$clip_title_maybe = $clip_title;
+
+		if (isset($csv_captions[$i])) {
+			$basename = sprintf(
+				'%s.md',
+				$clip_id
 			);
-
-			$embed_data = [
-				'autoplay' => 1,
-				'start' => floor($start ?: '0'),
-				'end' => $end,
-			];
-
-			if ('' === $embed_data['end']) {
-				unset($embed_data['end']);
-			} else {
-				$embed_data['end'] = ceil($embed_data['end']);
-			}
-
-			$start = (float) ($start ?: '0.0');
-
-			$embed = http_build_query($embed_data);
-
-			$start_minutes = str_pad((string) floor($start / 60), 2, '0', STR_PAD_LEFT);
-			$start_seconds = str_pad((string) ($start % 60), 2, '0', STR_PAD_LEFT);
-
-			$clip_title_maybe = $clip_title;
-
-			if (isset($csv_captions[$i])) {
-				$basename = sprintf(
-					'%s.md',
-					$clip_id
-				);
 
 			if ($do_injection) {
 				$inject['playlistItems'][$clip_id] = ['', $clip_title];
 				$inject['videoTags'][$clip_id] = ['', []];
 			}
 
-				$clip_title_maybe = sprintf(
-					'[%s](./transcriptions/%s)',
-					$clip_title,
-					$basename
-				);
+			$clip_title_maybe = sprintf(
+				'[%s](./transcriptions/%s)',
+				$clip_title,
+				$basename
+			);
 
-		if ($do_injection) {
+			if ($do_injection) {
 				foreach (($data['topics'][$i] ?? []) as $topic) {
 					[$playlist_id] = determine_playlist_id(
 						$topic,
@@ -1264,122 +1264,122 @@ function process_dated_csv(
 
 					$inject['playlists'][$playlist_id][2][] = $clip_id;
 				}
-		}
-
-				if ($write_files) {
-				$files_out[
-							__DIR__
-							. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
-							. $basename
-				] = [
-						'---' . "\n",
-						sprintf(
-								'title: "%s"' . "\n",
-								$friendly_date,
-								$clip_title
-						),
-						sprintf('date: "%s"', $date) . "\n",
-						'layout: transcript' . "\n",
-						'topics: ' . "\n",
-						'    - "',
-						implode('"' . "\n" . '    - "', array_map(
-								static function (
-									string $topic
-								) use (
-									$cache,
-									$global_topic_hierarchy,
-									$not_a_livestream,
-									$not_a_livestream_date_lookup,
-									$slugify
-								) : string {
-									return topic_to_slug(
-										determine_playlist_id(
-											$topic,
-											[],
-											$cache,
-											$global_topic_hierarchy,
-											$not_a_livestream,
-											$not_a_livestream_date_lookup
-										)[0],
-										$cache,
-										$global_topic_hierarchy['satisfactory'],
-										$slugify
-									)[0];
-								},
-								($data['topics'][$i] ?? [])
-							)),
-						'"' . "\n",
-						'---' . "\n",
-						sprintf(
-								'# [%s %s](../%s.md)' . "\n",
-								$friendly_date,
-								$data['title'],
-								$date
-							),
-						sprintf('## %s', $clip_title) . "\n",
-						sprintf(
-								'https://youtube.com/embed/%s?%s' . "\n",
-								preg_replace('/^yt-(.{11})/', '$1', $video_id),
-								$embed
-							),
-						'### Topics' . "\n",
-						implode("\n", array_map(
-								static function (
-									string $topic
-								) use (
-									$cache,
-									$global_topic_hierarchy,
-									$not_a_livestream,
-									$not_a_livestream_date_lookup,
-									$slugify
-								) : string {
-									[$slug, $parts] = topic_to_slug(
-										determine_playlist_id(
-											$topic,
-											[],
-											$cache,
-											$global_topic_hierarchy,
-											$not_a_livestream,
-											$not_a_livestream_date_lookup
-										)[0],
-										$cache,
-										$global_topic_hierarchy['satisfactory'],
-										$slugify
-									);
-
-									return sprintf(
-										'* [%s](../topics/%s.md)',
-										implode(' > ', $parts),
-										$slug
-									);
-								},
-								($data['topics'][$i] ?? [])
-							)),
-						"\n\n",
-						'### Transcript' . "\n\n",
-						implode("\n", array_map(
-								static function (string $line) : string {
-									return sprintf('> %s', $line);
-								},
-								explode("\n", $csv_captions[$i][3])
-							)),
-						"\n"
-				];
-				}
 			}
 
 			if ($write_files) {
-				$out[] =
+				$files_out[
+					__DIR__
+					. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
+					. $basename
+				] = [
+					'---' . "\n",
 					sprintf(
-						'* [%s:%s](https://youtu.be/%s?t=%s) %s' . "\n",
-						$start_minutes,
-						$start_seconds,
+						'title: "%s"' . "\n",
+						$friendly_date,
+						$clip_title
+					),
+					sprintf('date: "%s"', $date) . "\n",
+					'layout: transcript' . "\n",
+					'topics: ' . "\n",
+					'    - "',
+					implode('"' . "\n" . '    - "', array_map(
+						static function (
+							string $topic
+						) use (
+							$cache,
+							$global_topic_hierarchy,
+							$not_a_livestream,
+							$not_a_livestream_date_lookup,
+							$slugify
+						) : string {
+							return topic_to_slug(
+								determine_playlist_id(
+									$topic,
+									[],
+									$cache,
+									$global_topic_hierarchy,
+									$not_a_livestream,
+									$not_a_livestream_date_lookup
+								)[0],
+								$cache,
+								$global_topic_hierarchy['satisfactory'],
+								$slugify
+							)[0];
+						},
+						($data['topics'][$i] ?? [])
+					)),
+					'"' . "\n",
+					'---' . "\n",
+					sprintf(
+						'# [%s %s](../%s.md)' . "\n",
+						$friendly_date,
+						$data['title'],
+						$date
+					),
+					sprintf('## %s', $clip_title) . "\n",
+					sprintf(
+						'https://youtube.com/embed/%s?%s' . "\n",
 						preg_replace('/^yt-(.{11})/', '$1', $video_id),
-						floor($start),
-						$clip_title_maybe
-				);
+						$embed
+					),
+					'### Topics' . "\n",
+					implode("\n", array_map(
+						static function (
+							string $topic
+						) use (
+							$cache,
+							$global_topic_hierarchy,
+							$not_a_livestream,
+							$not_a_livestream_date_lookup,
+							$slugify
+						) : string {
+							[$slug, $parts] = topic_to_slug(
+								determine_playlist_id(
+									$topic,
+									[],
+									$cache,
+									$global_topic_hierarchy,
+									$not_a_livestream,
+									$not_a_livestream_date_lookup
+								)[0],
+								$cache,
+								$global_topic_hierarchy['satisfactory'],
+								$slugify
+							);
+
+							return sprintf(
+								'* [%s](../topics/%s.md)',
+								implode(' > ', $parts),
+								$slug
+							);
+						},
+						($data['topics'][$i] ?? [])
+					)),
+					"\n\n",
+					'### Transcript' . "\n\n",
+					implode("\n", array_map(
+						static function (string $line) : string {
+							return sprintf('> %s', $line);
+						},
+						explode("\n", $csv_captions[$i][3])
+					)),
+					"\n"
+				];
 			}
 		}
+
+		if ($write_files) {
+			$out[] =
+				sprintf(
+					'* [%s:%s](https://youtu.be/%s?t=%s) %s' . "\n",
+					$start_minutes,
+					$start_seconds,
+					preg_replace('/^yt-(.{11})/', '$1', $video_id),
+					floor($start),
+					$clip_title_maybe
+			);
+		}
+	}
 
 	return [$inject, [$out, $files_out]];
 }
