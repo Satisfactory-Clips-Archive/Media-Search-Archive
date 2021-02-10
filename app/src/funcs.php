@@ -59,6 +59,7 @@ use function str_repeat;
 use function str_replace;
 use function strnatcasecmp;
 use function strtotime;
+use function trim;
 use function uasort;
 use function usort;
 
@@ -1007,7 +1008,7 @@ function get_dated_csv(
 
 	$csv = array_filter($csv, 'is_array');
 
-	usort($csv, static function(array $a, array $b) use ($video_id) : int {
+	usort($csv, static function (array $a, array $b) use ($video_id) : int {
 		[$a] = $a;
 		[$b] = $b;
 
@@ -1021,7 +1022,7 @@ function get_dated_csv(
 		return [
 			$video_id,
 			$csv,
-			[]
+			[],
 		];
 	}
 
@@ -1140,14 +1141,14 @@ function process_dated_csv(
 	/** @var array<string, list<string>> */
 	$files_out = [];
 
-		[$video_id, $externals_csv, $data] = $externals_data;
+	[$video_id, $externals_csv, $data] = $externals_data;
 
-		$captions = raw_captions($video_id);
+	$captions = raw_captions($video_id);
 
-		$friendly_date = date('F jS, Y', (int) strtotime($date));
+	$friendly_date = date('F jS, Y', (int) strtotime($date));
 
-		if ($write_files && ! $skip_header) {
-			$out = array_merge($out, [
+	if ($write_files && ! $skip_header) {
+		$out = array_merge($out, [
 				'---' . "\n",
 				sprintf('title: "%s"', $data['title']) . "\n",
 				sprintf('date: "%s"', $date) . "\n",
@@ -1157,18 +1158,18 @@ function process_dated_csv(
 					'# %s %s' . "\n",
 					$friendly_date,
 					$data['title']
-				)
+				),
 			]);
-		}
+	}
 
-		$captions_with_start_time = [];
+	$captions_with_start_time = [];
 
-		foreach (($captions[1] ?? []) as $caption_line) {
-			$attrs = iterator_to_array(
+	foreach (($captions[1] ?? []) as $caption_line) {
+		$attrs = iterator_to_array(
 				$caption_line->attributes()
 			);
 
-			$captions_with_start_time[] = [
+		$captions_with_start_time[] = [
 				(string) $attrs['start'],
 				(string) $attrs['dur'],
 				preg_replace_callback(
@@ -1179,9 +1180,9 @@ function process_dated_csv(
 					(string) $caption_line
 				),
 			];
-		}
+	}
 
-		$csv_captions = array_map(
+	$csv_captions = array_map(
 			static function (array $csv_line) use ($captions_with_start_time) : array {
 				$csv_line_captions = implode("\n", array_map(
 					static function (array $data) : string {
@@ -1403,7 +1404,7 @@ function process_dated_csv(
 						},
 						explode("\n", $csv_captions[$i][3])
 					)),
-					"\n"
+					"\n",
 				];
 			}
 		}
@@ -1423,7 +1424,8 @@ function process_dated_csv(
 	return [$inject, [$out, $files_out]];
 }
 
-function timestamp_link(string $video_id, float $start) : string {
+function timestamp_link(string $video_id, float $start) : string
+{
 	$video_id = vendor_prefixed_video_id($video_id);
 	$vendorless_video_id = mb_substr($video_id, 3);
 
@@ -1457,7 +1459,8 @@ function timestamp_link(string $video_id, float $start) : string {
 	));
 }
 
-function embed_link(string $video_id, ? float $start, ? float $end) : string {
+function embed_link(string $video_id, ? float $start, ? float $end) : string
+{
 	$video_id = vendor_prefixed_video_id($video_id);
 	$vendorless_video_id = mb_substr($video_id, 3);
 
