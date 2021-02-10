@@ -1067,6 +1067,30 @@ foreach (array_keys($playlists) as $playlist_id) {
 		)
 	);
 
+	$xref_video_id = $cache['internalxref'][$playlist_id] ?? null;
+
+	if (null !== $xref_video_id) {
+		[, $lines_to_write] = process_dated_csv(
+			date('Y-m-d', $title_unix),
+			[],
+			get_dated_csv(date('Y-m-d', $title_unix), $xref_video_id, false),
+			$cache,
+			$global_topic_hierarchy,
+			$not_a_livestream,
+			$not_a_livestream_date_lookup,
+			$slugify,
+			true,
+			false,
+			true
+		);
+
+		[$lines_to_write] = $lines_to_write;
+
+		foreach ($lines_to_write as $line) {
+			file_put_contents($playlists[$playlist_id], $line, FILE_APPEND);
+		}
+	}
+
 	$topics_for_date = filter_nested(
 		$playlist_id,
 		$topic_nesting['satisfactory'],

@@ -2446,6 +2446,10 @@ foreach ($legacy_alt_forms_of_video as $date => $data) {
 	}
 }
 
+$cache['internalxref'] = [
+	'PLbjDnnBIxiEogSr-6cWro36xpV4rtq_Nd' => 'ts-898030710',
+];
+
 file_put_contents(
 	__DIR__ . '/cache-injection.json',
 	json_encode(

@@ -240,6 +240,10 @@ function inject_caches(array $cache, array ...$caches) : array
 		$cache['legacyAlts'] = [];
 	}
 
+	if ( ! isset($cache['internalxref'])) {
+		$cache['internalxref'] = [];
+	}
+
 	foreach ($caches as $inject) {
 		foreach ($inject['playlists'] as $playlist_id => $playlist_data) {
 			if ( ! isset($cache['playlists'][$playlist_id])) {
@@ -300,6 +304,19 @@ function inject_caches(array $cache, array ...$caches) : array
 				));
 
 				sort($cache['legacyAlts'][$video_id]);
+			}
+		}
+
+		if (isset($inject['internalxref'])) {
+			foreach ($inject['internalxref'] as $playlist_id => $video_id) {
+				if (isset($cache['internalxref'][$playlist_id])) {
+					throw new RuntimeException(sprintf(
+						'Playlist cross-reference for internal clip data already specified! (%s)',
+						$playlist_id
+					));
+				}
+
+				$cache['internalxref'][$playlist_id] = $video_id;
 			}
 		}
 	}
@@ -963,7 +980,11 @@ function get_externals() : array
 	);
 }
 
-function get_dated_csv(string $date, string $video_id) : array {
+function get_dated_csv(
+	string $date,
+	string $video_id,
+	bool $require_json = true
+) : array {
 	$path = __DIR__ . '/../data/' . $date . '/' . $video_id . '.csv';
 
 	if ( ! is_file($path)) {
@@ -984,9 +1005,29 @@ function get_dated_csv(string $date, string $video_id) : array {
 
 	fclose($fp);
 
+	$csv = array_filter($csv, 'is_array');
+
+	usort($csv, static function(array $a, array $b) use ($video_id) : int {
+		[$a] = $a;
+		[$b] = $b;
+
+		$a = '' === $a ? '0' : $a;
+		$b = '' === $b ? '0' : $b;
+
+		return ((float) $a) <=> ((float) $b);
+	});
+
+	if ( ! $require_json) {
+		return [
+			$video_id,
+			$csv,
+			[]
+		];
+	}
+
 	return [
 		$video_id,
-		array_filter($csv, 'is_array'),
+		$csv,
 		json_decode(
 			file_get_contents(
 				dirname($path)
@@ -1090,7 +1131,8 @@ function process_dated_csv(
 	array $not_a_livestream_date_lookup,
 	Slugify $slugify,
 	bool $write_files = true,
-	bool $do_injection = true
+	bool $do_injection = true,
+	bool $skip_header = false
 ) : array {
 	/** @var list<string> */
 	$out = [];
@@ -1104,7 +1146,7 @@ function process_dated_csv(
 
 		$friendly_date = date('F jS, Y', (int) strtotime($date));
 
-		if ($write_files) {
+		if ($write_files && ! $skip_header) {
 		$out = array_merge($out, [
 			'---' . "\n",
 			sprintf('title: "%s"', $data['title']) . "\n",
@@ -1121,7 +1163,7 @@ function process_dated_csv(
 
 		$captions_with_start_time = [];
 
-		foreach ($captions[1] as $caption_line) {
+		foreach (($captions[1] ?? []) as $caption_line) {
 			$attrs = iterator_to_array(
 				$caption_line->attributes()
 			);
@@ -1174,6 +1216,10 @@ function process_dated_csv(
 			array_filter(
 				$externals_csv,
 				static function (int $k) use ($data) : bool {
+					if ( ! isset($data['skip'])) {
+						return false;
+					}
+
 					return ! $data['skip'][$k];
 				},
 				ARRAY_FILTER_USE_KEY
@@ -1387,14 +1433,14 @@ function timestamp_link(string $video_id, float $start) : string {
 			$vendorless_video_id,
 			floor($start)
 		);
-	} elseif (preg_match('/^ts-', $video_id)) {
+	} elseif (preg_match('/^ts-/', $video_id)) {
 		$hours = floor($start / 3600);
 		$minutes = floor(($start - ($hours * 3600)) / 60);
 		$seconds = floor($start % 60);
 
-		$hours = str_pad($hours, 2, '0', STR_PAD_LEFT);
-		$minutes = str_pad($minutes, 2, '0', STR_PAD_LEFT);
-		$seconds = str_pad($seconds, 2, '0', STR_PAD_LEFT);
+		$hours = str_pad((string) $hours, 2, '0', STR_PAD_LEFT);
+		$minutes = str_pad((string) $minutes, 2, '0', STR_PAD_LEFT);
+		$seconds = str_pad((string) $seconds, 2, '0', STR_PAD_LEFT);
 
 		return sprintf(
 			'https://twitch.tv/videos/%s?t=%sh%sm%ss',
