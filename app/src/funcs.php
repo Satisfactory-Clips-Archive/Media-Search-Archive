@@ -1166,66 +1166,66 @@ function process_dated_csv(
 
 	foreach (($captions[1] ?? []) as $caption_line) {
 		$attrs = iterator_to_array(
-				$caption_line->attributes()
-			);
+			$caption_line->attributes()
+		);
 
 		$captions_with_start_time[] = [
-				(string) $attrs['start'],
-				(string) $attrs['dur'],
-				preg_replace_callback(
-					'/&#(\d+);/',
-					static function (array $match) : string {
-						return chr((int) $match[1]);
-					},
-					(string) $caption_line
-				),
-			];
+			(string) $attrs['start'],
+			(string) $attrs['dur'],
+			preg_replace_callback(
+				'/&#(\d+);/',
+				static function (array $match) : string {
+					return chr((int) $match[1]);
+				},
+				(string) $caption_line
+			),
+		];
 	}
 
 	$csv_captions = array_map(
-			static function (array $csv_line) use ($captions_with_start_time) : array {
-				$csv_line_captions = implode("\n", array_map(
-					static function (array $data) : string {
-						return $data[2];
-					},
-					array_filter(
-						$captions_with_start_time,
-						/**
-						 * @param array{0:numeric-string, 1:numeric-string, 2:string} $maybe
-						 */
-						static function (array $maybe) use ($csv_line) : bool {
-							[$start, $end] = $csv_line;
-
-							$start = (float) $start;
-
-							$from = (float) $maybe[0];
-							$to = $from + (float) $maybe[1];
-
-							if ('' === $end) {
-								return $from >= $start;
-							}
-
-							return $from >= $start && $to <= (float) $end;
-						}
-					)
-				));
-
-				$csv_line[] = $csv_line_captions;
-
-				return $csv_line;
-			},
-			array_filter(
-				$externals_csv,
-				static function (int $k) use ($data) : bool {
-					if ( ! isset($data['skip'])) {
-						return false;
-					}
-
-					return ! $data['skip'][$k];
+		static function (array $csv_line) use ($captions_with_start_time) : array {
+			$csv_line_captions = implode("\n", array_map(
+				static function (array $data) : string {
+					return $data[2];
 				},
-				ARRAY_FILTER_USE_KEY
-			)
-		);
+				array_filter(
+					$captions_with_start_time,
+					/**
+					 * @param array{0:numeric-string, 1:numeric-string, 2:string} $maybe
+					 */
+					static function (array $maybe) use ($csv_line) : bool {
+						[$start, $end] = $csv_line;
+
+						$start = (float) $start;
+
+						$from = (float) $maybe[0];
+						$to = $from + (float) $maybe[1];
+
+						if ('' === $end) {
+							return $from >= $start;
+						}
+
+						return $from >= $start && $to <= (float) $end;
+					}
+				)
+			));
+
+			$csv_line[] = $csv_line_captions;
+
+			return $csv_line;
+		},
+		array_filter(
+			$externals_csv,
+			static function (int $k) use ($data) : bool {
+				if ( ! isset($data['skip'])) {
+					return false;
+				}
+
+				return ! $data['skip'][$k];
+			},
+			ARRAY_FILTER_USE_KEY
+		)
+	);
 
 	if ($do_injection) {
 		$inject['playlists'][$date] = ['', $data['title'], array_map(
