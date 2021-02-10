@@ -85,22 +85,10 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		$parts = explode(',', $video_id);
 		[$video_id, $start] = $parts;
 
-		$end = $parts[2] ?? null;
+		$start = '' === trim($start) ? null : (float) $start;
+		$end = isset($parts[2]) ? (float) $parts[2] : null;
 
-		$embed_data = [
-			'autoplay' => 1,
-			'start' => floor($start ?: '0'),
-		];
-
-		if (isset($end)) {
-			$embed_data['end'] = ceil($end);
-		}
-
-		return sprintf(
-			'https://youtube.com/embed/%s?%s' . "\n",
-			preg_replace('/^yt-(.{11})/', '$1', $video_id),
-			http_build_query($embed_data)
-		);
+		return embed_link($video_id, $start, $end);
 	}
 
 	if (0 === mb_strpos($video_id, 'tc-')) {
@@ -211,7 +199,13 @@ function maybe_transcript_link_and_video_url(
 
 function vendor_prefixed_video_id(string $video_id) : string
 {
-	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
+	if (
+		(
+			11 !== mb_strlen($video_id)
+			&& preg_match('/^(tc|is|ts)\-/', $video_id)
+		)
+		|| preg_match('/^yt-.{11}$/', $video_id)
+	) {
 		return $video_id;
 	}
 
@@ -1317,10 +1311,10 @@ function process_dated_csv(
 						$date
 					),
 					sprintf('## %s', $clip_title) . "\n",
-					sprintf(
-						'https://youtube.com/embed/%s?%s' . "\n",
-						preg_replace('/^yt-(.{11})/', '$1', $video_id),
-						$embed
+					embed_link(
+						$video_id,
+						$start,
+						'' === $end ? null : ((float) $end)
 					),
 					'### Topics' . "\n",
 					implode("\n", array_map(
@@ -1371,15 +1365,76 @@ function process_dated_csv(
 		if ($write_files) {
 			$out[] =
 				sprintf(
-					'* [%s:%s](https://youtu.be/%s?t=%s) %s' . "\n",
+					'* [%s:%s](%s) %s' . "\n",
 					$start_minutes,
 					$start_seconds,
-					preg_replace('/^yt-(.{11})/', '$1', $video_id),
-					floor($start),
+					timestamp_link($video_id, $start),
 					$clip_title_maybe
 			);
 		}
 	}
 
 	return [$inject, [$out, $files_out]];
+}
+
+function timestamp_link(string $video_id, float $start) : string {
+	$video_id = vendor_prefixed_video_id($video_id);
+	$vendorless_video_id = mb_substr($video_id, 3);
+
+	if (preg_match('/^yt-/', $video_id)) {
+		return sprintf(
+			'https://youtu.be/%s?t=%s',
+			$vendorless_video_id,
+			floor($start)
+		);
+	} elseif (preg_match('/^ts-', $video_id)) {
+		$hours = floor($start / 3600);
+		$minutes = floor(($start - ($hours * 3600)) / 60);
+		$seconds = floor($start % 60);
+
+		$hours = str_pad($hours, 2, '0', STR_PAD_LEFT);
+		$minutes = str_pad($minutes, 2, '0', STR_PAD_LEFT);
+		$seconds = str_pad($seconds, 2, '0', STR_PAD_LEFT);
+
+		return sprintf(
+			'https://twitch.tv/videos/%s?t=%sh%sm%ss',
+			$vendorless_video_id,
+			$hours,
+			$minutes,
+			$seconds
+		);
+	}
+
+	throw new InvalidArgumentException(sprintf(
+		'Unsupported video id specified! (%s)',
+		$video_id
+	));
+}
+
+function embed_link(string $video_id, ? float $start, ? float $end) : string {
+	$video_id = vendor_prefixed_video_id($video_id);
+	$vendorless_video_id = mb_substr($video_id, 3);
+
+	if (preg_match('/^yt-/', $video_id)) {
+		$start = floor($start ?: '0');
+		$end = isset($end) ? ceil($end) : null;
+		$embed_data = [
+			'autoplay' => 1,
+			'start' => $start,
+		];
+
+		if (isset($end)) {
+			$embed_data['end'] = $end;
+		}
+
+		$embed = http_build_query($embed_data);
+
+		return sprintf(
+			'https://youtube.com/embed/%s?%s' . "\n",
+			$vendorless_video_id,
+			$embed
+		);
+	}
+
+	return timestamp_link($video_id, $start);
 }
