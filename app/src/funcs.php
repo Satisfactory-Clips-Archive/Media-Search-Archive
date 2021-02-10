@@ -1147,18 +1147,18 @@ function process_dated_csv(
 		$friendly_date = date('F jS, Y', (int) strtotime($date));
 
 		if ($write_files && ! $skip_header) {
-		$out = array_merge($out, [
-			'---' . "\n",
-			sprintf('title: "%s"', $data['title']) . "\n",
-			sprintf('date: "%s"', $date) . "\n",
-			'layout: livestream' . "\n",
-			'---' . "\n",
-			sprintf(
-				'# %s %s' . "\n",
-				$friendly_date,
-				$data['title']
-			)
-		]);
+			$out = array_merge($out, [
+				'---' . "\n",
+				sprintf('title: "%s"', $data['title']) . "\n",
+				sprintf('date: "%s"', $date) . "\n",
+				'layout: livestream' . "\n",
+				'---' . "\n",
+				sprintf(
+					'# %s %s' . "\n",
+					$friendly_date,
+					$data['title']
+				)
+			]);
 		}
 
 		$captions_with_start_time = [];
