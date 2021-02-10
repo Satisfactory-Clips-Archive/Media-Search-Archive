@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-02-09
+* Fixed issue with linkification of transcripts back to their dated index page
+
 ## 2021-02-06
 * Fixed linkification
 

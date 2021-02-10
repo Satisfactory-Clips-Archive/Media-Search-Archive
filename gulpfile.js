@@ -148,7 +148,9 @@ gulp.task('html', () => {
 			manifest: gulp.src('./tmp/asset.manifest'),
 		})
 	).pipe(
-		replace('.md', '/')
+		replace(/"\.\.\/(\d{4,}\-\d{2}\-\d{2})\.md"/g, '/$1/')
+	).pipe(
+		replace('.md"', '/"')
 	).pipe(
 		replace('"./topics/', '"/topics/')
 		).pipe(
