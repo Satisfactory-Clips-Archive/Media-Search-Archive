@@ -1091,6 +1091,9 @@ foreach (array_keys($playlists) as $playlist_id) {
 		}
 	}
 
+	$topics_for_date = [];
+
+	if (count($video_ids) > 0) {
 	$topics_for_date = filter_nested(
 		$playlist_id,
 		$topic_nesting['satisfactory'],
@@ -1098,6 +1101,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 		$global_topic_hierarchy['satisfactory'],
 		...$video_ids
 	);
+	}
 
 	$nested_video_ids = array_unique(array_reduce(
 		$topics_for_date,
