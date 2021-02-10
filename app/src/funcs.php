@@ -980,29 +980,29 @@ function get_dated_csv(string $date, string $video_id) : array {
 		));
 	}
 
-			$fp = fopen($path, 'rb');
+	$fp = fopen($path, 'rb');
 
-			$csv = [];
+	$csv = [];
 
-			while (false !== ($line = fgetcsv($fp, 0, ',', '"', '"'))) {
-				$csv[] = $line;
-			}
+	while (false !== ($line = fgetcsv($fp, 0, ',', '"', '"'))) {
+		$csv[] = $line;
+	}
 
-			fclose($fp);
+	fclose($fp);
 
-			return [
-				$video_id,
-				array_filter($csv, 'is_array'),
-				json_decode(
-					file_get_contents(
-						dirname($path)
-						. '/'
-						. $video_id
-						. '.json'
-					),
-					true
-				),
-			];
+	return [
+		$video_id,
+		array_filter($csv, 'is_array'),
+		json_decode(
+			file_get_contents(
+				dirname($path)
+				. '/'
+				. $video_id
+				. '.json'
+			),
+			true
+		),
+	];
 }
 
 /**
