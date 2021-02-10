@@ -1029,9 +1029,17 @@ function process_externals(
 	];
 
 	foreach ($externals as $date => $externals_data) {
-		[$video_id, $externals_csv, $data] = $externals_data;
-
-		$captions = raw_captions($video_id);
+		[$inject, $lines_to_write] = process_dated_csv(
+			$date,
+			$inject,
+			$externals_data,
+			$cache,
+			$global_topic_hierarchy,
+			$not_a_livestream,
+			$not_a_livestream_date_lookup,
+			$slugify,
+			$write_files
+		);
 
 		$filename = (
 			__DIR__
@@ -1040,24 +1048,81 @@ function process_externals(
 			'.md'
 		);
 
+		if ($write_files) {
+			[$processed_lines, $files_with_lines_to_write] = $lines_to_write;
+
+			file_put_contents($filename, '');
+
+			foreach ($processed_lines as $line) {
+				file_put_contents($filename, $line, FILE_APPEND);
+			}
+
+			foreach ($files_with_lines_to_write as $other_file => $lines) {
+				file_put_contents($other_file, '');
+
+				foreach ($lines as $line) {
+					file_put_contents($other_file, $line, FILE_APPEND);
+				}
+			}
+		}
+	}
+
+	return $inject;
+}
+
+/**
+ * @param array{
+ *	playlists:array<string, array{0:string, 1:string, 1:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>
+ * } $inject
+ *
+ * @return array{
+ *	0:array{
+ *		playlists:array<string, array{0:string, 1:string, 1:list<string>}>,
+ *		playlistItems:array<string, array{0:string, 1:string}>,
+ *		videoTags:array<string, array{0:string, list<string>}>
+ *	},
+ *	1:array{0:list<string>, 1:array<string, list<string>>}
+ * }
+ */
+function process_dated_csv(
+	string $date,
+	array $inject,
+	array $externals_data,
+	array $cache,
+	array $global_topic_hierarchy,
+	array $not_a_livestream,
+	array $not_a_livestream_date_lookup,
+	Slugify $slugify,
+	bool $write_files = true,
+	bool $do_injection = true
+) : array {
+	/** @var list<string> */
+	$out = [];
+
+	/** @var array<string, list<string>> */
+	$files_out = [];
+
+		[$video_id, $externals_csv, $data] = $externals_data;
+
+		$captions = raw_captions($video_id);
+
 		$friendly_date = date('F jS, Y', (int) strtotime($date));
 
 		if ($write_files) {
-			file_put_contents(
-				$filename,
-				(
-					'---' . "\n"
-					. sprintf('title: "%s"', $data['title']) . "\n"
-					. sprintf('date: "%s"', $date) . "\n"
-					. 'layout: livestream' . "\n"
-					. '---' . "\n"
-					. sprintf(
-						'# %s %s' . "\n",
-						$friendly_date,
-						$data['title']
-					)
-				)
-			);
+		$out = array_merge($out, [
+			'---' . "\n",
+			sprintf('title: "%s"', $data['title']) . "\n",
+			sprintf('date: "%s"', $date) . "\n",
+			'layout: livestream' . "\n",
+			'---' . "\n",
+			sprintf(
+				'# %s %s' . "\n",
+				$friendly_date,
+				$data['title']
+			)
+		]);
 		}
 
 		$captions_with_start_time = [];
@@ -1121,6 +1186,7 @@ function process_externals(
 			)
 		);
 
+	if ($do_injection) {
 		$inject['playlists'][$date] = ['', $data['title'], array_map(
 			static function (int $i) use ($externals_csv, $video_id) : string {
 				[$start, $end, $clip_title] = $externals_csv[$i];
@@ -1133,6 +1199,7 @@ function process_externals(
 			},
 			array_keys($csv_captions)
 		)];
+	}
 
 		foreach ($externals_csv as $i => $line) {
 			[$start, $end, $clip_title] = $line;
@@ -1169,8 +1236,10 @@ function process_externals(
 					$clip_id
 				);
 
+			if ($do_injection) {
 				$inject['playlistItems'][$clip_id] = ['', $clip_title];
 				$inject['videoTags'][$clip_id] = ['', []];
+			}
 
 				$clip_title_maybe = sprintf(
 					'[%s](./transcriptions/%s)',
@@ -1178,6 +1247,7 @@ function process_externals(
 					$basename
 				);
 
+		if ($do_injection) {
 				foreach (($data['topics'][$i] ?? []) as $topic) {
 					[$playlist_id] = determine_playlist_id(
 						$topic,
@@ -1194,26 +1264,25 @@ function process_externals(
 
 					$inject['playlists'][$playlist_id][2][] = $clip_id;
 				}
+		}
 
 				if ($write_files) {
-					file_put_contents(
-						(
+				$files_out[
 							__DIR__
 							. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
 							. $basename
-						),
-						(
-							'---' . "\n"
-							. sprintf(
+				] = [
+						'---' . "\n",
+						sprintf(
 								'title: "%s"' . "\n",
 								$friendly_date,
 								$clip_title
-							)
-							. sprintf('date: "%s"', $date) . "\n"
-							. 'layout: transcript' . "\n"
-							. 'topics: ' . "\n"
-							. '    - "'
-							. implode('"' . "\n" . '    - "', array_map(
+						),
+						sprintf('date: "%s"', $date) . "\n",
+						'layout: transcript' . "\n",
+						'topics: ' . "\n",
+						'    - "',
+						implode('"' . "\n" . '    - "', array_map(
 								static function (
 									string $topic
 								) use (
@@ -1238,23 +1307,23 @@ function process_externals(
 									)[0];
 								},
 								($data['topics'][$i] ?? [])
-							))
-							. '"' . "\n"
-							. '---' . "\n"
-							. sprintf(
+							)),
+						'"' . "\n",
+						'---' . "\n",
+						sprintf(
 								'# [%s %s](../%s.md)' . "\n",
 								$friendly_date,
 								$data['title'],
 								$date
-							)
-							. sprintf('## %s', $clip_title) . "\n"
-							. sprintf(
+							),
+						sprintf('## %s', $clip_title) . "\n",
+						sprintf(
 								'https://youtube.com/embed/%s?%s' . "\n",
 								preg_replace('/^yt-(.{11})/', '$1', $video_id),
 								$embed
-							)
-							. '### Topics' . "\n"
-							. implode("\n", array_map(
+							),
+						'### Topics' . "\n",
+						implode("\n", array_map(
 								static function (
 									string $topic
 								) use (
@@ -1285,24 +1354,22 @@ function process_externals(
 									);
 								},
 								($data['topics'][$i] ?? [])
-							))
-							. "\n\n"
-							. '### Transcript' . "\n\n"
-							. implode("\n", array_map(
+							)),
+						"\n\n",
+						'### Transcript' . "\n\n",
+						implode("\n", array_map(
 								static function (string $line) : string {
 									return sprintf('> %s', $line);
 								},
 								explode("\n", $csv_captions[$i][3])
-							))
-							. "\n"
-						)
-					);
+							)),
+						"\n"
+				];
 				}
 			}
 
 			if ($write_files) {
-				file_put_contents(
-					$filename,
+				$out[] =
 					sprintf(
 						'* [%s:%s](https://youtu.be/%s?t=%s) %s' . "\n",
 						$start_minutes,
@@ -1310,12 +1377,9 @@ function process_externals(
 						preg_replace('/^yt-(.{11})/', '$1', $video_id),
 						floor($start),
 						$clip_title_maybe
-					),
-					FILE_APPEND
 				);
 			}
 		}
-	}
 
-	return $inject;
+	return [$inject, [$out, $files_out]];
 }
