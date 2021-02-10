@@ -961,6 +961,25 @@ function get_externals() : array
 
 			$video_id = pathinfo($path, PATHINFO_FILENAME);
 
+			$out[$date] = get_dated_csv($date, $video_id);
+
+			return $out;
+		},
+		[]
+	);
+}
+
+function get_dated_csv(string $date, string $video_id) : array {
+	$path = __DIR__ . '/../data/' . $date . '/' . $video_id . '.csv';
+
+	if ( ! is_file($path)) {
+		throw new InvalidArgumentException(sprintf(
+			'Date and video id not found! (%s, %s)',
+			$date,
+			$video_id
+		));
+	}
+
 			$fp = fopen($path, 'rb');
 
 			$csv = [];
@@ -971,7 +990,7 @@ function get_externals() : array
 
 			fclose($fp);
 
-			$out[$date] = [
+			return [
 				$video_id,
 				array_filter($csv, 'is_array'),
 				json_decode(
@@ -984,11 +1003,6 @@ function get_externals() : array
 					true
 				),
 			];
-
-			return $out;
-		},
-		[]
-	);
 }
 
 /**
