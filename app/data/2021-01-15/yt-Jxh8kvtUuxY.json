@@ -1,0 +1,52 @@
+{
+	"title": "Gases are coming in Update 4",
+	"skip": [
+		false,
+		false,
+		false,
+		false,
+		false,
+		true
+	],
+	"topics": [
+		[
+			"Satisfactory Update 4",
+			"Gases",
+			"Fluids",
+			"Satisfactory Update 3"
+		],
+		[
+			"Satisfactory Update 4",
+			"Gases",
+			"Resource Wells",
+			"Resource Well Extractor"
+		],
+		[
+			"Satisfactory Update 4",
+			"Gases",
+			"Oil",
+			"Fluids",
+			"Resource Wells",
+			"Resource Well Extractor",
+			"Resource Well Pressurizer"
+		],
+		[
+			"Satisfactory Update 4",
+			"Gases",
+			"Pipes",
+			"Pumps"
+		],
+		[
+			"Satisfactory Update 4",
+			"Gases",
+			"Resource Wells",
+			"Resource Well Extractor",
+			"Resource Well Pressurizer",
+			"Blender",
+			"FICS⁕MAS",
+			"Tier 7",
+			"Tier 8",
+			"Power Management"
+		]
+	]
+}
