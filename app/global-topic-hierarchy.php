@@ -667,6 +667,16 @@ $global_topic_hierarchy = [
 			'Features',
 			'Buildings',
 		],
+		'PLbjDnnBIxiEqOpJsmyxhwRVWzfYKwmIKI' => [ // Gearbox Software
+			'Embracer Group',
+		],
+		'PLbjDnnBIxiErLM-OUYLIMpPRKrDekzBfT' => [ // Giant Flying Manta
+			'Environment',
+			'Creatures',
+		],
+		'PLbjDnnBIxiEruD11x_g9qPkDYlsRkEYNz' => [ // Smart!
+			'Mods',
+		],
 	],
 ];
 
