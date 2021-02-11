@@ -4,7 +4,7 @@
  */
 declare(strict_types=1);
 
-namespace SignpostMarv\TwitchClipNotes;
+namespace SignpostMarv\VideoClipNotes;
 
 use Cocur\Slugify\RuleProvider\RuleProviderInterface;
 use Cocur\Slugify\Slugify as Base;

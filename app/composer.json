@@ -14,7 +14,7 @@
 			"./src/funcs.php"
 		],
 		"psr-4": {
-			"SignpostMarv\\TwitchClipNotes\\": [
+			"SignpostMarv\\VideoClipNotes\\": [
 				"./src/"
 			]
 		}

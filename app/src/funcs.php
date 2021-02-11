@@ -4,7 +4,7 @@
  */
 declare(strict_types=1);
 
-namespace SignpostMarv\TwitchClipNotes;
+namespace SignpostMarv\VideoClipNotes;
 
 use function array_diff;
 use function array_filter;
