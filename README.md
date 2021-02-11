@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2021-02-11
+* Updated build process to sync lunr.min.js
+* Updated build process to remove `clean` step
+
 ## 2021-02-09
 * Fixed issue with linkification of transcripts back to their dated index page
 

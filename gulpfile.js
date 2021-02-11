@@ -20,10 +20,6 @@ const json_transform = require('gulp-json-transform');
 const {readFileSync} = require('fs');
 const inline_source = require('gulp-inline-source');
 
-gulp.task('clean', () => {
-	return gulp.src('{./tmp/,./src/topics.json,./dist/**/*.gz}', {read: false}).pipe(clean());
-});
-
 gulp.task('lunr', () => {
 	return gulp.src('./video-clip-notes/app/lunr/*.json').pipe(
 		gulp.dest('./src/lunr/')
@@ -98,6 +94,11 @@ gulp.task('lunr-clean', () => {
 gulp.task('sync-browserconfig', () => {
 	return gulp.src('./src/browserconfig.xml').pipe(
 		gulp.dest('./tmp/')
+	);
+});
+gulp.task('sync-lunr', () => {
+	return gulp.src('./node_modules/lunr/lunr.min.js').pipe(
+		gulp.dest('./src/')
 	);
 });
 
@@ -210,8 +211,8 @@ gulp.task('sync-tmp-to-store', () => {
 });
 
 gulp.task('build', gulp.series(
-	'clean',
 	gulp.parallel(
+		'sync-lunr',
 		'css',
 		'topics',
 		'sync-browserconfig',
