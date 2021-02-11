@@ -556,6 +556,8 @@ if ($transcriptions) {
 
 	natcasesort($all_video_ids);
 
+	$transcription_blank_lines_regex = '/(>\n>\n)+/';
+
 	foreach ($all_video_ids as $video_id) {
 		if (in_array($video_id, $skipping, true)) {
 			echo 'skipping captions for ',
@@ -715,8 +717,7 @@ if ($transcriptions) {
 			)
 		);
 
-		file_put_contents(
-			$transcriptions_file,
+		$transcription_text =
 			implode('', array_map(
 				static function (string $caption_line) : string {
 					return
@@ -730,7 +731,24 @@ if ($transcriptions) {
 					;
 				},
 				$caption_lines
-			)),
+		));
+
+		while(
+			preg_match(
+				$transcription_blank_lines_regex,
+				$transcription_text
+			)
+		) {
+			$transcription_text = preg_replace(
+				$transcription_blank_lines_regex,
+				'>' . "\n",
+				$transcription_text
+			);
+		}
+
+		file_put_contents(
+			$transcriptions_file,
+			$transcription_text,
 			FILE_APPEND
 		);
 	}
