@@ -1591,28 +1591,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	}
 }
 
-foreach ($playlist_metadata as $json_file => $save_path) {
-	$data = json_decode(file_get_contents($json_file), true);
-
-	if ($json_file === realpath(
-		__DIR__
-		. '/playlists/coffeestainstudiosdevs/satisfactory.json'
-	)) {
-		$data = array_merge(
-			$data,
-			json_decode(
-				file_get_contents(
-					__DIR__
-					. '/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
-				),
-				true
-			)
-		);
-	}
-
-	$basename = basename($save_path);
-
-	$file_path = $save_path . '/../' . $basename . '/index.md';
+	$file_path = __DIR__ . '/../coffeestainstudiosdevs/satisfactory/index.md';
 
 	/** @var list<string> */
 	$lines = [
@@ -1629,8 +1608,8 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	$sortable = [];
 
-	foreach ($data as $filename) {
-		$unix = strtotime(mb_substr($filename, 0, -3));
+	foreach ($playlists as $filename) {
+		$unix = strtotime(mb_substr(basename($filename), 0, -3));
 		$year = (int) date('Y', $unix);
 		$readable_month = date('F', $unix);
 		$readable_date = date('F jS', $unix);
@@ -1645,7 +1624,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			$sortable[$year][$readable_month] = strtotime(date('Y-m-01', $unix));
 		}
 
-		$grouped[$year][$readable_month][] = [$readable_date, $filename, $unix];
+		$grouped[$year][$readable_month][] = [$readable_date, basename($filename), $unix];
 	}
 
 	$grouped = array_reverse($grouped, true);
@@ -1708,4 +1687,3 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	}
 
 	file_put_contents($file_path, implode('', $lines));
-}
