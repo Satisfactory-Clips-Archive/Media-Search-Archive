@@ -295,6 +295,13 @@ foreach ($playlists as $playlist_id => $markdown_path) {
 		/** @var array{0:Google_Service_YouTube_Playlist} */
 		$response_items = $response->items;
 
+		if ( ! isset($response_items[0], $response_items[0]->snippet)) {
+			throw new RuntimeException(sprintf(
+				'Could not get playlist response for %s',
+				$playlist_id
+			));
+		}
+
 		/** @var Google_Service_YouTube_PlaylistSnippet */
 		$playlist_snippet = $response_items[0]->snippet;
 
