@@ -717,20 +717,19 @@ if ($transcriptions) {
 			)
 		);
 
-		$transcription_text =
-			implode('', array_map(
-				static function (string $caption_line) : string {
-					return
-						trim(
-						'> '
-						. $caption_line
-						)
-						. "\n"
-						. '>'
-						. "\n"
-					;
-				},
-				$caption_lines
+		$transcription_text = implode('', array_map(
+			static function (string $caption_line) : string {
+				return
+					trim(
+					'> '
+					. $caption_line
+					)
+					. "\n"
+					. '>'
+					. "\n"
+				;
+			},
+			$caption_lines
 		));
 
 		while(
@@ -788,14 +787,11 @@ foreach (array_keys($playlists) as $playlist_id) {
 		'Single video clips' => [],
 	];
 
-	$title_unix =
-			(int) strtotime(
-				mb_substr(
-					basename($playlists[$playlist_id]),
-					0,
-					-3
-				)
-	);
+	$title_unix = (int) strtotime(mb_substr(
+		basename($playlists[$playlist_id]),
+		0,
+		-3
+	));
 
 	$title = (
 		date(
