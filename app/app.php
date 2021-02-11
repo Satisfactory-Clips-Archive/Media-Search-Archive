@@ -862,20 +862,20 @@ foreach (array_keys($playlists) as $playlist_id) {
 			FILE_APPEND
 		);
 
-			file_put_contents(
-				$playlists[$playlist_id],
+		file_put_contents(
+			$playlists[$playlist_id],
 			implode('', array_map(
 				static function (string $video_line) : string {
 					return
-					'* '
-					. $video_line
-					. "\n"
+						'* '
+						. $video_line
+						. "\n"
 					;
 				},
 				$video_data
 			)),
-				FILE_APPEND
-			);
+			FILE_APPEND
+		);
 	}
 
 	if (count($content_arrays['Single video clips']) > 0) {
@@ -890,22 +890,22 @@ foreach (array_keys($playlists) as $playlist_id) {
 		);
 	}
 
-		file_put_contents(
-			$playlists[$playlist_id],
+	file_put_contents(
+		$playlists[$playlist_id],
 		implode('', array_map(
 			static function (string $video_id) use($cache) : string {
 				return
-				'* '
-				. $cache['playlistItems'][$video_id][1]
-				. ' '
-				. video_url_from_id($video_id)
-				. "\n"
+					'* '
+					. $cache['playlistItems'][$video_id][1]
+					. ' '
+					. video_url_from_id($video_id)
+					. "\n"
 				;
 			},
 			$content_arrays['Single video clips']
 		)),
-			FILE_APPEND
-		);
+		FILE_APPEND
+	);
 }
 
 $now = time();
@@ -1437,24 +1437,24 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				FILE_APPEND
 			);
 
-				file_put_contents(
-					$slug_path,
+			file_put_contents(
+				$slug_path,
 				implode('', array_map(
 					static function (string $video_id) use($cache, $slug_count) : string {
 						return
-						'* '
-						. maybe_transcript_link_and_video_url(
-							$video_id,
-							$cache['playlistItems'][$video_id][1],
-							$slug_count
-						)
-						. "\n"
+							'* '
+							. maybe_transcript_link_and_video_url(
+								$video_id,
+								$cache['playlistItems'][$video_id][1],
+								$slug_count
+							)
+							. "\n"
 						;
 					},
 					$video_ids
 				)),
-					FILE_APPEND
-				);
+				FILE_APPEND
+			);
 		}
 	}
 
