@@ -2447,8 +2447,10 @@ foreach ($legacy_alt_forms_of_video as $date => $data) {
 }
 
 $cache['internalxref'] = [
+	/*
 	'PLbjDnnBIxiEpSyGTtvocwk1S7n7-Ew0JW' => 'ts-907229782', // 2021-02-09
 	'PLbjDnnBIxiEogSr-6cWro36xpV4rtq_Nd' => 'ts-898030710', // 2021-02-02
+	*/
 ];
 
 file_put_contents(
