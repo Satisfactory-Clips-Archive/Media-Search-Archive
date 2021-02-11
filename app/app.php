@@ -33,6 +33,7 @@ use function file_put_contents;
 use function implode;
 use function in_array;
 use function is_dir;
+use function is_file;
 use function is_string;
 use function json_decode;
 use function json_encode;
@@ -42,6 +43,8 @@ use function min;
 use function mkdir;
 use function natcasesort;
 use function natsort;
+use function preg_match;
+use function preg_replace;
 use function realpath;
 use RuntimeException;
 use function sprintf;
@@ -50,6 +53,8 @@ use function str_replace;
 use function strnatcasecmp;
 use function strtotime;
 use function time;
+use function touch;
+use function trim;
 use function uasort;
 use function uksort;
 use function usleep;
@@ -732,7 +737,7 @@ if ($transcriptions) {
 			$caption_lines
 		));
 
-		while(
+		while (
 			preg_match(
 				$transcription_blank_lines_regex,
 				$transcription_text
