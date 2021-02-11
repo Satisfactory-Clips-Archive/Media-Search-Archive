@@ -69,28 +69,15 @@ use function usleep;
 use function usort;
 
 $transcriptions = in_array('--transcriptions', $argv, true);
-$clear_nopes = in_array('--clear-nopes', $argv, true);
-$unset_other_playlists = in_array('--unset-other-playlists', $argv, true);
-$skip_fetch = in_array('--skip-fetch', $argv, true);
 
 require_once(__DIR__ . '/vendor/autoload.php');
 require_once(__DIR__ . '/global-topic-hierarchy.php');
 
+$api = new YouTubeApiWrapper();
+
+$api->update();
+
 $slugify = new Slugify();
-
-$client = new Google_Client();
-$client->setApplicationName('Twitch Clip Notes');
-$client->setScopes([
-	'https://www.googleapis.com/auth/youtube.readonly',
-	'https://www.googleapis.com/auth/youtube.force-ssl',
-]);
-
-$client->setAuthConfig(__DIR__ . '/google-auth.json');
-$client->setAccessType('offline');
-
-$http = $client->authorize();
-
-$service = new Google_Service_YouTube($client);
 
 $other_playlists_on_channel = [];
 
@@ -116,9 +103,6 @@ foreach ($playlist_metadata as $metadata_path => $prepend_path) {
 /** @var array<string, array<string, string>> */
 $videos = [];
 
-/** @var array<string, list<string>> */
-$video_tags = [];
-
 $exclude_from_absent_tag_check = [
 	'4_cYnq746zk', // official merch announcement video
 ];
@@ -126,33 +110,12 @@ $exclude_from_absent_tag_check = [
 /** @var list<string> */
 $autocategorise = [];
 
-$cache = json_decode(
-	file_get_contents(__DIR__ . '/cache.json') ?: '[]',
-	true
-);
+$cache = $api->toLegacyCacheFormat();
 
-$update_cache = static function () use (&$cache) : void {
-	file_put_contents(
-		__DIR__ . '/cache.json',
-		json_encode($cache, JSON_PRETTY_PRINT)
-	);
-};
-
-if ($unset_other_playlists && isset($cache['playlists'])) {
-	foreach (array_keys($cache['playlists']) as $playlist_id) {
-		if ( ! isset($playlists[$playlist_id])) {
-			unset($cache['playlists'][$playlist_id]);
-		}
-	}
-
-	$update_cache();
-}
-
-foreach (($cache['videoTags'] ?? []) as $video_id => $data) {
-	[$etag, $tags] = $data;
-
-	$video_tags[$video_id] = $tags;
-}
+file_put_contents(__DIR__ . '/cache.json', json_encode(
+	$cache,
+	JSON_PRETTY_PRINT
+));
 
 foreach (($cache['playlists'] ?? []) as $playlist_id => $data) {
 	if (isset($playlists[$playlist_id])) {
@@ -164,261 +127,7 @@ foreach (($cache['playlists'] ?? []) as $playlist_id => $data) {
 	$other_playlists_on_channel[$playlist_id] = [$title, $video_ids];
 }
 
-$object_cache_captions = [];
-$object_cache_videos = [];
-
-$fetch_videos = static function (
-	array $args,
-	string $playlist_id,
-	array &$videos,
-	array &$video_tags
-) use (
-	$http,
-	$playlists,
-	$service,
-	&$cache,
-	$update_cache,
-	&$object_cache_captions,
-	$skip_fetch,
-	&$fetch_videos
-) : void {
-	if ($skip_fetch) {
-		return;
-	}
-
-	$args['playlistId'] = $playlist_id;
-	$cache['playlists'] = $cache['playlists'] ?? [];
-	$cache['playlistItems'] = $cache['playlistItems'] ?? [];
-	$cache['captions'] = $cache['captions'] ?? [];
-	$cache['videoTags'] = $cache['videoTags'] ?? [];
-
-	/** @var Google_Service_YouTube_PlaylistItemListResponse */
-	$response = $service->playlistItems->listPlaylistItems(
-		implode(',', [
-			'id',
-			'snippet',
-			'contentDetails',
-		]),
-		$args
-	);
-
-	/** @var iterable<Google_Service_YouTube_PlaylistItem> */
-	$response_items = $response->items;
-
-	foreach ($response_items as $video) {
-		/** @var Google_Service_YouTube_VideoSnippet */
-		$video_snippet = $video->snippet;
-
-		/** @var Google_Service_YouTube_ResourceId */
-		$video_snippet_resourceId = $video_snippet->resourceId;
-
-		$video_id = $video_snippet_resourceId->videoId;
-
-		if (
-			! isset($cache['playlistItems'][$video_id])
-			|| $cache['playlistItems'][$video_id][0] !== $video->etag
-		) {
-			/** @var Google_Service_YouTube_VideoListResponse */
-			$tag_response = $service->videos->listVideos(
-				'snippet',
-				[
-					'id' => $video_id,
-				]
-			);
-
-			if (
-				! isset($cache['videoTags'][$video_id])
-				|| $cache['videoTags'][$video_id][0] !== $tag_response->etag
-			) {
-				/**
-				 * @var array{0:object{
-				 *	snippet:Google_Service_YouTube_VideoSnippet
-				 * }}
-				 */
-				$tag_response_items = $tag_response->items;
-
-				if (isset($tag_response_items[0]->snippet->tags)) {
-					$cache['videoTags'][$video_id] = [
-						$tag_response->etag,
-						$tag_response_items[0]->snippet->tags,
-					];
-				} else {
-					$cache['videoTags'][$video_id] = [
-						$tag_response->etag,
-						[],
-					];
-				}
-
-				$update_cache();
-			}
-
-			$cache['playlistItems'][$video_id] = [
-				$video->etag,
-				$video_snippet->title,
-			];
-
-			$update_cache();
-		}
-
-		$videos[$playlist_id][$video_id] = $cache['playlistItems'][$video_id][1];
-	}
-
-	if (isset($response->nextPageToken)) {
-		$args['pageToken'] = $response->nextPageToken;
-
-		$fetch_videos($args, $playlist_id, $videos, $video_tags);
-	}
-};
-
 $cache['playlists'] = $cache['playlists'] ?? [];
-
-foreach ($playlists as $playlist_id => $markdown_path) {
-	if ($skip_fetch) {
-		continue;
-	}
-
-	$videos[$playlist_id] = [];
-
-	/** @var Google_Service_YouTube_PlaylistListResponse */
-	$response = $service->playlists->listPlaylists(
-		'id,snippet',
-		[
-			'maxResults' => 1,
-			'id' => $playlist_id,
-		]
-	);
-
-	if (
-		! isset($cache['playlists'][$playlist_id])
-		|| $cache['playlists'][$playlist_id][0] !== $response->etag
-	) {
-		/** @var array{0:Google_Service_YouTube_Playlist} */
-		$response_items = $response->items;
-
-		if ( ! isset($response_items[0], $response_items[0]->snippet)) {
-			throw new RuntimeException(sprintf(
-				'Could not get playlist response for %s',
-				$playlist_id
-			));
-		}
-
-		/** @var Google_Service_YouTube_PlaylistSnippet */
-		$playlist_snippet = $response_items[0]->snippet;
-
-		$fetch_videos(
-			[
-				'maxResults' => 50,
-			],
-			$playlist_id,
-			$videos,
-			$video_tags
-		);
-		$cache['playlists'][$playlist_id] = [
-			$response->etag,
-			$playlist_snippet->title,
-			array_keys($videos[$playlist_id]),
-		];
-
-		$update_cache();
-	} else {
-		foreach ($cache['playlists'][$playlist_id][2] as $video_id) {
-			$videos[$playlist_id][$video_id] = $cache['playlistItems'][$video_id][1];
-		}
-	}
-
-	if ( ! is_file($markdown_path)) {
-		file_put_contents($markdown_path, "\n");
-
-		$autocategorise[] = $playlist_id;
-	}
-}
-
-$fetch_all_playlists = static function (array $args) use (
-	&$other_playlists_on_channel,
-	&$video_tags,
-	$service,
-	$fetch_videos,
-	&$cache,
-	$update_cache,
-	&$videos,
-	&$fetch_all_playlists,
-	$skip_fetch,
-	$playlists
-) : void {
-	if ($skip_fetch) {
-		return;
-	}
-
-	/** @var Google_Service_YouTube_PlaylistListResponse */
-	$response = $service->playlists->listPlaylists(
-		'id,snippet',
-		$args
-	);
-
-	/** @var list<Google_Service_YouTube_Playlist> */
-	$response_items = $response->items;
-
-	foreach ($response_items as $playlist) {
-		if ( ! isset($playlists[$playlist->id])) {
-			/** @var Google_Service_YouTube_PlaylistSnippet */
-			$playlist_snippet = $playlist->snippet;
-
-			$other_playlists_on_channel[$playlist->id] = [
-				$playlist_snippet->title,
-				[],
-			];
-
-			/** @var Google_Service_YouTube_PlaylistListResponse */
-			$cache_response = $service->playlists->listPlaylists(
-				'id,snippet',
-				[
-					'maxResults' => 1,
-					'id' => $playlist->id,
-				]
-			);
-
-			if (
-				! isset($cache['playlists'][$playlist->id])
-				|| $cache['playlists'][$playlist->id][0] !== $cache_response->etag
-			) {
-				$fetch_videos(
-					['maxResults' => 50],
-					$playlist->id,
-					$other_playlists_on_channel[$playlist->id][1],
-					$video_tags
-				);
-
-				$cache['playlists'][$playlist->id] = [
-					$cache_response->etag,
-					$playlist_snippet->title,
-					array_keys($other_playlists_on_channel[$playlist->id][1][$playlist->id] ?? []),
-				];
-
-				$update_cache();
-
-				$other_playlists_on_channel[$playlist->id][1] = array_keys(
-					$other_playlists_on_channel[$playlist->id][1][$playlist->id] ?? []
-				);
-			} else {
-				foreach ($cache['playlists'][$playlist->id][2] as $video_id) {
-					$videos[$playlist->id][$video_id] = $cache['playlistItems'][$video_id][1];
-					$other_playlists_on_channel[$playlist->id][1][] = $video_id;
-				}
-			}
-		}
-	}
-
-	if (isset($response->nextPageToken)) {
-		$args['pageToken'] = $response->nextPageToken;
-
-		$fetch_all_playlists($args);
-	}
-};
-
-$fetch_all_playlists([
-	'channelId' => 'UCJamaIaFLyef0HjZ2LBEz1A',
-	'maxResults' => 50,
-]);
 
 $global_topic_hierarchy = array_merge_recursive(
 	$global_topic_hierarchy,
@@ -1024,7 +733,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 		continue;
 	}
 
-	$video_ids = $cache['playlists'][$playlist_id][2];
+	$video_ids = ($cache['playlists'][$playlist_id] ?? [2 => []])[2];
 	$video_ids = filter_video_ids_for_legacy_alts($cache, ...$video_ids);
 
 	usort($video_ids, static function (string $a, string $b) use ($cache) : int {
@@ -1440,7 +1149,7 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 					string $dated_id
 				) use ($faq_topic_videos, $cache) : array {
 					return array_filter(
-						$cache['playlists'][$dated_id][2],
+						($cache['playlists'][$dated_id] ?? [2 => []])[2],
 						static function (
 							string $video_id
 						) use (
@@ -1547,7 +1256,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 		$data_by_date[$playlist_id] = [$unix, $readable_date];
 
-		$playlists_by_date[$playlist_id] = $cache['playlists'][$playlist_id][2];
+		$playlists_by_date[$playlist_id] = ($cache['playlists'][$playlist_id] ?? [2 => []])[2];
 	}
 
 	uksort(
