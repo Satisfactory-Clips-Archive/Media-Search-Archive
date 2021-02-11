@@ -1110,11 +1110,7 @@ function process_externals(
 			}
 
 			foreach ($files_with_lines_to_write as $other_file => $lines) {
-				file_put_contents($other_file, '');
-
-				foreach ($lines as $line) {
-					file_put_contents($other_file, $line, FILE_APPEND);
-				}
+				file_put_contents($other_file, implode('', $lines));
 			}
 		}
 	}
