@@ -68,11 +68,18 @@ $slugify = new Slugify();
 
 $other_playlists_on_channel = [];
 
-$playlist_metadata = [
+$playlist_satisfactory =
 	realpath(
 		__DIR__
 		. '/playlists/coffeestainstudiosdevs/satisfactory.json'
-	) => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/',
+	);
+
+if ( ! is_string($playlist_satisfactory)) {
+	throw new RuntimeException('Satisfactory playlist not found!');
+}
+
+$playlist_metadata = [
+	$playlist_satisfactory => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/',
 ];
 
 /** @var array<string, string> */
@@ -279,6 +286,14 @@ $all_topic_ids = array_merge(
 	array_keys($cache['stubPlaylists'] ?? [])
 );
 
+/**
+ * @var array{satisfactory: array<string, array{
+ *	children: list<string>,
+ *	left: positive-int,
+ *	right: positive-int,
+ *	level: int
+ * }>}
+ */
 $topic_nesting = [];
 
 foreach ($all_topic_ids as $topic_id) {
@@ -427,7 +442,27 @@ usort($all_topic_ids, static function (
 	string $a,
 	string $b
 ) use ($topic_nesting, $cache) : int {
-	if ( ! isset($topic_nesting['satisfactory'][$a], $topic_nesting['satisfactory'][$b])) {
+	/**
+	 * @var null|array{
+	 *	children: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }
+	 */
+	$nested_a = $topic_nesting['satisfactory'][$a] ?? null;
+
+	/**
+	 * @var null|array{
+	 *	children: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }
+	 */
+	$nested_b = $topic_nesting['satisfactory'][$b] ?? null;
+
+	if ( ! isset($nested_a, $nested_b)) {
 		return strnatcasecmp(
 			$cache['playlists'][$a][1],
 			$cache['playlists'][$b][1]
@@ -435,14 +470,14 @@ usort($all_topic_ids, static function (
 	}
 
 	return
-		$topic_nesting['satisfactory'][$a]['left']
-		- $topic_nesting['satisfactory'][$b]['left'];
+		$nested_a['left']
+		- $nested_b['left'];
 });
 
 $video_playlists = [];
 
 foreach (array_keys($api->fetch_all_playlists()) as $playlist_id) {
-	[,, $video_ids] = $cache['playlists'][$playlist_id] ?? [2 => []];
+	$video_ids = ($cache['playlists'][$playlist_id] ?? [2 => []])[2] ?? [];
 
 	foreach ($video_ids as $video_id) {
 		if ( ! isset($video_playlists[$video_id])) {
@@ -1217,7 +1252,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 		$data_by_date[$playlist_id] = [$unix, $readable_date];
 
-		$playlists_by_date[$playlist_id] = ($cache['playlists'][$playlist_id] ?? [2 => []])[2];
+		$playlists_by_date[$playlist_id] = ($cache['playlists'][$playlist_id] ?? [2 => []])[2] ?? [];
 	}
 
 	uksort(
@@ -1576,7 +1611,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 					usort(
 						$month,
 						static function (array $a, array $b) : int {
-							return $b[2] - $a[2];
+							return $b[2] <=> $a[2];
 						}
 					);
 

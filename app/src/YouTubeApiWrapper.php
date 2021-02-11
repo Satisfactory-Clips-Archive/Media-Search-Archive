@@ -119,13 +119,27 @@ class YouTubeApiWrapper
 		return $out;
 	}
 
+	/**
+	 * @return array<string, string>
+	 */
 	public function fetch_all_playlists() : array
 	{
 		if (null === $this->playlists) {
 			$cache_file = (__DIR__ . '/../data/api-cache/playlists.json');
 
 			if (is_file($cache_file)) {
-				$to_sort = json_decode(file_get_contents($cache_file), true);
+				/** @var array<string, string> */
+				$to_sort = array_filter(
+					json_decode(file_get_contents($cache_file), true),
+					/**
+					 * @param mixed $a
+					 * @param mixed $b
+					 */
+					static function ($a, $b) : bool {
+						return is_string($a) && is_string($b);
+					},
+					ARRAY_FILTER_USE_BOTH
+				);
 			} else {
 				$to_sort = $this->listPlaylists([
 					'channelId' => 'UCJamaIaFLyef0HjZ2LBEz1A',
@@ -135,6 +149,7 @@ class YouTubeApiWrapper
 
 			asort($to_sort);
 
+			/** @var array<string, string> */
 			$playlists = [];
 
 			foreach (array_keys($this->dated_playlists()) as $playlist_id) {
@@ -143,18 +158,21 @@ class YouTubeApiWrapper
 				}
 			}
 
-			$this->playlists = array_merge(
+			$playlists = array_merge(
 				$playlists,
 				array_diff($to_sort, $playlists)
 			);
 
-			$this->playlists = array_filter(
-				$this->playlists,
+			/** @var array<string, string> */
+			$playlists = array_filter(
+				$playlists,
 				static function (string $a, string $b) : bool {
 					return $a !== $b;
 				},
 				ARRAY_FILTER_USE_BOTH
 			);
+
+			$this->playlists = $playlists;
 
 			file_put_contents(
 				(__DIR__ . '/../data/api-cache/playlists.json'),
@@ -165,6 +183,9 @@ class YouTubeApiWrapper
 		return $this->playlists;
 	}
 
+	/**
+	 * @return array<string, list<string>>
+	 */
 	public function fetch_playlist_items() : array
 	{
 		if (null === $this->fetch_playlist_items) {
@@ -198,13 +219,13 @@ class YouTubeApiWrapper
 				} elseif (
 					is_file($cache_file)
 				) {
-					$playlist = array_filter(
+					$playlist = array_values(array_filter(
 						(array) json_decode(
 							file_get_contents($cache_file),
 							true
 						),
 						'is_string'
-					);
+					));
 				} else {
 					$playlist = $this->listPlaylistItems(
 						[
@@ -213,7 +234,8 @@ class YouTubeApiWrapper
 					);
 				}
 
-				$playlist = array_unique($playlist);
+				/** @var list<string> */
+				$playlist = array_values(array_unique($playlist));
 
 				sort($playlist);
 
@@ -229,14 +251,23 @@ class YouTubeApiWrapper
 		return $this->fetch_playlist_items;
 	}
 
+	/**
+	 * @return array<string, array{0:string, 1:list<string>}>
+	 */
 	public function fetch_all_videos_in_playlists() : array
 	{
 		/** @var array<string, array{0:string, 1:list<string>}>|null */
 		static $out = null;
 
 		if (null === $out) {
-			$reduced = array_reduce(
+			$reduced = array_values(array_reduce(
 				$this->fetch_playlist_items(),
+				/**
+				 * @param list<string> $out
+				 * @param list<string> $playlist_items
+				 *
+				 * @return list<string>
+				 */
 				static function (array $out, array $playlist_items) : array {
 					return array_merge(
 						$out,
@@ -244,7 +275,7 @@ class YouTubeApiWrapper
 					);
 				},
 				[]
-			);
+			));
 
 			$filtered = array_filter(
 				$reduced,
@@ -327,10 +358,28 @@ class YouTubeApiWrapper
 					));
 				}
 
-				$out[$video_id] = json_decode(
+				$data = json_decode(
 					file_get_contents($cache_file),
 					true
 				);
+
+				if (
+					! is_array($data)
+					|| ! isset($data[0], $data[1])
+					|| 2 !== count($data)
+					|| ! is_string($data[0])
+					|| ! is_array($data[1])
+				) {
+					throw new RuntimeException(sprintf(
+						'Unsupported cache data found for %s',
+						$video_id
+					));
+				}
+
+				$out[$video_id] = [
+					$data[0],
+					array_values(array_filter($data[1], 'is_string')),
+				];
 			}
 		}
 
@@ -378,9 +427,9 @@ class YouTubeApiWrapper
 	}
 
 	/**
-	 * @param array<string, array{0:string}>
+	 * @param array<string, string>
 	 *
-	 * @return array<string, array{0:string}>
+	 * @return array<string, string>
 	 */
 	private function listPlaylists(
 		array $args = [],
@@ -410,6 +459,9 @@ class YouTubeApiWrapper
 
 	/**
 	 * @param array{playlistId:string} $args
+	 * @param list<string> $out
+	 *
+	 * @return list<string>
 	 */
 	private function listPlaylistItems(
 		array $args = [],
@@ -434,9 +486,7 @@ class YouTubeApiWrapper
 			/** @var Google_Service_YouTube_ResourceId */
 			$video_snippet_resourceId = $video_snippet->resourceId;
 
-			$video_id = $video_snippet_resourceId->videoId;
-
-			$out[] = $video_id;
+			$out[] = (string) $video_snippet_resourceId->videoId;
 		}
 
 		if (isset($response->nextPageToken)) {
@@ -523,7 +573,7 @@ class YouTubeApiWrapper
 			 * @return list<string>
 			 */
 			static function (array $video_ids) use ($videos) : array {
-				return array_intersect($videos, $video_ids);
+				return array_values(array_intersect($videos, $video_ids));
 			},
 			$this->fetch_playlist_items()
 		);
