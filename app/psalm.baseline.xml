@@ -27,7 +27,7 @@
       <code>$playlist_title</code>
     </InvalidOperand>
     <InvalidScalarArgument occurrences="1"/>
-    <MixedArgument occurrences="42">
+    <MixedArgument occurrences="38">
       <code>$cache['legacyAlts']</code>
       <code>$cache['playlists'][$topic_id][2]</code>
       <code>$cache['playlists'][$topic_id][2]</code>
@@ -143,7 +143,7 @@
       <code>$externals_cache['playlists'][$playlist_id]</code>
       <code>$playlists[$topic_id]</code>
     </MixedArrayTypeCoercion>
-    <MixedAssignment occurrences="40">
+    <MixedAssignment occurrences="37">
       <code>$cache['playlists']</code>
       <code>$cache['videoTags'][$video_id][]</code>
       <code>$data</code>
