@@ -665,19 +665,22 @@ if ($transcriptions) {
 			)
 		);
 
-		foreach ($caption_lines as $caption_line) {
-			file_put_contents(
-				$transcriptions_file,
-				(
+		file_put_contents(
+			$transcriptions_file,
+			implode('', array_map(
+				static function (string $caption_line) : string {
+					return
 					'> '
 					. $caption_line
 					. "\n"
 					. '> '
 					. "\n"
-				),
-				FILE_APPEND
-			);
-		}
+					;
+				},
+				$caption_lines
+			)),
+			FILE_APPEND
+		);
 	}
 
 	$skipping = array_unique($skipping);
@@ -859,17 +862,20 @@ foreach (array_keys($playlists) as $playlist_id) {
 			FILE_APPEND
 		);
 
-		foreach ($video_data as $video_line) {
 			file_put_contents(
 				$playlists[$playlist_id],
-				(
+			implode('', array_map(
+				static function (string $video_line) : string {
+					return
 					'* '
 					. $video_line
 					. "\n"
-				),
+					;
+				},
+				$video_data
+			)),
 				FILE_APPEND
 			);
-		}
 	}
 
 	if (count($content_arrays['Single video clips']) > 0) {
@@ -884,19 +890,22 @@ foreach (array_keys($playlists) as $playlist_id) {
 		);
 	}
 
-	foreach ($content_arrays['Single video clips'] as $video_id) {
 		file_put_contents(
 			$playlists[$playlist_id],
-			(
+		implode('', array_map(
+			static function (string $video_id) use($cache) : string {
+				return
 				'* '
 				. $cache['playlistItems'][$video_id][1]
 				. ' '
 				. video_url_from_id($video_id)
 				. "\n"
-			),
+				;
+			},
+			$content_arrays['Single video clips']
+		)),
 			FILE_APPEND
 		);
-	}
 }
 
 $now = time();
@@ -1428,10 +1437,11 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				FILE_APPEND
 			);
 
-			foreach ($video_ids as $video_id) {
 				file_put_contents(
 					$slug_path,
-					(
+				implode('', array_map(
+					static function (string $video_id) use($cache, $slug_count) : string {
+						return
 						'* '
 						. maybe_transcript_link_and_video_url(
 							$video_id,
@@ -1439,10 +1449,12 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 							$slug_count
 						)
 						. "\n"
-					),
+						;
+					},
+					$video_ids
+				)),
 					FILE_APPEND
 				);
-			}
 		}
 	}
 
