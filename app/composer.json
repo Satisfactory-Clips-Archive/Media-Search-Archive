@@ -31,7 +31,7 @@
 		"benlipp/srt-parser": "^1.1",
 		"google/apiclient": "^2.7",
 		"roave/security-advisories": "dev-master",
-		"signpostmarv/php-cs-fixer-config": "^0.18.0",
+		"signpostmarv/php-cs-fixer-config": "^0.20.1",
 		"vimeo/psalm": "^4.3"
 	}
 }
