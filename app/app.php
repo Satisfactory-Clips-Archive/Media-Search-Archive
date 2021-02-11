@@ -141,9 +141,39 @@ $injected_playlists = array_map(
 	)
 );
 
+$playist_directories = array_values(array_unique(array_map(
+	'dirname',
+	array_merge($playlists, $injected_playlists)
+)));
+
+foreach ($playist_directories as $playlist_directory) {
+	if (
+		$playlist_directory !== (
+			__DIR__
+			. '/../coffeestainstudiosdevs/satisfactory'
+		)
+	) {
+		throw new RuntimeException(sprintf(
+			'Unsupported directory found! (%s)',
+			$playlist_directory
+		));
+	}
+}
+
+$playlists = array_merge($playlists, $injected_playlists);
+
+foreach ($playlists as $playlist_path) {
+	$dirname = dirname($playlist_path);
+	$basename = basename($playlist_path);
+
+	if ( ! is_file($dirname . '/' . $basename)) {
+		touch($playlist_path);
+	}
+}
+
 $playlists = array_map(
 	'realpath',
-	array_merge($playlists, $injected_playlists)
+	$playlists
 );
 
 asort($playlists);
