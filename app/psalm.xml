@@ -10,6 +10,9 @@
 >
 	<projectFiles>
 		<file name="app.php" />
+		<file name="decorate-cache-injection.php" />
+		<file name="global-topic-hierarchy.php" />
+		<file name="lunr-docs-preload.php" />
 		<directory name="src" />
 		<ignoreFiles>
 			<directory name="vendor" />
