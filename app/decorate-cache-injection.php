@@ -7,21 +7,31 @@ declare(strict_types=1);
 namespace SignpostMarv\VideoClipNotes;
 
 use function array_filter;
+use const ARRAY_FILTER_USE_KEY;
+use function array_map;
+use function array_merge;
+use function array_merge_recursive;
+use function array_unique;
 use function basename;
+use function count;
 use function file_get_contents;
 use function file_put_contents;
 use function glob;
-use function is_string;
+use function in_array;
 use function json_decode;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
+use function ksort;
+use function mb_strpos;
 use function mb_substr;
 use function preg_match;
 use RuntimeException;
+use function sort;
 use function strnatcasecmp;
-use function strtotime;
+use function trim;
+use function uksort;
 
-require_once(__DIR__ . '/vendor/autoload.php');
+require_once (__DIR__ . '/vendor/autoload.php');
 
 $cache = json_decode(
 	file_get_contents(__DIR__ . '/cache-injection.json'),
@@ -44,7 +54,7 @@ $main = json_decode(
 	true
 );
 
-require_once(__DIR__ . '/global-topic-hierarchy.php');
+require_once (__DIR__ . '/global-topic-hierarchy.php');
 
 $global_topic_hierarchy = array_merge_recursive(
 	$global_topic_hierarchy,
@@ -100,7 +110,7 @@ function add_twitch_video(
 
 	$id = 'tc-' . $matches[1];
 
-	if (! isset($cache['playlistItems'][$id])) {
+	if ( ! isset($cache['playlistItems'][$id])) {
 		$cache['playlistItems'][$id] = ['', ''];
 	}
 
@@ -243,7 +253,7 @@ function add_instagram_stories_video(
 		throw new RuntimeException(
 			'Could not find playlist destination!'
 		);
-	} elseif (0 !== mb_strpos($id, 'is-') ) {
+	} elseif (0 !== mb_strpos($id, 'is-')) {
 		throw new RuntimeException(
 			'Instagram Story ID needs have the prefix "is-"!'
 		);
@@ -317,7 +327,6 @@ foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $prefiltered
 		);
 	}
 }
-
 
 $preloaded_faq = [
 	'Satisfactory Update 4' => [
@@ -1694,7 +1703,8 @@ const auto_FAQ_topics = [
  *
  * @return array{0:bool, 1:list<string>}
  */
-function is_topic_FAQ(array $maybe) : array {
+function is_topic_FAQ(array $maybe) : array
+{
 	$is_faq = in_array(true, $maybe, true);
 
 	$topics = array_filter($maybe, 'is_string');
@@ -1881,7 +1891,7 @@ foreach ($manually_inject_videos_to_topics as $topic => $video_ids) {
 		$global_topic_hierarchy,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup
-	);;
+	);
 
 	if ( ! isset($cache['playlists'][$topic_id])) {
 		$cache['playlists'][$topic_id] = ['', $topic, []];
@@ -1889,7 +1899,7 @@ foreach ($manually_inject_videos_to_topics as $topic => $video_ids) {
 
 	foreach ($video_ids as $video_id) {
 		if (
-			! in_array($video_id,$cache['playlists'][$topic_id][2], true)
+			! in_array($video_id, $cache['playlists'][$topic_id][2], true)
 			&& (
 				! isset($main['playlists'][$topic_id])
 				|| ! in_array(
@@ -2416,8 +2426,7 @@ foreach ($legacy_alt_forms_of_video as $date => $data) {
 			! isset($cache['playlistItems'][$video_id])
 			&& ! isset($main['playlistItems'][$video_id])
 		) {
-			echo
-				$video_id,
+			echo $video_id,
 				' not in cache!',
 				"\n";
 		}

@@ -11,5 +11,8 @@ namespace SignpostMarv\CS;
 return ConfigUsedWithStaticAnalysis::createWithPaths(...[
 	__FILE__,
 	__DIR__ . '/app.php',
+	__DIR__ . '/decorate-cache-injection.php',
+	__DIR__ . '/global-topic-hierarchy.php',
+	__DIR__ . '/lunr-docs-preload.php',
 	__DIR__ . '/src/',
 ]);

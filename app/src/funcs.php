@@ -51,6 +51,7 @@ use function preg_quote;
 use function preg_replace;
 use function preg_replace_callback;
 use function rawurlencode;
+use function set_error_handler;
 use SimpleXMLElement;
 use function sort;
 use function sprintf;
@@ -623,8 +624,7 @@ function nesting_children(
 		$children = array_filter(
 			$children,
 			static function (string $maybe) use ($data, $target) : bool {
-				return
-					$data[$maybe]['level'] === $data[$target]['level'] + 1;
+				return $data[$maybe]['level'] === $data[$target]['level'] + 1;
 			}
 		);
 	}
@@ -1024,7 +1024,7 @@ function get_dated_csv(
 
 	$csv = array_filter($csv, 'is_array');
 
-	usort($csv, static function (array $a, array $b) use ($video_id) : int {
+	usort($csv, static function (array $a, array $b) : int {
 		[$a] = $a;
 		[$b] = $b;
 

@@ -154,7 +154,7 @@ $global_topic_hierarchy = [
 			'Environment',
 		],
 		'PLbjDnnBIxiEq1P6bQ-17tMjKuFJyxcfSU' => [ // Plants
-			'Environment'
+			'Environment',
 		],
 		'PLbjDnnBIxiErB8M3t_-CDtAh-q9TXdooO' => [ // Polution
 			'Environment',

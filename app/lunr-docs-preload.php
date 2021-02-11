@@ -6,8 +6,33 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
-require_once(__DIR__ . '/vendor/autoload.php');
-require_once(__DIR__ . '/global-topic-hierarchy.php');
+use function array_combine;
+use function array_diff;
+use function array_filter;
+use const ARRAY_FILTER_USE_KEY;
+use function array_keys;
+use function array_map;
+use function array_merge;
+use function array_merge_recursive;
+use function array_reduce;
+use function array_unique;
+use function count;
+use function explode;
+use function file_get_contents;
+use function file_put_contents;
+use function implode;
+use function in_array;
+use function is_file;
+use function json_decode;
+use function json_encode;
+use const JSON_PRETTY_PRINT;
+use function mb_strpos;
+use function mb_substr;
+use function preg_replace;
+use function trim;
+
+require_once (__DIR__ . '/vendor/autoload.php');
+require_once (__DIR__ . '/global-topic-hierarchy.php');
 
 $global_topic_hierarchy = array_merge_recursive(
 	$global_topic_hierarchy,

@@ -6,17 +6,38 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function array_chunk;
+use function array_diff;
+use function array_filter;
+use function array_keys;
+use function array_merge;
+use function array_reduce;
+use function array_reverse;
+use function array_unique;
+use function asort;
+use function dirname;
+use function file_get_contents;
+use function file_put_contents;
+use function filemtime;
 use Google_Client;
 use Google_Service_YouTube;
 use Google_Service_YouTube_Playlist;
 use Google_Service_YouTube_PlaylistItem;
 use Google_Service_YouTube_PlaylistItemListResponse;
 use Google_Service_YouTube_PlaylistListResponse;
-use Google_Service_YouTube_PlaylistSnippet;
 use Google_Service_YouTube_ResourceId;
 use Google_Service_YouTube_VideoListResponse;
 use Google_Service_YouTube_VideoSnippet;
+use function implode;
+use function is_file;
+use function json_decode;
+use function json_encode;
+use const JSON_PRETTY_PRINT;
+use function realpath;
 use RuntimeException;
+use function sort;
+use function sprintf;
+use function time;
 
 class YouTubeApiWrapper
 {
@@ -133,7 +154,7 @@ class YouTubeApiWrapper
 		/** @var array<string, list<string>> */
 		static $out = null;
 
-		if (null == $out) {
+		if (null === $out) {
 			foreach (
 				array_keys($this->fetch_all_playlists()) as $playlist_id
 			) {

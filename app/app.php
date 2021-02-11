@@ -30,20 +30,9 @@ use function dirname;
 use const FILE_APPEND;
 use function file_get_contents;
 use function file_put_contents;
-use Google_Client;
-use Google_Service_YouTube;
-use Google_Service_YouTube_Playlist;
-use Google_Service_YouTube_PlaylistItem;
-use Google_Service_YouTube_PlaylistItemListResponse;
-use Google_Service_YouTube_PlaylistListResponse;
-use Google_Service_YouTube_PlaylistSnippet;
-use Google_Service_YouTube_ResourceId;
-use Google_Service_YouTube_VideoListResponse;
-use Google_Service_YouTube_VideoSnippet;
 use function implode;
 use function in_array;
 use function is_dir;
-use function is_file;
 use function is_string;
 use function json_decode;
 use function json_encode;
@@ -70,8 +59,8 @@ use function usort;
 
 $transcriptions = in_array('--transcriptions', $argv, true);
 
-require_once(__DIR__ . '/vendor/autoload.php');
-require_once(__DIR__ . '/global-topic-hierarchy.php');
+require_once (__DIR__ . '/vendor/autoload.php');
+require_once (__DIR__ . '/global-topic-hierarchy.php');
 
 $api = new YouTubeApiWrapper();
 
@@ -517,8 +506,7 @@ if ($transcriptions) {
 
 	foreach ($all_video_ids as $video_id) {
 		if (in_array($video_id, $skipping, true)) {
-			echo
-				'skipping captions for ',
+			echo 'skipping captions for ',
 				$video_id,
 				' (pre-flagged)',
 				"\n";
@@ -719,8 +707,7 @@ if ($transcriptions) {
 		JSON_PRETTY_PRINT
 	));
 
-	echo
-		sprintf(
+	echo sprintf(
 			'%s subtitles checked of %s videos cached',
 			$checked,
 			count($cache['playlistItems'])
@@ -1349,7 +1336,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 						$not_a_livestream,
 						$not_a_livestream_date_lookup,
 						$slug_count,
-						$slug,
 						$slugify,
 						$basename
 					) : string {
@@ -1410,8 +1396,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 							$cache,
 							$global_topic_hierarchy,
 							$slugify,
-							$slug_count,
-							$slug
+							$slug_count
 						) : string {
 							[$slug_string, $sub_slug] = topic_to_slug(
 								$subtopic_id,
