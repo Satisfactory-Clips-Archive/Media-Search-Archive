@@ -1614,16 +1614,16 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	$file_path = $save_path . '/../' . $basename . '/index.md';
 
-	file_put_contents(
-		$file_path,
+	/** @var list<string> */
+	$lines = [
 		(
 			'---' . "\n"
 			. 'title: Browse' . "\n"
 			. 'date: Last Modified' . "\n"
 			. 'layout: index' . "\n"
 			. '---' . "\n"
-		)
-	);
+		),
+	];
 
 	$grouped = [];
 
@@ -1684,37 +1684,28 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	foreach ($sortable as $year => $months) {
 		if ($past_first) {
-			file_put_contents($file_path, "\n", FILE_APPEND);
+			$lines[] = "\n";
 		} else {
 			$past_first = true;
 		}
 
-		file_put_contents(
-			$file_path,
-			sprintf('# %s', $year),
-			FILE_APPEND
-		);
+		$lines[] = sprintf('# %s', $year);
 
 		foreach (array_keys($months) as $readable_month) {
-			file_put_contents(
-				$file_path,
-				sprintf("\n" . '## %s' . "\n", $readable_month),
-				FILE_APPEND
-			);
+			$lines[] = sprintf("\n" . '## %s' . "\n", $readable_month);
 
 			foreach ($grouped[$year][$readable_month] as $line_data) {
 				[$readable_date, $filename] = $line_data;
 
-				file_put_contents(
-					$file_path,
+				$lines[] =
 					sprintf(
 						'* [%s](%s)' . "\n",
 						$readable_date,
 						$filename
-					),
-					FILE_APPEND
 				);
 			}
 		}
 	}
+
+	file_put_contents($file_path, implode('', $lines));
 }
