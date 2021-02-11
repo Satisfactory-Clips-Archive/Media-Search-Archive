@@ -22,6 +22,7 @@ use function count;
 use function date;
 use function dirname;
 use function end;
+use ErrorException;
 use function explode;
 use function fclose;
 use function fgetcsv;
@@ -62,6 +63,21 @@ use function strtotime;
 use function trim;
 use function uasort;
 use function usort;
+
+set_error_handler(static function (
+	int $errno,
+	string $errstr,
+	string $errfile,
+	int $errline,
+	array $errcontext
+) : bool {
+	throw new ErrorException(sprintf(
+		'%s:%s %s',
+		$errfile,
+		$errline,
+		$errstr
+	));
+});
 
 function video_url_from_id(string $video_id, bool $short = false) : string
 {
