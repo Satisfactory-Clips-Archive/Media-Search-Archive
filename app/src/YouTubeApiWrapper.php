@@ -51,6 +51,11 @@ class YouTubeApiWrapper
 	 */
 	private Google_Service_YouTube $service;
 
+	/**
+	 * @var array<string, list<string>>|null
+	 */
+	private $fetch_playlist_items = null;
+
 	public function __construct()
 	{
 		$client = new Google_Client();
@@ -73,6 +78,7 @@ class YouTubeApiWrapper
 		$this->fetch_all_playlists();
 		$this->fetch_playlist_items();
 		$this->fetch_all_videos_in_playlists();
+		$this->sort_playist_items();
 	}
 
 	public function toLegacyCacheFormat() : array
@@ -151,10 +157,9 @@ class YouTubeApiWrapper
 
 	public function fetch_playlist_items() : array
 	{
-		/** @var array<string, list<string>> */
-		static $out = null;
+		if (null === $this->fetch_playlist_items) {
+			$this->fetch_playlist_items = [];
 
-		if (null === $out) {
 			foreach (
 				array_keys($this->fetch_all_playlists()) as $playlist_id
 			) {
@@ -207,11 +212,11 @@ class YouTubeApiWrapper
 					json_encode($playlist, JSON_PRETTY_PRINT)
 				);
 
-				$out[$playlist_id] = $playlist;
+				$this->fetch_playlist_items[$playlist_id] = $playlist;
 			}
 		}
 
-		return $out;
+		return $this->fetch_playlist_items;
 	}
 
 	public function fetch_all_videos_in_playlists() : array
@@ -451,5 +456,57 @@ class YouTubeApiWrapper
 		}
 
 		return $out;
+	}
+
+	private function sort_playist_items() : void
+	{
+		$videos = array_map('current', $this->fetch_all_videos_in_playlists());
+
+		natcasesort($videos);
+
+		$videos = array_keys($videos);
+
+		$this->fetch_playlist_items = array_map(
+			/**
+			 * @param list<string> $video_ids
+			 *
+			 * @return list<string>
+			 */
+			static function (array $video_ids) use($videos) : array {
+				return array_intersect($videos, $video_ids);
+			},
+			$this->fetch_playlist_items()
+		);
+
+		foreach ($this->fetch_playlist_items as $playlist_id => $playlist) {
+			$cache_file = (
+				__DIR__
+				. '/../data/api-cache/playlists/'
+				. $playlist_id
+				. '.json'
+			);
+
+			if (
+				is_file($cache_file)
+				&& (
+					realpath(
+						dirname($cache_file)
+					) !== realpath(
+						__DIR__
+						. '/../data/api-cache/playlists'
+					)
+				)
+			) {
+				throw new RuntimeException(sprintf(
+					'Invalid playlist id found! (%s)',
+					$playlist_id
+				));
+			}
+
+			file_put_contents(
+				$cache_file,
+				json_encode($playlist, JSON_PRETTY_PRINT)
+			);
+		}
 	}
 }
