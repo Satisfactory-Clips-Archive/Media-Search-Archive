@@ -7,9 +7,14 @@ declare(strict_types=1);
 namespace SignpostMarv\VideoClipNotes;
 
 use function array_chunk;
+use function array_combine;
 use function array_diff;
 use function array_filter;
+use const ARRAY_FILTER_USE_BOTH;
+use const ARRAY_FILTER_USE_KEY;
+use function array_intersect;
 use function array_keys;
+use function array_map;
 use function array_merge;
 use function array_reduce;
 use function array_reverse;
@@ -18,7 +23,6 @@ use function asort;
 use function dirname;
 use function file_get_contents;
 use function file_put_contents;
-use function filemtime;
 use Google_Client;
 use Google_Service_YouTube;
 use Google_Service_YouTube_Playlist;
@@ -29,15 +33,16 @@ use Google_Service_YouTube_ResourceId;
 use Google_Service_YouTube_VideoListResponse;
 use Google_Service_YouTube_VideoSnippet;
 use function implode;
+use function in_array;
 use function is_file;
 use function json_decode;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
+use function natcasesort;
 use function realpath;
 use RuntimeException;
 use function sort;
 use function sprintf;
-use function time;
 
 class YouTubeApiWrapper
 {
@@ -359,7 +364,7 @@ class YouTubeApiWrapper
 				ARRAY_FILTER_USE_KEY
 			),
 			array_combine(array_keys($nested), array_map(
-				static function (string $topic_id) use($not_nested) : string {
+				static function (string $topic_id) use ($not_nested) : string {
 					return $not_nested[$topic_id] ?? $topic_id;
 				},
 				array_keys($nested)
@@ -517,7 +522,7 @@ class YouTubeApiWrapper
 			 *
 			 * @return list<string>
 			 */
-			static function (array $video_ids) use($videos) : array {
+			static function (array $video_ids) use ($videos) : array {
 				return array_intersect($videos, $video_ids);
 			},
 			$this->fetch_playlist_items()

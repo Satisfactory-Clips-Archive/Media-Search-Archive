@@ -37,7 +37,6 @@ use function is_string;
 use function json_decode;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
-use function ksort;
 use function mb_substr;
 use function min;
 use function mkdir;
@@ -45,7 +44,6 @@ use function natcasesort;
 use function natsort;
 use function realpath;
 use RuntimeException;
-use function sort;
 use function sprintf;
 use function str_repeat;
 use function str_replace;
@@ -880,7 +878,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 	file_put_contents(
 		$playlists[$playlist_id],
 		implode('', array_map(
-			static function (string $video_id) use($cache) : string {
+			static function (string $video_id) use ($cache) : string {
 				return
 					'* '
 					. $cache['playlistItems'][$video_id][1]
@@ -1427,7 +1425,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			file_put_contents(
 				$slug_path,
 				implode('', array_map(
-					static function (string $video_id) use($cache, $slug_count) : string {
+					static function (string $video_id) use ($cache, $slug_count) : string {
 						return
 							'* '
 							. maybe_transcript_link_and_video_url(
