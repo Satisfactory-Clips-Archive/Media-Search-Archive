@@ -51,6 +51,9 @@ class YouTubeApiWrapper
 	 */
 	private Google_Service_YouTube $service;
 
+	/** @var array<string, string>|null */
+	private $playlists = null;
+
 	/**
 	 * @var array<string, list<string>>|null
 	 */
@@ -113,16 +116,10 @@ class YouTubeApiWrapper
 
 	public function fetch_all_playlists() : array
 	{
-		/** @var array<string, string>|null */
-		static $playlists = null;
-
-		if (null === $playlists) {
+		if (null === $this->playlists) {
 			$cache_file = (__DIR__ . '/../data/api-cache/playlists.json');
 
-			if (
-				is_file($cache_file)
-				&& ((time() - filemtime($cache_file)) < 86400)
-			) {
+			if (is_file($cache_file)) {
 				$to_sort = json_decode(file_get_contents($cache_file), true);
 			} else {
 				$to_sort = $this->listPlaylists([
@@ -141,18 +138,26 @@ class YouTubeApiWrapper
 				}
 			}
 
-			$playlists = array_merge(
+			$this->playlists = array_merge(
 				$playlists,
 				array_diff($to_sort, $playlists)
 			);
 
+			$this->playlists = array_filter(
+				$this->playlists,
+				static function (string $a, string $b) : bool {
+					return $a !== $b;
+				},
+				ARRAY_FILTER_USE_BOTH
+			);
+
 			file_put_contents(
 				(__DIR__ . '/../data/api-cache/playlists.json'),
-				json_encode($playlists, JSON_PRETTY_PRINT)
+				json_encode($this->playlists, JSON_PRETTY_PRINT)
 			);
 		}
 
-		return $playlists;
+		return $this->playlists;
 	}
 
 	public function fetch_playlist_items() : array
@@ -325,6 +330,46 @@ class YouTubeApiWrapper
 		}
 
 		return $out;
+	}
+
+	/**
+	 * @param array<string, array{
+	 *	children: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }> $nested
+	 */
+	public function sort_playlists_by_nested_data(array $nested) : void
+	{
+		$not_nested = $this->fetch_all_playlists();
+
+		$not_sorted = array_diff(array_keys($not_nested), array_keys($nested));
+
+		$this->playlists = array_merge(
+			array_filter(
+				$not_nested,
+				static function (
+					string $playlist_id
+				) use (
+					$not_sorted
+				) : bool {
+					return in_array($playlist_id, $not_sorted, true);
+				},
+				ARRAY_FILTER_USE_KEY
+			),
+			array_combine(array_keys($nested), array_map(
+				static function (string $topic_id) use($not_nested) : string {
+					return $not_nested[$topic_id] ?? $topic_id;
+				},
+				array_keys($nested)
+			))
+		);
+
+		file_put_contents(
+			(__DIR__ . '/../data/api-cache/playlists.json'),
+			json_encode($this->playlists, JSON_PRETTY_PRINT)
+		);
 	}
 
 	/**

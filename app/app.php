@@ -431,28 +431,33 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 	$topic_nesting[$basename] = $topics;
 }
 
-uksort($videos, static function (string $a, string $b) use ($cache) : int {
-	return strnatcasecmp(
-		$cache['playlists'][$a][1],
-		$cache['playlists'][$b][1]
-	);
+file_put_contents(__DIR__ . '/topics-nested.json', json_encode(
+	$topic_nesting,
+	JSON_PRETTY_PRINT
+));
+
+$api->sort_playlists_by_nested_data($topic_nesting['satisfactory']);
+
+usort($all_topic_ids, static function (
+	string $a,
+	string $b
+) use ($topic_nesting, $cache) : int {
+	if ( ! isset($topic_nesting['satisfactory'][$a], $topic_nesting['satisfactory'][$b])) {
+		return strnatcasecmp(
+			$cache['playlists'][$a][1],
+			$cache['playlists'][$b][1]
+		);
+	}
+
+	return
+		$topic_nesting['satisfactory'][$a]['left']
+		- $topic_nesting['satisfactory'][$b]['left'];
 });
-
-$videos = array_map(
-	static function (array $in) : array {
-		uasort($in, static function (string $a, string $b) : int {
-			return strnatcasecmp($a, $b);
-		});
-
-		return $in;
-	},
-	$videos
-);
 
 $video_playlists = [];
 
-foreach ($cache['playlists'] as $playlist_id => $data) {
-	[,, $video_ids] = $data;
+foreach (array_keys($api->fetch_all_playlists()) as $playlist_id) {
+	[,, $video_ids] = $cache['playlists'][$playlist_id] ?? [2 => []];
 
 	foreach ($video_ids as $video_id) {
 		if ( ! isset($video_playlists[$video_id])) {
@@ -481,9 +486,6 @@ foreach ($all_topic_ids as $topic_id) {
 	$playlist_topic_strings[$topic_id] = $slug_string;
 	$playlist_topic_strings_reverse_lookup[$slug_string] = $topic_id;
 }
-
-ksort($topics_json);
-ksort($playlist_topic_strings_reverse_lookup);
 
 file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_json, JSON_PRETTY_PRINT));
 
@@ -561,27 +563,6 @@ if ($transcriptions) {
 					]
 				);
 			}
-		);
-
-		usort(
-			$transcript_topic_strings,
-			static function (
-				string $a,
-				string $b
-			) use ($playlist_topic_strings) : int {
-				return strnatcasecmp(
-					$playlist_topic_strings[
-						$a
-					],
-					$playlist_topic_strings[
-						$b
-					]
-				);
-			}
-		);
-
-		$transcript_topic_strings = array_values(
-			$transcript_topic_strings
 		);
 
 		file_put_contents(
@@ -700,7 +681,6 @@ if ($transcriptions) {
 	}
 
 	$skipping = array_unique($skipping);
-	sort($skipping);
 
 	file_put_contents(__DIR__ . '/skipping-transcriptions.json', json_encode(
 		$skipping,
