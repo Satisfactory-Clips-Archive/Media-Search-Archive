@@ -720,10 +720,12 @@ if ($transcriptions) {
 			implode('', array_map(
 				static function (string $caption_line) : string {
 					return
+						trim(
 						'> '
 						. $caption_line
+						)
 						. "\n"
-						. '> '
+						. '>'
 						. "\n"
 					;
 				},
