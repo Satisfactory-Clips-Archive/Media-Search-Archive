@@ -89,9 +89,6 @@ foreach ($playlist_metadata as $metadata_path => $prepend_path) {
 	}
 }
 
-/** @var array<string, array<string, string>> */
-$videos = [];
-
 $exclude_from_absent_tag_check = [
 	'4_cYnq746zk', // official merch announcement video
 ];
@@ -201,10 +198,6 @@ $injected_cache = json_decode(
 );
 
 foreach ($injected_cache['playlists'] as $playlist_id => $injected_data) {
-	if ( ! isset($videos[$playlist_id])) {
-		$videos[$playlist_id] = [];
-	}
-
 	if (
 		! isset(
 			$other_playlists_on_channel[$playlist_id],
@@ -226,12 +219,6 @@ foreach ($injected_cache['playlists'] as $playlist_id => $injected_data) {
 		$other_playlists_on_channel[$playlist_id][1] = array_merge(
 			$other_playlists_on_channel[$playlist_id][1],
 			$injected_data[2]
-		);
-	}
-
-	foreach ($injected_data[2] as $video_id) {
-		$videos[$playlist_id][$video_id] = (
-			$injected_cache['playlistItems'][$video_id][1]
 		);
 	}
 }
