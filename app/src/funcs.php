@@ -232,20 +232,24 @@ function vendor_prefixed_video_id(string $video_id) : string
 
 /**
  * @psalm-type CACHE = array{
- *	playlists:array<string, array{0:string, 1:string, 1:list<string>}>,
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
- *	stubPlaylists?:array<string, array{0:string, 1:string, 1:list<string>}>
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
  * }
  *
  * @param CACHE $cache
  * @param CACHE ...$caches
  *
  * @return array{
- *	playlists:array<string, array{0:string, 1:string, 1:list<string>}>,
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
- *	stubPlaylists:array<string, array{0:string, 1:string, 1:list<string>}>
+ *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts:array<string, list<string>>,
+ *	internalxref:array<string, string>
  * }
  */
 function inject_caches(array $cache, array ...$caches) : array
@@ -384,15 +388,14 @@ function topic_to_slug(
 }
 
 /**
- * @param array{
- *	playlists:array<
- *		string,
- *		array{
- *			0:string,
- *			1:string,
- *			2:list<string>
- *		}
- *	} $main
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>
+ * }
+ *
+ * @param CACHE $main
  */
 function try_find_main_playlist(
 	string $playlist_name,
@@ -408,6 +411,16 @@ function try_find_main_playlist(
 }
 
 /**
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>
+ * }
+ *
+ * @param CACHE $cache
+ * @param CACHE $main
+ *
  * @return array{0:string, 1:string}
  */
 function determine_playlist_id(
@@ -783,7 +796,16 @@ function filter_nested(
 }
 
 /**
- * @param array{legacyAlts:array<string, list<string>} $cache
+ * @param array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts:array<string, list<string>>,
+ *	internalxref:array<string, string>
+ * } $cache
+ *
+ * @return list<string>
  */
 function filter_video_ids_for_legacy_alts(
 	array $cache,
@@ -799,6 +821,11 @@ function filter_video_ids_for_legacy_alts(
 	if (count($has_legacy_alts)) {
 		$legacy_alts = array_unique(array_reduce(
 			$has_legacy_alts,
+			/**
+			 * @param list<string> $out
+			 *
+			 * @return list<string>
+			 */
 			static function (
 				array $out,
 				string $video_id
@@ -811,7 +838,7 @@ function filter_video_ids_for_legacy_alts(
 		$video_ids = array_diff($video_ids, $legacy_alts);
 	}
 
-	return $video_ids;
+	return array_values($video_ids);
 }
 
 /**
@@ -915,14 +942,14 @@ function raw_captions(string $video_id) : array
  *	array{
  *		0:string,
  *		1:list<array{
- *			0:numeric-string|empty-string,
- *			1:numeric-string|empty-string,
+ *			0:numeric-string|'',
+ *			1:numeric-string|'',
  *			2:string
  *		}>,
  *		2:array{
  *			title:string,
  *			skip:list<bool>,
- *			topics:array<int, list<string>
+ *			topics:array<int, list<string>>
  *		}
  *	}
  * >
@@ -947,14 +974,14 @@ function get_externals() : array
 		 *	array{
 		 *		0:string,
 		 *		1:list<array{
-		 *			0:numeric-string|empty-string,
-		 *			1:numeric-string|empty-string,
+		 *			0:numeric-string|'',
+		 *			1:numeric-string|'',
 		 *			2:string
 		 *		}>,
 		 *		2:array{
 		 *			title:string,
 		 *			skip:list<bool>,
-		 *			topics:array<int, list<string>
+		 *			topics:array<int, list<string>>
 		 *		}
 		 *	}
 		 * > $out
@@ -964,14 +991,14 @@ function get_externals() : array
 		 *	array{
 		 *		0:string,
 		 *		1:list<array{
-		 *			0:numeric-string|empty-string,
-		 *			1:numeric-string|empty-string,
+		 *			0:numeric-string|'',
+		 *			1:numeric-string|'',
 		 *			2:string
 		 *		}>,
 		 *		2:array{
 		 *			title:string,
 		 *			skip:list<bool>,
-		 *			topics:array<int, list<string>
+		 *			topics:array<int, list<string>>
 		 *		}
 		 *	}
 		 * >
@@ -989,7 +1016,24 @@ function get_externals() : array
 
 			$video_id = pathinfo($path, PATHINFO_FILENAME);
 
-			$out[$date] = get_dated_csv($date, $video_id);
+			/**
+			 * @var array{
+			 *	0:string,
+			 *	1:list<array{
+			 *		0:numeric-string|'',
+			 *		1:numeric-string|'',
+			 *		2:string
+			 *	}>,
+			 *	2:array{
+			 *		title:string,
+			 *		skip:list<bool>,
+			 *		topics:array<int, list<string>>
+			 *	}
+			 * }
+			 */
+			$dated_csv = get_dated_csv($date, $video_id);
+
+			$out[$date] = $dated_csv;
 
 			return $out;
 		},
@@ -997,6 +1041,21 @@ function get_externals() : array
 	);
 }
 
+/**
+ * @return array{
+ *	0:string,
+ *	1:list<array{
+ *		0:numeric-string|'',
+ *		1:numeric-string|'',
+ *		2:string
+ *	}>,
+ *	2:array{
+ *		title:string,
+ *		skip:list<bool>,
+ *		topics:array<int, list<string>>
+ *	}|array<empty, empty>
+ * }
+ */
 function get_dated_csv(
 	string $date,
 	string $video_id,
@@ -1014,6 +1073,7 @@ function get_dated_csv(
 
 	$fp = fopen($path, 'rb');
 
+	/** @var list<string> */
 	$csv = [];
 
 	while (false !== ($line = fgetcsv($fp, 0, ',', '"', '"'))) {
@@ -1042,10 +1102,14 @@ function get_dated_csv(
 		];
 	}
 
-	return [
-		$video_id,
-		$csv,
-		json_decode(
+	/**
+	 * @var array{
+	 *	title:string,
+	 *	skip:list<bool>,
+	 *	topics:array<int, list<string>>
+	 * }
+	 */
+	$video_data = json_decode(
 			file_get_contents(
 				dirname($path)
 				. '/'
@@ -1053,13 +1117,18 @@ function get_dated_csv(
 				. '.json'
 			),
 			true
-		),
+	);
+
+	return [
+		$video_id,
+		$csv,
+		$video_data,
 	];
 }
 
 /**
  * @return array{
- *	playlists:array<string, array{0:string, 1:string, 1:list<string>}>,
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>
  * }
@@ -1120,14 +1189,20 @@ function process_externals(
 
 /**
  * @param array{
- *	playlists:array<string, array{0:string, 1:string, 1:list<string>}>,
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>
  * } $inject
+ * @param array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>
+ * } $cache
  *
  * @return array{
  *	0:array{
- *		playlists:array<string, array{0:string, 1:string, 1:list<string>}>,
+ *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *		playlistItems:array<string, array{0:string, 1:string}>,
  *		videoTags:array<string, array{0:string, list<string>}>
  *	},
@@ -1194,7 +1269,15 @@ function process_dated_csv(
 		];
 	}
 
+	/**
+	 * @var array<int, list<string>>
+	 */
 	$csv_captions = array_map(
+		/**
+		 * @param list<string> $csv_line
+		 *
+		 * @return list<string>
+		 */
 		static function (array $csv_line) use ($captions_with_start_time) : array {
 			$csv_line_captions = implode("\n", array_map(
 				static function (array $data) : string {
@@ -1304,7 +1387,11 @@ function process_dated_csv(
 				foreach (($data['topics'][$i] ?? []) as $topic) {
 					[$playlist_id] = determine_playlist_id(
 						$topic,
-						[],
+						[
+							'playlists' => [],
+							'playlistItems' => [],
+							'videoTags' => [],
+						],
 						$cache,
 						$global_topic_hierarchy,
 						$not_a_livestream,
@@ -1348,7 +1435,11 @@ function process_dated_csv(
 							return topic_to_slug(
 								determine_playlist_id(
 									$topic,
-									[],
+									[
+										'playlists' => [],
+										'playlistItems' => [],
+										'videoTags' => [],
+									],
 									$cache,
 									$global_topic_hierarchy,
 									$not_a_livestream,
@@ -1389,7 +1480,11 @@ function process_dated_csv(
 							[$slug, $parts] = topic_to_slug(
 								determine_playlist_id(
 									$topic,
-									[],
+									[
+										'playlists' => [],
+										'playlistItems' => [],
+										'videoTags' => [],
+									],
 									$cache,
 									$global_topic_hierarchy,
 									$not_a_livestream,
@@ -1477,7 +1572,7 @@ function embed_link(string $video_id, ? float $start, ? float $end) : string
 	$vendorless_video_id = mb_substr($video_id, 3);
 
 	if (preg_match('/^yt-/', $video_id)) {
-		$start = floor($start ?: '0');
+		$start = floor($start ?: 0);
 		$end = isset($end) ? ceil($end) : null;
 		$embed_data = [
 			'autoplay' => 1,
@@ -1497,5 +1592,5 @@ function embed_link(string $video_id, ? float $start, ? float $end) : string
 		);
 	}
 
-	return timestamp_link($video_id, $start);
+	return timestamp_link($video_id, $start ?? 0.0);
 }

@@ -53,7 +53,7 @@ $global_topic_append = json_decode(
  *	date: string,
  *	title: string,
  *	transcription: string,
- *	urls: list<string,
+ *	urls: list<string>,
  *	topics: list<string>,
  *	quotes: list<string>
  * }>

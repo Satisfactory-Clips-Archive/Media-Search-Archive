@@ -33,6 +33,16 @@ use function uksort;
 
 require_once (__DIR__ . '/vendor/autoload.php');
 
+/**
+ * @var array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
+ */
 $cache = json_decode(
 	file_get_contents(__DIR__ . '/cache-injection.json'),
 	true
@@ -40,14 +50,13 @@ $cache = json_decode(
 
 /**
  * @var array{
- *	playlists:array<
- *		string,
- *		array{
- *			0:string,
- *			1:string,
- *			2:list<string>
- *		}
- *	}
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
  */
 $main = json_decode(
 	file_get_contents(__DIR__ . '/cache.json'),
@@ -61,6 +70,21 @@ $global_topic_hierarchy = array_merge_recursive(
 	$injected_global_topic_hierarchy
 );
 
+/**
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
+ *
+ * @param CACHE $cache
+ * @param CACHE $main
+ *
+ * @return CACHE
+ */
 function add_playlist(
 	string $playlist_name,
 	array $cache,
@@ -89,6 +113,20 @@ function add_playlist(
 	return $cache;
 }
 
+/**
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
+ *
+ * @param CACHE $cache
+ *
+ * @return CACHE
+ */
 function add_twitch_video(
 	string $title,
 	string $url,
@@ -133,6 +171,20 @@ function add_twitch_video(
 	return $cache;
 }
 
+/**
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
+ *
+ * @param CACHE $cache
+ *
+ * @return CACHE
+ */
 function add_twitch_video_from_single_string(
 	string $string,
 	bool $faq,
@@ -161,6 +213,21 @@ function add_twitch_video_from_single_string(
 const youtube_single_string_regex = '/^(.+)(?:https:\/\/(?:(?:www\.)youtu(?:\.be\/|be\.com\/watch\/?\?v=))(.+))$/';
 const youtube_url_regex = '/^https:\/\/(?:(?:www\.)youtu(?:\.be\/|be\.com\/watch\/?\?v=))(.+)$/';
 
+/**
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
+ *
+ * @param CACHE $cache
+ * @param CACHE $main
+ *
+ * @return CACHE
+ */
 function add_youtube_video(
 	string $title,
 	string $id,
@@ -215,6 +282,21 @@ function add_youtube_video(
 	return $cache;
 }
 
+/**
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
+ *
+ * @param CACHE $cache
+ * @param CACHE $main
+ *
+ * @return CACHE
+ */
 function add_youtube_video_from_single_string(
 	string $string,
 	bool $faq,
@@ -242,6 +324,20 @@ function add_youtube_video_from_single_string(
 	);
 }
 
+/**
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
+ *
+ * @param CACHE $cache
+ *
+ * @return CACHE
+ */
 function add_instagram_stories_video(
 	string $id,
 	string $title,
@@ -1936,6 +2032,9 @@ $cache['stubPlaylists'] = array_filter(
 
 $cache['playlists'] = array_filter(
 	$cache['playlists'],
+	/**
+	 * @param array{0:string, 1:string, 2:list<string>} $maybe
+	 */
 	static function (array $maybe) : bool {
 		return count($maybe[2]) > 0;
 	}

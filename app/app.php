@@ -165,6 +165,7 @@ foreach ($playist_directories as $playlist_directory) {
 	}
 }
 
+/** @var array<string, string> */
 $playlists = array_merge($playlists, $injected_playlists);
 
 foreach ($playlists as $playlist_path) {
@@ -215,6 +216,9 @@ foreach ($playlists as $playlist_id => $path) {
 		$playlist_history[$playlist_id][] = [$playlist_date, time()];
 	}
 }
+
+/** @var array<string, string> */
+$playlists = $playlists;
 
 $playlist_history = array_map(
 	static function (array $data) : array {
@@ -357,7 +361,11 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 		foreach ($topic_ancestors as $i => $topic_ancestor_name) {
 			[$topic_ancestor_id] = determine_playlist_id(
 				$topic_ancestor_name,
-				[],
+				[
+					'playlists' => [],
+					'playlistItems' => [],
+					'videoTags' => [],
+				],
 				$cache,
 				$global_topic_hierarchy,
 				$not_a_livestream,
@@ -1401,7 +1409,11 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 					) : string {
 						[$parent_id] = determine_playlist_id(
 							$slug_parent,
-							[],
+							[
+								'playlists' => [],
+								'playlistItems' => [],
+								'videoTags' => [],
+							],
 							$cache,
 							$global_topic_hierarchy,
 							$not_a_livestream,
