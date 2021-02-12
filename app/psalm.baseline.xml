@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="4.3.1@2feba22a005a18bf31d4c7b9bdb9252c73897476">
+<files psalm-version="4.5.1@257a1ca672a79dedc852be1285a7b97154646418">
   <file src="app.php">
     <ArgumentTypeCoercion occurrences="1">
       <code>$cache</code>
@@ -39,7 +39,7 @@
       <code>$topic_slug_history</code>
       <code>$topics</code>
     </MixedArgument>
-    <MixedArgumentTypeCoercion occurrences="12">
+    <MixedArgumentTypeCoercion occurrences="11">
       <code>$topic_nesting[$basename]</code>
       <code>$topic_nesting[$basename]</code>
       <code>$topic_nesting[$basename]</code>
@@ -170,11 +170,9 @@
     <RedundantCondition occurrences="1">
       <code>$past_first</code>
     </RedundantCondition>
-    <UnusedVariable occurrences="18">
+    <UnusedVariable occurrences="16">
       <code>$autocategorise</code>
       <code>$categorised</code>
-      <code>$current_left</code>
-      <code>$current_left</code>
       <code>$etag</code>
       <code>$exclude_from_absent_tag_check</code>
       <code>$faq_patch</code>
@@ -393,9 +391,6 @@
       <code>$filtered[$topic_id]['videos']</code>
       <code>$filtered[$topic_id]['videos']</code>
     </PossiblyInvalidArrayAssignment>
-    <PossiblyNullArgument occurrences="1">
-      <code>$caption_line-&gt;attributes()</code>
-    </PossiblyNullArgument>
     <PossiblyUndefinedArrayOffset occurrences="1">
       <code>$xml_lines</code>
     </PossiblyUndefinedArrayOffset>
@@ -417,9 +412,8 @@
       <code>$global_topic_hierarchy</code>
       <code>$playlist_id</code>
     </UnusedParam>
-    <UnusedVariable occurrences="6">
+    <UnusedVariable occurrences="5">
       <code>$clip_title</code>
-      <code>$current_left</code>
       <code>$embed</code>
       <code>$friendly</code>
       <code>$maybe_playlist_id</code>
