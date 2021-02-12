@@ -1,0 +1,69 @@
+{
+	"title": "Dev Blog #2: Conveyor Belts/Basic Production Gameplay + Alpha Key info!",
+	"skip": [
+		true,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		false
+	],
+	"topics": {
+		"1": [
+			"Satisfactory Alpha",
+			"Conveyor Belts",
+			"Assembler",
+			"Resources",
+			"Miner",
+			"Power Management",
+			"Biomass Burner",
+			"Plants",
+			"Non Flying Bird",
+			"Smelter",
+			"Crafting"
+		],
+		"2": [
+			"Satisfactory Alpha",
+			"Conveyor Belts",
+			"Resources",
+			"Smelter",
+			"Power Management",
+			"Crafting"
+		],
+		"3": [
+			"Satisfactory Alpha",
+			"Conveyor Belts",
+			"Resources",
+			"Smelter",
+			"Constructor",
+			"Crafting",
+			"Assembler"
+		],
+		"4": [
+			"Satisfactory Alpha",
+			"Conveyor Belts",
+			"Resources",
+			"Constructor",
+			"Crafting",
+			"Assembler",
+			"Pioneer"
+		],
+		"5": [
+			"Satisfactory Alpha",
+			"Conveyor Belts",
+			"Resources",
+			"Crafting",
+			"Assembler",
+			"Storage Containers"
+		],
+		"6": [
+			"Satisfactory Alpha",
+			"Conveyor Belts",
+			"Resources",
+			"Storage Containers",
+			"User Interface"
+		]
+	}
+}

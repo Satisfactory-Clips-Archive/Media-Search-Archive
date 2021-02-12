@@ -1,0 +1,57 @@
+{
+	"skip": [
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		false,
+		true,
+		true,
+		true,
+		false,
+		true,
+		true,
+		false,
+		true,
+		true,
+		false,
+		false,
+		true,
+		false
+	],
+	"title": "Q&A #1: Are we making Sanctum 3?",
+	"topics": {
+		"15": [
+			"Nathalie",
+			"Hannah"
+		],
+		"19": [
+			"Trolling",
+			"Goat Simulator",
+			"Sanctum"
+		],
+		"22": [
+			"Sanctum"
+		],
+		"25": [
+			"Jace"
+		],
+		"26": [
+			"Sanctum"
+		],
+		"28": [
+			"Sanctum"
+		]
+	}
+}

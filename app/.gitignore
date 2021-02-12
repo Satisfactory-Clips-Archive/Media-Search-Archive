@@ -1,0 +1,11 @@
+/vendor/
+/google-auth.json
+/.php_cs.cache
+/captions/
+/cache.json
+/node_modules/
+/topics-satisfactory.json
+/lunr/
+/cache-injection.json
+/topics-nested.json
+/data/api-cache/
