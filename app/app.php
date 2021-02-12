@@ -570,12 +570,6 @@ $transcription_blank_lines_regex = '/(>\n>\n)+/';
 
 foreach ($all_video_ids as $video_id) {
 	if (in_array($video_id, $skipping, true)) {
-		echo 'skipping captions for ',
-			$video_id,
-			' (pre-flagged)',
-			"\n"
-		;
-
 		continue;
 	}
 
@@ -587,8 +581,6 @@ foreach ($all_video_ids as $video_id) {
 	$caption_lines = captions($video_id);
 
 	if (count($caption_lines) < 1) {
-		echo 'skipping captions for ', $video_id, "\n";
-
 		$skipping[] = $video_id;
 
 		continue;

@@ -13,6 +13,7 @@
 		<file name="decorate-cache-injection.php" />
 		<file name="global-topic-hierarchy.php" />
 		<file name="lunr-docs-preload.php" />
+		<file name="issue-tracking-skipped-transcriptions.php" />
 		<directory name="src" />
 		<ignoreFiles>
 			<directory name="vendor" />
