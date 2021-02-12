@@ -381,46 +381,6 @@
       <code>$urls</code>
     </UnusedVariable>
   </file>
-  <file src="src/YouTubeApiWrapper.php">
-    <InvalidDocblock occurrences="2">
-      <code>$response_items</code>
-      <code>private function listPlaylists(</code>
-    </InvalidDocblock>
-    <InvalidParamDefault occurrences="1">
-      <code>array{playlistId:string}</code>
-    </InvalidParamDefault>
-    <MixedArgument occurrences="3">
-      <code>json_decode(file_get_contents($cache_file), true)</code>
-    </MixedArgument>
-    <MixedArrayOffset occurrences="2">
-      <code>$out[$item-&gt;id]</code>
-      <code>$out[$playlist-&gt;id]</code>
-    </MixedArrayOffset>
-    <MixedAssignment occurrences="8">
-      <code>$args['pageToken']</code>
-      <code>$args['pageToken']</code>
-      <code>$args['pageToken']</code>
-      <code>$data</code>
-      <code>$item</code>
-      <code>$out[$playlist-&gt;id]</code>
-      <code>$playlists[$playlist_id]</code>
-      <code>$response_items</code>
-    </MixedAssignment>
-    <MixedMethodCall occurrences="3">
-      <code>listPlaylistItems</code>
-      <code>listPlaylists</code>
-      <code>listVideos</code>
-    </MixedMethodCall>
-    <MixedPropertyFetch occurrences="4">
-      <code>$item-&gt;id</code>
-      <code>$item-&gt;snippet</code>
-      <code>$item-&gt;snippet-&gt;tags</code>
-      <code>$playlist-&gt;snippet-&gt;title</code>
-    </MixedPropertyFetch>
-    <UnusedProperty occurrences="1">
-      <code>$client</code>
-    </UnusedProperty>
-  </file>
   <file src="src/funcs.php">
     <ArgumentTypeCoercion occurrences="1"/>
     <InvalidArgument occurrences="2">

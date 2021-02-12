@@ -31,6 +31,9 @@ use Google_Service_YouTube_Playlist;
 use Google_Service_YouTube_PlaylistItem;
 use Google_Service_YouTube_PlaylistItemListResponse;
 use Google_Service_YouTube_PlaylistListResponse;
+use Google_Service_YouTube_Resource_Playlists;
+use Google_Service_YouTube_Resource_PlaylistItems;
+use Google_Service_YouTube_Resource_Videos;
 use Google_Service_YouTube_ResourceId;
 use Google_Service_YouTube_VideoListResponse;
 use Google_Service_YouTube_VideoSnippet;
@@ -50,11 +53,6 @@ use function sprintf;
 
 class YouTubeApiWrapper
 {
-	/**
-	 * @readonly
-	 */
-	private Google_Client $client;
-
 	/**
 	 * @readonly
 	 */
@@ -79,8 +77,6 @@ class YouTubeApiWrapper
 
 		$client->setAuthConfig(__DIR__ . '/../google-auth.json');
 		$client->setAccessType('offline');
-
-		$this->client = $client;
 
 		$this->service = new Google_Service_YouTube($client);
 	}
@@ -134,7 +130,7 @@ class YouTubeApiWrapper
 			if (is_file($cache_file)) {
 				/** @var array<string, string> */
 				$to_sort = array_filter(
-					json_decode(file_get_contents($cache_file), true),
+					(array) json_decode(file_get_contents($cache_file), true),
 					/**
 					 * @param mixed $a
 					 * @param mixed $b
@@ -167,7 +163,6 @@ class YouTubeApiWrapper
 				array_diff($to_sort, $playlists)
 			);
 
-			/** @var array<string, string> */
 			$playlists = array_filter(
 				$playlists,
 				static function (string $a, string $b) : bool {
@@ -362,6 +357,7 @@ class YouTubeApiWrapper
 					));
 				}
 
+				/** @var scalar|array|object|null */
 				$data = json_decode(
 					file_get_contents($cache_file),
 					true
@@ -430,8 +426,26 @@ class YouTubeApiWrapper
 		);
 	}
 
+	private function service_playlists() : Google_Service_YouTube_Resource_Playlists
+	{
+		/** @var Google_Service_YouTube_Resource_Playlists */
+		return $this->service->playlistItems;
+	}
+
+	private function service_playlistItems() : Google_Service_YouTube_Resource_PlaylistItems
+	{
+		/** @var Google_Service_YouTube_Resource_PlaylistItems */
+		return $this->service->playlistItems;
+	}
+
+	private function service_videos() : Google_Service_YouTube_Resource_Videos
+	{
+		/** @var Google_Service_YouTube_Resource_Videos */
+		return $this->service->videos;
+	}
+
 	/**
-	 * @param array<string, string>
+	 * @param array<string, string> $out
 	 *
 	 * @return array<string, string>
 	 */
@@ -439,16 +453,23 @@ class YouTubeApiWrapper
 		array $args = [],
 		array $out = []
 	) : array {
-		/** @var Google_Service_YouTube_PlaylistListResponse */
-		$response = $this->service->playlists->listPlaylists(
+		/**
+		 * @var object{
+		 *	nextPageToken?:string,
+		 *	items:list<object{
+		 *		id:string,
+		 *		snippet:object{
+		 *			title:string
+		 *		}
+		 *	}>
+		 * }
+		 */
+		$response = $this->service_playlists()->listPlaylists(
 			'id,snippet',
 			$args
 		);
 
-		/** @var list<Google_Service_YouTube_Playlist> */
-		$response_items = $response->items;
-
-		foreach ($response_items as $playlist) {
+		foreach ($response->items as $playlist) {
 			$out[$playlist->id] = $playlist->snippet->title;
 		}
 
@@ -462,17 +483,22 @@ class YouTubeApiWrapper
 	}
 
 	/**
-	 * @param array{playlistId:string} $args
+	 * @param array{playlistId:string, pageToken?:string} $args
 	 * @param list<string> $out
 	 *
 	 * @return list<string>
 	 */
 	private function listPlaylistItems(
-		array $args = [],
+		array $args,
 		array $out = []
 	) : array {
-		/** @var Google_Service_YouTube_PlaylistItemListResponse */
-		$response = $this->service->playlistItems->listPlaylistItems(
+		/**
+		 * @var object{
+		 *	nextPageToken?: string,
+		 *	items: iterable<Google_Service_YouTube_PlaylistItem>
+		 * }
+		 */
+		$response = $this->service_playlistItems()->listPlaylistItems(
 			implode(',', [
 				'id',
 				'snippet',
@@ -480,10 +506,7 @@ class YouTubeApiWrapper
 			$args
 		);
 
-		/** @var iterable<Google_Service_YouTube_PlaylistItem> */
-		$response_items = $response->items;
-
-		foreach ($response_items as $playlist_item) {
+		foreach ($response->items as $playlist_item) {
 			/** @var Google_Service_YouTube_VideoSnippet */
 			$video_snippet = $playlist_item->snippet;
 
@@ -509,14 +532,14 @@ class YouTubeApiWrapper
 	{
 		/** @var array<string, string> */
 		$dated_playlists = array_merge(
-			json_decode(
+			(array) json_decode(
 				file_get_contents(
 					__DIR__
 					. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
 				),
 				true
 			),
-			json_decode(
+			(array) json_decode(
 				file_get_contents(
 					__DIR__
 					. '/../playlists/coffeestainstudiosdevs'
@@ -531,22 +554,32 @@ class YouTubeApiWrapper
 		return array_reverse($dated_playlists, true);
 	}
 
-	private function listVideos(array $args = [], array $out = []) : array
+	/**
+	 * @param array{id:string, pageToken?:string} $args
+	 * @param array<string, array{0:string, 1:list<string>}> $out
+	 *
+	 * @return array<string, array{0:string, 1:list<string>}>
+	 */
+	private function listVideos(array $args, array $out = []) : array
 	{
-		/** @var Google_Service_YouTube_VideoListResponse */
-		$response = $this->service->videos->listVideos(
+		/**
+		 * @var object{
+		 *	pageToken?:string,
+		 *	items: iterable<object{
+		 *		id:string,
+		 *		snippet:object{
+		 *			title:string,
+		 *			tags:list<string>|null
+		 *		}
+		 *	}>
+		 * }
+		 */
+		$response = $this->service_videos()->listVideos(
 			'snippet',
 			$args
 		);
 
-		/**
-		 * @var iterable{object{
-		 *	snippet:Google_Service_YouTube_VideoSnippet
-		 * }}
-		 */
-		$response_items = $response->items;
-
-		foreach ($response_items as $item) {
+		foreach ($response->items as $item) {
 			$out[$item->id] = [
 				$item->snippet->title,
 				$item->snippet->tags ?? [],
@@ -554,7 +587,7 @@ class YouTubeApiWrapper
 		}
 
 		if (isset($response->nextPageToken)) {
-			$args['pageToken'] = $response->nextPageToken;
+			$args['pageToken'] = (string) $response->nextPageToken;
 
 			$out = $this->listVideos($args, $out);
 		}
