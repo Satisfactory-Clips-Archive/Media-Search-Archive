@@ -185,6 +185,7 @@ asort($playlists);
 
 $playlists = array_reverse($playlists);
 
+/** @var array<string, list<array{0:string, 1:int}>> */
 $playlist_history = json_decode(
 	file_get_contents(__DIR__ . '/playlist-date-history.json'),
 	true
@@ -1064,6 +1065,17 @@ $faq_video_topic_nesting = array_keys(array_filter(
 	ARRAY_FILTER_USE_BOTH
 ));
 
+/**
+ * @var array{satisfactory: array<string, array{
+ *	children: list<string>,
+ *	videos: list<string>,
+ *	left: positive-int,
+ *	right: positive-int,
+ *	level: int
+ * }>}
+ */
+$topic_nesting = $topic_nesting;
+
 foreach (array_values($faq_video_topic_nesting) as $topic_id) {
 	foreach (
 		nesting_parents(
@@ -1077,6 +1089,14 @@ foreach (array_values($faq_video_topic_nesting) as $topic_id) {
 	}
 }
 
+/**
+ * @var array<string, array{
+ *	children:list<string>,
+ *	level:int,
+ *	left:int,
+ *	right:int
+ * }>
+ */
 $faq_video_topic_nesting = array_combine(
 	$faq_video_topic_nesting,
 	array_map(
@@ -1310,6 +1330,11 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	foreach ($playlist_ids as $playlist_id) {
 		if (isset($data[$playlist_id])) {
 			continue;
+		} elseif ( ! isset($cache['playlists'][$playlist_id])) {
+			throw new RuntimeException(sprintf(
+				'Playlist cache data not found! (%s)',
+				$playlist_id
+			));
 		}
 
 		$playlist_data = $cache['playlists'][$playlist_id];

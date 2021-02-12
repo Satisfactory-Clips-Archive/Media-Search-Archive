@@ -347,6 +347,15 @@ function inject_caches(array $cache, array ...$caches) : array
 }
 
 /**
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>
+ * }
+ *
+ * @param CACHE $cache
+ *
  * @return array{0:string, 1:list<string>}
  */
 function topic_to_slug(
@@ -371,6 +380,7 @@ function topic_to_slug(
 
 	[, $topic_title] = $topic_data;
 
+	/** @var list<int|string> */
 	$slug = $topics_hierarchy[$topic_id] ?? [];
 
 	if (($slug[0] ?? '') !== $topic_title) {
@@ -481,6 +491,19 @@ function determine_playlist_id(
 	return [$maybe_playlist_id, $friendly];
 }
 
+/**
+ * @psalm-type DATA = array<string, array{
+ *	children: list<string>,
+ *	videos?: list<string>,
+ *	left: positive-int,
+ *	right: positive-int,
+ *	level: int
+ * }>
+ *
+ * @param DATA $data
+ *
+ * @return array{0:int, 1:DATA}
+ */
 function adjust_nesting(
 	array $data,
 	string $current,
@@ -556,6 +579,7 @@ function adjust_nesting(
 /**
  * @param array<string, array{
  *	children: list<string>,
+ *	videos: list<string>,
  *	left: positive-int,
  *	right: positive-int,
  *	level: int
@@ -653,6 +677,7 @@ function determine_topic_name(string $topic, array $cache) : string
 /**
  * @param array{
  *	children: list<string>,
+ *	videos: list<string>,
  *	left: positive-int,
  *	right: positive-int,
  *	level: int
@@ -729,6 +754,15 @@ function filter_nested(
 		}
 	}
 
+	/**
+	 * @var array<string, array{
+	 *	children: list<string>,
+	 *	videos: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }>
+	 */
 	$filtered = array_map(
 		static function (array $data) use ($filtered, $cache) : array {
 			$data['children'] = array_filter(
@@ -792,6 +826,15 @@ function filter_nested(
 		}
 	);
 
+	/**
+	 * @var array<string, array{
+	 *	children: list<string>,
+	 *	videos: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }>
+	 */
 	return $filtered;
 }
 
@@ -930,6 +973,10 @@ function raw_captions(string $video_id) : array
 	$xml = new SimpleXMLElement($tt);
 
 	foreach ($xml->children() as $line) {
+		if (null === $line) {
+			continue;
+		}
+
 		$lines[] = $line;
 	}
 
@@ -1188,24 +1235,20 @@ function process_externals(
 }
 
 /**
- * @param array{
- *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	playlistItems:array<string, array{0:string, 1:string}>,
- *	videoTags:array<string, array{0:string, list<string>}>
- * } $inject
- * @param array{
+ * @psalm-type CACHE = array{
  *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
- *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>
- * } $cache
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
+ *
+ * @param CACHE $inject
+ * @param CACHE $cache
  *
  * @return array{
- *	0:array{
- *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *		playlistItems:array<string, array{0:string, 1:string}>,
- *		videoTags:array<string, array{0:string, list<string>}>
- *	},
+ *	0:CACHE,
  *	1:array{0:list<string>, 1:array<string, list<string>>}
  * }
  */
@@ -1249,6 +1292,7 @@ function process_dated_csv(
 			]);
 	}
 
+	/** @var list<array{0:numeric-string, 1:numeric-string, 2:string}> */
 	$captions_with_start_time = [];
 
 	foreach (($captions[1] ?? []) as $caption_line) {
@@ -1256,10 +1300,11 @@ function process_dated_csv(
 			$caption_line->attributes()
 		);
 
-		$captions_with_start_time[] = [
+		/** @var array{0:numeric-string, 1:numeric-string, 2:string} */
+		$captions_with_start_time_row = [
 			(string) $attrs['start'],
 			(string) $attrs['dur'],
-			preg_replace_callback(
+			(string) preg_replace_callback(
 				'/&#(\d+);/',
 				static function (array $match) : string {
 					return chr((int) $match[1]);
@@ -1267,6 +1312,8 @@ function process_dated_csv(
 				(string) $caption_line
 			),
 		];
+
+		$captions_with_start_time[] = $captions_with_start_time_row;
 	}
 
 	/**
@@ -1527,6 +1574,9 @@ function process_dated_csv(
 			);
 		}
 	}
+
+	/** @var CACHE */
+	$inject = $inject;
 
 	return [$inject, [$out, $files_out]];
 }
