@@ -59,8 +59,10 @@ use function uksort;
 use function usleep;
 use function usort;
 
-require_once (__DIR__ . '/vendor/autoload.php');
+require_once (__DIR__ . '/../vendor/autoload.php');
 require_once (__DIR__ . '/global-topic-hierarchy.php');
+
+$start = time();
 
 $api = new YouTubeApiWrapper();
 
@@ -81,7 +83,7 @@ if ( ! is_string($playlist_satisfactory)) {
 }
 
 $playlist_metadata = [
-	$playlist_satisfactory => __DIR__ . '/../coffeestainstudiosdevs/satisfactory/',
+	$playlist_satisfactory => __DIR__ . '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/',
 ];
 
 /** @var array<string, string> */
@@ -131,7 +133,7 @@ $injected_playlists = array_map(
 	static function (string $filename) : string {
 		return
 			__DIR__
-			. '/../coffeestainstudiosdevs/satisfactory/'
+			. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
 			. $filename;
 	},
 	json_decode(
@@ -152,7 +154,7 @@ foreach ($playist_directories as $playlist_directory) {
 	if (
 		$playlist_directory !== (
 			__DIR__
-			. '/../coffeestainstudiosdevs/satisfactory'
+			. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory'
 		)
 	) {
 		throw new RuntimeException(sprintf(
@@ -568,7 +570,21 @@ natcasesort($all_video_ids);
 
 $transcription_blank_lines_regex = '/(>\n>\n)+/';
 
+echo sprintf('processing 0 of %s transcriptions', count($all_video_ids)), "\n";
+
 foreach ($all_video_ids as $video_id) {
+	++$checked;
+
+	echo
+		sprintf(
+			'processing %s of %s transcriptions (%s seconds elapsed)',
+			$checked,
+			count($all_video_ids),
+			time() - $start
+		),
+		"\n"
+	;
+
 	if (in_array($video_id, $skipping, true)) {
 		continue;
 	}
@@ -1017,7 +1033,7 @@ $faq_dates = array_unique($faq_dates);
 
 natsort($faq_dates);
 
-$faq_filepath = __DIR__ . '/../coffeestainstudiosdevs/satisfactory/FAQ.md';
+$faq_filepath = __DIR__ . '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/FAQ.md';
 
 /** @var list<string> */
 $faq_lines = [];
@@ -1339,6 +1355,8 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 		$slug_title = implode(' > ', $slug);
 
+		echo 'rebuilding ', $slug_title, "\n";
+
 		$slug_parents = array_slice($slug, 0, -1);
 
 		$slug = array_map(
@@ -1591,7 +1609,9 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	file_put_contents($file_path, implode('', $file_lines));
 }
 
-$file_path = __DIR__ . '/../coffeestainstudiosdevs/satisfactory/index.md';
+echo 'rebuilding index', "\n";
+
+$file_path = __DIR__ . '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/index.md';
 
 /** @var list<string> */
 $lines = [
@@ -1687,3 +1707,5 @@ foreach ($sortable as $year => $months) {
 }
 
 file_put_contents($file_path, implode('', $lines));
+
+echo sprintf('completed in %s seconds', time() - $start), "\n";

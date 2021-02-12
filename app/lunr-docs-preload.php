@@ -31,7 +31,7 @@ use function mb_substr;
 use function preg_replace;
 use function trim;
 
-require_once (__DIR__ . '/vendor/autoload.php');
+require_once (__DIR__ . '/../vendor/autoload.php');
 require_once (__DIR__ . '/global-topic-hierarchy.php');
 
 $global_topic_hierarchy = array_merge_recursive(

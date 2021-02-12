@@ -11,3 +11,13 @@
 /tmp-error_docs/
 /images/**/*.br
 /images/**/*.gz
+/vendor/
+/app/google-auth.json
+/.php_cs.cache
+/app/captions/
+/app/cache.json
+/app/topics-satisfactory.json
+/app/lunr/
+/app/cache-injection.json
+/app/topics-nested.json
+/app/data/api-cache/

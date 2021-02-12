@@ -31,7 +31,7 @@ use function strnatcasecmp;
 use function trim;
 use function uksort;
 
-require_once (__DIR__ . '/vendor/autoload.php');
+require_once (__DIR__ . '/../vendor/autoload.php');
 
 /**
  * @var array{
@@ -380,7 +380,7 @@ $dated_glob = array_map(
 	static function (string $path) : string {
 		return mb_substr(basename($path), 0, -3);
 	},
-	glob(__DIR__ . '/../coffeestainstudiosdevs/satisfactory/20*-*-*.md')
+	glob(__DIR__ . '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/20*-*-*.md')
 );
 
 foreach ($dated_glob as $date) {

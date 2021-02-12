@@ -19,15 +19,77 @@ const clean = require('gulp-clean');
 const json_transform = require('gulp-json-transform');
 const {readFileSync} = require('fs');
 const inline_source = require('gulp-inline-source');
+const lunr = require('lunr');
+
+const synonyms = require('./app/synonyms.json');
+const synonym_keys = Object.keys(synonyms);
+
+function aliasSatisfactoryVocabulary(builder) {
+	const pipeline = (token) => {
+		const lowercase = token.toString().toLowerCase();
+
+		if (synonym_keys.includes(synonyms)) {
+			return token.update(() => {
+				return synonyms[lowercase];
+			});
+		}
+
+		return token;
+	};
+
+	lunr.Pipeline.registerFunction(pipeline, 'aliasSatisfactoryVocabulary');
+
+	builder.pipeline.before(lunr.stemmer, pipeline);
+	builder.searchPipeline.before(lunr.stemmer, pipeline);
+}
+
+gulp.task('lunr-index', () => {
+	return gulp.src('./app/lunr/docs-*.json').pipe(
+		json_transform((json) => {
+			const documents = Object.values(json);
+
+			const index = lunr(function () {
+				this.ref('id');
+				/*
+				this.field('game');
+				this.field('date');
+				*/
+				this.field('title');
+				this.field('transcription');
+				/*
+				this.field('urls');
+				this.field('topics');
+				*/
+				this.field('quotes');
+				this.use(aliasSatisfactoryVocabulary);
+				/*
+				this.metadataWhitelist = [
+					'position',
+				];
+				*/
+
+				documents.forEach((doc) => {
+					this.add(doc);
+				});
+			});
+
+			return JSON.stringify(index, "\t");
+		})
+	).pipe(rename((path) => {
+		path.basename = path.basename.replace('docs-', 'lunr-');
+	})).pipe(
+		gulp.dest('./app/lunr/')
+	);
+});
 
 gulp.task('lunr', () => {
-	return gulp.src('./video-clip-notes/app/lunr/*.json').pipe(
+	return gulp.src('./app/lunr/*.json').pipe(
 		gulp.dest('./src/lunr/')
 	);
 });
 
 gulp.task('topics', () => {
-	return gulp.src('./video-clip-notes/app/topics-satisfactory.json').pipe(
+	return gulp.src('./app/topics-satisfactory.json').pipe(
 		rename('topics.json')
 	).pipe(
 		gulp.dest('./src/')
@@ -211,6 +273,7 @@ gulp.task('sync-tmp-to-store', () => {
 });
 
 gulp.task('build', gulp.series(
+	'lunr-index',
 	gulp.parallel(
 		'sync-lunr',
 		'css',

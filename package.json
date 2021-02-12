@@ -1,7 +1,7 @@
 {
   "scripts": {
     "error_docs": "eleventy --config=./.eleventy.error_docs.js && gulp html-error_docs",
-    "build": "gulp topics && eleventy && eleventy --config=./.eleventy.pages.js && gulp build"
+    "build": "php app/decorate-cache-injection.php && php app/app.php && php app/lunr-docs-preload.php && gulp topics && eleventy && eleventy --config=./.eleventy.pages.js && gulp build"
   },
   "dependencies": {
     "lunr": "^2.3.9"

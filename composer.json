@@ -11,11 +11,11 @@
 	],
 	"autoload-dev": {
 		"files": [
-			"./src/funcs.php"
+			"./app/src/funcs.php"
 		],
 		"psr-4": {
 			"SignpostMarv\\VideoClipNotes\\": [
-				"./src/"
+				"./app/src/"
 			]
 		}
 	},

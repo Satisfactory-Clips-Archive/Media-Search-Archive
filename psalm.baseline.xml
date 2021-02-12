@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="4.5.1@257a1ca672a79dedc852be1285a7b97154646418">
-  <file src="app.php">
+  <file src="app/app.php">
     <ArgumentTypeCoercion occurrences="1">
       <code>$cache</code>
     </ArgumentTypeCoercion>
@@ -134,7 +134,7 @@
       <code>$topic_id</code>
     </UnusedVariable>
   </file>
-  <file src="decorate-cache-injection.php">
+  <file src="app/decorate-cache-injection.php">
     <DuplicateArrayKey occurrences="1"/>
     <LessSpecificReturnStatement occurrences="1">
       <code>[$is_faq, $topics]</code>
@@ -146,7 +146,7 @@
       <code>$date</code>
     </UnusedVariable>
   </file>
-  <file src="global-topic-hierarchy.php">
+  <file src="app/global-topic-hierarchy.php">
     <DuplicateArrayKey occurrences="1"/>
     <UnusedVariable occurrences="4">
       <code>$global_topic_hierarchy</code>
@@ -155,7 +155,7 @@
       <code>$not_a_livestream_date_lookup</code>
     </UnusedVariable>
   </file>
-  <file src="lunr-docs-preload.php">
+  <file src="app/lunr-docs-preload.php">
     <MissingClosureParamType occurrences="1">
       <code>$playlist_id</code>
     </MissingClosureParamType>
@@ -177,7 +177,7 @@
       <code>$urls</code>
     </UnusedVariable>
   </file>
-  <file src="src/funcs.php">
+  <file src="app/src/funcs.php">
     <InvalidArgument occurrences="2">
       <code>$nested</code>
       <code>$nested</code>

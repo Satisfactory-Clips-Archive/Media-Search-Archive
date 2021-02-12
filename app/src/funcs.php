@@ -130,7 +130,7 @@ function transcription_filename(string $video_id) : string
 	if (preg_match('/^yt-.{11},\d+(?:\.\d+)(?:,\d+(?:\.\d+))/', $video_id)) {
 		return
 			__DIR__
-			. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
+			. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
 			. $video_id
 			. '.md';
 	}
@@ -138,14 +138,14 @@ function transcription_filename(string $video_id) : string
 	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
 		return
 			__DIR__
-			. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
+			. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
 			. $video_id
 			. '.md';
 	}
 
 	return
 		__DIR__
-		. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/yt-'
+		. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/yt-'
 		. $video_id
 		. '.md';
 }
@@ -167,7 +167,7 @@ function maybe_transcript_link_and_video_url(
 		if (
 			is_file(
 				__DIR__
-				. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
+				. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
 				. $video_id
 				. '.md'
 			)
@@ -1211,7 +1211,7 @@ function process_externals(
 
 		$filename = (
 			__DIR__
-			. '/../../coffeestainstudiosdevs/satisfactory/'
+			. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
 			. $date .
 			'.md'
 		);
@@ -1456,7 +1456,7 @@ function process_dated_csv(
 			if ($write_files) {
 				$files_out[
 					__DIR__
-					. '/../../coffeestainstudiosdevs/satisfactory/transcriptions/'
+					. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
 					. $basename
 				] = [
 					'---' . "\n",
