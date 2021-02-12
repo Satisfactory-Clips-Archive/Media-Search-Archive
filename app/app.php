@@ -570,8 +570,7 @@ $transcription_blank_lines_regex = '/(>\n>\n)+/';
 
 foreach ($all_video_ids as $video_id) {
 	if (in_array($video_id, $skipping, true)) {
-		echo
-			'skipping captions for ',
+		echo 'skipping captions for ',
 			$video_id,
 			' (pre-flagged)',
 			"\n"
@@ -770,8 +769,7 @@ file_put_contents(__DIR__ . '/skipping-transcriptions.json', json_encode(
 	JSON_PRETTY_PRINT
 ));
 
-echo
-	sprintf(
+echo sprintf(
 		'%s subtitles checked of %s videos cached',
 		$checked,
 		count($cache['playlistItems'])
