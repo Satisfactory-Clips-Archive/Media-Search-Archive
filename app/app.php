@@ -59,8 +59,6 @@ use function uksort;
 use function usleep;
 use function usort;
 
-$transcriptions = in_array('--transcriptions', $argv, true);
-
 require_once (__DIR__ . '/vendor/autoload.php');
 require_once (__DIR__ . '/global-topic-hierarchy.php');
 
@@ -557,7 +555,6 @@ $topic_slug_history = json_decode(
 	true
 );
 
-if ($transcriptions) {
 	$skipping = json_decode(
 		file_get_contents(__DIR__ . '/skipping-transcriptions.json'),
 		true
@@ -780,7 +777,6 @@ if ($transcriptions) {
 			count($cache['playlistItems'])
 		),
 		"\n";
-}
 
 foreach (array_keys($playlists) as $playlist_id) {
 	if (isset($externals_cache['playlists'][$playlist_id])) {
