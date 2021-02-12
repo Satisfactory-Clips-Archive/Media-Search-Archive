@@ -27,7 +27,6 @@ use function basename;
 use function count;
 use function date;
 use function dirname;
-use const FILE_APPEND;
 use function file_get_contents;
 use function file_put_contents;
 use function implode;
@@ -583,6 +582,9 @@ if ($transcriptions) {
 
 		$transcriptions_file = transcription_filename($video_id);
 
+		/** @var list<string> */
+		$transcription_lines = [];
+
 		$caption_lines = captions($video_id);
 
 		if (count($caption_lines) < 1) {
@@ -630,8 +632,7 @@ if ($transcriptions) {
 			}
 		);
 
-		file_put_contents(
-			$transcriptions_file,
+		$transcription_lines[] =
 			(
 				'---' . "\n"
 				. sprintf(
@@ -727,7 +728,6 @@ if ($transcriptions) {
 				. "\n\n"
 				. '### Transcript'
 				. "\n\n"
-			)
 		);
 
 		$transcription_text = implode('', array_map(
@@ -758,10 +758,11 @@ if ($transcriptions) {
 			);
 		}
 
+		$transcription_lines[] = $transcription_text;
+
 		file_put_contents(
 			$transcriptions_file,
-			$transcription_text,
-			FILE_APPEND
+			implode('', $transcription_lines)
 		);
 	}
 
@@ -818,8 +819,10 @@ foreach (array_keys($playlists) as $playlist_id) {
 		)
 	);
 
-	file_put_contents(
-		$playlists[$playlist_id],
+	/** @var list<string> */
+	$playlist_lines = [];
+
+	$playlist_lines[] =
 		(
 			'---' . "\n"
 			. sprintf('title: "%s"' . "\n", $title)
@@ -829,7 +832,6 @@ foreach (array_keys($playlists) as $playlist_id) {
 			. '# '
 			. $title
 			. "\n"
-		)
 	);
 
 	$xref_video_id = $cache['internalxref'][$playlist_id] ?? null;
@@ -851,9 +853,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 		[$lines_to_write] = $lines_to_write;
 
-		foreach ($lines_to_write as $line) {
-			file_put_contents($playlists[$playlist_id], $line, FILE_APPEND);
-		}
+		$playlist_lines[] = implode('', $lines_to_write);
 	}
 
 	$topics_for_date = [];
@@ -930,19 +930,15 @@ foreach (array_keys($playlists) as $playlist_id) {
 				. '.md)';
 		}
 
-		file_put_contents(
-			$playlists[$playlist_id],
+		$playlist_lines[] =
 			(
 				"\n"
 				. str_repeat('#', $depth)
 				. $topic_title
 				. "\n"
-			),
-			FILE_APPEND
 		);
 
-		file_put_contents(
-			$playlists[$playlist_id],
+		$playlist_lines[] =
 			implode('', array_map(
 				static function (string $video_line) : string {
 					return
@@ -952,25 +948,20 @@ foreach (array_keys($playlists) as $playlist_id) {
 					;
 				},
 				$video_data
-			)),
-			FILE_APPEND
-		);
+		));
 	}
 
 	if (count($content_arrays['Single video clips']) > 0) {
-		file_put_contents(
-			$playlists[$playlist_id],
+		$playlist_lines[] =
 			(
 				''
 				. '## Uncategorised'
 				. "\n"
-			),
-			FILE_APPEND
 		);
 	}
 
-	file_put_contents(
-		$playlists[$playlist_id],
+
+	$playlist_lines[] =
 		implode('', array_map(
 			static function (string $video_id) use ($cache) : string {
 				return
@@ -982,9 +973,9 @@ foreach (array_keys($playlists) as $playlist_id) {
 				;
 			},
 			$content_arrays['Single video clips']
-		)),
-		FILE_APPEND
-	);
+	));
+
+	file_put_contents($playlists[$playlist_id], implode('', $playlist_lines));
 }
 
 $now = time();
@@ -1041,16 +1032,17 @@ natsort($faq_dates);
 
 $faq_filepath = __DIR__ . '/../coffeestainstudiosdevs/satisfactory/FAQ.md';
 
+/** @var list<string> */
+$faq_lines = [];
+
 usleep(100);
 
-file_put_contents(
-	$faq_filepath,
+$faq_lines[] =
 	(
 		'---' . "\n"
 		. 'title: "Frequently Asked Questions"' . "\n"
 		. 'date: Last Modified' . "\n"
 		. '---' . "\n"
-	)
 );
 
 $faq_video_ids = [];
@@ -1177,19 +1169,16 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 	}
 
 	if ($past_first) {
-		file_put_contents($faq_filepath, "\n", FILE_APPEND);
+		$faq_lines[] = "\n";
 	} else {
 		$past_first = true;
 	}
 
-	file_put_contents(
-		$faq_filepath,
+	$faq_lines[] =
 		sprintf(
 			'%s %s' . "\n",
 			str_repeat('#', $depth),
 			$topic_title
-		),
-		FILE_APPEND
 	);
 
 	$faq_topic_videos = ($faq_video_topics[$topic_id] ?? []);
@@ -1231,48 +1220,41 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 				. ')';
 
 			if ($past_first) {
-				file_put_contents($faq_filepath, "\n", FILE_APPEND);
+				$faq_lines[] = "\n";
 			} else {
 				$past_first = true;
 			}
 
 			if (6 === $depth) {
-				file_put_contents(
-					$faq_filepath,
+				$faq_lines[] =
 					sprintf(
 						'**%s**' . "\n",
 						$topic_title
-					),
-					FILE_APPEND
 				);
 			} else {
-				file_put_contents(
-					$faq_filepath,
+				$faq_lines[] =
 					sprintf(
 						'%s %s' . "\n",
 						str_repeat('#', $depth + 1),
 						$topic_title
-					),
-					FILE_APPEND
 				);
 			}
 
 			foreach ($video_ids as $video_id) {
-				file_put_contents(
-					$faq_filepath,
+				$faq_lines[] =
 					sprintf(
 						'* %s' . "\n",
 						maybe_transcript_link_and_video_url(
 							$video_id,
 							$cache['playlistItems'][$video_id][1]
 						)
-					),
-					FILE_APPEND
 				);
 			}
 		}
 	}
 }
+
+file_put_contents($faq_filepath, implode('', $faq_lines));
 
 foreach ($playlist_metadata as $json_file => $save_path) {
 	$categorised = [];
@@ -1300,6 +1282,9 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	$topic_hierarchy = $global_topic_hierarchy[$basename] ?? [];
 
 	$file_path = $save_path . '/../' . $basename . '/topics.md';
+
+	/** @var list<string> */
+	$file_lines = [];
 
 	$data_by_date = [];
 
@@ -1363,6 +1348,9 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			. $slug_string
 			. '.md';
 
+		/** @var list<string> */
+		$slug_lines = [];
+
 		$playlist_items_data = [];
 
 		foreach ($playlists_by_date as $other_playlist_id => $other_playlist_items) {
@@ -1382,8 +1370,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			mkdir($slug_dir, 0755, true);
 		}
 
-		file_put_contents(
-			$slug_path,
+		$slug_lines[] =
 			(
 				'---' . "\n"
 				. sprintf(
@@ -1447,7 +1434,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				. ' > '
 				. $playlist_title
 				. "\n"
-			)
 		);
 
 		$topic_children = nesting_children(
@@ -1457,8 +1443,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 		);
 
 		if (count($topic_children) > 0) {
-			file_put_contents(
-				$slug_path,
+			$slug_lines[] =
 				(
 					implode("\n", array_map(
 						static function (
@@ -1492,8 +1477,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 						$topic_children
 					))
 					. "\n"
-				),
-				FILE_APPEND
 			);
 		}
 
@@ -1503,8 +1486,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 				...$video_ids
 			);
 
-			file_put_contents(
-				$slug_path,
+			$slug_lines[] =
 				(
 					"\n"
 					. '## '
@@ -1516,13 +1498,8 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 					)
 					. ''
 					. "\n"
-				),
-				FILE_APPEND
-			);
-
-			file_put_contents(
-				$slug_path,
-				implode('', array_map(
+				)
+				. implode('', array_map(
 					static function (string $video_id) use ($cache, $slug_count) : string {
 						return
 							'* '
@@ -1535,20 +1512,19 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 						;
 					},
 					$video_ids
-				)),
-				FILE_APPEND
-			);
+				))
+			;
 		}
+
+		file_put_contents($slug_path, implode('', $slug_lines));
 	}
 
-	file_put_contents(
-		$file_path,
+	$file_lines[] =
 		(
 			'---' . "\n"
 			. 'title: "Browse Topics"' . "\n"
 			. 'date: Last Modified' . "\n"
 			. '---' . "\n"
-		)
 	);
 
 	$basename_topic_nesting = $topic_nesting[$basename];
@@ -1580,32 +1556,28 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			$depth = min(6, $nesting_data['level'] + 1);
 
 			if ($past_first) {
-				file_put_contents($file_path, "\n", FILE_APPEND);
+				$file_lines[] = "\n";
 			} else {
 				$past_first = true;
 			}
 
-			file_put_contents(
-				$file_path,
+			$file_lines[] =
 				(
 					str_repeat('#', $depth)
 					. $topic_title
 					. "\n"
-				),
-				FILE_APPEND
 			);
 		} else {
-			file_put_contents(
-				$file_path,
+			$file_lines[] =
 				(
 					'*'
 					. $topic_title
 					. "\n"
-				),
-				FILE_APPEND
 			);
 		}
 	}
+
+	file_put_contents($file_path, implode('', $file_lines));
 }
 
 	$file_path = __DIR__ . '/../coffeestainstudiosdevs/satisfactory/index.md';
