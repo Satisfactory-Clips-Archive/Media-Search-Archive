@@ -1,0 +1,346 @@
+<?php
+/**
+ * @author SignpostMarv
+ */
+declare(strict_types=1);
+
+namespace SignpostMarv\VideoClipNotes;
+
+use InvalidArgumentException;
+use RuntimeException;
+
+require_once (__DIR__ . '/../vendor/autoload.php');
+require_once (__DIR__ . '/global-topic-hierarchy.php');
+
+$existing = array_filter(
+	(array) json_decode(
+		file_get_contents(__DIR__ . '/data/q-and-a.json'),
+		true
+	),
+	/**
+	 * @psalm-assert-if-true array{
+	 *	title:string,
+	 *	date:string,
+	 *	topics:list<string>,
+	 *	duplicates:list<string>,
+	 *	replaces:list<string>,
+	 *	seealso:list<string>
+	 * } $maybe_value
+	 * @psalm-assert-if-true string $maybe_key
+	 *
+	 * @param scalar|array|object|null|resource $maybe_value
+	 * @param array-key $maybe_key
+	 */
+	static function ($a, $b) : bool {
+		return
+			is_array($a)
+			&& is_string($b)
+			&& isset(
+				$a['title'],
+				$a['date'],
+				$a['topics'],
+				$a['duplicates'],
+				$a['replaces'],
+				$a['seealso']
+			)
+			&& is_string($a['title'])
+			&& is_string($a['date'])
+			&& is_array($a['topics'])
+			&& is_array($a['duplicates'])
+			&& is_array($a['replaces'])
+			&& is_array($a['seealso'])
+			&& false !== strtotime($a['date'])
+			&& $a['topics'] === array_values(array_filter(
+				$a['topics'],
+				'is_string'
+			))
+			&& $a['duplicates'] === array_values(array_filter(
+				$a['duplicates'],
+				'is_string'
+			))
+			&& $a['replaces'] === array_values(array_filter(
+				$a['replaces'],
+				'is_string'
+			))
+			&& $a['seealso'] === array_values(array_filter(
+				$a['seealso'],
+				'is_string'
+			))
+		;
+	},
+	ARRAY_FILTER_USE_BOTH
+);
+
+$api = new YouTubeApiWrapper();
+
+$api->update();
+
+$slugify = new Slugify();
+
+$cache = $api->toLegacyCacheFormat();
+
+$injected_cache = json_decode(
+	file_get_contents(__DIR__ . '/cache-injection.json'),
+	true
+);
+
+$cache = inject_caches($cache, $injected_cache);
+
+$externals_cache = process_externals(
+	$cache,
+	$global_topic_hierarchy,
+	$not_a_livestream,
+	$not_a_livestream_date_lookup,
+	$slugify
+);
+
+$cache = inject_caches($cache, $externals_cache);
+
+$global_topic_hierarchy = array_merge_recursive(
+	$global_topic_hierarchy,
+	$injected_global_topic_hierarchy
+);
+
+$playlists_filter =
+	/**
+	 * @psalm-assert-if-true string $maybe_value
+	 * @psalm-assert-if-true string $maybe_key
+	 *
+	 * @param scalar|array|object|null|resource $maybe_value
+	 * @param array-key $maybe_key
+	 */
+	static function ($maybe_value, $maybe_key) : bool {
+		return is_string($maybe_value) && is_string($maybe_key);
+	};
+
+/** @var array<string, string> */
+$playlists = array_map(
+	static function (string $date) : string {
+		return date('Y-m-d', strtotime($date));
+	},
+	array_filter(
+		array_map(
+			static function (string $filename) : string {
+				return mb_substr($filename, 0, -3);
+			},
+			array_merge(
+				array_filter(
+					(array) json_decode(
+						file_get_contents(
+							__DIR__
+							. '/playlists/coffeestainstudiosdevs/satisfactory.json'
+						),
+						true
+					),
+					$playlists_filter,
+					ARRAY_FILTER_USE_BOTH
+				),
+				array_filter(
+					(array) json_decode(
+						file_get_contents(
+							__DIR__
+							. '/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+						),
+						true
+					),
+					$playlists_filter,
+					ARRAY_FILTER_USE_BOTH
+				)
+			)
+		),
+		static function (string $maybe) : bool {
+			return false !== strtotime($maybe);
+		}
+	)
+);
+
+/**
+ * @param array<string, array{0:string, 1:string, 2:list<string>}> $playlists
+ * @param array<string, string> $playlist_date_ref
+ */
+function determine_date_for_video(
+	string $video_id,
+	array $playlists,
+	array $playlist_date_ref
+) : string {
+	/** @var false|string */
+	$found = false;
+
+	foreach ($playlist_date_ref as $playlist_id => $date) {
+		if ( ! isset($playlists[$playlist_id])) {
+			throw new RuntimeException(sprintf(
+				'No data available for playlist %s',
+				$playlist_id
+			));
+		} elseif (in_array($video_id, $playlists[$playlist_id][2], true)) {
+			if (false !== $found) {
+				throw new InvalidArgumentException(sprintf(
+					'Video %s already found on %s',
+					$video_id,
+					$found
+				));
+			}
+
+			$found = $playlist_id;
+		}
+	}
+
+	if (false === $found) {
+		throw new InvalidArgumentException(sprintf(
+			'Video %s was not found in any playlist!',
+			$video_id
+		));
+	}
+
+	return $playlist_date_ref[$found];
+}
+
+/**
+ * @psalm-type CACHE = array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>
+ * }
+ *
+ * @param CACHE $cache
+ * @param array<string, list<string>> $topics_hierarchy
+ *
+ * @return list<string>
+ */
+function determine_video_topics(
+	string $video_id,
+	array $cache,
+	array $playlists,
+	array $topics_hierarchy,
+	Slugify $slugify
+) : array {
+	$topics = array_map(
+		static function (
+			string $topic_id
+		) use (
+			$cache,
+			$topics_hierarchy,
+			$slugify
+		) : string {
+			return topic_to_slug(
+				$topic_id,
+				$cache,
+				$topics_hierarchy,
+				$slugify
+			)[0];
+		},
+		array_keys(array_filter(
+			$cache['playlists'],
+			static function (
+				array $maybe,
+				string $topic_id
+			) use (
+				$video_id,
+				$playlists
+			) : bool {
+				return
+					! isset($playlists[$topic_id])
+					&& in_array($video_id, $maybe[2], true);
+			},
+			ARRAY_FILTER_USE_BOTH
+		))
+	);
+
+	natcasesort($topics);
+
+	return array_values($topics);
+}
+
+$questions = array_map(
+	static function (array $data) : array {
+		return [
+			'title' => $data[1],
+		];
+	},
+	array_filter(
+		$cache['playlistItems'],
+		static function (array $maybe) : bool {
+			return (bool) preg_match('/^q&a:/i', $maybe[1]);
+		}
+	)
+);
+
+foreach ($questions as $video_id => $data) {
+	$existing[$video_id] = $existing[$video_id] ?? [
+		'title' => $data['title'],
+	];
+
+	$existing[$video_id]['title'] = $data['title'];
+	$existing[$video_id]['date'] = determine_date_for_video(
+		$video_id,
+		$cache['playlists'],
+		$playlists
+	);
+	$existing[$video_id]['topics'] = determine_video_topics(
+		$video_id,
+		$cache,
+		$playlists,
+		$global_topic_hierarchy['satisfactory'],
+		$slugify
+	);
+
+	foreach (
+		[
+			'duplicates',
+			'replaces',
+			'seealso',
+		] as $required
+	) {
+		if ( ! isset($existing[$video_id][$required])) {
+			$existing[$video_id][$required] = [];
+		}
+
+		$existing[$video_id][$required] = array_values(array_filter(
+			$existing[$video_id][$required],
+			/**
+			 * @psalm-assert-if-true string $maybe_value
+			 * @psalm-assert-if-true int $maybe_key
+			 *
+			 * @param scalar|array|object|null|resource $maybe_value
+			 * @param array-key $maybe_key
+			 */
+			static function (
+				$maybe_value,
+				$maybe_key
+			) use (
+				$cache
+			) : bool {
+				return
+					is_string($maybe_value)
+					&& is_int($maybe_key)
+					&& isset($cache['playlistItems'][$maybe_value])
+				;
+			},
+			ARRAY_FILTER_USE_BOTH
+		));
+	}
+}
+
+uasort($existing, static function (array $a, array $b) : int {
+	$maybe = strtotime($b['date']) <=> strtotime($a['date']);
+
+	if (0 === $maybe) {
+		$maybe = strnatcasecmp($a['title'], $b['title']);
+	}
+
+	return $maybe;
+});
+
+$data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
+
+file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
+
+echo
+	sprintf(
+		'%s questions found out of %s clips',
+		count($existing),
+		count($cache['playlistItems'])
+	),
+	"\n"
+;
