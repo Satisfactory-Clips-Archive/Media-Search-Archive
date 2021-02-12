@@ -960,7 +960,6 @@ foreach (array_keys($playlists) as $playlist_id) {
 		);
 	}
 
-
 	$playlist_lines[] =
 		implode('', array_map(
 			static function (string $video_id) use ($cache) : string {
