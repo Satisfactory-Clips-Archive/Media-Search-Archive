@@ -572,6 +572,7 @@ foreach (array_keys($existing) as $lookup) {
 		}
 	));
 
+	/*
 	$existing[$lookup]['seealso'] = array_values(array_filter(
 		$existing[$lookup]['seealso'],
 		static function (string $maybe) use ($lookup, $existing) : bool {
@@ -590,6 +591,21 @@ foreach (array_keys($existing) as $lookup) {
 			;
 		}
 	));
+	*/
+
+	foreach (
+		[
+			'duplicates',
+			'replaces',
+			'seealso',
+		] as $required
+	) {
+		natcasesort($existing[$lookup][$required]);
+
+		$existing[$lookup][$required] = array_values(
+			$existing[$lookup][$required]
+		);
+	}
 }
 
 $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
