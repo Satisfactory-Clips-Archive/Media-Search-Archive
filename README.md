@@ -12,6 +12,8 @@ Static site generator for
 
 ## 2021-02-13
 * Worked on Q&A tracking feature
+* Updated transcription generation to trim the last blank line
+* Updated transcription generation to prefer english transcriptions
 
 ## 2021-02-12
 * Worked on Q&A tracking feature

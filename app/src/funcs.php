@@ -6,6 +6,7 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function array_combine;
 use function array_diff;
 use function array_filter;
 use const ARRAY_FILTER_USE_KEY;
@@ -20,6 +21,7 @@ use function array_values;
 use function ceil;
 use function chr;
 use function count;
+use function current;
 use function date;
 use function dirname;
 use function end;
@@ -41,17 +43,24 @@ use function is_file;
 use function is_int;
 use function iterator_to_array;
 use function json_decode;
+use function key;
+use function ksort;
 use function mb_strlen;
 use function mb_strpos;
 use function mb_substr;
+use function next;
+use function parse_str;
+use function parse_url;
 use function pathinfo;
 use const PATHINFO_FILENAME;
+use const PHP_URL_QUERY;
 use function preg_match;
 use function preg_match_all;
 use function preg_quote;
 use function preg_replace;
 use function preg_replace_callback;
 use function rawurlencode;
+use RuntimeException;
 use function set_error_handler;
 use SimpleXMLElement;
 use function sort;
@@ -62,8 +71,10 @@ use function str_repeat;
 use function str_replace;
 use function strnatcasecmp;
 use function strtotime;
+use Throwable;
 use function trim;
 use function uasort;
+use function uksort;
 use function usort;
 
 set_error_handler(static function (
@@ -927,6 +938,13 @@ function captions(string $video_id) : array
  */
 function raw_captions(string $video_id) : array
 {
+	/** @var Slugify|null */
+	static $slugify = null;
+
+	if (null === $slugify) {
+		$slugify = new Slugify();
+	}
+
 	$video_id = preg_replace('/^yt-(.{11})/', '$1', $video_id);
 
 	$html_cache = __DIR__ . '/../captions/' . $video_id . '.html';
@@ -958,20 +976,141 @@ function raw_captions(string $video_id) : array
 		return [];
 	}
 
-	$tt_cache = __DIR__ . '/../captions/' . $video_id . '.xml';
+	/** @var array<string, string> */
+	$url_matches = array_combine(
+		array_map(
+			static function (string $remap) use ($slugify) : string {
+				parse_str(
+					parse_url(
+						str_replace('\u0026', '&', $remap),
+						PHP_URL_QUERY
+					),
+					$query
+				);
 
-	if ( ! is_file($tt_cache)) {
-		$tt = file_get_contents(str_replace('\u0026', '&', $matches[0][1]));
+				ksort($query);
 
-		file_put_contents($tt_cache, $tt);
-	} else {
-		$tt = file_get_contents($tt_cache);
+				return $slugify->slugify(http_build_query(array_filter(
+					$query,
+					static function (string $maybe) : bool {
+						return in_array(
+							$maybe,
+							[
+								'hl',
+								'kind',
+								'lang',
+							],
+							true
+						);
+					},
+					ARRAY_FILTER_USE_KEY
+				)));
+			},
+			$matches[0]
+		),
+		array_map(
+			static function (string $remap) : string {
+				return str_replace('\u0026', '&', $remap);
+			},
+			$matches[0]
+		)
+	);
+
+	uksort($url_matches, static function (string $a, string $b) : int {
+		$maybe_a = preg_match('/kind-asr$/', $a);
+		$maybe_b = preg_match('/kind-asr$/', $b);
+
+		$maybe = $maybe_b <=> $maybe_a;
+
+		if (0 !== $maybe) {
+			return $maybe;
+		}
+
+		$maybe_a = preg_match('/lang-en/', $a);
+		$maybe_b = preg_match('/lang-en/', $b);
+
+		return $maybe_b <=> $maybe_a;
+	});
+
+	/** @var string|null */
+	$tt = null;
+
+	$tt_cache = (
+		__DIR__
+		. '/../captions/'
+		. $video_id
+		. '.xml'
+	);
+
+	while ('' !== $tt) {
+		if (null === key($url_matches)) {
+			break;
+		}
+
+		$tt_cache = (
+			__DIR__
+			. '/../captions/'
+			. $video_id
+			. ','
+			. key($url_matches)
+			. '.xml'
+		);
+
+		if ( ! is_file($tt_cache)) {
+			$tt = file_get_contents((string) current($url_matches));
+
+			file_put_contents($tt_cache, $tt);
+		} else {
+			$tt = file_get_contents($tt_cache);
+		}
+
+		if ('' !== $tt) {
+			break;
+		}
+
+		next($url_matches);
+
+		if (null === key($url_matches)) {
+			end($url_matches);
+
+			break;
+		}
+	}
+
+	if ('' === $tt) {
+		if (is_file(
+			__DIR__
+			. '/../captions/'
+			. $video_id
+			. '.xml'
+		)) {
+			$tt_cache = (
+				__DIR__
+				. '/../captions/'
+				. $video_id
+				. '.xml'
+			);
+
+			$tt = file_get_contents($tt_cache);
+		}
 	}
 
 	/** @var list<SimpleXMLElement> */
 	$lines = [];
 
-	$xml = new SimpleXMLElement($tt);
+	try {
+		$xml = new SimpleXMLElement((string) $tt);
+	} catch (Throwable $e) {
+		if ('' === (string) $tt) {
+			throw new RuntimeException('transcription was blank!', 0, $e);
+		}
+
+		throw new RuntimeException(
+			$tt_cache . ': ' . $e->getMessage(),
+			0,
+			$e
+		);
+	}
 
 	foreach ($xml->children() as $line) {
 		if (null === $line) {
@@ -1175,6 +1314,15 @@ function get_dated_csv(
 }
 
 /**
+ * @param array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * } $cache
+ *
  * @return array{
  *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	playlistItems:array<string, array{0:string, 1:string}>,

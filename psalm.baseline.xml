@@ -177,7 +177,6 @@
       <code>$start ?: '0'</code>
       <code>$start ?: '0'</code>
     </InvalidScalarArgument>
-    <InvalidThrow occurrences="1"/>
     <LessSpecificReturnStatement occurrences="2">
       <code>$cache</code>
       <code>$children</code>
@@ -207,7 +206,6 @@
       <code>$video_id</code>
       <code>($cache['playlists'][$topic_id] ?? [2 =&gt; []])[2]</code>
     </MixedArgument>
-    <MixedArgumentTypeCoercion occurrences="1"/>
     <MixedArrayAccess occurrences="23">
       <code>$cache['playlistItems'][$a]</code>
       <code>$cache['playlistItems'][$b]</code>
@@ -294,12 +292,6 @@
     <TypeDoesNotContainNull occurrences="1">
       <code>null === $maybe_playlist_id</code>
     </TypeDoesNotContainNull>
-    <UndefinedClass occurrences="4">
-      <code>RuntimeException</code>
-      <code>RuntimeException</code>
-      <code>RuntimeException</code>
-      <code>RuntimeException</code>
-    </UndefinedClass>
     <UnusedClosureParam occurrences="2">
       <code>$errcontext</code>
       <code>$errno</code>
