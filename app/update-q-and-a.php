@@ -672,17 +672,17 @@ $video_id_date_sort = static function (
 ) use ($existing, $cache, $playlists) : int {
 	return
 		strtotime(
-			($existing[$b] ?? ['date' => determine_date_for_video(
+			$existing[$b]['date'] ?? determine_date_for_video(
 				$b,
 				$cache['playlists'],
 				$playlists
-			)])['date']
+			)
 		) <=> strtotime(
-			($existing[$a] ?? ['date' => determine_date_for_video(
+			$existing[$a]['date'] ?? determine_date_for_video(
 				$a,
 				$cache['playlists'],
 				$playlists
-			)])['date']
+			)
 		)
 	;
 };
@@ -760,15 +760,12 @@ foreach ($faq as $video_id => $faq_duplicates) {
 					date(
 						'F jS, Y',
 						(int) strtotime(
-							(
-								$existing[$video_id] ?? [
-									'date' => determine_date_for_video(
+								$existing[$video_id]['date']
+								?? determine_date_for_video(
 										$video_id,
 										$cache['playlists'],
 										$playlists
-									),
-								]
-							)['date']
+							)
 						)
 					)
 					. (
@@ -821,15 +818,12 @@ foreach ($faq as $video_id => $faq_duplicates) {
 						date(
 							'F jS, Y',
 							(int) strtotime(
-								(
-									$existing[$other_video_id] ?? [
-										'date' => determine_date_for_video(
+								$existing[$other_video_id]['date']
+									?? determine_date_for_video(
 											$other_video_id,
 											$cache['playlists'],
 											$playlists
-										),
-									]
-								)['date']
+									)
 							)
 						)
 						. (
