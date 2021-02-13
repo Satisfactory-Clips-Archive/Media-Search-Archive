@@ -630,6 +630,10 @@ foreach (array_keys($existing) as $lookup) {
 
 	if (count($replacements_not_in_existing[$lookup]) < 1) {
 		unset($replacements_not_in_existing[$lookup]);
+	} else {
+		$replacements_not_in_existing[$lookup] = (string) current(
+			$replacements_not_in_existing[$lookup]
+		);
 	}
 
 	if (isset($existing[$lookup]['replacedby'])) {
