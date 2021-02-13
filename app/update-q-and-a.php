@@ -782,22 +782,8 @@ foreach ($faq as $video_id => $faq_duplicates) {
 				)
 			)
 		)),
-		"\n\n",
-		(
-			isset($not_a_livestream[$playlist_id])
-				? (
-					' '
-					. $not_a_livestream[$playlist_id]
-					. ' '
-				)
-				: ' Livestream '
-		),
 		"\n"
 	;
-
-	if (count($transcription) > 0) {
-		echo "\n", markdownify_transcription_lines(...$transcription), "\n";
-	}
 
 	echo "\n", '### Asked previously:';
 
@@ -859,6 +845,11 @@ foreach ($faq as $video_id => $faq_duplicates) {
 				)
 			))
 		;
+	}
+
+	if (count($transcription) > 0) {
+		echo "\n", '### Transcript', "\n";
+		echo "\n", markdownify_transcription_lines(...$transcription), "\n";
 	}
 
 	echo "\n";
