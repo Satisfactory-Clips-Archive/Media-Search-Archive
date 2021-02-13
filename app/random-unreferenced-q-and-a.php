@@ -12,6 +12,8 @@ use function count;
 use function file_get_contents;
 use function json_decode;
 
+$date = $argv[1] ?? null;
+
 /**
  * @var array<string, array{
  *	title:string,
@@ -26,6 +28,15 @@ $questions = json_decode(
 	file_get_contents(__DIR__ . '/data/q-and-a.json'),
 	true
 );
+
+if (isset($date)) {
+	$questions = array_filter(
+		$questions,
+		static function (array $maybe) use ($date) : bool {
+			return $maybe['date'] === $date;
+		}
+	);
+}
 
 $questions = array_filter($questions, static function (array $maybe) : bool {
 	return
