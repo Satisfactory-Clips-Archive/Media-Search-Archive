@@ -631,13 +631,13 @@ $filter_no_references =
 ob_start();
 
 echo sprintf(
-		'%s questions found out of %s clips',
+		'* %s questions found out of %s clips',
 		count($existing),
 		count($cache['playlistItems'])
 	),
 	"\n",
 	sprintf(
-		'%s questions found with no other references',
+		'* %s questions found with no other references',
 		count(array_filter($existing, $filter_no_references))
 	),
 	"\n"

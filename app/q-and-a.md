@@ -1,6 +1,6 @@
 # Progress
-1847 questions found out of 2456 clips
-1397 questions found with no other references
+* 1847 questions found out of 2456 clips
+* 1397 questions found with no other references
 ## grouped by date
 * 2021-02-09: 57 of 100 questions found with no other references
 * 2021-02-02: 35 of 53 questions found with no other references
