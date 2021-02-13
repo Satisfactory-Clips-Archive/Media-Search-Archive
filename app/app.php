@@ -568,8 +568,6 @@ $all_video_ids = array_keys($video_playlists);
 
 natcasesort($all_video_ids);
 
-$transcription_blank_lines_regex = '/(>\n>\n)+/';
-
 echo sprintf('processing 0 of %s transcriptions', count($all_video_ids)), "\n";
 
 foreach ($all_video_ids as $video_id) {
@@ -738,30 +736,7 @@ foreach ($all_video_ids as $video_id) {
 		. "\n\n"
 	);
 
-	$transcription_text = implode('', array_map(
-		static function (string $caption_line) : string {
-			return
-				trim(
-				'> '
-				. $caption_line
-				)
-				. "\n"
-				. '>'
-				. "\n"
-			;
-		},
-		$caption_lines
-	));
-
-	while (preg_match($transcription_blank_lines_regex, $transcription_text)) {
-		$transcription_text = preg_replace(
-			$transcription_blank_lines_regex,
-			'>' . "\n",
-			$transcription_text
-		);
-	}
-
-	$transcription_lines[] = $transcription_text;
+	$transcription_lines[] = markdownify_transcription_lines(...$caption_lines);
 
 	file_put_contents(
 		$transcriptions_file,
