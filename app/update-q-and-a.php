@@ -572,7 +572,6 @@ foreach (array_keys($existing) as $lookup) {
 		}
 	));
 
-	/*
 	$existing[$lookup]['seealso'] = array_values(array_filter(
 		$existing[$lookup]['seealso'],
 		static function (string $maybe) use ($lookup, $existing) : bool {
@@ -591,7 +590,6 @@ foreach (array_keys($existing) as $lookup) {
 			;
 		}
 	));
-	*/
 
 	foreach (
 		[
