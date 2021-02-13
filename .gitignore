@@ -21,3 +21,5 @@
 /app/cache-injection.json
 /app/topics-nested.json
 /app/data/api-cache/
+/app/data/all-topic-slugs.json
+/app/data/video-id-by-topic.json
