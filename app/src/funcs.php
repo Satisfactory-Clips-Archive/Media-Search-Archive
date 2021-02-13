@@ -976,6 +976,7 @@ function raw_captions(string $video_id) : array
 		return [];
 	}
 
+	/** @var array<string, string> */
 	$url_matches = array_combine(
 		array_map(
 			static function (string $remap) use ($slugify) : string {
@@ -1031,9 +1032,21 @@ function raw_captions(string $video_id) : array
 		return $maybe_b <=> $maybe_a;
 	});
 
+	/** @var null|string */
 	$tt = null;
 
+	$tt_cache = (
+		__DIR__
+		. '/../captions/'
+		. $video_id
+		. '.xml'
+	);
+
 	while ('' !== $tt) {
+		if (null === key($url_matches)) {
+			break;
+		}
+
 		$tt_cache = (
 			__DIR__
 			. '/../captions/'
@@ -1044,7 +1057,7 @@ function raw_captions(string $video_id) : array
 		);
 
 		if ( ! is_file($tt_cache)) {
-			$tt = file_get_contents(current($url_matches));
+			$tt = file_get_contents((string) current($url_matches));
 
 			file_put_contents($tt_cache, $tt);
 		} else {
@@ -1086,9 +1099,9 @@ function raw_captions(string $video_id) : array
 	$lines = [];
 
 	try {
-		$xml = new SimpleXMLElement($tt);
+		$xml = new SimpleXMLElement((string) $tt);
 	} catch (Throwable $e) {
-		if ('' === $tt) {
+		if ('' === (string) $tt) {
 			throw new RuntimeException('transcription was blank!', 0, $e);
 		}
 
@@ -1301,6 +1314,15 @@ function get_dated_csv(
 }
 
 /**
+ * @param array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * } $cache
+ *
  * @return array{
  *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	playlistItems:array<string, array{0:string, 1:string}>,
@@ -1776,6 +1798,7 @@ function markdownify_transcription_lines(
 	string $line,
 	string ...$lines
 ) : string {
+	/** @var string */
 	static $transcription_blank_lines_regex = '/(>\n>\n)+/';
 
 	array_unshift($lines, $line);
