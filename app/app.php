@@ -575,8 +575,7 @@ echo sprintf('processing 0 of %s transcriptions', count($all_video_ids)), "\n";
 foreach ($all_video_ids as $video_id) {
 	++$checked;
 
-	echo
-		sprintf(
+	echo sprintf(
 			'processing %s of %s transcriptions (%s seconds elapsed)',
 			$checked,
 			count($all_video_ids),
