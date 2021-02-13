@@ -659,6 +659,7 @@ $filter_no_references =
 		;
 	};
 
+
 ob_start();
 
 echo sprintf(

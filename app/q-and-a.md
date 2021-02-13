@@ -1,44 +1,44 @@
 # Progress
 * 1847 questions found out of 2456 clips
-* 1366 questions found with no other references
+* 1320 questions found with no other references
 ## grouped by date
-* 2021-02-09: 56 of 100 questions found with no other references
+* 2021-02-09: 55 of 100 questions found with no other references
 * 2021-02-02: 35 of 53 questions found with no other references
-* 2021-01-26: 63 of 83 questions found with no other references
+* 2021-01-26: 61 of 83 questions found with no other references
 * 2021-01-22: 0 of 3 questions found with no other references
-* 2021-01-19: 79 of 92 questions found with no other references
+* 2021-01-19: 75 of 92 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 29 of 34 questions found with no other references
-* 2020-12-15: 51 of 60 questions found with no other references
+* 2020-12-15: 50 of 60 questions found with no other references
 * 2020-12-08: 43 of 53 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
-* 2020-11-24: 33 of 48 questions found with no other references
-* 2020-11-17: 47 of 57 questions found with no other references
+* 2020-11-24: 32 of 48 questions found with no other references
+* 2020-11-17: 45 of 57 questions found with no other references
 * 2020-11-10: 71 of 84 questions found with no other references
-* 2020-11-03: 47 of 57 questions found with no other references
-* 2020-10-27: 23 of 23 questions found with no other references
+* 2020-11-03: 45 of 57 questions found with no other references
+* 2020-10-27: 22 of 23 questions found with no other references
 * 2020-10-20: 43 of 51 questions found with no other references
-* 2020-10-13: 45 of 48 questions found with no other references
+* 2020-10-13: 43 of 48 questions found with no other references
 * 2020-10-09: 22 of 24 questions found with no other references
 * 2020-10-06: 43 of 51 questions found with no other references
-* 2020-09-29: 32 of 38 questions found with no other references
+* 2020-09-29: 29 of 38 questions found with no other references
 * 2020-09-22: 46 of 59 questions found with no other references
-* 2020-09-15: 42 of 47 questions found with no other references
-* 2020-09-08: 57 of 72 questions found with no other references
+* 2020-09-15: 41 of 47 questions found with no other references
+* 2020-09-08: 55 of 72 questions found with no other references
 * 2020-09-01: 62 of 71 questions found with no other references
 * 2020-08-25: 14 of 136 questions found with no other references
-* 2020-08-18: 46 of 56 questions found with no other references
+* 2020-08-18: 44 of 56 questions found with no other references
 * 2020-08-11: 31 of 38 questions found with no other references
-* 2020-07-28: 6 of 10 questions found with no other references
-* 2020-07-21: 4 of 5 questions found with no other references
-* 2020-06-08: 35 of 40 questions found with no other references
-* 2020-05-19: 21 of 24 questions found with no other references
-* 2020-03-24: 22 of 29 questions found with no other references
+* 2020-07-28: 0 of 10 questions found with no other references
+* 2020-07-21: 0 of 5 questions found with no other references
+* 2020-06-08: 33 of 40 questions found with no other references
+* 2020-05-19: 20 of 24 questions found with no other references
+* 2020-03-24: 21 of 29 questions found with no other references
 * 2020-02-11: 37 of 43 questions found with no other references
-* 2020-01-22: 23 of 29 questions found with no other references
-* 2019-12-19: 47 of 58 questions found with no other references
+* 2020-01-22: 22 of 29 questions found with no other references
+* 2019-12-19: 46 of 58 questions found with no other references
 * 2019-03-09: 86 of 114 questions found with no other references
-* 2018-11-23: 6 of 6 questions found with no other references
+* 2018-11-23: 0 of 6 questions found with no other references
 * 2018-10-03: 7 of 9 questions found with no other references
 * 2018-08-01: 5 of 20 questions found with no other references
 * 2018-06-22: 3 of 14 questions found with no other references
@@ -501,6 +501,30 @@
 > uh to quote mark the the pipes are in
 >
 > their infancy
+
+
+## [January 26th, 2021 Livestream Q&A: Are we getting signs any time soon?](https://archive.satisfactory.video/transcriptions/yt-RAYufEKcGLk) https://www.youtube.com/watch?v=RAYufEKcGLk
+
+### Asked previously:
+* [January 19th, 2021 Livestream Q&A: Is there a plan to add Screens to the game?](https://archive.satisfactory.video/transcriptions/yt-sjfADGMwclM) https://www.youtube.com/watch?v=sjfADGMwclM
+* [November 3rd, 2020 Livestream Q&A: When do Signs come?](https://archive.satisfactory.video/transcriptions/yt-5PwIEaLRDRY) https://www.youtube.com/watch?v=5PwIEaLRDRY
+* [September 29th, 2020 Livestream Q&A: Can we get Signs in the game?](https://archive.satisfactory.video/transcriptions/yt-P1hgqMJ8MW0) https://www.youtube.com/watch?v=P1hgqMJ8MW0
+* [August 25th, 2020 Livestream Q&A: Signs for Hypertube Entrances?](https://archive.satisfactory.video/transcriptions/yt-y3w-vPtVjog) https://www.youtube.com/watch?v=y3w-vPtVjog
+* July 28th, 2020 Livestream Q&A: Signs & Planets https://clips.twitch.tv/ArtisticTrustworthyHamOSkomodo
+* [June 8th, 2020 Livestream Q&A: What about Signs?](https://archive.satisfactory.video/transcriptions/yt-UGKquiGR0CY) https://www.youtube.com/watch?v=UGKquiGR0CY
+### Transcript
+
+> for uh are we getting signs anytime soon
+>
+> uh soon no but yes you will you
+>
+> will get them
+>
+> we have confirmed that we will do them
+>
+> at some point at some point don't know
+>
+> when
 
 
 ## [February 9th, 2021 Livestream Q&A: Are you going to break save games again?](https://archive.satisfactory.video/transcriptions/yt-hF6yB6Wrox0) https://www.youtube.com/watch?v=hF6yB6Wrox0
@@ -2016,6 +2040,35 @@
 > no as far as we know um
 
 
+## [September 29th, 2020 Livestream Q&A: Is there going to be a Mass Construction option?](https://archive.satisfactory.video/transcriptions/yt-RPLvCZvTNxg) https://www.youtube.com/watch?v=RPLvCZvTNxg
+
+### Asked previously:
+* July 21st, 2020 Livestream Q&A: Why no mass building? https://clips.twitch.tv/SoftBovineArmadilloNerfRedBlaster
+* July 8th, 2020 Livestream Snutt & Jace Talk: not adding mass building tools into the vanilla game https://clips.twitch.tv/NimbleAgitatedPeanutNotLikeThis
+* [June 8th, 2020 Livestream Q&A: Blueprints/Mass construction - will we have it ? If not, why not?](https://archive.satisfactory.video/transcriptions/yt-T1w4TV8Y8Lk) https://www.youtube.com/watch?v=T1w4TV8Y8Lk
+### Transcript
+
+> um two package asks if there's gonna be
+>
+> a mass construction
+>
+> option if that's possible uh yeah it's
+>
+> of course possible and as
+>
+> otaku says there's a mod for that um
+>
+> yeah there
+>
+> there is but we're as far as i know
+>
+> we're not gonna do it
+>
+> we don't we don't like it we don't want
+>
+> it
+
+
 ## [February 9th, 2021 Livestream Q&A: Is there going to be tower defense?](https://archive.satisfactory.video/transcriptions/yt-9dWWC0mFitU) https://www.youtube.com/watch?v=9dWWC0mFitU
 
 ### Asked previously:
@@ -2586,6 +2639,24 @@
 > what will happen there
 >
 > don't know
+
+
+## [January 19th, 2021 Livestream Q&A: Underwater Biome?](https://archive.satisfactory.video/transcriptions/yt-loc82lE_XK4) https://www.youtube.com/watch?v=loc82lE_XK4
+
+### Asked previously:
+* [November 24th, 2020 Livestream Q&A: Any plans for underwater mechanics?](https://archive.satisfactory.video/transcriptions/yt-nQplpfNLru8) https://www.youtube.com/watch?v=nQplpfNLru8
+* [August 25th, 2020 Livestream Q&A: Underwater biome when?](https://archive.satisfactory.video/transcriptions/yt-pKZc4ciFu6Q) https://www.youtube.com/watch?v=pKZc4ciFu6Q
+* July 21st, 2020 Livestream Q&A: How about building underwater? https://clips.twitch.tv/NiceDreamyGarbageBuddhaBar
+* [December 19th, 2019 Livestream Q&A: Underwater Worlds?](https://archive.satisfactory.video/transcriptions/yt-QXK9y3pnWGg) https://www.youtube.com/watch?v=QXK9y3pnWGg
+### Transcript
+
+> underwater biomes same thing we're not
+>
+> going to add any new biomes
+>
+> we're going to improve the biomes we
+>
+> have because the biomes aren't done
 
 
 ## [January 26th, 2021 Livestream Q&A: VR support would be heavenly?](https://archive.satisfactory.video/transcriptions/yt-0Ld1fbTEOvM) https://www.youtube.com/watch?v=0Ld1fbTEOvM
@@ -3532,6 +3603,85 @@
 * [August 25th, 2020 Livestream Q&A: Plans for mod support?](https://archive.satisfactory.video/transcriptions/yt-iOk7KMpNMEo) https://www.youtube.com/watch?v=iOk7KMpNMEo
 * [February 11th, 2020 Livestream Q&A: Where's Mod support?](https://archive.satisfactory.video/transcriptions/yt-JRyAZT7y44g) https://www.youtube.com/watch?v=JRyAZT7y44g
 * [June 22nd, 2018 Livestream Q&A: Will there be mods?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,91.24,120.52) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=91&end=121
+
+## [December 15th, 2020 Livestream Q&A: Will we get a Shop in Europe - the shipping costs are a bit spicy?](https://archive.satisfactory.video/transcriptions/yt-PYyvu8feZqA) https://www.youtube.com/watch?v=PYyvu8feZqA
+
+### Asked previously:
+* [October 13th, 2020 Livestream Q&A: Info on EU shopping for Merch?](https://archive.satisfactory.video/transcriptions/yt-D3uJQzZmGQM) https://www.youtube.com/watch?v=D3uJQzZmGQM
+* [September 8th, 2020 Livestream Q&A: Will there be a european Merch store?](https://archive.satisfactory.video/transcriptions/yt-GhfR61WpR6k) https://www.youtube.com/watch?v=GhfR61WpR6k
+### Transcript
+
+> um will we get a shop in europe the
+>
+> shipping cost is a bit spicy uh it is
+>
+> spicy
+>
+> um we are working on that um i don't
+>
+> have
+>
+> really a good eta um
+>
+> unfortunately but we are looking into it
+>
+> we haven't really
+>
+> i don't know it's this takes so
+>
+> long like it's honestly i i'm not until
+>
+> like i was a part of this i realized
+>
+> like how much work
+>
+> goes into setting up a shop like this
+>
+> because the four fans by fans shop took
+>
+> like a year
+>
+> to set up and like
+>
+> we've been looking in europe as well
+>
+> while we're doing that so we have a few
+>
+> alternatives but
+>
+> yeah it's tricky
+
+
+## [January 26th, 2021 Livestream Q&A: Will you guys eventually add survival elements like hunger & thirst?](https://archive.satisfactory.video/transcriptions/yt-5QJJqDM03Ww) https://www.youtube.com/watch?v=5QJJqDM03Ww
+
+### Asked previously:
+* [September 15th, 2020 Livestream Q&A: Will there be more polish to the Survival aspects of the game?](https://archive.satisfactory.video/transcriptions/yt-0flTS1mpH7s) https://www.youtube.com/watch?v=0flTS1mpH7s
+* [September 8th, 2020 Livestream Q&A: Elements of Survival ?](https://archive.satisfactory.video/transcriptions/yt-B3bO7b-5jHA) https://www.youtube.com/watch?v=B3bO7b-5jHA
+* July 28th, 2020 Livestream Q&A: Will you be expanding on the survival aspect of the game? https://clips.twitch.tv/IntelligentBlatantOrangeBrokeBack
+### Transcript
+
+> okay let's move on uh will you guys
+>
+> eventually add survival elements like
+>
+> hunger and thirst no i don't think so i
+>
+> don't think that's gonna come to the
+>
+> game
+>
+> it's not part of uh the kind of game we
+>
+> want to make um so
+>
+> you know it can you know that could
+>
+> change but i don't think so it seems
+>
+> like
+>
+> we're pretty set on that
+
 
 ## [February 9th, 2021 Livestream Q&A: You devs ever seen a Mod and been like "Oh, we need to put that in the game" ?](https://archive.satisfactory.video/transcriptions/yt-UrgqXAHK4KU) https://www.youtube.com/watch?v=UrgqXAHK4KU
 
