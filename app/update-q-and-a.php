@@ -613,7 +613,11 @@ $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
 
 file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
 
-$filter_no_references = static function (array $maybe) : bool {
+$filter_no_references =
+	/**
+	 * @param array{duplicates:array, replaces:array, seealso:array} $maybe
+	 */
+	static function (array $maybe) : bool {
 	return
 		count($maybe['duplicates']) < 1
 		&& count($maybe['replaces']) < 1
