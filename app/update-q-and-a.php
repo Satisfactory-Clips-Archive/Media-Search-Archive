@@ -650,6 +650,8 @@ foreach ($existing as $data) {
 	$grouped[$data['date']][] = $data;
 }
 
+echo '## grouped by date', "\n";
+
 foreach ($grouped as $date => $data) {
 	echo sprintf(
 			'* %s: %s of %s questions found with no other references',
@@ -659,6 +661,207 @@ foreach ($grouped as $date => $data) {
 		),
 		"\n"
 	;
+}
+
+$video_id_date_sort = static function (
+	string $a,
+	string $b
+) use ($existing, $cache, $playlists) : int {
+	return (
+		strtotime(
+			($existing[$b] ?? ['date' => determine_date_for_video(
+				$b,
+				$cache['playlists'],
+				$playlists
+			)])['date']
+		) <=> strtotime(
+			($existing[$a] ?? ['date' => determine_date_for_video(
+				$a,
+				$cache['playlists'],
+				$playlists
+			)])['date']
+		)
+	);
+};
+
+$duplicates = array_map(
+	/**
+	 * @param list<string> $video_ids
+	 *
+	 * @return list<string>
+	 */
+	static function (array $video_ids) use($video_id_date_sort) : array {
+		usort($video_ids, $video_id_date_sort);
+
+		return $video_ids;
+	},
+	array_filter(
+		$duplicates,
+		static function (array $a, string $b) : bool {
+			return $a !== [$b];
+		},
+		ARRAY_FILTER_USE_BOTH
+	)
+);
+
+uksort($duplicates, $video_id_date_sort);
+
+$duplicates = array_filter(
+	$duplicates,
+	static function (array $a, string $b) : bool {
+		return $a[0] === $b;
+	},
+	ARRAY_FILTER_USE_BOTH
+);
+
+echo "\n", '# prototype replacement for faq markdown file', "\n";
+
+$faq = array_filter(
+	$duplicates,
+	static function (array $maybe) : bool {
+		return count($maybe) >= 3;
+	}
+);
+
+uksort($faq, static function (string $a, string $b) use ($existing) : int {
+	return strnatcasecmp($existing[$a]['title'], $existing[$b]['title']);
+});
+
+echo "\n";
+
+foreach ($faq as $video_id => $faq_duplicates) {
+	$transcription = captions($video_id);
+	$playlist_id = array_search(
+		determine_date_for_video(
+			$video_id,
+			$cache['playlists'],
+			$playlists
+		),
+		$playlists
+	);
+
+	if ( ! is_string($playlist_id)) {
+		throw new RuntimeException(sprintf(
+			'Could not find playlist id for %s',
+			$video_id
+		));
+	}
+
+	echo
+		'## ',
+		preg_replace('/\.md\)/', ')', str_replace(
+			'./',
+			'https://archive.satisfactory.video/',
+			maybe_transcript_link_and_video_url(
+				$video_id,
+				(
+					date(
+						'F jS, Y',
+						(int) strtotime(
+							(
+								$existing[$video_id] ?? [
+									'date' => determine_date_for_video(
+										$video_id,
+										$cache['playlists'],
+										$playlists
+									)
+								]
+							)['date']
+						)
+					)
+					. (
+						isset($not_a_livestream[$playlist_id])
+							? (
+								' '
+								. $not_a_livestream[$playlist_id]
+								. ' '
+							)
+							: ' Livestream '
+					)
+					. $cache['playlistItems'][$video_id][1]
+				)
+			)
+		)),
+		"\n\n",
+		(
+			isset($not_a_livestream[$playlist_id])
+				? (
+					' '
+					. $not_a_livestream[$playlist_id]
+					. ' '
+				)
+				: ' Livestream '
+		),
+		"\n"
+	;
+
+	if (count($transcription) > 0) {
+		echo "\n", markdownify_transcription_lines(...$transcription), "\n";
+	}
+
+	echo "\n", '## Asked previously:';
+
+	foreach ($faq_duplicates as $other_video_id) {
+		if ($other_video_id === $video_id) {
+			continue;
+		}
+
+		$playlist_id = array_search(
+			determine_date_for_video(
+				$other_video_id,
+				$cache['playlists'],
+				$playlists
+			),
+			$playlists
+		);
+
+		if ( ! is_string($playlist_id)) {
+			throw new RuntimeException(sprintf(
+				'Could not find playlist id for %s',
+				$video_id
+			));
+		}
+
+		echo
+			"\n",
+			'* ',
+			preg_replace('/\.md\)/', ')', str_replace(
+				'./',
+				'https://archive.satisfactory.video/',
+				maybe_transcript_link_and_video_url(
+					$other_video_id,
+					(
+						date(
+							'F jS, Y',
+							(int) strtotime(
+								(
+									$existing[$other_video_id] ?? [
+										'date' => determine_date_for_video(
+											$other_video_id,
+											$cache['playlists'],
+											$playlists
+										)
+									]
+								)['date']
+							)
+						)
+						. (
+							isset($not_a_livestream[$playlist_id])
+								? (
+									' '
+									. $not_a_livestream[$playlist_id]
+									. ' '
+								)
+								: ' Livestream '
+						)
+						. $cache['playlistItems'][$other_video_id][1]
+					)
+				)
+			))
+		;
+	}
+
+	echo "\n";
 }
 
 file_put_contents(
