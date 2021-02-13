@@ -1,15 +1,15 @@
 # Progress
 * 1847 questions found out of 2456 clips
-* 1317 questions found with no other references
+* 1308 questions found with no other references
 ## grouped by date
-* 2021-02-09: 55 of 100 questions found with no other references
+* 2021-02-09: 50 of 100 questions found with no other references
 * 2021-02-02: 34 of 53 questions found with no other references
-* 2021-01-26: 61 of 83 questions found with no other references
+* 2021-01-26: 60 of 83 questions found with no other references
 * 2021-01-22: 0 of 3 questions found with no other references
 * 2021-01-19: 75 of 92 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 29 of 34 questions found with no other references
-* 2020-12-15: 50 of 60 questions found with no other references
+* 2020-12-15: 49 of 60 questions found with no other references
 * 2020-12-08: 43 of 53 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 32 of 48 questions found with no other references
@@ -19,7 +19,7 @@
 * 2020-10-27: 22 of 23 questions found with no other references
 * 2020-10-20: 43 of 51 questions found with no other references
 * 2020-10-13: 43 of 48 questions found with no other references
-* 2020-10-09: 22 of 24 questions found with no other references
+* 2020-10-09: 20 of 24 questions found with no other references
 * 2020-10-06: 43 of 51 questions found with no other references
 * 2020-09-29: 29 of 38 questions found with no other references
 * 2020-09-22: 46 of 59 questions found with no other references
@@ -1232,6 +1232,74 @@
 > lied to you
 >
 > but i i'm pretty sure it's gonna happen
+
+
+## [February 9th, 2021 Livestream Q&A: Do you have any plans to add Ray Tracing or DLSS?](https://archive.satisfactory.video/transcriptions/yt-hRzZjCBoI8s) https://www.youtube.com/watch?v=hRzZjCBoI8s
+
+### Asked previously:
+* [January 26th, 2021 Livestream Q&A: Is ray-trace in planning?](https://archive.satisfactory.video/transcriptions/yt-Rx_M6fLOzvM) https://www.youtube.com/watch?v=Rx_M6fLOzvM
+* [January 19th, 2021 Livestream Q&A: Ever add DLSS at some point?](https://archive.satisfactory.video/transcriptions/yt-PqFAGrVd3M0) https://www.youtube.com/watch?v=PqFAGrVd3M0
+* [December 15th, 2020 Livestream Q&A: Will RTX be added to Update 4 with the new Unreal Engine?](https://archive.satisfactory.video/transcriptions/yt-RubFX693enI) https://www.youtube.com/watch?v=RubFX693enI
+* [November 24th, 2020 Livestream Q&A: Plans for Ray Tracing?](https://archive.satisfactory.video/transcriptions/yt-pvMET7F9BQ8) https://www.youtube.com/watch?v=pvMET7F9BQ8
+* [November 3rd, 2020 Livestream Q&A: Will Satisfactory get Ray Tracing?](https://archive.satisfactory.video/transcriptions/yt-pb2KprHATHk) https://www.youtube.com/watch?v=pb2KprHATHk
+* [November 3rd, 2020 Livestream Q&A: RTX support ever?](https://archive.satisfactory.video/transcriptions/yt-PKx5vpwPGW0) https://www.youtube.com/watch?v=PKx5vpwPGW0
+* [October 9th, 2020 Livestream Q&A: Could we get Ray Tracing?](https://archive.satisfactory.video/transcriptions/yt-tsUgV4Irw9I) https://www.youtube.com/watch?v=tsUgV4Irw9I
+* [September 29th, 2020 Livestream Q&A: Add RTX?](https://archive.satisfactory.video/transcriptions/yt-KXKJxFYBxos) https://www.youtube.com/watch?v=KXKJxFYBxos
+* [September 15th, 2020 Livestream Q&A: DLSS one day?](https://archive.satisfactory.video/transcriptions/yt-IXroe1QFRzc) https://www.youtube.com/watch?v=IXroe1QFRzc
+* [September 1st, 2020 Livestream Q&A: DXR/RTX/DLSS ?](https://archive.satisfactory.video/transcriptions/yt-QuoiJ9lpkB4) https://www.youtube.com/watch?v=QuoiJ9lpkB4
+### Transcript
+
+> yeah uh do you have any plans to add ray
+>
+> tracing or dlss we don't really have
+>
+> plans for retracing at the moment
+>
+> um there's yeah i guess the the team
+>
+> doesn't find it to be
+>
+> as important as other things um right
+>
+> now so
+>
+> there's no plan you know it could be a
+>
+> thing but right now there's like more
+>
+> important things especially when it
+>
+> comes to uh
+>
+> optimization yeah it doesn't really add
+>
+> anything new to the game so to speak
+>
+> it just yeah it just helps out some
+>
+> people who have the hardware
+>
+> yeah uh apparently we don't support
+>
+> everyone else and currently we don't
+>
+> support directx 12 which we have to
+>
+> to be able to use the lss right and
+>
+> there is an experimental
+>
+> directx 12 on the experimental brand
+>
+> yeah right now but that doesn't we're
+>
+> trying it
+>
+> you're testing it and it doesn't mean a
+>
+> promise yeah
+>
+> yeah so
 
 
 ## [August 25th, 2020 Livestream Q&A: Do you have a set of ideas?](https://archive.satisfactory.video/transcriptions/yt-eSN0HQlSJBs) https://www.youtube.com/watch?v=eSN0HQlSJBs
