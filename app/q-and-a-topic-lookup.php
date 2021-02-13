@@ -6,8 +6,27 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
-use InvalidArgumentException;
-use RuntimeException;
+use function array_diff;
+use function array_filter;
+use const ARRAY_FILTER_USE_KEY;
+use function array_keys;
+use function array_map;
+use function array_merge;
+use function array_merge_recursive;
+use function array_reduce;
+use function array_reverse;
+use function array_slice;
+use function array_values;
+use function asort;
+use function count;
+use function file_get_contents;
+use function in_array;
+use function is_string;
+use function json_decode;
+use function mb_strtolower;
+use function preg_match;
+use function preg_quote;
+use function sprintf;
 
 require_once (__DIR__ . '/../vendor/autoload.php');
 require_once (__DIR__ . '/global-topic-hierarchy.php');
@@ -69,14 +88,12 @@ $externals_cache = process_externals(
 $cache = inject_caches($cache, $externals_cache);
 
 if ( ! is_string($lookup)) {
-	echo
-		'no video id specified!'
+	echo 'no video id specified!'
 	;
 
 	exit(1);
 } elseif ( ! isset($questions[$lookup])) {
-	echo
-		'the specified video id was not identified as a question!'
+	echo 'the specified video id was not identified as a question!'
 	;
 
 	exit(1);
@@ -128,8 +145,7 @@ asort($other_videos);
 $other_videos = array_reverse($other_videos, true);
 
 if (count($other_videos) < 1) {
-	echo
-		'no other videos identified on related topics!',
+	echo 'no other videos identified on related topics!',
 		"\n";
 
 	exit(1);
@@ -163,8 +179,7 @@ if (count($filter) > 0) {
 echo sprintf('%s other videos identified!', count($other_videos)), "\n";
 
 foreach ($other_videos as $video_id => $topic_matches) {
-	echo
-		sprintf(
+	echo sprintf(
 			'%s %s (%s topics in common)',
 			$video_id,
 			$cache['playlistItems'][$video_id][1],

@@ -6,8 +6,38 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function array_filter;
+use const ARRAY_FILTER_USE_BOTH;
+use function array_intersect;
+use function array_keys;
+use function array_map;
+use function array_merge;
+use function array_merge_recursive;
+use function array_reduce;
+use function array_values;
+use function count;
+use function date;
+use function file_get_contents;
+use function file_put_contents;
+use function in_array;
 use InvalidArgumentException;
+use function is_array;
+use function is_int;
+use function is_string;
+use function json_decode;
+use function json_encode;
+use const JSON_PRETTY_PRINT;
+use function mb_substr;
+use function natcasesort;
+use const PHP_EOL;
+use function preg_match;
 use RuntimeException;
+use function sprintf;
+use function str_replace;
+use function strnatcasecmp;
+use function strtotime;
+use function uasort;
+use function usort;
 
 require_once (__DIR__ . '/../vendor/autoload.php');
 require_once (__DIR__ . '/global-topic-hierarchy.php');
@@ -28,8 +58,10 @@ $existing = array_filter(
 	 * } $maybe_value
 	 * @psalm-assert-if-true string $maybe_key
 	 *
-	 * @param scalar|array|object|null|resource $maybe_value
+	 * @param scalar|array|object|resource|null $maybe_value
 	 * @param array-key $maybe_key
+	 * @param mixed $a
+	 * @param mixed $b
 	 */
 	static function ($a, $b) : bool {
 		return
@@ -107,7 +139,7 @@ $playlists_filter =
 	 * @psalm-assert-if-true string $maybe_value
 	 * @psalm-assert-if-true string $maybe_key
 	 *
-	 * @param scalar|array|object|null|resource $maybe_value
+	 * @param scalar|array|object|resource|null $maybe_value
 	 * @param array-key $maybe_key
 	 */
 	static function ($maybe_value, $maybe_key) : bool {
@@ -332,7 +364,7 @@ foreach ($questions as $video_id => $data) {
 			 * @psalm-assert-if-true string $maybe_value
 			 * @psalm-assert-if-true int $maybe_key
 			 *
-			 * @param scalar|array|object|null|resource $maybe_value
+			 * @param scalar|array|object|resource|null $maybe_value
 			 * @param array-key $maybe_key
 			 */
 			static function (
@@ -478,8 +510,7 @@ $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
 
 file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
 
-echo
-	sprintf(
+echo sprintf(
 		'%s questions found out of %s clips',
 		count($existing),
 		count($cache['playlistItems'])
