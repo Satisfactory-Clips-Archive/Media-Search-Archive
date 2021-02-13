@@ -799,7 +799,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		echo "\n", markdownify_transcription_lines(...$transcription), "\n";
 	}
 
-	echo "\n", '## Asked previously:';
+	echo "\n", '### Asked previously:';
 
 	foreach ($faq_duplicates as $other_video_id) {
 		if ($other_video_id === $video_id) {
