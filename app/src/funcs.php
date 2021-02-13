@@ -1644,3 +1644,37 @@ function embed_link(string $video_id, ? float $start, ? float $end) : string
 
 	return timestamp_link($video_id, $start ?? 0.0);
 }
+
+function markdownify_transcription_lines(
+	string $line,
+	string ...$lines
+) : string {
+	static $transcription_blank_lines_regex = '/(>\n>\n)+/';
+
+	array_unshift($lines, $line);
+
+	$transcription_text = implode('', array_map(
+		static function (string $caption_line) : string {
+			return
+				trim(
+				'> '
+				. $caption_line
+				)
+				. "\n"
+				. '>'
+				. "\n"
+			;
+		},
+		$lines
+	));
+
+	while (preg_match($transcription_blank_lines_regex, $transcription_text)) {
+		$transcription_text = preg_replace(
+			$transcription_blank_lines_regex,
+			'>' . "\n",
+			$transcription_text
+		);
+	}
+
+	return preg_replace('/>\n$/', '', $transcription_text);
+}
