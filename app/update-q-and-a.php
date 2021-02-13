@@ -610,6 +610,16 @@ $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
 
 file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
 
+$filter_no_references = static function (array $maybe) : bool {
+	return
+		count($maybe['duplicates']) < 1
+		&& count($maybe['replaces']) < 1
+		&& count($maybe['seealso']) < 1
+	;
+};
+
+ob_start();
+
 echo sprintf(
 		'%s questions found out of %s clips',
 		count($existing),
@@ -618,15 +628,38 @@ echo sprintf(
 	"\n",
 	sprintf(
 		'%s questions found with no other references',
-		count(array_filter($existing, static function (array $maybe) : bool {
-			return
-				count($maybe['duplicates']) < 1
-				&& count($maybe['replaces']) < 1
-				&& count($maybe['seealso']) < 1
-			;
-		}))
-	)
+		count(array_filter($existing, $filter_no_references))
+	),
+	"\n"
 ;
+
+$grouped = [];
+
+foreach ($existing as $data) {
+	if ( ! isset($grouped[$data['date']])) {
+		$grouped[$data['date']] = [];
+	}
+
+	$grouped[$data['date']][] = $data;
+}
+
+foreach ($grouped as $date => $data) {
+	echo sprintf(
+			'* %s: %s of %s questions found with no other references',
+			$date,
+			count(array_filter($data, $filter_no_references)),
+			count($data)
+		),
+		"\n"
+	;
+}
+
+file_put_contents(
+	__DIR__ . '/q-and-a.md',
+	'# Progress' . "\n" . ob_get_contents()
+);
+
+ob_flush();
 
 $data = str_replace(PHP_EOL, "\n", json_encode($by_topic, JSON_PRETTY_PRINT));
 
