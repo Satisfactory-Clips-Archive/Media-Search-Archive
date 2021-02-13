@@ -617,17 +617,24 @@ foreach (array_keys($existing) as $lookup) {
 		);
 	}
 
-	$replacements_not_in_existing[$video_id] = array_filter(
-		$existing[$video_id]['replacedby'] ?? [],
+	$replacements_not_in_existing[$lookup] = array_filter(
+		[$existing[$lookup]['replacedby'] ?? ''],
 		static function (string $maybe) use ($existing, $cache) : bool {
 			return
-				! isset($existing[$maybe])
+				'' !== $maybe
+				&& ! isset($existing[$maybe])
 				&& isset($cache['playlistItems'][$maybe])
 			;
 		}
 	);
 
-	unset($existing[$video_id]['replacedby']);
+	if (count($replacements_not_in_existing[$lookup]) < 1) {
+		unset($replacements_not_in_existing[$lookup]);
+	}
+
+	if (isset($existing[$lookup]['replacedby'])) {
+		unset($existing[$lookup]['replacedby']);
+	}
 }
 
 foreach ($existing as $video_id => $data) {
