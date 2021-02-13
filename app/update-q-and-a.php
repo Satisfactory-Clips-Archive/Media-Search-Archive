@@ -666,6 +666,15 @@ foreach ($grouped as $date => $data) {
 	;
 }
 
+file_put_contents(
+	__DIR__ . '/q-and-a.md',
+	'# Progress' . "\n" . ob_get_contents()
+);
+
+ob_flush();
+
+ob_start();
+
 $video_id_date_sort = static function (
 	string $a,
 	string $b
@@ -852,10 +861,9 @@ foreach ($faq as $video_id => $faq_duplicates) {
 
 file_put_contents(
 	__DIR__ . '/q-and-a.md',
-	'# Progress' . "\n" . ob_get_contents()
+	ob_get_clean(),
+	FILE_APPEND
 );
-
-ob_flush();
 
 $data = str_replace(PHP_EOL, "\n", json_encode($by_topic, JSON_PRETTY_PRINT));
 
