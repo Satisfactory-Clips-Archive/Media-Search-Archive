@@ -85,6 +85,14 @@ class YouTubeApiWrapper
 		$this->sort_playist_items();
 	}
 
+	/**
+	 * @return array{
+	 *	playlists: array<string, array{0:'', 1:string, 2:list<string>}>,
+	 *	playlistItems: array<string, array{0:'', 1:string}>,
+	 *	videoTags: array<string, array{0:'', 1:list<string>}>,
+	 *	captions: array<empty, empty>
+	 * }
+	 */
 	public function toLegacyCacheFormat() : array
 	{
 		$out = [

@@ -9,8 +9,7 @@
       <code>[]</code>
     </InvalidArgument>
     <InvalidScalarArgument occurrences="1"/>
-    <MixedArgument occurrences="12">
-      <code>$cache['videoTags'][$video_id]</code>
+    <MixedArgument occurrences="11">
       <code>$data</code>
       <code>$data</code>
       <code>$filename</code>
@@ -25,27 +24,21 @@
       <code>$topic_slug_history</code>
     </MixedArgument>
     <MixedArgumentTypeCoercion occurrences="1"/>
-    <MixedArrayAccess occurrences="11">
-      <code>$cache['videoTags'][$video_id]</code>
+    <MixedArrayAccess occurrences="7">
       <code>$data[1]</code>
-      <code>$etag</code>
       <code>$injected_cache['playlists']</code>
       <code>$injected_cache['videoTags']</code>
       <code>$injected_data[1]</code>
       <code>$injected_data[2]</code>
       <code>$injected_data[2]</code>
       <code>$injected_data[2]</code>
-      <code>$title</code>
-      <code>$video_ids</code>
     </MixedArrayAccess>
-    <MixedArrayAssignment occurrences="5">
-      <code>$cache['videoTags'][$video_id]</code>
-      <code>$cache['videoTags'][$video_id]</code>
+    <MixedArrayAssignment occurrences="3">
       <code>$skipping[]</code>
       <code>$topic_slug_history[$topic_id]</code>
       <code>$topic_slug_history[$topic_id]</code>
     </MixedArrayAssignment>
-    <MixedArrayOffset occurrences="13">
+    <MixedArrayOffset occurrences="11">
       <code>$cache['videoTags'][$video_id]</code>
       <code>$cache['videoTags'][$video_id]</code>
       <code>$cache['videoTags'][$video_id]</code>
@@ -64,8 +57,7 @@
       <code>$cache['playlists'][$playlist_id]</code>
       <code>$cache['playlists'][$playlist_id]</code>
     </MixedArrayTypeCoercion>
-    <MixedAssignment occurrences="20">
-      <code>$cache['playlists']</code>
+    <MixedAssignment occurrences="16">
       <code>$cache['videoTags'][$video_id][]</code>
       <code>$data</code>
       <code>$data</code>
@@ -91,7 +83,6 @@
       <code>$video_id</code>
       <code>$video_id</code>
       <code>$video_id</code>
-      <code>[$etag, $title, $video_ids]</code>
     </MixedAssignment>
     <MixedInferredReturnType occurrences="3">
       <code>int</code>
@@ -115,7 +106,7 @@
     <RedundantCondition occurrences="1">
       <code>$past_first</code>
     </RedundantCondition>
-    <UnusedVariable occurrences="16">
+    <UnusedVariable occurrences="15">
       <code>$autocategorise</code>
       <code>$categorised</code>
       <code>$etag</code>
@@ -128,7 +119,6 @@
       <code>$parent_string</code>
       <code>$slug_string</code>
       <code>$slug_string</code>
-      <code>$slug_title</code>
       <code>$title</code>
       <code>$topic_hierarchy</code>
       <code>$topic_id</code>
