@@ -1032,7 +1032,7 @@ function raw_captions(string $video_id) : array
 		return $maybe_b <=> $maybe_a;
 	});
 
-	/** @var null|string */
+	/** @var string|null */
 	$tt = null;
 
 	$tt_cache = (
