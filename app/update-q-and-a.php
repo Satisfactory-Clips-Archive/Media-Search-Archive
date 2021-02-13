@@ -14,6 +14,7 @@ use function array_map;
 use function array_merge;
 use function array_merge_recursive;
 use function array_reduce;
+use function array_search;
 use function array_unique;
 use function array_values;
 use function count;
@@ -35,12 +36,14 @@ use function ob_get_contents;
 use function ob_start;
 use const PHP_EOL;
 use function preg_match;
+use function preg_replace;
 use RuntimeException;
 use function sprintf;
 use function str_replace;
 use function strnatcasecmp;
 use function strtotime;
 use function uasort;
+use function uksort;
 use function usort;
 
 require_once (__DIR__ . '/../vendor/autoload.php');
@@ -667,7 +670,7 @@ $video_id_date_sort = static function (
 	string $a,
 	string $b
 ) use ($existing, $cache, $playlists) : int {
-	return (
+	return
 		strtotime(
 			($existing[$b] ?? ['date' => determine_date_for_video(
 				$b,
@@ -681,7 +684,7 @@ $video_id_date_sort = static function (
 				$playlists
 			)])['date']
 		)
-	);
+	;
 };
 
 $duplicates = array_map(
@@ -690,7 +693,7 @@ $duplicates = array_map(
 	 *
 	 * @return list<string>
 	 */
-	static function (array $video_ids) use($video_id_date_sort) : array {
+	static function (array $video_ids) use ($video_id_date_sort) : array {
 		usort($video_ids, $video_id_date_sort);
 
 		return $video_ids;
@@ -737,7 +740,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 			$cache['playlists'],
 			$playlists
 		),
-		$playlists
+		$playlists, true
 	);
 
 	if ( ! is_string($playlist_id)) {
@@ -747,8 +750,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		));
 	}
 
-	echo
-		'## ',
+	echo '## ',
 		preg_replace('/\.md\)/', ')', str_replace(
 			'./',
 			'https://archive.satisfactory.video/',
@@ -764,7 +766,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 										$video_id,
 										$cache['playlists'],
 										$playlists
-									)
+									),
 								]
 							)['date']
 						)
@@ -798,7 +800,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 				$cache['playlists'],
 				$playlists
 			),
-			$playlists
+			$playlists, true
 		);
 
 		if ( ! is_string($playlist_id)) {
@@ -808,8 +810,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 			));
 		}
 
-		echo
-			"\n",
+		echo "\n",
 			'* ',
 			preg_replace('/\.md\)/', ')', str_replace(
 				'./',
@@ -826,7 +827,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 											$other_video_id,
 											$cache['playlists'],
 											$playlists
-										)
+										),
 									]
 								)['date']
 							)

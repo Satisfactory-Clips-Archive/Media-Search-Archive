@@ -15,6 +15,7 @@ use function array_merge;
 use function array_pop;
 use function array_reduce;
 use function array_unique;
+use function array_unshift;
 use function array_values;
 use function ceil;
 use function chr;
