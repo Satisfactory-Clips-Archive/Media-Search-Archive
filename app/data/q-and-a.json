@@ -19200,8 +19200,16 @@
             "features\/multiplayer\/crossplay"
         ],
         "duplicates": [],
-        "replaces": [],
-        "seealso": []
+        "replaces": [
+            "egY71egazyQ"
+        ],
+        "seealso": [
+            "-kVvrassZVw",
+            "kgQjKxY0oGQ",
+            "lfm0vKovpLc",
+            "TM6DY2kEQ8E",
+            "tzQZ1akwzzM"
+        ]
     },
     "lfm0vKovpLc": {
         "title": "Q&A: Is there somewhere I can read how Crossplay will work?",
@@ -19211,7 +19219,13 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "-kVvrassZVw",
+            "kgQjKxY0oGQ",
+            "MR5331unvbQ",
+            "TM6DY2kEQ8E",
+            "tzQZ1akwzzM"
+        ]
     },
     "oJzUWOdpQ5o": {
         "title": "Q&A: Player skin customisation?",
@@ -19759,7 +19773,8 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [],
+        "replacedby": "MR5331unvbQ"
     },
     "kgQjKxY0oGQ": {
         "title": "Q&A: Will there be a lag difference between crossplay Multiplayer?",
@@ -19769,7 +19784,13 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "-kVvrassZVw",
+            "lfm0vKovpLc",
+            "MR5331unvbQ",
+            "TM6DY2kEQ8E",
+            "tzQZ1akwzzM"
+        ]
     },
     "XswfSsanpDo": {
         "title": "Q&A: Will there be a Soundtrack release?",
@@ -20000,7 +20021,13 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "kgQjKxY0oGQ",
+            "lfm0vKovpLc",
+            "MR5331unvbQ",
+            "TM6DY2kEQ8E",
+            "tzQZ1akwzzM"
+        ]
     },
     "PIlduefx6Vk": {
         "title": "Q&A: Merch?",
