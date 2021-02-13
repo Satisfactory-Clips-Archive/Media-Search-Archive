@@ -6,6 +6,7 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function array_combine;
 use function array_diff;
 use function array_filter;
 use const ARRAY_FILTER_USE_KEY;
@@ -15,10 +16,12 @@ use function array_merge;
 use function array_pop;
 use function array_reduce;
 use function array_unique;
+use function array_unshift;
 use function array_values;
 use function ceil;
 use function chr;
 use function count;
+use function current;
 use function date;
 use function dirname;
 use function end;
@@ -40,11 +43,17 @@ use function is_file;
 use function is_int;
 use function iterator_to_array;
 use function json_decode;
+use function key;
+use function ksort;
 use function mb_strlen;
 use function mb_strpos;
 use function mb_substr;
+use function next;
+use function parse_str;
+use function parse_url;
 use function pathinfo;
 use const PATHINFO_FILENAME;
+use const PHP_URL_QUERY;
 use function preg_match;
 use function preg_match_all;
 use function preg_quote;
@@ -65,6 +74,7 @@ use function strtotime;
 use Throwable;
 use function trim;
 use function uasort;
+use function uksort;
 use function usort;
 
 set_error_handler(static function (
@@ -1023,7 +1033,7 @@ function raw_captions(string $video_id) : array
 
 	$tt = null;
 
-	while('' !== $tt) {
+	while ('' !== $tt) {
 		$tt_cache = (
 			__DIR__
 			. '/../captions/'
@@ -1033,13 +1043,13 @@ function raw_captions(string $video_id) : array
 			. '.xml'
 		);
 
-	if ( ! is_file($tt_cache)) {
-		$tt = file_get_contents(current($url_matches));
+		if ( ! is_file($tt_cache)) {
+			$tt = file_get_contents(current($url_matches));
 
-		file_put_contents($tt_cache, $tt);
-	} else {
-		$tt = file_get_contents($tt_cache);
-	}
+			file_put_contents($tt_cache, $tt);
+		} else {
+			$tt = file_get_contents($tt_cache);
+		}
 
 		if ('' !== $tt) {
 			break;
@@ -1047,7 +1057,7 @@ function raw_captions(string $video_id) : array
 
 		next($url_matches);
 
-		if (null == key($url_matches)) {
+		if (null === key($url_matches)) {
 			end($url_matches);
 
 			break;
@@ -1076,7 +1086,7 @@ function raw_captions(string $video_id) : array
 	$lines = [];
 
 	try {
-	$xml = new SimpleXMLElement($tt);
+		$xml = new SimpleXMLElement($tt);
 	} catch (Throwable $e) {
 		if ('' === $tt) {
 			throw new RuntimeException('transcription was blank!', 0, $e);
