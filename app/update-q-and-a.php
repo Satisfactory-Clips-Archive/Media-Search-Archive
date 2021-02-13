@@ -56,6 +56,7 @@ require_once (__DIR__ . '/global-topic-hierarchy.php');
  *	topics:list<string>,
  *	duplicates:list<string>,
  *	replaces:list<string>,
+ *	replaced_by?:string,
  *	seealso:list<string>
  * }>
  */
@@ -106,6 +107,7 @@ $existing = array_filter(
 				$a['seealso'],
 				'is_string'
 			))
+			&& (! isset($a['replacedby']) || is_string($a['replacedby']))
 		;
 	},
 	ARRAY_FILTER_USE_BOTH
@@ -570,6 +572,8 @@ foreach (array_keys($all_topics) as $topic_id) {
 	));
 }
 
+$replacements_not_in_existing = [];
+
 foreach (array_keys($existing) as $lookup) {
 	$existing[$lookup]['duplicates'] = array_values(array_filter(
 		$existing[$lookup]['duplicates'],
@@ -610,6 +614,32 @@ foreach (array_keys($existing) as $lookup) {
 			$existing[$lookup][$required]
 		);
 	}
+
+	$replacements_not_in_existing[$video_id] = array_filter(
+		$existing[$video_id]['replacedby'] ?? [],
+		static function (string $maybe) use ($existing, $cache) : bool {
+			return (
+				! isset($existing[$maybe])
+				&& isset($cache['playlistItems'][$maybe])
+			);
+		}
+	);
+
+	unset($existing[$video_id]['replacedby']);
+}
+
+foreach ($existing as $video_id => $data) {
+	foreach ($data['replaces'] as $other_video_id) {
+		if (isset($existing[$other_video_id])) {
+			$existing[$other_video_id]['replacedby'] = $video_id;
+		}
+	}
+}
+
+foreach ($replacements_not_in_existing as $video_id => $replacement) {
+	if (isset($existing[$video_id])) {
+		$existing[$video_id]['replacedby'] = $replacement;
+	}
 }
 
 $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
@@ -625,6 +655,7 @@ $filter_no_references =
 			count($maybe['duplicates']) < 1
 			&& count($maybe['replaces']) < 1
 			&& count($maybe['seealso']) < 1
+			&& ! isset($maybe['replacedby'])
 		;
 	};
 
