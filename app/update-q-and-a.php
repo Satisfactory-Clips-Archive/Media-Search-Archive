@@ -19,6 +19,7 @@ use function array_unique;
 use function array_values;
 use function count;
 use function date;
+use const FILE_APPEND;
 use function file_get_contents;
 use function file_put_contents;
 use function in_array;
@@ -32,6 +33,7 @@ use const JSON_PRETTY_PRINT;
 use function mb_substr;
 use function natcasesort;
 use function ob_flush;
+use function ob_get_clean;
 use function ob_get_contents;
 use function ob_start;
 use const PHP_EOL;
@@ -107,7 +109,7 @@ $existing = array_filter(
 				$a['seealso'],
 				'is_string'
 			))
-			&& (! isset($a['replacedby']) || is_string($a['replacedby']))
+			&& ( ! isset($a['replacedby']) || is_string($a['replacedby']))
 		;
 	},
 	ARRAY_FILTER_USE_BOTH
@@ -618,10 +620,10 @@ foreach (array_keys($existing) as $lookup) {
 	$replacements_not_in_existing[$video_id] = array_filter(
 		$existing[$video_id]['replacedby'] ?? [],
 		static function (string $maybe) use ($existing, $cache) : bool {
-			return (
+			return
 				! isset($existing[$maybe])
 				&& isset($cache['playlistItems'][$maybe])
-			);
+			;
 		}
 	);
 
@@ -658,7 +660,6 @@ $filter_no_references =
 			&& ! isset($maybe['replacedby'])
 		;
 	};
-
 
 ob_start();
 
