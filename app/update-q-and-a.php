@@ -618,12 +618,12 @@ $filter_no_references =
 	 * @param array{duplicates:array, replaces:array, seealso:array} $maybe
 	 */
 	static function (array $maybe) : bool {
-	return
-		count($maybe['duplicates']) < 1
-		&& count($maybe['replaces']) < 1
-		&& count($maybe['seealso']) < 1
-	;
-};
+		return
+			count($maybe['duplicates']) < 1
+			&& count($maybe['replaces']) < 1
+			&& count($maybe['seealso']) < 1
+		;
+	};
 
 ob_start();
 
