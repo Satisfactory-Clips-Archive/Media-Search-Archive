@@ -86,20 +86,21 @@ $injected_cache = json_decode(
 
 $cache = inject_caches($cache, $injected_cache);
 
+$global_topic_hierarchy = array_merge_recursive(
+	$global_topic_hierarchy,
+	$injected_global_topic_hierarchy
+);
+
 $externals_cache = process_externals(
 	$cache,
 	$global_topic_hierarchy,
 	$not_a_livestream,
 	$not_a_livestream_date_lookup,
-	$slugify
+	$slugify,
+	false
 );
 
 $cache = inject_caches($cache, $externals_cache);
-
-$global_topic_hierarchy = array_merge_recursive(
-	$global_topic_hierarchy,
-	$injected_global_topic_hierarchy
-);
 
 $playlists_filter =
 	/**
@@ -252,6 +253,35 @@ function determine_video_topics(
 	return array_values($topics);
 }
 
+$all_video_ids = array_keys($cache['playlistItems']);
+
+$all_topics = array_reduce(
+	array_filter(
+		array_keys($cache['playlists']),
+		static function (string $maybe) use ($playlists) : bool {
+			return ! isset($playlists[$maybe]);
+		}
+	),
+	static function (
+		array $out,
+		string $topic_id
+	) use (
+		$cache,
+		$global_topic_hierarchy,
+		$slugify
+	) : array {
+		$out[$topic_id] = topic_to_slug(
+			$topic_id,
+			$cache,
+			$global_topic_hierarchy['satisfactory'],
+			$slugify
+		)[0];
+
+		return $out;
+	},
+	[]
+);
+
 $questions = array_map(
 	static function (array $data) : array {
 		return [
@@ -322,6 +352,64 @@ foreach ($questions as $video_id => $data) {
 	}
 }
 
+foreach (array_keys($questions) as $video_id) {
+	$duplicates = [$video_id];
+	$seealsos = [$video_id];
+
+	$duplicates = array_merge(
+		$duplicates,
+		$cache['legacyAlts'][$video_id] ?? []
+	);
+
+	foreach ($existing[$video_id]['duplicates'] as $duplicate) {
+		if ( ! in_array($duplicate, $duplicates, true)) {
+			$duplicates[] = $duplicate;
+		}
+	}
+
+	foreach ($existing[$video_id]['seealso'] as $seealso) {
+		if ( ! in_array($seealso, $seealsos, true)) {
+			$seealsos[] = $seealso;
+		}
+	}
+
+	foreach ($duplicates as $duplicate) {
+		if ( ! isset($existing[$duplicate])) {
+			continue;
+		}
+
+		$existing[$duplicate]['duplicates'] = array_values(
+			array_intersect($all_video_ids, array_filter(
+				$duplicates,
+				static function (string $maybe) use ($duplicate) : bool {
+					return $maybe !== $duplicate;
+				}
+			))
+		);
+	}
+
+	foreach ($seealsos as $seealso) {
+		if ( ! isset($existing[$seealso])) {
+			continue;
+		}
+
+		$existing[$seealso]['seealso'] = array_values(
+			array_intersect($all_video_ids, array_filter(
+				$seealsos,
+				static function (string $maybe) use ($seealso) : bool {
+					return $maybe !== $seealso;
+				}
+			))
+		);
+	}
+}
+
+foreach ($cache['legacyAlts'] as $legacy_ids) {
+	foreach ($legacy_ids as $video_id) {
+		unset($existing[$video_id]);
+	}
+}
+
 uasort($existing, static function (array $a, array $b) : int {
 	$maybe = strtotime($b['date']) <=> strtotime($a['date']);
 
@@ -331,6 +419,60 @@ uasort($existing, static function (array $a, array $b) : int {
 
 	return $maybe;
 });
+usort(
+	$all_video_ids,
+	static function (string $a, string $b) use ($cache, $playlists) : int {
+		$a_date = determine_date_for_video(
+			$a,
+			$cache['playlists'],
+			$playlists
+		);
+		$b_date = determine_date_for_video(
+			$b,
+			$cache['playlists'],
+			$playlists
+		);
+
+		$maybe = strtotime($b_date) <=> strtotime($a_date);
+
+		if (0 === $maybe) {
+			$maybe = strnatcasecmp(
+				$cache['playlistItems'][$a][1],
+				$cache['playlistItems'][$b][1]
+			);
+		}
+
+		return $maybe;
+	}
+);
+
+$by_topic = [];
+
+foreach ($all_topics as $topic_id => $topic_slug) {
+	$by_topic[$topic_id] = array_values(array_intersect(
+		$all_video_ids,
+		$cache['playlists'][$topic_id][2]
+	));
+}
+
+foreach (array_keys($existing) as $lookup) {
+	$existing[$lookup]['duplicates'] = array_values(array_filter(
+		$existing[$lookup]['duplicates'],
+		static function (string $maybe) use ($lookup, $existing) : bool {
+			return ! in_array($maybe, $existing[$lookup]['replaces'], true);
+		}
+	));
+
+	$existing[$lookup]['seealso'] = array_values(array_filter(
+		$existing[$lookup]['seealso'],
+		static function (string $maybe) use ($lookup, $existing) : bool {
+			return
+				! in_array($maybe, $existing[$lookup]['duplicates'], true)
+				&& ! in_array($maybe, $existing[$lookup]['replaces'], true)
+			;
+		}
+	));
+}
 
 $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
 
@@ -344,3 +486,11 @@ echo
 	),
 	"\n"
 ;
+
+$data = str_replace(PHP_EOL, "\n", json_encode($by_topic, JSON_PRETTY_PRINT));
+
+file_put_contents(__DIR__ . '/data/video-id-by-topic.json', $data);
+
+$data = str_replace(PHP_EOL, "\n", json_encode($all_topics, JSON_PRETTY_PRINT));
+
+file_put_contents(__DIR__ . '/data/all-topic-slugs.json', $data);
