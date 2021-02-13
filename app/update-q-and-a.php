@@ -18,6 +18,7 @@ use function array_search;
 use function array_unique;
 use function array_values;
 use function count;
+use function current;
 use function date;
 use const FILE_APPEND;
 use function file_get_contents;
