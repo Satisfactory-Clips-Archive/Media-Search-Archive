@@ -42,26 +42,27 @@ use function usort;
 require_once (__DIR__ . '/../vendor/autoload.php');
 require_once (__DIR__ . '/global-topic-hierarchy.php');
 
+/**
+ * @var array<string, array{
+ *	title:string,
+ *	date:string,
+ *	topics:list<string>,
+ *	duplicates:list<string>,
+ *	replaces:list<string>,
+ *	seealso:list<string>
+ * }>
+ */
 $existing = array_filter(
 	(array) json_decode(
 		file_get_contents(__DIR__ . '/data/q-and-a.json'),
 		true
 	),
 	/**
-	 * @psalm-assert-if-true array{
-	 *	title:string,
-	 *	date:string,
-	 *	topics:list<string>,
-	 *	duplicates:list<string>,
-	 *	replaces:list<string>,
-	 *	seealso:list<string>
-	 * } $maybe_value
-	 * @psalm-assert-if-true string $maybe_key
+	 * @psalm-assert-if-true array $a
+	 * @psalm-assert-if-true string $b
 	 *
-	 * @param scalar|array|object|resource|null $maybe_value
-	 * @param array-key $maybe_key
 	 * @param mixed $a
-	 * @param mixed $b
+	 * @param array-key $b
 	 */
 	static function ($a, $b) : bool {
 		return
@@ -111,6 +112,16 @@ $slugify = new Slugify();
 
 $cache = $api->toLegacyCacheFormat();
 
+/**
+ * @var array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
+ */
 $injected_cache = json_decode(
 	file_get_contents(__DIR__ . '/cache-injection.json'),
 	true
@@ -199,7 +210,7 @@ function determine_date_for_video(
 	/** @var false|string */
 	$found = false;
 
-	foreach ($playlist_date_ref as $playlist_id => $date) {
+	foreach (array_keys($playlist_date_ref) as $playlist_id) {
 		if ( ! isset($playlists[$playlist_id])) {
 			throw new RuntimeException(sprintf(
 				'No data available for playlist %s',
@@ -265,6 +276,9 @@ function determine_video_topics(
 		},
 		array_keys(array_filter(
 			$cache['playlists'],
+			/**
+			 * @param array{0:string, 1:string, 2:list<string>} $maybe
+			 */
 			static function (
 				array $maybe,
 				string $topic_id
@@ -294,6 +308,13 @@ $all_topics = array_reduce(
 			return ! isset($playlists[$maybe]);
 		}
 	),
+	/**
+	 * @psalm-type OUT = array<string, string>
+	 *
+	 * @param OUT $out
+	 *
+	 * @return OUT
+	 */
 	static function (
 		array $out,
 		string $topic_id
@@ -331,6 +352,11 @@ $questions = array_map(
 foreach ($questions as $video_id => $data) {
 	$existing[$video_id] = $existing[$video_id] ?? [
 		'title' => $data['title'],
+		'date' => '',
+		'topics' => [],
+		'duplicates' => [],
+		'replaces' => [],
+		'seealso' => [],
 	];
 
 	$existing[$video_id]['title'] = $data['title'];
@@ -343,7 +369,15 @@ foreach ($questions as $video_id => $data) {
 		$video_id,
 		$cache,
 		$playlists,
-		$global_topic_hierarchy['satisfactory'],
+		array_map(
+			/**
+			 * @return list<string>
+			 */
+			static function (array $data) : array {
+				return array_values(array_filter($data, 'is_string'));
+			},
+			$global_topic_hierarchy['satisfactory']
+		),
 		$slugify
 	);
 
@@ -354,10 +388,6 @@ foreach ($questions as $video_id => $data) {
 			'seealso',
 		] as $required
 	) {
-		if ( ! isset($existing[$video_id][$required])) {
-			$existing[$video_id][$required] = [];
-		}
-
 		$existing[$video_id][$required] = array_values(array_filter(
 			$existing[$video_id][$required],
 			/**
@@ -442,7 +472,18 @@ foreach ($cache['legacyAlts'] as $legacy_ids) {
 	}
 }
 
-uasort($existing, static function (array $a, array $b) : int {
+uasort(
+	$existing,
+	/**
+	 * @psalm-type ROW = array{
+	 *	date:string,
+	 *	title:string
+	 * }
+	 *
+	 * @param ROW $a
+	 * @param ROW $b
+	 */
+	static function (array $a, array $b) : int {
 	$maybe = strtotime($b['date']) <=> strtotime($a['date']);
 
 	if (0 === $maybe) {
@@ -480,7 +521,7 @@ usort(
 
 $by_topic = [];
 
-foreach ($all_topics as $topic_id => $topic_slug) {
+foreach (array_keys($all_topics) as $topic_id) {
 	$by_topic[$topic_id] = array_values(array_intersect(
 		$all_video_ids,
 		$cache['playlists'][$topic_id][2]
@@ -499,8 +540,16 @@ foreach (array_keys($existing) as $lookup) {
 		$existing[$lookup]['seealso'],
 		static function (string $maybe) use ($lookup, $existing) : bool {
 			return
-				! in_array($maybe, $existing[$lookup]['duplicates'], true)
-				&& ! in_array($maybe, $existing[$lookup]['replaces'], true)
+				! in_array(
+					$maybe,
+					$existing[$lookup]['duplicates'] ?? [],
+					true
+				)
+				&& ! in_array(
+					$maybe,
+					$existing[$lookup]['replaces'] ?? [],
+					true
+				)
 			;
 		}
 	));

@@ -45,10 +45,16 @@ $questions = json_decode(
 	file_get_contents(__DIR__ . '/data/q-and-a.json'),
 	true
 );
+
+/**
+ * @var array<string, list<string>>
+ */
 $videos_by_topic = json_decode(
 	file_get_contents(__DIR__ . '/data/video-id-by-topic.json'),
 	true
 );
+
+/** @var array<string, string> */
 $topic_slugs = json_decode(
 	file_get_contents(__DIR__ . '/data/all-topic-slugs.json'),
 	true
@@ -64,6 +70,16 @@ $slugify = new Slugify();
 
 $cache = $api->toLegacyCacheFormat();
 
+/**
+ * @var array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts?:array<string, list<string>>,
+ *	internalxref?:array<string, string>
+ * }
+ */
 $injected_cache = json_decode(
 	file_get_contents(__DIR__ . '/cache-injection.json'),
 	true
@@ -124,6 +140,7 @@ $legacy_alts = array_reduce(
 	$cache['legacyAlts'],
 	/**
 	 * @param list<string> $out
+	 * @param list<string> $alts
 	 *
 	 * @return list<string>
 	 */
