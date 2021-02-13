@@ -424,21 +424,21 @@ class YouTubeApiWrapper
 
 	private function service_playlists() : Google_Service_YouTube_Resource_Playlists
 	{
-		die('getting live data');
+		exit('getting live data');
 		/** @var Google_Service_YouTube_Resource_Playlists */
 		return $this->service->playlistItems;
 	}
 
 	private function service_playlistItems() : Google_Service_YouTube_Resource_PlaylistItems
 	{
-		die('getting live data');
+		exit('getting live data');
 		/** @var Google_Service_YouTube_Resource_PlaylistItems */
 		return $this->service->playlistItems;
 	}
 
 	private function service_videos() : Google_Service_YouTube_Resource_Videos
 	{
-		die('getting live data');
+		exit('getting live data');
 		/** @var Google_Service_YouTube_Resource_Videos */
 		return $this->service->videos;
 	}
