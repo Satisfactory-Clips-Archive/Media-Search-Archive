@@ -24,6 +24,7 @@ use function in_array;
 use function is_string;
 use function json_decode;
 use function mb_strtolower;
+use function natcasesort;
 use function preg_match;
 use function preg_quote;
 use function sprintf;
