@@ -10,6 +10,12 @@ Static site generator for
 
 # Changelog
 
+## 2021-02-13
+* Worked on Q&A tracking feature
+
+## 2021-02-12
+* Worked on Q&A tracking feature
+
 ## 2021-02-11
 * Updated build process to sync lunr.min.js
 * Updated build process to remove `clean` step
