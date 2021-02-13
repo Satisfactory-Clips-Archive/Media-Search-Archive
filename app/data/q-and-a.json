@@ -377,9 +377,22 @@
         "topics": [
             "technology\/graphics"
         ],
-        "duplicates": [],
+        "duplicates": [
+            "IXroe1QFRzc",
+            "KXKJxFYBxos",
+            "pb2KprHATHk",
+            "PKx5vpwPGW0",
+            "PqFAGrVd3M0",
+            "pvMET7F9BQ8",
+            "QuoiJ9lpkB4",
+            "RubFX693enI",
+            "Rx_M6fLOzvM",
+            "tsUgV4Irw9I"
+        ],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "ow_LpyvCnVo"
+        ]
     },
     "dWU4c-MjLWE": {
         "title": "Q&A: Do you have any YouTube videos about the more technical side of Satisfactory?",
@@ -445,7 +458,10 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "8MbgpOLyXyY",
+            "YPWIkvRbeHI"
+        ]
     },
     "kGCoxYYhnBs": {
         "title": "Q&A: For automobiles you can pick fuels?",
@@ -456,7 +472,10 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "5Z5pyzNiaVY",
+            "pSGEDxxLn2E"
+        ]
     },
     "A41woUB_6oI": {
         "title": "Q&A: Foundation holes for belts?",
@@ -896,7 +915,10 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "kGCoxYYhnBs",
+            "pSGEDxxLn2E"
+        ]
     },
     "WQa938_K6SY": {
         "title": "Q&A: Update 4 contains the Engine Upgrade?",
@@ -1081,7 +1103,11 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "DyXs7ps8cOY",
+            "e-51TRYTVg8",
+            "Fq5fx3DzOU8"
+        ]
     },
     "KLDJ6e6RVyE": {
         "title": "Q&A: When the full game comes out, maybe you can release a limited edition version like a figurine?",
@@ -2998,7 +3024,11 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "e-51TRYTVg8",
+            "Fq5fx3DzOU8",
+            "n4H073Xwp-8"
+        ]
     },
     "0Ld1fbTEOvM": {
         "title": "Q&A: VR support would be heavenly?",
@@ -5696,7 +5726,10 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "5Z5pyzNiaVY",
+            "kGCoxYYhnBs"
+        ]
     },
     "NeQpezHiVzI": {
         "title": "Q&A: Will we add more to the Map?",
@@ -11271,7 +11304,10 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "7r67GMFo7Kc",
+            "YPWIkvRbeHI"
+        ]
     },
     "FsiVRfgi3Gs": {
         "title": "Q&A: What's the reason for updating the engine?",
@@ -11292,7 +11328,10 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "7r67GMFo7Kc",
+            "8MbgpOLyXyY"
+        ]
     },
     "PqnjFtF-VEc": {
         "title": "Q&A: What headphones do you use?",
@@ -12499,7 +12538,9 @@
             "features\/equipment\/jetpack",
             "features\/unplanned-features\/aerial-travel"
         ],
-        "duplicates": [],
+        "duplicates": [
+            "zeXh53pKe0A"
+        ],
         "replaces": [],
         "seealso": [
             "-sa8wjg4lYk",
@@ -12513,8 +12554,7 @@
             "pdppJAPp4yA",
             "tc-CredulousWimpyMosquitoResidentSleeper",
             "tc-ElatedBlueNightingaleMau5",
-            "tc-SteamyViscousGoshawkDancingBaby",
-            "zeXh53pKe0A"
+            "tc-SteamyViscousGoshawkDancingBaby"
         ]
     },
     "ANDFv21tydY": {
@@ -14126,7 +14166,9 @@
             "features\/equipment\/jetpack",
             "features\/unplanned-features\/aerial-travel"
         ],
-        "duplicates": [],
+        "duplicates": [
+            "_9P859YpEbE"
+        ],
         "replaces": [],
         "seealso": [
             "-sa8wjg4lYk",
@@ -14140,8 +14182,7 @@
             "pdppJAPp4yA",
             "tc-CredulousWimpyMosquitoResidentSleeper",
             "tc-ElatedBlueNightingaleMau5",
-            "tc-SteamyViscousGoshawkDancingBaby",
-            "_9P859YpEbE"
+            "tc-SteamyViscousGoshawkDancingBaby"
         ]
     },
     "LZKS9z5niSk": {
