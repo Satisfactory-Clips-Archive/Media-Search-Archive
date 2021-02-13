@@ -414,57 +414,93 @@ foreach ($questions as $video_id => $data) {
 	}
 }
 
-foreach (array_keys($questions) as $video_id) {
-	$duplicates = [$video_id];
-	$seealsos = [$video_id];
+/** @var array<string, list<string>> */
+$duplicates = [];
 
-	$duplicates = array_merge(
-		$duplicates,
+/** @var array<string, list<string>> */
+$seealsos = [];
+
+foreach (array_keys($questions) as $video_id) {
+	$duplicates[$video_id] = [$video_id];
+	$seealsos[$video_id] = [$video_id];
+
+	$duplicates[$video_id] = array_merge(
+		$duplicates[$video_id],
 		$cache['legacyAlts'][$video_id] ?? []
 	);
 
 	foreach ($existing[$video_id]['duplicates'] as $duplicate) {
-		if ( ! in_array($duplicate, $duplicates, true)) {
-			$duplicates[] = $duplicate;
+		if ( ! in_array($duplicate, $duplicates[$video_id], true)) {
+			$duplicates[$video_id][] = $duplicate;
 		}
 	}
 
 	foreach ($existing[$video_id]['seealso'] as $seealso) {
-		if ( ! in_array($seealso, $seealsos, true)) {
-			$seealsos[] = $seealso;
+		if ( ! in_array($seealso, $seealsos[$video_id], true)) {
+			$seealsos[$video_id][] = $seealso;
 		}
 	}
+}
 
-	foreach ($duplicates as $duplicate) {
+$seealsos_checked = [];
+
+foreach ($seealsos as $video_id => $video_ids) {
+	$merged_see_also = array_merge([$video_id], $video_ids);
+
+	$was = count($merged_see_also);
+	$added_more = true;
+
+	while ($added_more) {
+		foreach ($video_ids as $other_video_id) {
+			$merged_see_also = array_merge(
+				$merged_see_also,
+				$seealsos[$other_video_id] ?? []
+			);
+		}
+
+		$merged_see_also = array_unique($merged_see_also);
+
+		$is = count($merged_see_also);
+
+		$added_more = $was !== $is;
+
+		$was = $is;
+	}
+
+	foreach ($merged_see_also as $other_video_id) {
+		$seealsos[$other_video_id] = $merged_see_also;
+	}
+
+	$seealsos_checked = array_merge($seealsos_checked, $merged_see_also);
+}
+
+foreach (array_keys($duplicates) as $video_id) {
+	foreach ($duplicates[$video_id] as $duplicate) {
 		if ( ! isset($existing[$duplicate])) {
 			continue;
 		}
 
 		$existing[$duplicate]['duplicates'] = array_values(
 			array_intersect($all_video_ids, array_filter(
-				$duplicates,
+				$duplicates[$video_id],
 				static function (string $maybe) use ($duplicate) : bool {
 					return $maybe !== $duplicate;
 				}
 			))
 		);
 	}
+}
 
-	foreach ($seealsos as $seealso) {
+foreach (array_keys($seealsos) as $video_id) {
+	foreach ($seealsos[$video_id] as $seealso) {
 		if ( ! isset($existing[$seealso])) {
 			continue;
 		}
 
-		$existing[$seealso]['seealso'] = array_values(
-			array_intersect($all_video_ids, array_filter(
-				$seealsos,
-				static function (string $maybe) use ($seealso) : bool {
-					return $maybe !== $seealso;
-				}
-			))
-		);
+		$existing[$seealso]['seealso'] = $seealsos[$video_id];
 	}
 }
+
 
 foreach ($cache['legacyAlts'] as $legacy_ids) {
 	foreach ($legacy_ids as $video_id) {
@@ -550,6 +586,7 @@ foreach (array_keys($existing) as $lookup) {
 					$existing[$lookup]['replaces'] ?? [],
 					true
 				)
+				&& $maybe !== $lookup
 			;
 		}
 	));
@@ -564,7 +601,17 @@ echo sprintf(
 		count($existing),
 		count($cache['playlistItems'])
 	),
-	"\n"
+	"\n",
+	sprintf(
+		'%s questions found with no other references',
+		count(array_filter($existing, static function (array $maybe) : bool {
+			return
+				count($maybe['duplicates']) < 1
+				&& count($maybe['replaces']) < 1
+				&& count($maybe['seealso']) < 1
+			;
+		}))
+	)
 ;
 
 $data = str_replace(PHP_EOL, "\n", json_encode($by_topic, JSON_PRETTY_PRINT));
