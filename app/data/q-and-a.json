@@ -2070,7 +2070,9 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/release-builds"
         ],
-        "duplicates": [],
+        "duplicates": [
+            "xJ3zk3Yvav0"
+        ],
         "replaces": [],
         "seealso": []
     },
@@ -16624,7 +16626,10 @@
             "tc-WiseToughOstrichYouWHY"
         ],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "LgGYmQrwAgg",
+            "UjOVdR5tNSw"
+        ]
     },
     "iOk7KMpNMEo": {
         "title": "Q&A: Plans for mod support?",
@@ -18341,7 +18346,14 @@
             "environment\/creatures\/lizard-doggo",
             "merch"
         ],
-        "duplicates": [],
+        "duplicates": [
+            "FlOFnqAw5go",
+            "jGiN1SdQOFk",
+            "SFZCi_HshCE",
+            "svSLbvLwSxQ",
+            "tc-TolerantPunchyNewtJKanStyle",
+            "yt-W1E6EWrAsII,214.36,238.12"
+        ],
         "replaces": [],
         "seealso": []
     },
@@ -23090,7 +23102,10 @@
         ],
         "duplicates": [],
         "replaces": [],
-        "seealso": []
+        "seealso": [
+            "UjOVdR5tNSw",
+            "vvRPYyc7sb8"
+        ]
     },
     "jGiN1SdQOFk": {
         "title": "Q&A: Lizard Doggo plushie when?",
