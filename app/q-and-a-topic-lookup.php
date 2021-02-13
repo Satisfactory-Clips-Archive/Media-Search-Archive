@@ -60,6 +60,17 @@ $topic_slugs = json_decode(
 	true
 );
 
+$boolean_all_topics_mode = in_array('--all', $argv, true);
+
+if ($boolean_all_topics_mode) {
+	$argv = array_values(array_filter(
+		$argv,
+		static function (string $maybe) : bool {
+			return '--all' !== $maybe;
+		}
+	));
+}
+
 $lookup = array_slice($argv, 1)[0] ?? null;
 
 $api = new YouTubeApiWrapper();
@@ -134,6 +145,40 @@ foreach ($other_topics as $topic_id) {
 			++$other_videos[$video_id];
 		}
 	}
+}
+
+$topics_for_lookup = array_keys(array_filter(
+	$videos_by_topic,
+	/**
+	 * @param list<string> $maybe
+	 */
+	static function (array $maybe) use ($lookup) : bool {
+		return in_array($lookup, $maybe, true);
+	}
+));
+
+natcasesort($topics_for_lookup);
+
+if ($boolean_all_topics_mode) {
+	$other_videos = array_filter(
+		$other_videos,
+		static function (string $maybe) use ($topics_for_lookup, $videos_by_topic) : bool {
+			$topics_for_maybe = array_keys(array_filter(
+				$videos_by_topic,
+				/**
+				 * @param list<string> $video_ids
+				 */
+				static function (array $video_ids) use ($maybe) : bool {
+					return in_array($maybe, $video_ids, true);
+				}
+			));
+
+			natcasesort($topics_for_maybe);
+
+			return $topics_for_maybe === $topics_for_lookup;
+		},
+		ARRAY_FILTER_USE_KEY
+	);
 }
 
 $legacy_alts = array_reduce(
