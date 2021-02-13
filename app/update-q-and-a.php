@@ -14,6 +14,7 @@ use function array_map;
 use function array_merge;
 use function array_merge_recursive;
 use function array_reduce;
+use function array_unique;
 use function array_values;
 use function count;
 use function date;
@@ -29,6 +30,9 @@ use function json_encode;
 use const JSON_PRETTY_PRINT;
 use function mb_substr;
 use function natcasesort;
+use function ob_flush;
+use function ob_get_contents;
+use function ob_start;
 use const PHP_EOL;
 use function preg_match;
 use RuntimeException;
@@ -501,7 +505,6 @@ foreach (array_keys($seealsos) as $video_id) {
 	}
 }
 
-
 foreach ($cache['legacyAlts'] as $legacy_ids) {
 	foreach ($legacy_ids as $video_id) {
 		unset($existing[$video_id]);
@@ -520,14 +523,14 @@ uasort(
 	 * @param ROW $b
 	 */
 	static function (array $a, array $b) : int {
-	$maybe = strtotime($b['date']) <=> strtotime($a['date']);
+		$maybe = strtotime($b['date']) <=> strtotime($a['date']);
 
-	if (0 === $maybe) {
-		$maybe = strnatcasecmp($a['title'], $b['title']);
-	}
+		if (0 === $maybe) {
+			$maybe = strnatcasecmp($a['title'], $b['title']);
+		}
 
-	return $maybe;
-});
+		return $maybe;
+	});
 usort(
 	$all_video_ids,
 	static function (string $a, string $b) use ($cache, $playlists) : int {
