@@ -1649,6 +1649,7 @@ function markdownify_transcription_lines(
 	string $line,
 	string ...$lines
 ) : string {
+	/** @var string */
 	static $transcription_blank_lines_regex = '/(>\n>\n)+/';
 
 	array_unshift($lines, $line);
