@@ -60,7 +60,9 @@ require_once (__DIR__ . '/global-topic-hierarchy.php');
  *	duplicates:list<string>,
  *	replaces:list<string>,
  *	replaced_by?:string,
- *	seealso:list<string>
+ *	duplicated_by?:string,
+ *	seealso:list<string>,
+ *	suggested:list<string>
  * }>
  */
 $existing = array_filter(
@@ -85,7 +87,8 @@ $existing = array_filter(
 				$a['topics'],
 				$a['duplicates'],
 				$a['replaces'],
-				$a['seealso']
+				$a['seealso'],
+				$a['suggested']
 			)
 			&& is_string($a['title'])
 			&& is_string($a['date'])
@@ -93,6 +96,7 @@ $existing = array_filter(
 			&& is_array($a['duplicates'])
 			&& is_array($a['replaces'])
 			&& is_array($a['seealso'])
+			&& is_array($a['suggested'])
 			&& false !== strtotime($a['date'])
 			&& $a['topics'] === array_values(array_filter(
 				$a['topics'],
@@ -110,7 +114,12 @@ $existing = array_filter(
 				$a['seealso'],
 				'is_string'
 			))
+			&& $a['suggested'] === array_values(array_filter(
+				$a['suggested'],
+				'is_string'
+			))
 			&& ( ! isset($a['replacedby']) || is_string($a['replacedby']))
+			&& ( ! isset($a['duplicatedby']) || is_string($a['duplicatedby']))
 		;
 	},
 	ARRAY_FILTER_USE_BOTH
@@ -369,6 +378,8 @@ foreach ($questions as $video_id => $data) {
 		'duplicates' => [],
 		'replaces' => [],
 		'seealso' => [],
+		'suggested' => [],
+		'duplicatedby' => [],
 	];
 
 	$existing[$video_id]['title'] = $data['title'];
@@ -398,10 +409,11 @@ foreach ($questions as $video_id => $data) {
 			'duplicates',
 			'replaces',
 			'seealso',
+			'suggested',
 		] as $required
 	) {
 		$existing[$video_id][$required] = array_values(array_filter(
-			$existing[$video_id][$required],
+			$existing[$video_id][$required] ?? [],
 			/**
 			 * @psalm-assert-if-true string $maybe_value
 			 * @psalm-assert-if-true int $maybe_key
@@ -432,25 +444,26 @@ $duplicates = [];
 /** @var array<string, list<string>> */
 $seealsos = [];
 
-foreach (array_keys($questions) as $video_id) {
+foreach (array_keys($existing) as $video_id) {
 	$duplicates[$video_id] = [$video_id];
 	$seealsos[$video_id] = [$video_id];
 
 	$duplicates[$video_id] = array_merge(
 		$duplicates[$video_id],
+		$existing[$video_id]['duplicates'],
 		$cache['legacyAlts'][$video_id] ?? []
 	);
-
-	foreach ($existing[$video_id]['duplicates'] as $duplicate) {
-		if ( ! in_array($duplicate, $duplicates[$video_id], true)) {
-			$duplicates[$video_id][] = $duplicate;
-		}
-	}
 
 	foreach ($existing[$video_id]['seealso'] as $seealso) {
 		if ( ! in_array($seealso, $seealsos[$video_id], true)) {
 			$seealsos[$video_id][] = $seealso;
 		}
+	}
+
+	$existing[$video_id]['suggested'] = [];
+
+	if (isset($existing[$video_id]['duplicatedby'])) {
+		unset($existing[$video_id]['duplicatedby']);
 	}
 }
 
@@ -486,20 +499,34 @@ foreach ($seealsos as $video_id => $video_ids) {
 	$seealsos_checked = array_merge($seealsos_checked, $merged_see_also);
 }
 
+foreach ($cache['legacyAlts'] as $legacy_ids) {
+	foreach ($legacy_ids as $video_id) {
+		unset($existing[$video_id]);
+	}
+}
+
 foreach (array_keys($duplicates) as $video_id) {
 	foreach ($duplicates[$video_id] as $duplicate) {
-		if ( ! isset($existing[$duplicate])) {
+		if (
+			$video_id === $duplicate
+			|| ! isset($existing[$duplicate])
+		) {
 			continue;
 		}
 
-		$existing[$duplicate]['duplicates'] = array_values(
-			array_intersect($all_video_ids, array_filter(
-				$duplicates[$video_id],
-				static function (string $maybe) use ($duplicate) : bool {
-					return $maybe !== $duplicate;
-				}
-			))
-		);
+		if (
+			isset($existing[$duplicate]['duplicatedby'])
+			&& $video_id !== $existing[$duplicate]['duplicatedby']
+		) {
+			throw new RuntimeException(sprintf(
+				'Video already has duplicate set! (on %s, trying to set %s, found %s)',
+				$duplicate,
+				$video_id,
+				$existing[$duplicate]['duplicatedby']
+			));
+		}
+
+		$existing[$duplicate]['duplicatedby'] = $video_id;
 	}
 }
 
@@ -509,13 +536,18 @@ foreach (array_keys($seealsos) as $video_id) {
 			continue;
 		}
 
-		$existing[$seealso]['seealso'] = $seealsos[$video_id];
-	}
-}
-
-foreach ($cache['legacyAlts'] as $legacy_ids) {
-	foreach ($legacy_ids as $video_id) {
-		unset($existing[$video_id]);
+		$existing[$seealso]['suggested'] = array_filter(
+			$seealsos[$video_id],
+			static function (string $maybe) use ($seealso, $existing) : bool {
+				return
+					$maybe !== $seealso
+					&& ! in_array(
+						$maybe,
+						$existing[$seealso]['seealso'] ?? [],
+						true
+					);
+			}
+		);
 	}
 }
 
@@ -609,6 +641,7 @@ foreach (array_keys($existing) as $lookup) {
 			'duplicates',
 			'replaces',
 			'seealso',
+			'suggested',
 		] as $required
 	) {
 		natcasesort($existing[$lookup][$required]);
@@ -643,6 +676,28 @@ foreach (array_keys($existing) as $lookup) {
 }
 
 foreach ($existing as $video_id => $data) {
+	foreach (
+		[
+			'duplicates',
+			'replaces',
+			'seealso',
+			'suggested',
+		] as $required
+	) {
+		$data[$required] = array_filter(
+			$data[$required],
+			static function (string $maybe) use($video_id) : bool {
+				return $video_id !== $maybe;
+			}
+		);
+
+		$data[$required] = array_unique($data[$required]);
+
+		natcasesort($data[$required]);
+
+		$existing[$video_id][$required] = $data[$required];
+	}
+
 	foreach ($data['replaces'] as $other_video_id) {
 		if (isset($existing[$other_video_id])) {
 			$existing[$other_video_id]['replacedby'] = $video_id;
@@ -670,6 +725,7 @@ $filter_no_references =
 			&& count($maybe['replaces']) < 1
 			&& count($maybe['seealso']) < 1
 			&& ! isset($maybe['replacedby'])
+			&& ! isset($maybe['duplicatedby'])
 		;
 	};
 
@@ -748,6 +804,8 @@ $duplicates = array_map(
 	 * @return list<string>
 	 */
 	static function (array $video_ids) use ($video_id_date_sort) : array {
+		$video_ids = array_unique($video_ids);
+
 		usort($video_ids, $video_id_date_sort);
 
 		return $video_ids;
