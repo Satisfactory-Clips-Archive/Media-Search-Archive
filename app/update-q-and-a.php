@@ -83,41 +83,46 @@ $existing = array_filter(
 			&& is_string($b)
 			&& isset(
 				$a['title'],
-				$a['date'],
-				$a['topics'],
-				$a['duplicates'],
-				$a['replaces'],
-				$a['seealso'],
-				$a['suggested']
+				$a['date']
 			)
 			&& is_string($a['title'])
 			&& is_string($a['date'])
-			&& is_array($a['topics'])
-			&& is_array($a['duplicates'])
-			&& is_array($a['replaces'])
-			&& is_array($a['seealso'])
-			&& is_array($a['suggested'])
 			&& false !== strtotime($a['date'])
-			&& $a['topics'] === array_values(array_filter(
-				$a['topics'],
+			&& (
+				! isset($a['topics'])
+				|| $a['topics'] === array_values(array_filter(
+					(array) $a['topics'],
 				'is_string'
 			))
-			&& $a['duplicates'] === array_values(array_filter(
-				$a['duplicates'],
+			)
+			&& (
+				! isset($a['duplicates'])
+				|| $a['duplicates'] === array_values(array_filter(
+					(array) $a['duplicates'],
 				'is_string'
 			))
-			&& $a['replaces'] === array_values(array_filter(
-				$a['replaces'],
+			)
+			&& (
+				! isset($a['replaces'])
+				|| $a['replaces'] === array_values(array_filter(
+					(array) $a['replaces'],
 				'is_string'
 			))
-			&& $a['seealso'] === array_values(array_filter(
-				$a['seealso'],
+			)
+			&& (
+				! isset($a['seealso'])
+				|| $a['seealso'] === array_values(array_filter(
+					(array) $a['seealso'],
 				'is_string'
 			))
-			&& $a['suggested'] === array_values(array_filter(
-				$a['suggested'],
+			)
+			&& (
+				! isset($a['suggested'])
+				|| $a['suggested'] === array_values(array_filter(
+					(array) $a['suggested'],
 				'is_string'
 			))
+			)
 			&& ( ! isset($a['replacedby']) || is_string($a['replacedby']))
 			&& ( ! isset($a['duplicatedby']) || is_string($a['duplicatedby']))
 		;
@@ -703,6 +708,19 @@ foreach ($existing as $video_id => $data) {
 			$existing[$other_video_id]['replacedby'] = $video_id;
 		}
 	}
+
+	foreach (
+		[
+			'duplicates',
+			'replaces',
+			'seealso',
+			'suggested',
+		] as $required
+	) {
+		if ([] === $data[$required]) {
+			unset($existing[$video_id][$required]);
+		}
+	}
 }
 
 foreach ($replacements_not_in_existing as $video_id => $replacement) {
@@ -721,9 +739,9 @@ $filter_no_references =
 	 */
 	static function (array $maybe) : bool {
 		return
-			count($maybe['duplicates']) < 1
-			&& count($maybe['replaces']) < 1
-			&& count($maybe['seealso']) < 1
+			count($maybe['duplicates'] ?? []) < 1
+			&& count($maybe['replaces'] ?? []) < 1
+			&& count($maybe['seealso'] ?? []) < 1
 			&& ! isset($maybe['replacedby'])
 			&& ! isset($maybe['duplicatedby'])
 		;
