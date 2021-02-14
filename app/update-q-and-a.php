@@ -756,7 +756,7 @@ foreach ($existing as $video_id => $data) {
 			}
 		);
 
-		$data[$required] = array_unique($data[$required]);
+		$data[$required] = array_values(array_unique($data[$required]));
 
 		natcasesort($data[$required]);
 
