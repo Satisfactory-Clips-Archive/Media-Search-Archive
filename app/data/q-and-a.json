@@ -24,6 +24,10 @@
             "ydJvaDmoy0U"
         ],
         "suggested": [
+            "dbyTU3Wdpog",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "tHzH3dkTZ4s",
             "X4heczNNOO8"
         ]
     },
@@ -53,6 +57,7 @@
             "I5HR5ocUX9o",
             "uUFy6qyZLKo",
             "V8sGth96I5w",
+            "wuimxgd7c_A",
             "Y9m96T9a5qU"
         ],
         "seealso": [
@@ -439,7 +444,7 @@
             "features\/buildings\/radar-tower",
             "technology\/user-interface"
         ],
-        "seealso": [
+        "duplicates": [
             "-2Z0rsxuisQ"
         ]
     },
@@ -816,6 +821,7 @@
             "8VBAsvNZAGM",
             "9e8Q65g3HWI",
             "bkjnr6Ae1r0",
+            "DuGUOXyGtHg",
             "F90s1pV1WWY",
             "IVy_-gV3h6M",
             "mg0CAgdI5S8",
@@ -1037,17 +1043,21 @@
         "title": "Q&A: When's the next Teaser Trailer?",
         "date": "2021-02-09",
         "topics": [],
+        "replaces": [
+            "r7i2CQaxnWc"
+        ],
         "seealso": [
             "1NTKmQqoxNs",
             "pY14Dudonjc",
-            "r7i2CQaxnWc",
             "sHRjG63JNuQ",
             "w0h08ctpsz4",
-            "ww5wd63vgFo",
             "yqYVuPOQIWc"
         ],
         "suggested": [
-            "o1IfznnrGgc"
+            "o1IfznnrGgc",
+            "r7i2CQaxnWc",
+            "ww5wd63vgFo",
+            "YyHvsUgbSGw"
         ]
     },
     "s0KzZA300xo": {
@@ -1089,6 +1099,10 @@
         "suggested": [
             "64xmTN-rhbs",
             "AeWfPCZQZBQ",
+            "dbyTU3Wdpog",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "tHzH3dkTZ4s",
             "unZciwmFlwA",
             "X4heczNNOO8",
             "ydJvaDmoy0U"
@@ -1301,7 +1315,8 @@
             "u6HJZ1gJhRk"
         ],
         "suggested": [
-            "lHKPC3m2Z2A"
+            "lHKPC3m2Z2A",
+            "o7FFLZpEf_Y"
         ]
     },
     "TbKpZukSpd4": {
@@ -1385,6 +1400,7 @@
             "w0h08ctpsz4",
             "ww5wd63vgFo",
             "yqYVuPOQIWc",
+            "YyHvsUgbSGw",
             "Z-GAgR2VYXk"
         ]
     },
@@ -1464,8 +1480,10 @@
             "w0h08ctpsz4",
             "ww5wd63vgFo",
             "yqYVuPOQIWc",
+            "YyHvsUgbSGw",
             "Z-GAgR2VYXk"
-        ]
+        ],
+        "replacedby": "Z-GAgR2VYXk"
     },
     "-IAV3zlXLss": {
         "title": "Q&A: Any news on Dedicated Servers?",
@@ -1518,6 +1536,7 @@
             "w0h08ctpsz4",
             "ww5wd63vgFo",
             "yqYVuPOQIWc",
+            "YyHvsUgbSGw",
             "Z-GAgR2VYXk"
         ]
     },
@@ -1829,8 +1848,12 @@
             "AeWfPCZQZBQ",
             "b7ZVKjoH7CQ",
             "d8RBkY8oP1Q",
+            "dbyTU3Wdpog",
             "En8viTUiojc",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
             "mBpIB3ojMC8",
+            "tHzH3dkTZ4s",
             "unZciwmFlwA",
             "ydJvaDmoy0U"
         ]
@@ -1851,7 +1874,9 @@
         ],
         "duplicates": [
             "Bu2TPRFV_2o",
-            "tc-SaltyJazzyPasta4Head"
+            "tc-SaltyJazzyPasta4Head",
+            "ts7TQnRykB0",
+            "V-OVvjoUAmg"
         ],
         "seealso": [
             "8Huq89frY2k",
@@ -1982,9 +2007,13 @@
             "AeWfPCZQZBQ",
             "b7ZVKjoH7CQ",
             "d8RBkY8oP1Q",
+            "dbyTU3Wdpog",
             "En8viTUiojc",
             "JSE233L0yRA",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
             "mBpIB3ojMC8",
+            "tHzH3dkTZ4s",
             "unZciwmFlwA",
             "X4heczNNOO8"
         ],
@@ -2125,6 +2154,25 @@
             "9o02HnPy5cY",
             "tc-DaintyYummyLemurANELE",
             "tc-PrettiestObedientLegItsBoshyTime"
+        ],
+        "suggested": [
+            "1-xFJyIBosU",
+            "5sqgxrPlcUI",
+            "7HtEV_DVbgw",
+            "8S1NK72uyLE",
+            "64xmTN-rhbs",
+            "AeWfPCZQZBQ",
+            "b7ZVKjoH7CQ",
+            "d8RBkY8oP1Q",
+            "dbyTU3Wdpog",
+            "En8viTUiojc",
+            "JSE233L0yRA",
+            "lacIs2by7tk",
+            "mBpIB3ojMC8",
+            "tHzH3dkTZ4s",
+            "unZciwmFlwA",
+            "X4heczNNOO8",
+            "ydJvaDmoy0U"
         ]
     },
     "wKU558LFiqI": {
@@ -2175,6 +2223,9 @@
         "date": "2021-01-26",
         "topics": [
             "features\/buildings"
+        ],
+        "duplicates": [
+            "O02Z9u7DpPo"
         ],
         "seealso": [
             "tc-ProudArbitraryClintmullinsPeanutButterJellyTime"
@@ -2262,9 +2313,9 @@
             "trolling"
         ],
         "duplicates": [
-            "fO_ZW22gL-g"
-        ],
-        "duplicatedby": "fO_ZW22gL-g"
+            "fO_ZW22gL-g",
+            "tN8DpsYR8ro"
+        ]
     },
     "9h4HwEuF2_U": {
         "title": "Q&A: Can add a basic non-interactive local Map from the start?",
@@ -2297,6 +2348,7 @@
             "sHRjG63JNuQ",
             "ww5wd63vgFo",
             "yqYVuPOQIWc",
+            "YyHvsUgbSGw",
             "Z-GAgR2VYXk"
         ]
     },
@@ -2443,6 +2495,15 @@
         "date": "2021-01-26",
         "topics": [
             "satisfactory-updates\/seasonal-events\/fics-mas"
+        ],
+        "duplicates": [
+            "01DJ6EPqTk4",
+            "6XovxrktCDA",
+            "MQLuFiVQPYY"
+        ],
+        "suggested": [
+            "Gt9an2au_YU",
+            "ospbB7hdDdI"
         ]
     },
     "b586YMEHeRk": {
@@ -2665,6 +2726,7 @@
             "sHRjG63JNuQ",
             "w0h08ctpsz4",
             "ww5wd63vgFo",
+            "YyHvsUgbSGw",
             "Z-GAgR2VYXk"
         ]
     },
@@ -2706,6 +2768,10 @@
             "ydJvaDmoy0U"
         ],
         "suggested": [
+            "dbyTU3Wdpog",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "tHzH3dkTZ4s",
             "X4heczNNOO8"
         ]
     },
@@ -2872,7 +2938,8 @@
             "lHKPC3m2Z2A"
         ],
         "suggested": [
-            "IXuBCWtpEsE"
+            "IXuBCWtpEsE",
+            "o7FFLZpEf_Y"
         ]
     },
     "FVT8_xB9V94": {
@@ -2915,6 +2982,10 @@
         "suggested": [
             "64xmTN-rhbs",
             "b7ZVKjoH7CQ",
+            "dbyTU3Wdpog",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "tHzH3dkTZ4s",
             "unZciwmFlwA",
             "X4heczNNOO8",
             "ydJvaDmoy0U"
@@ -3490,6 +3561,9 @@
         "date": "2021-01-19",
         "topics": [
             "satisfactory-updates\/seasonal-events"
+        ],
+        "seealso": [
+            "6XovxrktCDA"
         ]
     },
     "p3zdRLbGwsk": {
@@ -3990,6 +4064,7 @@
             "yt-Jxh8kvtUuxY,,46.3463"
         ],
         "suggested": [
+            "8ImofeADWyI",
             "vsmihiP_Tmg"
         ]
     },
@@ -4085,6 +4160,25 @@
         "duplicates": [
             "5rVqTHOiwh0",
             "Zlq2K0-z0_8"
+        ],
+        "suggested": [
+            "1-xFJyIBosU",
+            "5sqgxrPlcUI",
+            "7HtEV_DVbgw",
+            "8S1NK72uyLE",
+            "64xmTN-rhbs",
+            "AeWfPCZQZBQ",
+            "b7ZVKjoH7CQ",
+            "d8RBkY8oP1Q",
+            "dbyTU3Wdpog",
+            "En8viTUiojc",
+            "JSE233L0yRA",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "mBpIB3ojMC8",
+            "unZciwmFlwA",
+            "X4heczNNOO8",
+            "ydJvaDmoy0U"
         ]
     },
     "pjoG5bBsTKI": {
@@ -4198,6 +4292,7 @@
             "yt-Jxh8kvtUuxY,,46.3463"
         ],
         "suggested": [
+            "8ImofeADWyI",
             "K2uidbt0_VE"
         ]
     },
@@ -4259,6 +4354,7 @@
         ],
         "suggested": [
             "w0h08ctpsz4",
+            "YyHvsUgbSGw",
             "Z-GAgR2VYXk"
         ]
     },
@@ -4455,7 +4551,8 @@
         "date": "2021-01-12",
         "topics": [],
         "duplicates": [
-            "KO7cDlkMYxM"
+            "KO7cDlkMYxM",
+            "sI7zMjVad1c"
         ]
     },
     "NGyFncgCUyo": {
@@ -4515,6 +4612,10 @@
             "ydJvaDmoy0U"
         ],
         "suggested": [
+            "dbyTU3Wdpog",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "tHzH3dkTZ4s",
             "X4heczNNOO8"
         ],
         "duplicatedby": "b7ZVKjoH7CQ"
@@ -4664,6 +4765,9 @@
         "date": "2020-12-15",
         "topics": [
             "environment\/world-map"
+        ],
+        "duplicates": [
+            "06YaY3zGZeg"
         ]
     },
     "w2zJd6F1Udw": {
@@ -4679,6 +4783,27 @@
         "date": "2020-12-15",
         "topics": [
             "features\/buildings\/the-hub"
+        ],
+        "seealso": [
+            "dbyTU3Wdpog",
+            "kDwywg_UJoc",
+            "mBpIB3ojMC8",
+            "tHzH3dkTZ4s"
+        ],
+        "suggested": [
+            "1-xFJyIBosU",
+            "5sqgxrPlcUI",
+            "7HtEV_DVbgw",
+            "8S1NK72uyLE",
+            "64xmTN-rhbs",
+            "AeWfPCZQZBQ",
+            "b7ZVKjoH7CQ",
+            "d8RBkY8oP1Q",
+            "En8viTUiojc",
+            "JSE233L0yRA",
+            "unZciwmFlwA",
+            "X4heczNNOO8",
+            "ydJvaDmoy0U"
         ]
     },
     "KO7cDlkMYxM": {
@@ -4692,6 +4817,12 @@
         "date": "2020-12-15",
         "topics": [
             "technology\/user-interface"
+        ],
+        "duplicates": [
+            "KGLZ6f6PdRs"
+        ],
+        "seealso": [
+            "omtlLJxraPk"
         ]
     },
     "sJnuRV0OGF0": {
@@ -4722,13 +4853,17 @@
             "2JUtqNFl5_8",
             "F0Lu47hMTD8",
             "qQJTAvtzB-8"
-        ]
+        ],
+        "duplicatedby": "k-UDNJY0PWA"
     },
     "xwwx4N37G8M": {
         "title": "Q&A: Can you make a toolbar selection to be with just hotkeys instead of mousewheel?",
         "date": "2020-12-15",
         "topics": [
             "technology\/user-interface"
+        ],
+        "seealso": [
+            "KmX7CoVGPA0"
         ]
     },
     "DuGUOXyGtHg": {
@@ -4736,7 +4871,8 @@
         "date": "2020-12-15",
         "topics": [
             "merch"
-        ]
+        ],
+        "replacedby": "bQnAGoo8jQA"
     },
     "MQLuFiVQPYY": {
         "title": "Q&A: Could it be released to the Modding Community to polish and release it as a Mod?",
@@ -4745,7 +4881,8 @@
             "community",
             "mods\/mods-vs-features",
             "satisfactory-updates\/seasonal-events\/fics-mas"
-        ]
+        ],
+        "duplicatedby": "CmQgxVzbXoQ"
     },
     "znK3Ne7dLUc": {
         "title": "Q&A: Dedicated Server for Windows?",
@@ -4807,6 +4944,9 @@
         "date": "2020-12-15",
         "topics": [
             "coffee-stainers"
+        ],
+        "duplicates": [
+            "BwJG6ZHR7Io"
         ]
     },
     "8k6D9_7yPmw": {
@@ -4830,6 +4970,10 @@
             "features\/crafting\/superposition-oscillator",
             "features\/tiers\/tier-8",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "foek1b3z0kI",
+            "yt-njXBs_p2l1w,,95.36193333333334"
         ]
     },
     "pFc0pdgYnlU": {
@@ -4854,7 +4998,8 @@
         "date": "2020-12-15",
         "topics": [
             "satisfactory-updates\/seasonal-events\/fics-mas"
-        ]
+        ],
+        "duplicatedby": "CmQgxVzbXoQ"
     },
     "i1-FmJGxPPg": {
         "title": "Q&A: Infinite Colours?",
@@ -4862,6 +5007,9 @@
         "topics": [
             "features\/paint",
             "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "6BahsrvlPJs"
         ]
     },
     "-9WFYJETif4": {
@@ -4878,6 +5026,19 @@
         "date": "2020-12-15",
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "ww5wd63vgFo"
+        ],
+        "suggested": [
+            "1NTKmQqoxNs",
+            "o1IfznnrGgc",
+            "pY14Dudonjc",
+            "r7i2CQaxnWc",
+            "sHRjG63JNuQ",
+            "w0h08ctpsz4",
+            "yqYVuPOQIWc",
+            "Z-GAgR2VYXk"
         ]
     },
     "Ii3ahSfYOYI": {
@@ -4894,7 +5055,8 @@
         "date": "2020-12-15",
         "topics": [
             "features\/transportation\/trains"
-        ]
+        ],
+        "duplicatedby": "rCOD5becD6M"
     },
     "LFH3YB0pV24": {
         "title": "Q&A: Walls & Handrails, be able to place like Pipes?",
@@ -4935,6 +5097,12 @@
             "features\/crafting\/superposition-oscillator",
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/seasonal-events\/fics-mas"
+        ],
+        "seealso": [
+            "fmE3DQFeVGk"
+        ],
+        "suggested": [
+            "yt-njXBs_p2l1w,,95.36193333333334"
         ]
     },
     "Gt9an2au_YU": {
@@ -4943,6 +5111,12 @@
         "topics": [
             "features\/power-management",
             "satisfactory-updates\/seasonal-events\/fics-mas"
+        ],
+        "seealso": [
+            "CmQgxVzbXoQ"
+        ],
+        "suggested": [
+            "ospbB7hdDdI"
         ]
     },
     "axmmm-ituSg": {
@@ -4982,6 +5156,10 @@
             "ydJvaDmoy0U"
         ],
         "suggested": [
+            "dbyTU3Wdpog",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "tHzH3dkTZ4s",
             "X4heczNNOO8"
         ]
     },
@@ -4990,7 +5168,8 @@
         "date": "2020-12-15",
         "topics": [
             "technology\/user-interface"
-        ]
+        ],
+        "duplicatedby": "0KLJ2_1P_uk"
     },
     "cIuO0sScXGg": {
         "title": "Q&A: Why is there a Coffee Cup in the HUB called \"BRY\"?",
@@ -5005,6 +5184,12 @@
         "topics": [
             "features\/buildings",
             "satisfactory-updates\/seasonal-events\/fics-mas"
+        ],
+        "seealso": [
+            "CmQgxVzbXoQ"
+        ],
+        "suggested": [
+            "Gt9an2au_YU"
         ]
     },
     "TYZBVCcqLzg": {
@@ -5013,6 +5198,9 @@
         "topics": [
             "features\/transportation\/hyper-tubes",
             "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "bvtKzwJA4pw"
         ]
     },
     "bvtKzwJA4pw": {
@@ -5020,6 +5208,9 @@
         "date": "2020-12-15",
         "topics": [
             "features\/transportation\/hyper-tubes"
+        ],
+        "seealso": [
+            "TYZBVCcqLzg"
         ]
     },
     "_HKsPj2tx04": {
@@ -5036,9 +5227,7 @@
         "topics": [
             "features\/buildings\/radar-tower"
         ],
-        "suggested": [
-            "Jb1JBMGknBY"
-        ]
+        "duplicatedby": "Jb1JBMGknBY"
     },
     "RubFX693enI": {
         "title": "Q&A: Will RTX be added to Update 4 with the new Unreal Engine?",
@@ -5057,6 +5246,10 @@
             "satisfactory-updates\/release-builds",
             "technology\/linux"
         ],
+        "duplicates": [
+            "GR3xet5AyuE",
+            "vSFTo-1j-SA"
+        ],
         "suggested": [
             "3d5h-Okw-uU",
             "GR3xet5AyuE",
@@ -5069,7 +5262,11 @@
         "topics": [
             "satisfactory-updates\/seasonal-events",
             "satisfactory-updates\/seasonal-events\/fics-mas"
-        ]
+        ],
+        "suggested": [
+            "2koHO0P289M"
+        ],
+        "duplicatedby": "CmQgxVzbXoQ"
     },
     "O02Z9u7DpPo": {
         "title": "Q&A: Will the game in the future have some cataclysms or breakdowns?",
@@ -5077,7 +5274,8 @@
         "topics": [
             "environment\/world-map",
             "story-lore"
-        ]
+        ],
+        "duplicatedby": "W8Ia5yx0n-k"
     },
     "XNigRFh5_LA": {
         "title": "Q&A: Will there be any changes to clear how the efficiency works?",
@@ -5091,6 +5289,13 @@
         "date": "2020-12-15",
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "yt-Jxh8kvtUuxY,,46.3463"
+        ],
+        "suggested": [
+            "K2uidbt0_VE",
+            "vsmihiP_Tmg"
         ]
     },
     "iyhdKRg1b0A": {
@@ -5161,6 +5366,12 @@
             "features\/paint",
             "features\/transportation\/vehicles",
             "technology\/unreal-engine"
+        ],
+        "replaces": [
+            "J8M7X0igt2w"
+        ],
+        "seealso": [
+            "i1-FmJGxPPg"
         ]
     },
     "0nRCXveJemw": {
@@ -5168,6 +5379,9 @@
         "date": "2020-12-15",
         "topics": [
             "environment\/resources"
+        ],
+        "seealso": [
+            "O5R_YmTmXUI"
         ]
     },
     "tN8DpsYR8ro": {
@@ -5175,7 +5389,8 @@
         "date": "2020-12-15",
         "topics": [
             "features\/possible-features\/game-modes"
-        ]
+        ],
+        "duplicatedby": "U4t0BJ7mjwc"
     },
     "PYyvu8feZqA": {
         "title": "Q&A: Will we get a Shop in Europe - the shipping costs are a bit spicy?",
@@ -5197,6 +5412,13 @@
         "date": "2020-12-08",
         "topics": [
             "mods\/official-mod-support"
+        ],
+        "seealso": [
+            "IXuBCWtpEsE"
+        ],
+        "suggested": [
+            "lHKPC3m2Z2A",
+            "u6HJZ1gJhRk"
         ]
     },
     "V-OVvjoUAmg": {
@@ -5222,13 +5444,17 @@
             "tc-SaltyJazzyPasta4Head",
             "TjSMwjueGc8",
             "WQH5cWS3s2s"
-        ]
+        ],
+        "duplicatedby": "rCOD5becD6M"
     },
     "ww5wd63vgFo": {
         "title": "Q&A: Any Update 4 teaser videos?",
         "date": "2020-12-08",
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "Z-GAgR2VYXk"
         ],
         "suggested": [
             "1NTKmQqoxNs",
@@ -5238,7 +5464,7 @@
             "sHRjG63JNuQ",
             "w0h08ctpsz4",
             "yqYVuPOQIWc",
-            "Z-GAgR2VYXk"
+            "YyHvsUgbSGw"
         ]
     },
     "sI7zMjVad1c": {
@@ -5246,7 +5472,8 @@
         "date": "2020-12-08",
         "topics": [
             "technology\/unreal-engine"
-        ]
+        ],
+        "duplicatedby": "iqGA8u7MmMM"
     },
     "nat8VwaykqE": {
         "title": "Q&A: Are there plans to improve Vehicle performance for Update 4?",
@@ -5936,6 +6163,10 @@
             "ydJvaDmoy0U"
         ],
         "suggested": [
+            "dbyTU3Wdpog",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "tHzH3dkTZ4s",
             "X4heczNNOO8"
         ]
     },
@@ -6678,6 +6909,25 @@
             "features\/buildings",
             "features\/buildings\/the-hub",
             "soundtrack"
+        ],
+        "suggested": [
+            "1-xFJyIBosU",
+            "5sqgxrPlcUI",
+            "7HtEV_DVbgw",
+            "8S1NK72uyLE",
+            "64xmTN-rhbs",
+            "AeWfPCZQZBQ",
+            "b7ZVKjoH7CQ",
+            "d8RBkY8oP1Q",
+            "En8viTUiojc",
+            "JSE233L0yRA",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "mBpIB3ojMC8",
+            "tHzH3dkTZ4s",
+            "unZciwmFlwA",
+            "X4heczNNOO8",
+            "ydJvaDmoy0U"
         ]
     },
     "RuzL7DdAJ1o": {
@@ -7175,6 +7425,10 @@
             "ydJvaDmoy0U"
         ],
         "suggested": [
+            "dbyTU3Wdpog",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "tHzH3dkTZ4s",
             "X4heczNNOO8"
         ]
     },
@@ -8035,6 +8289,7 @@
             "w0h08ctpsz4",
             "ww5wd63vgFo",
             "yqYVuPOQIWc",
+            "YyHvsUgbSGw",
             "Z-GAgR2VYXk"
         ]
     },
@@ -8289,7 +8544,8 @@
             "features\/paint",
             "features\/transportation\/vehicles"
         ],
-        "duplicatedby": "aIproPDd8V0"
+        "duplicatedby": "aIproPDd8V0",
+        "replacedby": "6BahsrvlPJs"
     },
     "GDuWS-cOFX8": {
         "title": "Q&A: Will Dedicated Servers have Multiple Hubs?",
@@ -10185,6 +10441,10 @@
             "ydJvaDmoy0U"
         ],
         "suggested": [
+            "dbyTU3Wdpog",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
+            "tHzH3dkTZ4s",
             "X4heczNNOO8"
         ],
         "duplicatedby": "b7ZVKjoH7CQ"
@@ -12633,7 +12893,8 @@
             "3d5h-Okw-uU",
             "GR3xet5AyuE",
             "jGFUMhD3WGg"
-        ]
+        ],
+        "duplicatedby": "jGFUMhD3WGg"
     },
     "HXXn10GhRWU": {
         "title": "Q&A: Please consider adding a third-person view?",
@@ -12896,6 +13157,9 @@
         ],
         "duplicates": [
             "tc-OnerousGlamorousMoonAllenHuhu"
+        ],
+        "suggested": [
+            "0KLJ2_1P_uk"
         ]
     },
     "WjVP7rOR38M": {
@@ -14783,9 +15047,13 @@
             "64xmTN-rhbs",
             "AeWfPCZQZBQ",
             "b7ZVKjoH7CQ",
+            "dbyTU3Wdpog",
             "En8viTUiojc",
             "JSE233L0yRA",
+            "kDwywg_UJoc",
+            "lacIs2by7tk",
             "mBpIB3ojMC8",
+            "tHzH3dkTZ4s",
             "unZciwmFlwA",
             "X4heczNNOO8",
             "ydJvaDmoy0U"
@@ -15196,9 +15464,6 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "trolling"
         ],
-        "duplicates": [
-            "U4t0BJ7mjwc"
-        ],
         "duplicatedby": "U4t0BJ7mjwc"
     },
     "LOjffz_Nj4A": {
@@ -15223,7 +15488,8 @@
             "coffee-stainers",
             "satisfactory-updates\/released\/satisfactory-update-2",
             "satisfactory-updates\/released\/satisfactory-update-3"
-        ]
+        ],
+        "duplicatedby": "Ev8CEXznWsE"
     },
     "73Nx4m0LjbU": {
         "title": "Q&A: Do Markus & G2 have any favourite programming languages?",
@@ -15733,7 +15999,8 @@
         "date": "2019-12-19",
         "topics": [
             "environment\/world-map"
-        ]
+        ],
+        "duplicatedby": "57Cc22ZK5aw"
     },
     "Qonz6WXDEeM": {
         "title": "Q&A: Are there any plans of adding Keanu Reeves to Satisfactory?",
@@ -16385,6 +16652,9 @@
             "environment\/resources",
             "features\/crafting\/fuel",
             "features\/gases"
+        ],
+        "suggested": [
+            "0nRCXveJemw"
         ]
     },
     "XrsD3h62ils": {
@@ -16608,7 +16878,8 @@
             "3d5h-Okw-uU",
             "jGFUMhD3WGg",
             "vSFTo-1j-SA"
-        ]
+        ],
+        "duplicatedby": "jGFUMhD3WGg"
     },
     "u9Vu9NIjiRs": {
         "title": "Q&A: Is that the alpha build version?",
@@ -16761,6 +17032,9 @@
         "topics": [
             "features\/equipment",
             "technology\/user-interface"
+        ],
+        "suggested": [
+            "xwwx4N37G8M"
         ]
     },
     "dWt4mf9am90": {

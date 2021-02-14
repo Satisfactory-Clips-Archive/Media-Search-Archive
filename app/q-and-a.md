@@ -1,16 +1,16 @@
 # Progress
 * 1847 questions found out of 2456 clips
-* 1215 questions found with no other references
+* 1178 questions found with no other references
 ## grouped by date
 * 2021-02-09: 33 of 100 questions found with no other references
-* 2021-02-02: 17 of 53 questions found with no other references
-* 2021-01-26: 32 of 83 questions found with no other references
+* 2021-02-02: 16 of 53 questions found with no other references
+* 2021-01-26: 31 of 83 questions found with no other references
 * 2021-01-22: 0 of 3 questions found with no other references
-* 2021-01-19: 24 of 92 questions found with no other references
+* 2021-01-19: 23 of 92 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 3 of 34 questions found with no other references
-* 2020-12-15: 38 of 60 questions found with no other references
-* 2020-12-08: 48 of 53 questions found with no other references
+* 2020-12-15: 11 of 60 questions found with no other references
+* 2020-12-08: 44 of 53 questions found with no other references
 * 2020-12-01: 1 of 1 questions found with no other references
 * 2020-11-24: 36 of 48 questions found with no other references
 * 2020-11-17: 46 of 57 questions found with no other references
@@ -34,10 +34,10 @@
 * 2020-06-08: 32 of 40 questions found with no other references
 * 2020-05-19: 19 of 24 questions found with no other references
 * 2020-03-24: 23 of 29 questions found with no other references
-* 2020-02-11: 36 of 43 questions found with no other references
+* 2020-02-11: 35 of 43 questions found with no other references
 * 2020-01-22: 21 of 29 questions found with no other references
-* 2019-12-19: 50 of 58 questions found with no other references
-* 2019-03-09: 98 of 114 questions found with no other references
+* 2019-12-19: 49 of 58 questions found with no other references
+* 2019-03-09: 97 of 114 questions found with no other references
 * 2018-11-23: 6 of 6 questions found with no other references
 * 2018-10-03: 9 of 9 questions found with no other references
 * 2018-08-01: 18 of 20 questions found with no other references
@@ -356,6 +356,7 @@
 ### Asked previously:
 * [February 2nd, 2021 Livestream Q&A: Will we be getting more Walls and other building stuff in vanilla?](https://archive.satisfactory.video/transcriptions/yt-Y9m96T9a5qU) https://www.youtube.com/watch?v=Y9m96T9a5qU
 * [December 15th, 2020 Livestream Q&A: We need more foundation types- triangle foundations, smaller foundations?](https://archive.satisfactory.video/transcriptions/yt-V8sGth96I5w) https://www.youtube.com/watch?v=V8sGth96I5w
+* [December 15th, 2020 Livestream Q&A: Can you imagine bringing something decoration foundations to factories?](https://archive.satisfactory.video/transcriptions/yt-wuimxgd7c_A) https://www.youtube.com/watch?v=wuimxgd7c_A
 * [November 17th, 2020 Livestream Q&A: Circular Foundations?](https://archive.satisfactory.video/transcriptions/yt-5snNwUqWAxA) https://www.youtube.com/watch?v=5snNwUqWAxA
 * [November 3rd, 2020 Livestream Q&A: Can we get Circular Foundations?](https://archive.satisfactory.video/transcriptions/yt-4sKy5-TJVKY) https://www.youtube.com/watch?v=4sKy5-TJVKY
 * [September 29th, 2020 Livestream Q&A: Any chance of larger Foundations?](https://archive.satisfactory.video/transcriptions/yt-I5HR5ocUX9o) https://www.youtube.com/watch?v=I5HR5ocUX9o
@@ -838,6 +839,28 @@
 > we are working on and on
 >
 > I like most every One of your Xbox 360
+
+
+## [January 26th, 2021 Livestream Q&A: Battle Royale mode?](https://archive.satisfactory.video/transcriptions/yt-U4t0BJ7mjwc) https://www.youtube.com/watch?v=U4t0BJ7mjwc
+
+### Asked previously:
+* [December 15th, 2020 Livestream Q&A: Will we get a Battle Royale Update?](https://archive.satisfactory.video/transcriptions/yt-tN8DpsYR8ro) https://www.youtube.com/watch?v=tN8DpsYR8ro
+* [February 11th, 2020 Livestream Q&A: Battle Royale?](https://archive.satisfactory.video/transcriptions/yt-fO_ZW22gL-g) https://www.youtube.com/watch?v=fO_ZW22gL-g
+### Transcript
+
+> battle royale mode soon soon
+>
+> it's like survival aspects no that's not
+>
+> the kind of game we're trying to make
+>
+> battle royale
+>
+> hold yep okay coming soon update four
+>
+> battle royale for sure for sure hold my
+>
+> phone
 
 
 ## [August 25th, 2020 Livestream Q&A: Blueprints would be awesome for end-game](https://archive.satisfactory.video/transcriptions/yt-e2YhcCwJNNg) https://www.youtube.com/watch?v=e2YhcCwJNNg
@@ -2113,6 +2136,17 @@
 > when that happens so to speak
 
 
+## [January 26th, 2021 Livestream Q&A: Give FICS⁕MAS back?](https://archive.satisfactory.video/transcriptions/yt-CmQgxVzbXoQ) https://www.youtube.com/watch?v=CmQgxVzbXoQ
+
+### Asked previously:
+* [December 15th, 2020 Livestream Q&A: If I backup current version, will FICS⁕MAS still work after the 18th?](https://archive.satisfactory.video/transcriptions/yt-01DJ6EPqTk4) https://www.youtube.com/watch?v=01DJ6EPqTk4
+* [December 15th, 2020 Livestream Q&A: Will the event come back next year?](https://archive.satisfactory.video/transcriptions/yt-6XovxrktCDA) https://www.youtube.com/watch?v=6XovxrktCDA
+* [December 15th, 2020 Livestream Q&A: Could it be released to the Modding Community to polish and release it as a Mod?](https://archive.satisfactory.video/transcriptions/yt-MQLuFiVQPYY) https://www.youtube.com/watch?v=MQLuFiVQPYY
+### Transcript
+
+> es gibt fixe ist bergnot
+
+
 ## [February 9th, 2021 Livestream Q&A: How big will Update 4 be?](https://archive.satisfactory.video/transcriptions/yt-oa9c3aMoTfk) https://www.youtube.com/watch?v=oa9c3aMoTfk
 
 ### Asked previously:
@@ -2862,6 +2896,82 @@
 > coming
 
 
+## [January 12th, 2021 Livestream Q&A: Now that you have big boy office are you planning on hiring a lot more people to fill it out?](https://archive.satisfactory.video/transcriptions/yt-iqGA8u7MmMM) https://www.youtube.com/watch?v=iqGA8u7MmMM
+
+### Asked previously:
+* [December 15th, 2020 Livestream Q&A: Are you hiring new devs?](https://archive.satisfactory.video/transcriptions/yt-KO7cDlkMYxM) https://www.youtube.com/watch?v=KO7cDlkMYxM
+* [December 8th, 2020 Livestream Q&A: Are Coffee Stain looking for Unreal Engine programmers - do you hire remotely?](https://archive.satisfactory.video/transcriptions/yt-sI7zMjVad1c) https://www.youtube.com/watch?v=sI7zMjVad1c
+### Transcript
+
+> right here
+>
+> uh now that you guys have a big boy
+>
+> obviously are you planning on hiring
+>
+> uh a lot more people to fill it out
+>
+> actually i think we just stopped hiring
+>
+> yeah um and so we got some extra people
+>
+> i i
+>
+> the plan is not to fill it out um if you
+>
+> grow it like growing a dev studio
+>
+> the bigger it gets the harder it is to
+>
+> do anything so you kind of want to get
+>
+> you need to find a really good balance
+>
+> between the number of people you have
+>
+> and what you're outputting and so so
+>
+> like just filling it out because we have
+>
+> the space
+>
+> and i suppose we probably may i don't
+>
+> know mate let's just say hypothetically
+>
+> we had the money for it as well
+>
+> is not automatically a good thing to do
+>
+> so um
+>
+> yeah but at this at this point point i
+>
+> don't really know what the plan is but
+>
+> from what i understand we're kind of
+>
+> done hiring for a little while yeah as
+>
+> far as i know too
+>
+> i think we uh the feeling i'll this is
+>
+> my take on it but it feels like coffee
+>
+> also has like more like a long-term
+>
+> thinking so we don't
+>
+> even if we could have like 60 people
+>
+> right now we wouldn't
+>
+> do it because it wouldn't make sense for
+>
+> us yeah
+
+
 ## [February 2nd, 2021 Livestream Q&A: Out of Early Access?](https://archive.satisfactory.video/transcriptions/yt-y51YDVf8VOI) https://www.youtube.com/watch?v=y51YDVf8VOI
 
 ### Asked previously:
@@ -3540,6 +3650,8 @@
 
 ### Asked previously:
 * [January 12th, 2021 Livestream Q&A: Any new information regarding Signal system for Trains?](https://archive.satisfactory.video/transcriptions/yt-Bu2TPRFV_2o) https://www.youtube.com/watch?v=Bu2TPRFV_2o
+* [December 15th, 2020 Livestream Q&A: Train Update?](https://archive.satisfactory.video/transcriptions/yt-ts7TQnRykB0) https://www.youtube.com/watch?v=ts7TQnRykB0
+* [December 8th, 2020 Livestream Q&A: Any news on Train Signals?](https://archive.satisfactory.video/transcriptions/yt-V-OVvjoUAmg) https://www.youtube.com/watch?v=V-OVvjoUAmg
 * August 18th, 2020 Livestream Q&A: Any thoughts on whether Trains will ever collide? https://clips.twitch.tv/SaltyJazzyPasta4Head
 ### Transcript
 
@@ -4647,6 +4759,30 @@
 > really nice um
 >
 > so yeah
+
+
+## [December 15th, 2020 Livestream Q&A: Will Satisfactory have native support for Linux?](https://archive.satisfactory.video/transcriptions/yt-jGFUMhD3WGg) https://www.youtube.com/watch?v=jGFUMhD3WGg
+
+### Asked previously:
+* [August 25th, 2020 Livestream Q&A: Plans for official Linux support?](https://archive.satisfactory.video/transcriptions/yt-vSFTo-1j-SA) https://www.youtube.com/watch?v=vSFTo-1j-SA
+* [March 9th, 2019 Livestream Q&A: Is Linux support planned in the future?](https://archive.satisfactory.video/transcriptions/yt-GR3xet5AyuE) https://www.youtube.com/watch?v=GR3xet5AyuE
+### Transcript
+
+> it will not uh will satisfactory have
+>
+> native support for linux
+>
+> don't know uh we don't have plans for
+>
+> that right now and you know anything can
+>
+> happen
+>
+> but we don't have plans for that right
+>
+> now so
+>
+> no one can tell
 
 
 ## [February 2nd, 2021 Livestream Q&A: Will the Map be bigger later?](https://archive.satisfactory.video/transcriptions/yt-gvOt4jwWA4Q) https://www.youtube.com/watch?v=gvOt4jwWA4Q
