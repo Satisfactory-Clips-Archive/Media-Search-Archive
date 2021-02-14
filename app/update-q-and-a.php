@@ -691,7 +691,7 @@ foreach ($existing as $video_id => $data) {
 	) {
 		$data[$required] = array_filter(
 			$data[$required],
-			static function (string $maybe) use($video_id) : bool {
+			static function (string $maybe) use ($video_id) : bool {
 				return $video_id !== $maybe;
 			}
 		);
