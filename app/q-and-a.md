@@ -1,43 +1,43 @@
 # Progress
 * 1847 questions found out of 2456 clips
-* 1299 questions found with no other references
+* 1215 questions found with no other references
 ## grouped by date
-* 2021-02-09: 34 of 100 questions found with no other references
+* 2021-02-09: 33 of 100 questions found with no other references
 * 2021-02-02: 17 of 53 questions found with no other references
 * 2021-01-26: 32 of 83 questions found with no other references
 * 2021-01-22: 0 of 3 questions found with no other references
-* 2021-01-19: 58 of 92 questions found with no other references
+* 2021-01-19: 24 of 92 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
-* 2021-01-12: 27 of 34 questions found with no other references
-* 2020-12-15: 42 of 60 questions found with no other references
+* 2021-01-12: 3 of 34 questions found with no other references
+* 2020-12-15: 38 of 60 questions found with no other references
 * 2020-12-08: 48 of 53 questions found with no other references
 * 2020-12-01: 1 of 1 questions found with no other references
-* 2020-11-24: 37 of 48 questions found with no other references
-* 2020-11-17: 47 of 57 questions found with no other references
-* 2020-11-10: 74 of 84 questions found with no other references
+* 2020-11-24: 36 of 48 questions found with no other references
+* 2020-11-17: 46 of 57 questions found with no other references
+* 2020-11-10: 73 of 84 questions found with no other references
 * 2020-11-03: 45 of 57 questions found with no other references
-* 2020-10-27: 23 of 23 questions found with no other references
-* 2020-10-20: 41 of 51 questions found with no other references
+* 2020-10-27: 22 of 23 questions found with no other references
+* 2020-10-20: 40 of 51 questions found with no other references
 * 2020-10-13: 46 of 48 questions found with no other references
 * 2020-10-09: 22 of 24 questions found with no other references
-* 2020-10-06: 45 of 51 questions found with no other references
+* 2020-10-06: 44 of 51 questions found with no other references
 * 2020-09-29: 31 of 38 questions found with no other references
-* 2020-09-22: 44 of 59 questions found with no other references
+* 2020-09-22: 43 of 59 questions found with no other references
 * 2020-09-15: 37 of 47 questions found with no other references
 * 2020-09-08: 60 of 72 questions found with no other references
-* 2020-09-01: 56 of 71 questions found with no other references
+* 2020-09-01: 54 of 71 questions found with no other references
 * 2020-08-25: 14 of 136 questions found with no other references
-* 2020-08-18: 45 of 56 questions found with no other references
-* 2020-08-11: 29 of 38 questions found with no other references
-* 2020-07-28: 6 of 10 questions found with no other references
-* 2020-07-21: 5 of 5 questions found with no other references
+* 2020-08-18: 44 of 56 questions found with no other references
+* 2020-08-11: 27 of 38 questions found with no other references
+* 2020-07-28: 5 of 10 questions found with no other references
+* 2020-07-21: 4 of 5 questions found with no other references
 * 2020-06-08: 32 of 40 questions found with no other references
 * 2020-05-19: 19 of 24 questions found with no other references
-* 2020-03-24: 24 of 29 questions found with no other references
-* 2020-02-11: 38 of 43 questions found with no other references
+* 2020-03-24: 23 of 29 questions found with no other references
+* 2020-02-11: 36 of 43 questions found with no other references
 * 2020-01-22: 21 of 29 questions found with no other references
-* 2019-12-19: 53 of 58 questions found with no other references
-* 2019-03-09: 99 of 114 questions found with no other references
+* 2019-12-19: 50 of 58 questions found with no other references
+* 2019-03-09: 98 of 114 questions found with no other references
 * 2018-11-23: 6 of 6 questions found with no other references
 * 2018-10-03: 9 of 9 questions found with no other references
 * 2018-08-01: 18 of 20 questions found with no other references
@@ -2594,6 +2594,226 @@
 > be dog
 
 
+## [January 19th, 2021 Livestream Q&A: Mass Foundation creation?](https://archive.satisfactory.video/transcriptions/yt-Z0H06UJbb4E) https://www.youtube.com/watch?v=Z0H06UJbb4E
+
+### Asked previously:
+* [January 12th, 2021 Livestream Q&A: Possibility of placing more than one foundation at once?](https://archive.satisfactory.video/transcriptions/yt-TdmIe3EM_B8) https://www.youtube.com/watch?v=TdmIe3EM_B8
+* [December 15th, 2020 Livestream Q&A: Do you plan on adding mass foundation placement?](https://archive.satisfactory.video/transcriptions/yt-8Pm6KLejrOQ) https://www.youtube.com/watch?v=8Pm6KLejrOQ
+* July 21st, 2020 Livestream Q&A: Why no mass building? https://clips.twitch.tv/SoftBovineArmadilloNerfRedBlaster
+* [March 24th, 2020 Livestream Q&A: Multiple Foundation creation?](https://archive.satisfactory.video/transcriptions/yt-zfdV2qIDHP4) https://www.youtube.com/watch?v=zfdV2qIDHP4
+### Transcript
+
+> mass foundation creation um
+>
+> mark talked about this a while ago like
+>
+> before holiday vacation
+>
+> um where we
+>
+> oh maybe this was a video that jace put
+>
+> out but we talked about
+>
+> essentially that we are kind of
+>
+> considering you know doing some kind of
+>
+> um not blueprints but like
+>
+> some kind of similar system or or
+>
+> something that makes sense in our game
+>
+> we don't think that blueprints
+>
+> by like the way the blueprints are like
+>
+> implemented in other games like factorio
+>
+> we don't think that makes sense in our
+>
+> game but we are looking into
+>
+> you know some kind of similar system to
+>
+> that
+>
+> to make late game building more
+>
+> enjoyable
+>
+> as you as you may know we're still done
+>
+> not done with the game there's still a
+>
+> lot of stuff to do with it and a lot of
+>
+> people
+>
+> you know think it's tedious when you
+>
+> reach the end game to not be able to
+>
+> like
+>
+> you know mass build and stuff like that
+>
+> and we we take that into
+>
+> consideration uh part of the game part
+>
+> of what makes this game fun too
+>
+> is like there's two problems math mass
+>
+> building
+>
+> uh there's one where the object
+>
+> constraint limit with the engine
+>
+> that makes if if we enable more people
+>
+> to build bigger things then they're
+>
+> gonna run into
+>
+> that wall much quicker that's one
+>
+> problem the other problem is that
+>
+> um a lot of aspects as to what makes the
+>
+> game fun
+>
+> is the fact that you are you know this
+>
+> pioneer
+>
+> and you're hand selecting stuff and
+>
+> building stuff
+>
+> building up this everything by yourself
+>
+> and like these huge
+>
+> huge bases are really achievements from
+>
+> our players
+>
+> doing all that stuff and uh it's it's
+>
+> scary to remove
+>
+> that aspect of the game because that can
+>
+> really like optimize out the fun another
+>
+> game
+>
+> but we know that it's pretty tedious for
+>
+> a lot of people to do that stuff so we
+>
+> are
+>
+> looking into ways to improve it but i
+>
+> don't know
+>
+> right now what our intentions are um
+>
+> but when we hear you like it's it's not
+>
+> a it's not like a
+>
+> yeah we hear you guys
+>
+> uh and i can't mention i can mention
+>
+> somebody mentioned like the
+>
+> the mods that exist we have looked at
+>
+> the mods and we don't really like the
+>
+> solution
+>
+> um that mods have made
+>
+> um because we feel like like i said
+>
+> before it really optimized like the mods
+>
+> the way they are built right now they
+>
+> optimize out the fun out of the game for
+>
+> us
+>
+> um the way we perceive it and also like
+>
+> i know a lot of people gonna be like no
+>
+> but a lot of people download the mods
+>
+> but
+>
+> our core game player base do not
+>
+> download those mods um
+>
+> so it's it's a it's a shitty answer but
+>
+> uh
+>
+> yeah it's it's like there's always that
+>
+> case when you know we have our opinions
+>
+> of what we don't want to do with the
+>
+> game and what we think are best for the
+>
+> game
+>
+> and then you know you guys definitely
+>
+> have good suggestions too it's not that
+>
+> we're saying like
+>
+> our no our mega brains are we're much
+>
+> since like our mega brains have the
+>
+> right answers
+>
+> and like this is how a game is supposed
+>
+> to be uh
+>
+> every design decision affects a lot of
+>
+> the game
+>
+> and uh it's it's um
+>
+> it's really tricky it's really tricky so
+>
+> that's why we're a bit hesitant to just
+>
+> like throw in
+>
+> you know multi build modes and stuff
+>
+> like that
+>
+> so yeah
+
+
 ## [February 2nd, 2021 Livestream Q&A: Mk.6 Belt in the next Update?](https://archive.satisfactory.video/transcriptions/yt-DpT2LNED0wk) https://www.youtube.com/watch?v=DpT2LNED0wk
 
 ### Asked previously:
@@ -3107,6 +3327,49 @@
 > so yeah pretty much that
 
 
+## [January 19th, 2021 Livestream Q&A: Sink that accepts Liquids or Gas?](https://archive.satisfactory.video/transcriptions/yt-SskXA-lxaCI) https://www.youtube.com/watch?v=SskXA-lxaCI
+
+### Asked previously:
+* [October 27th, 2020 Livestream Q&A: Fluid Sink ever going to happen?](https://archive.satisfactory.video/transcriptions/yt-j79cJptq5h8) https://www.youtube.com/watch?v=j79cJptq5h8
+* [September 1st, 2020 Livestream Q&A: Will there be something like the Resource Sink but for Fluids?](https://archive.satisfactory.video/transcriptions/yt-nT4pfUlmZBs) https://www.youtube.com/watch?v=nT4pfUlmZBs
+* [August 25th, 2020 Livestream Q&A: Is the sink going to accept liquids in the future?](https://archive.satisfactory.video/transcriptions/yt-k6ZS5wzlNKs) https://www.youtube.com/watch?v=k6ZS5wzlNKs
+### Transcript
+
+> sink that accepts liquids or gas
+>
+> so the sink will not be able to accept
+>
+> like like
+>
+> the liquid in its liquid form but if you
+>
+> package it and if you package gas
+>
+> then yes the sink will be able to accept
+>
+> it
+>
+> and that's i i'm assuming that's going
+>
+> to work the same way with gases i
+>
+> i don't know for sure but i like that's
+>
+> the way it worked with
+>
+> that's the way it works with liquids so
+>
+> i'm assuming that's how it's going to
+>
+> work with gases as well
+>
+> um so no change to the sink
+>
+> itself but you can still um
+>
+> sync like the package by a variety of it
+
+
 ## [August 25th, 2020 Livestream Q&A: State of things = 🤷?](https://archive.satisfactory.video/transcriptions/yt-5SH9eySqDzU) https://www.youtube.com/watch?v=5SH9eySqDzU
 
 ### Asked previously:
@@ -3273,6 +3536,40 @@
 > impossible
 
 
+## [February 2nd, 2021 Livestream Q&A: Train Collisions?](https://archive.satisfactory.video/transcriptions/yt-rCOD5becD6M) https://www.youtube.com/watch?v=rCOD5becD6M
+
+### Asked previously:
+* [January 12th, 2021 Livestream Q&A: Any new information regarding Signal system for Trains?](https://archive.satisfactory.video/transcriptions/yt-Bu2TPRFV_2o) https://www.youtube.com/watch?v=Bu2TPRFV_2o
+* August 18th, 2020 Livestream Q&A: Any thoughts on whether Trains will ever collide? https://clips.twitch.tv/SaltyJazzyPasta4Head
+### Transcript
+
+> um probably answer this question before
+>
+> train collisions train collisions is
+>
+> something that we
+>
+> i believe we will be adding at some
+>
+> point in the future
+
+
+## [January 19th, 2021 Livestream Q&A: Underwater Biome?](https://archive.satisfactory.video/transcriptions/yt-loc82lE_XK4) https://www.youtube.com/watch?v=loc82lE_XK4
+
+### Asked previously:
+* [August 25th, 2020 Livestream Q&A: Underwater biome when?](https://archive.satisfactory.video/transcriptions/yt-pKZc4ciFu6Q) https://www.youtube.com/watch?v=pKZc4ciFu6Q
+* [December 19th, 2019 Livestream Q&A: Underwater Worlds?](https://archive.satisfactory.video/transcriptions/yt-QXK9y3pnWGg) https://www.youtube.com/watch?v=QXK9y3pnWGg
+### Transcript
+
+> underwater biomes same thing we're not
+>
+> going to add any new biomes
+>
+> we're going to improve the biomes we
+>
+> have because the biomes aren't done
+
+
 ## February 2nd, 2021 Livestream Q&A: Vehicle Painting? https://www.youtube.com/watch?v=aIproPDd8V0
 
 ### Asked previously:
@@ -3297,6 +3594,28 @@
 > not something that we
 >
 > uh are prioritizing vr no
+
+
+## [January 12th, 2021 Livestream Q&A: What's happening with S.A.M. Ore?](https://archive.satisfactory.video/transcriptions/yt-f0Z9VIAK5Iw) https://www.youtube.com/watch?v=f0Z9VIAK5Iw
+
+### Asked previously:
+* [October 20th, 2020 Livestream Q&A: What's the secret behind S.A.M. Ore?](https://archive.satisfactory.video/transcriptions/yt-tXqk1eu0-BQ) https://www.youtube.com/watch?v=tXqk1eu0-BQ
+* [August 25th, 2020 Livestream Q&A: Please tell me Update 4 will use S.A.M. Ore](https://archive.satisfactory.video/transcriptions/yt--b2L_nlW_Fo) https://www.youtube.com/watch?v=-b2L_nlW_Fo
+* August 18th, 2020 Livestream Q&A: S.A.M. Ore uses? https://clips.twitch.tv/BovineDistinctOrangeRiPepperonis
+* [February 11th, 2020 Livestream Q&A: S.A.M. Ore?](https://archive.satisfactory.video/transcriptions/yt-6r-s6Hk7QwY) https://www.youtube.com/watch?v=6r-s6Hk7QwY
+* [December 19th, 2019 Livestream Q&A: S.A.M. Ore?](https://archive.satisfactory.video/transcriptions/yt-irJw2itG4wM) https://www.youtube.com/watch?v=irJw2itG4wM
+* [March 9th, 2019 Livestream Q&A: What do you use S.A.M. Ore for?](https://archive.satisfactory.video/transcriptions/yt-jdOQXcBiSH0) https://www.youtube.com/watch?v=jdOQXcBiSH0
+### Transcript
+
+> years old okay more questions so what's
+>
+> happening with sam moore that's gonna
+>
+> it's tied to the story you'll learn more
+>
+> about that in the future when the story
+>
+> comes out
 
 
 ## [August 25th, 2020 Livestream Q&A: What about holes for Foundations?](https://archive.satisfactory.video/transcriptions/yt-fufH5ltdn7E) https://www.youtube.com/watch?v=fufH5ltdn7E
@@ -3574,6 +3893,7 @@
 ### Asked previously:
 * [January 26th, 2021 Livestream Q&A: Do Mercer Spheres and Somersloops get a place in Update 4?](https://archive.satisfactory.video/transcriptions/yt--N0atMiN9dM) https://www.youtube.com/watch?v=-N0atMiN9dM
 * [January 26th, 2021 Livestream Q&A: News for the Work In Progress collectables for anything in Update 4?](https://archive.satisfactory.video/transcriptions/yt-5vlFsF0dm3E) https://www.youtube.com/watch?v=5vlFsF0dm3E
+* [January 12th, 2021 Livestream Q&A: Mercer Spheres and Somersloops?](https://archive.satisfactory.video/transcriptions/yt-99pdUN5glzw) https://www.youtube.com/watch?v=99pdUN5glzw
 * [November 17th, 2020 Livestream Q&A: Any idea when Somersloop, Mercer Sphere, S.A.M. Ore will actually be implemented?](https://archive.satisfactory.video/transcriptions/yt-ccmgnLh1oO0) https://www.youtube.com/watch?v=ccmgnLh1oO0
 * [October 6th, 2020 Livestream Q&A: When are these Work In Progress (WIP) items going to be used?](https://archive.satisfactory.video/transcriptions/yt-bmRdzV3-wJI) https://www.youtube.com/watch?v=bmRdzV3-wJI
 ### Transcript
@@ -3591,6 +3911,33 @@
 > uh yeah it'll have something to do with
 >
 > the story when that comes along
+
+
+## [January 12th, 2021 Livestream Q&A: When will Merch shipping worldwide be possible?](https://archive.satisfactory.video/transcriptions/yt-iyFXDTn2YPM) https://www.youtube.com/watch?v=iyFXDTn2YPM
+
+### Asked previously:
+* [December 15th, 2020 Livestream Q&A: Will we get a Shop in Europe - the shipping costs are a bit spicy?](https://archive.satisfactory.video/transcriptions/yt-PYyvu8feZqA) https://www.youtube.com/watch?v=PYyvu8feZqA
+* [October 6th, 2020 Livestream Q&A: Any Update on Merch shipping alternatives?](https://archive.satisfactory.video/transcriptions/yt-kj_vdE5-CEI) https://www.youtube.com/watch?v=kj_vdE5-CEI
+* [September 22nd, 2020 Livestream Q&A: Any information on Merch shipping to EU/rest of the world?](https://archive.satisfactory.video/transcriptions/yt-hAEInvMcQfk) https://www.youtube.com/watch?v=hAEInvMcQfk
+### Transcript
+
+> slash pickup when will
+>
+> not shipping worldwide be possible it's
+>
+> already possible except you kind of get
+>
+> scammed with the shipping if you're
+>
+> outside of the uh north america
+>
+> uh and we're working on finding a way to
+>
+> get another store for the rest of the
+>
+> world
+>
+> too for eu etc we're working on it
 
 
 ## [February 9th, 2021 Livestream Q&A: When will we be able to get different character customisations?](https://archive.satisfactory.video/transcriptions/yt-x55_Zt2OLQ4) https://www.youtube.com/watch?v=x55_Zt2OLQ4
@@ -4330,6 +4677,78 @@
 > uh we don't want to increase the size
 >
 > that's the current plan
+
+
+## [January 19th, 2021 Livestream Q&A: Will there be ways to see your total production per minute?](https://archive.satisfactory.video/transcriptions/yt-tHzH3dkTZ4s) https://www.youtube.com/watch?v=tHzH3dkTZ4s
+
+### Asked previously:
+* [November 17th, 2020 Livestream Q&A: Any chance to use the HUB Computer to display the statistics and production of the factory?](https://archive.satisfactory.video/transcriptions/yt-5rVqTHOiwh0) https://www.youtube.com/watch?v=5rVqTHOiwh0
+* [December 19th, 2019 Livestream Q&A: Is there going to be a central computer plant where you can check the whole production?](https://archive.satisfactory.video/transcriptions/yt-Zlq2K0-z0_8) https://www.youtube.com/watch?v=Zlq2K0-z0_8
+### Transcript
+
+> let's see will there be ways to see your
+>
+> total production
+>
+> um per minute blah blah blah or maybe
+>
+> achievements we're getting certain
+>
+> production rates
+>
+> that's something what we've i'm pretty
+>
+> sure we've said that that's going to
+>
+> happen
+>
+> i'm not i'm not i'm sure we've said that
+>
+> but i'm not sure if we said that you
+>
+> know what i mean
+>
+> uh there we want some way to be able to
+>
+> manage
+>
+> to to view that i don't know exactly how
+>
+> we would do that but there is some
+>
+> intention
+>
+> from our part to like make it possible
+>
+> for you to be able to see how
+>
+> performant your factory is essentially
+>
+> but i don't know exactly how that will
+>
+> work
+>
+> and we've seen like the mods that are
+>
+> where
+>
+> like you have you're using like the
+>
+> object scanner to like look at the
+>
+> the belts and stuff like that um
+>
+> we've seen that and and we're gonna like
+>
+> yeah we have some ideas i don't know
+>
+> exactly what we've
+>
+> uh committed to but eventually i don't
+>
+> think it's gonna be up for
+>
+> four but maybe in the future
 
 
 ## [February 2nd, 2021 Livestream Q&A: Will we get two character slots for Jetpacks and Blade Runners](https://archive.satisfactory.video/transcriptions/yt-YKIN_NCGDpo) https://www.youtube.com/watch?v=YKIN_NCGDpo

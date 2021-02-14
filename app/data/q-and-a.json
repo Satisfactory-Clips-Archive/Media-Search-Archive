@@ -59,6 +59,9 @@
             "6DayBMofsHs",
             "b7j3iswXHAc",
             "UK0P7CWe1V4"
+        ],
+        "suggested": [
+            "LZvHStKqoQI"
         ]
     },
     "4acLhZvD1PU": {
@@ -122,7 +125,15 @@
             "yt-rI5kRMSwo5Q,330.36336666666665,499.6992"
         ],
         "suggested": [
-            "yt-Jxh8kvtUuxY,46.3463,56.38966666666667"
+            "5Z5pyzNiaVY",
+            "kGCoxYYhnBs",
+            "KQmKBaywHHw",
+            "p3AQTmE2XoQ",
+            "pSGEDxxLn2E",
+            "wEzD5wugI4Y",
+            "xY2wDhyE7ZE",
+            "yt-Jxh8kvtUuxY,46.3463,56.38966666666667",
+            "_MeCW-2ol-c"
         ]
     },
     "e97jfbPmKeY": {
@@ -237,13 +248,25 @@
             "environment\/resources",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
+        "duplicates": [
+            "5rp-Y1WsPnA"
+        ],
         "seealso": [
             "pSGEDxxLn2E"
         ],
         "suggested": [
             "5Z5pyzNiaVY",
+            "ezGse7K-fWI",
             "kGCoxYYhnBs",
-            "xY2wDhyE7ZE"
+            "p3AQTmE2XoQ",
+            "vlDuVpHyfVs",
+            "wEzD5wugI4Y",
+            "xY2wDhyE7ZE",
+            "yt-Jxh8kvtUuxY,46.3463,56.38966666666667",
+            "yt-Jxh8kvtUuxY,56.38966666666667,100.56713333333333",
+            "yt-Jxh8kvtUuxY,136.00253333333333,187.084505",
+            "yt-rI5kRMSwo5Q,330.36336666666665,499.6992",
+            "_MeCW-2ol-c"
         ]
     },
     "SRnmr4oaE0k": {
@@ -303,6 +326,13 @@
         "seealso": [
             "WQa938_K6SY"
         ],
+        "suggested": [
+            "-NZqqfxHzhQ",
+            "nat8VwaykqE",
+            "s_F-RlFKxzs",
+            "twjZc7ImIts",
+            "xIfzyBihoI4"
+        ],
         "duplicatedby": "9dX8qNTbRvo"
     },
     "R9wpbVHJggc": {
@@ -351,6 +381,9 @@
             "UYJHOPt6tTw",
             "yRJNzDLMJZU",
             "Z3VztvcNSI8"
+        ],
+        "suggested": [
+            "NGyFncgCUyo"
         ]
     },
     "dO0LLPFQ20s": {
@@ -494,8 +527,17 @@
             "pSGEDxxLn2E"
         ],
         "suggested": [
+            "ezGse7K-fWI",
             "KQmKBaywHHw",
-            "xY2wDhyE7ZE"
+            "p3AQTmE2XoQ",
+            "vlDuVpHyfVs",
+            "wEzD5wugI4Y",
+            "xY2wDhyE7ZE",
+            "yt-Jxh8kvtUuxY,46.3463,56.38966666666667",
+            "yt-Jxh8kvtUuxY,56.38966666666667,100.56713333333333",
+            "yt-Jxh8kvtUuxY,136.00253333333333,187.084505",
+            "yt-rI5kRMSwo5Q,330.36336666666665,499.6992",
+            "_MeCW-2ol-c"
         ]
     },
     "A41woUB_6oI": {
@@ -639,6 +681,7 @@
             "0THShqltbYM"
         ],
         "suggested": [
+            "IiJqms2FdS4",
             "sdo0vTu0RoE"
         ]
     },
@@ -731,7 +774,8 @@
         ],
         "suggested": [
             "GZL-xNTeXlI",
-            "JnR3oHKDQi0"
+            "JnR3oHKDQi0",
+            "ZYjlQtfwJj0"
         ]
     },
     "3fNjN1FjhPU": {
@@ -869,9 +913,18 @@
             "xY2wDhyE7ZE"
         ],
         "suggested": [
+            "ezGse7K-fWI",
             "kGCoxYYhnBs",
             "KQmKBaywHHw",
-            "pSGEDxxLn2E"
+            "p3AQTmE2XoQ",
+            "pSGEDxxLn2E",
+            "vlDuVpHyfVs",
+            "wEzD5wugI4Y",
+            "yt-Jxh8kvtUuxY,46.3463,56.38966666666667",
+            "yt-Jxh8kvtUuxY,56.38966666666667,100.56713333333333",
+            "yt-Jxh8kvtUuxY,136.00253333333333,187.084505",
+            "yt-rI5kRMSwo5Q,330.36336666666665,499.6992",
+            "_MeCW-2ol-c"
         ]
     },
     "WQa938_K6SY": {
@@ -881,8 +934,16 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "technology\/unreal-engine"
         ],
+        "replaces": [
+            "GaVr69FiXw8"
+        ],
         "suggested": [
-            "RCaCXVVAtb0"
+            "-NZqqfxHzhQ",
+            "nat8VwaykqE",
+            "RCaCXVVAtb0",
+            "s_F-RlFKxzs",
+            "twjZc7ImIts",
+            "xIfzyBihoI4"
         ]
     },
     "i585FS0U7hY": {
@@ -918,7 +979,8 @@
         "suggested": [
             "6DayBMofsHs",
             "b7j3iswXHAc",
-            "k-UDNJY0PWA"
+            "k-UDNJY0PWA",
+            "LZvHStKqoQI"
         ]
     },
     "a49jT6lb3ZU": {
@@ -983,6 +1045,9 @@
             "w0h08ctpsz4",
             "ww5wd63vgFo",
             "yqYVuPOQIWc"
+        ],
+        "suggested": [
+            "o1IfznnrGgc"
         ]
     },
     "s0KzZA300xo": {
@@ -1091,6 +1156,7 @@
         "duplicates": [
             "-N0atMiN9dM",
             "5vlFsF0dm3E",
+            "99pdUN5glzw",
             "bmRdzV3-wJI",
             "ccmgnLh1oO0"
         ]
@@ -1312,6 +1378,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
         "suggested": [
+            "o1IfznnrGgc",
             "pY14Dudonjc",
             "r7i2CQaxnWc",
             "sHRjG63JNuQ",
@@ -1391,6 +1458,7 @@
         ],
         "suggested": [
             "1NTKmQqoxNs",
+            "o1IfznnrGgc",
             "pY14Dudonjc",
             "sHRjG63JNuQ",
             "w0h08ctpsz4",
@@ -1444,6 +1512,7 @@
         ],
         "suggested": [
             "1NTKmQqoxNs",
+            "o1IfznnrGgc",
             "r7i2CQaxnWc",
             "sHRjG63JNuQ",
             "w0h08ctpsz4",
@@ -1781,6 +1850,7 @@
             "features\/transportation\/trains\/train-signals"
         ],
         "duplicates": [
+            "Bu2TPRFV_2o",
             "tc-SaltyJazzyPasta4Head"
         ],
         "seealso": [
@@ -1938,8 +2008,12 @@
             "features\/crafting",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
+        "duplicates": [
+            "mwrYWPHr4jk"
+        ],
         "seealso": [
-            "P7JCgZ-mLDE"
+            "P7JCgZ-mLDE",
+            "wN7_0V9lRfk"
         ]
     },
     "wN7_0V9lRfk": {
@@ -1949,6 +2023,10 @@
             "features\/crafting",
             "features\/tiers\/tier-7",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "suggested": [
+            "P7JCgZ-mLDE",
+            "U7q88D_G0Ac"
         ]
     },
     "Y9m96T9a5qU": {
@@ -2088,6 +2166,7 @@
             "k-UDNJY0PWA"
         ],
         "suggested": [
+            "LZvHStKqoQI",
             "UK0P7CWe1V4"
         ]
     },
@@ -2212,6 +2291,7 @@
         ],
         "suggested": [
             "1NTKmQqoxNs",
+            "o1IfznnrGgc",
             "pY14Dudonjc",
             "r7i2CQaxnWc",
             "sHRjG63JNuQ",
@@ -2505,6 +2585,9 @@
             "environment\/biomes",
             "environment\/world-map"
         ],
+        "duplicates": [
+            "5v0_pFbQLF4"
+        ],
         "seealso": [
             "JMQotRaN9Bs"
         ]
@@ -2576,6 +2659,7 @@
         ],
         "suggested": [
             "1NTKmQqoxNs",
+            "o1IfznnrGgc",
             "pY14Dudonjc",
             "r7i2CQaxnWc",
             "sHRjG63JNuQ",
@@ -2652,7 +2736,8 @@
             "0THShqltbYM"
         ],
         "suggested": [
-            "DipBPjZadHU"
+            "DipBPjZadHU",
+            "IiJqms2FdS4"
         ]
     },
     "uO3EnSW8Qqo": {
@@ -2936,6 +3021,12 @@
         ],
         "duplicates": [
             "BE6kB3nmSdM"
+        ],
+        "suggested": [
+            "bk2ojhuil-g",
+            "IFxnvuYEVtk",
+            "Njv_PJT3B2g",
+            "XcfIWDujsxA"
         ]
     },
     "F90s1pV1WWY": {
@@ -3032,6 +3123,9 @@
         "topics": [
             "technology\/user-interface"
         ],
+        "duplicates": [
+            "NStZ-wKVHYc"
+        ],
         "seealso": [
             "e-no7l9HuqE"
         ]
@@ -3093,6 +3187,9 @@
         "date": "2021-01-19",
         "topics": [
             "features\/buildables\/conveyor-belts"
+        ],
+        "duplicates": [
+            "nSC4C_h1ONo"
         ],
         "seealso": [
             "7G0wdPB4X-c",
@@ -3203,7 +3300,8 @@
             "hq02irf8xGM",
             "PGEl3bXKEnw",
             "tX8VDBudtuI",
-            "UhehbJ9kR2c"
+            "UhehbJ9kR2c",
+            "ZYjlQtfwJj0"
         ]
     },
     "SsjiubBz5zs": {
@@ -3238,6 +3336,12 @@
         "date": "2021-01-19",
         "topics": [
             "off-topic"
+        ],
+        "seealso": [
+            "wvvaIdmUTT0"
+        ],
+        "suggested": [
+            "1oMDAPZ2bZ4"
         ]
     },
     "2l7uHjYr2v4": {
@@ -3279,6 +3383,9 @@
             "features\/fluids",
             "features\/fluids\/pipes",
             "features\/gases"
+        ],
+        "duplicates": [
+            "3A5iYkto5W0"
         ]
     },
     "RRo4HMCuIxc": {
@@ -3399,8 +3506,10 @@
         "topics": [
             "features\/planned-features\/signs"
         ],
+        "seealso": [
+            "RAYufEKcGLk"
+        ],
         "suggested": [
-            "RAYufEKcGLk",
             "tc-ArtisticTrustworthyHamOSkomodo"
         ]
     },
@@ -3429,6 +3538,23 @@
             "features\/equipment\/jetpack",
             "features\/transportation\/vehicles\/tractor",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "KQmKBaywHHw",
+            "yt-Jxh8kvtUuxY,136.00253333333333,187.084505"
+        ],
+        "suggested": [
+            "5Z5pyzNiaVY",
+            "ezGse7K-fWI",
+            "kGCoxYYhnBs",
+            "p3AQTmE2XoQ",
+            "pSGEDxxLn2E",
+            "vlDuVpHyfVs",
+            "xY2wDhyE7ZE",
+            "yt-Jxh8kvtUuxY,46.3463,56.38966666666667",
+            "yt-Jxh8kvtUuxY,56.38966666666667,100.56713333333333",
+            "yt-rI5kRMSwo5Q,330.36336666666665,499.6992",
+            "_MeCW-2ol-c"
         ]
     },
     "Z0H06UJbb4E": {
@@ -3440,6 +3566,21 @@
             "mods\/mods-vs-features",
             "off-topic\/factorio",
             "technology\/user-interface"
+        ],
+        "duplicates": [
+            "8Pm6KLejrOQ",
+            "tc-SoftBovineArmadilloNerfRedBlaster",
+            "TdmIe3EM_B8",
+            "zfdV2qIDHP4"
+        ],
+        "seealso": [
+            "0e_pXEulvY8",
+            "I5HR5ocUX9o",
+            "RPLvCZvTNxg",
+            "T1w4TV8Y8Lk",
+            "tc-NimbleAgitatedPeanutNotLikeThis",
+            "uUFy6qyZLKo",
+            "XGlE_HTHTlA"
         ]
     },
     "6DayBMofsHs": {
@@ -3452,6 +3593,9 @@
         ],
         "seealso": [
             "b7j3iswXHAc",
+            "LZvHStKqoQI"
+        ],
+        "suggested": [
             "k-UDNJY0PWA",
             "UK0P7CWe1V4"
         ]
@@ -3461,6 +3605,12 @@
         "date": "2021-01-19",
         "topics": [
             "features\/fluids\/valves"
+        ],
+        "replaces": [
+            "tc-VainArtsyLeopardUncleNox"
+        ],
+        "seealso": [
+            "3GXsZcsWBzc"
         ]
     },
     "2LczuvKevK4": {
@@ -3486,6 +3636,11 @@
             "features\/buildings\/awesome-sink",
             "features\/fluids",
             "features\/gases"
+        ],
+        "duplicates": [
+            "j79cJptq5h8",
+            "k6ZS5wzlNKs",
+            "nT4pfUlmZBs"
         ]
     },
     "iwID_cZx20g": {
@@ -3516,6 +3671,16 @@
         "date": "2021-01-19",
         "topics": [
             "environment\/biomes\/unplanned-biomes\/underwater"
+        ],
+        "duplicates": [
+            "pKZc4ciFu6Q",
+            "QXK9y3pnWGg"
+        ],
+        "seealso": [
+            "bz7PJ3VF6FE",
+            "nQplpfNLru8",
+            "tc-NiceDreamyGarbageBuddhaBar",
+            "tc-RelievedCleanBibimbapDancingBanana"
         ]
     },
     "PGEl3bXKEnw": {
@@ -3524,13 +3689,16 @@
         "topics": [
             "features\/unplanned-features\/base-defense"
         ],
+        "seealso": [
+            "9dWWC0mFitU"
+        ],
         "suggested": [
-            "9dWWC0mFitU",
             "GZL-xNTeXlI",
             "hq02irf8xGM",
             "JnR3oHKDQi0",
             "tX8VDBudtuI",
-            "UhehbJ9kR2c"
+            "UhehbJ9kR2c",
+            "ZYjlQtfwJj0"
         ]
     },
     "Ik8K1G6lGyM": {
@@ -3540,6 +3708,9 @@
             "features\/buildings\/resource-well-extractor",
             "features\/buildings\/resource-well-pressurizer",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "MaHhdhMI_38"
         ]
     },
     "MaHhdhMI_38": {
@@ -3549,6 +3720,9 @@
             "features\/buildings\/resource-well-extractor",
             "features\/buildings\/resource-well-pressurizer",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "Ik8K1G6lGyM"
         ]
     },
     "Xi9S_sVklB8": {
@@ -3558,6 +3732,11 @@
             "environment\/world-map",
             "features\/buildables\/foundations",
             "technology\/user-interface"
+        ],
+        "seealso": [
+            "AgdOGd32U3w",
+            "DTZz5jdnn_s",
+            "SYEIsZ6KVgU"
         ]
     },
     "JpSV5eDGEJw": {
@@ -3568,9 +3747,11 @@
             "features\/transportation\/vehicles",
             "technology\/unreal-engine"
         ],
+        "seealso": [
+            "bfXUQNNIPRY"
+        ],
         "suggested": [
             "79CHl9qFo90",
-            "bfXUQNNIPRY",
             "Xdrr6IazPTg"
         ]
     },
@@ -3598,14 +3779,25 @@
             "environment\/resources\/oil",
             "features\/fluids"
         ],
+        "duplicates": [
+            "khEicU2JVzY"
+        ],
         "seealso": [
             "vlDuVpHyfVs",
             "yt-Jxh8kvtUuxY,56.38966666666667,100.56713333333333",
             "yt-rI5kRMSwo5Q,330.36336666666665,499.6992"
         ],
         "suggested": [
+            "5Z5pyzNiaVY",
+            "kGCoxYYhnBs",
+            "KQmKBaywHHw",
+            "p3AQTmE2XoQ",
+            "pSGEDxxLn2E",
+            "wEzD5wugI4Y",
+            "xY2wDhyE7ZE",
             "yt-Jxh8kvtUuxY,46.3463,56.38966666666667",
-            "yt-Jxh8kvtUuxY,136.00253333333333,187.084505"
+            "yt-Jxh8kvtUuxY,136.00253333333333,187.084505",
+            "_MeCW-2ol-c"
         ]
     },
     "xmZ--a6nkQU": {
@@ -3622,6 +3814,17 @@
         "topics": [
             "features\/gases",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "9dWWC0mFitU"
+        ],
+        "suggested": [
+            "GZL-xNTeXlI",
+            "hq02irf8xGM",
+            "JnR3oHKDQi0",
+            "PGEl3bXKEnw",
+            "tX8VDBudtuI",
+            "UhehbJ9kR2c"
         ]
     },
     "-nsfNFSevf4": {
@@ -3664,6 +3867,12 @@
             "features\/equipment",
             "features\/gases",
             "features\/pioneer"
+        ],
+        "seealso": [
+            "b1pzjEAzXOU"
+        ],
+        "suggested": [
+            "3gHStWkd0oE"
         ]
     },
     "b1pzjEAzXOU": {
@@ -3673,6 +3882,12 @@
             "features\/gases",
             "features\/transportation\/hyper-tubes",
             "technology\/user-interface"
+        ],
+        "seealso": [
+            "2zz08zzXTCU"
+        ],
+        "suggested": [
+            "3gHStWkd0oE"
         ]
     },
     "p3AQTmE2XoQ": {
@@ -3681,6 +3896,23 @@
         "topics": [
             "features\/gases",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "yt-rI5kRMSwo5Q,330.36336666666665,499.6992"
+        ],
+        "suggested": [
+            "5Z5pyzNiaVY",
+            "ezGse7K-fWI",
+            "kGCoxYYhnBs",
+            "KQmKBaywHHw",
+            "pSGEDxxLn2E",
+            "vlDuVpHyfVs",
+            "wEzD5wugI4Y",
+            "xY2wDhyE7ZE",
+            "yt-Jxh8kvtUuxY,46.3463,56.38966666666667",
+            "yt-Jxh8kvtUuxY,56.38966666666667,100.56713333333333",
+            "yt-Jxh8kvtUuxY,136.00253333333333,187.084505",
+            "_MeCW-2ol-c"
         ]
     },
     "mwrYWPHr4jk": {
@@ -3688,7 +3920,8 @@
         "date": "2021-01-19",
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4"
-        ]
+        ],
+        "duplicatedby": "U7q88D_G0Ac"
     },
     "UoDF7Vl1ZJQ": {
         "title": "Q&A: Will batteries be used alongside factory power?",
@@ -3697,7 +3930,7 @@
             "features\/power-management",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
-        "suggested": [
+        "seealso": [
             "nFRNm35pE-8"
         ]
     },
@@ -3708,6 +3941,10 @@
             "environment\/biomes",
             "environment\/plants",
             "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "IFxnvuYEVtk",
+            "WfU45N1EvQ0"
         ],
         "suggested": [
             "bk2ojhuil-g",
@@ -3721,6 +3958,9 @@
             "features\/buildings\/blender",
             "features\/buildings\/packager",
             "features\/crafting\/fuel"
+        ],
+        "seealso": [
+            "9rPXUN4W5Hg"
         ]
     },
     "3gHStWkd0oE": {
@@ -3730,6 +3970,12 @@
             "features\/equipment",
             "features\/gases",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "2zz08zzXTCU"
+        ],
+        "suggested": [
+            "b1pzjEAzXOU"
         ]
     },
     "K2uidbt0_VE": {
@@ -3739,6 +3985,12 @@
             "features\/buildings\/packager",
             "features\/gases",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "yt-Jxh8kvtUuxY,,46.3463"
+        ],
+        "suggested": [
+            "vsmihiP_Tmg"
         ]
     },
     "Zd9lUkAlJrk": {
@@ -3767,7 +4019,8 @@
         "topics": [
             "environment\/resources\/oil",
             "satisfactory-updates\/pending\/satisfactory-update-4"
-        ]
+        ],
+        "duplicatedby": "ezGse7K-fWI"
     },
     "o-rncE3S1wA": {
         "title": "Q&A: Will some of the AWESOME Store items be integrated into Tiers of the M.A.M.?",
@@ -3783,6 +4036,16 @@
         "date": "2021-01-19",
         "topics": [
             "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "RCaCXVVAtb0"
+        ],
+        "suggested": [
+            "-NZqqfxHzhQ",
+            "nat8VwaykqE",
+            "s_F-RlFKxzs",
+            "twjZc7ImIts",
+            "WQa938_K6SY"
         ]
     },
     "twjZc7ImIts": {
@@ -3792,6 +4055,16 @@
             "satisfactory-updates\/release-builds",
             "technology\/linux",
             "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "RCaCXVVAtb0"
+        ],
+        "suggested": [
+            "-NZqqfxHzhQ",
+            "nat8VwaykqE",
+            "s_F-RlFKxzs",
+            "WQa938_K6SY",
+            "xIfzyBihoI4"
         ]
     },
     "T0jbE_WjQJQ": {
@@ -3808,6 +4081,10 @@
         "topics": [
             "features\/buildings\/the-hub",
             "technology\/user-interface"
+        ],
+        "duplicates": [
+            "5rVqTHOiwh0",
+            "Zlq2K0-z0_8"
         ]
     },
     "pjoG5bBsTKI": {
@@ -3815,6 +4092,10 @@
         "date": "2021-01-19",
         "topics": [
             "features\/buildings\/space-elevator"
+        ],
+        "seealso": [
+            "fbCEIVUNDe0",
+            "MmiaI_vhyI0"
         ]
     },
     "9rPXUN4W5Hg": {
@@ -3824,6 +4105,9 @@
             "features\/buildings\/blender",
             "features\/crafting\/fuel",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "7U9JUf9NUYQ"
         ]
     },
     "_MeCW-2ol-c": {
@@ -3835,6 +4119,23 @@
             "features\/buildings\/resource-well-extractor",
             "features\/tiers",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "ezGse7K-fWI",
+            "vlDuVpHyfVs"
+        ],
+        "suggested": [
+            "5Z5pyzNiaVY",
+            "kGCoxYYhnBs",
+            "KQmKBaywHHw",
+            "p3AQTmE2XoQ",
+            "pSGEDxxLn2E",
+            "wEzD5wugI4Y",
+            "xY2wDhyE7ZE",
+            "yt-Jxh8kvtUuxY,46.3463,56.38966666666667",
+            "yt-Jxh8kvtUuxY,56.38966666666667,100.56713333333333",
+            "yt-Jxh8kvtUuxY,136.00253333333333,187.084505",
+            "yt-rI5kRMSwo5Q,330.36336666666665,499.6992"
         ]
     },
     "P7JCgZ-mLDE": {
@@ -3844,7 +4145,8 @@
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
         "suggested": [
-            "U7q88D_G0Ac"
+            "U7q88D_G0Ac",
+            "wN7_0V9lRfk"
         ],
         "duplicatedby": "awtYncMFbBo"
     },
@@ -3854,6 +4156,13 @@
         "topics": [
             "features\/power-management",
             "features\/power-management\/geothermal-energy"
+        ],
+        "duplicates": [
+            "T7BPQ1ZHeJA"
+        ],
+        "seealso": [
+            "WTfWu44SQ1k",
+            "xFZfkjY3J0c"
         ]
     },
     "3A5iYkto5W0": {
@@ -3863,7 +4172,8 @@
             "environment\/resource-wells",
             "features\/buildings\/resource-well-pressurizer",
             "satisfactory-updates\/pending\/satisfactory-update-4"
-        ]
+        ],
+        "duplicatedby": "OoXaGUS3umo"
     },
     "IumWTbZtoWo": {
         "title": "Q&A: Will you have specialised Gas Buffers?",
@@ -3871,6 +4181,9 @@
         "topics": [
             "features\/gases",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "replaces": [
+            "tc-FitAlertTurtleDogFace"
         ]
     },
     "vsmihiP_Tmg": {
@@ -3880,6 +4193,12 @@
             "features\/gases",
             "features\/power-management",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "yt-Jxh8kvtUuxY,,46.3463"
+        ],
+        "suggested": [
+            "K2uidbt0_VE"
         ]
     },
     "yt-Jxh8kvtUuxY,136.00253333333333,187.084505": {
@@ -3901,10 +4220,18 @@
             "yt-Jxh8kvtUuxY,46.3463,56.38966666666667"
         ],
         "suggested": [
+            "5Z5pyzNiaVY",
             "ezGse7K-fWI",
+            "kGCoxYYhnBs",
+            "KQmKBaywHHw",
+            "p3AQTmE2XoQ",
+            "pSGEDxxLn2E",
             "vlDuVpHyfVs",
+            "wEzD5wugI4Y",
+            "xY2wDhyE7ZE",
             "yt-Jxh8kvtUuxY,56.38966666666667,100.56713333333333",
-            "yt-rI5kRMSwo5Q,330.36336666666665,499.6992"
+            "yt-rI5kRMSwo5Q,330.36336666666665,499.6992",
+            "_MeCW-2ol-c"
         ]
     },
     "NStZ-wKVHYc": {
@@ -3912,7 +4239,8 @@
         "date": "2021-01-12",
         "topics": [
             "technology\/user-interface"
-        ]
+        ],
+        "duplicatedby": "nI31KeD88V8"
     },
     "o1IfznnrGgc": {
         "title": "Q&A: Any early release previews for the update?",
@@ -3920,6 +4248,18 @@
         "topics": [
             "features\/buildings\/blender",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "1NTKmQqoxNs",
+            "pY14Dudonjc",
+            "r7i2CQaxnWc",
+            "sHRjG63JNuQ",
+            "ww5wd63vgFo",
+            "yqYVuPOQIWc"
+        ],
+        "suggested": [
+            "w0h08ctpsz4",
+            "Z-GAgR2VYXk"
         ]
     },
     "Bu2TPRFV_2o": {
@@ -3945,7 +4285,8 @@
             "TjSMwjueGc8",
             "V-OVvjoUAmg",
             "WQH5cWS3s2s"
-        ]
+        ],
+        "duplicatedby": "rCOD5becD6M"
     },
     "QvTjwyhFvGQ": {
         "title": "Q&A: Are there any plans to add Lights inside the factory?",
@@ -3960,6 +4301,9 @@
         "date": "2021-01-12",
         "topics": [
             "technology\/user-interface"
+        ],
+        "seealso": [
+            "jJOvimJ-Jcc"
         ]
     },
     "Keprp2vxOM8": {
@@ -3985,6 +4329,9 @@
         "date": "2021-01-12",
         "topics": [
             "technology\/unreal-engine"
+        ],
+        "duplicates": [
+            "LUM8i_wyJ-Y"
         ]
     },
     "QViQ--AWYjY": {
@@ -4008,6 +4355,13 @@
         "date": "2021-01-12",
         "topics": [
             "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "sdo0vTu0RoE"
+        ],
+        "suggested": [
+            "0THShqltbYM",
+            "DipBPjZadHU"
         ]
     },
     "qbaev-b4lbQ": {
@@ -4016,13 +4370,27 @@
         "topics": [
             "community",
             "localisation"
-        ]
+        ],
+        "seealso": [
+            "xpzqQntBUgw"
+        ],
+        "duplicatedby": "uLblaRDOX4Y"
     },
     "s_F-RlFKxzs": {
         "title": "Q&A: Is new stuff still being created for Update 4 or just polishing and bug-fixing at this point?",
         "date": "2021-01-12",
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "WQa938_K6SY"
+        ],
+        "suggested": [
+            "-NZqqfxHzhQ",
+            "nat8VwaykqE",
+            "RCaCXVVAtb0",
+            "twjZc7ImIts",
+            "xIfzyBihoI4"
         ]
     },
     "MwKAp32wO_A": {
@@ -4040,13 +4408,17 @@
             "environment\/resources\/mercer-sphere",
             "environment\/resources\/somersloop",
             "satisfactory-updates\/pending\/satisfactory-1-0"
-        ]
+        ],
+        "duplicatedby": "1_qy-PSFKO8"
     },
     "8wGU5mxm-bY": {
         "title": "Q&A: Model of the Explorer seems incomplete?",
         "date": "2021-01-12",
         "topics": [
             "features\/transportation\/vehicles\/explorer"
+        ],
+        "seealso": [
+            "yt-IxoCzb2M0vQ,358.2,424.68"
         ]
     },
     "-NZqqfxHzhQ": {
@@ -4055,6 +4427,19 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "technology\/unreal-engine"
+        ],
+        "replaces": [
+            "PVf-pBNYO_M"
+        ],
+        "seealso": [
+            "nat8VwaykqE",
+            "WQa938_K6SY"
+        ],
+        "suggested": [
+            "RCaCXVVAtb0",
+            "s_F-RlFKxzs",
+            "twjZc7ImIts",
+            "xIfzyBihoI4"
         ]
     },
     "-IYD97gEt4w": {
@@ -4068,13 +4453,35 @@
     "iqGA8u7MmMM": {
         "title": "Q&A: Now that you have big boy office are you planning on hiring a lot more people to fill it out?",
         "date": "2021-01-12",
-        "topics": []
+        "topics": [],
+        "duplicates": [
+            "KO7cDlkMYxM"
+        ]
     },
     "NGyFncgCUyo": {
         "title": "Q&A: Please give us tips to decrease\/avoid Multiplayer delays?",
         "date": "2021-01-12",
         "topics": [
             "features\/multiplayer"
+        ],
+        "seealso": [
+            "tc-RealPrettiestKoalaBloodTrail"
+        ],
+        "suggested": [
+            "1NZKzrxG2yE",
+            "1RgR6JDSoPg",
+            "47gzhAEWkFM",
+            "hrwqrs89c4s",
+            "KGmOM7dLT84",
+            "l58eeCBeEpU",
+            "pEq7XWO3gCA",
+            "QcD9eKlgte0",
+            "QdMnTdqRxaE",
+            "R9wpbVHJggc",
+            "t9hoNpC4-Ik",
+            "UYJHOPt6tTw",
+            "yRJNzDLMJZU",
+            "Z3VztvcNSI8"
         ]
     },
     "TdmIe3EM_B8": {
@@ -4083,7 +4490,8 @@
         "topics": [
             "features\/buildables\/foundations",
             "features\/unplanned-features\/mass-building"
-        ]
+        ],
+        "duplicatedby": "Z0H06UJbb4E"
     },
     "64xmTN-rhbs": {
         "title": "Q&A: The game is not done until I can flush the toilet?",
@@ -4121,7 +4529,8 @@
         "date": "2021-01-12",
         "topics": [
             "features\/fluids"
-        ]
+        ],
+        "duplicatedby": "KQmKBaywHHw"
     },
     "8-vsYNedzEw": {
         "title": "Q&A: Update 4 Release Date",
@@ -4136,6 +4545,9 @@
         "date": "2021-01-12",
         "topics": [
             "features\/save-system"
+        ],
+        "seealso": [
+            "csjtm2DtURs"
         ]
     },
     "f0Z9VIAK5Iw": {
@@ -4144,6 +4556,21 @@
         "topics": [
             "environment\/resources\/sam-ore",
             "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "duplicates": [
+            "-b2L_nlW_Fo",
+            "6r-s6Hk7QwY",
+            "irJw2itG4wM",
+            "jdOQXcBiSH0",
+            "tc-BovineDistinctOrangeRiPepperonis",
+            "tXqk1eu0-BQ"
+        ],
+        "seealso": [
+            "85XNSiDpeZw",
+            "bmRdzV3-wJI",
+            "ccmgnLh1oO0",
+            "tc-InventiveBillowingEggPMSTwin",
+            "vBGfC7j2AyI"
         ]
     },
     "9tdYBCwd5no": {
@@ -4153,6 +4580,9 @@
             "community",
             "mods",
             "mods\/ficsit-networks"
+        ],
+        "seealso": [
+            "0mvgvUhbUuI"
         ]
     },
     "47XUYwkEE-0": {
@@ -4161,6 +4591,9 @@
         "topics": [
             "coffee-stainers\/jace",
             "off-topic"
+        ],
+        "seealso": [
+            "LRsn8Qz3fms"
         ]
     },
     "LRsn8Qz3fms": {
@@ -4169,6 +4602,9 @@
         "topics": [
             "coffee-stainers\/jace",
             "off-topic\/pizza"
+        ],
+        "seealso": [
+            "47XUYwkEE-0"
         ]
     },
     "iyFXDTn2YPM": {
@@ -4176,6 +4612,14 @@
         "date": "2021-01-12",
         "topics": [
             "merch"
+        ],
+        "duplicates": [
+            "hAEInvMcQfk",
+            "kj_vdE5-CEI",
+            "PYyvu8feZqA"
+        ],
+        "seealso": [
+            "dPyS44dffR8"
         ]
     },
     "5v0_pFbQLF4": {
@@ -4184,12 +4628,19 @@
         "topics": [
             "environment\/biomes",
             "environment\/world-map"
-        ]
+        ],
+        "duplicatedby": "sV-kvBvlTXc"
     },
     "wvvaIdmUTT0": {
         "title": "Q&A: Why no partner with Twitch?",
         "date": "2021-01-12",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "1oMDAPZ2bZ4"
+        ],
+        "suggested": [
+            "CNd_Z6vheZE"
+        ]
     },
     "GaVr69FiXw8": {
         "title": "Q&A: Will there be any minor releases between now and Update 4?",
@@ -4197,14 +4648,16 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "technology\/unreal-engine"
-        ]
+        ],
+        "replacedby": "WQa938_K6SY"
     },
     "nSC4C_h1ONo": {
         "title": "Q&A: Any thought to allow Splitters to regulate the flow of items per minute?",
         "date": "2020-12-15",
         "topics": [
             "features\/buildables\/conveyor-belts"
-        ]
+        ],
+        "duplicatedby": "PGyc_YN4DaM"
     },
     "57Cc22ZK5aw": {
         "title": "Q&A: Are there hidden secrets and cameos in the game?",
@@ -4231,7 +4684,8 @@
     "KO7cDlkMYxM": {
         "title": "Q&A: Are you hiring new devs?",
         "date": "2020-12-15",
-        "topics": []
+        "topics": [],
+        "duplicatedby": "iqGA8u7MmMM"
     },
     "0KLJ2_1P_uk": {
         "title": "Q&A: Can dismantle mode have an ignore function maybe?",
@@ -4344,7 +4798,8 @@
             "hq02irf8xGM",
             "PGEl3bXKEnw",
             "tX8VDBudtuI",
-            "UhehbJ9kR2c"
+            "UhehbJ9kR2c",
+            "ZYjlQtfwJj0"
         ]
     },
     "Ev8CEXznWsE": {
@@ -4365,7 +4820,8 @@
         "topics": [
             "features\/buildables\/foundations",
             "features\/unplanned-features\/mass-building"
-        ]
+        ],
+        "duplicatedby": "Z0H06UJbb4E"
     },
     "fmE3DQFeVGk": {
         "title": "Q&A: Have you confirmed Superposition Oscillators and Quantum Computers to be buildable in Tier 8?",
@@ -4675,8 +5131,17 @@
         ],
         "suggested": [
             "5Z5pyzNiaVY",
+            "ezGse7K-fWI",
             "kGCoxYYhnBs",
-            "xY2wDhyE7ZE"
+            "p3AQTmE2XoQ",
+            "vlDuVpHyfVs",
+            "wEzD5wugI4Y",
+            "xY2wDhyE7ZE",
+            "yt-Jxh8kvtUuxY,46.3463,56.38966666666667",
+            "yt-Jxh8kvtUuxY,56.38966666666667,100.56713333333333",
+            "yt-Jxh8kvtUuxY,136.00253333333333,187.084505",
+            "yt-rI5kRMSwo5Q,330.36336666666665,499.6992",
+            "_MeCW-2ol-c"
         ],
         "duplicatedby": "5Z5pyzNiaVY"
     },
@@ -4717,7 +5182,8 @@
         "date": "2020-12-15",
         "topics": [
             "merch"
-        ]
+        ],
+        "duplicatedby": "iyFXDTn2YPM"
     },
     "dcK5sAXkSPg": {
         "title": "Q&A: Will you let us upgrade Storage Containers to Industrial Storage Containers?",
@@ -4766,6 +5232,7 @@
         ],
         "suggested": [
             "1NTKmQqoxNs",
+            "o1IfznnrGgc",
             "pY14Dudonjc",
             "r7i2CQaxnWc",
             "sHRjG63JNuQ",
@@ -4787,6 +5254,14 @@
         "topics": [
             "features\/transportation\/vehicles",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "suggested": [
+            "-NZqqfxHzhQ",
+            "RCaCXVVAtb0",
+            "s_F-RlFKxzs",
+            "twjZc7ImIts",
+            "WQa938_K6SY",
+            "xIfzyBihoI4"
         ],
         "duplicatedby": "79CHl9qFo90"
     },
@@ -4991,6 +5466,7 @@
             "hrwqrs89c4s",
             "KGmOM7dLT84",
             "l58eeCBeEpU",
+            "NGyFncgCUyo",
             "pEq7XWO3gCA",
             "QcD9eKlgte0",
             "QdMnTdqRxaE",
@@ -5217,6 +5693,12 @@
         "topics": [
             "environment\/biomes\/unplanned-biomes\/underwater",
             "environment\/world-map"
+        ],
+        "suggested": [
+            "bz7PJ3VF6FE",
+            "loc82lE_XK4",
+            "tc-NiceDreamyGarbageBuddhaBar",
+            "tc-RelievedCleanBibimbapDancingBanana"
         ]
     },
     "2ZbRpgGteaI": {
@@ -5273,6 +5755,9 @@
         "topics": [
             "community",
             "localisation"
+        ],
+        "suggested": [
+            "uLblaRDOX4Y"
         ]
     },
     "QWirowEMRbk": {
@@ -5316,7 +5801,8 @@
     "LUM8i_wyJ-Y": {
         "title": "Q&A: I have 24 (CPU) cores, can you make more use of it ?",
         "date": "2020-11-24",
-        "topics": []
+        "topics": [],
+        "duplicatedby": "0yzIyIlPDxw"
     },
     "KEJYlYO511Q": {
         "title": "Q&A: Is Console confirmed for Satisfactory?",
@@ -5459,6 +5945,9 @@
         "topics": [
             "community",
             "localisation"
+        ],
+        "suggested": [
+            "qbaev-b4lbQ"
         ]
     },
     "NM_f7DwMhdA": {
@@ -5598,7 +6087,8 @@
         "topics": [
             "features\/buildings\/the-hub",
             "technology\/user-interface"
-        ]
+        ],
+        "duplicatedby": "tHzH3dkTZ4s"
     },
     "ccmgnLh1oO0": {
         "title": "Q&A: Any idea when Somersloop, Mercer Sphere, S.A.M. Ore will actually be implemented?",
@@ -5609,6 +6099,13 @@
             "environment\/resources\/somersloop",
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "story-lore"
+        ],
+        "suggested": [
+            "85XNSiDpeZw",
+            "bmRdzV3-wJI",
+            "f0Z9VIAK5Iw",
+            "tc-InventiveBillowingEggPMSTwin",
+            "vBGfC7j2AyI"
         ],
         "duplicatedby": "1_qy-PSFKO8"
     },
@@ -5994,6 +6491,10 @@
             "features\/power-management",
             "features\/power-management\/geothermal-energy",
             "technology\/user-interface"
+        ],
+        "suggested": [
+            "MmCfcNv8F8o",
+            "xFZfkjY3J0c"
         ]
     },
     "4pFomutD4T0": {
@@ -6021,6 +6522,10 @@
         "date": "2020-11-17",
         "topics": [
             "features\/emotes"
+        ],
+        "suggested": [
+            "CNd_Z6vheZE",
+            "wvvaIdmUTT0"
         ]
     },
     "KwsiVfRUKNE": {
@@ -6334,6 +6839,15 @@
             "environment\/plants",
             "environment\/world-map",
             "technology\/graphics"
+        ],
+        "duplicates": [
+            "GgoQS6sOADQ"
+        ],
+        "suggested": [
+            "bk2ojhuil-g",
+            "Njv_PJT3B2g",
+            "WfU45N1EvQ0",
+            "XcfIWDujsxA"
         ]
     },
     "2-MMBU1hMKM": {
@@ -6926,6 +7440,11 @@
         "date": "2020-11-03",
         "topics": [
             "features\/buildables\/foundations"
+        ],
+        "suggested": [
+            "AgdOGd32U3w",
+            "DTZz5jdnn_s",
+            "Xi9S_sVklB8"
         ]
     },
     "RXrCk4II2NM": {
@@ -7299,7 +7818,8 @@
             "features\/buildings",
             "features\/buildings\/awesome-sink",
             "features\/fluids"
-        ]
+        ],
+        "duplicatedby": "SskXA-lxaCI"
     },
     "lSeLNlkKo1w": {
         "title": "Q&A: Is ADA computer generated or a voice actress?",
@@ -7473,6 +7993,7 @@
             "47gzhAEWkFM",
             "KGmOM7dLT84",
             "l58eeCBeEpU",
+            "NGyFncgCUyo",
             "pEq7XWO3gCA",
             "QcD9eKlgte0",
             "QdMnTdqRxaE",
@@ -7508,6 +8029,7 @@
         ],
         "suggested": [
             "1NTKmQqoxNs",
+            "o1IfznnrGgc",
             "pY14Dudonjc",
             "r7i2CQaxnWc",
             "w0h08ctpsz4",
@@ -7692,7 +8214,8 @@
         "topics": [
             "environment\/resources\/sam-ore",
             "story-lore"
-        ]
+        ],
+        "duplicatedby": "f0Z9VIAK5Iw"
     },
     "rRESDp2VwEI": {
         "title": "Q&A: What will Story Mode be like?",
@@ -8421,6 +8944,10 @@
         "seealso": [
             "bk2ojhuil-g",
             "XcfIWDujsxA"
+        ],
+        "suggested": [
+            "IFxnvuYEVtk",
+            "WfU45N1EvQ0"
         ]
     },
     "qlE9fmJhLHA": {
@@ -8494,7 +9021,8 @@
         "date": "2020-10-06",
         "topics": [
             "merch"
-        ]
+        ],
+        "duplicatedby": "iyFXDTn2YPM"
     },
     "RfmKDYjBDUo": {
         "title": "Q&A: Any update on Update 4 release date?",
@@ -8598,6 +9126,7 @@
             "47gzhAEWkFM",
             "hrwqrs89c4s",
             "l58eeCBeEpU",
+            "NGyFncgCUyo",
             "pEq7XWO3gCA",
             "QcD9eKlgte0",
             "QdMnTdqRxaE",
@@ -8774,6 +9303,13 @@
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "story-lore"
         ],
+        "suggested": [
+            "85XNSiDpeZw",
+            "ccmgnLh1oO0",
+            "f0Z9VIAK5Iw",
+            "tc-InventiveBillowingEggPMSTwin",
+            "vBGfC7j2AyI"
+        ],
         "duplicatedby": "1_qy-PSFKO8"
     },
     "m4PtschrKJc": {
@@ -8897,6 +9433,15 @@
         "date": "2020-09-29",
         "topics": [
             "features\/unplanned-features\/mass-building"
+        ],
+        "suggested": [
+            "0e_pXEulvY8",
+            "I5HR5ocUX9o",
+            "RPLvCZvTNxg",
+            "T1w4TV8Y8Lk",
+            "tc-NimbleAgitatedPeanutNotLikeThis",
+            "uUFy6qyZLKo",
+            "Z0H06UJbb4E"
         ]
     },
     "I5HR5ocUX9o": {
@@ -8905,6 +9450,15 @@
         "topics": [
             "features\/buildables\/foundations",
             "features\/unplanned-features\/mass-building"
+        ],
+        "suggested": [
+            "0e_pXEulvY8",
+            "RPLvCZvTNxg",
+            "T1w4TV8Y8Lk",
+            "tc-NimbleAgitatedPeanutNotLikeThis",
+            "uUFy6qyZLKo",
+            "XGlE_HTHTlA",
+            "Z0H06UJbb4E"
         ],
         "duplicatedby": "k-UDNJY0PWA"
     },
@@ -9016,6 +9570,13 @@
         "topics": [
             "environment\/resources\/sam-ore",
             "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "suggested": [
+            "85XNSiDpeZw",
+            "bmRdzV3-wJI",
+            "ccmgnLh1oO0",
+            "f0Z9VIAK5Iw",
+            "tc-InventiveBillowingEggPMSTwin"
         ]
     },
     "HEqq1dnxrg4": {
@@ -9038,6 +9599,15 @@
         "date": "2020-09-29",
         "topics": [
             "features\/unplanned-features\/mass-building"
+        ],
+        "suggested": [
+            "0e_pXEulvY8",
+            "I5HR5ocUX9o",
+            "T1w4TV8Y8Lk",
+            "tc-NimbleAgitatedPeanutNotLikeThis",
+            "uUFy6qyZLKo",
+            "XGlE_HTHTlA",
+            "Z0H06UJbb4E"
         ]
     },
     "YhiTxpNy9Ao": {
@@ -9074,6 +9644,7 @@
             "47gzhAEWkFM",
             "hrwqrs89c4s",
             "KGmOM7dLT84",
+            "NGyFncgCUyo",
             "pEq7XWO3gCA",
             "QcD9eKlgte0",
             "QdMnTdqRxaE",
@@ -9201,7 +9772,8 @@
         "date": "2020-09-22",
         "topics": [
             "merch"
-        ]
+        ],
+        "duplicatedby": "iyFXDTn2YPM"
     },
     "bPU07wU3Mr0": {
         "title": "Q&A: Any new info about Train Signals?",
@@ -9420,6 +9992,7 @@
             "hrwqrs89c4s",
             "KGmOM7dLT84",
             "l58eeCBeEpU",
+            "NGyFncgCUyo",
             "pEq7XWO3gCA",
             "QcD9eKlgte0",
             "QdMnTdqRxaE",
@@ -10081,6 +10654,12 @@
         "topics": [
             "features\/buildings",
             "features\/paint"
+        ],
+        "suggested": [
+            "6DayBMofsHs",
+            "b7j3iswXHAc",
+            "k-UDNJY0PWA",
+            "UK0P7CWe1V4"
         ]
     },
     "vgxwqJg7o2A": {
@@ -10583,6 +11162,7 @@
             "hrwqrs89c4s",
             "KGmOM7dLT84",
             "l58eeCBeEpU",
+            "NGyFncgCUyo",
             "pEq7XWO3gCA",
             "QcD9eKlgte0",
             "QdMnTdqRxaE",
@@ -10733,6 +11313,15 @@
         "topics": [
             "features\/buildables\/foundations",
             "features\/unplanned-features\/mass-building"
+        ],
+        "suggested": [
+            "0e_pXEulvY8",
+            "I5HR5ocUX9o",
+            "RPLvCZvTNxg",
+            "T1w4TV8Y8Lk",
+            "tc-NimbleAgitatedPeanutNotLikeThis",
+            "XGlE_HTHTlA",
+            "Z0H06UJbb4E"
         ],
         "duplicatedby": "k-UDNJY0PWA"
     },
@@ -11151,7 +11740,8 @@
         "topics": [
             "features\/buildings",
             "features\/buildings\/awesome-sink"
-        ]
+        ],
+        "duplicatedby": "SskXA-lxaCI"
     },
     "PuTEiefcHnU": {
         "title": "Q&A: Will Update 4 be disruptive enough that players will want to start from scratch?",
@@ -11201,7 +11791,8 @@
         "topics": [
             "features\/power-management",
             "features\/power-management\/geothermal-energy"
-        ]
+        ],
+        "duplicatedby": "MmCfcNv8F8o"
     },
     "jfPUvIBBJVw": {
         "title": "Q&A: You guys planning a Content Creator Program?",
@@ -11335,6 +11926,13 @@
             "tc-ConcernedStylishTomatoBabyRage",
             "tc-PoorAlluringHerdRitzMitz",
             "tc-PrettyBelovedTermiteOptimizePrime"
+        ],
+        "suggested": [
+            "bmRdzV3-wJI",
+            "ccmgnLh1oO0",
+            "f0Z9VIAK5Iw",
+            "tc-InventiveBillowingEggPMSTwin",
+            "vBGfC7j2AyI"
         ]
     },
     "dfHUHMQ9JQE": {
@@ -11421,6 +12019,9 @@
         "duplicates": [
             "tc-BovineConsiderateSangMVGame",
             "tc-GrossPoisedAardvarkChocolateRain"
+        ],
+        "suggested": [
+            "9tdYBCwd5no"
         ]
     },
     "PVf-pBNYO_M": {
@@ -11436,7 +12037,8 @@
             "tc-CarelessDepressedShingleHassanChop",
             "tc-LuckyMushyShingleTBTacoRight",
             "tc-SincereProductiveScallionLeeroyJenkins"
-        ]
+        ],
+        "replacedby": "-NZqqfxHzhQ"
     },
     "Lk34vKl94hI": {
         "title": "Q&A: Can we get a drink on the fridge in the base?",
@@ -11470,6 +12072,10 @@
         ],
         "duplicates": [
             "tc-GoldenTenuousLemurDAESuppy"
+        ],
+        "suggested": [
+            "fbCEIVUNDe0",
+            "pjoG5bBsTKI"
         ]
     },
     "LSc7QIlaGg4": {
@@ -11719,6 +12325,11 @@
         ],
         "duplicates": [
             "tc-GeniusConcernedEggDogFace"
+        ],
+        "suggested": [
+            "DTZz5jdnn_s",
+            "SYEIsZ6KVgU",
+            "Xi9S_sVklB8"
         ]
     },
     "QC5TQ6iL8sg": {
@@ -11825,7 +12436,8 @@
         ],
         "duplicates": [
             "tc-ArtisticCoweringTortoiseRitzMitz"
-        ]
+        ],
+        "duplicatedby": "SskXA-lxaCI"
     },
     "DdGctBLngpE": {
         "title": "Q&A: Is the Story a mode, or can I play with my actual save game?",
@@ -12055,7 +12667,8 @@
         ],
         "duplicates": [
             "tc-ArtisticGlutenFreeSpindleDxAbomb"
-        ]
+        ],
+        "duplicatedby": "f0Z9VIAK5Iw"
     },
     "_IL63Q90d1k": {
         "title": "Q&A: Please think about adding dedicated Storage Containers like in Ark ?",
@@ -12145,7 +12758,8 @@
         ],
         "duplicates": [
             "tc-BusyHandsomeSmoothiePartyTime"
-        ]
+        ],
+        "duplicatedby": "IFxnvuYEVtk"
     },
     "DTZz5jdnn_s": {
         "title": "Q&A: Set a specific Foundation as the keystone?",
@@ -12156,6 +12770,11 @@
         ],
         "duplicates": [
             "tc-GoodAnimatedSproutPipeHype"
+        ],
+        "suggested": [
+            "AgdOGd32U3w",
+            "SYEIsZ6KVgU",
+            "Xi9S_sVklB8"
         ]
     },
     "v2qV7Kfbcac": {
@@ -12327,7 +12946,8 @@
         ],
         "duplicates": [
             "tc-HonorableCautiousDonutStoneLightning"
-        ]
+        ],
+        "duplicatedby": "loc82lE_XK4"
     },
     "G7k6pjP1nK8": {
         "title": "Q&A: Update 4, just a quality-of-life thing?",
@@ -12405,6 +13025,9 @@
         ],
         "duplicates": [
             "tc-EntertainingTenuousCasettePeteZaroll"
+        ],
+        "suggested": [
+            "yvrH5XwPi4k"
         ]
     },
     "fufH5ltdn7E": {
@@ -12526,6 +13149,10 @@
         ],
         "duplicates": [
             "tc-WanderingBashfulGoatTBCheesePull"
+        ],
+        "suggested": [
+            "MmCfcNv8F8o",
+            "WTfWu44SQ1k"
         ]
     },
     "C1XaJJmvg1M": {
@@ -12933,6 +13560,9 @@
         "date": "2020-08-18",
         "topics": [
             "environment\/resources\/sam-ore"
+        ],
+        "suggested": [
+            "tc-SarcasticWildBeanRitzMitz"
         ]
     },
     "tc-ViscousFuriousPonyPhilosoraptor": {
@@ -12956,6 +13586,13 @@
         "topics": [
             "environment\/resources",
             "environment\/resources\/sam-ore"
+        ],
+        "suggested": [
+            "85XNSiDpeZw",
+            "bmRdzV3-wJI",
+            "ccmgnLh1oO0",
+            "f0Z9VIAK5Iw",
+            "vBGfC7j2AyI"
         ]
     },
     "tc-BlatantEnjoyableTigerStoneLightning": {
@@ -13053,7 +13690,8 @@
         "date": "2020-08-18",
         "topics": [
             "environment\/resources\/sam-ore"
-        ]
+        ],
+        "duplicatedby": "f0Z9VIAK5Iw"
     },
     "tc-PolishedThirstyDinosaurOhMyDog": {
         "title": "Q&A: Session Privacy \/ Join Button not working? (Part 1)",
@@ -13232,6 +13870,12 @@
         "topics": [
             "environment\/biomes\/unplanned-biomes\/underwater",
             "environment\/world-map"
+        ],
+        "suggested": [
+            "bz7PJ3VF6FE",
+            "loc82lE_XK4",
+            "nQplpfNLru8",
+            "tc-NiceDreamyGarbageBuddhaBar"
         ]
     },
     "tc-MiniatureFlaccidSwanKAPOW": {
@@ -13354,6 +13998,9 @@
         "date": "2020-08-11",
         "topics": [
             "merch\/merch-prototypes\/ficsit-cup-prototypes"
+        ],
+        "seealso": [
+            "tc-SuspiciousImportantOryxSquadGoals"
         ]
     },
     "tc-SuspiciousAlluringDolphinThunBeast": {
@@ -13404,7 +14051,8 @@
         "date": "2020-08-11",
         "topics": [
             "features\/gases"
-        ]
+        ],
+        "replacedby": "IumWTbZtoWo"
     },
     "tc-TalentedIntelligentGazelleFunRun": {
         "title": "Q&A: gravity-defying FICSIT-branded coffee",
@@ -13589,7 +14237,8 @@
         "topics": [
             "features\/fluids\/pipes",
             "features\/fluids\/valves"
-        ]
+        ],
+        "replacedby": "yaqPaD8DLds"
     },
     "tc-DirtyHilariousPancakeWow": {
         "title": "Q&A: More Wildlife?",
@@ -13654,6 +14303,12 @@
         "date": "2020-07-21",
         "topics": [
             "environment\/biomes\/unplanned-biomes\/underwater"
+        ],
+        "suggested": [
+            "bz7PJ3VF6FE",
+            "loc82lE_XK4",
+            "nQplpfNLru8",
+            "tc-RelievedCleanBibimbapDancingBanana"
         ]
     },
     "tc-ColdBraveShieldSMOrc": {
@@ -13681,7 +14336,8 @@
         "date": "2020-07-21",
         "topics": [
             "features\/unplanned-features\/mass-building"
-        ]
+        ],
+        "duplicatedby": "Z0H06UJbb4E"
     },
     "mpp9FgRp5Jw": {
         "title": "Q&A: Any extra content coming with the Steam launch?",
@@ -13711,6 +14367,15 @@
         "date": "2020-06-08",
         "topics": [
             "features\/unplanned-features\/mass-building"
+        ],
+        "suggested": [
+            "0e_pXEulvY8",
+            "I5HR5ocUX9o",
+            "RPLvCZvTNxg",
+            "tc-NimbleAgitatedPeanutNotLikeThis",
+            "uUFy6qyZLKo",
+            "XGlE_HTHTlA",
+            "Z0H06UJbb4E"
         ]
     },
     "KICxTv2a3rY": {
@@ -13749,6 +14414,10 @@
         "topics": [
             "features\/buildings\/awesome-sink",
             "features\/buildings\/space-elevator"
+        ],
+        "suggested": [
+            "MmiaI_vhyI0",
+            "pjoG5bBsTKI"
         ]
     },
     "PdnkUetagWM": {
@@ -14293,6 +14962,12 @@
             "environment\/biomes\/unplanned-biomes\/underwater",
             "environment\/creatures",
             "environment\/resources"
+        ],
+        "suggested": [
+            "loc82lE_XK4",
+            "nQplpfNLru8",
+            "tc-NiceDreamyGarbageBuddhaBar",
+            "tc-RelievedCleanBibimbapDancingBanana"
         ]
     },
     "Ws7_PXlK14g": {
@@ -14351,7 +15026,8 @@
         "topics": [
             "features\/buildables\/foundations",
             "features\/unplanned-features\/mass-building"
-        ]
+        ],
+        "duplicatedby": "Z0H06UJbb4E"
     },
     "9bez-QIVKLA": {
         "title": "Q&A: Satisfactory on the next Console generation?",
@@ -14581,6 +15257,12 @@
         "date": "2020-02-11",
         "topics": [
             "localisation"
+        ],
+        "duplicates": [
+            "qbaev-b4lbQ"
+        ],
+        "seealso": [
+            "HZFZLzljSRE"
         ]
     },
     "XWqTKTZB0S0": {
@@ -14691,7 +15373,8 @@
         "date": "2020-02-11",
         "topics": [
             "environment\/resources\/sam-ore"
-        ]
+        ],
+        "duplicatedby": "f0Z9VIAK5Iw"
     },
     "Vb5nLTtDSpA": {
         "title": "Q&A: Satisfactory on mobile?",
@@ -15252,7 +15935,8 @@
         "topics": [
             "features\/buildings\/the-hub",
             "technology\/user-interface"
-        ]
+        ],
+        "duplicatedby": "tHzH3dkTZ4s"
     },
     "mFxik_NlE0w": {
         "title": "Q&A: Is there going to be a storyline?",
@@ -15281,7 +15965,8 @@
         "date": "2019-12-19",
         "topics": [
             "environment\/resources\/sam-ore"
-        ]
+        ],
+        "duplicatedby": "f0Z9VIAK5Iw"
     },
     "QVQZ2qgtTsQ": {
         "title": "Q&A: Satisfactory on Switch?",
@@ -15306,7 +15991,8 @@
         "topics": [
             "environment\/biomes\/unplanned-biomes\/underwater",
             "environment\/world-map"
-        ]
+        ],
+        "duplicatedby": "loc82lE_XK4"
     },
     "ayGH9w3sEBo": {
         "title": "Q&A: Vehicle Lifts?",
@@ -16143,7 +16829,8 @@
         "date": "2019-03-09",
         "topics": [
             "environment\/resources\/sam-ore"
-        ]
+        ],
+        "duplicatedby": "f0Z9VIAK5Iw"
     },
     "eoMeAy8w2Fs": {
         "title": "Q&A: What gender is the character model?",
