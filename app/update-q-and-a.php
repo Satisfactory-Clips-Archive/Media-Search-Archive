@@ -56,13 +56,13 @@ require_once (__DIR__ . '/global-topic-hierarchy.php');
  * @var array<string, array{
  *	title:string,
  *	date:string,
- *	topics:list<string>,
- *	duplicates:list<string>,
- *	replaces:list<string>,
- *	replaced_by?:string,
- *	duplicated_by?:string,
- *	seealso:list<string>,
- *	suggested:list<string>
+ *	topics?:list<string>,
+ *	duplicates?:list<string>,
+ *	replaces?:list<string>,
+ *	replacedby?:string,
+ *	duplicatedby?:string,
+ *	seealso?:list<string>,
+ *	suggested?:list<string>
  * }>
  */
 $existing = array_filter(
@@ -128,6 +128,63 @@ $existing = array_filter(
 		;
 	},
 	ARRAY_FILTER_USE_BOTH
+);
+
+$existing = array_map(
+	/**
+	 * @param array{
+	 *	title:string,
+	 *	date:string,
+	 *	topics?:list<string>,
+	 *	duplicates?:list<string>,
+	 *	replaces?:list<string>,
+	 *	replacedby?:string,
+	 *	duplicatedby?:string,
+	 *	seealso?:list<string>,
+	 *	suggested?:list<string>
+	 * } $data
+	 *
+	 * @return array{
+	 *	title:string,
+	 *	date:string,
+	 *	topics:list<string>,
+	 *	duplicates:list<string>,
+	 *	replaces:list<string>,
+	 *	replacedby?:string,
+	 *	duplicatedby?:string,
+	 *	seealso:list<string>,
+	 *	suggested:list<string>
+	 * }
+	 */
+	static function (array $data) : array {
+		foreach (
+			[
+				'topics',
+				'duplicates',
+				'replaces',
+				'seealso',
+				'suggested',
+			] as $required
+		) {
+			$data[$required] = $data[$required] ?? [];
+		}
+
+		/**
+		 * @var array{
+		 *	title:string,
+		 *	date:string,
+		 *	topics:list<string>,
+		 *	duplicates:list<string>,
+		 *	replaces:list<string>,
+		 *	replacedby?:string,
+		 *	duplicatedby?:string,
+		 *	seealso:list<string>,
+		 *	suggested:list<string>
+		 * }
+		 */
+		return $data;
+	},
+	$existing
 );
 
 $api = new YouTubeApiWrapper();
@@ -418,7 +475,7 @@ foreach ($questions as $video_id => $data) {
 		] as $required
 	) {
 		$existing[$video_id][$required] = array_values(array_filter(
-			$existing[$video_id][$required] ?? [],
+			$existing[$video_id][$required],
 			/**
 			 * @psalm-assert-if-true string $maybe_value
 			 * @psalm-assert-if-true int $maybe_key
@@ -519,15 +576,18 @@ foreach (array_keys($duplicates) as $video_id) {
 			continue;
 		}
 
+		/** @var string|null */
+		$existing_duplicatedby = $existing[$duplicate]['duplicatedby'] ?? null;
+
 		if (
-			isset($existing[$duplicate]['duplicatedby'])
-			&& $video_id !== $existing[$duplicate]['duplicatedby']
+			null !== $existing_duplicatedby
+			&& $video_id !== $existing_duplicatedby
 		) {
 			throw new RuntimeException(sprintf(
 				'Video already has duplicate set! (on %s, trying to set %s, found %s)',
 				$duplicate,
 				$video_id,
-				$existing[$duplicate]['duplicatedby']
+				$existing_duplicatedby
 			));
 		}
 
