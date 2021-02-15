@@ -1710,9 +1710,12 @@
             "features\/power-management\/nuclear-energy\/nuclear-waste",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
+        "replaces": [
+            "Eo_4p0KSPSY",
+            "sag85tf3NQQ"
+        ],
         "seealso": [
             "2ZbRpgGteaI",
-            "sag85tf3NQQ",
             "yt-njXBs_p2l1w,333.23290000000003,443.557086",
             "ZU86mBQqx9A"
         ]
@@ -6027,12 +6030,15 @@
             "features\/power-management\/nuclear-energy\/nuclear-waste",
             "special-guests"
         ],
+        "seealso": [
+            "tmuvsaAsm-c",
+            "yt-njXBs_p2l1w,333.23290000000003,443.557086"
+        ],
         "suggested": [
             "2ZbRpgGteaI",
-            "tmuvsaAsm-c",
-            "yt-njXBs_p2l1w,333.23290000000003,443.557086",
             "ZU86mBQqx9A"
-        ]
+        ],
+        "replacedby": "tmuvsaAsm-c"
     },
     "mASNXinF0mA": {
         "title": "Q&A: Alien creature launcher - evict the giant Tick?",
@@ -10913,7 +10919,8 @@
         "date": "2020-09-15",
         "topics": [
             "features\/power-management\/nuclear-energy\/nuclear-waste"
-        ]
+        ],
+        "replacedby": "tmuvsaAsm-c"
     },
     "FJPA1gKRxsI": {
         "title": "Q&A: Mk2 Pipes?",
