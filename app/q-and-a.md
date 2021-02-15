@@ -1,10 +1,10 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1801 non-trolling questions found out of 1847 total questions
-* 1038 questions found with no other references
+* 1008 questions found with no other references
 ## grouped by date
 * 2021-02-09: 29 of 94 questions found with no other references
-* 2021-02-02: 16 of 51 questions found with no other references
+* 2021-02-02: 15 of 51 questions found with no other references
 * 2021-01-26: 31 of 78 questions found with no other references
 * 2021-01-22: 0 of 3 questions found with no other references
 * 2021-01-19: 22 of 91 questions found with no other references
@@ -14,21 +14,21 @@
 * 2020-12-08: 18 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 14 of 44 questions found with no other references
-* 2020-11-17: 18 of 57 questions found with no other references
-* 2020-11-10: 65 of 84 questions found with no other references
-* 2020-11-03: 43 of 57 questions found with no other references
+* 2020-11-17: 17 of 57 questions found with no other references
+* 2020-11-10: 40 of 84 questions found with no other references
+* 2020-11-03: 42 of 57 questions found with no other references
 * 2020-10-27: 22 of 23 questions found with no other references
 * 2020-10-20: 39 of 51 questions found with no other references
 * 2020-10-13: 46 of 48 questions found with no other references
 * 2020-10-09: 22 of 24 questions found with no other references
 * 2020-10-06: 44 of 51 questions found with no other references
 * 2020-09-29: 28 of 38 questions found with no other references
-* 2020-09-22: 42 of 59 questions found with no other references
+* 2020-09-22: 41 of 59 questions found with no other references
 * 2020-09-15: 35 of 47 questions found with no other references
 * 2020-09-08: 59 of 72 questions found with no other references
 * 2020-09-01: 51 of 71 questions found with no other references
 * 2020-08-25: 13 of 136 questions found with no other references
-* 2020-08-18: 42 of 56 questions found with no other references
+* 2020-08-18: 41 of 56 questions found with no other references
 * 2020-08-11: 26 of 38 questions found with no other references
 * 2020-07-28: 5 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
@@ -436,6 +436,30 @@
 > i don't know i don't know i don't think
 >
 > so at all
+
+
+## [November 17th, 2020 Livestream Q&A: Any plans on Weather cycles?](https://archive.satisfactory.video/transcriptions/yt--QpGRQcZfe0) https://www.youtube.com/watch?v=-QpGRQcZfe0
+
+### Asked previously:
+* [November 10th, 2020 Livestream Q&A: Can we get Weather to change?](https://archive.satisfactory.video/transcriptions/yt-iq-K9FY-RT8) https://www.youtube.com/watch?v=iq-K9FY-RT8
+* [November 10th, 2020 Livestream Q&A: Will we have Weather events?](https://archive.satisfactory.video/transcriptions/yt-MzWzCnmbkYI) https://www.youtube.com/watch?v=MzWzCnmbkYI
+### Transcript
+
+> oh my god it's good any plans on weather
+>
+> cycles
+>
+> uh there was always a plan for that but
+>
+> uh i don't
+>
+> think that's uh
+>
+> [Music]
+>
+> we haven't done it and i don't think
+>
+> we're thinking of it right now
 
 
 ## [February 9th, 2021 Livestream Q&A: Any plans to improve the visual part of building in the game?](https://archive.satisfactory.video/transcriptions/yt-k-UDNJY0PWA) https://www.youtube.com/watch?v=k-UDNJY0PWA
@@ -3013,6 +3037,7 @@
 ### Asked previously:
 * [January 26th, 2021 Livestream Q&A: When will the game be released from Early Access?](https://archive.satisfactory.video/transcriptions/yt-Z0yYtiR__Nk) https://www.youtube.com/watch?v=Z0yYtiR__Nk
 * [January 12th, 2021 Livestream Q&A: Do we have an idea of the full release?](https://archive.satisfactory.video/transcriptions/yt-WoWR5Xsuav8) https://www.youtube.com/watch?v=WoWR5Xsuav8
+* [November 10th, 2020 Livestream Q&A: Do you ever get the feeling the game will be put aside and never leave Early Access?](https://archive.satisfactory.video/transcriptions/yt-LSx6aBL0q3Q) https://www.youtube.com/watch?v=LSx6aBL0q3Q
 * [September 15th, 2020 Livestream Q&A: Full Release, 2021?](https://archive.satisfactory.video/transcriptions/yt-9Um_UtQI8yE) https://www.youtube.com/watch?v=9Um_UtQI8yE
 * [August 25th, 2020 Livestream Q&A: Will there ever be a 1.0, or are you going to keep it in Early Access forever?](https://archive.satisfactory.video/transcriptions/yt--AjFbGOOAQI) https://www.youtube.com/watch?v=-AjFbGOOAQI
 * [March 9th, 2019 Livestream Q&A: When is the official release?](https://archive.satisfactory.video/transcriptions/yt-H0HcDZTv_ts) https://www.youtube.com/watch?v=H0HcDZTv_ts
@@ -4737,6 +4762,11 @@
 > that's the current plan
 
 
+## February 9th, 2021 Livestream Q&A: Will there be more emotes? https://www.youtube.com/watch?v=dBNJrDsc_XU
+
+### Asked previously:
+* [December 15th, 2020 Livestream Q&A: More emotes?](https://archive.satisfactory.video/transcriptions/yt-Ii3ahSfYOYI) https://www.youtube.com/watch?v=Ii3ahSfYOYI
+* [November 10th, 2020 Livestream Q&A: Thumbs Up & Thumbs Down emotes in game?](https://archive.satisfactory.video/transcriptions/yt-Z9vhqFPuIOo) https://www.youtube.com/watch?v=Z9vhqFPuIOo
 ## [January 19th, 2021 Livestream Q&A: Will there be ways to see your total production per minute?](https://archive.satisfactory.video/transcriptions/yt-tHzH3dkTZ4s) https://www.youtube.com/watch?v=tHzH3dkTZ4s
 
 ### Asked previously:
