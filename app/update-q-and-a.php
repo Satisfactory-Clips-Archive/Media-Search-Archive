@@ -674,6 +674,7 @@ foreach (array_keys($all_topics) as $topic_id) {
 	));
 }
 
+/** @var array<string, string> */
 $replacements_not_in_existing = [];
 
 foreach (array_keys($existing) as $lookup) {
@@ -718,7 +719,7 @@ foreach (array_keys($existing) as $lookup) {
 		);
 	}
 
-	$replacements_not_in_existing[$lookup] = array_filter(
+	$replacements_tmp = array_filter(
 		[$existing[$lookup]['replacedby'] ?? ''],
 		static function (string $maybe) use ($existing, $cache) : bool {
 			return
@@ -729,11 +730,13 @@ foreach (array_keys($existing) as $lookup) {
 		}
 	);
 
-	if (count($replacements_not_in_existing[$lookup]) < 1) {
+	if (count($replacements_tmp) < 1) {
+		if (isset($replacements_not_in_existing[$lookup])) {
 		unset($replacements_not_in_existing[$lookup]);
+		}
 	} else {
 		$replacements_not_in_existing[$lookup] = (string) current(
-			$replacements_not_in_existing[$lookup]
+			$replacements_tmp
 		);
 	}
 
@@ -791,13 +794,30 @@ foreach ($replacements_not_in_existing as $video_id => $replacement) {
 	}
 }
 
+/**
+ * @var array<string, array{
+ *	title:string,
+ *	date:string,
+ *	topics:list<string>,
+ *	duplicates?:list<string>,
+ *	replaces?:list<string>,
+ *	replacedby?:string,
+ *	duplicatedby?:string,
+ *	seealso?:list<string>,
+ *	suggested?:list<string>
+ * }>
+ */
+$existing = $existing;
+
 $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
 
 file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
 
-$no_trolling = array_filter($existing, static function (array $data) : bool {
-	return ! in_array('trolling', $data['topics'], true);
-});
+$no_trolling = array_filter(
+	$existing,
+	static function (array $data) : bool {
+		return ! in_array('trolling', $data['topics'], true);
+	});
 
 ob_start();
 

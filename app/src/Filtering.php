@@ -12,11 +12,15 @@ class Filtering
 {
 	/**
 	 * @param array{
-	 *	duplicates:list<string>,
-	 *	replaces:list<string>,
-	 *	seealso:list<string>,
+	 *	title:string,
+	 *	date:string,
+	 *	topics:list<string>,
+	 *	duplicates?:list<string>,
+	 *	replaces?:list<string>,
 	 *	replacedby?:string,
-	 *	duplicatedby?:string
+	 *	duplicatedby?:string,
+	 *	seealso?:list<string>,
+	 *	suggested?:list<string>
 	 * } $maybe
 	 */
 	public function QuestionDataNoReferences(array $maybe) : bool
