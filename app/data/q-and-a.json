@@ -53,15 +53,15 @@
             "technology\/graphics"
         ],
         "duplicates": [
-            "4sKy5-TJVKY",
-            "5snNwUqWAxA",
             "I5HR5ocUX9o",
+            "p0CdgjDIsEs",
             "uUFy6qyZLKo",
             "V8sGth96I5w",
             "wuimxgd7c_A",
             "Y9m96T9a5qU"
         ],
         "seealso": [
+            "5snNwUqWAxA",
             "6DayBMofsHs",
             "b7j3iswXHAc",
             "UK0P7CWe1V4"
@@ -307,7 +307,11 @@
             "story-lore\/characters\/caterina-parks"
         ],
         "duplicates": [
-            "ANDFv21tydY"
+            "ANDFv21tydY",
+            "gZoINqh_HAY"
+        ],
+        "suggested": [
+            "t6WEYv_TLDI"
         ]
     },
     "_l9SmmSzE-M": {
@@ -1028,6 +1032,7 @@
             "ZpYMIZFGegw"
         ],
         "suggested": [
+            "5snNwUqWAxA",
             "6DayBMofsHs",
             "b7j3iswXHAc",
             "k-UDNJY0PWA",
@@ -1275,7 +1280,8 @@
             "S43FE8W6Feo"
         ],
         "suggested": [
-            "CznWASCszcA"
+            "CznWASCszcA",
+            "leLtSRvC-J8"
         ]
     },
     "7LiXrAwoqPE": {
@@ -1320,6 +1326,7 @@
             "story-lore"
         ],
         "duplicates": [
+            "2yoGAha7ju0",
             "229Wl8AMQx8",
             "eo_84m3ZYfQ",
             "GZlK2fIlYVk",
@@ -2313,6 +2320,7 @@
             "k-UDNJY0PWA"
         ],
         "suggested": [
+            "5snNwUqWAxA",
             "LZvHStKqoQI",
             "UK0P7CWe1V4"
         ]
@@ -3454,6 +3462,9 @@
             "features\/buildings\/packager",
             "features\/fluids\/pipes"
         ],
+        "duplicates": [
+            "gqLycnJA_3c"
+        ],
         "seealso": [
             "SsjiubBz5zs"
         ]
@@ -3484,6 +3495,9 @@
         ],
         "seealso": [
             "FUMyJYJr88Y"
+        ],
+        "suggested": [
+            "3n1NZE7lkOk"
         ]
     },
     "Are7eJK9iKk": {
@@ -3831,6 +3845,7 @@
             "LZvHStKqoQI"
         ],
         "suggested": [
+            "5snNwUqWAxA",
             "k-UDNJY0PWA",
             "UK0P7CWe1V4"
         ]
@@ -4589,6 +4604,9 @@
             "environment\/creatures\/lizard-doggo",
             "features\/buildings\/blender",
             "trolling"
+        ],
+        "seealso": [
+            "NQ8x2q2z55w"
         ]
     },
     "P7R2hxi19pM": {
@@ -5897,6 +5915,9 @@
         "date": "2020-12-08",
         "topics": [
             "trolling"
+        ],
+        "suggested": [
+            "RXrCk4II2NM"
         ]
     },
     "Dj2hOG7UjVA": {
@@ -6678,6 +6699,7 @@
         ],
         "suggested": [
             "J_a6kzow6gk",
+            "leLtSRvC-J8",
             "lOWVYg1D990",
             "S43FE8W6Feo"
         ]
@@ -6919,7 +6941,17 @@
         "topics": [
             "features\/buildables\/foundations"
         ],
-        "duplicatedby": "k-UDNJY0PWA"
+        "duplicates": [
+            "4sKy5-TJVKY",
+            "40bnpFI8SqE"
+        ],
+        "suggested": [
+            "6DayBMofsHs",
+            "b7j3iswXHAc",
+            "k-UDNJY0PWA",
+            "LZvHStKqoQI",
+            "UK0P7CWe1V4"
+        ]
     },
     "sZ9JZYY87bY": {
         "title": "Q&A: Dark Matter in the game?",
@@ -7718,6 +7750,7 @@
         "suggested": [
             "CznWASCszcA",
             "gAjKNyUTkMQ",
+            "leLtSRvC-J8",
             "lOWVYg1D990",
             "S43FE8W6Feo"
         ]
@@ -7788,7 +7821,8 @@
         "date": "2020-11-10",
         "topics": [
             "features\/buildables\/foundations"
-        ]
+        ],
+        "duplicatedby": "5snNwUqWAxA"
     },
     "NNUESlRoCJ8": {
         "title": "Q&A: Is there going to be a Creative Mode?",
@@ -8070,6 +8104,9 @@
         "topics": [
             "community\/kibitz",
             "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "seealso": [
+            "KWRlYteoilQ"
         ]
     },
     "ypN9OtMd7YU": {
@@ -8262,6 +8299,19 @@
         "date": "2020-11-03",
         "topics": [
             "features\/multiplayer\/crossplay"
+        ],
+        "duplicates": [
+            "-kVvrassZVw",
+            "MR5331unvbQ"
+        ],
+        "replaces": [
+            "egY71egazyQ"
+        ],
+        "seealso": [
+            "kgQjKxY0oGQ",
+            "lfm0vKovpLc",
+            "TM6DY2kEQ8E",
+            "tzQZ1akwzzM"
         ]
     },
     "4sKy5-TJVKY": {
@@ -8270,14 +8320,15 @@
         "topics": [
             "features\/buildables\/foundations"
         ],
-        "duplicatedby": "k-UDNJY0PWA"
+        "duplicatedby": "5snNwUqWAxA"
     },
     "gZoINqh_HAY": {
         "title": "Q&A: Can you give us a hint about the Story of the game?",
         "date": "2020-11-03",
         "topics": [
             "story-lore"
-        ]
+        ],
+        "duplicatedby": "SLOMxmF6MKc"
     },
     "7dm8Lvfj8Ao": {
         "title": "Q&A: Can you put in Lights, please?",
@@ -8293,18 +8344,31 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "seealso": [
+            "fqq4ndn8_94"
         ]
     },
     "p0CdgjDIsEs": {
         "title": "Q&A: Could you add more Build pieces every week?",
         "date": "2020-11-03",
-        "topics": []
+        "topics": [],
+        "duplicatedby": "k-UDNJY0PWA"
     },
     "leLtSRvC-J8": {
         "title": "Q&A: Does the Crab have a Crab?",
         "date": "2020-11-03",
         "topics": [
             "environment\/creatures\/crab-boss"
+        ],
+        "seealso": [
+            "gAjKNyUTkMQ"
+        ],
+        "suggested": [
+            "CznWASCszcA",
+            "J_a6kzow6gk",
+            "lOWVYg1D990",
+            "S43FE8W6Feo"
         ]
     },
     "NQ8x2q2z55w": {
@@ -8314,6 +8378,9 @@
             "environment\/creatures\/lizard-doggo",
             "features\/buildings",
             "features\/buildings\/the-hub"
+        ],
+        "seealso": [
+            "Keprp2vxOM8"
         ]
     },
     "l03CiyYAX-k": {
@@ -8328,6 +8395,9 @@
         "date": "2020-11-03",
         "topics": [
             "community\/kibitz"
+        ],
+        "seealso": [
+            "7fXJNHVrNCs"
         ]
     },
     "t6WEYv_TLDI": {
@@ -8336,6 +8406,9 @@
         "topics": [
             "story-lore",
             "technology\/graphics"
+        ],
+        "seealso": [
+            "SLOMxmF6MKc"
         ]
     },
     "SYEIsZ6KVgU": {
@@ -8353,7 +8426,10 @@
     "RXrCk4II2NM": {
         "title": "Q&A: How code-heavy is the game and how do you keep it organised?",
         "date": "2020-11-03",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "HhFUbge6Z7E"
+        ]
     },
     "qtf26oE7kQs": {
         "title": "Q&A: How many Updates until 1.0?",
@@ -8399,7 +8475,8 @@
         "date": "2020-11-03",
         "topics": [
             "environment\/world-map"
-        ]
+        ],
+        "duplicatedby": "hKIm2mk5AhM"
     },
     "gqLycnJA_3c": {
         "title": "Q&A: Packager solid\/liquid I\/O don't allow for placement of Conveyor lifts?",
@@ -8407,7 +8484,8 @@
         "topics": [
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/packager"
-        ]
+        ],
+        "duplicatedby": "Cmhx-wt1pBg"
     },
     "PKx5vpwPGW0": {
         "title": "Q&A: RTX support ever?",
@@ -8428,6 +8506,12 @@
         "topics": [
             "environment\/world-map",
             "features\/transportation\/vehicles"
+        ],
+        "seealso": [
+            "FUMyJYJr88Y"
+        ],
+        "suggested": [
+            "x2qXm_DXJEw"
         ]
     },
     "rtOmNkt5whw": {
@@ -8438,6 +8522,9 @@
             "features\/multiplayer",
             "features\/planned-features\/dedicated-servers",
             "features\/possible-features\/game-modes"
+        ],
+        "duplicates": [
+            "sMGWvbL09qA"
         ],
         "suggested": [
             "GDuWS-cOFX8",
@@ -9333,6 +9420,9 @@
         "date": "2020-10-13",
         "topics": [
             "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "suggested": [
+            "2iEj514FVbs"
         ]
     },
     "z36dxVjAkJ8": {
@@ -10400,6 +10490,7 @@
             "CznWASCszcA",
             "gAjKNyUTkMQ",
             "J_a6kzow6gk",
+            "leLtSRvC-J8",
             "S43FE8W6Feo"
         ]
     },
@@ -11594,6 +11685,7 @@
             "features\/paint"
         ],
         "suggested": [
+            "5snNwUqWAxA",
             "6DayBMofsHs",
             "b7j3iswXHAc",
             "k-UDNJY0PWA",
@@ -15427,13 +15519,20 @@
         "date": "2020-06-08",
         "topics": [
             "features\/multiplayer\/crossplay"
-        ]
+        ],
+        "duplicatedby": "zekvCEX_mv8"
     },
     "lfm0vKovpLc": {
         "title": "Q&A: Is there somewhere I can read how Crossplay will work?",
         "date": "2020-06-08",
         "topics": [
             "features\/multiplayer\/crossplay"
+        ],
+        "suggested": [
+            "kgQjKxY0oGQ",
+            "TM6DY2kEQ8E",
+            "tzQZ1akwzzM",
+            "zekvCEX_mv8"
         ]
     },
     "oJzUWOdpQ5o": {
@@ -15822,13 +15921,20 @@
         "date": "2020-05-19",
         "topics": [
             "features\/multiplayer\/crossplay"
-        ]
+        ],
+        "replacedby": "zekvCEX_mv8"
     },
     "kgQjKxY0oGQ": {
         "title": "Q&A: Will there be a lag difference between crossplay Multiplayer?",
         "date": "2020-05-19",
         "topics": [
             "features\/multiplayer\/crossplay"
+        ],
+        "suggested": [
+            "lfm0vKovpLc",
+            "TM6DY2kEQ8E",
+            "tzQZ1akwzzM",
+            "zekvCEX_mv8"
         ]
     },
     "XswfSsanpDo": {
@@ -15996,7 +16102,8 @@
         "date": "2020-03-24",
         "topics": [
             "features\/multiplayer\/crossplay"
-        ]
+        ],
+        "duplicatedby": "zekvCEX_mv8"
     },
     "PIlduefx6Vk": {
         "title": "Q&A: Merch?",
@@ -17168,7 +17275,8 @@
         "suggested": [
             "GDuWS-cOFX8",
             "rtOmNkt5whw"
-        ]
+        ],
+        "duplicatedby": "rtOmNkt5whw"
     },
     "TfKysphS2S4": {
         "title": "Q&A: Will we get a bigger World Map?",
@@ -17883,6 +17991,7 @@
             "CznWASCszcA",
             "gAjKNyUTkMQ",
             "J_a6kzow6gk",
+            "leLtSRvC-J8",
             "lOWVYg1D990"
         ]
     },
