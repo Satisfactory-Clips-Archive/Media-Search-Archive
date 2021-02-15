@@ -1241,6 +1241,7 @@
         "duplicates": [
             "DLnUjlixpg8",
             "K7fDE5Dg570",
+            "mwN7mAZ2dbg",
             "RuzL7DdAJ1o",
             "shEKhZakMxQ",
             "T0jbE_WjQJQ",
@@ -1857,6 +1858,7 @@
             "tc-CorrectNiceStingraySpicyBoy"
         ],
         "suggested": [
+            "GOg5NVFpjSU",
             "gppSU17i2as"
         ]
     },
@@ -2479,6 +2481,7 @@
             "gAO072mzibQ"
         ],
         "suggested": [
+            "GOg5NVFpjSU",
             "tc-CorrectNiceStingraySpicyBoy",
             "y51YDVf8VOI"
         ]
@@ -3644,6 +3647,9 @@
         "date": "2021-01-19",
         "topics": [
             "satisfactory-updates\/seasonal-events"
+        ],
+        "duplicates": [
+            "TNrm3qsWdxQ"
         ],
         "seealso": [
             "6XovxrktCDA"
@@ -5196,6 +5202,14 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "y51YDVf8VOI"
+        ],
+        "suggested": [
+            "gAO072mzibQ",
+            "gppSU17i2as",
+            "tc-CorrectNiceStingraySpicyBoy"
         ]
     },
     "foek1b3z0kI": {
@@ -5421,7 +5435,8 @@
         "date": "2020-12-15",
         "topics": [
             "satisfactory-updates\/seasonal-events"
-        ]
+        ],
+        "duplicatedby": "2koHO0P289M"
     },
     "mwN7mAZ2dbg": {
         "title": "Q&A: Will there be new enemies?",
@@ -5429,7 +5444,8 @@
         "topics": [
             "environment\/creatures",
             "environment\/creatures\/crab-boss"
-        ]
+        ],
+        "duplicatedby": "gAjKNyUTkMQ"
     },
     "pSGEDxxLn2E": {
         "title": "Q&A: Will Turbofuel finally be usable for Jetpacks in Update 4 or sooner?",

@@ -1,6 +1,6 @@
 # Progress
 * 1801 questions found out of 2456 clips
-* 1122 questions found with no other references
+* 1119 questions found with no other references
 ## grouped by date
 * 2021-02-09: 29 of 94 questions found with no other references
 * 2021-02-02: 16 of 51 questions found with no other references
@@ -9,7 +9,7 @@
 * 2021-01-19: 22 of 91 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 2 of 32 questions found with no other references
-* 2020-12-15: 11 of 59 questions found with no other references
+* 2020-12-15: 8 of 59 questions found with no other references
 * 2020-12-08: 19 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 33 of 44 questions found with no other references
@@ -3584,6 +3584,7 @@
 
 ### Asked previously:
 * [January 19th, 2021 Livestream Q&A: Will there be more Creatures, even more dangerous ones?](https://archive.satisfactory.video/transcriptions/yt-T0jbE_WjQJQ) https://www.youtube.com/watch?v=T0jbE_WjQJQ
+* [December 15th, 2020 Livestream Q&A: Will there be new enemies?](https://archive.satisfactory.video/transcriptions/yt-mwN7mAZ2dbg) https://www.youtube.com/watch?v=mwN7mAZ2dbg
 * [November 10th, 2020 Livestream Q&A: Any plans to add more animals to enemies or dangers?](https://archive.satisfactory.video/transcriptions/yt-RuzL7DdAJ1o) https://www.youtube.com/watch?v=RuzL7DdAJ1o
 * [October 20th, 2020 Livestream Q&A: Will Aliens become more diverse/actually challenging?](https://archive.satisfactory.video/transcriptions/yt-K7fDE5Dg570) https://www.youtube.com/watch?v=K7fDE5Dg570
 * [September 22nd, 2020 Livestream Q&A: Will there be more creatures?](https://archive.satisfactory.video/transcriptions/yt-Yzd466gO44M) https://www.youtube.com/watch?v=Yzd466gO44M
