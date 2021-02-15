@@ -466,6 +466,9 @@
             "RubFX693enI",
             "Rx_M6fLOzvM",
             "tsUgV4Irw9I"
+        ],
+        "suggested": [
+            "BxAAQTxvy-Y"
         ]
     },
     "dWU4c-MjLWE": {
@@ -474,6 +477,9 @@
         "topics": [
             "coffee-stainers\/ben",
             "technology"
+        ],
+        "suggested": [
+            "C9LL9rg1aOk"
         ]
     },
     "mS_O_qnXJp0": {
@@ -1777,6 +1783,9 @@
         "topics": [
             "features\/multiplayer"
         ],
+        "duplicates": [
+            "OjiLxOBdkU8"
+        ],
         "seealso": [
             "JpSV5eDGEJw"
         ],
@@ -2851,6 +2860,9 @@
         "topics": [
             "features\/tiers",
             "satisfactory-updates\/speculative\/satisfactory-update-5"
+        ],
+        "suggested": [
+            "ZOmxbDTRWmg"
         ]
     },
     "0Ld1fbTEOvM": {
@@ -3700,6 +3712,9 @@
             "features\/tiers\/tier-6",
             "features\/tiers\/tier-7",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "suggested": [
+            "42AzC9Qk2yc"
         ],
         "duplicatedby": "zYh_QUHwAh4"
     },
@@ -5499,6 +5514,9 @@
             "environment\/creatures",
             "features\/accessibility\/arachnophobia-mode",
             "satisfactory-updates\/satisfactory-2017"
+        ],
+        "seealso": [
+            "w2P1SCx0YqY"
         ]
     },
     "dkVq6ix0lQM": {
@@ -5520,6 +5538,9 @@
         "date": "2020-12-08",
         "topics": [
             "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "dWU4c-MjLWE"
         ]
     },
     "w2P1SCx0YqY": {
@@ -5527,6 +5548,9 @@
         "date": "2020-12-08",
         "topics": [
             "satisfactory-updates\/satisfactory-2017"
+        ],
+        "suggested": [
+            "KKtqXo-Zzqo"
         ]
     },
     "GJMD7L7BLxE": {
@@ -5543,6 +5567,9 @@
         "topics": [
             "technology\/graphics",
             "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "hRzZjCBoI8s"
         ]
     },
     "Kx_0tBWze0k": {
@@ -5550,6 +5577,9 @@
         "date": "2020-12-08",
         "topics": [
             "trolling"
+        ],
+        "seealso": [
+            "-uJ6AqPZy0U"
         ]
     },
     "ZOmxbDTRWmg": {
@@ -5557,6 +5587,9 @@
         "date": "2020-12-08",
         "topics": [
             "features\/tiers"
+        ],
+        "seealso": [
+            "DyXs7ps8cOY"
         ]
     },
     "BSIjbEnE90o": {
@@ -5586,7 +5619,7 @@
         "topics": [
             "trolling"
         ],
-        "suggested": [
+        "seealso": [
             "q1L297zZiDY"
         ]
     },
@@ -5612,6 +5645,9 @@
             "features\/tiers",
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-update-3"
+        ],
+        "seealso": [
+            "2LczuvKevK4"
         ]
     },
     "LPU9cyNeI7Y": {
@@ -5664,7 +5700,8 @@
         "topics": [
             "features\/multiplayer",
             "satisfactory-updates\/pending\/satisfactory-update-4"
-        ]
+        ],
+        "duplicatedby": "bfXUQNNIPRY"
     },
     "OI6OAux6VrM": {
         "title": "Q&A: Is that it for State of Dev?",
@@ -5947,6 +5984,9 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "trolling"
+        ],
+        "suggested": [
+            "Kx_0tBWze0k"
         ]
     },
     "PD79jEZuOAU": {
