@@ -1,5 +1,6 @@
 # Progress
-* 1801 questions found out of 2456 clips
+* 1847 questions found out of 2456 clips
+* 1801 non-trolling questions found out of 1847 total questions
 * 1055 questions found with no other references
 ## grouped by date
 * 2021-02-09: 29 of 94 questions found with no other references

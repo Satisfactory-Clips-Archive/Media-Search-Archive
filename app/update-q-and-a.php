@@ -823,8 +823,14 @@ ob_start();
 
 echo sprintf(
 		'* %s questions found out of %s clips',
-		count($no_trolling),
+		count($existing),
 		count($cache['playlistItems'])
+	),
+	"\n",
+	sprintf(
+		'* %s non-trolling questions found out of %s total questions',
+		count($no_trolling),
+		count($existing)
 	),
 	"\n",
 	sprintf(
