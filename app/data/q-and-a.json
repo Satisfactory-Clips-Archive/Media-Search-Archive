@@ -97,6 +97,19 @@
             "Ea0f72zZshQ",
             "jXwIeLGuSvI",
             "tc-BusyPowerfulWombatSoonerLater"
+        ],
+        "suggested": [
+            "aeBAgps_tnM",
+            "bTR3AWDpld4",
+            "gcdDfoBWaog",
+            "gvOt4jwWA4Q",
+            "GZlK2fIlYVk",
+            "hKIm2mk5AhM",
+            "lTWfWXB6IG8",
+            "O9cRWaKhSRo",
+            "TRPP6LcTtRQ",
+            "U7io7UQarus",
+            "xeAXhjMWZpI"
         ]
     },
     "ANyv9_88k0A": {
@@ -1345,6 +1358,14 @@
             "lTWfWXB6IG8",
             "U7io7UQarus",
             "xeAXhjMWZpI"
+        ],
+        "suggested": [
+            "gcdDfoBWaog",
+            "gvOt4jwWA4Q",
+            "GZlK2fIlYVk",
+            "O9cRWaKhSRo",
+            "TRPP6LcTtRQ",
+            "Xg0nkRNXaIk"
         ]
     },
     "003TYyIDfk4": {
@@ -2048,6 +2069,18 @@
         ],
         "seealso": [
             "gvOt4jwWA4Q"
+        ],
+        "suggested": [
+            "aeBAgps_tnM",
+            "bTR3AWDpld4",
+            "gcdDfoBWaog",
+            "GZlK2fIlYVk",
+            "hKIm2mk5AhM",
+            "lTWfWXB6IG8",
+            "O9cRWaKhSRo",
+            "U7io7UQarus",
+            "xeAXhjMWZpI",
+            "Xg0nkRNXaIk"
         ]
     },
     "ZljpvyZWlIA": {
@@ -2083,7 +2116,17 @@
             "zVnmYZemxe8"
         ],
         "suggested": [
-            "TRPP6LcTtRQ"
+            "aeBAgps_tnM",
+            "bTR3AWDpld4",
+            "gcdDfoBWaog",
+            "GZlK2fIlYVk",
+            "hKIm2mk5AhM",
+            "lTWfWXB6IG8",
+            "O9cRWaKhSRo",
+            "TRPP6LcTtRQ",
+            "U7io7UQarus",
+            "xeAXhjMWZpI",
+            "Xg0nkRNXaIk"
         ]
     },
     "Hbs0pidLv_4": {
@@ -3021,8 +3064,10 @@
         "duplicates": [
             "vKIeFeGPXJQ"
         ],
+        "replaces": [
+            "jtLq06ZLwEY"
+        ],
         "seealso": [
-            "jtLq06ZLwEY",
             "PHoou3ds24k",
             "pSaAt5v9asM",
             "WRVv8qIBxHU"
@@ -8474,9 +8519,15 @@
         "suggested": [
             "aeBAgps_tnM",
             "bTR3AWDpld4",
+            "gcdDfoBWaog",
+            "gvOt4jwWA4Q",
+            "GZlK2fIlYVk",
             "hKIm2mk5AhM",
             "lTWfWXB6IG8",
-            "U7io7UQarus"
+            "O9cRWaKhSRo",
+            "TRPP6LcTtRQ",
+            "U7io7UQarus",
+            "Xg0nkRNXaIk"
         ],
         "duplicatedby": "eTALbWgKmuE"
     },
@@ -8594,13 +8645,6 @@
             "mods",
             "satisfactory-updates\/release-builds"
         ],
-        "suggested": [
-            "jtLq06ZLwEY",
-            "PHoou3ds24k",
-            "pSaAt5v9asM",
-            "uL_cajdKTcg",
-            "WRVv8qIBxHU"
-        ],
         "duplicatedby": "uL_cajdKTcg"
     },
     "MSt300MAcq8": {
@@ -8631,6 +8675,9 @@
             "features\/buildables\/conveyor-belts",
             "technology\/graphics"
         ],
+        "duplicates": [
+            "6KdakqhC8Q4"
+        ],
         "suggested": [
             "h0rUjNNgiCw",
             "NM_f7DwMhdA",
@@ -8650,6 +8697,9 @@
         "date": "2020-11-03",
         "topics": [
             "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "suggested": [
+            "XhFZ61biXEg"
         ]
     },
     "zo5Skwrwb5Y": {
@@ -8674,6 +8724,9 @@
         "date": "2020-11-03",
         "topics": [
             "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "seealso": [
+            "Jyh3gpkd4LY"
         ]
     },
     "oJnzSnxlxsE": {
@@ -8853,7 +8906,8 @@
         "topics": [
             "features\/buildables\/conveyor-belts",
             "technology\/graphics"
-        ]
+        ],
+        "duplicatedby": "dbJGfDr5SLk"
     },
     "s1ibMeMeBT8": {
         "title": "Q&A: Does the Packager also do unpacking?",
@@ -8917,6 +8971,26 @@
         "date": "2020-10-27",
         "topics": [
             "environment\/world-map"
+        ],
+        "duplicates": [
+            "GcWk8f29OBM",
+            "gNfCEV1J-2Q",
+            "zBv2UdKrYtI"
+        ],
+        "seealso": [
+            "gcdDfoBWaog",
+            "gvOt4jwWA4Q",
+            "GZlK2fIlYVk",
+            "hKIm2mk5AhM",
+            "Xg0nkRNXaIk"
+        ],
+        "suggested": [
+            "aeBAgps_tnM",
+            "bTR3AWDpld4",
+            "lTWfWXB6IG8",
+            "TRPP6LcTtRQ",
+            "U7io7UQarus",
+            "xeAXhjMWZpI"
         ]
     },
     "jfn3FOb5Jdw": {
@@ -8980,9 +9054,9 @@
             "PHoou3ds24k",
             "pSaAt5v9asM",
             "uL_cajdKTcg",
-            "vKIeFeGPXJQ",
             "WRVv8qIBxHU"
-        ]
+        ],
+        "replacedby": "uL_cajdKTcg"
     },
     "TbPMkoLwW4U": {
         "title": "Q&A: Will we see performance improvements?",
@@ -10155,9 +10229,15 @@
         "suggested": [
             "aeBAgps_tnM",
             "bTR3AWDpld4",
+            "gcdDfoBWaog",
+            "gvOt4jwWA4Q",
+            "GZlK2fIlYVk",
             "hKIm2mk5AhM",
             "lTWfWXB6IG8",
-            "xeAXhjMWZpI"
+            "O9cRWaKhSRo",
+            "TRPP6LcTtRQ",
+            "xeAXhjMWZpI",
+            "Xg0nkRNXaIk"
         ]
     },
     "IzylVFY2kIg": {
@@ -10262,10 +10342,16 @@
         ],
         "suggested": [
             "bTR3AWDpld4",
+            "gcdDfoBWaog",
+            "gvOt4jwWA4Q",
+            "GZlK2fIlYVk",
             "hKIm2mk5AhM",
             "lTWfWXB6IG8",
+            "O9cRWaKhSRo",
+            "TRPP6LcTtRQ",
             "U7io7UQarus",
-            "xeAXhjMWZpI"
+            "xeAXhjMWZpI",
+            "Xg0nkRNXaIk"
         ]
     },
     "rc0InGTzcOQ": {
@@ -10836,7 +10922,8 @@
         "date": "2020-09-22",
         "topics": [
             "environment\/world-map"
-        ]
+        ],
+        "duplicatedby": "O9cRWaKhSRo"
     },
     "hAEInvMcQfk": {
         "title": "Q&A: Any information on Merch shipping to EU\/rest of the world?",
@@ -11786,7 +11873,8 @@
         "date": "2020-09-08",
         "topics": [
             "environment\/world-map"
-        ]
+        ],
+        "duplicatedby": "O9cRWaKhSRo"
     },
     "LIi_14XOp60": {
         "title": "Q&A: Any thoughts on Terraforming, specifically tunneling ?",
@@ -13603,7 +13691,8 @@
         ],
         "duplicates": [
             "tc-ArtisticAthleticCroissantRalpherZ"
-        ]
+        ],
+        "duplicatedby": "O9cRWaKhSRo"
     },
     "ITkosdWcGbA": {
         "title": "Q&A: Linux would be useful for Servers",
@@ -15649,8 +15738,7 @@
             "jtLq06ZLwEY",
             "PHoou3ds24k",
             "pSaAt5v9asM",
-            "uL_cajdKTcg",
-            "vKIeFeGPXJQ"
+            "uL_cajdKTcg"
         ]
     },
     "9MVglCjtlwY": {
@@ -17092,6 +17180,19 @@
         "topics": [
             "coffee-stainers\/hannah",
             "environment\/world-map"
+        ],
+        "suggested": [
+            "aeBAgps_tnM",
+            "bTR3AWDpld4",
+            "gvOt4jwWA4Q",
+            "GZlK2fIlYVk",
+            "hKIm2mk5AhM",
+            "lTWfWXB6IG8",
+            "O9cRWaKhSRo",
+            "TRPP6LcTtRQ",
+            "U7io7UQarus",
+            "xeAXhjMWZpI",
+            "Xg0nkRNXaIk"
         ]
     },
     "Zlq2K0-z0_8": {
@@ -17361,6 +17462,19 @@
             "environment\/world-map",
             "features\/possible-features\/game-modes",
             "features\/unplanned-features\/procedural-generation"
+        ],
+        "suggested": [
+            "aeBAgps_tnM",
+            "bTR3AWDpld4",
+            "gcdDfoBWaog",
+            "gvOt4jwWA4Q",
+            "hKIm2mk5AhM",
+            "lTWfWXB6IG8",
+            "O9cRWaKhSRo",
+            "TRPP6LcTtRQ",
+            "U7io7UQarus",
+            "xeAXhjMWZpI",
+            "Xg0nkRNXaIk"
         ],
         "duplicatedby": "hKIm2mk5AhM"
     },
@@ -17900,10 +18014,16 @@
         ],
         "suggested": [
             "aeBAgps_tnM",
+            "gcdDfoBWaog",
+            "gvOt4jwWA4Q",
+            "GZlK2fIlYVk",
             "hKIm2mk5AhM",
             "lTWfWXB6IG8",
+            "O9cRWaKhSRo",
+            "TRPP6LcTtRQ",
             "U7io7UQarus",
-            "xeAXhjMWZpI"
+            "xeAXhjMWZpI",
+            "Xg0nkRNXaIk"
         ]
     },
     "MUBE6tb7AjQ": {
