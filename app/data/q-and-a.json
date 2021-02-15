@@ -1257,6 +1257,7 @@
             "environment\/creatures\/crab-boss"
         ],
         "duplicates": [
+            "c3jeZv_aYug",
             "DLnUjlixpg8",
             "K7fDE5Dg570",
             "mwN7mAZ2dbg",
@@ -1836,7 +1837,9 @@
         ],
         "duplicates": [
             "H2WwaLFOI9Q",
-            "WbtzFVFOFMs"
+            "UxW9nGO9Ius",
+            "WbtzFVFOFMs",
+            "Y1ulbhgaSeU"
         ]
     },
     "awtYncMFbBo": {
@@ -5629,6 +5632,7 @@
             "mods\/official-mod-support"
         ],
         "duplicates": [
+            "D5-Y6LYR7jk",
             "z4Uv-UNMETw"
         ],
         "seealso": [
@@ -8184,7 +8188,8 @@
             "features\/planned-features\/dedicated-servers",
             "mods",
             "mods\/official-mod-support"
-        ]
+        ],
+        "duplicatedby": "o7FFLZpEf_Y"
     },
     "UxW9nGO9Ius": {
         "title": "Q&A: Any plans for better Belts for Pure nodes?",
@@ -8192,7 +8197,8 @@
         "topics": [
             "environment\/resources",
             "features\/buildables\/conveyor-belts"
-        ]
+        ],
+        "duplicatedby": "DpT2LNED0wk"
     },
     "Gi08SVnHyLU": {
         "title": "Q&A: Are Steam Achievements going to be added in the future?",
@@ -8208,7 +8214,8 @@
         "topics": [
             "environment\/creatures",
             "environment\/creatures\/crab-boss"
-        ]
+        ],
+        "duplicatedby": "gAjKNyUTkMQ"
     },
     "SOX83BVfEK8": {
         "title": "Q&A: Are there physics safety's in place on vehicles?",
@@ -8247,7 +8254,8 @@
         "date": "2020-11-03",
         "topics": [
             "features\/buildables\/conveyor-belts"
-        ]
+        ],
+        "duplicatedby": "DpT2LNED0wk"
     },
     "zekvCEX_mv8": {
         "title": "Q&A: Can I play on Epic with someone on Steam?",
