@@ -1,7 +1,7 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1777 non-trolling & off-topic questions found out of 1847 total questions
-* 967 questions found with no other references
+* 962 questions found with no other references
 ## grouped by date
 * 2021-02-09: 28 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
@@ -16,7 +16,7 @@
 * 2020-11-24: 11 of 40 questions found with no other references
 * 2020-11-17: 17 of 56 questions found with no other references
 * 2020-11-10: 37 of 83 questions found with no other references
-* 2020-11-03: 25 of 57 questions found with no other references
+* 2020-11-03: 20 of 57 questions found with no other references
 * 2020-10-27: 22 of 23 questions found with no other references
 * 2020-10-20: 39 of 51 questions found with no other references
 * 2020-10-13: 46 of 48 questions found with no other references
@@ -1452,6 +1452,30 @@
 > working on fixing
 
 
+## [January 19th, 2021 Livestream Q&A: Can we get a Packager with outputs not stacked?](https://archive.satisfactory.video/transcriptions/yt-Cmhx-wt1pBg) https://www.youtube.com/watch?v=Cmhx-wt1pBg
+
+### Asked previously:
+* [November 3rd, 2020 Livestream Q&A: Packager solid/liquid I/O don't allow for placement of Conveyor lifts?](https://archive.satisfactory.video/transcriptions/yt-gqLycnJA_3c) https://www.youtube.com/watch?v=gqLycnJA_3c
+* [November 3rd, 2020 Livestream Q&A: Will the Packager input/output orientation be changed before it goes to Early Access?](https://archive.satisfactory.video/transcriptions/yt-Pjj0oalwYj0) https://www.youtube.com/watch?v=Pjj0oalwYj0
+### Transcript
+
+> uh can we get a packager that has
+>
+> outputs
+>
+> not stacked oh that's a good that's an
+>
+> interesting question
+>
+> uh drop a comment on that on the
+>
+> questions site
+>
+> uh
+>
+> questions outside of factory.com
+
+
 ## [January 19th, 2021 Livestream Q&A: Can we please get a Snow Biome?](https://archive.satisfactory.video/transcriptions/yt-QHVdhswD13w) https://www.youtube.com/watch?v=QHVdhswD13w
 
 ### Asked previously:
@@ -1709,6 +1733,7 @@
 ## [January 26th, 2021 Livestream Q&A: Does the dev team have any ideas for post-launch content?](https://archive.satisfactory.video/transcriptions/yt-gppSU17i2as) https://www.youtube.com/watch?v=gppSU17i2as
 
 ### Asked previously:
+* [November 3rd, 2020 Livestream Q&A: Will there be DLCs?](https://archive.satisfactory.video/transcriptions/yt--f-E47s74Uw) https://www.youtube.com/watch?v=-f-E47s74Uw
 * August 18th, 2020 Livestream Q&A: Is 1.0 the end of the game or will it be expanded? https://clips.twitch.tv/AmazonianWealthyCroquetteDendiFace
 * [January 22nd, 2020 Livestream Q&A: Will there be DLC after 1.0?](https://archive.satisfactory.video/transcriptions/yt-FHqvzjGbhvg) https://www.youtube.com/watch?v=FHqvzjGbhvg
 * [June 22nd, 2018 Livestream Q&A: Plans for post-launch?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,120.52,176.6) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=120&end=177
