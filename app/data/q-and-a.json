@@ -352,6 +352,7 @@
             "5XUn9L5xcAo",
             "12nA53wOK6w",
             "32SZ2UKPZiQ",
+            "47gzhAEWkFM",
             "bhFmwWIY_dw",
             "cvlz1tP61_M",
             "FIamGlpCEFk",
@@ -374,7 +375,6 @@
         "seealso": [
             "1NZKzrxG2yE",
             "1RgR6JDSoPg",
-            "47gzhAEWkFM",
             "hrwqrs89c4s",
             "KGmOM7dLT84",
             "l58eeCBeEpU",
@@ -4582,7 +4582,6 @@
         "suggested": [
             "1NZKzrxG2yE",
             "1RgR6JDSoPg",
-            "47gzhAEWkFM",
             "hrwqrs89c4s",
             "KGmOM7dLT84",
             "l58eeCBeEpU",
@@ -5716,6 +5715,9 @@
         "date": "2020-12-08",
         "topics": [
             "story-lore"
+        ],
+        "duplicates": [
+            "0V_fsSPIEHA"
         ]
     },
     "47gzhAEWkFM": {
@@ -5724,23 +5726,7 @@
         "topics": [
             "features\/planned-features\/dedicated-servers"
         ],
-        "suggested": [
-            "1NZKzrxG2yE",
-            "1RgR6JDSoPg",
-            "hrwqrs89c4s",
-            "KGmOM7dLT84",
-            "l58eeCBeEpU",
-            "NGyFncgCUyo",
-            "pEq7XWO3gCA",
-            "QcD9eKlgte0",
-            "QdMnTdqRxaE",
-            "R9wpbVHJggc",
-            "t9hoNpC4-Ik",
-            "tc-RealPrettiestKoalaBloodTrail",
-            "UYJHOPt6tTw",
-            "yRJNzDLMJZU",
-            "Z3VztvcNSI8"
-        ]
+        "duplicatedby": "R9wpbVHJggc"
     },
     "FhoIzj_QLm0": {
         "title": "Q&A: Is Tier 8 last Tier for the game?",
@@ -7158,7 +7144,8 @@
         "suggested": [
             "dE2pNt1PlFU",
             "I0al2jSp_Rk"
-        ]
+        ],
+        "duplicatedby": "7W32eD2pZOM"
     },
     "k3WWTRfFo_s": {
         "title": "Q&A: Do we get better Jump Pads in the Update?",
@@ -8284,7 +8271,6 @@
         "suggested": [
             "1NZKzrxG2yE",
             "1RgR6JDSoPg",
-            "47gzhAEWkFM",
             "KGmOM7dLT84",
             "l58eeCBeEpU",
             "NGyFncgCUyo",
@@ -9419,7 +9405,6 @@
         "suggested": [
             "1NZKzrxG2yE",
             "1RgR6JDSoPg",
-            "47gzhAEWkFM",
             "hrwqrs89c4s",
             "l58eeCBeEpU",
             "NGyFncgCUyo",
@@ -9937,7 +9922,6 @@
         "suggested": [
             "1NZKzrxG2yE",
             "1RgR6JDSoPg",
-            "47gzhAEWkFM",
             "hrwqrs89c4s",
             "KGmOM7dLT84",
             "NGyFncgCUyo",
@@ -10284,7 +10268,6 @@
         ],
         "suggested": [
             "1NZKzrxG2yE",
-            "47gzhAEWkFM",
             "hrwqrs89c4s",
             "KGmOM7dLT84",
             "l58eeCBeEpU",
@@ -11458,7 +11441,6 @@
         "suggested": [
             "1NZKzrxG2yE",
             "1RgR6JDSoPg",
-            "47gzhAEWkFM",
             "hrwqrs89c4s",
             "KGmOM7dLT84",
             "l58eeCBeEpU",
