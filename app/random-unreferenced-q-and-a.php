@@ -8,7 +8,6 @@ namespace SignpostMarv\VideoClipNotes;
 
 use function array_filter;
 use function array_rand;
-use function count;
 use function file_get_contents;
 use function json_decode;
 
