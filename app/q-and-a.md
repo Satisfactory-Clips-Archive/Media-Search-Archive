@@ -1,7 +1,7 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1777 non-trolling & off-topic questions found out of 1847 total questions
-* 962 questions found with no other references
+* 955 questions found with no other references
 ## grouped by date
 * 2021-02-09: 28 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
@@ -16,16 +16,16 @@
 * 2020-11-24: 11 of 40 questions found with no other references
 * 2020-11-17: 17 of 56 questions found with no other references
 * 2020-11-10: 37 of 83 questions found with no other references
-* 2020-11-03: 20 of 57 questions found with no other references
-* 2020-10-27: 22 of 23 questions found with no other references
+* 2020-11-03: 18 of 57 questions found with no other references
+* 2020-10-27: 19 of 23 questions found with no other references
 * 2020-10-20: 39 of 51 questions found with no other references
 * 2020-10-13: 46 of 48 questions found with no other references
 * 2020-10-09: 22 of 24 questions found with no other references
 * 2020-10-06: 44 of 51 questions found with no other references
 * 2020-09-29: 28 of 38 questions found with no other references
-* 2020-09-22: 41 of 59 questions found with no other references
+* 2020-09-22: 40 of 59 questions found with no other references
 * 2020-09-15: 35 of 47 questions found with no other references
-* 2020-09-08: 59 of 72 questions found with no other references
+* 2020-09-08: 58 of 72 questions found with no other references
 * 2020-09-01: 51 of 71 questions found with no other references
 * 2020-08-25: 13 of 134 questions found with no other references
 * 2020-08-18: 40 of 55 questions found with no other references
@@ -3878,6 +3878,27 @@
 > about that in the future when the story
 >
 > comes out
+
+
+## [October 27th, 2020 Livestream Q&A: What about a new Map?](https://archive.satisfactory.video/transcriptions/yt-O9cRWaKhSRo) https://www.youtube.com/watch?v=O9cRWaKhSRo
+
+### Asked previously:
+* [September 22nd, 2020 Livestream Q&A: Any chance of a new Map?](https://archive.satisfactory.video/transcriptions/yt-GcWk8f29OBM) https://www.youtube.com/watch?v=GcWk8f29OBM
+* [September 8th, 2020 Livestream Q&A: Any plans for new Maps?](https://archive.satisfactory.video/transcriptions/yt-zBv2UdKrYtI) https://www.youtube.com/watch?v=zBv2UdKrYtI
+* [August 25th, 2020 Livestream Q&A: Like a new map for Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-gNfCEV1J-2Q) https://www.youtube.com/watch?v=gNfCEV1J-2Q
+### Transcript
+
+> what about a new map that's terrifying
+>
+> [Music]
+>
+> that either will not happen or not
+>
+> happen for an incredibly long time
+>
+> can we finish this one first yeah we
+>
+> need to finish this one first okay
 
 
 ## [August 25th, 2020 Livestream Q&A: What about holes for Foundations?](https://archive.satisfactory.video/transcriptions/yt-fufH5ltdn7E) https://www.youtube.com/watch?v=fufH5ltdn7E
