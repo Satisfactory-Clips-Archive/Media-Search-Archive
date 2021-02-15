@@ -149,9 +149,9 @@
 
 ### Asked previously:
 * August 25th, 2020 Livestream Q&A: Add Planes as Vehicles and we can automate it to carry our resources? (Part 1) https://clips.twitch.tv/AbstruseFrailKathyMrDestructoid
-* August 25th, 2020 Livestream Q&A: Add Planes as Vehicles and we can automate it to carry our resources? (Part 4) https://clips.twitch.tv/PoliteEnergeticGrouseHassaanChop
-* August 25th, 2020 Livestream Q&A: Add Planes as Vehicles and we can automate it to carry our resources? (Part 3) https://clips.twitch.tv/PowerfulFriendlyKoalaANELE
 * August 25th, 2020 Livestream Q&A: Add Planes as Vehicles and we can automate it to carry our resources? (Part 2) https://clips.twitch.tv/SourManlyMochaBudStar
+* August 25th, 2020 Livestream Q&A: Add Planes as Vehicles and we can automate it to carry our resources? (Part 3) https://clips.twitch.tv/PowerfulFriendlyKoalaANELE
+* August 25th, 2020 Livestream Q&A: Add Planes as Vehicles and we can automate it to carry our resources? (Part 4) https://clips.twitch.tv/PoliteEnergeticGrouseHassaanChop
 ### Transcript
 
 > add planes as vehicles that make you
@@ -294,8 +294,8 @@
 ## [August 25th, 2020 Livestream Q&A: Any chance we can have a power switch so we can shut down power generators?](https://archive.satisfactory.video/transcriptions/yt-kZAnBqZybhs) https://www.youtube.com/watch?v=kZAnBqZybhs
 
 ### Asked previously:
-* August 25th, 2020 Livestream Q&A: Any chance we can have a power switch so we can shut down power generators? (Part 2) https://clips.twitch.tv/SassyLightSkirretOSsloth
 * August 25th, 2020 Livestream Q&A: Any chance we can have a power switch so we can shut down power generators? (Part 1) https://clips.twitch.tv/SmokyBreakableAyeayeEagleEye
+* August 25th, 2020 Livestream Q&A: Any chance we can have a power switch so we can shut down power generators? (Part 2) https://clips.twitch.tv/SassyLightSkirretOSsloth
 ### Transcript
 
 > in a chance we have power switch so we
@@ -355,8 +355,8 @@
 
 ### Asked previously:
 * [February 2nd, 2021 Livestream Q&A: Will we be getting more Walls and other building stuff in vanilla?](https://archive.satisfactory.video/transcriptions/yt-Y9m96T9a5qU) https://www.youtube.com/watch?v=Y9m96T9a5qU
-* [December 15th, 2020 Livestream Q&A: We need more foundation types- triangle foundations, smaller foundations?](https://archive.satisfactory.video/transcriptions/yt-V8sGth96I5w) https://www.youtube.com/watch?v=V8sGth96I5w
 * [December 15th, 2020 Livestream Q&A: Can you imagine bringing something decoration foundations to factories?](https://archive.satisfactory.video/transcriptions/yt-wuimxgd7c_A) https://www.youtube.com/watch?v=wuimxgd7c_A
+* [December 15th, 2020 Livestream Q&A: We need more foundation types- triangle foundations, smaller foundations?](https://archive.satisfactory.video/transcriptions/yt-V8sGth96I5w) https://www.youtube.com/watch?v=V8sGth96I5w
 * [November 17th, 2020 Livestream Q&A: Circular Foundations?](https://archive.satisfactory.video/transcriptions/yt-5snNwUqWAxA) https://www.youtube.com/watch?v=5snNwUqWAxA
 * [November 3rd, 2020 Livestream Q&A: Can we get Circular Foundations?](https://archive.satisfactory.video/transcriptions/yt-4sKy5-TJVKY) https://www.youtube.com/watch?v=4sKy5-TJVKY
 * [September 29th, 2020 Livestream Q&A: Any chance of larger Foundations?](https://archive.satisfactory.video/transcriptions/yt-I5HR5ocUX9o) https://www.youtube.com/watch?v=I5HR5ocUX9o
@@ -396,8 +396,8 @@
 
 ### Asked previously:
 * August 25th, 2020 Livestream Q&A: Are limited resources planned? (Part 1) https://clips.twitch.tv/ConcernedStylishTomatoBabyRage
-* August 25th, 2020 Livestream Q&A: Are limited resources planned? (Part 3) https://clips.twitch.tv/PoorAlluringHerdRitzMitz
 * August 25th, 2020 Livestream Q&A: Are limited resources planned? (Part 2) https://clips.twitch.tv/PrettyBelovedTermiteOptimizePrime
+* August 25th, 2020 Livestream Q&A: Are limited resources planned? (Part 3) https://clips.twitch.tv/PoorAlluringHerdRitzMitz
 ### Transcript
 
 > are limited resources planned what if i
@@ -495,10 +495,10 @@
 ## [August 25th, 2020 Livestream Q&A: Are there internal discussions to significantly rework existing buildings like refineries?](https://archive.satisfactory.video/transcriptions/yt-x07FQZjbA_c) https://www.youtube.com/watch?v=x07FQZjbA_c
 
 ### Asked previously:
-* August 25th, 2020 Livestream Q&A: Internal discussions to significantly rework existing buildings like refineries? (Part 4) https://clips.twitch.tv/BoredThankfulPistachioJKanStyle
-* August 25th, 2020 Livestream Q&A: Internal discussions to significantly rework existing buildings like refineries? (Part 2) https://clips.twitch.tv/CooperativeCrackyAyeayeTheTarFu
 * August 25th, 2020 Livestream Q&A: Internal discussions to significantly rework existing buildings like refineries? (Part 1) https://clips.twitch.tv/CrispySaltyOcelotOSfrog
+* August 25th, 2020 Livestream Q&A: Internal discussions to significantly rework existing buildings like refineries? (Part 2) https://clips.twitch.tv/CooperativeCrackyAyeayeTheTarFu
 * August 25th, 2020 Livestream Q&A: Internal discussions to significantly rework existing buildings like refineries? (Part 3) https://clips.twitch.tv/SmallProductiveKaleCclamChamp
+* August 25th, 2020 Livestream Q&A: Internal discussions to significantly rework existing buildings like refineries? (Part 4) https://clips.twitch.tv/BoredThankfulPistachioJKanStyle
 ### Transcript
 
 > their internal discussions to
@@ -866,9 +866,9 @@
 ## [August 25th, 2020 Livestream Q&A: Blueprints would be awesome for end-game](https://archive.satisfactory.video/transcriptions/yt-e2YhcCwJNNg) https://www.youtube.com/watch?v=e2YhcCwJNNg
 
 ### Asked previously:
-* August 25th, 2020 Livestream Q&A: Blueprints would be awesome for end-game (Part 3) https://clips.twitch.tv/CrunchyGlamorousQuailSwiftRage
-* August 25th, 2020 Livestream Q&A: Blueprints would be awesome for end-game (Part 2) https://clips.twitch.tv/FreezingCuriousHeronDatBoi
 * August 25th, 2020 Livestream Q&A: Blueprints would be awesome for end-game (Part 1) https://clips.twitch.tv/LuckyNastyLionDogFace
+* August 25th, 2020 Livestream Q&A: Blueprints would be awesome for end-game (Part 2) https://clips.twitch.tv/FreezingCuriousHeronDatBoi
+* August 25th, 2020 Livestream Q&A: Blueprints would be awesome for end-game (Part 3) https://clips.twitch.tv/CrunchyGlamorousQuailSwiftRage
 ### Transcript
 
 > blueprints would be awesome for late
@@ -1242,9 +1242,9 @@
 ## [August 25th, 2020 Livestream Q&A: Can you make modular vehicles?](https://archive.satisfactory.video/transcriptions/yt-k6hkL7fE6OQ) https://www.youtube.com/watch?v=k6hkL7fE6OQ
 
 ### Asked previously:
-* August 25th, 2020 Livestream Snutt Talk: Improving on Vehicles https://clips.twitch.tv/AmazonianAnnoyingSushiUncleNox
-* August 25th, 2020 Livestream Q&A: Can you make modular vehicles? (Part 2) https://clips.twitch.tv/DistinctConcernedPlumageWow
 * August 25th, 2020 Livestream Q&A: Can you make modular vehicles? (Part 1) https://clips.twitch.tv/OriginalMuddyDogePeteZaroll
+* August 25th, 2020 Livestream Q&A: Can you make modular vehicles? (Part 2) https://clips.twitch.tv/DistinctConcernedPlumageWow
+* August 25th, 2020 Livestream Snutt Talk: Improving on Vehicles https://clips.twitch.tv/AmazonianAnnoyingSushiUncleNox
 ### Transcript
 
 > can you uh make modular vehicles
@@ -1367,14 +1367,14 @@
 ## July 28th, 2020 Livestream Q&A: Dedicated Server cost https://clips.twitch.tv/ConfidentLittleSnood4Head
 
 ### Asked previously:
-* [January 22nd, 2020 Livestream Q&A: Will we need to buy a new copy for the server?](https://archive.satisfactory.video/transcriptions/yt-H6FZ4VqocHw) https://www.youtube.com/watch?v=H6FZ4VqocHw
 * [January 22nd, 2020 Livestream Q&A: Dedicated Servers, will they cost anything?](https://archive.satisfactory.video/transcriptions/yt-SdB0QlhgmGs) https://www.youtube.com/watch?v=SdB0QlhgmGs
+* [January 22nd, 2020 Livestream Q&A: Will we need to buy a new copy for the server?](https://archive.satisfactory.video/transcriptions/yt-H6FZ4VqocHw) https://www.youtube.com/watch?v=H6FZ4VqocHw
 ## [February 9th, 2021 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-R9wpbVHJggc) https://www.youtube.com/watch?v=R9wpbVHJggc
 
 ### Asked previously:
 * [February 9th, 2021 Livestream Q&A: When will we see Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-5XUn9L5xcAo) https://www.youtube.com/watch?v=5XUn9L5xcAo
-* [February 2nd, 2021 Livestream Q&A: Release date for Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-bhFmwWIY_dw) https://www.youtube.com/watch?v=bhFmwWIY_dw
 * [February 2nd, 2021 Livestream Q&A: Any news on Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt--IAV3zlXLss) https://www.youtube.com/watch?v=-IAV3zlXLss
+* [February 2nd, 2021 Livestream Q&A: Release date for Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-bhFmwWIY_dw) https://www.youtube.com/watch?v=bhFmwWIY_dw
 * [January 26th, 2021 Livestream Q&A: Any updates on Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-cvlz1tP61_M) https://www.youtube.com/watch?v=cvlz1tP61_M
 * [January 26th, 2021 Livestream Q&A: Dedicated Servers aka Multiplayer fixes when?](https://archive.satisfactory.video/transcriptions/yt-_XfcfZ8vfj8) https://www.youtube.com/watch?v=_XfcfZ8vfj8
 * [January 19th, 2021 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-FIamGlpCEFk) https://www.youtube.com/watch?v=FIamGlpCEFk
@@ -1385,14 +1385,14 @@
 * [October 20th, 2020 Livestream Q&A: Dedicated Servers coming with the next Update ?](https://archive.satisfactory.video/transcriptions/yt-VyyzowIc504) https://www.youtube.com/watch?v=VyyzowIc504
 * [October 20th, 2020 Livestream Q&A: When will Dedicated Servers be coming?](https://archive.satisfactory.video/transcriptions/yt-TW0i2hxJ7C0) https://www.youtube.com/watch?v=TW0i2hxJ7C0
 * [September 29th, 2020 Livestream Q&A: Any update for Hosted/Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-kiko6VnK6sA) https://www.youtube.com/watch?v=kiko6VnK6sA
-* [September 22nd, 2020 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-tHUqAoOXffs) https://www.youtube.com/watch?v=tHUqAoOXffs
 * [September 22nd, 2020 Livestream Q&A: Are there server files when I want to host my own Dedicated Server?](https://archive.satisfactory.video/transcriptions/yt-12nA53wOK6w) https://www.youtube.com/watch?v=12nA53wOK6w
+* [September 22nd, 2020 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-tHUqAoOXffs) https://www.youtube.com/watch?v=tHUqAoOXffs
 * [September 8th, 2020 Livestream Q&A: When are we expecting to get Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-G9PuZ0WvoOM) https://www.youtube.com/watch?v=G9PuZ0WvoOM
 * [September 1st, 2020 Livestream Q&A: Dedicated Servers](https://archive.satisfactory.video/transcriptions/yt-z5bf3k7JWlg) https://www.youtube.com/watch?v=z5bf3k7JWlg
 * August 18th, 2020 Livestream Q&A: Did I miss the status update of Dedicated Servers? https://clips.twitch.tv/ElatedWittyVelociraptorThunBeast
+* August 11th, 2020 Livestream Q&A: Are Dedicated Servers coming? https://clips.twitch.tv/BigDeadPhoneKappaWealth
 * August 11th, 2020 Livestream Q&A: Dedicated Servers, start building a community around that? https://clips.twitch.tv/EagerPeacefulMonkeyDoubleRainbow
 * August 11th, 2020 Livestream Q&A: What's the hold-up on Dedicated Servers? https://clips.twitch.tv/ShinyAthleticCrocodileKappaPride
-* August 11th, 2020 Livestream Q&A: Are Dedicated Servers coming? https://clips.twitch.tv/BigDeadPhoneKappaWealth
 * [June 8th, 2020 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-XuFfkTTZnoA) https://www.youtube.com/watch?v=XuFfkTTZnoA
 * [February 11th, 2020 Livestream Q&A: Any news on Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-pUhzc1Fd8sg) https://www.youtube.com/watch?v=pUhzc1Fd8sg
 * [January 22nd, 2020 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-Qy10mQQMXXI) https://www.youtube.com/watch?v=Qy10mQQMXXI
@@ -1467,8 +1467,8 @@
 * [December 15th, 2020 Livestream Q&A: Will RTX be added to Update 4 with the new Unreal Engine?](https://archive.satisfactory.video/transcriptions/yt-RubFX693enI) https://www.youtube.com/watch?v=RubFX693enI
 * [November 24th, 2020 Livestream Q&A: Plans for Ray Tracing?](https://archive.satisfactory.video/transcriptions/yt-pvMET7F9BQ8) https://www.youtube.com/watch?v=pvMET7F9BQ8
 * [November 17th, 2020 Livestream Trolling: Ray Tracing](https://archive.satisfactory.video/transcriptions/yt-ow_LpyvCnVo) https://www.youtube.com/watch?v=ow_LpyvCnVo
-* [November 3rd, 2020 Livestream Q&A: Will Satisfactory get Ray Tracing?](https://archive.satisfactory.video/transcriptions/yt-pb2KprHATHk) https://www.youtube.com/watch?v=pb2KprHATHk
 * [November 3rd, 2020 Livestream Q&A: RTX support ever?](https://archive.satisfactory.video/transcriptions/yt-PKx5vpwPGW0) https://www.youtube.com/watch?v=PKx5vpwPGW0
+* [November 3rd, 2020 Livestream Q&A: Will Satisfactory get Ray Tracing?](https://archive.satisfactory.video/transcriptions/yt-pb2KprHATHk) https://www.youtube.com/watch?v=pb2KprHATHk
 * [October 9th, 2020 Livestream Q&A: Could we get Ray Tracing?](https://archive.satisfactory.video/transcriptions/yt-tsUgV4Irw9I) https://www.youtube.com/watch?v=tsUgV4Irw9I
 * [September 29th, 2020 Livestream Q&A: Add RTX?](https://archive.satisfactory.video/transcriptions/yt-KXKJxFYBxos) https://www.youtube.com/watch?v=KXKJxFYBxos
 * [September 15th, 2020 Livestream Q&A: DLSS one day?](https://archive.satisfactory.video/transcriptions/yt-IXroe1QFRzc) https://www.youtube.com/watch?v=IXroe1QFRzc
@@ -1625,8 +1625,8 @@
 ## [February 9th, 2021 Livestream Q&A: Do you plan to release on Console one day?](https://archive.satisfactory.video/transcriptions/yt-mS_O_qnXJp0) https://www.youtube.com/watch?v=mS_O_qnXJp0
 
 ### Asked previously:
-* [February 2nd, 2021 Livestream Q&A: Will the game ever be on Console?](https://archive.satisfactory.video/transcriptions/yt-G_pmJbKEhX4) https://www.youtube.com/watch?v=G_pmJbKEhX4
 * [February 2nd, 2021 Livestream Q&A: Will Satisfactory be coming to Console?](https://archive.satisfactory.video/transcriptions/yt-ZljpvyZWlIA) https://www.youtube.com/watch?v=ZljpvyZWlIA
+* [February 2nd, 2021 Livestream Q&A: Will the game ever be on Console?](https://archive.satisfactory.video/transcriptions/yt-G_pmJbKEhX4) https://www.youtube.com/watch?v=G_pmJbKEhX4
 * [January 26th, 2021 Livestream Q&A: Release date on PS4?](https://archive.satisfactory.video/transcriptions/yt-xUdlPZfMgDw) https://www.youtube.com/watch?v=xUdlPZfMgDw
 * [January 19th, 2021 Livestream Q&A: Could we expect the game on Consoles some day?](https://archive.satisfactory.video/transcriptions/yt-OVn94IC65fw) https://www.youtube.com/watch?v=OVn94IC65fw
 * [November 24th, 2020 Livestream Q&A: Is Console confirmed for Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-KEJYlYO511Q) https://www.youtube.com/watch?v=KEJYlYO511Q
@@ -1696,307 +1696,6 @@
 > had it like working pretty well yeah
 
 
-## [August 25th, 2020 Livestream Q&A: End game is all about building refineries?](https://archive.satisfactory.video/transcriptions/yt-mZ4l1leFAWY) https://www.youtube.com/watch?v=mZ4l1leFAWY
-
-### Asked previously:
-* August 25th, 2020 Livestream Q&A: Nuclear is the current end game https://clips.twitch.tv/CoweringHotZebraTheTarFu
-* August 25th, 2020 Livestream Q&A: End game is all about building refineries https://clips.twitch.tv/MildNurturingWoodcockYouWHY
-### Transcript
-
-> endgame is all about building refineries
->
-> well yeah endgame right now is all about
->
-> building refineries there are still like
->
-> two more tiers
->
-> uh after that um and uh it might be that
->
-> like
->
-> we have a lot of good data now about how
->
-> refineries are balanced right now
->
-> and like if they're too tedious then
->
-> when you get to the next tier you're
->
-> already burned out with the refineries
->
-> so like that's probably gonna change
->
-> maybe i don't know
->
-> uh yeah
->
-> nuclear is the current endgame yeah
->
-> that's true
->
-> but you do need a lot of like
->
-> well
-
-
-## [August 25th, 2020 Livestream Q&A: ETA for Update 4](https://archive.satisfactory.video/transcriptions/yt-3xgs6Y-ZSe8) https://www.youtube.com/watch?v=3xgs6Y-ZSe8
-
-### Asked previously:
-* August 25th, 2020 Livestream ETA for Update 4? (Part 5) https://clips.twitch.tv/AmazingEagerGorillaHeyGuys
-* August 25th, 2020 Livestream ETA for Update 4? (Part 1) https://clips.twitch.tv/DeadPrettySaladMoreCowbell
-* August 25th, 2020 Livestream ETA for Update 4? (Part 3) https://clips.twitch.tv/GoodSaltyPepperoniPunchTrees
-* August 25th, 2020 Livestream ETA for Update 4? (Part 2) https://clips.twitch.tv/SavageBenevolentEndiveChocolateRain
-* August 25th, 2020 Livestream ETA for Update 4? (Part 4) https://clips.twitch.tv/UnsightlyApatheticHornetKreygasm
-### Transcript
-
-> so yeah pretty much that um
->
-> and saw a question eta for update 4
->
-> is kind of hard to say since we're still
->
-> kind of defining
->
-> exactly what it will be um
->
-> but jace guessed last stream that it
->
-> would be
->
-> sometime this year at the end of the
->
-> year probably
->
-> um it might be later it might be next
->
-> year
->
-> depending on how big we feel like update
->
-> 4 will be
->
-> but if we are gonna make a bigger update
->
-> for
->
-> you know that's not gonna happen until
->
-> next year then we're definitely gonna
->
-> release
->
-> something like smaller before that
->
-> that's not update four
->
-> but it's like new content of some sort
->
-> you know um
->
-> it might be like just an upgrade on like
->
-> quality of life stuff it might be
->
-> smaller
->
-> features or something like that we
->
-> haven't really decided yet um
->
-> but the one thing i know for sure is
->
-> that like dedicated servers is its own
->
-> thing
->
-> we're working on that separately to
->
-> update for
->
-> that might happen before update 4 i
->
-> personally hope it does
->
-> especially if we're going to delay or
->
-> not delay but like especially if update
->
-> 4 doesn't happen until later
->
-> and uh yeah i think that's that's
->
-> pretty much it like yeah mark two pipes
->
-> is also a possibility that might happen
->
-> before update four
->
-> um unless we make some unless they tie
->
-> in with something in update four that
->
-> like is part of that update so to speak
->
-> but if if they're not then we're
->
-> probably gonna release
->
-> like for maybe mark two pipes before
->
-> that or something i don't know
->
-> um so that's essentially it this shows a
->
-> lot of unknowns
->
-> but we are getting we are progressing so
->
-> to speak
->
-> more so than we did last year or before
->
-> vacation
->
-> um because before vacation we were still
->
-> kind of like figuring out like how do we
->
-> want to
->
-> proceed working and i think we've kind
->
-> of like figured that out now um
->
-> so now it's more of like
->
-> where do we gain value like what is the
->
-> most value for us to put out
->
-> like if we just put out you know if say
->
-> update4 was just like
->
-> it's mark two pipes and it's like
->
-> improvements to the pipe network
->
-> like people that are already past you
->
-> know the
->
-> coal production part of the game would
->
-> be like it's not really
->
-> super beneficial for us because like
->
-> we're already at nuclear and we don't
->
-> really like uh
->
-> care about that stuff you know which
->
-> it's not is it it's a bad example
->
-> because obviously it's gonna affect
->
-> everyone because like your refineries
->
-> are gonna get effective about that and
->
-> stuff like that
->
-> but uh yeah that's
->
-> that's a big part of it as well like not
->
-> just releasing
->
-> you know a quality of life update for
->
-> you know maybe do we want to go for that
->
-> or do we want to go for like a
->
-> actual content kind of release um
->
-> so yeah we we don't know 100 yet update
->
-> 4 might happen at the end of 2020
->
-> update 4 might happen in the beginning
->
-> of 2021 uh depending on how big it is
->
-> but uh and we also don't know if stuff
->
-> up is if
->
-> we're if update 4 is going to be like
->
-> save everything until update four and
->
-> release
->
-> it then or if you're gonna like release
->
-> things as we progress
->
-> um and what that would be
->
-> is also a good question so we will see
->
-> and i don't know if like update four
->
-> might be my update 4 might be you know
->
-> tier 8
->
-> kind of like more uh technology stuff
->
-> my update 4 might be you know more tied
->
-> into the environment maybe
->
-> there are a few things that we're
->
-> thinking about but we
->
-> still are like
->
-> i would say we're like we've we've like
->
-> decided sixty percent on what it's going
->
-> to be
->
-> and uh the rest of those like 40 are
->
-> probably going to be defined later on
->
-> uh but there are some like quality of
->
-> life stuff
->
-> that we've already implemented that
->
-> we're kind of saving up on
->
-> and i'm not going to spoil that yet
->
-> because i'm actually pretty hyped about
->
-> it
->
-> just know that the game is not dead
->
-> there's still
->
-> cool stuff coming so so yeah
-
-
 ## [January 26th, 2021 Livestream Q&A: Farming would be cool?](https://archive.satisfactory.video/transcriptions/yt-qO1Zl01HfqU) https://www.youtube.com/watch?v=qO1Zl01HfqU
 
 ### Asked previously:
@@ -2047,102 +1746,12 @@
 > into specific holes that would be dope
 
 
-## [August 25th, 2020 Livestream Q&A: Generators have power switches, so do all structures in the game?](https://archive.satisfactory.video/transcriptions/yt-CN2G6ZH6bmA) https://www.youtube.com/watch?v=CN2G6ZH6bmA
-
-### Asked previously:
-* August 25th, 2020 Livestream Q&A: Any chance we can have a power switch so we can shut down power generators? (Part 4) https://clips.twitch.tv/ElegantNaivePorpoiseTF2John
-* August 25th, 2020 Livestream Q&A: Any chance we can have a power switch so we can shut down power generators? (Part 3) https://clips.twitch.tv/KawaiiOddGrasshopperMrDestructoid
-### Transcript
-
-> generators have power switch
->
-> so do all structures in the game the
->
-> standby switch only works for one
->
-> uh individual generator though so you
->
-> can't like switch off
->
-> a whole network which is more what
->
-> people want i believe
->
-> so like if you have like a like if you
->
-> have like a power grid for
->
-> for uh say that you hooked up like your
->
-> refiner or something and you want to be
->
-> able to switch that off you can't really
->
-> do that unless you disconnect
->
-> uh power poles and such
->
-> or you can run around for every single
->
-> generator and
->
-> put it on standby but that's not it's
->
-> it's much better if it's just one button
->
-> uh and i know that this is a use case
->
-> because i've done this in my own map
->
-> where like i had
->
-> power running through my tower and then
->
-> i had i used hyper loops to like move
->
-> around and i wanted the hyperloops like
->
-> if power dies i don't want my power
->
-> loads to die because then i couldn't go
->
-> up and down
->
-> so i wanted them on a separate
->
-> connection
->
-> and in that case it's really nifty to
->
-> just be able to turn it off and on again
->
-> there's also use cases where like you
->
-> can have like
->
-> your thermal as a backup generator for
->
-> stuff and but you don't want that
->
-> running
->
-> unless the power goes down and then it's
->
-> nice if you can like switch it on and
->
-> off easily
->
-> [Music]
->
-> when that happens so to speak
-
-
 ## [January 26th, 2021 Livestream Q&A: Give FICS⁕MAS back?](https://archive.satisfactory.video/transcriptions/yt-CmQgxVzbXoQ) https://www.youtube.com/watch?v=CmQgxVzbXoQ
 
 ### Asked previously:
+* [December 15th, 2020 Livestream Q&A: Could it be released to the Modding Community to polish and release it as a Mod?](https://archive.satisfactory.video/transcriptions/yt-MQLuFiVQPYY) https://www.youtube.com/watch?v=MQLuFiVQPYY
 * [December 15th, 2020 Livestream Q&A: If I backup current version, will FICS⁕MAS still work after the 18th?](https://archive.satisfactory.video/transcriptions/yt-01DJ6EPqTk4) https://www.youtube.com/watch?v=01DJ6EPqTk4
 * [December 15th, 2020 Livestream Q&A: Will the event come back next year?](https://archive.satisfactory.video/transcriptions/yt-6XovxrktCDA) https://www.youtube.com/watch?v=6XovxrktCDA
-* [December 15th, 2020 Livestream Q&A: Could it be released to the Modding Community to polish and release it as a Mod?](https://archive.satisfactory.video/transcriptions/yt-MQLuFiVQPYY) https://www.youtube.com/watch?v=MQLuFiVQPYY
 ### Transcript
 
 > es gibt fixe ist bergnot
@@ -2320,8 +1929,8 @@
 * [September 22nd, 2020 Livestream Q&A: Will there be a Creative Mode?](https://archive.satisfactory.video/transcriptions/yt-nz4VgYaVDDo) https://www.youtube.com/watch?v=nz4VgYaVDDo
 * [September 1st, 2020 Livestream Q&A: Is there going to be creative mode?](https://archive.satisfactory.video/transcriptions/yt-zZILz6cMKbw) https://www.youtube.com/watch?v=zZILz6cMKbw
 * August 18th, 2020 Livestream Q&A: When is Creative Mode coming? https://clips.twitch.tv/MagnificentImpartialSmoothieMikeHogu
-* [March 24th, 2020 Livestream Q&A: Wouldn't you split normal & Creative Mode then not allow switching?](https://archive.satisfactory.video/transcriptions/yt-7xTscBSrsY0) https://www.youtube.com/watch?v=7xTscBSrsY0
 * [March 24th, 2020 Livestream Q&A: Creative Mode without having to Mod?](https://archive.satisfactory.video/transcriptions/yt-ww37EE17YP4) https://www.youtube.com/watch?v=ww37EE17YP4
+* [March 24th, 2020 Livestream Q&A: Wouldn't you split normal & Creative Mode then not allow switching?](https://archive.satisfactory.video/transcriptions/yt-7xTscBSrsY0) https://www.youtube.com/watch?v=7xTscBSrsY0
 * [March 9th, 2019 Livestream Q&A: Will there be a creative mode?](https://archive.satisfactory.video/transcriptions/yt-eIPuM39KDcE) https://www.youtube.com/watch?v=eIPuM39KDcE
 * August 1st, 2018 Livestream Q&A: Will there be a Creative Mode? https://www.youtube.com/watch?v=yt-iFAy1NZUOGU%2C14%2C29
 ### Transcript
@@ -2346,8 +1955,8 @@
 * [November 10th, 2020 Livestream Q&A: Any plans for a helicopter so we don't have to turn into spaghetti to get across the map?](https://archive.satisfactory.video/transcriptions/yt-l-k7qpxgpRQ) https://www.youtube.com/watch?v=l-k7qpxgpRQ
 * [November 3rd, 2020 Livestream Q&A: Will we get Flying Vehicles?](https://archive.satisfactory.video/transcriptions/yt-CkWtF0M2ddY) https://www.youtube.com/watch?v=CkWtF0M2ddY
 * [September 29th, 2020 Livestream Q&A: Will we see air vehicles some time in the future?](https://archive.satisfactory.video/transcriptions/yt-qJ56jBYTtAc) https://www.youtube.com/watch?v=qJ56jBYTtAc
-* [September 8th, 2020 Livestream Q&A: What're your guys thoughts on transport beyond Jetpacks ?](https://archive.satisfactory.video/transcriptions/yt--sa8wjg4lYk) https://www.youtube.com/watch?v=-sa8wjg4lYk
 * [September 8th, 2020 Livestream Q&A: The game needs small Flying Vehicles to travel long distance?](https://archive.satisfactory.video/transcriptions/yt-i0_bbpQ_91I) https://www.youtube.com/watch?v=i0_bbpQ_91I
+* [September 8th, 2020 Livestream Q&A: What're your guys thoughts on transport beyond Jetpacks ?](https://archive.satisfactory.video/transcriptions/yt--sa8wjg4lYk) https://www.youtube.com/watch?v=-sa8wjg4lYk
 * [August 25th, 2020 Livestream Q&A: Add Planes as Vehicles and we can automate it to carry our resources?](https://archive.satisfactory.video/transcriptions/yt-Ds9NIPna9_4) https://www.youtube.com/watch?v=Ds9NIPna9_4
 * [August 25th, 2020 Livestream Q&A: Implement some kind of hire spaceship thingy for better exploration & faster travelling ?](https://archive.satisfactory.video/transcriptions/yt-mAA2oX9mDOw) https://www.youtube.com/watch?v=mAA2oX9mDOw
 * [December 19th, 2019 Livestream Q&A: Give us a flight vehicle?](https://archive.satisfactory.video/transcriptions/yt-Fb6JnI4Bb4I) https://www.youtube.com/watch?v=Fb6JnI4Bb4I
@@ -2459,8 +2068,8 @@
 
 ### Asked previously:
 * [September 1st, 2020 Livestream Q&A: Any chance of Autosave process not creating giant frame drops ?](https://archive.satisfactory.video/transcriptions/yt-L6SZHtX7Jmg) https://www.youtube.com/watch?v=L6SZHtX7Jmg
-* [August 25th, 2020 Livestream Q&A: Is it possible to have the Autosave not noticeable at all ?](https://archive.satisfactory.video/transcriptions/yt-ap-EONXus_4) https://www.youtube.com/watch?v=ap-EONXus_4
 * [August 25th, 2020 Livestream Q&A: Better Autosave system?](https://archive.satisfactory.video/transcriptions/yt-EGl4PxUS0J8) https://www.youtube.com/watch?v=EGl4PxUS0J8
+* [August 25th, 2020 Livestream Q&A: Is it possible to have the Autosave not noticeable at all ?](https://archive.satisfactory.video/transcriptions/yt-ap-EONXus_4) https://www.youtube.com/watch?v=ap-EONXus_4
 * [May 19th, 2020 Livestream Q&A: Save stutter?](https://archive.satisfactory.video/transcriptions/yt-n523WIVo5LM) https://www.youtube.com/watch?v=n523WIVo5LM
 ### Transcript
 
@@ -3074,138 +2683,11 @@
 > so i think that's unlikely
 
 
-## [August 25th, 2020 Livestream Q&A: Plans for mod support?](https://archive.satisfactory.video/transcriptions/yt-iOk7KMpNMEo) https://www.youtube.com/watch?v=iOk7KMpNMEo
-
-### Asked previously:
-* August 25th, 2020 Livestream Plans for mod support? (Part 2) https://clips.twitch.tv/CreativeOptimisticWalrusSwiftRage
-* August 25th, 2020 Livestream Plans for mod support? (Part 3) https://clips.twitch.tv/HumbleRenownedTofuLitty
-* August 25th, 2020 Livestream Plans for mod support? (Part 1) https://clips.twitch.tv/OnerousDeterminedMoonRlyTho
-### Transcript
-
-> plans for mod support hell yeah
->
-> uh let me talk a little bit about that
->
-> actually
->
-> because okay this is this is like so
->
-> right now we're experimenting
->
-> so there is mod support right there's a
->
-> lot of stuff modders can make
->
-> it's a bit tedious to make mods right
->
-> now or like it's a bit of hardcore
->
-> um we are currently investigating
->
-> making like more modular builds for the
->
-> game
->
-> which would improve what the modders can
->
-> do
->
-> um we're still evaluating that though we
->
-> don't know if that's actually like gonna
->
-> be feasible
->
-> because what's gonna happen is that's
->
-> gonna increase the build size
->
-> quite significantly for everyone if we
->
-> were to do that
->
-> um so that's like one drawback
->
-> of it and the another one is that it's
->
-> it we've
->
-> we have seen that it does impact
->
-> performance a bit
->
-> um so it's also like is it worth it
->
-> something that we're also trying to
->
-> figure out right now
->
-> uh we do have plans for like official
->
-> mod support
->
-> at some point uh but this is like one
->
-> more step so that the current mod
->
-> creations can can be even better
->
-> um but don't know how that's going to
->
-> turn out it might not turn out at all
->
-> um but that's something that we're
->
-> doing like as a side thing it's a side
->
-> gig
->
-> kind of because we do really value the
->
-> the
->
-> people that are making mods right now uh
->
-> we really want to
->
-> make we want to help them as much as we
->
-> can honestly
->
-> [Music]
->
-> because we think mods is an amazing
->
-> thing that should totally
->
-> be a thing for the game we're going to
->
-> support that as much as we can
->
-> because i know like people ask me a lot
->
-> like hey what do you think about mods
->
-> like we love them
->
-> we definitely love them we love what
->
-> people are making
->
-> and we want people like we want to give
->
-> uh like the availability for people to
->
-> be able to make more stuff
->
-> like that
-
-
 ## [August 25th, 2020 Livestream Q&A: Please consider adding a third-person view?](https://archive.satisfactory.video/transcriptions/yt-HXXn10GhRWU) https://www.youtube.com/watch?v=HXXn10GhRWU
 
 ### Asked previously:
-* August 25th, 2020 Livestream Q&A: Please consider adding a third-person view? (Part 2) https://clips.twitch.tv/FrailSuaveBeanImGlitch
 * August 25th, 2020 Livestream Q&A: Please consider adding a third-person view? (Part 1) https://clips.twitch.tv/PeacefulInventiveDogWOOP
+* August 25th, 2020 Livestream Q&A: Please consider adding a third-person view? (Part 2) https://clips.twitch.tv/FrailSuaveBeanImGlitch
 ### Transcript
 
 > please consider adding a third person
@@ -3276,9 +2758,9 @@
 ## [August 25th, 2020 Livestream Q&A: Quality-of-life update?](https://archive.satisfactory.video/transcriptions/yt-cwWUYRciIoc) https://www.youtube.com/watch?v=cwWUYRciIoc
 
 ### Asked previously:
+* August 25th, 2020 Livestream Quality-of-life update? (Part 1): https://clips.twitch.tv/RudeSpoopyAlligatorVoteYea
 * August 25th, 2020 Livestream Quality-of-life update? (Part 2): https://clips.twitch.tv/AlertFancyAxeFUNgineer
 * August 25th, 2020 Livestream Quality-of-life update? (Part 3): https://clips.twitch.tv/CrunchyGlutenFreeNuggetsMingLee
-* August 25th, 2020 Livestream Quality-of-life update? (Part 1): https://clips.twitch.tv/RudeSpoopyAlligatorVoteYea
 ### Transcript
 
 > quality life update i wouldn't really
@@ -3484,8 +2966,8 @@
 ## [August 25th, 2020 Livestream Q&A: State of things = 🤷?](https://archive.satisfactory.video/transcriptions/yt-5SH9eySqDzU) https://www.youtube.com/watch?v=5SH9eySqDzU
 
 ### Asked previously:
-* August 25th, 2020 Livestream Q&A: State of things = 🤷? (Part 2) https://clips.twitch.tv/EndearingBlitheTruffleJebaited
 * August 25th, 2020 Livestream Q&A: State of things = 🤷? (Part 1) https://clips.twitch.tv/WealthyStormySnakeOptimizePrime
+* August 25th, 2020 Livestream Q&A: State of things = 🤷? (Part 2) https://clips.twitch.tv/EndearingBlitheTruffleJebaited
 ### Transcript
 
 > so you know like
@@ -3570,8 +3052,8 @@
 ## [August 25th, 2020 Livestream Q&A: Tanker Trucks?](https://archive.satisfactory.video/transcriptions/yt-IPmVdCgi2_A) https://www.youtube.com/watch?v=IPmVdCgi2_A
 
 ### Asked previously:
-* August 25th, 2020 Livestream Q&A: Tanker Trucks? (Part 2) https://clips.twitch.tv/FunSparklyFishRedCoat
 * August 25th, 2020 Livestream Q&A: Tanker Trucks? (Part 1) https://clips.twitch.tv/TenderSuspiciousSashimiEleGiggle
+* August 25th, 2020 Livestream Q&A: Tanker Trucks? (Part 2) https://clips.twitch.tv/FunSparklyFishRedCoat
 ### Transcript
 
 > tanker trucks
@@ -3809,76 +3291,18 @@
 > try and bring it up more
 
 
-## [August 25th, 2020 Livestream Q&A: What is expected for Tier 9?](https://archive.satisfactory.video/transcriptions/yt-EAOiEQn7E5A) https://www.youtube.com/watch?v=EAOiEQn7E5A
-
-### Asked previously:
-* August 25th, 2020 Livestream Q&A: What is expected for Tier 9? https://clips.twitch.tv/FrigidWiseSnakeOSfrog
-* August 25th, 2020 Livestream Q&A: Tier 10, when? https://clips.twitch.tv/ThoughtfulDepressedAlfalfaOSfrog
-### Transcript
-
-> what is expected for tier nine i have no
->
-> idea honestly i didn't know about tier
->
-> nine until like
->
-> director chan was like no we might add
->
-> in tier nine i was like wait what we've
->
-> been saying we're not going above here
->
-> [Music]
->
-> so
->
-> [Music]
->
-> i swear to god i've never had this many
->
-> issues on stream ever in my entire life
->
-> this is bananas this is insane why did
->
-> the
->
-> game audio died oh oh god oh
->
-> oh
->
->  man
->
-> this is never stream never
->
-> start streaming y'all
->
-> streaming is fake or or something god
->
-> damn it
->
-> all right um yeah tier 10 when yeah
->
-> so so yeah oh wrong keyboard um
->
-> i was honestly very surprised when when
->
-> mark chan was like yeah we're gonna have
->
-> more tears than eight
-
-
 ## [October 9th, 2020 Livestream Q&A: What is the limit?](https://archive.satisfactory.video/transcriptions/yt-Njv_PJT3B2g) https://www.youtube.com/watch?v=Njv_PJT3B2g
 
 ### Asked previously:
 * [October 6th, 2020 Livestream Q&A: What is the object limit and why is it that number?](https://archive.satisfactory.video/transcriptions/yt-VpCuu0aYFw0) https://www.youtube.com/watch?v=VpCuu0aYFw0
 * [September 22nd, 2020 Livestream Q&A: What is the Object Count Limit, and how can we tell in our own game?](https://archive.satisfactory.video/transcriptions/yt-gMq-fPCqGWQ) https://www.youtube.com/watch?v=gMq-fPCqGWQ
 * [September 1st, 2020 Livestream Q&A: Have you thought about implementing a progress bar for how close to the Build Limit we are?](https://archive.satisfactory.video/transcriptions/yt-RyE_hc4huhA) https://www.youtube.com/watch?v=RyE_hc4huhA
-* August 18th, 2020 Livestream Build Limit (Part 4): https://clips.twitch.tv/BlitheEnergeticEelPRChase
-* August 18th, 2020 Livestream Build Limit (Part 6): https://clips.twitch.tv/BoxySmallAsparagusSmoocherZ
-* August 18th, 2020 Livestream Build Limit (Part 5): https://clips.twitch.tv/GiantGeniusGooseCclamChamp
 * August 18th, 2020 Livestream Build Limit (Part 1): https://clips.twitch.tv/SplendidAffluentVampireNotLikeThis
-* August 18th, 2020 Livestream Build Limit (Part 3): https://clips.twitch.tv/SullenColdbloodedDiscEagleEye
 * August 18th, 2020 Livestream Build Limit (Part 2): https://clips.twitch.tv/UnusualExquisiteKuduDendiFace
+* August 18th, 2020 Livestream Build Limit (Part 3): https://clips.twitch.tv/SullenColdbloodedDiscEagleEye
+* August 18th, 2020 Livestream Build Limit (Part 4): https://clips.twitch.tv/BlitheEnergeticEelPRChase
+* August 18th, 2020 Livestream Build Limit (Part 5): https://clips.twitch.tv/GiantGeniusGooseCclamChamp
+* August 18th, 2020 Livestream Build Limit (Part 6): https://clips.twitch.tv/BoxySmallAsparagusSmoocherZ
 ### Transcript
 
 > what is the limit it's kind of hard to
@@ -4135,12 +3559,12 @@
 ## [August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites?](https://archive.satisfactory.video/transcriptions/yt-qEiYxLhX3CM) https://www.youtube.com/watch?v=qEiYxLhX3CM
 
 ### Asked previously:
-* August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites? (Part 2) https://clips.twitch.tv/BrainySecretiveSquidChefFrank
-* August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites? (Part 5) https://clips.twitch.tv/CharmingObservantLardSMOrc
-* August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites? (Part 4) https://clips.twitch.tv/EnjoyableCrazyVanillaStinkyCheese
 * August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites? (Part 1) https://clips.twitch.tv/FrozenLuckyRamenDxCat
-* August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites? (Part 6) https://clips.twitch.tv/LachrymoseCourteousDoveDxAbomb
+* August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites? (Part 2) https://clips.twitch.tv/BrainySecretiveSquidChefFrank
 * August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites? (Part 3) https://clips.twitch.tv/SpunkyFlirtySoybeanJebaited
+* August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites? (Part 4) https://clips.twitch.tv/EnjoyableCrazyVanillaStinkyCheese
+* August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites? (Part 5) https://clips.twitch.tv/CharmingObservantLardSMOrc
+* August 25th, 2020 Livestream Q&A: Why do big updates at all - why not just release everything in small bites? (Part 6) https://clips.twitch.tv/LachrymoseCourteousDoveDxAbomb
 ### Transcript
 
 > what's happening why do big updates at
@@ -4369,8 +3793,8 @@
 * [August 25th, 2020 Livestream Q&A: How about procedural maps?](https://archive.satisfactory.video/transcriptions/yt-oYVWBcgkahY) https://www.youtube.com/watch?v=oYVWBcgkahY
 * August 25th, 2020 Livestream Q&A: How about procedural maps? https://clips.twitch.tv/ProtectiveWonderfulFrogVoteYea
 * August 11th, 2020 Livestream Q&A: Randomly Generated Maps: https://clips.twitch.tv/OilyBloodyMangoFutureMan
-* [March 9th, 2019 Livestream Q&A: The map is pre-made, not procedurally generated?](https://archive.satisfactory.video/transcriptions/yt-229Wl8AMQx8) https://www.youtube.com/watch?v=229Wl8AMQx8
 * [March 9th, 2019 Livestream Q&A: Another game mode with a procedurally generated world?](https://archive.satisfactory.video/transcriptions/yt-GZlK2fIlYVk) https://www.youtube.com/watch?v=GZlK2fIlYVk
+* [March 9th, 2019 Livestream Q&A: The map is pre-made, not procedurally generated?](https://archive.satisfactory.video/transcriptions/yt-229Wl8AMQx8) https://www.youtube.com/watch?v=229Wl8AMQx8
 * [June 22nd, 2018 Livestream Q&A: Is the Map procedurally generated?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,316.92,345.76) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=316&end=346
 
 ### Transcript
@@ -4458,9 +3882,9 @@
 ## [August 25th, 2020 Livestream Q&A: Will light be added to the game?](https://archive.satisfactory.video/transcriptions/yt-FuUHMwoNA0s) https://www.youtube.com/watch?v=FuUHMwoNA0s
 
 ### Asked previously:
-* August 25th, 2020 Livestream Q&A: Will light be added to the game? (Part 3) https://clips.twitch.tv/AbnegateEndearingBottleKlappa
 * August 25th, 2020 Livestream Q&A: Will light be added to the game? (Part 1) https://clips.twitch.tv/FunOilyWolverineCorgiDerp
 * August 25th, 2020 Livestream Q&A: Will light be added to the game? (Part 2) https://clips.twitch.tv/NeighborlyCharmingBasenjiRlyTho
+* August 25th, 2020 Livestream Q&A: Will light be added to the game? (Part 3) https://clips.twitch.tv/AbnegateEndearingBottleKlappa
 ### Transcript
 
 > will light be added to the game ooh this
@@ -4567,10 +3991,10 @@
 ## [August 25th, 2020 Livestream Q&A: Will Satisfactory be updated to Unreal Engine 5 / Snutt Talk: Experimental Builds](https://archive.satisfactory.video/transcriptions/yt-rr1UWnrs0d4) https://www.youtube.com/watch?v=rr1UWnrs0d4
 
 ### Asked previously:
-* August 25th, 2020 Livestream Q&A: Will Satisfactory be updated to Unreal Engine 5 / Snutt Talk: Experimental Builds (Part 4) https://clips.twitch.tv/FrigidFragileCucumberOneHand
+* August 25th, 2020 Livestream Q&A: Will Satisfactory be updated to Unreal Engine 5 / Snutt Talk: Experimental Builds (Part 1) https://clips.twitch.tv/TentativeHardPlumberYee
 * August 25th, 2020 Livestream Q&A: Will Satisfactory be updated to Unreal Engine 5 / Snutt Talk: Experimental Builds (Part 2) https://clips.twitch.tv/SquareLovelyFriesBudBlast
 * August 25th, 2020 Livestream Q&A: Will Satisfactory be updated to Unreal Engine 5 / Snutt Talk: Experimental Builds (Part 3) https://clips.twitch.tv/TemperedEnchantingOrangeTBCheesePull
-* August 25th, 2020 Livestream Q&A: Will Satisfactory be updated to Unreal Engine 5 / Snutt Talk: Experimental Builds (Part 1) https://clips.twitch.tv/TentativeHardPlumberYee
+* August 25th, 2020 Livestream Q&A: Will Satisfactory be updated to Unreal Engine 5 / Snutt Talk: Experimental Builds (Part 4) https://clips.twitch.tv/FrigidFragileCucumberOneHand
 ### Transcript
 
 > in the game will satisfactory be updated
