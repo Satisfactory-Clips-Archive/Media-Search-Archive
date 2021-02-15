@@ -1,7 +1,7 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1777 non-trolling & off-topic questions found out of 1847 total questions
-* 986 questions found with no other references
+* 967 questions found with no other references
 ## grouped by date
 * 2021-02-09: 28 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
@@ -15,8 +15,8 @@
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 11 of 40 questions found with no other references
 * 2020-11-17: 17 of 56 questions found with no other references
-* 2020-11-10: 39 of 83 questions found with no other references
-* 2020-11-03: 38 of 57 questions found with no other references
+* 2020-11-10: 37 of 83 questions found with no other references
+* 2020-11-03: 25 of 57 questions found with no other references
 * 2020-10-27: 22 of 23 questions found with no other references
 * 2020-10-20: 39 of 51 questions found with no other references
 * 2020-10-13: 46 of 48 questions found with no other references
@@ -32,12 +32,12 @@
 * 2020-08-11: 26 of 38 questions found with no other references
 * 2020-07-28: 5 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
-* 2020-06-08: 30 of 39 questions found with no other references
-* 2020-05-19: 19 of 24 questions found with no other references
-* 2020-03-24: 19 of 27 questions found with no other references
+* 2020-06-08: 29 of 39 questions found with no other references
+* 2020-05-19: 18 of 24 questions found with no other references
+* 2020-03-24: 18 of 27 questions found with no other references
 * 2020-02-11: 26 of 33 questions found with no other references
 * 2020-01-22: 20 of 28 questions found with no other references
-* 2019-12-19: 38 of 51 questions found with no other references
+* 2019-12-19: 37 of 51 questions found with no other references
 * 2019-03-09: 91 of 111 questions found with no other references
 * 2018-11-23: 5 of 5 questions found with no other references
 * 2018-10-03: 9 of 9 questions found with no other references
@@ -520,8 +520,7 @@
 * [February 2nd, 2021 Livestream Q&A: Will we be getting more Walls and other building stuff in vanilla?](https://archive.satisfactory.video/transcriptions/yt-Y9m96T9a5qU) https://www.youtube.com/watch?v=Y9m96T9a5qU
 * [December 15th, 2020 Livestream Q&A: Can you imagine bringing something decoration foundations to factories?](https://archive.satisfactory.video/transcriptions/yt-wuimxgd7c_A) https://www.youtube.com/watch?v=wuimxgd7c_A
 * [December 15th, 2020 Livestream Q&A: We need more foundation types- triangle foundations, smaller foundations?](https://archive.satisfactory.video/transcriptions/yt-V8sGth96I5w) https://www.youtube.com/watch?v=V8sGth96I5w
-* [November 17th, 2020 Livestream Q&A: Circular Foundations?](https://archive.satisfactory.video/transcriptions/yt-5snNwUqWAxA) https://www.youtube.com/watch?v=5snNwUqWAxA
-* [November 3rd, 2020 Livestream Q&A: Can we get Circular Foundations?](https://archive.satisfactory.video/transcriptions/yt-4sKy5-TJVKY) https://www.youtube.com/watch?v=4sKy5-TJVKY
+* [November 3rd, 2020 Livestream Q&A: Could you add more Build pieces every week?](https://archive.satisfactory.video/transcriptions/yt-p0CdgjDIsEs) https://www.youtube.com/watch?v=p0CdgjDIsEs
 * [September 29th, 2020 Livestream Q&A: Any chance of larger Foundations?](https://archive.satisfactory.video/transcriptions/yt-I5HR5ocUX9o) https://www.youtube.com/watch?v=I5HR5ocUX9o
 * [September 1st, 2020 Livestream Q&A: Any plans for bigger foundations?](https://archive.satisfactory.video/transcriptions/yt-uUFy6qyZLKo) https://www.youtube.com/watch?v=uUFy6qyZLKo
 ### Transcript
@@ -1222,6 +1221,20 @@
 > kind of what blueprints are
 
 
+## [November 3rd, 2020 Livestream Q&A: Can I play on Epic with someone on Steam?](https://archive.satisfactory.video/transcriptions/yt-zekvCEX_mv8) https://www.youtube.com/watch?v=zekvCEX_mv8
+
+### Asked previously:
+* [June 8th, 2020 Livestream Q&A: Is Crossplay available?](https://archive.satisfactory.video/transcriptions/yt-MR5331unvbQ) https://www.youtube.com/watch?v=MR5331unvbQ
+* [March 24th, 2020 Livestream Q&A: How will we crossplay?](https://archive.satisfactory.video/transcriptions/yt--kVvrassZVw) https://www.youtube.com/watch?v=-kVvrassZVw
+### Transcript
+
+> hey can i play an epic with someone on
+>
+> steam yes you can
+>
+> yes
+
+
 ## [August 25th, 2020 Livestream Q&A: Can players have custom programmers ?](https://archive.satisfactory.video/transcriptions/yt-0mvgvUhbUuI) https://www.youtube.com/watch?v=0mvgvUhbUuI
 
 ### Asked previously:
@@ -1459,6 +1472,48 @@
 > unfortunately
 
 
+## [February 9th, 2021 Livestream Q&A: Can you give us a teaser for what the Story will be, or is there a YouTube video?](https://archive.satisfactory.video/transcriptions/yt-SLOMxmF6MKc) https://www.youtube.com/watch?v=SLOMxmF6MKc
+
+### Asked previously:
+* [November 3rd, 2020 Livestream Q&A: Can you give us a hint about the Story of the game?](https://archive.satisfactory.video/transcriptions/yt-gZoINqh_HAY) https://www.youtube.com/watch?v=gZoINqh_HAY
+* [September 22nd, 2020 Livestream Q&A: Are there going to be Lore teasers in the Game before launch?](https://archive.satisfactory.video/transcriptions/yt-ANDFv21tydY) https://www.youtube.com/watch?v=ANDFv21tydY
+### Transcript
+
+> can you give us a teaser what the story
+>
+> will be is our youtube video uh no we've
+>
+> not received released
+>
+> any information about the story apart
+>
+> from some characters like um
+>
+> katarina parks is the ceo of fix-it
+>
+> things like that
+>
+> uh but we've not really teased a story
+>
+> that's something that we're gonna be
+>
+> pretty tight-lipped about until we
+>
+> release it
+>
+> [Music]
+>
+> that is a strict secret mode
+>
+> because we we we kind of want people to
+>
+> be able to just experience it in one
+>
+> sort of goal
+>
+> yeah for the most part yeah
+
+
 ## [August 25th, 2020 Livestream Q&A: Can you make modular vehicles?](https://archive.satisfactory.video/transcriptions/yt-k6hkL7fE6OQ) https://www.youtube.com/watch?v=k6hkL7fE6OQ
 
 ### Asked previously:
@@ -1582,6 +1637,20 @@
 > because there's so much to implement in
 >
 > the game
+
+
+## [November 17th, 2020 Livestream Q&A: Circular Foundations?](https://archive.satisfactory.video/transcriptions/yt-5snNwUqWAxA) https://www.youtube.com/watch?v=5snNwUqWAxA
+
+### Asked previously:
+* [November 10th, 2020 Livestream Q&A: Is there any possibility you guys will be add the making of circles?](https://archive.satisfactory.video/transcriptions/yt-40bnpFI8SqE) https://www.youtube.com/watch?v=40bnpFI8SqE
+* [November 3rd, 2020 Livestream Q&A: Can we get Circular Foundations?](https://archive.satisfactory.video/transcriptions/yt-4sKy5-TJVKY) https://www.youtube.com/watch?v=4sKy5-TJVKY
+### Transcript
+
+> ne sıklıkta Kardeşiniz mi o sizin Yavuz
+>
+> soru soruyorum işte
+>
+> bu durum
 
 
 ## [November 24th, 2020 Livestream Q&A: Click & Drag functionality for building?](https://archive.satisfactory.video/transcriptions/yt-vaYxvmOkUQY) https://www.youtube.com/watch?v=vaYxvmOkUQY
@@ -4365,6 +4434,7 @@
 
 ### Asked previously:
 * [November 24th, 2020 Livestream Q&A: Procedural generation of the World?](https://archive.satisfactory.video/transcriptions/yt-q6tkuGjM4zY) https://www.youtube.com/watch?v=q6tkuGjM4zY
+* [November 3rd, 2020 Livestream Q&A: Map is amazing, but infinite generation?](https://archive.satisfactory.video/transcriptions/yt-2yoGAha7ju0) https://www.youtube.com/watch?v=2yoGAha7ju0
 * [September 15th, 2020 Livestream Q&A: Any plans for randomly generated worlds / Procedurally Generated maps?](https://archive.satisfactory.video/transcriptions/yt-eo_84m3ZYfQ) https://www.youtube.com/watch?v=eo_84m3ZYfQ
 * [September 8th, 2020 Livestream Q&A: Procedural Generation?](https://archive.satisfactory.video/transcriptions/yt-lcZJKlvLZuo) https://www.youtube.com/watch?v=lcZJKlvLZuo
 * [August 25th, 2020 Livestream Q&A: How about procedural maps?](https://archive.satisfactory.video/transcriptions/yt-oYVWBcgkahY) https://www.youtube.com/watch?v=oYVWBcgkahY
