@@ -830,7 +830,7 @@ echo sprintf(
 	),
 	"\n",
 	sprintf(
-		'* %s non-trolling & off-topic questions found out of %s total questions',
+		'* %s non-trolling & on-topic questions found out of %s total questions',
 		count($filtered),
 		count($existing)
 	),
