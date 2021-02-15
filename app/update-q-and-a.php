@@ -813,10 +813,12 @@ $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
 
 file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
 
-$no_trolling = array_filter(
+$filtered = array_filter(
 	$existing,
 	static function (array $data) : bool {
-		return ! in_array('trolling', $data['topics'], true);
+		return
+			! in_array('trolling', $data['topics'], true)
+			&& ! in_array('off-topic', $data['topics'], true);
 	});
 
 ob_start();
@@ -828,15 +830,15 @@ echo sprintf(
 	),
 	"\n",
 	sprintf(
-		'* %s non-trolling questions found out of %s total questions',
-		count($no_trolling),
+		'* %s non-trolling & off-topic questions found out of %s total questions',
+		count($filtered),
 		count($existing)
 	),
 	"\n",
 	sprintf(
 		'* %s questions found with no other references',
 		count(array_filter(
-			$no_trolling,
+			$filtered,
 			[$filtering, 'QuestionDataNoReferences']
 		))
 	),
@@ -845,7 +847,7 @@ echo sprintf(
 
 $grouped = [];
 
-foreach ($no_trolling as $data) {
+foreach ($filtered as $data) {
 	if ( ! isset($grouped[$data['date']])) {
 		$grouped[$data['date']] = [];
 	}
