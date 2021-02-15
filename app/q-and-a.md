@@ -1,6 +1,6 @@
 # Progress
 * 1801 questions found out of 2456 clips
-* 1119 questions found with no other references
+* 1093 questions found with no other references
 ## grouped by date
 * 2021-02-09: 29 of 94 questions found with no other references
 * 2021-02-02: 16 of 51 questions found with no other references
@@ -12,9 +12,9 @@
 * 2020-12-15: 8 of 59 questions found with no other references
 * 2020-12-08: 19 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
-* 2020-11-24: 33 of 44 questions found with no other references
+* 2020-11-24: 15 of 44 questions found with no other references
 * 2020-11-17: 46 of 57 questions found with no other references
-* 2020-11-10: 72 of 84 questions found with no other references
+* 2020-11-10: 71 of 84 questions found with no other references
 * 2020-11-03: 45 of 57 questions found with no other references
 * 2020-10-27: 22 of 23 questions found with no other references
 * 2020-10-20: 40 of 51 questions found with no other references
@@ -22,12 +22,12 @@
 * 2020-10-09: 22 of 24 questions found with no other references
 * 2020-10-06: 44 of 51 questions found with no other references
 * 2020-09-29: 31 of 38 questions found with no other references
-* 2020-09-22: 43 of 59 questions found with no other references
+* 2020-09-22: 42 of 59 questions found with no other references
 * 2020-09-15: 36 of 47 questions found with no other references
 * 2020-09-08: 60 of 72 questions found with no other references
 * 2020-09-01: 53 of 71 questions found with no other references
 * 2020-08-25: 14 of 136 questions found with no other references
-* 2020-08-18: 44 of 56 questions found with no other references
+* 2020-08-18: 43 of 56 questions found with no other references
 * 2020-08-11: 27 of 38 questions found with no other references
 * 2020-07-28: 5 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
@@ -36,11 +36,11 @@
 * 2020-03-24: 20 of 27 questions found with no other references
 * 2020-02-11: 27 of 34 questions found with no other references
 * 2020-01-22: 21 of 29 questions found with no other references
-* 2019-12-19: 47 of 56 questions found with no other references
-* 2019-03-09: 96 of 113 questions found with no other references
+* 2019-12-19: 46 of 56 questions found with no other references
+* 2019-03-09: 93 of 113 questions found with no other references
 * 2018-11-23: 5 of 5 questions found with no other references
 * 2018-10-03: 9 of 9 questions found with no other references
-* 2018-08-01: 16 of 18 questions found with no other references
+* 2018-08-01: 15 of 18 questions found with no other references
 * 2018-06-22: 10 of 14 questions found with no other references
 * 2018-03-09: 4 of 5 questions found with no other references
 
@@ -1976,6 +1976,25 @@
 > yeah that's all you're gonna get
 
 
+## [November 24th, 2020 Livestream Q&A: Is terraforming possible any time in the future?](https://archive.satisfactory.video/transcriptions/yt-_fE2dbyaJZg) https://www.youtube.com/watch?v=_fE2dbyaJZg
+
+### Asked previously:
+* [August 25th, 2020 Livestream Q&A: Terraforming?](https://archive.satisfactory.video/transcriptions/yt-B5cAjdFTltY) https://www.youtube.com/watch?v=B5cAjdFTltY
+* August 18th, 2020 Livestream Q&A: Terraforming? https://clips.twitch.tv/AmericanSpineyWitchTinyFace
+* [December 19th, 2019 Livestream Q&A: Can we deform the terrain?](https://archive.satisfactory.video/transcriptions/yt-UDguGGIxs3c) https://www.youtube.com/watch?v=UDguGGIxs3c
+* [March 9th, 2019 Livestream Q&A: Are you going to add the ability to raise/lower parts of the landscape?](https://archive.satisfactory.video/transcriptions/yt-AEd2Rt5VDfk) https://www.youtube.com/watch?v=AEd2Rt5VDfk
+* [March 9th, 2019 Livestream Q&A: Are you guys planning to add any terraforming or digging?](https://archive.satisfactory.video/transcriptions/yt-DW0MT8G-wMI) https://www.youtube.com/watch?v=DW0MT8G-wMI
+* [August 1st, 2018 Livestream Q&A: Will there be landscape deformation or Terraforming?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,62.6,66.08) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=62&end=67
+
+### Transcript
+
+> uh is terraforming possible anytime in
+>
+> the future
+>
+> no as far as we know um
+
+
 ## [September 22nd, 2020 Livestream Q&A: Is the OST on Spotify?](https://archive.satisfactory.video/transcriptions/yt-iCN324N905o) https://www.youtube.com/watch?v=iCN324N905o
 
 ### Asked previously:
@@ -2104,6 +2123,70 @@
 > prior list and that's it's gonna happen
 >
 > at some point i think
+
+
+## [November 24th, 2020 Livestream Q&A: Is there going to be a Satisfactory for Mac?](https://archive.satisfactory.video/transcriptions/yt-eLjNJO4pUBA) https://www.youtube.com/watch?v=eLjNJO4pUBA
+
+### Asked previously:
+* [November 10th, 2020 Livestream Q&A: Mac Release / Release to other platforms?](https://archive.satisfactory.video/transcriptions/yt-xVOvU3NVxfs) https://www.youtube.com/watch?v=xVOvU3NVxfs
+* [March 9th, 2019 Livestream Q&A: Are you adding support for Mac any time soon?](https://archive.satisfactory.video/transcriptions/yt-XQioxcXDRqc) https://www.youtube.com/watch?v=XQioxcXDRqc
+### Transcript
+
+> uh is there ever going to be a
+>
+> satisfactory for mac or four-player
+>
+> mode i don't know what you mean by
+>
+> four-player mode because you can already
+>
+> play with four people
+>
+> but for mac uh it's the same that goes
+>
+> for any platform that isn't windows so
+>
+> mac linux
+>
+> and consoles we don't really support
+>
+> them even though people are having
+>
+> success on linux anyway
+>
+> um for the same reason that we don't
+>
+> want to it takes time to support the
+>
+> other platforms whenever you do anything
+>
+> and we want to put
+>
+> maximize our effort into the to pushing
+>
+> the game forward
+>
+> um and then we can put it on to other
+>
+> platforms when we know what we're doing
+>
+> because
+>
+> you know there's still a lot of work
+>
+> that goes into rebalancing things and
+>
+> just creating new buildings that
+>
+> you know have always supposed to been
+>
+> there but we haven't done it yet
+>
+> so uh we need to make sure we prioritize
+>
+> that stuff over
+>
+> the other platforms unfortunately
 
 
 ## [February 9th, 2021 Livestream Q&A: Is there going to be tower defense?](https://archive.satisfactory.video/transcriptions/yt-9dWWC0mFitU) https://www.youtube.com/watch?v=9dWWC0mFitU
@@ -2548,6 +2631,96 @@
 > oh what was the video community manager
 >
 > you can't win
+
+
+## [February 2nd, 2021 Livestream Q&A: Multiplayer, how's it going- when came better sync in Multiplayer?](https://archive.satisfactory.video/transcriptions/yt-bfXUQNNIPRY) https://www.youtube.com/watch?v=bfXUQNNIPRY
+
+### Asked previously:
+* [December 8th, 2020 Livestream Q&A: Is Multiplayer desync fixed in Update 4?](https://archive.satisfactory.video/transcriptions/yt-OjiLxOBdkU8) https://www.youtube.com/watch?v=OjiLxOBdkU8
+* [November 24th, 2020 Livestream Q&A: Multiplayer fix?](https://archive.satisfactory.video/transcriptions/yt-LX-zsQIkB3g) https://www.youtube.com/watch?v=LX-zsQIkB3g
+### Transcript
+
+> um multiplayer how's it going when came
+>
+> better sync and multiplayer well
+>
+> multiplayer is going to get a little bit
+>
+> better
+>
+> every update you guys because we we make
+>
+> we we chip away at it uh all the time
+>
+> um so even with the engine upgrade there
+>
+> should have been
+>
+> uh some improvements there and there's
+>
+> also a few
+>
+> systems coming in in update four that
+>
+> will hopefully also improve
+>
+> uh performance on online play
+>
+> so well essentially most patches will
+>
+> have
+>
+> some slight improvement but it's it's a
+>
+> marathon as jase likes to put it
+>
+> it's yup yeah you're going to see
+>
+> improvements
+>
+> incrementally rather than just like a
+>
+> big one yeah fixing the multiplayer is
+>
+> not
+>
+> one thing that you do it's not like well
+>
+> oh well we'll fix the multiplayer this
+>
+> week
+>
+> that's not how it works yeah it's we fix
+>
+> the multiplayer always
+>
+> and uh eventually it will be it's one of
+>
+> those things that if you if you compare
+>
+> the multiplayer now to six months ago
+>
+> you will you really see the difference
+>
+> oh yeah and then a year ago you really
+>
+> see the difference but from day to day
+>
+> you won't see much of a difference and i
+>
+> played an old
+>
+> build of the game recently and uh it is
+>
+> everything is just
+>
+> way better like god damn like i can't
+>
+> believe
+>
+> it was playable back in back in back in
+>
+> the day
 
 
 ## [January 26th, 2021 Livestream Q&A: New music theme coming?](https://archive.satisfactory.video/transcriptions/yt-3Xf0xozi8zc) https://www.youtube.com/watch?v=3Xf0xozi8zc

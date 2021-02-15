@@ -764,6 +764,10 @@
         "seealso": [
             "hKQlthlcwXc",
             "tc-ElatedBlueNightingaleMau5"
+        ],
+        "suggested": [
+            "33wha_duTqs",
+            "HSoBZKjAN1k"
         ]
     },
     "-p_fC8A9LoE": {
@@ -1253,6 +1257,9 @@
             "J_a6kzow6gk",
             "lOWVYg1D990",
             "S43FE8W6Feo"
+        ],
+        "suggested": [
+            "CznWASCszcA"
         ]
     },
     "7LiXrAwoqPE": {
@@ -1349,6 +1356,7 @@
         ],
         "suggested": [
             "7igkLYvzHCU",
+            "JRP30-Yz8pQ",
             "lHKPC3m2Z2A",
             "o7FFLZpEf_Y"
         ]
@@ -1715,8 +1723,10 @@
             "Eo_4p0KSPSY",
             "sag85tf3NQQ"
         ],
+        "duplicates": [
+            "2ZbRpgGteaI"
+        ],
         "seealso": [
-            "2ZbRpgGteaI",
             "yt-njXBs_p2l1w,333.23290000000003,443.557086",
             "ZU86mBQqx9A"
         ],
@@ -1830,6 +1840,7 @@
             "features\/multiplayer"
         ],
         "duplicates": [
+            "LX-zsQIkB3g",
             "OjiLxOBdkU8"
         ],
         "seealso": [
@@ -1859,7 +1870,8 @@
         ],
         "suggested": [
             "GOg5NVFpjSU",
-            "gppSU17i2as"
+            "gppSU17i2as",
+            "j8UaqapuLZw"
         ]
     },
     "ZU86mBQqx9A": {
@@ -1869,7 +1881,6 @@
             "features\/power-management\/nuclear-energy\/nuclear-waste"
         ],
         "suggested": [
-            "2ZbRpgGteaI",
             "sag85tf3NQQ",
             "tmuvsaAsm-c",
             "yt-njXBs_p2l1w,333.23290000000003,443.557086"
@@ -2482,6 +2493,7 @@
         ],
         "suggested": [
             "GOg5NVFpjSU",
+            "j8UaqapuLZw",
             "tc-CorrectNiceStingraySpicyBoy",
             "y51YDVf8VOI"
         ]
@@ -2658,6 +2670,9 @@
         "topics": [
             "coffee-stainers\/jace",
             "coffee-stainers\/snutt"
+        ],
+        "suggested": [
+            "6tPg6AAcSoQ"
         ]
     },
     "HtKqSryNU88": {
@@ -2681,6 +2696,9 @@
         "seealso": [
             "dbJGfDr5SLk",
             "zo5Skwrwb5Y"
+        ],
+        "suggested": [
+            "NM_f7DwMhdA"
         ]
     },
     "Rx_M6fLOzvM": {
@@ -3005,6 +3023,7 @@
         "suggested": [
             "7igkLYvzHCU",
             "IXuBCWtpEsE",
+            "JRP30-Yz8pQ",
             "o7FFLZpEf_Y"
         ]
     },
@@ -3170,6 +3189,7 @@
         ],
         "suggested": [
             "bk2ojhuil-g",
+            "eReH6Sdroq8",
             "IFxnvuYEVtk",
             "Njv_PJT3B2g",
             "XcfIWDujsxA"
@@ -4114,6 +4134,7 @@
         ],
         "suggested": [
             "bk2ojhuil-g",
+            "eReH6Sdroq8",
             "Njv_PJT3B2g"
         ]
     },
@@ -4632,7 +4653,8 @@
             "technology\/unreal-engine"
         ],
         "replaces": [
-            "PVf-pBNYO_M"
+            "PVf-pBNYO_M",
+            "S0BQ6HAU2vA"
         ],
         "seealso": [
             "nat8VwaykqE",
@@ -5209,6 +5231,7 @@
         "suggested": [
             "gAO072mzibQ",
             "gppSU17i2as",
+            "j8UaqapuLZw",
             "tc-CorrectNiceStingraySpicyBoy"
         ]
     },
@@ -5542,6 +5565,7 @@
         ],
         "suggested": [
             "7igkLYvzHCU",
+            "JRP30-Yz8pQ",
             "lHKPC3m2Z2A",
             "u6HJZ1gJhRk"
         ]
@@ -6030,6 +6054,7 @@
         ],
         "suggested": [
             "IXuBCWtpEsE",
+            "JRP30-Yz8pQ",
             "lHKPC3m2Z2A",
             "u6HJZ1gJhRk"
         ]
@@ -6054,7 +6079,6 @@
             "yt-njXBs_p2l1w,333.23290000000003,443.557086"
         ],
         "suggested": [
-            "2ZbRpgGteaI",
             "ZU86mBQqx9A"
         ],
         "replacedby": "tmuvsaAsm-c"
@@ -6073,6 +6097,14 @@
         "topics": [
             "features\/transportation\/vehicles",
             "satisfactory-updates\/pending\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "33wha_duTqs",
+            "kd3UMt4pESk"
+        ],
+        "suggested": [
+            "hKQlthlcwXc",
+            "tc-ElatedBlueNightingaleMau5"
         ]
     },
     "ycNS0lA5JWc": {
@@ -6089,9 +6121,11 @@
         "topics": [
             "community"
         ],
-        "suggested": [
-            "jfPUvIBBJVw",
+        "seealso": [
             "UbRjqQgji40"
+        ],
+        "suggested": [
+            "jfPUvIBBJVw"
         ]
     },
     "eReH6Sdroq8": {
@@ -6100,6 +6134,15 @@
         "topics": [
             "features\/unplanned-features\/mass-building",
             "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "Njv_PJT3B2g"
+        ],
+        "suggested": [
+            "bk2ojhuil-g",
+            "IFxnvuYEVtk",
+            "WfU45N1EvQ0",
+            "XcfIWDujsxA"
         ]
     },
     "nQplpfNLru8": {
@@ -6109,9 +6152,11 @@
             "environment\/biomes\/unplanned-biomes\/underwater",
             "environment\/world-map"
         ],
+        "seealso": [
+            "loc82lE_XK4"
+        ],
         "suggested": [
             "bz7PJ3VF6FE",
-            "loc82lE_XK4",
             "tc-NiceDreamyGarbageBuddhaBar",
             "tc-RelievedCleanBibimbapDancingBanana"
         ]
@@ -6122,12 +6167,7 @@
         "topics": [
             "features\/power-management\/nuclear-energy\/nuclear-waste"
         ],
-        "suggested": [
-            "sag85tf3NQQ",
-            "tmuvsaAsm-c",
-            "yt-njXBs_p2l1w,333.23290000000003,443.557086",
-            "ZU86mBQqx9A"
-        ]
+        "duplicatedby": "tmuvsaAsm-c"
     },
     "-uJ6AqPZy0U": {
         "title": "Q&A: Are beanies and beards part of new minimum spec for Satisfactory or Update 4 content?",
@@ -6136,7 +6176,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "trolling"
         ],
-        "suggested": [
+        "seealso": [
             "Kx_0tBWze0k"
         ]
     },
@@ -6174,7 +6214,7 @@
             "community",
             "localisation"
         ],
-        "suggested": [
+        "seealso": [
             "uLblaRDOX4Y"
         ]
     },
@@ -6192,6 +6232,15 @@
         "date": "2020-11-24",
         "topics": [
             "features\/possible-features\/dlc"
+        ],
+        "seealso": [
+            "gppSU17i2as"
+        ],
+        "suggested": [
+            "gAO072mzibQ",
+            "GOg5NVFpjSU",
+            "tc-CorrectNiceStingraySpicyBoy",
+            "y51YDVf8VOI"
         ]
     },
     "M9j9Bys_r_U": {
@@ -6207,6 +6256,9 @@
         "date": "2020-11-24",
         "topics": [
             "off-topic\/factorio"
+        ],
+        "seealso": [
+            "LUM8i_wyJ-Y"
         ]
     },
     "6tPg6AAcSoQ": {
@@ -6214,12 +6266,18 @@
         "date": "2020-11-24",
         "topics": [
             "off-topic"
+        ],
+        "seealso": [
+            "fIb1LHQ0TJw"
         ]
     },
     "LUM8i_wyJ-Y": {
         "title": "Q&A: I have 24 (CPU) cores, can you make more use of it ?",
         "date": "2020-11-24",
         "topics": [],
+        "suggested": [
+            "x3IazTW1yM8"
+        ],
         "duplicatedby": "0yzIyIlPDxw"
     },
     "KEJYlYO511Q": {
@@ -6236,6 +6294,19 @@
         "topics": [
             "environment\/world-map",
             "features\/unplanned-features\/terraforming"
+        ],
+        "duplicates": [
+            "AEd2Rt5VDfk",
+            "B5cAjdFTltY",
+            "DW0MT8G-wMI",
+            "tc-AmericanSpineyWitchTinyFace",
+            "UDguGGIxs3c",
+            "yt-iFAy1NZUOGU,62.6,66.08"
+        ],
+        "seealso": [
+            "4nzTdrIc2hg",
+            "LIi_14XOp60",
+            "v6sWQLM4fMM"
         ]
     },
     "eLjNJO4pUBA": {
@@ -6243,6 +6314,13 @@
         "date": "2020-11-24",
         "topics": [
             "satisfactory-updates\/release-builds"
+        ],
+        "duplicates": [
+            "XQioxcXDRqc",
+            "xVOvU3NVxfs"
+        ],
+        "seealso": [
+            "yt-W1E6EWrAsII,406.52,421.68"
         ]
     },
     "1GtBsosr66E": {
@@ -6276,7 +6354,8 @@
         "topics": [
             "features\/multiplayer",
             "technology\/unreal-engine"
-        ]
+        ],
+        "duplicatedby": "bfXUQNNIPRY"
     },
     "pvMET7F9BQ8": {
         "title": "Q&A: Plans for Ray Tracing?",
@@ -6314,6 +6393,10 @@
             "coffee-stainers\/simon",
             "satisfactory-updates\/released\/satisfactory-alpha",
             "trolling"
+        ],
+        "seealso": [
+            "t9_0R3vkYOk",
+            "Xv-yl9jnC4s"
         ]
     },
     "nA6JASYXPMM": {
@@ -6368,7 +6451,7 @@
             "community",
             "localisation"
         ],
-        "suggested": [
+        "seealso": [
             "qbaev-b4lbQ"
         ]
     },
@@ -6379,6 +6462,13 @@
             "features\/buildables\/conveyor-belts",
             "features\/fluids\/pipes",
             "features\/multiplayer"
+        ],
+        "seealso": [
+            "h0rUjNNgiCw"
+        ],
+        "suggested": [
+            "dbJGfDr5SLk",
+            "zo5Skwrwb5Y"
         ]
     },
     "0-3ITfkBKZw": {
@@ -6451,6 +6541,15 @@
         "topics": [
             "mods",
             "mods\/official-mod-support"
+        ],
+        "seealso": [
+            "o7FFLZpEf_Y"
+        ],
+        "suggested": [
+            "7igkLYvzHCU",
+            "IXuBCWtpEsE",
+            "lHKPC3m2Z2A",
+            "u6HJZ1gJhRk"
         ]
     },
     "1iHSFaYoEow": {
@@ -6466,13 +6565,22 @@
         "date": "2020-11-24",
         "topics": [
             "technology\/unreal-engine"
-        ]
+        ],
+        "replacedby": "-NZqqfxHzhQ"
     },
     "CznWASCszcA": {
         "title": "Q&A: Will there be intelligent aliens?",
         "date": "2020-11-24",
         "topics": [
             "environment\/creatures"
+        ],
+        "seealso": [
+            "gAjKNyUTkMQ"
+        ],
+        "suggested": [
+            "J_a6kzow6gk",
+            "lOWVYg1D990",
+            "S43FE8W6Feo"
         ]
     },
     "qQJTAvtzB-8": {
@@ -6482,8 +6590,10 @@
             "features\/buildings",
             "features\/possible-features\/decor"
         ],
+        "seealso": [
+            "2JUtqNFl5_8"
+        ],
         "suggested": [
-            "2JUtqNFl5_8",
             "F0Lu47hMTD8",
             "wuimxgd7c_A"
         ]
@@ -7286,6 +7396,7 @@
         ],
         "suggested": [
             "bk2ojhuil-g",
+            "eReH6Sdroq8",
             "Njv_PJT3B2g",
             "WfU45N1EvQ0",
             "XcfIWDujsxA"
@@ -7372,6 +7483,7 @@
             "features\/unplanned-features\/mass-building"
         ],
         "suggested": [
+            "CznWASCszcA",
             "gAjKNyUTkMQ",
             "lOWVYg1D990",
             "S43FE8W6Feo"
@@ -7484,7 +7596,8 @@
         "date": "2020-11-10",
         "topics": [
             "satisfactory-updates\/release-builds"
-        ]
+        ],
+        "duplicatedby": "eLjNJO4pUBA"
     },
     "cZCA9NXj7Co": {
         "title": "Q&A: Marine life ?",
@@ -8062,6 +8175,7 @@
         ],
         "suggested": [
             "h0rUjNNgiCw",
+            "NM_f7DwMhdA",
             "zo5Skwrwb5Y"
         ]
     },
@@ -8091,7 +8205,8 @@
         ],
         "suggested": [
             "dbJGfDr5SLk",
-            "h0rUjNNgiCw"
+            "h0rUjNNgiCw",
+            "NM_f7DwMhdA"
         ]
     },
     "XhFZ61biXEg": {
@@ -9396,6 +9511,7 @@
             "XcfIWDujsxA"
         ],
         "suggested": [
+            "eReH6Sdroq8",
             "IFxnvuYEVtk",
             "WfU45N1EvQ0"
         ]
@@ -9932,6 +10048,7 @@
             "environment\/creatures"
         ],
         "suggested": [
+            "CznWASCszcA",
             "gAjKNyUTkMQ",
             "J_a6kzow6gk",
             "S43FE8W6Feo"
@@ -10299,6 +10416,15 @@
         "date": "2020-09-22",
         "topics": [
             "features\/transportation\/vehicles"
+        ],
+        "duplicates": [
+            "A10cQzT6TpU"
+        ],
+        "suggested": [
+            "hKQlthlcwXc",
+            "HSoBZKjAN1k",
+            "kd3UMt4pESk",
+            "tc-ElatedBlueNightingaleMau5"
         ]
     },
     "ES3tyCzjSDE": {
@@ -11156,6 +11282,11 @@
         "topics": [
             "environment\/world-map",
             "features\/unplanned-features\/terraforming"
+        ],
+        "suggested": [
+            "4nzTdrIc2hg",
+            "v6sWQLM4fMM",
+            "_fE2dbyaJZg"
         ]
     },
     "V4ZG9Ech4Es": {
@@ -12301,6 +12432,11 @@
         ],
         "duplicates": [
             "tc-GleamingHyperBottleRickroll"
+        ],
+        "suggested": [
+            "4nzTdrIc2hg",
+            "LIi_14XOp60",
+            "_fE2dbyaJZg"
         ]
     },
     "gj-NgdVYap8": {
@@ -12837,7 +12973,8 @@
         ],
         "duplicates": [
             "tc-EasyEnticingBearM4xHeh"
-        ]
+        ],
+        "duplicatedby": "33wha_duTqs"
     },
     "mAA2oX9mDOw": {
         "title": "Q&A: Implement some kind of hire spaceship thingy for better exploration & faster travelling ?",
@@ -13320,7 +13457,8 @@
         ],
         "duplicates": [
             "tc-CourageousTardyLarkShazBotstix"
-        ]
+        ],
+        "duplicatedby": "_fE2dbyaJZg"
     },
     "wWVbIS8jgy8": {
         "title": "Q&A: There's a smaller pink jelly above the pillar in the sky too?",
@@ -14177,7 +14315,8 @@
         "topics": [
             "environment\/world-map",
             "features\/unplanned-features\/terraforming"
-        ]
+        ],
+        "duplicatedby": "_fE2dbyaJZg"
     },
     "tc-AgreeableTentativeBeeCurseLit": {
         "title": "Q&A: Tier 8 before 1.0?",
@@ -16246,7 +16385,8 @@
         "date": "2019-12-19",
         "topics": [
             "features\/unplanned-features\/terraforming"
-        ]
+        ],
+        "duplicatedby": "_fE2dbyaJZg"
     },
     "sn0yrFw_Lfw": {
         "title": "Q&A: Can we put the \"Nani\u203d\" back in?",
@@ -16505,6 +16645,10 @@
         "topics": [
             "coffee-stainers\/simon",
             "trolling"
+        ],
+        "suggested": [
+            "dj20zgoTvA0",
+            "t9_0R3vkYOk"
         ]
     },
     "zaE2VeeV2mY": {
@@ -16747,7 +16891,8 @@
         "date": "2019-03-09",
         "topics": [
             "satisfactory-updates\/release-builds"
-        ]
+        ],
+        "duplicatedby": "eLjNJO4pUBA"
     },
     "Gx8ilz44pJU": {
         "title": "Q&A: Are you going to add Ansel support for HD photos? (Part 1)",
@@ -16776,7 +16921,8 @@
         "topics": [
             "environment\/world-map",
             "features\/unplanned-features\/terraforming"
-        ]
+        ],
+        "duplicatedby": "_fE2dbyaJZg"
     },
     "_ka5-9hNUGQ": {
         "title": "Q&A: Are you going to leave the player movement speed on the Conveyor Belts?",
@@ -16791,7 +16937,8 @@
         "topics": [
             "environment\/world-map",
             "features\/unplanned-features\/terraforming"
-        ]
+        ],
+        "duplicatedby": "_fE2dbyaJZg"
     },
     "SaJCkdeMMh0": {
         "title": "Q&A: Are you supposed to be able to break the rocks that has a slug inside of it?",
@@ -16932,6 +17079,10 @@
         "date": "2019-03-09",
         "topics": [
             "coffee-stainers\/simon"
+        ],
+        "suggested": [
+            "dj20zgoTvA0",
+            "Xv-yl9jnC4s"
         ]
     },
     "pcV-2pHcho8": {
@@ -17331,6 +17482,7 @@
             "environment\/creatures"
         ],
         "suggested": [
+            "CznWASCszcA",
             "gAjKNyUTkMQ",
             "J_a6kzow6gk",
             "lOWVYg1D990"
@@ -17770,7 +17922,8 @@
         "date": "2018-08-01",
         "topics": [
             "features\/unplanned-features\/terraforming"
-        ]
+        ],
+        "duplicatedby": "_fE2dbyaJZg"
     },
     "yt-iFAy1NZUOGU,60.36,62.6": {
         "title": "Q&A: Will there be Pollution in the game?",
@@ -17889,6 +18042,9 @@
         "topics": [
             "features\/possible-features\/console-release",
             "technology\/linux"
+        ],
+        "suggested": [
+            "eLjNJO4pUBA"
         ]
     },
     "yt-W1E6EWrAsII,91.24,120.52": {
