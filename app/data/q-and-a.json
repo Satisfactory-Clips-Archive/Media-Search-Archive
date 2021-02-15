@@ -1013,7 +1013,8 @@
             "features\/buildables\/walls"
         ],
         "duplicates": [
-            "0-3ITfkBKZw"
+            "0-3ITfkBKZw",
+            "ZpYMIZFGegw"
         ],
         "suggested": [
             "6DayBMofsHs",
@@ -1251,6 +1252,7 @@
             "T0jbE_WjQJQ",
             "tc-DirtyHilariousPancakeWow",
             "tc-GrotesqueDelightfulLyrebirdPrimeMe",
+            "tTXExwaqZQM",
             "Yzd466gO44M"
         ],
         "seealso": [
@@ -1547,7 +1549,6 @@
             "PuV7iLqmGBU"
         ],
         "suggested": [
-            "Kg29HlSMQjI",
             "YMWU_qSRI1E"
         ]
     },
@@ -1840,6 +1841,7 @@
             "features\/multiplayer"
         ],
         "duplicates": [
+            "ECQdh3EiXws",
             "LX-zsQIkB3g",
             "OjiLxOBdkU8"
         ],
@@ -1941,6 +1943,7 @@
         ],
         "duplicates": [
             "Bu2TPRFV_2o",
+            "OdCLosbTp60",
             "tc-SaltyJazzyPasta4Head",
             "ts7TQnRykB0",
             "V-OVvjoUAmg"
@@ -1976,7 +1979,6 @@
             "2zs8wqPKwFE",
             "btJHOT-HkO0",
             "dc6IuP5oFeA",
-            "Kg29HlSMQjI",
             "YMWU_qSRI1E"
         ]
     },
@@ -2755,6 +2757,7 @@
             "YkXm2LWDAeA"
         ],
         "suggested": [
+            "15jG0o32Dqk",
             "vlNaHkvoi0Y"
         ]
     },
@@ -2822,6 +2825,7 @@
         "suggested": [
             "-9gsspVilYk",
             "9VodwDOMBl0",
+            "15jG0o32Dqk",
             "fsP_b5C7y0M",
             "Tit_bHzixmk",
             "xXbrwFqiS5g"
@@ -3174,6 +3178,9 @@
         "topics": [
             "features\/possible-features\/game-modes"
         ],
+        "duplicates": [
+            "hro__pZa1pk"
+        ],
         "seealso": [
             "IcnvCpUbTb4"
         ]
@@ -3380,9 +3387,11 @@
             "features\/multiplayer",
             "features\/transportation\/trains"
         ],
-        "seealso": [
-            "2zs8wqPKwFE",
+        "duplicates": [
             "Kg29HlSMQjI"
+        ],
+        "seealso": [
+            "2zs8wqPKwFE"
         ],
         "suggested": [
             "btJHOT-HkO0",
@@ -4282,6 +4291,7 @@
         ],
         "duplicates": [
             "5rVqTHOiwh0",
+            "66gt7CjmdXs",
             "Zlq2K0-z0_8"
         ],
         "suggested": [
@@ -4689,7 +4699,10 @@
             "sI7zMjVad1c"
         ],
         "suggested": [
-            "aT2csoqT3MI"
+            "aT2csoqT3MI",
+            "htoUHZbvu1A",
+            "T4LqujL6Z1E",
+            "yU3v4BNnUPU"
         ]
     },
     "NGyFncgCUyo": {
@@ -4853,6 +4866,7 @@
         "duplicates": [
             "hAEInvMcQfk",
             "kj_vdE5-CEI",
+            "mNtdBj-DpK0",
             "PYyvu8feZqA"
         ],
         "seealso": [
@@ -5560,6 +5574,9 @@
         "topics": [
             "mods\/official-mod-support"
         ],
+        "duplicates": [
+            "z4Uv-UNMETw"
+        ],
         "seealso": [
             "IXuBCWtpEsE"
         ],
@@ -5710,6 +5727,9 @@
             "technology\/graphics",
             "technology\/unreal-engine"
         ],
+        "duplicates": [
+            "FlEUMECDwS4"
+        ],
         "seealso": [
             "hRzZjCBoI8s"
         ]
@@ -5770,6 +5790,9 @@
         "date": "2020-12-08",
         "topics": [
             "satisfactory-updates\/satisfactory-2017"
+        ],
+        "seealso": [
+            "ihx35AYNx5s"
         ]
     },
     "OloYImcj1GA": {
@@ -5860,7 +5883,8 @@
             "story-lore"
         ],
         "duplicates": [
-            "0V_fsSPIEHA"
+            "0V_fsSPIEHA",
+            "z7QqNzK8OMU"
         ]
     },
     "47gzhAEWkFM": {
@@ -5899,6 +5923,11 @@
         "topics": [],
         "seealso": [
             "iqGA8u7MmMM"
+        ],
+        "suggested": [
+            "htoUHZbvu1A",
+            "T4LqujL6Z1E",
+            "yU3v4BNnUPU"
         ]
     },
     "x7dc9P7vEGQ": {
@@ -6205,6 +6234,12 @@
         "date": "2020-11-24",
         "topics": [
             "features\/unplanned-features\/mass-building"
+        ],
+        "duplicates": [
+            "OQwjkJmYxAs",
+            "tc-CheerfulLightAsteriskGOWSkull",
+            "uACIFWnIlY0",
+            "_tVKaBw1syU"
         ]
     },
     "HZFZLzljSRE": {
@@ -6524,6 +6559,7 @@
         "suggested": [
             "-9gsspVilYk",
             "9VodwDOMBl0",
+            "15jG0o32Dqk",
             "fsP_b5C7y0M",
             "Tit_bHzixmk",
             "xXbrwFqiS5g",
@@ -6648,7 +6684,8 @@
             "environment\/creatures\/crab-boss",
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/speculative\/satisfactory-update-5"
-        ]
+        ],
+        "duplicatedby": "gAjKNyUTkMQ"
     },
     "Y6RYXEZ3aek": {
         "title": "Q&A: Any plans for customising the Build Menu organisation?",
@@ -6670,6 +6707,9 @@
         "date": "2020-11-17",
         "topics": [
             "features\/possible-features\/weather-systems"
+        ],
+        "duplicates": [
+            "iq-K9FY-RT8"
         ]
     },
     "MKjtHTOMDZk": {
@@ -6687,6 +6727,17 @@
         "topics": [
             "environment\/world-map",
             "features\/planned-features\/lights"
+        ],
+        "seealso": [
+            "xXbrwFqiS5g"
+        ],
+        "suggested": [
+            "-9gsspVilYk",
+            "9VodwDOMBl0",
+            "fsP_b5C7y0M",
+            "Tit_bHzixmk",
+            "vlNaHkvoi0Y",
+            "YkXm2LWDAeA"
         ]
     },
     "tkwKMTaTpV8": {
@@ -6694,6 +6745,18 @@
         "date": "2020-11-17",
         "topics": [
             "features\/unplanned-features\/mass-building"
+        ],
+        "duplicates": [
+            "0HoRmIFZq4Y",
+            "e2YhcCwJNNg",
+            "EbTEcw5zg8k",
+            "hpl23B1A0Qk",
+            "T1w4TV8Y8Lk",
+            "Vm5LIvY8TtA",
+            "Ywq4zdWMiq8"
+        ],
+        "seealso": [
+            "RdDroPYu1sk"
         ]
     },
     "Kg29HlSMQjI": {
@@ -6703,13 +6766,7 @@
             "features\/multiplayer",
             "features\/transportation\/trains"
         ],
-        "suggested": [
-            "2zs8wqPKwFE",
-            "btJHOT-HkO0",
-            "dc6IuP5oFeA",
-            "PuV7iLqmGBU",
-            "YMWU_qSRI1E"
-        ]
+        "duplicatedby": "YMWU_qSRI1E"
     },
     "ziSNgugerjg": {
         "title": "Q&A: Are you guys aware of how broken Rails are?",
@@ -6723,7 +6780,8 @@
         "date": "2020-11-17",
         "topics": [
             "features\/multiplayer"
-        ]
+        ],
+        "duplicatedby": "bfXUQNNIPRY"
     },
     "_Uf5e-J9TwA": {
         "title": "Q&A: Can we add Solar Power?",
@@ -6731,6 +6789,14 @@
         "topics": [
             "features\/power-management",
             "features\/power-management\/green-energy"
+        ],
+        "duplicates": [
+            "C1XaJJmvg1M",
+            "zpNZHeAOoQE"
+        ],
+        "seealso": [
+            "F212AWqzBVI",
+            "_IJsp-Fy1zw"
         ]
     },
     "ZpYMIZFGegw": {
@@ -6739,7 +6805,8 @@
         "topics": [
             "features\/buildables\/walls",
             "technology\/user-interface"
-        ]
+        ],
+        "duplicatedby": "UK0P7CWe1V4"
     },
     "oYtdJ9Dss64": {
         "title": "Q&A: Can we get Mobs that spawn near you and attack you?",
@@ -6748,7 +6815,7 @@
             "environment\/creatures",
             "features\/unplanned-features\/base-defense"
         ],
-        "suggested": [
+        "seealso": [
             "6_JS0HRIPp8"
         ]
     },
@@ -6765,13 +6832,17 @@
         "date": "2020-11-17",
         "topics": [
             "features\/unplanned-features\/mass-building"
-        ]
+        ],
+        "duplicatedby": "tkwKMTaTpV8"
     },
     "fR8x6bekEaU": {
         "title": "Q&A: Can you DMCA me just for funsies?",
         "date": "2020-11-17",
         "topics": [
             "off-topic"
+        ],
+        "seealso": [
+            "YMOHvk22t2Y"
         ]
     },
     "5snNwUqWAxA": {
@@ -6796,6 +6867,9 @@
         "date": "2020-11-17",
         "topics": [
             "soundtrack"
+        ],
+        "seealso": [
+            "fR8x6bekEaU"
         ]
     },
     "mNtdBj-DpK0": {
@@ -6803,7 +6877,8 @@
         "date": "2020-11-17",
         "topics": [
             "merch"
-        ]
+        ],
+        "duplicatedby": "iyFXDTn2YPM"
     },
     "z_DRaH3tfvY": {
         "title": "Q&A: Do you think this game would be suited for VR?",
@@ -6811,8 +6886,10 @@
         "topics": [
             "features\/unplanned-features\/vr"
         ],
+        "seealso": [
+            "0Ld1fbTEOvM"
+        ],
         "suggested": [
-            "0Ld1fbTEOvM",
             "Xd5TIxzat7M",
             "ZHumj5MeIcw"
         ]
@@ -6822,7 +6899,8 @@
         "date": "2020-11-17",
         "topics": [
             "technology\/graphics"
-        ]
+        ],
+        "duplicatedby": "BxAAQTxvy-Y"
     },
     "isSumSw8bV4": {
         "title": "Q&A: Fluid Dynamics + Water, can we get Water Wheels?",
@@ -6844,7 +6922,10 @@
     "ihx35AYNx5s": {
         "title": "Q&A: How many developers are working on Satisfactory?",
         "date": "2020-11-17",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "KYNLjaRJCRs"
+        ]
     },
     "tqB7YuLM2Fs": {
         "title": "Q&A: Is Console support coming?",
@@ -6876,7 +6957,8 @@
         "date": "2020-11-17",
         "topics": [
             "story-lore"
-        ]
+        ],
+        "duplicatedby": "7W32eD2pZOM"
     },
     "z4Uv-UNMETw": {
         "title": "Q&A: Is there any Official Mod Support planned?",
@@ -6884,7 +6966,8 @@
         "topics": [
             "features\/save-system",
             "mods\/official-mod-support"
-        ]
+        ],
+        "duplicatedby": "o7FFLZpEf_Y"
     },
     "cxtWo3QNH0I": {
         "title": "Q&A: Mk.0 Iron Trains that you can power with cOAL",
@@ -6938,6 +7021,9 @@
             "coffee-stainers\/hannah",
             "coffee-stainers\/nathalie",
             "embracer-group"
+        ],
+        "seealso": [
+            "KwsiVfRUKNE"
         ]
     },
     "G0vwHL092w4": {
@@ -6947,10 +7033,12 @@
             "environment\/pollution",
             "environment\/world-map"
         ],
+        "seealso": [
+            "wKU558LFiqI"
+        ],
         "suggested": [
             "dTd-M1qGkfU",
             "EI4HJKvO-OU",
-            "wKU558LFiqI",
             "yt-iFAy1NZUOGU,60.36,62.6"
         ]
     },
@@ -6977,7 +7065,8 @@
             "TjSMwjueGc8",
             "V-OVvjoUAmg",
             "WQH5cWS3s2s"
-        ]
+        ],
+        "duplicatedby": "rCOD5becD6M"
     },
     "QK8Bis0LNp0": {
         "title": "Q&A: Update 4 progress?",
@@ -7000,7 +7089,8 @@
         "date": "2020-11-17",
         "topics": [
             "technology\/user-interface"
-        ]
+        ],
+        "duplicatedby": "tHzH3dkTZ4s"
     },
     "NEM6_KiEgA8": {
         "title": "Q&A: What are some of the things you guys want to see in Satisfactory?",
@@ -7014,7 +7104,8 @@
         "date": "2020-11-17",
         "topics": [
             "features\/unplanned-features\/mass-building"
-        ]
+        ],
+        "duplicatedby": "vaYxvmOkUQY"
     },
     "WTfWu44SQ1k": {
         "title": "Q&A: When are Geothermal Generators going to get it's Info Panel?",
@@ -7023,6 +7114,9 @@
             "features\/power-management",
             "features\/power-management\/geothermal-energy",
             "technology\/user-interface"
+        ],
+        "duplicates": [
+            "xFZfkjY3J0c"
         ],
         "suggested": [
             "MmCfcNv8F8o",
@@ -7042,12 +7136,21 @@
         "date": "2020-11-17",
         "topics": [
             "features\/possible-features\/game-modes"
-        ]
+        ],
+        "duplicatedby": "5QJJqDM03Ww"
     },
     "T4LqujL6Z1E": {
         "title": "Q&A: When are you guys returning to the office?",
         "date": "2020-11-17",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "htoUHZbvu1A",
+            "iqGA8u7MmMM",
+            "yU3v4BNnUPU"
+        ],
+        "suggested": [
+            "aT2csoqT3MI"
+        ]
     },
     "1oMDAPZ2bZ4": {
         "title": "Q&A: When do we get Twitch Subscribe\/Emote options?",
@@ -7055,9 +7158,11 @@
         "topics": [
             "features\/emotes"
         ],
-        "suggested": [
-            "CNd_Z6vheZE",
+        "seealso": [
             "wvvaIdmUTT0"
+        ],
+        "suggested": [
+            "CNd_Z6vheZE"
         ]
     },
     "KwsiVfRUKNE": {
@@ -7067,6 +7172,9 @@
             "coffee-stainers\/hannah",
             "environment\/world-map",
             "story-lore"
+        ],
+        "seealso": [
+            "hCcT5uhzwso"
         ]
     },
     "l8e-RamsN-U": {
@@ -7328,7 +7436,8 @@
         "date": "2020-11-10",
         "topics": [
             "features\/possible-features\/weather-systems"
-        ]
+        ],
+        "duplicatedby": "-QpGRQcZfe0"
     },
     "cynkLEnrC8s": {
         "title": "Q&A: Can we theoretically make a Mod that reduces Constructor Object numbers?",
@@ -7904,7 +8013,8 @@
         "date": "2020-11-03",
         "topics": [
             "features\/unplanned-features\/mass-building"
-        ]
+        ],
+        "duplicatedby": "tkwKMTaTpV8"
     },
     "Y1ulbhgaSeU": {
         "title": "Q&A: Broader Belts?",
@@ -8744,7 +8854,8 @@
         "date": "2020-10-20",
         "topics": [
             "features\/power-management"
-        ]
+        ],
+        "duplicatedby": "_Uf5e-J9TwA"
     },
     "AxQoNckHBhI": {
         "title": "Q&A: The Trains lag a lot on Multiplayer?",
@@ -10115,6 +10226,10 @@
         "topics": [
             "features\/power-management",
             "story-lore"
+        ],
+        "suggested": [
+            "_IJsp-Fy1zw",
+            "_Uf5e-J9TwA"
         ]
     },
     "H9x0HyRXNTE": {
@@ -10272,7 +10387,8 @@
         "date": "2020-09-29",
         "topics": [
             "features\/unplanned-features\/mass-building"
-        ]
+        ],
+        "duplicatedby": "tkwKMTaTpV8"
     },
     "kPehSO8Mts4": {
         "title": "Q&A: Will Security Cams become a feature?",
@@ -11951,7 +12067,8 @@
         "topics": [
             "features\/unplanned-features\/mass-building",
             "off-topic\/factorio"
-        ]
+        ],
+        "duplicatedby": "tkwKMTaTpV8"
     },
     "VRo-e6NnYpk": {
         "title": "Q&A: Can we choose the gender of the player?",
@@ -11993,7 +12110,8 @@
         "date": "2020-09-01",
         "topics": [
             "features\/unplanned-features\/mass-building"
-        ]
+        ],
+        "duplicatedby": "vaYxvmOkUQY"
     },
     "QuoiJ9lpkB4": {
         "title": "Q&A: DXR\/RTX\/DLSS ?",
@@ -12193,7 +12311,6 @@
         "suggested": [
             "btJHOT-HkO0",
             "dc6IuP5oFeA",
-            "Kg29HlSMQjI",
             "PuV7iLqmGBU",
             "YMWU_qSRI1E"
         ]
@@ -12595,7 +12712,8 @@
             "tc-CrunchyGlamorousQuailSwiftRage",
             "tc-FreezingCuriousHeronDatBoi",
             "tc-LuckyNastyLionDogFace"
-        ]
+        ],
+        "duplicatedby": "tkwKMTaTpV8"
     },
     "0mvgvUhbUuI": {
         "title": "Q&A: Can players have custom programmers ?",
@@ -12801,7 +12919,8 @@
         ],
         "duplicates": [
             "tc-UglyRacyCaribouYouWHY"
-        ]
+        ],
+        "duplicatedby": "vaYxvmOkUQY"
     },
     "mZ4l1leFAWY": {
         "title": "Q&A: End game is all about building refineries?",
@@ -12902,7 +13021,8 @@
         ],
         "duplicates": [
             "tc-RacyHilariousMangoStinkyCheese"
-        ]
+        ],
+        "duplicatedby": "tkwKMTaTpV8"
     },
     "AgdOGd32U3w": {
         "title": "Q&A: Grid- a radius would be perfect?",
@@ -13290,6 +13410,10 @@
         ],
         "duplicates": [
             "tc-DeliciousStylishOctopusTBTacoRight"
+        ],
+        "suggested": [
+            "F212AWqzBVI",
+            "_Uf5e-J9TwA"
         ]
     },
     "cwWUYRciIoc": {
@@ -13717,7 +13841,6 @@
         "suggested": [
             "2zs8wqPKwFE",
             "dc6IuP5oFeA",
-            "Kg29HlSMQjI",
             "PuV7iLqmGBU",
             "YMWU_qSRI1E"
         ]
@@ -13747,7 +13870,8 @@
         "suggested": [
             "MmCfcNv8F8o",
             "WTfWu44SQ1k"
-        ]
+        ],
+        "duplicatedby": "WTfWu44SQ1k"
     },
     "C1XaJJmvg1M": {
         "title": "Q&A: Why are there no Solar Panels ?",
@@ -13758,7 +13882,8 @@
         ],
         "duplicates": [
             "tc-CleverPluckyOctopusRedCoat"
-        ]
+        ],
+        "duplicatedby": "_Uf5e-J9TwA"
     },
     "Yhtu3NBv2NM": {
         "title": "Q&A: Why can't we explode some stones in the map?",
@@ -14077,7 +14202,8 @@
         "date": "2020-08-18",
         "topics": [
             "features\/unplanned-features\/mass-building"
-        ]
+        ],
+        "duplicatedby": "vaYxvmOkUQY"
     },
     "tc-AuspiciousPrettiestAlfalfaKAPOW": {
         "title": "Q&A: Any plans to add toilet paper in the bathroom?",
@@ -14971,7 +15097,8 @@
             "uUFy6qyZLKo",
             "XGlE_HTHTlA",
             "Z0H06UJbb4E"
-        ]
+        ],
+        "duplicatedby": "tkwKMTaTpV8"
     },
     "KICxTv2a3rY": {
         "title": "Q&A: Can I play on my Steam and Epic account if I have the game on both and link them?",
@@ -17543,6 +17670,7 @@
         "suggested": [
             "-9gsspVilYk",
             "9VodwDOMBl0",
+            "15jG0o32Dqk",
             "fsP_b5C7y0M",
             "vlNaHkvoi0Y",
             "xXbrwFqiS5g",

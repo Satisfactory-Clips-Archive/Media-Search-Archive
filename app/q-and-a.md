@@ -1,6 +1,6 @@
 # Progress
 * 1801 questions found out of 2456 clips
-* 1093 questions found with no other references
+* 1055 questions found with no other references
 ## grouped by date
 * 2021-02-09: 29 of 94 questions found with no other references
 * 2021-02-02: 16 of 51 questions found with no other references
@@ -10,28 +10,28 @@
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 2 of 32 questions found with no other references
 * 2020-12-15: 8 of 59 questions found with no other references
-* 2020-12-08: 19 of 47 questions found with no other references
+* 2020-12-08: 18 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
-* 2020-11-24: 15 of 44 questions found with no other references
-* 2020-11-17: 46 of 57 questions found with no other references
-* 2020-11-10: 71 of 84 questions found with no other references
-* 2020-11-03: 45 of 57 questions found with no other references
+* 2020-11-24: 14 of 44 questions found with no other references
+* 2020-11-17: 18 of 57 questions found with no other references
+* 2020-11-10: 70 of 84 questions found with no other references
+* 2020-11-03: 44 of 57 questions found with no other references
 * 2020-10-27: 22 of 23 questions found with no other references
-* 2020-10-20: 40 of 51 questions found with no other references
+* 2020-10-20: 39 of 51 questions found with no other references
 * 2020-10-13: 46 of 48 questions found with no other references
 * 2020-10-09: 22 of 24 questions found with no other references
 * 2020-10-06: 44 of 51 questions found with no other references
-* 2020-09-29: 31 of 38 questions found with no other references
+* 2020-09-29: 30 of 38 questions found with no other references
 * 2020-09-22: 42 of 59 questions found with no other references
 * 2020-09-15: 36 of 47 questions found with no other references
 * 2020-09-08: 60 of 72 questions found with no other references
-* 2020-09-01: 53 of 71 questions found with no other references
+* 2020-09-01: 51 of 71 questions found with no other references
 * 2020-08-25: 14 of 136 questions found with no other references
-* 2020-08-18: 43 of 56 questions found with no other references
+* 2020-08-18: 42 of 56 questions found with no other references
 * 2020-08-11: 27 of 38 questions found with no other references
 * 2020-07-28: 5 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
-* 2020-06-08: 31 of 39 questions found with no other references
+* 2020-06-08: 30 of 39 questions found with no other references
 * 2020-05-19: 19 of 24 questions found with no other references
 * 2020-03-24: 20 of 27 questions found with no other references
 * 2020-02-11: 27 of 34 questions found with no other references
@@ -674,6 +674,16 @@
 > when
 
 
+## November 17th, 2020 Livestream Q&A: Are you going to add any Template/Blueprint system? https://www.youtube.com/watch?v=tkwKMTaTpV8
+
+### Asked previously:
+* November 17th, 2020 Livestream Q&A: Can we have your opinion on Blueprints? https://www.youtube.com/watch?v=0HoRmIFZq4Y
+* [November 3rd, 2020 Livestream Q&A: Blueprints?](https://archive.satisfactory.video/transcriptions/yt-Vm5LIvY8TtA) https://www.youtube.com/watch?v=Vm5LIvY8TtA
+* [September 29th, 2020 Livestream Q&A: Will Blueprints be a thing at some point?](https://archive.satisfactory.video/transcriptions/yt-Ywq4zdWMiq8) https://www.youtube.com/watch?v=Ywq4zdWMiq8
+* [September 1st, 2020 Livestream Q&A: Blueprints?](https://archive.satisfactory.video/transcriptions/yt-hpl23B1A0Qk) https://www.youtube.com/watch?v=hpl23B1A0Qk
+* [August 25th, 2020 Livestream Q&A: Blueprints would be awesome for end-game](https://archive.satisfactory.video/transcriptions/yt-e2YhcCwJNNg) https://www.youtube.com/watch?v=e2YhcCwJNNg
+* [August 25th, 2020 Livestream Q&A: Given how often Blueprints keeps being requested it really needs to be adopted?](https://archive.satisfactory.video/transcriptions/yt-EbTEcw5zg8k) https://www.youtube.com/watch?v=EbTEcw5zg8k
+* [June 8th, 2020 Livestream Q&A: Blueprints/Mass construction - will we have it ? If not, why not?](https://archive.satisfactory.video/transcriptions/yt-T1w4TV8Y8Lk) https://www.youtube.com/watch?v=T1w4TV8Y8Lk
 ## [February 9th, 2021 Livestream Q&A: Are you going to break save games again?](https://archive.satisfactory.video/transcriptions/yt-hF6yB6Wrox0) https://www.youtube.com/watch?v=hF6yB6Wrox0
 
 ### Asked previously:
@@ -1122,6 +1132,30 @@
 > streamlined
 
 
+## [November 17th, 2020 Livestream Q&A: Can we add Solar Power?](https://archive.satisfactory.video/transcriptions/yt-_Uf5e-J9TwA) https://www.youtube.com/watch?v=_Uf5e-J9TwA
+
+### Asked previously:
+* [October 20th, 2020 Livestream Q&A: Solar Panels?](https://archive.satisfactory.video/transcriptions/yt-zpNZHeAOoQE) https://www.youtube.com/watch?v=zpNZHeAOoQE
+* [August 25th, 2020 Livestream Q&A: Why are there no Solar Panels ?](https://archive.satisfactory.video/transcriptions/yt-C1XaJJmvg1M) https://www.youtube.com/watch?v=C1XaJJmvg1M
+### Transcript
+
+> um can we add solar power
+>
+> the topic of like green energy is
+>
+> something that is still sort of up for
+>
+> debate
+>
+> in uh the game so we'll see
+>
+> if we add any green energy i think solar
+>
+> power would definitely be either it
+>
+> or amongst what we would be adding
+
+
 ## [August 25th, 2020 Livestream Q&A: Can we expect significant performance increase with Update 4?](https://archive.satisfactory.video/transcriptions/yt-PVf-pBNYO_M) https://www.youtube.com/watch?v=PVf-pBNYO_M
 
 ### Asked previously:
@@ -1362,6 +1396,22 @@
 > because there's so much to implement in
 >
 > the game
+
+
+## [November 24th, 2020 Livestream Q&A: Click & Drag functionality for building?](https://archive.satisfactory.video/transcriptions/yt-vaYxvmOkUQY) https://www.youtube.com/watch?v=vaYxvmOkUQY
+
+### Asked previously:
+* [November 17th, 2020 Livestream Q&A: What is the current state of the "click & drag" creation debate?](https://archive.satisfactory.video/transcriptions/yt-_tVKaBw1syU) https://www.youtube.com/watch?v=_tVKaBw1syU
+* [September 1st, 2020 Livestream Q&A: drag & place?](https://archive.satisfactory.video/transcriptions/yt-OQwjkJmYxAs) https://www.youtube.com/watch?v=OQwjkJmYxAs
+* [August 25th, 2020 Livestream Q&A: Drag-to-build Mode?](https://archive.satisfactory.video/transcriptions/yt-uACIFWnIlY0) https://www.youtube.com/watch?v=uACIFWnIlY0
+* August 18th, 2020 Livestream Q&A: Any plans for 1-click multi-building? https://clips.twitch.tv/CheerfulLightAsteriskGOWSkull
+### Transcript
+
+> click and drag functionality for
+>
+> building is not a thing that we
+>
+> want currently
 
 
 ## July 28th, 2020 Livestream Q&A: Dedicated Server cost https://clips.twitch.tv/ConfidentLittleSnood4Head
@@ -2085,6 +2135,32 @@
 > so yeah
 
 
+## [December 8th, 2020 Livestream Q&A: Is there any info/lore on the player character?](https://archive.satisfactory.video/transcriptions/yt-7W32eD2pZOM) https://www.youtube.com/watch?v=7W32eD2pZOM
+
+### Asked previously:
+* [November 17th, 2020 Livestream Q&A: Is the Engineer human at least?](https://archive.satisfactory.video/transcriptions/yt-z7QqNzK8OMU) https://www.youtube.com/watch?v=z7QqNzK8OMU
+* [November 10th, 2020 Livestream Q&A: Does the Pioneer have any lore or is she just a random worker person?](https://archive.satisfactory.video/transcriptions/yt-0V_fsSPIEHA) https://www.youtube.com/watch?v=0V_fsSPIEHA
+### Transcript
+
+> so let's build a constructor is there
+>
+> any info slash lore on the player
+>
+> character there is
+>
+> a story in the game uh with yep so
+>
+> there's lore and everything like that
+>
+> um but it's not in the game at the
+>
+> moment so you
+>
+> don't know what it is i know what it is
+>
+> i also know
+
+
 ## [February 2nd, 2021 Livestream Q&A: Is there a way we can make Autosave more seamless?](https://archive.satisfactory.video/transcriptions/yt-UFWTP8Nu-MI) https://www.youtube.com/watch?v=UFWTP8Nu-MI
 
 ### Asked previously:
@@ -2638,6 +2714,7 @@
 ### Asked previously:
 * [December 8th, 2020 Livestream Q&A: Is Multiplayer desync fixed in Update 4?](https://archive.satisfactory.video/transcriptions/yt-OjiLxOBdkU8) https://www.youtube.com/watch?v=OjiLxOBdkU8
 * [November 24th, 2020 Livestream Q&A: Multiplayer fix?](https://archive.satisfactory.video/transcriptions/yt-LX-zsQIkB3g) https://www.youtube.com/watch?v=LX-zsQIkB3g
+* [November 17th, 2020 Livestream Q&A: Better Multiplayer support?](https://archive.satisfactory.video/transcriptions/yt-ECQdh3EiXws) https://www.youtube.com/watch?v=ECQdh3EiXws
 ### Transcript
 
 > um multiplayer how's it going when came
@@ -3374,6 +3451,7 @@
 * [January 12th, 2021 Livestream Q&A: Any new information regarding Signal system for Trains?](https://archive.satisfactory.video/transcriptions/yt-Bu2TPRFV_2o) https://www.youtube.com/watch?v=Bu2TPRFV_2o
 * [December 15th, 2020 Livestream Q&A: Train Update?](https://archive.satisfactory.video/transcriptions/yt-ts7TQnRykB0) https://www.youtube.com/watch?v=ts7TQnRykB0
 * [December 8th, 2020 Livestream Q&A: Any news on Train Signals?](https://archive.satisfactory.video/transcriptions/yt-V-OVvjoUAmg) https://www.youtube.com/watch?v=V-OVvjoUAmg
+* [November 17th, 2020 Livestream Q&A: Train Collision](https://archive.satisfactory.video/transcriptions/yt-OdCLosbTp60) https://www.youtube.com/watch?v=OdCLosbTp60
 * August 18th, 2020 Livestream Q&A: Any thoughts on whether Trains will ever collide? https://clips.twitch.tv/SaltyJazzyPasta4Head
 ### Transcript
 
@@ -3428,6 +3506,72 @@
 > not something that we
 >
 > uh are prioritizing vr no
+
+
+## [February 9th, 2021 Livestream Q&A: Walls/barriers that follow the incline of Foundation?](https://archive.satisfactory.video/transcriptions/yt-UK0P7CWe1V4) https://www.youtube.com/watch?v=UK0P7CWe1V4
+
+### Asked previously:
+* [November 24th, 2020 Livestream Q&A: When are diagonal Walls coming?](https://archive.satisfactory.video/transcriptions/yt-0-3ITfkBKZw) https://www.youtube.com/watch?v=0-3ITfkBKZw
+* [November 17th, 2020 Livestream Q&A: Can we get an update on Walls?](https://archive.satisfactory.video/transcriptions/yt-ZpYMIZFGegw) https://www.youtube.com/watch?v=ZpYMIZFGegw
+### Transcript
+
+> i don't know uh walls barriers that
+>
+> follow the incline foundation
+>
+> i mean that's uh that's something for
+>
+> the qa side if that's not already there
+>
+> but uh
+>
+> i mean a lot of these questions
+>
+> suggestions you know you can you can
+>
+> send them to us here and then we can
+>
+> answer them if we know but uh they're
+>
+> also a lot of these are good for the qa
+>
+> site guys
+>
+> because then it gets in front of the
+>
+> other developers on the team not just
+>
+> not just us what you're seeing here is
+>
+> the tip of the iceberg like the
+>
+> the the surface tension of the game so
+>
+> to speak and
+>
+> if you try to if you want to throw a
+>
+> rock that
+>
+> falls down to the bottom of the well you
+>
+> need to go to the keyword site
+>
+> uh because here it's just gonna skip on
+>
+> the surface kinda
+>
+> that's that's a terrible analogy but uh
+>
+> wow
+>
+> don't don't don't even all right i i did
+>
+> my best
+>
+> that was amazing whatever
+>
+> cool
 
 
 ## [January 12th, 2021 Livestream Q&A: What's happening with S.A.M. Ore?](https://archive.satisfactory.video/transcriptions/yt-f0Z9VIAK5Iw) https://www.youtube.com/watch?v=f0Z9VIAK5Iw
@@ -3693,6 +3837,7 @@
 
 ### Asked previously:
 * [December 15th, 2020 Livestream Q&A: Will we get a Shop in Europe - the shipping costs are a bit spicy?](https://archive.satisfactory.video/transcriptions/yt-PYyvu8feZqA) https://www.youtube.com/watch?v=PYyvu8feZqA
+* [November 17th, 2020 Livestream Q&A: Do you have an update on the price of delivery fee of Merch?](https://archive.satisfactory.video/transcriptions/yt-mNtdBj-DpK0) https://www.youtube.com/watch?v=mNtdBj-DpK0
 * [October 6th, 2020 Livestream Q&A: Any Update on Merch shipping alternatives?](https://archive.satisfactory.video/transcriptions/yt-kj_vdE5-CEI) https://www.youtube.com/watch?v=kj_vdE5-CEI
 * [September 22nd, 2020 Livestream Q&A: Any information on Merch shipping to EU/rest of the world?](https://archive.satisfactory.video/transcriptions/yt-hAEInvMcQfk) https://www.youtube.com/watch?v=hAEInvMcQfk
 ### Transcript
@@ -3758,6 +3903,7 @@
 ### Asked previously:
 * [January 19th, 2021 Livestream Q&A: Will there be more Creatures, even more dangerous ones?](https://archive.satisfactory.video/transcriptions/yt-T0jbE_WjQJQ) https://www.youtube.com/watch?v=T0jbE_WjQJQ
 * [December 15th, 2020 Livestream Q&A: Will there be new enemies?](https://archive.satisfactory.video/transcriptions/yt-mwN7mAZ2dbg) https://www.youtube.com/watch?v=mwN7mAZ2dbg
+* [November 17th, 2020 Livestream Q&A: Any news on big Crab monster?](https://archive.satisfactory.video/transcriptions/yt-tTXExwaqZQM) https://www.youtube.com/watch?v=tTXExwaqZQM
 * [November 10th, 2020 Livestream Q&A: Any plans to add more animals to enemies or dangers?](https://archive.satisfactory.video/transcriptions/yt-RuzL7DdAJ1o) https://www.youtube.com/watch?v=RuzL7DdAJ1o
 * [October 20th, 2020 Livestream Q&A: Will Aliens become more diverse/actually challenging?](https://archive.satisfactory.video/transcriptions/yt-K7fDE5Dg570) https://www.youtube.com/watch?v=K7fDE5Dg570
 * [September 22nd, 2020 Livestream Q&A: Will there be more creatures?](https://archive.satisfactory.video/transcriptions/yt-Yzd466gO44M) https://www.youtube.com/watch?v=Yzd466gO44M
@@ -4484,6 +4630,7 @@
 
 ### Asked previously:
 * [November 17th, 2020 Livestream Q&A: Any chance to use the HUB Computer to display the statistics and production of the factory?](https://archive.satisfactory.video/transcriptions/yt-5rVqTHOiwh0) https://www.youtube.com/watch?v=5rVqTHOiwh0
+* [November 17th, 2020 Livestream Q&A: What's the reason for not having good in-production overview?](https://archive.satisfactory.video/transcriptions/yt-66gt7CjmdXs) https://www.youtube.com/watch?v=66gt7CjmdXs
 * [December 19th, 2019 Livestream Q&A: Is there going to be a central computer plant where you can check the whole production?](https://archive.satisfactory.video/transcriptions/yt-Zlq2K0-z0_8) https://www.youtube.com/watch?v=Zlq2K0-z0_8
 ### Transcript
 
