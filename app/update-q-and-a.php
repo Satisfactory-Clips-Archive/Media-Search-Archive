@@ -862,7 +862,7 @@ $video_id_date_sort = static function (
 	string $a,
 	string $b
 ) use ($existing, $cache, $playlists) : int {
-	return
+	$maybe =
 		strtotime(
 			$existing[$b]['date'] ?? determine_date_for_video(
 				$b,
@@ -877,6 +877,15 @@ $video_id_date_sort = static function (
 			)
 		)
 	;
+
+	if (0 === $maybe) {
+		$maybe = strnatcasecmp(
+			$cache['playlistItems'][$a][1],
+			$cache['playlistItems'][$b][1]
+		);
+	}
+
+	return $maybe;
 };
 
 $duplicates = array_map(
@@ -982,6 +991,8 @@ foreach ($faq as $video_id => $faq_duplicates) {
 	;
 
 	echo "\n", '### Asked previously:';
+
+	uasort($faq_duplicates, $video_id_date_sort);
 
 	foreach ($faq_duplicates as $other_video_id) {
 		if ($other_video_id === $video_id) {
