@@ -1,6 +1,6 @@
 # Progress
 * 1801 questions found out of 2456 clips
-* 1137 questions found with no other references
+* 1124 questions found with no other references
 ## grouped by date
 * 2021-02-09: 29 of 94 questions found with no other references
 * 2021-02-02: 16 of 51 questions found with no other references
@@ -10,7 +10,7 @@
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 2 of 32 questions found with no other references
 * 2020-12-15: 11 of 59 questions found with no other references
-* 2020-12-08: 30 of 47 questions found with no other references
+* 2020-12-08: 19 of 47 questions found with no other references
 * 2020-12-01: 1 of 1 questions found with no other references
 * 2020-11-24: 33 of 44 questions found with no other references
 * 2020-11-17: 46 of 57 questions found with no other references
@@ -25,7 +25,7 @@
 * 2020-09-22: 43 of 59 questions found with no other references
 * 2020-09-15: 37 of 47 questions found with no other references
 * 2020-09-08: 60 of 72 questions found with no other references
-* 2020-09-01: 54 of 71 questions found with no other references
+* 2020-09-01: 53 of 71 questions found with no other references
 * 2020-08-25: 14 of 136 questions found with no other references
 * 2020-08-18: 44 of 56 questions found with no other references
 * 2020-08-11: 27 of 38 questions found with no other references
@@ -33,7 +33,7 @@
 * 2020-07-21: 4 of 5 questions found with no other references
 * 2020-06-08: 31 of 39 questions found with no other references
 * 2020-05-19: 19 of 24 questions found with no other references
-* 2020-03-24: 21 of 27 questions found with no other references
+* 2020-03-24: 20 of 27 questions found with no other references
 * 2020-02-11: 27 of 34 questions found with no other references
 * 2020-01-22: 21 of 29 questions found with no other references
 * 2019-12-19: 47 of 56 questions found with no other references
@@ -1752,6 +1752,8 @@
 * [December 15th, 2020 Livestream Q&A: Could it be released to the Modding Community to polish and release it as a Mod?](https://archive.satisfactory.video/transcriptions/yt-MQLuFiVQPYY) https://www.youtube.com/watch?v=MQLuFiVQPYY
 * [December 15th, 2020 Livestream Q&A: If I backup current version, will FICS⁕MAS still work after the 18th?](https://archive.satisfactory.video/transcriptions/yt-01DJ6EPqTk4) https://www.youtube.com/watch?v=01DJ6EPqTk4
 * [December 15th, 2020 Livestream Q&A: Will the event come back next year?](https://archive.satisfactory.video/transcriptions/yt-6XovxrktCDA) https://www.youtube.com/watch?v=6XovxrktCDA
+* [December 8th, 2020 Livestream Q&A: What are we going to keep after the event?](https://archive.satisfactory.video/transcriptions/yt-nZjZGFce1lE) https://www.youtube.com/watch?v=nZjZGFce1lE
+* [December 8th, 2020 Livestream Q&A: Will Gift Trees continue to produce?](https://archive.satisfactory.video/transcriptions/yt-FqUcLve4Oyc) https://www.youtube.com/watch?v=FqUcLve4Oyc
 ### Transcript
 
 > es gibt fixe ist bergnot
@@ -2136,6 +2138,70 @@
 > the last update that's that's not it's
 >
 > not the last update there'll be more
+
+
+## [December 8th, 2020 Livestream Q&A: I would be interested to see your in-house roadmap](https://archive.satisfactory.video/transcriptions/yt-D0LY0PxkSJM) https://www.youtube.com/watch?v=D0LY0PxkSJM
+
+### Asked previously:
+* [September 1st, 2020 Livestream Q&A: Roadmap?](https://archive.satisfactory.video/transcriptions/yt-iSMAUqquuvc) https://www.youtube.com/watch?v=iSMAUqquuvc
+* [March 24th, 2020 Livestream Q&A: Will there be a roadmap again for Updates?](https://archive.satisfactory.video/transcriptions/yt-EiqFP9bm7v4) https://www.youtube.com/watch?v=EiqFP9bm7v4
+### Transcript
+
+> used in the game i would be interested
+>
+> in
+>
+> uh to see your in-house road map uh
+>
+> it'll never happen but i'd be interested
+>
+> to see uh to hear bring some of all the
+>
+> ideas you had like techs and models
+>
+> i think that's a great idea honestly but
+>
+> i don't think it's something that we
+>
+> would be willing to do before
+>
+> uh 1.0 so maybe that's something that we
+>
+> can do eventually
+>
+> um could be cool but right now like
+>
+> because
+>
+> you know like we could show you that and
+>
+> you'll see a bunch of ideas of buildings
+>
+> and stuff that we um
+>
+> and you're like you know they it
+>
+> wouldn't necessarily even be a spoiler
+>
+> it'll just be oh they thought of this
+>
+> but there may be spoilers in terms of
+>
+> story
+>
+> and some other things out there yeah if
+>
+> we showed it to you that would spoil it
+>
+> so
+>
+> i don't know maybe that becomes a viable
+>
+> thing after those kind of spoiler things
+>
+> get out of the way maybe
+>
+> we'll see
 
 
 ## [February 2nd, 2021 Livestream Q&A: KFConsole exclusive?](https://archive.satisfactory.video/transcriptions/yt-nK8NUTMQVTM) https://www.youtube.com/watch?v=nK8NUTMQVTM
