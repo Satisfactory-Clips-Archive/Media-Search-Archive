@@ -1,18 +1,18 @@
 # Progress
-* 1847 questions found out of 2456 clips
-* 1170 questions found with no other references
+* 1801 questions found out of 2456 clips
+* 1140 questions found with no other references
 ## grouped by date
-* 2021-02-09: 33 of 100 questions found with no other references
-* 2021-02-02: 16 of 53 questions found with no other references
-* 2021-01-26: 31 of 83 questions found with no other references
+* 2021-02-09: 29 of 94 questions found with no other references
+* 2021-02-02: 16 of 51 questions found with no other references
+* 2021-01-26: 31 of 78 questions found with no other references
 * 2021-01-22: 0 of 3 questions found with no other references
-* 2021-01-19: 23 of 92 questions found with no other references
+* 2021-01-19: 22 of 91 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
-* 2021-01-12: 3 of 34 questions found with no other references
-* 2020-12-15: 11 of 60 questions found with no other references
-* 2020-12-08: 36 of 53 questions found with no other references
+* 2021-01-12: 2 of 32 questions found with no other references
+* 2020-12-15: 11 of 59 questions found with no other references
+* 2020-12-08: 32 of 47 questions found with no other references
 * 2020-12-01: 1 of 1 questions found with no other references
-* 2020-11-24: 36 of 48 questions found with no other references
+* 2020-11-24: 33 of 44 questions found with no other references
 * 2020-11-17: 46 of 57 questions found with no other references
 * 2020-11-10: 73 of 84 questions found with no other references
 * 2020-11-03: 45 of 57 questions found with no other references
@@ -31,18 +31,18 @@
 * 2020-08-11: 27 of 38 questions found with no other references
 * 2020-07-28: 5 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
-* 2020-06-08: 32 of 40 questions found with no other references
+* 2020-06-08: 31 of 39 questions found with no other references
 * 2020-05-19: 19 of 24 questions found with no other references
-* 2020-03-24: 23 of 29 questions found with no other references
-* 2020-02-11: 35 of 43 questions found with no other references
+* 2020-03-24: 21 of 27 questions found with no other references
+* 2020-02-11: 27 of 34 questions found with no other references
 * 2020-01-22: 21 of 29 questions found with no other references
-* 2019-12-19: 49 of 58 questions found with no other references
-* 2019-03-09: 97 of 114 questions found with no other references
-* 2018-11-23: 6 of 6 questions found with no other references
+* 2019-12-19: 47 of 56 questions found with no other references
+* 2019-03-09: 96 of 113 questions found with no other references
+* 2018-11-23: 5 of 5 questions found with no other references
 * 2018-10-03: 9 of 9 questions found with no other references
-* 2018-08-01: 18 of 20 questions found with no other references
+* 2018-08-01: 16 of 18 questions found with no other references
 * 2018-06-22: 10 of 14 questions found with no other references
-* 2018-03-09: 4 of 6 questions found with no other references
+* 2018-03-09: 4 of 5 questions found with no other references
 
 # prototype replacement for faq markdown file
 

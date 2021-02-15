@@ -807,24 +807,28 @@ $filter_no_references =
 		;
 	};
 
+$no_trolling = array_filter($existing, static function (array $data) : bool {
+	return ! in_array('trolling', $data['topics'], true);
+});
+
 ob_start();
 
 echo sprintf(
 		'* %s questions found out of %s clips',
-		count($existing),
+		count($no_trolling),
 		count($cache['playlistItems'])
 	),
 	"\n",
 	sprintf(
 		'* %s questions found with no other references',
-		count(array_filter($existing, $filter_no_references))
+		count(array_filter($no_trolling, $filter_no_references))
 	),
 	"\n"
 ;
 
 $grouped = [];
 
-foreach ($existing as $data) {
+foreach ($no_trolling as $data) {
 	if ( ! isset($grouped[$data['date']])) {
 		$grouped[$data['date']] = [];
 	}
@@ -916,8 +920,11 @@ $faq = array_filter(
 	}
 );
 
-uksort($faq, static function (string $a, string $b) use ($existing) : int {
-	return strnatcasecmp($existing[$a]['title'], $existing[$b]['title']);
+uksort($faq, static function (string $a, string $b) use ($cache) : int {
+	return strnatcasecmp(
+		$cache['playlistItems'][$a][1],
+		$cache['playlistItems'][$b][1]
+	);
 });
 
 echo "\n";
