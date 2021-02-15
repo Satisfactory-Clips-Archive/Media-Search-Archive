@@ -1,7 +1,7 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1777 non-trolling & off-topic questions found out of 1847 total questions
-* 955 questions found with no other references
+* 931 questions found with no other references
 ## grouped by date
 * 2021-02-09: 28 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
@@ -10,22 +10,22 @@
 * 2021-01-19: 22 of 90 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 1 of 30 questions found with no other references
-* 2020-12-15: 8 of 59 questions found with no other references
+* 2020-12-15: 7 of 59 questions found with no other references
 * 2020-12-08: 18 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 11 of 40 questions found with no other references
 * 2020-11-17: 17 of 56 questions found with no other references
-* 2020-11-10: 37 of 83 questions found with no other references
+* 2020-11-10: 36 of 83 questions found with no other references
 * 2020-11-03: 18 of 57 questions found with no other references
 * 2020-10-27: 19 of 23 questions found with no other references
-* 2020-10-20: 39 of 51 questions found with no other references
+* 2020-10-20: 20 of 51 questions found with no other references
 * 2020-10-13: 46 of 48 questions found with no other references
 * 2020-10-09: 22 of 24 questions found with no other references
 * 2020-10-06: 44 of 51 questions found with no other references
 * 2020-09-29: 28 of 38 questions found with no other references
-* 2020-09-22: 40 of 59 questions found with no other references
+* 2020-09-22: 39 of 59 questions found with no other references
 * 2020-09-15: 35 of 47 questions found with no other references
-* 2020-09-08: 58 of 72 questions found with no other references
+* 2020-09-08: 57 of 72 questions found with no other references
 * 2020-09-01: 51 of 71 questions found with no other references
 * 2020-08-25: 13 of 134 questions found with no other references
 * 2020-08-18: 40 of 55 questions found with no other references
@@ -36,7 +36,7 @@
 * 2020-05-19: 18 of 24 questions found with no other references
 * 2020-03-24: 18 of 27 questions found with no other references
 * 2020-02-11: 26 of 33 questions found with no other references
-* 2020-01-22: 20 of 28 questions found with no other references
+* 2020-01-22: 19 of 28 questions found with no other references
 * 2019-12-19: 37 of 51 questions found with no other references
 * 2019-03-09: 91 of 111 questions found with no other references
 * 2018-11-23: 5 of 5 questions found with no other references
@@ -1235,6 +1235,30 @@
 > yes
 
 
+## [January 19th, 2021 Livestream Q&A: Can more people ride the same Train soon?](https://archive.satisfactory.video/transcriptions/yt-YMWU_qSRI1E) https://www.youtube.com/watch?v=YMWU_qSRI1E
+
+### Asked previously:
+* [November 17th, 2020 Livestream Q&A: Are you going to fix the Trains so it doesn't break in multiplayer for other people?](https://archive.satisfactory.video/transcriptions/yt-Kg29HlSMQjI) https://www.youtube.com/watch?v=Kg29HlSMQjI
+* [October 20th, 2020 Livestream Q&A: The Trains lag a lot on Multiplayer?](https://archive.satisfactory.video/transcriptions/yt-AxQoNckHBhI) https://www.youtube.com/watch?v=AxQoNckHBhI
+### Transcript
+
+> uh can more people ride the same train
+>
+> soon um good question we don't have
+>
+> plans for that right now but maybe
+>
+> if you chuck it on the question site
+>
+> maybe we will take that into
+>
+> consideration you can't even write two
+>
+> people in the same
+>
+> vehicle at all anywhere so
+
+
 ## [August 25th, 2020 Livestream Q&A: Can players have custom programmers ?](https://archive.satisfactory.video/transcriptions/yt-0mvgvUhbUuI) https://www.youtube.com/watch?v=0mvgvUhbUuI
 
 ### Asked previously:
@@ -1500,6 +1524,7 @@
 
 ### Asked previously:
 * [November 3rd, 2020 Livestream Q&A: Can you give us a hint about the Story of the game?](https://archive.satisfactory.video/transcriptions/yt-gZoINqh_HAY) https://www.youtube.com/watch?v=gZoINqh_HAY
+* [October 20th, 2020 Livestream Q&A: What will Story Mode be like?](https://archive.satisfactory.video/transcriptions/yt-rRESDp2VwEI) https://www.youtube.com/watch?v=rRESDp2VwEI
 * [September 22nd, 2020 Livestream Q&A: Are there going to be Lore teasers in the Game before launch?](https://archive.satisfactory.video/transcriptions/yt-ANDFv21tydY) https://www.youtube.com/watch?v=ANDFv21tydY
 ### Transcript
 
@@ -3736,6 +3761,7 @@
 * [December 8th, 2020 Livestream Q&A: Any news on Train Signals?](https://archive.satisfactory.video/transcriptions/yt-V-OVvjoUAmg) https://www.youtube.com/watch?v=V-OVvjoUAmg
 * [November 17th, 2020 Livestream Q&A: Train Collision](https://archive.satisfactory.video/transcriptions/yt-OdCLosbTp60) https://www.youtube.com/watch?v=OdCLosbTp60
 * [November 10th, 2020 Livestream Q&A: Any news about Trains? If so put them in Update 4?](https://archive.satisfactory.video/transcriptions/yt-eT6uSBu-sVw) https://www.youtube.com/watch?v=eT6uSBu-sVw
+* [October 20th, 2020 Livestream Q&A: When will we have Train Collision?](https://archive.satisfactory.video/transcriptions/yt-TjSMwjueGc8) https://www.youtube.com/watch?v=TjSMwjueGc8
 * August 18th, 2020 Livestream Q&A: Any thoughts on whether Trains will ever collide? https://clips.twitch.tv/SaltyJazzyPasta4Head
 ### Transcript
 
@@ -5029,6 +5055,29 @@
 > whether that is definitely gonna be a
 >
 > thing or not
+
+
+## [October 20th, 2020 Livestream Q&A: Will we launch Satisfactory 2?](https://archive.satisfactory.video/transcriptions/yt-jdNrrWCP_ZY) https://www.youtube.com/watch?v=jdNrrWCP_ZY
+
+### Asked previously:
+* [September 22nd, 2020 Livestream Q&A: When will Satisfactory 2 come out for Raspberry Pi 4?](https://archive.satisfactory.video/transcriptions/yt-btvWr5Xtdyo) https://www.youtube.com/watch?v=btvWr5Xtdyo
+* [September 8th, 2020 Livestream Q&A: When is Satisfactory 2 coming out?](https://archive.satisfactory.video/transcriptions/yt-DPa5d5MrNDw) https://www.youtube.com/watch?v=DPa5d5MrNDw
+* [January 22nd, 2020 Livestream Q&A: When is Satisfactory 2 coming out?](https://archive.satisfactory.video/transcriptions/yt-jCdv8qJMTKo) https://www.youtube.com/watch?v=jCdv8qJMTKo
+### Transcript
+
+> see we launched satisfactory two i mean
+>
+> i don't even know where long status
+>
+> actually won
+>
+> he's so tired of satisfactory we'll
+>
+> never make another sex factor ever again
+>
+> i wonder if satisfactory two ever makes
+>
+> sense i don't like really
 
 
 ## [November 17th, 2020 Livestream Q&A: Would Official Mod Support use Steam Workshop?](https://archive.satisfactory.video/transcriptions/yt-qzu-mnG_8uA) https://www.youtube.com/watch?v=qzu-mnG_8uA
