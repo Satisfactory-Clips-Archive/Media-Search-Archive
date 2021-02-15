@@ -1943,6 +1943,7 @@
         ],
         "duplicates": [
             "Bu2TPRFV_2o",
+            "eT6uSBu-sVw",
             "OdCLosbTp60",
             "tc-SaltyJazzyPasta4Head",
             "ts7TQnRykB0",
@@ -4917,7 +4918,9 @@
             "environment\/world-map"
         ],
         "duplicates": [
-            "06YaY3zGZeg"
+            "06YaY3zGZeg",
+            "6z70mPmDc5g",
+            "faI65v9Solc"
         ]
     },
     "w2zJd6F1Udw": {
@@ -7230,6 +7233,12 @@
         "date": "2020-11-10",
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
+        ],
+        "duplicates": [
+            "9tNel2ksYnI",
+            "G8K0Bjs8mNo",
+            "Gi08SVnHyLU",
+            "yt-iFAy1NZUOGU,119.72,131.28"
         ]
     },
     "sUMAyPlkahk": {
@@ -7254,7 +7263,8 @@
     "6z70mPmDc5g": {
         "title": "Q&A: Any Easter Eggs nobody's found yet?",
         "date": "2020-11-10",
-        "topics": []
+        "topics": [],
+        "duplicatedby": "57Cc22ZK5aw"
     },
     "uVGH_lZnc2g": {
         "title": "Q&A: Any features you want to add to the game but you don't expect to be added to the vanilla game?",
@@ -7287,7 +7297,8 @@
             "TjSMwjueGc8",
             "V-OVvjoUAmg",
             "WQH5cWS3s2s"
-        ]
+        ],
+        "duplicatedby": "rCOD5becD6M"
     },
     "l-k7qpxgpRQ": {
         "title": "Q&A: Any plans for a helicopter so we don't have to turn into spaghetti to get across the map?",
@@ -7302,6 +7313,20 @@
         "date": "2020-11-10",
         "topics": [
             "features\/buildables\/ladders"
+        ],
+        "duplicates": [
+            "ayGH9w3sEBo",
+            "f3TtRJWOI2Q",
+            "HGwoBSLqtcw",
+            "KTp_pmyifGo",
+            "tc-HelpfulSuaveScallionPeanutButterJellyTime",
+            "vZxhnaT88dc",
+            "v_KEYdpCb-k",
+            "ZnuY8kzdKQU",
+            "zoHTyGXCbsM"
+        ],
+        "seealso": [
+            "PxNJBFSLvNc"
         ]
     },
     "UiFUO0I8xC4": {
@@ -7726,6 +7751,9 @@
         "topics": [
             "features\/buildables\/walls",
             "features\/buildings"
+        ],
+        "seealso": [
+            "VUe1w6nSdko"
         ]
     },
     "cApO9CV5uhU": {
@@ -7974,7 +8002,8 @@
         "date": "2020-11-03",
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
-        ]
+        ],
+        "duplicatedby": "bthe_Dhs6uo"
     },
     "c3jeZv_aYug": {
         "title": "Q&A: Are there going to be new Creatures?",
@@ -10150,7 +10179,8 @@
     "zoHTyGXCbsM": {
         "title": "Q&A: Any plans for an elevator or lift?",
         "date": "2020-09-29",
-        "topics": []
+        "topics": [],
+        "duplicatedby": "VUe1w6nSdko"
     },
     "lOWVYg1D990": {
         "title": "Q&A: Any plans to add Ducks to the game?",
@@ -10218,7 +10248,8 @@
         "date": "2020-09-29",
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
-        ]
+        ],
+        "duplicatedby": "bthe_Dhs6uo"
     },
     "F212AWqzBVI": {
         "title": "Q&A: Giving people Solar, Wind, and Hydro means FICSIT gets more resources?",
@@ -11053,7 +11084,8 @@
     "KTp_pmyifGo": {
         "title": "Q&A: Are you guys going to make a Player Elevator?",
         "date": "2020-09-15",
-        "topics": []
+        "topics": [],
+        "duplicatedby": "VUe1w6nSdko"
     },
     "0Zv9Qjp2fHI": {
         "title": "Q&A: Are you planning on porting the game to PS4?",
@@ -11523,7 +11555,8 @@
         "date": "2020-09-08",
         "topics": [
             "features\/transportation\/vehicles"
-        ]
+        ],
+        "duplicatedby": "VUe1w6nSdko"
     },
     "VgDl00Ycn3U": {
         "title": "Q&A: Even more Biomes coming to play?",
@@ -12513,7 +12546,8 @@
         ],
         "duplicates": [
             "tc-SparklingFilthyKathyBleedPurple"
-        ]
+        ],
+        "duplicatedby": "VUe1w6nSdko"
     },
     "MncPu1Yxuf8": {
         "title": "Q&A: Add Godzilla to fight the big Manta?",
@@ -12888,7 +12922,8 @@
         "topics": [],
         "duplicates": [
             "tc-DullSmokyWaffleDoggo"
-        ]
+        ],
+        "duplicatedby": "VUe1w6nSdko"
     },
     "ZUAoFCpE1vY": {
         "title": "Q&A: Do you not think that Refineries are over-used?",
@@ -13723,7 +13758,8 @@
         "date": "2020-08-25",
         "topics": [
             "coffee-stainers\/hannah"
-        ]
+        ],
+        "duplicatedby": "57Cc22ZK5aw"
     },
     "GaId9klI7ho": {
         "title": "Q&A: What about a more complex power system with transformers and stuff?",
@@ -14712,7 +14748,8 @@
         "date": "2020-08-11",
         "topics": [
             "features\/buildings"
-        ]
+        ],
+        "duplicatedby": "VUe1w6nSdko"
     },
     "tc-SarcasticWildBeanRitzMitz": {
         "title": "Q&A: FICSIT Cup material?",
@@ -15623,7 +15660,8 @@
         "date": "2020-03-24",
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
-        ]
+        ],
+        "duplicatedby": "bthe_Dhs6uo"
     },
     "4xBmUJNdyFg": {
         "title": "Q&A: Are there going to be free DLCs?",
@@ -16618,7 +16656,8 @@
         "date": "2019-12-19",
         "topics": [
             "features\/buildings"
-        ]
+        ],
+        "duplicatedby": "VUe1w6nSdko"
     },
     "yRdv_AYUVR4": {
         "title": "Q&A: How is Simon so jacked?",
@@ -16639,7 +16678,8 @@
         "topics": [
             "features\/buildings",
             "mods\/mods-vs-features"
-        ]
+        ],
+        "duplicatedby": "VUe1w6nSdko"
     },
     "pRuIjTp-u5I": {
         "title": "Q&A: Improve Vehicles in general?",
@@ -16726,7 +16766,8 @@
         "date": "2019-12-19",
         "topics": [
             "features\/transportation\/vehicles"
-        ]
+        ],
+        "duplicatedby": "VUe1w6nSdko"
     },
     "gHZsodBmCms": {
         "title": "Q&A: We want a Simon body pillow?",
@@ -18071,7 +18112,8 @@
         "date": "2018-08-01",
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
-        ]
+        ],
+        "duplicatedby": "bthe_Dhs6uo"
     },
     "yt-iFAy1NZUOGU,170.36,188.8": {
         "title": "Q&A: Won't the factory stop working if you're really far away?",
