@@ -1,6 +1,6 @@
 # Progress
 * 1801 questions found out of 2456 clips
-* 1140 questions found with no other references
+* 1137 questions found with no other references
 ## grouped by date
 * 2021-02-09: 29 of 94 questions found with no other references
 * 2021-02-02: 16 of 51 questions found with no other references
@@ -10,11 +10,11 @@
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 2 of 32 questions found with no other references
 * 2020-12-15: 11 of 59 questions found with no other references
-* 2020-12-08: 32 of 47 questions found with no other references
+* 2020-12-08: 30 of 47 questions found with no other references
 * 2020-12-01: 1 of 1 questions found with no other references
 * 2020-11-24: 33 of 44 questions found with no other references
 * 2020-11-17: 46 of 57 questions found with no other references
-* 2020-11-10: 73 of 84 questions found with no other references
+* 2020-11-10: 72 of 84 questions found with no other references
 * 2020-11-03: 45 of 57 questions found with no other references
 * 2020-10-27: 22 of 23 questions found with no other references
 * 2020-10-20: 40 of 51 questions found with no other references
@@ -1380,6 +1380,7 @@
 * [January 19th, 2021 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-FIamGlpCEFk) https://www.youtube.com/watch?v=FIamGlpCEFk
 * [December 15th, 2020 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-HeezNCrsBRU) https://www.youtube.com/watch?v=HeezNCrsBRU
 * [December 15th, 2020 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-03Ybo6-_eWA) https://www.youtube.com/watch?v=03Ybo6-_eWA
+* [December 8th, 2020 Livestream Q&A: Is there a reason for a lack of Dedicated Server builds?](https://archive.satisfactory.video/transcriptions/yt-47gzhAEWkFM) https://www.youtube.com/watch?v=47gzhAEWkFM
 * [November 17th, 2020 Livestream Q&A: Updates about Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-32SZ2UKPZiQ) https://www.youtube.com/watch?v=32SZ2UKPZiQ
 * [October 20th, 2020 Livestream Q&A: Dedicated Servers coming with the next Update ?](https://archive.satisfactory.video/transcriptions/yt-VyyzowIc504) https://www.youtube.com/watch?v=VyyzowIc504
 * [October 20th, 2020 Livestream Q&A: When will Dedicated Servers be coming?](https://archive.satisfactory.video/transcriptions/yt-TW0i2hxJ7C0) https://www.youtube.com/watch?v=TW0i2hxJ7C0
