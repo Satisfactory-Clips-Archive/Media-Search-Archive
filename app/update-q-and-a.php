@@ -52,6 +52,8 @@ use function usort;
 require_once (__DIR__ . '/../vendor/autoload.php');
 require_once (__DIR__ . '/global-topic-hierarchy.php');
 
+$filtering = new Filtering();
+
 /**
  * @var array<string, array{
  *	title:string,
@@ -793,20 +795,6 @@ $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
 
 file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
 
-$filter_no_references =
-	/**
-	 * @param array{duplicates:array, replaces:array, seealso:array} $maybe
-	 */
-	static function (array $maybe) : bool {
-		return
-			count($maybe['duplicates'] ?? []) < 1
-			&& count($maybe['replaces'] ?? []) < 1
-			&& count($maybe['seealso'] ?? []) < 1
-			&& ! isset($maybe['replacedby'])
-			&& ! isset($maybe['duplicatedby'])
-		;
-	};
-
 $no_trolling = array_filter($existing, static function (array $data) : bool {
 	return ! in_array('trolling', $data['topics'], true);
 });
@@ -821,7 +809,10 @@ echo sprintf(
 	"\n",
 	sprintf(
 		'* %s questions found with no other references',
-		count(array_filter($no_trolling, $filter_no_references))
+		count(array_filter(
+			$no_trolling,
+			[$filtering, 'QuestionDataNoReferences']
+		))
 	),
 	"\n"
 ;
@@ -842,7 +833,10 @@ foreach ($grouped as $date => $data) {
 	echo sprintf(
 			'* %s: %s of %s questions found with no other references',
 			$date,
-			count(array_filter($data, $filter_no_references)),
+			count(array_filter(
+				$data,
+				[$filtering, 'QuestionDataNoReferences']
+			)),
 			count($data)
 		),
 		"\n"

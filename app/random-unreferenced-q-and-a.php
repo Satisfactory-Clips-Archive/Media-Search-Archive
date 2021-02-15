@@ -12,6 +12,10 @@ use function count;
 use function file_get_contents;
 use function json_decode;
 
+require_once (__DIR__ . '/../vendor/autoload.php');
+
+$filtering = new Filtering();
+
 $date = $argv[1] ?? null;
 
 /**
@@ -38,13 +42,9 @@ if (isset($date)) {
 	);
 }
 
-$questions = array_filter($questions, static function (array $maybe) : bool {
-	return
-		count($maybe['duplicates']) < 1
-		&& count($maybe['replaces']) < 1
-		&& count($maybe['seealso']) < 1
-		&& ! isset($maybe['replacedby'])
-	;
-});
+$questions = array_filter(
+	$questions,
+	[$filtering, 'QuestionDataNoReferences']
+);
 
 echo array_rand($questions);
