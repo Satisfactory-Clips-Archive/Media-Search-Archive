@@ -1,7 +1,7 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1777 non-trolling & off-topic questions found out of 1847 total questions
-* 931 questions found with no other references
+* 910 questions found with no other references
 ## grouped by date
 * 2021-02-09: 28 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
@@ -17,23 +17,23 @@
 * 2020-11-17: 17 of 56 questions found with no other references
 * 2020-11-10: 36 of 83 questions found with no other references
 * 2020-11-03: 18 of 57 questions found with no other references
-* 2020-10-27: 19 of 23 questions found with no other references
+* 2020-10-27: 16 of 23 questions found with no other references
 * 2020-10-20: 20 of 51 questions found with no other references
-* 2020-10-13: 46 of 48 questions found with no other references
+* 2020-10-13: 31 of 48 questions found with no other references
 * 2020-10-09: 22 of 24 questions found with no other references
 * 2020-10-06: 44 of 51 questions found with no other references
 * 2020-09-29: 28 of 38 questions found with no other references
 * 2020-09-22: 39 of 59 questions found with no other references
 * 2020-09-15: 35 of 47 questions found with no other references
 * 2020-09-08: 57 of 72 questions found with no other references
-* 2020-09-01: 51 of 71 questions found with no other references
+* 2020-09-01: 50 of 71 questions found with no other references
 * 2020-08-25: 13 of 134 questions found with no other references
 * 2020-08-18: 40 of 55 questions found with no other references
 * 2020-08-11: 26 of 38 questions found with no other references
-* 2020-07-28: 5 of 10 questions found with no other references
+* 2020-07-28: 4 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
 * 2020-06-08: 29 of 39 questions found with no other references
-* 2020-05-19: 18 of 24 questions found with no other references
+* 2020-05-19: 17 of 24 questions found with no other references
 * 2020-03-24: 18 of 27 questions found with no other references
 * 2020-02-11: 26 of 33 questions found with no other references
 * 2020-01-22: 19 of 28 questions found with no other references
@@ -358,6 +358,7 @@
 ### Asked previously:
 * [November 17th, 2020 Livestream Q&A: Is there any Official Mod Support planned?](https://archive.satisfactory.video/transcriptions/yt-z4Uv-UNMETw) https://www.youtube.com/watch?v=z4Uv-UNMETw
 * [November 3rd, 2020 Livestream Q&A: Any idea about Official Modding?](https://archive.satisfactory.video/transcriptions/yt-D5-Y6LYR7jk) https://www.youtube.com/watch?v=D5-Y6LYR7jk
+* [October 13th, 2020 Livestream Q&A: Are there any plans for integrated mod support?](https://archive.satisfactory.video/transcriptions/yt-25ssduoFoiA) https://www.youtube.com/watch?v=25ssduoFoiA
 ### Transcript
 
 > we go and then i need to build any info
@@ -552,6 +553,38 @@
 > that that they want to do um
 >
 > but don't know when that will come
+
+
+## [January 19th, 2021 Livestream Q&A: Any plans to revisit the To-Do List for Quality-of-Life pass?](https://archive.satisfactory.video/transcriptions/yt-nI31KeD88V8) https://www.youtube.com/watch?v=nI31KeD88V8
+
+### Asked previously:
+* [January 12th, 2021 Livestream Q&A: Any changes coming to To-Do List?](https://archive.satisfactory.video/transcriptions/yt-NStZ-wKVHYc) https://www.youtube.com/watch?v=NStZ-wKVHYc
+* [October 13th, 2020 Livestream Q&A: Is it possible to use the add to-do list without visiting the crafting bench?](https://archive.satisfactory.video/transcriptions/yt-ValaMW93Q7g) https://www.youtube.com/watch?v=ValaMW93Q7g
+### Transcript
+
+> any plans to revisit the to-do list for
+>
+> quality of life pass
+>
+> um i would say if there's anything
+>
+> specifically that you think we should
+>
+> change with that make sure to post it on
+>
+> our questions site
+>
+> at questions.satisfactory.com um
+>
+> and i think that's the best way to
+>
+> answer that question really is if
+>
+> there's something specific that you want
+>
+> to change i don't know of any
+>
+> specific plans um so yeah
 
 
 ## [August 25th, 2020 Livestream Q&A: Are limited resources planned?](https://archive.satisfactory.video/transcriptions/yt-85XNSiDpeZw) https://www.youtube.com/watch?v=85XNSiDpeZw
@@ -1481,6 +1514,7 @@
 ### Asked previously:
 * [November 3rd, 2020 Livestream Q&A: Packager solid/liquid I/O don't allow for placement of Conveyor lifts?](https://archive.satisfactory.video/transcriptions/yt-gqLycnJA_3c) https://www.youtube.com/watch?v=gqLycnJA_3c
 * [November 3rd, 2020 Livestream Q&A: Will the Packager input/output orientation be changed before it goes to Early Access?](https://archive.satisfactory.video/transcriptions/yt-Pjj0oalwYj0) https://www.youtube.com/watch?v=Pjj0oalwYj0
+* [October 13th, 2020 Livestream Q&A: I think it's better to stack the inputs & outputs](https://archive.satisfactory.video/transcriptions/yt-RK0ENdeE27c) https://www.youtube.com/watch?v=RK0ENdeE27c
 ### Transcript
 
 > uh can we get a packager that has
@@ -1988,6 +2022,7 @@
 * [November 24th, 2020 Livestream Q&A: When is Satisfactory coming to N-Gage?](https://archive.satisfactory.video/transcriptions/yt-qL6dp9eUB58) https://www.youtube.com/watch?v=qL6dp9eUB58
 * [November 24th, 2020 Livestream Q&A: When is Satisfactory coming to Switch?](https://archive.satisfactory.video/transcriptions/yt-tBDXG3OHt1c) https://www.youtube.com/watch?v=tBDXG3OHt1c
 * [November 17th, 2020 Livestream Q&A: Is Console support coming?](https://archive.satisfactory.video/transcriptions/yt-tqB7YuLM2Fs) https://www.youtube.com/watch?v=tqB7YuLM2Fs
+* [October 13th, 2020 Livestream Q&A: I want this to come to XBox Series X & Playstation 5](https://archive.satisfactory.video/transcriptions/yt-9NqrE4ASW9U) https://www.youtube.com/watch?v=9NqrE4ASW9U
 * [September 8th, 2020 Livestream Q&A: Will this game come out on Console at some point?](https://archive.satisfactory.video/transcriptions/yt-pfD6p4g3fQ8) https://www.youtube.com/watch?v=pfD6p4g3fQ8
 * [September 1st, 2020 Livestream Q&A: Satisfactory on next-gen Consoles?](https://archive.satisfactory.video/transcriptions/yt-ed1gycRZji4) https://www.youtube.com/watch?v=ed1gycRZji4
 * [August 25th, 2020 Livestream Q&A: Any chance to play Satisfactory on N64?](https://archive.satisfactory.video/transcriptions/yt-Ov7_XZoduDQ) https://www.youtube.com/watch?v=Ov7_XZoduDQ
@@ -2576,6 +2611,7 @@
 * January 22nd, 2021 Instagram AMA Q&A: Is there a plan for automatize the base defense? https://satisfactory.gamepedia.com/File:January_22nd%2C_2021_Instagram_AMA-base_defense.mp4
 * [December 15th, 2020 Livestream Q&A: Can we get turrets and more PvE?](https://archive.satisfactory.video/transcriptions/yt-sJnuRV0OGF0) https://www.youtube.com/watch?v=sJnuRV0OGF0
 * [December 8th, 2020 Livestream Q&A: Will there be any Base Defense?](https://archive.satisfactory.video/transcriptions/yt-5-8ACtMU2_E) https://www.youtube.com/watch?v=5-8ACtMU2_E
+* [October 13th, 2020 Livestream Q&A: If Factories can get attacked?](https://archive.satisfactory.video/transcriptions/yt-tK_m7AqM4sY) https://www.youtube.com/watch?v=tK_m7AqM4sY
 * [September 22nd, 2020 Livestream Q&A: Hoping for Base Defence?](https://archive.satisfactory.video/transcriptions/yt-RjFIQhJY824) https://www.youtube.com/watch?v=RjFIQhJY824
 * August 18th, 2020 Livestream Q&A: Will there be animals that attack the base? https://clips.twitch.tv/ProtectiveTubularCatJebaited
 * [March 9th, 2019 Livestream Q&A: Can creatures in any way disrupt your factory?](https://archive.satisfactory.video/transcriptions/yt-R2Fms8EjhN8) https://www.youtube.com/watch?v=R2Fms8EjhN8
@@ -3673,6 +3709,46 @@
 > yeah that's the state of things
 
 
+## [October 27th, 2020 Livestream Q&A: Talking about Engine Update, was that Unreal Engine 5?](https://archive.satisfactory.video/transcriptions/yt-unAf5J6OtDE) https://www.youtube.com/watch?v=unAf5J6OtDE
+
+### Asked previously:
+* [October 13th, 2020 Livestream Q&A: Will you switch to using Unreal Engine 5?](https://archive.satisfactory.video/transcriptions/yt-9r6ROgTQ_n4) https://www.youtube.com/watch?v=9r6ROgTQ_n4
+* [August 25th, 2020 Livestream Q&A: Will Satisfactory be updated to Unreal Engine 5 / Snutt Talk: Experimental Builds](https://archive.satisfactory.video/transcriptions/yt-rr1UWnrs0d4) https://www.youtube.com/watch?v=rr1UWnrs0d4
+* July 28th, 2020 Livestream Q&A: Unreal Engine 5 https://clips.twitch.tv/PiliableZanyGrassFreakinStinkin
+* [May 19th, 2020 Livestream Q&A: Will you be using Unreal Engine 5 for Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-Wy79gUb24es) https://www.youtube.com/watch?v=Wy79gUb24es
+### Transcript
+
+> it's fine look it's fine i did it for
+>
+> content
+>
+> talked about engine upgrade was that
+>
+> unreal engine five no unreal engine five
+>
+> isn't even out like we don't know when
+>
+> 1005 will happen
+>
+> uh i'm referring to uh we're updating
+>
+> from unreal engine 422 which is the
+>
+> worst
+>
+> which is the current version of the game
+>
+> to unreal engine 4.25
+>
+> and i think twin 4.26 is coming out soon
+>
+> so we'll be like
+>
+> i'm gonna miss that eight minutes all
+>
+> right
+
+
 ## [August 25th, 2020 Livestream Q&A: Tanker Trucks?](https://archive.satisfactory.video/transcriptions/yt-IPmVdCgi2_A) https://www.youtube.com/watch?v=IPmVdCgi2_A
 
 ### Asked previously:
@@ -4169,6 +4245,8 @@
 ### Asked previously:
 * [December 15th, 2020 Livestream Q&A: Will we get a Shop in Europe - the shipping costs are a bit spicy?](https://archive.satisfactory.video/transcriptions/yt-PYyvu8feZqA) https://www.youtube.com/watch?v=PYyvu8feZqA
 * [November 17th, 2020 Livestream Q&A: Do you have an update on the price of delivery fee of Merch?](https://archive.satisfactory.video/transcriptions/yt-mNtdBj-DpK0) https://www.youtube.com/watch?v=mNtdBj-DpK0
+* [October 13th, 2020 Livestream Q&A: Info on EU shopping for Merch?](https://archive.satisfactory.video/transcriptions/yt-D3uJQzZmGQM) https://www.youtube.com/watch?v=D3uJQzZmGQM
+* [October 13th, 2020 Livestream Q&A: When will the Merch be sold in the EU?](https://archive.satisfactory.video/transcriptions/yt-cLOvb6pC788) https://www.youtube.com/watch?v=cLOvb6pC788
 * [October 6th, 2020 Livestream Q&A: Any Update on Merch shipping alternatives?](https://archive.satisfactory.video/transcriptions/yt-kj_vdE5-CEI) https://www.youtube.com/watch?v=kj_vdE5-CEI
 * [September 22nd, 2020 Livestream Q&A: Any information on Merch shipping to EU/rest of the world?](https://archive.satisfactory.video/transcriptions/yt-hAEInvMcQfk) https://www.youtube.com/watch?v=hAEInvMcQfk
 ### Transcript
