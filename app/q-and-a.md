@@ -1,7 +1,7 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1777 non-trolling & off-topic questions found out of 1847 total questions
-* 990 questions found with no other references
+* 986 questions found with no other references
 ## grouped by date
 * 2021-02-09: 28 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
@@ -16,7 +16,7 @@
 * 2020-11-24: 11 of 40 questions found with no other references
 * 2020-11-17: 17 of 56 questions found with no other references
 * 2020-11-10: 39 of 83 questions found with no other references
-* 2020-11-03: 42 of 57 questions found with no other references
+* 2020-11-03: 38 of 57 questions found with no other references
 * 2020-10-27: 22 of 23 questions found with no other references
 * 2020-10-20: 39 of 51 questions found with no other references
 * 2020-10-13: 46 of 48 questions found with no other references
@@ -351,6 +351,58 @@
 > have seen that mod i just haven't tried
 >
 > it out yet
+
+
+## [December 8th, 2020 Livestream Q&A: Any hints you can give on the level of mod support you'll provide eventually?](https://archive.satisfactory.video/transcriptions/yt-o7FFLZpEf_Y) https://www.youtube.com/watch?v=o7FFLZpEf_Y
+
+### Asked previously:
+* [November 17th, 2020 Livestream Q&A: Is there any Official Mod Support planned?](https://archive.satisfactory.video/transcriptions/yt-z4Uv-UNMETw) https://www.youtube.com/watch?v=z4Uv-UNMETw
+* [November 3rd, 2020 Livestream Q&A: Any idea about Official Modding?](https://archive.satisfactory.video/transcriptions/yt-D5-Y6LYR7jk) https://www.youtube.com/watch?v=D5-Y6LYR7jk
+### Transcript
+
+> we go and then i need to build any info
+>
+> you can give on the level of mod support
+>
+> you provide eventually
+>
+> um modding api or something uh
+>
+> no i i can't give you any information we
+>
+> don't really know
+>
+> because we haven't really worked on that
+>
+> yet the idea is to make
+>
+> modding like better than they are
+>
+> currently
+>
+> um and it will also be i think monica
+>
+> mod creation will be a little bit better
+>
+> once we introduce modeler builds
+>
+> as well which is later down the line
+>
+> probably next year
+>
+> um i think that will
+>
+> benefit the current modding community
+>
+> but in the future i think we want to
+>
+> figure out ways to make it even more
+>
+> better for everyone even getting mods
+>
+> should be easier unless we have proper
+>
+> support
 
 
 ## [November 10th, 2020 Livestream Q&A: Any plans for Elevators?](https://archive.satisfactory.video/transcriptions/yt-VUe1w6nSdko) https://www.youtube.com/watch?v=VUe1w6nSdko
@@ -2822,6 +2874,8 @@
 ### Asked previously:
 * [November 24th, 2020 Livestream Q&A: Mk.6 Belts coming?](https://archive.satisfactory.video/transcriptions/yt-H2WwaLFOI9Q) https://www.youtube.com/watch?v=H2WwaLFOI9Q
 * [November 10th, 2020 Livestream Q&A: Are Conveyor Belt Mk. 6 going to be a thing?](https://archive.satisfactory.video/transcriptions/yt-WbtzFVFOFMs) https://www.youtube.com/watch?v=WbtzFVFOFMs
+* [November 3rd, 2020 Livestream Q&A: Any plans for better Belts for Pure nodes?](https://archive.satisfactory.video/transcriptions/yt-UxW9nGO9Ius) https://www.youtube.com/watch?v=UxW9nGO9Ius
+* [November 3rd, 2020 Livestream Q&A: Broader Belts?](https://archive.satisfactory.video/transcriptions/yt-Y1ulbhgaSeU) https://www.youtube.com/watch?v=Y1ulbhgaSeU
 ### Transcript
 
 > mk6 built in the next update maybe who
@@ -4041,6 +4095,7 @@
 * [December 15th, 2020 Livestream Q&A: Will there be new enemies?](https://archive.satisfactory.video/transcriptions/yt-mwN7mAZ2dbg) https://www.youtube.com/watch?v=mwN7mAZ2dbg
 * [November 17th, 2020 Livestream Q&A: Any news on big Crab monster?](https://archive.satisfactory.video/transcriptions/yt-tTXExwaqZQM) https://www.youtube.com/watch?v=tTXExwaqZQM
 * [November 10th, 2020 Livestream Q&A: Any plans to add more animals to enemies or dangers?](https://archive.satisfactory.video/transcriptions/yt-RuzL7DdAJ1o) https://www.youtube.com/watch?v=RuzL7DdAJ1o
+* [November 3rd, 2020 Livestream Q&A: Are there going to be new Creatures?](https://archive.satisfactory.video/transcriptions/yt-c3jeZv_aYug) https://www.youtube.com/watch?v=c3jeZv_aYug
 * [October 20th, 2020 Livestream Q&A: Will Aliens become more diverse/actually challenging?](https://archive.satisfactory.video/transcriptions/yt-K7fDE5Dg570) https://www.youtube.com/watch?v=K7fDE5Dg570
 * [September 22nd, 2020 Livestream Q&A: Will there be more creatures?](https://archive.satisfactory.video/transcriptions/yt-Yzd466gO44M) https://www.youtube.com/watch?v=Yzd466gO44M
 * [August 25th, 2020 Livestream Q&A: Will we have more monsters?](https://archive.satisfactory.video/transcriptions/yt-shEKhZakMxQ) https://www.youtube.com/watch?v=shEKhZakMxQ
