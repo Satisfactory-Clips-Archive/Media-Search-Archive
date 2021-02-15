@@ -732,7 +732,7 @@ foreach (array_keys($existing) as $lookup) {
 
 	if (count($replacements_tmp) < 1) {
 		if (isset($replacements_not_in_existing[$lookup])) {
-		unset($replacements_not_in_existing[$lookup]);
+			unset($replacements_not_in_existing[$lookup]);
 		}
 	} else {
 		$replacements_not_in_existing[$lookup] = (string) current(
