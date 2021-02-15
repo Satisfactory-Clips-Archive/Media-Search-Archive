@@ -1,7 +1,7 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1801 non-trolling questions found out of 1847 total questions
-* 1055 questions found with no other references
+* 1038 questions found with no other references
 ## grouped by date
 * 2021-02-09: 29 of 94 questions found with no other references
 * 2021-02-02: 16 of 51 questions found with no other references
@@ -15,33 +15,33 @@
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 14 of 44 questions found with no other references
 * 2020-11-17: 18 of 57 questions found with no other references
-* 2020-11-10: 70 of 84 questions found with no other references
-* 2020-11-03: 44 of 57 questions found with no other references
+* 2020-11-10: 65 of 84 questions found with no other references
+* 2020-11-03: 43 of 57 questions found with no other references
 * 2020-10-27: 22 of 23 questions found with no other references
 * 2020-10-20: 39 of 51 questions found with no other references
 * 2020-10-13: 46 of 48 questions found with no other references
 * 2020-10-09: 22 of 24 questions found with no other references
 * 2020-10-06: 44 of 51 questions found with no other references
-* 2020-09-29: 30 of 38 questions found with no other references
+* 2020-09-29: 28 of 38 questions found with no other references
 * 2020-09-22: 42 of 59 questions found with no other references
-* 2020-09-15: 36 of 47 questions found with no other references
-* 2020-09-08: 60 of 72 questions found with no other references
+* 2020-09-15: 35 of 47 questions found with no other references
+* 2020-09-08: 59 of 72 questions found with no other references
 * 2020-09-01: 51 of 71 questions found with no other references
-* 2020-08-25: 14 of 136 questions found with no other references
+* 2020-08-25: 13 of 136 questions found with no other references
 * 2020-08-18: 42 of 56 questions found with no other references
-* 2020-08-11: 27 of 38 questions found with no other references
+* 2020-08-11: 26 of 38 questions found with no other references
 * 2020-07-28: 5 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
 * 2020-06-08: 30 of 39 questions found with no other references
 * 2020-05-19: 19 of 24 questions found with no other references
-* 2020-03-24: 20 of 27 questions found with no other references
+* 2020-03-24: 19 of 27 questions found with no other references
 * 2020-02-11: 27 of 34 questions found with no other references
 * 2020-01-22: 21 of 29 questions found with no other references
-* 2019-12-19: 46 of 56 questions found with no other references
+* 2019-12-19: 43 of 56 questions found with no other references
 * 2019-03-09: 93 of 113 questions found with no other references
 * 2018-11-23: 5 of 5 questions found with no other references
 * 2018-10-03: 9 of 9 questions found with no other references
-* 2018-08-01: 15 of 18 questions found with no other references
+* 2018-08-01: 14 of 18 questions found with no other references
 * 2018-06-22: 10 of 14 questions found with no other references
 * 2018-03-09: 4 of 5 questions found with no other references
 
@@ -144,6 +144,21 @@
 > like
 >
 > we would be like slammed for it
+
+
+## [November 10th, 2020 Livestream Q&A: Achievements system?](https://archive.satisfactory.video/transcriptions/yt-bthe_Dhs6uo) https://www.youtube.com/watch?v=bthe_Dhs6uo
+
+### Asked previously:
+* [November 3rd, 2020 Livestream Q&A: Are Steam Achievements going to be added in the future?](https://archive.satisfactory.video/transcriptions/yt-Gi08SVnHyLU) https://www.youtube.com/watch?v=Gi08SVnHyLU
+* [September 29th, 2020 Livestream Q&A: Give us Steam Achievements already?](https://archive.satisfactory.video/transcriptions/yt-9tNel2ksYnI) https://www.youtube.com/watch?v=9tNel2ksYnI
+* [March 24th, 2020 Livestream Q&A: Achievements?](https://archive.satisfactory.video/transcriptions/yt-G8K0Bjs8mNo) https://www.youtube.com/watch?v=G8K0Bjs8mNo
+* [August 1st, 2018 Livestream Q&A: Will there be Steam achievements?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,119.72,131.28) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=119&end=132
+
+### Transcript
+
+> achievement system yeah probably at some
+>
+> point
 
 
 ## [August 25th, 2020 Livestream Q&A: Add Planes as Vehicles and we can automate it to carry our resources?](https://archive.satisfactory.video/transcriptions/yt-Ds9NIPna9_4) https://www.youtube.com/watch?v=Ds9NIPna9_4
@@ -338,6 +353,77 @@
 > it out yet
 
 
+## [November 10th, 2020 Livestream Q&A: Any plans for Elevators?](https://archive.satisfactory.video/transcriptions/yt-VUe1w6nSdko) https://www.youtube.com/watch?v=VUe1w6nSdko
+
+### Asked previously:
+* [September 29th, 2020 Livestream Q&A: Any plans for an elevator or lift?](https://archive.satisfactory.video/transcriptions/yt-zoHTyGXCbsM) https://www.youtube.com/watch?v=zoHTyGXCbsM
+* [September 15th, 2020 Livestream Q&A: Are you guys going to make a Player Elevator?](https://archive.satisfactory.video/transcriptions/yt-KTp_pmyifGo) https://www.youtube.com/watch?v=KTp_pmyifGo
+* [September 8th, 2020 Livestream Q&A: Elevator for Vehicles & Players?](https://archive.satisfactory.video/transcriptions/yt-v_KEYdpCb-k) https://www.youtube.com/watch?v=v_KEYdpCb-k
+* [August 25th, 2020 Livestream Q&A: Actual Elevators with floor-select buttons ?](https://archive.satisfactory.video/transcriptions/yt-vZxhnaT88dc) https://www.youtube.com/watch?v=vZxhnaT88dc
+* [August 25th, 2020 Livestream Q&A: Do you have plans for elevators usable for players?](https://archive.satisfactory.video/transcriptions/yt-ZnuY8kzdKQU) https://www.youtube.com/watch?v=ZnuY8kzdKQU
+* August 11th, 2020 Livestream Q&A: Elevators? https://clips.twitch.tv/HelpfulSuaveScallionPeanutButterJellyTime
+* [December 19th, 2019 Livestream Q&A: How about personal elevators?](https://archive.satisfactory.video/transcriptions/yt-f3TtRJWOI2Q) https://www.youtube.com/watch?v=f3TtRJWOI2Q
+* [December 19th, 2019 Livestream Q&A: Human Elevators?](https://archive.satisfactory.video/transcriptions/yt-HGwoBSLqtcw) https://www.youtube.com/watch?v=HGwoBSLqtcw
+* December 19th, 2019 Livestream Q&A: Vehicle Lifts? https://www.youtube.com/watch?v=ayGH9w3sEBo
+### Transcript
+
+> uh any plans for elevators we just added
+>
+> ladders you're basically asking me
+>
+> ladders mark ii the meme
+>
+> continues realistically though i mean
+>
+> first of all elevators would look really
+>
+> cool
+>
+> i think ladders would function better
+>
+> than elevators um
+>
+> unless you're trying to lift up vehicles
+>
+> but elevators are tricky
+>
+> and but ladders are quick as well like
+>
+> in video games you climb very quickly
+>
+> and you move very quickly in video games
+>
+> so you would climb quicker than an
+>
+> elevator honestly
+>
+> that's what i think unless the problem
+>
+> like i guess like vehicle
+>
+> lifts or something also that i've seen
+>
+> that's kind of missing because there's
+>
+> no way
+>
+> we just need to add so that vehicles can
+>
+> climb ladders i think that will solve
+>
+> most problems yeah no what the you
+>
+> used to jump pads for that now
+>
+> yep there you are just to chunk
+>
+> put that chunky vehicle boy on a jump
+>
+> pad and just blast it up
+>
+> there easy peasy easy peasy
+
+
 ## [February 9th, 2021 Livestream Q&A: Any plans for Smart Mergers yet?](https://archive.satisfactory.video/transcriptions/yt-KUfze04EJmA) https://www.youtube.com/watch?v=KUfze04EJmA
 
 ### Asked previously:
@@ -491,6 +577,29 @@
 > more than one map for 1.0
 >
 > not going to happen
+
+
+## [December 15th, 2020 Livestream Q&A: Are there hidden secrets and cameos in the game?](https://archive.satisfactory.video/transcriptions/yt-57Cc22ZK5aw) https://www.youtube.com/watch?v=57Cc22ZK5aw
+
+### Asked previously:
+* [November 10th, 2020 Livestream Q&A: Any Easter Eggs nobody's found yet?](https://archive.satisfactory.video/transcriptions/yt-6z70mPmDc5g) https://www.youtube.com/watch?v=6z70mPmDc5g
+* [August 25th, 2020 Livestream Q&A: We need some more Easter Egg hints from Hannah?](https://archive.satisfactory.video/transcriptions/yt-faI65v9Solc) https://www.youtube.com/watch?v=faI65v9Solc
+* [December 19th, 2019 Livestream Q&A: Are there any Easter Eggs in the landscape?](https://archive.satisfactory.video/transcriptions/yt-06YaY3zGZeg) https://www.youtube.com/watch?v=06YaY3zGZeg
+### Transcript
+
+> how this works are there hitting secrets
+>
+> and cameos in the game yeah there's a
+>
+> few
+>
+> uh and i'm sure there are things that
+>
+> people haven't found yet and i'm sure
+>
+> there's going to be more stuff coming
+>
+> once stories and even
 
 
 ## [August 25th, 2020 Livestream Q&A: Are there internal discussions to significantly rework existing buildings like refineries?](https://archive.satisfactory.video/transcriptions/yt-x07FQZjbA_c) https://www.youtube.com/watch?v=x07FQZjbA_c
@@ -3453,6 +3562,7 @@
 * [December 15th, 2020 Livestream Q&A: Train Update?](https://archive.satisfactory.video/transcriptions/yt-ts7TQnRykB0) https://www.youtube.com/watch?v=ts7TQnRykB0
 * [December 8th, 2020 Livestream Q&A: Any news on Train Signals?](https://archive.satisfactory.video/transcriptions/yt-V-OVvjoUAmg) https://www.youtube.com/watch?v=V-OVvjoUAmg
 * [November 17th, 2020 Livestream Q&A: Train Collision](https://archive.satisfactory.video/transcriptions/yt-OdCLosbTp60) https://www.youtube.com/watch?v=OdCLosbTp60
+* [November 10th, 2020 Livestream Q&A: Any news about Trains? If so put them in Update 4?](https://archive.satisfactory.video/transcriptions/yt-eT6uSBu-sVw) https://www.youtube.com/watch?v=eT6uSBu-sVw
 * August 18th, 2020 Livestream Q&A: Any thoughts on whether Trains will ever collide? https://clips.twitch.tv/SaltyJazzyPasta4Head
 ### Transcript
 
