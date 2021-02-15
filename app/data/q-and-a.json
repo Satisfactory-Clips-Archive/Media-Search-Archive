@@ -9278,7 +9278,10 @@
     "US3uNFx3T1Y": {
         "title": "Q&A: Are you not devs?",
         "date": "2020-10-20",
-        "topics": []
+        "topics": [],
+        "suggested": [
+            "KM5WVEA9CDs"
+        ]
     },
     "DExdQ8KOKEA": {
         "title": "Q&A: Can we get different spawn points not linked to the Hub?",
@@ -10146,6 +10149,9 @@
         "date": "2020-10-09",
         "topics": [
             "coffee-stainers\/snutt"
+        ],
+        "seealso": [
+            "US3uNFx3T1Y"
         ]
     },
     "g6B1-vYXXd0": {
