@@ -10,6 +10,7 @@ use function count;
 use function mb_strtolower;
 use function preg_match;
 use function strnatcasecmp;
+use function strtotime;
 use function trim;
 
 /**

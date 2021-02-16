@@ -24,7 +24,6 @@ use const FILE_APPEND;
 use function file_get_contents;
 use function file_put_contents;
 use function in_array;
-use InvalidArgumentException;
 use function is_array;
 use function is_int;
 use function is_string;
