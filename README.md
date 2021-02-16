@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2021-02-16
+* Applied a new sorting algorithm to video lists
+* Filtered legacy clips from the FAQ
+
 ## 2021-02-13
 * Updated transcription generation to trim the last blank line
 * Updated transcription generation to prefer english transcriptions
