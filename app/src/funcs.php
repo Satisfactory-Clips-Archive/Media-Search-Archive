@@ -1828,3 +1828,44 @@ function markdownify_transcription_lines(
 
 	return preg_replace('/>\n$/', '', $transcription_text);
 }
+
+/**
+ * @param array<string, array{0:string, 1:string, 2:list<string>}> $playlists
+ * @param array<string, string> $playlist_date_ref
+ */
+function determine_date_for_video(
+	string $video_id,
+	array $playlists,
+	array $playlist_date_ref
+) : string {
+	/** @var false|string */
+	$found = false;
+
+	foreach (array_keys($playlist_date_ref) as $playlist_id) {
+		if ( ! isset($playlists[$playlist_id])) {
+			throw new RuntimeException(sprintf(
+				'No data available for playlist %s',
+				$playlist_id
+			));
+		} elseif (in_array($video_id, $playlists[$playlist_id][2], true)) {
+			if (false !== $found) {
+				throw new InvalidArgumentException(sprintf(
+					'Video %s already found on %s',
+					$video_id,
+					$found
+				));
+			}
+
+			$found = $playlist_id;
+		}
+	}
+
+	if (false === $found) {
+		throw new InvalidArgumentException(sprintf(
+			'Video %s was not found in any playlist!',
+			$video_id
+		));
+	}
+
+	return $playlist_date_ref[$found];
+}
