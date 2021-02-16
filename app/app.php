@@ -1033,6 +1033,22 @@ foreach ($cache['videoTags'] as $video_id => $tags) {
 		$faq_video_ids[] = $video_id;
 	}
 }
+
+$legacy_alts = array_reduce(
+	$cache['legacyAlts'],
+	static function (array $out, array $video_ids) : array {
+		return array_merge($out, array_diff($video_ids, $out));
+	},
+	[]
+);
+
+$faq_video_ids = array_filter(
+	$faq_video_ids,
+	static function (string $maybe) use ($legacy_alts) : bool {
+		return ! in_array($maybe, $legacy_alts, true);
+	}
+);
+
 $faq_video_topics = [];
 
 foreach ($cache['playlists'] as $topic_id => $data) {
