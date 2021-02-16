@@ -1,7 +1,7 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1777 non-trolling & on-topic questions found out of 1847 total questions
-* 867 questions found with no other references
+* 844 questions found with no other references
 ## grouped by date
 * 2021-02-09: 28 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
@@ -10,7 +10,7 @@
 * 2021-01-19: 22 of 90 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 1 of 30 questions found with no other references
-* 2020-12-15: 7 of 59 questions found with no other references
+* 2020-12-15: 6 of 59 questions found with no other references
 * 2020-12-08: 18 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 11 of 40 questions found with no other references
@@ -22,17 +22,17 @@
 * 2020-10-13: 31 of 48 questions found with no other references
 * 2020-10-09: 11 of 24 questions found with no other references
 * 2020-10-06: 21 of 51 questions found with no other references
-* 2020-09-29: 28 of 38 questions found with no other references
+* 2020-09-29: 8 of 38 questions found with no other references
 * 2020-09-22: 39 of 59 questions found with no other references
 * 2020-09-15: 33 of 47 questions found with no other references
 * 2020-09-08: 55 of 72 questions found with no other references
 * 2020-09-01: 50 of 71 questions found with no other references
 * 2020-08-25: 13 of 134 questions found with no other references
 * 2020-08-18: 40 of 55 questions found with no other references
-* 2020-08-11: 25 of 38 questions found with no other references
+* 2020-08-11: 24 of 38 questions found with no other references
 * 2020-07-28: 4 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
-* 2020-06-08: 29 of 39 questions found with no other references
+* 2020-06-08: 28 of 39 questions found with no other references
 * 2020-05-19: 17 of 24 questions found with no other references
 * 2020-03-24: 18 of 27 questions found with no other references
 * 2020-02-11: 26 of 33 questions found with no other references
@@ -280,6 +280,7 @@
 ### Asked previously:
 * [November 3rd, 2020 Livestream Q&A: Can you give us a hint about the Story of the game?](https://archive.satisfactory.video/transcriptions/yt-gZoINqh_HAY) https://www.youtube.com/watch?v=gZoINqh_HAY
 * [October 20th, 2020 Livestream Q&A: What will Story Mode be like?](https://archive.satisfactory.video/transcriptions/yt-rRESDp2VwEI) https://www.youtube.com/watch?v=rRESDp2VwEI
+* [September 29th, 2020 Livestream Q&A: Does the Story come in 2021?](https://archive.satisfactory.video/transcriptions/yt-WAnckbn-EJ8) https://www.youtube.com/watch?v=WAnckbn-EJ8
 * [September 22nd, 2020 Livestream Q&A: Are there going to be Lore teasers in the Game before launch?](https://archive.satisfactory.video/transcriptions/yt-ANDFv21tydY) https://www.youtube.com/watch?v=ANDFv21tydY
 ### Transcript
 
@@ -1062,6 +1063,7 @@
 * December 8th, 2020 Livestream Q&A: Will there be a creative-style mode in the future? https://www.youtube.com/watch?v=ba7BBZw0IsU
 * [November 10th, 2020 Livestream Q&A: Is there going to be a Creative Mode?](https://archive.satisfactory.video/transcriptions/yt-NNUESlRoCJ8) https://www.youtube.com/watch?v=NNUESlRoCJ8
 * [November 3rd, 2020 Livestream Q&A: Is there going to be a Creative Mode?](https://archive.satisfactory.video/transcriptions/yt-Yn4Brcx8CSs) https://www.youtube.com/watch?v=Yn4Brcx8CSs
+* [September 29th, 2020 Livestream Q&A: Satisfactory Sandbox ever?](https://archive.satisfactory.video/transcriptions/yt-3m68c85bVUM) https://www.youtube.com/watch?v=3m68c85bVUM
 * [September 22nd, 2020 Livestream Q&A: Will there be a Creative Mode?](https://archive.satisfactory.video/transcriptions/yt-nz4VgYaVDDo) https://www.youtube.com/watch?v=nz4VgYaVDDo
 * [September 1st, 2020 Livestream Q&A: Is there going to be creative mode?](https://archive.satisfactory.video/transcriptions/yt-zZILz6cMKbw) https://www.youtube.com/watch?v=zZILz6cMKbw
 * August 18th, 2020 Livestream Q&A: When is Creative Mode coming? https://clips.twitch.tv/MagnificentImpartialSmoothieMikeHogu
@@ -1169,6 +1171,7 @@
 * [November 10th, 2020 Livestream Q&A: Are Conveyor Belt Mk. 6 going to be a thing?](https://archive.satisfactory.video/transcriptions/yt-WbtzFVFOFMs) https://www.youtube.com/watch?v=WbtzFVFOFMs
 * [November 3rd, 2020 Livestream Q&A: Any plans for better Belts for Pure nodes?](https://archive.satisfactory.video/transcriptions/yt-UxW9nGO9Ius) https://www.youtube.com/watch?v=UxW9nGO9Ius
 * [November 3rd, 2020 Livestream Q&A: Broader Belts?](https://archive.satisfactory.video/transcriptions/yt-Y1ulbhgaSeU) https://www.youtube.com/watch?v=Y1ulbhgaSeU
+* [September 29th, 2020 Livestream Q&A: What about Mk. 6 Belts?](https://archive.satisfactory.video/transcriptions/yt-NiBLAUCxIEs) https://www.youtube.com/watch?v=NiBLAUCxIEs
 ### Transcript
 
 > mk6 built in the next update maybe who
@@ -1318,6 +1321,7 @@
 * [November 17th, 2020 Livestream Q&A: Train Collision](https://archive.satisfactory.video/transcriptions/yt-OdCLosbTp60) https://www.youtube.com/watch?v=OdCLosbTp60
 * [November 10th, 2020 Livestream Q&A: Any news about Trains? If so put them in Update 4?](https://archive.satisfactory.video/transcriptions/yt-eT6uSBu-sVw) https://www.youtube.com/watch?v=eT6uSBu-sVw
 * [October 20th, 2020 Livestream Q&A: When will we have Train Collision?](https://archive.satisfactory.video/transcriptions/yt-TjSMwjueGc8) https://www.youtube.com/watch?v=TjSMwjueGc8
+* [September 29th, 2020 Livestream Q&A: Is there an update to Train Stations, Rails, and Railway Switches in the future?](https://archive.satisfactory.video/transcriptions/yt-vV-u0AjWWvU) https://www.youtube.com/watch?v=vV-u0AjWWvU
 * August 18th, 2020 Livestream Q&A: Any thoughts on whether Trains will ever collide? https://clips.twitch.tv/SaltyJazzyPasta4Head
 ### Transcript
 
@@ -1346,6 +1350,7 @@
 * [December 15th, 2020 Livestream Q&A: Will we add more to the Map?](https://archive.satisfactory.video/transcriptions/yt-NeQpezHiVzI) https://www.youtube.com/watch?v=NeQpezHiVzI
 * November 10th, 2020 Livestream Q&A: Any plans to expand the Map / add new Biomes? https://www.youtube.com/watch?v=oZhfgq9vdKg
 * [November 3rd, 2020 Livestream Q&A: Will the Map become bigger?](https://archive.satisfactory.video/transcriptions/yt-1pzu9fbySq0) https://www.youtube.com/watch?v=1pzu9fbySq0
+* [September 29th, 2020 Livestream Q&A: Will the Map change for 1.0?](https://archive.satisfactory.video/transcriptions/yt-5AsSss96Idw) https://www.youtube.com/watch?v=5AsSss96Idw
 * [September 15th, 2020 Livestream Q&A: Will the Map be bigger?](https://archive.satisfactory.video/transcriptions/yt-b49tcUeMO3E) https://www.youtube.com/watch?v=b49tcUeMO3E
 * [September 8th, 2020 Livestream Q&A: Even more Biomes coming to play?](https://archive.satisfactory.video/transcriptions/yt-VgDl00Ycn3U) https://www.youtube.com/watch?v=VgDl00Ycn3U
 * December 19th, 2019 Livestream Q&A: Will we get a bigger World Map? https://www.youtube.com/watch?v=TfKysphS2S4
@@ -1690,6 +1695,11 @@
 > uh are prioritizing vr no
 
 
+## January 26th, 2021 Livestream Q&A: Will you tell here the current build limit number considering the Engine Upgrade? https://www.youtube.com/watch?v=WfU45N1EvQ0
+
+### Asked previously:
+* [January 19th, 2021 Livestream Q&A: While Unreal Engine 4 gets upgraded, will the Object Limit get changed?](https://archive.satisfactory.video/transcriptions/yt-BE6kB3nmSdM) https://www.youtube.com/watch?v=BE6kB3nmSdM
+* [September 29th, 2020 Livestream Q&A: Will you be able to increase the maximum amount of Objects with Unreal Engine?](https://archive.satisfactory.video/transcriptions/yt-32KDkbkCz8s) https://www.youtube.com/watch?v=32KDkbkCz8s
 ## [January 19th, 2021 Livestream Q&A: Any plans to revisit the To-Do List for Quality-of-Life pass?](https://archive.satisfactory.video/transcriptions/yt-nI31KeD88V8) https://www.youtube.com/watch?v=nI31KeD88V8
 
 ### Asked previously:
@@ -2102,6 +2112,8 @@
 ### Asked previously:
 * [November 17th, 2020 Livestream Q&A: Any chance to use the HUB Computer to display the statistics and production of the factory?](https://archive.satisfactory.video/transcriptions/yt-5rVqTHOiwh0) https://www.youtube.com/watch?v=5rVqTHOiwh0
 * [November 17th, 2020 Livestream Q&A: What's the reason for not having good in-production overview?](https://archive.satisfactory.video/transcriptions/yt-66gt7CjmdXs) https://www.youtube.com/watch?v=66gt7CjmdXs
+* [September 29th, 2020 Livestream Q&A: Control Console with a simple representation of the Remote Plants?](https://archive.satisfactory.video/transcriptions/yt-hVDlrmNvsIY) https://www.youtube.com/watch?v=hVDlrmNvsIY
+* [September 29th, 2020 Livestream Q&A: When are we getting a Production Overview in the game?](https://archive.satisfactory.video/transcriptions/yt-OnK4DcHAB4o) https://www.youtube.com/watch?v=OnK4DcHAB4o
 * [December 19th, 2019 Livestream Q&A: Is there going to be a central computer plant where you can check the whole production?](https://archive.satisfactory.video/transcriptions/yt-Zlq2K0-z0_8) https://www.youtube.com/watch?v=Zlq2K0-z0_8
 ### Transcript
 
@@ -2250,6 +2262,7 @@
 
 ### Asked previously:
 * [October 20th, 2020 Livestream Q&A: What's the secret behind S.A.M. Ore?](https://archive.satisfactory.video/transcriptions/yt-tXqk1eu0-BQ) https://www.youtube.com/watch?v=tXqk1eu0-BQ
+* [September 29th, 2020 Livestream Q&A: How much S.A.M. Ore should we stock up on?](https://archive.satisfactory.video/transcriptions/yt-vBGfC7j2AyI) https://www.youtube.com/watch?v=vBGfC7j2AyI
 * [August 25th, 2020 Livestream Q&A: Please tell me Update 4 will use S.A.M. Ore](https://archive.satisfactory.video/transcriptions/yt--b2L_nlW_Fo) https://www.youtube.com/watch?v=-b2L_nlW_Fo
 * August 18th, 2020 Livestream Q&A: S.A.M. Ore uses? https://clips.twitch.tv/BovineDistinctOrangeRiPepperonis
 * [February 11th, 2020 Livestream Q&A: S.A.M. Ore?](https://archive.satisfactory.video/transcriptions/yt-6r-s6Hk7QwY) https://www.youtube.com/watch?v=6r-s6Hk7QwY
@@ -2493,6 +2506,7 @@
 
 ### Asked previously:
 * [November 17th, 2020 Livestream Q&A: What is the current state of the "click & drag" creation debate?](https://archive.satisfactory.video/transcriptions/yt-_tVKaBw1syU) https://www.youtube.com/watch?v=_tVKaBw1syU
+* [September 29th, 2020 Livestream Q&A: Is there going to be a Mass Construction option?](https://archive.satisfactory.video/transcriptions/yt-RPLvCZvTNxg) https://www.youtube.com/watch?v=RPLvCZvTNxg
 * [September 1st, 2020 Livestream Q&A: drag & place?](https://archive.satisfactory.video/transcriptions/yt-OQwjkJmYxAs) https://www.youtube.com/watch?v=OQwjkJmYxAs
 * [August 25th, 2020 Livestream Q&A: Drag-to-build Mode?](https://archive.satisfactory.video/transcriptions/yt-uACIFWnIlY0) https://www.youtube.com/watch?v=uACIFWnIlY0
 * August 18th, 2020 Livestream Q&A: Any plans for 1-click multi-building? https://clips.twitch.tv/CheerfulLightAsteriskGOWSkull
@@ -2658,6 +2672,70 @@
 > soru soruyorum işte
 >
 > bu durum
+
+
+## [November 17th, 2020 Livestream Q&A: How many developers are working on Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-ihx35AYNx5s) https://www.youtube.com/watch?v=ihx35AYNx5s
+
+### Asked previously:
+* [October 20th, 2020 Livestream Q&A: How large is the development team?](https://archive.satisfactory.video/transcriptions/yt-tKcRdw1BEp4) https://www.youtube.com/watch?v=tKcRdw1BEp4
+* [September 29th, 2020 Livestream Q&A: How big is the Dev Team?](https://archive.satisfactory.video/transcriptions/yt-H9x0HyRXNTE) https://www.youtube.com/watch?v=H9x0HyRXNTE
+### Transcript
+
+> sure how many developers work in
+>
+> satisfactory i think we're at something
+>
+> like around 30
+>
+> 35 or something at this point um
+>
+> and that's like and so developers
+>
+> include folks like uh snoot and i who
+>
+> you know we do community management so
+>
+> we're not actively
+>
+> developing the game ourselves but you
+>
+> know that also goes for producers and
+>
+> stuff so
+>
+> if you want to talk about people who are
+>
+> just purely creating
+>
+> uh in the game it's less than 30.
+>
+> how many programmers is it like six
+>
+> programs or seven programmers now
+>
+> something like that i think we're seven
+>
+> yeah
+>
+> can i join coffee stain i'm looking for
+>
+> a job as a dev you can go to
+>
+> coffeestainstudios.com jobs
+>
+> jobs and then you can send an open
+>
+> application where it's
+>
+> currently not looking for someone i
+>
+> think
+>
+> we or maybe we are i think we're looking
+>
+> for a programmer and an animator
+>
+> right now
 
 
 ## [November 17th, 2020 Livestream Q&A: Would Official Mod Support use Steam Workshop?](https://archive.satisfactory.video/transcriptions/yt-qzu-mnG_8uA) https://www.youtube.com/watch?v=qzu-mnG_8uA
@@ -2990,6 +3068,78 @@
 > steam yes you can
 >
 > yes
+
+
+## [November 3rd, 2020 Livestream Q&A: What about having covered Conveyors to help performance?](https://archive.satisfactory.video/transcriptions/yt-dbJGfDr5SLk) https://www.youtube.com/watch?v=dbJGfDr5SLk
+
+### Asked previously:
+* [October 27th, 2020 Livestream Q&A: Can you make it so we can use closed Conveyor Belts to help with Rendering?](https://archive.satisfactory.video/transcriptions/yt-6KdakqhC8Q4) https://www.youtube.com/watch?v=6KdakqhC8Q4
+* [September 29th, 2020 Livestream Q&A: Enclosed Belts](https://archive.satisfactory.video/transcriptions/yt-oLpv9B5-OjE) https://www.youtube.com/watch?v=oLpv9B5-OjE
+### Transcript
+
+> what about having covered conveyors to
+>
+> help performance
+>
+> uh that uh yeah but i don't i
+>
+> don't that's something we've tried we've
+>
+> tried that
+>
+> i don't remember what i don't know what
+>
+> the outcome of that was honestly yeah
+>
+> it's not gonna improve network because
+>
+> you still need to
+>
+> sync that yeah uh it might improve
+>
+> rendering
+>
+> but right now i think the cpu is is
+>
+> a bigger blocker for most people
+>
+> especially the bigger
+>
+> factory ones
+>
+> [Music]
+>
+> so there's not an easy answer to any any
+>
+> of that actually
+>
+> we should just have we should just have
+>
+> a
+>
+> we should just not render like have this
+>
+> shitty like cheat option where people
+>
+> just click on it and then hide all ore
+>
+> for the people who have like a bit huge
+>
+> thing and they don't want to don't care
+>
+> about seeing that or
+>
+> yeah it's it's okay so i think that the
+>
+> tldr is that it's not impossible that
+>
+> will happen
+>
+> but we don't know right now but we have
+>
+> tested it
+>
+> um
 
 
 ## [November 3rd, 2020 Livestream Q&A: Will Dedicated Servers run under Linux?](https://archive.satisfactory.video/transcriptions/yt-v5Niam8EYts) https://www.youtube.com/watch?v=v5Niam8EYts
@@ -3341,6 +3491,104 @@
 > a lot of work dave
 >
 > a lot of work dave
+
+
+## [September 29th, 2020 Livestream Q&A: Are there any Green Energy options in the game?](https://archive.satisfactory.video/transcriptions/yt-9eBugtyk8U0) https://www.youtube.com/watch?v=9eBugtyk8U0
+
+### Asked previously:
+* August 11th, 2020 Livestream Q&A: Green Energy? https://clips.twitch.tv/BloodyIcyDragonflyStoneLightning
+* [June 8th, 2020 Livestream Q&A: What about Green Energy?](https://archive.satisfactory.video/transcriptions/yt-bPo3BFtjDLs) https://www.youtube.com/watch?v=bPo3BFtjDLs
+### Transcript
+
+> you want to make a thing so you can do
+>
+> it um are there any green
+>
+> energy options in the game relative uh
+>
+> news of the game but cold feels bad
+>
+> uh so the thing with green energy is
+>
+> something we've thought about and
+>
+> something that we sort of toss up and oh
+>
+> i'm not sure what we want to do but i
+>
+> think we lean to not doing it but the
+>
+> option is still there
+>
+> and the reason the reason for doing it
+>
+> is because it i don't know it's kind of
+>
+> fun
+>
+> right but the reason to not do it is the
+>
+> point of the game
+>
+> is you work for a company that doesn't
+>
+> give a about the planet
+>
+> and your whole goal is to just exploit
+>
+> the planet
+>
+> at any cost spew carbon up into the air
+>
+> don't care destroy everything cut down
+>
+> every tree
+>
+> kill every creature mine up all the
+>
+> resources
+>
+> yeah um so that is the point of the game
+>
+> that is the story and lore so in order
+>
+> you know if you're gonna invest in green
+>
+> energy it
+>
+> lore wise it doesn't make much sense but
+>
+> if you balance that with
+>
+> fun then maybe it does make sense or
+>
+> maybe
+>
+> it will be a mod like i mean
+>
+> you know video games is escapism right
+>
+> like
+>
+> we we give you this option like you can
+>
+> go and and be as dirty as you want you
+>
+> can
+>
+> roll around in the mud and use coal as
+>
+> much as you go nuclear
+>
+> like do whatever you want and you guys
+>
+> are like no i want to be clean
+>
+> like which is honorable just don't build
+>
+> a factory and don't cut down trees
+>
+> yeah exactly yeah
 
 
 ## [September 22nd, 2020 Livestream Q&A: Is the OST on Spotify?](https://archive.satisfactory.video/transcriptions/yt-iCN324N905o) https://www.youtube.com/watch?v=iCN324N905o
