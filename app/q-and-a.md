@@ -327,8 +327,8 @@
 * [January 26th, 2021 Livestream Q&A: Any updates on Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-cvlz1tP61_M) https://www.youtube.com/watch?v=cvlz1tP61_M
 * [January 26th, 2021 Livestream Q&A: Dedicated Servers aka Multiplayer fixes when?](https://archive.satisfactory.video/transcriptions/yt-_XfcfZ8vfj8) https://www.youtube.com/watch?v=_XfcfZ8vfj8
 * [January 19th, 2021 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-FIamGlpCEFk) https://www.youtube.com/watch?v=FIamGlpCEFk
-* [December 15th, 2020 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-HeezNCrsBRU) https://www.youtube.com/watch?v=HeezNCrsBRU
 * [December 15th, 2020 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-03Ybo6-_eWA) https://www.youtube.com/watch?v=03Ybo6-_eWA
+* [December 15th, 2020 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-HeezNCrsBRU) https://www.youtube.com/watch?v=HeezNCrsBRU
 * [December 8th, 2020 Livestream Q&A: Is there a reason for a lack of Dedicated Server builds?](https://archive.satisfactory.video/transcriptions/yt-47gzhAEWkFM) https://www.youtube.com/watch?v=47gzhAEWkFM
 * [November 17th, 2020 Livestream Q&A: Updates about Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-32SZ2UKPZiQ) https://www.youtube.com/watch?v=32SZ2UKPZiQ
 * [October 20th, 2020 Livestream Q&A: Dedicated Servers coming with the next Update ?](https://archive.satisfactory.video/transcriptions/yt-VyyzowIc504) https://www.youtube.com/watch?v=VyyzowIc504
