@@ -1,7 +1,7 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1777 non-trolling & on-topic questions found out of 1847 total questions
-* 897 questions found with no other references
+* 867 questions found with no other references
 ## grouped by date
 * 2021-02-09: 28 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
@@ -15,21 +15,21 @@
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 11 of 40 questions found with no other references
 * 2020-11-17: 17 of 56 questions found with no other references
-* 2020-11-10: 36 of 83 questions found with no other references
+* 2020-11-10: 34 of 83 questions found with no other references
 * 2020-11-03: 18 of 57 questions found with no other references
 * 2020-10-27: 16 of 23 questions found with no other references
-* 2020-10-20: 20 of 51 questions found with no other references
+* 2020-10-20: 19 of 51 questions found with no other references
 * 2020-10-13: 31 of 48 questions found with no other references
 * 2020-10-09: 11 of 24 questions found with no other references
-* 2020-10-06: 44 of 51 questions found with no other references
+* 2020-10-06: 21 of 51 questions found with no other references
 * 2020-09-29: 28 of 38 questions found with no other references
 * 2020-09-22: 39 of 59 questions found with no other references
-* 2020-09-15: 34 of 47 questions found with no other references
-* 2020-09-08: 56 of 72 questions found with no other references
+* 2020-09-15: 33 of 47 questions found with no other references
+* 2020-09-08: 55 of 72 questions found with no other references
 * 2020-09-01: 50 of 71 questions found with no other references
 * 2020-08-25: 13 of 134 questions found with no other references
 * 2020-08-18: 40 of 55 questions found with no other references
-* 2020-08-11: 26 of 38 questions found with no other references
+* 2020-08-11: 25 of 38 questions found with no other references
 * 2020-07-28: 4 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
 * 2020-06-08: 29 of 39 questions found with no other references
@@ -38,7 +38,7 @@
 * 2020-02-11: 26 of 33 questions found with no other references
 * 2020-01-22: 19 of 28 questions found with no other references
 * 2019-12-19: 37 of 51 questions found with no other references
-* 2019-03-09: 91 of 111 questions found with no other references
+* 2019-03-09: 90 of 111 questions found with no other references
 * 2018-11-23: 5 of 5 questions found with no other references
 * 2018-10-03: 9 of 9 questions found with no other references
 * 2018-08-01: 14 of 18 questions found with no other references
@@ -333,6 +333,7 @@
 * [November 17th, 2020 Livestream Q&A: Updates about Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-32SZ2UKPZiQ) https://www.youtube.com/watch?v=32SZ2UKPZiQ
 * [October 20th, 2020 Livestream Q&A: Dedicated Servers coming with the next Update ?](https://archive.satisfactory.video/transcriptions/yt-VyyzowIc504) https://www.youtube.com/watch?v=VyyzowIc504
 * [October 20th, 2020 Livestream Q&A: When will Dedicated Servers be coming?](https://archive.satisfactory.video/transcriptions/yt-TW0i2hxJ7C0) https://www.youtube.com/watch?v=TW0i2hxJ7C0
+* [October 6th, 2020 Livestream Q&A: Have you looked into shit for Multiplayer/Dedicated Server stuff?](https://archive.satisfactory.video/transcriptions/yt-KGmOM7dLT84) https://www.youtube.com/watch?v=KGmOM7dLT84
 * [September 29th, 2020 Livestream Q&A: Any update for Hosted/Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-kiko6VnK6sA) https://www.youtube.com/watch?v=kiko6VnK6sA
 * [September 22nd, 2020 Livestream Q&A: Are there server files when I want to host my own Dedicated Server?](https://archive.satisfactory.video/transcriptions/yt-12nA53wOK6w) https://www.youtube.com/watch?v=12nA53wOK6w
 * [September 22nd, 2020 Livestream Q&A: Dedicated Servers?](https://archive.satisfactory.video/transcriptions/yt-tHUqAoOXffs) https://www.youtube.com/watch?v=tHUqAoOXffs
@@ -807,6 +808,7 @@
 * [November 10th, 2020 Livestream Q&A: Any plans to add more animals to enemies or dangers?](https://archive.satisfactory.video/transcriptions/yt-RuzL7DdAJ1o) https://www.youtube.com/watch?v=RuzL7DdAJ1o
 * [November 3rd, 2020 Livestream Q&A: Are there going to be new Creatures?](https://archive.satisfactory.video/transcriptions/yt-c3jeZv_aYug) https://www.youtube.com/watch?v=c3jeZv_aYug
 * [October 20th, 2020 Livestream Q&A: Will Aliens become more diverse/actually challenging?](https://archive.satisfactory.video/transcriptions/yt-K7fDE5Dg570) https://www.youtube.com/watch?v=K7fDE5Dg570
+* [October 6th, 2020 Livestream Q&A: When do we get the Crab Boss?](https://archive.satisfactory.video/transcriptions/yt-m4PtschrKJc) https://www.youtube.com/watch?v=m4PtschrKJc
 * [September 22nd, 2020 Livestream Q&A: Will there be more creatures?](https://archive.satisfactory.video/transcriptions/yt-Yzd466gO44M) https://www.youtube.com/watch?v=Yzd466gO44M
 * [August 25th, 2020 Livestream Q&A: Will we have more monsters?](https://archive.satisfactory.video/transcriptions/yt-shEKhZakMxQ) https://www.youtube.com/watch?v=shEKhZakMxQ
 * August 25th, 2020 Livestream Q&A: Will we have more monsters? https://clips.twitch.tv/GrotesqueDelightfulLyrebirdPrimeMe
@@ -1194,6 +1196,8 @@
 * [December 8th, 2020 Livestream Q&A: Is Multiplayer desync fixed in Update 4?](https://archive.satisfactory.video/transcriptions/yt-OjiLxOBdkU8) https://www.youtube.com/watch?v=OjiLxOBdkU8
 * [November 24th, 2020 Livestream Q&A: Multiplayer fix?](https://archive.satisfactory.video/transcriptions/yt-LX-zsQIkB3g) https://www.youtube.com/watch?v=LX-zsQIkB3g
 * [November 17th, 2020 Livestream Q&A: Better Multiplayer support?](https://archive.satisfactory.video/transcriptions/yt-ECQdh3EiXws) https://www.youtube.com/watch?v=ECQdh3EiXws
+* [October 6th, 2020 Livestream Q&A: Are Multiplayer desync issues with Trains and Vehicles being looked into?](https://archive.satisfactory.video/transcriptions/yt-RVq5k89jlEA) https://www.youtube.com/watch?v=RVq5k89jlEA
+* [October 6th, 2020 Livestream Q&A: Co-op networking bugs been fixed?](https://archive.satisfactory.video/transcriptions/yt-60kjGquJZnk) https://www.youtube.com/watch?v=60kjGquJZnk
 ### Transcript
 
 > um multiplayer how's it going when came
@@ -2320,6 +2324,7 @@
 ## [December 15th, 2020 Livestream Q&A: Will Satisfactory have native support for Linux?](https://archive.satisfactory.video/transcriptions/yt-jGFUMhD3WGg) https://www.youtube.com/watch?v=jGFUMhD3WGg
 
 ### Asked previously:
+* [October 6th, 2020 Livestream Q&A: Any plans to bring Satisfactory to Linux?](https://archive.satisfactory.video/transcriptions/yt-ADBTXxQnDL4) https://www.youtube.com/watch?v=ADBTXxQnDL4
 * [August 25th, 2020 Livestream Q&A: Plans for official Linux support?](https://archive.satisfactory.video/transcriptions/yt-vSFTo-1j-SA) https://www.youtube.com/watch?v=vSFTo-1j-SA
 * [March 9th, 2019 Livestream Q&A: Is Linux support planned in the future?](https://archive.satisfactory.video/transcriptions/yt-GR3xet5AyuE) https://www.youtube.com/watch?v=GR3xet5AyuE
 ### Transcript
@@ -2830,6 +2835,78 @@
 > point
 
 
+## [November 10th, 2020 Livestream Q&A: Any features you want to add to the game but you don't expect to be added to the vanilla game?](https://archive.satisfactory.video/transcriptions/yt-uVGH_lZnc2g) https://www.youtube.com/watch?v=uVGH_lZnc2g
+
+### Asked previously:
+* [October 20th, 2020 Livestream Q&A: Are there any features you guys really want in the game but you can't/won't add?](https://archive.satisfactory.video/transcriptions/yt-QuCAOO3xPQQ) https://www.youtube.com/watch?v=QuCAOO3xPQQ
+* [October 6th, 2020 Livestream Q&A: Do you have any good stories for features that didn't get included in the game?](https://archive.satisfactory.video/transcriptions/yt-JkSvpUl7jX8) https://www.youtube.com/watch?v=JkSvpUl7jX8
+### Transcript
+
+> any features you want to add to the game
+>
+> but you don't expect to be added to the
+>
+> vanilla game for any reason
+>
+> i don't think so wait say that again
+>
+> any features you want to add to the game
+>
+> but you don't expect to be added to the
+>
+> vanilla game
+>
+> any features you want to add to the game
+>
+> but you you're not gonna
+>
+> yeah so for example what if you wanted
+>
+> turrets okay we're not gonna add charts
+>
+> to the video game right but what if you
+>
+> wanted it right that would be a feature
+>
+> that you want but we're not gonna add
+>
+> yeah yeah it's like turrets uh aquatic
+>
+> [Laughter]
+>
+> [Music]
+>
+> yeah like animals attacking your base is
+>
+> also something that we don't want to add
+>
+> um yeah i also don't want that there's
+>
+> there's
+>
+> like a few there's always a few things
+>
+> that we know for certain that that's not
+>
+> the direction we want to go with the
+>
+> game
+>
+> yeah um but i guess that's where mods
+>
+> come in that's when you can make the
+>
+> game your own issue
+>
+> uh so we should add official mode
+>
+> support
+>
+> we should get on it jace yeah give me a
+>
+> second
+
+
 ## [November 10th, 2020 Livestream Q&A: Any plans for Elevators?](https://archive.satisfactory.video/transcriptions/yt-VUe1w6nSdko) https://www.youtube.com/watch?v=VUe1w6nSdko
 
 ### Asked previously:
@@ -3133,6 +3210,137 @@
 > that limit sooner
 >
 > stuff like that yeah
+
+
+## [October 6th, 2020 Livestream Q&A: Any plans about new pets?](https://archive.satisfactory.video/transcriptions/yt-sLBqy5auRck) https://www.youtube.com/watch?v=sLBqy5auRck
+
+### Asked previously:
+* [September 8th, 2020 Livestream Q&A: Cat Companion instead of Doggo?](https://archive.satisfactory.video/transcriptions/yt-tUpHAgaYB4o) https://www.youtube.com/watch?v=tUpHAgaYB4o
+* [March 9th, 2019 Livestream Q&A: You can tame any native lifeform?](https://archive.satisfactory.video/transcriptions/yt-EnGMyJjYDdI) https://www.youtube.com/watch?v=EnGMyJjYDdI
+### Transcript
+
+> any plans about new pets uh no plans
+>
+> right now
+>
+> i believe as far as i know
+
+
+## [October 6th, 2020 Livestream Q&A: Map Editor?](https://archive.satisfactory.video/transcriptions/yt-Oq4gGKBYHQI) https://www.youtube.com/watch?v=Oq4gGKBYHQI
+
+### Asked previously:
+* [September 15th, 2020 Livestream Q&A: Will there be a Map Editor?](https://archive.satisfactory.video/transcriptions/yt-MYno60AbSGk) https://www.youtube.com/watch?v=MYno60AbSGk
+* [August 25th, 2020 Livestream Q&A: Plans for a Map Editor?](https://archive.satisfactory.video/transcriptions/yt-vvRPYyc7sb8) https://www.youtube.com/watch?v=vvRPYyc7sb8
+* August 11th, 2020 Livestream Q&A: Do you plan to release a World Editor? https://clips.twitch.tv/AnnoyingImpartialGaurChefFrank
+### Transcript
+
+> i saw someone before was asking about
+>
+> like map editor and stuff like that
+>
+> um that's a mild heart attack um
+>
+> every time we hear it but no
+>
+> not really no if that happens it's going
+>
+> to be like the mega distant future i
+>
+> don't think anyone should really
+>
+> think about it like obviously think
+>
+> about it because it's kind of cool right
+>
+> but
+>
+> um holy [ __ ] yeah
+>
+> but like that's not a i don't think
+>
+> anyone is going to even remotely think
+>
+> of that right
+>
+> now there's so many more important
+>
+> things yeah
+>
+> it's partly because the lavish level
+>
+> streaming we're using is so complex
+>
+> so it's really hard to like kind of use
+>
+> that system
+>
+> in a good way
+>
+> we we hardly do it in a good way
+>
+> uh we made some i checked that part of
+>
+> the code yesterday we've done some weird
+>
+> hacks
+>
+> with the level streaming stuff uh
+>
+> for some reason it's mostly for
+>
+> multiplayer because like you're not
+>
+> supposed to
+>
+> uh unreal engine doesn't really have
+>
+> out-of-the-box support for listen server
+>
+> streaming which is what we're doing
+>
+> where like
+>
+> the way it works is like client and
+>
+> server they'll stream the level
+>
+> depending on where they are
+>
+> but the server also needs to stream the
+>
+> part where the client is at because they
+>
+> need to be able to do stuff
+>
+> and the server needs to authenticate
+>
+> that stuff so the server needs to stream
+>
+> both every client's world where they are
+>
+> right now
+>
+> but also itself uh which is kind of
+>
+> weird because
+>
+> usually you have a dedicated server that
+>
+> just loads everything all the time
+>
+> and then yeah it keeps track of all that
+>
+> but we do it
+>
+> on a need to need basis and uh yeah it's
+>
+> pretty
+>
+> pretty a lot of work went into that it's
+>
+> a lot of work dave
+>
+> a lot of work dave
 
 
 ## [September 22nd, 2020 Livestream Q&A: Is the OST on Spotify?](https://archive.satisfactory.video/transcriptions/yt-iCN324N905o) https://www.youtube.com/watch?v=iCN324N905o
