@@ -566,6 +566,13 @@ foreach (array_keys($seealsos) as $video_id) {
 		$existing[$seealso]['suggested'] = array_filter(
 			$seealsos[$video_id],
 			static function (string $maybe) use ($seealso, $existing) : bool {
+				if (
+					isset($existing[$seealso]['duplicatedby'])
+					&& $maybe === $existing[$seealso]['duplicatedby']
+				) {
+					return false;
+				}
+
 				return
 					$maybe !== $seealso
 					&& ! in_array(
