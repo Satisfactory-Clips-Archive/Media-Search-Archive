@@ -288,6 +288,19 @@ $externals_cache = process_externals(
 
 $cache = inject_caches($cache, $externals_cache);
 
+$sorting = new Sorting($cache);
+
+$cache['playlists'] = array_map(
+	static function (array $data) use ($sorting) : array {
+		uasort($data[2], [$sorting, 'sort_video_ids_alphabetically']);
+
+		return $data;
+	},
+	$cache['playlists']
+);
+
+$sorting->cache = $cache;
+
 $no_topics = [];
 
 foreach (
@@ -764,12 +777,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 	$video_ids = ($cache['playlists'][$playlist_id] ?? [2 => []])[2];
 	$video_ids = filter_video_ids_for_legacy_alts($cache, ...$video_ids);
 
-	usort($video_ids, static function (string $a, string $b) use ($cache) : int {
-		return strnatcasecmp(
-			$cache['playlistItems'][$a][1],
-			$cache['playlistItems'][$b][1]
-		);
-	});
+	usort($video_ids, [$sorting, 'sort_video_ids_alphabetically']);
 
 	$content_arrays = [
 		'Related answer clips' => [],
