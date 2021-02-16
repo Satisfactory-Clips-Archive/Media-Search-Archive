@@ -1,44 +1,44 @@
 # Progress
 * 1847 questions found out of 2456 clips
 * 1777 non-trolling & on-topic questions found out of 1847 total questions
-* 844 questions found with no other references
+* 799 questions found with no other references
 ## grouped by date
-* 2021-02-09: 28 of 93 questions found with no other references
+* 2021-02-09: 27 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
 * 2021-01-26: 29 of 76 questions found with no other references
 * 2021-01-22: 0 of 3 questions found with no other references
-* 2021-01-19: 22 of 90 questions found with no other references
+* 2021-01-19: 21 of 90 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 1 of 30 questions found with no other references
 * 2020-12-15: 6 of 59 questions found with no other references
-* 2020-12-08: 18 of 47 questions found with no other references
+* 2020-12-08: 17 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 11 of 40 questions found with no other references
 * 2020-11-17: 17 of 56 questions found with no other references
-* 2020-11-10: 34 of 83 questions found with no other references
+* 2020-11-10: 33 of 83 questions found with no other references
 * 2020-11-03: 18 of 57 questions found with no other references
 * 2020-10-27: 16 of 23 questions found with no other references
 * 2020-10-20: 19 of 51 questions found with no other references
 * 2020-10-13: 31 of 48 questions found with no other references
-* 2020-10-09: 11 of 24 questions found with no other references
+* 2020-10-09: 10 of 24 questions found with no other references
 * 2020-10-06: 21 of 51 questions found with no other references
 * 2020-09-29: 8 of 38 questions found with no other references
-* 2020-09-22: 39 of 59 questions found with no other references
+* 2020-09-22: 9 of 59 questions found with no other references
 * 2020-09-15: 33 of 47 questions found with no other references
 * 2020-09-08: 55 of 72 questions found with no other references
-* 2020-09-01: 50 of 71 questions found with no other references
+* 2020-09-01: 47 of 71 questions found with no other references
 * 2020-08-25: 13 of 134 questions found with no other references
 * 2020-08-18: 40 of 55 questions found with no other references
-* 2020-08-11: 24 of 38 questions found with no other references
+* 2020-08-11: 22 of 38 questions found with no other references
 * 2020-07-28: 4 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
 * 2020-06-08: 28 of 39 questions found with no other references
 * 2020-05-19: 17 of 24 questions found with no other references
-* 2020-03-24: 18 of 27 questions found with no other references
+* 2020-03-24: 16 of 27 questions found with no other references
 * 2020-02-11: 26 of 33 questions found with no other references
 * 2020-01-22: 19 of 28 questions found with no other references
 * 2019-12-19: 37 of 51 questions found with no other references
-* 2019-03-09: 90 of 111 questions found with no other references
+* 2019-03-09: 87 of 111 questions found with no other references
 * 2018-11-23: 5 of 5 questions found with no other references
 * 2018-10-03: 9 of 9 questions found with no other references
 * 2018-08-01: 14 of 18 questions found with no other references
@@ -282,6 +282,8 @@
 * [October 20th, 2020 Livestream Q&A: What will Story Mode be like?](https://archive.satisfactory.video/transcriptions/yt-rRESDp2VwEI) https://www.youtube.com/watch?v=rRESDp2VwEI
 * [September 29th, 2020 Livestream Q&A: Does the Story come in 2021?](https://archive.satisfactory.video/transcriptions/yt-WAnckbn-EJ8) https://www.youtube.com/watch?v=WAnckbn-EJ8
 * [September 22nd, 2020 Livestream Q&A: Are there going to be Lore teasers in the Game before launch?](https://archive.satisfactory.video/transcriptions/yt-ANDFv21tydY) https://www.youtube.com/watch?v=ANDFv21tydY
+* [September 22nd, 2020 Livestream Q&A: Will the Story be released as a book/comic ?](https://archive.satisfactory.video/transcriptions/yt-ZET0XD704JA) https://www.youtube.com/watch?v=ZET0XD704JA
+* [September 22nd, 2020 Livestream Q&A: Will the Story play out when implemented or will we have to start a new game?](https://archive.satisfactory.video/transcriptions/yt-PPu_s5Gg8gs) https://www.youtube.com/watch?v=PPu_s5Gg8gs
 ### Transcript
 
 > can you give us a teaser what the story
@@ -1322,6 +1324,7 @@
 * [November 10th, 2020 Livestream Q&A: Any news about Trains? If so put them in Update 4?](https://archive.satisfactory.video/transcriptions/yt-eT6uSBu-sVw) https://www.youtube.com/watch?v=eT6uSBu-sVw
 * [October 20th, 2020 Livestream Q&A: When will we have Train Collision?](https://archive.satisfactory.video/transcriptions/yt-TjSMwjueGc8) https://www.youtube.com/watch?v=TjSMwjueGc8
 * [September 29th, 2020 Livestream Q&A: Is there an update to Train Stations, Rails, and Railway Switches in the future?](https://archive.satisfactory.video/transcriptions/yt-vV-u0AjWWvU) https://www.youtube.com/watch?v=vV-u0AjWWvU
+* [September 22nd, 2020 Livestream Q&A: Any new info about Train Signals?](https://archive.satisfactory.video/transcriptions/yt-bPU07wU3Mr0) https://www.youtube.com/watch?v=bPU07wU3Mr0
 * August 18th, 2020 Livestream Q&A: Any thoughts on whether Trains will ever collide? https://clips.twitch.tv/SaltyJazzyPasta4Head
 ### Transcript
 
@@ -1625,6 +1628,7 @@
 ### Asked previously:
 * [January 12th, 2021 Livestream Q&A: Are there any plans to add Lights inside the factory?](https://archive.satisfactory.video/transcriptions/yt-QvTjwyhFvGQ) https://www.youtube.com/watch?v=QvTjwyhFvGQ
 * [November 3rd, 2020 Livestream Q&A: Can you put in Lights, please?](https://archive.satisfactory.video/transcriptions/yt-7dm8Lvfj8Ao) https://www.youtube.com/watch?v=7dm8Lvfj8Ao
+* [September 22nd, 2020 Livestream Q&A: How about lighting?](https://archive.satisfactory.video/transcriptions/yt-WDfN-WpIJXY) https://www.youtube.com/watch?v=WDfN-WpIJXY
 * [September 1st, 2020 Livestream Q&A: What about lights?](https://archive.satisfactory.video/transcriptions/yt-FqGp1WsRo6s) https://www.youtube.com/watch?v=FqGp1WsRo6s
 * [August 25th, 2020 Livestream Q&A: Will light be added to the game?](https://archive.satisfactory.video/transcriptions/yt-FuUHMwoNA0s) https://www.youtube.com/watch?v=FuUHMwoNA0s
 * [May 19th, 2020 Livestream Q&A: Why can't you just add lights to the game?](https://archive.satisfactory.video/transcriptions/yt-IJdIUISe5S4) https://www.youtube.com/watch?v=IJdIUISe5S4
@@ -1787,6 +1791,7 @@
 * [January 19th, 2021 Livestream Q&A: If the community made a Snow Biome, would you add that?](https://archive.satisfactory.video/transcriptions/yt-I8rWTBGdGio) https://www.youtube.com/watch?v=I8rWTBGdGio
 * [December 15th, 2020 Livestream Q&A: Will there be a Snow Biome?](https://archive.satisfactory.video/transcriptions/yt-iyhdKRg1b0A) https://www.youtube.com/watch?v=iyhdKRg1b0A
 * [November 17th, 2020 Livestream Q&A: Is Snow/Ice coming?](https://archive.satisfactory.video/transcriptions/yt-s8HISCrP7w8) https://www.youtube.com/watch?v=s8HISCrP7w8
+* [September 22nd, 2020 Livestream Q&A: Snowy Biome confirmed?](https://archive.satisfactory.video/transcriptions/yt-Yend7bHTMvw) https://www.youtube.com/watch?v=Yend7bHTMvw
 * August 18th, 2020 Livestream Q&A: Any ice/snow biome plans? https://clips.twitch.tv/AlluringScrumptiousBaboonHeyGirl
 ### Transcript
 
@@ -1806,6 +1811,7 @@
 ### Asked previously:
 * [November 24th, 2020 Livestream Q&A: Dedicated Servers in Update 4?](https://archive.satisfactory.video/transcriptions/yt-QWirowEMRbk) https://www.youtube.com/watch?v=QWirowEMRbk
 * [November 17th, 2020 Livestream Q&A: Are Dedicated Servers part of Update 4?](https://archive.satisfactory.video/transcriptions/yt-MKjtHTOMDZk) https://www.youtube.com/watch?v=MKjtHTOMDZk
+* [September 22nd, 2020 Livestream Q&A: Dedicated Servers don't need to wait for an Update?](https://archive.satisfactory.video/transcriptions/yt-BRvjOB3hRaE) https://www.youtube.com/watch?v=BRvjOB3hRaE
 * [September 1st, 2020 Livestream Q&A: Update 4 re: Dedicated Servers, Quality of Life, and Content?](https://archive.satisfactory.video/transcriptions/yt-CGoHMrbwftU) https://www.youtube.com/watch?v=CGoHMrbwftU
 ### Transcript
 
@@ -2607,6 +2613,7 @@
 ### Asked previously:
 * [November 10th, 2020 Livestream Q&A: Can we get Weather to change?](https://archive.satisfactory.video/transcriptions/yt-iq-K9FY-RT8) https://www.youtube.com/watch?v=iq-K9FY-RT8
 * [November 10th, 2020 Livestream Q&A: Will we have Weather events?](https://archive.satisfactory.video/transcriptions/yt-MzWzCnmbkYI) https://www.youtube.com/watch?v=MzWzCnmbkYI
+* [September 22nd, 2020 Livestream Q&A: Weather in Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-Sxvg881RjeA) https://www.youtube.com/watch?v=Sxvg881RjeA
 ### Transcript
 
 > oh my god it's good any plans on weather
@@ -3075,6 +3082,7 @@
 ### Asked previously:
 * [October 27th, 2020 Livestream Q&A: Can you make it so we can use closed Conveyor Belts to help with Rendering?](https://archive.satisfactory.video/transcriptions/yt-6KdakqhC8Q4) https://www.youtube.com/watch?v=6KdakqhC8Q4
 * [September 29th, 2020 Livestream Q&A: Enclosed Belts](https://archive.satisfactory.video/transcriptions/yt-oLpv9B5-OjE) https://www.youtube.com/watch?v=oLpv9B5-OjE
+* [September 22nd, 2020 Livestream Q&A: Would implementing covered belts reduce the number of objects in the world?](https://archive.satisfactory.video/transcriptions/yt-2R4MfLt_oMw) https://www.youtube.com/watch?v=2R4MfLt_oMw
 ### Transcript
 
 > what about having covered conveyors to
@@ -3591,6 +3599,158 @@
 > yeah exactly yeah
 
 
+## [September 22nd, 2020 Livestream Q&A: Can we make a Satisfactory Mobile Mod?](https://archive.satisfactory.video/transcriptions/yt-Wv_kjBAmLAY) https://www.youtube.com/watch?v=Wv_kjBAmLAY
+
+### Asked previously:
+* [September 22nd, 2020 Livestream Q&A: Mobile Edition?](https://archive.satisfactory.video/transcriptions/yt-sbWKKOsLrvA) https://www.youtube.com/watch?v=sbWKKOsLrvA
+* [September 1st, 2020 Livestream Q&A: Satisfactory Mobile Game ?](https://archive.satisfactory.video/transcriptions/yt-LJ358eEelS4) https://www.youtube.com/watch?v=LJ358eEelS4
+* [February 11th, 2020 Livestream Q&A: Satisfactory on mobile?](https://archive.satisfactory.video/transcriptions/yt-Vb5nLTtDSpA) https://www.youtube.com/watch?v=Vb5nLTtDSpA
+* [March 9th, 2019 Livestream Q&A: You guys are planning a mobile port, right?](https://archive.satisfactory.video/transcriptions/yt-gxWgVKBPTtM) https://www.youtube.com/watch?v=gxWgVKBPTtM
+### Transcript
+
+> mmos that i played quite a while can we
+>
+> make satisfactory mobile mode
+>
+> we're not going to do it holy maybe
+>
+> someone else can try
+>
+> i doubt that's going to work uh your
+>
+> creeps can be a lizard dog guys that's
+>
+> pretty funny
+
+
+## [September 22nd, 2020 Livestream Q&A: Confused on the use of Controllers?](https://archive.satisfactory.video/transcriptions/yt-BuC0nQS2Kqs) https://www.youtube.com/watch?v=BuC0nQS2Kqs
+
+### Asked previously:
+* [September 22nd, 2020 Livestream Q&A: Unreal Engine has default Controller support without you guys remapping?](https://archive.satisfactory.video/transcriptions/yt-ypJikGBEdvs) https://www.youtube.com/watch?v=ypJikGBEdvs
+* [March 9th, 2019 Livestream Q&A: Controller support?](https://archive.satisfactory.video/transcriptions/yt-XrsD3h62ils) https://www.youtube.com/watch?v=XrsD3h62ils
+### Transcript
+
+> um stuff like that
+>
+> um confused on the use of controllers
+>
+> you said that they're not supported but
+>
+> i've been using one since they
+>
+> uh since early access launch should i
+>
+> expect my use of controller to change
+>
+> uh so it's really weird that that's the
+>
+> case because we've um pretty sure we
+>
+> spent
+>
+> literally no time on making that work
+>
+> uh we well we did way back when and then
+>
+> just stop supporting it completely
+>
+> the fact that it works i think is a mere
+>
+> coincidence as for whether it will
+>
+> change in the future i think mappings
+>
+> and things like that might change
+>
+> who knows since it seems to be working
+>
+> by magic anyway uh but
+>
+> um yeah unless i don't think we're gonna
+>
+> remove it like i don't think we're gonna
+>
+> be like
+>
+> delete the support um you know actively
+>
+> go and do that
+>
+> so hopefully it will just keep working
+>
+> for you hopefully
+>
+> we did talk a while back with steam
+>
+> controllers
+>
+> that they were like we had our initial
+>
+> like controller
+>
+> setup that we've we kind of like quite
+>
+> quite abandoned
+>
+> when we were working on because it was
+>
+> so hard to maintain it um
+>
+> but there has been control support like
+>
+> at some point during development
+>
+> and then yep it was too much yeah like
+>
+> you just said uh
+>
+> and then when we were launched on steam
+>
+> there was some issue with like steam
+>
+> controllers
+>
+> not like you could because you can like
+>
+> remap
+>
+> uh on steam in some manner i'm not quite
+>
+> sure how it works
+>
+> yeah yeah you can um and i remember
+>
+> there was some discussion that like if
+>
+> we remove
+>
+> the current controller support then it
+>
+> would be easier to do that remapping or
+>
+> something but maybe we didn't need to
+>
+> or something i don't quite remember but
+>
+> if it works then cool uh
+>
+> yeah i don't know i don't know how it
+>
+> works i don't know why yeah i also don't
+>
+> like because like some things i don't
+>
+> know if you can do on controller
+>
+> like you can't do mass dismantle i think
+>
+> a controller and stuff like that so
+>
+> [Music]
+>
+> yeah yeah
+
+
 ## [September 22nd, 2020 Livestream Q&A: Is the OST on Spotify?](https://archive.satisfactory.video/transcriptions/yt-iCN324N905o) https://www.youtube.com/watch?v=iCN324N905o
 
 ### Asked previously:
@@ -3679,6 +3839,31 @@
 > it's like one of the first ones right
 >
 > so yeah
+
+
+## [September 22nd, 2020 Livestream Q&A: Why are we only Female in the game and no Male options?](https://archive.satisfactory.video/transcriptions/yt-njr4NS88fBc) https://www.youtube.com/watch?v=njr4NS88fBc
+
+### Asked previously:
+* [September 22nd, 2020 Livestream Q&A: Why is there only Female option and no Doggo option?](https://archive.satisfactory.video/transcriptions/yt-LzokNbLJWfk) https://www.youtube.com/watch?v=LzokNbLJWfk
+* [September 1st, 2020 Livestream Q&A: Can we choose the gender of the player?](https://archive.satisfactory.video/transcriptions/yt-VRo-e6NnYpk) https://www.youtube.com/watch?v=VRo-e6NnYpk
+* August 11th, 2020 Livestream Q&A: FICSIT Pioneer gender confirmed? https://clips.twitch.tv/TriangularLongOctopusOneHand
+* [March 24th, 2020 Livestream Q&A: Can I change my character from female to male?](https://archive.satisfactory.video/transcriptions/yt-NFKSJi204cc) https://www.youtube.com/watch?v=NFKSJi204cc
+* [March 24th, 2020 Livestream Q&A: How to change your character from male to female?](https://archive.satisfactory.video/transcriptions/yt-o6Za1vV_Zk0) https://www.youtube.com/watch?v=o6Za1vV_Zk0
+* [March 9th, 2019 Livestream Q&A: Can I choose the gender and customise my character?](https://archive.satisfactory.video/transcriptions/yt-g9uOwzKvCbc) https://www.youtube.com/watch?v=g9uOwzKvCbc
+* [March 9th, 2019 Livestream Q&A: What gender is the character model?](https://archive.satisfactory.video/transcriptions/yt-eoMeAy8w2Fs) https://www.youtube.com/watch?v=eoMeAy8w2Fs
+### Transcript
+
+> yep why are we only females in the game
+>
+> and not male options because that's just
+>
+> the way we made the game in most other
+>
+> games there are only male in the game
+>
+> without female options so i think it's
+>
+> fine
 
 
 ## [August 25th, 2020 Livestream Q&A: Add Planes as Vehicles and we can automate it to carry our resources?](https://archive.satisfactory.video/transcriptions/yt-Ds9NIPna9_4) https://www.youtube.com/watch?v=Ds9NIPna9_4
