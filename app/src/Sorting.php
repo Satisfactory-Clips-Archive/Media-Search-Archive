@@ -6,7 +6,11 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function count;
+use function mb_strtolower;
+use function preg_match;
 use function strnatcasecmp;
+use function trim;
 
 /**
  * @psalm-type CACHE = array{
