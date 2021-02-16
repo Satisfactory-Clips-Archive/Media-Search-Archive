@@ -39,6 +39,11 @@ class Sorting
 	];
 
 	/**
+	 * @var array<string, string>
+	 */
+	public array $playlists_date_ref = [];
+
+	/**
 	 * @param CACHE|null $cache
 	 */
 	public function __construct(array $cache = null)
@@ -88,6 +93,28 @@ class Sorting
 
 		if (0 === $maybe) {
 			return strnatcasecmp($a, $b);
+		}
+
+		return $maybe;
+	}
+
+	public function sort_video_ids_by_date(string $a, string $b) : int
+	{
+		$a_date = determine_date_for_video(
+			$a,
+			$this->cache['playlists'],
+			$this->playlists_date_ref
+		);
+		$b_date = determine_date_for_video(
+			$b,
+			$this->cache['playlists'],
+			$this->playlists_date_ref
+		);
+
+		$maybe = strtotime($b_date) <=> strtotime($a_date);
+
+		if (0 === $maybe) {
+			return $this->sort_video_ids_alphabetically($a, $b);
 		}
 
 		return $maybe;

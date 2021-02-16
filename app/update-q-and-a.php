@@ -43,7 +43,6 @@ use function preg_replace;
 use RuntimeException;
 use function sprintf;
 use function str_replace;
-use function strnatcasecmp;
 use function strtotime;
 use function uasort;
 use function uksort;
@@ -283,46 +282,8 @@ $playlists = array_map(
 	)
 );
 
-/**
- * @param array<string, array{0:string, 1:string, 2:list<string>}> $playlists
- * @param array<string, string> $playlist_date_ref
- */
-function determine_date_for_video(
-	string $video_id,
-	array $playlists,
-	array $playlist_date_ref
-) : string {
-	/** @var false|string */
-	$found = false;
-
-	foreach (array_keys($playlist_date_ref) as $playlist_id) {
-		if ( ! isset($playlists[$playlist_id])) {
-			throw new RuntimeException(sprintf(
-				'No data available for playlist %s',
-				$playlist_id
-			));
-		} elseif (in_array($video_id, $playlists[$playlist_id][2], true)) {
-			if (false !== $found) {
-				throw new InvalidArgumentException(sprintf(
-					'Video %s already found on %s',
-					$video_id,
-					$found
-				));
-			}
-
-			$found = $playlist_id;
-		}
-	}
-
-	if (false === $found) {
-		throw new InvalidArgumentException(sprintf(
-			'Video %s was not found in any playlist!',
-			$video_id
-		));
-	}
-
-	return $playlist_date_ref[$found];
-}
+$sorting = new Sorting($cache);
+$sorting->playlists_date_ref = $playlists;
 
 /**
  * @psalm-type CACHE = array{
@@ -618,52 +579,8 @@ foreach (array_keys($seealsos) as $video_id) {
 	}
 }
 
-uasort(
-	$existing,
-	/**
-	 * @psalm-type ROW = array{
-	 *	date:string,
-	 *	title:string
-	 * }
-	 *
-	 * @param ROW $a
-	 * @param ROW $b
-	 */
-	static function (array $a, array $b) : int {
-		$maybe = strtotime($b['date']) <=> strtotime($a['date']);
-
-		if (0 === $maybe) {
-			$maybe = strnatcasecmp($a['title'], $b['title']);
-		}
-
-		return $maybe;
-	});
-usort(
-	$all_video_ids,
-	static function (string $a, string $b) use ($cache, $playlists) : int {
-		$a_date = determine_date_for_video(
-			$a,
-			$cache['playlists'],
-			$playlists
-		);
-		$b_date = determine_date_for_video(
-			$b,
-			$cache['playlists'],
-			$playlists
-		);
-
-		$maybe = strtotime($b_date) <=> strtotime($a_date);
-
-		if (0 === $maybe) {
-			$maybe = strnatcasecmp(
-				$cache['playlistItems'][$a][1],
-				$cache['playlistItems'][$b][1]
-			);
-		}
-
-		return $maybe;
-	}
-);
+uksort($existing, [$sorting, 'sort_video_ids_by_date']);
+usort($all_video_ids, [$sorting, 'sort_video_ids_by_date']);
 
 $by_topic = [];
 
@@ -880,46 +797,16 @@ ob_flush();
 
 ob_start();
 
-$video_id_date_sort = static function (
-	string $a,
-	string $b
-) use ($existing, $cache, $playlists) : int {
-	$maybe =
-		strtotime(
-			$existing[$b]['date'] ?? determine_date_for_video(
-				$b,
-				$cache['playlists'],
-				$playlists
-			)
-		) <=> strtotime(
-			$existing[$a]['date'] ?? determine_date_for_video(
-				$a,
-				$cache['playlists'],
-				$playlists
-			)
-		)
-	;
-
-	if (0 === $maybe) {
-		$maybe = strnatcasecmp(
-			$cache['playlistItems'][$a][1],
-			$cache['playlistItems'][$b][1]
-		);
-	}
-
-	return $maybe;
-};
-
 $duplicates = array_map(
 	/**
 	 * @param list<string> $video_ids
 	 *
 	 * @return list<string>
 	 */
-	static function (array $video_ids) use ($video_id_date_sort) : array {
+	static function (array $video_ids) use ($sorting) : array {
 		$video_ids = array_unique($video_ids);
 
-		usort($video_ids, $video_id_date_sort);
+		usort($video_ids, [$sorting, 'sort_video_ids_by_date']);
 
 		return $video_ids;
 	},
@@ -932,7 +819,7 @@ $duplicates = array_map(
 	)
 );
 
-uksort($duplicates, $video_id_date_sort);
+uksort($duplicates, [$sorting, 'sort_video_ids_by_date']);
 
 $duplicates = array_filter(
 	$duplicates,
@@ -951,12 +838,7 @@ $faq = array_filter(
 	}
 );
 
-uksort($faq, static function (string $a, string $b) use ($cache) : int {
-	return strnatcasecmp(
-		$cache['playlistItems'][$a][1],
-		$cache['playlistItems'][$b][1]
-	);
-});
+uksort($faq, [$sorting, 'sort_video_ids_by_date']);
 
 echo "\n";
 
@@ -1014,7 +896,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 
 	echo "\n", '### Asked previously:';
 
-	uasort($faq_duplicates, $video_id_date_sort);
+	uasort($faq_duplicates, [$sorting, 'sort_video_ids_by_date']);
 
 	foreach ($faq_duplicates as $other_video_id) {
 		if ($other_video_id === $video_id) {
