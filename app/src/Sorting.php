@@ -80,10 +80,14 @@ class Sorting
 		$maybe = strnatcasecmp($a_title, $b_title);
 
 		if (0 === $maybe) {
-			return strnatcasecmp(
+			$maybe = strnatcasecmp(
 				$this->cache['playlistItems'][$a][1],
 				$this->cache['playlistItems'][$b][1]
 			);
+		}
+
+		if (0 === $maybe) {
+			return strnatcasecmp($a, $b);
 		}
 
 		return $maybe;
