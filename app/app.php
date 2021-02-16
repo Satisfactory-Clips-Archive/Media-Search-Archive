@@ -288,6 +288,19 @@ $externals_cache = process_externals(
 
 $cache = inject_caches($cache, $externals_cache);
 
+$sorting = new Sorting($cache);
+
+$cache['playlists'] = array_map(
+	static function (array $data) use ($sorting) : array {
+		uasort($data[2], [$sorting, 'sort_video_ids_alphabetically']);
+
+		return $data;
+	},
+	$cache['playlists']
+);
+
+$sorting->cache = $cache;
+
 $no_topics = [];
 
 foreach (
@@ -764,12 +777,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 	$video_ids = ($cache['playlists'][$playlist_id] ?? [2 => []])[2];
 	$video_ids = filter_video_ids_for_legacy_alts($cache, ...$video_ids);
 
-	usort($video_ids, static function (string $a, string $b) use ($cache) : int {
-		return strnatcasecmp(
-			$cache['playlistItems'][$a][1],
-			$cache['playlistItems'][$b][1]
-		);
-	});
+	usort($video_ids, [$sorting, 'sort_video_ids_alphabetically']);
 
 	$content_arrays = [
 		'Related answer clips' => [],
@@ -1025,6 +1033,22 @@ foreach ($cache['videoTags'] as $video_id => $tags) {
 		$faq_video_ids[] = $video_id;
 	}
 }
+
+$legacy_alts = array_reduce(
+	$cache['legacyAlts'],
+	static function (array $out, array $video_ids) : array {
+		return array_merge($out, array_diff($video_ids, $out));
+	},
+	[]
+);
+
+$faq_video_ids = array_filter(
+	$faq_video_ids,
+	static function (string $maybe) use ($legacy_alts) : bool {
+		return ! in_array($maybe, $legacy_alts, true);
+	}
+);
+
 $faq_video_topics = [];
 
 foreach ($cache['playlists'] as $topic_id => $data) {
