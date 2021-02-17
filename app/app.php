@@ -589,7 +589,7 @@ foreach ($all_video_ids as $video_id) {
 			count($all_video_ids),
 			time() - $start
 		),
-		"\n"
+		"\r"
 	;
 
 	if (in_array($video_id, $skipping, true)) {
@@ -753,6 +753,8 @@ foreach ($all_video_ids as $video_id) {
 		implode('', $transcription_lines)
 	);
 }
+
+echo "\n";
 
 $skipping = array_unique($skipping);
 
