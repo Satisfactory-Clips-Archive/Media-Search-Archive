@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2021-02-17
+* Restored ability to clear out non-dated playlists
+* Improved build script
+
 ## 2021-02-16
 * Applied a new sorting algorithm to video lists
 * Filtered legacy clips from the FAQ

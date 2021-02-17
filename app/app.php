@@ -517,8 +517,8 @@ usort($all_topic_ids, static function (
 
 	if ( ! isset($nested_a, $nested_b)) {
 		return strnatcasecmp(
-			$cache['playlists'][$a][1],
-			$cache['playlists'][$b][1]
+			$cache['playlists'][$a][1] ?? $a,
+			$cache['playlists'][$b][1] ?? $b
 		);
 	}
 
@@ -560,6 +560,28 @@ foreach ($all_topic_ids as $topic_id) {
 	$playlist_topic_strings_reverse_lookup[$slug_string] = $topic_id;
 }
 
+$video_playlists = array_map(
+	static function (array $topic_ids) use ($playlist_topic_strings) : array {
+		usort(
+			$topic_ids,
+			static function (
+				string $a,
+				string $b
+			) use (
+				$playlist_topic_strings
+			) : int {
+				return strnatcasecmp(
+					$playlist_topic_strings[$a],
+					$playlist_topic_strings[$b],
+				);
+			}
+		);
+
+		return $topic_ids;
+	},
+	$video_playlists
+);
+
 file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_json, JSON_PRETTY_PRINT));
 
 $topic_slug_history = json_decode(
@@ -589,7 +611,7 @@ foreach ($all_video_ids as $video_id) {
 			count($all_video_ids),
 			time() - $start
 		),
-		"\n"
+		"\r"
 	;
 
 	if (in_array($video_id, $skipping, true)) {
@@ -645,6 +667,21 @@ foreach ($all_video_ids as $video_id) {
 				$playlist_topic_strings[
 					$playlist_id
 				]
+			);
+		}
+	);
+
+	usort(
+		$transcript_topic_strings,
+		static function (
+			string $a,
+			string $b
+		) use (
+			$playlist_topic_strings
+		) : int {
+			return strnatcasecmp(
+				$playlist_topic_strings[$a],
+				$playlist_topic_strings[$b],
 			);
 		}
 	);
@@ -753,6 +790,8 @@ foreach ($all_video_ids as $video_id) {
 		implode('', $transcription_lines)
 	);
 }
+
+echo "\n";
 
 $skipping = array_unique($skipping);
 
@@ -1464,6 +1503,21 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			$playlist_id,
 			$topic_nesting[$basename],
 			false
+		);
+
+		usort(
+			$topic_children,
+			static function (
+				string $a,
+				string $b
+			) use (
+				$playlist_topic_strings
+			) : int {
+				return strnatcasecmp(
+					$playlist_topic_strings[$a],
+					$playlist_topic_strings[$b],
+				);
+			}
 		);
 
 		if (count($topic_children) > 0) {

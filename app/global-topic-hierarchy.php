@@ -54,17 +54,21 @@ $global_topic_hierarchy = [
 			'Satisfactory Updates',
 			'Speculative',
 		],
-		'PLbjDnnBIxiEqrvp3UlLgVHZbY9Yb045zj' => [ // Release Builds
+		'PLbjDnnBIxiErIs7tyigBsVwTUg4hsKvx1' => [ // Modular Builds
 			8,
 			'Satisfactory Updates',
 		],
-		'PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT' => [ // Satisfactory 1.0
+		'PLbjDnnBIxiEqrvp3UlLgVHZbY9Yb045zj' => [ // Release Builds
 			9,
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT' => [ // Satisfactory 1.0
+			10,
 			'Satisfactory Updates',
 			'Pending',
 		],
 		'PLbjDnnBIxiErq1cTFe-14F7UISclc1uc-' => [ // Seasonal Events
-			10,
+			11,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEq84iBBkP2g69rPYXD-yWMy' => [ // FICS⁕MAS
@@ -676,6 +680,31 @@ $global_topic_hierarchy = [
 		],
 		'PLbjDnnBIxiEruD11x_g9qPkDYlsRkEYNz' => [ // Smart!
 			'Mods',
+		],
+		'PLbjDnnBIxiEoLg1lGISuIdkOC1u2PuiCe' => [ // Analytics
+			'Technology',
+		],
+		'PLbjDnnBIxiEqY1dlDDnwf4Fo9Z9l7YtM4' => [ // DLSS
+			'Technology',
+			'Graphics',
+		],
+		'PLbjDnnBIxiErp1LdzC2TRke-xZQJTc3m5' => [ // Power Storage
+			'Features',
+			'Power Management',
+		],
+		'PLbjDnnBIxiEqd09Y91Qt4sfvmiIY_jN_J' => [ // Ray Tracing
+			'Technology',
+			'Graphics',
+		],
+		'PLbjDnnBIxiEoJs6pgkkriityQb1BaPgnx' => [ // Simon Saga
+			'Coffee Stainers',
+			'Simon',
+		],
+		'PLbjDnnBIxiEo6DXBwcUjUqDH7Mqjx5zmM' => [ // Terrible Jokes
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiErPmwCcdEax-8TIvyvjdlm2' => [ // Mac
+			'Technology',
 		],
 	],
 ];

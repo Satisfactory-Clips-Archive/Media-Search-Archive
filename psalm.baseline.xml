@@ -11,9 +11,6 @@
     <InvalidScalarArgument occurrences="1"/>
     <MixedArgument occurrences="11">
       <code>$data</code>
-      <code>$data</code>
-      <code>$filename</code>
-      <code>$filename</code>
       <code>$filename</code>
       <code>$injected_cache</code>
       <code>$injected_data[2]</code>
@@ -48,13 +45,10 @@
       <code>$other_playlists_on_channel[$playlist_id]</code>
       <code>$other_playlists_on_channel[$playlist_id]</code>
       <code>$other_playlists_on_channel[$playlist_id]</code>
-      <code>$other_playlists_on_channel[$playlist_id]</code>
-      <code>$playlists[$playlist_id]</code>
       <code>$playlists[$playlist_id]</code>
       <code>$playlists[$playlist_id]</code>
     </MixedArrayOffset>
     <MixedArrayTypeCoercion occurrences="1">
-      <code>$cache['playlists'][$playlist_id]</code>
       <code>$cache['playlists'][$playlist_id]</code>
     </MixedArrayTypeCoercion>
     <MixedAssignment occurrences="16">
@@ -62,11 +56,6 @@
       <code>$data</code>
       <code>$data</code>
       <code>$data</code>
-      <code>$data</code>
-      <code>$data</code>
-      <code>$data</code>
-      <code>$filename</code>
-      <code>$filename</code>
       <code>$filename</code>
       <code>$injected_cache</code>
       <code>$injected_data</code>
@@ -74,13 +63,9 @@
       <code>$out[]</code>
       <code>$playlist_id</code>
       <code>$playlist_id</code>
-      <code>$playlist_id</code>
       <code>$skipping</code>
       <code>$tag</code>
       <code>$topic_slug_history</code>
-      <code>$video_id</code>
-      <code>$video_id</code>
-      <code>$video_id</code>
       <code>$video_id</code>
       <code>$video_id</code>
     </MixedAssignment>
@@ -123,6 +108,11 @@
       <code>$topic_hierarchy</code>
       <code>$topic_id</code>
     </UnusedVariable>
+  </file>
+  <file src="app/cleanup-playlist-api-cache.php">
+    <UnusedFunctionCall occurrences="1">
+      <code>array_map</code>
+    </UnusedFunctionCall>
   </file>
   <file src="app/decorate-cache-injection.php">
     <DuplicateArrayKey occurrences="1"/>
@@ -174,7 +164,6 @@
     </InvalidArgument>
     <InvalidScalarArgument occurrences="2">
       <code>$embed_data['end']</code>
-      <code>$start ?: '0'</code>
       <code>$start ?: '0'</code>
     </InvalidScalarArgument>
     <LessSpecificReturnStatement occurrences="2">
