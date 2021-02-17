@@ -1,4 +1,535 @@
 {
+    "z-DgcRCy3so": {
+        "title": "Q&A: Any NPCs in the game?",
+        "date": "2021-02-16",
+        "topics": [
+            "story-lore"
+        ]
+    },
+    "a5IClCte1go": {
+        "title": "Q&A: Any plan on encourage closed-building \/ discourage open-building factory with game mechanics?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers\/mark"
+        ]
+    },
+    "BMQs1ci2YXo": {
+        "title": "Q&A: Anything interesting in the analytics?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers\/mark",
+            "features\/tiers",
+            "features\/tiers\/tier-4",
+            "features\/tiers\/tier-7",
+            "technology\/analytics"
+        ]
+    },
+    "9d5aym3IkTg": {
+        "title": "Q&A: Are the Belts going to be rebalanced?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/buildables\/conveyor-belts"
+        ]
+    },
+    "XCMncMB0z50": {
+        "title": "Q&A: Are there changes planned for Geothermal?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/power-management\/geothermal-energy"
+        ]
+    },
+    "v7d8Lqlq53w": {
+        "title": "Q&A: Are there limited Lizard Doggos on the map?",
+        "date": "2021-02-16",
+        "topics": [
+            "environment\/creatures\/lizard-doggo",
+            "environment\/world-map"
+        ]
+    },
+    "Mv-PloPdgko": {
+        "title": "Q&A: Are those statistics public?",
+        "date": "2021-02-16",
+        "topics": [
+            "technology\/analytics"
+        ]
+    },
+    "mSo3tH9ZLR0": {
+        "title": "Q&A: Are you epecting a more stable release of the Engine Upgrade due to increased QA for Update 4?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/release-builds",
+            "technology\/unreal-engine"
+        ]
+    },
+    "Fk_wKTIx5Z4": {
+        "title": "Q&A: Are you planning to fix the Multiplayer late-game?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/multiplayer"
+        ]
+    },
+    "jC1yskM2KZQ": {
+        "title": "Q&A: Are you still going to be fixing Engine Upgrade while in Content Freeze?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "technology\/unreal-engine"
+        ]
+    },
+    "EQHWYOsMUls": {
+        "title": "Q&A: Are you using Google Analytics for collecting data?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/buildings",
+            "features\/tiers",
+            "technology\/analytics"
+        ]
+    },
+    "n70T0HTcjB0": {
+        "title": "Q&A: Bacon or Sausage?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt"
+        ]
+    },
+    "bjXv7xwwIIA": {
+        "title": "Q&A: Can we get a CO\u2082 meter so we can keep track of how badly we screwed the planet?",
+        "date": "2021-02-16",
+        "topics": [
+            "environment\/pollution"
+        ]
+    },
+    "SPaDSuHfhGk": {
+        "title": "Q&A: Can we have pizza in-game?",
+        "date": "2021-02-16",
+        "topics": [
+            "off-topic\/pizza"
+        ]
+    },
+    "uskbxtN069Q": {
+        "title": "Q&A: Can we sleep through nights?",
+        "date": "2021-02-16",
+        "topics": [
+            "environment",
+            "features\/buildings\/the-hub",
+            "features\/pioneer"
+        ]
+    },
+    "IPtH5E1-31k": {
+        "title": "Q&A: Did Coffee Stain Studios develop Satisfactory?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers",
+            "off-topic\/deep-rock-galactic",
+            "off-topic\/goat-simulator",
+            "off-topic\/sanctum"
+        ]
+    },
+    "epiPmCco2lc": {
+        "title": "Q&A: Did you guys develop Valheim?",
+        "date": "2021-02-16",
+        "topics": [
+            "off-topic\/valheim"
+        ]
+    },
+    "JDJ5hvAkrWw": {
+        "title": "Q&A: Does obscuring belts actually help with performance?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/buildables\/conveyor-belts"
+        ]
+    },
+    "hI0wqMQqj68": {
+        "title": "Q&A: Do you already have a date for the Update?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "OJ8LnojSUzo": {
+        "title": "Q&A: Do you guys plan on any space stations or building amongst multi planets?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/unplanned-features\/space-exploration"
+        ]
+    },
+    "lXO6XIFA9Fg": {
+        "title": "Q&A: Do you guys plan on opening some designer positions at some point?",
+        "date": "2021-02-16",
+        "topics": []
+    },
+    "1a6aeBB1rPs": {
+        "title": "Q&A: Do you know when Dedicated Servers are coming?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/planned-features\/dedicated-servers"
+        ]
+    },
+    "d4Ze6FO4XEA": {
+        "title": "Q&A: English subtitles for English stream?",
+        "date": "2021-02-16",
+        "topics": []
+    },
+    "L6458tIFFho": {
+        "title": "Q&A: For Valheim?",
+        "date": "2021-02-16",
+        "topics": [
+            "off-topic\/valheim"
+        ]
+    },
+    "Jy8mbOy0BJ0": {
+        "title": "Q&A: Have you considered some sort of free demo for the game?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/tiers\/tier-5",
+            "features\/tiers\/tier-7",
+            "off-topic\/factorio",
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/release-builds"
+        ]
+    },
+    "2NIYN2OWrWs": {
+        "title": "Q&A: Have you fixed the gamma?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/release-builds",
+            "technology\/graphics"
+        ]
+    },
+    "-iZbaVL7D0g": {
+        "title": "Q&A: How big is the development team?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers"
+        ]
+    },
+    "m1kxeGpWTh4": {
+        "title": "Q&A: How can you use a save that isn't yours?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/multiplayer",
+            "features\/save-system"
+        ]
+    },
+    "cPcOixO7WbU": {
+        "title": "Q&A: How do you split up first-time players vs. players starting a new game?",
+        "date": "2021-02-16",
+        "topics": [
+            "technology\/analytics"
+        ]
+    },
+    "HKh8CsYPMvw": {
+        "title": "Q&A: How do you stress-test the game?",
+        "date": "2021-02-16",
+        "topics": [
+            "community",
+            "community\/josh"
+        ]
+    },
+    "R9u6_oxcsX4": {
+        "title": "Q&A: How much content are you planning for 1.0- do you want it to be over 200 hour playthrough?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers\/hannah",
+            "coffee-stainers\/mark",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "pvevNDQU5Uw": {
+        "title": "Q&A: How will Power Storage thing work?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/power-management\/power-storage",
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "byfgR8myflI": {
+        "title": "Q&A: I saw a mod who let a belt ending in a stackable belt ending, any chance for this in vanilla?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/buildables\/conveyor-belts",
+            "mods\/mods-vs-features"
+        ]
+    },
+    "S-o-0uuZUDo": {
+        "title": "Q&A: Is the game going to have a big Story?",
+        "date": "2021-02-16",
+        "topics": [
+            "story-lore"
+        ]
+    },
+    "s7NbxyG5lTo": {
+        "title": "Q&A: Is the lack of placeable lights due to visual errors or performance?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/planned-features\/lights"
+        ]
+    },
+    "57fezy2AX6Q": {
+        "title": "Q&A: Is there a video this Friday?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/power-management\/power-storage",
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "eTafCP7eCB4": {
+        "title": "Q&A: I think I missed a discussion around when it would be shifted to Early Access?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/release-builds"
+        ]
+    },
+    "2cO89rhg6sQ": {
+        "title": "Q&A: No Experimental?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/release-builds"
+        ]
+    },
+    "FkM6JZIZrqg": {
+        "title": "Q&A: Possible to get randomly generated maps?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/unplanned-features\/procedural-generation"
+        ]
+    },
+    "kZqiiOvcW6E": {
+        "title": "Q&A: See coworkers in real life- wtf is that?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers"
+        ]
+    },
+    "NMDDVWs3jZM": {
+        "title": "Q&A: Size of the Update?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/modular-build",
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "MmcJSWmQA9w": {
+        "title": "Q&A: Sometimes I get the crash reporter but the game is still running?",
+        "date": "2021-02-16",
+        "topics": [
+            "technology\/unreal-engine"
+        ]
+    },
+    "iyDadUPxjUs": {
+        "title": "Q&A: Still on track for March 9th or 16th?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/modular-build",
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/release-builds",
+            "technology\/unreal-engine"
+        ]
+    },
+    "LgYBDQkiTrk": {
+        "title": "Q&A: Storm or natural disasters in the game?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/possible-features\/weather-systems"
+        ]
+    },
+    "gMje8Pv4tJY": {
+        "title": "Q&A: Tell us a joke?",
+        "date": "2021-02-16",
+        "topics": [
+            "off-topic\/terrible-jokes"
+        ]
+    },
+    "WxWVGXJ3a2c": {
+        "title": "Q&A: Unreal Engine 4.25?",
+        "date": "2021-02-16",
+        "topics": [
+            "technology\/unreal-engine"
+        ]
+    },
+    "sKwcRFzwGzI": {
+        "title": "Q&A: We need Steam Workshop for this kind of thing?",
+        "date": "2021-02-16",
+        "topics": [
+            "mods\/official-mod-support\/steam-workshop"
+        ]
+    },
+    "W2O4gfNYj9s": {
+        "title": "Q&A: What's the chance that the game will be released this year?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "8pFxd37RLxk": {
+        "title": "Q&A: What's the point of batteries if we don't have variable power?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/power-management\/power-storage"
+        ]
+    },
+    "PvDKIvSEwD8": {
+        "title": "Q&A: What's your favourite colour?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt"
+        ]
+    },
+    "wrJ7nQO9kPk": {
+        "title": "Q&A: What's your favourite part of the game so far?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt"
+        ]
+    },
+    "C2fArx9F9RM": {
+        "title": "Q&A: What about some leaks?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt",
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "trolling"
+        ]
+    },
+    "L-HM1a7oSK8": {
+        "title": "Q&A: What engine do you use & what programming language?",
+        "date": "2021-02-16",
+        "topics": [
+            "technology\/unreal-engine"
+        ]
+    },
+    "Rv6FRkWjJfU": {
+        "title": "Q&A: What is the future of Nuclear Waste?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers\/tim",
+            "features\/power-management\/nuclear-energy\/nuclear-waste"
+        ]
+    },
+    "v3_fHKQqX24": {
+        "title": "Q&A: What length will the new Zip Lines cap at?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/equipment\/zip-lines"
+        ]
+    },
+    "z4088brm0rg": {
+        "title": "Q&A: When does Satisfactory get DLSS 2.0, since it was open to other games?",
+        "date": "2021-02-16",
+        "topics": [
+            "technology\/graphics\/dlss",
+            "technology\/unreal-engine"
+        ]
+    },
+    "IPQfi2Gv4Zc": {
+        "title": "Q&A: When is 1.0 coming?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "VTSAUKoarIw": {
+        "title": "Q&A: When is Satisfactory going to be on Mac?",
+        "date": "2021-02-16",
+        "topics": []
+    },
+    "spRakm5uAy0": {
+        "title": "Q&A: When will Update 4 come out?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "P8FVNZqDjf8": {
+        "title": "Q&A: When will we see a Satisfactory \/ Deep Rock Galactic Crossover?",
+        "date": "2021-02-16",
+        "topics": [
+            "off-topic\/deep-rock-galactic"
+        ]
+    },
+    "lABA3NfAMXw": {
+        "title": "Q&A: Where's the mug?",
+        "date": "2021-02-16",
+        "topics": [
+            "merch"
+        ]
+    },
+    "MQSdhIKAjNc": {
+        "title": "Q&A: Who's Simon?",
+        "date": "2021-02-16",
+        "topics": [
+            "coffee-stainers\/simon",
+            "coffee-stainers\/simon\/simon-saga"
+        ]
+    },
+    "DPozJjq6Qks": {
+        "title": "Q&A: Why can modders make so much content in a shorter time than the studio?",
+        "date": "2021-02-16",
+        "topics": [
+            "mods\/mods-vs-features"
+        ]
+    },
+    "qYBAKknb7WA": {
+        "title": "Q&A: Will 1.0 go to Experimental?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/release-builds"
+        ]
+    },
+    "scxr_vl9Pzk": {
+        "title": "Q&A: Will Achievements ever be created?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/possible-features\/third-party-service-integration\/achievements"
+        ]
+    },
+    "R9H2Xu_20UA": {
+        "title": "Q&A: Will there be a penultimate Early Access release for the Story?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/release-builds",
+            "story-lore"
+        ]
+    },
+    "2HTpXh20gqY": {
+        "title": "Q&A: Will there be new things for us to discover in 1.0 besides the Story?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "story-lore"
+        ]
+    },
+    "-t832FeMogU": {
+        "title": "Q&A: Will there be signs in future updates?",
+        "date": "2021-02-16",
+        "topics": [
+            "features\/planned-features\/signs"
+        ]
+    },
+    "ZlPENv3__GU": {
+        "title": "Q&A: Will Update 4 be based on new Unreal Engine, or the existing one?",
+        "date": "2021-02-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "technology\/unreal-engine"
+        ]
+    },
+    "icZwPeonyD8": {
+        "title": "Q&A: Will you two handle the community \/ streams of Valheim too?",
+        "date": "2021-02-16",
+        "topics": [
+            "off-topic\/valheim"
+        ]
+    },
     "mBpIB3ojMC8": {
         "title": "Q&A: $1 Toilet DLC?",
         "date": "2021-02-09",
@@ -502,7 +1033,8 @@
         "title": "Q&A: Do you have any plans to add Ray Tracing or DLSS?",
         "date": "2021-02-09",
         "topics": [
-            "technology\/graphics"
+            "technology\/graphics\/dlss",
+            "technology\/graphics\/ray-tracing"
         ],
         "duplicates": [
             "IXroe1QFRzc",
@@ -537,7 +1069,8 @@
         "date": "2021-02-09",
         "topics": [
             "features\/possible-features\/console-release",
-            "technology\/linux"
+            "technology\/linux",
+            "technology\/mac"
         ],
         "duplicates": [
             "0Zv9Qjp2fHI",
@@ -719,6 +1252,7 @@
         "title": "Q&A: How girthy will the Update 4 download be?",
         "date": "2021-02-09",
         "topics": [
+            "satisfactory-updates\/modular-build",
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/release-builds"
         ],
@@ -1138,7 +1672,7 @@
         "title": "Q&A: What was the Leak\u2122?",
         "date": "2021-02-09",
         "topics": [
-            "features\/power-management",
+            "features\/power-management\/power-storage",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
         "seealso": [
@@ -2112,6 +2646,7 @@
             "9MVglCjtlwY",
             "bPU07wU3Mr0",
             "Bu2TPRFV_2o",
+            "BZtRginha6g",
             "dO0LLPFQ20s",
             "eT6uSBu-sVw",
             "OdCLosbTp60",
@@ -2937,7 +3472,7 @@
         "title": "Q&A: Is ray-trace in planning?",
         "date": "2021-01-26",
         "topics": [
-            "technology\/graphics"
+            "technology\/graphics\/ray-tracing"
         ],
         "duplicatedby": "hRzZjCBoI8s"
     },
@@ -3208,7 +3743,9 @@
     "uL_cajdKTcg": {
         "title": "Q&A: What about modular build?",
         "date": "2021-01-26",
-        "topics": [],
+        "topics": [
+            "satisfactory-updates\/modular-build"
+        ],
         "duplicates": [
             "vKIeFeGPXJQ"
         ],
@@ -3864,7 +4401,7 @@
         "title": "Q&A: Ever add DLSS at some point?",
         "date": "2021-01-19",
         "topics": [
-            "technology\/graphics"
+            "technology\/graphics\/dlss"
         ],
         "duplicatedby": "hRzZjCBoI8s"
     },
@@ -5249,6 +5786,7 @@
         "title": "Q&A: Will there be any minor releases between now and Update 4?",
         "date": "2021-01-12",
         "topics": [
+            "satisfactory-updates\/modular-build",
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "technology\/unreal-engine"
         ],
@@ -5790,7 +6328,7 @@
         "date": "2020-12-15",
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4",
-            "technology\/graphics",
+            "technology\/graphics\/ray-tracing",
             "technology\/unreal-engine"
         ],
         "duplicatedby": "hRzZjCBoI8s"
@@ -5919,7 +6457,8 @@
         "title": "Q&A: Will we add more to the Map?",
         "date": "2020-12-15",
         "topics": [
-            "environment\/world-map"
+            "environment\/world-map",
+            "satisfactory-updates\/modular-build"
         ],
         "duplicatedby": "gvOt4jwWA4Q"
     },
@@ -6805,7 +7344,7 @@
         "title": "Q&A: Is there going to be a Satisfactory for Mac?",
         "date": "2020-11-24",
         "topics": [
-            "satisfactory-updates\/release-builds"
+            "technology\/mac"
         ],
         "duplicates": [
             "XQioxcXDRqc",
@@ -6862,7 +7401,7 @@
         "title": "Q&A: Plans for Ray Tracing?",
         "date": "2020-11-24",
         "topics": [
-            "technology\/graphics"
+            "technology\/graphics\/ray-tracing"
         ],
         "duplicatedby": "hRzZjCBoI8s"
     },
@@ -8066,6 +8605,7 @@
         "title": "Q&A: Can you summarise the upcoming builds for the next months?",
         "date": "2020-11-10",
         "topics": [
+            "satisfactory-updates\/modular-build",
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/release-builds",
             "satisfactory-updates\/state-of-dev"
@@ -8351,7 +8891,7 @@
         "title": "Q&A: Mac Release \/ Release to other platforms?",
         "date": "2020-11-10",
         "topics": [
-            "satisfactory-updates\/release-builds"
+            "technology\/mac"
         ],
         "duplicatedby": "eLjNJO4pUBA"
     },
@@ -9009,7 +9549,7 @@
         "title": "Q&A: RTX support ever?",
         "date": "2020-11-03",
         "topics": [
-            "technology\/graphics"
+            "technology\/graphics\/ray-tracing"
         ],
         "duplicatedby": "hRzZjCBoI8s"
     },
@@ -9085,6 +9625,7 @@
         "date": "2020-11-03",
         "topics": [
             "mods",
+            "satisfactory-updates\/modular-build",
             "satisfactory-updates\/release-builds"
         ],
         "duplicatedby": "uL_cajdKTcg"
@@ -9207,7 +9748,7 @@
         "title": "Q&A: Will Satisfactory get Ray Tracing?",
         "date": "2020-11-03",
         "topics": [
-            "technology\/graphics"
+            "technology\/graphics\/ray-tracing"
         ],
         "duplicatedby": "hRzZjCBoI8s"
     },
@@ -9485,6 +10026,7 @@
         "date": "2020-10-27",
         "topics": [
             "features\/multiplayer",
+            "satisfactory-updates\/modular-build",
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-fluids-update"
         ]
@@ -9535,6 +10077,7 @@
         "title": "Q&A: Will there be Modular Build introduced in this Update?",
         "date": "2020-10-27",
         "topics": [
+            "satisfactory-updates\/modular-build",
             "satisfactory-updates\/released\/satisfactory-fluids-update"
         ],
         "replacedby": "uL_cajdKTcg"
@@ -10499,6 +11042,7 @@
         "title": "Q&A: Will you switch to using Unreal Engine 5?",
         "date": "2020-10-13",
         "topics": [
+            "technology\/graphics\/ray-tracing",
             "technology\/unreal-engine"
         ],
         "duplicatedby": "unAf5J6OtDE"
@@ -10515,7 +11059,7 @@
         "title": "Q&A: Could we get Ray Tracing?",
         "date": "2020-10-09",
         "topics": [
-            "technology\/graphics",
+            "technology\/graphics\/ray-tracing",
             "technology\/unreal-engine\/custom-component-instanced-spline-mesh"
         ],
         "duplicatedby": "hRzZjCBoI8s"
@@ -11372,7 +11916,7 @@
         "title": "Q&A: Add RTX?",
         "date": "2020-09-29",
         "topics": [
-            "technology\/graphics",
+            "technology\/graphics\/ray-tracing",
             "technology\/unreal-engine"
         ],
         "duplicatedby": "hRzZjCBoI8s"
@@ -12645,7 +13189,7 @@
         "title": "Q&A: DLSS one day?",
         "date": "2020-09-15",
         "topics": [
-            "technology\/graphics"
+            "technology\/graphics\/dlss"
         ],
         "duplicatedby": "hRzZjCBoI8s"
     },
@@ -13726,7 +14270,8 @@
         "title": "Q&A: DXR\/RTX\/DLSS ?",
         "date": "2020-09-01",
         "topics": [
-            "technology\/graphics"
+            "technology\/graphics\/dlss",
+            "technology\/graphics\/ray-tracing"
         ],
         "duplicatedby": "hRzZjCBoI8s"
     },
@@ -14933,7 +15478,8 @@
         "date": "2020-08-25",
         "topics": [
             "mods",
-            "mods\/official-mod-support"
+            "mods\/official-mod-support",
+            "satisfactory-updates\/modular-build"
         ],
         "duplicates": [
             "tc-CreativeOptimisticWalrusSwiftRage",
@@ -14945,8 +15491,8 @@
         "title": "Q&A: Plans for official Linux support?",
         "date": "2020-08-25",
         "topics": [
-            "satisfactory-updates\/release-builds",
-            "technology\/linux"
+            "technology\/linux",
+            "technology\/mac"
         ],
         "duplicates": [
             "tc-DiligentDeafMangoPogChamp"
@@ -15560,7 +16106,8 @@
         "date": "2020-08-25",
         "topics": [
             "features\/planned-features\/dedicated-servers",
-            "technology\/linux"
+            "technology\/linux",
+            "technology\/mac"
         ],
         "duplicates": [
             "tc-SeductiveInnocentFerretHeyGirl"
@@ -16884,6 +17431,7 @@
         "title": "Q&A: What about the building the game Modular?",
         "date": "2020-06-08",
         "topics": [
+            "satisfactory-updates\/modular-build",
             "satisfactory-updates\/release-builds"
         ],
         "suggested": [
@@ -18547,7 +19095,8 @@
         "title": "Q&A: Which one was Simon's favourite Simon Saga video?",
         "date": "2019-12-19",
         "topics": [
-            "coffee-stainers\/simon"
+            "coffee-stainers\/simon",
+            "coffee-stainers\/simon\/simon-saga"
         ]
     },
     "aOzSvX8iaYg": {
@@ -18772,7 +19321,7 @@
         "title": "Q&A: Are you adding support for Mac any time soon?",
         "date": "2019-03-09",
         "topics": [
-            "satisfactory-updates\/release-builds"
+            "technology\/mac"
         ],
         "duplicatedby": "eLjNJO4pUBA"
     },
@@ -19099,8 +19648,8 @@
         "title": "Q&A: Is Linux support planned in the future?",
         "date": "2019-03-09",
         "topics": [
-            "satisfactory-updates\/release-builds",
-            "technology\/linux"
+            "technology\/linux",
+            "technology\/mac"
         ],
         "suggested": [
             "3d5h-Okw-uU",
