@@ -676,5 +676,38 @@
     },
     "PLbjDnnBIxiEruD11x_g9qPkDYlsRkEYNz": {
         "mods\/smart": 1613034903
+    },
+    "PLbjDnnBIxiEoLg1lGISuIdkOC1u2PuiCe": {
+        "analytics": 1613567434,
+        "technology\/analytics": 1613576614
+    },
+    "PLbjDnnBIxiEqY1dlDDnwf4Fo9Z9l7YtM4": {
+        "dlss": 1613567434,
+        "technology\/graphics\/dlss": 1613576614
+    },
+    "PLbjDnnBIxiErPmwCcdEax-8TIvyvjdlm2": {
+        "mac": 1613567434,
+        "technology\/mac": 1613576831
+    },
+    "PLbjDnnBIxiErIs7tyigBsVwTUg4hsKvx1": {
+        "modular-build": 1613567434,
+        "satisfactory-updates\/modular-build": 1613576614
+    },
+    "PLbjDnnBIxiErp1LdzC2TRke-xZQJTc3m5": {
+        "power-storage": 1613567434,
+        "power-management\/power-storage": 1613576614,
+        "features\/power-management\/power-storage": 1613579210
+    },
+    "PLbjDnnBIxiEqd09Y91Qt4sfvmiIY_jN_J": {
+        "ray-tracing": 1613567434,
+        "technology\/graphics\/ray-tracing": 1613576614
+    },
+    "PLbjDnnBIxiEoJs6pgkkriityQb1BaPgnx": {
+        "simon-saga": 1613567434,
+        "coffee-stainers\/simon\/simon-saga": 1613576614
+    },
+    "PLbjDnnBIxiEo6DXBwcUjUqDH7Mqjx5zmM": {
+        "terrible-jokes": 1613567434,
+        "off-topic\/terrible-jokes": 1613576614
     }
 }
