@@ -517,8 +517,8 @@ usort($all_topic_ids, static function (
 
 	if ( ! isset($nested_a, $nested_b)) {
 		return strnatcasecmp(
-			$cache['playlists'][$a][1],
-			$cache['playlists'][$b][1]
+			$cache['playlists'][$a][1] ?? $a,
+			$cache['playlists'][$b][1] ?? $b
 		);
 	}
 
