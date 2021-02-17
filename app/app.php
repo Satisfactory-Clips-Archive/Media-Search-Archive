@@ -649,6 +649,21 @@ foreach ($all_video_ids as $video_id) {
 		}
 	);
 
+	usort(
+		$transcript_topic_strings,
+		static function (
+			string $a,
+			string $b
+		) use (
+			$playlist_topic_strings
+		) : int {
+			return strnatcasecmp(
+				$playlist_topic_strings[$a],
+				$playlist_topic_strings[$b],
+			);
+		}
+	);
+
 	$transcription_lines[] = (
 		'---' . "\n"
 		. sprintf(
