@@ -6,6 +6,20 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function array_filter;
+use const ARRAY_FILTER_USE_KEY;
+use function array_keys;
+use function array_map;
+use function array_values;
+use function dirname;
+use function file_get_contents;
+use function glob;
+use function in_array;
+use function is_string;
+use function json_decode;
+use function pathinfo;
+use const PATHINFO_FILENAME;
+use function realpath;
 use RuntimeException;
 
 $playlists = array_keys(array_filter(
@@ -30,7 +44,7 @@ $to_delete = array_values(array_filter(
 	static function (string $maybe) use ($playlists, $directory) : bool {
 		$maybe_directory = realpath(dirname($maybe));
 
-		return (
+		return
 			is_string($maybe_directory)
 			&& $maybe_directory === $directory
 			&& ! in_array(
@@ -38,7 +52,7 @@ $to_delete = array_values(array_filter(
 				$playlists,
 				true
 			)
-	 	);
+		;
 	}
 ));
 
