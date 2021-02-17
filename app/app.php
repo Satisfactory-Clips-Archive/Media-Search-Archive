@@ -560,6 +560,28 @@ foreach ($all_topic_ids as $topic_id) {
 	$playlist_topic_strings_reverse_lookup[$slug_string] = $topic_id;
 }
 
+$video_playlists = array_map(
+	static function (array $topic_ids) use ($playlist_topic_strings) : array {
+		usort(
+			$topic_ids,
+			static function (
+				string $a,
+				string $b
+			) use (
+				$playlist_topic_strings
+			) : int {
+				return strnatcasecmp(
+					$playlist_topic_strings[$a],
+					$playlist_topic_strings[$b],
+				);
+			}
+		);
+
+		return $topic_ids;
+	},
+	$video_playlists
+);
+
 file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_json, JSON_PRETTY_PRINT));
 
 $topic_slug_history = json_decode(
@@ -1481,6 +1503,21 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 			$playlist_id,
 			$topic_nesting[$basename],
 			false
+		);
+
+		usort(
+			$topic_children,
+			static function (
+				string $a,
+				string $b
+			) use (
+				$playlist_topic_strings
+			) : int {
+				return strnatcasecmp(
+					$playlist_topic_strings[$a],
+					$playlist_topic_strings[$b],
+				);
+			}
 		);
 
 		if (count($topic_children) > 0) {
