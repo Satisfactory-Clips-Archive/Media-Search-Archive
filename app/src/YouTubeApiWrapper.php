@@ -433,7 +433,7 @@ class YouTubeApiWrapper
 	private function service_playlists() : Google_Service_YouTube_Resource_Playlists
 	{
 		/** @var Google_Service_YouTube_Resource_Playlists */
-		return $this->service->playlistItems;
+		return $this->service->playlists;
 	}
 
 	private function service_playlistItems() : Google_Service_YouTube_Resource_PlaylistItems
