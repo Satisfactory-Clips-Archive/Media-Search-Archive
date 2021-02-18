@@ -15,3 +15,14 @@
 
 # packager videos
 * these need to be appropriate flagged for duplicates, replaces, & see alsos
+
+# game modes
+* add sub-topic for creative
+* add sub-topic for peaceful
+* add sub-topic for battle royale
+
+# ladder videos
+* these need to be appropriately flagged for duplicates, replaces, & see alsos
+
+# tc-AnnoyingSavageParrotWoofer
+* add the valve announcement in the fluids update here
