@@ -6,6 +6,7 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function array_diff;
 use function array_filter;
 use const ARRAY_FILTER_USE_BOTH;
 use function array_intersect;
@@ -20,6 +21,7 @@ use function array_values;
 use function count;
 use function current;
 use function date;
+use function end;
 use const FILE_APPEND;
 use function file_get_contents;
 use function file_put_contents;
@@ -902,8 +904,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 	if ($faq_date !== $last_faq_date) {
 		$last_faq_date = $faq_date;
 
-		echo
-			'## [',
+		echo '## [',
 					date(
 						'F jS, Y',
 						(int) strtotime(
@@ -944,7 +945,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 	;
 
 	if (count($transcription) > 0) {
-		echo "\n", '<details>', "\n" ;
+		echo "\n", '<details>', "\n";
 		echo "\n", '<summary>A transcript is available</summary>', "\n";
 		echo "\n", markdownify_transcription_lines(...$transcription), "\n";
 		echo "\n", '</details>', "\n";
@@ -975,8 +976,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		}
 	}
 
-	echo
-		"\n",
+	echo "\n",
 		'<details>',
 		"\n",
 		'<summary>',
