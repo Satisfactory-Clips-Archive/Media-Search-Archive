@@ -62,7 +62,8 @@ $filtering = new Filtering();
  *	replacedby?:string,
  *	duplicatedby?:string,
  *	seealso?:list<string>,
- *	suggested?:list<string>
+ *	suggested?:list<string>,
+ *	legacyalts?:list<string>
  * }>
  */
 $existing = array_filter(
@@ -125,6 +126,13 @@ $existing = array_filter(
 			)
 			&& ( ! isset($a['replacedby']) || is_string($a['replacedby']))
 			&& ( ! isset($a['duplicatedby']) || is_string($a['duplicatedby']))
+			&& (
+				! isset($a['legacyalts'])
+				|| $a['legacyalts'] === array_values(array_filter(
+					(array) $a['legacyalts'],
+					'is_string'
+				))
+			)
 		;
 	},
 	ARRAY_FILTER_USE_BOTH
@@ -474,9 +482,10 @@ foreach (array_keys($existing) as $video_id) {
 
 	$duplicates[$video_id] = array_merge(
 		$duplicates[$video_id],
-		$existing[$video_id]['duplicates'],
-		$cache['legacyAlts'][$video_id] ?? []
+		$existing[$video_id]['duplicates']
 	);
+
+	$existing[$video_id]['legacyalts'] = $cache['legacyAlts'][$video_id] ?? [];
 
 	foreach ($existing[$video_id]['seealso'] as $seealso) {
 		if ( ! in_array($seealso, $seealsos[$video_id], true)) {
@@ -703,12 +712,20 @@ foreach ($existing as $video_id => $data) {
 		}
 	}
 
+	$existing[$video_id]['duplicates'] = $data['duplicates'] = array_filter(
+		$data['duplicates'],
+		static function (string $maybe) use ($data) : bool {
+			return ! in_array($maybe, $data['legacyalts'], true);
+		}
+	);
+
 	foreach (
 		[
 			'duplicates',
 			'replaces',
 			'seealso',
 			'suggested',
+			'legacyalts',
 		] as $required
 	) {
 		if ([] === $data[$required]) {

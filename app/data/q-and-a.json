@@ -3262,7 +3262,6 @@
             "mf-PgMUVTiI",
             "mvSWBd42JYM",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "Xdrr6IazPTg",
             "YMWU_qSRI1E"
@@ -3526,7 +3525,6 @@
             "mvSWBd42JYM",
             "PuV7iLqmGBU",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "YMWU_qSRI1E"
         ]
@@ -3695,7 +3693,6 @@
             "mvSWBd42JYM",
             "PuV7iLqmGBU",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "Xdrr6IazPTg",
             "YMWU_qSRI1E"
@@ -3839,7 +3836,6 @@
             "mf-PgMUVTiI",
             "mvSWBd42JYM",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "Xdrr6IazPTg",
             "YMWU_qSRI1E"
@@ -5579,7 +5575,6 @@
             "mvSWBd42JYM",
             "PuV7iLqmGBU",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w"
         ]
     },
@@ -6215,7 +6210,6 @@
             "mvSWBd42JYM",
             "PuV7iLqmGBU",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "Xdrr6IazPTg",
             "YMWU_qSRI1E"
@@ -16522,21 +16516,6 @@
         "topics": [
             "features\/multiplayer"
         ],
-        "suggested": [
-            "2zs8wqPKwFE",
-            "79CHl9qFo90",
-            "bfXUQNNIPRY",
-            "btJHOT-HkO0",
-            "dc6IuP5oFeA",
-            "JpSV5eDGEJw",
-            "mf-PgMUVTiI",
-            "mvSWBd42JYM",
-            "PuV7iLqmGBU",
-            "qOV_ydeQ07E",
-            "X6OALg4vc7w",
-            "Xdrr6IazPTg",
-            "YMWU_qSRI1E"
-        ],
         "duplicatedby": "Fk_wKTIx5Z4"
     },
     "czUkb31M3co": {
@@ -16616,7 +16595,6 @@
             "mvSWBd42JYM",
             "PuV7iLqmGBU",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "YMWU_qSRI1E"
         ],
@@ -16722,7 +16700,6 @@
             "mvSWBd42JYM",
             "PuV7iLqmGBU",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "Xdrr6IazPTg"
         ]
@@ -16919,7 +16896,6 @@
             "mf-PgMUVTiI",
             "mvSWBd42JYM",
             "PuV7iLqmGBU",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "Xdrr6IazPTg"
         ],
@@ -16948,7 +16924,7 @@
         "topics": [
             "mods\/mods-vs-features"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SparklingFilthyKathyBleedPurple"
         ],
         "duplicatedby": "VUe1w6nSdko"
@@ -16970,7 +16946,7 @@
             "features\/unplanned-features\/aerial-travel",
             "technology\/graphics"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-AbstruseFrailKathyMrDestructoid",
             "tc-PoliteEnergeticGrouseHassaanChop",
             "tc-PowerfulFriendlyKoalaANELE",
@@ -16985,13 +16961,13 @@
             "features\/transportation\/trains",
             "features\/unplanned-features\/terraforming"
         ],
-        "duplicates": [
-            "tc-GleamingHyperBottleRickroll"
-        ],
         "suggested": [
             "4nzTdrIc2hg",
             "LIi_14XOp60",
             "_fE2dbyaJZg"
+        ],
+        "legacyalts": [
+            "tc-GleamingHyperBottleRickroll"
         ]
     },
     "gj-NgdVYap8": {
@@ -17000,7 +16976,7 @@
         "topics": [
             "features\/power-management"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-FancyPiercingLardOneHand"
         ]
     },
@@ -17014,7 +16990,7 @@
             "satisfactory-updates\/released\/satisfactory-fluids-update",
             "technology\/user-interface"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-AltruisticSuperBobaBudBlast"
         ]
     },
@@ -17032,7 +17008,7 @@
         "topics": [
             "features\/power-management"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SassyLightSkirretOSsloth",
             "tc-SmokyBreakableAyeayeEagleEye"
         ]
@@ -17043,7 +17019,7 @@
         "topics": [
             "features\/transportation\/vehicles"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-FuriousRockyDuckPRChase"
         ]
     },
@@ -17053,7 +17029,7 @@
         "topics": [
             "features\/accessibility\/arachnophobia-mode"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-NeighborlyEnticingMarrowResidentSleeper"
         ]
     },
@@ -17065,16 +17041,16 @@
             "environment\/resources\/sam-ore",
             "features\/multiplayer"
         ],
-        "duplicates": [
-            "tc-ConcernedStylishTomatoBabyRage",
-            "tc-PoorAlluringHerdRitzMitz",
-            "tc-PrettyBelovedTermiteOptimizePrime"
-        ],
         "suggested": [
             "bmRdzV3-wJI",
             "ccmgnLh1oO0",
             "f0Z9VIAK5Iw",
             "tc-InventiveBillowingEggPMSTwin"
+        ],
+        "legacyalts": [
+            "tc-ConcernedStylishTomatoBabyRage",
+            "tc-PoorAlluringHerdRitzMitz",
+            "tc-PrettyBelovedTermiteOptimizePrime"
         ]
     },
     "dfHUHMQ9JQE": {
@@ -17083,7 +17059,7 @@
         "topics": [
             "coffee-stainers"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SeductiveImpartialCobblerOptimizePrime"
         ]
     },
@@ -17099,7 +17075,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/speculative\/satisfactory-update-5"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-BoredThankfulPistachioJKanStyle",
             "tc-CooperativeCrackyAyeayeTheTarFu",
             "tc-CrispySaltyOcelotOSfrog",
@@ -17113,7 +17089,7 @@
             "environment\/plants",
             "technology\/graphics"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-HandsomeAnnoyingLEDPraiseIt"
         ]
     },
@@ -17122,10 +17098,6 @@
         "date": "2020-08-25",
         "topics": [
             "features\/multiplayer"
-        ],
-        "duplicates": [
-            "tc-HomelyHyperGnatDoritosChip",
-            "tc-SpinelessTsundereBurritoDxAbomb"
         ],
         "suggested": [
             "2zs8wqPKwFE",
@@ -17138,10 +17110,13 @@
             "mvSWBd42JYM",
             "PuV7iLqmGBU",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "Xdrr6IazPTg",
             "YMWU_qSRI1E"
+        ],
+        "legacyalts": [
+            "tc-HomelyHyperGnatDoritosChip",
+            "tc-SpinelessTsundereBurritoDxAbomb"
         ]
     },
     "EGl4PxUS0J8": {
@@ -17150,7 +17125,7 @@
         "topics": [
             "features\/save-system\/autosave"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CarefulBashfulHyenaWOOP"
         ],
         "duplicatedby": "UFWTP8Nu-MI"
@@ -17161,7 +17136,7 @@
         "topics": [
             "features\/unplanned-features\/mass-building"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CrunchyGlamorousQuailSwiftRage",
             "tc-FreezingCuriousHeronDatBoi",
             "tc-LuckyNastyLionDogFace"
@@ -17175,12 +17150,12 @@
             "features\/buildables\/conveyor-belts",
             "mods\/ficsit-networks"
         ],
-        "duplicates": [
-            "tc-BovineConsiderateSangMVGame",
-            "tc-GrossPoisedAardvarkChocolateRain"
-        ],
         "suggested": [
             "9tdYBCwd5no"
+        ],
+        "legacyalts": [
+            "tc-BovineConsiderateSangMVGame",
+            "tc-GrossPoisedAardvarkChocolateRain"
         ]
     },
     "PVf-pBNYO_M": {
@@ -17192,7 +17167,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "technology\/unreal-engine"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CarelessDepressedShingleHassanChop",
             "tc-LuckyMushyShingleTBTacoRight",
             "tc-SincereProductiveScallionLeeroyJenkins"
@@ -17205,7 +17180,7 @@
         "topics": [
             "features\/buildings\/the-hub"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ShyDifferentOcelotRalpherZ"
         ]
     },
@@ -17217,7 +17192,7 @@
             "satisfactory-updates\/released\/satisfactory-fluids-update",
             "technology\/user-interface"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ShakingBlushingLampNerfRedBlaster"
         ]
     },
@@ -17229,9 +17204,6 @@
             "features\/buildings\/space-elevator\/food-court",
             "features\/power-management\/nuclear-energy\/nuclear-waste"
         ],
-        "duplicates": [
-            "tc-GoldenTenuousLemurDAESuppy"
-        ],
         "suggested": [
             "aSiqmneWXcg",
             "fbCEIVUNDe0",
@@ -17239,13 +17211,16 @@
             "SPaDSuHfhGk",
             "YNogQuanQlc",
             "yt-W1E6EWrAsII,421.68,434.4"
+        ],
+        "legacyalts": [
+            "tc-GoldenTenuousLemurDAESuppy"
         ]
     },
     "LSc7QIlaGg4": {
         "title": "Q&A: Can you make it free for one time only?",
         "date": "2020-08-25",
         "topics": [],
-        "duplicates": [
+        "legacyalts": [
             "tc-AlertPleasantReindeerPupper"
         ]
     },
@@ -17257,7 +17232,7 @@
             "features\/transportation\/vehicles",
             "technology\/physics"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-AmazonianAnnoyingSushiUncleNox",
             "tc-DistinctConcernedPlumageWow",
             "tc-OriginalMuddyDogePeteZaroll"
@@ -17270,7 +17245,7 @@
             "features\/buildings",
             "technology\/user-interface"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SlickEsteemedTriangleVoteNay"
         ]
     },
@@ -17281,9 +17256,6 @@
             "features\/buildings\/space-elevator",
             "features\/buildings\/space-elevator\/food-court"
         ],
-        "duplicates": [
-            "tc-ExuberantDeadDinosaurBatChest"
-        ],
         "suggested": [
             "fbCEIVUNDe0",
             "MmiaI_vhyI0",
@@ -17291,6 +17263,9 @@
             "SPaDSuHfhGk",
             "YNogQuanQlc",
             "yt-W1E6EWrAsII,421.68,434.4"
+        ],
+        "legacyalts": [
+            "tc-ExuberantDeadDinosaurBatChest"
         ]
     },
     "mtE-rHjMsn4": {
@@ -17301,13 +17276,13 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-update-3"
         ],
-        "duplicates": [
-            "tc-AgitatedAltruisticAnacondaStinkyCheese"
-        ],
         "suggested": [
             "-3JqJE_94g0",
             "4BbgGgUb1rA",
             "PEFai6HyxTs"
+        ],
+        "legacyalts": [
+            "tc-AgitatedAltruisticAnacondaStinkyCheese"
         ]
     },
     "hRe0QvJDjsg": {
@@ -17318,7 +17293,7 @@
             "environment\/resources\/somersloop",
             "story-lore"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CulturedEnthusiasticNoodleWTRuck"
         ]
     },
@@ -17340,7 +17315,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-update-3"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-AgitatedProtectiveBaguetteRiPepperonis",
             "tc-NaiveProudZebraWOOP"
         ]
@@ -17349,7 +17324,7 @@
         "title": "Q&A: Do you have plans for elevators usable for players?",
         "date": "2020-08-25",
         "topics": [],
-        "duplicates": [
+        "legacyalts": [
             "tc-DullSmokyWaffleDoggo"
         ],
         "duplicatedby": "VUe1w6nSdko"
@@ -17360,7 +17335,7 @@
         "topics": [
             "features\/buildings\/refinery"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-LongOpenFlamingoSMOrc"
         ]
     },
@@ -17371,7 +17346,7 @@
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "satisfactory-updates\/released\/satisfactory-update-3"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-EmpathicExuberantWeaselAllenHuhu"
         ]
     },
@@ -17381,7 +17356,7 @@
         "topics": [
             "features\/unplanned-features\/mass-building"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-UglyRacyCaribouYouWHY"
         ],
         "duplicatedby": "vaYxvmOkUQY"
@@ -17394,7 +17369,7 @@
             "features\/power-management\/nuclear-energy",
             "features\/tiers"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CoweringHotZebraTheTarFu",
             "tc-MildNurturingWoodcockYouWHY"
         ]
@@ -17410,7 +17385,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-fluids-update"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-AmazingEagerGorillaHeyGuys",
             "tc-DeadPrettySaladMoreCowbell",
             "tc-GoodSaltyPepperoniPunchTrees",
@@ -17434,7 +17409,7 @@
             "features\/gases",
             "features\/transportation\/hyper-tubes"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CrowdedRespectfulNostrilNotATK"
         ]
     },
@@ -17444,7 +17419,7 @@
         "topics": [
             "features\/buildings"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-EnergeticInexpensiveDillCurseLit"
         ]
     },
@@ -17456,7 +17431,7 @@
             "environment\/plants",
             "environment\/world-map"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-VibrantExpensiveRaisinStinkyCheese"
         ]
     },
@@ -17470,7 +17445,7 @@
             "features\/transportation\/hyper-tubes",
             "technology\/user-interface"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ElegantNaivePorpoiseTF2John",
             "tc-KawaiiOddGrasshopperMrDestructoid"
         ]
@@ -17483,7 +17458,7 @@
             "features\/unplanned-features\/base-defense",
             "features\/unplanned-features\/mass-building"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-RacyHilariousMangoStinkyCheese"
         ],
         "duplicatedby": "tkwKMTaTpV8"
@@ -17495,13 +17470,13 @@
             "features\/buildables\/foundations",
             "technology\/user-interface"
         ],
-        "duplicates": [
-            "tc-GeniusConcernedEggDogFace"
-        ],
         "suggested": [
             "DTZz5jdnn_s",
             "SYEIsZ6KVgU",
             "Xi9S_sVklB8"
+        ],
+        "legacyalts": [
+            "tc-GeniusConcernedEggDogFace"
         ]
     },
     "QC5TQ6iL8sg": {
@@ -17519,7 +17494,7 @@
         "topics": [
             "features\/unplanned-features\/aerial-travel"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SteamyViscousGoshawkDancingBaby"
         ]
     },
@@ -17530,7 +17505,7 @@
             "environment\/world-map",
             "features\/unplanned-features\/procedural-generation"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ProtectiveWonderfulFrogVoteYea"
         ],
         "duplicatedby": "FkM6JZIZrqg"
@@ -17543,7 +17518,7 @@
             "features\/power-management\/nuclear-energy",
             "features\/power-management\/nuclear-energy\/nuclear-waste"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ConfidentImpossibleShingleTBTacoLeft",
             "tc-SnappyExpensiveDootMVGame"
         ]
@@ -17555,7 +17530,7 @@
             "features\/transportation\/vehicles",
             "features\/transportation\/vehicles\/truck"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-EasyEnticingBearM4xHeh"
         ],
         "duplicatedby": "33wha_duTqs"
@@ -17566,7 +17541,7 @@
         "topics": [
             "features\/unplanned-features\/aerial-travel"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-TrappedFaintBulgogiBigBrother"
         ],
         "duplicatedby": "kd3UMt4pESk"
@@ -17577,7 +17552,7 @@
         "topics": [
             "features\/save-system\/autosave"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ThirstyTubularHamMikeHogu"
         ],
         "duplicatedby": "UFWTP8Nu-MI"
@@ -17596,7 +17571,7 @@
             "features\/multiplayer",
             "features\/possible-features\/game-modes"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SavorySlickWombatOSkomodo"
         ]
     },
@@ -17607,7 +17582,7 @@
             "features\/buildings\/awesome-sink",
             "features\/fluids"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ArtisticCoweringTortoiseRitzMitz"
         ],
         "duplicatedby": "SskXA-lxaCI"
@@ -17619,7 +17594,7 @@
             "environment\/resources\/sam-ore",
             "story-lore"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-GeniusInventiveMomPRChase"
         ]
     },
@@ -17653,7 +17628,7 @@
         "topics": [
             "features\/possible-features\/character-customisation"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CharmingRespectfulFlyFUNgineer"
         ],
         "duplicatedby": "x55_Zt2OLQ4"
@@ -17665,7 +17640,7 @@
             "environment\/world-map",
             "features\/possible-features\/dlc"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ArtisticAthleticCroissantRalpherZ"
         ],
         "duplicatedby": "O9cRWaKhSRo"
@@ -17678,9 +17653,6 @@
             "technology\/graphics",
             "technology\/linux"
         ],
-        "duplicates": [
-            "tc-UglyAwkwardCiderSSSsss"
-        ],
         "suggested": [
             "4f7KWwnXhoU",
             "5a34CUK1K3k",
@@ -17689,6 +17661,9 @@
             "Cnw_Ow3K29I",
             "v5Niam8EYts",
             "znK3Ne7dLUc"
+        ],
+        "legacyalts": [
+            "tc-UglyAwkwardCiderSSSsss"
         ]
     },
     "LcWR0d7elvs": {
@@ -17705,7 +17680,7 @@
         "topics": [
             "features\/transportation\/vehicles"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SpeedyAssiduousCrabKevinTurtle"
         ]
     },
@@ -17716,7 +17691,7 @@
             "features\/transportation\/hyper-tubes",
             "mods\/mods-vs-features"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CrypticUnusualPandaArsonNoSexy"
         ]
     },
@@ -17726,7 +17701,7 @@
         "topics": [
             "features\/accessibility\/arachnophobia-mode"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-KathishConcernedWalrusRedCoat"
         ]
     },
@@ -17738,15 +17713,15 @@
             "environment\/pollution",
             "features\/possible-features\/weather-systems"
         ],
-        "duplicates": [
-            "tc-WanderingLitigiousDurianRalpherZ"
-        ],
         "suggested": [
             "AXNhZsAGM1M",
             "EI4HJKvO-OU",
             "G0vwHL092w4",
             "wKU558LFiqI",
             "yt-iFAy1NZUOGU,60.36,62.6"
+        ],
+        "legacyalts": [
+            "tc-WanderingLitigiousDurianRalpherZ"
         ],
         "duplicatedby": "bjXv7xwwIIA"
     },
@@ -17759,7 +17734,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/speculative\/satisfactory-update-5"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-WonderfulNurturingYamYouWHY"
         ]
     },
@@ -17777,7 +17752,7 @@
             "environment\/world-map",
             "mods\/mods-vs-features"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ApatheticExpensiveDiscPeoplesChamp",
             "tc-WiseToughOstrichYouWHY"
         ],
@@ -17791,7 +17766,7 @@
             "mods\/official-mod-support",
             "satisfactory-updates\/modular-build"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CreativeOptimisticWalrusSwiftRage",
             "tc-HumbleRenownedTofuLitty",
             "tc-OnerousDeterminedMoonRlyTho"
@@ -17804,9 +17779,6 @@
             "technology\/linux",
             "technology\/mac"
         ],
-        "duplicates": [
-            "tc-DiligentDeafMangoPogChamp"
-        ],
         "suggested": [
             "3d5h-Okw-uU",
             "ADBTXxQnDL4",
@@ -17814,6 +17786,9 @@
             "rmduvSAc3P4",
             "v2LpW-ZU6Sc",
             "VTSAUKoarIw"
+        ],
+        "legacyalts": [
+            "tc-DiligentDeafMangoPogChamp"
         ],
         "duplicatedby": "jGFUMhD3WGg"
     },
@@ -17824,7 +17799,7 @@
             "features\/transportation\/vehicles",
             "technology\/graphics"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-FrailSuaveBeanImGlitch",
             "tc-PeacefulInventiveDogWOOP"
         ],
@@ -17837,7 +17812,7 @@
             "environment\/creatures\/crab-boss",
             "environment\/creatures\/space-giraffe-tick-penguin-whale-thing"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-WanderingGloriousWallabyPunchTrees"
         ]
     },
@@ -17848,7 +17823,7 @@
             "environment\/resources\/sam-ore",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ArtisticGlutenFreeSpindleDxAbomb"
         ],
         "duplicatedby": "f0Z9VIAK5Iw"
@@ -17860,11 +17835,11 @@
             "environment\/resources",
             "features\/buildables\/storage-containers"
         ],
-        "duplicates": [
-            "tc-ArbitraryIronicClipsdadPicoMause"
-        ],
         "seealso": [
             "DexDGVIYihI"
+        ],
+        "legacyalts": [
+            "tc-ArbitraryIronicClipsdadPicoMause"
         ]
     },
     "_H3wk4VfjIY": {
@@ -17873,7 +17848,7 @@
         "topics": [
             "features\/power-management"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SoftTangentialGaurJonCarnage"
         ]
     },
@@ -17884,9 +17859,6 @@
             "environment",
             "features\/power-management\/green-energy"
         ],
-        "duplicates": [
-            "tc-DeliciousStylishOctopusTBTacoRight"
-        ],
         "suggested": [
             "9eBugtyk8U0",
             "bvMAe2VTC5A",
@@ -17894,6 +17866,9 @@
             "isSumSw8bV4",
             "T2MEOzplmSQ",
             "_Uf5e-J9TwA"
+        ],
+        "legacyalts": [
+            "tc-DeliciousStylishOctopusTBTacoRight"
         ]
     },
     "cwWUYRciIoc": {
@@ -17905,7 +17880,7 @@
             "satisfactory-updates\/released\/satisfactory-update-3",
             "satisfactory-updates\/speculative\/satisfactory-update-5"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-AlertFancyAxeFUNgineer",
             "tc-CrunchyGlutenFreeNuggetsMingLee",
             "tc-RudeSpoopyAlligatorVoteYea"
@@ -17918,7 +17893,7 @@
             "features\/pioneer",
             "technology\/graphics"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-LivelyHeartlessRutabagaWholeWheat"
         ]
     },
@@ -17928,7 +17903,7 @@
         "topics": [
             "technology\/graphics"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-PoliteTallLocustStoneLightning"
         ]
     },
@@ -17938,7 +17913,7 @@
         "topics": [
             "features\/buildings\/refinery"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-FilthyPerfectDragonSwiftRage"
         ]
     },
@@ -17950,7 +17925,7 @@
             "features\/save-system",
             "technology\/graphics"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-BusyHandsomeSmoothiePartyTime"
         ],
         "duplicatedby": "IFxnvuYEVtk"
@@ -17962,13 +17937,13 @@
             "features\/buildables\/foundations",
             "technology\/user-interface"
         ],
-        "duplicates": [
-            "tc-GoodAnimatedSproutPipeHype"
-        ],
         "suggested": [
             "AgdOGd32U3w",
             "SYEIsZ6KVgU",
             "Xi9S_sVklB8"
+        ],
+        "legacyalts": [
+            "tc-GoodAnimatedSproutPipeHype"
         ]
     },
     "v2qV7Kfbcac": {
@@ -17977,7 +17952,7 @@
         "topics": [
             "features\/pioneer"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-InexpensiveChillyWheelItsBoshyTime"
         ]
     },
@@ -17996,7 +17971,7 @@
             "features\/planned-features\/signs",
             "features\/transportation\/hyper-tubes"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SpinelessUnsightlyVanillaKeyboardCat"
         ],
         "duplicatedby": "-t832FeMogU"
@@ -18007,7 +17982,7 @@
         "topics": [
             "features\/transportation\/vehicles\/truck"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-FurtiveHealthyRhinocerosJonCarnage"
         ]
     },
@@ -18021,7 +17996,7 @@
             "features\/buildings\/resource-well-pressurizer",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CourteousSmellyNewtTTours"
         ],
         "replacedby": "B_pY-VYMMOE"
@@ -18036,7 +18011,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/state-of-dev"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-EndearingBlitheTruffleJebaited",
             "tc-WealthyStormySnakeOptimizePrime"
         ]
@@ -18048,7 +18023,7 @@
             "features\/fluids",
             "features\/transportation\/vehicles\/truck"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-FunSparklyFishRedCoat",
             "tc-TenderSuspiciousSashimiEleGiggle"
         ]
@@ -18059,7 +18034,7 @@
         "topics": [
             "features\/unplanned-features\/terraforming"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CourageousTardyLarkShazBotstix"
         ],
         "duplicatedby": "_fE2dbyaJZg"
@@ -18079,7 +18054,7 @@
             "features\/multiplayer",
             "features\/transportation\/vehicles"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-PlayfulConfidentRabbitCurseLit"
         ]
     },
@@ -18089,11 +18064,11 @@
         "topics": [
             "technology\/user-interface"
         ],
-        "duplicates": [
-            "tc-OnerousGlamorousMoonAllenHuhu"
-        ],
         "suggested": [
             "0KLJ2_1P_uk"
+        ],
+        "legacyalts": [
+            "tc-OnerousGlamorousMoonAllenHuhu"
         ]
     },
     "WjVP7rOR38M": {
@@ -18102,7 +18077,7 @@
         "topics": [
             "features\/transportation\/vehicles\/truck"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SarcasticNeighborlyPigTebowing"
         ]
     },
@@ -18113,9 +18088,6 @@
             "coffee-stainers",
             "features\/transportation\/trains\/train-signals",
             "satisfactory-updates\/pending\/satisfactory-1-0"
-        ],
-        "duplicates": [
-            "tc-OriginalAntsySmoothieStoneLightning"
         ],
         "suggested": [
             "0Dq3fFtmhmw",
@@ -18134,6 +18106,9 @@
             "tc-SaltyJazzyPasta4Head",
             "TjSMwjueGc8",
             "V-OVvjoUAmg"
+        ],
+        "legacyalts": [
+            "tc-OriginalAntsySmoothieStoneLightning"
         ]
     },
     "pKZc4ciFu6Q": {
@@ -18142,7 +18117,7 @@
         "topics": [
             "environment\/biomes\/unplanned-biomes\/underwater"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-HonorableCautiousDonutStoneLightning"
         ],
         "duplicatedby": "loc82lE_XK4"
@@ -18153,7 +18128,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-GleamingCheerfulWatercressRaccAttack"
         ]
     },
@@ -18163,7 +18138,7 @@
         "topics": [
             "off-topic"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-AttractiveFrailRaisinKAPOW"
         ]
     },
@@ -18173,7 +18148,7 @@
         "topics": [
             "technology\/graphics"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-WealthyPunchyAxePeoplesChamp"
         ]
     },
@@ -18184,7 +18159,7 @@
             "features\/buildings\/water-extractor",
             "technology\/user-interface"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-ExuberantAmorphousCarrotNononoCat"
         ]
     },
@@ -18194,7 +18169,7 @@
         "topics": [
             "features\/transportation\/vehicles"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-WildHonorableCakeGrammarKing"
         ]
     },
@@ -18212,7 +18187,7 @@
         "topics": [
             "features\/power-management"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-FrozenVivaciousLaptopGivePLZ"
         ]
     },
@@ -18222,11 +18197,11 @@
         "topics": [
             "technology\/user-interface"
         ],
-        "duplicates": [
-            "tc-EntertainingTenuousCasettePeteZaroll"
-        ],
         "suggested": [
             "yvrH5XwPi4k"
+        ],
+        "legacyalts": [
+            "tc-EntertainingTenuousCasettePeteZaroll"
         ]
     },
     "fufH5ltdn7E": {
@@ -18238,7 +18213,7 @@
             "features\/fluids\/pipes",
             "technology\/user-interface"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CrepuscularEnergeticPartridgePanicVis",
             "tc-SparklingGiftedDumplingsSquadGoals"
         ],
@@ -18251,9 +18226,6 @@
             "coffee-stainers\/mark",
             "features\/power-management\/green-energy"
         ],
-        "duplicates": [
-            "tc-TriangularColdShingleSquadGoals"
-        ],
         "suggested": [
             "9eBugtyk8U0",
             "F212AWqzBVI",
@@ -18261,6 +18233,9 @@
             "T2MEOzplmSQ",
             "_IJsp-Fy1zw",
             "_Uf5e-J9TwA"
+        ],
+        "legacyalts": [
+            "tc-TriangularColdShingleSquadGoals"
         ]
     },
     "mL4yeGMg3ms": {
@@ -18270,7 +18245,7 @@
             "features\/buildables\/jump-pads",
             "features\/transportation\/vehicles"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SuperHappyEmuOMGScoots"
         ]
     },
@@ -18280,7 +18255,7 @@
         "topics": [
             "off-topic"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-AdventurousUninterestedBasenji4Head"
         ]
     },
@@ -18292,7 +18267,7 @@
             "features\/tiers\/tier-8",
             "features\/tiers\/tier-9"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-FrigidWiseSnakeOSfrog",
             "tc-ThoughtfulDepressedAlfalfaOSfrog"
         ]
@@ -18305,9 +18280,6 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-update-3",
             "satisfactory-updates\/speculative\/satisfactory-update-5"
-        ],
-        "duplicates": [
-            "tc-BlueMildLaptopHassaanChop"
         ],
         "suggested": [
             "1NTKmQqoxNs",
@@ -18344,6 +18316,9 @@
             "yqYVuPOQIWc",
             "YyHvsUgbSGw",
             "Z-GAgR2VYXk"
+        ],
+        "legacyalts": [
+            "tc-BlueMildLaptopHassaanChop"
         ]
     },
     "rJXYNXfUQCI": {
@@ -18360,9 +18335,6 @@
             "features\/multiplayer",
             "features\/transportation\/trains"
         ],
-        "duplicates": [
-            "tc-LightAcceptableCheesePermaSmug"
-        ],
         "suggested": [
             "2zs8wqPKwFE",
             "79CHl9qFo90",
@@ -18374,10 +18346,12 @@
             "mvSWBd42JYM",
             "PuV7iLqmGBU",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "Xdrr6IazPTg",
             "YMWU_qSRI1E"
+        ],
+        "legacyalts": [
+            "tc-LightAcceptableCheesePermaSmug"
         ]
     },
     "I59oaCtgopI": {
@@ -18387,9 +18361,6 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-fluids-update",
             "technology\/unreal-engine"
-        ],
-        "duplicates": [
-            "tc-BlitheKitschySnoodTwitchRaid"
         ],
         "suggested": [
             "1NTKmQqoxNs",
@@ -18426,6 +18397,9 @@
             "yqYVuPOQIWc",
             "YyHvsUgbSGw",
             "Z-GAgR2VYXk"
+        ],
+        "legacyalts": [
+            "tc-BlitheKitschySnoodTwitchRaid"
         ]
     },
     "xFZfkjY3J0c": {
@@ -18435,11 +18409,11 @@
             "features\/power-management\/geothermal-energy",
             "technology\/user-interface"
         ],
-        "duplicates": [
-            "tc-WanderingBashfulGoatTBCheesePull"
-        ],
         "suggested": [
             "MmCfcNv8F8o"
+        ],
+        "legacyalts": [
+            "tc-WanderingBashfulGoatTBCheesePull"
         ],
         "duplicatedby": "WTfWu44SQ1k"
     },
@@ -18450,7 +18424,7 @@
             "features\/power-management\/green-energy",
             "story-lore"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CleverPluckyOctopusRedCoat"
         ],
         "duplicatedby": "_Uf5e-J9TwA"
@@ -18462,7 +18436,7 @@
             "environment\/world-map",
             "features\/equipment"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-HeartlessAntsyMelonCharlieBitMe"
         ]
     },
@@ -18476,7 +18450,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-update-3"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-BrainySecretiveSquidChefFrank",
             "tc-CharmingObservantLardSMOrc",
             "tc-EnjoyableCrazyVanillaStinkyCheese",
@@ -18492,7 +18466,7 @@
             "features\/transportation\/hyper-tubes",
             "technology\/graphics"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-FairCallousStingrayHeyGuys"
         ]
     },
@@ -18504,9 +18478,6 @@
             "technology\/linux",
             "technology\/mac"
         ],
-        "duplicates": [
-            "tc-SeductiveInnocentFerretHeyGirl"
-        ],
         "suggested": [
             "5a34CUK1K3k",
             "071RPMJfFJk",
@@ -18514,6 +18485,9 @@
             "Cnw_Ow3K29I",
             "ITkosdWcGbA",
             "znK3Ne7dLUc"
+        ],
+        "legacyalts": [
+            "tc-SeductiveInnocentFerretHeyGirl"
         ],
         "duplicatedby": "v5Niam8EYts"
     },
@@ -18524,7 +18498,7 @@
             "features\/gases",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-SpinelessSneakySalsifyNerfRedBlaster"
         ]
     },
@@ -18537,7 +18511,7 @@
             "features\/buildables\/conveyor-belts",
             "features\/buildables\/walls"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-RespectfulGiftedStaplePicoMause"
         ]
     },
@@ -18548,7 +18522,7 @@
             "features\/planned-features\/lights",
             "mods\/mods-vs-features"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-AbnegateEndearingBottleKlappa",
             "tc-FunOilyWolverineCorgiDerp",
             "tc-NeighborlyCharmingBasenjiRlyTho"
@@ -18562,7 +18536,7 @@
             "satisfactory-updates\/release-builds",
             "technology\/unreal-engine"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-FrigidFragileCucumberOneHand",
             "tc-SquareLovelyFriesBudBlast",
             "tc-TemperedEnchantingOrangeTBCheesePull",
@@ -18576,7 +18550,7 @@
         "topics": [
             "story-lore"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-TsundereOutstandingNuggetsFUNgineer"
         ]
     },
@@ -18586,7 +18560,7 @@
         "topics": [
             "soundtrack"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-UgliestArbitraryOwlDatBoi"
         ],
         "duplicatedby": "3Xf0xozi8zc"
@@ -18597,7 +18571,7 @@
         "topics": [
             "features\/buildings\/space-elevator"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-BusyPowerfulWombatSoonerLater"
         ]
     },
@@ -18610,7 +18584,7 @@
             "story-lore\/characters\/caterina-parks",
             "story-lore\/characters\/steve"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-DarlingPoisedPotCopyThis"
         ]
     },
@@ -18622,7 +18596,7 @@
             "features\/buildings\/awesome-store",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-PerfectNurturingTrollRiPepperonis"
         ]
     },
@@ -18635,7 +18609,7 @@
             "off-topic\/sanctum",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-CharmingHeadstrongAsparagusBCouch"
         ],
         "duplicatedby": "W2O4gfNYj9s"
@@ -18646,12 +18620,12 @@
         "topics": [
             "features\/planned-features\/dedicated-servers"
         ],
-        "duplicates": [
-            "tc-ShinyFunnyJellyfishSMOrc"
-        ],
         "suggested": [
             "PD79jEZuOAU",
             "WEq2xEXVVQ0"
+        ],
+        "legacyalts": [
+            "tc-ShinyFunnyJellyfishSMOrc"
         ]
     },
     "PY6wf7cvjgM": {
@@ -18659,9 +18633,6 @@
         "date": "2020-08-25",
         "topics": [
             "features\/transportation\/trains\/train-signals"
-        ],
-        "duplicates": [
-            "tc-ImpartialEnchantingCider4Head"
         ],
         "suggested": [
             "0Dq3fFtmhmw",
@@ -18680,6 +18651,9 @@
             "TjSMwjueGc8",
             "V-OVvjoUAmg",
             "WQH5cWS3s2s"
+        ],
+        "legacyalts": [
+            "tc-ImpartialEnchantingCider4Head"
         ]
     },
     "08PQFXaEac8": {
@@ -18688,7 +18662,7 @@
         "topics": [
             "technology"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-VenomousProtectiveDonutTheTarFu"
         ]
     },
@@ -18699,7 +18673,7 @@
             "environment\/creatures",
             "environment\/creatures\/crab-boss"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-GrotesqueDelightfulLyrebirdPrimeMe"
         ],
         "duplicatedby": "gAjKNyUTkMQ"
@@ -18711,7 +18685,7 @@
             "features\/buildings\/the-hub",
             "off-topic\/goat-simulator"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-DifficultDependableGooseAMPEnergyCherry"
         ]
     },
@@ -18723,7 +18697,7 @@
             "features\/fluids",
             "features\/fluids\/pipes"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-BraveThankfulBeefFreakinStinkin"
         ]
     },
@@ -18735,7 +18709,7 @@
             "environment\/world-map",
             "story-lore"
         ],
-        "duplicates": [
+        "legacyalts": [
             "tc-VastAlertBadgerTF2John"
         ]
     },
@@ -19858,7 +19832,6 @@
             "mvSWBd42JYM",
             "PuV7iLqmGBU",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "Xdrr6IazPTg",
             "YMWU_qSRI1E"
         ]
@@ -20433,7 +20406,6 @@
             "mf-PgMUVTiI",
             "PuV7iLqmGBU",
             "qOV_ydeQ07E",
-            "tkx-DVLp3fs",
             "X6OALg4vc7w",
             "Xdrr6IazPTg",
             "YMWU_qSRI1E"
