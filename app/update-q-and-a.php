@@ -149,7 +149,8 @@ $existing = array_map(
 	 *	replacedby?:string,
 	 *	duplicatedby?:string,
 	 *	seealso?:list<string>,
-	 *	suggested?:list<string>
+	 *	suggested?:list<string>,
+	 *	legacyalts?:list<string>
 	 * } $data
 	 *
 	 * @return array{
@@ -161,7 +162,8 @@ $existing = array_map(
 	 *	replacedby?:string,
 	 *	duplicatedby?:string,
 	 *	seealso:list<string>,
-	 *	suggested:list<string>
+	 *	suggested:list<string>,
+	 *	legacyalts:list<string>
 	 * }
 	 */
 	static function (array $data) : array {
@@ -172,6 +174,7 @@ $existing = array_map(
 				'replaces',
 				'seealso',
 				'suggested',
+				'legacyalts',
 			] as $required
 		) {
 			$data[$required] = $data[$required] ?? [];
@@ -187,7 +190,8 @@ $existing = array_map(
 		 *	replacedby?:string,
 		 *	duplicatedby?:string,
 		 *	seealso:list<string>,
-		 *	suggested:list<string>
+		 *	suggested:list<string>,
+		 *	legacyalts:list<string>
 		 * }
 		 */
 		return $data;
@@ -715,7 +719,7 @@ foreach ($existing as $video_id => $data) {
 	$existing[$video_id]['duplicates'] = $data['duplicates'] = array_filter(
 		$data['duplicates'],
 		static function (string $maybe) use ($data) : bool {
-			return ! in_array($maybe, $data['legacyalts'], true);
+			return ! in_array($maybe, $data['legacyalts'] ?? [], true);
 		}
 	);
 
