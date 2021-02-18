@@ -1,7 +1,7 @@
 # Progress
 * 1917 questions found out of 2541 clips
 * 1846 non-trolling & on-topic questions found out of 1917 total questions
-* 654 questions found with no other references
+* 628 questions found with no other references
 ## grouped by date
 * 2021-02-16: 3 of 69 questions found with no other references
 * 2021-02-09: 26 of 93 questions found with no other references
@@ -25,17 +25,17 @@
 * 2020-10-06: 19 of 51 questions found with no other references
 * 2020-09-29: 7 of 38 questions found with no other references
 * 2020-09-22: 9 of 59 questions found with no other references
-* 2020-09-15: 5 of 47 questions found with no other references
+* 2020-09-15: 4 of 47 questions found with no other references
 * 2020-09-08: 8 of 72 questions found with no other references
 * 2020-09-01: 11 of 71 questions found with no other references
 * 2020-08-25: 25 of 134 questions found with no other references
-* 2020-08-18: 31 of 55 questions found with no other references
-* 2020-08-11: 21 of 38 questions found with no other references
+* 2020-08-18: 10 of 55 questions found with no other references
+* 2020-08-11: 18 of 38 questions found with no other references
 * 2020-07-28: 4 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
 * 2020-06-08: 27 of 39 questions found with no other references
 * 2020-05-19: 15 of 24 questions found with no other references
-* 2020-03-24: 15 of 27 questions found with no other references
+* 2020-03-24: 14 of 27 questions found with no other references
 * 2020-02-11: 26 of 33 questions found with no other references
 * 2020-01-22: 19 of 28 questions found with no other references
 * 2019-12-19: 35 of 51 questions found with no other references
@@ -1114,6 +1114,7 @@
 * January 26th, 2021 Livestream Q&A: How many Updates do you have planned before 1.0? https://www.youtube.com/watch?v=7t2DLBi7kl8
 * [November 3rd, 2020 Livestream Q&A: How many Updates until 1.0?](https://archive.satisfactory.video/transcriptions/yt-qtf26oE7kQs) https://www.youtube.com/watch?v=qtf26oE7kQs
 * [September 1st, 2020 Livestream Q&A: About how many Updates will there be before 1.0?](https://archive.satisfactory.video/transcriptions/yt-eIolvvHPWmw) https://www.youtube.com/watch?v=eIolvvHPWmw
+* August 18th, 2020 Livestream Q&A: How often will there be updates to the game? https://clips.twitch.tv/CheerfulZanyWebVoteYea
 ### Transcript
 
 > uh someone asked before if update 4 is
@@ -1246,6 +1247,7 @@
 * [September 15th, 2020 Livestream Q&A: Any chance Update 4 unlocks the Work In Progress items?](https://archive.satisfactory.video/transcriptions/yt-Z870GlRbfjk) https://www.youtube.com/watch?v=Z870GlRbfjk
 * [September 15th, 2020 Livestream Q&A: When do the Work In Progress items get a purpose?](https://archive.satisfactory.video/transcriptions/yt-koMqOABA6x8) https://www.youtube.com/watch?v=koMqOABA6x8
 * [August 25th, 2020 Livestream Q&A: Do you have any clue on what the alien artefacts do?](https://archive.satisfactory.video/transcriptions/yt-hRe0QvJDjsg) https://www.youtube.com/watch?v=hRe0QvJDjsg
+* August 18th, 2020 Livestream Q&A: When are Somersloops and Orbs have meaning? https://clips.twitch.tv/SarcasticProudWoodpeckerKappaPride
 ### Transcript
 
 > when will all the collectibles like
@@ -1686,6 +1688,7 @@
 * [November 17th, 2020 Livestream Q&A: Paintable Vehicles when?](https://archive.satisfactory.video/transcriptions/yt-0DPbCQ4WQHU) https://www.youtube.com/watch?v=0DPbCQ4WQHU
 * [November 3rd, 2020 Livestream Q&A: Will we have Paintable Vehicles?](https://archive.satisfactory.video/transcriptions/yt-Wq7wvbW3fPo) https://www.youtube.com/watch?v=Wq7wvbW3fPo
 * [October 20th, 2020 Livestream Q&A: Will Colour Gun work on Vehicles in the future?](https://archive.satisfactory.video/transcriptions/yt-J8M7X0igt2w) https://www.youtube.com/watch?v=J8M7X0igt2w
+* August 18th, 2020 Livestream Q&A: When will we be able to paint our trains? https://clips.twitch.tv/BelovedBloodyStapleGingerPower
 ## [February 2nd, 2021 Livestream Q&A: Will the Map be bigger later?](https://archive.satisfactory.video/transcriptions/yt-gvOt4jwWA4Q) https://www.youtube.com/watch?v=gvOt4jwWA4Q
 
 ### Asked previously:
@@ -3475,6 +3478,7 @@
 ### Asked previously:
 * [October 13th, 2020 Livestream Q&A: Will you switch to using Unreal Engine 5?](https://archive.satisfactory.video/transcriptions/yt-9r6ROgTQ_n4) https://www.youtube.com/watch?v=9r6ROgTQ_n4
 * [August 25th, 2020 Livestream Q&A: Will Satisfactory be updated to Unreal Engine 5 / Snutt Talk: Experimental Builds](https://archive.satisfactory.video/transcriptions/yt-rr1UWnrs0d4) https://www.youtube.com/watch?v=rr1UWnrs0d4
+* August 18th, 2020 Livestream Q&A: Are you going to upgrade to UE5? https://clips.twitch.tv/GloriousTangentialSalmonPastaThat
 * July 28th, 2020 Livestream Q&A: Unreal Engine 5 https://clips.twitch.tv/PiliableZanyGrassFreakinStinkin
 * [May 19th, 2020 Livestream Q&A: Will you be using Unreal Engine 5 for Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-Wy79gUb24es) https://www.youtube.com/watch?v=Wy79gUb24es
 ### Transcript
@@ -3516,6 +3520,7 @@
 * [September 22nd, 2020 Livestream Q&A: Any chance of a new Map?](https://archive.satisfactory.video/transcriptions/yt-GcWk8f29OBM) https://www.youtube.com/watch?v=GcWk8f29OBM
 * [September 8th, 2020 Livestream Q&A: Any plans for new Maps?](https://archive.satisfactory.video/transcriptions/yt-zBv2UdKrYtI) https://www.youtube.com/watch?v=zBv2UdKrYtI
 * [August 25th, 2020 Livestream Q&A: Like a new map for Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-gNfCEV1J-2Q) https://www.youtube.com/watch?v=gNfCEV1J-2Q
+* August 18th, 2020 Livestream Q&A: Any different maps planned? https://clips.twitch.tv/PlausibleEnthusiasticGrassRedCoat
 ### Transcript
 
 > what about a new map that's terrifying
@@ -3691,6 +3696,7 @@
 * [September 15th, 2020 Livestream Q&A: Will there be a Map Editor?](https://archive.satisfactory.video/transcriptions/yt-MYno60AbSGk) https://www.youtube.com/watch?v=MYno60AbSGk
 * [September 8th, 2020 Livestream Q&A: Time to invest in Map Modding?](https://archive.satisfactory.video/transcriptions/yt-a5PSHoSuXec) https://www.youtube.com/watch?v=a5PSHoSuXec
 * [August 25th, 2020 Livestream Q&A: Plans for a Map Editor?](https://archive.satisfactory.video/transcriptions/yt-vvRPYyc7sb8) https://www.youtube.com/watch?v=vvRPYyc7sb8
+* August 18th, 2020 Livestream Q&A: Will you be able to create your own map? https://clips.twitch.tv/ChillyRockyWalrusUnSane
 * August 11th, 2020 Livestream Q&A: Do you plan to release a World Editor? https://clips.twitch.tv/AnnoyingImpartialGaurChefFrank
 ### Transcript
 
