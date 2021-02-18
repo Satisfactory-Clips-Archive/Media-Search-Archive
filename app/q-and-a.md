@@ -1,10 +1,10 @@
 # Progress
 * 1917 questions found out of 2541 clips
 * 1846 non-trolling & on-topic questions found out of 1917 total questions
-* 691 questions found with no other references
+* 656 questions found with no other references
 ## grouped by date
 * 2021-02-16: 3 of 69 questions found with no other references
-* 2021-02-09: 27 of 93 questions found with no other references
+* 2021-02-09: 26 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
 * 2021-01-26: 27 of 76 questions found with no other references
 * 2021-01-22: 0 of 3 questions found with no other references
@@ -27,7 +27,7 @@
 * 2020-09-22: 9 of 59 questions found with no other references
 * 2020-09-15: 5 of 47 questions found with no other references
 * 2020-09-08: 9 of 72 questions found with no other references
-* 2020-09-01: 45 of 71 questions found with no other references
+* 2020-09-01: 12 of 71 questions found with no other references
 * 2020-08-25: 13 of 134 questions found with no other references
 * 2020-08-18: 31 of 55 questions found with no other references
 * 2020-08-11: 22 of 38 questions found with no other references
@@ -44,7 +44,7 @@
 * 2018-10-03: 9 of 9 questions found with no other references
 * 2018-08-01: 12 of 18 questions found with no other references
 * 2018-06-22: 10 of 14 questions found with no other references
-* 2018-03-09: 4 of 5 questions found with no other references
+* 2018-03-09: 3 of 5 questions found with no other references
 
 # prototype replacement for faq markdown file
 
@@ -116,6 +116,7 @@
 * [October 6th, 2020 Livestream Q&A: Are Multiplayer desync issues with Trains and Vehicles being looked into?](https://archive.satisfactory.video/transcriptions/yt-RVq5k89jlEA) https://www.youtube.com/watch?v=RVq5k89jlEA
 * [October 6th, 2020 Livestream Q&A: Co-op networking bugs been fixed?](https://archive.satisfactory.video/transcriptions/yt-60kjGquJZnk) https://www.youtube.com/watch?v=60kjGquJZnk
 * [September 8th, 2020 Livestream Q&A: Fix Multiplayer quick?](https://archive.satisfactory.video/transcriptions/yt--p03ktqVUdc) https://www.youtube.com/watch?v=-p03ktqVUdc
+* [September 1st, 2020 Livestream Q&A: Is multiplayer desync getting fixed?](https://archive.satisfactory.video/transcriptions/yt-tkx-DVLp3fs) https://www.youtube.com/watch?v=tkx-DVLp3fs
 * [September 1st, 2020 Livestream Q&A: Will Update 4 include Multiplayer optimisation?](https://archive.satisfactory.video/transcriptions/yt-P0Q4nTvK9XU) https://www.youtube.com/watch?v=P0Q4nTvK9XU
 ### Transcript
 
@@ -382,6 +383,7 @@
 * [September 22nd, 2020 Livestream Q&A: Will the Story play out when implemented or will we have to start a new game?](https://archive.satisfactory.video/transcriptions/yt-PPu_s5Gg8gs) https://www.youtube.com/watch?v=PPu_s5Gg8gs
 * [September 15th, 2020 Livestream Q&A: What's the storyline on Satisfactory? Is it after Deep Rock Galactic?](https://archive.satisfactory.video/transcriptions/yt-wySR9ID62zU) https://www.youtube.com/watch?v=wySR9ID62zU
 * [September 8th, 2020 Livestream Q&A: Will there be a Story Mode?](https://archive.satisfactory.video/transcriptions/yt-e_CXOG7_cH8) https://www.youtube.com/watch?v=e_CXOG7_cH8
+* [September 1st, 2020 Livestream Q&A: Will Story happen in Update 4?](https://archive.satisfactory.video/transcriptions/yt-_I0dz6Zop0w) https://www.youtube.com/watch?v=_I0dz6Zop0w
 ### Transcript
 
 > oh oops uh is the game going to have a
@@ -710,6 +712,7 @@
 * [January 19th, 2021 Livestream Q&A: Smart Mergers?](https://archive.satisfactory.video/transcriptions/yt-iwID_cZx20g) https://www.youtube.com/watch?v=iwID_cZx20g
 * [October 20th, 2020 Livestream Q&A: Will there be Priority Mergers for this Update?](https://archive.satisfactory.video/transcriptions/yt-sMidcvjGGOM) https://www.youtube.com/watch?v=sMidcvjGGOM
 * [September 8th, 2020 Livestream Q&A: Can you please add a Smart or Programmable Merger?](https://archive.satisfactory.video/transcriptions/yt-9rXxGWPB21E) https://www.youtube.com/watch?v=9rXxGWPB21E
+* [September 1st, 2020 Livestream Q&A: Thoughts on using a Priority Merger similar to Smart Splitter using overflow?](https://archive.satisfactory.video/transcriptions/yt-T5UqkbsAbXg) https://www.youtube.com/watch?v=T5UqkbsAbXg
 ### Transcript
 
 > um any plans for smart mergers yet
@@ -1310,6 +1313,7 @@
 * [September 15th, 2020 Livestream Q&A: Are we ever going to see a new enemy type?](https://archive.satisfactory.video/transcriptions/yt-Kxq543wzKcY) https://www.youtube.com/watch?v=Kxq543wzKcY
 * [September 15th, 2020 Livestream Q&A: Will you add any Monsters/Bosses in the future?](https://archive.satisfactory.video/transcriptions/yt-D_BVMiGNvqI) https://www.youtube.com/watch?v=D_BVMiGNvqI
 * [September 8th, 2020 Livestream Q&A: Will we ever see the Crab Boss?](https://archive.satisfactory.video/transcriptions/yt-HD54tFdoDTE) https://www.youtube.com/watch?v=HD54tFdoDTE
+* [September 1st, 2020 Livestream Q&A: When will we see the crab?](https://archive.satisfactory.video/transcriptions/yt-yHgb7ySKTMs) https://www.youtube.com/watch?v=yHgb7ySKTMs
 * [August 25th, 2020 Livestream Q&A: Will we have more monsters?](https://archive.satisfactory.video/transcriptions/yt-shEKhZakMxQ) https://www.youtube.com/watch?v=shEKhZakMxQ
 * August 25th, 2020 Livestream Q&A: Will we have more monsters? https://clips.twitch.tv/GrotesqueDelightfulLyrebirdPrimeMe
 * July 28th, 2020 Livestream Q&A: More Wildlife? https://clips.twitch.tv/DirtyHilariousPancakeWow
@@ -1627,6 +1631,7 @@
 * [September 29th, 2020 Livestream Q&A: Is there an update to Train Stations, Rails, and Railway Switches in the future?](https://archive.satisfactory.video/transcriptions/yt-vV-u0AjWWvU) https://www.youtube.com/watch?v=vV-u0AjWWvU
 * [September 22nd, 2020 Livestream Q&A: Any new info about Train Signals?](https://archive.satisfactory.video/transcriptions/yt-bPU07wU3Mr0) https://www.youtube.com/watch?v=bPU07wU3Mr0
 * [September 15th, 2020 Livestream Q&A: What will be happening with the Train collisions/signalling?](https://archive.satisfactory.video/transcriptions/yt-BZtRginha6g) https://www.youtube.com/watch?v=BZtRginha6g
+* [September 1st, 2020 Livestream Q&A: Any more info on Train Signals?](https://archive.satisfactory.video/transcriptions/yt-1hTjt3er8XI) https://www.youtube.com/watch?v=1hTjt3er8XI
 * August 18th, 2020 Livestream Q&A: Any thoughts on whether Trains will ever collide? https://clips.twitch.tv/SaltyJazzyPasta4Head
 ### Transcript
 
@@ -1659,6 +1664,7 @@
 * [September 15th, 2020 Livestream Q&A: Will the Map be bigger?](https://archive.satisfactory.video/transcriptions/yt-b49tcUeMO3E) https://www.youtube.com/watch?v=b49tcUeMO3E
 * [September 8th, 2020 Livestream Q&A: Even more Biomes coming to play?](https://archive.satisfactory.video/transcriptions/yt-VgDl00Ycn3U) https://www.youtube.com/watch?v=VgDl00Ycn3U
 * [September 8th, 2020 Livestream Q&A: Extension on current Map?](https://archive.satisfactory.video/transcriptions/yt-Ad3tjOha0JI) https://www.youtube.com/watch?v=Ad3tjOha0JI
+* [September 1st, 2020 Livestream Q&A: Map expansion ?](https://archive.satisfactory.video/transcriptions/yt-2ZHnQ9U4f9I) https://www.youtube.com/watch?v=2ZHnQ9U4f9I
 * December 19th, 2019 Livestream Q&A: Will we get a bigger World Map? https://www.youtube.com/watch?v=TfKysphS2S4
 ### Transcript
 
@@ -1726,6 +1732,7 @@
 
 ### Asked previously:
 * [November 3rd, 2020 Livestream Q&A: Will there be DLCs?](https://archive.satisfactory.video/transcriptions/yt--f-E47s74Uw) https://www.youtube.com/watch?v=-f-E47s74Uw
+* [September 1st, 2020 Livestream Q&A: How long will the game be supported?](https://archive.satisfactory.video/transcriptions/yt-y_dM0ukYioo) https://www.youtube.com/watch?v=y_dM0ukYioo
 * August 18th, 2020 Livestream Q&A: Is 1.0 the end of the game or will it be expanded? https://clips.twitch.tv/AmazonianWealthyCroquetteDendiFace
 * [January 22nd, 2020 Livestream Q&A: Will there be DLC after 1.0?](https://archive.satisfactory.video/transcriptions/yt-FHqvzjGbhvg) https://www.youtube.com/watch?v=FHqvzjGbhvg
 * [June 22nd, 2018 Livestream Q&A: Plans for post-launch?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,120.52,176.6) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=120&end=177
@@ -1787,6 +1794,7 @@
 * [December 15th, 2020 Livestream Q&A: Is automated food production planned?](https://archive.satisfactory.video/transcriptions/yt--9WFYJETif4) https://www.youtube.com/watch?v=-9WFYJETif4
 * [October 20th, 2020 Livestream Q&A: Any word on farming Pale Berries / Nuts / Bacon?](https://archive.satisfactory.video/transcriptions/yt-L1Ur5X7gVH8) https://www.youtube.com/watch?v=L1Ur5X7gVH8
 * [September 22nd, 2020 Livestream Q&A: Farm?](https://archive.satisfactory.video/transcriptions/yt-2i5toplIVJo) https://www.youtube.com/watch?v=2i5toplIVJo
+* [September 1st, 2020 Livestream Q&A: Can we have food-making in the game?](https://archive.satisfactory.video/transcriptions/yt-2sE4CPkkc3o) https://www.youtube.com/watch?v=2sE4CPkkc3o
 * [June 8th, 2020 Livestream Q&A: What do you think about Farming?](https://archive.satisfactory.video/transcriptions/yt-UijCvihSvzE) https://www.youtube.com/watch?v=UijCvihSvzE
 * [March 24th, 2020 Livestream Q&A: Berry Farming?](https://archive.satisfactory.video/transcriptions/yt-2Cq3xmLN8sQ) https://www.youtube.com/watch?v=2Cq3xmLN8sQ
 * [March 9th, 2019 Livestream Q&A: Any plans for farming (for biomass production) ?](https://archive.satisfactory.video/transcriptions/yt-unMHGjOsGAc) https://www.youtube.com/watch?v=unMHGjOsGAc
@@ -1930,6 +1938,7 @@
 ### Asked previously:
 * [January 19th, 2021 Livestream Q&A: While Unreal Engine 4 gets upgraded, will the Object Limit get changed?](https://archive.satisfactory.video/transcriptions/yt-BE6kB3nmSdM) https://www.youtube.com/watch?v=BE6kB3nmSdM
 * [September 29th, 2020 Livestream Q&A: Will you be able to increase the maximum amount of Objects with Unreal Engine?](https://archive.satisfactory.video/transcriptions/yt-32KDkbkCz8s) https://www.youtube.com/watch?v=32KDkbkCz8s
+* [September 1st, 2020 Livestream Q&A: What is the object limit and will it be increased in the future?](https://archive.satisfactory.video/transcriptions/yt-9GT0y1v5VZY) https://www.youtube.com/watch?v=9GT0y1v5VZY
 ## [January 19th, 2021 Livestream Q&A: Any plans to revisit the To-Do List for Quality-of-Life pass?](https://archive.satisfactory.video/transcriptions/yt-nI31KeD88V8) https://www.youtube.com/watch?v=nI31KeD88V8
 
 ### Asked previously:
@@ -1967,6 +1976,7 @@
 ### Asked previously:
 * [November 17th, 2020 Livestream Q&A: Are you going to fix the Trains so it doesn't break in multiplayer for other people?](https://archive.satisfactory.video/transcriptions/yt-Kg29HlSMQjI) https://www.youtube.com/watch?v=Kg29HlSMQjI
 * [October 20th, 2020 Livestream Q&A: The Trains lag a lot on Multiplayer?](https://archive.satisfactory.video/transcriptions/yt-AxQoNckHBhI) https://www.youtube.com/watch?v=AxQoNckHBhI
+* [September 1st, 2020 Livestream Q&A: Will you guys fix the connection loss with long loading with friends?](https://archive.satisfactory.video/transcriptions/yt-qOV_ydeQ07E) https://www.youtube.com/watch?v=qOV_ydeQ07E
 ### Transcript
 
 > uh can more people ride the same train
