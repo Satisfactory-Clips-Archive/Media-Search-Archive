@@ -875,14 +875,20 @@ uksort($faq, [$sorting, 'sort_video_ids_by_date']);
 
 echo "\n";
 
+/** @var string|null */
+$last_faq_date = null;
+
 foreach ($faq as $video_id => $faq_duplicates) {
 	$transcription = captions($video_id);
+
+	$faq_date = determine_date_for_video(
+		$video_id,
+		$cache['playlists'],
+		$playlists
+	);
+
 	$playlist_id = array_search(
-		determine_date_for_video(
-			$video_id,
-			$cache['playlists'],
-			$playlists
-		),
+		$faq_date,
 		$playlists, true
 	);
 
@@ -893,22 +899,15 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		));
 	}
 
-	echo '## ',
-		preg_replace('/\.md\)/', ')', str_replace(
-			'./',
-			'https://archive.satisfactory.video/',
-			maybe_transcript_link_and_video_url(
-				$video_id,
-				(
+	if ($faq_date !== $last_faq_date) {
+		$last_faq_date = $faq_date;
+
+		echo
+			'## [',
 					date(
 						'F jS, Y',
 						(int) strtotime(
-								$existing[$video_id]['date']
-								?? determine_date_for_video(
-										$video_id,
-										$cache['playlists'],
-										$playlists
-							)
+								$faq_date
 						)
 					)
 					. (
@@ -920,6 +919,23 @@ foreach ($faq as $video_id => $faq_duplicates) {
 							)
 							: ' Livestream '
 					)
+			,
+			'](',
+			'https://archive.satisfactory.video/',
+			$faq_date,
+			')',
+			"\n"
+		;
+	}
+
+	echo '### ',
+		preg_replace('/\.md\)/', ')', str_replace(
+			'./',
+			'https://archive.satisfactory.video/',
+			maybe_transcript_link_and_video_url(
+				$video_id,
+				(
+					''
 					. $cache['playlistItems'][$video_id][1]
 				)
 			)
@@ -934,15 +950,58 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		echo "\n", '</details>', "\n";
 	}
 
-	echo "\n", '### Asked previously:';
-
 	uasort($faq_duplicates, [$sorting, 'sort_video_ids_by_date']);
 
-	foreach ($faq_duplicates as $other_video_id) {
-		if ($other_video_id === $video_id) {
-			continue;
-		}
+	$faq_duplicate_dates = [];
 
+	$faq_duplicates_for_date_checking = array_diff(
+		$faq_duplicates,
+		[
+			$video_id,
+		]
+	);
+
+	foreach ($faq_duplicates_for_date_checking as $other_video_id) {
+		$faq_duplicate_video_date = determine_date_for_video(
+			$other_video_id,
+			$cache['playlists'],
+			$playlists
+		);
+
+		if (
+			! in_array($faq_duplicate_video_date, $faq_duplicate_dates, true)
+		) {
+			$faq_duplicate_dates[] = $faq_duplicate_video_date;
+		}
+	}
+
+	echo
+		"\n",
+		'<details>',
+		"\n",
+		'<summary>',
+		sprintf(
+			'This question may have been asked previously at least %s other %s',
+			count($faq_duplicates_for_date_checking),
+			count($faq_duplicates_for_date_checking) > 1 ? 'times' : 'time'
+		),
+		sprintf(
+			', as recently as %s%s',
+			date('F Y', strtotime(current($faq_duplicate_dates))),
+			(
+				count($faq_duplicate_dates) > 1
+					? (
+						' and as early as '
+						. date('F Y.', strtotime(end($faq_duplicate_dates)))
+					)
+					: '.'
+			)
+		),
+		'</summary>',
+		"\n"
+	;
+
+	foreach ($faq_duplicates_for_date_checking as $other_video_id) {
 		$playlist_id = array_search(
 			determine_date_for_video(
 				$other_video_id,
@@ -993,6 +1052,8 @@ foreach ($faq as $video_id => $faq_duplicates) {
 			))
 		;
 	}
+
+	echo "\n", '</details>', "\n";
 
 	echo "\n";
 }
