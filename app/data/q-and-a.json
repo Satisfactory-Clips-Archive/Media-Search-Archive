@@ -13341,7 +13341,10 @@
     "9MKossL3oU4": {
         "title": "Q&A: Will the Scanner be fixed so it doesn't show already-picked items?",
         "date": "2020-10-06",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "goLJr05seZs"
+        ]
     },
     "bsn3QpMW06Q": {
         "title": "Q&A: Will the Update work with old worlds?",
@@ -14509,6 +14512,9 @@
         "topics": [
             "environment\/resources",
             "features\/buildings\/miner"
+        ],
+        "seealso": [
+            "9MKossL3oU4"
         ]
     },
     "Z870GlRbfjk": {
