@@ -1119,6 +1119,7 @@ $from_markdown = [
 		],
 		'Q&A: Any news about autosave freezes? https://clips.twitch.tv/CrispyCheerfulCrocodilePanicBasket' => [
 			true, // FAQ
+			'Autosave',
 		],
 		'Q&A: How about adding machine variants during late-game so you can have less machines overall? https://clips.twitch.tv/BlatantEnjoyableTigerStoneLightning' => [
 			'Buildings',
