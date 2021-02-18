@@ -927,6 +927,13 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		"\n"
 	;
 
+	if (count($transcription) > 0) {
+		echo "\n", '<details>', "\n" ;
+		echo "\n", '<summary>A transcript is available</summary>', "\n";
+		echo "\n", markdownify_transcription_lines(...$transcription), "\n";
+		echo "\n", '</details>', "\n";
+	}
+
 	echo "\n", '### Asked previously:';
 
 	uasort($faq_duplicates, [$sorting, 'sort_video_ids_by_date']);
@@ -985,11 +992,6 @@ foreach ($faq as $video_id => $faq_duplicates) {
 				)
 			))
 		;
-	}
-
-	if (count($transcription) > 0) {
-		echo "\n", '### Transcript', "\n";
-		echo "\n", markdownify_transcription_lines(...$transcription), "\n";
 	}
 
 	echo "\n";
