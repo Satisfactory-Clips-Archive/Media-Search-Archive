@@ -1,23 +1,23 @@
 # Progress
 * 1917 questions found out of 2541 clips
 * 1846 non-trolling & on-topic questions found out of 1917 total questions
-* 745 questions found with no other references
+* 691 questions found with no other references
 ## grouped by date
 * 2021-02-16: 3 of 69 questions found with no other references
 * 2021-02-09: 27 of 93 questions found with no other references
 * 2021-02-02: 15 of 51 questions found with no other references
 * 2021-01-26: 27 of 76 questions found with no other references
 * 2021-01-22: 0 of 3 questions found with no other references
-* 2021-01-19: 20 of 90 questions found with no other references
+* 2021-01-19: 19 of 90 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 1 of 30 questions found with no other references
 * 2020-12-15: 6 of 59 questions found with no other references
 * 2020-12-08: 17 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 9 of 40 questions found with no other references
-* 2020-11-17: 15 of 56 questions found with no other references
+* 2020-11-17: 13 of 56 questions found with no other references
 * 2020-11-10: 32 of 83 questions found with no other references
-* 2020-11-03: 17 of 57 questions found with no other references
+* 2020-11-03: 16 of 57 questions found with no other references
 * 2020-10-27: 16 of 23 questions found with no other references
 * 2020-10-20: 19 of 51 questions found with no other references
 * 2020-10-13: 31 of 48 questions found with no other references
@@ -26,23 +26,23 @@
 * 2020-09-29: 8 of 38 questions found with no other references
 * 2020-09-22: 9 of 59 questions found with no other references
 * 2020-09-15: 5 of 47 questions found with no other references
-* 2020-09-08: 54 of 72 questions found with no other references
+* 2020-09-08: 9 of 72 questions found with no other references
 * 2020-09-01: 45 of 71 questions found with no other references
 * 2020-08-25: 13 of 134 questions found with no other references
-* 2020-08-18: 32 of 55 questions found with no other references
+* 2020-08-18: 31 of 55 questions found with no other references
 * 2020-08-11: 22 of 38 questions found with no other references
 * 2020-07-28: 4 of 10 questions found with no other references
 * 2020-07-21: 4 of 5 questions found with no other references
 * 2020-06-08: 28 of 39 questions found with no other references
 * 2020-05-19: 15 of 24 questions found with no other references
-* 2020-03-24: 16 of 27 questions found with no other references
+* 2020-03-24: 15 of 27 questions found with no other references
 * 2020-02-11: 26 of 33 questions found with no other references
 * 2020-01-22: 19 of 28 questions found with no other references
-* 2019-12-19: 36 of 51 questions found with no other references
-* 2019-03-09: 85 of 111 questions found with no other references
+* 2019-12-19: 35 of 51 questions found with no other references
+* 2019-03-09: 84 of 111 questions found with no other references
 * 2018-11-23: 5 of 5 questions found with no other references
 * 2018-10-03: 9 of 9 questions found with no other references
-* 2018-08-01: 13 of 18 questions found with no other references
+* 2018-08-01: 12 of 18 questions found with no other references
 * 2018-06-22: 10 of 14 questions found with no other references
 * 2018-03-09: 4 of 5 questions found with no other references
 
@@ -115,6 +115,7 @@
 * [November 17th, 2020 Livestream Q&A: Better Multiplayer support?](https://archive.satisfactory.video/transcriptions/yt-ECQdh3EiXws) https://www.youtube.com/watch?v=ECQdh3EiXws
 * [October 6th, 2020 Livestream Q&A: Are Multiplayer desync issues with Trains and Vehicles being looked into?](https://archive.satisfactory.video/transcriptions/yt-RVq5k89jlEA) https://www.youtube.com/watch?v=RVq5k89jlEA
 * [October 6th, 2020 Livestream Q&A: Co-op networking bugs been fixed?](https://archive.satisfactory.video/transcriptions/yt-60kjGquJZnk) https://www.youtube.com/watch?v=60kjGquJZnk
+* [September 8th, 2020 Livestream Q&A: Fix Multiplayer quick?](https://archive.satisfactory.video/transcriptions/yt--p03ktqVUdc) https://www.youtube.com/watch?v=-p03ktqVUdc
 * [September 1st, 2020 Livestream Q&A: Will Update 4 include Multiplayer optimisation?](https://archive.satisfactory.video/transcriptions/yt-P0Q4nTvK9XU) https://www.youtube.com/watch?v=P0Q4nTvK9XU
 ### Transcript
 
@@ -380,6 +381,7 @@
 * [September 22nd, 2020 Livestream Q&A: Will the Story be released as a book/comic ?](https://archive.satisfactory.video/transcriptions/yt-ZET0XD704JA) https://www.youtube.com/watch?v=ZET0XD704JA
 * [September 22nd, 2020 Livestream Q&A: Will the Story play out when implemented or will we have to start a new game?](https://archive.satisfactory.video/transcriptions/yt-PPu_s5Gg8gs) https://www.youtube.com/watch?v=PPu_s5Gg8gs
 * [September 15th, 2020 Livestream Q&A: What's the storyline on Satisfactory? Is it after Deep Rock Galactic?](https://archive.satisfactory.video/transcriptions/yt-wySR9ID62zU) https://www.youtube.com/watch?v=wySR9ID62zU
+* [September 8th, 2020 Livestream Q&A: Will there be a Story Mode?](https://archive.satisfactory.video/transcriptions/yt-e_CXOG7_cH8) https://www.youtube.com/watch?v=e_CXOG7_cH8
 ### Transcript
 
 > oh oops uh is the game going to have a
@@ -518,6 +520,7 @@
 * [November 10th, 2020 Livestream Q&A: Can we get Weather to change?](https://archive.satisfactory.video/transcriptions/yt-iq-K9FY-RT8) https://www.youtube.com/watch?v=iq-K9FY-RT8
 * [November 10th, 2020 Livestream Q&A: Will we have Weather events?](https://archive.satisfactory.video/transcriptions/yt-MzWzCnmbkYI) https://www.youtube.com/watch?v=MzWzCnmbkYI
 * [September 22nd, 2020 Livestream Q&A: Weather in Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-Sxvg881RjeA) https://www.youtube.com/watch?v=Sxvg881RjeA
+* [September 8th, 2020 Livestream Q&A: Do we intend to add rain/storms ?](https://archive.satisfactory.video/transcriptions/yt-3WDeVbpr30g) https://www.youtube.com/watch?v=3WDeVbpr30g
 ### Transcript
 
 > uh storm or natural disaster included in
@@ -706,6 +709,7 @@
 ### Asked previously:
 * [January 19th, 2021 Livestream Q&A: Smart Mergers?](https://archive.satisfactory.video/transcriptions/yt-iwID_cZx20g) https://www.youtube.com/watch?v=iwID_cZx20g
 * [October 20th, 2020 Livestream Q&A: Will there be Priority Mergers for this Update?](https://archive.satisfactory.video/transcriptions/yt-sMidcvjGGOM) https://www.youtube.com/watch?v=sMidcvjGGOM
+* [September 8th, 2020 Livestream Q&A: Can you please add a Smart or Programmable Merger?](https://archive.satisfactory.video/transcriptions/yt-9rXxGWPB21E) https://www.youtube.com/watch?v=9rXxGWPB21E
 ### Transcript
 
 > um any plans for smart mergers yet
@@ -1259,6 +1263,8 @@
 * [January 12th, 2021 Livestream Q&A: New skins?](https://archive.satisfactory.video/transcriptions/yt--IYD97gEt4w) https://www.youtube.com/watch?v=-IYD97gEt4w
 * December 15th, 2020 Livestream Q&A: Are we adding new skins? https://www.youtube.com/watch?v=w2zJd6F1Udw
 * [October 20th, 2020 Livestream Q&A: Are there plans for Character Customisation?](https://archive.satisfactory.video/transcriptions/yt-LAR8rVCHVmw) https://www.youtube.com/watch?v=LAR8rVCHVmw
+* [September 8th, 2020 Livestream Q&A: Are you going to be able to change characters?](https://archive.satisfactory.video/transcriptions/yt-GymA7otvYYo) https://www.youtube.com/watch?v=GymA7otvYYo
+* [September 8th, 2020 Livestream Q&A: Cosmetics for the Pioneer or even Lizard Doggo?](https://archive.satisfactory.video/transcriptions/yt-wFKmvfIOuCY) https://www.youtube.com/watch?v=wFKmvfIOuCY
 * [August 25th, 2020 Livestream Q&A: Let me personalise my character?](https://archive.satisfactory.video/transcriptions/yt-QyKyNbHPaHg) https://www.youtube.com/watch?v=QyKyNbHPaHg
 * August 25th, 2020 Livestream Q&A: Let me personalise my character? https://clips.twitch.tv/CharmingRespectfulFlyFUNgineer
 * August 18th, 2020 Livestream Q&A: Additional Suit Variations in the Coupon Shop ? https://clips.twitch.tv/CourteousMotionlessWrenMcaT
@@ -1303,6 +1309,7 @@
 * [September 22nd, 2020 Livestream Q&A: Will there be more creatures?](https://archive.satisfactory.video/transcriptions/yt-Yzd466gO44M) https://www.youtube.com/watch?v=Yzd466gO44M
 * [September 15th, 2020 Livestream Q&A: Are we ever going to see a new enemy type?](https://archive.satisfactory.video/transcriptions/yt-Kxq543wzKcY) https://www.youtube.com/watch?v=Kxq543wzKcY
 * [September 15th, 2020 Livestream Q&A: Will you add any Monsters/Bosses in the future?](https://archive.satisfactory.video/transcriptions/yt-D_BVMiGNvqI) https://www.youtube.com/watch?v=D_BVMiGNvqI
+* [September 8th, 2020 Livestream Q&A: Will we ever see the Crab Boss?](https://archive.satisfactory.video/transcriptions/yt-HD54tFdoDTE) https://www.youtube.com/watch?v=HD54tFdoDTE
 * [August 25th, 2020 Livestream Q&A: Will we have more monsters?](https://archive.satisfactory.video/transcriptions/yt-shEKhZakMxQ) https://www.youtube.com/watch?v=shEKhZakMxQ
 * August 25th, 2020 Livestream Q&A: Will we have more monsters? https://clips.twitch.tv/GrotesqueDelightfulLyrebirdPrimeMe
 * July 28th, 2020 Livestream Q&A: More Wildlife? https://clips.twitch.tv/DirtyHilariousPancakeWow
@@ -1651,6 +1658,7 @@
 * [September 29th, 2020 Livestream Q&A: Will the Map change for 1.0?](https://archive.satisfactory.video/transcriptions/yt-5AsSss96Idw) https://www.youtube.com/watch?v=5AsSss96Idw
 * [September 15th, 2020 Livestream Q&A: Will the Map be bigger?](https://archive.satisfactory.video/transcriptions/yt-b49tcUeMO3E) https://www.youtube.com/watch?v=b49tcUeMO3E
 * [September 8th, 2020 Livestream Q&A: Even more Biomes coming to play?](https://archive.satisfactory.video/transcriptions/yt-VgDl00Ycn3U) https://www.youtube.com/watch?v=VgDl00Ycn3U
+* [September 8th, 2020 Livestream Q&A: Extension on current Map?](https://archive.satisfactory.video/transcriptions/yt-Ad3tjOha0JI) https://www.youtube.com/watch?v=Ad3tjOha0JI
 * December 19th, 2019 Livestream Q&A: Will we get a bigger World Map? https://www.youtube.com/watch?v=TfKysphS2S4
 ### Transcript
 
@@ -1695,6 +1703,7 @@
 
 ### Asked previously:
 * [December 15th, 2020 Livestream Q&A: Will we get a Battle Royale Update?](https://archive.satisfactory.video/transcriptions/yt-tN8DpsYR8ro) https://www.youtube.com/watch?v=tN8DpsYR8ro
+* [September 8th, 2020 Livestream Q&A: Battle Royale Mode?](https://archive.satisfactory.video/transcriptions/yt-qo8WFOlPkTc) https://www.youtube.com/watch?v=qo8WFOlPkTc
 * [February 11th, 2020 Livestream Q&A: Battle Royale?](https://archive.satisfactory.video/transcriptions/yt-fO_ZW22gL-g) https://www.youtube.com/watch?v=fO_ZW22gL-g
 ### Transcript
 
@@ -1890,6 +1899,7 @@
 ### Asked previously:
 * [November 17th, 2020 Livestream Q&A: When are you adding hunger & thirst?](https://archive.satisfactory.video/transcriptions/yt-hro__pZa1pk) https://www.youtube.com/watch?v=hro__pZa1pk
 * [September 15th, 2020 Livestream Q&A: Will there be more polish to the Survival aspects of the game?](https://archive.satisfactory.video/transcriptions/yt-0flTS1mpH7s) https://www.youtube.com/watch?v=0flTS1mpH7s
+* [September 8th, 2020 Livestream Q&A: Elements of Survival ?](https://archive.satisfactory.video/transcriptions/yt-B3bO7b-5jHA) https://www.youtube.com/watch?v=B3bO7b-5jHA
 ### Transcript
 
 > okay let's move on uh will you guys
@@ -2029,6 +2039,7 @@
 * [November 24th, 2020 Livestream Q&A: Dedicated Servers in Update 4?](https://archive.satisfactory.video/transcriptions/yt-QWirowEMRbk) https://www.youtube.com/watch?v=QWirowEMRbk
 * [November 17th, 2020 Livestream Q&A: Are Dedicated Servers part of Update 4?](https://archive.satisfactory.video/transcriptions/yt-MKjtHTOMDZk) https://www.youtube.com/watch?v=MKjtHTOMDZk
 * [September 22nd, 2020 Livestream Q&A: Dedicated Servers don't need to wait for an Update?](https://archive.satisfactory.video/transcriptions/yt-BRvjOB3hRaE) https://www.youtube.com/watch?v=BRvjOB3hRaE
+* [September 8th, 2020 Livestream Q&A: Dedicated Servers aren't tied to an Update?](https://archive.satisfactory.video/transcriptions/yt-2GeQaPM1UGg) https://www.youtube.com/watch?v=2GeQaPM1UGg
 * [September 1st, 2020 Livestream Q&A: Update 4 re: Dedicated Servers, Quality of Life, and Content?](https://archive.satisfactory.video/transcriptions/yt-CGoHMrbwftU) https://www.youtube.com/watch?v=CGoHMrbwftU
 ### Transcript
 
@@ -2514,6 +2525,7 @@
 * [October 6th, 2020 Livestream Q&A: Any Update on Merch shipping alternatives?](https://archive.satisfactory.video/transcriptions/yt-kj_vdE5-CEI) https://www.youtube.com/watch?v=kj_vdE5-CEI
 * [September 22nd, 2020 Livestream Q&A: Any information on Merch shipping to EU/rest of the world?](https://archive.satisfactory.video/transcriptions/yt-hAEInvMcQfk) https://www.youtube.com/watch?v=hAEInvMcQfk
 * [September 15th, 2020 Livestream Q&A: Any news on EU Merch?](https://archive.satisfactory.video/transcriptions/yt-IXeIE9qV-lA) https://www.youtube.com/watch?v=IXeIE9qV-lA
+* [September 8th, 2020 Livestream Q&A: Will there be a european Merch store?](https://archive.satisfactory.video/transcriptions/yt-GhfR61WpR6k) https://www.youtube.com/watch?v=GhfR61WpR6k
 ### Transcript
 
 > slash pickup when will
@@ -2556,6 +2568,28 @@
 > there's going to be more stuff coming
 >
 > once stories and even
+
+
+## [December 15th, 2020 Livestream Q&A: Can dismantle mode have an ignore function maybe?](https://archive.satisfactory.video/transcriptions/yt-0KLJ2_1P_uk) https://www.youtube.com/watch?v=0KLJ2_1P_uk
+
+### Asked previously:
+* [December 15th, 2020 Livestream Q&A: Why can't you deselect items when you've selected them?](https://archive.satisfactory.video/transcriptions/yt-KGLZ6f6PdRs) https://www.youtube.com/watch?v=KGLZ6f6PdRs
+* [September 8th, 2020 Livestream Q&A: Can you add ability to deselect with ctrl?](https://archive.satisfactory.video/transcriptions/yt-CjWFoMF7EIo) https://www.youtube.com/watch?v=CjWFoMF7EIo
+### Transcript
+
+> could this mental mode have an ignore
+>
+> function maybe
+>
+> uh maybe we've talked about that too i
+>
+> think
+>
+> the thing that makes the most sense too
+>
+> intuitively is the deselecting
+>
+> in some way
 
 
 ## [December 15th, 2020 Livestream Q&A: Will Satisfactory have native support for Linux?](https://archive.satisfactory.video/transcriptions/yt-jGFUMhD3WGg) https://www.youtube.com/watch?v=jGFUMhD3WGg
@@ -3114,6 +3148,50 @@
 > there easy peasy easy peasy
 
 
+## [November 10th, 2020 Livestream Q&A: Does destroying all the foliage in the game biomes increase or decrease performance?](https://archive.satisfactory.video/transcriptions/yt-IFxnvuYEVtk) https://www.youtube.com/watch?v=IFxnvuYEVtk
+
+### Asked previously:
+* [September 8th, 2020 Livestream Q&A: Should I remove all nature to improve FPS?](https://archive.satisfactory.video/transcriptions/yt-t-FNpaJUBcE) https://www.youtube.com/watch?v=t-FNpaJUBcE
+* [August 25th, 2020 Livestream Q&A: Removing vegetation speeds up the game, yes or no ?](https://archive.satisfactory.video/transcriptions/yt-GgoQS6sOADQ) https://www.youtube.com/watch?v=GgoQS6sOADQ
+### Transcript
+
+> that's how it starts destroy all the
+>
+> followers in the game biomes increase
+>
+> performance or decrease because the game
+>
+> is the track what you destroyed
+>
+> i think it does nothing yeah it just
+>
+> disappears
+>
+> yeah because we're tracking that they're
+>
+> either there or not
+>
+> i don't think the way it works is that
+>
+> it's assumed there unless
+>
+> it checks it list that keeps growing
+>
+> when you remove things yeah i'm pretty
+>
+> sure that's how it is
+>
+> so i think it does nothing i don't know
+>
+> i could be wrong
+>
+> yeah i actually don't know i don't
+>
+> remember i'm uncertain
+>
+> right now
+
+
 ## [November 3rd, 2020 Livestream Q&A: Can I play on Epic with someone on Steam?](https://archive.satisfactory.video/transcriptions/yt-zekvCEX_mv8) https://www.youtube.com/watch?v=zekvCEX_mv8
 
 ### Asked previously:
@@ -3366,6 +3444,7 @@
 
 ### Asked previously:
 * [September 15th, 2020 Livestream Q&A: Will there be a Map Editor?](https://archive.satisfactory.video/transcriptions/yt-MYno60AbSGk) https://www.youtube.com/watch?v=MYno60AbSGk
+* [September 8th, 2020 Livestream Q&A: Time to invest in Map Modding?](https://archive.satisfactory.video/transcriptions/yt-a5PSHoSuXec) https://www.youtube.com/watch?v=a5PSHoSuXec
 * [August 25th, 2020 Livestream Q&A: Plans for a Map Editor?](https://archive.satisfactory.video/transcriptions/yt-vvRPYyc7sb8) https://www.youtube.com/watch?v=vvRPYyc7sb8
 * August 11th, 2020 Livestream Q&A: Do you plan to release a World Editor? https://clips.twitch.tv/AnnoyingImpartialGaurChefFrank
 ### Transcript
@@ -3842,6 +3921,97 @@
 > without female options so i think it's
 >
 > fine
+
+
+## [September 8th, 2020 Livestream Q&A: Can we upload a Spider image other than a Cat?](https://archive.satisfactory.video/transcriptions/yt-rlBA0k1-sWs) https://www.youtube.com/watch?v=rlBA0k1-sWs
+
+### Asked previously:
+* [March 9th, 2019 Livestream Q&A: Can we have an alternate arachnophobia mode with Simon's face?](https://archive.satisfactory.video/transcriptions/yt-3h2P4TfAAwE) https://www.youtube.com/watch?v=3h2P4TfAAwE
+* [August 1st, 2018 Livestream Q&A: Can we change the sprite ourselves?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,227.8,231.6) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=227&end=232
+
+### Transcript
+
+> uh
+>
+> can we upload our spider image other
+>
+> than a cat
+>
+> [Music]
+>
+> i mean i think i feel like that's
+>
+> something that could probably be done
+>
+> the the other thing with it is but we
+>
+> have like effects on our
+>
+> cat things but i don't know if that
+>
+> could just automatically be applied to
+>
+> everything
+>
+> but then the other thing is um is just
+>
+> the amount of work in general
+>
+> this is what i feel the amount of work
+>
+> in general for the arachnophobia mode
+>
+> uh we've always wanted to keep it low
+>
+> because
+>
+> wait so the comment is can we upload our
+>
+> own spider image
+>
+> of instead of the cat like you want to
+>
+> replace arachnophobia mode with spiders
+>
+> no no no no oh i don't think that's what
+>
+> they mean
+>
+> maybe not but that's how i read it i
+>
+> thought that was funny yeah
+>
+> so i don't know like i feel like that's
+>
+> going to take an amount of work that
+>
+> maybe isn't necessary but maybe i'm
+>
+> wrong
+>
+> a spider-man is neon cat nice
+>
+> it's like you're walking like in the
+>
+> forest and you're like
+>
+> [Music]
+>
+> yeah yeah just kill me kill me look out
+
+
+## [September 8th, 2020 Livestream Q&A: Third-Person When?](https://archive.satisfactory.video/transcriptions/yt-nVXcTzC72EQ) https://www.youtube.com/watch?v=nVXcTzC72EQ
+
+### Asked previously:
+* [August 25th, 2020 Livestream Q&A: Please consider adding a third-person view?](https://archive.satisfactory.video/transcriptions/yt-HXXn10GhRWU) https://www.youtube.com/watch?v=HXXn10GhRWU
+* [March 24th, 2020 Livestream Q&A: Third-person Camera option?](https://archive.satisfactory.video/transcriptions/yt-hWRM_bQHXzc) https://www.youtube.com/watch?v=hWRM_bQHXzc
+### Transcript
+
+> the press third person when not anytime
+>
+> soon
+>
+> if at all
 
 
 ## [August 25th, 2020 Livestream Q&A: Add Planes as Vehicles and we can automate it to carry our resources?](https://archive.satisfactory.video/transcriptions/yt-Ds9NIPna9_4) https://www.youtube.com/watch?v=Ds9NIPna9_4
