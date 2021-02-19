@@ -359,6 +359,65 @@ function inject_caches(array $cache, array ...$caches) : array
 }
 
 /**
+ * @return array{
+ *	0:array{
+ *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *		playlistItems:array<string, array{0:string, 1:string}>,
+ *		videoTags:array<string, array{0:string, list<string>}>,
+ *		stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *		legacyAlts?:array<string, list<string>>,
+ *		internalxref?:array<string, string>
+ *	},
+ *	1:array<string, list<int|string>>
+ * }
+ */
+function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
+{
+	require (__DIR__ . '/../global-topic-hierarchy.php');
+
+	$api->update();
+	$cache = $api->toLegacyCacheFormat();
+
+	/**
+	 * @var array{
+	 *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+	 *	playlistItems:array<string, array{0:string, 1:string}>,
+	 *	videoTags:array<string, array{0:string, list<string>}>,
+	 *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
+	 *	legacyAlts?:array<string, list<string>>,
+	 *	internalxref?:array<string, string>
+	 * }
+	 */
+	$injected_cache = json_decode(
+		file_get_contents(__DIR__ . '/../cache-injection.json'),
+		true
+	);
+
+	$cache = inject_caches($cache, $injected_cache);
+
+	$global_topic_hierarchy = array_merge_recursive(
+		$global_topic_hierarchy,
+		$injected_global_topic_hierarchy
+	);
+
+	$externals_cache = process_externals(
+		$cache,
+		$global_topic_hierarchy,
+		$not_a_livestream,
+		$not_a_livestream_date_lookup,
+		$slugify,
+		false
+	);
+
+	$cache = inject_caches($cache, $externals_cache);
+
+	return [
+		$cache,
+		$global_topic_hierarchy,
+	];
+}
+
+/**
  * @psalm-type CACHE = array{
  *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	playlistItems:array<string, array{0:string, 1:string}>,
