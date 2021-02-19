@@ -1,3 +1,6 @@
+# general
+* add a flag for "continued in" to separate references that're just to other parts in a multi-video answer
+
 # i1-FmJGxPPg
 * clip up engine upgrade video & link to per-instance data segment
 
@@ -35,6 +38,7 @@ add links to merch store announcement
 * tc-OilySillySproutNotLikeThis
 * PIlduefx6Vk
 * 1Mdtq6Ytb1g
+* "caJMcQ-Z0eE"
 
 # FICS⁕MAS
 * add seealsos to FICS⁕MAS-related videos
@@ -46,3 +50,59 @@ add links to merch store announcement
 * xY1OQ_CuQhQ
 * gOgyvgKAGAQ
 * Kfn13oEuA0c
+* Q2pyvicFkxA
+
+# L5MBf2GoTxQ
+* add seealso to thq "smile" segment
+
+# simon saga
+## simon saga "eat the keys" scene
+* qFYvqvrAFf8
+
+## add see also to simon saga playlist
+* weWtkbvOxdU
+* t9_0R3vkYOk
+
+# cONX37SiszU
+* add seealso to developer highlights video
+
+# gcdDfoBWaog
+* swap see also to level design stream
+
+# bNX04zqQ-uY
+* add see also to studio tour "coffee machine is broken" scene
+
+# ECP5Jvr7RSk
+* check ben's featured videos to see if this is answered for seealsos
+
+# krQI-cHEAl8
+* swap seealsos to pipe thoughts stream
+
+# there are a bunch of q&as about ideas that need seealsos amongst each other
+* akmmqVmHmzM
+
+# collate references to "I Love Strawberries"
+* LKcrsIMzGYY
+
+# sZDS8dOdyvQ
+* add seealso to the appropriate jace/snutt talk segment
+
+# retail
+* collate steam-specific clips
+
+## collate epic exclusivity-specific clips
+* zHYxze67E28
+
+# 3MO6SYCZuFI
+* find a video that talks about how object limit doesn't necessarily correlate to low fps
+
+# collate references to satisfactory prototypes
+* pcV-2pHcho8
+* ones talking about gravity prototypes
+* ones talking about natural disasters prototypes
+
+# ybgZUbANGrM
+check other videos for reference to teleportation bug
+
+# check for references specifically to mk.2 poles
+* rgIApn5PfMM
