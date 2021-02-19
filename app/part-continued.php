@@ -54,7 +54,7 @@ $existing = array_filter(
 	),
 	/**
 	 * @param scalar|array|object|null $maybe
-	 * @param mixed $maybe_key
+	 * @param array-key $maybe_key
 	 */
 	static function ($maybe, $maybe_key) use ($cache) : bool {
 		return
