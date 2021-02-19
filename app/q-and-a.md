@@ -1,7 +1,7 @@
 # Progress
 * 1917 questions found out of 2541 clips
 * 1846 non-trolling & on-topic questions found out of 1917 total questions
-* 458 questions found with no other references
+* 418 questions found with no other references
 ## grouped by date
 * 2021-02-16: 3 of 69 questions found with no other references
 * 2021-02-09: 22 of 93 questions found with no other references
@@ -12,11 +12,11 @@
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 1 of 30 questions found with no other references
 * 2020-12-15: 5 of 59 questions found with no other references
-* 2020-12-08: 16 of 47 questions found with no other references
+* 2020-12-08: 15 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 7 of 40 questions found with no other references
 * 2020-11-17: 13 of 56 questions found with no other references
-* 2020-11-10: 27 of 83 questions found with no other references
+* 2020-11-10: 26 of 83 questions found with no other references
 * 2020-11-03: 15 of 57 questions found with no other references
 * 2020-10-27: 13 of 23 questions found with no other references
 * 2020-10-20: 19 of 51 questions found with no other references
@@ -39,12 +39,12 @@
 * 2020-02-11: 7 of 33 questions found with no other references
 * 2020-01-22: 3 of 28 questions found with no other references
 * 2019-12-19: 14 of 51 questions found with no other references
-* 2019-03-09: 45 of 111 questions found with no other references
-* 2018-11-23: 5 of 5 questions found with no other references
-* 2018-10-03: 9 of 9 questions found with no other references
-* 2018-08-01: 12 of 18 questions found with no other references
-* 2018-06-22: 9 of 14 questions found with no other references
-* 2018-03-09: 3 of 5 questions found with no other references
+* 2019-03-09: 44 of 111 questions found with no other references
+* 2018-11-23: 0 of 5 questions found with no other references
+* 2018-10-03: 0 of 9 questions found with no other references
+* 2018-08-01: 1 of 18 questions found with no other references
+* 2018-06-22: 0 of 14 questions found with no other references
+* 2018-03-09: 0 of 5 questions found with no other references
 
 # prototype replacement for faq markdown file
 
@@ -747,13 +747,15 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 5 other times, as recently as November 2020 and as early as September 2020.</summary>
+<summary>This question may have been asked previously at least 6 other times, as recently as November 2020 and as early as August 2018.</summary>
 
 * [November 17th, 2020 Livestream Q&A: Any plans on Weather cycles?](https://archive.satisfactory.video/transcriptions/yt--QpGRQcZfe0) https://www.youtube.com/watch?v=-QpGRQcZfe0
 * [November 10th, 2020 Livestream Q&A: Can we get Weather to change?](https://archive.satisfactory.video/transcriptions/yt-iq-K9FY-RT8) https://www.youtube.com/watch?v=iq-K9FY-RT8
 * [November 10th, 2020 Livestream Q&A: Will we have Weather events?](https://archive.satisfactory.video/transcriptions/yt-MzWzCnmbkYI) https://www.youtube.com/watch?v=MzWzCnmbkYI
 * [September 22nd, 2020 Livestream Q&A: Weather in Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-Sxvg881RjeA) https://www.youtube.com/watch?v=Sxvg881RjeA
 * [September 8th, 2020 Livestream Q&A: Do we intend to add rain/storms ?](https://archive.satisfactory.video/transcriptions/yt-3WDeVbpr30g) https://www.youtube.com/watch?v=3WDeVbpr30g
+* [August 1st, 2018 Livestream Q&A: Is there Weather in the game?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,58.6,60.36) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=58&end=61
+
 </details>
 
 ### [Q&A: What's the chance that the game will be released this year?](https://archive.satisfactory.video/transcriptions/yt-W2O4gfNYj9s) https://www.youtube.com/watch?v=W2O4gfNYj9s
@@ -3831,7 +3833,7 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 6 other times, as recently as November 2020 and as early as March 2019.</summary>
+<summary>This question may have been asked previously at least 7 other times, as recently as November 2020 and as early as June 2018.</summary>
 
 * [November 17th, 2020 Livestream Q&A: Is there any Official Mod Support planned?](https://archive.satisfactory.video/transcriptions/yt-z4Uv-UNMETw) https://www.youtube.com/watch?v=z4Uv-UNMETw
 * [November 3rd, 2020 Livestream Q&A: Any idea about Official Modding?](https://archive.satisfactory.video/transcriptions/yt-D5-Y6LYR7jk) https://www.youtube.com/watch?v=D5-Y6LYR7jk
@@ -3839,6 +3841,8 @@
 * [August 25th, 2020 Livestream Q&A: Plans for mod support?](https://archive.satisfactory.video/transcriptions/yt-iOk7KMpNMEo) https://www.youtube.com/watch?v=iOk7KMpNMEo
 * [February 11th, 2020 Livestream Q&A: Where's Mod support?](https://archive.satisfactory.video/transcriptions/yt-JRyAZT7y44g) https://www.youtube.com/watch?v=JRyAZT7y44g
 * [March 9th, 2019 Livestream Q&A: What do you think about future Mod support?](https://archive.satisfactory.video/transcriptions/yt-6-uSzpX-zZ0) https://www.youtube.com/watch?v=6-uSzpX-zZ0
+* [June 22nd, 2018 Livestream Q&A: Will there be mods?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,91.24,120.52) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=91&end=121
+
 </details>
 
 ### [Q&A: Is there any info/lore on the player character?](https://archive.satisfactory.video/transcriptions/yt-7W32eD2pZOM) https://www.youtube.com/watch?v=7W32eD2pZOM
@@ -5744,10 +5748,12 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 2 other times, as recently as March 2019 and as early as August 2018.</summary>
+<summary>This question may have been asked previously at least 3 other times, as recently as March 2019 and as early as August 2018.</summary>
 
 * [March 9th, 2019 Livestream Q&A: Can we have an alternate arachnophobia mode with Simon's face?](https://archive.satisfactory.video/transcriptions/yt-3h2P4TfAAwE) https://www.youtube.com/watch?v=3h2P4TfAAwE
 * [August 1st, 2018 Livestream Q&A: Can we change the sprite ourselves?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,227.8,231.6) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=227&end=232
+
+* [August 1st, 2018 Livestream Q&A: What if I'm also afraid of cats? What about changing the cats' head to Simon's head instead?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,208.96,227.8) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=208&end=228
 
 </details>
 
@@ -5793,5 +5799,41 @@
 * [January 22nd, 2020 Livestream Q&A: Dedicated Servers, will they cost anything?](https://archive.satisfactory.video/transcriptions/yt-SdB0QlhgmGs) https://www.youtube.com/watch?v=SdB0QlhgmGs
 * [January 22nd, 2020 Livestream Q&A: Will we need to buy a new copy for the server?](https://archive.satisfactory.video/transcriptions/yt-H6FZ4VqocHw) https://www.youtube.com/watch?v=H6FZ4VqocHw
 * [March 9th, 2019 Livestream Q&A: Will Dedicated Servers and Mods be free?](https://archive.satisfactory.video/transcriptions/yt-WEq2xEXVVQ0) https://www.youtube.com/watch?v=WEq2xEXVVQ0
+</details>
+
+## [December 19th, 2019 Livestream ](https://archive.satisfactory.video/2019-12-19)
+### [Q&A: Will price go up after Early Access ends?](https://archive.satisfactory.video/transcriptions/yt-TFg_ppmX8OE) https://www.youtube.com/watch?v=TFg_ppmX8OE
+
+<details>
+
+<summary>A transcript is available</summary>
+
+> go for it yeah uh will the price go up
+>
+> after early access ends i'm actually not
+>
+> sure
+>
+> uh i think we sort of thought that maybe
+>
+> as the game gets more complete it would
+>
+> go up but
+>
+> that was uh over a year ago that that we
+>
+> thought of that and
+>
+> basically don't know
+
+
+</details>
+
+<details>
+<summary>This question may have been asked previously at least 2 other times, as recently as March 2019 and as early as August 2018.</summary>
+
+* [March 9th, 2019 Livestream Q&A: Will the price stay at $30, or will it drop/increase as time goes on?](https://archive.satisfactory.video/transcriptions/yt-RVdtG9yWW68) https://www.youtube.com/watch?v=RVdtG9yWW68
+* [August 1st, 2018 Livestream Q&A: How much will the game cost when it's released?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,99.44,119.72) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=99&end=120
+
 </details>
 
