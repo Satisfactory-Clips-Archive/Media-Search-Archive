@@ -1929,3 +1929,153 @@ function determine_date_for_video(
 
 	return $playlist_date_ref[$found];
 }
+
+/**
+ * @return array<string, string>
+ */
+function dated_playlists() : array
+{
+	$playlists_filter =
+		/**
+		 * @psalm-assert-if-true string $maybe_value
+		 * @psalm-assert-if-true string $maybe_key
+		 *
+		 * @param scalar|array|object|resource|null $maybe_value
+		 * @param array-key $maybe_key
+		 */
+		static function ($maybe_value, $maybe_key) : bool {
+			return is_string($maybe_value) && is_string($maybe_key);
+		};
+
+	return array_map(
+		static function (string $date) : string {
+			return date('Y-m-d', strtotime($date));
+		},
+		array_filter(
+			array_map(
+				static function (string $filename) : string {
+					return mb_substr($filename, 0, -3);
+				},
+				array_merge(
+					array_filter(
+						(array) json_decode(
+							file_get_contents(
+								__DIR__
+								. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
+							),
+							true
+						),
+						$playlists_filter,
+						ARRAY_FILTER_USE_BOTH
+					),
+					array_filter(
+						(array) json_decode(
+							file_get_contents(
+								__DIR__
+								. '/../playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+							),
+							true
+						),
+						$playlists_filter,
+						ARRAY_FILTER_USE_BOTH
+					)
+				)
+			),
+			static function (string $maybe) : bool {
+				return false !== strtotime($maybe);
+			}
+		)
+	);
+}
+
+/**
+ * @var array<string, array{
+ *	title:string,
+ *	date:string,
+ *	previous:key-of<$cache['playlistItems']>|null,
+ *	next:key-of<$cache['playlistItems']>|null
+ * }>
+ */
+function cached_part_continued() : array
+{
+	/**
+	 * @var null|array<string, array{
+	 *	title:string,
+	 *	date:string,
+	 *	previous:key-of<$cache['playlistItems']>|null,
+	 *	next:key-of<$cache['playlistItems']>|null
+	 * }>
+	 */
+	static $part_continued = null;
+
+	if (null === $part_continued) {
+		/**
+		 * @var array<string, array{
+		 *	title:string,
+		 *	date:string,
+		 *	previous:key-of<$cache['playlistItems']>|null,
+		 *	next:key-of<$cache['playlistItems']>|null
+		 * }>
+		 */
+		$part_continued = json_decode(
+			file_get_contents(__DIR__ . '/../data/part-continued.json'),
+			true
+		);
+	}
+
+	return $part_continued;
+}
+
+function has_other_part(string $video_id) : bool
+{
+	$part_continued = cached_part_continued();
+
+	return
+		isset($part_continued[$video_id])
+		&& (
+			null !== $part_continued[$video_id]['previous']
+			|| null !== $part_continued[$video_id]['next']
+		);
+}
+
+/**
+ * @return list<string>
+ */
+function other_video_parts(string $video_id, bool $include_self = true) : array
+{
+	$out = [];
+
+	if (has_other_part($video_id)) {
+		$part_continued = cached_part_continued();
+
+		$checked = [$video_id];
+
+		$checking = $part_continued[$video_id];
+
+		while (null !== $checking['previous']) {
+			if (in_array($checking['previous'], $checked, true)) {
+				throw new RuntimeException('Infinite loop detected!');
+			}
+
+			$checked[] = $checking['previous'];
+
+			$checking = $part_continued[$checking['previous']];
+		}
+
+		while (null !== $checking['next']) {
+			if (in_array($checking['next'], $out, true)) {
+				throw new RuntimeException('Infinite loop detected!');
+			}
+
+			$out[] = $checking['next'];
+
+			$checking = $part_continued[$checking['next']];
+		}
+	}
+
+	if ( ! $include_self) {
+		$out = array_values(array_diff($out, [$video_id]));
+	}
+
+	return $out;
+}

@@ -4724,7 +4724,9 @@
             "mwrYWPHr4jk"
         ],
         "seealso": [
-            "P7JCgZ-mLDE",
+            "P7JCgZ-mLDE"
+        ],
+        "suggested": [
             "wN7_0V9lRfk"
         ]
     },
@@ -7253,7 +7255,7 @@
             "features\/buildings\/resource-well-pressurizer",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
-        "seealso": [
+        "suggested": [
             "MaHhdhMI_38"
         ]
     },
@@ -17426,7 +17428,7 @@
             "features\/crafting",
             "mods"
         ],
-        "seealso": [
+        "suggested": [
             "0vZS0gvnuqg"
         ]
     },
@@ -17629,9 +17631,6 @@
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-fluids-update"
         ],
-        "seealso": [
-            "vfVo9rCpVtQ"
-        ],
         "suggested": [
             "1NTKmQqoxNs",
             "5kVXtK-Yu5g",
@@ -17660,6 +17659,7 @@
             "v-f6PgaD4rY",
             "v3_fHKQqX24",
             "vd_1D58uwJ4",
+            "vfVo9rCpVtQ",
             "w0h08ctpsz4",
             "ww5wd63vgFo",
             "xJ3zk3Yvav0",
@@ -22154,7 +22154,7 @@
         "topics": [
             "features\/pioneer"
         ],
-        "seealso": [
+        "suggested": [
             "tc-BlueBadWeaselPMSTwin"
         ]
     },
@@ -22259,7 +22259,7 @@
         "topics": [
             "features\/multiplayer"
         ],
-        "seealso": [
+        "suggested": [
             "tc-CrackyBombasticEggUWot"
         ]
     },
@@ -22302,7 +22302,7 @@
         "replacedby": "1Xgd1ANF9gw"
     },
     "tc-PrettiestBloodyBadgerDendiFace": {
-        "title": "Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes?",
+        "title": "Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes? (part 2)",
         "date": "2020-08-18",
         "topics": [
             "features\/accessibility"
@@ -22310,7 +22310,9 @@
         "seealso": [
             "4acLhZvD1PU",
             "r4TS6nRxy9k",
-            "tc-CrepuscularInterestingWerewolfBCWarrior",
+            "tc-CrepuscularInterestingWerewolfBCWarrior"
+        ],
+        "suggested": [
             "tc-DignifiedSmoggyKathyAMPEnergyCherry",
             "tc-FurtiveConcernedPuppySMOrc"
         ]
@@ -22322,7 +22324,7 @@
             "features\/tiers\/tier-8",
             "satisfactory-updates\/pending\/satisfactory-update-4"
         ],
-        "seealso": [
+        "suggested": [
             "tc-AwkwardBloodyNightingaleShadyLulu"
         ],
         "replacedby": "1Xgd1ANF9gw"
@@ -22398,7 +22400,9 @@
             "features\/multiplayer"
         ],
         "seealso": [
-            "9Fe7lcAQx9I",
+            "9Fe7lcAQx9I"
+        ],
+        "suggested": [
             "tc-SavagePopularBatChocolateRain",
             "tc-TardyBitterGnatDatSheffy"
         ]
@@ -22410,11 +22414,11 @@
             "features\/multiplayer"
         ],
         "seealso": [
-            "tc-OpenIntelligentPizzaYouWHY",
-            "tc-SavagePopularBatChocolateRain"
+            "tc-OpenIntelligentPizzaYouWHY"
         ],
         "suggested": [
-            "9Fe7lcAQx9I"
+            "9Fe7lcAQx9I",
+            "tc-SavagePopularBatChocolateRain"
         ]
     },
     "tc-SavagePopularBatChocolateRain": {
@@ -22424,11 +22428,11 @@
             "features\/multiplayer"
         ],
         "seealso": [
-            "tc-OpenIntelligentPizzaYouWHY",
-            "tc-TardyBitterGnatDatSheffy"
+            "tc-OpenIntelligentPizzaYouWHY"
         ],
         "suggested": [
-            "9Fe7lcAQx9I"
+            "9Fe7lcAQx9I",
+            "tc-TardyBitterGnatDatSheffy"
         ]
     },
     "tc-BelovedBloodyStapleGingerPower": {
@@ -22728,7 +22732,7 @@
         "topics": [
             "merch"
         ],
-        "seealso": [
+        "suggested": [
             "tc-EnticingPricklyWitchM4xHeh"
         ]
     },
@@ -22797,7 +22801,7 @@
         "topics": [
             "features\/buildings\/the-hub"
         ],
-        "seealso": [
+        "suggested": [
             "tc-PrettiestObedientLegItsBoshyTime"
         ],
         "duplicatedby": "uskbxtN069Q"
@@ -22834,7 +22838,7 @@
         "topics": [
             "features\/transportation\/vehicles"
         ],
-        "seealso": [
+        "suggested": [
             "tc-CooperativeFurtiveWasabiOhMyDog"
         ]
     },
@@ -26028,7 +26032,7 @@
         "topics": [
             "features\/photo-mode"
         ],
-        "seealso": [
+        "suggested": [
             "VQp2sry-iDQ"
         ]
     },

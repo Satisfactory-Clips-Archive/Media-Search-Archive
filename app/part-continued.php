@@ -1,0 +1,145 @@
+<?php
+/**
+ * @author SignpostMarv
+ */
+declare(strict_types=1);
+
+namespace SignpostMarv\VideoClipNotes;
+
+require_once (__DIR__ . '/../vendor/autoload.php');
+
+[$cache, $global_topic_hierarchy] = prepare_injections(
+	new YouTubeApiWrapper(),
+	new Slugify()
+);
+
+/**
+ * @var array<string, array{
+ *	title:string,
+ *	date:string,
+ *	previous:key-of<$cache['playlistItems']>|null,
+ *	next:key-of<$cache['playlistItems']>|null
+ * }>
+ */
+$existing = array_filter(
+	(array) json_decode(
+		file_get_contents(
+			__DIR__
+			. '/data/part-continued.json'
+		),
+		true
+	),
+	/**
+	 * @param scalar|array|object|null $maybe
+	 */
+	static function ($maybe, $maybe_key) use ($cache) : bool {
+		return
+			is_string($maybe_key)
+			&& isset($cache['playlistItems'][$maybe_key])
+			&& is_array($maybe)
+			&& 4 === count($maybe)
+			&& isset($maybe['title'])
+			&& is_string($maybe['title'])
+			&& isset($maybe['date'])
+			&& is_string($maybe['date'])
+			&& false !== strtotime($maybe['date'])
+			&& array_key_exists('previous', $maybe)
+			&& array_key_exists('next', $maybe)
+			&& (
+				null === $maybe['previous']
+				|| (
+					is_string($maybe['previous'])
+					&& isset($cache['playlistItems'][$maybe['previous']])
+				)
+			)
+			&& (
+				null === $maybe['next']
+				|| (
+					is_string($maybe['next'])
+					&& isset($cache['playlistItems'][$maybe['next']])
+				)
+			)
+		;
+	},
+	ARRAY_FILTER_USE_BOTH
+);
+
+$maybe_with_part = array_diff(
+	array_keys(array_filter(
+		$cache['playlistItems'],
+		static function (array $maybe) : bool {
+			return (bool) preg_match('/part \d+/i', $maybe[1]);
+		}
+	)),
+	array_keys($existing),
+	array_reduce(
+		$cache['legacyAlts'],
+		/**
+		 * @param list<string> $out
+		 * @param list<string> $alts
+		 *
+		 * @return list<string>
+		 */
+		static function (array $out, array $alts) : array {
+			return array_unique(array_merge($out, array_diff($alts, $out)));
+		},
+		[]
+	)
+);
+
+$maybe_with_part = array_combine($maybe_with_part, array_map(
+	/**
+	 * @return array{previous:null, next:null, title:string, date:string}
+	 */
+	static function () : array {
+		return [
+			'previous' => null,
+			'next' => null,
+			'title' => '',
+			'date' => 'now'
+		];
+	},
+	$maybe_with_part
+));
+
+$existing = array_merge($existing, $maybe_with_part);
+
+$playlists = dated_playlists();
+
+foreach (array_keys($existing) as $video_id) {
+	$existing[$video_id]['title'] = $cache['playlistItems'][$video_id][1];
+	$existing[$video_id]['date'] = determine_date_for_video(
+		$video_id,
+		$cache['playlists'],
+		$playlists
+	);
+}
+
+$sorting = new Sorting($cache);
+$sorting->playlists_date_ref = $playlists;
+
+uksort($existing, [$sorting, 'sort_video_ids_by_date']);
+
+file_put_contents(
+	__DIR__ . '/data/part-continued.json',
+	json_encode($existing, JSON_PRETTY_PRINT)
+);
+
+$no_parts_specified = array_filter(
+	$existing,
+	/**
+	 * @param array{previous:string|null, next:string|null} $maybe
+	 */
+	static function (array $maybe) : bool {
+		return null === $maybe['previous'] && null === $maybe['next'];
+	}
+);
+
+echo
+	sprintf(
+		'%s of %s videos found with no part information',
+		count($no_parts_specified),
+		count($existing)
+	),
+	"\n"
+;
