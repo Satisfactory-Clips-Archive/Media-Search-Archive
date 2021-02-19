@@ -6,6 +6,29 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function array_combine;
+use function array_diff;
+use function array_filter;
+use const ARRAY_FILTER_USE_BOTH;
+use function array_key_exists;
+use function array_keys;
+use function array_map;
+use function array_merge;
+use function array_reduce;
+use function array_unique;
+use function count;
+use function file_get_contents;
+use function file_put_contents;
+use function is_array;
+use function is_string;
+use function json_decode;
+use function json_encode;
+use const JSON_PRETTY_PRINT;
+use function preg_match;
+use function sprintf;
+use function strtotime;
+use function uksort;
+
 require_once (__DIR__ . '/../vendor/autoload.php');
 
 [$cache, $global_topic_hierarchy] = prepare_injections(
@@ -31,6 +54,7 @@ $existing = array_filter(
 	),
 	/**
 	 * @param scalar|array|object|null $maybe
+	 * @param mixed $maybe_key
 	 */
 	static function ($maybe, $maybe_key) use ($cache) : bool {
 		return
@@ -96,7 +120,7 @@ $maybe_with_part = array_combine($maybe_with_part, array_map(
 			'previous' => null,
 			'next' => null,
 			'title' => '',
-			'date' => 'now'
+			'date' => 'now',
 		];
 	},
 	$maybe_with_part
@@ -135,8 +159,7 @@ $no_parts_specified = array_filter(
 	}
 );
 
-echo
-	sprintf(
+echo sprintf(
 		'%s of %s videos found with no part information',
 		count($no_parts_specified),
 		count($existing)
