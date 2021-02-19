@@ -94,3 +94,6 @@ check other videos for reference to teleportation bug
 
 # yt-W1E6EWrAsII,434.4,492.52
 I'm sure there was another question about the build ceiling 🤷‍♂️
+
+# steam release
+* index the update 3 / steam launch trailers & set see alsos for
