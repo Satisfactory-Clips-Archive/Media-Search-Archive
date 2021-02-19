@@ -357,7 +357,10 @@ foreach ($all_topic_ids as $topic_id) {
 foreach ($global_topic_hierarchy as $basename => $topics) {
 	foreach ($topics as $topic_id => $topic_ancestors) {
 		if ( ! isset($topic_nesting[$basename][$topic_id])) {
-			throw new RuntimeException('topic not already added!');
+			throw new RuntimeException(sprintf(
+				'topic %s not already added!',
+				$topic_id
+			));
 		}
 
 		$topic_nesting[$basename][$topic_id]['level'] = count($topic_ancestors);

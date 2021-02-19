@@ -7,13 +7,27 @@ declare(strict_types=1);
 $global_topic_hierarchy = [
 	'satisfactory' => [
 		'PLbjDnnBIxiEo8RlgfifC8OhLmJl8SgpJE' => [ // State of Dev
-			-3,
+			-6,
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEq-eP01Lynsg2Jv-wLEWQ7e' => [ // Satisfactory Prototypes
+			-5,
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiErefLJefhTwZ4IQWai8n8iH' => [ // Pre-Alpha
+			-4,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEoe5rHqE8w9OpWENlICvWKD' => [ // Satisfactory Alpha
+			-3,
+			'Satisfactory Updates',
+			'Released',
+		],
+		'PLbjDnnBIxiErt_GKKuC2z1kLZfTg1-ior' => [ // Alpha Weekend
 			-2,
 			'Satisfactory Updates',
 			'Released',
+			'Satisfactory Alpha',
 		],
 		'PLbjDnnBIxiEp3nVij0OnuqpiuBFlKDB-K' => [ // Satisfactory 2017
 			-1,
@@ -705,6 +719,23 @@ $global_topic_hierarchy = [
 		],
 		'PLbjDnnBIxiErPmwCcdEax-8TIvyvjdlm2' => [ // Mac
 			'Technology',
+		],
+		'PLbjDnnBIxiEoRw9O4Lx_d3-RNK0Grlm1c' => [ // Epic Store
+			'Retail',
+		],
+		'PLbjDnnBIxiEofikmXnRJhU7m4yhEZfPhH' => [ // Epic Store Exclusivity
+			'Retail',
+			'Epic Store',
+		],
+		'PLbjDnnBIxiEoztbnzfvEZjurwzZnL1wv4' => [ // Steam Store
+			'Retail',
+		],
+		'PLbjDnnBIxiEqZex4vbgYkVTsT4vBy6ycE' => [ // Steam Release
+			'Retail',
+			'Steam Store',
+		],
+		'PLbjDnnBIxiEqe6yJj8TvkF6VxhLGiah3b' => [ // Uzu
+			'Coffee Stainers',
 		],
 	],
 ];

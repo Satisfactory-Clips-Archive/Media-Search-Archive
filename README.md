@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-02-19
+* Updated build with topic changes originating in q-and-a-tracking branch
+
 ## 2021-02-18
 * Updated build with topic changes
 
