@@ -207,58 +207,7 @@ $slugify = new Slugify();
 	new Slugify()
 );
 
-$playlists_filter =
-	/**
-	 * @psalm-assert-if-true string $maybe_value
-	 * @psalm-assert-if-true string $maybe_key
-	 *
-	 * @param scalar|array|object|resource|null $maybe_value
-	 * @param array-key $maybe_key
-	 */
-	static function ($maybe_value, $maybe_key) : bool {
-		return is_string($maybe_value) && is_string($maybe_key);
-	};
-
-/** @var array<string, string> */
-$playlists = array_map(
-	static function (string $date) : string {
-		return date('Y-m-d', strtotime($date));
-	},
-	array_filter(
-		array_map(
-			static function (string $filename) : string {
-				return mb_substr($filename, 0, -3);
-			},
-			array_merge(
-				array_filter(
-					(array) json_decode(
-						file_get_contents(
-							__DIR__
-							. '/playlists/coffeestainstudiosdevs/satisfactory.json'
-						),
-						true
-					),
-					$playlists_filter,
-					ARRAY_FILTER_USE_BOTH
-				),
-				array_filter(
-					(array) json_decode(
-						file_get_contents(
-							__DIR__
-							. '/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
-						),
-						true
-					),
-					$playlists_filter,
-					ARRAY_FILTER_USE_BOTH
-				)
-			)
-		),
-		static function (string $maybe) : bool {
-			return false !== strtotime($maybe);
-		}
-	)
-);
+$playlists = dated_playlists();
 
 $sorting = new Sorting($cache);
 $sorting->playlists_date_ref = $playlists;
@@ -690,6 +639,13 @@ foreach ($existing as $video_id => $data) {
 		}
 	);
 
+	$existing[$video_id]['seealso'] = $data['seealso'] = array_filter(
+		$data['seealso'],
+		static function (string $maybe) use ($video_id) : bool {
+			return ! in_array($maybe, other_video_parts($video_id), true);
+		}
+	);
+
 	foreach (
 		[
 			'duplicates',
@@ -908,6 +864,71 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		)),
 		"\n"
 	;
+
+	if (has_other_part($video_id)) {
+		$video_part_info = cached_part_continued()[$video_id];
+		$video_other_parts = other_video_parts($video_id);
+
+		echo
+			"\n",
+			'<details>',
+			"\n",
+			'<summary>';
+
+		if (count($video_other_parts) > 2) {
+			echo sprintf(
+				'This video is part of a series of %s videos.',
+				count($video_other_parts)
+			);
+		} elseif (null !== $video_part_info['previous']) {
+			echo 'This video is a continuation of a previous video';
+		} else {
+			echo 'This video continues in another video';
+		}
+
+		echo '</summary>', "\n\n";
+
+		if (count($video_other_parts) > 2) {
+			$video_other_parts = other_video_parts($video_id, false);
+		}
+
+		foreach ($video_other_parts as $other_video_id) {
+			echo
+				'* ',
+				preg_replace('/\.md\)/', ')', str_replace(
+					'./',
+					'https://archive.satisfactory.video/',
+					maybe_transcript_link_and_video_url(
+						$other_video_id,
+						(
+							date(
+								'F jS, Y',
+								(int) strtotime(
+									$existing[$other_video_id]['date']
+										?? determine_date_for_video(
+												$other_video_id,
+												$cache['playlists'],
+												$playlists
+										)
+								)
+							)
+							. (
+								isset($not_a_livestream[$playlist_id])
+									? (
+										' '
+										. $not_a_livestream[$playlist_id]
+										. ' '
+									)
+									: ' Livestream '
+							)
+							. $cache['playlistItems'][$other_video_id][1]
+						)
+					)
+				)),
+				"\n"
+			;
+		}
+	}
 
 	if (count($transcription) > 0) {
 		echo "\n", '<details>', "\n";

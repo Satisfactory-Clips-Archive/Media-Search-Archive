@@ -1021,10 +1021,10 @@ $from_markdown = [
 		'Snutt & Jace Talk: Arachnophobia Mode (part 4) https://clips.twitch.tv/NurturingPlayfulSwanTBTacoLeft' => [
 			'Arachnophobia Mode',
 		],
-		'Snutt Talk: Accessibility (part 1): https://clips.twitch.tv/CrowdedSplendidSalamanderSoonerLater' => [
+		'Snutt Talk: Accessibility (part 1) https://clips.twitch.tv/CrowdedSplendidSalamanderSoonerLater' => [
 			'Accessibility',
 		],
-		'Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes? https://clips.twitch.tv/PrettiestBloodyBadgerDendiFace' => [
+		'Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes? (part 2) https://clips.twitch.tv/PrettiestBloodyBadgerDendiFace' => [
 			'Accessibility',
 		],
 		'Jace Talk: Accessibility - Arachnophobia & Colour Blindness (part 3) https://clips.twitch.tv/DignifiedSmoggyKathyAMPEnergyCherry' => [

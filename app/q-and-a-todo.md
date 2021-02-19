@@ -1,6 +1,3 @@
-# general
-* add a flag for "continued in" to separate references that're just to other parts in a multi-video answer
-
 # i1-FmJGxPPg
 * clip up engine upgrade video & link to per-instance data segment
 
