@@ -7,9 +7,6 @@
 # dkVq6ix0lQM
 * add link to "update 4 will break your saves"
 
-# 9M0KquupIBs
-* find appropriate video to flag as "replacedby"
-
 # qqzCKyEWttg
 * find appropriate video to flag as "replacedby"
 
