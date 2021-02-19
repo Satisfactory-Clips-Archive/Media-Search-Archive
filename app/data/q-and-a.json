@@ -402,7 +402,8 @@
         "title": "Q&A: Does obscuring belts actually help with performance?",
         "date": "2021-02-16",
         "topics": [
-            "features\/buildables\/conveyor-belts"
+            "features\/buildables\/conveyor-belts",
+            "satisfactory-updates\/satisfactory-prototypes"
         ],
         "duplicates": [
             "2R4MfLt_oMw",
@@ -1078,7 +1079,8 @@
         "title": "Q&A: Storm or natural disasters in the game?",
         "date": "2021-02-16",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "features\/possible-features\/weather-systems",
+            "satisfactory-updates\/satisfactory-prototypes"
         ],
         "duplicates": [
             "-QpGRQcZfe0",
@@ -2539,7 +2541,9 @@
     "dIQQWHWwCGA": {
         "title": "Q&A: How was the migration to Steam overall, was it worth it?",
         "date": "2021-02-09",
-        "topics": [],
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
         "duplicates": [
             "crzPPDeFTcc"
         ],
@@ -2918,6 +2922,7 @@
         "topics": [
             "environment\/world-map",
             "features\/buildables\/foundations",
+            "satisfactory-updates\/satisfactory-prototypes",
             "technology\/physics"
         ],
         "seealso": [
@@ -3931,6 +3936,7 @@
         "title": "Q&A: Have you sold 10 copies yet?",
         "date": "2021-02-02",
         "topics": [
+            "retail",
             "trolling"
         ],
         "seealso": [
@@ -5236,7 +5242,9 @@
     "_QUBxFf4Yw4": {
         "title": "Q&A: Does refund harm devs- is there a refund fee ?",
         "date": "2021-01-26",
-        "topics": []
+        "topics": [
+            "retail"
+        ]
     },
     "gppSU17i2as": {
         "title": "Q&A: Does the dev team have any ideas for post-launch content?",
@@ -6554,6 +6562,7 @@
         "title": "Q&A: Are you going to add more functionality to the Programmable Splitters?",
         "date": "2021-01-19",
         "topics": [
+            "coffee-stainers\/uzu",
             "features\/buildables\/conveyor-belts"
         ],
         "replaces": [
@@ -7181,7 +7190,8 @@
         "date": "2021-01-19",
         "topics": [
             "environment\/resources",
-            "features\/buildings"
+            "features\/buildings",
+            "satisfactory-updates\/pre-alpha"
         ],
         "duplicates": [
             "KB49DxFs6tw"
@@ -7576,7 +7586,8 @@
         "topics": [
             "features\/equipment",
             "features\/gases",
-            "satisfactory-updates\/pending\/satisfactory-update-4"
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/satisfactory-prototypes"
         ],
         "seealso": [
             "2zz08zzXTCU"
@@ -7608,7 +7619,8 @@
             "features\/fluids\/pipes",
             "features\/fluids\/valves",
             "features\/gases",
-            "satisfactory-updates\/pending\/satisfactory-update-4"
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/satisfactory-prototypes"
         ],
         "duplicatedby": "zZXcL3qlr7w"
     },
@@ -9735,6 +9747,7 @@
         "title": "Q&A: Have you sold more than 10 copies yet?",
         "date": "2020-12-08",
         "topics": [
+            "retail",
             "trolling"
         ],
         "seealso": [
@@ -9796,7 +9809,9 @@
     "pmm8JzrMM78": {
         "title": "Q&A: How do you stream on Steam like you guys are right now?",
         "date": "2020-12-08",
-        "topics": []
+        "topics": [
+            "retail\/steam-store"
+        ]
     },
     "yEMTgjDHzI8": {
         "title": "Q&A: How do you use the feedback from us when we play the game?",
@@ -9804,7 +9819,7 @@
         "topics": [
             "community"
         ],
-        "suggested": [
+        "seealso": [
             "djGcxAQ9Xkk"
         ]
     },
@@ -9931,6 +9946,7 @@
         "date": "2020-12-08",
         "topics": [
             "environment\/resources",
+            "satisfactory-updates\/pre-alpha",
             "satisfactory-updates\/satisfactory-2017"
         ]
     },
@@ -9961,7 +9977,8 @@
         "title": "Q&A: What do you think of the current state of the game?",
         "date": "2020-12-08",
         "topics": [
-            "satisfactory-updates\/satisfactory-2017"
+            "satisfactory-updates\/satisfactory-2017",
+            "satisfactory-updates\/satisfactory-prototypes"
         ]
     },
     "xbRIHy5RP0U": {
@@ -11898,7 +11915,8 @@
         "title": "Q&A: Are there Mods that you might put into the game?",
         "date": "2020-11-10",
         "topics": [
-            "mods\/mods-vs-features"
+            "mods\/mods-vs-features",
+            "satisfactory-updates\/satisfactory-prototypes"
         ],
         "duplicatedby": "UrgqXAHK4KU"
     },
@@ -12114,7 +12132,9 @@
     "1Q7R8pQ4WrE": {
         "title": "Q&A: Do you earn money with the keys sold on third-party sites?",
         "date": "2020-11-10",
-        "topics": []
+        "topics": [
+            "retail"
+        ]
     },
     "LSx6aBL0q3Q": {
         "title": "Q&A: Do you ever get the feeling the game will be put aside and never leave Early Access?",
@@ -12580,6 +12600,7 @@
         "date": "2020-11-10",
         "topics": [
             "features\/buildings",
+            "satisfactory-updates\/satisfactory-prototypes",
             "technology\/physics"
         ],
         "suggested": [
@@ -12615,7 +12636,13 @@
     "ypN9OtMd7YU": {
         "title": "Q&A: Who in Coffee Stain Studios is the best Factory Builder?",
         "date": "2020-11-10",
-        "topics": []
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/simon",
+            "coffee-stainers\/uzu",
+            "features\/fluids\/pipes",
+            "satisfactory-updates\/pre-alpha"
+        ]
     },
     "9sP0hOMzQ40": {
         "title": "Q&A: Why have two beds and loo but can't use?",
@@ -12937,7 +12964,9 @@
         "title": "Q&A: Can you use old saves after Updates ?",
         "date": "2020-11-03",
         "topics": [
+            "features\/save-system",
             "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/pre-alpha",
             "satisfactory-updates\/released\/satisfactory-fluids-update"
         ],
         "seealso": [
@@ -13034,7 +13063,9 @@
     "RXrCk4II2NM": {
         "title": "Q&A: How code-heavy is the game and how do you keep it organised?",
         "date": "2020-11-03",
-        "topics": [],
+        "topics": [
+            "satisfactory-updates\/satisfactory-prototypes"
+        ],
         "seealso": [
             "HhFUbge6Z7E"
         ]
@@ -13093,7 +13124,16 @@
         "title": "Q&A: Is there a difference in performance between the Epic version and the Steam version?",
         "date": "2020-11-03",
         "topics": [
-            "satisfactory-updates\/release-builds"
+            "retail\/epic-store",
+            "retail\/steam-store"
+        ],
+        "seealso": [
+            "gXCCQ_JBIUg",
+            "y4vMStiTtT4"
+        ],
+        "suggested": [
+            "t814f8sansw",
+            "XWqTKTZB0S0"
         ]
     },
     "Yn4Brcx8CSs": {
@@ -13362,7 +13402,9 @@
     "WevOPEUHjT4": {
         "title": "Q&A: Will there be an update on how many copies of the game has sold?",
         "date": "2020-11-03",
-        "topics": [],
+        "topics": [
+            "retail"
+        ],
         "seealso": [
             "q1L297zZiDY"
         ],
@@ -14001,7 +14043,9 @@
     "djGcxAQ9Xkk": {
         "title": "Q&A: How does the Questions site transfer to Feature in game?",
         "date": "2020-10-20",
-        "topics": [],
+        "topics": [
+            "satisfactory-updates\/satisfactory-prototypes"
+        ],
         "seealso": [
             "yEMTgjDHzI8"
         ]
@@ -14040,7 +14084,9 @@
         "title": "Q&A: Is there going to be more equipment coming, like Rifle Mk. 2?",
         "date": "2020-10-20",
         "topics": [
-            "features\/equipment"
+            "features\/equipment",
+            "satisfactory-updates\/released\/satisfactory-alpha",
+            "satisfactory-updates\/satisfactory-prototypes"
         ],
         "seealso": [
             "WTCjl2Tu39A"
@@ -14106,6 +14152,7 @@
         "title": "Q&A: What will Story Mode be like?",
         "date": "2020-10-20",
         "topics": [
+            "satisfactory-updates\/satisfactory-prototypes",
             "story-lore"
         ],
         "seealso": [
@@ -15198,7 +15245,11 @@
         "date": "2020-10-06",
         "topics": [
             "community\/wiki",
-            "satisfactory-updates\/released\/satisfactory-alpha"
+            "satisfactory-updates\/released\/satisfactory-alpha",
+            "satisfactory-updates\/satisfactory-prototypes"
+        ],
+        "seealso": [
+            "io0J9vpBHPg"
         ]
     },
     "sLBqy5auRck": {
@@ -15522,7 +15573,9 @@
     "6G16NmLIwEk": {
         "title": "Q&A: Is Experimental only on Epic?",
         "date": "2020-10-06",
-        "topics": [],
+        "topics": [
+            "satisfactory-updates\/release-builds"
+        ],
         "duplicatedby": "gXCCQ_JBIUg"
     },
     "0JyFVACOZ-E": {
@@ -15635,6 +15688,9 @@
         "date": "2020-10-06",
         "topics": [
             "community\/wiki"
+        ],
+        "seealso": [
+            "SG9tehaWHsE"
         ]
     },
     "v2LpW-ZU6Sc": {
@@ -15938,7 +15994,8 @@
         "title": "Q&A: Will you incorporate any mods into the base game?",
         "date": "2020-10-06",
         "topics": [
-            "mods\/mods-vs-features"
+            "mods\/mods-vs-features",
+            "satisfactory-updates\/satisfactory-prototypes"
         ],
         "duplicatedby": "UrgqXAHK4KU"
     },
@@ -16160,6 +16217,7 @@
         "topics": [
             "features\/buildings",
             "mods\/mods-vs-features",
+            "satisfactory-updates\/satisfactory-prototypes",
             "technology\/graphics"
         ],
         "duplicatedby": "JDJ5hvAkrWw"
@@ -16395,7 +16453,17 @@
     "y4vMStiTtT4": {
         "title": "Q&A: When is Steam access updated?",
         "date": "2020-09-29",
-        "topics": []
+        "topics": [
+            "retail\/steam-store"
+        ],
+        "seealso": [
+            "CgGc8VRspUA"
+        ],
+        "suggested": [
+            "gXCCQ_JBIUg",
+            "t814f8sansw",
+            "XWqTKTZB0S0"
+        ]
     },
     "DYy7NpZ7qYA": {
         "title": "Q&A: Why is there a trade-off with Nuclear Power but not with Coal or Oil?",
@@ -17419,8 +17487,12 @@
         "title": "Q&A: Craftable Camera? (part 1)",
         "date": "2020-09-15",
         "topics": [
+            "coffee-stainers\/uzu",
             "features\/crafting",
             "mods"
+        ],
+        "seealso": [
+            "nVXcTzC72EQ"
         ]
     },
     "0vZS0gvnuqg": {
@@ -17431,6 +17503,7 @@
             "mods"
         ],
         "seealso": [
+            "nVXcTzC72EQ",
             "__WKPcHdDcA"
         ]
     },
@@ -18001,7 +18074,8 @@
         "title": "Q&A: Do we intend to add rain\/storms ?",
         "date": "2020-09-08",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "features\/possible-features\/weather-systems",
+            "satisfactory-updates\/satisfactory-prototypes"
         ],
         "duplicatedby": "LgYBDQkiTrk"
     },
@@ -18206,6 +18280,10 @@
         "duplicates": [
             "hWRM_bQHXzc",
             "HXXn10GhRWU"
+        ],
+        "seealso": [
+            "0vZS0gvnuqg",
+            "__WKPcHdDcA"
         ]
     },
     "nZnTSGGqVYo": {
@@ -18889,7 +18967,12 @@
     "wm4CeRIYW-c": {
         "title": "Q&A: Are you happy with the progress of the game?",
         "date": "2020-09-01",
-        "topics": []
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
+        "seealso": [
+            "pcV-2pHcho8"
+        ]
     },
     "hpl23B1A0Qk": {
         "title": "Q&A: Blueprints?",
@@ -18935,7 +19018,9 @@
     "crzPPDeFTcc": {
         "title": "Q&A: Did the Steam release meet expected goals?",
         "date": "2020-09-01",
-        "topics": [],
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
         "duplicatedby": "dIQQWHWwCGA"
     },
     "zJtAxMIxK34": {
@@ -20103,7 +20188,8 @@
             "features\/fluids\/pipes",
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "satisfactory-updates\/pending\/satisfactory-update-4",
-            "satisfactory-updates\/released\/satisfactory-update-3"
+            "satisfactory-updates\/released\/satisfactory-update-3",
+            "satisfactory-updates\/satisfactory-prototypes"
         ],
         "legacyalts": [
             "tc-AgitatedProtectiveBaguetteRiPepperonis",
@@ -20743,6 +20829,7 @@
         "date": "2020-08-25",
         "topics": [
             "features\/transportation\/vehicles",
+            "satisfactory-updates\/pre-alpha",
             "technology\/graphics"
         ],
         "legacyalts": [
@@ -22190,7 +22277,8 @@
         "title": "Q&A: Is Satisfactory affected by Epic vs. Apple?",
         "date": "2020-08-18",
         "topics": [
-            "off-topic"
+            "off-topic",
+            "technology\/mac"
         ]
     },
     "tc-CleanCarefulMoonAMPEnergyCherry": {
@@ -22286,7 +22374,7 @@
         "replacedby": "1Xgd1ANF9gw"
     },
     "tc-PrettiestBloodyBadgerDendiFace": {
-        "title": "Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes? (part 2)",
+        "title": "Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes?",
         "date": "2020-08-18",
         "topics": [
             "features\/accessibility"
@@ -23052,7 +23140,9 @@
     "mpp9FgRp5Jw": {
         "title": "Q&A: Any extra content coming with the Steam launch?",
         "date": "2020-06-08",
-        "topics": [],
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
         "seealso": [
             "dIQQWHWwCGA"
         ]
@@ -23171,15 +23261,28 @@
     "_UZr4JLSA1c": {
         "title": "Q&A: How much is it going to cost on Steam?",
         "date": "2020-06-08",
-        "topics": [],
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
         "duplicates": [
+            "FILck3h3n0A"
+        ],
+        "seealso": [
+            "5kcpbR2ViOg"
+        ],
+        "suggested": [
             "FILck3h3n0A"
         ]
     },
     "FILck3h3n0A": {
         "title": "Q&A: How much will it cost on Steam?",
         "date": "2020-06-08",
-        "topics": [],
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
+        "suggested": [
+            "5kcpbR2ViOg"
+        ],
         "duplicatedby": "_UZr4JLSA1c"
     },
     "0DNgoTetdz0": {
@@ -23410,13 +23513,16 @@
             "gXCCQ_JBIUg"
         ],
         "suggested": [
-            "XWqTKTZB0S0"
+            "CgGc8VRspUA",
+            "XWqTKTZB0S0",
+            "y4vMStiTtT4"
         ]
     },
     "gXCCQ_JBIUg": {
         "title": "Q&A: Will I be able to play Experimental branches on Steam?",
         "date": "2020-06-08",
         "topics": [
+            "retail\/steam-store",
             "satisfactory-updates\/release-builds"
         ],
         "duplicates": [
@@ -23425,12 +23531,18 @@
         "seealso": [
             "t814f8sansw",
             "XWqTKTZB0S0"
+        ],
+        "suggested": [
+            "CgGc8VRspUA",
+            "y4vMStiTtT4"
         ]
     },
     "GWtv9JpKGS0": {
         "title": "Q&A: Will I get a Steam key if I already bought it on Epic?",
         "date": "2020-06-08",
-        "topics": [],
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
         "duplicates": [
             "cCWKieE8O8g"
         ]
@@ -23440,6 +23552,7 @@
         "date": "2020-06-08",
         "topics": [
             "community\/smerkin",
+            "retail\/steam-store\/steam-release",
             "trolling"
         ],
         "duplicates": [
@@ -23481,7 +23594,9 @@
     "2fGzXvdPYEU": {
         "title": "Q&A: Will there be Steam Trading Cards?",
         "date": "2020-06-08",
-        "topics": []
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ]
     },
     "1-A4zqHdNKA": {
         "title": "Q&A: Will we have other maps?",
@@ -23494,7 +23609,13 @@
     "5kcpbR2ViOg": {
         "title": "Q&A: Will you use Steam's suggested region pricing?",
         "date": "2020-06-08",
-        "topics": []
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
+        "seealso": [
+            "FILck3h3n0A",
+            "_UZr4JLSA1c"
+        ]
     },
     "5KyHoIVdGzc": {
         "title": "Q&A: Will you using Steam Workshop?",
@@ -23735,7 +23856,8 @@
         "title": "Q&A: Will crossplay launch with the Steam release?",
         "date": "2020-05-19",
         "topics": [
-            "features\/multiplayer\/crossplay"
+            "features\/multiplayer\/crossplay",
+            "retail\/steam-store\/steam-release"
         ],
         "seealso": [
             "kgQjKxY0oGQ"
@@ -24155,7 +24277,9 @@
     "cCWKieE8O8g": {
         "title": "Q&A: Will the people who bought it on Epic get free Steam keys?",
         "date": "2020-03-24",
-        "topics": [],
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
         "duplicatedby": "GWtv9JpKGS0"
     },
     "EiqFP9bm7v4": {
@@ -24172,7 +24296,8 @@
         "title": "Q&A: Will the Steam release make reliability better?",
         "date": "2020-03-24",
         "topics": [
-            "features\/multiplayer"
+            "features\/multiplayer",
+            "retail\/steam-store\/steam-release"
         ],
         "duplicatedby": "t814f8sansw"
     },
@@ -24426,7 +24551,9 @@
             "gXCCQ_JBIUg"
         ],
         "suggested": [
-            "t814f8sansw"
+            "CgGc8VRspUA",
+            "t814f8sansw",
+            "y4vMStiTtT4"
         ]
     },
     "SiKHL4mgM40": {
@@ -24874,7 +25001,10 @@
     "gOgyvgKAGAQ": {
         "title": "Q&A: Satisfactory on Steam?",
         "date": "2020-01-22",
-        "topics": []
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity",
+            "retail\/steam-store\/steam-release"
+        ]
     },
     "LWyO9jzxduo": {
         "title": "Q&A: What's the joke with Pipes, why do people want them?",
@@ -25034,7 +25164,12 @@
     "Kfn13oEuA0c": {
         "title": "Q&A: With the end of Epic exclusivity, will there be other ways to get it ?",
         "date": "2020-01-22",
-        "topics": []
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "zHYxze67E28"
+        ]
     },
     "06YaY3zGZeg": {
         "title": "Q&A: Are there any Easter Eggs in the landscape?",
@@ -25771,7 +25906,8 @@
         "title": "Q&A: After the Alpha Weekend - Alpha Testers can continue streaming with the Alpha client?",
         "date": "2019-03-09",
         "topics": [
-            "satisfactory-updates\/released\/satisfactory-alpha"
+            "satisfactory-updates\/released\/satisfactory-alpha",
+            "satisfactory-updates\/released\/satisfactory-alpha\/alpha-weekend"
         ],
         "seealso": [
             "yt-1OQk7vNt6-0,233.42,261.62",
@@ -26064,7 +26200,8 @@
         "title": "Q&A: But do they take your opinion (about steam) serious?",
         "date": "2019-03-09",
         "topics": [
-            "coffee-stainers"
+            "coffee-stainers",
+            "retail\/steam-store\/steam-release"
         ]
     },
     "q07kHsvi3CU": {
@@ -26148,7 +26285,12 @@
     "zHYxze67E28": {
         "title": "Q&A: Does the timer for Epic exclusivity run when the game comes out or Early Access phase?",
         "date": "2019-03-09",
-        "topics": []
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "Kfn13oEuA0c"
+        ]
     },
     "2ny0XTCY6l0": {
         "title": "Q&A: Do I get a sticker for how many bugs I reported in alpha?",
@@ -26231,7 +26373,11 @@
         "title": "Q&A: How close was the prototype to what we have today?",
         "date": "2019-03-09",
         "topics": [
-            "features\/unreleased-features\/unreleased-content"
+            "features\/unreleased-features\/unreleased-content",
+            "satisfactory-updates\/satisfactory-prototypes"
+        ],
+        "seealso": [
+            "wm4CeRIYW-c"
         ]
     },
     "nRCmJo-Wh9s": {
@@ -26543,7 +26689,8 @@
         "date": "2019-03-09",
         "topics": [
             "satisfactory-updates\/release-builds",
-            "satisfactory-updates\/released\/satisfactory-alpha"
+            "satisfactory-updates\/released\/satisfactory-alpha",
+            "satisfactory-updates\/released\/satisfactory-alpha\/alpha-weekend"
         ],
         "duplicatedby": "u9Vu9NIjiRs"
     },
@@ -26591,7 +26738,10 @@
     "Q2pyvicFkxA": {
         "title": "Q&A: Is there any plans for Steam?",
         "date": "2019-03-09",
-        "topics": []
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity",
+            "retail\/steam-store\/steam-release"
+        ]
     },
     "DLnUjlixpg8": {
         "title": "Q&A: Is there more than 5 enemies in?",
@@ -26919,7 +27069,8 @@
         "title": "Q&A: Who suggested to build factory game?",
         "date": "2019-03-09",
         "topics": [
-            "coffee-stainers"
+            "coffee-stainers",
+            "satisfactory-updates\/satisfactory-prototypes"
         ]
     },
     "Tit_bHzixmk": {

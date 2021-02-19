@@ -78,12 +78,6 @@ add links to merch store announcement
 # sZDS8dOdyvQ
 * add seealso to the appropriate jace/snutt talk segment
 
-# retail
-* collate steam-specific clips
-
-## collate epic exclusivity-specific clips
-* zHYxze67E28
-
 # 3MO6SYCZuFI
 * find a video that talks about how object limit doesn't necessarily correlate to low fps
 
