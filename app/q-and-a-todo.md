@@ -46,9 +46,6 @@ add links to merch store announcement
 * Kfn13oEuA0c
 * Q2pyvicFkxA
 
-# L5MBf2GoTxQ
-* add seealso to thq "smile" segment
-
 # simon saga
 ## simon saga "eat the keys" scene
 * qFYvqvrAFf8
