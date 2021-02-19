@@ -641,10 +641,10 @@ foreach ($existing as $video_id => $data) {
 
 	$existing[$video_id]['seealso'] = $data['seealso'] = array_values(
 		array_filter(
-		$data['seealso'],
-		static function (string $maybe) use ($video_id) : bool {
-			return ! in_array($maybe, other_video_parts($video_id), true);
-		}
+			$data['seealso'],
+			static function (string $maybe) use ($video_id) : bool {
+				return ! in_array($maybe, other_video_parts($video_id), true);
+			}
 		)
 	);
 
