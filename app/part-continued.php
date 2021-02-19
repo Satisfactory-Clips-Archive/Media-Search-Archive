@@ -31,7 +31,7 @@ use function uksort;
 
 require_once (__DIR__ . '/../vendor/autoload.php');
 
-[$cache, $global_topic_hierarchy] = prepare_injections(
+[$cache] = prepare_injections(
 	new YouTubeApiWrapper(),
 	new Slugify()
 );
@@ -40,8 +40,8 @@ require_once (__DIR__ . '/../vendor/autoload.php');
  * @var array<string, array{
  *	title:string,
  *	date:string,
- *	previous:key-of<$cache['playlistItems']>|null,
- *	next:key-of<$cache['playlistItems']>|null
+ *	previous:string|null,
+ *	next:string|null
  * }>
  */
 $existing = array_filter(
@@ -105,7 +105,10 @@ $maybe_with_part = array_diff(
 		 * @return list<string>
 		 */
 		static function (array $out, array $alts) : array {
-			return array_unique(array_merge($out, array_diff($alts, $out)));
+			return array_values(array_unique(array_merge(
+				$out,
+				array_diff($alts, $out)
+			)));
 		},
 		[]
 	)
@@ -113,9 +116,11 @@ $maybe_with_part = array_diff(
 
 $maybe_with_part = array_combine($maybe_with_part, array_map(
 	/**
+	 * @todo check if this can be replaced with array_fill
+	 *
 	 * @return array{previous:null, next:null, title:string, date:string}
 	 */
-	static function () : array {
+	static function (string $_video_id) : array {
 		return [
 			'previous' => null,
 			'next' => null,

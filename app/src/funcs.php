@@ -391,11 +391,11 @@ function inject_caches(array $cache, array ...$caches) : array
  *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *		playlistItems:array<string, array{0:string, 1:string}>,
  *		videoTags:array<string, array{0:string, list<string>}>,
- *		stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
- *		legacyAlts?:array<string, list<string>>,
- *		internalxref?:array<string, string>
+ *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *		legacyAlts:array<string, list<string>>,
+ *		internalxref:array<string, string>
  *	},
- *	1:array<string, list<int|string>>
+ *	1:array{satisfactory:array<string, list<int|string>>}
  * }
  */
 function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
@@ -438,6 +438,19 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 
 	$cache = inject_caches($cache, $externals_cache);
 
+	/**
+	 * @var array{
+	 *	0:array{
+	 *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+	 *		playlistItems:array<string, array{0:string, 1:string}>,
+	 *		videoTags:array<string, array{0:string, list<string>}>,
+	 *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+	 *		legacyAlts:array<string, list<string>>,
+	 *		internalxref:array<string, string>
+	 *	},
+	 *	1:array{satisfactory:array<string, list<int|string>>}
+	 * }
+	 */
 	return [
 		$cache,
 		$global_topic_hierarchy,
@@ -2011,6 +2024,7 @@ function dated_playlists() : array
 			return is_string($maybe_value) && is_string($maybe_key);
 		};
 
+	/** @var array<string, string>  */
 	return array_map(
 		static function (string $date) : string {
 			return date('Y-m-d', strtotime($date));
@@ -2053,11 +2067,11 @@ function dated_playlists() : array
 }
 
 /**
- * @var array<string, array{
+ * @return array<string, array{
  *	title:string,
  *	date:string,
- *	previous:key-of<$cache['playlistItems']>|null,
- *	next:key-of<$cache['playlistItems']>|null
+ *	previous:string|null,
+ *	next:string|null
  * }>
  */
 function cached_part_continued() : array
@@ -2066,8 +2080,8 @@ function cached_part_continued() : array
 	 * @var null|array<string, array{
 	 *	title:string,
 	 *	date:string,
-	 *	previous:key-of<$cache['playlistItems']>|null,
-	 *	next:key-of<$cache['playlistItems']>|null
+	 *	previous:string|null,
+	 *	next:string|null
 	 * }>
 	 */
 	static $part_continued = null;
@@ -2077,8 +2091,8 @@ function cached_part_continued() : array
 		 * @var array<string, array{
 		 *	title:string,
 		 *	date:string,
-		 *	previous:key-of<$cache['playlistItems']>|null,
-		 *	next:key-of<$cache['playlistItems']>|null
+		 *	previous:string|null,
+		 *	next:string|null
 		 * }>
 		 */
 		$part_continued = json_decode(
@@ -2097,8 +2111,8 @@ function has_other_part(string $video_id) : bool
 	return
 		isset($part_continued[$video_id])
 		&& (
-			null !== $part_continued[$video_id]['previous']
-			|| null !== $part_continued[$video_id]['next']
+			null !== ($part_continued[$video_id]['previous'] ?? null)
+			|| null !== ($part_continued[$video_id]['next'] ?? null)
 		);
 }
 
