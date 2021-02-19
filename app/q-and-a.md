@@ -1,36 +1,36 @@
 # Progress
 * 1917 questions found out of 2541 clips
 * 1846 non-trolling & on-topic questions found out of 1917 total questions
-* 528 questions found with no other references
+* 458 questions found with no other references
 ## grouped by date
 * 2021-02-16: 3 of 69 questions found with no other references
-* 2021-02-09: 23 of 93 questions found with no other references
-* 2021-02-02: 13 of 51 questions found with no other references
+* 2021-02-09: 22 of 93 questions found with no other references
+* 2021-02-02: 12 of 51 questions found with no other references
 * 2021-01-26: 25 of 76 questions found with no other references
 * 2021-01-22: 0 of 3 questions found with no other references
-* 2021-01-19: 19 of 90 questions found with no other references
+* 2021-01-19: 18 of 90 questions found with no other references
 * 2021-01-15: 0 of 1 questions found with no other references
 * 2021-01-12: 1 of 30 questions found with no other references
-* 2020-12-15: 6 of 59 questions found with no other references
+* 2020-12-15: 5 of 59 questions found with no other references
 * 2020-12-08: 16 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
-* 2020-11-24: 8 of 40 questions found with no other references
+* 2020-11-24: 7 of 40 questions found with no other references
 * 2020-11-17: 13 of 56 questions found with no other references
-* 2020-11-10: 28 of 83 questions found with no other references
+* 2020-11-10: 27 of 83 questions found with no other references
 * 2020-11-03: 15 of 57 questions found with no other references
 * 2020-10-27: 13 of 23 questions found with no other references
 * 2020-10-20: 19 of 51 questions found with no other references
 * 2020-10-13: 28 of 48 questions found with no other references
-* 2020-10-09: 8 of 24 questions found with no other references
+* 2020-10-09: 7 of 24 questions found with no other references
 * 2020-10-06: 16 of 51 questions found with no other references
 * 2020-09-29: 7 of 38 questions found with no other references
 * 2020-09-22: 9 of 59 questions found with no other references
 * 2020-09-15: 4 of 47 questions found with no other references
 * 2020-09-08: 8 of 72 questions found with no other references
 * 2020-09-01: 11 of 71 questions found with no other references
-* 2020-08-25: 25 of 134 questions found with no other references
-* 2020-08-18: 9 of 55 questions found with no other references
-* 2020-08-11: 17 of 38 questions found with no other references
+* 2020-08-25: 23 of 134 questions found with no other references
+* 2020-08-18: 8 of 55 questions found with no other references
+* 2020-08-11: 13 of 38 questions found with no other references
 * 2020-07-28: 4 of 10 questions found with no other references
 * 2020-07-21: 1 of 5 questions found with no other references
 * 2020-06-08: 7 of 39 questions found with no other references
@@ -38,12 +38,12 @@
 * 2020-03-24: 3 of 27 questions found with no other references
 * 2020-02-11: 7 of 33 questions found with no other references
 * 2020-01-22: 3 of 28 questions found with no other references
-* 2019-12-19: 32 of 51 questions found with no other references
-* 2019-03-09: 82 of 111 questions found with no other references
+* 2019-12-19: 14 of 51 questions found with no other references
+* 2019-03-09: 45 of 111 questions found with no other references
 * 2018-11-23: 5 of 5 questions found with no other references
 * 2018-10-03: 9 of 9 questions found with no other references
 * 2018-08-01: 12 of 18 questions found with no other references
-* 2018-06-22: 10 of 14 questions found with no other references
+* 2018-06-22: 9 of 14 questions found with no other references
 * 2018-03-09: 3 of 5 questions found with no other references
 
 # prototype replacement for faq markdown file
@@ -63,10 +63,11 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 2 other times, as recently as November 2020 and as early as January 2020.</summary>
+<summary>This question may have been asked previously at least 3 other times, as recently as November 2020 and as early as December 2019.</summary>
 
 * [November 24th, 2020 Livestream Q&A: Will there be intelligent aliens?](https://archive.satisfactory.video/transcriptions/yt-CznWASCszcA) https://www.youtube.com/watch?v=CznWASCszcA
 * [January 22nd, 2020 Livestream Q&A: When will Stardew Valley spouses be introduced?](https://archive.satisfactory.video/transcriptions/yt-4qkNiPphEbw) https://www.youtube.com/watch?v=4qkNiPphEbw
+* [December 19th, 2019 Livestream Q&A: Are there any plans of adding Keanu Reeves to Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-Qonz6WXDEeM) https://www.youtube.com/watch?v=Qonz6WXDEeM
 </details>
 
 ### [Q&A: Are there changes planned for Geothermal?](https://archive.satisfactory.video/transcriptions/yt-XCMncMB0z50) https://www.youtube.com/watch?v=XCMncMB0z50
@@ -133,6 +134,96 @@
 
 * [January 19th, 2021 Livestream Q&A: Will you change Geothermal Generators?](https://archive.satisfactory.video/transcriptions/yt-MmCfcNv8F8o) https://www.youtube.com/watch?v=MmCfcNv8F8o
 * [September 1st, 2020 Livestream Q&A: Would geothermal generators get a buff or rework of sorts?](https://archive.satisfactory.video/transcriptions/yt-T7BPQ1ZHeJA) https://www.youtube.com/watch?v=T7BPQ1ZHeJA
+</details>
+
+### [Q&A: Are there limited Lizard Doggos on the map?](https://archive.satisfactory.video/transcriptions/yt-v7d8Lqlq53w) https://www.youtube.com/watch?v=v7d8Lqlq53w
+
+<details>
+
+<summary>A transcript is available</summary>
+
+> are there limited lizard doggers on the
+>
+> map i don't know are there limited ones
+>
+> um the way they work is like they have a
+>
+> spawn
+>
+> thingamajig and it's like random how
+>
+> many can spawn
+>
+> at each spawn point or something uh and
+>
+> i don't know if this is how it works but
+>
+> i think it's like if you spawn one
+>
+> lizard doggo then it won't spawn another
+>
+> one until that one dies or something
+>
+> like that so
+>
+> if there's a spawn point where there
+>
+> potentially could spawn two lizard
+>
+> doggos the other one won't spawn until
+>
+> one of them dies or something like that
+>
+> so technically they're gonna start
+>
+> murdering
+>
+> the doggers to get it more favorable no
+>
+> no i am i'm down for that i am
+>
+> i i can
+>
+> i can get send their corpses to me yeah
+>
+> yeah i'll i'll pile on them
+>
+> uh so technically i guess there's a
+>
+> limited amount of this
+>
+> list of doggos i think if i understood
+>
+> the system correctly the way it was
+>
+> described to me
+>
+> um
+>
+> i found a spot there was like five
+>
+> lizard dragons there's a there's a
+>
+> secret cave
+>
+> with a bunch of lizard doggos that's
+>
+> called the lizard doggo cave
+>
+> um so if you find that
+>
+> happy times let the slaughtering
+>
+> commence
+
+
+</details>
+
+<details>
+<summary>This question may have been asked previously at least 2 other times, as recently as November 2020 and as early as March 2019.</summary>
+
+* [November 10th, 2020 Livestream Q&A: If you kill Lizard Doggos do they respawn?](https://archive.satisfactory.video/transcriptions/yt-71mjlgW3J28) https://www.youtube.com/watch?v=71mjlgW3J28
+* [March 9th, 2019 Livestream Q&A: Where is Lizard Doggo?](https://archive.satisfactory.video/transcriptions/yt-bB6SOIoAYg4) https://www.youtube.com/watch?v=bB6SOIoAYg4
 </details>
 
 ### [Q&A: Are you planning to fix the Multiplayer late-game?](https://archive.satisfactory.video/transcriptions/yt-Fk_wKTIx5Z4) https://www.youtube.com/watch?v=Fk_wKTIx5Z4
@@ -504,7 +595,7 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 12 other times, as recently as February 2021 and as early as January 2020.</summary>
+<summary>This question may have been asked previously at least 13 other times, as recently as February 2021 and as early as December 2019.</summary>
 
 * [February 9th, 2021 Livestream Q&A: Can you give us a teaser for what the Story will be, or is there a YouTube video?](https://archive.satisfactory.video/transcriptions/yt-SLOMxmF6MKc) https://www.youtube.com/watch?v=SLOMxmF6MKc
 * [November 3rd, 2020 Livestream Q&A: Can you give us a hint about the Story of the game?](https://archive.satisfactory.video/transcriptions/yt-gZoINqh_HAY) https://www.youtube.com/watch?v=gZoINqh_HAY
@@ -518,6 +609,7 @@
 * [March 24th, 2020 Livestream Q&A: What about Story, will more of it come?](https://archive.satisfactory.video/transcriptions/yt-V8r96lmiV9k) https://www.youtube.com/watch?v=V8r96lmiV9k
 * [February 11th, 2020 Livestream Q&A: Anything narrative?](https://archive.satisfactory.video/transcriptions/yt-1mZyPuZXLE4) https://www.youtube.com/watch?v=1mZyPuZXLE4
 * [January 22nd, 2020 Livestream Q&A: Are we getting Story?](https://archive.satisfactory.video/transcriptions/yt-0U_N0TCXqxU) https://www.youtube.com/watch?v=0U_N0TCXqxU
+* [December 19th, 2019 Livestream Q&A: Is there going to be a storyline?](https://archive.satisfactory.video/transcriptions/yt-mFxik_NlE0w) https://www.youtube.com/watch?v=mFxik_NlE0w
 </details>
 
 ### [Q&A: Possible to get randomly generated maps?](https://archive.satisfactory.video/transcriptions/yt-FkM6JZIZrqg) https://www.youtube.com/watch?v=FkM6JZIZrqg
@@ -1300,7 +1392,7 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 11 other times, as recently as January 2021 and as early as March 2019.</summary>
+<summary>This question may have been asked previously at least 12 other times, as recently as January 2021 and as early as March 2019.</summary>
 
 * [January 26th, 2021 Livestream Q&A: Can we expect aircraft any time?](https://archive.satisfactory.video/transcriptions/yt-XMIUlTU9xcU) https://www.youtube.com/watch?v=XMIUlTU9xcU
 * [November 10th, 2020 Livestream Q&A: Any plans for a helicopter so we don't have to turn into spaghetti to get across the map?](https://archive.satisfactory.video/transcriptions/yt-l-k7qpxgpRQ) https://www.youtube.com/watch?v=l-k7qpxgpRQ
@@ -1312,6 +1404,7 @@
 * August 25th, 2020 Livestream Q&A: How about a drone to fly around? https://www.youtube.com/watch?v=1msTsQksmbI
 * [August 25th, 2020 Livestream Q&A: Implement some kind of hire spaceship thingy for better exploration & faster travelling ?](https://archive.satisfactory.video/transcriptions/yt-mAA2oX9mDOw) https://www.youtube.com/watch?v=mAA2oX9mDOw
 * [December 19th, 2019 Livestream Q&A: Give us a flight vehicle?](https://archive.satisfactory.video/transcriptions/yt-Fb6JnI4Bb4I) https://www.youtube.com/watch?v=Fb6JnI4Bb4I
+* [December 19th, 2019 Livestream Q&A: Have you considerd Flying Drones?](https://archive.satisfactory.video/transcriptions/yt-KYox3m1mePU) https://www.youtube.com/watch?v=KYox3m1mePU
 * [March 9th, 2019 Livestream Q&A: Flying vehicles for overhead view of your factory?](https://archive.satisfactory.video/transcriptions/yt-njN-07Q5-8s) https://www.youtube.com/watch?v=njN-07Q5-8s
 </details>
 
@@ -1359,7 +1452,7 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 6 other times, as recently as January 2021 and as early as March 2020.</summary>
+<summary>This question may have been asked previously at least 7 other times, as recently as January 2021 and as early as March 2019.</summary>
 
 * January 26th, 2021 Livestream Q&A: How many Updates do you have planned before 1.0? https://www.youtube.com/watch?v=7t2DLBi7kl8
 * [November 3rd, 2020 Livestream Q&A: How many Updates until 1.0?](https://archive.satisfactory.video/transcriptions/yt-qtf26oE7kQs) https://www.youtube.com/watch?v=qtf26oE7kQs
@@ -1367,6 +1460,7 @@
 * August 18th, 2020 Livestream Q&A: How often will there be updates to the game? https://clips.twitch.tv/CheerfulZanyWebVoteYea
 * [May 19th, 2020 Livestream Q&A: Do you intended to do planned amount of huge Updates?](https://archive.satisfactory.video/transcriptions/yt-Nk53HWpUnnk) https://www.youtube.com/watch?v=Nk53HWpUnnk
 * [March 24th, 2020 Livestream Q&A: How often will you be releasing new content?](https://archive.satisfactory.video/transcriptions/yt-1gGMZa-xf70) https://www.youtube.com/watch?v=1gGMZa-xf70
+* [March 9th, 2019 Livestream Q&A: How often will you release updates in Early Access?](https://archive.satisfactory.video/transcriptions/yt-PBkvqmyjADM) https://www.youtube.com/watch?v=PBkvqmyjADM
 </details>
 
 ### [Q&A: Lizard Doggo plushie?](https://archive.satisfactory.video/transcriptions/yt-FlOFnqAw5go) https://www.youtube.com/watch?v=FlOFnqAw5go
@@ -1556,7 +1650,7 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 10 other times, as recently as January 2021 and as early as February 2020.</summary>
+<summary>This question may have been asked previously at least 11 other times, as recently as January 2021 and as early as December 2019.</summary>
 
 * [January 26th, 2021 Livestream Q&A: Do Mercer Spheres and Somersloops get a place in Update 4?](https://archive.satisfactory.video/transcriptions/yt--N0atMiN9dM) https://www.youtube.com/watch?v=-N0atMiN9dM
 * [January 26th, 2021 Livestream Q&A: News for the Work In Progress collectables for anything in Update 4?](https://archive.satisfactory.video/transcriptions/yt-5vlFsF0dm3E) https://www.youtube.com/watch?v=5vlFsF0dm3E
@@ -1568,6 +1662,7 @@
 * [August 25th, 2020 Livestream Q&A: Do you have any clue on what the alien artefacts do?](https://archive.satisfactory.video/transcriptions/yt-hRe0QvJDjsg) https://www.youtube.com/watch?v=hRe0QvJDjsg
 * August 18th, 2020 Livestream Q&A: When are Somersloops and Orbs have meaning? https://clips.twitch.tv/SarcasticProudWoodpeckerKappaPride
 * [February 11th, 2020 Livestream Q&A: Mercer Spheres?](https://archive.satisfactory.video/transcriptions/yt-9VS0lGfDZ1k) https://www.youtube.com/watch?v=9VS0lGfDZ1k
+* [December 19th, 2019 Livestream Q&A: Will Mercer Spheres and Somersloops be useful soon?](https://archive.satisfactory.video/transcriptions/yt-SYWPIjbe_4Y) https://www.youtube.com/watch?v=SYWPIjbe_4Y
 </details>
 
 ### [Q&A: When will we be able to get different character customisations?](https://archive.satisfactory.video/transcriptions/yt-x55_Zt2OLQ4) https://www.youtube.com/watch?v=x55_Zt2OLQ4
@@ -1852,10 +1947,11 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 2 other times, as recently as December 2020 and as early as August 2020.</summary>
+<summary>This question may have been asked previously at least 3 other times, as recently as December 2020 and as early as December 2019.</summary>
 
 * [December 8th, 2020 Livestream Q&A: Are there plans to improve Vehicle performance for Update 4?](https://archive.satisfactory.video/transcriptions/yt-nat8VwaykqE) https://www.youtube.com/watch?v=nat8VwaykqE
 * [August 25th, 2020 Livestream Q&A: The time for multiplayer fix, can't use vehicles?](https://archive.satisfactory.video/transcriptions/yt-UOhRWdHvGzc) https://www.youtube.com/watch?v=UOhRWdHvGzc
+* [December 19th, 2019 Livestream Q&A: Improve Vehicles in general?](https://archive.satisfactory.video/transcriptions/yt-pRuIjTp-u5I) https://www.youtube.com/watch?v=pRuIjTp-u5I
 </details>
 
 ### [Q&A: Is Creative Mode coming?](https://archive.satisfactory.video/transcriptions/yt-aJZ3jTvUHHQ) https://www.youtube.com/watch?v=aJZ3jTvUHHQ
@@ -2398,7 +2494,7 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 6 other times, as recently as January 2021 and as early as May 2020.</summary>
+<summary>This question may have been asked previously at least 7 other times, as recently as January 2021 and as early as March 2019.</summary>
 
 * [January 12th, 2021 Livestream Q&A: Are there any plans to add Lights inside the factory?](https://archive.satisfactory.video/transcriptions/yt-QvTjwyhFvGQ) https://www.youtube.com/watch?v=QvTjwyhFvGQ
 * [November 3rd, 2020 Livestream Q&A: Can you put in Lights, please?](https://archive.satisfactory.video/transcriptions/yt-7dm8Lvfj8Ao) https://www.youtube.com/watch?v=7dm8Lvfj8Ao
@@ -2406,6 +2502,7 @@
 * [September 1st, 2020 Livestream Q&A: What about lights?](https://archive.satisfactory.video/transcriptions/yt-FqGp1WsRo6s) https://www.youtube.com/watch?v=FqGp1WsRo6s
 * [August 25th, 2020 Livestream Q&A: Will light be added to the game?](https://archive.satisfactory.video/transcriptions/yt-FuUHMwoNA0s) https://www.youtube.com/watch?v=FuUHMwoNA0s
 * [May 19th, 2020 Livestream Q&A: Why can't you just add lights to the game?](https://archive.satisfactory.video/transcriptions/yt-IJdIUISe5S4) https://www.youtube.com/watch?v=IJdIUISe5S4
+* March 9th, 2019 Livestream Q&A: Will there be lamps for night? https://www.youtube.com/watch?v=SiS0HGq7_oU
 </details>
 
 ### [Q&A: New music theme coming?](https://archive.satisfactory.video/transcriptions/yt-3Xf0xozi8zc) https://www.youtube.com/watch?v=3Xf0xozi8zc
@@ -2436,6 +2533,30 @@
 * [September 8th, 2020 Livestream Q&A: Any new additions to the music planned?](https://archive.satisfactory.video/transcriptions/yt-RKfqg8EOZgE) https://www.youtube.com/watch?v=RKfqg8EOZgE
 * [September 1st, 2020 Livestream Q&A: Are you considering adding more music to the game?](https://archive.satisfactory.video/transcriptions/yt-iDyPOcW0o5E) https://www.youtube.com/watch?v=iDyPOcW0o5E
 * [August 25th, 2020 Livestream Q&A: Will there be any new music soundtracks in the future?](https://archive.satisfactory.video/transcriptions/yt-vg0kvdyXANY) https://www.youtube.com/watch?v=vg0kvdyXANY
+</details>
+
+### [Q&A: Nighttime is only bad because of these damn cats?](https://archive.satisfactory.video/transcriptions/yt-YkXm2LWDAeA) https://www.youtube.com/watch?v=YkXm2LWDAeA
+
+<details>
+
+<summary>A transcript is available</summary>
+
+> um because these damn cats
+>
+> you don't like cats what's wrong with
+>
+> cats they're cute
+>
+> cats
+
+
+</details>
+
+<details>
+<summary>This question may have been asked previously at least 2 other times, as recently as August 2020 and as early as March 2019.</summary>
+
+* [August 25th, 2020 Livestream Q&A: Arachnophobia Mode is scarier than the actual spiders](https://archive.satisfactory.video/transcriptions/yt--kovZdz9IS8) https://www.youtube.com/watch?v=-kovZdz9IS8
+* [March 9th, 2019 Livestream Q&A: I don't like spiders but arachnophobia mode is even scarier](https://archive.satisfactory.video/transcriptions/yt-GluAI4ipeLY) https://www.youtube.com/watch?v=GluAI4ipeLY
 </details>
 
 ### [Q&A: VR support would be heavenly?](https://archive.satisfactory.video/transcriptions/yt-0Ld1fbTEOvM) https://www.youtube.com/watch?v=0Ld1fbTEOvM
@@ -3522,6 +3643,34 @@
 * [September 8th, 2020 Livestream Q&A: Can you add ability to deselect with ctrl?](https://archive.satisfactory.video/transcriptions/yt-CjWFoMF7EIo) https://www.youtube.com/watch?v=CjWFoMF7EIo
 </details>
 
+### [Q&A: Can you make a toolbar selection to be with just hotkeys instead of mousewheel?](https://archive.satisfactory.video/transcriptions/yt-xwwx4N37G8M) https://www.youtube.com/watch?v=xwwx4N37G8M
+
+<details>
+
+<summary>A transcript is available</summary>
+
+> can you make a toolbar selection to be
+>
+> with just hotkey like shift number or
+>
+> something instead of mouse wheel
+>
+> uh you probably make sure to hit that up
+>
+> on the question site
+>
+> i would recommend that
+
+
+</details>
+
+<details>
+<summary>This question may have been asked previously at least 2 other times, as recently as September 2020 and as early as March 2019.</summary>
+
+* [September 1st, 2020 Livestream Q&A: Will you be able to switch the mousewheel rotation with the hotbar?](https://archive.satisfactory.video/transcriptions/yt-n0CJicUwDF8) https://www.youtube.com/watch?v=n0CJicUwDF8
+* [March 9th, 2019 Livestream Q&A: There is no way to hotkey items?](https://archive.satisfactory.video/transcriptions/yt-KmX7CoVGPA0) https://www.youtube.com/watch?v=KmX7CoVGPA0
+</details>
+
 ### [Q&A: Will Hyper Tube cannons be patched out eventually & officially supported as a feature?](https://archive.satisfactory.video/transcriptions/yt-bvtKzwJA4pw) https://www.youtube.com/watch?v=bvtKzwJA4pw
 
 <details>
@@ -3682,13 +3831,14 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 5 other times, as recently as November 2020 and as early as February 2020.</summary>
+<summary>This question may have been asked previously at least 6 other times, as recently as November 2020 and as early as March 2019.</summary>
 
 * [November 17th, 2020 Livestream Q&A: Is there any Official Mod Support planned?](https://archive.satisfactory.video/transcriptions/yt-z4Uv-UNMETw) https://www.youtube.com/watch?v=z4Uv-UNMETw
 * [November 3rd, 2020 Livestream Q&A: Any idea about Official Modding?](https://archive.satisfactory.video/transcriptions/yt-D5-Y6LYR7jk) https://www.youtube.com/watch?v=D5-Y6LYR7jk
 * [October 13th, 2020 Livestream Q&A: Are there any plans for integrated mod support?](https://archive.satisfactory.video/transcriptions/yt-25ssduoFoiA) https://www.youtube.com/watch?v=25ssduoFoiA
 * [August 25th, 2020 Livestream Q&A: Plans for mod support?](https://archive.satisfactory.video/transcriptions/yt-iOk7KMpNMEo) https://www.youtube.com/watch?v=iOk7KMpNMEo
 * [February 11th, 2020 Livestream Q&A: Where's Mod support?](https://archive.satisfactory.video/transcriptions/yt-JRyAZT7y44g) https://www.youtube.com/watch?v=JRyAZT7y44g
+* [March 9th, 2019 Livestream Q&A: What do you think about future Mod support?](https://archive.satisfactory.video/transcriptions/yt-6-uSzpX-zZ0) https://www.youtube.com/watch?v=6-uSzpX-zZ0
 </details>
 
 ### [Q&A: Is there any info/lore on the player character?](https://archive.satisfactory.video/transcriptions/yt-7W32eD2pZOM) https://www.youtube.com/watch?v=7W32eD2pZOM
@@ -4356,6 +4506,74 @@
 
 * [September 8th, 2020 Livestream Q&A: Should I remove all nature to improve FPS?](https://archive.satisfactory.video/transcriptions/yt-t-FNpaJUBcE) https://www.youtube.com/watch?v=t-FNpaJUBcE
 * [August 25th, 2020 Livestream Q&A: Removing vegetation speeds up the game, yes or no ?](https://archive.satisfactory.video/transcriptions/yt-GgoQS6sOADQ) https://www.youtube.com/watch?v=GgoQS6sOADQ
+</details>
+
+### [Q&A: Thoughts on making end-game point or goal?](https://archive.satisfactory.video/transcriptions/yt-hhckg5vm5_w) https://www.youtube.com/watch?v=hhckg5vm5_w
+
+<details>
+
+<summary>A transcript is available</summary>
+
+> any q a yet really um thoughts about
+>
+> making end game
+>
+> point or goal yep there's gonna be a
+>
+> story so the game is is completable you
+>
+> will you will be able to finish the game
+>
+> um beginning middle and end
+
+
+</details>
+
+<details>
+<summary>This question may have been asked previously at least 5 other times, as recently as October 2020 and as early as June 2018.</summary>
+
+* [October 6th, 2020 Livestream Q&A: What is the Goal of this game?](https://archive.satisfactory.video/transcriptions/yt-fKNLebIdNpY) https://www.youtube.com/watch?v=fKNLebIdNpY
+* August 11th, 2020 Livestream Q&A: Story / End-game? https://clips.twitch.tv/AmorphousVictoriousTrayPartyTime
+* [March 9th, 2019 Livestream Q&A: Is there an actual win condition or is it just 'til end of content?](https://archive.satisfactory.video/transcriptions/yt-Pn5tcfKmF20) https://www.youtube.com/watch?v=Pn5tcfKmF20
+* [March 9th, 2019 Livestream Q&A: What's the final objective of the game?](https://archive.satisfactory.video/transcriptions/yt-xG0mfuXiFY8) https://www.youtube.com/watch?v=xG0mfuXiFY8
+* [June 22nd, 2018 Livestream Q&A: Is there an end game? Will there be a story?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,391.24,406.52) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=391&end=407
+
+</details>
+
+### [Q&A: Will we be able to breed the Doggos?](https://archive.satisfactory.video/transcriptions/yt-fdoiF6pPF1M) https://www.youtube.com/watch?v=fdoiF6pPF1M
+
+<details>
+
+<summary>A transcript is available</summary>
+
+> like emote yes please we'll be able to
+>
+> breed the doggers that's disgusting and
+>
+> shameless
+>
+> oh you mean for gameplay um yeah there
+>
+> might be like we've always talked about
+>
+> something like farming and if there's
+>
+> farming i think the
+>
+> fauna would pay uh play a role in that
+>
+> as well
+>
+> so you know maybe
+
+
+</details>
+
+<details>
+<summary>This question may have been asked previously at least 2 other times, as recently as September 2020 and as early as September 2020.</summary>
+
+* [September 22nd, 2020 Livestream Q&A: Do you guys have any plans for wrangling Lizard Doggos?](https://archive.satisfactory.video/transcriptions/yt-UjpXjYid5ng) https://www.youtube.com/watch?v=UjpXjYid5ng
+* [September 1st, 2020 Livestream Q&A: Please take a look at the Doggo farm](https://archive.satisfactory.video/transcriptions/yt-r-Azcy0xC4c) https://www.youtube.com/watch?v=r-Azcy0xC4c
 </details>
 
 ## [November 3rd, 2020 Livestream ](https://archive.satisfactory.video/2020-11-03)
@@ -5555,13 +5773,25 @@
 * [March 24th, 2020 Livestream Q&A: Third-person Camera option?](https://archive.satisfactory.video/transcriptions/yt-hWRM_bQHXzc) https://www.youtube.com/watch?v=hWRM_bQHXzc
 </details>
 
+## [August 11th, 2020 Livestream ](https://archive.satisfactory.video/2020-08-11)
+### Q&A: Do you have Goats in Satisfactory? https://clips.twitch.tv/FurryTalentedCrowBleedPurple
+
+<details>
+<summary>This question may have been asked previously at least 3 other times, as recently as December 2019 and as early as March 2019.</summary>
+
+* [December 19th, 2019 Livestream Q&A: Does it mean we get Goats?](https://archive.satisfactory.video/transcriptions/yt-RlSL5DONzns) https://www.youtube.com/watch?v=RlSL5DONzns
+* [December 19th, 2019 Livestream Q&A: Will there be goats?](https://archive.satisfactory.video/transcriptions/yt-3YZMayi1Qec) https://www.youtube.com/watch?v=3YZMayi1Qec
+* March 9th, 2019 Livestream Q&A: Are there any goats in the game? https://www.youtube.com/watch?v=jAjSoN6Z1rc
+</details>
+
 ## [July 28th, 2020 Livestream ](https://archive.satisfactory.video/2020-07-28)
 ### Q&A: Dedicated Server cost https://clips.twitch.tv/ConfidentLittleSnood4Head
 
 <details>
-<summary>This question may have been asked previously at least 2 other times, as recently as January 2020.</summary>
+<summary>This question may have been asked previously at least 3 other times, as recently as January 2020 and as early as March 2019.</summary>
 
 * [January 22nd, 2020 Livestream Q&A: Dedicated Servers, will they cost anything?](https://archive.satisfactory.video/transcriptions/yt-SdB0QlhgmGs) https://www.youtube.com/watch?v=SdB0QlhgmGs
 * [January 22nd, 2020 Livestream Q&A: Will we need to buy a new copy for the server?](https://archive.satisfactory.video/transcriptions/yt-H6FZ4VqocHw) https://www.youtube.com/watch?v=H6FZ4VqocHw
+* [March 9th, 2019 Livestream Q&A: Will Dedicated Servers and Mods be free?](https://archive.satisfactory.video/transcriptions/yt-WEq2xEXVVQ0) https://www.youtube.com/watch?v=WEq2xEXVVQ0
 </details>
 
