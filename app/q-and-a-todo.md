@@ -106,3 +106,6 @@ check other videos for reference to teleportation bug
 
 # check for references specifically to mk.2 poles
 * rgIApn5PfMM
+
+# yt-W1E6EWrAsII,434.4,492.52
+I'm sure there was another question about the build ceiling 🤷‍♂️
