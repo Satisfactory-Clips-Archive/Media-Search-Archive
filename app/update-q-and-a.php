@@ -31,7 +31,6 @@ use function is_string;
 use function json_decode;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
-use function mb_substr;
 use function natcasesort;
 use function ob_flush;
 use function ob_get_clean;
@@ -880,8 +879,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		$video_part_info = cached_part_continued()[$video_id];
 		$video_other_parts = other_video_parts($video_id);
 
-		echo
-			"\n",
+		echo "\n",
 			'<details>',
 			"\n",
 			'<summary>';
@@ -904,8 +902,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		}
 
 		foreach ($video_other_parts as $other_video_id) {
-			echo
-				'* ',
+			echo '* ',
 				preg_replace('/\.md\)/', ')', str_replace(
 					'./',
 					'https://archive.satisfactory.video/',
