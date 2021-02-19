@@ -16,6 +16,7 @@ use function array_map;
 use function array_merge;
 use function array_reduce;
 use function array_unique;
+use function array_values;
 use function count;
 use function file_get_contents;
 use function file_put_contents;

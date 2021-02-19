@@ -2024,7 +2024,7 @@ function dated_playlists() : array
 			return is_string($maybe_value) && is_string($maybe_key);
 		};
 
-	/** @var array<string, string>  */
+	/** @var array<string, string> */
 	return array_map(
 		static function (string $date) : string {
 			return date('Y-m-d', strtotime($date));
