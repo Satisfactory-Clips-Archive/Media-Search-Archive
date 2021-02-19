@@ -1093,6 +1093,7 @@ $from_markdown = [
 		],
 		'Q&A: Is Satisfactory affected by Epic vs. Apple? https://clips.twitch.tv/FurryAwkwardStrawberryWoofer' => [
 			'Off-Topic',
+			'Mac',
 		],
 		'Q&A: Offline Play https://clips.twitch.tv/BashfulDependableBobaWTRuck' => [
 		],
