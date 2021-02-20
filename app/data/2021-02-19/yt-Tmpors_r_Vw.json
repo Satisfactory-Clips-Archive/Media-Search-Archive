@@ -1,0 +1,49 @@
+{
+	"title": "New Power Changes in Update 4",
+	"skip": [
+		false,
+		false,
+		false,
+		false,
+		false,
+		false,
+		true
+	],
+	"topics": [
+		[
+			"Power Management",
+			"Power Storage",
+			"Power Switch",
+			"Satisfactory Update 4"
+		],
+		[
+			"Satisfactory Update 4",
+			"Power Switch",
+			"User Interface",
+			"Power Management"
+		],
+		[
+			"Satisfactory Update 4",
+			"Power Storage",
+			"Power Management",
+			"Accessibility"
+		],
+		[
+			"Satisfactory Update 4",
+			"Power Storage",
+			"User Interface",
+			"Geothermal Energy"
+		],
+		[
+			"Satisfactory Update 4",
+			"Power Storage",
+			"Power Management",
+			"Resources",
+			"Biomass Burner",
+			"Mark"
+		],
+		[
+			"Satisfactory Update 4"
+		]
+	]
+}
