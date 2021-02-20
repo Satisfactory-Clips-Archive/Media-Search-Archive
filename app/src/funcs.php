@@ -114,7 +114,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		return $overrides[$video_id];
 	}
 
-	if (preg_match('/^yt-.{11},\d+(?:\.\d+)(?:,\d+(?:\.\d+))/', $video_id)) {
+	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){2}/', $video_id)) {
 		$parts = explode(',', $video_id);
 		[$video_id, $start] = $parts;
 
@@ -142,7 +142,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 
 function transcription_filename(string $video_id) : string
 {
-	if (preg_match('/^yt-.{11},\d+(?:\.\d+)(?:,\d+(?:\.\d+))/', $video_id)) {
+	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){2}/', $video_id)) {
 		return
 			__DIR__
 			. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
@@ -178,7 +178,7 @@ function maybe_transcript_link_and_video_url(
 			? str_repeat('../', $repeat_directory_up)
 			: './';
 
-	if (preg_match('/^yt-.{11},\d+(?:\.\d+)(?:,\d+(?:\.\d+))/', $video_id)) {
+	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){2}/', $video_id)) {
 		if (
 			is_file(
 				__DIR__
@@ -237,7 +237,7 @@ function vendor_prefixed_video_id(string $video_id) : string
 			11 !== mb_strlen($video_id)
 			&& preg_match('/^(tc|is|ts)\-/', $video_id)
 		)
-		|| preg_match('/^yt-.{11}$/', $video_id)
+		|| preg_match('/^yt-.{11}(?:(?:,(?:\d+(?:\.\d+)?)?){2})?$/', $video_id)
 	) {
 		return $video_id;
 	}
@@ -1737,6 +1737,7 @@ function process_dated_csv(
 						$start,
 						'' === $end ? null : ((float) $end)
 					),
+					"\n",
 					'### Topics' . "\n",
 					implode("\n", array_map(
 						static function (
@@ -1807,8 +1808,9 @@ function process_dated_csv(
 
 function timestamp_link(string $video_id, float $start) : string
 {
+	$orig = $video_id;
 	$video_id = vendor_prefixed_video_id($video_id);
-	$vendorless_video_id = mb_substr($video_id, 3);
+	$vendorless_video_id = preg_replace('/,.*$/', '', mb_substr($video_id, 3));
 
 	if (preg_match('/^yt-/', $video_id)) {
 		return sprintf(
@@ -1843,7 +1845,7 @@ function timestamp_link(string $video_id, float $start) : string
 function embed_link(string $video_id, ? float $start, ? float $end) : string
 {
 	$video_id = vendor_prefixed_video_id($video_id);
-	$vendorless_video_id = mb_substr($video_id, 3);
+	$vendorless_video_id = preg_replace('/,.*$/', '', mb_substr($video_id, 3));
 
 	if (preg_match('/^yt-/', $video_id)) {
 		$start = floor($start ?: 0);
@@ -1860,7 +1862,7 @@ function embed_link(string $video_id, ? float $start, ? float $end) : string
 		$embed = http_build_query($embed_data);
 
 		return sprintf(
-			'https://youtube.com/embed/%s?%s' . "\n",
+			'https://youtube.com/embed/%s?%s',
 			$vendorless_video_id,
 			$embed
 		);
