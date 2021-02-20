@@ -13,12 +13,6 @@
 # packager videos
 * these need to be appropriate flagged for duplicates, replaces, & see alsos
 
-# game modes
-* add sub-topic for creative
-* add sub-topic for peaceful
-* add sub-topic for battle royale
-* add appropriate seealsos for xit3DLnmAhE
-
 # ladder videos
 * these need to be appropriately flagged for duplicates, replaces, & see alsos
 
