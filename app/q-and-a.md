@@ -1,7 +1,7 @@
 # Progress
 * 1917 questions found out of 2547 clips
 * 1846 non-trolling & on-topic questions found out of 1917 total questions
-* 401 questions found with no other references
+* 400 questions found with no other references
 ## grouped by date
 * 2021-02-16: 3 of 69 questions found with no other references
 * 2021-02-09: 22 of 93 questions found with no other references
@@ -28,7 +28,7 @@
 * 2020-09-15: 5 of 47 questions found with no other references
 * 2020-09-08: 8 of 72 questions found with no other references
 * 2020-09-01: 10 of 71 questions found with no other references
-* 2020-08-25: 22 of 134 questions found with no other references
+* 2020-08-25: 21 of 134 questions found with no other references
 * 2020-08-18: 10 of 55 questions found with no other references
 * 2020-08-11: 15 of 38 questions found with no other references
 * 2020-07-28: 3 of 10 questions found with no other references
@@ -2329,11 +2329,12 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 4 other times, as recently as December 2020 and as early as February 2020.</summary>
+<summary>This question may have been asked previously at least 5 other times, as recently as December 2020 and as early as February 2020.</summary>
 
 * [December 15th, 2020 Livestream Q&A: Will we get a Battle Royale Update?](https://archive.satisfactory.video/transcriptions/yt-tN8DpsYR8ro) https://www.youtube.com/watch?v=tN8DpsYR8ro
 * [September 8th, 2020 Livestream Q&A: Battle Royale Mode?](https://archive.satisfactory.video/transcriptions/yt-qo8WFOlPkTc) https://www.youtube.com/watch?v=qo8WFOlPkTc
 * [August 25th, 2020 Livestream Q&A: Is there a Battle Royale Mode planned?](https://archive.satisfactory.video/transcriptions/yt-b7ZVifJXBBg) https://www.youtube.com/watch?v=b7ZVifJXBBg
+* [August 25th, 2020 Livestream Q&A: I want to fire Nukes at my rival Pioneers?](https://archive.satisfactory.video/transcriptions/yt-CQ0vc3uRaw8) https://www.youtube.com/watch?v=CQ0vc3uRaw8
 * [February 11th, 2020 Livestream Q&A: Battle Royale?](https://archive.satisfactory.video/transcriptions/yt-fO_ZW22gL-g) https://www.youtube.com/watch?v=fO_ZW22gL-g
 </details>
 
