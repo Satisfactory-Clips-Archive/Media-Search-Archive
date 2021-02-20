@@ -1106,7 +1106,7 @@ $from_markdown = [
 		],
 		'Q&A: Will there be a no combat/fight version? https://clips.twitch.tv/ScaryTangibleTeaMrDestructoid' => [
 			true, // FAQ
-			'Game Modes',
+			'Peaceful Mode',
 		],
 		'Q&A: Quarterly Build Contest? https://clips.twitch.tv/SparklingJazzyJayBCWarrior' => [
 		],
