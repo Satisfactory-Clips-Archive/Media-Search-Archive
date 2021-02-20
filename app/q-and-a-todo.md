@@ -63,9 +63,6 @@ add links to merch store announcement
 # sZDS8dOdyvQ
 * add seealso to the appropriate jace/snutt talk segment
 
-# 3MO6SYCZuFI
-* find a video that talks about how object limit doesn't necessarily correlate to low fps
-
 # ybgZUbANGrM
 check other videos for reference to teleportation bug
 
