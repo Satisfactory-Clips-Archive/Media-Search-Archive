@@ -5484,6 +5484,9 @@
         "topics": [
             "coffee-stainers",
             "off-topic\/factorio"
+        ],
+        "duplicates": [
+            "AyPcl_Vs2D4"
         ]
     },
     "OZTQGd4ZZ_E": {
@@ -27252,7 +27255,8 @@
         "topics": [
             "coffee-stainers",
             "satisfactory-updates\/satisfactory-prototypes"
-        ]
+        ],
+        "duplicatedby": "BG-xhTN4-0Q"
     },
     "Tit_bHzixmk": {
         "title": "Q&A: Why did you take our industrial lights away from walkways, I miss those?",
