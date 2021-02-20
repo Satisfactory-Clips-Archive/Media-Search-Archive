@@ -4088,7 +4088,7 @@
         "title": "Q&A: Is Creative Mode coming?",
         "date": "2021-02-02",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicates": [
             "3m68c85bVUM",
@@ -5065,7 +5065,7 @@
         "title": "Q&A: Battle Royale mode?",
         "date": "2021-01-26",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/possible-features\/game-modes\/battle-royale",
             "trolling"
         ],
         "duplicates": [
@@ -8837,7 +8837,7 @@
         "title": "Q&A: How about Creative Mode?",
         "date": "2020-12-15",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },
@@ -9404,7 +9404,7 @@
         "title": "Q&A: Will we get a Battle Royale Update?",
         "date": "2020-12-15",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/battle-royale"
         ],
         "duplicatedby": "U4t0BJ7mjwc"
     },
@@ -10075,7 +10075,7 @@
         "title": "Q&A: Will there be a creative-style mode in the future?",
         "date": "2020-12-08",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },
@@ -12244,7 +12244,7 @@
         "title": "Q&A: Is there going to be a Creative Mode?",
         "date": "2020-11-10",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },
@@ -13117,7 +13117,7 @@
         "title": "Q&A: Is there going to be a Creative Mode?",
         "date": "2020-11-03",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },
@@ -16393,7 +16393,7 @@
         "title": "Q&A: Satisfactory Sandbox ever?",
         "date": "2020-09-29",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },
@@ -17241,7 +17241,7 @@
         "title": "Q&A: Will there be a Creative Mode?",
         "date": "2020-09-22",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },
@@ -17992,7 +17992,7 @@
         "title": "Q&A: Battle Royale Mode?",
         "date": "2020-09-08",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/battle-royale"
         ],
         "duplicatedby": "U4t0BJ7mjwc"
     },
@@ -18695,7 +18695,7 @@
         "title": "Q&A: Will there be a Peacfull Mode with no Hostile Creatures?",
         "date": "2020-09-08",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/peaceful-mode"
         ],
         "duplicates": [
             "tc-ScaryTangibleTeaMrDestructoid"
@@ -19189,7 +19189,7 @@
         "title": "Q&A: Is there going to be creative mode?",
         "date": "2020-09-01",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },
@@ -20598,7 +20598,7 @@
         "date": "2020-08-25",
         "topics": [
             "features\/multiplayer",
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/battle-royale"
         ],
         "legacyalts": [
             "tc-SavorySlickWombatOSkomodo"
@@ -20653,6 +20653,7 @@
         "topics": [
             "features\/equipment",
             "features\/pioneer",
+            "features\/possible-features\/game-modes\/battle-royale",
             "features\/power-management\/nuclear-energy\/nuclear-waste"
         ]
     },
@@ -22474,7 +22475,7 @@
         "title": "Q&A: When is Creative Mode coming?",
         "date": "2020-08-18",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },
@@ -24182,7 +24183,7 @@
         "title": "Q&A: Creative Mode without having to Mod?",
         "date": "2020-03-24",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/possible-features\/game-modes\/creative-mode",
             "mods\/mods-vs-features"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
@@ -24398,7 +24399,7 @@
         "title": "Q&A: Wouldn't you split normal & Creative Mode then not allow switching?",
         "date": "2020-03-24",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },
@@ -24545,7 +24546,7 @@
         "title": "Q&A: Battle Royale?",
         "date": "2020-02-11",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/possible-features\/game-modes\/battle-royale",
             "satisfactory-updates\/pending\/satisfactory-update-4",
             "trolling"
         ],
@@ -27302,7 +27303,7 @@
         "title": "Q&A: Will there be a creative mode?",
         "date": "2019-03-09",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },
@@ -28137,7 +28138,7 @@
         "title": "Q&A: Will there be a Creative Mode?",
         "date": "2018-08-01",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/possible-features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "aJZ3jTvUHHQ"
     },

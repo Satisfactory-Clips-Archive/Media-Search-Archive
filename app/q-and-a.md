@@ -641,7 +641,6 @@
 * [March 9th, 2019 Livestream Q&A: Another game mode with a procedurally generated world?](https://archive.satisfactory.video/transcriptions/yt-GZlK2fIlYVk) https://www.youtube.com/watch?v=GZlK2fIlYVk
 * [March 9th, 2019 Livestream Q&A: The map is pre-made, not procedurally generated?](https://archive.satisfactory.video/transcriptions/yt-229Wl8AMQx8) https://www.youtube.com/watch?v=229Wl8AMQx8
 * [June 22nd, 2018 Livestream Q&A: Is the Map procedurally generated?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,316.92,345.76) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=316&end=346
-
 </details>
 
 ### [Q&A: Size of the Update?](https://archive.satisfactory.video/transcriptions/yt-NMDDVWs3jZM) https://www.youtube.com/watch?v=NMDDVWs3jZM
@@ -755,7 +754,6 @@
 * [September 22nd, 2020 Livestream Q&A: Weather in Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-Sxvg881RjeA) https://www.youtube.com/watch?v=Sxvg881RjeA
 * [September 8th, 2020 Livestream Q&A: Do we intend to add rain/storms ?](https://archive.satisfactory.video/transcriptions/yt-3WDeVbpr30g) https://www.youtube.com/watch?v=3WDeVbpr30g
 * [August 1st, 2018 Livestream Q&A: Is there Weather in the game?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,58.6,60.36) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=58&end=61
-
 </details>
 
 ### [Q&A: What's the chance that the game will be released this year?](https://archive.satisfactory.video/transcriptions/yt-W2O4gfNYj9s) https://www.youtube.com/watch?v=W2O4gfNYj9s
@@ -922,7 +920,6 @@
 * [September 29th, 2020 Livestream Q&A: Give us Steam Achievements already?](https://archive.satisfactory.video/transcriptions/yt-9tNel2ksYnI) https://www.youtube.com/watch?v=9tNel2ksYnI
 * [March 24th, 2020 Livestream Q&A: Achievements?](https://archive.satisfactory.video/transcriptions/yt-G8K0Bjs8mNo) https://www.youtube.com/watch?v=G8K0Bjs8mNo
 * [August 1st, 2018 Livestream Q&A: Will there be Steam achievements?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,119.72,131.28) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=119&end=132
-
 </details>
 
 ### [Q&A: Will there be signs in future updates?](https://archive.satisfactory.video/transcriptions/yt--t832FeMogU) https://www.youtube.com/watch?v=-t832FeMogU
@@ -1435,7 +1432,6 @@
 * [March 9th, 2019 Livestream Q&A: Can creatures in any way disrupt your factory?](https://archive.satisfactory.video/transcriptions/yt-R2Fms8EjhN8) https://www.youtube.com/watch?v=R2Fms8EjhN8
 * [March 9th, 2019 Livestream Q&A: Will there be turrets or something in the game?](https://archive.satisfactory.video/transcriptions/yt-xNBFywqCrxM) https://www.youtube.com/watch?v=xNBFywqCrxM
 * [June 22nd, 2018 Livestream Q&A: Will we need to defend our factory?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,176.6,214.36) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=176&end=215
-
 </details>
 
 ### [Q&A: Is Update 4 the last update?](https://archive.satisfactory.video/transcriptions/yt-3fNjN1FjhPU) https://www.youtube.com/watch?v=3fNjN1FjhPU
@@ -1500,7 +1496,6 @@
 * [February 11th, 2020 Livestream Q&A: Lizard Doggo plushies?](https://archive.satisfactory.video/transcriptions/yt-SFZCi_HshCE) https://www.youtube.com/watch?v=SFZCi_HshCE
 * [March 9th, 2019 Livestream Q&A: Lizard Doggo plushie when?](https://archive.satisfactory.video/transcriptions/yt-jGiN1SdQOFk) https://www.youtube.com/watch?v=jGiN1SdQOFk
 * [June 22nd, 2018 Livestream Q&A: Will there be Lizard Doggo plushies?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,214.36,238.12) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=214&end=239
-
 </details>
 
 ### [Q&A: Walls/barriers that follow the incline of Foundation?](https://archive.satisfactory.video/transcriptions/yt-UK0P7CWe1V4) https://www.youtube.com/watch?v=UK0P7CWe1V4
@@ -1991,7 +1986,7 @@
 * [March 24th, 2020 Livestream Q&A: Creative Mode without having to Mod?](https://archive.satisfactory.video/transcriptions/yt-ww37EE17YP4) https://www.youtube.com/watch?v=ww37EE17YP4
 * [March 24th, 2020 Livestream Q&A: Wouldn't you split normal & Creative Mode then not allow switching?](https://archive.satisfactory.video/transcriptions/yt-7xTscBSrsY0) https://www.youtube.com/watch?v=7xTscBSrsY0
 * [March 9th, 2019 Livestream Q&A: Will there be a creative mode?](https://archive.satisfactory.video/transcriptions/yt-eIPuM39KDcE) https://www.youtube.com/watch?v=eIPuM39KDcE
-* August 1st, 2018 Livestream Q&A: Will there be a Creative Mode? https://www.youtube.com/watch?v=yt-iFAy1NZUOGU%2C14%2C29
+* [August 1st, 2018 Livestream Q&A: Will there be a Creative Mode?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,14,29) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=14&end=29
 </details>
 
 ### [Q&A: Is there a way we can make Autosave more seamless?](https://archive.satisfactory.video/transcriptions/yt-UFWTP8Nu-MI) https://www.youtube.com/watch?v=UFWTP8Nu-MI
@@ -2407,7 +2402,6 @@
 * August 18th, 2020 Livestream Q&A: Is 1.0 the end of the game or will it be expanded? https://clips.twitch.tv/AmazonianWealthyCroquetteDendiFace
 * [January 22nd, 2020 Livestream Q&A: Will there be DLC after 1.0?](https://archive.satisfactory.video/transcriptions/yt-FHqvzjGbhvg) https://www.youtube.com/watch?v=FHqvzjGbhvg
 * [June 22nd, 2018 Livestream Q&A: Plans for post-launch?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,120.52,176.6) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=120&end=177
-
 </details>
 
 ### [Q&A: Farming would be cool?](https://archive.satisfactory.video/transcriptions/yt-qO1Zl01HfqU) https://www.youtube.com/watch?v=qO1Zl01HfqU
@@ -2586,7 +2580,6 @@
 * [November 3rd, 2020 Livestream Q&A: VR Support?](https://archive.satisfactory.video/transcriptions/yt-eJz8dJImPfQ) https://www.youtube.com/watch?v=eJz8dJImPfQ
 * [September 8th, 2020 Livestream Q&A: Ever consider making a VR version of Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-3s-PKymQ9QU) https://www.youtube.com/watch?v=3s-PKymQ9QU
 * [August 1st, 2018 Livestream Q&A: What about VR support?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,66.08,68.24) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=66&end=69
-
 </details>
 
 ### [Q&A: When will Mods work again?](https://archive.satisfactory.video/transcriptions/yt-u6HJZ1gJhRk) https://www.youtube.com/watch?v=u6HJZ1gJhRk
@@ -3842,7 +3835,6 @@
 * [February 11th, 2020 Livestream Q&A: Where's Mod support?](https://archive.satisfactory.video/transcriptions/yt-JRyAZT7y44g) https://www.youtube.com/watch?v=JRyAZT7y44g
 * [March 9th, 2019 Livestream Q&A: What do you think about future Mod support?](https://archive.satisfactory.video/transcriptions/yt-6-uSzpX-zZ0) https://www.youtube.com/watch?v=6-uSzpX-zZ0
 * [June 22nd, 2018 Livestream Q&A: Will there be mods?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,91.24,120.52) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=91&end=121
-
 </details>
 
 ### [Q&A: Is there any info/lore on the player character?](https://archive.satisfactory.video/transcriptions/yt-7W32eD2pZOM) https://www.youtube.com/watch?v=7W32eD2pZOM
@@ -4003,7 +3995,6 @@
 * [March 9th, 2019 Livestream Q&A: Are you going to add the ability to raise/lower parts of the landscape?](https://archive.satisfactory.video/transcriptions/yt-AEd2Rt5VDfk) https://www.youtube.com/watch?v=AEd2Rt5VDfk
 * [March 9th, 2019 Livestream Q&A: Are you guys planning to add any terraforming or digging?](https://archive.satisfactory.video/transcriptions/yt-DW0MT8G-wMI) https://www.youtube.com/watch?v=DW0MT8G-wMI
 * [August 1st, 2018 Livestream Q&A: Will there be landscape deformation or Terraforming?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,62.6,66.08) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=62&end=67
-
 </details>
 
 ### [Q&A: Will there be more options for aesthetics regarding things like house building?](https://archive.satisfactory.video/transcriptions/yt-qQJTAvtzB-8) https://www.youtube.com/watch?v=qQJTAvtzB-8
@@ -4541,7 +4532,6 @@
 * [March 9th, 2019 Livestream Q&A: Is there an actual win condition or is it just 'til end of content?](https://archive.satisfactory.video/transcriptions/yt-Pn5tcfKmF20) https://www.youtube.com/watch?v=Pn5tcfKmF20
 * [March 9th, 2019 Livestream Q&A: What's the final objective of the game?](https://archive.satisfactory.video/transcriptions/yt-xG0mfuXiFY8) https://www.youtube.com/watch?v=xG0mfuXiFY8
 * [June 22nd, 2018 Livestream Q&A: Is there an end game? Will there be a story?](https://archive.satisfactory.video/transcriptions/yt-W1E6EWrAsII,391.24,406.52) https://youtube.com/embed/W1E6EWrAsII?autoplay=1&start=391&end=407
-
 </details>
 
 ### [Q&A: Will we be able to breed the Doggos?](https://archive.satisfactory.video/transcriptions/yt-fdoiF6pPF1M) https://www.youtube.com/watch?v=fdoiF6pPF1M
@@ -5752,9 +5742,7 @@
 
 * [March 9th, 2019 Livestream Q&A: Can we have an alternate arachnophobia mode with Simon's face?](https://archive.satisfactory.video/transcriptions/yt-3h2P4TfAAwE) https://www.youtube.com/watch?v=3h2P4TfAAwE
 * [August 1st, 2018 Livestream Q&A: Can we change the sprite ourselves?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,227.8,231.6) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=227&end=232
-
 * [August 1st, 2018 Livestream Q&A: What if I'm also afraid of cats? What about changing the cats' head to Simon's head instead?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,208.96,227.8) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=208&end=228
-
 </details>
 
 ### [Q&A: Third-Person When?](https://archive.satisfactory.video/transcriptions/yt-nVXcTzC72EQ) https://www.youtube.com/watch?v=nVXcTzC72EQ
@@ -5834,6 +5822,5 @@
 
 * [March 9th, 2019 Livestream Q&A: Will the price stay at $30, or will it drop/increase as time goes on?](https://archive.satisfactory.video/transcriptions/yt-RVdtG9yWW68) https://www.youtube.com/watch?v=RVdtG9yWW68
 * [August 1st, 2018 Livestream Q&A: How much will the game cost when it's released?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,99.44,119.72) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=99&end=120
-
 </details>
 
