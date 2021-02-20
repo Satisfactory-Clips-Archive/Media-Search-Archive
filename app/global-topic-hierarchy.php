@@ -737,6 +737,10 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEqe6yJj8TvkF6VxhLGiah3b' => [ // Uzu
 			'Coffee Stainers',
 		],
+		'PLbjDnnBIxiEr-AG-93Qqd43nuzOUIcufC' => [ // Power Switch
+			'Features',
+			'Power Management',
+		],
 	],
 ];
 
