@@ -1102,7 +1102,7 @@ $from_markdown = [
 		],
 		'Q&A: When is Creative Mode coming? https://clips.twitch.tv/MagnificentImpartialSmoothieMikeHogu' => [
 			true, // FAQ
-			'Game Modes',
+			'Creative Mode',
 		],
 		'Q&A: Will there be a no combat/fight version? https://clips.twitch.tv/ScaryTangibleTeaMrDestructoid' => [
 			true, // FAQ

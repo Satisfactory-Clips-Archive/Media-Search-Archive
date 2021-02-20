@@ -739,5 +739,14 @@
     },
     "PLbjDnnBIxiEr-AG-93Qqd43nuzOUIcufC": {
         "features\/power-management\/power-switch": 1613779790
+    },
+    "PLbjDnnBIxiEoPhqRIy60XVEui9X3o6p0S": {
+        "features\/possible-features\/game-modes\/battle-royale": 1613829869
+    },
+    "PLbjDnnBIxiEpI_eZ6JseCdaLBHV5IokQ1": {
+        "features\/possible-features\/game-modes\/creative-mode": 1613829869
+    },
+    "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl": {
+        "features\/possible-features\/game-modes\/peaceful-mode": 1613829869
     }
 }
