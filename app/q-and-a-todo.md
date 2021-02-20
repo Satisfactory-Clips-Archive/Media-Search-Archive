@@ -57,9 +57,6 @@ add links to merch store announcement
 # krQI-cHEAl8
 * swap seealsos to pipe thoughts stream
 
-# there are a bunch of q&as about ideas that need seealsos amongst each other
-* akmmqVmHmzM
-
 # collate references to "I Love Strawberries"
 * LKcrsIMzGYY
 

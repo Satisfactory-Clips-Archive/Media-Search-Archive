@@ -1,7 +1,7 @@
 # Progress
 * 1917 questions found out of 2547 clips
 * 1846 non-trolling & on-topic questions found out of 1917 total questions
-* 399 questions found with no other references
+* 397 questions found with no other references
 ## grouped by date
 * 2021-02-16: 3 of 69 questions found with no other references
 * 2021-02-09: 22 of 93 questions found with no other references
@@ -15,7 +15,7 @@
 * 2020-12-08: 14 of 47 questions found with no other references
 * 2020-12-01: 0 of 1 questions found with no other references
 * 2020-11-24: 7 of 40 questions found with no other references
-* 2020-11-17: 12 of 56 questions found with no other references
+* 2020-11-17: 11 of 56 questions found with no other references
 * 2020-11-10: 26 of 83 questions found with no other references
 * 2020-11-03: 14 of 57 questions found with no other references
 * 2020-10-27: 13 of 23 questions found with no other references
@@ -39,7 +39,7 @@
 * 2020-02-11: 5 of 33 questions found with no other references
 * 2020-01-22: 1 of 28 questions found with no other references
 * 2019-12-19: 13 of 51 questions found with no other references
-* 2019-03-09: 41 of 111 questions found with no other references
+* 2019-03-09: 40 of 111 questions found with no other references
 * 2018-11-23: 0 of 5 questions found with no other references
 * 2018-10-03: 0 of 9 questions found with no other references
 * 2018-08-01: 1 of 18 questions found with no other references
@@ -4367,10 +4367,11 @@
 </details>
 
 <details>
-<summary>This question may have been asked previously at least 2 other times, as recently as October 2020 and as early as October 2020.</summary>
+<summary>This question may have been asked previously at least 3 other times, as recently as October 2020 and as early as March 2019.</summary>
 
 * [October 20th, 2020 Livestream Q&A: Are there any features you guys really want in the game but you can't/won't add?](https://archive.satisfactory.video/transcriptions/yt-QuCAOO3xPQQ) https://www.youtube.com/watch?v=QuCAOO3xPQQ
 * [October 6th, 2020 Livestream Q&A: Do you have any good stories for features that didn't get included in the game?](https://archive.satisfactory.video/transcriptions/yt-JkSvpUl7jX8) https://www.youtube.com/watch?v=JkSvpUl7jX8
+* [March 9th, 2019 Livestream Q&A: Are there any things you had wanted to add to the game but had to cancel?](https://archive.satisfactory.video/transcriptions/yt-akmmqVmHmzM) https://www.youtube.com/watch?v=akmmqVmHmzM
 </details>
 
 ### [Q&A: Any plans for Elevators?](https://archive.satisfactory.video/transcriptions/yt-VUe1w6nSdko) https://www.youtube.com/watch?v=VUe1w6nSdko
