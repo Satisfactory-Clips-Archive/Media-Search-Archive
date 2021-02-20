@@ -81,11 +81,6 @@ add links to merch store announcement
 # 3MO6SYCZuFI
 * find a video that talks about how object limit doesn't necessarily correlate to low fps
 
-# collate references to satisfactory prototypes
-* pcV-2pHcho8
-* ones talking about gravity prototypes
-* ones talking about natural disasters prototypes
-
 # ybgZUbANGrM
 check other videos for reference to teleportation bug
 
