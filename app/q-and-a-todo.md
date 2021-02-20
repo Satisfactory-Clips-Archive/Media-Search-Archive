@@ -40,12 +40,6 @@ add links to merch store announcement
 # semlor
 * add seealsos to EHG9NGG7D_E
 
-# steam launch
-* xY1OQ_CuQhQ
-* gOgyvgKAGAQ
-* Kfn13oEuA0c
-* Q2pyvicFkxA
-
 # simon saga
 ## simon saga "eat the keys" scene
 * qFYvqvrAFf8
@@ -89,6 +83,3 @@ check other videos for reference to teleportation bug
 
 # yt-W1E6EWrAsII,434.4,492.52
 I'm sure there was another question about the build ceiling 🤷‍♂️
-
-# steam release
-* index the update 3 / steam launch trailers & set see alsos for
