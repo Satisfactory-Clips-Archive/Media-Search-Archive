@@ -422,6 +422,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 
 	$cache = inject_caches($cache, $injected_cache);
 
+	/** @var array{satisfactory:array<string, list<int|string>>} */
 	$global_topic_hierarchy = array_merge_recursive(
 		$global_topic_hierarchy,
 		$injected_global_topic_hierarchy
