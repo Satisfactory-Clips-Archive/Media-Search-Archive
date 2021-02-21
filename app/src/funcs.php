@@ -474,10 +474,7 @@ function determine_playlist_id(
 			];
 		}
 
-		$friendly =
-			date('F jS, Y', $unix)
-			. ' '
-			. $suffix;
+		$friendly = date('F jS, Y', $unix) . ' ' . $suffix;
 
 		$maybe_playlist_id = try_find_main_playlist($friendly, $main);
 
@@ -750,12 +747,9 @@ function filter_nested(
 		);
 	}
 
-	$filtered = array_filter(
-		$filtered,
-		static function (array $data) : bool {
-			return count($data['videos']) > 0;
-		}
-	);
+	$filtered = array_filter($filtered, static function (array $data) : bool {
+		return count($data['videos']) > 0;
+	});
 
 	foreach (array_keys($filtered) as $topic_id) {
 		foreach (nesting_parents($topic_id, $nested) as $parent_id) {
@@ -1079,13 +1073,10 @@ function raw_captions(string $video_id) : array
 
 	$fallback_tt_cache = __DIR__ . '/../captions/' . $video_id . '.xml';
 
-	if (
-		'' === $tt
-		&& is_file($fallback_tt_cache)
-	) {
-			$tt_cache = $fallback_tt_cache;
+	if ('' === $tt && is_file($fallback_tt_cache)) {
+		$tt_cache = $fallback_tt_cache;
 
-			$tt = file_get_contents($tt_cache);
+		$tt = file_get_contents($tt_cache);
 	}
 
 	/** @var list<SimpleXMLElement> */
@@ -1290,13 +1281,13 @@ function get_dated_csv(
 	 * }
 	 */
 	$video_data = json_decode(
-			file_get_contents(
-				dirname($path)
-				. '/'
-				. $video_id
-				. '.json'
-			),
-			true
+		file_get_contents(
+			dirname($path)
+			. '/'
+			. $video_id
+			. '.json'
+		),
+		true
 	);
 
 	return [
@@ -1421,17 +1412,17 @@ function process_dated_csv(
 
 	if ($write_files && ! $skip_header) {
 		$out = array_merge($out, [
-				'---' . "\n",
-				sprintf('title: "%s"', $data['title']) . "\n",
-				sprintf('date: "%s"', $date) . "\n",
-				'layout: livestream' . "\n",
-				'---' . "\n",
-				sprintf(
-					'# %s %s' . "\n",
-					$friendly_date,
-					$data['title']
-				),
-			]);
+			'---' . "\n",
+			sprintf('title: "%s"', $data['title']) . "\n",
+			sprintf('date: "%s"', $date) . "\n",
+			'layout: livestream' . "\n",
+			'---' . "\n",
+			sprintf(
+				'# %s %s' . "\n",
+				$friendly_date,
+				$data['title']
+			),
+		]);
 	}
 
 	/** @var list<array{0:numeric-string, 1:numeric-string, 2:string}> */
@@ -1707,13 +1698,12 @@ function process_dated_csv(
 		}
 
 		if ($write_files) {
-			$out[] =
-				sprintf(
-					'* [%s:%s](%s) %s' . "\n",
-					$start_minutes,
-					$start_seconds,
-					timestamp_link($video_id, $start),
-					$clip_title_maybe
+			$out[] = sprintf(
+				'* [%s:%s](%s) %s' . "\n",
+				$start_minutes,
+				$start_seconds,
+				timestamp_link($video_id, $start),
+				$clip_title_maybe
 			);
 		}
 	}
@@ -1799,15 +1789,7 @@ function markdownify_transcription_lines(
 
 	$transcription_text = implode('', array_map(
 		static function (string $caption_line) : string {
-			return
-				trim(
-				'> '
-				. $caption_line
-				)
-				. "\n"
-				. '>'
-				. "\n"
-			;
+			return trim('> ' . $caption_line) . "\n" . '>' . "\n";
 		},
 		$lines
 	));
