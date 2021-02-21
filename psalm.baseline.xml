@@ -1,112 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="4.5.1@257a1ca672a79dedc852be1285a7b97154646418">
   <file src="app/app.php">
-    <ArgumentTypeCoercion occurrences="1">
-      <code>$cache</code>
-    </ArgumentTypeCoercion>
-    <InvalidArgument occurrences="1">
-      <code>[]</code>
-    </InvalidArgument>
-    <InvalidScalarArgument occurrences="1"/>
-    <MixedArgument occurrences="10">
+    <MixedArgument occurrences="3">
       <code>$data</code>
       <code>$filename</code>
-      <code>$injected_cache</code>
-      <code>$injected_data[2]</code>
-      <code>$injected_data[2]</code>
-      <code>$other_playlists_on_channel[$playlist_id][1]</code>
-      <code>$skipping</code>
-      <code>$skipping</code>
-      <code>$topic_slug_history</code>
     </MixedArgument>
     <MixedArgumentTypeCoercion occurrences="1"/>
-    <MixedArrayAccess occurrences="7">
-      <code>$data[1]</code>
-      <code>$injected_cache['playlists']</code>
-      <code>$injected_cache['videoTags']</code>
-      <code>$injected_data[1]</code>
-      <code>$injected_data[2]</code>
-      <code>$injected_data[2]</code>
-      <code>$injected_data[2]</code>
-    </MixedArrayAccess>
-    <MixedArrayAssignment occurrences="3">
-      <code>$skipping[]</code>
-      <code>$topic_slug_history[$topic_id]</code>
-      <code>$topic_slug_history[$topic_id]</code>
-    </MixedArrayAssignment>
-    <MixedArrayOffset occurrences="11">
-      <code>$cache['videoTags'][$video_id]</code>
-      <code>$cache['videoTags'][$video_id]</code>
-      <code>$cache['videoTags'][$video_id]</code>
-      <code>$cache['videoTags'][$video_id]</code>
-      <code>$global_topic_hierarchy[$basename]</code>
-      <code>$other_playlists_on_channel[$playlist_id]</code>
-      <code>$other_playlists_on_channel[$playlist_id]</code>
-      <code>$other_playlists_on_channel[$playlist_id]</code>
-      <code>$other_playlists_on_channel[$playlist_id]</code>
-      <code>$playlists[$playlist_id]</code>
-      <code>$playlists[$playlist_id]</code>
-    </MixedArrayOffset>
     <MixedArrayTypeCoercion occurrences="1">
       <code>$cache['playlists'][$playlist_id]</code>
     </MixedArrayTypeCoercion>
-    <MixedAssignment occurrences="16">
-      <code>$cache['videoTags'][$video_id][]</code>
-      <code>$data</code>
-      <code>$data</code>
+    <MixedAssignment occurrences="2">
       <code>$data</code>
       <code>$filename</code>
-      <code>$injected_cache</code>
-      <code>$injected_data</code>
-      <code>$markdown_path</code>
-      <code>$out[]</code>
-      <code>$playlist_id</code>
-      <code>$playlist_id</code>
-      <code>$skipping</code>
-      <code>$tag</code>
-      <code>$topic_slug_history</code>
-      <code>$video_id</code>
-      <code>$video_id</code>
     </MixedAssignment>
-    <MixedInferredReturnType occurrences="3">
-      <code>int</code>
-      <code>int</code>
+    <MixedInferredReturnType occurrences="1">
       <code>int</code>
     </MixedInferredReturnType>
-    <MixedOperand occurrences="4">
+    <MixedOperand occurrences="1">
       <code>$a['left']</code>
-      <code>$a['left']</code>
-      <code>$a[1]</code>
-      <code>$markdown_path</code>
     </MixedOperand>
-    <MixedReturnStatement occurrences="3">
+    <MixedReturnStatement occurrences="1">
       <code>$a['left'] - $b['left']</code>
-      <code>$a['left'] - $b['left']</code>
-      <code>$a[1] - $b[1]</code>
     </MixedReturnStatement>
-    <PossiblyUndefinedGlobalVariable occurrences="1">
-      <code>$basename</code>
-    </PossiblyUndefinedGlobalVariable>
     <RedundantCondition occurrences="1">
       <code>$past_first</code>
     </RedundantCondition>
-    <UnusedVariable occurrences="15">
-      <code>$autocategorise</code>
-      <code>$categorised</code>
-      <code>$etag</code>
-      <code>$exclude_from_absent_tag_check</code>
-      <code>$faq_patch</code>
-      <code>$faq_playlist_data</code>
-      <code>$faq_playlist_data_dates</code>
-      <code>$grouped_faq_videos</code>
-      <code>$i</code>
-      <code>$parent_string</code>
-      <code>$slug_string</code>
-      <code>$slug_string</code>
-      <code>$title</code>
-      <code>$topic_hierarchy</code>
-      <code>$topic_id</code>
-    </UnusedVariable>
   </file>
   <file src="app/cleanup-playlist-api-cache.php">
     <UnusedFunctionCall occurrences="1">

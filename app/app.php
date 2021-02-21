@@ -67,8 +67,6 @@ $api->update();
 
 $slugify = new Slugify();
 
-$other_playlists_on_channel = [];
-
 $playlist_satisfactory =
 	realpath(
 		__DIR__
@@ -79,6 +77,7 @@ if ( ! is_string($playlist_satisfactory)) {
 	throw new RuntimeException('Satisfactory playlist not found!');
 }
 
+/** @var array<string, string> */
 $playlist_metadata = [
 	$playlist_satisfactory => __DIR__ . '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/',
 ];
@@ -88,6 +87,7 @@ $playlists = [
 ];
 
 foreach ($playlist_metadata as $metadata_path => $prepend_path) {
+	/** @var array<string, string> */
 	$data = json_decode(file_get_contents($metadata_path), true);
 
 	foreach ($data as $playlist_id => $markdown_path) {
@@ -95,29 +95,12 @@ foreach ($playlist_metadata as $metadata_path => $prepend_path) {
 	}
 }
 
-$exclude_from_absent_tag_check = [
-	'4_cYnq746zk', // official merch announcement video
-];
-
-/** @var list<string> */
-$autocategorise = [];
-
 $cache = $api->toLegacyCacheFormat();
 
 file_put_contents(__DIR__ . '/cache.json', json_encode(
 	$cache,
 	JSON_PRETTY_PRINT
 ));
-
-foreach (($cache['playlists'] ?? []) as $playlist_id => $data) {
-	if (isset($playlists[$playlist_id])) {
-		continue;
-	}
-
-	[$etag, $title, $video_ids] = $data;
-
-	$other_playlists_on_channel[$playlist_id] = [$title, $video_ids];
-}
 
 $cache['playlists'] = $cache['playlists'] ?? [];
 
@@ -221,8 +204,21 @@ foreach ($playlists as $playlist_id => $path) {
 $playlists = $playlists;
 
 $playlist_history = array_map(
+	/**
+	 * @param list<array{0:string, 1:int}> $data
+	 *
+	 * @return list<array{0:string, 1:int}>
+	 */
 	static function (array $data) : array {
-		usort($data, static function (array $a, array $b) : int {
+		usort(
+			$data,
+			/**
+			 * @psalm-type IN = array{0:string, 1:int}
+			 *
+			 * @param IN $a
+			 * @param IN $b
+			 */
+			static function (array $a, array $b) : int {
 			return $a[1] - $b[1];
 		});
 
@@ -236,36 +232,20 @@ file_put_contents(__DIR__ . '/playlist-date-history.json', json_encode(
 	JSON_PRETTY_PRINT
 ));
 
+/**
+ * @var array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts:array<string, list<string>>,
+ *	internalxref:array<string, string>
+ * }
+ */
 $injected_cache = json_decode(
 	file_get_contents(__DIR__ . '/cache-injection.json'),
 	true
 );
-
-foreach ($injected_cache['playlists'] as $playlist_id => $injected_data) {
-	if (
-		! isset(
-			$other_playlists_on_channel[$playlist_id],
-		)
-		&& ! isset(
-			$playlists[$playlist_id]
-		)
-		&& count($injected_data[2]) > 0
-	) {
-		$other_playlists_on_channel[$playlist_id] = [
-			$injected_data[1],
-			$injected_data[2],
-		];
-	} elseif (
-		isset(
-			$other_playlists_on_channel[$playlist_id],
-		)
-	) {
-		$other_playlists_on_channel[$playlist_id][1] = array_merge(
-			$other_playlists_on_channel[$playlist_id][1],
-			$injected_data[2]
-		);
-	}
-}
 
 foreach ($injected_cache['videoTags'] as $video_id => $data) {
 	if ( ! isset($cache['videoTags'][$video_id])) {
@@ -315,7 +295,7 @@ foreach (
 ) {
 	$found = false;
 
-	foreach ($cache['playlists'] as $topic_id => $data) {
+	foreach ($cache['playlists'] as $data) {
 		$found = in_array($video_id, $data[2], true);
 
 		if ($found) {
@@ -374,7 +354,7 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 
 		$topic_descendant_id = $topic_id;
 
-		foreach ($topic_ancestors as $i => $topic_ancestor_name) {
+		foreach ($topic_ancestors as $topic_ancestor_name) {
 			[$topic_ancestor_id] = determine_playlist_id(
 				$topic_ancestor_name,
 				$cache,
@@ -473,12 +453,7 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 
 	uasort(
 		$topics,
-		static function (
-			array $a,
-			array $b
-		) : int {
-			return $a['left'] - $b['left'];
-		}
+		[$sorting, 'sort_by_nleft']
 	);
 
 	$topic_nesting[$basename] = $topics;
@@ -584,11 +559,13 @@ $video_playlists = array_map(
 
 file_put_contents(__DIR__ . '/topics-satisfactory.json', json_encode($topics_json, JSON_PRETTY_PRINT));
 
+/** @var array<string, array<string, int>> */
 $topic_slug_history = json_decode(
 	file_get_contents(__DIR__ . '/topic-slug-history.json'),
 	true
 );
 
+/** @var list<string> */
 $skipping = json_decode(
 	file_get_contents(__DIR__ . '/skipping-transcriptions.json'),
 	true
@@ -861,7 +838,11 @@ foreach (array_keys($playlists) as $playlist_id) {
 	if (null !== $xref_video_id) {
 		[, $lines_to_write] = process_dated_csv(
 			date('Y-m-d', $title_unix),
-			[],
+			[
+				'playlists' => [],
+				'playlistItems' => [],
+				'videoTags' => [],
+			],
 			get_dated_csv(date('Y-m-d', $title_unix), $xref_video_id, false),
 			$cache,
 			$global_topic_hierarchy,
@@ -892,6 +873,12 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	$nested_video_ids = array_unique(array_reduce(
 		$topics_for_date,
+		/**
+		 * @param list<string> $out
+		 * @param array{videos:list<string>} $data
+		 *
+		 * @return list<string>
+		 */
 		static function (array $out, array $data) : array {
 			foreach ($data['videos'] as $video_id) {
 				if ( ! in_array($video_id, $out, true)) {
@@ -928,7 +915,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 		];
 	}
 
-	foreach ($content_arrays['Related answer clips'] as $title => $data) {
+	foreach ($content_arrays['Related answer clips'] as $data) {
 		[$topic_id, $video_data] = $data;
 
 		$depth = min(6, $topics_for_date[$topic_id]['level'] + 2);
@@ -1031,19 +1018,14 @@ file_put_contents(__DIR__ . '/topic-slug-history.json', json_encode(
 
 /** @var list<string> */
 $faq_dates = [];
-$faq_patch = [];
-
-$faq_playlist_data = [];
-$faq_playlist_data_dates = [];
 
 foreach (array_keys($playlist_metadata) as $metadata_path) {
 	/** @var array<string, string> */
 	$faq_playlist_data = json_decode(file_get_contents($metadata_path), true);
 
-	foreach ($faq_playlist_data as $playlist_id => $filename) {
+	foreach ($faq_playlist_data as $filename) {
 		$faq_playlist_date = mb_substr($filename, 0, -3);
 		$faq_dates[] = $faq_playlist_date;
-		$faq_playlist_data_dates[$playlist_id] = $faq_playlist_date;
 	}
 }
 
@@ -1182,7 +1164,7 @@ foreach ($faq_video_topic_nesting_roots as $topic_id) {
 		$faq_video_topic_nesting,
 		$topic_id,
 		$current_left,
-		$global_topic_hierarchy[$basename],
+		$global_topic_hierarchy['satisfactory'],
 		$cache
 	);
 }
@@ -1229,8 +1211,6 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 	$faq_topic_videos = ($faq_video_topics[$topic_id] ?? []);
 
 	if (count($faq_topic_videos)) {
-		$grouped_faq_videos = array_keys($playlists);
-
 		$grouped_faq_videos = array_filter(array_combine(
 			array_keys($playlists),
 			array_map(
@@ -1302,8 +1282,6 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 file_put_contents($faq_filepath, implode('', $faq_lines));
 
 foreach ($playlist_metadata as $json_file => $save_path) {
-	$categorised = [];
-
 	$data = json_decode(file_get_contents($json_file), true);
 
 	if ($json_file === realpath(
@@ -1323,8 +1301,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	}
 
 	$basename = basename($save_path);
-
-	$topic_hierarchy = $global_topic_hierarchy[$basename] ?? [];
 
 	$file_path = $save_path . '/../' . $basename . '/topics.md';
 
@@ -1367,7 +1343,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 		[, $playlist_title, $playlist_items] = $playlist_data;
 
-		[$slug_string, $slug] = topic_to_slug(
+		[, $slug] = topic_to_slug(
 			$playlist_id,
 			$cache,
 			$global_topic_hierarchy[$basename],
@@ -1456,7 +1432,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 							return ' > ' . $slug_parent;
 						}
 
-						[$parent_string, $parent_parts] = topic_to_slug(
+						[, $parent_parts] = topic_to_slug(
 							$parent_id,
 							$cache,
 							$global_topic_hierarchy[$basename],
@@ -1516,7 +1492,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 							$slugify,
 							$slug_count
 						) : string {
-							[$slug_string, $sub_slug] = topic_to_slug(
+							[, $sub_slug] = topic_to_slug(
 								$subtopic_id,
 								$cache,
 								$global_topic_hierarchy[$basename],
@@ -1701,6 +1677,9 @@ $grouped = array_map(
 );
 
 $sortable = array_map(
+	/**
+	 * @param array<string, int> $year
+	 */
 	static function (array $year) : array {
 		uasort($year, static function (int $a, int $b) : int {
 			return $b - $a;

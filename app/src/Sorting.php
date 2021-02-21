@@ -120,4 +120,21 @@ class Sorting
 
 		return $maybe;
 	}
+
+	/**
+	 * @psalm-type IN = array{
+	 *	children: list<string>,
+	 *	videos?: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }
+	 *
+	 * @param IN $a
+	 * @param IN $b
+	 */
+	public function sort_by_nleft(array $a, array $b) : int
+	{
+		return $a['left'] - $b['left'];
+	}
 }
