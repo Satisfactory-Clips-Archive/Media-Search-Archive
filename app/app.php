@@ -219,8 +219,9 @@ $playlist_history = array_map(
 			 * @param IN $b
 			 */
 			static function (array $a, array $b) : int {
-			return $a[1] - $b[1];
-		});
+				return $a[1] - $b[1];
+			}
+		);
 
 		return $data;
 	},
