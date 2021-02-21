@@ -1795,7 +1795,7 @@ function is_topic_FAQ(array $maybe) : array
 {
 	$is_faq = in_array(true, $maybe, true);
 
-	$topics = array_filter($maybe, 'is_string');
+	$topics = array_values(array_filter($maybe, 'is_string'));
 
 	if ( ! $is_faq) {
 		foreach ($topics as $topic) {
@@ -2482,9 +2482,6 @@ $legacy_alt_forms_of_video = [
 		'wTbRzvQ8ZLY' => [
 			'tc-WanderingGloriousWallabyPunchTrees',
 		],
-		'AgdOGd32U3w' => [
-			'tc-GeniusConcernedEggDogFace',
-		],
 		'ScNrW0Th3wg' => [
 			'tc-SpinelessSneakySalsifyNerfRedBlaster',
 		],
@@ -2497,7 +2494,7 @@ $legacy_alt_forms_of_video = [
 
 $cache['legacyAlts'] = $cache['legacyAlts'] ?? [];
 
-foreach ($legacy_alt_forms_of_video as $date => $data) {
+foreach ($legacy_alt_forms_of_video as $data) {
 	foreach ($data as $video_id => $legacy_ids) {
 		if (
 			! isset($cache['playlistItems'][$video_id])
