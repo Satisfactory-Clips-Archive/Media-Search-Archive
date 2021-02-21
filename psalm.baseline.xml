@@ -121,7 +121,6 @@
     </UnusedVariable>
   </file>
   <file src="app/global-topic-hierarchy.php">
-    <DuplicateArrayKey occurrences="1"/>
     <UnusedVariable occurrences="4">
       <code>$global_topic_hierarchy</code>
       <code>$injected_global_topic_hierarchy</code>
