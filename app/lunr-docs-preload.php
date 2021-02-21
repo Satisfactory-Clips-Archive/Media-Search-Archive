@@ -44,12 +44,6 @@ $global_topic_hierarchy = array_merge_recursive(
 
 $slugify = new Slugify();
 
-/** @var array{satisfactory:array<string, list<string>>} */
-$global_topic_append = json_decode(
-	file_get_contents(__DIR__ . '/global-topic-append.json'),
-	true
-);
-
 /**
  * @var array<string, array{
  *	game: 'satisfactory',
@@ -63,54 +57,35 @@ $global_topic_append = json_decode(
  */
 $out = [];
 
-$date = '0000-00-00';
-$title = '';
-$urls = [];
-$quotes = [];
+[$cache] = prepare_injections(new YouTubeApiWrapper(), $slugify);
 
-/**
- * @var array{
- *	playlists: array<string, array{0:string, 1:string, 2:list<string>}>,
- *	playlistItems: array<string, array{0:string, 1:string}>,
- *	videoTags: array<string, array{0:string, 1:list<string>}>
- * }
- */
-$cache = json_decode(file_get_contents(__DIR__ . '/cache.json'), true);
-
-$cache = inject_caches(
-	$cache,
-	json_decode(file_get_contents(__DIR__ . '/cache-injection.json'), true)
-);
-
-$cache = inject_caches(
-	$cache,
-	process_externals(
-		$cache,
-		$global_topic_hierarchy,
-		$not_a_livestream,
-		$not_a_livestream_date_lookup,
-		$slugify,
-		false
-	)
-);
+$filtering = new Filtering();
 
 /** @var array<string, string> */
-$dated_playlists = json_decode(
+$dated_playlists = array_filter(
+	(array) json_decode(
 	file_get_contents(
 		__DIR__ .
 		'/playlists/coffeestainstudiosdevs/satisfactory.json'
 	),
 	true
+	),
+	[$filtering, 'kvp_string_string'],
+	ARRAY_FILTER_USE_BOTH
 );
 
 $dated_playlists = array_merge(
 	$dated_playlists,
-	json_decode(
+	array_filter(
+		(array) json_decode(
 		file_get_contents(
 			__DIR__ .
 			'/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
 		),
 		true
+		),
+		[$filtering, 'kvp_string_string'],
+		ARRAY_FILTER_USE_BOTH
 	)
 );
 
@@ -126,7 +101,7 @@ $topics = [];
 foreach (
 	array_filter(
 		$cache['playlists'],
-		static function ($playlist_id) use ($dated_playlists) : bool {
+		static function (string $playlist_id) use ($dated_playlists) : bool {
 			return ! isset($dated_playlists[$playlist_id]);
 		},
 		ARRAY_FILTER_USE_KEY
@@ -209,12 +184,12 @@ foreach ($video_ids as $video_id) {
 
 		$transcription_raw = mb_substr(
 			$transcription_raw,
-			mb_strpos($transcription_raw, '---', 4)
+			(int) mb_strpos($transcription_raw, '---', 4)
 		);
 
 		$transcription_raw = mb_substr(
 			$transcription_raw,
-			mb_strpos($transcription_raw, "\n" . '>')
+			(int) mb_strpos($transcription_raw, "\n" . '>')
 		);
 
 		$transcription = trim(implode("\n", array_map(
