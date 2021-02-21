@@ -82,6 +82,8 @@ $global_topic_hierarchy = array_merge_recursive(
  *
  * @param CACHE $cache
  * @param CACHE $main
+ * @param array<string, string> $not_a_livestream
+ * @param array<string, string> $not_a_livestream_date_lookup
  *
  * @return CACHE
  */
@@ -89,15 +91,12 @@ function add_playlist(
 	string $playlist_name,
 	array $cache,
 	array $main,
-	array $global_topic_hierarchy,
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup
 ) : array {
 	[$playlist_id, $friendly] = determine_playlist_id(
 		$playlist_name,
-		$cache,
 		$main,
-		$global_topic_hierarchy,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup
 	);
@@ -388,7 +387,6 @@ foreach ($dated_glob as $date) {
 		$date,
 		$cache,
 		$main,
-		$global_topic_hierarchy,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup
 	);
@@ -402,7 +400,6 @@ foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $prefiltered
 			$topic_name,
 			$cache,
 			$main,
-			$global_topic_hierarchy,
 			$not_a_livestream,
 			$not_a_livestream_date_lookup
 		);
@@ -417,7 +414,6 @@ foreach ($global_topic_hierarchy['satisfactory'] as $playlist_id => $prefiltered
 			$playlist_id,
 			$cache,
 			$main,
-			$global_topic_hierarchy,
 			$not_a_livestream,
 			$not_a_livestream_date_lookup
 		);
@@ -594,16 +590,13 @@ foreach ($preloaded_faq as $topic => $topic_data) {
 		$topic,
 		$cache,
 		$main,
-		$global_topic_hierarchy,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup
 	);
 
 	[$topic_playlist_id] = determine_playlist_id(
 		$topic,
-		$cache,
 		$main,
-		$global_topic_hierarchy,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup
 	);
@@ -613,16 +606,13 @@ foreach ($preloaded_faq as $topic => $topic_data) {
 			$topic_date,
 			$cache,
 			$main,
-			$global_topic_hierarchy,
 			$not_a_livestream,
 			$not_a_livestream_date_lookup
 		);
 
 		[$topic_date_playlist_id] = determine_playlist_id(
 			$topic_date,
-			$cache,
 			$main,
-			$global_topic_hierarchy,
 			$not_a_livestream,
 			$not_a_livestream_date_lookup
 		);
@@ -1830,16 +1820,13 @@ foreach ($from_markdown as $date => $data) {
 		$date,
 		$cache,
 		$main,
-		$global_topic_hierarchy,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup
 	);
 
 	[$date_playlist_id] = determine_playlist_id(
 		$date,
-		$cache,
 		$main,
-		$global_topic_hierarchy,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup
 	);
@@ -1859,16 +1846,13 @@ foreach ($from_markdown as $date => $data) {
 				$topic,
 				$cache,
 				$main,
-				$global_topic_hierarchy,
 				$not_a_livestream,
 				$not_a_livestream_date_lookup
 			);
 
 			[$topic_playlist_id] = determine_playlist_id(
 				$topic,
-				$cache,
 				$main,
-				$global_topic_hierarchy,
 				$not_a_livestream,
 				$not_a_livestream_date_lookup
 			);
@@ -1917,16 +1901,13 @@ foreach ($from_instagram as $date => $data) {
 		$date,
 		$cache,
 		$main,
-		$global_topic_hierarchy,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup
 	);
 
 	[$date_playlist_id] = determine_playlist_id(
 		$date,
-		$cache,
 		$main,
-		$global_topic_hierarchy,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup
 	);
@@ -1948,16 +1929,13 @@ foreach ($from_instagram as $date => $data) {
 				$topic,
 				$cache,
 				$main,
-				$global_topic_hierarchy,
 				$not_a_livestream,
 				$not_a_livestream_date_lookup
 			);
 
 			[$topic_playlist_id] = determine_playlist_id(
 				$topic,
-				$cache,
 				$main,
-				$global_topic_hierarchy,
 				$not_a_livestream,
 				$not_a_livestream_date_lookup
 			);
@@ -1984,9 +1962,7 @@ $manually_inject_videos_to_topics = [
 foreach ($manually_inject_videos_to_topics as $topic => $video_ids) {
 	[$topic_id] = determine_playlist_id(
 		$topic,
-		$cache,
 		$main,
-		$global_topic_hierarchy,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup
 	);
