@@ -788,12 +788,6 @@ $injected_global_topic_hierarchy = [
 		'Pending' => [
 			'Satisfactory Updates',
 		],
-		'Planned Features' => [
-			'Features',
-		],
-		'Possible Features' => [
-			'Features',
-		],
 		'Released' => [
 			'Satisfactory Updates',
 		],
@@ -808,6 +802,9 @@ $injected_global_topic_hierarchy = [
 			'Biomes',
 		],
 		'Planned Features' => [
+			'Features',
+		],
+		'Possible Features' => [
 			'Features',
 		],
 		'Unplanned Features' => [
