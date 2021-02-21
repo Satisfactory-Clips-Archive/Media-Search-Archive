@@ -64,11 +64,11 @@ $filtering = new Filtering();
 /** @var array<string, string> */
 $dated_playlists = array_filter(
 	(array) json_decode(
-	file_get_contents(
-		__DIR__ .
-		'/playlists/coffeestainstudiosdevs/satisfactory.json'
-	),
-	true
+		file_get_contents(
+			__DIR__ .
+			'/playlists/coffeestainstudiosdevs/satisfactory.json'
+		),
+		true
 	),
 	[$filtering, 'kvp_string_string'],
 	ARRAY_FILTER_USE_BOTH
