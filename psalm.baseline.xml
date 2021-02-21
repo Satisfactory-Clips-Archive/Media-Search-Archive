@@ -113,18 +113,6 @@
       <code>array_map</code>
     </UnusedFunctionCall>
   </file>
-  <file src="app/decorate-cache-injection.php">
-    <DuplicateArrayKey occurrences="1"/>
-    <LessSpecificReturnStatement occurrences="1">
-      <code>[$is_faq, $topics]</code>
-    </LessSpecificReturnStatement>
-    <MoreSpecificReturnType occurrences="1">
-      <code>array{0:bool, 1:list&lt;string&gt;}</code>
-    </MoreSpecificReturnType>
-    <UnusedVariable occurrences="1">
-      <code>$date</code>
-    </UnusedVariable>
-  </file>
   <file src="app/global-topic-hierarchy.php">
     <UnusedVariable occurrences="4">
       <code>$global_topic_hierarchy</code>
