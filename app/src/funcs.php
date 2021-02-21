@@ -81,11 +81,11 @@ use function uksort;
 use function usort;
 
 set_error_handler(static function (
-	int $errno,
+	int $_errno,
 	string $errstr,
 	string $errfile,
 	int $errline,
-	array $errcontext
+	array $_errcontext
 ) : bool {
 	throw new ErrorException(sprintf(
 		'%s:%s %s',
@@ -101,12 +101,26 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 	static $overrides = null;
 
 	if (null === $overrides) {
-		$overrides = json_decode(
+		/** @var array<string, string> */
+		$overrides = array_filter(
+			(array) json_decode(
 			file_get_contents(
 				__DIR__
 				. '/../playlists/coffeestainstudiosdevs/satisfactory.url-overrides.json'
 			),
 			true
+			),
+			/**
+			 * @psalm-assert-if-true string $maybe_value
+			 * @psalm-assert-if-true string $maybe_key
+			 *
+			 * @param scalar|array|object|null $maybe_value
+			 * @param array-key $maybe_key
+			 */
+			static function ($maybe_value, $maybe_key) : bool {
+				return is_string($maybe_value) && is_string($maybe_key);
+			},
+			ARRAY_FILTER_USE_BOTH
 		);
 	}
 
@@ -358,6 +372,16 @@ function inject_caches(array $cache, array ...$caches) : array
 		}
 	}
 
+	/**
+	 * @var array{
+	 *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+	 *	playlistItems:array<string, array{0:string, 1:string}>,
+	 *	videoTags:array<string, array{0:string, list<string>}>,
+	 *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+	 *	legacyAlts:array<string, list<string>>,
+	 *	internalxref:array<string, string>
+	 * }
+	 */
 	return $cache;
 }
 
@@ -442,6 +466,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
  * }
  *
  * @param CACHE $cache
+ * @param array<string, list<int|string>> $topics_hierarchy
  *
  * @return array{0:string, 1:list<string>}
  */
@@ -467,7 +492,6 @@ function topic_to_slug(
 
 	[, $topic_title] = $topic_data;
 
-	/** @var list<int|string> */
 	$slug = $topics_hierarchy[$topic_id] ?? [];
 
 	if (($slug[0] ?? '') !== $topic_title) {
@@ -515,23 +539,18 @@ function try_find_main_playlist(
  *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>
  * }
  *
- * @param CACHE $cache
  * @param CACHE $main
+ * @param array<string, string> $not_a_livestream
+ * @param array<string, string> $not_a_livestream_date_lookup
  *
  * @return array{0:string, 1:string}
  */
 function determine_playlist_id(
 	string $playlist_name,
-	array $cache,
 	array $main,
-	array $global_topic_hierarchy,
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup
 ) : array {
-	/** @var string|null */
-	$maybe_playlist_id = null;
-	$friendly = $playlist_name;
-
 	if (preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $playlist_name)) {
 		$unix = strtotime($playlist_name);
 
@@ -549,10 +568,7 @@ function determine_playlist_id(
 			];
 		}
 
-		$friendly =
-			date('F jS, Y', $unix)
-			. ' '
-			. $suffix;
+		$friendly = date('F jS, Y', $unix) . ' ' . $suffix;
 
 		$maybe_playlist_id = try_find_main_playlist($friendly, $main);
 
@@ -569,12 +585,6 @@ function determine_playlist_id(
 		$friendly = $playlist_name;
 	}
 
-	if (null === $maybe_playlist_id) {
-		throw new RuntimeException(
-			'Could not find playlist id!'
-		);
-	}
-
 	return [$maybe_playlist_id, $friendly];
 }
 
@@ -588,6 +598,15 @@ function determine_playlist_id(
  * }>
  *
  * @param DATA $data
+ * @param array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts:array<string, list<string>>,
+ *	internalxref:array<string, string>
+ * } $cache
+ * @param array<string, list<int|string>> $topics_hierarchy
  *
  * @return array{0:int, 1:DATA}
  */
@@ -620,7 +639,13 @@ function adjust_nesting(
 				string $a,
 				string $b
 			) use ($topics_hierarchy) : int {
-				return $topics_hierarchy[$a][0] - $topics_hierarchy[$b][0];
+				/** @var int */
+				$a_int = $topics_hierarchy[$a][0];
+
+				/** @var int */
+				$b_int = $topics_hierarchy[$b][0];
+
+				return $a_int - $b_int;
 			}
 		);
 	} else {
@@ -666,7 +691,6 @@ function adjust_nesting(
 /**
  * @param array<string, array{
  *	children: list<string>,
- *	videos: list<string>,
  *	left: positive-int,
  *	right: positive-int,
  *	level: int
@@ -745,30 +769,49 @@ function nesting_children(
 	));
 
 	if ( ! $all_the_way_down) {
-		$children = array_filter(
+		$children = array_values(array_filter(
 			$children,
 			static function (string $maybe) use ($data, $target) : bool {
 				return $data[$maybe]['level'] === $data[$target]['level'] + 1;
 			}
-		);
+		));
 	}
 
 	return $children;
 }
 
+/**
+ * @param array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts:array<string, list<string>>,
+ *	internalxref:array<string, string>
+ * } $cache
+ */
 function determine_topic_name(string $topic, array $cache) : string
 {
 	return ($cache['playlists'][$topic] ?? $cache['stubPlaylists'][$topic])[1];
 }
 
 /**
- * @param array{
+ * @param array<string, array{
  *	children: list<string>,
- *	videos: list<string>,
+ *	videos?: list<string>,
  *	left: positive-int,
  *	right: positive-int,
  *	level: int
- * } $nested
+ * }> $nested
+ * @param array{
+ *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	playlistItems:array<string, array{0:string, 1:string}>,
+ *	videoTags:array<string, array{0:string, list<string>}>,
+ *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+ *	legacyAlts:array<string, list<string>>,
+ *	internalxref:array<string, string>
+ * } $cache
+ * @param array<string, list<int|string>> $topic_hierarchy
  *
  * @return array<string, array{
  *	children: list<string>,
@@ -779,7 +822,7 @@ function determine_topic_name(string $topic, array $cache) : string
  * }>
  */
 function filter_nested(
-	string $playlist_id,
+	string $_playlist_id,
 	array $nested,
 	array $cache,
 	array $topic_hierarchy,
@@ -791,8 +834,16 @@ function filter_nested(
 	$filtered = $nested;
 
 	foreach (array_keys($filtered) as $topic_id) {
+		if ( ! isset($filtered[$topic_id])) {
+			throw new RuntimeException(sprintf(
+				'Could not find %s in argument 2 passed to %s()!',
+				$topic_id,
+				__FUNCTION__
+			));
+		}
+
 		$filtered[$topic_id]['videos'] = array_values(array_filter(
-			($cache['playlists'][$topic_id] ?? [2 => []])[2],
+			($cache['playlists'][$topic_id][2] ?? []),
 			static function (string $video_id) use ($video_ids) : bool {
 				return in_array($video_id, $video_ids, true);
 			}
@@ -800,12 +851,11 @@ function filter_nested(
 	}
 
 	$too_few = array_filter($filtered, static function (array $maybe) : bool {
-		return count($maybe['videos']) < 3 && $maybe['level'] > 0;
+		return count($maybe['videos'] ?? []) < 3 && $maybe['level'] > 0;
 	});
 
 	foreach ($too_few as $topic_id => $data) {
 		$parents = nesting_parents($topic_id, $nested);
-		$previous = $topic_id;
 		array_pop($parents);
 		$checking = end($parents);
 
@@ -819,18 +869,15 @@ function filter_nested(
 			array_unique(
 				array_merge(
 					$filtered[$checking]['videos'] ?? [],
-					$data['videos']
+					$data['videos'] ?? []
 				)
 			)
 		);
 	}
 
-	$filtered = array_filter(
-		$filtered,
-		static function (array $data) : bool {
-			return count($data['videos']) > 0;
-		}
-	);
+	$filtered = array_filter($filtered, static function (array $data) : bool {
+		return count($data['videos'] ?? []) > 0;
+	});
 
 	foreach (array_keys($filtered) as $topic_id) {
 		foreach (nesting_parents($topic_id, $nested) as $parent_id) {
@@ -858,6 +905,8 @@ function filter_nested(
 					return isset($filtered[$maybe]);
 				}
 			);
+
+			$data['videos'] = $data['videos'] ?? [];
 
 			usort(
 				$data['videos'],
@@ -909,7 +958,7 @@ function filter_nested(
 	uasort(
 		$filtered,
 		static function (array $a, array $b) : int {
-			return $a['left'] - $b['left'];
+			return $a['left'] <=> $b['left'];
 		}
 	);
 
@@ -987,7 +1036,7 @@ function captions(string $video_id) : array
 
 	$maybe = raw_captions($video_id);
 
-	if ([] === $maybe) {
+	if ( ! isset($maybe[1])) {
 		return [];
 	}
 
@@ -1152,22 +1201,12 @@ function raw_captions(string $video_id) : array
 		}
 	}
 
-	if ('' === $tt) {
-		if (is_file(
-			__DIR__
-			. '/../captions/'
-			. $video_id
-			. '.xml'
-		)) {
-			$tt_cache = (
-				__DIR__
-				. '/../captions/'
-				. $video_id
-				. '.xml'
-			);
+	$fallback_tt_cache = __DIR__ . '/../captions/' . $video_id . '.xml';
 
-			$tt = file_get_contents($tt_cache);
-		}
+	if ('' === $tt && is_file($fallback_tt_cache)) {
+		$tt_cache = $fallback_tt_cache;
+
+		$tt = file_get_contents($tt_cache);
 	}
 
 	/** @var list<SimpleXMLElement> */
@@ -1278,21 +1317,6 @@ function get_externals() : array
 
 			$video_id = pathinfo($path, PATHINFO_FILENAME);
 
-			/**
-			 * @var array{
-			 *	0:string,
-			 *	1:list<array{
-			 *		0:numeric-string|'',
-			 *		1:numeric-string|'',
-			 *		2:string
-			 *	}>,
-			 *	2:array{
-			 *		title:string,
-			 *		skip:list<bool>,
-			 *		topics:array<int, list<string>>
-			 *	}
-			 * }
-			 */
 			$dated_csv = get_dated_csv($date, $video_id);
 
 			$out[$date] = $dated_csv;
@@ -1315,7 +1339,7 @@ function get_externals() : array
  *		title:string,
  *		skip:list<bool>,
  *		topics:array<int, list<string>>
- *	}|array<empty, empty>
+ *	}
  * }
  */
 function get_dated_csv(
@@ -1335,7 +1359,7 @@ function get_dated_csv(
 
 	$fp = fopen($path, 'rb');
 
-	/** @var list<string> */
+	/** @var list<false|array{0:numeric-string|'', 1:numeric-string|'', 2:string}> */
 	$csv = [];
 
 	while (false !== ($line = fgetcsv($fp, 0, ',', '"', '"'))) {
@@ -1344,19 +1368,48 @@ function get_dated_csv(
 
 	fclose($fp);
 
-	$csv = array_filter($csv, 'is_array');
+	/** @var list<array{0:numeric-string|'', 1:numeric-string|'', 2:string}> */
+	$csv = array_values(array_filter($csv, 'is_array'));
 
-	usort($csv, static function (array $a, array $b) : int {
-		[$a] = $a;
-		[$b] = $b;
+	usort(
+		$csv,
+		/**
+		 * @psalm-type IN = array{
+		 *	0:numeric-string|'',
+		 *	1:numeric-string|'',
+		 *	2:string
+		 * }
+		 *
+		 * @param IN $a_in
+		 * @param IN $b_in
+		 */
+		static function (array $a_in, array $b_in) : int {
+			[$a] = $a_in;
+			[$b] = $b_in;
 
-		$a = '' === $a ? '0' : $a;
-		$b = '' === $b ? '0' : $b;
+			$a = '' === $a ? '0' : $a;
+			$b = '' === $b ? '0' : $b;
 
-		return ((float) $a) <=> ((float) $b);
-	});
+			return ((float) $a) <=> ((float) $b);
+		}
+	);
 
 	if ( ! $require_json) {
+		/**
+		 * @var array{
+		 *	0:string,
+		 *	1:list<array{
+		 *		0:numeric-string|'',
+		 *		1:numeric-string|'',
+		 *		2:string
+		 *	}>,
+		 *	2:array{
+		 *		title:string,
+		 *		skip:list<bool>,
+		 *		topics:array<int, list<string>>
+		 *	}
+		 * }
+		 */
 		return [
 			$video_id,
 			$csv,
@@ -1372,15 +1425,30 @@ function get_dated_csv(
 	 * }
 	 */
 	$video_data = json_decode(
-			file_get_contents(
-				dirname($path)
-				. '/'
-				. $video_id
-				. '.json'
-			),
-			true
+		file_get_contents(
+			dirname($path)
+			. '/'
+			. $video_id
+			. '.json'
+		),
+		true
 	);
 
+	/**
+	 * @var array{
+	 *	0:string,
+	 *	1:list<array{
+	 *		0:numeric-string|'',
+	 *		1:numeric-string|'',
+	 *		2:string
+	 *	}>,
+	 *	2:array{
+	 *		title:string,
+	 *		skip:list<bool>,
+	 *		topics:array<int, list<string>>
+	 *	}
+	 * }
+	 */
 	return [
 		$video_id,
 		$csv,
@@ -1397,6 +1465,11 @@ function get_dated_csv(
  *	legacyAlts?:array<string, list<string>>,
  *	internalxref?:array<string, string>
  * } $cache
+ * @param array{
+ *	satisfactory: array<string, list<int|string>>
+ * } $global_topic_hierarchy
+ * @param array<string, string> $not_a_livestream
+ * @param array<string, string> $not_a_livestream_date_lookup
  *
  * @return array{
  *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
@@ -1469,7 +1542,25 @@ function process_externals(
  * }
  *
  * @param CACHE $inject
+ * @param array{
+ *	0:string,
+ *	1:list<array{
+ *		0:numeric-string|'',
+ *		1:numeric-string|'',
+ *		2:string
+ *	}>,
+ *	2:array{
+ *		title:string,
+ *		skip:list<bool>,
+ *		topics:array<int, list<string>>
+ *	}
+ * } $externals_data
  * @param CACHE $cache
+ * @param array{
+ *	satisfactory: array<string, list<int|string>>
+ * } $global_topic_hierarchy
+ * @param array<string, string> $not_a_livestream
+ * @param array<string, string> $not_a_livestream_date_lookup
  *
  * @return array{
  *	0:CACHE,
@@ -1503,20 +1594,20 @@ function process_dated_csv(
 
 	if ($write_files && ! $skip_header) {
 		$out = array_merge($out, [
-				'---' . "\n",
-				sprintf('title: "%s"', $data['title']) . "\n",
-				sprintf('date: "%s"', $date) . "\n",
-				'layout: livestream' . "\n",
-				'---' . "\n",
-				sprintf(
-					'# %s %s' . "\n",
-					$friendly_date,
-					$data['title']
-				),
-			]);
+			'---' . "\n",
+			sprintf('title: "%s"', $data['title']) . "\n",
+			sprintf('date: "%s"', $date) . "\n",
+			'layout: livestream' . "\n",
+			'---' . "\n",
+			sprintf(
+				'# %s %s' . "\n",
+				$friendly_date,
+				$data['title']
+			),
+		]);
 	}
 
-	/** @var list<array{0:numeric-string, 1:numeric-string, 2:string}> */
+	/** @var list<array{0:numeric-string|'', 1:numeric-string|'', 2:string}> */
 	$captions_with_start_time = [];
 
 	foreach (($captions[1] ?? []) as $caption_line) {
@@ -1540,14 +1631,20 @@ function process_dated_csv(
 		$captions_with_start_time[] = $captions_with_start_time_row;
 	}
 
-	/**
-	 * @var array<int, list<string>>
-	 */
 	$csv_captions = array_map(
 		/**
-		 * @param list<string> $csv_line
+		 * @param array{
+		 *	0:numeric-string|'',
+		 *	1:numeric-string|'',
+		 *	2:string
+		 * } $csv_line
 		 *
-		 * @return list<string>
+		 * @return array{
+		 *	0:numeric-string|'',
+		 *	1:numeric-string|'',
+		 *	2:string,
+		 *	3:string
+		 * }
 		 */
 		static function (array $csv_line) use ($captions_with_start_time) : array {
 			$csv_line_captions = implode("\n", array_map(
@@ -1556,9 +1653,6 @@ function process_dated_csv(
 				},
 				array_filter(
 					$captions_with_start_time,
-					/**
-					 * @param array{0:numeric-string, 1:numeric-string, 2:string} $maybe
-					 */
 					static function (array $maybe) use ($csv_line) : bool {
 						[$start, $end] = $csv_line;
 
@@ -1576,7 +1670,7 @@ function process_dated_csv(
 				)
 			));
 
-			$csv_line[] = $csv_line_captions;
+			$csv_line[3] = $csv_line_captions;
 
 			return $csv_line;
 		},
@@ -1596,7 +1690,7 @@ function process_dated_csv(
 	if ($do_injection) {
 		$inject['playlists'][$date] = ['', $data['title'], array_map(
 			static function (int $i) use ($externals_csv, $video_id) : string {
-				[$start, $end, $clip_title] = $externals_csv[$i];
+				[$start, $end] = $externals_csv[$i];
 
 				return sprintf(
 					'%s,%s',
@@ -1618,19 +1712,17 @@ function process_dated_csv(
 
 		$embed_data = [
 			'autoplay' => 1,
-			'start' => floor($start ?: '0'),
+			'start' => floor((float) ($start ?: '0')),
 			'end' => $end,
 		];
 
 		if ('' === $embed_data['end']) {
 			unset($embed_data['end']);
 		} else {
-			$embed_data['end'] = ceil($embed_data['end']);
+			$embed_data['end'] = ceil((float) $embed_data['end']);
 		}
 
 		$start = (float) ($start ?: '0.0');
-
-		$embed = http_build_query($embed_data);
 
 		$start_minutes = str_pad((string) floor($start / 60), 2, '0', STR_PAD_LEFT);
 		$start_seconds = str_pad((string) ($start % 60), 2, '0', STR_PAD_LEFT);
@@ -1658,13 +1750,7 @@ function process_dated_csv(
 				foreach (($data['topics'][$i] ?? []) as $topic) {
 					[$playlist_id] = determine_playlist_id(
 						$topic,
-						[
-							'playlists' => [],
-							'playlistItems' => [],
-							'videoTags' => [],
-						],
 						$cache,
-						$global_topic_hierarchy,
 						$not_a_livestream,
 						$not_a_livestream_date_lookup
 					);
@@ -1706,13 +1792,7 @@ function process_dated_csv(
 							return topic_to_slug(
 								determine_playlist_id(
 									$topic,
-									[
-										'playlists' => [],
-										'playlistItems' => [],
-										'videoTags' => [],
-									],
 									$cache,
-									$global_topic_hierarchy,
 									$not_a_livestream,
 									$not_a_livestream_date_lookup
 								)[0],
@@ -1752,13 +1832,7 @@ function process_dated_csv(
 							[$slug, $parts] = topic_to_slug(
 								determine_playlist_id(
 									$topic,
-									[
-										'playlists' => [],
-										'playlistItems' => [],
-										'videoTags' => [],
-									],
 									$cache,
-									$global_topic_hierarchy,
 									$not_a_livestream,
 									$not_a_livestream_date_lookup
 								)[0],
@@ -1789,26 +1863,21 @@ function process_dated_csv(
 		}
 
 		if ($write_files) {
-			$out[] =
-				sprintf(
-					'* [%s:%s](%s) %s' . "\n",
-					$start_minutes,
-					$start_seconds,
-					timestamp_link($video_id, $start),
-					$clip_title_maybe
+			$out[] = sprintf(
+				'* [%s:%s](%s) %s' . "\n",
+				$start_minutes,
+				$start_seconds,
+				timestamp_link($video_id, $start),
+				$clip_title_maybe
 			);
 		}
 	}
-
-	/** @var CACHE */
-	$inject = $inject;
 
 	return [$inject, [$out, $files_out]];
 }
 
 function timestamp_link(string $video_id, float $start) : string
 {
-	$orig = $video_id;
 	$video_id = vendor_prefixed_video_id($video_id);
 	$vendorless_video_id = preg_replace('/,.*$/', '', mb_substr($video_id, 3));
 
@@ -1882,15 +1951,7 @@ function markdownify_transcription_lines(
 
 	$transcription_text = implode('', array_map(
 		static function (string $caption_line) : string {
-			return
-				trim(
-				'> '
-				. $caption_line
-				)
-				. "\n"
-				. '>'
-				. "\n"
-			;
+			return trim('> ' . $caption_line) . "\n" . '>' . "\n";
 		},
 		$lines
 	));

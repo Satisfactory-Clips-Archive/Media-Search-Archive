@@ -4,12 +4,11 @@
     <ArgumentTypeCoercion occurrences="1">
       <code>$cache</code>
     </ArgumentTypeCoercion>
-    <InvalidArgument occurrences="2">
-      <code>$topic_nesting['satisfactory']</code>
+    <InvalidArgument occurrences="1">
       <code>[]</code>
     </InvalidArgument>
     <InvalidScalarArgument occurrences="1"/>
-    <MixedArgument occurrences="11">
+    <MixedArgument occurrences="10">
       <code>$data</code>
       <code>$filename</code>
       <code>$injected_cache</code>
@@ -155,147 +154,6 @@
       <code>$quotes</code>
       <code>$title</code>
       <code>$urls</code>
-    </UnusedVariable>
-  </file>
-  <file src="app/src/funcs.php">
-    <InvalidArgument occurrences="2">
-      <code>$nested</code>
-      <code>$nested</code>
-    </InvalidArgument>
-    <InvalidScalarArgument occurrences="2">
-      <code>$embed_data['end']</code>
-      <code>$start ?: '0'</code>
-    </InvalidScalarArgument>
-    <LessSpecificReturnStatement occurrences="2">
-      <code>$cache</code>
-      <code>$children</code>
-    </LessSpecificReturnStatement>
-    <MixedArgument occurrences="23">
-      <code>$cache['playlistItems'][$a][1]</code>
-      <code>$cache['playlistItems'][$b][1]</code>
-      <code>$clip_title</code>
-      <code>$clip_title</code>
-      <code>$clip_title</code>
-      <code>$clip_title_maybe</code>
-      <code>$data['children']</code>
-      <code>$data['title']</code>
-      <code>$data['title']</code>
-      <code>$data['title']</code>
-      <code>$data['topics'][$i] ?? []</code>
-      <code>$data['topics'][$i] ?? []</code>
-      <code>$data['videos']</code>
-      <code>$data['videos']</code>
-      <code>$embed_data['end']</code>
-      <code>$externals_csv</code>
-      <code>$global_topic_hierarchy['satisfactory']</code>
-      <code>$global_topic_hierarchy['satisfactory']</code>
-      <code>$maybe['videos']</code>
-      <code>$start ?: '0'</code>
-      <code>$topic</code>
-      <code>$video_id</code>
-      <code>($cache['playlists'][$topic_id] ?? [2 =&gt; []])[2]</code>
-    </MixedArgument>
-    <MixedArrayAccess occurrences="23">
-      <code>$cache['playlistItems'][$a]</code>
-      <code>$cache['playlistItems'][$b]</code>
-      <code>$cache['stubPlaylists'][$topic]</code>
-      <code>$clip_title</code>
-      <code>$clip_title</code>
-      <code>$data['skip']</code>
-      <code>$data['title']</code>
-      <code>$data['title']</code>
-      <code>$data['title']</code>
-      <code>$data['title']</code>
-      <code>$data['topics']</code>
-      <code>$data['topics']</code>
-      <code>$data['topics']</code>
-      <code>$end</code>
-      <code>$end</code>
-      <code>$externals_csv[$i]</code>
-      <code>$start</code>
-      <code>$start</code>
-      <code>$topics_hierarchy[$a][0]</code>
-      <code>$topics_hierarchy[$b][0]</code>
-      <code>$topics_hierarchy[$maybe][0]</code>
-      <code>($cache['playlists'][$topic] ?? $cache['stubPlaylists'][$topic])[1]</code>
-      <code>($cache['playlists'][$topic_id] ?? [2 =&gt; []])[2]</code>
-    </MixedArrayAccess>
-    <MixedArrayOffset occurrences="5">
-      <code>$csv_captions[$i]</code>
-      <code>$data['topics'][$i]</code>
-      <code>$data['topics'][$i]</code>
-      <code>$data['topics'][$i]</code>
-    </MixedArrayOffset>
-    <MixedAssignment occurrences="10">
-      <code>$a</code>
-      <code>$b</code>
-      <code>$clip_title_maybe</code>
-      <code>$i</code>
-      <code>$line</code>
-      <code>$overrides</code>
-      <code>$suffix</code>
-      <code>$topic</code>
-      <code>[$start, $end, $clip_title]</code>
-      <code>[$start, $end, $clip_title]</code>
-    </MixedAssignment>
-    <MixedInferredReturnType occurrences="4">
-      <code>int</code>
-      <code>int</code>
-      <code>string</code>
-      <code>string</code>
-    </MixedInferredReturnType>
-    <MixedOperand occurrences="7">
-      <code>$a['left']</code>
-      <code>$end</code>
-      <code>$end</code>
-      <code>$start</code>
-      <code>$start</code>
-      <code>$suffix</code>
-      <code>$topics_hierarchy[$a][0]</code>
-    </MixedOperand>
-    <MixedReturnStatement occurrences="4">
-      <code>$a['left'] - $b['left']</code>
-      <code>$overrides[$video_id]</code>
-      <code>$topics_hierarchy[$a][0] - $topics_hierarchy[$b][0]</code>
-      <code>($cache['playlists'][$topic] ?? $cache['stubPlaylists'][$topic])[1]</code>
-    </MixedReturnStatement>
-    <MoreSpecificReturnType occurrences="2">
-      <code>list&lt;string&gt;</code>
-    </MoreSpecificReturnType>
-    <PossiblyInvalidArgument occurrences="5">
-      <code>$data['videos']</code>
-      <code>$filtered[$checking]['videos'] ?? []</code>
-    </PossiblyInvalidArgument>
-    <PossiblyInvalidArrayAccess occurrences="1">
-      <code>$data['videos']</code>
-    </PossiblyInvalidArrayAccess>
-    <PossiblyInvalidArrayAssignment occurrences="4">
-      <code>$filtered[$checking]['videos']</code>
-      <code>$filtered[$parent_id]['videos']</code>
-      <code>$filtered[$topic_id]['videos']</code>
-      <code>$filtered[$topic_id]['videos']</code>
-    </PossiblyInvalidArrayAssignment>
-    <PossiblyUndefinedArrayOffset occurrences="1">
-      <code>$xml_lines</code>
-    </PossiblyUndefinedArrayOffset>
-    <TypeDoesNotContainNull occurrences="1">
-      <code>null === $maybe_playlist_id</code>
-    </TypeDoesNotContainNull>
-    <UnusedClosureParam occurrences="2">
-      <code>$errcontext</code>
-      <code>$errno</code>
-    </UnusedClosureParam>
-    <UnusedParam occurrences="3">
-      <code>$cache</code>
-      <code>$global_topic_hierarchy</code>
-      <code>$playlist_id</code>
-    </UnusedParam>
-    <UnusedVariable occurrences="5">
-      <code>$clip_title</code>
-      <code>$embed</code>
-      <code>$friendly</code>
-      <code>$maybe_playlist_id</code>
-      <code>$previous</code>
     </UnusedVariable>
   </file>
 </files>

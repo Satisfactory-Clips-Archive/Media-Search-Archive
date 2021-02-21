@@ -121,6 +121,9 @@ foreach (($cache['playlists'] ?? []) as $playlist_id => $data) {
 
 $cache['playlists'] = $cache['playlists'] ?? [];
 
+/**
+ * @var array{satisfactory: array<string, list<int|string>>}
+ */
 $global_topic_hierarchy = array_merge_recursive(
 	$global_topic_hierarchy,
 	$injected_global_topic_hierarchy
@@ -133,7 +136,7 @@ $injected_playlists = array_map(
 			. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
 			. $filename;
 	},
-	json_decode(
+	(array) json_decode(
 		file_get_contents(
 			__DIR__
 			. '/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
@@ -374,13 +377,7 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 		foreach ($topic_ancestors as $i => $topic_ancestor_name) {
 			[$topic_ancestor_id] = determine_playlist_id(
 				$topic_ancestor_name,
-				[
-					'playlists' => [],
-					'playlistItems' => [],
-					'videoTags' => [],
-				],
 				$cache,
-				$global_topic_hierarchy,
 				$not_a_livestream,
 				$not_a_livestream_date_lookup
 			);
@@ -1105,17 +1102,6 @@ $faq_video_topic_nesting = array_keys(array_filter(
 	ARRAY_FILTER_USE_BOTH
 ));
 
-/**
- * @var array{satisfactory: array<string, array{
- *	children: list<string>,
- *	videos: list<string>,
- *	left: positive-int,
- *	right: positive-int,
- *	level: int
- * }>}
- */
-$topic_nesting = $topic_nesting;
-
 foreach (array_values($faq_video_topic_nesting) as $topic_id) {
 	foreach (
 		nesting_parents(
@@ -1133,8 +1119,8 @@ foreach (array_values($faq_video_topic_nesting) as $topic_id) {
  * @var array<string, array{
  *	children:list<string>,
  *	level:int,
- *	left:int,
- *	right:int
+ *	left:positive-int,
+ *	right:positive-int
  * }>
  */
 $faq_video_topic_nesting = array_combine(
@@ -1462,13 +1448,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 					) : string {
 						[$parent_id] = determine_playlist_id(
 							$slug_parent,
-							[
-								'playlists' => [],
-								'playlistItems' => [],
-								'videoTags' => [],
-							],
 							$cache,
-							$global_topic_hierarchy,
 							$not_a_livestream,
 							$not_a_livestream_date_lookup
 						);
