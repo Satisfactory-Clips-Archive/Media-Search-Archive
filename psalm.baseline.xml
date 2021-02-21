@@ -129,26 +129,4 @@
       <code>$not_a_livestream_date_lookup</code>
     </UnusedVariable>
   </file>
-  <file src="app/lunr-docs-preload.php">
-    <MissingClosureParamType occurrences="1">
-      <code>$playlist_id</code>
-    </MissingClosureParamType>
-    <MixedArgument occurrences="2">
-      <code>json_decode(file_get_contents(__DIR__ . '/cache-injection.json'), true)</code>
-    </MixedArgument>
-    <MixedArrayOffset occurrences="1">
-      <code>$dated_playlists[$playlist_id]</code>
-    </MixedArrayOffset>
-    <PossiblyFalseArgument occurrences="2">
-      <code>mb_strpos($transcription_raw, "\n" . '&gt;')</code>
-      <code>mb_strpos($transcription_raw, '---', 4)</code>
-    </PossiblyFalseArgument>
-    <UnusedVariable occurrences="5">
-      <code>$date</code>
-      <code>$global_topic_append</code>
-      <code>$quotes</code>
-      <code>$title</code>
-      <code>$urls</code>
-    </UnusedVariable>
-  </file>
 </files>

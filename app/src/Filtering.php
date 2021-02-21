@@ -33,4 +33,16 @@ class Filtering
 			&& ! isset($maybe['duplicatedby'])
 		;
 	}
+
+	/**
+	 * @psalm-assert-if-true string $maybe_value
+	 * @psalm-assert-if-true string $maybe_key
+	 *
+	 * @param scalar|array|object|resource|null $maybe_value
+	 * @param array-key $maybe_key
+	 */
+	public function kvp_string_string($maybe_value, $maybe_key) : bool
+	{
+		return is_string($maybe_value) && is_string($maybe_key);
+	}
 }

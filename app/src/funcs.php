@@ -110,16 +110,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 			),
 			true
 			),
-			/**
-			 * @psalm-assert-if-true string $maybe_value
-			 * @psalm-assert-if-true string $maybe_key
-			 *
-			 * @param scalar|array|object|null $maybe_value
-			 * @param array-key $maybe_key
-			 */
-			static function ($maybe_value, $maybe_key) : bool {
-				return is_string($maybe_value) && is_string($maybe_key);
-			},
+			[new Filtering(), 'kvp_string_string'],
 			ARRAY_FILTER_USE_BOTH
 		);
 	}
@@ -2014,16 +2005,7 @@ function determine_date_for_video(
 function dated_playlists() : array
 {
 	$playlists_filter =
-		/**
-		 * @psalm-assert-if-true string $maybe_value
-		 * @psalm-assert-if-true string $maybe_key
-		 *
-		 * @param scalar|array|object|resource|null $maybe_value
-		 * @param array-key $maybe_key
-		 */
-		static function ($maybe_value, $maybe_key) : bool {
-			return is_string($maybe_value) && is_string($maybe_key);
-		};
+		[new Filtering(), 'kvp_string_string'];
 
 	/** @var array<string, string> */
 	return array_map(
