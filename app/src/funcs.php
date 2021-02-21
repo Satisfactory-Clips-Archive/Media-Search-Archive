@@ -1312,11 +1312,12 @@ function get_dated_csv(
 			[$a] = $a_in;
 			[$b] = $b_in;
 
-		$a = '' === $a ? '0' : $a;
-		$b = '' === $b ? '0' : $b;
+			$a = '' === $a ? '0' : $a;
+			$b = '' === $b ? '0' : $b;
 
-		return ((float) $a) <=> ((float) $b);
-	});
+			return ((float) $a) <=> ((float) $b);
+		}
+	);
 
 	if ( ! $require_json) {
 		/**
