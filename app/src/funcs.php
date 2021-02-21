@@ -1077,22 +1077,15 @@ function raw_captions(string $video_id) : array
 		}
 	}
 
-	if ('' === $tt) {
-		if (is_file(
-			__DIR__
-			. '/../captions/'
-			. $video_id
-			. '.xml'
-		)) {
-			$tt_cache = (
-				__DIR__
-				. '/../captions/'
-				. $video_id
-				. '.xml'
-			);
+	$fallback_tt_cache = __DIR__ . '/../captions/' . $video_id . '.xml';
+
+	if (
+		'' === $tt
+		&& is_file($fallback_tt_cache)
+	) {
+			$tt_cache = $fallback_tt_cache;
 
 			$tt = file_get_contents($tt_cache);
-		}
 	}
 
 	/** @var list<SimpleXMLElement> */
@@ -1733,7 +1726,6 @@ function process_dated_csv(
 
 function timestamp_link(string $video_id, float $start) : string
 {
-	$orig = $video_id;
 	$video_id = vendor_prefixed_video_id($video_id);
 	$vendorless_video_id = preg_replace('/,.*$/', '', mb_substr($video_id, 3));
 
