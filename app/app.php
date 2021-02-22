@@ -738,16 +738,15 @@ foreach (array_keys($playlists) as $playlist_id) {
 	/** @var list<string> */
 	$playlist_lines = [];
 
-	$playlist_lines[] =
-		(
-			'---' . "\n"
-			. sprintf('title: "%s"' . "\n", $title)
-			. sprintf('date: "%s"' . "\n", date('Y-m-d', $title_unix))
-			. 'layout: livestream' . "\n"
-			. '---' . "\n"
-			. '# '
-			. $title
-			. "\n"
+	$playlist_lines[] = (
+		'---' . "\n"
+		. sprintf('title: "%s"' . "\n", $title)
+		. sprintf('date: "%s"' . "\n", date('Y-m-d', $title_unix))
+		. 'layout: livestream' . "\n"
+		. '---' . "\n"
+		. '# '
+		. $title
+		. "\n"
 	);
 
 	$xref_video_id = $cache['internalxref'][$playlist_id] ?? null;
@@ -856,24 +855,22 @@ foreach (array_keys($playlists) as $playlist_id) {
 				. '.md)';
 		}
 
-		$playlist_lines[] =
-			(
-				"\n"
-				. str_repeat('#', $depth)
-				. $topic_title
-				. "\n"
+		$playlist_lines[] = (
+			"\n"
+			. str_repeat('#', $depth)
+			. $topic_title
+			. "\n"
 		);
 
-		$playlist_lines[] =
-			implode('', array_map(
-				static function (string $video_line) : string {
-					return
-						'* '
-						. $video_line
-						. "\n"
-					;
-				},
-				$video_data
+		$playlist_lines[] = implode('', array_map(
+			static function (string $video_line) : string {
+				return
+					'* '
+					. $video_line
+					. "\n"
+				;
+			},
+			$video_data
 		));
 	}
 
@@ -1116,11 +1113,10 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 		$past_first = true;
 	}
 
-	$faq_lines[] =
-		sprintf(
-			'%s %s' . "\n",
-			str_repeat('#', $depth),
-			$topic_title
+	$faq_lines[] = sprintf(
+		'%s %s' . "\n",
+		str_repeat('#', $depth),
+		$topic_title
 	);
 
 	$faq_topic_videos = ($faq_video_topics[$topic_id] ?? []);
@@ -1162,28 +1158,25 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 			$faq_lines[] = "\n";
 
 			if (6 === $depth) {
-				$faq_lines[] =
-					sprintf(
-						'**%s**' . "\n",
-						$topic_title
+				$faq_lines[] = sprintf(
+					'**%s**' . "\n",
+					$topic_title
 				);
 			} else {
-				$faq_lines[] =
-					sprintf(
-						'%s %s' . "\n",
-						str_repeat('#', $depth + 1),
-						$topic_title
+				$faq_lines[] = sprintf(
+					'%s %s' . "\n",
+					str_repeat('#', $depth + 1),
+					$topic_title
 				);
 			}
 
 			foreach ($video_ids as $video_id) {
-				$faq_lines[] =
-					sprintf(
-						'* %s' . "\n",
-						maybe_transcript_link_and_video_url(
-							$video_id,
-							$cache['playlistItems'][$video_id][1]
-						)
+				$faq_lines[] = sprintf(
+					'* %s' . "\n",
+					maybe_transcript_link_and_video_url(
+						$video_id,
+						$cache['playlistItems'][$video_id][1]
+					)
 				);
 			}
 		}
@@ -1454,12 +1447,11 @@ foreach ($playlist_ids as $playlist_id) {
 	file_put_contents($slug_path, implode('', $slug_lines));
 }
 
-$file_lines[] =
-	(
-		'---' . "\n"
-		. 'title: "Browse Topics"' . "\n"
-		. 'date: Last Modified' . "\n"
-		. '---' . "\n"
+$file_lines[] = (
+	'---' . "\n"
+	. 'title: "Browse Topics"' . "\n"
+	. 'date: Last Modified' . "\n"
+	. '---' . "\n"
 );
 
 $basename_topic_nesting = $topic_nesting[$basename];
@@ -1496,18 +1488,16 @@ foreach ($basename_topic_nesting as $topic_id => $nesting_data) {
 			$past_first = true;
 		}
 
-		$file_lines[] =
-			(
-				str_repeat('#', $depth)
-				. $topic_title
-				. "\n"
+		$file_lines[] = (
+			str_repeat('#', $depth)
+			. $topic_title
+			. "\n"
 		);
 	} else {
-		$file_lines[] =
-			(
-				'*'
-				. $topic_title
-				. "\n"
+		$file_lines[] = (
+			'*'
+			. $topic_title
+			. "\n"
 		);
 	}
 }
