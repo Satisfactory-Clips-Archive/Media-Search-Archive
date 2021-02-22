@@ -43,6 +43,7 @@ use function in_array;
 use InvalidArgumentException;
 use function is_file;
 use function is_int;
+use function is_string;
 use function iterator_to_array;
 use function json_decode;
 use function key;
@@ -462,7 +463,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 	$global_topic_hierarchy = array_merge_recursive(
 		$global_topic_hierarchy,
 		$injected_global_topic_hierarchy
-	);;
+	);
 
 	foreach ($global_topic_hierarchy['satisfactory'] as $parents) {
 		foreach ($parents as $topic) {
