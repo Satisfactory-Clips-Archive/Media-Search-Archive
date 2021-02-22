@@ -532,7 +532,7 @@ class YouTubeApiWrapper
 	/**
 	 * @return array<string, string>
 	 */
-	private function dated_playlists() : array
+	public function dated_playlists() : array
 	{
 		/** @var array<string, string> */
 		$dated_playlists = array_merge(
