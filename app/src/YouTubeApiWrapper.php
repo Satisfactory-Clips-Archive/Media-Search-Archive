@@ -49,6 +49,7 @@ use function realpath;
 use RuntimeException;
 use function sort;
 use function sprintf;
+use function unlink;
 
 class YouTubeApiWrapper
 {
