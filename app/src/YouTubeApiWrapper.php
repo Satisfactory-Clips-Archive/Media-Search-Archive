@@ -430,6 +430,35 @@ class YouTubeApiWrapper
 		);
 	}
 
+	/**
+	 * @return array<string, string>
+	 */
+	public function dated_playlists() : array
+	{
+		/** @var array<string, string> */
+		$dated_playlists = array_merge(
+			(array) json_decode(
+				file_get_contents(
+					__DIR__
+					. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
+				),
+				true
+			),
+			(array) json_decode(
+				file_get_contents(
+					__DIR__
+					. '/../playlists/coffeestainstudiosdevs'
+					. '/satisfactory.injected.json'
+				),
+				true
+			)
+		);
+
+		asort($dated_playlists);
+
+		return array_reverse($dated_playlists, true);
+	}
+
 	private function service_playlists() : Google_Service_YouTube_Resource_Playlists
 	{
 		/** @var Google_Service_YouTube_Resource_Playlists */
@@ -527,35 +556,6 @@ class YouTubeApiWrapper
 		}
 
 		return $out;
-	}
-
-	/**
-	 * @return array<string, string>
-	 */
-	public function dated_playlists() : array
-	{
-		/** @var array<string, string> */
-		$dated_playlists = array_merge(
-			(array) json_decode(
-				file_get_contents(
-					__DIR__
-					. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
-				),
-				true
-			),
-			(array) json_decode(
-				file_get_contents(
-					__DIR__
-					. '/../playlists/coffeestainstudiosdevs'
-					. '/satisfactory.injected.json'
-				),
-				true
-			)
-		);
-
-		asort($dated_playlists);
-
-		return array_reverse($dated_playlists, true);
 	}
 
 	/**

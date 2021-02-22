@@ -12,7 +12,6 @@ use const ARRAY_FILTER_USE_KEY;
 use function array_keys;
 use function array_map;
 use function array_merge;
-use function array_merge_recursive;
 use function array_reduce;
 use function array_reverse;
 use function array_slice;
