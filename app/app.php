@@ -1199,321 +1199,321 @@ $save_path =
 $data = $api->dated_playlists();
 
 
-	$basename = basename($save_path);
+$basename = basename($save_path);
 
-	$file_path = $save_path . '/../' . $basename . '/topics.md';
+$file_path = $save_path . '/../' . $basename . '/topics.md';
 
-	/** @var list<string> */
-	$file_lines = [];
+/** @var list<string> */
+$file_lines = [];
 
-	$data_by_date = [];
+$data_by_date = [];
 
-	$playlists_by_date = [];
+$playlists_by_date = [];
 
-	foreach ($api->dated_playlists() as $playlist_id => $filename) {
-		$unix = strtotime(mb_substr($filename, 0, -3));
-		$readable_date = date('F jS, Y', $unix);
+foreach ($api->dated_playlists() as $playlist_id => $filename) {
+	$unix = strtotime(mb_substr($filename, 0, -3));
+	$readable_date = date('F jS, Y', $unix);
 
-		$data_by_date[$playlist_id] = [$unix, $readable_date];
+	$data_by_date[$playlist_id] = [$unix, $readable_date];
 
-		$playlists_by_date[$playlist_id] = ($cache['playlists'][$playlist_id] ?? [2 => []])[2] ?? [];
+	$playlists_by_date[$playlist_id] = ($cache['playlists'][$playlist_id] ?? [2 => []])[2] ?? [];
+}
+
+uksort(
+	$playlists_by_date,
+	static function (string $a, string $b) use ($data_by_date) : int {
+		return $data_by_date[$b][0] - $data_by_date[$a][0];
+	}
+);
+
+$playlist_ids = array_keys(($cache['playlists'] ?? []));
+
+foreach ($playlist_ids as $playlist_id) {
+	if (isset($data[$playlist_id])) {
+		continue;
+	} elseif ( ! isset($cache['playlists'][$playlist_id])) {
+		throw new RuntimeException(sprintf(
+			'Playlist cache data not found! (%s)',
+			$playlist_id
+		));
 	}
 
-	uksort(
-		$playlists_by_date,
-		static function (string $a, string $b) use ($data_by_date) : int {
-			return $data_by_date[$b][0] - $data_by_date[$a][0];
+	$playlist_data = $cache['playlists'][$playlist_id];
+
+	[, $playlist_title, $playlist_items] = $playlist_data;
+
+	[, $slug] = topic_to_slug(
+		$playlist_id,
+		$cache,
+		$global_topic_hierarchy[$basename],
+		$slugify
+	);
+
+	$slug_count = count($slug);
+
+	$slug_title = implode(' > ', $slug);
+
+	echo 'rebuilding ', $slug_title, "\n";
+
+	$slug_parents = array_slice($slug, 0, -1);
+
+	$slug = array_map(
+		[$slugify, 'slugify'],
+		$slug
+	);
+
+	$slug_string = implode('/', $slug);
+
+	$slug_path =
+		realpath(
+			$save_path
+			. '/../'
+			. $basename
+			. '/topics/'
+		)
+		. '/'
+		. $slug_string
+		. '.md';
+
+	/** @var list<string> */
+	$slug_lines = [];
+
+	$playlist_items_data = [];
+
+	foreach ($playlists_by_date as $other_playlist_id => $other_playlist_items) {
+		foreach ($playlist_items as $video_id) {
+			if (in_array($video_id, $other_playlist_items, true)) {
+				if ( ! isset($playlist_items_data[$other_playlist_id])) {
+					$playlist_items_data[$other_playlist_id] = [];
+				}
+				$playlist_items_data[$other_playlist_id][] = $video_id;
+			}
+		}
+	}
+
+	$slug_dir = dirname($slug_path);
+
+	if ( ! is_dir($slug_dir)) {
+		mkdir($slug_dir, 0755, true);
+	}
+
+	$slug_lines[] =
+		(
+			'---' . "\n"
+			. sprintf(
+				'title: "%s"' . "\n",
+				$playlist_title
+			)
+			. 'date: Last Modified' . "\n"
+			. '---' . "\n"
+			. '# [Topics]('
+			. str_repeat('../', $slug_count)
+			. 'topics.md)'
+			. implode('', array_map(
+				static function (
+					string $slug_parent
+				) use (
+					$cache,
+					$global_topic_hierarchy,
+					$not_a_livestream,
+					$not_a_livestream_date_lookup,
+					$slug_count,
+					$slugify,
+					$basename
+				) : string {
+					[$parent_id] = determine_playlist_id(
+						$slug_parent,
+						$cache,
+						$not_a_livestream,
+						$not_a_livestream_date_lookup
+					);
+					if (count(($cache['playlists'][$parent_id] ?? [2 => []])[2]) < 1) {
+						return ' > ' . $slug_parent;
+					}
+
+					[, $parent_parts] = topic_to_slug(
+						$parent_id,
+						$cache,
+						$global_topic_hierarchy[$basename],
+						$slugify
+					);
+
+					return
+						' > ['
+						. $slug_parent
+						. ']('
+						. str_repeat('../', $slug_count)
+						. 'topics/'
+						. implode('/', array_map(
+							[$slugify, 'slugify'],
+							$parent_parts
+						))
+						. '.md)';
+				},
+				$slug_parents
+			))
+			. ' > '
+			. $playlist_title
+			. "\n"
+	);
+
+	$topic_children = nesting_children(
+		$playlist_id,
+		$topic_nesting[$basename],
+		false
+	);
+
+	usort(
+		$topic_children,
+		static function (
+			string $a,
+			string $b
+		) use (
+			$playlist_topic_strings
+		) : int {
+			return strnatcasecmp(
+				$playlist_topic_strings[$a],
+				$playlist_topic_strings[$b],
+			);
 		}
 	);
 
-	$playlist_ids = array_keys(($cache['playlists'] ?? []));
-
-	foreach ($playlist_ids as $playlist_id) {
-		if (isset($data[$playlist_id])) {
-			continue;
-		} elseif ( ! isset($cache['playlists'][$playlist_id])) {
-			throw new RuntimeException(sprintf(
-				'Playlist cache data not found! (%s)',
-				$playlist_id
-			));
-		}
-
-		$playlist_data = $cache['playlists'][$playlist_id];
-
-		[, $playlist_title, $playlist_items] = $playlist_data;
-
-		[, $slug] = topic_to_slug(
-			$playlist_id,
-			$cache,
-			$global_topic_hierarchy[$basename],
-			$slugify
-		);
-
-		$slug_count = count($slug);
-
-		$slug_title = implode(' > ', $slug);
-
-		echo 'rebuilding ', $slug_title, "\n";
-
-		$slug_parents = array_slice($slug, 0, -1);
-
-		$slug = array_map(
-			[$slugify, 'slugify'],
-			$slug
-		);
-
-		$slug_string = implode('/', $slug);
-
-		$slug_path =
-			realpath(
-				$save_path
-				. '/../'
-				. $basename
-				. '/topics/'
-			)
-			. '/'
-			. $slug_string
-			. '.md';
-
-		/** @var list<string> */
-		$slug_lines = [];
-
-		$playlist_items_data = [];
-
-		foreach ($playlists_by_date as $other_playlist_id => $other_playlist_items) {
-			foreach ($playlist_items as $video_id) {
-				if (in_array($video_id, $other_playlist_items, true)) {
-					if ( ! isset($playlist_items_data[$other_playlist_id])) {
-						$playlist_items_data[$other_playlist_id] = [];
-					}
-					$playlist_items_data[$other_playlist_id][] = $video_id;
-				}
-			}
-		}
-
-		$slug_dir = dirname($slug_path);
-
-		if ( ! is_dir($slug_dir)) {
-			mkdir($slug_dir, 0755, true);
-		}
-
+	if (count($topic_children) > 0) {
 		$slug_lines[] =
 			(
-				'---' . "\n"
-				. sprintf(
-					'title: "%s"' . "\n",
-					$playlist_title
-				)
-				. 'date: Last Modified' . "\n"
-				. '---' . "\n"
-				. '# [Topics]('
-				. str_repeat('../', $slug_count)
-				. 'topics.md)'
-				. implode('', array_map(
+				implode("\n", array_map(
 					static function (
-						string $slug_parent
+						string $subtopic_id
 					) use (
+						$basename,
 						$cache,
 						$global_topic_hierarchy,
-						$not_a_livestream,
-						$not_a_livestream_date_lookup,
-						$slug_count,
 						$slugify,
-						$basename
+						$slug_count
 					) : string {
-						[$parent_id] = determine_playlist_id(
-							$slug_parent,
-							$cache,
-							$not_a_livestream,
-							$not_a_livestream_date_lookup
-						);
-						if (count(($cache['playlists'][$parent_id] ?? [2 => []])[2]) < 1) {
-							return ' > ' . $slug_parent;
-						}
-
-						[, $parent_parts] = topic_to_slug(
-							$parent_id,
+						[, $sub_slug] = topic_to_slug(
+							$subtopic_id,
 							$cache,
 							$global_topic_hierarchy[$basename],
 							$slugify
 						);
 
 						return
-							' > ['
-							. $slug_parent
+							'* ['
+							. determine_topic_name($subtopic_id, $cache)
 							. ']('
 							. str_repeat('../', $slug_count)
 							. 'topics/'
 							. implode('/', array_map(
 								[$slugify, 'slugify'],
-								$parent_parts
+								$sub_slug
 							))
 							. '.md)';
 					},
-					$slug_parents
+					$topic_children
 				))
-				. ' > '
-				. $playlist_title
 				. "\n"
 		);
+	}
 
-		$topic_children = nesting_children(
-			$playlist_id,
-			$topic_nesting[$basename],
-			false
+	foreach ($playlist_items_data as $playlist_id => $video_ids) {
+		$video_ids = filter_video_ids_for_legacy_alts(
+			$cache,
+			...$video_ids
 		);
 
-		usort(
-			$topic_children,
-			static function (
-				string $a,
-				string $b
-			) use (
-				$playlist_topic_strings
-			) : int {
-				return strnatcasecmp(
-					$playlist_topic_strings[$a],
-					$playlist_topic_strings[$b],
-				);
-			}
-		);
-
-		if (count($topic_children) > 0) {
-			$slug_lines[] =
-				(
-					implode("\n", array_map(
-						static function (
-							string $subtopic_id
-						) use (
-							$basename,
-							$cache,
-							$global_topic_hierarchy,
-							$slugify,
-							$slug_count
-						) : string {
-							[, $sub_slug] = topic_to_slug(
-								$subtopic_id,
-								$cache,
-								$global_topic_hierarchy[$basename],
-								$slugify
-							);
-
-							return
-								'* ['
-								. determine_topic_name($subtopic_id, $cache)
-								. ']('
-								. str_repeat('../', $slug_count)
-								. 'topics/'
-								. implode('/', array_map(
-									[$slugify, 'slugify'],
-									$sub_slug
-								))
-								. '.md)';
-						},
-						$topic_children
-					))
-					. "\n"
-			);
-		}
-
-		foreach ($playlist_items_data as $playlist_id => $video_ids) {
-			$video_ids = filter_video_ids_for_legacy_alts(
-				$cache,
-				...$video_ids
-			);
-
-			$slug_lines[] =
-				(
-					"\n"
-					. '## '
-					. $data_by_date[$playlist_id][1]
-					. ' '
-					. (
-						$not_a_livestream[$playlist_id]
-							?? 'Livestream'
-					)
-					. ''
-					. "\n"
+		$slug_lines[] =
+			(
+				"\n"
+				. '## '
+				. $data_by_date[$playlist_id][1]
+				. ' '
+				. (
+					$not_a_livestream[$playlist_id]
+						?? 'Livestream'
 				)
-				. implode('', array_map(
-					static function (string $video_id) use ($cache, $slug_count) : string {
-						return
-							'* '
-							. maybe_transcript_link_and_video_url(
-								$video_id,
-								$cache['playlistItems'][$video_id][1],
-								$slug_count
-							)
-							. "\n"
-						;
-					},
-					$video_ids
-				))
-			;
-		}
-
-		file_put_contents($slug_path, implode('', $slug_lines));
+				. ''
+				. "\n"
+			)
+			. implode('', array_map(
+				static function (string $video_id) use ($cache, $slug_count) : string {
+					return
+						'* '
+						. maybe_transcript_link_and_video_url(
+							$video_id,
+							$cache['playlistItems'][$video_id][1],
+							$slug_count
+						)
+						. "\n"
+					;
+				},
+				$video_ids
+			))
+		;
 	}
 
-	$file_lines[] =
-		(
-			'---' . "\n"
-			. 'title: "Browse Topics"' . "\n"
-			. 'date: Last Modified' . "\n"
-			. '---' . "\n"
-	);
+	file_put_contents($slug_path, implode('', $slug_lines));
+}
 
-	$basename_topic_nesting = $topic_nesting[$basename];
+$file_lines[] =
+	(
+		'---' . "\n"
+		. 'title: "Browse Topics"' . "\n"
+		. 'date: Last Modified' . "\n"
+		. '---' . "\n"
+);
 
-	$past_first = false;
+$basename_topic_nesting = $topic_nesting[$basename];
 
-	foreach ($basename_topic_nesting as $topic_id => $nesting_data) {
-		if (isset($playlists[$topic_id])) {
-			continue;
-		}
+$past_first = false;
 
-		$include_heading = count($nesting_data['children']) > 0;
-
-		if (
-			! isset($cache['playlists'][$topic_id])
-			|| count($cache['playlists'][$topic_id][2]) < 1
-		) {
-			$topic_title = ' ' . determine_topic_name($topic_id, $cache);
-		} else {
-			$topic_title =
-				' ['
-				. determine_topic_name($topic_id, $cache)
-				. '](./topics/'
-				. $playlist_topic_strings[$topic_id]
-				. '.md)';
-		}
-
-		if ($include_heading) {
-			$depth = min(6, $nesting_data['level'] + 1);
-
-			if ($past_first) {
-				$file_lines[] = "\n";
-			} else {
-				$past_first = true;
-			}
-
-			$file_lines[] =
-				(
-					str_repeat('#', $depth)
-					. $topic_title
-					. "\n"
-			);
-		} else {
-			$file_lines[] =
-				(
-					'*'
-					. $topic_title
-					. "\n"
-			);
-		}
+foreach ($basename_topic_nesting as $topic_id => $nesting_data) {
+	if (isset($playlists[$topic_id])) {
+		continue;
 	}
 
-	file_put_contents($file_path, implode('', $file_lines));
+	$include_heading = count($nesting_data['children']) > 0;
+
+	if (
+		! isset($cache['playlists'][$topic_id])
+		|| count($cache['playlists'][$topic_id][2]) < 1
+	) {
+		$topic_title = ' ' . determine_topic_name($topic_id, $cache);
+	} else {
+		$topic_title =
+			' ['
+			. determine_topic_name($topic_id, $cache)
+			. '](./topics/'
+			. $playlist_topic_strings[$topic_id]
+			. '.md)';
+	}
+
+	if ($include_heading) {
+		$depth = min(6, $nesting_data['level'] + 1);
+
+		if ($past_first) {
+			$file_lines[] = "\n";
+		} else {
+			$past_first = true;
+		}
+
+		$file_lines[] =
+			(
+				str_repeat('#', $depth)
+				. $topic_title
+				. "\n"
+		);
+	} else {
+		$file_lines[] =
+			(
+				'*'
+				. $topic_title
+				. "\n"
+		);
+	}
+}
+
+file_put_contents($file_path, implode('', $file_lines));
 
 echo 'rebuilding index', "\n";
 
