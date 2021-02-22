@@ -33,16 +33,8 @@ use function preg_replace;
 use function trim;
 
 require_once (__DIR__ . '/../vendor/autoload.php');
-require_once (__DIR__ . '/global-topic-hierarchy.php');
 
-/**
- * @var array{satisfactory: array<string, list<int|string>>}
- */
-$global_topic_hierarchy = array_merge_recursive(
-	$global_topic_hierarchy,
-	$injected_global_topic_hierarchy
-);
-
+$api = new YouTubeApiWrapper();
 $slugify = new Slugify();
 
 /**
@@ -58,43 +50,16 @@ $slugify = new Slugify();
  */
 $out = [];
 
-[$cache] = prepare_injections(new YouTubeApiWrapper(), $slugify);
-
-$filtering = new Filtering();
-
-/** @var array<string, string> */
-$dated_playlists = array_filter(
-	(array) json_decode(
-		file_get_contents(
-			__DIR__ .
-			'/playlists/coffeestainstudiosdevs/satisfactory.json'
-		),
-		true
-	),
-	[$filtering, 'kvp_string_string'],
-	ARRAY_FILTER_USE_BOTH
-);
-
-$dated_playlists = array_merge(
-	$dated_playlists,
-	array_filter(
-		(array) json_decode(
-		file_get_contents(
-			__DIR__ .
-			'/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
-		),
-		true
-		),
-		[$filtering, 'kvp_string_string'],
-		ARRAY_FILTER_USE_BOTH
-	)
-);
+[
+	$cache,
+	$global_topic_hierarchy,
+] = prepare_injections($api, $slugify);
 
 $dated_playlists = array_map(
 	static function (string $filename) : string {
 		return mb_substr($filename, 0, -3);
 	},
-	$dated_playlists
+	$api->dated_playlists()
 );
 
 $topics = [];

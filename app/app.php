@@ -63,9 +63,12 @@ $start = time();
 
 $api = new YouTubeApiWrapper();
 
-$api->update();
-
 $slugify = new Slugify();
+
+[
+	$cache,
+	$global_topic_hierarchy,
+] = prepare_injections($api, $slugify);
 
 $playlist_satisfactory =
 	realpath(
@@ -83,72 +86,16 @@ $playlist_metadata = [
 ];
 
 /** @var array<string, string> */
-$playlists = [
-];
-
-foreach ($playlist_metadata as $metadata_path => $prepend_path) {
-	/** @var array<string, string> */
-	$data = json_decode(file_get_contents($metadata_path), true);
-
-	foreach ($data as $playlist_id => $markdown_path) {
-		$playlists[$playlist_id] = $prepend_path . $markdown_path;
-	}
-}
-
-$cache = $api->toLegacyCacheFormat();
-
-file_put_contents(__DIR__ . '/cache.json', json_encode(
-	$cache,
-	JSON_PRETTY_PRINT
-));
-
-$cache['playlists'] = $cache['playlists'] ?? [];
-
-/**
- * @var array{satisfactory: array<string, list<int|string>>}
- */
-$global_topic_hierarchy = array_merge_recursive(
-	$global_topic_hierarchy,
-	$injected_global_topic_hierarchy
-);
-
-$injected_playlists = array_map(
+$playlists = array_map(
 	static function (string $filename) : string {
 		return
 			__DIR__
 			. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
-			. $filename;
+			. $filename
+		;
 	},
-	(array) json_decode(
-		file_get_contents(
-			__DIR__
-			. '/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
-		),
-		true
-	)
+	$api->dated_playlists()
 );
-
-$playist_directories = array_values(array_unique(array_map(
-	'dirname',
-	array_merge($playlists, $injected_playlists)
-)));
-
-foreach ($playist_directories as $playlist_directory) {
-	if (
-		$playlist_directory !== (
-			__DIR__
-			. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory'
-		)
-	) {
-		throw new RuntimeException(sprintf(
-			'Unsupported directory found! (%s)',
-			$playlist_directory
-		));
-	}
-}
-
-/** @var array<string, string> */
-$playlists = array_merge($playlists, $injected_playlists);
 
 foreach ($playlists as $playlist_path) {
 	$dirname = dirname($playlist_path);
@@ -233,44 +180,14 @@ file_put_contents(__DIR__ . '/playlist-date-history.json', json_encode(
 	JSON_PRETTY_PRINT
 ));
 
-/**
- * @var array{
- *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	playlistItems:array<string, array{0:string, 1:string}>,
- *	videoTags:array<string, array{0:string, list<string>}>,
- *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts:array<string, list<string>>,
- *	internalxref:array<string, string>
- * }
- */
-$injected_cache = json_decode(
-	file_get_contents(__DIR__ . '/cache-injection.json'),
-	true
-);
-
-foreach ($injected_cache['videoTags'] as $video_id => $data) {
-	if ( ! isset($cache['videoTags'][$video_id])) {
-		$cache['videoTags'][$video_id] = ['', []];
-	}
-
-	foreach ($data[1] as $tag) {
-		if ( ! in_array($tag, $cache['videoTags'][$video_id], true)) {
-			$cache['videoTags'][$video_id][] = $tag;
-		}
-	}
-}
-
-$cache = inject_caches($cache, $injected_cache);
-
-$externals_cache = process_externals(
+process_externals(
 	$cache,
 	$global_topic_hierarchy,
 	$not_a_livestream,
 	$not_a_livestream_date_lookup,
 	$slugify
 );
-
-$cache = inject_caches($cache, $externals_cache);
+$externals_dates = array_keys(get_externals());
 
 $sorting = new Sorting($cache);
 
@@ -787,7 +704,7 @@ echo sprintf(
 ;
 
 foreach (array_keys($playlists) as $playlist_id) {
-	if (isset($externals_cache['playlists'][$playlist_id])) {
+	if (in_array($playlist_id, $externals_dates, true)) {
 		continue;
 	}
 
