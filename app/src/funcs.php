@@ -1604,11 +1604,10 @@ function process_dated_csv(
 		array_filter(
 			$externals_csv,
 			static function (int $k) use ($data) : bool {
-				if ( ! isset($data['skip'])) {
-					return false;
-				}
-
-				return ! $data['skip'][$k];
+				return
+					isset($data['skip'][$k])
+						? ( ! $data['skip'][$k])
+						: isset($data['topics'][$k]);
 			},
 			ARRAY_FILTER_USE_KEY
 		)
