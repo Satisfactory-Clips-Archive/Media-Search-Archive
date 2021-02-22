@@ -1159,7 +1159,7 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 				. basename($playlists[$dated_id])
 				. ')';
 
-				$faq_lines[] = "\n";
+			$faq_lines[] = "\n";
 
 			if (6 === $depth) {
 				$faq_lines[] =
@@ -1197,7 +1197,6 @@ $save_path =
 	. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
 ;
 $data = $api->dated_playlists();
-
 
 $basename = basename($save_path);
 
