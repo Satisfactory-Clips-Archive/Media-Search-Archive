@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="4.5.1@257a1ca672a79dedc852be1285a7b97154646418">
-  <file src="app/app.php">
-    <MixedArgument occurrences="3">
-      <code>$data</code>
-      <code>$filename</code>
-    </MixedArgument>
-    <MixedArgumentTypeCoercion occurrences="1"/>
-    <MixedArrayTypeCoercion occurrences="1">
-      <code>$cache['playlists'][$playlist_id]</code>
-    </MixedArrayTypeCoercion>
-    <MixedAssignment occurrences="2">
-      <code>$data</code>
-      <code>$filename</code>
-    </MixedAssignment>
-    <MixedInferredReturnType occurrences="1">
-      <code>int</code>
-    </MixedInferredReturnType>
-    <MixedOperand occurrences="1">
-      <code>$a['left']</code>
-    </MixedOperand>
-    <MixedReturnStatement occurrences="1">
-      <code>$a['left'] - $b['left']</code>
-    </MixedReturnStatement>
-    <RedundantCondition occurrences="1">
-      <code>$past_first</code>
-    </RedundantCondition>
-  </file>
   <file src="app/cleanup-playlist-api-cache.php">
     <UnusedFunctionCall occurrences="1">
       <code>array_map</code>
