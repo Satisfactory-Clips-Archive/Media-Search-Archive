@@ -1088,9 +1088,7 @@ foreach ($faq_video_topic_nesting_roots as $topic_id) {
 
 uasort(
 	$faq_video_topic_nesting,
-	static function (array $a, array $b) : int {
-		return $a['left'] - $b['left'];
-	}
+	[$sorting, 'sort_by_nleft']
 );
 
 $past_first = false;
@@ -1161,11 +1159,7 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 				. basename($playlists[$dated_id])
 				. ')';
 
-			if ($past_first) {
 				$faq_lines[] = "\n";
-			} else {
-				$past_first = true;
-			}
 
 			if (6 === $depth) {
 				$faq_lines[] =
@@ -1198,24 +1192,12 @@ foreach ($faq_video_topic_nesting as $topic_id => $data) {
 
 file_put_contents($faq_filepath, implode('', $faq_lines));
 
-foreach ($playlist_metadata as $json_file => $save_path) {
-	$data = json_decode(file_get_contents($json_file), true);
+$save_path =
+	__DIR__
+	. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
+;
+$data = $api->dated_playlists();
 
-	if ($json_file === realpath(
-		__DIR__
-		. '/playlists/coffeestainstudiosdevs/satisfactory.json'
-	)) {
-		$data = array_merge(
-			$data,
-			json_decode(
-				file_get_contents(
-					__DIR__
-					. '/playlists/coffeestainstudiosdevs/satisfactory.injected.json'
-				),
-				true
-			)
-		);
-	}
 
 	$basename = basename($save_path);
 
@@ -1228,7 +1210,7 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 
 	$playlists_by_date = [];
 
-	foreach ($data as $playlist_id => $filename) {
+	foreach ($api->dated_playlists() as $playlist_id => $filename) {
 		$unix = strtotime(mb_substr($filename, 0, -3));
 		$readable_date = date('F jS, Y', $unix);
 
@@ -1532,7 +1514,6 @@ foreach ($playlist_metadata as $json_file => $save_path) {
 	}
 
 	file_put_contents($file_path, implode('', $file_lines));
-}
 
 echo 'rebuilding index', "\n";
 
