@@ -52,61 +52,61 @@ class Questions
 	 */
 	private static function filter_cached_questions($a, $b) : bool
 	{
-				return
-					is_array($a)
-					&& is_string($b)
-					&& isset(
-						$a['title'],
-						$a['date']
-					)
-					&& is_string($a['title'])
-					&& is_string($a['date'])
-					&& false !== strtotime($a['date'])
-					&& (
-						! isset($a['topics'])
-						|| $a['topics'] === array_values(array_filter(
-								(array) $a['topics'],
-							'is_string'
-						))
-					)
-					&& (
-						! isset($a['duplicates'])
-						|| $a['duplicates'] === array_values(array_filter(
-								(array) $a['duplicates'],
-							'is_string'
-						))
-					)
-					&& (
-						! isset($a['replaces'])
-						|| $a['replaces'] === array_values(array_filter(
-							(array) $a['replaces'],
-							'is_string'
-						))
-					)
-					&& (
-						! isset($a['seealso'])
-						|| $a['seealso'] === array_values(array_filter(
-							(array) $a['seealso'],
-							'is_string'
-						))
-					)
-					&& (
-						! isset($a['suggested'])
-						|| $a['suggested'] === array_values(array_filter(
-							(array) $a['suggested'],
-							'is_string'
-						))
-					)
-					&& ( ! isset($a['replacedby']) || is_string($a['replacedby']))
-					&& ( ! isset($a['duplicatedby']) || is_string($a['duplicatedby']))
-					&& (
-						! isset($a['legacyalts'])
-						|| $a['legacyalts'] === array_values(array_filter(
-							(array) $a['legacyalts'],
-							'is_string'
-						))
-					)
-				;
+		return
+			is_array($a)
+			&& is_string($b)
+			&& isset(
+				$a['title'],
+				$a['date']
+			)
+			&& is_string($a['title'])
+			&& is_string($a['date'])
+			&& false !== strtotime($a['date'])
+			&& (
+				! isset($a['topics'])
+				|| $a['topics'] === array_values(array_filter(
+						(array) $a['topics'],
+					'is_string'
+				))
+			)
+			&& (
+				! isset($a['duplicates'])
+				|| $a['duplicates'] === array_values(array_filter(
+						(array) $a['duplicates'],
+					'is_string'
+				))
+			)
+			&& (
+				! isset($a['replaces'])
+				|| $a['replaces'] === array_values(array_filter(
+					(array) $a['replaces'],
+					'is_string'
+				))
+			)
+			&& (
+				! isset($a['seealso'])
+				|| $a['seealso'] === array_values(array_filter(
+					(array) $a['seealso'],
+					'is_string'
+				))
+			)
+			&& (
+				! isset($a['suggested'])
+				|| $a['suggested'] === array_values(array_filter(
+					(array) $a['suggested'],
+					'is_string'
+				))
+			)
+			&& ( ! isset($a['replacedby']) || is_string($a['replacedby']))
+			&& ( ! isset($a['duplicatedby']) || is_string($a['duplicatedby']))
+			&& (
+				! isset($a['legacyalts'])
+				|| $a['legacyalts'] === array_values(array_filter(
+					(array) $a['legacyalts'],
+					'is_string'
+				))
+			)
+		;
 	}
 
 	/**
