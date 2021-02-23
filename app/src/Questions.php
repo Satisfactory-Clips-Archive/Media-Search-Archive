@@ -44,26 +44,14 @@ class Questions
 	}
 
 	/**
-	 * @return array<string, DEFINITELY>
+	 * @psalm-assert-if-true array $a
+	 * @psalm-assert-if-true string $b
+	 *
+	 * @param mixed $a
+	 * @param array-key $b
 	 */
-	public function existing() : array
+	private static function filter_cached_questions($a, $b) : bool
 	{
-		/**
-		 * @var array<string, MAYBE>
-		*/
-		$existing = array_filter(
-			(array) json_decode(
-				file_get_contents(__DIR__ . '/../data/q-and-a.json'),
-				true
-			),
-			/**
-			 * @psalm-assert-if-true array $a
-			 * @psalm-assert-if-true string $b
-			 *
-			 * @param mixed $a
-			 * @param array-key $b
-			 */
-			static function ($a, $b) : bool {
 				return
 					is_array($a)
 					&& is_string($b)
@@ -119,7 +107,22 @@ class Questions
 						))
 					)
 				;
-			},
+	}
+
+	/**
+	 * @return array<string, DEFINITELY>
+	 */
+	public function existing() : array
+	{
+		/**
+		 * @var array<string, MAYBE>
+		*/
+		$existing = array_filter(
+			(array) json_decode(
+				file_get_contents(__DIR__ . '/../data/q-and-a.json'),
+				true
+			),
+			[$this, 'filter_cached_questions'],
 			ARRAY_FILTER_USE_BOTH
 		);
 
