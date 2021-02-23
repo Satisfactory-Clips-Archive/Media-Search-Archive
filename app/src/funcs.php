@@ -407,12 +407,12 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 	static $out = null;
 
 	if (null === $out) {
-	require (__DIR__ . '/../global-topic-hierarchy.php');
+		require (__DIR__ . '/../global-topic-hierarchy.php');
 
-	$api->update();
-	$cache = $api->toLegacyCacheFormat();
+		$api->update();
+		$cache = $api->toLegacyCacheFormat();
 
-	$injected_cache = [
+		$injected_cache = [
 		'playlists' => [],
 		'playlistItems' => [],
 		'videoTags' => [],
@@ -420,91 +420,91 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 		'stubPlaylists' => [],
 	];
 
-	foreach (get_legacy_externals() as $date => $data) {
-		[$dated_playlist_id, $playlist_name] = determine_playlist_id(
+		foreach (get_legacy_externals() as $date => $data) {
+			[$dated_playlist_id, $playlist_name] = determine_playlist_id(
 			$date,
 			$cache,
 			$not_a_livestream,
 			$not_a_livestream_date_lookup
 		);
 
-		if ( ! isset($injected_cache['playlists'][$dated_playlist_id])) {
-			$injected_cache['playlists'][$dated_playlist_id] = [
+			if ( ! isset($injected_cache['playlists'][$dated_playlist_id])) {
+				$injected_cache['playlists'][$dated_playlist_id] = [
 				'',
 				$playlist_name,
 				[],
 			];
-		}
+			}
 
-		foreach ($data as $video_id => $video) {
-			$injected_cache['playlists'][$dated_playlist_id][2][] = $video_id;
+			foreach ($data as $video_id => $video) {
+				$injected_cache['playlists'][$dated_playlist_id][2][] = $video_id;
 
-			$injected_cache['playlistItems'][$video_id] = [
+				$injected_cache['playlistItems'][$video_id] = [
 				'',
 				$video['title'],
 			];
 
-			$injected_cache['videoTags'][$video_id] = ['', $video['tags']];
+				$injected_cache['videoTags'][$video_id] = ['', $video['tags']];
 
-			foreach ($video['topics'] as $topic) {
-				[$topic_id, $topic_name] = determine_playlist_id(
+				foreach ($video['topics'] as $topic) {
+					[$topic_id, $topic_name] = determine_playlist_id(
 					$topic,
 					$cache,
 					$not_a_livestream,
 					$not_a_livestream_date_lookup
 				);
 
-				if ( ! isset($injected_cache['playlists'][$topic_id])) {
-					$injected_cache['playlists'][$topic_id] = [
+					if ( ! isset($injected_cache['playlists'][$topic_id])) {
+						$injected_cache['playlists'][$topic_id] = [
 						'',
 						$topic_name,
 						[],
 					];
+					}
+
+					$injected_cache['playlists'][$topic_id][2][] = $video_id;
 				}
 
-				$injected_cache['playlists'][$topic_id][2][] = $video_id;
-			}
+				foreach ($video['legacyof'] as $legacyof) {
+					if ( ! isset($injected_cache['legacyAlts'][$legacyof])) {
+						$injected_cache['legacyAlts'][$legacyof] = [];
+					}
 
-			foreach ($video['legacyof'] as $legacyof) {
-				if ( ! isset($injected_cache['legacyAlts'][$legacyof])) {
-					$injected_cache['legacyAlts'][$legacyof] = [];
+					$injected_cache['legacyAlts'][$legacyof][] = $video_id;
 				}
-
-				$injected_cache['legacyAlts'][$legacyof][] = $video_id;
 			}
 		}
-	}
 
-	/** @var array{satisfactory:array<string, list<int|string>>} */
-	$global_topic_hierarchy = array_merge_recursive(
+		/** @var array{satisfactory:array<string, list<int|string>>} */
+		$global_topic_hierarchy = array_merge_recursive(
 		$global_topic_hierarchy,
 		$injected_global_topic_hierarchy
 	);
 
-	foreach ($global_topic_hierarchy['satisfactory'] as $parents) {
-		foreach ($parents as $topic) {
-			if ( ! is_string($topic)) {
-				continue;
-			}
+		foreach ($global_topic_hierarchy['satisfactory'] as $parents) {
+			foreach ($parents as $topic) {
+				if ( ! is_string($topic)) {
+					continue;
+				}
 
-			[$topic_id, $topic_name] = determine_playlist_id(
+				[$topic_id, $topic_name] = determine_playlist_id(
 				$topic,
 				$cache,
 				$not_a_livestream,
 				$not_a_livestream_date_lookup
 			);
 
-			$injected_cache['stubPlaylists'][$topic_id] = [
+				$injected_cache['stubPlaylists'][$topic_id] = [
 				'',
 				$topic_name,
 				[],
 			];
+			}
 		}
-	}
 
-	$cache = inject_caches($cache, $injected_cache);
+		$cache = inject_caches($cache, $injected_cache);
 
-	$externals_cache = process_externals(
+		$externals_cache = process_externals(
 		$cache,
 		$global_topic_hierarchy,
 		$not_a_livestream,
@@ -513,22 +513,22 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 		false
 	);
 
-	$cache = inject_caches($cache, $externals_cache);
+		$cache = inject_caches($cache, $externals_cache);
 
-	/**
-	 * @var array{
-	 *	0:array{
-	 *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
-	 *		playlistItems:array<string, array{0:string, 1:string}>,
-	 *		videoTags:array<string, array{0:string, list<string>}>,
-	 *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
-	 *		legacyAlts:array<string, list<string>>,
-	 *		internalxref:array<string, string>
-	 *	},
-	 *	1:array{satisfactory:array<string, list<int|string>>}
-	 * }
-	 */
-	$out = [
+		/**
+		 * @var array{
+		 *	0:array{
+		 *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+		 *		playlistItems:array<string, array{0:string, 1:string}>,
+		 *		videoTags:array<string, array{0:string, list<string>}>,
+		 *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+		 *		legacyAlts:array<string, list<string>>,
+		 *		internalxref:array<string, string>
+		 *	},
+		 *	1:array{satisfactory:array<string, list<int|string>>}
+		 * }
+		 */
+		$out = [
 		$cache,
 		$global_topic_hierarchy,
 	];

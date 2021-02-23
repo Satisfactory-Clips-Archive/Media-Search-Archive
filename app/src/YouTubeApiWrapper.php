@@ -22,6 +22,7 @@ use function array_unique;
 use function array_values;
 use function asort;
 use function count;
+use function date;
 use function dirname;
 use function file_get_contents;
 use function file_put_contents;
@@ -42,6 +43,7 @@ use function is_string;
 use function json_decode;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
+use function mb_substr;
 use function natcasesort;
 use function pathinfo;
 use const PATHINFO_FILENAME;
@@ -49,6 +51,7 @@ use function realpath;
 use RuntimeException;
 use function sort;
 use function sprintf;
+use function strtotime;
 use function unlink;
 
 class YouTubeApiWrapper
