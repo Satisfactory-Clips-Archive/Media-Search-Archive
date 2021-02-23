@@ -48,9 +48,6 @@ add links to merch store announcement
 # gcdDfoBWaog
 * swap see also to level design stream
 
-# bNX04zqQ-uY
-* add see also to studio tour "coffee machine is broken" scene
-
 # ECP5Jvr7RSk
 * check ben's featured videos to see if this is answered for seealsos
 
@@ -71,3 +68,10 @@ check other videos for reference to teleportation bug
 
 # yt-W1E6EWrAsII,434.4,492.52
 I'm sure there was another question about the build ceiling 🤷‍♂️
+
+# studio tour
+* bNX04zqQ-uY - add see also to studio tour "coffee machine is broken" scene
+* yt-Dtm6xIj-wM4,1925.453116,1939.640283 - cinema
+
+# ben tech vlog
+* yt-Dtm6xIj-wM4,3264.910326,3268.219046 - LOD-related question
