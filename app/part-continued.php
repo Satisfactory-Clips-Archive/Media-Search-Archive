@@ -32,8 +32,10 @@ use function uksort;
 
 require_once (__DIR__ . '/../vendor/autoload.php');
 
+$api = new YouTubeApiWrapper();
+
 [$cache] = prepare_injections(
-	new YouTubeApiWrapper(),
+	$api,
 	new Slugify()
 );
 
@@ -134,7 +136,7 @@ $maybe_with_part = array_combine($maybe_with_part, array_map(
 
 $existing = array_merge($existing, $maybe_with_part);
 
-$playlists = dated_playlists();
+$playlists = $api->dated_playlists();
 
 foreach (array_keys($existing) as $video_id) {
 	$existing[$video_id]['title'] = $cache['playlistItems'][$video_id][1];

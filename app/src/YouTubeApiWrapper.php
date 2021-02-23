@@ -439,22 +439,47 @@ class YouTubeApiWrapper
 	 */
 	public function dated_playlists() : array
 	{
+		$playlists_filter =
+			[new Filtering(), 'kvp_string_string'];
+
 		/** @var array<string, string> */
-		$dated_playlists = array_merge(
-			(array) json_decode(
-				file_get_contents(
-					__DIR__
-					. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
+		$dated_playlists = array_map(
+			static function (string $date) : string {
+				return date('Y-m-d', strtotime($date));
+			},
+			array_filter(
+				array_map(
+					static function (string $filename) : string {
+						return mb_substr($filename, 0, -3);
+					},
+					array_merge(
+						array_filter(
+							(array) json_decode(
+								file_get_contents(
+									__DIR__
+									. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
+								),
+								true
+							),
+							$playlists_filter,
+							ARRAY_FILTER_USE_BOTH
+						),
+						array_filter(
+							(array) json_decode(
+								file_get_contents(
+									__DIR__
+									. '/../playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+								),
+								true
+							),
+							$playlists_filter,
+							ARRAY_FILTER_USE_BOTH
+						)
+					)
 				),
-				true
-			),
-			(array) json_decode(
-				file_get_contents(
-					__DIR__
-					. '/../playlists/coffeestainstudiosdevs'
-					. '/satisfactory.injected.json'
-				),
-				true
+				static function (string $maybe) : bool {
+					return false !== strtotime($maybe);
+				}
 			)
 		);
 
