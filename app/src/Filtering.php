@@ -9,20 +9,13 @@ namespace SignpostMarv\VideoClipNotes;
 use function count;
 use function is_string;
 
+/**
+ * @psalm-import-type MAYBE from Questions
+ */
 class Filtering
 {
 	/**
-	 * @param array{
-	 *	title:string,
-	 *	date:string,
-	 *	topics:list<string>,
-	 *	duplicates?:list<string>,
-	 *	replaces?:list<string>,
-	 *	replacedby?:string,
-	 *	duplicatedby?:string,
-	 *	seealso?:list<string>,
-	 *	suggested?:list<string>
-	 * } $maybe
+	 * @param MAYBE $maybe
 	 */
 	public function QuestionDataNoReferences(array $maybe) : bool
 	{

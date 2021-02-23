@@ -391,6 +391,22 @@ function inject_caches(array $cache, array ...$caches) : array
  */
 function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 {
+	/**
+	 * @var null|array{
+	 *	0:array{
+	 *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+	 *		playlistItems:array<string, array{0:string, 1:string}>,
+	 *		videoTags:array<string, array{0:string, list<string>}>,
+	 *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+	 *		legacyAlts:array<string, list<string>>,
+	 *		internalxref:array<string, string>
+	 *	},
+	 *	1:array{satisfactory:array<string, list<int|string>>}
+	 * }
+	 */
+	static $out = null;
+
+	if (null === $out) {
 	require (__DIR__ . '/../global-topic-hierarchy.php');
 
 	$api->update();
@@ -512,10 +528,13 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 	 *	1:array{satisfactory:array<string, list<int|string>>}
 	 * }
 	 */
-	return [
+	$out = [
 		$cache,
 		$global_topic_hierarchy,
 	];
+	}
+
+	return $out;
 }
 
 /**
@@ -2123,56 +2142,6 @@ function determine_date_for_video(
 	}
 
 	return $playlist_date_ref[$found];
-}
-
-/**
- * @return array<string, string>
- */
-function dated_playlists() : array
-{
-	$playlists_filter =
-		[new Filtering(), 'kvp_string_string'];
-
-	/** @var array<string, string> */
-	return array_map(
-		static function (string $date) : string {
-			return date('Y-m-d', strtotime($date));
-		},
-		array_filter(
-			array_map(
-				static function (string $filename) : string {
-					return mb_substr($filename, 0, -3);
-				},
-				array_merge(
-					array_filter(
-						(array) json_decode(
-							file_get_contents(
-								__DIR__
-								. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
-							),
-							true
-						),
-						$playlists_filter,
-						ARRAY_FILTER_USE_BOTH
-					),
-					array_filter(
-						(array) json_decode(
-							file_get_contents(
-								__DIR__
-								. '/../playlists/coffeestainstudiosdevs/satisfactory.injected.json'
-							),
-							true
-						),
-						$playlists_filter,
-						ARRAY_FILTER_USE_BOTH
-					)
-				)
-			),
-			static function (string $maybe) : bool {
-				return false !== strtotime($maybe);
-			}
-		)
-	);
 }
 
 /**
