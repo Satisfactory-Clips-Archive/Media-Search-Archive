@@ -64,42 +64,16 @@ class Injected
 		static $out = null;
 
 		if (null === $out) {
-			$cache = $this->cache;
 			$playlists = $this->api->dated_playlists();
-			$topics_hierarchy = $this->topics_hierarchy;
-			$slugify = $this->slugify;
 
 			$out = array_reduce(
 				array_filter(
-					array_keys($cache['playlists']),
+					array_keys($this->cache['playlists']),
 					static function (string $maybe) use ($playlists) : bool {
 						return ! isset($playlists[$maybe]);
 					}
 				),
-				/**
-				 * @psalm-type OUT = array<string, string>
-				 *
-				 * @param OUT $out
-				 *
-				 * @return OUT
-				 */
-				static function (
-					array $out,
-					string $topic_id
-				) use (
-					$cache,
-					$topics_hierarchy,
-					$slugify
-				) : array {
-					$out[$topic_id] = topic_to_slug(
-						$topic_id,
-						$cache,
-						$topics_hierarchy,
-						$slugify
-					)[0];
-
-					return $out;
-				},
+				[$this, 'reduce_all_topics'],
 				[]
 			);
 		}
@@ -172,5 +146,24 @@ class Injected
 		usort($all_video_ids, [$this->sorting, 'sort_video_ids_by_date']);
 
 		return $all_video_ids;
+	}
+
+	/**
+	 * @psalm-type OUT = array<string, string>
+	 *
+	 * @param OUT $out
+	 *
+	 * @return OUT
+	 */
+	private function reduce_all_topics(array $out, string $topic_id) : array
+	{
+		$out[$topic_id] = topic_to_slug(
+			$topic_id,
+			$this->cache,
+			$this->topics_hierarchy,
+			$this->slugify
+		)[0];
+
+		return $out;
 	}
 }
