@@ -33,7 +33,6 @@ use function sprintf;
 use function str_replace;
 use function strtotime;
 use function uasort;
-use function uksort;
 
 require_once (__DIR__ . '/../vendor/autoload.php');
 require_once (__DIR__ . '/global-topic-hierarchy.php');
