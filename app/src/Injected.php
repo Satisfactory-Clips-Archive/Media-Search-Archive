@@ -6,6 +6,15 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function array_filter;
+use const ARRAY_FILTER_USE_BOTH;
+use function array_keys;
+use function array_reduce;
+use function array_values;
+use function in_array;
+use function natcasesort;
+use function usort;
+
 class Injected
 {
 	/**
@@ -60,7 +69,7 @@ class Injected
 	 */
 	public function all_topics() : array
 	{
-		/** @var null|array<string, string> */
+		/** @var array<string, string>|null */
 		static $out = null;
 
 		if (null === $out) {
