@@ -150,8 +150,6 @@ $faq = array_filter(
 	}
 );
 
-uksort($faq, [$injected->sorting, 'sort_video_ids_by_date']);
-
 echo "\n";
 
 /** @var string|null */
