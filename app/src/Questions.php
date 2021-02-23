@@ -36,10 +36,17 @@ use RuntimeException;
  */
 class Questions
 {
+	private Injected $injected;
+
+	public function __construct(Injected $injected)
+	{
+		$this->injected = $injected;
+	}
+
 	/**
 	 * @return array<string, DEFINITELY>
 	 */
-	public static function existing() : array
+	public function existing() : array
 	{
 		/**
 		 * @var array<string, MAYBE>
@@ -150,10 +157,10 @@ class Questions
 	/**
 	 * @return array<string, DEFINITELY>
 	 */
-	public static function append_new_questions(Injected $injected) : array
+	public function append_new_questions() : array
 	{
-		[$cache] = prepare_injections($injected->api, $injected->slugify);
-		$playlists = $injected->api->dated_playlists();
+		[$cache] = prepare_injections($this->injected->api, $this->injected->slugify);
+		$playlists = $this->injected->api->dated_playlists();
 
 		$existing = self::existing();
 
@@ -189,7 +196,7 @@ class Questions
 				$cache['playlists'],
 				$playlists
 			);
-			$existing[$video_id]['topics'] = $injected->determine_video_topic_slugs(
+			$existing[$video_id]['topics'] = $this->injected->determine_video_topic_slugs(
 				$video_id
 			);
 
@@ -237,7 +244,7 @@ class Questions
 	 *
 	 * @return array<string, DEFINITELY>
 	 */
-	public static function process_legacyalts(
+	public function process_legacyalts(
 		array $existing,
 		array $legacy_alts
 	) : array {
@@ -262,7 +269,7 @@ class Questions
 	 *	1:array<string, list<string>>
 	 * }
 	 */
-	public static function process_duplicates(array $existing) : array
+	public function process_duplicates(array $existing) : array
 	{
 		/** @var array<string, list<string>> */
 		$duplicates = [];
@@ -305,6 +312,40 @@ class Questions
 			}
 		}
 
+		$injected = $this->injected;
+
+		$duplicates = array_map(
+			/**
+			 * @param list<string> $video_ids
+			 *
+			 * @return list<string>
+			 */
+			static function (array $video_ids) use ($injected) : array {
+				$video_ids = array_unique($video_ids);
+
+				usort($video_ids, [$injected->sorting, 'sort_video_ids_by_date']);
+
+				return $video_ids;
+			},
+			array_filter(
+				$duplicates,
+				static function (array $a, string $b) : bool {
+					return $a !== [$b];
+				},
+				ARRAY_FILTER_USE_BOTH
+			)
+		);
+
+		uksort($duplicates, [$injected->sorting, 'sort_video_ids_by_date']);
+
+		$duplicates = array_filter(
+			$duplicates,
+			static function (array $a, string $b) : bool {
+				return $a[0] === $b;
+			},
+			ARRAY_FILTER_USE_BOTH
+		);
+
 		return [$existing, $duplicates];
 	}
 
@@ -316,7 +357,7 @@ class Questions
 	 *	1:array<string, list<string>>
 	 * }
 	 */
-	public static function process_seealsos(array $existing) : array
+	public function process_seealsos(array $existing) : array
 	{
 		/** @var array<string, list<string>> */
 		$seealsos = [];
@@ -415,7 +456,7 @@ class Questions
 	 *
 	 * @return array<string, MAYBE>
 	 */
-	public static function finalise(array $existing, array $cache) : array
+	public function finalise(array $existing, array $cache) : array
 	{
 		/** @var array<string, string> */
 		$replacements_not_in_existing = [];
@@ -562,6 +603,8 @@ class Questions
 				$existing[$video_id]['replacedby'] = $replacement;
 			}
 		}
+
+		uksort($existing, [$this->injected->sorting, 'sort_video_ids_by_date']);
 
 		/**
 		 * @var array<string, MAYBE>

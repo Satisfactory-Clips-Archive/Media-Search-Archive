@@ -65,13 +65,13 @@ $playlists = $api->dated_playlists();
 
 $all_video_ids = $injected->all_video_ids();
 
-$existing = Questions::append_new_questions($injected);
-$existing = Questions::process_legacyalts($existing, $cache['legacyAlts']);
-[$existing, $duplicates] = Questions::process_duplicates($existing);
-[$existing] = Questions::process_seealsos($existing);
-$existing = Questions::finalise($existing, $cache);
+$questions = new Questions($injected);
 
-uksort($existing, [$injected->sorting, 'sort_video_ids_by_date']);
+$existing = $questions->append_new_questions();
+$existing = $questions->process_legacyalts($existing, $cache['legacyAlts']);
+[$existing, $duplicates] = $questions->process_duplicates($existing);
+[$existing] = $questions->process_seealsos($existing);
+$existing = $questions->finalise($existing, $cache);
 
 $by_topic = [];
 
@@ -152,38 +152,6 @@ file_put_contents(
 ob_flush();
 
 ob_start();
-
-$duplicates = array_map(
-	/**
-	 * @param list<string> $video_ids
-	 *
-	 * @return list<string>
-	 */
-	static function (array $video_ids) use ($injected) : array {
-		$video_ids = array_unique($video_ids);
-
-		usort($video_ids, [$injected->sorting, 'sort_video_ids_by_date']);
-
-		return $video_ids;
-	},
-	array_filter(
-		$duplicates,
-		static function (array $a, string $b) : bool {
-			return $a !== [$b];
-		},
-		ARRAY_FILTER_USE_BOTH
-	)
-);
-
-uksort($duplicates, [$injected->sorting, 'sort_video_ids_by_date']);
-
-$duplicates = array_filter(
-	$duplicates,
-	static function (array $a, string $b) : bool {
-		return $a[0] === $b;
-	},
-	ARRAY_FILTER_USE_BOTH
-);
 
 echo "\n", '# prototype replacement for faq markdown file', "\n";
 
