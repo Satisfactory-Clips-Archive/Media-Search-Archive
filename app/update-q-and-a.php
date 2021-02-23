@@ -251,8 +251,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 							date(
 								'F jS, Y',
 								(int) strtotime(
-									$existing[$other_video_id]['date']
-										?? determine_date_for_video(
+									determine_date_for_video(
 											$other_video_id,
 											$cache['playlists'],
 											$playlists
@@ -362,8 +361,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 						date(
 							'F jS, Y',
 							(int) strtotime(
-								$existing[$other_video_id]['date']
-									?? determine_date_for_video(
+								determine_date_for_video(
 										$other_video_id,
 										$cache['playlists'],
 										$playlists
