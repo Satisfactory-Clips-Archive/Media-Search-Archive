@@ -180,21 +180,21 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		$last_faq_date = $faq_date;
 
 		echo '## [',
-					date(
-						'F jS, Y',
-						(int) strtotime(
-								$faq_date
-						)
+			date(
+				'F jS, Y',
+				(int) strtotime(
+					$faq_date
+				)
+			)
+			. (
+				isset($not_a_livestream[$playlist_id])
+					? (
+						' '
+						. $not_a_livestream[$playlist_id]
+						. ' '
 					)
-					. (
-						isset($not_a_livestream[$playlist_id])
-							? (
-								' '
-								. $not_a_livestream[$playlist_id]
-								. ' '
-							)
-							: ' Livestream '
-					)
+					: ' Livestream '
+			)
 			,
 			'](',
 			'https://archive.satisfactory.video/',
@@ -258,9 +258,9 @@ foreach ($faq as $video_id => $faq_duplicates) {
 								(int) strtotime(
 									$existing[$other_video_id]['date']
 										?? determine_date_for_video(
-												$other_video_id,
-												$cache['playlists'],
-												$playlists
+											$other_video_id,
+											$cache['playlists'],
+											$playlists
 										)
 								)
 							)
@@ -369,9 +369,9 @@ foreach ($faq as $video_id => $faq_duplicates) {
 							(int) strtotime(
 								$existing[$other_video_id]['date']
 									?? determine_date_for_video(
-											$other_video_id,
-											$cache['playlists'],
-											$playlists
+										$other_video_id,
+										$cache['playlists'],
+										$playlists
 									)
 							)
 						)
