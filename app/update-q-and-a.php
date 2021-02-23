@@ -334,12 +334,14 @@ foreach ($faq as $video_id => $faq_duplicates) {
 	;
 
 	foreach ($faq_duplicates_for_date_checking as $other_video_id) {
-		$playlist_id = array_search(
+		$other_video_date =
 			determine_date_for_video(
 				$other_video_id,
 				$cache['playlists'],
 				$playlists
-			),
+		);
+		$playlist_id = array_search(
+			$other_video_date,
 			$playlists, true
 		);
 
@@ -361,11 +363,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 						date(
 							'F jS, Y',
 							(int) strtotime(
-								determine_date_for_video(
-										$other_video_id,
-										$cache['playlists'],
-										$playlists
-									)
+								$other_video_date
 							)
 						)
 						. (
