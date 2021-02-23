@@ -143,12 +143,7 @@ ob_start();
 
 echo "\n", '# prototype replacement for faq markdown file', "\n";
 
-$faq = array_filter(
-	$duplicates,
-	static function (array $maybe) : bool {
-		return count($maybe) >= 3;
-	}
-);
+$faq = $questions->faq_threshold($duplicates);
 
 echo "\n";
 

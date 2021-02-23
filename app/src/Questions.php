@@ -571,6 +571,25 @@ class Questions
 	}
 
 	/**
+	 * @psalm-type DUPLICATES = array<string, list<string>>
+	 *
+	 * @param DUPLICATES $duplicates
+	 *
+	 * @return DUPLICATES
+	 */
+	public function faq_threshold(
+		array $duplicates,
+		int $threshold = 3
+	) : array {
+		return array_filter(
+			$duplicates,
+			static function (array $maybe) use ($threshold) : bool {
+				return count($maybe) >= $threshold;
+			}
+		);
+	}
+
+	/**
 	 * @psalm-assert-if-true array $a
 	 * @psalm-assert-if-true string $b
 	 *
