@@ -175,13 +175,8 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		$last_faq_date = $faq_date;
 
 		echo '## [',
-			date(
-				'F jS, Y',
-				(int) strtotime(
-					$faq_date
-				)
-			)
-			. (
+			date('F jS, Y', (int) strtotime($faq_date)),
+			(
 				isset($not_a_livestream[$playlist_id])
 					? (
 						' '
@@ -189,8 +184,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 						. ' '
 					)
 					: ' Livestream '
-			)
-			,
+			),
 			'](',
 			'https://archive.satisfactory.video/',
 			$faq_date,
@@ -205,10 +199,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 			'https://archive.satisfactory.video/',
 			maybe_transcript_link_and_video_url(
 				$video_id,
-				(
-					''
-					. $cache['playlistItems'][$video_id][1]
-				)
+				$cache['playlistItems'][$video_id][1]
 			)
 		)),
 		"\n"
@@ -252,10 +243,10 @@ foreach ($faq as $video_id => $faq_duplicates) {
 								'F jS, Y',
 								(int) strtotime(
 									determine_date_for_video(
-											$other_video_id,
-											$cache['playlists'],
-											$playlists
-										)
+										$other_video_id,
+										$cache['playlists'],
+										$playlists
+									)
 								)
 							)
 							. (
@@ -360,12 +351,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 				maybe_transcript_link_and_video_url(
 					$other_video_id,
 					(
-						date(
-							'F jS, Y',
-							(int) strtotime(
-								$other_video_date
-							)
-						)
+						date('F jS, Y', (int) strtotime($other_video_date))
 						. (
 							isset($not_a_livestream[$playlist_id])
 								? (
