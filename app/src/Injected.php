@@ -11,8 +11,11 @@ use const ARRAY_FILTER_USE_BOTH;
 use function array_keys;
 use function array_reduce;
 use function array_values;
+use function date;
 use function in_array;
 use function natcasesort;
+use function sprintf;
+use function strtotime;
 use function usort;
 
 class Injected
@@ -193,17 +196,16 @@ class Injected
 			));
 		}
 
-		return (
+		return
 			date(
 				'F jS, Y',
 				(int) strtotime($this->playlists_date_ref[$playlist_id])
 			)
 			. sprintf(' %s', (
-				isset($this->not_a_livestream[$playlist_id])
-					? $this->not_a_livestream[$playlist_id]
-					: $default_label
+				$this->not_a_livestream[$playlist_id]
+					?? $default_label
 			))
-		);
+		;
 	}
 
 	/**
