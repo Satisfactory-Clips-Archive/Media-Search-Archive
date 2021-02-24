@@ -6,9 +6,11 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function array_search;
 use function count;
-use function sprintf;
 use function preg_replace;
+use function sprintf;
+use function str_replace;
 
 class Markdownify
 {
@@ -35,7 +37,7 @@ class Markdownify
 
 		$playlist_id = array_search(
 			$date,
-			$this->injected->api->dated_playlists()
+			$this->injected->api->dated_playlists(), true
 		);
 
 		if (false === $playlist_id) {
