@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2020-02-24
+* merged in q-and-a-tracking branch
+
 ## 2020-02-20
 * fixed bugs identified in handling of external youtube videos
 
