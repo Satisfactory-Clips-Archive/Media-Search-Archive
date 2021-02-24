@@ -442,6 +442,7 @@ class YouTubeApiWrapper
 	 */
 	public function dated_playlists() : array
 	{
+		/** @var null|array<string, string> */
 		static $cache = null;
 
 		if (null === $cache) {
