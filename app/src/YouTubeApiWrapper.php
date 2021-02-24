@@ -445,51 +445,51 @@ class YouTubeApiWrapper
 		static $cache = null;
 
 		if (null === $cache) {
-		$playlists_filter =
-			[new Filtering(), 'kvp_string_string'];
+			$playlists_filter =
+				[new Filtering(), 'kvp_string_string'];
 
-		/** @var array<string, string> */
-		$dated_playlists = array_map(
-			static function (string $date) : string {
-				return date('Y-m-d', strtotime($date));
-			},
-			array_filter(
-				array_map(
-					static function (string $filename) : string {
-						return mb_substr($filename, 0, -3);
-					},
-					array_merge(
-						array_filter(
-							(array) json_decode(
-								file_get_contents(
-									__DIR__
-									. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
+			/** @var array<string, string> */
+			$dated_playlists = array_map(
+				static function (string $date) : string {
+					return date('Y-m-d', strtotime($date));
+				},
+				array_filter(
+					array_map(
+						static function (string $filename) : string {
+							return mb_substr($filename, 0, -3);
+						},
+						array_merge(
+							array_filter(
+								(array) json_decode(
+									file_get_contents(
+										__DIR__
+										. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
+									),
+									true
 								),
-								true
+								$playlists_filter,
+								ARRAY_FILTER_USE_BOTH
 							),
-							$playlists_filter,
-							ARRAY_FILTER_USE_BOTH
-						),
-						array_filter(
-							(array) json_decode(
-								file_get_contents(
-									__DIR__
-									. '/../playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+							array_filter(
+								(array) json_decode(
+									file_get_contents(
+										__DIR__
+										. '/../playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+									),
+									true
 								),
-								true
-							),
-							$playlists_filter,
-							ARRAY_FILTER_USE_BOTH
+								$playlists_filter,
+								ARRAY_FILTER_USE_BOTH
+							)
 						)
-					)
-				),
-				static function (string $maybe) : bool {
-					return false !== strtotime($maybe);
-				}
-			)
-		);
+					),
+					static function (string $maybe) : bool {
+						return false !== strtotime($maybe);
+					}
+				)
+			);
 
-		asort($dated_playlists);
+			asort($dated_playlists);
 
 			$cache = array_reverse($dated_playlists, true);
 		}
