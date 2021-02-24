@@ -2204,6 +2204,8 @@ function other_video_parts(string $video_id, bool $include_self = true) : array
 			$checking = $part_continued[$checking['previous']];
 		}
 
+		$out[] = end($checked);
+
 		while (null !== $checking['next']) {
 			if (in_array($checking['next'], $out, true)) {
 				throw new RuntimeException('Infinite loop detected!');

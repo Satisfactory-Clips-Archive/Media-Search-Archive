@@ -66,6 +66,8 @@ $slugify = new Slugify();
 
 $injected = new Injected($api, $slugify);
 
+$markdownify = new Markdownify($injected);
+
 $cache = $injected->cache;
 $global_topic_hierarchy = ['satisfactory' => $injected->topics_hierarchy];
 
@@ -623,6 +625,7 @@ foreach ($all_video_ids as $video_id) {
 		. '## ' . $cache['playlistItems'][$video_id][1]
 		. "\n"
 		. video_url_from_id($video_id)
+		. $markdownify->content_if_video_has_other_parts($video_id)
 		. "\n\n"
 		. '### Topics' . "\n"
 		. implode("\n", array_map(

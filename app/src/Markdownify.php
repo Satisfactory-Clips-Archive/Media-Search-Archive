@@ -14,14 +14,41 @@ use function preg_replace;
 
 class Markdownify
 {
-	public function content_if_video_has_other_parts(string $video_id)
+	private Injected $injected;
+
+	public function __construct(Injected $injected)
 	{
+		$this->injected = $injected;
+	}
+
+	public function content_if_video_has_other_parts(
+		string $video_id,
+		bool $include_self = false
+	) {
 		if ( ! has_other_part($video_id)) {
 			return '';
 		}
 
+		$date = determine_date_for_video(
+			$video_id,
+			$this->injected->cache['playlists'],
+			$this->injected->api->dated_playlists()
+		);
+
+		$playlist_id = array_search(
+			$date,
+			$this->injected->api->dated_playlists()
+		);
+
+		if (false === $playlist_id) {
+			throw new RuntimeException(sprintf(
+				'Could not determine dated playlist id for %s',
+				$video_id
+			));
+		}
+
 		$video_part_info = cached_part_continued()[$video_id];
-		$video_other_parts = other_video_parts($video_id);
+		$video_other_parts = other_video_parts($video_id, $include_self);
 
 		ob_start();
 
@@ -55,11 +82,11 @@ class Markdownify
 					maybe_transcript_link_and_video_url(
 						$other_video_id,
 						(
-							$injected->friendly_dated_playlist_name(
+							$this->injected->friendly_dated_playlist_name(
 								$playlist_id
 							)
 							. ' '
-							. $cache['playlistItems'][$other_video_id][1]
+							. $this->injected->cache['playlistItems'][$other_video_id][1]
 						)
 					)
 				)),
@@ -67,6 +94,8 @@ class Markdownify
 			;
 		}
 
-		return ob_get_contents();
+		echo '</details>', "\n";
+
+		return ob_get_clean();
 	}
 }

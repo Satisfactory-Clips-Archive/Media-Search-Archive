@@ -42,7 +42,7 @@ $filtering = new Filtering();
 $api = new YouTubeApiWrapper();
 $slugify = new Slugify();
 $injected = new Injected($api, $slugify);
-$markdownify = new Markdownify();
+$markdownify = new Markdownify($injected);
 
 $cache = $injected->cache;
 
@@ -196,7 +196,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 	echo preg_replace('/\.md\)/', ')', str_replace(
 		'./',
 		'https://archive.satisfactory.video/',
-		$markdownify->content_if_video_has_other_parts($video_id)
+		$markdownify->content_if_video_has_other_parts($video_id, true)
 	));
 
 	if (count($transcription) > 0) {
