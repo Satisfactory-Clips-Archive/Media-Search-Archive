@@ -323,6 +323,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 					$other_video_id,
 					(
 						$injected->friendly_dated_playlist_name($playlist_id)
+						. ' '
 						. $cache['playlistItems'][$other_video_id][1]
 					)
 				)

@@ -49,7 +49,7 @@
 
 # prototype replacement for faq markdown file
 
-## [February 16th, 2021 Livestream ](https://archive.satisfactory.video/2021-02-16)
+## [February 16th, 2021 Livestream](https://archive.satisfactory.video/2021-02-16)
 ### [Q&A: Any NPCs in the game?](https://archive.satisfactory.video/transcriptions/yt-z-DgcRCy3so) https://www.youtube.com/watch?v=z-DgcRCy3so
 
 <details>
@@ -954,7 +954,7 @@
 * [June 8th, 2020 Livestream Q&A: What about Signs?](https://archive.satisfactory.video/transcriptions/yt-UGKquiGR0CY) https://www.youtube.com/watch?v=UGKquiGR0CY
 </details>
 
-## [February 9th, 2021 Livestream ](https://archive.satisfactory.video/2021-02-09)
+## [February 9th, 2021 Livestream](https://archive.satisfactory.video/2021-02-09)
 ### [Q&A: $1 Toilet DLC?](https://archive.satisfactory.video/transcriptions/yt-mBpIB3ojMC8) https://www.youtube.com/watch?v=mBpIB3ojMC8
 
 <details>
@@ -1922,7 +1922,7 @@
 * [January 22nd, 2020 Livestream Q&A: Are we going to be implmenting any of the ideas from Mods?](https://archive.satisfactory.video/transcriptions/yt-SUSCYnziYkI) https://www.youtube.com/watch?v=SUSCYnziYkI
 </details>
 
-## [February 2nd, 2021 Livestream ](https://archive.satisfactory.video/2021-02-02)
+## [February 2nd, 2021 Livestream](https://archive.satisfactory.video/2021-02-02)
 ### [Q&A: Improvements on Vehicles next Update?](https://archive.satisfactory.video/transcriptions/yt-79CHl9qFo90) https://www.youtube.com/watch?v=79CHl9qFo90
 
 <details>
@@ -2248,7 +2248,7 @@
 * [September 15th, 2020 Livestream Q&A: Can I wear Boots, Jetpack and a Gas Mask?](https://archive.satisfactory.video/transcriptions/yt-Gt1ATsmBu6k) https://www.youtube.com/watch?v=Gt1ATsmBu6k
 </details>
 
-## [January 26th, 2021 Livestream ](https://archive.satisfactory.video/2021-01-26)
+## [January 26th, 2021 Livestream](https://archive.satisfactory.video/2021-01-26)
 ### [Q&A: Any plans for deterioration or maintenance mechanics for Buildings?](https://archive.satisfactory.video/transcriptions/yt-W8Ia5yx0n-k) https://www.youtube.com/watch?v=W8Ia5yx0n-k
 
 <details>
@@ -2684,7 +2684,7 @@
 * [September 1st, 2020 Livestream Q&A: What is the object limit and will it be increased in the future?](https://archive.satisfactory.video/transcriptions/yt-9GT0y1v5VZY) https://www.youtube.com/watch?v=9GT0y1v5VZY
 </details>
 
-## [January 19th, 2021 Livestream ](https://archive.satisfactory.video/2021-01-19)
+## [January 19th, 2021 Livestream](https://archive.satisfactory.video/2021-01-19)
 ### [Q&A: Any plans to revisit the To-Do List for Quality-of-Life pass?](https://archive.satisfactory.video/transcriptions/yt-nI31KeD88V8) https://www.youtube.com/watch?v=nI31KeD88V8
 
 <details>
@@ -3351,7 +3351,7 @@
 * [December 19th, 2019 Livestream Q&A: Is there going to be a central computer plant where you can check the whole production?](https://archive.satisfactory.video/transcriptions/yt-Zlq2K0-z0_8) https://www.youtube.com/watch?v=Zlq2K0-z0_8
 </details>
 
-## [January 12th, 2021 Livestream ](https://archive.satisfactory.video/2021-01-12)
+## [January 12th, 2021 Livestream](https://archive.satisfactory.video/2021-01-12)
 ### [Q&A: CPU make multi-core?](https://archive.satisfactory.video/transcriptions/yt-0yzIyIlPDxw) https://www.youtube.com/watch?v=0yzIyIlPDxw
 
 <details>
@@ -3591,7 +3591,7 @@
 * [September 8th, 2020 Livestream Q&A: Will there be a european Merch store?](https://archive.satisfactory.video/transcriptions/yt-GhfR61WpR6k) https://www.youtube.com/watch?v=GhfR61WpR6k
 </details>
 
-## [December 15th, 2020 Livestream ](https://archive.satisfactory.video/2020-12-15)
+## [December 15th, 2020 Livestream](https://archive.satisfactory.video/2020-12-15)
 ### [Q&A: Are there hidden secrets and cameos in the game?](https://archive.satisfactory.video/transcriptions/yt-57Cc22ZK5aw) https://www.youtube.com/watch?v=57Cc22ZK5aw
 
 <details>
@@ -3787,7 +3787,7 @@
 * [March 9th, 2019 Livestream Q&A: Is Linux support planned in the future?](https://archive.satisfactory.video/transcriptions/yt-GR3xet5AyuE) https://www.youtube.com/watch?v=GR3xet5AyuE
 </details>
 
-## [December 8th, 2020 Livestream ](https://archive.satisfactory.video/2020-12-08)
+## [December 8th, 2020 Livestream](https://archive.satisfactory.video/2020-12-08)
 ### [Q&A: Any hints you can give on the level of mod support you'll provide eventually?](https://archive.satisfactory.video/transcriptions/yt-o7FFLZpEf_Y) https://www.youtube.com/watch?v=o7FFLZpEf_Y
 
 <details>
@@ -3961,7 +3961,7 @@
 * [March 24th, 2020 Livestream Q&A: Will there be a roadmap again for Updates?](https://archive.satisfactory.video/transcriptions/yt-EiqFP9bm7v4) https://www.youtube.com/watch?v=EiqFP9bm7v4
 </details>
 
-## [November 24th, 2020 Livestream ](https://archive.satisfactory.video/2020-11-24)
+## [November 24th, 2020 Livestream](https://archive.satisfactory.video/2020-11-24)
 ### [Q&A: Click & Drag functionality for building?](https://archive.satisfactory.video/transcriptions/yt-vaYxvmOkUQY) https://www.youtube.com/watch?v=vaYxvmOkUQY
 
 <details>
@@ -4070,7 +4070,7 @@
 * [June 8th, 2020 Livestream Q&A: Will there be a cosy place for the Pioneer to live in?](https://archive.satisfactory.video/transcriptions/yt-F0Lu47hMTD8) https://www.youtube.com/watch?v=F0Lu47hMTD8
 </details>
 
-## [November 17th, 2020 Livestream ](https://archive.satisfactory.video/2020-11-17)
+## [November 17th, 2020 Livestream](https://archive.satisfactory.video/2020-11-17)
 ### Q&A: Are you going to add any Template/Blueprint system? https://www.youtube.com/watch?v=tkwKMTaTpV8
 
 <details>
@@ -4309,7 +4309,7 @@
 * [May 19th, 2020 Livestream Q&A: Will we be seeing support for Steam Workshop?](https://archive.satisfactory.video/transcriptions/yt-n4fagQ4eivI) https://www.youtube.com/watch?v=n4fagQ4eivI
 </details>
 
-## [November 10th, 2020 Livestream ](https://archive.satisfactory.video/2020-11-10)
+## [November 10th, 2020 Livestream](https://archive.satisfactory.video/2020-11-10)
 ### [Q&A: Any features you want to add to the game but you don't expect to be added to the vanilla game?](https://archive.satisfactory.video/transcriptions/yt-uVGH_lZnc2g) https://www.youtube.com/watch?v=uVGH_lZnc2g
 
 <details>
@@ -4590,7 +4590,7 @@
 * [September 1st, 2020 Livestream Q&A: Please take a look at the Doggo farm](https://archive.satisfactory.video/transcriptions/yt-r-Azcy0xC4c) https://www.youtube.com/watch?v=r-Azcy0xC4c
 </details>
 
-## [November 3rd, 2020 Livestream ](https://archive.satisfactory.video/2020-11-03)
+## [November 3rd, 2020 Livestream](https://archive.satisfactory.video/2020-11-03)
 ### [Q&A: Can I play on Epic with someone on Steam?](https://archive.satisfactory.video/transcriptions/yt-zekvCEX_mv8) https://www.youtube.com/watch?v=zekvCEX_mv8
 
 <details>
@@ -4662,7 +4662,7 @@
 * [February 6th, 2019 Livestream Q&A: Any DLCs planned?](https://archive.satisfactory.video/transcriptions/yt-Dtm6xIj-wM4,1429.8333333333333,1437.887831) https://youtube.com/embed/Dtm6xIj-wM4?autoplay=1&start=1429&end=1438
 </details>
 
-## [October 27th, 2020 Livestream ](https://archive.satisfactory.video/2020-10-27)
+## [October 27th, 2020 Livestream](https://archive.satisfactory.video/2020-10-27)
 ### [Q&A: Is ADA computer generated or a voice actress?](https://archive.satisfactory.video/transcriptions/yt-lSeLNlkKo1w) https://www.youtube.com/watch?v=lSeLNlkKo1w
 
 <details>
@@ -4770,7 +4770,7 @@
 * [June 8th, 2020 Livestream Q&A: Will we have other maps?](https://archive.satisfactory.video/transcriptions/yt-1-A4zqHdNKA) https://www.youtube.com/watch?v=1-A4zqHdNKA
 </details>
 
-## [October 20th, 2020 Livestream ](https://archive.satisfactory.video/2020-10-20)
+## [October 20th, 2020 Livestream](https://archive.satisfactory.video/2020-10-20)
 ### [Q&A: Will we launch Satisfactory 2?](https://archive.satisfactory.video/transcriptions/yt-jdNrrWCP_ZY) https://www.youtube.com/watch?v=jdNrrWCP_ZY
 
 <details>
@@ -4802,7 +4802,7 @@
 * [January 22nd, 2020 Livestream Q&A: When is Satisfactory 2 coming out?](https://archive.satisfactory.video/transcriptions/yt-jCdv8qJMTKo) https://www.youtube.com/watch?v=jCdv8qJMTKo
 </details>
 
-## [October 13th, 2020 Livestream ](https://archive.satisfactory.video/2020-10-13)
+## [October 13th, 2020 Livestream](https://archive.satisfactory.video/2020-10-13)
 ### [Q&A: Will one of the Quality of Life Updates be turning down the fog?](https://archive.satisfactory.video/transcriptions/yt-2AMBinmPITg) https://www.youtube.com/watch?v=2AMBinmPITg
 
 <details>
@@ -4885,7 +4885,7 @@
 * [May 19th, 2020 Livestream Q&A: Deactivate Fog parameter?](https://archive.satisfactory.video/transcriptions/yt-2H_QouHUoBQ) https://www.youtube.com/watch?v=2H_QouHUoBQ
 </details>
 
-## [October 9th, 2020 Livestream ](https://archive.satisfactory.video/2020-10-09)
+## [October 9th, 2020 Livestream](https://archive.satisfactory.video/2020-10-09)
 ### [Q&A: What is the limit?](https://archive.satisfactory.video/transcriptions/yt-Njv_PJT3B2g) https://www.youtube.com/watch?v=Njv_PJT3B2g
 
 <details>
@@ -5011,7 +5011,7 @@
 * August 18th, 2020 Livestream Build Limit (Part 6): https://clips.twitch.tv/BoxySmallAsparagusSmoocherZ
 </details>
 
-## [October 6th, 2020 Livestream ](https://archive.satisfactory.video/2020-10-06)
+## [October 6th, 2020 Livestream](https://archive.satisfactory.video/2020-10-06)
 ### [Q&A: Any plans about new pets?](https://archive.satisfactory.video/transcriptions/yt-sLBqy5auRck) https://www.youtube.com/watch?v=sLBqy5auRck
 
 <details>
@@ -5272,7 +5272,7 @@
 * [August 25th, 2020 Livestream Q&A: Tanker Trucks?](https://archive.satisfactory.video/transcriptions/yt-IPmVdCgi2_A) https://www.youtube.com/watch?v=IPmVdCgi2_A
 </details>
 
-## [September 29th, 2020 Livestream ](https://archive.satisfactory.video/2020-09-29)
+## [September 29th, 2020 Livestream](https://archive.satisfactory.video/2020-09-29)
 ### [Q&A: Are there any Green Energy options in the game?](https://archive.satisfactory.video/transcriptions/yt-9eBugtyk8U0) https://www.youtube.com/watch?v=9eBugtyk8U0
 
 <details>
@@ -5379,7 +5379,7 @@
 * [June 8th, 2020 Livestream Q&A: What about Green Energy?](https://archive.satisfactory.video/transcriptions/yt-bPo3BFtjDLs) https://www.youtube.com/watch?v=bPo3BFtjDLs
 </details>
 
-## [September 22nd, 2020 Livestream ](https://archive.satisfactory.video/2020-09-22)
+## [September 22nd, 2020 Livestream](https://archive.satisfactory.video/2020-09-22)
 ### [Q&A: Boats will come?](https://archive.satisfactory.video/transcriptions/yt-33wha_duTqs) https://www.youtube.com/watch?v=33wha_duTqs
 
 <details>
@@ -5703,7 +5703,7 @@
 * [March 9th, 2019 Livestream Q&A: What gender is the character model?](https://archive.satisfactory.video/transcriptions/yt-eoMeAy8w2Fs) https://www.youtube.com/watch?v=eoMeAy8w2Fs
 </details>
 
-## [September 8th, 2020 Livestream ](https://archive.satisfactory.video/2020-09-08)
+## [September 8th, 2020 Livestream](https://archive.satisfactory.video/2020-09-08)
 ### [Q&A: Can we upload a Spider image other than a Cat?](https://archive.satisfactory.video/transcriptions/yt-rlBA0k1-sWs) https://www.youtube.com/watch?v=rlBA0k1-sWs
 
 <details>
@@ -5813,7 +5813,7 @@
 * [February 6th, 2019 Livestream Q&A: Will there be third-person view?](https://archive.satisfactory.video/transcriptions/yt-Dtm6xIj-wM4,1245.697874,1259.567788) https://youtube.com/embed/Dtm6xIj-wM4?autoplay=1&start=1245&end=1260
 </details>
 
-## [August 11th, 2020 Livestream ](https://archive.satisfactory.video/2020-08-11)
+## [August 11th, 2020 Livestream](https://archive.satisfactory.video/2020-08-11)
 ### Q&A: Do you have Goats in Satisfactory? https://clips.twitch.tv/FurryTalentedCrowBleedPurple
 
 <details>
@@ -5825,7 +5825,7 @@
 * [February 6th, 2019 Livestream Q&A: Is there goats in Satisfactory?](https://archive.satisfactory.video/transcriptions/yt-Dtm6xIj-wM4,3842.669132,3860.976436) https://youtube.com/embed/Dtm6xIj-wM4?autoplay=1&start=3842&end=3861
 </details>
 
-## [July 28th, 2020 Livestream ](https://archive.satisfactory.video/2020-07-28)
+## [July 28th, 2020 Livestream](https://archive.satisfactory.video/2020-07-28)
 ### Q&A: Dedicated Server cost https://clips.twitch.tv/ConfidentLittleSnood4Head
 
 <details>
@@ -5836,7 +5836,7 @@
 * [March 9th, 2019 Livestream Q&A: Will Dedicated Servers and Mods be free?](https://archive.satisfactory.video/transcriptions/yt-WEq2xEXVVQ0) https://www.youtube.com/watch?v=WEq2xEXVVQ0
 </details>
 
-## [December 19th, 2019 Livestream ](https://archive.satisfactory.video/2019-12-19)
+## [December 19th, 2019 Livestream](https://archive.satisfactory.video/2019-12-19)
 ### [Q&A: Will price go up after Early Access ends?](https://archive.satisfactory.video/transcriptions/yt-TFg_ppmX8OE) https://www.youtube.com/watch?v=TFg_ppmX8OE
 
 <details>
@@ -5872,7 +5872,7 @@
 * [August 1st, 2018 Livestream Q&A: How much will the game cost when it's released?](https://archive.satisfactory.video/transcriptions/yt-iFAy1NZUOGU,99.44,119.72) https://youtube.com/embed/iFAy1NZUOGU?autoplay=1&start=99&end=120
 </details>
 
-## [February 6th, 2019 Livestream ](https://archive.satisfactory.video/2019-02-06)
+## [February 6th, 2019 Livestream](https://archive.satisfactory.video/2019-02-06)
 ### [Q&A: Pipes?](https://archive.satisfactory.video/transcriptions/yt-Dtm6xIj-wM4,278.693237,280.42817) https://youtube.com/embed/Dtm6xIj-wM4?autoplay=1&start=278&end=281
 
 <details>
