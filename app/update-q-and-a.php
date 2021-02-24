@@ -43,10 +43,7 @@ $api = new YouTubeApiWrapper();
 $slugify = new Slugify();
 $injected = new Injected($api, $slugify);
 
-[$cache] = prepare_injections(
-	$api,
-	$slugify
-);
+$cache = $injected->cache;
 
 $playlists = $api->dated_playlists();
 
@@ -174,16 +171,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		$last_faq_date = $faq_date;
 
 		echo '## [',
-			date('F jS, Y', (int) strtotime($faq_date)),
-			(
-				isset($not_a_livestream[$playlist_id])
-					? (
-						' '
-						. $not_a_livestream[$playlist_id]
-						. ' '
-					)
-					: ' Livestream '
-			),
+			$injected->friendly_dated_playlist_name($playlist_id),
 			'](',
 			'https://archive.satisfactory.video/',
 			$faq_date,
@@ -238,24 +226,8 @@ foreach ($faq as $video_id => $faq_duplicates) {
 					maybe_transcript_link_and_video_url(
 						$other_video_id,
 						(
-							date(
-								'F jS, Y',
-								(int) strtotime(
-									determine_date_for_video(
-										$other_video_id,
-										$cache['playlists'],
-										$playlists
-									)
-								)
-							)
-							. (
-								isset($not_a_livestream[$playlist_id])
-									? (
-										' '
-										. $not_a_livestream[$playlist_id]
-										. ' '
-									)
-									: ' Livestream '
+							$injected->friendly_dated_playlist_name(
+								$playlist_id
 							)
 							. $cache['playlistItems'][$other_video_id][1]
 						)
@@ -350,16 +322,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 				maybe_transcript_link_and_video_url(
 					$other_video_id,
 					(
-						date('F jS, Y', (int) strtotime($other_video_date))
-						. (
-							isset($not_a_livestream[$playlist_id])
-								? (
-									' '
-									. $not_a_livestream[$playlist_id]
-									. ' '
-								)
-								: ' Livestream '
-						)
+						$injected->friendly_dated_playlist_name($playlist_id)
 						. $cache['playlistItems'][$other_video_id][1]
 					)
 				)

@@ -64,10 +64,10 @@ $api = new YouTubeApiWrapper();
 
 $slugify = new Slugify();
 
-[
-	$cache,
-	$global_topic_hierarchy,
-] = prepare_injections($api, $slugify);
+$injected = new Injected($api, $slugify);
+
+$cache = $injected->cache;
+$global_topic_hierarchy = ['satisfactory' => $injected->topics_hierarchy];
 
 $playlist_satisfactory =
 	realpath(
@@ -91,6 +91,7 @@ $playlists = array_map(
 			__DIR__
 			. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
 			. $filename
+			. '.md'
 		;
 	},
 	$api->dated_playlists()
@@ -585,16 +586,8 @@ foreach ($all_video_ids as $video_id) {
 		. sprintf(
 			'title: "%s"' . "\n",
 			(
-				date('F jS, Y', (int) strtotime($date))
-				. (
-					isset($not_a_livestream[$playlist_id])
-						? (
-							' '
-							. $not_a_livestream[$playlist_id]
-							. ' '
-						)
-						: ' Livestream '
-				)
+				$injected->friendly_dated_playlist_name($playlist_id)
+				. ' '
 				. str_replace(
 					'"',
 					'\\"',
@@ -623,12 +616,8 @@ foreach ($all_video_ids as $video_id) {
 			))
 		)
 		. '---' . "\n"
-		. '# [' . date('F jS, Y', (int) strtotime($date))
-		. ' '
-		. (
-			$not_a_livestream[$playlist_id]
-				?? 'Livestream'
-		)
+		. '# ['
+		. $injected->friendly_dated_playlist_name($playlist_id)
 		. '](../' . $date . '.md)'
 		. "\n"
 		. '## ' . $cache['playlistItems'][$video_id][1]
@@ -723,16 +712,9 @@ foreach (array_keys($playlists) as $playlist_id) {
 		-3
 	));
 
-	$title = (
-		date(
-			'F jS, Y',
-			$title_unix
-		)
-		. (
-			isset($not_a_livestream[$playlist_id])
-				? (' ' . $not_a_livestream[$playlist_id])
-				: ' Livestream clips (non-exhaustive)'
-		)
+	$title = $injected->friendly_dated_playlist_name(
+		$playlist_id,
+		'Livestream clips (non-exhaustive)'
 	);
 
 	/** @var list<string> */
@@ -1202,8 +1184,8 @@ $data_by_date = [];
 
 $playlists_by_date = [];
 
-foreach ($api->dated_playlists() as $playlist_id => $filename) {
-	$unix = strtotime(mb_substr($filename, 0, -3));
+foreach ($api->dated_playlists() as $playlist_id => $date) {
+	$unix = strtotime($date);
 	$readable_date = date('F jS, Y', $unix);
 
 	$data_by_date[$playlist_id] = [$unix, $readable_date];
@@ -1418,13 +1400,7 @@ foreach ($playlist_ids as $playlist_id) {
 			(
 				"\n"
 				. '## '
-				. $data_by_date[$playlist_id][1]
-				. ' '
-				. (
-					$not_a_livestream[$playlist_id]
-						?? 'Livestream'
-				)
-				. ''
+				. $injected->friendly_dated_playlist_name($playlist_id)
 				. "\n"
 			)
 			. implode('', array_map(
