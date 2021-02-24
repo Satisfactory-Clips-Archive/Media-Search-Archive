@@ -396,7 +396,7 @@ function inject_caches(array $cache, array ...$caches) : array
 function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 {
 	/**
-	 * @var null|OUT
+	 * @var OUT|null
 	 */
 	static $out = null;
 
