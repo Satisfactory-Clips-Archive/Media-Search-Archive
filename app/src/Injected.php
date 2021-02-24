@@ -33,6 +33,8 @@ class Injected
 	public Sorting $sorting;
 
 	/**
+	 * @readonly
+	 *
 	 * @var array{
 	 *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
 	 *	playlistItems:array<string, array{0:string, 1:string}>,
@@ -42,12 +44,29 @@ class Injected
 	 *	internalxref:array<string, string>
 	 * }
 	 */
-	private array $cache;
+	public array $cache;
 
 	/**
+	 * @readonly
+	 *
 	 * @var array<string, list<int|string>>
 	 */
-	private array $topics_hierarchy;
+	public array $topics_hierarchy;
+
+	/**
+	 * @var array<string, string>
+	 */
+	private array $not_a_livestream;
+
+	/**
+	 * @var array<string, string>
+	 */
+	private array $not_a_livestream_date_lookup;
+
+	/**
+	 * @var array<string, string>
+	 */
+	private array $playlists_date_ref;
 
 	public function __construct(YouTubeApiWrapper $api, Slugify $slugify)
 	{
@@ -56,12 +75,18 @@ class Injected
 
 		$prepared = prepare_injections($this->api, $this->slugify);
 
-		[$this->cache] = $prepared;
+		[
+			$this->cache,
+			,
+			$this->not_a_livestream,
+			$this->not_a_livestream_date_lookup,
+		] = $prepared;
 
 		$this->topics_hierarchy = $prepared[1]['satisfactory'];
+		$this->playlists_date_ref = $api->dated_playlists();
 
 		$this->sorting = new Sorting($this->cache);
-		$this->sorting->playlists_date_ref = $api->dated_playlists();
+		$this->sorting->playlists_date_ref = $this->playlists_date_ref;
 	}
 
 	/**
@@ -155,6 +180,30 @@ class Injected
 		usort($all_video_ids, [$this->sorting, 'sort_video_ids_by_date']);
 
 		return $all_video_ids;
+	}
+
+	public function friendly_dated_playlist_name(
+		string $playlist_id,
+		string $default_label = 'Livestream'
+	) : string {
+		if ( ! isset($this->playlists_date_ref[$playlist_id])) {
+			throw new InvalidArgumentException(sprintf(
+				'Argument 1 passed to %s() was not found in the playlists!',
+				__METHOD__
+			));
+		}
+
+		return (
+			date(
+				'F jS, Y',
+				(int) strtotime($this->playlists_date_ref[$playlist_id])
+			)
+			. sprintf(' %s', (
+				isset($this->not_a_livestream[$playlist_id])
+					? $this->not_a_livestream[$playlist_id]
+					: $default_label
+			))
+		);
 	}
 
 	/**
