@@ -442,6 +442,9 @@ class YouTubeApiWrapper
 	 */
 	public function dated_playlists() : array
 	{
+		static $cache = null;
+
+		if (null === $cache) {
 		$playlists_filter =
 			[new Filtering(), 'kvp_string_string'];
 
@@ -488,7 +491,10 @@ class YouTubeApiWrapper
 
 		asort($dated_playlists);
 
-		return array_reverse($dated_playlists, true);
+			$cache = array_reverse($dated_playlists, true);
+		}
+
+		return $cache;
 	}
 
 	public function clear_cache() : void
