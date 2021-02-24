@@ -9,6 +9,7 @@ namespace SignpostMarv\VideoClipNotes;
 use function array_search;
 use function count;
 use function preg_replace;
+use RuntimeException;
 use function sprintf;
 use function str_replace;
 
@@ -24,7 +25,7 @@ class Markdownify
 	public function content_if_video_has_other_parts(
 		string $video_id,
 		bool $include_self = false
-	) {
+	) : string {
 		if ( ! has_other_part($video_id)) {
 			return '';
 		}

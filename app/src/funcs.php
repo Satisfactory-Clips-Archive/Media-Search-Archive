@@ -377,7 +377,7 @@ function inject_caches(array $cache, array ...$caches) : array
 }
 
 /**
- * @psalm-type OUT = array{
+ * @return array{
  *	0:array{
  *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *		playlistItems:array<string, array{0:string, 1:string}>,
@@ -390,13 +390,23 @@ function inject_caches(array $cache, array ...$caches) : array
  *	2:array<string, string>,
  *	3:array<string, string>
  * }
- *
- * @return OUT
  */
 function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 {
 	/**
-	 * @var OUT|null
+	 * @var array{
+	 *	0:array{
+	 *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+	 *		playlistItems:array<string, array{0:string, 1:string}>,
+	 *		videoTags:array<string, array{0:string, list<string>}>,
+	 *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+	 *		legacyAlts:array<string, list<string>>,
+	 *		internalxref:array<string, string>
+	 *	},
+	 *	1:array{satisfactory:array<string, list<int|string>>},
+	 *	2:array<string, string>,
+	 *	3:array<string, string>
+	 * }|null
 	 */
 	static $out = null;
 
@@ -510,7 +520,19 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 		$cache = inject_caches($cache, $externals_cache);
 
 		/**
-		 * @var OUT
+		 * @var array{
+		 *	0:array{
+		 *		playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
+		 *		playlistItems:array<string, array{0:string, 1:string}>,
+		 *		videoTags:array<string, array{0:string, list<string>}>,
+		 *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
+		 *		legacyAlts:array<string, list<string>>,
+		 *		internalxref:array<string, string>
+		 *	},
+		 *	1:array{satisfactory:array<string, list<int|string>>},
+		 *	2:array<string, string>,
+		 *	3:array<string, string>
+		 * }
 		 */
 		$out = [
 			$cache,

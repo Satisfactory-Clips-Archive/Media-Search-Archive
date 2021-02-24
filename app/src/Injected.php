@@ -65,11 +65,6 @@ class Injected
 	/**
 	 * @var array<string, string>
 	 */
-	private array $not_a_livestream_date_lookup;
-
-	/**
-	 * @var array<string, string>
-	 */
 	private array $playlists_date_ref;
 
 	public function __construct(YouTubeApiWrapper $api, Slugify $slugify)
@@ -83,7 +78,6 @@ class Injected
 			$this->cache,
 			,
 			$this->not_a_livestream,
-			$this->not_a_livestream_date_lookup,
 		] = $prepared;
 
 		$this->topics_hierarchy = $prepared[1]['satisfactory'];
