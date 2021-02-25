@@ -209,10 +209,34 @@ class Markdownify
 
 	public function content_if_video_is_a_duplicate(string $video_id) : string
 	{
+		return $this->content_if_video_is_thinged(
+			$video_id,
+			'duplicatedby',
+			'duplicated'
+		);
+	}
+
+	public function content_if_video_is_replaced(string $video_id) : string
+	{
+		return $this->content_if_video_is_thinged(
+			$video_id,
+			'replacedby',
+			'replaced'
+		);
+	}
+
+	/**
+	 * @param 'duplicatedby'|'replacedby' $thinged
+	 */
+	private function content_if_video_is_thinged(
+		string $video_id,
+		string $thinged,
+		string $friendly
+	) : string {
 		[$existing] = $this->questions->process();
 
 		/** @var string|null */
-		$found = $existing[$video_id]['duplicatedby'] ?? null;
+		$found = $existing[$video_id][$thinged] ?? null;
 
 		if (null === $found) {
 			return '';
@@ -237,9 +261,10 @@ class Markdownify
 		return sprintf(
 			(
 				"\n" .
-				'This question was possibly duplicated with a more recent answer: %s'
+				'This question was possibly %s with a more recent answer: %s'
 				. "\n"
 			),
+			$friendly,
 			maybe_transcript_link_and_video_url(
 				$found,
 				(

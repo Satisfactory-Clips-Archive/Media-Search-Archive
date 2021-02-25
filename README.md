@@ -13,6 +13,7 @@ Static site generator for
 ## 2020-02-25
 * adding February 23rd, 2021 + topic changes
 * duplicates tracking implemented
+* replacements tracking implemented
 
 ## 2020-02-24
 * merged in q-and-a-tracking branch

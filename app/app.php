@@ -633,6 +633,11 @@ foreach ($all_video_ids as $video_id) {
 		. str_replace(
 			'./transcriptions/',
 			'./',
+			$markdownify->content_if_video_is_replaced($video_id)
+		)
+		. str_replace(
+			'./transcriptions/',
+			'./',
 			$markdownify->content_if_video_is_a_duplicate($video_id)
 		)
 		. str_replace(
