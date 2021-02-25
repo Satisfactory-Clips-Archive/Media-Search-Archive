@@ -57,7 +57,10 @@ use function usort;
  */
 class Questions
 {
-	private Injected $injected;
+	/**
+	 * @readonly
+	 */
+	public Injected $injected;
 
 	public function __construct(Injected $injected)
 	{
@@ -568,6 +571,51 @@ class Questions
 		 * @var array<string, MAYBE>
 		 */
 		return $existing;
+	}
+
+	/**
+	 * @return array{
+	 *	0:array<string, MAYBE>,
+	 *	1:array<string, list<string>>,
+	 *	2:array<string, list<string>>
+	 * }
+	 */
+	public function process() : array
+	{
+		/**
+		 * @var array{
+		 *	0:array<string, MAYBE>,
+		 *	1:array<string, list<string>>,
+		 *	2:array<string, list<string>>
+		 * }|null
+		 */
+		static $cache = null;
+
+		if (null === $cache) {
+			$existing = $this->append_new_questions();
+			$existing = $this->process_legacyalts(
+				$existing,
+				$this->injected->cache['legacyAlts']
+			);
+			[$existing, $duplicates] = $this->process_duplicates($existing);
+			[$existing, $seealsos] = $this->process_seealsos($existing);
+			$existing = $this->finalise($existing, $this->injected->cache);
+
+			$cache = [
+				$existing,
+				$duplicates,
+				$seealsos,
+			];
+		}
+
+		/**
+		 * @var array{
+		 *	0:array<string, MAYBE>,
+		 *	1:array<string, list<string>>,
+		 *	2:array<string, list<string>>
+		 * }
+		 */
+		return $cache;
 	}
 
 	/**

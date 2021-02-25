@@ -52,11 +52,7 @@ $all_video_ids = $injected->all_video_ids();
 
 $questions = new Questions($injected);
 
-$existing = $questions->append_new_questions();
-$existing = $questions->process_legacyalts($existing, $cache['legacyAlts']);
-[$existing, $duplicates] = $questions->process_duplicates($existing);
-[$existing] = $questions->process_seealsos($existing);
-$existing = $questions->finalise($existing, $cache);
+[$existing, $duplicates] = $questions->process();
 
 $by_topic = [];
 
@@ -206,93 +202,7 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		echo "\n", '</details>', "\n";
 	}
 
-	uasort($faq_duplicates, [$injected->sorting, 'sort_video_ids_by_date']);
-
-	$faq_duplicate_dates = [];
-
-	$faq_duplicates_for_date_checking = array_diff(
-		$faq_duplicates,
-		[
-			$video_id,
-		]
-	);
-
-	foreach ($faq_duplicates_for_date_checking as $other_video_id) {
-		$faq_duplicate_video_date = determine_date_for_video(
-			$other_video_id,
-			$cache['playlists'],
-			$playlists
-		);
-
-		if (
-			! in_array($faq_duplicate_video_date, $faq_duplicate_dates, true)
-		) {
-			$faq_duplicate_dates[] = $faq_duplicate_video_date;
-		}
-	}
-
-	echo "\n",
-		'<details>',
-		"\n",
-		'<summary>',
-		sprintf(
-			'This question may have been asked previously at least %s other %s',
-			count($faq_duplicates_for_date_checking),
-			count($faq_duplicates_for_date_checking) > 1 ? 'times' : 'time'
-		),
-		sprintf(
-			', as recently as %s%s',
-			date('F Y', strtotime(current($faq_duplicate_dates))),
-			(
-				count($faq_duplicate_dates) > 1
-					? (
-						' and as early as '
-						. date('F Y.', strtotime(end($faq_duplicate_dates)))
-					)
-					: '.'
-			)
-		),
-		'</summary>',
-		"\n"
-	;
-
-	foreach ($faq_duplicates_for_date_checking as $other_video_id) {
-		$other_video_date =
-			determine_date_for_video(
-				$other_video_id,
-				$cache['playlists'],
-				$playlists
-		);
-		$playlist_id = array_search(
-			$other_video_date,
-			$playlists, true
-		);
-
-		if ( ! is_string($playlist_id)) {
-			throw new RuntimeException(sprintf(
-				'Could not find playlist id for %s',
-				$video_id
-			));
-		}
-
-		echo "\n",
-			'* ',
-			preg_replace('/\.md\)/', ')', str_replace(
-				'./',
-				'https://archive.satisfactory.video/',
-				maybe_transcript_link_and_video_url(
-					$other_video_id,
-					(
-						$injected->friendly_dated_playlist_name($playlist_id)
-						. ' '
-						. $cache['playlistItems'][$other_video_id][1]
-					)
-				)
-			))
-		;
-	}
-
-	echo "\n", '</details>', "\n";
+	echo $markdownify->content_if_video_has_duplicates($video_id, $questions);
 
 	echo "\n";
 }
