@@ -87,17 +87,16 @@ class Markdownify
 
 		foreach ($video_other_parts as $other_video_id) {
 			$out .= '* '
-				.
-					maybe_transcript_link_and_video_url(
-						$other_video_id,
-						(
-							$this->injected->friendly_dated_playlist_name(
-								$playlist_id
-							)
-							. ' '
-							. $this->injected->cache['playlistItems'][$other_video_id][1]
+				. maybe_transcript_link_and_video_url(
+					$other_video_id,
+					(
+						$this->injected->friendly_dated_playlist_name(
+							$playlist_id
 						)
+						. ' '
+						. $this->injected->cache['playlistItems'][$other_video_id][1]
 					)
+				)
 				. "\n"
 			;
 		}
@@ -175,11 +174,10 @@ class Markdownify
 		;
 
 		foreach ($faq_duplicates_for_date_checking as $other_video_id) {
-			$other_video_date =
-				determine_date_for_video(
-					$other_video_id,
-					$injected->cache['playlists'],
-					$injected->api->dated_playlists()
+			$other_video_date = determine_date_for_video(
+				$other_video_id,
+				$injected->cache['playlists'],
+				$injected->api->dated_playlists()
 			);
 			$playlist_id = array_search(
 				$other_video_date,
@@ -195,15 +193,14 @@ class Markdownify
 
 			$out .= "\n"
 				. '* '
-				.
-					maybe_transcript_link_and_video_url(
-						$other_video_id,
-						(
-							$injected->friendly_dated_playlist_name($playlist_id)
-							. ' '
-							. $injected->cache['playlistItems'][$other_video_id][1]
-						)
+				. maybe_transcript_link_and_video_url(
+					$other_video_id,
+					(
+						$injected->friendly_dated_playlist_name($playlist_id)
+						. ' '
+						. $injected->cache['playlistItems'][$other_video_id][1]
 					)
+				)
 			;
 		}
 
