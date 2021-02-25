@@ -196,7 +196,11 @@ foreach ($faq as $video_id => $faq_duplicates) {
 		echo "\n", '</details>', "\n";
 	}
 
-	echo $markdownify->content_if_video_has_duplicates($video_id, $questions);
+	echo preg_replace('/\.md\)/', ')', str_replace(
+		'./',
+		'https://archive.satisfactory.video/',
+		$markdownify->content_if_video_has_duplicates($video_id, $questions)
+	));
 
 	echo "\n";
 }

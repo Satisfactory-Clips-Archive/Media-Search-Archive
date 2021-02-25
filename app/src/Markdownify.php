@@ -87,9 +87,7 @@ class Markdownify
 
 		foreach ($video_other_parts as $other_video_id) {
 			$out .= '* '
-				. preg_replace('/\.md\)/', ')', str_replace(
-					'./',
-					'https://archive.satisfactory.video/',
+				.
 					maybe_transcript_link_and_video_url(
 						$other_video_id,
 						(
@@ -100,7 +98,6 @@ class Markdownify
 							. $this->injected->cache['playlistItems'][$other_video_id][1]
 						)
 					)
-				))
 				. "\n"
 			;
 		}
@@ -198,9 +195,7 @@ class Markdownify
 
 			$out .= "\n"
 				. '* '
-				. preg_replace('/\.md\)/', ')', str_replace(
-					'./',
-					'https://archive.satisfactory.video/',
+				.
 					maybe_transcript_link_and_video_url(
 						$other_video_id,
 						(
@@ -209,7 +204,6 @@ class Markdownify
 							. $injected->cache['playlistItems'][$other_video_id][1]
 						)
 					)
-				))
 			;
 		}
 
