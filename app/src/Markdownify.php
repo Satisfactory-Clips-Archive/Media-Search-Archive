@@ -144,18 +144,16 @@ class Markdownify
 			}
 		}
 
-		ob_start();
-
-		echo "\n",
-			'<details>',
-			"\n",
-			'<summary>',
-			sprintf(
+		$out = "\n"
+			. '<details>'
+			. "\n"
+			. '<summary>'
+			. sprintf(
 				'This question may have been asked previously at least %s other %s',
 				count($faq_duplicates_for_date_checking),
 				count($faq_duplicates_for_date_checking) > 1 ? 'times' : 'time'
-			),
-			sprintf(
+			)
+			. sprintf(
 				', as recently as %s%s',
 				date('F Y', strtotime(current($faq_duplicate_dates))),
 				(
@@ -166,8 +164,8 @@ class Markdownify
 						)
 						: '.'
 				)
-			),
-			'</summary>',
+			).
+			'</summary>'.
 			"\n"
 		;
 
@@ -190,9 +188,9 @@ class Markdownify
 				));
 			}
 
-			echo "\n",
-				'* ',
-				preg_replace('/\.md\)/', ')', str_replace(
+			$out .= "\n"
+				. '* '
+				. preg_replace('/\.md\)/', ')', str_replace(
 					'./',
 					'https://archive.satisfactory.video/',
 					maybe_transcript_link_and_video_url(
@@ -207,8 +205,8 @@ class Markdownify
 			;
 		}
 
-		echo "\n", '</details>', "\n";
+		$out .= "\n" . '</details>' . "\n";
 
-		return ob_get_clean();
+		return $out;
 	}
 }
