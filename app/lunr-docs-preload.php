@@ -52,9 +52,7 @@ $out = [];
 	$global_topic_hierarchy,
 ] = prepare_injections($api, $slugify);
 
-$dated_playlists =
-	$api->dated_playlists()
-;
+$dated_playlists = $api->dated_playlists();
 
 $topics = [];
 
