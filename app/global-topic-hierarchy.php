@@ -7,6 +7,10 @@ declare(strict_types=1);
 $global_topic_hierarchy = [
 	'satisfactory' => [
 		'PLbjDnnBIxiEo8RlgfifC8OhLmJl8SgpJE' => [ // State of Dev
+			-7,
+			'Satisfactory Updates',
+		],
+		'PLbjDnnBIxiEp-sFymxlcEagoTYEPciGUc' => [ // Teasers & Trailers
 			-6,
 			'Satisfactory Updates',
 		],
@@ -755,6 +759,10 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEr-AG-93Qqd43nuzOUIcufC' => [ // Power Switch
 			'Features',
 			'Power Management',
+		],
+		'PLbjDnnBIxiEoxIy2QXhvKUmi6kTjM4sVS' => [ // Blade Runners
+			'Features',
+			'Equipment',
 		],
 	],
 ];

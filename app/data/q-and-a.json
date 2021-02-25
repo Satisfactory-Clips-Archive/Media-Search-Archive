@@ -1,4 +1,590 @@
 {
+    "vQlvfDhG01E": {
+        "title": "Q&A: A beanie trophy?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt",
+            "features\/buildings\/awesome-store",
+            "features\/possible-features\/character-customisation"
+        ]
+    },
+    "MS3_LOEapI4": {
+        "title": "Q&A: Any future combat or enemy updates to come?",
+        "date": "2021-02-23",
+        "topics": [
+            "environment\/creatures",
+            "environment\/creatures\/crab-boss",
+            "features\/unplanned-features\/base-defense"
+        ]
+    },
+    "w3_T37dQba0": {
+        "title": "Q&A: Any ideas on a more detailed Map?",
+        "date": "2021-02-23",
+        "topics": [
+            "environment\/world-map",
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "XLXeOMWHoAc": {
+        "title": "Q&A: Any more major updates planned before 1.0?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/speculative\/satisfactory-update-5"
+        ]
+    },
+    "bzqL0DGULFM": {
+        "title": "Q&A: Any more music tracks coming?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "soundtrack"
+        ]
+    },
+    "_kBUD_mMahs": {
+        "title": "Q&A: Any news on Train revamp?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/transportation\/trains\/train-signals",
+            "features\/transportation\/vehicles"
+        ]
+    },
+    "tJSLxVZ-sFg": {
+        "title": "Q&A: Any plans for Blueprint mode?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers\/mark",
+            "features\/unplanned-features\/mass-building"
+        ]
+    },
+    "rfeMtSPOadY": {
+        "title": "Q&A: Any plans for bringing the game to Nintendo Switch?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/possible-features\/console-release"
+        ]
+    },
+    "94nTbUy9pEc": {
+        "title": "Q&A: Any plans on bringing to Samsung Fridges?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/possible-features\/console-release"
+        ]
+    },
+    "MeB65-maH5k": {
+        "title": "Q&A: Any update on Dedicated Servers?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/planned-features\/dedicated-servers"
+        ]
+    },
+    "ufAQLXW_yNk": {
+        "title": "Q&A: Are there any features that're being held for the 1.0 release?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "story-lore"
+        ]
+    },
+    "oojAhgClrl0": {
+        "title": "Q&A: Are there going to be more recipes- not new item recipes but more recipes for old items?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/crafting",
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "nuWfLlBMtA0": {
+        "title": "Q&A: Are we going to have new stuff in the AWESOME Shop for Update 4?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildings\/awesome-store",
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "OtcI-GdfbRc": {
+        "title": "Q&A: Are you going to add any more Alternative Recipes?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildings\/m-a-m",
+            "features\/crafting"
+        ]
+    },
+    "fpfVLWArJpo": {
+        "title": "Q&A: Are you going to add more spoken languages to the game?",
+        "date": "2021-02-23",
+        "topics": [
+            "localisation",
+            "story-lore\/characters\/ada"
+        ]
+    },
+    "2r7-Vfzg2FM": {
+        "title": "Q&A: Being able to pick up the orange Storage boxes and move them would be nice?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildables\/storage-containers"
+        ]
+    },
+    "2Bd9mFmmRFg": {
+        "title": "Q&A: Can we get a Jace trophy in the game?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers\/jace",
+            "features\/buildings\/awesome-store"
+        ]
+    },
+    "chc6o85O0AQ": {
+        "title": "Q&A: Can we get an in-game notepad?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/equipment"
+        ]
+    },
+    "BPBXw4Zsk7A": {
+        "title": "Q&A: Can you go up with Zip Lines?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/equipment\/zip-lines"
+        ]
+    },
+    "Rb-gKC3AQ64": {
+        "title": "Q&A: Can you make Coffee give you 1% speed boost when building?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/equipment"
+        ]
+    },
+    "WKMxQyq9JaM": {
+        "title": "Q&A: Can you press shift to go down the Ladder faster?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers\/jace",
+            "features\/buildables\/ladders",
+            "satisfactory-updates\/released\/satisfactory-fluids-update",
+            "technology\/user-interface"
+        ]
+    },
+    "NVHH5f2Vfak": {
+        "title": "Q&A: Can you toggle the Power Switch on\/off without opening the GUI ?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/power-management\/power-switch",
+            "technology\/user-interface"
+        ]
+    },
+    "HkgkowY2uUE": {
+        "title": "Q&A: Can you Zip Line on the FICS\u2055MAS Power Lines?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/equipment\/zip-lines",
+            "satisfactory-updates\/seasonal-events\/fics-mas"
+        ]
+    },
+    "LjCbSSlwrTo": {
+        "title": "Q&A: Coffee physics?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/equipment",
+            "technology\/physics"
+        ]
+    },
+    "XpBlPzRT3FA": {
+        "title": "Q&A: Could you please add a Coffee machine or even a Coffee production line?",
+        "date": "2021-02-23",
+        "topics": [
+            "environment\/resources",
+            "features\/equipment"
+        ]
+    },
+    "XATD7Tg7YmQ": {
+        "title": "Q&A: Dedicated Servers confirmed for Update 5?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/planned-features\/dedicated-servers",
+            "satisfactory-updates\/speculative\/satisfactory-update-5"
+        ]
+    },
+    "ewC4sE7k7Uw": {
+        "title": "Q&A: Did Ben bring up the missing stuff from the Modular Build this morning?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers\/ben",
+            "satisfactory-updates\/modular-build"
+        ]
+    },
+    "vEF2BQPxwWk": {
+        "title": "Q&A: Do not remove the self-regulation of energy, it's one of the good things about the game?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/power-management",
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "coZy3f5YFkw": {
+        "title": "Q&A: Have you guys shot down the idea of a grappling hook?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/equipment"
+        ]
+    },
+    "IghXjiItcwI": {
+        "title": "Q&A: How's the Engine Update going?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "technology\/unreal-engine"
+        ]
+    },
+    "1b3hUDdPoKY": {
+        "title": "Q&A: How about a button to lock a Building in place before building it?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildings",
+            "technology\/user-interface"
+        ]
+    },
+    "dWHUW2vrUYE": {
+        "title": "Q&A: How about Mod safety- how do you guys assure no malware installed with the Mods we use?",
+        "date": "2021-02-23",
+        "topics": [
+            "mods",
+            "mods\/official-mod-support"
+        ]
+    },
+    "Hj0nhmramiM": {
+        "title": "Q&A: How many devs do you have?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers"
+        ]
+    },
+    "xh_OgWsWLGo": {
+        "title": "Q&A: How many more teasers have you planned?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/teasers-trailers"
+        ]
+    },
+    "15R0t95pwvc": {
+        "title": "Q&A: How many of them work on Valheim?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers",
+            "off-topic\/valheim"
+        ]
+    },
+    "XNsN_3Kjlqs": {
+        "title": "Q&A: How much after the things you've teased is left?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/teasers-trailers"
+        ]
+    },
+    "qiF-rpSnoTI": {
+        "title": "Q&A: If we're not getting Dedicated Servers any time soon, is it possible to get disabled rendering?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/planned-features\/dedicated-servers",
+            "technology\/graphics"
+        ]
+    },
+    "zJ3RVfHpogY": {
+        "title": "Q&A: Is DirectX 12 fully supported now?",
+        "date": "2021-02-23",
+        "topics": [
+            "technology\/graphics"
+        ]
+    },
+    "sQTpG9Ws6EA": {
+        "title": "Q&A: Is that March date for Experimental?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/release-builds"
+        ]
+    },
+    "JElqxFIki6w": {
+        "title": "Q&A: Is the Blade Runner glitch going to be fixed?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/equipment\/blade-runners"
+        ]
+    },
+    "Q9LfxD5Qa3M": {
+        "title": "Q&A: Is there already a date for Update 4?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "axNVUjsuMwo": {
+        "title": "Q&A: Is there a plan to let us grow food in some way?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/possible-features\/farming"
+        ]
+    },
+    "wGiLdFI984k": {
+        "title": "Q&A: Is there going to be larger Power Storage?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/power-management\/power-storage"
+        ]
+    },
+    "TT3qZCTt_0o": {
+        "title": "Q&A: I still have Packaged Fuel being produced from a Refinery, will it be the same with Aluminium?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildings\/refinery",
+            "features\/crafting\/fuel",
+            "features\/tiers\/tier-7",
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ]
+    },
+    "NzTAvolZZrY": {
+        "title": "Q&A: Is Update 4 coming out before or after Jace beats this maze?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers\/jace",
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "5x5XXOoj9Xw": {
+        "title": "Q&A: Is Zip Line travel limited to distances between two Power Poles?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/equipment\/zip-lines"
+        ]
+    },
+    "IdKhbyR81Nw": {
+        "title": "Q&A: Like prioritise Coal over Nuclear?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/power-management",
+            "features\/power-management\/nuclear-energy",
+            "features\/power-management\/power-switch"
+        ]
+    },
+    "dpSP-189CmA": {
+        "title": "Q&A: Music?",
+        "date": "2021-02-23",
+        "topics": [
+            "soundtrack"
+        ]
+    },
+    "pYPBpZdBvP4": {
+        "title": "Q&A: Planning on making any space stuff?",
+        "date": "2021-02-23",
+        "topics": [
+            "environment\/biomes\/unplanned-biomes\/underwater",
+            "features\/unplanned-features\/space-exploration"
+        ]
+    },
+    "xrbSRH35qY8": {
+        "title": "Q&A: Please tease us about the Friday teaser?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/teasers-trailers"
+        ]
+    },
+    "LGjLUSeHQ4w": {
+        "title": "Q&A: Reload for Rifles?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/equipment"
+        ]
+    },
+    "ow33F_nK6nc": {
+        "title": "Q&A: S.A.M. Ore getting a main use any time soon?",
+        "date": "2021-02-23",
+        "topics": [
+            "environment\/resources\/sam-ore",
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "story-lore"
+        ]
+    },
+    "Q4BRujPmgN0": {
+        "title": "Q&A: Since you have a cup of coffee, how about a spit-take emote?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/emotes",
+            "features\/equipment"
+        ]
+    },
+    "g3xOdnACRe4": {
+        "title": "Q&A: Snow confirmed?",
+        "date": "2021-02-23",
+        "topics": [
+            "environment\/biomes\/unplanned-biomes\/snow",
+            "trolling"
+        ]
+    },
+    "9QEf5938sPk": {
+        "title": "Q&A: So are you packing Update 4 to the Engine Upgrade?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/release-builds",
+            "technology\/unreal-engine"
+        ]
+    },
+    "wcP5kwfOfSc": {
+        "title": "Q&A: Third Person View?",
+        "date": "2021-02-23",
+        "topics": [
+            "technology\/graphics"
+        ]
+    },
+    "1seCWtzI5kM": {
+        "title": "Q&A: Update 4 will come before Update 5?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/speculative\/satisfactory-update-5"
+        ]
+    },
+    "COs088Ocju8": {
+        "title": "Q&A: What about a picture to put on the wall of the Coffee Stain logo?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/possible-features\/decor"
+        ]
+    },
+    "D36NzV3LAB8": {
+        "title": "Q&A: What are the plans to improve multiplayer bugs in the future?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/multiplayer"
+        ]
+    },
+    "Ws0Q7X1Twx0": {
+        "title": "Q&A: Where did the idea of making power producers produce 100% regardless of consumption come from?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers\/mark",
+            "features\/power-management\/power-storage",
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "g9FlxkN5dhc": {
+        "title": "Q&A: Where does the Space Elevator go?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildings\/space-elevator",
+            "features\/buildings\/space-elevator\/food-court",
+            "features\/fluids\/pipes",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "5KThzhNUTLY": {
+        "title": "Q&A: Where is Jace's beanie?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers\/jace"
+        ]
+    },
+    "KxOniqAHQI4": {
+        "title": "Q&A: Will Alternative Recipes be unlocked by a more orderly progression?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildings\/m-a-m",
+            "features\/crafting"
+        ]
+    },
+    "lxpA6PIJEbo": {
+        "title": "Q&A: Will Foundations be falling down from non-supported beams?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildables\/foundations",
+            "technology\/physics"
+        ]
+    },
+    "95QNCSBoRYM": {
+        "title": "Q&A: Will the Dune Desert get crammed or will it stay as the perfect mega-base location?",
+        "date": "2021-02-23",
+        "topics": [
+            "environment\/biomes"
+        ]
+    },
+    "pzQu_zUweOI": {
+        "title": "Q&A: Will there be an option to limit the capacity of Freight Cars, Vehicles, and other Storages?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildables\/storage-containers"
+        ]
+    },
+    "b1imtH_pkbE": {
+        "title": "Q&A: Will there be Moderators in the game?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/multiplayer",
+            "features\/planned-features\/dedicated-servers",
+            "features\/save-system"
+        ]
+    },
+    "5KRdfYoVv-c": {
+        "title": "Q&A: Will the sleeping room have an additional function?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildings\/the-hub"
+        ]
+    },
+    "RrF2Nq2-vmc": {
+        "title": "Q&A: Will we be able to place holes in Walls and floors freely?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildables\/foundations",
+            "features\/buildables\/walls"
+        ]
+    },
+    "8efo7J40QAQ": {
+        "title": "Q&A: Will we ever be able to snap Water Extrators to each other?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/buildings\/water-extractor"
+        ]
+    },
+    "9u3U07NNrHM": {
+        "title": "Q&A: Will we have different voltage-rated Power Lines in Update 4?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/power-management",
+            "satisfactory-updates\/pending\/satisfactory-update-4"
+        ]
+    },
+    "SVHuqx3TzAg": {
+        "title": "Q&A: Will you be able to add mods to Vehicles to make them faster \/ shoot things?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/transportation\/vehicles"
+        ]
+    },
+    "fbIm1CfGGZQ": {
+        "title": "Q&A: Will you be able to play Story on an existing save when 1.0 comes out?",
+        "date": "2021-02-23",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "m8v8TVvDSeY": {
+        "title": "Q&A: Will you be expanding on how Power works in Update 4?",
+        "date": "2021-02-23",
+        "topics": [
+            "features\/power-management"
+        ]
+    },
+    "XXV23XMUmJA": {
+        "title": "Q&A: Would you say bringing Satisfactory to life is your raison d'\u00eatre?",
+        "date": "2021-02-23",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt"
+        ]
+    },
     "z-DgcRCy3so": {
         "title": "Q&A: Any NPCs in the game?",
         "date": "2021-02-16",
@@ -2216,6 +2802,7 @@
         "title": "Q&A: Can you give us a teaser for what the Story will be, or is there a YouTube video?",
         "date": "2021-02-09",
         "topics": [
+            "satisfactory-updates\/teasers-trailers",
             "story-lore",
             "story-lore\/characters\/caterina-parks"
         ],
@@ -2690,10 +3277,9 @@
         "title": "Q&A: How do Gas Extractors work with Multiplayer fart emotes to increase Gas production?",
         "date": "2021-02-09",
         "topics": [
+            "features\/emotes",
             "features\/gases",
-            "features\/multiplayer",
-            "features\/possible-features\/character-customisation",
-            "technology\/user-interface"
+            "features\/multiplayer"
         ],
         "suggested": [
             "dBNJrDsc_XU"
@@ -3298,7 +3884,9 @@
     "Z-GAgR2VYXk": {
         "title": "Q&A: When's the next Teaser Trailer?",
         "date": "2021-02-09",
-        "topics": [],
+        "topics": [
+            "satisfactory-updates\/teasers-trailers"
+        ],
         "replaces": [
             "r7i2CQaxnWc"
         ],
@@ -3799,8 +4387,7 @@
         "title": "Q&A: Will there be more emotes?",
         "date": "2021-02-09",
         "topics": [
-            "features\/possible-features\/character-customisation",
-            "technology\/user-interface"
+            "features\/emotes"
         ],
         "duplicates": [
             "Ii3ahSfYOYI",
@@ -3824,7 +4411,8 @@
         "title": "Q&A: Will there still be stuff to discover when the Update 4 teasers & reveals are done?",
         "date": "2021-02-09",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-4"
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/teasers-trailers"
         ],
         "seealso": [
             "v-f6PgaD4rY"
@@ -4005,7 +4593,8 @@
         "title": "Q&A: Any more teasers?",
         "date": "2021-02-02",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-4"
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/teasers-trailers"
         ],
         "suggested": [
             "1NTKmQqoxNs",
@@ -4146,7 +4735,8 @@
         "date": "2021-02-02",
         "topics": [
             "features\/equipment\/zip-lines",
-            "satisfactory-updates\/pending\/satisfactory-update-4"
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/teasers-trailers"
         ],
         "suggested": [
             "1NTKmQqoxNs",
@@ -5319,7 +5909,7 @@
         "title": "Q&A: Will we get two character slots for Jetpacks and Blade Runners",
         "date": "2021-02-02",
         "topics": [
-            "features\/equipment",
+            "features\/equipment\/blade-runners",
             "features\/equipment\/jetpack",
             "technology\/user-interface"
         ],
@@ -6248,7 +6838,8 @@
         "title": "Q&A: New teaser this thursday\/friday?",
         "date": "2021-01-26",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-4"
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/teasers-trailers"
         ],
         "suggested": [
             "1NTKmQqoxNs",
@@ -8884,7 +9475,8 @@
         "date": "2021-01-12",
         "topics": [
             "features\/buildings\/blender",
-            "satisfactory-updates\/pending\/satisfactory-update-4"
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/teasers-trailers"
         ],
         "seealso": [
             "1NTKmQqoxNs",
@@ -9929,8 +10521,7 @@
         "title": "Q&A: More emotes?",
         "date": "2020-12-15",
         "topics": [
-            "features\/emotes",
-            "technology\/user-interface"
+            "features\/emotes"
         ],
         "duplicatedby": "dBNJrDsc_XU"
     },
@@ -10496,7 +11087,8 @@
         "title": "Q&A: Any Update 4 teaser videos?",
         "date": "2020-12-08",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-4"
+            "satisfactory-updates\/pending\/satisfactory-update-4",
+            "satisfactory-updates\/teasers-trailers"
         ],
         "seealso": [
             "Z-GAgR2VYXk"
@@ -12788,7 +13380,7 @@
         "title": "Q&A: When do we get Twitch Subscribe\/Emote options?",
         "date": "2020-11-17",
         "topics": [
-            "features\/emotes"
+            "features\/possible-features\/third-party-service-integration"
         ],
         "seealso": [
             "wvvaIdmUTT0"
@@ -15105,7 +15697,8 @@
         "title": "Q&A: What was with the song?",
         "date": "2020-10-27",
         "topics": [
-            "satisfactory-updates\/released\/satisfactory-fluids-update"
+            "satisfactory-updates\/released\/satisfactory-fluids-update",
+            "satisfactory-updates\/teasers-trailers"
         ]
     },
     "8I6SrlovQvo": {
@@ -15232,7 +15825,8 @@
         "date": "2020-10-20",
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-update-4",
-            "satisfactory-updates\/released\/satisfactory-fluids-update"
+            "satisfactory-updates\/released\/satisfactory-fluids-update",
+            "satisfactory-updates\/teasers-trailers"
         ],
         "suggested": [
             "1NTKmQqoxNs",
@@ -16022,7 +16616,8 @@
         "title": "Q&A: Is that not actual gameplay footage?",
         "date": "2020-10-13",
         "topics": [
-            "features\/buildings\/packager"
+            "features\/buildings\/packager",
+            "satisfactory-updates\/teasers-trailers"
         ]
     },
     "MY9wSTT45O4": {
@@ -17027,7 +17622,8 @@
         "title": "Q&A: Did we release any information on what's expected next update?",
         "date": "2020-10-06",
         "topics": [
-            "satisfactory-updates\/released\/satisfactory-fluids-update"
+            "satisfactory-updates\/released\/satisfactory-fluids-update",
+            "satisfactory-updates\/teasers-trailers"
         ]
     },
     "JkSvpUl7jX8": {
@@ -21819,7 +22415,9 @@
     "mybTuUCtTMY": {
         "title": "Q&A: Will we have a Content teaser?",
         "date": "2020-09-01",
-        "topics": []
+        "topics": [
+            "satisfactory-updates\/teasers-trailers"
+        ]
     },
     "n0CJicUwDF8": {
         "title": "Q&A: Will you be able to switch the mousewheel rotation with the hotbar?",
@@ -32551,7 +33149,8 @@
         "topics": [
             "features\/buildings\/space-elevator",
             "features\/buildings\/space-elevator\/food-court",
-            "off-topic\/pizza"
+            "off-topic\/pizza",
+            "satisfactory-updates\/teasers-trailers"
         ],
         "seealso": [
             "YNogQuanQlc"
@@ -32636,7 +33235,9 @@
     "yt-W1E6EWrAsII,492.52,520.44": {
         "title": "Q&A: Was the trailer a cinematic, or shot in-engine?",
         "date": "2018-06-22",
-        "topics": [],
+        "topics": [
+            "satisfactory-updates\/teasers-trailers"
+        ],
         "seealso": [
             "tv1pCGiRtkM"
         ]

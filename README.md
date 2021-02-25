@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2020-02-25
+* adding February 23rd, 2021 + topic changes
+
 ## 2020-02-24
 * merged in q-and-a-tracking branch
 
