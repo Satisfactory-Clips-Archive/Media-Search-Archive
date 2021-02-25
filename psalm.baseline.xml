@@ -8,4 +8,12 @@
       <code>$not_a_livestream_date_lookup</code>
     </UnusedVariable>
   </file>
+  <file src="app/src/Questions.php">
+    <ReferenceConstraintViolation occurrences="1">
+      <code>$cache</code>
+    </ReferenceConstraintViolation>
+    <UndefinedDocblockClass occurrences="1">
+      <code>$cache = null</code>
+    </UndefinedDocblockClass>
+  </file>
 </files>

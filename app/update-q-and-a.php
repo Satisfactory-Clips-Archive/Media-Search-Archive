@@ -137,7 +137,7 @@ echo "\n";
 /** @var string|null */
 $last_faq_date = null;
 
-foreach ($faq as $video_id => $faq_duplicates) {
+foreach (array_keys($faq) as $video_id) {
 	$transcription = captions($video_id);
 
 	$faq_date = determine_date_for_video(
