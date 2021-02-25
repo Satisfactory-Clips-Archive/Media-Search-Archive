@@ -206,4 +206,48 @@ class Markdownify
 
 		return $out;
 	}
+
+	public function content_if_video_is_a_duplicate(string $video_id) : string
+	{
+		[$existing] = $this->questions->process();
+
+		/** @var string|null */
+		$found = $existing[$video_id]['duplicatedby'] ?? null;
+
+		if (null === $found) {
+			return '';
+		}
+		$found_date = determine_date_for_video(
+			$found,
+			$this->injected->cache['playlists'],
+			$this->injected->api->dated_playlists()
+		);
+		$playlist_id = array_search(
+			$found_date,
+			$this->injected->api->dated_playlists(), true
+		);
+
+		if ( ! is_string($playlist_id)) {
+			throw new RuntimeException(sprintf(
+				'Could not find playlist id for %s',
+				$video_id
+			));
+		}
+
+		return sprintf(
+			(
+				"\n" .
+				'This question was possibly duplicated with a more recent answer: %s'
+				. "\n"
+			),
+			maybe_transcript_link_and_video_url(
+				$found,
+				(
+					$this->injected->friendly_dated_playlist_name($playlist_id)
+					. ' '
+					. $this->injected->cache['playlistItems'][$found][1]
+				)
+			)
+		);
+	}
 }

@@ -630,6 +630,16 @@ foreach ($all_video_ids as $video_id) {
 			'./',
 			$markdownify->content_if_video_has_other_parts($video_id)
 		)
+		. str_replace(
+			'./transcriptions/',
+			'./',
+			$markdownify->content_if_video_is_a_duplicate($video_id)
+		)
+		. str_replace(
+			'./transcriptions/',
+			'./',
+			$markdownify->content_if_video_has_duplicates($video_id)
+		)
 		. "\n\n"
 		. '### Topics' . "\n"
 		. implode("\n", array_map(
