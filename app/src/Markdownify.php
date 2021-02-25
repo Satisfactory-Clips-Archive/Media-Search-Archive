@@ -14,10 +14,8 @@ use function date;
 use function end;
 use function in_array;
 use function is_string;
-use function preg_replace;
 use RuntimeException;
 use function sprintf;
-use function str_replace;
 use function strtotime;
 use function uasort;
 
