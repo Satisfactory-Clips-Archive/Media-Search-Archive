@@ -52,12 +52,9 @@ $out = [];
 	$global_topic_hierarchy,
 ] = prepare_injections($api, $slugify);
 
-$dated_playlists = array_map(
-	static function (string $filename) : string {
-		return mb_substr($filename, 0, -3);
-	},
+$dated_playlists =
 	$api->dated_playlists()
-);
+;
 
 $topics = [];
 
