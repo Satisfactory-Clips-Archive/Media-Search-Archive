@@ -6,16 +6,12 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
-use function array_diff;
 use function array_filter;
 use function array_intersect;
 use function array_keys;
 use function array_search;
 use function array_values;
 use function count;
-use function current;
-use function date;
-use function end;
 use const FILE_APPEND;
 use function file_put_contents;
 use function in_array;
@@ -31,8 +27,6 @@ use function preg_replace;
 use RuntimeException;
 use function sprintf;
 use function str_replace;
-use function strtotime;
-use function uasort;
 
 require_once (__DIR__ . '/../vendor/autoload.php');
 require_once (__DIR__ . '/global-topic-hierarchy.php');
