@@ -772,9 +772,11 @@ $not_a_livestream = [
 	'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
 	'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO' => 'Teasers',
 	'2021-01-22' => 'Instagram AMA',
+	'2021-02-26' => 'Instagram AMA',
 ];
 
 $not_a_livestream_date_lookup = [
+	'2021-02-26' => '2021-02-26',
 	'2021-01-22' => '2021-01-22',
 	'2021-01-15' => 'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ',
 	'2020-12-11' => 'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW',

@@ -424,7 +424,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 			'stubPlaylists' => [],
 		];
 
-		foreach (get_legacy_externals() as $date => $data) {
+		foreach (get_additopnal_externals() as $date => $data) {
 			[$dated_playlist_id, $playlist_name] = determine_playlist_id(
 				$date,
 				$cache,
@@ -448,7 +448,10 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 					$video['title'],
 				];
 
-				$injected_cache['videoTags'][$video_id] = ['', $video['tags']];
+				$injected_cache['videoTags'][$video_id] = [
+					'',
+					$video['tags'] ?? []
+				];
 
 				foreach ($video['topics'] as $topic) {
 					[$topic_id, $topic_name] = determine_playlist_id(
@@ -469,7 +472,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 					$injected_cache['playlists'][$topic_id][2][] = $video_id;
 				}
 
-				foreach ($video['legacyof'] as $legacyof) {
+				foreach (($video['legacyof'] ?? []) as $legacyof) {
 					if ( ! isset($injected_cache['legacyAlts'][$legacyof])) {
 						$injected_cache['legacyAlts'][$legacyof] = [];
 					}
@@ -1431,7 +1434,7 @@ function get_externals() : array
  *	legacyof:list<string>
  * }>>
  */
-function get_legacy_externals() : array
+function get_additopnal_externals() : array
 {
 	$inject_externals = array_filter(
 		glob(__DIR__ . '/../data/externals/*.json'),
@@ -1663,6 +1666,68 @@ function process_externals(
 		);
 
 		if ($write_files) {
+			if (
+				file_exists(
+					__DIR__
+					. '/../data/externals/'
+					. $date
+					. '.json'
+				)
+			) {
+				[, $playlist_friendly_name] = determine_playlist_id(
+					$date,
+					$cache,
+					$not_a_livestream,
+					$not_a_livestream_date_lookup
+				);
+
+				if (preg_match('/^title: ".+"\n$/', $lines_to_write[0][1])) {
+					$lines_to_write[0][1] = preg_replace(
+						'/"\n$/',
+						sprintf(' & %s"' . "\n", $playlist_friendly_name),
+						$lines_to_write[0][1]
+					);
+				}
+
+				/** @var list<string> */
+				$video_ids = array_keys(json_decode(
+					file_get_contents(
+						__DIR__
+						. '/../data/externals/'
+						. $date
+						. '.json'
+					),
+					true
+				));
+
+				usort(
+					$video_ids,
+					static function (string $a, string $b) use ($cache) : int {
+						return strnatcasecmp(
+							$cache['playlistItems'][$a][1],
+							$cache['playlistItems'][$b][1]
+						);
+					}
+				);
+
+				$lines_to_write[0][] = "\n";
+
+				$lines_to_write[0][] = sprintf(
+					'# %s' . "\n",
+					$playlist_friendly_name
+				);
+
+				foreach ($video_ids as $video_id) {
+					$lines_to_write[0][] = sprintf(
+						'* %s ' . "\n",
+						maybe_transcript_link_and_video_url(
+							$video_id,
+							$cache['playlistItems'][$video_id][1]
+						)
+					);
+				}
+			}
+
 			[$processed_lines, $files_with_lines_to_write] = $lines_to_write;
 
 			file_put_contents($filename, '');

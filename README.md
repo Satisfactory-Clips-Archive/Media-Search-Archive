@@ -13,6 +13,7 @@ Static site generator for
 ## 2020-02-26
 * implement search filters
 * updating FAQ implementation
+* adding February 26th, 2021 info video + instagram AMA
 
 ## 2020-02-25
 * adding February 23rd, 2021 + topic changes
