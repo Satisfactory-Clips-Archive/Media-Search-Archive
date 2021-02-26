@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2020-02-26
 * implement search filters
+* updating FAQ implementation
 
 ## 2020-02-25
 * adding February 23rd, 2021 + topic changes

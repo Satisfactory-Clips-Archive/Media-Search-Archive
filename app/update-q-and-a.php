@@ -128,11 +128,14 @@ ob_flush();
 
 ob_start();
 
-echo "\n", '# prototype replacement for faq markdown file', "\n";
-
 $faq = $questions->faq_threshold($duplicates);
 
-echo "\n";
+echo
+	'---', "\n",
+	'title: "Frequently Asked Questions"', "\n",
+	'date: Last Modified', "\n",
+	'---', "\n",
+	'';
 
 /** @var string|null */
 $last_faq_date = null;
@@ -164,30 +167,25 @@ foreach (array_keys($faq) as $video_id) {
 		echo '## [',
 			$injected->friendly_dated_playlist_name($playlist_id),
 			'](',
-			'https://archive.satisfactory.video/',
+			'./',
 			$faq_date,
+			'.md',
 			')',
 			"\n"
 		;
 	}
 
 	echo '### ',
-		preg_replace('/\.md\)/', ')', str_replace(
-			'./',
-			'https://archive.satisfactory.video/',
 			maybe_transcript_link_and_video_url(
 				$video_id,
 				$cache['playlistItems'][$video_id][1]
-			)
-		)),
+		),
 		"\n"
 	;
 
-	echo preg_replace('/\.md\)/', ')', str_replace(
-		'./',
-		'https://archive.satisfactory.video/',
+	echo
 		$markdownify->content_if_video_has_other_parts($video_id, true)
-	));
+	;
 
 	if (count($transcription) > 0) {
 		echo "\n", '<details>', "\n";
@@ -196,19 +194,19 @@ foreach (array_keys($faq) as $video_id) {
 		echo "\n", '</details>', "\n";
 	}
 
-	echo preg_replace('/\.md\)/', ')', str_replace(
-		'./',
-		'https://archive.satisfactory.video/',
+	echo
 		$markdownify->content_if_video_has_duplicates($video_id, $questions)
-	));
+	;
 
 	echo "\n";
 }
 
 file_put_contents(
-	__DIR__ . '/q-and-a.md',
-	ob_get_clean(),
-	FILE_APPEND
+	(
+		__DIR__
+		. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/FAQ.md'
+	),
+	ob_get_clean()
 );
 
 $data = str_replace(PHP_EOL, "\n", json_encode($by_topic, JSON_PRETTY_PRINT));
