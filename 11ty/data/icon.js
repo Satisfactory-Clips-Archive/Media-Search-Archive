@@ -4,7 +4,7 @@ const mime = {
 	png: 'image/png',
 	webp: 'image/webp',
 };
-const size = /^logo\-(\d+)\./;
+const size = /logo\-(\d+)\./;
 
 module.exports = glob(
 	'./images/internal/logo*.{svg,png,webp}'
