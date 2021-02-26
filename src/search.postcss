@@ -179,6 +179,7 @@ form
 	}
 }
 
+[aria-labelledby="toggle-transcript-open"],
 [aria-labelledby="sort-order"]
 {
 	display: flex ;
@@ -188,6 +189,8 @@ form
 		position: absolute ;
 		clip-path: inset(50%) ;
 
+		&[value="0"]:not(:checked) ~ label[for="close-transcripts"],
+		&[value="1"]:not(:checked) ~ label[for="open-transcripts"],
 		&[value="b"]:not(:checked) ~ label[for="sort-by-date-ascending"],
 		&[value="d"]:not(:checked) ~ label[for="sort-by-date"]
 		{

@@ -113,6 +113,37 @@
 						title="Sort by date, newest to oldest"
 					>⬆</label>
 				</section>
+				<section
+					role="group"
+					aria-labelledby="toggle-transcript-open"
+				>
+					<h1
+						id="toggle-transcript-open"
+					>Toggle Transcripts Open</h1>
+					<input
+						id="close-transcripts"
+						type="radio"
+						name="o"
+						value="0"
+						checked
+					>
+					<input
+						id="open-transcripts"
+						type="radio"
+						name="o"
+						value="1"
+					>
+					<label
+						tabindex="0"
+						for="close-transcripts"
+						title="Close all transcripts"
+					>📕</label>
+					<label
+						tabindex="0"
+						for="open-transcripts"
+						title="Open all transcripts"
+					>📖</label>
+				</section>
 				<button type="submit" title="Search">🔎</button>
 			</form>
 		</section>
@@ -126,10 +157,14 @@
 			<h1></h1>
 			<h2></h2>
 			<div></div>
+			<details>
+				<summary>A transcript is available.</summary>
+				<blockquote></blockquote>
+			</details>
+			<!--
 			<h3>Topics</h3>
 			<ul></ul>
-			<h3>Transcript</h3>
-			<aside></aside>
+			-->
 		</section>
 		<!--
 		<button class="copy" type="button">Copy to Clipboard</button>

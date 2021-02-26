@@ -14,6 +14,7 @@ Static site generator for
 * adding February 23rd, 2021 + topic changes
 * duplicates tracking implemented
 * replacements tracking implemented
+* implement open/close transcripts on search
 
 ## 2020-02-24
 * merged in q-and-a-tracking branch

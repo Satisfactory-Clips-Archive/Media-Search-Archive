@@ -104,8 +104,10 @@
 			);
 			const filter_topic = formdata.get('t');
 			const sort_by_ascending = 'd' !== formdata.get('s');
+			const toggle_transcripts_closed = '1' !== formdata.get('o');
 
 			formdata.set('s', sort_by_ascending ? 'b' : 'd');
+			formdata.set('o', toggle_transcripts_closed ? '0' : '1');
 
 			document.head.querySelector('title').textContent = title;
 
@@ -123,6 +125,8 @@
 						encodeURIComponent(formdata.get('t'))
 					}&s=${
 						encodeURIComponent(formdata.get('s'))
+					}&o=${
+						encodeURIComponent(formdata.get('o'))
 					}`
 				);
 			}
@@ -210,7 +214,21 @@
 						date_format(doc_date)
 						+ ' Livestream'
 					);
+
+					if ('' !== doc.transcription) {
+						const title = node.querySelector('h2');
+						title.textContent = '';
+						const title_link = document.createElement('a');
+						title_link.setAttribute('href', `/transcriptions/${
+							doc.id
+						}`);
+						title_link.textContent = doc.title;
+						title_link.setAttribute('target', '_blank');
+
+						title.appendChild(title_link);
+					} else {
 					node.querySelector('h2').textContent = doc.title;
+					}
 
 					if (doc.urls.length > 1) {
 						var urls_dest = document.createElement('ol');
@@ -243,6 +261,13 @@
 						urls_dest.appendChild(anchor);
 					}
 
+					/*
+					if (doc.topics.length < 1) {
+						[...node.querySelectorAll('h3, ul')].forEach((e) => {
+							e.parentNode.removeChild(e);
+						});
+					}
+
 					doc.topics.map((topic) => {
 						const subnode = document.createElement('li');
 						const anchor = document.createElement('a');
@@ -258,11 +283,24 @@
 					}).forEach((subnode) => {
 						node.querySelector('ul').appendChild(subnode);
 					});
+					*/
 
 					node.querySelector('section').replaceChild(urls_dest, node.querySelector('div'));
 
-					const transcription = node.querySelector('aside');
+					const transcription = node.querySelector('details > blockquote');
+					if ('' !== doc.transcription) {
 					transcription.textContent = doc.transcription;
+					} else {
+						transcription.parentNode.parentNode.removeChild(
+							transcription.parentNode
+						);
+					}
+
+					if (toggle_transcripts_closed) {
+						transcription.parentNode.removeAttribute('open');
+					} else {
+						transcription.parentNode.setAttribute('open', true);
+					}
 
 					/*
 					const positions = [];
@@ -334,6 +372,12 @@
 				}
 			}
 
+			if ( ! params.has('o') || '1' !== params.get('o')) {
+				toggle_transcripts_closed_input.checked = true;
+			} else {
+				toggle_transcripts_open_input.checked = true;
+			}
+
 			date_from_output_update();
 			date_to_output_update();
 			perform_search(on_index, modify_state);
@@ -391,6 +435,12 @@
 	);
 	const sort_by_date_input = form.querySelector(
 		'[name="s"][value="d"]'
+	);
+	const toggle_transcripts_closed_input = form.querySelector(
+		'[name="o"][value="0"]'
+	);
+	const toggle_transcripts_open_input = form.querySelector(
+		'[name="o"][value="1"]'
 	);
 	const date_output = form.querySelector('output[for="date-from date-to"]');
 	const date_from_output = date_output.querySelector('[for="date-from"]');
@@ -644,20 +694,18 @@
 	};
 	hashsearch(false, false);
 
-	sort_by_date_ascending_input.addEventListener('input', () => {
+	const refresh_search = () => {
 		const params = new URLSearchParams(location.search);
 
 		if (params.has('q')) {
 			perform_search(false, false);
 		}
-	});
-	sort_by_date_input.addEventListener('input', () => {
-		const params = new URLSearchParams(location.search);
+	};
 
-		if (params.has('q')) {
-			perform_search(false, false);
-		}
-	});
+	sort_by_date_ascending_input.addEventListener('input', refresh_search);
+	sort_by_date_input.addEventListener('input', refresh_search);
+	toggle_transcripts_closed_input.addEventListener('input', refresh_search);
+	toggle_transcripts_open_input.addEventListener('input', refresh_search);
 
 	document.body.firstElementChild.parentNode.replaceChild(
 		ready,
