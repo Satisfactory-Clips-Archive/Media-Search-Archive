@@ -13703,6 +13703,7 @@
         "title": "Q&A: Why is there a Coffee Cup in the HUB called \"BRY\"?",
         "date": "2020-12-15",
         "topics": [
+            "easter-eggs",
             "features\/buildings\/the-hub"
         ],
         "seealso": [
@@ -16857,7 +16858,9 @@
     "6z70mPmDc5g": {
         "title": "Q&A: Any Easter Eggs nobody's found yet?",
         "date": "2020-11-10",
-        "topics": [],
+        "topics": [
+            "easter-eggs"
+        ],
         "duplicatedby": "57Cc22ZK5aw"
     },
     "uVGH_lZnc2g": {
@@ -28604,7 +28607,8 @@
         "title": "Q&A: We need some more Easter Egg hints from Hannah?",
         "date": "2020-08-25",
         "topics": [
-            "coffee-stainers\/hannah"
+            "coffee-stainers\/hannah",
+            "easter-eggs"
         ],
         "duplicatedby": "57Cc22ZK5aw"
     },
@@ -33267,6 +33271,7 @@
         "title": "Q&A: Are there any Easter Eggs in the landscape?",
         "date": "2019-12-19",
         "topics": [
+            "easter-eggs",
             "environment\/world-map"
         ],
         "duplicatedby": "57Cc22ZK5aw"
@@ -33429,6 +33434,7 @@
         "title": "Q&A: Can we put the \"Nani\u203d\" back in?",
         "date": "2019-12-19",
         "topics": [
+            "easter-eggs",
             "features\/crafting",
             "technology\/user-interface"
         ]
@@ -36034,6 +36040,7 @@
         "title": "Q&A: Are there going to be collectables\/easter eggs\/shrines to your previous games hidden around?",
         "date": "2019-02-06",
         "topics": [
+            "easter-eggs",
             "environment\/world-map"
         ],
         "seealso": [
