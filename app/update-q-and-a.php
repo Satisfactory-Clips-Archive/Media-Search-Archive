@@ -12,7 +12,6 @@ use function array_keys;
 use function array_search;
 use function array_values;
 use function count;
-use const FILE_APPEND;
 use function file_put_contents;
 use function in_array;
 use function is_string;
@@ -23,7 +22,6 @@ use function ob_get_clean;
 use function ob_get_contents;
 use function ob_start;
 use const PHP_EOL;
-use function preg_replace;
 use RuntimeException;
 use function sprintf;
 use function str_replace;
@@ -130,8 +128,7 @@ ob_start();
 
 $faq = $questions->faq_threshold($duplicates);
 
-echo
-	'---', "\n",
+echo '---', "\n",
 	'title: "Frequently Asked Questions"', "\n",
 	'date: Last Modified', "\n",
 	'---', "\n",
@@ -183,8 +180,7 @@ foreach (array_keys($faq) as $video_id) {
 		"\n"
 	;
 
-	echo
-		$markdownify->content_if_video_has_other_parts($video_id, true)
+	echo $markdownify->content_if_video_has_other_parts($video_id, true)
 	;
 
 	if (count($transcription) > 0) {
@@ -194,8 +190,7 @@ foreach (array_keys($faq) as $video_id) {
 		echo "\n", '</details>', "\n";
 	}
 
-	echo
-		$markdownify->content_if_video_has_duplicates($video_id, $questions)
+	echo $markdownify->content_if_video_has_duplicates($video_id, $questions)
 	;
 
 	echo "\n";
