@@ -203,7 +203,7 @@ function maybe_transcript_link_and_video_url(
 			);
 		}
 
-		return $initial_segment . ' ' . $url;
+		return $initial_segment . ' [' . $url . '](' . $url . ')';
 	}
 
 	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
@@ -232,7 +232,7 @@ function maybe_transcript_link_and_video_url(
 		}
 	}
 
-	return $initial_segment . ' ' . $url;
+	return $initial_segment . ' [' . $url . '](' . $url . ')';
 }
 
 function vendor_prefixed_video_id(string $video_id) : string
