@@ -79,11 +79,6 @@ if ( ! is_string($playlist_satisfactory)) {
 }
 
 /** @var array<string, string> */
-$playlist_metadata = [
-	$playlist_satisfactory => __DIR__ . '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/',
-];
-
-/** @var array<string, string> */
 $playlists = array_map(
 	static function (string $filename) : string {
 		return
@@ -932,14 +927,6 @@ file_put_contents(__DIR__ . '/topic-slug-history.json', json_encode(
 ));
 
 usleep(100);
-
-$legacy_alts = array_reduce(
-	$cache['legacyAlts'],
-	static function (array $out, array $video_ids) : array {
-		return array_merge($out, array_diff($video_ids, $out));
-	},
-	[]
-);
 
 $save_path =
 	__DIR__
