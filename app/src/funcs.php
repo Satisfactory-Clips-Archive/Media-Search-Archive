@@ -1719,7 +1719,7 @@ function process_externals(
 
 				foreach ($video_ids as $video_id) {
 					$lines_to_write[0][] = sprintf(
-						'* %s ' . "\n",
+						'* %s' . "\n",
 						maybe_transcript_link_and_video_url(
 							$video_id,
 							$cache['playlistItems'][$video_id][1]
