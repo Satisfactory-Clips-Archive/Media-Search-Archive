@@ -105,9 +105,13 @@
 			const filter_topic = formdata.get('t');
 			const sort_by_ascending = 'd' !== formdata.get('s');
 			const toggle_transcripts_closed = '1' !== formdata.get('o');
+			const filter_results = '1' === formdata.get('f');
+			const qandaonly = '1' === formdata.get('a');
 
 			formdata.set('s', sort_by_ascending ? 'b' : 'd');
 			formdata.set('o', toggle_transcripts_closed ? '0' : '1');
+			formdata.set('f', filter_results ? '1' : '0');
+			formdata.set('a', qandaonly ? '1' : '0');
 
 			document.head.querySelector('title').textContent = title;
 
@@ -127,6 +131,10 @@
 						encodeURIComponent(formdata.get('s'))
 					}&o=${
 						encodeURIComponent(formdata.get('o'))
+					}&f=${
+						encodeURIComponent(formdata.get('f'))
+					}&a=${
+						encodeURIComponent(formdata.get('a'))
 					}`
 				);
 			}
@@ -170,6 +178,65 @@
 				);
 			});
 
+			if (qandaonly) {
+				docs_results = docs_results.filter((maybe) => {
+					return /^q&a:/i.test(maybe[0].title);
+				});
+			}
+
+			if (filter_results) {
+				const docs_results_ids = docs_results.map((e) => {
+					return e[0].id;
+				});
+
+				docs_results = docs_results.filter((maybe) => {
+					const vendor_id = maybe[0].id;
+					let id = maybe[0].id;
+
+					if (14 === id.length) {
+						id = id.substr(3);
+					}
+
+					if (
+						id in qandatracking
+						&& (
+							(
+								(
+									qandatracking[id].duplicatedby
+									?? false
+								)
+								&& (
+									docs_results_ids.includes(
+										qandatracking[id].duplicatedby
+									)
+									|| docs_results_ids.includes(
+										'yt-' + qandatracking[id].duplicatedby
+									)
+								)
+							)
+							|| (
+								(
+									qandatracking[id].replacedby
+									?? false
+								)
+								&& (
+									docs_results_ids.includes(
+										qandatracking[id].replacedby
+									)
+									|| docs_results_ids.includes(
+										'yt-' + qandatracking[id].replacedby
+									)
+								)
+							)
+						)
+					) {
+						return false;
+					}
+
+					return true;
+				});
+			}
+
 			const sorter = sort_by_ascending
 				? (a, b) => {
 					const aint = parseInt(a[0].date.replace(/\-/g, ''), 10);
@@ -209,6 +276,8 @@
 					const [doc, result] = e;
 					const node = search_result_template.cloneNode(true);
 					const doc_date = new Date(doc.date);
+
+					node.querySelector('li').dataset.docId = doc.id;
 
 					node.querySelector('h1').textContent = (
 						date_format(doc_date)
@@ -378,6 +447,18 @@
 				toggle_transcripts_open_input.checked = true;
 			}
 
+			if ( ! params.has('f') || '0' !== params.get('f')) {
+				filter_results_checkbox.checked = true;
+			} else {
+				filter_results_checkbox.checked = false;
+			}
+
+			if ( ! params.has('a') || '1' !== params.get('a')) {
+				qandaonly_checkbox.checked = false;
+			} else {
+				qandaonly_checkbox.checked = true;
+			}
+
 			date_from_output_update();
 			date_to_output_update();
 			perform_search(on_index, modify_state);
@@ -442,6 +523,8 @@
 	const toggle_transcripts_open_input = form.querySelector(
 		'[name="o"][value="1"]'
 	);
+	const filter_results_checkbox = form.querySelector('[name="f"]');
+	const qandaonly_checkbox = form.querySelector('[name="a"]');
 	const date_output = form.querySelector('output[for="date-from date-to"]');
 	const date_from_output = date_output.querySelector('[for="date-from"]');
 	const date_to_output = date_output.querySelector('[for="date-to"]');
@@ -534,6 +617,7 @@
 	const fetches = {};
 
 	[
+		'/data/q-and-a-tracking.json',
 		'/lunr/search.json',
 		'/synonyms.json',
 		'/topics.json'
@@ -555,15 +639,18 @@
 		fetches[path] = preload.href;
 	});
 
+	const fetch_qandatracking = fetch(fetches['/data/q-and-a-tracking.json']);
 	const fetch_searches = fetch(fetches['/lunr/search.json']);
 	const fetch_synonyms = fetch(fetches['/synonyms.json']);
 	const fetch_topics = fetch(fetches['/topics.json']);
 
 	const [
+		qandatracking,
 		searches,
 		synonyms,
 		topics,
 	] = await Promise.all((await Promise.all([
+		fetch_qandatracking,
 		fetch_searches,
 		fetch_synonyms,
 		fetch_topics,
@@ -702,10 +789,16 @@
 		}
 	};
 
-	sort_by_date_ascending_input.addEventListener('input', refresh_search);
-	sort_by_date_input.addEventListener('input', refresh_search);
-	toggle_transcripts_closed_input.addEventListener('input', refresh_search);
-	toggle_transcripts_open_input.addEventListener('input', refresh_search);
+	[
+		sort_by_date_ascending_input,
+		sort_by_date_input,
+		toggle_transcripts_closed_input,
+		toggle_transcripts_open_input,
+		filter_results_checkbox,
+		qandaonly_checkbox,
+	].forEach((e) => {
+		e.addEventListener('input', refresh_search);
+	})
 
 	document.body.firstElementChild.parentNode.replaceChild(
 		ready,

@@ -17,7 +17,10 @@ const replace = require('gulp-replace');
 const sitemap = require('gulp-sitemap');
 const clean = require('gulp-clean');
 const json_transform = require('gulp-json-transform');
-const {readFileSync} = require('fs');
+const {
+	readFileSync,
+	writeFileSync,
+} = require('fs');
 const inline_source = require('gulp-inline-source');
 const lunr = require('lunr');
 
@@ -257,6 +260,30 @@ gulp.task('sitemap', () => {
 	)
 });
 
+gulp.task('q-and-a-tracking', (cb) => {
+	const data = Object.fromEntries(Object.entries(
+		require('./app/data/q-and-a.json')
+	).map((e) => {
+		const [video_id, video_data] = e;
+
+		return [
+			video_id,
+			{
+				date: video_data.date,
+				duplicates: video_data.duplicates,
+				replaces: video_data.replaces,
+				seealso: video_data.seealso,
+				duplicatedby: video_data.duplicatedby || null,
+				replacedby: video_data.replacedby || null,
+			}
+		];
+	}));
+
+	writeFileSync('./src/data/q-and-a-tracking.json', JSON.stringify(data));
+
+	return cb();
+});
+
 gulp.task('sync-tmp-to-store', () => {
 	return gulp.src('./tmp/**/*.{js,css,html,json,xml,gz,br}').pipe(
 		changed(
@@ -275,6 +302,7 @@ gulp.task('sync-tmp-to-store', () => {
 gulp.task('build', gulp.series(
 	'lunr-index',
 	gulp.parallel(
+		'q-and-a-tracking',
 		'sync-lunr',
 		'css',
 		'topics',

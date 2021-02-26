@@ -11,6 +11,7 @@
 <link rel="preload" as="fetch" crossorigin="anonymous" href="/lunr/search.json">
 <link rel="preload" as="fetch" crossorigin="anonymous" href="/synonyms.json">
 <link rel="preload" as="fetch" crossorigin="anonymous" href="/topics.json">
+<link rel="preload" as="fetch" crossorigin="anonymous" href="/data/q-and-a-tracking.json">
 <template id="loading">
 	<section>
 		<header>Loading</header>
@@ -143,6 +144,26 @@
 						for="open-transcripts"
 						title="Open all transcripts"
 					>📖</label>
+				</section>
+				<section>
+					<input
+						id="filter-results"
+						name="f"
+						value="1"
+						type="checkbox"
+						checked
+					>
+					<label for="filter-results">Filter Results</label>
+				</section>
+				<section>
+					<input
+						id="q-and-a-only"
+						name="a"
+						value="1"
+						type="checkbox"
+						checked
+					>
+					<label for="q-and-a-only">Q&amp;A Only</label>
 				</section>
 				<button type="submit" title="Search">🔎</button>
 			</form>
