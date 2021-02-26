@@ -434,10 +434,10 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 
 			if ( ! isset($injected_cache['playlists'][$dated_playlist_id])) {
 				$injected_cache['playlists'][$dated_playlist_id] = [
-				'',
-				$playlist_name,
-				[],
-			];
+					'',
+					$playlist_name,
+					[],
+				];
 			}
 
 			foreach ($data as $video_id => $video) {
