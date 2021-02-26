@@ -289,7 +289,7 @@
 
 					const transcription = node.querySelector('details > blockquote');
 					if ('' !== doc.transcription) {
-					transcription.textContent = doc.transcription;
+						transcription.textContent = doc.transcription;
 					} else {
 						transcription.parentNode.parentNode.removeChild(
 							transcription.parentNode
@@ -313,10 +313,10 @@
 						);
 					});
 					try {
-					lunrhighlighter(
-						transcription,
-						positions
-					);
+						lunrhighlighter(
+							transcription,
+							positions
+						);
 					} catch (err) {
 						console.error(err);
 					}
