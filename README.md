@@ -6,7 +6,7 @@ Static site generator for
 
 # See Also
 
-* [Satisfactory Q&A Clips Archive](https://archive.satisfactory.video/) - Serves as an archive for Q&A Clips for Coffee Stain Studio's Satisfactory-related livestream
+* [Satisfactory Q&A Clips Archive](https://archive.satisfactory.video/) - Serves as an archive for Q&A Clips for Coffee Stain Studio's Satisfactory-related livestreams & other videos.
 
 # Changelog
 
