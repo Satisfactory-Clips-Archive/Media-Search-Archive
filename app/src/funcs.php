@@ -1690,7 +1690,7 @@ function process_externals(
 				}
 
 				/** @var list<string> */
-				$video_ids = array_keys(json_decode(
+				$video_ids = array_keys((array) json_decode(
 					file_get_contents(
 						__DIR__
 						. '/../data/externals/'
