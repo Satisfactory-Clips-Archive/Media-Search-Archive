@@ -13,24 +13,24 @@ Static site generator for
 ## 2021-03-01
 * use data-driven FAQ page instead of markdown-driven FAQ page
 
-## 2020-02-28
+## 2021-02-28
 * adding support for custom transcripts
 
-## 2020-02-26
+## 2021-02-26
 * implement search filters
 * updating FAQ implementation
 * adding February 26th, 2021 info video + instagram AMA
 
-## 2020-02-25
+## 2021-02-25
 * adding February 23rd, 2021 + topic changes
 * duplicates tracking implemented
 * replacements tracking implemented
 * implement open/close transcripts on search
 
-## 2020-02-24
+## 2021-02-24
 * merged in q-and-a-tracking branch
 
-## 2020-02-20
+## 2021-02-20
 * fixed bugs identified in handling of external youtube videos
 
 ## 2021-02-19
