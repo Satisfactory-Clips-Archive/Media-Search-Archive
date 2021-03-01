@@ -1131,7 +1131,54 @@ function captions(string $video_id) : array
 		return [];
 	}
 
-	[, $xml_lines] = $maybe;
+	if (array_key_exists(0, $maybe) && null === $maybe[0]) {
+		/**
+		 * @var list<array{
+		 *	position: positive-int,
+		 *	item: array{
+		 *		line:string,
+		 *		time: array{
+		 *			start:string,
+		 *			end:string
+		 *		},
+		 *		speaker?:list<string>,
+		 *		position?:positive-int,
+		 *		align?:'start'|'center'|'end'
+		 *	}
+		 * }>
+		 */
+		$lines = $maybe[1];
+
+		/** @var string|null */
+		$last_speaker = null;
+
+		return array_map(
+			static function (array $line) use (& $last_speaker) : string {
+				$out = preg_replace(
+					'/\s+/',
+					' ',
+					str_replace("\n", ' ', $line['item']['line'])
+				);
+
+
+				if (isset($line['item']['speaker'])) {
+					$current_speaker = implode(', ', $line['item']['speaker']);
+
+					if ($last_speaker !== $current_speaker) {
+						$last_speaker = $current_speaker;
+
+						$out = $current_speaker . ': ' . $out;
+					}
+				}
+
+				return $out;
+			},
+			$lines
+		);
+	}
+
+	/** @var list<SimpleXMLElement> */
+	$xml_lines = $maybe[1];
 
 	$lines = [];
 
@@ -1149,7 +1196,21 @@ function captions(string $video_id) : array
 }
 
 /**
- * @return array<empty, empty>|array{0:SimpleXMLElement, 1:list<SimpleXMLElement>}
+ * @psalm-type JSON = list<array{
+ *	position: positive-int,
+ *	item: array{
+ *		line:string,
+ *		time: array{
+ *			start:string,
+ *			end:string
+ *		},
+ *		speaker?:list<string>,
+ *		position?:positive-int,
+ *		align?:'start'|'center'|'end'
+ *	}
+ * >
+ *
+ * @return array<empty, empty>|array{0:SimpleXMLElement, 1:list<SimpleXMLElement>}|array{0:null, JSON}
  */
 function raw_captions(string $video_id) : array
 {
@@ -1161,6 +1222,37 @@ function raw_captions(string $video_id) : array
 	}
 
 	$video_id = preg_replace('/^yt-(.{11})/', '$1', $video_id);
+
+	$json_source =
+		__DIR__
+		. '/../../Media-Archive-Metadata/transcriptions/'
+		. vendor_prefixed_video_id($video_id)
+		. '.json';
+
+	if (is_file($json_source)) {
+		/**
+		 * @var array{
+		 *	inLanguage: 'en'|'en-US'|'en-GB',
+		 *	url:string,
+		 *	about: array{
+		 *		itemListElement: JSON
+		 *	}
+		 * }
+		 */
+		$transcript = json_decode(
+			file_get_contents($json_source),
+			true
+		);
+
+		usort(
+			$transcript['about']['itemListElement'],
+			static function (array $a, array $b) : int {
+				return $a['position'] <=> $b['position'];
+			}
+		);
+
+		return [null, $transcript['about']['itemListElement']];
+	}
 
 	$html_cache = __DIR__ . '/../captions/' . $video_id . '.html';
 
@@ -1824,7 +1916,20 @@ function process_dated_csv(
 	/** @var list<array{0:numeric-string|'', 1:numeric-string|'', 2:string}> */
 	$captions_with_start_time = [];
 
-	foreach (($captions[1] ?? []) as $caption_line) {
+	if (
+		array_key_exists(0, $captions)
+		&& array_key_exists(1, $captions)
+		&& null === $captions[0]
+	) {
+		throw new RuntimeException(
+			'JSON transcription not yet supported here!'
+		);
+	}
+
+	/** @var list<SimpleXmlElement> */
+	$lines = ($captions[1] ?? []);
+
+	foreach ($lines as $caption_line) {
 		$attrs = iterator_to_array(
 			$caption_line->attributes()
 		);

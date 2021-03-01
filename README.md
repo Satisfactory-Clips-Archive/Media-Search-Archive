@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2020-02-28
+* adding support for custom transcripts
+
 ## 2020-02-26
 * implement search filters
 * updating FAQ implementation
