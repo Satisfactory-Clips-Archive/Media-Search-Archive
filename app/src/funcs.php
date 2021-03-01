@@ -11,6 +11,7 @@ use function array_diff;
 use function array_filter;
 use const ARRAY_FILTER_USE_BOTH;
 use const ARRAY_FILTER_USE_KEY;
+use function array_key_exists;
 use function array_keys;
 use function array_map;
 use function array_merge;
@@ -32,6 +33,7 @@ use function explode;
 use function fclose;
 use function fgetcsv;
 use const FILE_APPEND;
+use function file_exists;
 use function file_get_contents;
 use function file_put_contents;
 use function floor;
@@ -450,7 +452,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 
 				$injected_cache['videoTags'][$video_id] = [
 					'',
-					$video['tags'] ?? []
+					$video['tags'] ?? [],
 				];
 
 				foreach ($video['topics'] as $topic) {
@@ -1153,13 +1155,12 @@ function captions(string $video_id) : array
 		$last_speaker = null;
 
 		return array_map(
-			static function (array $line) use (& $last_speaker) : string {
+			static function (array $line) use (&$last_speaker) : string {
 				$out = preg_replace(
 					'/\s+/',
 					' ',
 					str_replace("\n", ' ', $line['item']['line'])
 				);
-
 
 				if (isset($line['item']['speaker'])) {
 					$current_speaker = implode(', ', $line['item']['speaker']);
