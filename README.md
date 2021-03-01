@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-03-01
+* use data-driven FAQ page instead of markdown-driven FAQ page
+
 ## 2020-02-28
 * adding support for custom transcripts
 

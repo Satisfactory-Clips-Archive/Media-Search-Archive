@@ -1,0 +1,66 @@
+---
+title: "Frequently Asked Questions"
+date: Last Modified
+layout: faq
+---
+{% for date_title, dated_data in faq %}
+<h2><a href="/{{date_title.split('_')[0]}}/">{{date_title.split('_')[1]}}</a></h2>
+{% for video_id, video_data in dated_data %}
+{% if video_data[3].length > 0 %}
+<section
+	itemscope
+	itemprop="mainEntity"
+	itemtype="https://schema.org/Question"
+>
+<h3>{% if '' !== video_data[1] %}<a
+	itemprop="url"
+	target="_blank"
+	href="{{video_data[1]}}"
+><span itemprop="name">{{
+	video_data[0]
+}}</span></a>{% else %}<span itemprop="name">{{
+	video_data[0]
+}}</span>{% endif %}
+	<a
+		itemprop="url"
+		target="_blank"
+		rel="noopener"
+		href="{{video_data[2]}}"
+	>{{video_data[2]}}</a>
+</h3>{% else %}
+<section>
+<h3>{% if '' !== video_data[1] %}<a
+	target="_blank"
+	href="{{video_data[1]}}"
+>{{video_data[0]}}</a>{% else %}{{video_data[0]}}{% endif %}
+	<a
+		target="_blank"
+		rel="noopener"
+		href="{{video_data[2]}}"
+	>{{video_data[2]}}</a>
+</h3>
+{% endif %}
+{% if video_data[3].length > 0 %}
+<details itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+	<summary>A transcript is available</summary>
+	<blockquote itemprop="text"><p>{{
+		video_data[3].join('</p>' + "\n" + '<p>')
+		|safe
+	}}</p></blockquote>
+</details>
+{% endif %}
+<details>
+	<summary>{{video_data[4]}}</summary>
+	<ul>
+{% for other_video_id, other_video_data in video_data[5] %}
+		<li>{% if '' !== other_video_data[1]%}
+			<a href="{{other_video_data[1]}}">{{other_video_data[0]}}</a>{%
+	else %}
+			{{other_video_data[0]}}{% endif %}
+			<a href="{{other_video_data[2]}}">{{other_video_data[2]}}
+		</li>
+{% endfor %}
+	</ul>
+</details>
+</section>
+{% endfor %}{% endfor %}

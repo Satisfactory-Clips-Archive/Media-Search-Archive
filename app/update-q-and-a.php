@@ -34,7 +34,9 @@ $filtering = new Filtering();
 $api = new YouTubeApiWrapper();
 $slugify = new Slugify();
 $injected = new Injected($api, $slugify);
-$markdownify = new Markdownify($injected);
+$questions = new Questions($injected);
+$markdownify = new Markdownify($injected, $questions);
+$jsonify = new Jsonify($injected, $questions);
 
 $cache = $injected->cache;
 
@@ -42,7 +44,6 @@ $playlists = $api->dated_playlists();
 
 $all_video_ids = $injected->all_video_ids();
 
-$questions = new Questions($injected);
 
 [$existing, $duplicates] = $questions->process();
 
@@ -137,6 +138,22 @@ echo '---', "\n",
 /** @var string|null */
 $last_faq_date = null;
 
+/**
+ * @var array<string, array<string, array{
+ *	0:string,
+ *	1:string,
+ *	2:string,
+ *	3:list<string>,
+ *	4:string,
+ *	5:array<string, array{0:string, 1:string, 2:string}>,
+ *	6:array<empty, empty>|array{
+ *		0:string,
+ *		1:array{0:string, 1:string, 2:string}
+ *	}
+ * }>>
+ */
+$faq_json = [];
+
 foreach (array_keys($faq) as $video_id) {
 	$transcription = captions($video_id);
 
@@ -158,11 +175,15 @@ foreach (array_keys($faq) as $video_id) {
 		));
 	}
 
+	$friendly_playist_name = $injected->friendly_dated_playlist_name(
+		$playlist_id
+	);
+
 	if ($faq_date !== $last_faq_date) {
 		$last_faq_date = $faq_date;
 
 		echo '## [',
-			$injected->friendly_dated_playlist_name($playlist_id),
+			$friendly_playist_name,
 			'](',
 			'./',
 			$faq_date,
@@ -172,13 +193,91 @@ foreach (array_keys($faq) as $video_id) {
 		;
 	}
 
-	echo '### ',
+	if ( ! isset($faq_json[$faq_date . '_' . $friendly_playist_name])) {
+		$faq_json[$faq_date . '_' . $friendly_playist_name] = [];
+	}
+
+	$link =
 			maybe_transcript_link_and_video_url(
 				$video_id,
 				$cache['playlistItems'][$video_id][1]
-		),
+	);
+
+	echo '### ', $link,
 		"\n"
 	;
+
+	if ( ! preg_match(Jsonify::link_part_regex, $link, $link_parts)) {
+		throw new RuntimeException('Could not determine link parts!');
+	}
+
+	$faq_json[$faq_date . '_' . $friendly_playist_name][$video_id] = [
+		$link_parts[1],
+		'',
+		$link_parts[2],
+		$transcription,
+		$jsonify->description_if_video_has_duplicates($video_id),
+		[],
+		$jsonify->content_if_video_has_other_parts($video_id),
+	];
+
+	if (preg_match(Jsonify::transcript_part_regex, $link_parts[1], $link_parts)) {
+		$faq_json[
+			$faq_date
+			. '_'
+			. $friendly_playist_name
+		][$video_id][0] = $link_parts[1];
+		$faq_json[
+			$faq_date
+			. '_'
+			. $friendly_playist_name
+		][$video_id][1] = $link_parts[2];
+	}
+
+	foreach ($filtered[$video_id]['duplicates'] ?? [] as $other_video_id) {
+
+		if (
+			! preg_match(
+				Jsonify::link_part_regex,
+				maybe_transcript_link_and_video_url(
+					$other_video_id,
+					$cache['playlistItems'][$other_video_id][1]
+				),
+				$link_parts
+			)
+		) {
+			throw new RuntimeException('Could not determine link parts!');
+		}
+
+		$faq_json[
+			$faq_date
+			. '_'
+			. $friendly_playist_name
+		][$video_id][5][$other_video_id] = [
+			$link_parts[1],
+			'',
+			$link_parts[2],
+		];
+
+		if (
+			preg_match(
+				Jsonify::transcript_part_regex,
+				$link_parts[1],
+				$link_parts
+			)
+		) {
+			$faq_json[
+				$faq_date
+				. '_'
+				. $friendly_playist_name
+			][$video_id][5][$other_video_id][0] = $link_parts[1];
+			$faq_json[
+				$faq_date
+				. '_'
+				. $friendly_playist_name
+			][$video_id][5][$other_video_id][1] = $link_parts[2];
+		}
+	}
 
 	echo $markdownify->content_if_video_has_other_parts($video_id, true)
 	;
@@ -214,3 +313,7 @@ $data = str_replace(PHP_EOL, "\n", json_encode(
 ));
 
 file_put_contents(__DIR__ . '/data/all-topic-slugs.json', $data);
+
+$data = str_replace(PHP_EOL, "\n", json_encode($faq_json, JSON_PRETTY_PRINT));
+
+file_put_contents(__DIR__ . '/../11ty/data/faq.json', $data);

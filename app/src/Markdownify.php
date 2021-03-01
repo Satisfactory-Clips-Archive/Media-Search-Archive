@@ -25,10 +25,12 @@ class Markdownify
 
 	private Questions $questions;
 
-	public function __construct(Injected $injected)
-	{
+	public function __construct(
+		Injected $injected,
+		Questions $questions = null
+	) {
 		$this->injected = $injected;
-		$this->questions = new Questions($injected);
+		$this->questions = $questions ?? new Questions($injected);
 	}
 
 	public function content_if_video_has_other_parts(

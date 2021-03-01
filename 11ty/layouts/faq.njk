@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{% if (page.url.startsWith('/topics/')) or ('/FAQ/' === page.url) %}Q&amp;A Clips Archive - {% endif %}{{title}}</title>
+{% include 'head.njk' %}
+<meta property="og:article:modified_time" content="{{page.date.toUTCString()}}">
+</head>
+<body>
+<header>
+	<h1>{% if (page.url.startsWith('/topics/')) or ('/FAQ/' === page.url) %}Q&amp;A Clips Archive - {% endif %}{{title}}</h1>
+{% include 'nav.njk' %}
+</header>
+<main itemscope itemtype="https://schema.org/FAQPage">{{content | safe}}</main>
+{% include 'footer.njk' %}
+</body>
+</html>
