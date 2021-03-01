@@ -22,6 +22,7 @@ use function ob_get_clean;
 use function ob_get_contents;
 use function ob_start;
 use const PHP_EOL;
+use function preg_match;
 use RuntimeException;
 use function sprintf;
 use function str_replace;
@@ -43,7 +44,6 @@ $cache = $injected->cache;
 $playlists = $api->dated_playlists();
 
 $all_video_ids = $injected->all_video_ids();
-
 
 [$existing, $duplicates] = $questions->process();
 
@@ -235,7 +235,6 @@ foreach (array_keys($faq) as $video_id) {
 	}
 
 	foreach ($filtered[$video_id]['duplicates'] ?? [] as $other_video_id) {
-
 		if (
 			! preg_match(
 				Jsonify::link_part_regex,

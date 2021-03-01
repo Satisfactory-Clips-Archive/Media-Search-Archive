@@ -6,7 +6,17 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function array_diff;
+use function array_search;
+use function count;
+use function current;
+use function date;
+use function end;
+use function in_array;
 use RuntimeException;
+use function sprintf;
+use function strtotime;
+use function uasort;
 
 class Jsonify
 {
