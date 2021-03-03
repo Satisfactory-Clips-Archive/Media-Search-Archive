@@ -131,5 +131,13 @@ module.exports = async () => {
 		}
 	})
 
+	out['/FAQ/'] = out['/FAQ/'] || [];
+	out['/FAQ/'].push({
+		'@context': 'https://schema.org',
+		'@type': 'https://schema.org/FAQPage',
+		'url': 'https://archive.satisfactory.video/FAQ/',
+		'about': satisfactory,
+	});
+
 	return out;
 };
