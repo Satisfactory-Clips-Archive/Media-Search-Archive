@@ -844,5 +844,9 @@ $injected_global_topic_hierarchy = [
 		'THQ Nordic' => [
 			'Embracer Group',
 		],
+		'Power Slug' => [
+			'Environment',
+			'Resources',
+		],
 	],
 ];
