@@ -116,12 +116,12 @@ class Markdownify
 
 		$faq_duplicate_dates = [];
 
-		$faq_duplicates_for_date_checking = array_diff(
+		$faq_duplicates_for_date_checking = array_values(array_diff(
 			$faq_duplicates,
 			[
 				$video_id,
 			]
-		);
+		));
 
 		foreach ($faq_duplicates_for_date_checking as $other_video_id) {
 			$faq_duplicate_video_date = determine_date_for_video(
