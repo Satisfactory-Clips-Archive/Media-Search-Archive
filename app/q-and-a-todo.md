@@ -75,3 +75,7 @@ I'm sure there was another question about the build ceiling 🤷‍♂️
 
 # ben tech vlog
 * yt-Dtm6xIj-wM4,3264.910326,3268.219046 - LOD-related question
+
+# external video references
+## ZaVKeo3QXqg
+* add 1dUNmBBbExs as previous
