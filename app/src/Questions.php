@@ -381,6 +381,22 @@ class Questions
 								isset($existing[$seealso]['replacedby'])
 								&& $maybe === $existing[$seealso]['replacedby']
 							)
+							|| (
+								isset($existing[$seealso]['duplicates'])
+								&& in_array(
+									$maybe,
+									$existing[$seealso]['duplicates'],
+									true
+								)
+							)
+							|| (
+								isset($existing[$seealso]['replaces'])
+								&& in_array(
+									$maybe,
+									$existing[$seealso]['replaces'],
+									true
+								)
+							)
 						) {
 							return false;
 						}
