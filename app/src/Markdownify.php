@@ -273,7 +273,7 @@ class Markdownify
 				if ( ! is_string($playlist_id)) {
 					throw new RuntimeException(sprintf(
 						'Could not find playlist id for %s',
-						$video_id
+						$other_video_id
 					));
 				}
 			}
