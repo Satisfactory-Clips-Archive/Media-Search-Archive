@@ -1138,14 +1138,15 @@ function captions(string $video_id) : array
 		 * @var list<array{
 		 *	position: positive-int,
 		 *	item: array{
-		 *		line:string,
+		 *		text:string,
 		 *		time: array{
 		 *			start:string,
 		 *			end:string
 		 *		},
 		 *		speaker?:list<string>,
 		 *		position?:positive-int,
-		 *		align?:'start'|'center'|'end'
+		 *		line?:int,
+		 *		align?:'start'|'middle'|'end'
 		 *	}
 		 * }>
 		 */
@@ -1159,7 +1160,7 @@ function captions(string $video_id) : array
 				$out = preg_replace(
 					'/\s+/',
 					' ',
-					str_replace("\n", ' ', $line['item']['line'])
+					str_replace("\n", ' ', $line['item']['text'])
 				);
 
 				if (isset($line['item']['speaker'])) {
@@ -1200,14 +1201,16 @@ function captions(string $video_id) : array
  * @psalm-type JSON = list<array{
  *	position: positive-int,
  *	item: array{
- *		line:string,
+ *		text:string,
  *		time: array{
  *			start:string,
  *			end:string
  *		},
  *		speaker?:list<string>,
  *		position?:positive-int,
- *		align?:'start'|'center'|'end'
+ *		line?:int,
+ *		size?:positive-int,
+ *		align?:'start'|'middle'|'end'
  *	}
  * >
  *
