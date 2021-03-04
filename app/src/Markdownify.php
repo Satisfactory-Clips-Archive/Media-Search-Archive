@@ -162,7 +162,35 @@ class Markdownify
 			"\n"
 		;
 
-		foreach ($faq_duplicates_for_date_checking as $other_video_id) {
+		$out .= "\n";
+		$out .= $this->content_from_other_video_parts(
+			null,
+			$faq_duplicates_for_date_checking,
+			$questions
+		);
+
+		$out .= '</details>' . "\n";
+
+		return $out;
+	}
+
+	/**
+	 * @param list<string> $video_other_parts
+	 */
+	private function content_from_other_video_parts(
+		? string $playlist_id,
+		array $video_other_parts,
+		Questions $questions = null
+	) : string {
+		$injected =
+			null === $questions
+				? $this->injected
+				: $questions->injected;
+		$reset_playlist_id = null === $playlist_id;
+		$out = '';
+
+		foreach ($video_other_parts as $other_video_id) {
+			if (null === $playlist_id) {
 			$other_video_date = determine_date_for_video(
 				$other_video_id,
 				$injected->cache['playlists'],
@@ -179,35 +207,8 @@ class Markdownify
 					$video_id
 				));
 			}
+			}
 
-			$out .= "\n"
-				. '* '
-				. maybe_transcript_link_and_video_url(
-					$other_video_id,
-					(
-						$injected->friendly_dated_playlist_name($playlist_id)
-						. ' '
-						. $injected->cache['playlistItems'][$other_video_id][1]
-					)
-				)
-			;
-		}
-
-		$out .= "\n" . '</details>' . "\n";
-
-		return $out;
-	}
-
-	/**
-	 * @param list<string> $video_other_parts
-	 */
-	private function content_from_other_video_parts(
-		string $playlist_id,
-		array $video_other_parts
-	) : string {
-		$out = '';
-
-		foreach ($video_other_parts as $other_video_id) {
 			$out .= '* '
 				. maybe_transcript_link_and_video_url(
 					$other_video_id,
@@ -221,6 +222,10 @@ class Markdownify
 				)
 				. "\n"
 			;
+
+			if ($reset_playlist_id) {
+				$playlist_id = null;
+			}
 		}
 
 		return $out;
