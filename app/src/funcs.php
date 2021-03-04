@@ -1114,6 +1114,22 @@ function filter_video_ids_for_legacy_alts(
 }
 
 /**
+ * @psalm-type ITEM = array{
+ *	position: positive-int,
+ *	item: array{
+ *		text:string,
+ *		time: array{
+ *			start:string,
+ *			end:string
+ *		},
+ *		speaker?:list<string>,
+ *		position?:positive-int,
+ *		followsOnFromPrevious?:bool,
+ *		line?:int,
+ *		align?:'start'|'middle'|'end'
+ *	}
+ * }
+ *
  * @return list<string>
  */
 function captions(string $video_id) : array
@@ -1135,21 +1151,7 @@ function captions(string $video_id) : array
 
 	if (array_key_exists(0, $maybe) && null === $maybe[0]) {
 		/**
-		 * @var list<array{
-		 *	position: positive-int,
-		 *	item: array{
-		 *		text:string,
-		 *		time: array{
-		 *			start:string,
-		 *			end:string
-		 *		},
-		 *		speaker?:list<string>,
-		 *		position?:positive-int,
-		 *		followsOnFromPrevious?:bool,
-		 *		line?:int,
-		 *		align?:'start'|'middle'|'end'
-		 *	}
-		 * }>
+		 * @var list<ITEM>
 		 */
 		$lines = $maybe[1];
 
@@ -1160,6 +1162,7 @@ function captions(string $video_id) : array
 			$lines,
 			/**
 			 * @param list<string> $result
+			 * @param ITEM $line
 			 *
 			 * @return list<string>
 			 */

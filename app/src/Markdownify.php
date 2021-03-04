@@ -189,7 +189,7 @@ class Markdownify
 
 		$injected = $questions->injected;
 
-		uasort(
+		usort(
 			$see_alsos,
 			[$injected->sorting, 'sort_video_ids_by_date']
 		);
