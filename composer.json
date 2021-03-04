@@ -31,6 +31,6 @@
 		"google/apiclient": "^2.7",
 		"roave/security-advisories": "dev-master",
 		"signpostmarv/php-cs-fixer-config": "^0.20.1",
-		"vimeo/psalm": "^4.5"
+		"vimeo/psalm": "^4.6"
 	}
 }
