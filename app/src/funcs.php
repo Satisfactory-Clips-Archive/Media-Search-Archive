@@ -1145,6 +1145,7 @@ function captions(string $video_id) : array
 		 *		},
 		 *		speaker?:list<string>,
 		 *		position?:positive-int,
+		 *		followsOnFromPrevious?:bool,
 		 *		line?:int,
 		 *		align?:'start'|'middle'|'end'
 		 *	}
@@ -1155,8 +1156,17 @@ function captions(string $video_id) : array
 		/** @var string|null */
 		$last_speaker = null;
 
-		return array_map(
-			static function (array $line) use (&$last_speaker) : string {
+		return array_reduce(
+			$lines,
+			/**
+			 * @param list<string> $result
+			 *
+			 * @return list<string>
+			 */
+			static function (
+				array $result,
+				array $line
+			) use (&$last_speaker) : array {
 				$out = preg_replace(
 					'/\s+/',
 					' ',
@@ -1170,12 +1180,24 @@ function captions(string $video_id) : array
 						$last_speaker = $current_speaker;
 
 						$out = $current_speaker . ': ' . $out;
+
+						$result[] = $out;
+					} elseif (
+						$line['item']['followsOnFromPrevious'] ?? false
+					) {
+						$result[] = array_pop($result) . ' ' . $out;
+					} else {
+						$result[] = $out;
 					}
+				} elseif (
+					$line['item']['followsOnFromPrevious'] ?? false
+				) {
+					$result[] = array_pop($result) . ' ' . $out;
 				}
 
-				return $out;
+				return $result;
 			},
-			$lines
+			[]
 		);
 	}
 
@@ -1208,6 +1230,7 @@ function captions(string $video_id) : array
  *		},
  *		speaker?:list<string>,
  *		position?:positive-int,
+ *		followsOnFromPrevious?:bool,
  *		line?:int,
  *		size?:positive-int,
  *		align?:'start'|'middle'|'end'
