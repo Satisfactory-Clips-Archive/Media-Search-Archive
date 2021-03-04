@@ -45,9 +45,6 @@ add links to merch store announcement
 # cONX37SiszU
 * add seealso to developer highlights video
 
-# gcdDfoBWaog
-* swap see also to level design stream
-
 # ECP5Jvr7RSk
 * check ben's featured videos to see if this is answered for seealsos
 
@@ -56,12 +53,6 @@ add links to merch store announcement
 
 # collate references to "I Love Strawberries"
 * LKcrsIMzGYY
-
-# sZDS8dOdyvQ
-* add seealso to the appropriate jace/snutt talk segment
-
-# ybgZUbANGrM
-check other videos for reference to teleportation bug
 
 # check for references specifically to mk.2 poles
 * rgIApn5PfMM
