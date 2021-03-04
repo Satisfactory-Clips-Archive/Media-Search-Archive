@@ -85,6 +85,25 @@ class Markdownify
 			$video_other_parts = other_video_parts($video_id, false);
 		}
 
+		$out .= $this->content_from_other_video_parts(
+			$playlist_id,
+			$video_other_parts
+		);
+
+		$out .= '</details>' . "\n";
+
+		return $out;
+	}
+
+	/**
+	 * @param list<string> $video_other_parts
+	 */
+	private function content_from_other_video_parts(
+		string $playlist_id,
+		array $video_other_parts
+	) : string {
+		$out = '';
+
 		foreach ($video_other_parts as $other_video_id) {
 			$out .= '* '
 				. maybe_transcript_link_and_video_url(
@@ -100,8 +119,6 @@ class Markdownify
 				. "\n"
 			;
 		}
-
-		$out .= '</details>' . "\n";
 
 		return $out;
 	}
