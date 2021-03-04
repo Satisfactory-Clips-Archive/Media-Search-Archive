@@ -191,22 +191,22 @@ class Markdownify
 
 		foreach ($video_other_parts as $other_video_id) {
 			if (null === $playlist_id) {
-			$other_video_date = determine_date_for_video(
-				$other_video_id,
-				$injected->cache['playlists'],
-				$injected->api->dated_playlists()
-			);
-			$playlist_id = array_search(
-				$other_video_date,
-				$injected->api->dated_playlists(), true
-			);
+				$other_video_date = determine_date_for_video(
+					$other_video_id,
+					$injected->cache['playlists'],
+					$injected->api->dated_playlists()
+				);
+				$playlist_id = array_search(
+					$other_video_date,
+					$injected->api->dated_playlists(), true
+				);
 
-			if ( ! is_string($playlist_id)) {
-				throw new RuntimeException(sprintf(
-					'Could not find playlist id for %s',
-					$video_id
-				));
-			}
+				if ( ! is_string($playlist_id)) {
+					throw new RuntimeException(sprintf(
+						'Could not find playlist id for %s',
+						$video_id
+					));
+				}
 			}
 
 			$out .= '* '
