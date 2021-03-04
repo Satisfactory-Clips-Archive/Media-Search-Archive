@@ -95,34 +95,6 @@ class Markdownify
 		return $out;
 	}
 
-	/**
-	 * @param list<string> $video_other_parts
-	 */
-	private function content_from_other_video_parts(
-		string $playlist_id,
-		array $video_other_parts
-	) : string {
-		$out = '';
-
-		foreach ($video_other_parts as $other_video_id) {
-			$out .= '* '
-				. maybe_transcript_link_and_video_url(
-					$other_video_id,
-					(
-						$this->injected->friendly_dated_playlist_name(
-							$playlist_id
-						)
-						. ' '
-						. $this->injected->cache['playlistItems'][$other_video_id][1]
-					)
-				)
-				. "\n"
-			;
-		}
-
-		return $out;
-	}
-
 	public function content_if_video_has_duplicates(
 		string $video_id,
 		Questions $questions = null
@@ -222,6 +194,34 @@ class Markdownify
 		}
 
 		$out .= "\n" . '</details>' . "\n";
+
+		return $out;
+	}
+
+	/**
+	 * @param list<string> $video_other_parts
+	 */
+	private function content_from_other_video_parts(
+		string $playlist_id,
+		array $video_other_parts
+	) : string {
+		$out = '';
+
+		foreach ($video_other_parts as $other_video_id) {
+			$out .= '* '
+				. maybe_transcript_link_and_video_url(
+					$other_video_id,
+					(
+						$this->injected->friendly_dated_playlist_name(
+							$playlist_id
+						)
+						. ' '
+						. $this->injected->cache['playlistItems'][$other_video_id][1]
+					)
+				)
+				. "\n"
+			;
+		}
 
 		return $out;
 	}
