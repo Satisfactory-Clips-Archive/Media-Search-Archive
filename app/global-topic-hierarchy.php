@@ -37,6 +37,11 @@ $global_topic_hierarchy = [
 			-1,
 			'Satisfactory Updates',
 		],
+		'PLbjDnnBIxiErz0qdIMhOw3L8lo7hamPXK' => [ // Satisfactory Update 1
+			1,
+			'Satisfactory Updates',
+			'Released',
+		],
 		'PLbjDnnBIxiEprAq_zqoVsjr3Cii2tpty-' => [ // Satisfactory Update 2
 			2,
 			'Satisfactory Updates',
@@ -763,6 +768,19 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEoxIy2QXhvKUmi6kTjM4sVS' => [ // Blade Runners
 			'Features',
 			'Equipment',
+		],
+		'PLbjDnnBIxiErp1tjQWToGbsDM6fsjInME' => [ // Recipes
+			'Features',
+			'Crafting',
+		],
+		'PLbjDnnBIxiEqkEomU289GxvxUQx8hM_i8' => [ // Alternate Recipes
+			'Features',
+			'Crafting',
+			'Recipes',
+		],
+		'PLbjDnnBIxiEqa47-NYtnxl93i8azA089W' => [ // Object Limit
+			'Technology',
+			'Unreal Engine',
 		],
 	],
 ];

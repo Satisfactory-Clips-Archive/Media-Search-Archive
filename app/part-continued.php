@@ -150,6 +150,8 @@ foreach (array_keys($existing) as $video_id) {
 $sorting = new Sorting($cache);
 $sorting->playlists_date_ref = $playlists;
 
+$existing['ZaVKeo3QXqg']['previous'] = '1dUNmBBbExs'; // not in index but is what it refers to
+
 uksort($existing, [$sorting, 'sort_video_ids_by_date']);
 
 file_put_contents(

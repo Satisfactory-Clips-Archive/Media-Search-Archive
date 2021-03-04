@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-03-04
+* adding March 2nd, 2021 stream
+
 ## 2021-03-03
 * adding February 20th, 2019 stream
 
