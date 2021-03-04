@@ -1115,17 +1115,15 @@ function filter_video_ids_for_legacy_alts(
 
 /**
  * @psalm-type ITEM = array{
- *	position: positive-int,
- *	item: array{
  *		text:string,
- *		time: array{
- *			start:string,
- *			end:string
- *		},
+ *	startTime:string,
+ *	endTime:string,
  *		speaker?:list<string>,
- *		position?:positive-int,
  *		followsOnFromPrevious?:bool,
+ *	webvtt?: array{
+ *		position?:positive-int,
  *		line?:int,
+ *		size?:positive-int,
  *		align?:'start'|'middle'|'end'
  *	}
  * }
@@ -1173,11 +1171,11 @@ function captions(string $video_id) : array
 				$out = preg_replace(
 					'/\s+/',
 					' ',
-					str_replace("\n", ' ', $line['item']['text'])
+					str_replace("\n", ' ', $line['text'])
 				);
 
-				if (isset($line['item']['speaker'])) {
-					$current_speaker = implode(', ', $line['item']['speaker']);
+				if (isset($line['speaker'])) {
+					$current_speaker = implode(', ', $line['speaker']);
 
 					if ($last_speaker !== $current_speaker) {
 						$last_speaker = $current_speaker;
@@ -1186,14 +1184,14 @@ function captions(string $video_id) : array
 
 						$result[] = $out;
 					} elseif (
-						$line['item']['followsOnFromPrevious'] ?? false
+						$line['followsOnFromPrevious'] ?? false
 					) {
 						$result[] = array_pop($result) . ' ' . $out;
 					} else {
 						$result[] = $out;
 					}
 				} elseif (
-					$line['item']['followsOnFromPrevious'] ?? false
+					$line['followsOnFromPrevious'] ?? false
 				) {
 					$result[] = array_pop($result) . ' ' . $out;
 				}
@@ -1224,21 +1222,18 @@ function captions(string $video_id) : array
 
 /**
  * @psalm-type JSON = list<array{
- *	position: positive-int,
- *	item: array{
  *		text:string,
- *		time: array{
- *			start:string,
- *			end:string
- *		},
+ *	startTime:string,
+ *	endTime:string,
  *		speaker?:list<string>,
- *		position?:positive-int,
  *		followsOnFromPrevious?:bool,
+ *	webvtt?: array{
+ *		position?:positive-int,
  *		line?:int,
  *		size?:positive-int,
  *		align?:'start'|'middle'|'end'
  *	}
- * >
+ * }>
  *
  * @return array<empty, empty>|array{0:SimpleXMLElement, 1:list<SimpleXMLElement>}|array{0:null, JSON}
  */
@@ -1262,11 +1257,21 @@ function raw_captions(string $video_id) : array
 	if (is_file($json_source)) {
 		/**
 		 * @var array{
-		 *	inLanguage: 'en'|'en-US'|'en-GB',
-		 *	url:string,
-		 *	about: array{
-		 *		itemListElement: JSON
-		 *	}
+		 *	language: 'en'|'en-US'|'en-GB',
+		 *	about:string,
+		 *	text: list<array{
+		 *		text:string,
+		 *		startTime?:string,
+		 *		endTime?:string,
+		 *		speaker?:list<string>,
+		 *		followsOnFromPrevious?:bool,
+		 *		webvtt?: array{
+		 *			position?:positive-int,
+		 *			line?:int,
+		 *			size?:positive-int,
+		 *			align?:'start'|'middle'|'end'
+		 *		}
+		 *	}>
 		 * }
 		 */
 		$transcript = json_decode(
@@ -1274,14 +1279,67 @@ function raw_captions(string $video_id) : array
 			true
 		);
 
-		usort(
-			$transcript['about']['itemListElement'],
-			static function (array $a, array $b) : int {
-				return $a['position'] <=> $b['position'];
+		$transcript['text'] = array_filter(
+			$transcript['text'],
+			static function (array $maybe) : bool {
+				return (
+					isset($maybe['startTime'], $maybe['endTime'])
+					&& preg_match('/^PT\d+(?:\.\d+)?S$/', $maybe['startTime'])
+					&& preg_match('/^PT\d+(?:\.\d+)?S$/', $maybe['endTime'])
+				);
 			}
 		);
 
-		return [null, $transcript['about']['itemListElement']];
+		/**
+		 * @var array{
+		 *	language: 'en'|'en-US'|'en-GB',
+		 *	about:string,
+		 *	text: list<array{
+		 *		text:string,
+		 *		startTime:string,
+		 *		endTime:string,
+		 *		speaker?:list<string>,
+		 *		followsOnFromPrevious?:bool,
+		 *		webvtt?: array{
+		 *			position?:positive-int,
+		 *			line?:int,
+		 *			size?:positive-int,
+		 *			align?:'start'|'middle'|'end'
+		 *		}
+		 *	}>
+		 * }
+		 */
+		$transcript = $transcript;
+
+		usort(
+			$transcript['text'],
+			/**
+			 * @psalm-type VALUE = array{
+			 *		text:string,
+			 *		startTime:string,
+			 *		endTime:string,
+			 *		speaker?:list<string>,
+			 *		followsOnFromPrevious?:bool,
+			 *		webvtt?: array{
+			 *			position?:positive-int,
+			 *			line?:int,
+			 *			size?:positive-int,
+			 *			align?:'start'|'middle'|'end'
+			 *		}
+			 *	}
+			 *
+			 * @param VALUE $a
+			 * @param VALUE $b
+			 */
+			static function (array $a, array $b) : int {
+				$a_time = floatval(mb_substr($a['startTime'], 2, -1));
+				$b_time = floatval(mb_substr($b['startTime'], 2, -1));
+
+				return $a_time <=> $b_time;
+			}
+		);
+
+		return [null, $transcript['text']];
 	}
 
 	$html_cache = __DIR__ . '/../captions/' . $video_id . '.html';
