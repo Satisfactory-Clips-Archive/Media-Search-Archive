@@ -707,10 +707,10 @@ foreach ($all_video_ids as $video_id) {
 			$transcriptions_file
 		)
 	) {
-	file_put_contents(
-		$transcriptions_file,
+		file_put_contents(
+			$transcriptions_file,
 			$transcription_content
-	);
+		);
 	}
 }
 
