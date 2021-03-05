@@ -19,6 +19,7 @@ use RuntimeException;
 use function sprintf;
 use function strtotime;
 use function uasort;
+use function usort;
 
 class Markdownify
 {

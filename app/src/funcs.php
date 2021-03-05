@@ -43,6 +43,7 @@ use function http_build_query;
 use function implode;
 use function in_array;
 use InvalidArgumentException;
+use function is_array;
 use function is_file;
 use function is_int;
 use function is_string;
@@ -1135,8 +1136,7 @@ function filter_video_ids_for_legacy_alts(
 function captions(
 	string $video_id,
 	array $playlist_topic_strings_reverse_lookup
-) : array
-{
+) : array {
 	if (
 		! preg_match(
 			'/^https:\/\/youtu\.be\//',
@@ -1328,11 +1328,11 @@ function raw_captions(string $video_id) : array
 		$transcript['text'] = array_filter(
 			$transcript['text'],
 			static function (array $maybe) : bool {
-				return (
+				return
 					isset($maybe['startTime'], $maybe['endTime'])
 					&& preg_match('/^PT\d+(?:\.\d+)?S$/', $maybe['startTime'])
 					&& preg_match('/^PT\d+(?:\.\d+)?S$/', $maybe['endTime'])
-				);
+				;
 			}
 		);
 
@@ -1378,8 +1378,8 @@ function raw_captions(string $video_id) : array
 			 * @param VALUE $b
 			 */
 			static function (array $a, array $b) : int {
-				$a_time = floatval(mb_substr($a['startTime'], 2, -1));
-				$b_time = floatval(mb_substr($b['startTime'], 2, -1));
+				$a_time = (float) (mb_substr($a['startTime'], 2, -1));
+				$b_time = (float) (mb_substr($b['startTime'], 2, -1));
 
 				return $a_time <=> $b_time;
 			}

@@ -9,6 +9,7 @@ namespace SignpostMarv\VideoClipNotes;
 use function array_filter;
 use function array_intersect;
 use function array_keys;
+use function array_merge;
 use function array_search;
 use function array_values;
 use function count;
@@ -170,7 +171,7 @@ foreach ($all_topic_ids as $topic_id) {
 	);
 
 	$playlist_topic_strings_reverse_lookup[$slug_string] = $topic_id;
-};
+}
 
 foreach (array_keys($faq) as $video_id) {
 	$transcription = captions($video_id, $playlist_topic_strings_reverse_lookup);
