@@ -154,8 +154,26 @@ $last_faq_date = null;
  */
 $faq_json = [];
 
+$playlist_topic_strings_reverse_lookup = [];
+
+$all_topic_ids = array_merge(
+	array_keys($cache['playlists']),
+	array_keys($cache['stubPlaylists'] ?? [])
+);
+
+foreach ($all_topic_ids as $topic_id) {
+	[$slug_string] = topic_to_slug(
+		$topic_id,
+		$cache,
+		$global_topic_hierarchy['satisfactory'],
+		$slugify
+	);
+
+	$playlist_topic_strings_reverse_lookup[$slug_string] = $topic_id;
+};
+
 foreach (array_keys($faq) as $video_id) {
-	$transcription = captions($video_id);
+	$transcription = captions($video_id, $playlist_topic_strings_reverse_lookup);
 
 	$faq_date = determine_date_for_video(
 		$video_id,

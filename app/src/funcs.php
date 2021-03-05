@@ -1115,7 +1115,7 @@ function filter_video_ids_for_legacy_alts(
 
 /**
  * @psalm-type ITEM = array{
- *	text:string,
+ *	text:string|list<string|array{text:string, about?:string}>,
  *	startTime:string,
  *	endTime:string,
  *	speaker?:list<string>,
@@ -1128,9 +1128,14 @@ function filter_video_ids_for_legacy_alts(
  *	}
  * }
  *
+ * @param array<string, string> $playlist_topic_strings_reverse_lookup
+ *
  * @return list<string>
  */
-function captions(string $video_id) : array
+function captions(
+	string $video_id,
+	array $playlist_topic_strings_reverse_lookup
+) : array
 {
 	if (
 		! preg_match(
@@ -1167,12 +1172,53 @@ function captions(string $video_id) : array
 			static function (
 				array $result,
 				array $line
-			) use (&$last_speaker) : array {
+			) use (
+				&$last_speaker,
+				$playlist_topic_strings_reverse_lookup
+			) : array {
+				$out = array_map(
+					/**
+					 * @param string|array{text:string, about?:string} $chunk
+					 */
+					static function (
+						$chunk
+					) use (
+						$playlist_topic_strings_reverse_lookup
+					) : string {
+						$chunk_text =
+							is_array($chunk)
+								? $chunk['text']
+								: $chunk;
+
 				$out = preg_replace(
 					'/\s+/',
 					' ',
-					str_replace("\n", ' ', $line['text'])
+							str_replace("\n", ' ', $chunk_text)
+						);
+
+						if (
+							is_array($chunk)
+							&& isset($chunk['about'])
+							&& preg_match('/^\/topics\//', $chunk['about'])
+							&& isset(
+								$playlist_topic_strings_reverse_lookup[
+									mb_substr($chunk['about'], 8, -1)
+								]
+							)
+						) {
+							$out = sprintf(
+								'[%s](%s.md)',
+								$out,
+								mb_substr($chunk['about'], 0, -1)
+							);
+						}
+
+						return $out;
+					},
+					(array) $line['text']
 				);
+
+				$out = implode('', $out);
 
 				if (isset($line['speaker'])) {
 					$current_speaker = implode(', ', $line['speaker']);
@@ -1222,7 +1268,7 @@ function captions(string $video_id) : array
 
 /**
  * @psalm-type JSON = list<array{
- *	text:string,
+ *	text:string|list<string|array{text:string, about?:string}>,
  *	startTime:string,
  *	endTime:string,
  *	speaker?:list<string>,
@@ -1260,7 +1306,7 @@ function raw_captions(string $video_id) : array
 		 *	language: 'en'|'en-US'|'en-GB',
 		 *	about:string,
 		 *	text: list<array{
-		 *		text:string,
+		 *		text:string|list<string|array{text:string, about?:string}>,
 		 *		startTime?:string,
 		 *		endTime?:string,
 		 *		speaker?:list<string>,
@@ -1295,7 +1341,7 @@ function raw_captions(string $video_id) : array
 		 *	language: 'en'|'en-US'|'en-GB',
 		 *	about:string,
 		 *	text: list<array{
-		 *		text:string,
+		 *		text:string|list<string|array{text:string, about?:string}>,
 		 *		startTime:string,
 		 *		endTime:string,
 		 *		speaker?:list<string>,
@@ -1315,7 +1361,7 @@ function raw_captions(string $video_id) : array
 			$transcript['text'],
 			/**
 			 * @psalm-type VALUE = array{
-			 *		text:string,
+			 *		text:string|list<string|array{text:string, about?:string}>,
 			 *		startTime:string,
 			 *		endTime:string,
 			 *		speaker?:list<string>,

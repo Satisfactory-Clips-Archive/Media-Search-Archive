@@ -512,13 +512,27 @@ foreach ($all_video_ids as $video_id) {
 	/** @var list<string> */
 	$transcription_lines = [];
 
-	$caption_lines = captions($video_id);
+	$caption_lines = captions(
+		$video_id,
+		$playlist_topic_strings_reverse_lookup
+	);
 
 	if (count($caption_lines) < 1) {
 		$skipping[] = $video_id;
 
 		continue;
 	}
+
+	$caption_lines = array_map(
+		static function (string $line) : string {
+			return str_replace(
+				'](/topics/',
+				'](../topics/',
+				$line
+			);
+		},
+		$caption_lines
+	);
 
 	$maybe_playlist_id = array_values(array_filter(
 		$video_playlists[$video_id],

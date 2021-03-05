@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2020-03-05
+* implemented topic support in custom transcripts
+
 ## 2021-03-04
 * adding March 2nd, 2021 stream
 
