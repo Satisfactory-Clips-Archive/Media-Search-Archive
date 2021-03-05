@@ -26,6 +26,8 @@ use function date;
 use function dirname;
 use function file_get_contents;
 use function file_put_contents;
+use function hash;
+use function hash_file;
 use function implode;
 use function in_array;
 use function is_dir;
