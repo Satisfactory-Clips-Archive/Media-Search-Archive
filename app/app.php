@@ -696,10 +696,22 @@ foreach ($all_video_ids as $video_id) {
 
 	$transcription_lines[] = markdownify_transcription_lines(...$caption_lines);
 
+	$transcription_content = implode('', $transcription_lines);
+
+	if (
+		hash(
+			'sha512',
+			$transcription_content
+		) !== hash_file(
+			'sha512',
+			$transcriptions_file
+		)
+	) {
 	file_put_contents(
 		$transcriptions_file,
-		implode('', $transcription_lines)
+			$transcription_content
 	);
+	}
 }
 
 echo "\n";
@@ -1195,7 +1207,19 @@ foreach ($playlist_ids as $playlist_id) {
 		;
 	}
 
-	file_put_contents($slug_path, implode('', $slug_lines));
+	$slug_content = implode('', $slug_lines);
+
+	if (
+		hash(
+			'sha512',
+			$transcription_content
+		) !== hash_file(
+			'sha512',
+			$transcriptions_file
+		)
+	) {
+		file_put_contents($slug_path, $slug_content);
+	}
 }
 
 $file_lines[] = (
