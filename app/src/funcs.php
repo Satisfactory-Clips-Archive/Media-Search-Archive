@@ -1190,9 +1190,9 @@ function captions(
 								? $chunk['text']
 								: $chunk;
 
-				$out = preg_replace(
-					'/\s+/',
-					' ',
+						$out = preg_replace(
+							'/\s+/',
+							' ',
 							str_replace("\n", ' ', $chunk_text)
 						);
 
