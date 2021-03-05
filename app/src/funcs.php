@@ -1115,11 +1115,11 @@ function filter_video_ids_for_legacy_alts(
 
 /**
  * @psalm-type ITEM = array{
- *		text:string,
+ *	text:string,
  *	startTime:string,
  *	endTime:string,
- *		speaker?:list<string>,
- *		followsOnFromPrevious?:bool,
+ *	speaker?:list<string>,
+ *	followsOnFromPrevious?:bool,
  *	webvtt?: array{
  *		position?:positive-int,
  *		line?:int,
@@ -1222,11 +1222,11 @@ function captions(string $video_id) : array
 
 /**
  * @psalm-type JSON = list<array{
- *		text:string,
+ *	text:string,
  *	startTime:string,
  *	endTime:string,
- *		speaker?:list<string>,
- *		followsOnFromPrevious?:bool,
+ *	speaker?:list<string>,
+ *	followsOnFromPrevious?:bool,
  *	webvtt?: array{
  *		position?:positive-int,
  *		line?:int,
