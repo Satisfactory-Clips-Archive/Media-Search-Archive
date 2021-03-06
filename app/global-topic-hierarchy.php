@@ -23,12 +23,11 @@ $global_topic_hierarchy = [
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEoe5rHqE8w9OpWENlICvWKD' => [ // Satisfactory Alpha
-			-3,
+			100,
 			'Satisfactory Updates',
 			'Released',
 		],
 		'PLbjDnnBIxiErt_GKKuC2z1kLZfTg1-ior' => [ // Alpha Weekend
-			-2,
 			'Satisfactory Updates',
 			'Released',
 			'Satisfactory Alpha',
