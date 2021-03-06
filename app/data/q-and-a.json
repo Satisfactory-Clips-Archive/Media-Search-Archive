@@ -9682,6 +9682,7 @@
         "title": "Q&A: Out of Early Access?",
         "date": "2021-02-02",
         "topics": [
+            "retail\/early-access",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "seealso": [
@@ -11996,6 +11997,7 @@
         "title": "Q&A: When will the game be released from Early Access?",
         "date": "2021-01-26",
         "topics": [
+            "retail\/early-access",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "duplicatedby": "W2O4gfNYj9s"
@@ -20004,6 +20006,7 @@
         "title": "Q&A: Do you ever get the feeling the game will be put aside and never leave Early Access?",
         "date": "2020-11-10",
         "topics": [
+            "retail\/early-access",
             "satisfactory-updates\/release-builds"
         ],
         "duplicatedby": "W2O4gfNYj9s"
@@ -22355,7 +22358,8 @@
         "title": "Q&A: Five years? What is this- an Early Access Logistics game?",
         "date": "2020-10-20",
         "topics": [
-            "off-topic\/factorio"
+            "off-topic\/factorio",
+            "retail\/early-access"
         ]
     },
     "7KXTz-m8424": {
@@ -32436,6 +32440,7 @@
             "environment\/creatures",
             "off-topic\/goat-simulator",
             "off-topic\/sanctum",
+            "retail\/early-access",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "legacyalts": [
@@ -37613,6 +37618,7 @@
         "title": "Q&A: Will price go up after Early Access ends?",
         "date": "2019-12-19",
         "topics": [
+            "retail\/early-access",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "duplicates": [
@@ -38163,6 +38169,7 @@
         "title": "Q&A: Does the timer for Epic exclusivity run when the game comes out or Early Access phase?",
         "date": "2019-03-09",
         "topics": [
+            "retail\/early-access",
             "retail\/epic-store\/epic-store-exclusivity"
         ],
         "seealso": [
@@ -38513,6 +38520,7 @@
         "title": "Q&A: How often will you release updates in Early Access?",
         "date": "2019-03-09",
         "topics": [
+            "retail\/early-access",
             "satisfactory-updates\/release-builds"
         ],
         "duplicatedby": "DVSYDPE6STc"
@@ -38908,6 +38916,7 @@
         "title": "Q&A: Is the Early Access version the same version Alpha Testers have?",
         "date": "2019-03-09",
         "topics": [
+            "retail\/early-access",
             "satisfactory-updates\/release-builds",
             "satisfactory-updates\/released\/satisfactory-alpha",
             "satisfactory-updates\/released\/satisfactory-alpha\/alpha-weekend"
@@ -39199,7 +39208,8 @@
         "title": "Q&A: Tier 4 open now?",
         "date": "2019-03-09",
         "topics": [
-            "features\/tiers\/tier-4"
+            "features\/tiers\/tier-4",
+            "retail\/early-access"
         ]
     },
     "qvzPjISX75Y": {
@@ -39364,6 +39374,7 @@
         "title": "Q&A: When is the official release?",
         "date": "2019-03-09",
         "topics": [
+            "retail\/early-access",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "duplicatedby": "W2O4gfNYj9s"
@@ -39569,7 +39580,9 @@
     "uCG8_WGh9Bk": {
         "title": "Q&A: Will these streams be a regular thing during Early Access phase?",
         "date": "2019-03-09",
-        "topics": []
+        "topics": [
+            "retail\/early-access"
+        ]
     },
     "t_hHHaDdJU0": {
         "title": "Q&A: Will we ever be able to skip the Intro?",
@@ -39602,6 +39615,64 @@
             "trolling"
         ],
         "duplicatedby": "Wv_kjBAmLAY"
+    },
+    "yt-VHr4x1vNeoY,117.14,195.46": {
+        "title": "Q&A: Alpha test weekend?",
+        "date": "2019-03-07",
+        "topics": [
+            "satisfactory-updates\/released\/satisfactory-alpha",
+            "satisfactory-updates\/released\/satisfactory-alpha\/alpha-weekend"
+        ]
+    },
+    "yt-VHr4x1vNeoY,195.46,244.9": {
+        "title": "Q&A: Can you tell us more about Early Access?",
+        "date": "2019-03-07",
+        "topics": [
+            "retail\/early-access"
+        ]
+    },
+    "yt-VHr4x1vNeoY,244.9,302.5": {
+        "title": "Q&A: How many people signed up for the Alpha?",
+        "date": "2019-03-07",
+        "topics": [
+            "satisfactory-updates\/released\/satisfactory-alpha"
+        ]
+    },
+    "yt-VHr4x1vNeoY,47.56,69.16": {
+        "title": "Q&A: How much will it cost?",
+        "date": "2019-03-07",
+        "topics": [
+            "retail\/early-access"
+        ]
+    },
+    "yt-VHr4x1vNeoY,69.16,117.14": {
+        "title": "Q&A: Regional Pricing?",
+        "date": "2019-03-07",
+        "topics": [
+            "retail\/early-access",
+            "retail\/epic-store"
+        ]
+    },
+    "yt-VHr4x1vNeoY,354.4,375.68": {
+        "title": "Q&A: The minimum system requirements are kinda high... Why?",
+        "date": "2019-03-07",
+        "topics": [
+            "technology"
+        ]
+    },
+    "yt-VHr4x1vNeoY,302.5,354.4": {
+        "title": "Q&A: What happens after the Alpha Test Weekend and before Early Access?",
+        "date": "2019-03-07",
+        "topics": [
+            "satisfactory-updates\/released\/satisfactory-alpha\/alpha-weekend"
+        ]
+    },
+    "yt-VHr4x1vNeoY,35.34,47.56": {
+        "title": "Q&A: Why Early Access?",
+        "date": "2019-03-07",
+        "topics": [
+            "retail\/early-access"
+        ]
     },
     "yt-CB9bSigNYH8,1115.557953,1128.620009": {
         "title": "Q&A: A pipe big enough to drive a car in?",

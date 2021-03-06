@@ -782,6 +782,9 @@ $global_topic_hierarchy = [
 			'Technology',
 			'Unreal Engine',
 		],
+		'PLbjDnnBIxiEpMIxj6CKI55n7fF0PTReng' => [ // Early Access
+			'Retail',
+		],
 	],
 ];
 
