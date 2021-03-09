@@ -1,7 +1,7 @@
 # Progress
 * 2302 questions found out of 3001 clips
 * 2221 non-trolling & on-topic questions found out of 2302 total questions
-* 398 questions found with no other references
+* 390 questions found with no other references
 ## grouped by date
 * 2021-03-02: 4 of 54 questions found with no other references
 * 2021-02-26: 1 of 13 questions found with no other references
@@ -42,8 +42,8 @@
 * 2020-02-11: 5 of 33 questions found with no other references
 * 2020-01-22: 1 of 28 questions found with no other references
 * 2019-12-19: 10 of 51 questions found with no other references
-* 2019-03-09: 35 of 111 questions found with no other references
-* 2019-03-07: 8 of 8 questions found with no other references
+* 2019-03-09: 34 of 111 questions found with no other references
+* 2019-03-07: 1 of 8 questions found with no other references
 * 2019-02-20: 9 of 128 questions found with no other references
 * 2019-02-06: 7 of 98 questions found with no other references
 * 2018-11-23: 0 of 5 questions found with no other references
