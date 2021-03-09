@@ -491,28 +491,34 @@ $all_video_ids = array_keys($video_playlists);
 
 natcasesort($all_video_ids);
 
-echo sprintf('processing 0 of %s transcriptions', count($all_video_ids)), "\n";
+/** @var array<string, list<string>> */
+$transcripts_json = [];
+
+echo
+	"\n",
+	sprintf(
+		'compiling transcription 0 of %s videos (%s seconds elapsed)',
+		count($all_video_ids),
+		0
+	)
+;
 
 foreach ($all_video_ids as $video_id) {
 	++$checked;
 
-	echo sprintf(
-			'processing %s of %s transcriptions (%s seconds elapsed)',
+	echo
+		"\r",
+		sprintf(
+			'compiling transcription %s of %s videos (%s seconds elapsed)',
 			$checked,
 			count($all_video_ids),
 			time() - $start
-		),
-		"\r"
+		)
 	;
 
 	if (in_array($video_id, $skipping, true)) {
 		continue;
 	}
-
-	$transcriptions_file = transcription_filename($video_id);
-
-	/** @var list<string> */
-	$transcription_lines = [];
 
 	$caption_lines = captions(
 		$video_id,
@@ -525,7 +531,7 @@ foreach ($all_video_ids as $video_id) {
 		continue;
 	}
 
-	$caption_lines = array_map(
+	$transcripts_json[$video_id] = array_map(
 		static function (string $line) : string {
 			return str_replace(
 				'](/topics/',
@@ -535,6 +541,52 @@ foreach ($all_video_ids as $video_id) {
 		},
 		$caption_lines
 	);
+}
+
+file_put_contents(
+	(
+		__DIR__
+		. '/../11ty/data/transcripts.json'
+	),
+	str_replace(
+		PHP_EOL,
+		"\n",
+		json_encode(
+			$transcripts_json,
+			JSON_PRETTY_PRINT
+		)
+	)
+);
+
+echo
+	"\n",
+	sprintf(
+		'processing %s of %s transcriptions (%s seconds elapsed)',
+		$checked,
+		count($all_video_ids),
+		time() - $start
+	)
+;
+
+$checked = 0;
+
+foreach ($transcripts_json as $video_id => $caption_lines) {
+	++$checked;
+
+	echo
+		"\r",
+		sprintf(
+			'processing %s of %s transcriptions (%s seconds elapsed)',
+			$checked,
+			count($transcripts_json),
+			time() - $start
+		)
+	;
+
+	$transcriptions_file = transcription_filename($video_id);
+
+	/** @var list<string> */
+	$transcription_lines = [];
 
 	$maybe_playlist_id = array_values(array_filter(
 		$video_playlists[$video_id],
@@ -728,7 +780,7 @@ file_put_contents(__DIR__ . '/skipping-transcriptions.json', json_encode(
 echo sprintf(
 		'%s subtitles checked of %s videos cached',
 		$checked,
-		count($cache['playlistItems'])
+		count($all_video_ids)
 	),
 	"\n"
 ;
