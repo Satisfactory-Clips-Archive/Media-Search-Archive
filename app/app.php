@@ -753,7 +753,8 @@ foreach ($transcripts_json as $video_id => $caption_lines) {
 	$transcription_content = implode('', $transcription_lines);
 
 	if (
-		hash(
+		! is_file($transcriptions_file)
+		|| hash(
 			'sha512',
 			$transcription_content
 		) !== hash_file(
@@ -1264,12 +1265,13 @@ foreach ($playlist_ids as $playlist_id) {
 	$slug_content = implode('', $slug_lines);
 
 	if (
-		hash(
+		! is_file($slug_path)
+		|| hash(
 			'sha512',
-			$transcription_content
+			$slug_content
 		) !== hash_file(
 			'sha512',
-			$transcriptions_file
+			$slug_path
 		)
 	) {
 		file_put_contents($slug_path, $slug_content);
