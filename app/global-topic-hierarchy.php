@@ -71,8 +71,13 @@ $global_topic_hierarchy = [
 			'Satisfactory Updates',
 			'Speculative',
 		],
-		'PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo' => [ // Satisfactory Update 8
+		'PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO' => [ // Satisfactory Update 7
 			7,
+			'Satisfactory Updates',
+			'Speculative',
+		],
+		'PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo' => [ // Satisfactory Update 8
+			8,
 			'Satisfactory Updates',
 			'Speculative',
 		],
@@ -783,6 +788,11 @@ $global_topic_hierarchy = [
 		],
 		'PLbjDnnBIxiEpMIxj6CKI55n7fF0PTReng' => [ // Early Access
 			'Retail',
+		],
+		'PLbjDnnBIxiEq8_QoVM--eNIMMoOq1IlfE' => [ // Nuclear Refinement
+			'Features',
+			'Power Management',
+			'Nuclear Energy',
 		],
 	],
 ];
