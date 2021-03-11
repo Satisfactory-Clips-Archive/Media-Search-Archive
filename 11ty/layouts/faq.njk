@@ -5,13 +5,41 @@
 <title>{% if (page.url.startsWith('/topics/')) or ('/FAQ/' === page.url) %}Q&amp;A Clips Archive - {% endif %}{{title}}</title>
 {% include 'head.njk' %}
 <meta property="og:article:modified_time" content="{{page.date.toUTCString()}}">
+<link rel="stylesheet" href="/faq.css" inline>
 </head>
 <body>
 <header>
 	<h1>{% if (page.url.startsWith('/topics/')) or ('/FAQ/' === page.url) %}Q&amp;A Clips Archive - {% endif %}{{title}}</h1>
 {% include 'nav.njk' %}
+	<form>
+		<fieldset disabled>
+			<legend>Sort</legend>
+			<ul>
+				<li>
+					<input
+						type="radio"
+						name="sort"
+						id="by-recent-date"
+						value="recent"
+						checked
+					>
+					<label for="by-recent-date">By Recent Date</label>
+				</li>
+				<li>
+					<input
+						type="radio"
+						name="sort"
+						id="by-most-answered"
+						value="answered"
+					>
+					<label for="by-most-answered">By Most Answered</label>
+				</li>
+			</ul>
+		</fieldset>
+	</form>
 </header>
 <main itemscope itemtype="https://schema.org/FAQPage">{{content | safe}}</main>
 {% include 'footer.njk' %}
+<script src="/faq.js" inline async defer></script>
 </body>
 </html>

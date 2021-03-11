@@ -11,6 +11,7 @@ layout: faq
 	itemscope
 	itemprop="mainEntity"
 	itemtype="https://schema.org/Question"
+	data-previously-answered="{{video_data[5] | length}}"
 >
 <h3>{% if '' !== video_data[1] %}<a
 	itemprop="url"
@@ -28,7 +29,9 @@ layout: faq
 		href="{{video_data[2]}}"
 	>{{video_data[2]}}</a>
 </h3>{% else %}
-<section>
+<section
+	data-previously-answered="{{video_data[5] | length}}"
+>
 <h3>{% if '' !== video_data[1] %}<a
 	target="_blank"
 	href="{{video_data[1]}}"

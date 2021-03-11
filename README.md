@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-03-11
+* implemented (possibly inefficient) FAQ sorting
+
 ## 2021-03-05
 * implemented topic support in custom transcripts
 
