@@ -10,7 +10,7 @@ Static site generator for
 
 # Changelog
 
-## 2020-03-05
+## 2021-03-05
 * implemented topic support in custom transcripts
 
 ## 2021-03-04
