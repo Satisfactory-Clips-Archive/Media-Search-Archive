@@ -1336,6 +1336,24 @@ function raw_captions(string $video_id) : array
 			}
 		);
 
+		$transcript['text'] = array_map(
+			static function (array $line) {
+				$text = $line['text'];
+
+				if (
+					is_array($text)
+					&& count($text) === count(array_filter($text, 'is_string'))
+				) {
+					$text = implode('', $text);
+				}
+
+				$line['text'] = $text;
+
+				return $line;
+			},
+			$transcript['text']
+		);
+
 		/**
 		 * @var array{
 		 *	language: 'en'|'en-US'|'en-GB',
@@ -2050,15 +2068,45 @@ function process_dated_csv(
 	/** @var list<array{0:numeric-string|'', 1:numeric-string|'', 2:string}> */
 	$captions_with_start_time = [];
 
+	/**
+	 * @todo improve so the followOnFromPreviousLine property can be used
+	 */
 	if (
 		array_key_exists(0, $captions)
 		&& array_key_exists(1, $captions)
 		&& null === $captions[0]
 	) {
+		$captions_with_start_time = array_map(
+			/**
+			 * @return array{
+			 *	0:numeric-string,
+			 *	1:numeric-string,
+			 *	2:string
+			 * }
+			 */
+			static function (array $caption_line) : array {
+				if (is_array($caption_line['text'])) {
 		throw new RuntimeException(
 			'JSON transcription not yet supported here!'
 		);
-	}
+				}
+
+				/**
+				 * @var array{
+				 *	0:numeric-string,
+				 *	1:numeric-string,
+				 *	2:string
+				 * }
+				 */
+				return [
+					mb_substr($caption_line['startTime'], 2, -1),
+					mb_substr($caption_line['endTime'], 2, -1),
+					$caption_line['text']
+				];
+			},
+			$captions[1]
+		);
+	} else {
 
 	/** @var list<SimpleXmlElement> */
 	$lines = ($captions[1] ?? []);
@@ -2082,6 +2130,7 @@ function process_dated_csv(
 		];
 
 		$captions_with_start_time[] = $captions_with_start_time_row;
+	}
 	}
 
 	$csv_captions = array_map(
