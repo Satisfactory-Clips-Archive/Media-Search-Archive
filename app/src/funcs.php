@@ -2101,7 +2101,7 @@ function process_dated_csv(
 				return [
 					mb_substr($caption_line['startTime'], 2, -1),
 					mb_substr($caption_line['endTime'], 2, -1),
-					$caption_line['text']
+					$caption_line['text'],
 				];
 			},
 			$captions[1]

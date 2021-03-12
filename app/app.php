@@ -40,6 +40,7 @@ use function mb_substr;
 use function min;
 use function mkdir;
 use function natcasesort;
+use const PHP_EOL;
 use function realpath;
 use RuntimeException;
 use function sprintf;
@@ -494,8 +495,7 @@ natcasesort($all_video_ids);
 /** @var array<string, list<string>> */
 $transcripts_json = [];
 
-echo
-	"\n",
+echo "\n",
 	sprintf(
 		'compiling transcription 0 of %s videos (%s seconds elapsed)',
 		count($all_video_ids),
@@ -506,8 +506,7 @@ echo
 foreach ($all_video_ids as $video_id) {
 	++$checked;
 
-	echo
-		"\r",
+	echo "\r",
 		sprintf(
 			'compiling transcription %s of %s videos (%s seconds elapsed)',
 			$checked,
@@ -558,8 +557,7 @@ file_put_contents(
 	)
 );
 
-echo
-	"\n",
+echo "\n",
 	sprintf(
 		'processing %s of %s transcriptions (%s seconds elapsed)',
 		$checked,
@@ -573,8 +571,7 @@ $checked = 0;
 foreach ($transcripts_json as $video_id => $caption_lines) {
 	++$checked;
 
-	echo
-		"\r",
+	echo "\r",
 		sprintf(
 			'processing %s of %s transcriptions (%s seconds elapsed)',
 			$checked,
