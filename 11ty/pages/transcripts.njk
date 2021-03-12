@@ -1,0 +1,52 @@
+---
+pagination:
+    data: transcripts
+    size: 1
+    alias: transcript
+permalink: "transcripts/{{ transcript.id }}/"
+layout: transcripts
+---
+<h1><a href="/{{transcript.date | slug}}/">{{transcript.dateTitle}}</a></h1>
+{%
+	if r/Q&A: /.test(transcript.title)
+%}<h2 itemprop="name">{%
+	else
+%}<h2>{%
+	endif
+%}{{ transcript.title }}</h2>
+<p><a rel="nofollow" target="_blank" href="{{
+	transcript.url
+}}">{{
+	transcript.url
+}}</a></p>
+{% if transcript.topics.length > 0 %}
+<h3>Topics</h3>
+<ul>
+{% for topic_id in transcript.topics %}
+<li><a href="/topics/{{
+	topicStrings[topic_id]
+}}/">{{
+	topics[topicStrings[topic_id]]
+	| join(' > ')
+}}</a></li>{% endfor %}
+</ul>{% endif %}
+<h3>Transcript</h3>
+{%
+	if r/Q&A: /.test(transcript.title)
+%}{{
+	transcript.transcript
+	| markdown_blockquote
+	| safe
+	| replace(
+		'<blockquote>',
+		'<div
+			itemprop="suggestedAnswer"
+			itemscope
+			itemtype="https://schema.org/Answer"
+		><blockquote itemprop="text">'
+	)
+	| replace(
+		'</blockquote>',
+		'</blockquote><meta itemprop="dateCreated" content="' + transcript.date + '"></div>'
+	)
+}}{% else %}{{ transcript.transcript | markdown_blockquote | safe }}{% endif %}

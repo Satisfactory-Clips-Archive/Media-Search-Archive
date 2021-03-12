@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ transcript.dateTitle }} {{ transcript.title }}</title>
+{% include 'head.njk' %}
+<meta property="og:article:release_date" content="{{transcript.date}}">
+{% for topic_id in transcript.topics %}
+<meta property="og:article:tag" content="{{ topicStrings[topic_id] }}">
+{% endfor %}
+</head>
+{% if r/Q&A: /.test(transcript.title) %}
+<body itemscope itemtype="https://schema.org/QAPage">
+{% else %}
+<body>
+{% endif %}
+<header>
+	<h1>{{ transcript.dateTitle }} {{ transcript.title }}</h1>
+{% include 'nav.njk' %}
+</header>
+{% if r/Q&A: /.test(transcript.title) %}
+<main
+	itemprop="mainEntity"
+	itemscope
+	itemtype="https://schema.org/Question"
+><meta
+	itemprop="answerCount" content="1"
+><meta itemprop="dateCreated" content="{{transcript.date}}">{% else %}
+<main>
+{% endif %}{{ content | safe }}</main>
+{% include 'footer.njk' %}
+</body>
+</html>
