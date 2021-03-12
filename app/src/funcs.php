@@ -2086,9 +2086,9 @@ function process_dated_csv(
 			 */
 			static function (array $caption_line) : array {
 				if (is_array($caption_line['text'])) {
-		throw new RuntimeException(
-			'JSON transcription not yet supported here!'
-		);
+					throw new RuntimeException(
+						'JSON transcription not yet supported here!'
+					);
 				}
 
 				/**
@@ -2107,30 +2107,29 @@ function process_dated_csv(
 			$captions[1]
 		);
 	} else {
+		/** @var list<SimpleXmlElement> */
+		$lines = ($captions[1] ?? []);
 
-	/** @var list<SimpleXmlElement> */
-	$lines = ($captions[1] ?? []);
+		foreach ($lines as $caption_line) {
+			$attrs = iterator_to_array(
+				$caption_line->attributes()
+			);
 
-	foreach ($lines as $caption_line) {
-		$attrs = iterator_to_array(
-			$caption_line->attributes()
-		);
+			/** @var array{0:numeric-string, 1:numeric-string, 2:string} */
+			$captions_with_start_time_row = [
+				(string) $attrs['start'],
+				(string) $attrs['dur'],
+				(string) preg_replace_callback(
+					'/&#(\d+);/',
+					static function (array $match) : string {
+						return chr((int) $match[1]);
+					},
+					(string) $caption_line
+				),
+			];
 
-		/** @var array{0:numeric-string, 1:numeric-string, 2:string} */
-		$captions_with_start_time_row = [
-			(string) $attrs['start'],
-			(string) $attrs['dur'],
-			(string) preg_replace_callback(
-				'/&#(\d+);/',
-				static function (array $match) : string {
-					return chr((int) $match[1]);
-				},
-				(string) $caption_line
-			),
-		];
-
-		$captions_with_start_time[] = $captions_with_start_time_row;
-	}
+			$captions_with_start_time[] = $captions_with_start_time_row;
+		}
 	}
 
 	$csv_captions = array_map(
