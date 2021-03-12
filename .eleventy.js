@@ -1,11 +1,12 @@
 module.exports = (e) => {
 	const markdownIt = require('markdown-it');
-
-	e.setLibrary('md', markdownIt({
+	const markdown = markdownIt({
 		html: true,
 		breaks: true,
 		linkify: true,
-	}));
+	});
+
+	e.setLibrary('md', markdown);
 
 	e.addFilter('json', (value) => {
 		return JSON.stringify(value, null, "\t");
@@ -33,6 +34,12 @@ module.exports = (e) => {
 		}
 
 		return 'Serves as an unofficial archive for Q&A Clips for Coffee Stain Studio\'s Satisfactory-related livestreams';
+	});
+
+	e.addFilter('markdown_blockquote', (value) => {
+		return markdown.render(value.map((e) => {
+			return `> ${e}`.trim() + "\n" + '>';
+		}).join("\n"));
 	});
 
 	return {

@@ -449,6 +449,15 @@ foreach ($all_topic_ids as $topic_id) {
 	$playlist_topic_strings_reverse_lookup[$slug_string] = $topic_id;
 }
 
+file_put_contents(
+	__DIR__ . '/../11ty/data/topicStrings.json',
+	json_encode($playlist_topic_strings, JSON_PRETTY_PRINT)
+);
+file_put_contents(
+	__DIR__ . '/../11ty/data/topics.json',
+	json_encode($topics_json, JSON_PRETTY_PRINT)
+);
+
 $video_playlists = array_map(
 	static function (array $topic_ids) use ($playlist_topic_strings) : array {
 		usort(
@@ -491,7 +500,15 @@ $all_video_ids = array_keys($video_playlists);
 
 natcasesort($all_video_ids);
 
-/** @var array<string, list<string>> */
+/**
+ * @var array<string, array{
+ *	id:string,
+ *	url:string,
+ *	title:string,
+ *	topics:array<string, string>,
+ *	transcript: list<string>
+ * }>
+ */
 $transcripts_json = [];
 
 echo
@@ -531,7 +548,30 @@ foreach ($all_video_ids as $video_id) {
 		continue;
 	}
 
-	$transcripts_json[$video_id] = array_map(
+	$date = determine_date_for_video(
+		$video_id,
+		$cache['playlists'],
+		$api->dated_playlists()
+	);
+
+	$transcripts_json[$video_id] = [
+		'id' => vendor_prefixed_video_id($video_id),
+		'url' => video_url_from_id($video_id, true),
+		'date' => $date,
+		'dateTitle' => determine_playlist_id(
+			$date,
+			$cache,
+			$not_a_livestream,
+			$not_a_livestream_date_lookup
+		)[1],
+		'title' => $cache['playlistItems'][$video_id][1],
+		'topics' => array_values(array_filter(
+			$video_playlists[$video_id],
+			static function (string $maybe) use ($playlists) : bool {
+				return ! isset($playlists[$maybe]);
+			}
+		)),
+		'transcript' => array_map(
 		static function (string $line) : string {
 			return str_replace(
 				'](/topics/',
@@ -540,7 +580,8 @@ foreach ($all_video_ids as $video_id) {
 			);
 		},
 		$caption_lines
-	);
+		),
+	];
 }
 
 file_put_contents(
@@ -552,7 +593,7 @@ file_put_contents(
 		PHP_EOL,
 		"\n",
 		json_encode(
-			$transcripts_json,
+			array_values($transcripts_json),
 			JSON_PRETTY_PRINT
 		)
 	)
@@ -568,10 +609,14 @@ echo
 	)
 ;
 
+exit(1);
+
 $checked = 0;
 
-foreach ($transcripts_json as $video_id => $caption_lines) {
+foreach ($transcripts_json as $video_id => $video_data) {
 	++$checked;
+
+	$caption_lines = $video_data['transcript'];
 
 	echo
 		"\r",
