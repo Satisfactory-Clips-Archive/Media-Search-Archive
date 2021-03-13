@@ -2200,7 +2200,6 @@ function process_dated_csv(
 						$follows_on_from_previous = $caption_line[3] ?? false;
 
 						if ($follows_on_from_previous) {
-
 							$out[] = preg_replace(
 								'/\s+/',
 								' ',
