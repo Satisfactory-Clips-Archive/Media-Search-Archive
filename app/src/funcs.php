@@ -2065,23 +2065,45 @@ function process_dated_csv(
 		]);
 	}
 
-	/** @var list<array{0:numeric-string|'', 1:numeric-string|'', 2:string}> */
+	/**
+	 * @var list<array{
+	 *	0:numeric-string|'',
+	 *	1:numeric-string|'',
+	 *	2:string,
+	 *	3?:bool
+	 * }>
+	 */
 	$captions_with_start_time = [];
 
-	/**
-	 * @todo improve so the followOnFromPreviousLine property can be used
-	 */
 	if (
 		array_key_exists(0, $captions)
 		&& array_key_exists(1, $captions)
 		&& null === $captions[0]
 	) {
+		/**
+		 * @var array{0:null, 1:list<array{
+		 *	text:string|list<string|array{text:string, about?:string}>,
+		 *	startTime:string,
+		 *	endTime:string,
+		 *	speaker?:list<string>,
+		 *	followsOnFromPrevious?:bool,
+		 *	webvtt?: array{
+		 *		position?:positive-int,
+		 *		line?:int,
+		 *		size?:positive-int,
+		 *		align?:'start'|'middle'|'end'
+		 *	}
+		 * }>}
+		 */
+		$captions = $captions;
+
 		$captions_with_start_time = array_map(
 			/**
 			 * @return array{
 			 *	0:numeric-string,
 			 *	1:numeric-string,
-			 *	2:string
+			 *	2:string,
+			 *	3:bool
 			 * }
 			 */
 			static function (array $caption_line) : array {
@@ -2095,13 +2117,15 @@ function process_dated_csv(
 				 * @var array{
 				 *	0:numeric-string,
 				 *	1:numeric-string,
-				 *	2:string
+				 *	2:string,
+				 *	3:bool
 				 * }
 				 */
 				return [
 					mb_substr($caption_line['startTime'], 2, -1),
 					mb_substr($caption_line['endTime'], 2, -1),
 					$caption_line['text'],
+					$caption_line['followsOnFromPrevious'] ?? false,
 				];
 			},
 			$captions[1]
@@ -2148,10 +2172,7 @@ function process_dated_csv(
 		 * }
 		 */
 		static function (array $csv_line) use ($captions_with_start_time) : array {
-			$csv_line_captions = implode("\n", array_map(
-				static function (array $data) : string {
-					return $data[2];
-				},
+			$csv_line_captions = trim(implode("\n", array_reduce(
 				array_filter(
 					$captions_with_start_time,
 					static function (array $maybe) use ($csv_line) : bool {
@@ -2168,6 +2189,30 @@ function process_dated_csv(
 
 						return $from >= $start && $to <= (float) $end;
 					}
+					),
+					/**
+					 * @param non-empty-list<string> $out
+					 * @param array{2:string, 3?:bool} $caption_line
+					 *
+					 * @return non-empty-list<string>
+					 */
+					static function (array $out, array $caption_line) : array {
+						$follows_on_from_previous = $caption_line[3] ?? false;
+
+						if ($follows_on_from_previous) {
+
+							$out[] = preg_replace(
+								'/\s+/',
+								' ',
+								array_pop($out) . ' ' . $caption_line[2]
+							);
+						} else {
+							$out[] = $caption_line[2];
+						}
+
+						return $out;
+					},
+					['']
 				)
 			));
 
