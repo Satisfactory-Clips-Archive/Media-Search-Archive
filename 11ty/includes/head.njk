@@ -55,3 +55,7 @@
 	rel="alternate"
 	href="{{alt_video_url}}"
 >{% endfor %}{% endif %}
+{% if transcript?.url in tcn %}{% for alt_video_url in tcn[transcript.url].alts %}<link
+	rel="alternate"
+	href="{{alt_video_url}}"
+>{% endfor %}{% endif %}
