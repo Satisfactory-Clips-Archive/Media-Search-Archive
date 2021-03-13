@@ -582,14 +582,14 @@ foreach ($all_video_ids as $video_id) {
 			}
 		)),
 		'transcript' => array_map(
-		static function (string $line) : string {
-			return str_replace(
-				'](/topics/',
-				'](../topics/',
-				$line
-			);
-		},
-		$caption_lines
+			static function (string $line) : string {
+				return str_replace(
+					'](/topics/',
+					'](../topics/',
+					$line
+				);
+			},
+			$caption_lines
 		),
 	];
 }
