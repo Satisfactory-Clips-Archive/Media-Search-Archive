@@ -507,6 +507,10 @@ natcasesort($all_video_ids);
  *	url:string,
  *	title:string,
  *	topics:array<string, string>,
+ *	other_parts:string,
+ *	is_replaced:string,
+ *	is_duplicate:string,
+ *	has_duplicates:string,
  *	transcript: list<string>
  * }>
  */
@@ -570,6 +574,42 @@ foreach ($all_video_ids as $video_id) {
 				return ! isset($playlists[$maybe]);
 			}
 		)),
+		'other_parts' => str_replace(
+			'.md)',
+			'/)',
+			str_replace(
+				'./transcriptions/',
+				'./',
+				$markdownify->content_if_video_has_other_parts($video_id)
+			)
+		),
+		'is_replaced' => str_replace(
+			'.md)',
+			'/)',
+			str_replace(
+				'./transcriptions/',
+				'./',
+				$markdownify->content_if_video_is_replaced($video_id)
+			)
+		),
+		'is_duplicate' => str_replace(
+			'.md)',
+			'/)',
+			str_replace(
+				'./transcriptions/',
+				'./',
+				$markdownify->content_if_video_is_a_duplicate($video_id)
+			)
+		),
+		'has_duplicates' => str_replace(
+			'.md)',
+			'/)',
+			str_replace(
+				'./transcriptions/',
+				'./',
+				$markdownify->content_if_video_has_duplicates($video_id)
+			)
+		),
 		'transcript' => array_map(
 			static function (string $line) : string {
 				return str_replace(
@@ -586,7 +626,7 @@ foreach ($all_video_ids as $video_id) {
 file_put_contents(
 	(
 		__DIR__
-		. '/../11ty/data/transcripts.json'
+		. '/../11ty/data/transcriptions.json'
 	),
 	str_replace(
 		PHP_EOL,

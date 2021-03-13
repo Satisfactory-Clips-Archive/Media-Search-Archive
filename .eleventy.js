@@ -42,6 +42,10 @@ module.exports = (e) => {
 		}).join("\n"));
 	});
 
+	e.addFilter('markdownify', (value) => {
+		return markdown.render(value);
+	});
+
 	return {
 		dir: {
 			data: '../../../11ty/data',

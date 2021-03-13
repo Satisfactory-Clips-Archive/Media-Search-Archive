@@ -1,10 +1,10 @@
 ---
 pagination:
-    data: transcripts
+    data: transcriptions
     size: 1
     alias: transcript
-permalink: "transcripts/{{ transcript.id }}/"
-layout: transcripts
+permalink: "transcriptions/{{ transcript.id }}/"
+layout: transcriptions
 ---
 <h1><a href="/{{transcript.date | slug}}/">{{transcript.dateTitle}}</a></h1>
 {%
@@ -19,10 +19,12 @@ layout: transcripts
 }}">{{
 	transcript.url
 }}</a></p>
-{% if transcript.topics.length > 0 %}
-<h3>Topics</h3>
-<ul>
-{% for topic_id in transcript.topics %}
+{{
+	transcript.other_parts | markdownify | safe
+}}{%
+	if transcript.topics.length > 0
+%}<h3>Topics</h3>
+<ul>{% for topic_id in transcript.topics %}
 <li><a href="/topics/{{
 	topicStrings[topic_id]
 }}/">{{
