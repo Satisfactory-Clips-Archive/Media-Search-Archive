@@ -46,10 +46,12 @@ layout: faq
 {% if video_data[3].length > 0 %}
 <details itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 	<summary>A transcript is available</summary>
-	<blockquote itemprop="text"><p>{{
-		video_data[3].join('</p>' + "\n" + '<p>')
+	{{
+		video_data[3]
+		| markdown_blockquote
+		| replace('<blockquote>', '<blockquote itemprop="text">')
 		|safe
-	}}</p></blockquote>
+	}}
 </details>
 {% endif %}
 <details>
