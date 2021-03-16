@@ -216,6 +216,8 @@ gulp.task('html', () => {
 	).pipe(
 		replace(/"\.\.\/(\d{4,}\-\d{2}\-\d{2})\.md"/g, '/$1/')
 	).pipe(
+		replace(/"\.\/((?:yt|tc|is)\-.+).md"/g, '../$1/')
+	).pipe(
 		replace('.md"', '/"')
 	).pipe(
 		replace('"./topics/', '"/topics/')
