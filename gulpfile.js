@@ -221,8 +221,8 @@ gulp.task('html', () => {
 		replace('.md"', '/"')
 	).pipe(
 		replace('"./topics/', '"/topics/')
-		).pipe(
-			replace(/"(?:\.\.\/)+topics\/?/g, '"/topics/')
+	).pipe(
+		replace(/"(?:\.\.\/)+topics\/?/g, '"/topics/')
 	).pipe(
 		replace(/"(?:(?:\.\.\/)+|\.\/)transcriptions\/?/g, '"/transcriptions/')
 	).pipe(
