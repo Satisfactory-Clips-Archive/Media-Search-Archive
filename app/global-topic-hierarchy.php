@@ -794,6 +794,23 @@ $global_topic_hierarchy = [
 			'Power Management',
 			'Nuclear Energy',
 		],
+		'PLbjDnnBIxiEqV2AcIJNb7Y3TkYLQ3Bif-' => [ // Drones
+			'Features',
+			'Transportation',
+			'Vehicles',
+		],
+		'PLbjDnnBIxiEoJXfr9MUsQgAjnRHJrZJWM' => [ // Hover Pack
+			'Features',
+			'Equipment',
+		],
+		'PLbjDnnBIxiEoxTyK_HelUP2U9cdXFgVK6' => [ // Particle Accelerator
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiEr_iLGFpJxH-pKRn9D0qsna' => [ // Water
+			'Environment',
+			'Resources',
+		],
 	],
 ];
 

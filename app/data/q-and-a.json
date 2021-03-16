@@ -8338,6 +8338,7 @@
         "topics": [
             "environment\/resources",
             "environment\/resources\/oil",
+            "environment\/resources\/water",
             "features\/buildings\/resource-well-extractor",
             "features\/fluids",
             "features\/gases"
@@ -13412,7 +13413,8 @@
         "title": "Q&A: Please, Toilet DLC before Official DLC?",
         "date": "2021-01-26",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc",
+            "features\/transportation\/vehicles\/drones"
         ],
         "seealso": [
             "1-xFJyIBosU",
@@ -13581,7 +13583,7 @@
         "title": "Q&A: Were you serious about the drones in the last YouTube video?",
         "date": "2021-01-26",
         "topics": [
-            "features\/unplanned-features\/aerial-travel",
+            "features\/transportation\/vehicles\/drones",
             "trolling"
         ],
         "seealso": [
@@ -14113,7 +14115,7 @@
         "title": "Q&A: Will you add drones to Satisfactory?",
         "date": "2021-01-26",
         "topics": [
-            "features\/unplanned-features\/aerial-travel",
+            "features\/transportation\/vehicles\/drones",
             "trolling"
         ],
         "seealso": [
@@ -15691,7 +15693,7 @@
         "topics": [
             "environment\/resource-wells",
             "environment\/resources\/oil",
-            "features\/fluids"
+            "environment\/resources\/water"
         ],
         "duplicates": [
             "khEicU2JVzY"
@@ -20955,7 +20957,7 @@
         "title": "Q&A: Dark Matter in the game?",
         "date": "2020-11-17",
         "topics": [
-            "features\/buildings",
+            "features\/buildings\/particle-accelerator",
             "features\/power-management",
             "features\/unreleased-features\/unreleased-content"
         ]
@@ -26491,6 +26493,7 @@
         "title": "Q&A: Can we get an open end to Pipes like dumping waste water?",
         "date": "2020-10-06",
         "topics": [
+            "environment\/resources\/water",
             "features\/fluids"
         ]
     },
@@ -28292,8 +28295,8 @@
         "title": "Q&A: Any plans to add a Levitate option with Jetpacks?",
         "date": "2020-09-22",
         "topics": [
-            "features\/equipment\/jetpack",
-            "features\/unplanned-features\/aerial-travel"
+            "features\/equipment\/hover-pack",
+            "features\/equipment\/jetpack"
         ],
         "duplicates": [
             "zeXh53pKe0A"
@@ -30516,8 +30519,8 @@
         "title": "Q&A: Jetpack needs a Hover Mode?",
         "date": "2020-09-08",
         "topics": [
-            "features\/equipment\/jetpack",
-            "features\/unplanned-features\/aerial-travel"
+            "features\/equipment\/hover-pack",
+            "features\/equipment\/jetpack"
         ],
         "duplicatedby": "_9P859YpEbE"
     },
@@ -32508,6 +32511,7 @@
             "environment\/resources",
             "features\/buildings\/the-hub",
             "features\/transportation\/vehicles",
+            "features\/transportation\/vehicles\/drones",
             "features\/unplanned-features\/aerial-travel",
             "technology\/graphics"
         ],
@@ -33621,7 +33625,7 @@
         "title": "Q&A: How about a drone to fly around?",
         "date": "2020-08-25",
         "topics": [
-            "features\/unplanned-features\/aerial-travel"
+            "features\/transportation\/vehicles\/drones"
         ],
         "seealso": [
             "bbAGxhCSN8c"
@@ -36621,7 +36625,7 @@
         "title": "Q&A: Will Drones be added to the game for aerial travel?",
         "date": "2020-08-11",
         "topics": [
-            "features\/transportation\/vehicles",
+            "features\/transportation\/vehicles\/drones",
             "features\/unplanned-features\/aerial-travel"
         ]
     },
@@ -40356,8 +40360,7 @@
         "title": "Q&A: Have you considerd Flying Drones?",
         "date": "2019-12-19",
         "topics": [
-            "features\/transportation\/vehicles",
-            "features\/unplanned-features\/aerial-travel"
+            "features\/transportation\/vehicles\/drones"
         ],
         "duplicatedby": "kd3UMt4pESk"
     },
@@ -42149,8 +42152,7 @@
         "date": "2019-03-09",
         "topics": [
             "features\/equipment\/zip-lines",
-            "features\/power-management",
-            "features\/unplanned-features\/aerial-travel"
+            "features\/power-management"
         ],
         "suggested": [
             "1NTKmQqoxNs",

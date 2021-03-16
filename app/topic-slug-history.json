@@ -790,5 +790,26 @@
     },
     "PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO": {
         "satisfactory-updates\/speculative\/satisfactory-update-7": 1615335822
+    },
+    "PLbjDnnBIxiEoxTyK_HelUP2U9cdXFgVK6": {
+        "features\/buildings\/particle-accelerator": 1615923625
+    },
+    "PLbjDnnBIxiEoJXfr9MUsQgAjnRHJrZJWM": {
+        "features\/equipment\/hover-pack": 1615923625
+    },
+    "PLbjDnnBIxiEqV2AcIJNb7Y3TkYLQ3Bif-": {
+        "features\/transportation\/vehicles\/drones": 1615923625
+    },
+    "Geothermal": {
+        "geothermal": 1615923625
+    },
+    "Resource Extractor": {
+        "resource-extractor": 1615923625
+    },
+    "Water": {
+        "water": 1615923625
+    },
+    "PLbjDnnBIxiEr_iLGFpJxH-pKRn9D0qsna": {
+        "environment\/resources\/water": 1615924380
     }
 }
