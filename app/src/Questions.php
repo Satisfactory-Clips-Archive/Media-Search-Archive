@@ -134,7 +134,7 @@ class Questions
 			array_filter(
 				$cache['playlistItems'],
 				static function (array $maybe) : bool {
-					return (bool) preg_match('/^q&a:/i', $maybe[1]);
+					return (bool) preg_match('/^(.+\ )?q&a:/i', $maybe[1]);
 				}
 			)
 		);
