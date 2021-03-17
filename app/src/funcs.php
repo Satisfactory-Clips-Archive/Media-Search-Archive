@@ -512,6 +512,25 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 			}
 		}
 
+		foreach (
+			array_keys(
+				$injected_global_topic_hierarchy['satisfactory']
+			) as $topic
+		) {
+			[$topic_id, $topic_name] = determine_playlist_id(
+				$topic,
+				$cache,
+				$not_a_livestream,
+				$not_a_livestream_date_lookup
+			);
+
+			$injected_cache['stubPlaylists'][$topic_id] = [
+				'',
+				$topic_name,
+				[],
+			];
+		}
+
 		$cache = inject_caches($cache, $injected_cache);
 
 		$externals_cache = process_externals(
@@ -2225,7 +2244,7 @@ function process_dated_csv(
 				return
 					isset($data['skip'][$k])
 						? ( ! $data['skip'][$k])
-						: isset($data['topics'][$k]);
+						: (false !== ($data['topics'][$k] ?? false));
 			},
 			ARRAY_FILTER_USE_KEY
 		)
