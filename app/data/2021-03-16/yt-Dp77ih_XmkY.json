@@ -23,25 +23,71 @@
 		false
 	],
 	"topics": [
-		[],
-		[],
-		["Tier 7", "Recipes", "Refinery", "Tier 8"],
-		["Resource Wells", "Resource Well Extractor", "Resource Well Pressurizer", "Resources", "Oil", "Water"],
-		["Blender", "Recipes"],
-		["Nuclear Waste", "Nuclear Energy"],
-		["Nuclear Waste", "Nuclear Energy"],
-		[],
-		["Power Storage"],
-		["Power Management"],
-		["Geothermal Energy", "Power Storage"],
-		["Power Switch"],
-		["Lights"],
-		[],
-		["Drones"],
-		["Hover Pack"],
-		[],
-		["Zip Lines"],
-		[],
-		["Particle Accelerator"]
+		[
+		],
+		[
+		],
+		[
+			"Tier 7",
+			"Recipes",
+			"Refinery",
+			"Tier 8"
+		],
+		[
+			"Resource Wells",
+			"Resource Well Extractor",
+			"Resource Well Pressurizer",
+			"Resources",
+			"Oil",
+			"Water"
+		],
+		[
+			"Blender",
+			"Recipes"
+		],
+		[
+			"Nuclear Waste",
+			"Nuclear Energy"
+		],
+		[
+			"Nuclear Waste",
+			"Nuclear Energy"
+		],
+		[
+		],
+		[
+			"Power Storage"
+		],
+		[
+			"Power Management"
+		],
+		[
+			"Geothermal Energy",
+			"Power Storage"
+		],
+		[
+			"Power Switch"
+		],
+		[
+			"Lights"
+		],
+		[
+		],
+		[
+			"Drones"
+		],
+		[
+			"Hover Pack"
+		],
+		[
+		],
+		[
+			"Zip Lines"
+		],
+		[
+		],
+		[
+			"Particle Accelerator"
+		]
 	]
 }
