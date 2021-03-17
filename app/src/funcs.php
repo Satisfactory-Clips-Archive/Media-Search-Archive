@@ -2326,7 +2326,7 @@ function process_dated_csv(
 				}
 			}
 
-			if ($write_files) {
+			if ($write_files && '' !== trim($csv_captions[$i][3])) {
 				$files_out[
 					__DIR__
 					. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
