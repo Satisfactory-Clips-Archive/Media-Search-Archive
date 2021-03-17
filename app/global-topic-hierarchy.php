@@ -59,7 +59,7 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEpH9vCWSguzYfXrsjagXgyE' => [ // Satisfactory Update 4
 			4,
 			'Satisfactory Updates',
-			'Pending',
+			'Released',
 		],
 		'PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6' => [ // Satisfactory Update 5
 			5,
