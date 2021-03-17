@@ -1,4 +1,29 @@
-{"title": "Update 4: Patch Notes Treasure Hunt!", "skip": [true, true, false, false, false, false, false, true, false, false, false, false, false, true, false, false, true, false, true, false], "topics": [[],
+{
+	"title": "Update 4: Patch Notes Treasure Hunt!",
+	"skip": [
+		true,
+		true,
+		false,
+		false,
+		false,
+		false,
+		false,
+		true,
+		false,
+		false,
+		false,
+		false,
+		false,
+		true,
+		false,
+		false,
+		true,
+		false,
+		true,
+		false
+	],
+	"topics": [
+		[],
 	[],
 	["Tier 7", "Recipes", "Refinery", "Tier 8"],
 	["Resource Wells", "Resource Well Extractor", "Resource Well Pressurizer", "Resources", "Oil", "Water"],
@@ -18,4 +43,5 @@
 	["Zip Lines"],
 	[],
 	["Particle Accelerator"]
-]}
+	]
+}
