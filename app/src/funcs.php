@@ -1924,111 +1924,111 @@ function process_externals(
 		$file_blanked[$date] = false;
 
 		foreach ($externals_data_groups as $externals_data) {
-		[$inject, $lines_to_write] = process_dated_csv(
-			$date,
-			$inject,
-			$externals_data,
-			$cache,
-			$global_topic_hierarchy,
-			$not_a_livestream,
-			$not_a_livestream_date_lookup,
-			$slugify,
-			$write_files,
-			true,
-			$file_blanked[$date],
-			$file_blanked[$date] && 1 === count($externals_data_groups)
-		);
+			[$inject, $lines_to_write] = process_dated_csv(
+				$date,
+				$inject,
+				$externals_data,
+				$cache,
+				$global_topic_hierarchy,
+				$not_a_livestream,
+				$not_a_livestream_date_lookup,
+				$slugify,
+				$write_files,
+				true,
+				$file_blanked[$date],
+				$file_blanked[$date] && 1 === count($externals_data_groups)
+			);
 
-		$filename = (
-			__DIR__
-			. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
-			. $date .
-			'.md'
-		);
+			$filename = (
+				__DIR__
+				. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
+				. $date .
+				'.md'
+			);
 
-		if ($write_files) {
-			if (
-				file_exists(
-					__DIR__
-					. '/../data/externals/'
-					. $date
-					. '.json'
-				)
-			) {
-				[, $playlist_friendly_name] = determine_playlist_id(
-					$date,
-					$cache,
-					$not_a_livestream,
-					$not_a_livestream_date_lookup
-				);
-
-				if (preg_match('/^title: ".+"\n$/', $lines_to_write[0][1])) {
-					$lines_to_write[0][1] = preg_replace(
-						'/"\n$/',
-						sprintf(' & %s"' . "\n", $playlist_friendly_name),
-						$lines_to_write[0][1]
-					);
-				}
-
-				/** @var list<string> */
-				$video_ids = array_keys((array) json_decode(
-					file_get_contents(
+			if ($write_files) {
+				if (
+					file_exists(
 						__DIR__
 						. '/../data/externals/'
 						. $date
 						. '.json'
-					),
-					true
-				));
+					)
+				) {
+					[, $playlist_friendly_name] = determine_playlist_id(
+						$date,
+						$cache,
+						$not_a_livestream,
+						$not_a_livestream_date_lookup
+					);
 
-				usort(
-					$video_ids,
-					static function (string $a, string $b) use ($cache) : int {
-						return strnatcasecmp(
-							$cache['playlistItems'][$a][1],
-							$cache['playlistItems'][$b][1]
+					if (preg_match('/^title: ".+"\n$/', $lines_to_write[0][1])) {
+						$lines_to_write[0][1] = preg_replace(
+							'/"\n$/',
+							sprintf(' & %s"' . "\n", $playlist_friendly_name),
+							$lines_to_write[0][1]
 						);
 					}
-				);
 
-				$lines_to_write[0][] = "\n";
+					/** @var list<string> */
+					$video_ids = array_keys((array) json_decode(
+						file_get_contents(
+							__DIR__
+							. '/../data/externals/'
+							. $date
+							. '.json'
+						),
+						true
+					));
 
-				$lines_to_write[0][] = sprintf(
-					'# %s' . "\n",
-					$playlist_friendly_name
-				);
-
-				foreach ($video_ids as $video_id) {
-					$lines_to_write[0][] = sprintf(
-						'* %s' . "\n",
-						maybe_transcript_link_and_video_url(
-							$video_id,
-							$cache['playlistItems'][$video_id][1]
-						)
+					usort(
+						$video_ids,
+						static function (string $a, string $b) use ($cache) : int {
+							return strnatcasecmp(
+								$cache['playlistItems'][$a][1],
+								$cache['playlistItems'][$b][1]
+							);
+						}
 					);
+
+					$lines_to_write[0][] = "\n";
+
+					$lines_to_write[0][] = sprintf(
+						'# %s' . "\n",
+						$playlist_friendly_name
+					);
+
+					foreach ($video_ids as $video_id) {
+						$lines_to_write[0][] = sprintf(
+							'* %s' . "\n",
+							maybe_transcript_link_and_video_url(
+								$video_id,
+								$cache['playlistItems'][$video_id][1]
+							)
+						);
+					}
+				}
+
+				[$processed_lines, $files_with_lines_to_write] = $lines_to_write;
+
+				if ( ! $file_blanked[$date]) {
+					$file_blanked[$date] = true;
+
+				file_put_contents($filename, '');
+				}
+
+				foreach ($processed_lines as $line) {
+					file_put_contents($filename, $line, FILE_APPEND);
+				}
+
+				if (count($externals_data_groups) > 1) {
+					file_put_contents($filename, "\n", FILE_APPEND);
+				}
+
+				foreach ($files_with_lines_to_write as $other_file => $lines) {
+					file_put_contents($other_file, implode('', $lines));
 				}
 			}
-
-			[$processed_lines, $files_with_lines_to_write] = $lines_to_write;
-
-			if ( ! $file_blanked[$date]) {
-				$file_blanked[$date] = true;
-
-			file_put_contents($filename, '');
-			}
-
-			foreach ($processed_lines as $line) {
-				file_put_contents($filename, $line, FILE_APPEND);
-			}
-
-			if (count($externals_data_groups) > 1) {
-				file_put_contents($filename, "\n", FILE_APPEND);
-			}
-
-			foreach ($files_with_lines_to_write as $other_file => $lines) {
-				file_put_contents($other_file, implode('', $lines));
-			}
-		}
 		}
 	}
 
