@@ -36,6 +36,7 @@ use const FILE_APPEND;
 use function file_exists;
 use function file_get_contents;
 use function file_put_contents;
+use function filemtime;
 use function floor;
 use function fopen;
 use function glob;
@@ -2014,7 +2015,7 @@ function process_externals(
 				if ( ! $file_blanked[$date]) {
 					$file_blanked[$date] = true;
 
-				file_put_contents($filename, '');
+					file_put_contents($filename, '');
 				}
 
 				foreach ($processed_lines as $line) {
