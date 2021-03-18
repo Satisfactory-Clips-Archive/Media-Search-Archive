@@ -427,7 +427,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 			'stubPlaylists' => [],
 		];
 
-		foreach (get_additopnal_externals() as $date => $data) {
+		foreach (get_additional_externals() as $date => $data) {
 			[$dated_playlist_id, $playlist_name] = determine_playlist_id(
 				$date,
 				$cache,
@@ -1697,7 +1697,7 @@ function get_externals() : array
  *	legacyof:list<string>
  * }>>
  */
-function get_additopnal_externals() : array
+function get_additional_externals() : array
 {
 	$inject_externals = array_filter(
 		glob(__DIR__ . '/../data/externals/*.json'),
