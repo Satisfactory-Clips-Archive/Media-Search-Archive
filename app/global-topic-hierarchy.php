@@ -934,8 +934,5 @@ $injected_global_topic_hierarchy = [
 		'Zip Strips' => [
 			'Mods',
 		],
-		'Panakotta00' => [
-			'Community',
-		],
 	],
 ];
