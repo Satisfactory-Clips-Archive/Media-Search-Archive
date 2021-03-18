@@ -895,5 +895,47 @@ $injected_global_topic_hierarchy = [
 			'Environment',
 			'Resources',
 		],
+		'Blastroid' => [
+			'Community',
+		],
+		'Signs Mod' => [
+			'Mods',
+		],
+		'Power Suit' => [
+			'Mods',
+		],
+		'Item Dispensers' => [
+			'Mods',
+		],
+		'Structural Solutions' => [
+			'Mods',
+		],
+		'Flags' => [
+			'Mods',
+		],
+		'Refined Power' => [
+			'Mods',
+		],
+		'Inserters' => [
+			'Mods',
+		],
+		'Teleporters' => [
+			'Mods',
+		],
+		'Light It Up' => [
+			'Mods',
+		],
+		'Statue Mod' => [
+			'Mods',
+		],
+		'Pak Utility' => [
+			'Mods',
+		],
+		'Zip Strips' => [
+			'Mods',
+		],
+		'Panakotta00' => [
+			'Community',
+		],
 	],
 ];
