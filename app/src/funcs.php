@@ -1602,7 +1602,7 @@ function raw_captions(string $video_id) : array
 /**
  * @return array<
  *	string,
- *	array{
+ *	list<array{
  *		0:string,
  *		1:list<array{
  *			0:numeric-string|'',
@@ -1614,12 +1614,12 @@ function raw_captions(string $video_id) : array
  *			skip:list<bool>,
  *			topics:array<int, list<string>>
  *		}
- *	}
+ *	}>
  * >
  */
 function get_externals() : array
 {
-	return array_reduce(
+	$csv_files =
 		array_filter(
 			glob(__DIR__ . '/../data/*/*.csv'),
 			static function (string $maybe) : bool {
@@ -1630,11 +1630,18 @@ function get_externals() : array
 					preg_match('/^(?:yt)\-/', $info)
 					&& is_file($dir . '/' . $info . '.json');
 			}
-		),
+	);
+
+	usort($csv_files, static function (string $a, string $b) : int {
+		return filemtime($b) <=> filemtime($a);
+	});
+
+	return array_reduce(
+		$csv_files,
 		/**
 		 * @param array<
 		 *	string,
-		 *	array{
+		 *	list<array{
 		 *		0:string,
 		 *		1:list<array{
 		 *			0:numeric-string|'',
@@ -1646,12 +1653,12 @@ function get_externals() : array
 		 *			skip:list<bool>,
 		 *			topics:array<int, list<string>>
 		 *		}
-		 *	}
+		 *	}>
 		 * > $out
 		 *
 		 * @return array<
 		 *	string,
-		 *	array{
+		 *	list<array{
 		 *		0:string,
 		 *		1:list<array{
 		 *			0:numeric-string|'',
@@ -1663,7 +1670,7 @@ function get_externals() : array
 		 *			skip:list<bool>,
 		 *			topics:array<int, list<string>>
 		 *		}
-		 *	}
+		 *	}>
 		 * >
 		 */
 		static function (array $out, string $path) : array {
@@ -1675,13 +1682,15 @@ function get_externals() : array
 					'Unsupported date found for: %s',
 					$path
 				));
+			} elseif ( ! isset($out[$date])) {
+				$out[$date] = [];
 			}
 
 			$video_id = pathinfo($path, PATHINFO_FILENAME);
 
 			$dated_csv = get_dated_csv($date, $video_id);
 
-			$out[$date] = $dated_csv;
+			$out[$date][] = $dated_csv;
 
 			return $out;
 		},
@@ -1908,7 +1917,13 @@ function process_externals(
 		'videoTags' => [],
 	];
 
-	foreach ($externals as $date => $externals_data) {
+	/** @var array<string, bool> */
+	$file_blanked = [];
+
+	foreach ($externals as $date => $externals_data_groups) {
+		$file_blanked[$date] = false;
+
+		foreach ($externals_data_groups as $externals_data) {
 		[$inject, $lines_to_write] = process_dated_csv(
 			$date,
 			$inject,
@@ -1918,7 +1933,10 @@ function process_externals(
 			$not_a_livestream,
 			$not_a_livestream_date_lookup,
 			$slugify,
-			$write_files
+			$write_files,
+			true,
+			$file_blanked[$date],
+			$file_blanked[$date] && 1 === count($externals_data_groups)
 		);
 
 		$filename = (
@@ -1993,15 +2011,24 @@ function process_externals(
 
 			[$processed_lines, $files_with_lines_to_write] = $lines_to_write;
 
+			if ( ! $file_blanked[$date]) {
+				$file_blanked[$date] = true;
+
 			file_put_contents($filename, '');
+			}
 
 			foreach ($processed_lines as $line) {
 				file_put_contents($filename, $line, FILE_APPEND);
 			}
 
+			if (count($externals_data_groups) > 1) {
+				file_put_contents($filename, "\n", FILE_APPEND);
+			}
+
 			foreach ($files_with_lines_to_write as $other_file => $lines) {
 				file_put_contents($other_file, implode('', $lines));
 			}
+		}
 		}
 	}
 
@@ -2055,10 +2082,15 @@ function process_dated_csv(
 	Slugify $slugify,
 	bool $write_files = true,
 	bool $do_injection = true,
-	bool $skip_header = false
+	bool $skip_header = false,
+	bool $skip_header_title = null
 ) : array {
 	/** @var list<string> */
 	$out = [];
+
+	if (null === $skip_header_title) {
+		$skip_header_title = $skip_header;
+	}
 
 	/** @var array<string, list<string>> */
 	$files_out = [];
@@ -2076,12 +2108,16 @@ function process_dated_csv(
 			sprintf('date: "%s"', $date) . "\n",
 			'layout: livestream' . "\n",
 			'---' . "\n",
+		]);
+	}
+
+	if ($write_files && ! $skip_header_title) {
+		$out[] =
 			sprintf(
 				'# %s %s' . "\n",
 				$friendly_date,
 				$data['title']
-			),
-		]);
+		);
 	}
 
 	/**
@@ -2251,7 +2287,9 @@ function process_dated_csv(
 	);
 
 	if ($do_injection) {
-		$inject['playlists'][$date] = ['', $data['title'], array_map(
+		$inject['playlists'][$date] = ['', $data['title'], array_merge(
+			$inject['playlists'][$date][2] ?? [],
+			array_map(
 			static function (int $i) use ($externals_csv, $video_id) : string {
 				[$start, $end] = $externals_csv[$i];
 
@@ -2262,6 +2300,7 @@ function process_dated_csv(
 				);
 			},
 			array_keys($csv_captions)
+			)
 		)];
 	}
 
