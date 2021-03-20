@@ -490,7 +490,7 @@ $global_topic_hierarchy = [
 		],
 		'PLbjDnnBIxiEqDSLRIdyHmUlI71j458DqR' => [ // Lights
 			'Features',
-			'Planned Features',
+			'Buildables',
 		],
 		'PLbjDnnBIxiErLIqP7klFJBCBImVRLTrqD' => [ // Linus
 			'Coffee Stainers',

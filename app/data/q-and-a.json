@@ -24,7 +24,7 @@
         "title": "Q&A: Do we have lights though? really?",
         "date": "2021-03-17",
         "topics": [
-            "features\/planned-features\/lights",
+            "features\/buildables\/lights",
             "satisfactory-updates\/teasers-trailers\/update-4-patch-notes-video"
         ]
     },
@@ -8065,7 +8065,7 @@
         "title": "Q&A: Is the lack of placeable lights due to visual errors or performance?",
         "date": "2021-02-16",
         "topics": [
-            "features\/planned-features\/lights"
+            "features\/buildables\/lights"
         ],
         "seealso": [
             "xXbrwFqiS5g",
@@ -13518,8 +13518,8 @@
         "title": "Q&A: Ability to sleep coming any time?",
         "date": "2021-01-26",
         "topics": [
+            "features\/buildables\/lights",
             "features\/buildings\/the-hub",
-            "features\/planned-features\/lights",
             "technology\/graphics",
             "technology\/unreal-engine"
         ],
@@ -14478,7 +14478,7 @@
         "title": "Q&A: Lights & Lampposts please?",
         "date": "2021-01-26",
         "topics": [
-            "features\/planned-features\/lights",
+            "features\/buildables\/lights",
             "technology\/graphics"
         ],
         "duplicates": [
@@ -18056,7 +18056,7 @@
         "title": "Q&A: Are there any plans to add Lights inside the factory?",
         "date": "2021-01-12",
         "topics": [
-            "features\/planned-features\/lights"
+            "features\/buildables\/lights"
         ],
         "duplicatedby": "xXbrwFqiS5g"
     },
@@ -22153,7 +22153,7 @@
         "date": "2020-11-17",
         "topics": [
             "environment\/world-map",
-            "features\/planned-features\/lights"
+            "features\/buildables\/lights"
         ],
         "seealso": [
             "xXbrwFqiS5g"
@@ -24705,7 +24705,7 @@
         "title": "Q&A: Can you put in Lights, please?",
         "date": "2020-11-03",
         "topics": [
-            "features\/planned-features\/lights"
+            "features\/buildables\/lights"
         ],
         "duplicatedby": "xXbrwFqiS5g"
     },
@@ -30418,7 +30418,7 @@
         "title": "Q&A: How about lighting?",
         "date": "2020-09-22",
         "topics": [
-            "features\/planned-features\/lights"
+            "features\/buildables\/lights"
         ],
         "duplicatedby": "xXbrwFqiS5g"
     },
@@ -32116,7 +32116,7 @@
         "title": "Q&A: Indoor factories are very dark, will we be getting lighting to add to our bases?",
         "date": "2020-09-08",
         "topics": [
-            "features\/planned-features\/lights"
+            "features\/buildables\/lights"
         ],
         "seealso": [
             "2NIYN2OWrWs"
@@ -33785,7 +33785,7 @@
         "title": "Q&A: What about lights?",
         "date": "2020-09-01",
         "topics": [
-            "features\/planned-features\/lights"
+            "features\/buildables\/lights"
         ],
         "duplicatedby": "xXbrwFqiS5g"
     },
@@ -36064,7 +36064,7 @@
         "title": "Q&A: State of things = \ud83e\udd37?",
         "date": "2020-08-25",
         "topics": [
-            "features\/planned-features\/lights",
+            "features\/buildables\/lights",
             "features\/unplanned-features\/aerial-travel",
             "features\/unplanned-features\/procedural-generation",
             "satisfactory-updates\/released\/satisfactory-update-4",
@@ -36860,7 +36860,7 @@
         "title": "Q&A: Will light be added to the game?",
         "date": "2020-08-25",
         "topics": [
-            "features\/planned-features\/lights",
+            "features\/buildables\/lights",
             "mods\/mods-vs-features"
         ],
         "legacyalts": [
@@ -39579,8 +39579,8 @@
         "title": "Q&A: What does Performance Budget mean?",
         "date": "2020-05-19",
         "topics": [
+            "features\/buildables\/lights",
             "features\/multiplayer",
-            "features\/planned-features\/lights",
             "technology\/graphics",
             "technology\/unreal-engine"
         ],
@@ -39686,7 +39686,7 @@
         "title": "Q&A: Why can't you just add lights to the game?",
         "date": "2020-05-19",
         "topics": [
-            "features\/planned-features\/lights",
+            "features\/buildables\/lights",
             "technology\/unreal-engine"
         ],
         "duplicatedby": "xXbrwFqiS5g"
@@ -44682,8 +44682,8 @@
         "title": "Q&A: Why did you take our industrial lights away from walkways, I miss those?",
         "date": "2019-03-09",
         "topics": [
-            "features\/buildings",
-            "features\/planned-features\/lights"
+            "features\/buildables\/lights",
+            "features\/buildings"
         ],
         "suggested": [
             "-9gsspVilYk",
@@ -44804,7 +44804,7 @@
         "title": "Q&A: Will there be lamps for night?",
         "date": "2019-03-09",
         "topics": [
-            "features\/planned-features\/lights",
+            "features\/buildables\/lights",
             "features\/transportation\/vehicles"
         ],
         "duplicatedby": "xXbrwFqiS5g"
@@ -46402,7 +46402,7 @@
         "date": "2019-02-20",
         "topics": [
             "environment",
-            "features\/planned-features\/lights"
+            "features\/buildables\/lights"
         ],
         "seealso": [
             "s7NbxyG5lTo",
@@ -48179,8 +48179,8 @@
         "date": "2019-02-20",
         "topics": [
             "environment",
-            "features\/equipment",
-            "features\/planned-features\/lights"
+            "features\/buildables\/lights",
+            "features\/equipment"
         ],
         "seealso": [
             "15jG0o32Dqk"
