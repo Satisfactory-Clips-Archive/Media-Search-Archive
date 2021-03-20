@@ -2338,7 +2338,8 @@ function process_dated_csv(
 
 		$start = (float) ($start ?: '0.0');
 
-		$start_minutes = str_pad((string) floor($start / 60), 2, '0', STR_PAD_LEFT);
+		$start_hours = str_pad((string) floor($start / 3600), 2, '0', STR_PAD_LEFT);
+		$start_minutes = str_pad((string) floor(($start % 3600) / 60), 2, '0', STR_PAD_LEFT);
 		$start_seconds = str_pad((string) ($start % 60), 2, '0', STR_PAD_LEFT);
 
 		$clip_title_maybe = $clip_title;
@@ -2480,7 +2481,8 @@ function process_dated_csv(
 
 		if ($write_files) {
 			$out[] = sprintf(
-				'* [%s:%s](%s) %s' . "\n",
+				'* [%s:%s:%s](%s) %s' . "\n",
+				$start_hours,
 				$start_minutes,
 				$start_seconds,
 				timestamp_link($video_id, $start),
