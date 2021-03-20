@@ -1647,6 +1647,16 @@ function get_externals() : array
 	);
 
 	usort($csv_files, static function (string $a, string $b) : int {
+		$a_basename = basename($a);
+		$b_basename = basename($b);
+
+		if (
+			preg_match('/^ts\-\d+\.csv$/', $a_basename)
+			|| preg_match('/^ts\-\d+\.csv$/', $b_basename)
+		) {
+			return strnatcasecmp($a_basename, $b_basename);
+		}
+
 		return filemtime($b) <=> filemtime($a);
 	});
 

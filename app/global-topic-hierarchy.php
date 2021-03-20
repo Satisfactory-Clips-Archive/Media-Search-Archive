@@ -965,5 +965,18 @@ $injected_global_topic_hierarchy = [
 		'Alex' => [
 			'Coffee Stainers',
 		],
+		'Sweden' => [
+			'Off-Topic',
+		],
+		'Nuclear Pasta' => [
+			'Environment',
+			'Resources',
+		],
+		'Pontus' => [
+			'Coffee Stainers',
+		],
+		'DrawingXaos' => [
+			'Community',
+		],
 	],
 ];
