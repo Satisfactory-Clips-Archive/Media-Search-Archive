@@ -2113,11 +2113,10 @@ function process_dated_csv(
 	}
 
 	if ($write_files && ! $skip_header_title) {
-		$out[] =
-			sprintf(
-				'# %s %s' . "\n",
-				$friendly_date,
-				$data['title']
+		$out[] = sprintf(
+			'# %s %s' . "\n",
+			$friendly_date,
+			$data['title']
 		);
 	}
 
@@ -2245,31 +2244,30 @@ function process_dated_csv(
 
 						return $from >= $start && $to <= (float) $end;
 					}
-					),
-					/**
-					 * @param non-empty-list<string> $out
-					 * @param array{2:string, 3?:bool} $caption_line
-					 *
-					 * @return non-empty-list<string>
-					 */
-					static function (array $out, array $caption_line) : array {
-						$follows_on_from_previous = $caption_line[3] ?? false;
+				),
+				/**
+				 * @param non-empty-list<string> $out
+				 * @param array{2:string, 3?:bool} $caption_line
+				 *
+				 * @return non-empty-list<string>
+				 */
+				static function (array $out, array $caption_line) : array {
+					$follows_on_from_previous = $caption_line[3] ?? false;
 
-						if ($follows_on_from_previous) {
-							$out[] = preg_replace(
-								'/\s+/',
-								' ',
-								array_pop($out) . ' ' . $caption_line[2]
-							);
-						} else {
-							$out[] = $caption_line[2];
-						}
+					if ($follows_on_from_previous) {
+						$out[] = preg_replace(
+							'/\s+/',
+							' ',
+							array_pop($out) . ' ' . $caption_line[2]
+						);
+					} else {
+						$out[] = $caption_line[2];
+					}
 
-						return $out;
-					},
-					['']
-				)
-			));
+					return $out;
+				},
+				['']
+			)));
 
 			$csv_line[3] = $csv_line_captions;
 
@@ -2291,16 +2289,16 @@ function process_dated_csv(
 		$inject['playlists'][$date] = ['', $data['title'], array_merge(
 			$inject['playlists'][$date][2] ?? [],
 			array_map(
-			static function (int $i) use ($externals_csv, $video_id) : string {
-				[$start, $end] = $externals_csv[$i];
+				static function (int $i) use ($externals_csv, $video_id) : string {
+					[$start, $end] = $externals_csv[$i];
 
-				return sprintf(
-					'%s,%s',
-					$video_id,
-					$start . ('' === $end ? '' : (',' . $end))
-				);
-			},
-			array_keys($csv_captions)
+					return sprintf(
+						'%s,%s',
+						$video_id,
+						$start . ('' === $end ? '' : (',' . $end))
+					);
+				},
+				array_keys($csv_captions)
 			)
 		)];
 	}
