@@ -131,11 +131,24 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		$end = isset($parts[2]) ? (float) $parts[2] : null;
 
 		return embed_link($video_id, $start, $end);
+	} elseif (preg_match('/^ts-.\d+(?:,(?:\d+(?:\.\d+)?)?){2}/', $video_id)) {
+		$parts = explode(',', $video_id);
+		[$video_id, $start] = $parts;
+
+		$start = '' === trim($start) ? null : (float) $start;
+		$end = isset($parts[2]) ? (float) $parts[2] : null;
+
+		return embed_link($video_id, $start, $end);
 	}
 
 	if (0 === mb_strpos($video_id, 'tc-')) {
 		return sprintf(
 			'https://clips.twitch.tv/%s',
+			rawurlencode(mb_substr($video_id, 3))
+		);
+	} elseif (0 === mb_strpos($video_id, 'ts-')) {
+		return sprintf(
+			'https://twitch.tv/videos/%s',
 			rawurlencode(mb_substr($video_id, 3))
 		);
 	} elseif ($short) {
