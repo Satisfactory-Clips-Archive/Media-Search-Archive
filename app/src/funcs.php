@@ -2341,11 +2341,13 @@ function process_dated_csv(
 				$inject['videoTags'][$clip_id] = ['', []];
 			}
 
+			if ('' !== trim($csv_captions[$i][3])) {
 			$clip_title_maybe = sprintf(
 				'[%s](./transcriptions/%s)',
 				$clip_title,
 				$basename
 			);
+			}
 
 			if ($do_injection) {
 				foreach (($data['topics'][$i] ?? []) as $topic) {
