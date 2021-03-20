@@ -1628,7 +1628,7 @@ function get_externals() : array
 				$info = pathinfo($maybe, PATHINFO_FILENAME);
 
 				return
-					preg_match('/^(?:yt)\-/', $info)
+					preg_match('/^(?:yt|ts)\-/', $info)
 					&& is_file($dir . '/' . $info . '.json');
 			}
 	);

@@ -934,5 +934,36 @@ $injected_global_topic_hierarchy = [
 		'Zip Strips' => [
 			'Mods',
 		],
+		'Update 3 Reveal Trailer' => [
+			300,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'Update 3 Patch Notes Video' => [
+			301,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'Update 4 Teasers' => [
+			400,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'Update 4 Launch Stream' => [
+			401,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'Update 4 Patch Notes Video' => [
+			402,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'Satisfactory News' => [
+			'Community',
+		],
+		'Alex' => [
+			'Coffee Stainers',
+		],
 	],
 ];
