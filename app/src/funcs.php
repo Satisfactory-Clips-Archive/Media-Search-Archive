@@ -2342,11 +2342,11 @@ function process_dated_csv(
 			}
 
 			if ('' !== trim($csv_captions[$i][3])) {
-			$clip_title_maybe = sprintf(
-				'[%s](./transcriptions/%s)',
-				$clip_title,
-				$basename
-			);
+				$clip_title_maybe = sprintf(
+					'[%s](./transcriptions/%s)',
+					$clip_title,
+					$basename
+				);
 			}
 
 			if ($do_injection) {
