@@ -1286,10 +1286,18 @@ $basename_topic_nesting = $topic_nesting[$basename];
 
 $past_first = false;
 
+$last_level = 0;
+
 foreach ($basename_topic_nesting as $topic_id => $nesting_data) {
 	if (isset($playlists[$topic_id])) {
 		continue;
 	}
+
+	if ($nesting_data['level'] < $last_level) {
+		$file_lines[] = '---' . "\n";
+	}
+
+	$last_level = $nesting_data['level'];
 
 	$include_heading = count($nesting_data['children']) > 0;
 
