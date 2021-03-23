@@ -136,7 +136,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		[$video_id, $start] = $parts;
 
 		$start = '' === trim($start) ? null : (float) $start;
-		$end = isset($parts[2]) ? (float) $parts[2] : null;
+		$end = isset($parts[2]) ? $parts[2] : null;
 
 		return embed_link($video_id, $start, $end);
 	}
@@ -2442,7 +2442,7 @@ function process_dated_csv(
 					embed_link(
 						$video_id,
 						$start,
-						'' === $end ? null : ((float) $end)
+						'' === $end ? null : $end
 					),
 					"\n",
 					'### Topics' . "\n",
@@ -2495,7 +2495,19 @@ function process_dated_csv(
 				$start_hours,
 				$start_minutes,
 				$start_seconds,
-				timestamp_link($video_id, $start),
+				(
+					(
+						is_array($data['topics'][$i] ?? null)
+						&& preg_match('/^ts\-\d+$/', $video_id)
+						&& '' !== $end
+					)
+						? embed_link(
+							$video_id,
+							$line[0],
+							$line[1]
+						)
+						: timestamp_link($video_id, $start)
+				),
 				$clip_title_maybe
 			);
 		}
@@ -2539,7 +2551,11 @@ function timestamp_link(string $video_id, float $start) : string
 	));
 }
 
-function embed_link(string $video_id, ? float $start, ? float $end) : string
+/**
+ * @param float|numeric-string|null $start
+ * @param float|numeric-string|null $end
+ */
+function embed_link(string $video_id, $start, $end) : string
 {
 	$video_id = vendor_prefixed_video_id($video_id);
 	$vendorless_video_id = preg_replace('/,.*$/', '', mb_substr($video_id, 3));
@@ -2562,6 +2578,20 @@ function embed_link(string $video_id, ? float $start, ? float $end) : string
 			'https://youtube.com/embed/%s?%s',
 			$vendorless_video_id,
 			$embed
+		);
+	} elseif (
+		preg_match(
+			'/^ts\-\d+/',
+			$video_id
+		)
+		&& isset($start)
+		&& isset($end)
+	) {
+		return sprintf(
+			'https://play.satisfactory.video/%s,%s,%s/',
+			$video_id,
+			$start,
+			$end
 		);
 	}
 

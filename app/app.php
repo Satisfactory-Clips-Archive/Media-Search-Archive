@@ -70,6 +70,17 @@ $markdownify = new Markdownify($injected);
 
 $cache = $injected->cache;
 $global_topic_hierarchy = ['satisfactory' => $injected->topics_hierarchy];
+file_put_contents(
+	__DIR__ . '/data/play.json',
+	str_replace(
+		PHP_EOL,
+		"\n",
+		json_encode(
+			$injected->format_play(),
+			JSON_PRETTY_PRINT
+		)
+	)
+);
 
 $playlist_satisfactory =
 	realpath(

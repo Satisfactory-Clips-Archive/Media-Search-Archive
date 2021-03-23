@@ -65,6 +65,11 @@ class Injected
 	/**
 	 * @var array<string, string>
 	 */
+	private array $not_a_livestream_date_lookup;
+
+	/**
+	 * @var array<string, string>
+	 */
 	private array $playlists_date_ref;
 
 	public function __construct(YouTubeApiWrapper $api, Slugify $slugify)
@@ -78,6 +83,7 @@ class Injected
 			$this->cache,
 			,
 			$this->not_a_livestream,
+			$this->not_a_livestream_date_lookup,
 		] = $prepared;
 
 		$this->topics_hierarchy = $prepared[1]['satisfactory'];
@@ -201,6 +207,106 @@ class Injected
 					?? $default_label
 			))
 		;
+	}
+
+	public function format_play() : array
+	{
+		return array_map(
+			/**
+			 * @param array{
+			 *	0:string,
+			 *	1:string,
+			 *	2:numeric-string,
+			 *	3:numeric-string,
+			 *	4:string
+			 * } $data
+			 */
+			function (array $data) : array {
+				[$id, $twitch_id, $start, $end, $date] = $data;
+				$hours = floor($start / 3600);
+				$minutes = floor(($start - ($hours * 3600)) / 60);
+				$seconds = floor($start % 60);
+
+				$hours = str_pad((string) $hours, 2, '0', STR_PAD_LEFT);
+				$minutes = str_pad((string) $minutes, 2, '0', STR_PAD_LEFT);
+				$seconds = str_pad((string) $seconds, 2, '0', STR_PAD_LEFT);
+
+				return [
+					'id' => $id,
+					'title' => $this->cache['playlistItems'][$id][1],
+					'topics' => array_map(
+						function (string $topic_id) : array {
+							return topic_to_slug(
+								$topic_id,
+								$this->cache,
+								$this->topics_hierarchy,
+								$this->slugify
+							);
+						},
+						$this->determine_video_topics($id)
+					),
+					'date' => $date,
+					'date_friendly' => determine_playlist_id(
+						$date,
+						$this->cache,
+						$this->not_a_livestream,
+						$this->not_a_livestream_date_lookup
+					)[1],
+					'has_transcriptions' => count(captions($id, [])) > 0,
+					'embed_data' => [
+						$twitch_id,
+						$start,
+						$end,
+						sprintf('%sh:%sm:%ss', $hours, $minutes, $seconds),
+					],
+				];
+			},
+			array_map(
+				/**
+				 * @return array{
+				 *	0:string,
+				 *	1:string,
+				 *	2:numeric-string,
+				 *	3:numeric-string,
+				 *	4:string
+				 * }
+				 */
+				function (string $id) : array {
+					preg_match(
+						'/^ts\-(\d+),(\d+(?:\.\d+)?),(\d+(?:\.\d+)?)$/',
+						$id,
+						$matches
+					);
+
+					/**
+					 * @var array{
+					 *	0:string,
+					 *	1:string,
+					 *	2:numeric-string,
+					 *	3:numeric-string
+					 *	4:string
+					 * }
+					 */
+					return [
+						$id,
+						$matches[1],
+						$matches[2],
+						$matches[3],
+						determine_date_for_video(
+							$id,
+							$this->cache['playlists'],
+							$this->playlists_date_ref
+						),
+					];
+				},
+				array_values(array_filter(
+					$this->all_video_ids(),
+					static function (string $id) : bool {
+						return (bool) preg_match('/^ts\-\d+,\d+(?:\.\d+)?,\d+(?:\.\d+)?$/', $id);
+					}
+				))
+			)
+		);
 	}
 
 	/**
