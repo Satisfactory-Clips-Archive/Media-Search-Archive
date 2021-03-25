@@ -1577,24 +1577,16 @@ function raw_captions(string $video_id) : array
 		$tt = file_get_contents($tt_cache);
 	}
 
+	if ('' === (string) $tt) {
+		return [];
+	}
+
 	/** @var list<SimpleXMLElement> */
 	$lines = [];
 
 	try {
 		$xml = new SimpleXMLElement((string) $tt);
 	} catch (Throwable $e) {
-		if ('' === (string) $tt) {
-			throw new RuntimeException(
-				sprintf(
-					'transcription %s for %s was blank!',
-					$tt_cache,
-					$video_id
-				),
-				0,
-				$e
-			);
-		}
-
 		throw new RuntimeException(
 			$tt_cache . ': ' . $e->getMessage(),
 			0,
