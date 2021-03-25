@@ -135,7 +135,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		$parts = explode(',', $video_id);
 		[$video_id, $start] = $parts;
 
-		$start = '' === trim($start) ? null : (float) $start;
+		$start = '' === trim($start) ? null : $start;
 		$end = isset($parts[2]) ? $parts[2] : null;
 
 		return embed_link($video_id, $start, $end);
@@ -2338,11 +2338,11 @@ function process_dated_csv(
 			$embed_data['end'] = ceil((float) $embed_data['end']);
 		}
 
-		$start = (float) ($start ?: '0.0');
+		$start = ($start ?: '0.0');
 
-		$start_hours = str_pad((string) floor($start / 3600), 2, '0', STR_PAD_LEFT);
-		$start_minutes = str_pad((string) floor(($start % 3600) / 60), 2, '0', STR_PAD_LEFT);
-		$start_seconds = str_pad((string) ($start % 60), 2, '0', STR_PAD_LEFT);
+		$start_hours = str_pad((string) floor(((float) $start) / 3600), 2, '0', STR_PAD_LEFT);
+		$start_minutes = str_pad((string) floor((((float) $start) % 3600) / 60), 2, '0', STR_PAD_LEFT);
+		$start_seconds = str_pad((string) (((float) $start) % 60), 2, '0', STR_PAD_LEFT);
 
 		$clip_title_maybe = $clip_title;
 
@@ -2508,7 +2508,10 @@ function process_dated_csv(
 	return [$inject, [$out, $files_out]];
 }
 
-function timestamp_link(string $video_id, float $start) : string
+/**
+ * @param float|numeric-string $start
+ */
+function timestamp_link(string $video_id, $start) : string
 {
 	$video_id = vendor_prefixed_video_id($video_id);
 	$vendorless_video_id = preg_replace('/,.*$/', '', mb_substr($video_id, 3));
