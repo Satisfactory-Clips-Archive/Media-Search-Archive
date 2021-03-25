@@ -811,6 +811,18 @@ $global_topic_hierarchy = [
 			'Environment',
 			'Resources',
 		],
+		'PLbjDnnBIxiEogLaUpHfzYrDFWtqkpZ-Fw' => [ // GeForce Now
+			'Retail',
+		],
+		'PLbjDnnBIxiEpeF2A25b6waQZkQA2EMlvx' => [ // Cyber Wagon
+			'Features',
+			'Transportation',
+			'Vehicles',
+		],
+		'PLbjDnnBIxiEoBmj-QZNgr4liNREljxxSr' => [ // Walkways
+			'Features',
+			'Buildables',
+		],
 	],
 ];
 
@@ -869,11 +881,6 @@ $injected_global_topic_hierarchy = [
 		],
 		'Unreleased Features' => [
 			'Features',
-		],
-		'Cyber Wagon' => [
-			'Features',
-			'Transportation',
-			'Vehicles',
 		],
 		'Free Weekends' => [
 			'Satisfactory Updates',

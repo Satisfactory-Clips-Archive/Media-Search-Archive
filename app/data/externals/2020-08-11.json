@@ -48,7 +48,9 @@
     "tc-BoxyZanyPancakeKeepo": {
         "title": "Jace Talk: The Q&A Site (Part 1):",
         "tags": [],
-        "topics": [],
+        "topics": [
+			"QA Site"
+		],
         "legacyof": []
     },
     "tc-ClearColdbloodedCakeVoHiYo": {
@@ -335,7 +337,9 @@
     "tc-RenownedQuaintBeaverAMPTropPunch": {
         "title": "Jace Talk: The Q&A Site (Part 2):",
         "tags": [],
-        "topics": [],
+        "topics": [
+			"QA Site"
+		],
         "legacyof": []
     },
     "tc-RespectfulDreamyHabaneroMrDestructoid": {
@@ -462,7 +466,9 @@
     "tc-ZealousNastyCiderPeteZarollTie": {
         "title": "Jace Talk: The Q&A Site (Part 3):",
         "tags": [],
-        "topics": [],
+        "topics": [
+			"QA Site"
+		],
         "legacyof": []
     }
 }
