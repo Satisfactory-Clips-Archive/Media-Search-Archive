@@ -658,8 +658,6 @@ echo "\n",
 	)
 ;
 
-exit(1);
-
 $checked = 0;
 
 foreach ($transcripts_json as $video_id => $video_data) {
