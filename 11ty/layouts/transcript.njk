@@ -24,13 +24,19 @@
 	itemscope
 	itemtype="https://schema.org/Question"
 ><meta
+	itemprop="author" content="Satisfactory Community"
+><meta
 	itemprop="answerCount" content="1"
 ><meta itemprop="dateCreated" content="{{date}}">{{
 	content
 	| safe
 	| replace(
 		'<h2>Q&amp;A:',
-		'<h2 itemprop="name">Q&amp;A:'
+		'<h2 itemprop="name">Q&amp;A: <span itemprop="text">'
+	)
+	| replace(
+		'</h2>',
+		'</span></h2>'
 	)
 	| replace(
 		'<blockquote>',
