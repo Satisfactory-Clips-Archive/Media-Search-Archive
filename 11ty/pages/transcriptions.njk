@@ -22,16 +22,30 @@ layout: transcriptions
 {{
 	transcript.other_parts | markdownify | safe
 }}{%
-	if transcript.topics.length > 0
-%}<h3>Topics</h3>
-<ul>{% for topic_id in transcript.topics %}
-<li><a href="/topics/{{
-	topicStrings[topic_id]
-}}/">{{
-	topics[topicStrings[topic_id]]
-	| join(' > ')
-}}</a></li>{% endfor %}
-</ul>{% endif %}{%
+	if transcript.is_replaced
+%}<p>This question was possibly replaced with a more recent answer: {%
+			if transcript.is_replaced[1]
+%}<a href="../{{transcript.is_replaced[1]}}/">{{
+				transcript.is_replaced[0]
+}}</a>{%
+			else
+%}{{transcript.is_replaced[0]}}{%
+			endif
+%} <a rel="noopener" target="_blank" href="{{
+			transcript.is_replaced[2]
+}}">{{transcript.is_replaced[2]}}</a></p>{% endif %}{%
+	if transcript.is_duplicate
+%}<p>This question was possibly duplicated with a more recent answer: {%
+			if transcript.is_duplicate[1]
+%}<a href="../{{transcript.is_duplicate[1]}}/">{{
+				transcript.is_duplicate[0]
+}}</a>{%
+			else
+%}{{transcript.is_duplicate[0]}}{%
+			endif
+%} <a rel="noopener" target="_blank" href="{{
+			transcript.is_duplicate[2]
+}}">{{transcript.is_duplicate[2]}}</a></p>{% endif %}{%
 	if transcript.has_duplicates
 %}
 <details>
@@ -47,7 +61,18 @@ layout: transcriptions
 			endif
 %} <a rel="noopener" target="_blank" href="{{duplicate[2]}}">{{duplicate[2]}}</a></li>{% endfor %}
 </ul>
-</details>{% endif %}
+</details>{% endif %}{%
+	if transcript.topics.length > 0
+%}
+<h3>Topics</h3>
+<ul>{% for topic_id in transcript.topics %}
+<li><a href="/topics/{{
+	topicStrings[topic_id]
+}}/">{{
+	topics[topicStrings[topic_id]]
+	| join(' > ')
+}}</a></li>{% endfor %}
+</ul>{% endif %}
 <h3>Transcript</h3>
 {%
 	if r/Q&A: /.test(transcript.title)

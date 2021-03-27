@@ -268,6 +268,74 @@ class Jsonify
 	}
 
 	/**
+	 * @return false|array{0:string, 1:string|false, 2:string}
+	 */
+	public function content_if_video_is_a_duplicate(string $video_id)
+	{
+		return $this->content_if_video_is_thinged(
+			$video_id,
+			'duplicatedby'
+		);
+	}
+
+	/**
+	 * @return false|array{0:string, 1:string|false, 2:string}
+	 */
+	public function content_if_video_is_replaced(string $video_id)
+	{
+		return $this->content_if_video_is_thinged(
+			$video_id,
+			'replacedby'
+		);
+	}
+
+	/**
+	 * @param 'duplicatedby'|'replacedby' $thinged
+	 *
+	 * @return false|array{0:string, 1:string|false, 2:string}
+	 */
+	private function content_if_video_is_thinged(
+		string $video_id,
+		string $thinged
+	) {
+		[$existing] = $this->questions->process();
+
+		/** @var string|null */
+		$found = $existing[$video_id][$thinged] ?? null;
+
+		if (null === $found) {
+			return false;
+		}
+		$found_date = determine_date_for_video(
+			$found,
+			$this->injected->cache['playlists'],
+			$this->injected->api->dated_playlists()
+		);
+		$playlist_id = array_search(
+			$found_date,
+			$this->injected->api->dated_playlists(), true
+		);
+
+		if ( ! is_string($playlist_id)) {
+			throw new RuntimeException(sprintf(
+				'Could not find playlist id for %s',
+				$video_id
+			));
+		}
+
+		return (
+			maybe_transcript_link_and_video_url_data(
+				$found,
+				(
+					$this->injected->friendly_dated_playlist_name($playlist_id)
+					. ' '
+					. $this->injected->cache['playlistItems'][$found][1]
+				)
+			)
+		);
+	}
+
+	/**
 	 * @param list<string> $video_other_parts
 	 *
 	 * @return list<array{0:string, 1:string, 2:string, 3:string}>

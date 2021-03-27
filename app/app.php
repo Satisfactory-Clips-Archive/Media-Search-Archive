@@ -596,32 +596,14 @@ foreach ($all_video_ids as $video_id) {
 				$markdownify->content_if_video_has_other_parts($video_id)
 			)
 		),
-		'is_replaced' => str_replace(
-			'.md)',
-			'/)',
-			str_replace(
-				'./transcriptions/',
-				'./',
-				$markdownify->content_if_video_is_replaced($video_id)
-			)
+		'is_replaced' => (
+				$jsonify->content_if_video_is_replaced($video_id)
 		),
-		'is_duplicate' => str_replace(
-			'.md)',
-			'/)',
-			str_replace(
-				'./transcriptions/',
-				'./',
-				$markdownify->content_if_video_is_a_duplicate($video_id)
-			)
+		'is_duplicate' => (
+				$jsonify->content_if_video_is_a_duplicate($video_id)
 		),
-		'has_duplicates' => str_replace(
-			'.md)',
-			'/)',
-			str_replace(
-				'./transcriptions/',
-				'./',
+		'has_duplicates' => (
 				$jsonify->content_if_video_has_duplicates($video_id)
-			)
 		),
 		'transcript' => array_map(
 			static function (string $line) : string {
