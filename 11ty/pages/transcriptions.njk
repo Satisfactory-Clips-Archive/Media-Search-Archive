@@ -9,7 +9,7 @@ layout: transcriptions
 <h1><a href="/{{transcript.date | slug}}/">{{transcript.dateTitle}}</a></h1>
 {%
 	if r/Q&A: /.test(transcript.title)
-%}<h2 itemprop="name">{%
+%}<h2 itemprop="name text">{%
 	else
 %}<h2>{%
 	endif
@@ -18,7 +18,8 @@ layout: transcriptions
 	transcript.url
 }}">{{
 	transcript.url
-}}</a></p>{%
+}}</a></p>
+<meta itemprop="author" content="Satisfactory Community">{%
 	if transcript.other_parts
 %}
 <details>
@@ -103,6 +104,6 @@ layout: transcriptions
 	)
 	| replace(
 		'</blockquote>',
-		'</blockquote><meta itemprop="dateCreated" content="' + transcript.date + '"></div>'
+		'</blockquote><meta itemprop="dateCreated" content="' + transcript.date + '"><meta itemprop="author" content="Coffee Stain Studios"><meta itemprop="url" content="' + transcript.url + '"></div>'
 	)
 }}{% else %}{{ transcript.transcript | markdown_blockquote | safe }}{% endif %}
