@@ -21,6 +21,7 @@ use function array_reduce;
 use function array_unique;
 use function array_unshift;
 use function array_values;
+use function basename;
 use function ceil;
 use function chr;
 use function count;
@@ -136,7 +137,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		[$video_id, $start] = $parts;
 
 		$start = '' === trim($start) ? null : $start;
-		$end = isset($parts[2]) ? $parts[2] : null;
+		$end = $parts[2] ?? null;
 
 		return embed_link($video_id, $start, $end);
 	}
@@ -2616,8 +2617,7 @@ function embed_link(string $video_id, $start, $end) : string
 			'/^ts\-\d+/',
 			$video_id
 		)
-		&& isset($start)
-		&& isset($end)
+		&& isset($start, $end)
 	) {
 		return sprintf(
 			'https://play.satisfactory.video/%s,%s,%s/',

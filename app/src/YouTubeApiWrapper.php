@@ -27,6 +27,7 @@ use function date;
 use function dirname;
 use function file_get_contents;
 use function file_put_contents;
+use function filemtime;
 use function glob;
 use Google_Client;
 use Google_Service_YouTube;
@@ -44,15 +45,19 @@ use function is_string;
 use function json_decode;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
+use function mb_strpos;
 use function mb_substr;
 use function natcasesort;
 use function pathinfo;
 use const PATHINFO_FILENAME;
+use function preg_match;
+use function preg_replace;
 use function realpath;
 use RuntimeException;
 use function sort;
 use function sprintf;
 use function strtotime;
+use function time;
 use function unlink;
 
 class YouTubeApiWrapper

@@ -8,11 +8,13 @@ namespace SignpostMarv\VideoClipNotes;
 
 use function array_diff;
 use function array_search;
+use function array_values;
 use function count;
 use function current;
 use function date;
 use function end;
 use function in_array;
+use function is_string;
 use RuntimeException;
 use function sprintf;
 use function strtotime;
@@ -299,7 +301,7 @@ class Jsonify
 			));
 		}
 
-		return (
+		return
 			maybe_transcript_link_and_video_url_data(
 				$found,
 				(
@@ -308,7 +310,7 @@ class Jsonify
 					. $this->injected->cache['playlistItems'][$found][1]
 				)
 			)
-		);
+		;
 	}
 
 	/**

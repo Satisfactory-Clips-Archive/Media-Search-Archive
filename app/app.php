@@ -648,8 +648,7 @@ foreach ($transcripts_json as $video_id => $video_data) {
 
 	$caption_lines = $video_data['transcript'];
 
-	echo
-		"\r",
+	echo "\r",
 		sprintf(
 			'processing %s of %s transcriptions (%s seconds elapsed)',
 			$checked,
