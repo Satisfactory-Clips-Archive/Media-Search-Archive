@@ -18,10 +18,23 @@ layout: transcriptions
 	transcript.url
 }}">{{
 	transcript.url
-}}</a></p>
-{{
-	transcript.other_parts | markdownify | safe
-}}{%
+}}</a></p>{%
+	if transcript.other_parts
+%}
+<details>
+<summary>{{transcript.other_parts[0]}}</summary>
+<ul>{%
+		for other_part in transcript.other_parts[1]
+%}
+<li>{%
+			if other_part[1]
+%}<a href="../{{other_part[1]}}/">{{other_part[0]}}</a>{%
+			else
+%}{{other_part[0]}}{%
+			endif
+%} <a rel="noopener" target="_blank" href="{{other_part[2]}}">{{other_part[2]}}</a></li>{% endfor %}
+</ul>
+</details>{% endif %}{%
 	if transcript.is_replaced
 %}<p>This question was possibly replaced with a more recent answer: {%
 			if transcript.is_replaced[1]

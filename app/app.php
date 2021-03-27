@@ -587,14 +587,8 @@ foreach ($all_video_ids as $video_id) {
 				return ! isset($playlists[$maybe]);
 			}
 		)),
-		'other_parts' => str_replace(
-			'.md)',
-			'/)',
-			str_replace(
-				'./transcriptions/',
-				'./',
-				$markdownify->content_if_video_has_other_parts($video_id)
-			)
+		'other_parts' => (
+				$jsonify->content_if_video_has_other_parts($video_id)
 		),
 		'is_replaced' => (
 				$jsonify->content_if_video_is_replaced($video_id)

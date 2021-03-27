@@ -37,17 +37,17 @@ class Jsonify
 	}
 
 	/**
-	 * @return array<empty, empty>|array{
+	 * @return false|array{
 	 *	0:string,
-	 *	1:array{0:string, 1:string, 2:string}
+	 *	1:list<array{0:string, 1:string|false, 2:string}>
 	 * }
 	 */
 	public function content_if_video_has_other_parts(
 		string $video_id,
 		bool $include_self = false
-	) : array {
+	) {
 		if ( ! has_other_part($video_id)) {
-			return [];
+			return false;
 		}
 
 		$date = determine_date_for_video(
@@ -71,8 +71,13 @@ class Jsonify
 		$video_part_info = cached_part_continued()[$video_id];
 		$video_other_parts = other_video_parts($video_id, $include_self);
 
-		/** @var array{0:string, 1:array{0:string, 1:string, 2:string}} */
-		$out = ['', ['', '', '']];
+		/**
+		 * @var array{
+		 *	0:string,
+		 *	1:list<array{0:string, 1:string|false, 2:string}>
+		 * }
+		 */
+		$out = ['', []];
 
 		if (count($video_other_parts) > 2) {
 			$out[0] = sprintf(
@@ -89,39 +94,10 @@ class Jsonify
 			$video_other_parts = other_video_parts($video_id, false);
 		}
 
-		foreach ($video_other_parts as $other_video_id) {
-			throw new RuntimeException('Time to actually implement this bit!');
-			/*
-			$link = maybe_transcript_link_and_video_url(
-				$other_video_id,
-				(
-					$this->injected->friendly_dated_playlist_name(
-						$playlist_id
-					)
-					. ' '
-					. $this->injected->cache['playlistItems'][$other_video_id][1]
-				)
-			);
-
-			if ( ! preg_match(self::link_part_regex, $link, $link_parts)) {
-				throw new RuntimeException('Could not determine link parts!');
-			}
-
-			$out[1][0] = $link_parts[1];
-			$out[1][2] = $link_parts[2];
-
-			if (
-				preg_match(
-					self::transcript_part_regex,
-					$link_parts[1],
-					$link_parts
-				)
-			) {
-				$out[1][0] = $link_parts[1];
-				$out[1][1] = $link_parts[2];
-			}
-			*/
-		}
+		$out[1] = $this->content_from_other_video_parts(
+			$playlist_id,
+			$video_other_parts
+		);
 
 		return $out;
 	}
