@@ -187,6 +187,43 @@ function transcription_filename(string $video_id) : string
 		. '.md';
 }
 
+/**
+ * @return array{0:string, 1:false|string, 2:string}
+ */
+function maybe_transcript_link_and_video_url_data(
+	string $video_id,
+	string $title
+) : array {
+	$url = video_url_from_id($video_id);
+	$initial_segment = false;
+
+	if (
+		preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){2}/', $video_id)) {
+		if (
+			is_file(
+				__DIR__
+				. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
+				. $video_id
+				. '.md'
+			)
+		) {
+			$initial_segment = vendor_prefixed_video_id($video_id);
+		}
+	}
+
+	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
+		if (is_file(transcription_filename($video_id))) {
+			$initial_segment = vendor_prefixed_video_id($video_id);
+		}
+	} else {
+		if (is_file(transcription_filename($video_id))) {
+			$initial_segment = vendor_prefixed_video_id($video_id);
+		}
+	}
+
+	return [$title, $initial_segment, $url];
+}
+
 function maybe_transcript_link_and_video_url(
 	string $video_id,
 	string $title,

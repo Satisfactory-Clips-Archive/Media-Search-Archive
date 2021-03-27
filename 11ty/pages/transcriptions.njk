@@ -31,7 +31,23 @@ layout: transcriptions
 	topics[topicStrings[topic_id]]
 	| join(' > ')
 }}</a></li>{% endfor %}
-</ul>{% endif %}
+</ul>{% endif %}{%
+	if transcript.has_duplicates
+%}
+<details>
+<summary>{{transcript.has_duplicates[0]}}</summary>
+<ul>{%
+		for duplicate in transcript.has_duplicates[1]
+%}
+<li>{%
+			if duplicate[1]
+%}<a href="../{{duplicate[1]}}/">{{duplicate[0]}}</a>{%
+			else
+%}{{duplicate[0]}}{%
+			endif
+%} <a rel="noopener" target="_blank" href="{{duplicate[2]}}">{{duplicate[2]}}</a></li>{% endfor %}
+</ul>
+</details>{% endif %}
 <h3>Transcript</h3>
 {%
 	if r/Q&A: /.test(transcript.title)

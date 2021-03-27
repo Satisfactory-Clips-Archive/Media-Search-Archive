@@ -67,6 +67,8 @@ $slugify = new Slugify();
 $injected = new Injected($api, $slugify);
 
 $markdownify = new Markdownify($injected);
+$questions = new Questions($injected);
+$jsonify = new Jsonify($injected, $questions);
 
 $cache = $injected->cache;
 $global_topic_hierarchy = ['satisfactory' => $injected->topics_hierarchy];
@@ -618,7 +620,7 @@ foreach ($all_video_ids as $video_id) {
 			str_replace(
 				'./transcriptions/',
 				'./',
-				$markdownify->content_if_video_has_duplicates($video_id)
+				$jsonify->content_if_video_has_duplicates($video_id)
 			)
 		),
 		'transcript' => array_map(

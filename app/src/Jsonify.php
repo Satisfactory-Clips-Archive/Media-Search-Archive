@@ -126,6 +126,86 @@ class Jsonify
 		return $out;
 	}
 
+	/**
+	 * @return false|array{0:int, 1:string}
+	 */
+	public function content_if_video_has_duplicates(
+		string $video_id,
+		Questions $questions = null
+	) {
+		$questions = $questions ?? $this->questions;
+
+		$faq_duplicates = $questions->process()[1][$video_id] ?? [];
+
+		if ([] === $faq_duplicates) {
+			return false;
+		}
+
+		$injected = $questions->injected;
+
+		uasort(
+			$faq_duplicates,
+			[$injected->sorting, 'sort_video_ids_by_date']
+		);
+
+		$faq_duplicate_dates = [];
+
+		$faq_duplicates_for_date_checking = array_values(array_diff(
+			$faq_duplicates,
+			[
+				$video_id,
+			]
+		));
+
+		foreach ($faq_duplicates_for_date_checking as $other_video_id) {
+			$faq_duplicate_video_date = determine_date_for_video(
+				$other_video_id,
+				$injected->cache['playlists'],
+				$injected->api->dated_playlists()
+			);
+
+			if (
+				! in_array($faq_duplicate_video_date, $faq_duplicate_dates, true)
+			) {
+				$faq_duplicate_dates[] = $faq_duplicate_video_date;
+			}
+		}
+
+		return [
+			(
+				sprintf(
+					'This question may have been asked previously at least %s other %s',
+					count($faq_duplicates_for_date_checking),
+					(
+						count($faq_duplicates_for_date_checking) > 1
+							? 'times'
+							: 'time'
+					)
+				)
+				. sprintf(
+					', as recently as %s%s',
+					date('F Y', strtotime(current($faq_duplicate_dates))),
+					(
+						count($faq_duplicate_dates) > 1
+							? (
+								' and as early as '
+								. date(
+									'F Y.',
+									strtotime(end($faq_duplicate_dates))
+								)
+							)
+							: '.'
+					)
+				)
+			),
+			$this->content_from_other_video_parts(
+				null,
+				$faq_duplicates_for_date_checking,
+				$questions
+			),
+		];
+	}
+
 	public function description_if_video_has_duplicates(
 		string $video_id,
 		Questions $questions = null
@@ -185,5 +265,61 @@ class Jsonify
 						: '.'
 				)
 			);
+	}
+
+	/**
+	 * @param list<string> $video_other_parts
+	 *
+	 * @return list<array{0:string, 1:string, 2:string, 3:string}>
+	 */
+	private function content_from_other_video_parts(
+		? string $playlist_id,
+		array $video_other_parts,
+		Questions $questions = null
+	) : array {
+		$injected =
+			null === $questions
+				? $this->injected
+				: $questions->injected;
+		$reset_playlist_id = null === $playlist_id;
+		$out = [];
+
+		foreach ($video_other_parts as $other_video_id) {
+			if (null === $playlist_id) {
+				$other_video_date = determine_date_for_video(
+					$other_video_id,
+					$injected->cache['playlists'],
+					$injected->api->dated_playlists()
+				);
+				$playlist_id = array_search(
+					$other_video_date,
+					$injected->api->dated_playlists(), true
+				);
+
+				if ( ! is_string($playlist_id)) {
+					throw new RuntimeException(sprintf(
+						'Could not find playlist id for %s',
+						$other_video_id
+					));
+				}
+			}
+
+			$out[] = maybe_transcript_link_and_video_url_data(
+				$other_video_id,
+				(
+					$this->injected->friendly_dated_playlist_name(
+						$playlist_id
+					)
+					. ' '
+					. $this->injected->cache['playlistItems'][$other_video_id][1]
+				)
+			);
+
+			if ($reset_playlist_id) {
+				$playlist_id = null;
+			}
+		}
+
+		return $out;
 	}
 }
