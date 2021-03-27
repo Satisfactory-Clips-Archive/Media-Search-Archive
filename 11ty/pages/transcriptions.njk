@@ -104,6 +104,18 @@ layout: transcriptions
 	)
 	| replace(
 		'</blockquote>',
-		'</blockquote><meta itemprop="dateCreated" content="' + transcript.date + '"><meta itemprop="author" content="Coffee Stain Studios"><meta itemprop="url" content="' + transcript.url + '"></div>'
+		'</blockquote><meta itemprop="dateCreated" content="' + transcript.date + '"></div>'
+	)
+	| replace(
+		'</blockquote>',
+		'</blockquote><meta itemprop="author" content="Coffee Stain Studios">'
+	)
+	| replace(
+		'</blockquote>',
+		'</blockquote><meta itemprop="url" content="' + transcript.url + '">'
+	)
+	| replace(
+		'</blockquote>',
+		'</blockquote><meta itemprop="upvoteCount" content="' + transcript.like_count + '">'
 	)
 }}{% else %}{{ transcript.transcript | markdown_blockquote | safe }}{% endif %}

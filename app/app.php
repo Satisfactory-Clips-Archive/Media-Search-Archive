@@ -514,6 +514,8 @@ $all_video_ids = array_keys($video_playlists);
 
 natcasesort($all_video_ids);
 
+$statistics = $api->getStatistics(...$all_video_ids);
+
 /**
  * @var array<string, array{
  *	id:string,
@@ -608,6 +610,9 @@ foreach ($all_video_ids as $video_id) {
 				);
 			},
 			$caption_lines
+		),
+		'like_count' => (int) (
+			$statistics[vendor_prefixed_video_id($video_id)]['likeCount'] ?? 0
 		),
 	];
 }

@@ -19,6 +19,7 @@ use function array_merge;
 use function array_reduce;
 use function array_reverse;
 use function array_unique;
+use function array_unshift;
 use function array_values;
 use function asort;
 use function count;
@@ -539,6 +540,128 @@ class YouTubeApiWrapper
 		}
 	}
 
+	/**
+	 * @return array<string, false|array>
+	 */
+	public function getStatistics(
+		string $lead_video_id,
+		string ...$video_ids
+	) : array {
+		array_unshift($video_ids, $lead_video_id);
+
+		$processed_video_ids = array_combine(
+			$video_ids,
+			array_map(
+				static function (string $video_id) : string {
+					$prefixed = vendor_prefixed_video_id($video_id);
+
+					return (string) preg_replace('/,.+$/', '', $prefixed);
+				},
+				$video_ids
+			)
+		);
+
+		$processed_video_ids = array_filter(
+			$processed_video_ids,
+			static function (string $maybe) : bool {
+				return false === mb_strpos($maybe, ',');
+			}
+		);
+
+		$lookup = [];
+
+		foreach ($processed_video_ids as $video_id => $aliased) {
+			if ( ! isset($lookup[$aliased])) {
+				$lookup[$aliased] = [];
+			}
+
+			$lookup[$aliased][] = $video_id;
+		}
+
+		$cached = [];
+
+		$dir = realpath(__DIR__ . '/../data/api-cache/statistics/');
+
+		if ( ! is_string($dir)) {
+			throw new RuntimeException(
+				'Could not find video statistics cache directory!'
+			);
+		}
+
+		$time = time();
+
+		$to_fetch = [];
+
+		foreach ($processed_video_ids as $video_id => $aliased) {
+			$cache_file = realpath($dir . '/' . $aliased . '.json');
+
+			if (
+				is_string($cache_file)
+				&& is_file($cache_file)
+				&& 0 === mb_strpos($cache_file, $dir)
+				&& ($time - filemtime($cache_file)) < 86400
+			) {
+				$cached[vendor_prefixed_video_id($aliased)] = json_decode(
+					file_get_contents($cache_file),
+					true
+				);
+			} elseif (
+				! in_array($aliased, $to_fetch, true)
+				&& (bool) preg_match(
+					'/^yt-[^,]{11}$/',
+					vendor_prefixed_video_id($aliased)
+				)
+			) {
+				$to_fetch[] = $aliased;
+			}
+		}
+
+		$chunks = array_chunk(
+			$to_fetch,
+			50
+		);
+
+		foreach ($chunks as $chunk_video_ids) {
+			$chunk = $this->listStatistics(
+				[
+					'id' => implode(',', array_map(
+						static function (string $video_id) : string {
+							return mb_substr($video_id, 3);
+						},
+						$chunk_video_ids
+					)),
+				]
+			);
+
+			foreach ($chunk as $video_id => $data) {
+				$cache_file = (
+					$dir
+					. '/'
+					. vendor_prefixed_video_id($video_id)
+					. '.json'
+				);
+				file_put_contents(
+					$cache_file,
+					json_encode($data, JSON_PRETTY_PRINT)
+				);
+
+				foreach ($lookup['yt-' . $video_id] as $requested) {
+					$cached[$requested] = $data;
+				}
+			}
+		}
+
+		return array_combine(
+			array_map(
+				static function (string $video_id) : string {
+					return vendor_prefixed_video_id($video_id);
+				},
+				array_keys($cached)
+			),
+			$cached
+		);
+	}
+
 	private function service_playlists() : Google_Service_YouTube_Resource_Playlists
 	{
 		/** @var Google_Service_YouTube_Resource_Playlists */
@@ -674,6 +797,52 @@ class YouTubeApiWrapper
 			$args['pageToken'] = (string) $response->nextPageToken;
 
 			$out = $this->listVideos($args, $out);
+		}
+
+		return $out;
+	}
+
+	/**
+	 * @param array{id:string, pageToken?:string} $args
+	 * @param array<string, array{0:string, 1:list<string>}> $out
+	 *
+	 * @return array<string, array{0:string, 1:list<string>}>
+	 */
+	private function listStatistics(
+		array $args,
+		array $out = []
+	) : array {
+		/**
+		 * @var object{
+		 *	pageToken?:string,
+		 *	items: iterable<object{
+		 *		id:string,
+		 *		snippet:object{
+		 *			title:string,
+		 *			tags:list<string>|null
+		 *		}
+		 *	}>
+		 * }
+		 */
+		$response = $this->service_videos()->listVideos(
+			'statistics',
+			$args
+		);
+
+		foreach ($response->items as $item) {
+			$out[$item->id] = [
+				'commentCount' => $item->statistics->commentCount,
+				'dislikeCount' => $item->statistics->dislikeCount,
+				'favoriteCount' => $item->statistics->favoriteCount,
+				'likeCount' => $item->statistics->likeCount,
+				'viewCount' => $item->statistics->viewCount,
+			];
+		}
+
+		if (isset($response->nextPageToken)) {
+			$args['pageToken'] = (string) $response->nextPageToken;
+
+			$out = $this->listStatistics($args, $out, $part);
 		}
 
 		return $out;
