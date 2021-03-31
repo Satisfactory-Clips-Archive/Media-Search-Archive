@@ -914,9 +914,6 @@ $injected_global_topic_hierarchy = [
 		'Power Suit' => [
 			'Mods',
 		],
-		'Item Dispensers' => [
-			'Mods',
-		],
 		'Structural Solutions' => [
 			'Mods',
 		],
