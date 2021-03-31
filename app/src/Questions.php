@@ -573,6 +573,8 @@ class Questions
 					unset($existing[$video_id][$required]);
 				}
 			}
+
+			unset($existing[$video_id]['suggested']);
 		}
 
 		foreach ($replacements_not_in_existing as $video_id => $replacement) {

@@ -823,6 +823,12 @@ $global_topic_hierarchy = [
 			'Features',
 			'Buildables',
 		],
+		'PLbjDnnBIxiEo9mOjyYPzHqEmuA09FKcgd' => [ // Community Highlights
+			'Community',
+		],
+		'PLbjDnnBIxiErIOO8TJyFU5Z1Snw8Ze7-O' => [ // Blastroid
+			'Community',
+		],
 	],
 ];
 
@@ -902,9 +908,6 @@ $injected_global_topic_hierarchy = [
 			'Environment',
 			'Resources',
 		],
-		'Blastroid' => [
-			'Community',
-		],
 		'Signs Mod' => [
 			'Mods',
 		],
@@ -983,6 +986,45 @@ $injected_global_topic_hierarchy = [
 			'Coffee Stainers',
 		],
 		'DrawingXaos' => [
+			'Community',
+		],
+		'Moar Factory' => [
+			'Mods',
+		],
+		'Mk++' => [
+			'Mods',
+		],
+		'Ghost Construction' => [
+			'Mods',
+		],
+		'Farming Mod' => [
+			'Mods',
+		],
+		'3D Text' => [
+			'Mods',
+		],
+		'Utility Signs' => [
+			'Mods',
+		],
+		'Decoration' => [
+			'Mods',
+		],
+		'Teleporter' => [
+			'Mods',
+		],
+		'Micro Manage' => [
+			'Mods',
+		],
+		'Area Actions' => [
+			'Mods',
+		],
+		'Satisfactory Calculator' => [
+			'Community',
+		],
+		'Item Dispenser' => [
+			'Mods',
+		],
+		'Haigen' => [
 			'Community',
 		],
 	],
