@@ -1546,6 +1546,13 @@ function raw_captions(string $video_id) : array
 		)
 	);
 
+	$url_matches = array_filter(
+		$url_matches,
+		static function (string $maybe) : bool {
+			return ! preg_match('/&name=CC1/', $maybe);
+		}
+	);
+
 	uksort($url_matches, static function (string $a, string $b) : int {
 		$maybe_a = preg_match('/kind-asr$/', $a);
 		$maybe_b = preg_match('/kind-asr$/', $b);
