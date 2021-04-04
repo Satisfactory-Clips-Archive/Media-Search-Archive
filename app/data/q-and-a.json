@@ -499,12 +499,13 @@
         "date": "2021-03-30",
         "topics": [
             "environment\/biomes",
-            "environment\/world-map",
-            "satisfactory-updates"
+            "satisfactory-updates\/pending\/world-update",
+            "satisfactory-updates\/released\/satisfactory-update-4"
         ],
         "seealso": [
             "4mnVlMXrfyw",
-            "5qQx1URl8lY"
+            "5qQx1URl8lY",
+            "yt-omjFqZQV9fI,339.184635,355.0880666666667"
         ]
     },
     "G3mcXzVjUZQ": {
@@ -836,7 +837,8 @@
         "seealso": [
             "bk2ojhuil-g",
             "SNPdVSInCCQ",
-            "XcfIWDujsxA"
+            "XcfIWDujsxA",
+            "yt-omjFqZQV9fI,1670.669,1752.6509"
         ]
     },
     "IlACElBWukM": {
@@ -2233,7 +2235,7 @@
         "date": "2021-03-23",
         "topics": [
             "environment\/biomes",
-            "satisfactory-updates",
+            "satisfactory-updates\/pending\/world-update",
             "satisfactory-updates\/release-builds"
         ],
         "seealso": [
@@ -2678,7 +2680,7 @@
         "topics": [
             "coffee-stainers\/jace",
             "coffee-stainers\/snutt",
-            "environment\/world-map",
+            "satisfactory-updates\/pending\/world-update",
             "satisfactory-updates\/teasers-trailers"
         ],
         "seealso": [
@@ -4063,7 +4065,8 @@
         "date": "2021-03-02",
         "topics": [
             "environment\/biomes",
-            "environment\/world-map"
+            "environment\/world-map",
+            "satisfactory-updates\/pending\/world-update"
         ],
         "seealso": [
             "4mnVlMXrfyw",
@@ -4494,6 +4497,7 @@
         "date": "2021-02-23",
         "topics": [
             "environment\/world-map",
+            "satisfactory-updates\/pending\/world-update",
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
         "duplicates": [
@@ -7283,6 +7287,7 @@
         "topics": [
             "environment\/resource-wells",
             "environment\/world-map",
+            "satisfactory-updates\/pending\/world-update",
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
         "duplicatedby": "w3_T37dQba0"
@@ -8291,7 +8296,7 @@
         "date": "2021-01-26",
         "topics": [
             "environment\/biomes",
-            "environment\/world-map"
+            "satisfactory-updates\/pending\/world-update"
         ],
         "duplicates": [
             "5v0_pFbQLF4"
@@ -10160,7 +10165,7 @@
         "date": "2021-01-12",
         "topics": [
             "environment\/biomes",
-            "environment\/world-map"
+            "satisfactory-updates\/pending\/world-update"
         ],
         "duplicatedby": "sV-kvBvlTXc"
     },
@@ -10732,7 +10737,8 @@
         "date": "2020-12-15",
         "topics": [
             "environment\/world-map",
-            "satisfactory-updates\/modular-build"
+            "satisfactory-updates\/modular-build",
+            "satisfactory-updates\/pending\/world-update"
         ],
         "duplicatedby": "dlL942ooTho"
     },
@@ -13137,6 +13143,64 @@
             "EIGGdc4b7vc"
         ]
     },
+    "yt-omjFqZQV9fI,1384.4831,1500.652196": {
+        "title": "Q&A: If you were to decide what area of the game to optimise, how do you decide what to do?",
+        "date": "2020-11-05",
+        "topics": [
+            "coffee-stainers\/ben",
+            "technology",
+            "technology\/graphics"
+        ],
+        "seealso": [
+            "c6iqciQw3L4",
+            "nRCmJo-Wh9s",
+            "ZSg4IW4ybgM"
+        ]
+    },
+    "yt-omjFqZQV9fI,26.651097,87.75433333333334": {
+        "title": "Q&A: So what is a \"Technical Artist\"?",
+        "date": "2020-11-05",
+        "topics": [
+            "coffee-stainers",
+            "coffee-stainers\/ben"
+        ],
+        "seealso": [
+            "ECP5Jvr7RSk"
+        ]
+    },
+    "yt-omjFqZQV9fI,1557.4892666666667,1611.657276": {
+        "title": "Q&A: What are Baked Materials?",
+        "date": "2020-11-05",
+        "topics": [
+            "features\/buildings",
+            "technology\/graphics"
+        ],
+        "seealso": [
+            "fsP_b5C7y0M"
+        ]
+    },
+    "yt-omjFqZQV9fI,1670.669,1752.6509": {
+        "title": "Q&A: What Buildings should we stay away from to minimise the chances of hitting the Object Limit",
+        "date": "2020-11-05",
+        "topics": [
+            "features\/buildings",
+            "technology\/graphics",
+            "technology\/unreal-engine\/object-limit"
+        ],
+        "seealso": [
+            "KjV7JMFQ3Is"
+        ]
+    },
+    "yt-omjFqZQV9fI,339.184635,355.0880666666667": {
+        "title": "Q&A: When are the Water improvements being released?",
+        "date": "2020-11-05",
+        "topics": [
+            "satisfactory-updates\/pending\/world-update"
+        ],
+        "seealso": [
+            "ANIKlhFcjkk"
+        ]
+    },
     "Ypi07NY-1rg": {
         "title": "Q&A: Any chance splitters\/mergers can be placed in production buildings?",
         "date": "2020-11-03",
@@ -15244,7 +15308,9 @@
         "title": "Q&A: How is the World Building going?",
         "date": "2020-10-06",
         "topics": [
-            "environment\/world-map"
+            "coffee-stainers\/hannah",
+            "environment\/world-map",
+            "satisfactory-updates\/pending\/world-update"
         ]
     },
     "bwEOd9tqyuQ": {
@@ -17322,7 +17388,8 @@
         ],
         "seealso": [
             "cynkLEnrC8s",
-            "nRCmJo-Wh9s"
+            "nRCmJo-Wh9s",
+            "yt-omjFqZQV9fI,1384.4831,1500.652196"
         ]
     },
     "hk9InMIcTEA": {
@@ -17981,7 +18048,10 @@
     "ZSg4IW4ybgM": {
         "title": "Q&A: What is your optimisation process?",
         "date": "2020-09-01",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "yt-omjFqZQV9fI,1384.4831,1500.652196"
+        ]
     },
     "OyqnfsIPbGA": {
         "title": "Q&A: What Update 4?",
@@ -22920,7 +22990,10 @@
     "ECP5Jvr7RSk": {
         "title": "Q&A: What does a Technical Artist do?",
         "date": "2019-12-19",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "yt-omjFqZQV9fI,26.651097,87.75433333333334"
+        ]
     },
     "Pum1v7HDgzU": {
         "title": "Q&A: What does Hannah think about Jace's hair?",
@@ -23470,7 +23543,8 @@
             "technology\/graphics"
         ],
         "seealso": [
-            "c6iqciQw3L4"
+            "c6iqciQw3L4",
+            "yt-omjFqZQV9fI,1384.4831,1500.652196"
         ]
     },
     "3DLGyE9GUf4": {
