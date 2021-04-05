@@ -1,7 +1,8 @@
 {
   "scripts": {
     "error_docs": "eleventy --config=./.eleventy.error_docs.js && gulp html-error_docs",
-    "build": "php app/app.php && php app/lunr-docs-preload.php && php app/update-q-and-a.php && gulp topics && eleventy && eleventy --config=./.eleventy.pages.js && gulp build"
+    "update": "php app/app.php && php app/update-q-and-a.php && php app/part-continued.php",
+    "build": "npm run -s update && gulp topics && eleventy && eleventy --config=./.eleventy.pages.js && gulp build"
   },
   "dependencies": {
     "lunr": "^2.3.9"
