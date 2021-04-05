@@ -439,48 +439,48 @@
     },
     "yt-omjFqZQV9fI,400.40000000000003,639.8392": {
         "previous": null,
-        "next": null,
+        "next": "yt-omjFqZQV9fI,639.832425,738.467394",
         "title": "Ben & Jace Talk: Mesh Animation vs. Material Animations (Part 1)",
         "date": "2020-11-05"
     },
     "yt-omjFqZQV9fI,639.832425,738.467394": {
-        "previous": null,
-        "next": null,
+        "previous": "yt-omjFqZQV9fI,400.40000000000003,639.8392",
+        "next": "yt-omjFqZQV9fI,738.467394,881.1803",
         "title": "Ben & Jace Talk: Mesh Animation vs. Material Animations (Part 2)",
         "date": "2020-11-05"
     },
     "yt-omjFqZQV9fI,738.467394,881.1803": {
-        "previous": null,
-        "next": null,
+        "previous": "yt-omjFqZQV9fI,639.832425,738.467394",
+        "next": "yt-omjFqZQV9fI,881.1803,974.489961",
         "title": "Ben & Jace Talk: Mesh Animation vs. Material Animations (Part 3)",
         "date": "2020-11-05"
     },
     "yt-omjFqZQV9fI,881.1803,974.489961": {
-        "previous": null,
+        "previous": "yt-omjFqZQV9fI,738.467394,881.1803",
         "next": null,
         "title": "Ben & Jace Talk: Mesh Animation vs. Material Animations (Part 4)",
         "date": "2020-11-05"
     },
     "yt-omjFqZQV9fI,974.489961,1137.458443": {
         "previous": null,
-        "next": null,
+        "next": "yt-omjFqZQV9fI,974.489961,1137.458443",
         "title": "Ben & Jace Talk: Mesh Imposters \/ LODing (Part 1)",
         "date": "2020-11-05"
     },
     "yt-omjFqZQV9fI,1171.021729,1212.674631": {
-        "previous": null,
+        "previous": "yt-omjFqZQV9fI,974.489961,1137.458443",
         "next": null,
         "title": "Ben & Jace Talk: Mesh Imposters \/ LODing (Part 2)",
         "date": "2020-11-05"
     },
     "yt-omjFqZQV9fI,1500.652196,1557.4892666666667": {
         "previous": null,
-        "next": null,
+        "next": "yt-omjFqZQV9fI,1611.657276,1670.669",
         "title": "Ben & Jace Talk: Optimisation review - Refinery (Part 1)",
         "date": "2020-11-05"
     },
     "yt-omjFqZQV9fI,1611.657276,1670.669": {
-        "previous": null,
+        "previous": "yt-omjFqZQV9fI,1500.652196,1557.4892666666667",
         "next": null,
         "title": "Ben & Jace Talk: Optimisation review - Refinery (Part 2)",
         "date": "2020-11-05"
