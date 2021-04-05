@@ -12,7 +12,7 @@
 /images/**/*.br
 /images/**/*.gz
 /vendor/
-/app/google-auth.json
+/app/*-auth.json
 /.php_cs.cache
 /app/captions/
 /app/cache.json

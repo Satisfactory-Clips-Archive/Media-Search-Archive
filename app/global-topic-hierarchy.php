@@ -14,6 +14,31 @@ $global_topic_hierarchy = [
 			-6,
 			'Satisfactory Updates',
 		],
+		'PLbjDnnBIxiEpQ6aOWoeKjQHAvB5VZAJsj' => [ // Update 3 Reveal Trailer
+			300,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'PLbjDnnBIxiEoJKFR8oveQqco9GX9ct3MJ' => [ // Update 3 Patch Notes Video
+			301,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'PLbjDnnBIxiEq5RG94oLoX2Uh2s1qdO7pT' => [ // Update 4 Teasers
+			400,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'PLbjDnnBIxiEooFFzttwXeeagqJmJRQi_V' => [ // Update 4 Launch Stream
+			401,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'PLbjDnnBIxiEo1tIwenNsU5NhXb8oK3gC-' => [ // Update 4 Patch Notes Video
+			402,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
 		'PLbjDnnBIxiEq-eP01Lynsg2Jv-wLEWQ7e' => [ // Satisfactory Prototypes
 			-5,
 			'Satisfactory Updates',
@@ -834,6 +859,35 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiErIOO8TJyFU5Z1Snw8Ze7-O' => [ // Blastroid
 			'Community',
 		],
+		'PLbjDnnBIxiEpmM6BAdgD_uXd_IcsFZ75Y' => [ // Light It Up
+			'Mods',
+		],
+		'PLbjDnnBIxiEoqFaAHiwnkN6nPi2T2LPzi' => [ // Lars
+			'Embracer Group',
+			'THQ Nordic',
+		],
+		'PLbjDnnBIxiEoAITjLL1cZSEVM6EPXPKyu' => [ // THQ Nordic
+			'Embracer Group',
+		],
+		'PLbjDnnBIxiEr245KxK6CPHEThfipuYc3R' => [ // Satisfactory News
+			'Community',
+		],
+		'PLbjDnnBIxiEq_Sp5_CYEUpa-kgDN5m6Tf' => [ // Alex
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEoik7dzzDmMntF6tKuv-my2' => [ // Sweden
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiErJj29LAC45t7vdxXY53esO' => [ // Nuclear Pasta
+			'Environment',
+			'Resources',
+		],
+		'PLbjDnnBIxiEq3w8mU-U9_obtyMVEPYDVO' => [ // Pontus
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiErKnSCIxjj74FJZ_655tJXK' => [ // DrawingXaos
+			'Community',
+		],
 	],
 ];
 
@@ -843,9 +897,11 @@ $not_a_livestream = [
 	'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO' => 'Teasers',
 	'2021-01-22' => 'Instagram AMA',
 	'2021-02-26' => 'Instagram AMA',
+	'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY' => 'Satisfactory Update 4 Patch Notes vid commentary',
 ];
 
 $not_a_livestream_date_lookup = [
+	'2021-03-17' => 'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY',
 	'2021-02-26' => '2021-02-26',
 	'2021-01-22' => '2021-01-22',
 	'2021-01-15' => 'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ',
@@ -902,13 +958,6 @@ $injected_global_topic_hierarchy = [
 		'Oscar' => [
 			'Coffee Stainers',
 		],
-		'Lars' => [
-			'Embracer Group',
-			'THQ Nordic',
-		],
-		'THQ Nordic' => [
-			'Embracer Group',
-		],
 		'Power Slug' => [
 			'Environment',
 			'Resources',
@@ -934,9 +983,6 @@ $injected_global_topic_hierarchy = [
 		'Teleporters' => [
 			'Mods',
 		],
-		'Light It Up' => [
-			'Mods',
-		],
 		'Statue Mod' => [
 			'Mods',
 		],
@@ -945,50 +991,6 @@ $injected_global_topic_hierarchy = [
 		],
 		'Zip Strips' => [
 			'Mods',
-		],
-		'Update 3 Reveal Trailer' => [
-			300,
-			'Satisfactory Updates',
-			'Teasers & Trailers',
-		],
-		'Update 3 Patch Notes Video' => [
-			301,
-			'Satisfactory Updates',
-			'Teasers & Trailers',
-		],
-		'Update 4 Teasers' => [
-			400,
-			'Satisfactory Updates',
-			'Teasers & Trailers',
-		],
-		'Update 4 Launch Stream' => [
-			401,
-			'Satisfactory Updates',
-			'Teasers & Trailers',
-		],
-		'Update 4 Patch Notes Video' => [
-			402,
-			'Satisfactory Updates',
-			'Teasers & Trailers',
-		],
-		'Satisfactory News' => [
-			'Community',
-		],
-		'Alex' => [
-			'Coffee Stainers',
-		],
-		'Sweden' => [
-			'Off-Topic',
-		],
-		'Nuclear Pasta' => [
-			'Environment',
-			'Resources',
-		],
-		'Pontus' => [
-			'Coffee Stainers',
-		],
-		'DrawingXaos' => [
-			'Community',
 		],
 		'Moar Factory' => [
 			'Mods',
