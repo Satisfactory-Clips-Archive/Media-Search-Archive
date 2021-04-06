@@ -318,9 +318,6 @@ gulp.task('build', gulp.series(
 	'html',
 	'sitemap',
 	gulp.parallel(
-		/*
-		'zopfli',
-		*/
 		'brotli'
 	),
 	gulp.parallel(
