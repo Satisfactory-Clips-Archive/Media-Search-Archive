@@ -50,9 +50,29 @@ html
 	}
 }
 
-nav a:not(:first-child)
+nav
 {
+	display: block ;
+
+	a
+	{
+		display: list-item ;
+		list-style: inside ;
+
+		@media (min-width: 768px)
+		{
+			display: inline ;
+			list-style: inside none ;
+		}
+
+		&:not(:first-child)
+		{
+			@media (min-width: 768px)
+			{
 	margin-left: 1em ;
+			}
+		}
+	}
 }
 
 ol, ul
@@ -129,6 +149,21 @@ body > footer,
 .results > ol
 {
 	padding: .5em ;
+}
+
+a
+{
+	padding: .25em 0 ;
+}
+
+body > footer
+{
+	line-height: 1.6 ;
+
+	a
+	{
+		padding: .4em 0 ;
+	}
 }
 
 body > section > header,
