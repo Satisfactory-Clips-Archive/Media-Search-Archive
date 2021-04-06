@@ -10,12 +10,43 @@
 
 html
 {
+	font-size: calc((100vw / 320) * 20) ;
 	font-family: system-ui, sans-serif ;
 
 	@media (prefers-color-scheme: dark)
 	{
 		background: #141414 ;
 		color: #fbedd8 ;
+	}
+
+	@media (min-width: 375px)
+	{
+		font-size: calc((100vw / 375) * 20) ;
+	}
+
+	@media (min-width: 425px)
+	{
+		font-size: calc((100vw / 425) * 20) ;
+	}
+
+	@media (min-width: 768px)
+	{
+		font-size: calc((100vw / 768) * 20) ;
+	}
+
+	@media (min-width: 1024px)
+	{
+		font-size: calc((100vw / 1024) * 20) ;
+	}
+
+	@media (min-width: 1440px)
+	{
+		font-size: calc((100vw / 1440) * 20) ;
+	}
+
+	@media (min-width: 1920px)
+	{
+		font-size: 20px ;
 	}
 }
 
@@ -114,4 +145,11 @@ hr,
 [itemtype="https://schema.org/FAQPage"] section + section
 {
 	margin-top: calc(1.6em * .25) ;
+}
+
+input[type="radio"],
+input[type="checkbox"]
+{
+	width: .75rem ;
+	height: .75rem ;
 }
