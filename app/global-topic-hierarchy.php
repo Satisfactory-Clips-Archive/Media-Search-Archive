@@ -888,6 +888,13 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiErKnSCIxjj74FJZ_655tJXK' => [ // DrawingXaos
 			'Community',
 		],
+		'PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP' => [ // Blueprints
+			'Features',
+			'Possible Features',
+		],
+		'PLbjDnnBIxiEomDrLRY8jOvB_l8DEGgrnG' => [ // Satisfactory Calculator
+			'Community',
+		],
 	],
 ];
 
@@ -1021,9 +1028,6 @@ $injected_global_topic_hierarchy = [
 		],
 		'Area Actions' => [
 			'Mods',
-		],
-		'Satisfactory Calculator' => [
-			'Community',
 		],
 		'Item Dispenser' => [
 			'Mods',
