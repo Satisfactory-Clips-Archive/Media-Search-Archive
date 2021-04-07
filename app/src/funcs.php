@@ -69,6 +69,7 @@ use function preg_replace;
 use function preg_replace_callback;
 use function rawurlencode;
 use RuntimeException;
+use \Sentence;
 use function set_error_handler;
 use SimpleXMLElement;
 use function sort;
@@ -1324,17 +1325,60 @@ function captions(
 
 	$lines = [];
 
-	foreach ($xml_lines as $line) {
-		$line = trim((string) $line);
+	$old_lines = [];
 
-		$lines[] = preg_replace_callback(
+	$chunks = [];
+
+	$attrs = $xml_lines[0]->attributes();
+
+	$last_end = (float) $attrs['start'];
+
+	$process_chunks = function (array $old, array $new) : array {
+		$out = [];
+
+		$chunks = [];
+
+		foreach ($new as $line) {
+			$line = trim($line);
+
+			if (
+				preg_match('/^\[[^\]]+\]$/', $line)
+				|| preg_match('/^[^:]+: .+$/', $line)
+			) {
+				if (count($chunks) > 0) {
+					$out[] = implode(' ', $chunks);
+
+					$chunks = [];
+				}
+
+				$out[] = $line;
+			} else {
+				$chunks[] = $line;
+			}
+		}
+
+		if (count($chunks) > 0) {
+			$out[] = implode(' ', $chunks);
+		}
+
+		return array_merge($old, $out);
+	};
+
+	foreach ($xml_lines as $line) {
+		$line_text = trim((string) $line);
+
+		$chunks[] = preg_replace_callback(
 			'/&#(\d+);/',
 			static function (array $match) : string {
 				return chr((int) $match[1]);
 			},
-			$line
+			$line_text
 		);
 	}
+
+	$lines = $process_chunks($lines, $chunks);
+
+	$chunk = implode("\n", $lines);
 
 	return $lines;
 }
