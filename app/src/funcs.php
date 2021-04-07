@@ -1325,12 +1325,14 @@ function captions(
 	$lines = [];
 
 	foreach ($xml_lines as $line) {
+		$line = trim((string) $line);
+
 		$lines[] = preg_replace_callback(
 			'/&#(\d+);/',
 			static function (array $match) : string {
 				return chr((int) $match[1]);
 			},
-			(string) $line
+			$line
 		);
 	}
 
