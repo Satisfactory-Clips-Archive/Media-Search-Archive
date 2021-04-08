@@ -12,13 +12,18 @@
 # CGb3HtdOy_w
 * find appropriate video to flag as "replacedby"
 
-# packager videos
+# fluids update videos
+## adjustable jump pads
+* yt-R0S19_caQuw,428.86,433.1
+* k3WWTRfFo_s
+
+## packager videos
 * these need to be appropriate flagged for duplicates, replaces, & see alsos
 
-# ladder videos
+## ladder videos
 * these need to be appropriately flagged for duplicates, replaces, & see alsos
 
-# tc-AnnoyingSavageParrotWoofer
+## tc-AnnoyingSavageParrotWoofer
 * add the valve announcement in the fluids update here
 
 # merch store

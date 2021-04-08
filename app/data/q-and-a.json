@@ -140,6 +140,7 @@
             "yt-Dtm6xIj-wM4,718.308644,808.471513",
             "yt-Gdz6SUv9Om4,5885.9544,5904.745681",
             "yt-Gdz6SUv9Om4,8558.020136,8629.687946",
+            "yt-R0S19_caQuw,433.1,447.14",
             "z5bf3k7JWlg",
             "_XfcfZ8vfj8"
         ],
@@ -1210,6 +1211,7 @@
             "off-topic\/sanctum"
         ],
         "duplicates": [
+            "yt-R0S19_caQuw,426.78,428.86",
             "yt-Zo2ybvs7keI,502.32,614.16"
         ],
         "seealso": [
@@ -1479,14 +1481,14 @@
             "WoWR5Xsuav8",
             "y51YDVf8VOI",
             "yt-CB9bSigNYH8,4250.630211,4256.657128",
-            "yt-Dtm6xIj-wM4,280.42817,354.60912",
             "yt-Dtm6xIj-wM4,3487.8333333333335,3508.867162",
             "Z0yYtiR__Nk"
         ],
         "seealso": [
             "Jy8mbOy0BJ0",
             "qYBAKknb7WA",
-            "R9u6_oxcsX4"
+            "R9u6_oxcsX4",
+            "yt-Dtm6xIj-wM4,280.42817,354.60912"
         ]
     },
     "qPw6GNV42QI": {
@@ -2322,7 +2324,8 @@
             "wRc1dgpRDrM"
         ],
         "seealso": [
-            "yt-F-q3vfj__M4,112.71260000000001,182.71586666666667"
+            "yt-F-q3vfj__M4,112.71260000000001,182.71586666666667",
+            "yt-R0S19_caQuw,86.32,144.32"
         ]
     },
     "UZSByyzQ3DA": {
@@ -9156,7 +9159,8 @@
             "community"
         ],
         "replaces": [
-            "jfPUvIBBJVw"
+            "jfPUvIBBJVw",
+            "yt-R0S19_caQuw,264.36,363.28"
         ],
         "seealso": [
             "WoxF6_gsnSE"
@@ -11306,7 +11310,8 @@
             "NU1DLvv4zb0"
         ],
         "seealso": [
-            "DyXs7ps8cOY"
+            "DyXs7ps8cOY",
+            "yt-R0S19_caQuw,415.66,426.78"
         ]
     },
     "BSIjbEnE90o": {
@@ -14029,7 +14034,8 @@
         "duplicates": [
             "4f7KWwnXhoU",
             "299eeYGePHM",
-            "Cnw_Ow3K29I"
+            "Cnw_Ow3K29I",
+            "yt-R0S19_caQuw,403.32,412.34"
         ]
     },
     "pb2KprHATHk": {
@@ -17346,6 +17352,9 @@
         "topics": [
             "features\/tiers",
             "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "seealso": [
+            "yt-R0S19_caQuw,415.66,426.78"
         ]
     },
     "RKfqg8EOZgE": {
@@ -21528,6 +21537,9 @@
             "features\/tiers",
             "features\/tiers\/tier-7",
             "features\/tiers\/tier-9"
+        ],
+        "seealso": [
+            "yt-R0S19_caQuw,415.66,426.78"
         ]
     },
     "_UZr4JLSA1c": {
@@ -21739,7 +21751,8 @@
             "retail\/steam-store\/steam-release"
         ],
         "duplicates": [
-            "cCWKieE8O8g"
+            "cCWKieE8O8g",
+            "yt-R0S19_caQuw,384.72,393.2"
         ]
     },
     "Lem_s04UYBA": {
@@ -22487,6 +22500,7 @@
             "HZFZLzljSRE",
             "yt-1OQk7vNt6-0,261.62,292.16",
             "yt-CB9bSigNYH8,4747.934062,4786.597164",
+            "yt-R0S19_caQuw,209.08,264.36",
             "yt-W1E6EWrAsII,345.76,375.64"
         ]
     },
@@ -22755,6 +22769,9 @@
         "date": "2020-02-11",
         "topics": [
             "satisfactory-updates\/released\/satisfactory-update-3"
+        ],
+        "seealso": [
+            "yt-R0S19_caQuw,144.32,209.08"
         ]
     },
     "xY1OQ_CuQhQ": {
@@ -22764,6 +22781,9 @@
             "retail\/steam-store\/steam-release",
             "satisfactory-updates\/release-builds",
             "satisfactory-updates\/released\/satisfactory-update-3"
+        ],
+        "duplicates": [
+            "yt-R0S19_caQuw,144.32,209.08"
         ],
         "seealso": [
             "t814f8sansw"
@@ -23608,6 +23628,169 @@
         ],
         "duplicatedby": "dlL942ooTho"
     },
+    "yt-R0S19_caQuw,433.1,447.14": {
+        "title": "Q&A: Any ETA on Dedicated Servers?",
+        "date": "2019-03-15",
+        "topics": [
+            "features\/planned-features\/dedicated-servers"
+        ],
+        "duplicatedby": "nUtF3e6i_lU"
+    },
+    "yt-R0S19_caQuw,428.86,433.1": {
+        "title": "Q&A: Any plans to make jump pads adjustable?",
+        "date": "2019-03-15",
+        "topics": [
+            "features\/buildables\/jump-pads"
+        ],
+        "seealso": [
+            "k3WWTRfFo_s"
+        ]
+    },
+    "yt-R0S19_caQuw,69.96,74.2": {
+        "title": "Q&A: Are there perks for pre-purchase?",
+        "date": "2019-03-15",
+        "topics": [
+            "retail"
+        ],
+        "seealso": [
+            "yt-R0S19_caQuw,67.94,69.96",
+            "yt-R0S19_caQuw,74.2,86.32"
+        ]
+    },
+    "yt-R0S19_caQuw,415.66,426.78": {
+        "title": "Q&A: Are there plans to have more than 7 tiers?",
+        "date": "2019-03-15",
+        "topics": [
+            "features\/tiers"
+        ],
+        "seealso": [
+            "55GiH8YwDds",
+            "PdnkUetagWM",
+            "ZOmxbDTRWmg"
+        ]
+    },
+    "yt-R0S19_caQuw,67.94,69.96": {
+        "title": "Q&A: Can I pre-download the game?",
+        "date": "2019-03-15",
+        "topics": [
+            "retail"
+        ],
+        "seealso": [
+            "yt-R0S19_caQuw,69.96,74.2"
+        ]
+    },
+    "yt-R0S19_caQuw,144.32,209.08": {
+        "title": "Q&A: How will you fix rebalancing?",
+        "date": "2019-03-15",
+        "topics": [
+            "satisfactory-updates"
+        ],
+        "seealso": [
+            "y6PVnuMZu8w"
+        ],
+        "duplicatedby": "xY1OQ_CuQhQ"
+    },
+    "yt-R0S19_caQuw,384.72,393.2": {
+        "title": "Q&A: If I buy the game on Epic now, can I have it moved to my Steam account later?",
+        "date": "2019-03-15",
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
+        "duplicatedby": "GWtv9JpKGS0"
+    },
+    "yt-R0S19_caQuw,393.2,403.32": {
+        "title": "Q&A: Is the 1 Year Epic Store exclusivity from EA launch, or one year from full launch?",
+        "date": "2019-03-15",
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "duplicatedby": "zHYxze67E28"
+    },
+    "yt-R0S19_caQuw,403.32,412.34": {
+        "title": "Q&A: Please, please, please make a Linux based dedicated server that can run headless.",
+        "date": "2019-03-15",
+        "topics": [
+            "features\/planned-features\/dedicated-servers"
+        ],
+        "duplicatedby": "v5Niam8EYts"
+    },
+    "yt-R0S19_caQuw,426.78,428.86": {
+        "title": "Q&A: Sanctum 3 when?",
+        "date": "2019-03-15",
+        "topics": [
+            "off-topic\/sanctum"
+        ],
+        "duplicatedby": "Ud7cgUEuVlE"
+    },
+    "yt-R0S19_caQuw,264.36,363.28": {
+        "title": "Q&A: What's the plan with Content Creators?",
+        "date": "2019-03-15",
+        "topics": [
+            "community"
+        ],
+        "replacedby": "UbRjqQgji40"
+    },
+    "yt-R0S19_caQuw,46.2,55.16": {
+        "title": "Q&A: When exactly will Early Access launch?",
+        "date": "2019-03-15",
+        "topics": [
+            "retail\/early-access"
+        ],
+        "replaces": [
+            "yt-Dtm6xIj-wM4,280.42817,354.60912"
+        ]
+    },
+    "yt-R0S19_caQuw,378.46,384.72": {
+        "title": "Q&A: Why don't I have a beta key?",
+        "date": "2019-03-15",
+        "topics": [
+            "satisfactory-updates\/released\/satisfactory-alpha"
+        ],
+        "seealso": [
+            "yt-1OQk7vNt6-0,84.52,92.08"
+        ]
+    },
+    "yt-R0S19_caQuw,74.2,86.32": {
+        "title": "Q&A: Why would I pre-purchase?",
+        "date": "2019-03-15",
+        "topics": [
+            "retail"
+        ],
+        "seealso": [
+            "yt-R0S19_caQuw,69.96,74.2"
+        ]
+    },
+    "yt-R0S19_caQuw,86.32,144.32": {
+        "title": "Q&A: Will our Alpha Test save files still work?",
+        "date": "2019-03-15",
+        "topics": [
+            "features\/save-system"
+        ],
+        "seealso": [
+            "EBoS-s9O_oU"
+        ]
+    },
+    "yt-R0S19_caQuw,209.08,264.36": {
+        "title": "Q&A: Will the game be localised into any other languages before Early Access?",
+        "date": "2019-03-15",
+        "topics": [
+            "localisation"
+        ],
+        "seealso": [
+            "uLblaRDOX4Y"
+        ]
+    },
+    "yt-R0S19_caQuw,412.34,415.66": {
+        "title": "Q&A: You guys fixed the M.A.M. hard drive crash yet?",
+        "date": "2019-03-15",
+        "topics": [
+            "features\/buildings\/m-a-m",
+            "satisfactory-updates\/released\/satisfactory-alpha"
+        ],
+        "replaces": [
+            "EyUfBo2-gjw"
+        ]
+    },
     "jBOvSHJtna8": {
         "title": "Q&A: After the Alpha Weekend - Alpha Testers can continue streaming with the Alpha client?",
         "date": "2019-03-09",
@@ -23879,6 +24062,9 @@
         "topics": [
             "retail\/early-access",
             "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "duplicates": [
+            "yt-R0S19_caQuw,393.2,403.32"
         ],
         "seealso": [
             "Kfn13oEuA0c"
@@ -26757,7 +26943,7 @@
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "satisfactory-updates\/released\/satisfactory-alpha"
         ],
-        "duplicatedby": "KvCsUb7f0KY"
+        "replacedby": "yt-R0S19_caQuw,46.2,55.16"
     },
     "yt-Dtm6xIj-wM4,1962.712002,2009.493406": {
         "title": "Q&A: Sandbox mode available?",
@@ -27236,6 +27422,7 @@
         "seealso": [
             "yt-1OQk7vNt6-0,28.38,84.52",
             "yt-CB9bSigNYH8,4259.409187,4274.556616",
+            "yt-R0S19_caQuw,378.46,384.72",
             "yt-W1E6EWrAsII,238.12,256.8"
         ]
     },

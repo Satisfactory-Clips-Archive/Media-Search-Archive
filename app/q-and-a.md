@@ -1,7 +1,7 @@
 # Progress
-* 2639 questions found out of 3741 clips
-* 2551 non-trolling & on-topic questions found out of 2639 total questions
-* 379 questions found with no other references
+* 2656 questions found out of 3760 clips
+* 2568 non-trolling & on-topic questions found out of 2656 total questions
+* 376 questions found with no other references
 ## grouped by date
 * 2021-04-06: 3 of 35 questions found with no other references
 * 2021-03-30: 8 of 87 questions found with no other references
@@ -36,7 +36,7 @@
 * 2020-09-29: 5 of 38 questions found with no other references
 * 2020-09-22: 8 of 59 questions found with no other references
 * 2020-09-15: 6 of 47 questions found with no other references
-* 2020-09-08: 7 of 72 questions found with no other references
+* 2020-09-08: 6 of 72 questions found with no other references
 * 2020-09-01: 6 of 71 questions found with no other references
 * 2020-08-25: 18 of 134 questions found with no other references
 * 2020-08-18: 14 of 55 questions found with no other references
@@ -45,13 +45,14 @@
 * 2020-07-28: 2 of 10 questions found with no other references
 * 2020-07-21: 0 of 5 questions found with no other references
 * 2020-07-08: 0 of 5 questions found with no other references
-* 2020-06-08: 4 of 39 questions found with no other references
+* 2020-06-08: 3 of 39 questions found with no other references
 * 2020-05-19: 3 of 24 questions found with no other references
 * 2020-04-30: 0 of 1 questions found with no other references
 * 2020-03-24: 3 of 27 questions found with no other references
-* 2020-02-11: 3 of 33 questions found with no other references
+* 2020-02-11: 2 of 33 questions found with no other references
 * 2020-01-22: 0 of 28 questions found with no other references
 * 2019-12-19: 8 of 51 questions found with no other references
+* 2019-03-15: 0 of 17 questions found with no other references
 * 2019-03-09: 31 of 111 questions found with no other references
 * 2019-03-07: 0 of 8 questions found with no other references
 * 2019-02-20: 9 of 128 questions found with no other references
