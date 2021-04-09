@@ -920,6 +920,7 @@ $not_a_livestream = [
 	'2019-05-14' => 'Patch Notes',
 	'2019-06-07' => 'Video',
 	'2019-07-02' => 'Patch Notes',
+	'2019-07-06' => 'Video',
 	'2020-04-30' => 'Dev Vlog',
 	'2020-07-08' => 'Mod Highlight',
 	'2020-07-30' => 'Q&A',
