@@ -216,10 +216,9 @@ foreach (array_keys($faq) as $video_id) {
 		$faq_json[$faq_date . '_' . $friendly_playist_name] = [];
 	}
 
-	$link =
-			maybe_transcript_link_and_video_url(
-				$video_id,
-				$cache['playlistItems'][$video_id][1]
+	$link = maybe_transcript_link_and_video_url(
+		$video_id,
+		$cache['playlistItems'][$video_id][1]
 	);
 
 	echo '### ', $link,
