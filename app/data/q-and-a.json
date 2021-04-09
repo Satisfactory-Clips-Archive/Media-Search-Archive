@@ -138,6 +138,7 @@
             "XuFfkTTZnoA",
             "yt-1dUNmBBbExs,73.73333333333333,88.2",
             "yt-Dtm6xIj-wM4,718.308644,808.471513",
+            "yt-Fsod_UF5eus,367,403.76",
             "yt-Gdz6SUv9Om4,5885.9544,5904.745681",
             "yt-Gdz6SUv9Om4,8558.020136,8629.687946",
             "yt-R0S19_caQuw,433.1,447.14",
@@ -2321,11 +2322,11 @@
             "-m_-g6ELKsY",
             "a66KD67ymLs",
             "b586YMEHeRk",
-            "wRc1dgpRDrM"
+            "wRc1dgpRDrM",
+            "yt-t1LfyNfuMVQ,186.48,218.32"
         ],
         "seealso": [
             "yt-F-q3vfj__M4,112.71260000000001,182.71586666666667",
-            "yt-Fsod_UF5eus,186.48,218.32",
             "yt-R0S19_caQuw,86.32,144.32"
         ]
     },
@@ -2889,7 +2890,8 @@
             "qtf26oE7kQs",
             "RAyToKIKD2I",
             "tc-CheerfulZanyWebVoteYea",
-            "XLXeOMWHoAc"
+            "XLXeOMWHoAc",
+            "yt-Fsod_UF5eus,138.04,156.08"
         ],
         "seealso": [
             "R9u6_oxcsX4",
@@ -11481,7 +11483,8 @@
             "features\/tiers\/tier-8"
         ],
         "replaces": [
-            "plexfdPIaSw"
+            "plexfdPIaSw",
+            "yt-Fsod_UF5eus,287,321.48"
         ],
         "seealso": [
             "1Xgd1ANF9gw"
@@ -20071,6 +20074,9 @@
             "satisfactory-updates\/released\/satisfactory-update-4",
             "satisfactory-updates\/speculative\/satisfactory-update-5"
         ],
+        "duplicates": [
+            "yt-Fsod_UF5eus,287,321.48"
+        ],
         "legacyalts": [
             "tc-BlueMildLaptopHassaanChop"
         ],
@@ -23629,45 +23635,103 @@
         ],
         "duplicatedby": "dlL942ooTho"
     },
-    "yt-Fsod_UF5eus,186.48,218.32": {
+    "yt-Fsod_UF5eus,367,403.76": {
+        "title": "Q&A: Dedicated Servers?",
+        "date": "2019-11-05",
+        "topics": [
+            "features\/planned-features\/dedicated-servers"
+        ],
+        "duplicatedby": "nUtF3e6i_lU"
+    },
+    "yt-Fsod_UF5eus,138.04,156.08": {
+        "title": "Q&A: Is this the last update?",
+        "date": "2019-11-05",
+        "topics": [
+            "satisfactory-updates"
+        ],
+        "duplicatedby": "DOFC8O2yXNw"
+    },
+    "yt-Fsod_UF5eus,287,321.48": {
+        "title": "Q&A: Tier 8?",
+        "date": "2019-11-05",
+        "topics": [
+            "features\/tiers\/tier-8"
+        ],
+        "duplicatedby": "plexfdPIaSw",
+        "replacedby": "FhoIzj_QLm0"
+    },
+    "yt-Fsod_UF5eus,40.28,74.36": {
+        "title": "Q&A: Update 3 release date?",
+        "date": "2019-11-05",
+        "topics": [
+            "satisfactory-updates\/released\/satisfactory-update-3"
+        ],
+        "seealso": [
+            "yt-Fsod_UF5eus,74.36,138.04",
+            "yt-Fsod_UF5eus,321.48,367"
+        ]
+    },
+    "yt-Fsod_UF5eus,74.36,138.04": {
+        "title": "Q&A: What's in Update 3?",
+        "date": "2019-11-05",
+        "topics": [
+            "satisfactory-updates\/released\/satisfactory-update-3"
+        ],
+        "seealso": [
+            "yt-Fsod_UF5eus,40.28,74.36",
+            "yt-Fsod_UF5eus,321.48,367"
+        ]
+    },
+    "yt-Fsod_UF5eus,321.48,367": {
+        "title": "Q&A: What about smaller updates? Bug fixes etc.?",
+        "date": "2019-11-05",
+        "topics": [
+            "satisfactory-updates"
+        ],
+        "seealso": [
+            "yt-Fsod_UF5eus,40.28,74.36",
+            "yt-Fsod_UF5eus,74.36,138.04"
+        ]
+    },
+    "yt-t1LfyNfuMVQ,186.48,218.32": {
         "title": "Q&A: Are the new save files supported in an older version of the game?",
-        "date": "2019-11-05",
+        "date": "2019-09-25",
         "topics": [
             "features\/save-system"
         ],
-        "seealso": [
-            "EBoS-s9O_oU",
-            "yt-Fsod_UF5eus,100.36,186.48"
-        ]
+        "duplicatedby": "EBoS-s9O_oU"
     },
-    "yt-Fsod_UF5eus,218.32,236.16": {
+    "yt-t1LfyNfuMVQ,218.32,236.16": {
         "title": "Q&A: Can I disable Cloud Saves ?",
-        "date": "2019-11-05",
+        "date": "2019-09-25",
         "topics": [
             "features\/save-system\/cloud-sync"
         ],
         "seealso": [
-            "yt-Fsod_UF5eus,100.36,186.48"
+            "yt-t1LfyNfuMVQ,236.16,250",
+            "yt-t1LfyNfuMVQ,272.56,307.28"
         ]
     },
-    "yt-Fsod_UF5eus,236.16,250": {
+    "yt-t1LfyNfuMVQ,236.16,250": {
         "title": "Q&A: What happens if I play offline?",
-        "date": "2019-11-05",
+        "date": "2019-09-25",
         "topics": [
             "features\/save-system\/cloud-sync"
         ],
         "seealso": [
-            "yt-Fsod_UF5eus,100.36,186.48"
+            "yt-t1LfyNfuMVQ,218.32,236.16",
+            "yt-t1LfyNfuMVQ,272.56,307.28"
         ]
     },
-    "yt-Fsod_UF5eus,272.56,307.28": {
+    "yt-t1LfyNfuMVQ,272.56,307.28": {
         "title": "Q&A: Why am I seeing duplicates of my save files?",
-        "date": "2019-11-05",
+        "date": "2019-09-25",
         "topics": [
             "features\/save-system"
         ],
         "seealso": [
-            "yt-Fsod_UF5eus,100.36,186.48"
+            "yt-t1LfyNfuMVQ,218.32,236.16",
+            "yt-t1LfyNfuMVQ,236.16,250"
         ]
     },
     "yt-R0S19_caQuw,433.1,447.14": {
