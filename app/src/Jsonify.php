@@ -304,7 +304,9 @@ class Jsonify
 		return
 			maybe_transcript_link_and_video_url_data(
 				$found,
-				(
+				str_replace(
+					'Q&A Q&A:',
+					'Q&A:',
 					$this->injected->friendly_dated_playlist_name($playlist_id)
 					. ' '
 					. $this->injected->cache['playlistItems'][$found][1]
@@ -352,7 +354,9 @@ class Jsonify
 
 			$out[] = maybe_transcript_link_and_video_url_data(
 				$other_video_id,
-				(
+				str_replace(
+					'Q&A Q&A:',
+					'Q&A:',
 					$this->injected->friendly_dated_playlist_name(
 						$playlist_id
 					)

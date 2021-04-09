@@ -902,6 +902,34 @@ $not_a_livestream = [
 	'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ' => 'Teasers',
 	'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
 	'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO' => 'Teasers',
+	'2017-08-01' => 'Tutorial',
+	'2017-11-17' => 'Introduction',
+	'2018-03-09' => 'Q&A',
+	'2018-06-22' => 'Q&A',
+	'2018-07-19' => 'Dev Blog',
+	'2018-08-01' => 'Q&A',
+	'2018-09-12' => 'Alpha Info',
+	'2018-10-03' => 'Alpha Info',
+	'2018-11-08' => 'Dev Blog',
+	'2018-11-23' => 'Dev Blog',
+	'2018-12-25' => 'Video',
+	'2019-03-07' => 'Q&A',
+	'2019-03-15' => 'Q&A',
+	'2019-04-17' => 'Video',
+	'2019-04-26' => 'Milo Tutorial',
+	'2019-05-14' => 'Video',
+	'2019-06-07' => 'Video',
+	'2020-04-30' => 'Dev Vlog',
+	'2020-07-08' => 'Mod Highlight',
+	'2020-07-30' => 'Q&A',
+	'2020-11-05' => 'Dev Vlog',
+	'2020-12-11' => 'Teasers',
+	'2021-01-15' => 'Video',
+	'2021-02-05' => 'Video',
+	'2021-02-19' => 'Video',
+	'2021-02-26' => 'Video',
+	'2021-03-12' => 'Video',
+	'2021-03-26' => 'Video',
 	'2021-01-22' => 'Instagram AMA',
 	'2021-02-26' => 'Instagram AMA',
 	'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY' => 'Satisfactory Update 4 Patch Notes vid commentary',
@@ -909,12 +937,16 @@ $not_a_livestream = [
 
 $not_a_livestream_date_lookup = [
 	'2021-03-17' => 'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY',
-	'2021-02-26' => '2021-02-26',
-	'2021-01-22' => '2021-01-22',
 	'2021-01-15' => 'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ',
 	'2020-12-11' => 'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW',
 	'2020-09-04' => 'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO',
 ];
+
+foreach (array_keys($not_a_livestream) as $maybe_date) {
+	if (preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $maybe_date)) {
+		$not_a_livestream_date_lookup[$maybe_date] = $maybe_date;
+	}
+}
 
 $injected_global_topic_hierarchy = [
 	'satisfactory' => [

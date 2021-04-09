@@ -281,7 +281,9 @@ class Markdownify
 			$friendly,
 			maybe_transcript_link_and_video_url(
 				$found,
-				(
+				str_replace(
+					'Q&A Q&A:',
+					'Q&A:',
 					$this->injected->friendly_dated_playlist_name($playlist_id)
 					. ' '
 					. $this->injected->cache['playlistItems'][$found][1]
@@ -328,7 +330,9 @@ class Markdownify
 			$out .= '* '
 				. maybe_transcript_link_and_video_url(
 					$other_video_id,
-					(
+					str_replace(
+						'Q&A Q&A:',
+						'Q&A:',
 						$this->injected->friendly_dated_playlist_name(
 							$playlist_id
 						)
