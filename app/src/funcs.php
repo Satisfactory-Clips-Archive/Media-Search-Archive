@@ -69,7 +69,6 @@ use function preg_replace;
 use function preg_replace_callback;
 use function rawurlencode;
 use RuntimeException;
-use \Sentence;
 use function set_error_handler;
 use SimpleXMLElement;
 use function sort;
@@ -1333,7 +1332,7 @@ function captions(
 
 	$last_end = (float) $attrs['start'];
 
-	$process_chunks = function (array $old, array $new) : array {
+	$process_chunks = static function (array $old, array $new) : array {
 		$out = [];
 
 		$chunks = [];
