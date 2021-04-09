@@ -912,6 +912,7 @@ $not_a_livestream = [
 	'2018-10-03' => 'Alpha Info',
 	'2018-11-08' => 'Dev Blog',
 	'2018-11-23' => 'Dev Blog',
+	'2018-12-12' => 'Q&A',
 	'2018-12-25' => 'Video',
 	'2019-03-07' => 'Q&A',
 	'2019-03-15' => 'Q&A',
@@ -927,6 +928,7 @@ $not_a_livestream = [
 	'2019-11-05' => 'Q&A',
 	'2019-12-02' => 'Patch Notes',
 	'2019-12-13' => 'Video',
+	'2019-12-19' => 'Video',
 	'2020-04-30' => 'Dev Vlog',
 	'2020-07-08' => 'Mod Highlight',
 	'2020-07-30' => 'Q&A',
@@ -1074,6 +1076,18 @@ $injected_global_topic_hierarchy = [
 		],
 		'Haigen' => [
 			'Community',
+		],
+		'Tom' => [
+			'Community',
+		],
+		'Jannik' => [
+			'Coffee Stainers',
+		],
+		'Joel' => [
+			'Coffee Stainers',
+		],
+		'Sofi' => [
+			'Coffee Stainers',
 		],
 	],
 ];

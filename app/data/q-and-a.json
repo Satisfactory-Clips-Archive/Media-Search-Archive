@@ -909,6 +909,7 @@
             "VjKPXr_e5yk",
             "wZOVw8KV1rQ",
             "yt-CB9bSigNYH8,2205.555024,2213.124563",
+            "yt-CB9bSigNYH8,5336.08426,5347.37039",
             "yt-CB9bSigNYH8,5450.593416,5454.661311"
         ]
     },
@@ -8482,6 +8483,9 @@
         "date": "2021-01-26",
         "topics": [
             "retail"
+        ],
+        "seealso": [
+            "AHYlgGcYkjw"
         ]
     },
     "gppSU17i2as": {
@@ -11441,6 +11445,9 @@
         "topics": [
             "satisfactory-updates\/seasonal-events\/fics-mas",
             "trolling"
+        ],
+        "seealso": [
+            "_QUBxFf4Yw4"
         ]
     },
     "OjiLxOBdkU8": {
@@ -14381,7 +14388,10 @@
     "Kjvxn4xcr0A": {
         "title": "Q&A: Any chance of DRM-free release?",
         "date": "2020-10-20",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "yt-7V4UPiBOshY,533.84,558.4"
+        ]
     },
     "WU3ncx4Ok3Y": {
         "title": "Q&A: Any Halloween Event?",
@@ -21771,6 +21781,9 @@
         "duplicates": [
             "cCWKieE8O8g",
             "yt-R0S19_caQuw,384.72,393.2"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,460.08,486.04"
         ]
     },
     "Lem_s04UYBA": {
@@ -23080,6 +23093,7 @@
             "retail\/steam-store\/steam-release"
         ],
         "replaces": [
+            "yt-7V4UPiBOshY,161.28,186.1",
             "yt-Dtm6xIj-wM4,1307.57972,1334.740485"
         ],
         "seealso": [
@@ -23225,6 +23239,16 @@
         ],
         "seealso": [
             "ZSFnn5PWzpU"
+        ]
+    },
+    "yt-52nYaN8imgo,24.46,25.22": {
+        "title": "Q&A: Early Access info, localisation, save files + more (March 2019)",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/jace"
+        ],
+        "seealso": [
+            "yt-R0S19_caQuw,,46.2"
         ]
     },
     "cONX37SiszU": {
@@ -23379,6 +23403,28 @@
             "environment\/resources\/sam-ore"
         ],
         "duplicatedby": "SqyfGfz3APc"
+    },
+    "yt-52nYaN8imgo,201.34,216.1": {
+        "title": "Q&A: Satisfactory exclusive to Epic Games Store (December 2018)",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/nathalie",
+            "coffee-stainers\/sofi"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,35.26,161.28"
+        ]
+    },
+    "yt-52nYaN8imgo,284.4,287.44": {
+        "title": "Q&A: Satisfactory exclusive to Epic Games Store (December 2018)",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/jace"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,612.98,643.72"
+        ]
     },
     "QVQZ2qgtTsQ": {
         "title": "Q&A: Satisfactory on Switch?",
@@ -24966,6 +25012,7 @@
         "seealso": [
             "jBOvSHJtna8",
             "u9Vu9NIjiRs",
+            "yt-7V4UPiBOshY,270.48,273.12",
             "yt-VHr4x1vNeoY,117.14,195.46"
         ]
     },
@@ -24995,6 +25042,9 @@
         "topics": [
             "retail\/early-access",
             "retail\/epic-store"
+        ],
+        "duplicates": [
+            "yt-7V4UPiBOshY,491.14,533.84"
         ],
         "seealso": [
             "5kcpbR2ViOg"
@@ -25622,6 +25672,9 @@
         "topics": [
             "environment\/world-map",
             "satisfactory-updates\/released\/satisfactory-alpha"
+        ],
+        "seealso": [
+            "dlL942ooTho"
         ]
     },
     "yt-CB9bSigNYH8,4402.120638,4456.517473": {
@@ -27308,6 +27361,7 @@
             "retail\/steam-store\/steam-release"
         ],
         "seealso": [
+            "yt-7V4UPiBOshY,161.28,186.1",
             "zHYxze67E28"
         ],
         "replacedby": "Kfn13oEuA0c"
@@ -27443,6 +27497,198 @@
         ],
         "seealso": [
             "yt-Dtm6xIj-wM4,2410.697848,2436.980614"
+        ]
+    },
+    "yt-7V4UPiBOshY,35.26,161.28": {
+        "title": "Q&A: ...but then why?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-7V4UPiBOshY,29.68,35.26",
+            "yt-52nYaN8imgo,201.34,216.1"
+        ]
+    },
+    "yt-7V4UPiBOshY,317.8,337.32": {
+        "title": "Q&A: But do your evil corporate decision makers play video games\u203d",
+        "date": "2018-12-12",
+        "topics": [
+            "coffee-stainers\/tim",
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-7V4UPiBOshY,292.18,317.8"
+        ]
+    },
+    "yt-7V4UPiBOshY,460.08,486.04": {
+        "title": "Q&A: Did you ever give out Steam keys?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity",
+            "retail\/steam-store",
+            "satisfactory-updates\/released\/satisfactory-alpha"
+        ],
+        "seealso": [
+            "GWtv9JpKGS0",
+            "yt-7V4UPiBOshY,14.407161,29.68"
+        ]
+    },
+    "yt-7V4UPiBOshY,273.12,292.18": {
+        "title": "Q&A: Don't you think not revealing anything sooner was misleading?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-7V4UPiBOshY,355.96,412.48"
+        ]
+    },
+    "yt-7V4UPiBOshY,292.18,317.8": {
+        "title": "Q&A: Do you even use the Epic Launcher as gamers\u203d",
+        "date": "2018-12-12",
+        "topics": [
+            "coffee-stainers",
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-7V4UPiBOshY,317.8,337.32"
+        ]
+    },
+    "yt-7V4UPiBOshY,161.28,186.1": {
+        "title": "Q&A: Is it a timed exclusive deal?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-Dtm6xIj-wM4,1307.57972,1334.740485"
+        ],
+        "replacedby": "Kfn13oEuA0c"
+    },
+    "yt-7V4UPiBOshY,412.48,414.76": {
+        "title": "Q&A: Is the Alpha being done via Epic?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store",
+            "retail\/epic-store\/epic-store-exclusivity",
+            "satisfactory-updates\/released\/satisfactory-alpha"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-7V4UPiBOshY,452,460.08"
+        ]
+    },
+    "yt-7V4UPiBOshY,533.84,558.4": {
+        "title": "Q&A: Is the Epic Games Store DRM-free?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store",
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "Kjvxn4xcr0A",
+            "yt-7V4UPiBOshY,14.407161,29.68"
+        ]
+    },
+    "yt-7V4UPiBOshY,270.48,273.12": {
+        "title": "Q&A: Is there an Early Access feature on the Epic Store?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/early-access",
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-VHr4x1vNeoY,195.46,244.9"
+        ]
+    },
+    "yt-7V4UPiBOshY,486.04,491.14": {
+        "title": "Q&A: Is there a refund policy?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store",
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "_QUBxFf4Yw4"
+        ]
+    },
+    "yt-7V4UPiBOshY,491.14,533.84": {
+        "title": "Q&A: Is there regional pricing on the Epic Games Store?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store",
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-7V4UPiBOshY,612.98,643.72"
+        ],
+        "duplicatedby": "yt-VHr4x1vNeoY,69.16,117.14"
+    },
+    "yt-7V4UPiBOshY,452,460.08": {
+        "title": "Q&A: Was the Alpha always on Epic?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity",
+            "satisfactory-updates\/released\/satisfactory-alpha"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-7V4UPiBOshY,412.48,414.76"
+        ]
+    },
+    "yt-7V4UPiBOshY,558.4,612.98": {
+        "title": "Q&A: What about the security breaches in the past with Epic?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store",
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68"
+        ]
+    },
+    "yt-7V4UPiBOshY,612.98,643.72": {
+        "title": "Q&A: What are the payment options for the Epic Games Store?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store",
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,491.14,533.84",
+            "yt-52nYaN8imgo,284.4,287.44"
+        ]
+    },
+    "yt-7V4UPiBOshY,29.68,35.26": {
+        "title": "Q&A: Who forced you to do this\u203d",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-7V4UPiBOshY,35.26,161.28"
+        ]
+    },
+    "yt-7V4UPiBOshY,355.96,412.48": {
+        "title": "Q&A: Why did you leave it on Steam for so long then do a bait and switch?",
+        "date": "2018-12-12",
+        "topics": [
+            "retail\/epic-store\/epic-store-exclusivity",
+            "retail\/steam-store"
+        ],
+        "seealso": [
+            "yt-7V4UPiBOshY,14.407161,29.68",
+            "yt-7V4UPiBOshY,273.12,292.18"
         ]
     },
     "yt-1UqIDp_byFc,88.32,103.98": {
