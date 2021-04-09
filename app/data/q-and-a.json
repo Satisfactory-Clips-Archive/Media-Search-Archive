@@ -2325,6 +2325,7 @@
         ],
         "seealso": [
             "yt-F-q3vfj__M4,112.71260000000001,182.71586666666667",
+            "yt-Fsod_UF5eus,186.48,218.32",
             "yt-R0S19_caQuw,86.32,144.32"
         ]
     },
@@ -23627,6 +23628,47 @@
             "environment\/world-map"
         ],
         "duplicatedby": "dlL942ooTho"
+    },
+    "yt-Fsod_UF5eus,186.48,218.32": {
+        "title": "Q&A: Are the new save files supported in an older version of the game?",
+        "date": "2019-11-05",
+        "topics": [
+            "features\/save-system"
+        ],
+        "seealso": [
+            "EBoS-s9O_oU",
+            "yt-Fsod_UF5eus,100.36,186.48"
+        ]
+    },
+    "yt-Fsod_UF5eus,218.32,236.16": {
+        "title": "Q&A: Can I disable Cloud Saves ?",
+        "date": "2019-11-05",
+        "topics": [
+            "features\/save-system\/cloud-sync"
+        ],
+        "seealso": [
+            "yt-Fsod_UF5eus,100.36,186.48"
+        ]
+    },
+    "yt-Fsod_UF5eus,236.16,250": {
+        "title": "Q&A: What happens if I play offline?",
+        "date": "2019-11-05",
+        "topics": [
+            "features\/save-system\/cloud-sync"
+        ],
+        "seealso": [
+            "yt-Fsod_UF5eus,100.36,186.48"
+        ]
+    },
+    "yt-Fsod_UF5eus,272.56,307.28": {
+        "title": "Q&A: Why am I seeing duplicates of my save files?",
+        "date": "2019-11-05",
+        "topics": [
+            "features\/save-system"
+        ],
+        "seealso": [
+            "yt-Fsod_UF5eus,100.36,186.48"
+        ]
     },
     "yt-R0S19_caQuw,433.1,447.14": {
         "title": "Q&A: Any ETA on Dedicated Servers?",
