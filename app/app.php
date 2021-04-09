@@ -895,9 +895,6 @@ foreach (array_keys($playlists) as $playlist_id) {
 		. sprintf('date: "%s"' . "\n", date('Y-m-d', $title_unix))
 		. 'layout: livestream' . "\n"
 		. '---' . "\n"
-		. '# '
-		. $title
-		. "\n"
 	);
 
 	$xref_video_id = $cache['internalxref'][$playlist_id] ?? null;
@@ -918,13 +915,47 @@ foreach (array_keys($playlists) as $playlist_id) {
 			$slugify,
 			true,
 			false,
-			true
+			true,
+			false
 		);
 
 		[$lines_to_write] = $lines_to_write;
 
 		$playlist_lines[] = implode('', $lines_to_write);
+	} elseif (in_array(date('Y-m-d', $title_unix), $externals_dates, true)) {
+		foreach (
+			get_externals()[date('Y-m-d', $title_unix)] as $external_for_date
+		) {
+			[, $lines_to_write] = process_dated_csv(
+				date('Y-m-d', $title_unix),
+				[
+					'playlists' => [],
+					'playlistItems' => [],
+					'videoTags' => [],
+				],
+				$external_for_date,
+				$cache,
+				$global_topic_hierarchy,
+				$not_a_livestream,
+				$not_a_livestream_date_lookup,
+				$slugify,
+				true,
+				false,
+				true,
+				false
+			);
+
+			[$lines_to_write] = $lines_to_write;
+
+			$playlist_lines[] = implode('', $lines_to_write) . "\n";
+		}
 	}
+
+	$playlist_lines[] = (
+		'# '
+		. $title
+		. "\n"
+	);
 
 	$topics_for_date = [];
 
