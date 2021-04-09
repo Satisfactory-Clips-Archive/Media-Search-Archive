@@ -42,7 +42,7 @@ module.exports = async () => {
 					"@context": "https://schema.org",
 					"@type": "WebPage",
 					"name": data[data.length - 1],
-					"description": `Satisfactory Livestream clips about ${
+					"description": `Satisfactory clips about ${
 						data[data.length - 1]
 					}`,
 					"about": [
