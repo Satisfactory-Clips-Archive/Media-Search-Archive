@@ -13849,7 +13849,8 @@
             "MR5331unvbQ"
         ],
         "replaces": [
-            "egY71egazyQ"
+            "egY71egazyQ",
+            "yt-QBE1Xl94s9o,145.92,158.64"
         ],
         "seealso": [
             "kgQjKxY0oGQ",
@@ -21920,6 +21921,7 @@
         ],
         "duplicates": [
             "cCWKieE8O8g",
+            "yt-QBE1Xl94s9o,137.04,145.92",
             "yt-R0S19_caQuw,384.72,393.2"
         ],
         "seealso": [
@@ -22511,6 +22513,48 @@
         ],
         "duplicatedby": "iqGA8u7MmMM"
     },
+    "yt-QBE1Xl94s9o,137.04,145.92": {
+        "title": "Q&A: Can I get a copy on Steam if I own it on Epic?",
+        "date": "2020-02-20",
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
+        "duplicatedby": "GWtv9JpKGS0"
+    },
+    "yt-QBE1Xl94s9o,100.04,137.04": {
+        "title": "Q&A: When will the game be released on Steam?",
+        "date": "2020-02-20",
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
+        "duplicates": [
+            "gOgyvgKAGAQ",
+            "yt-Dtm6xIj-wM4,3280.698724,3286.654122"
+        ],
+        "seealso": [
+            "Kfn13oEuA0c"
+        ]
+    },
+    "yt-QBE1Xl94s9o,145.92,158.64": {
+        "title": "Q&A: Will I be able to play with people from Epic on the Steam version?",
+        "date": "2020-02-20",
+        "topics": [
+            "features\/multiplayer\/crossplay"
+        ],
+        "replacedby": "yt-QBE1Xl94s9o,158.64,193.36"
+    },
+    "yt-QBE1Xl94s9o,158.64,193.36": {
+        "title": "Q&A: Will my save file work in either version?",
+        "date": "2020-02-20",
+        "topics": [
+            "features\/save-system",
+            "retail\/epic-store",
+            "retail\/steam-store"
+        ],
+        "replaces": [
+            "yt-QBE1Xl94s9o,145.92,158.64"
+        ]
+    },
     "pUhzc1Fd8sg": {
         "title": "Q&A: Any news on Dedicated Servers?",
         "date": "2020-02-11",
@@ -23101,12 +23145,7 @@
             "retail\/epic-store\/epic-store-exclusivity",
             "retail\/steam-store\/steam-release"
         ],
-        "duplicates": [
-            "yt-Dtm6xIj-wM4,3280.698724,3286.654122"
-        ],
-        "seealso": [
-            "Kfn13oEuA0c"
-        ]
+        "duplicatedby": "yt-QBE1Xl94s9o,100.04,137.04"
     },
     "LWyO9jzxduo": {
         "title": "Q&A: What's the joke with Pipes, why do people want them?",
@@ -26750,7 +26789,7 @@
         "topics": [
             "retail\/steam-store\/steam-release"
         ],
-        "duplicatedby": "gOgyvgKAGAQ"
+        "duplicatedby": "yt-QBE1Xl94s9o,100.04,137.04"
     },
     "yt-Dtm6xIj-wM4,2974.6666666666665,3016.687892": {
         "title": "Q&A: Besides the starting areas,will there be random spawns in the release?",
