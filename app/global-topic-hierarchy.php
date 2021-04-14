@@ -1089,5 +1089,22 @@ $injected_global_topic_hierarchy = [
 		'Sofi' => [
 			'Coffee Stainers',
 		],
+		'Update 4 Launch Trailer' => [
+			404,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'Etienne' => [
+			'Coffee Stainers',
+		],
+		'Michiel' => [
+			'Coffee Stainers',
+		],
+		'Tobias' => [
+			'Coffee Stainers',
+		],
+		'Torsten' => [
+			'Coffee Stainers',
+		],
 	],
 ];
