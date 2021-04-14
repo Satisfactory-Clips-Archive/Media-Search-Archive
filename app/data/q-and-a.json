@@ -13850,6 +13850,7 @@
         ],
         "replaces": [
             "egY71egazyQ",
+            "yt-BmKMv6SZJ5M,206.74,237.3",
             "yt-QBE1Xl94s9o,145.92,158.64"
         ],
         "seealso": [
@@ -21718,7 +21719,8 @@
             "retail\/steam-store\/steam-release"
         ],
         "duplicates": [
-            "FILck3h3n0A"
+            "FILck3h3n0A",
+            "yt-BmKMv6SZJ5M,145.62,168.98"
         ],
         "seealso": [
             "5kcpbR2ViOg"
@@ -21921,6 +21923,7 @@
         ],
         "duplicates": [
             "cCWKieE8O8g",
+            "yt-BmKMv6SZJ5M,187.22,206.74",
             "yt-QBE1Xl94s9o,137.04,145.92",
             "yt-R0S19_caQuw,384.72,393.2"
         ],
@@ -22250,6 +22253,59 @@
         ],
         "duplicatedby": "GPP6rcB8ROw"
     },
+    "yt-BmKMv6SZJ5M,187.22,206.74": {
+        "title": "Q&A: Can I transfer my Epic version to Steam?",
+        "date": "2020-04-02",
+        "topics": [
+            "retail\/epic-store",
+            "retail\/steam-store",
+            "retail\/steam-store\/steam-release"
+        ],
+        "duplicatedby": "GWtv9JpKGS0"
+    },
+    "yt-BmKMv6SZJ5M,168.98,187.22": {
+        "title": "Q&A: Do Epic save files work on Steam?",
+        "date": "2020-04-02",
+        "topics": [
+            "features\/save-system",
+            "retail\/steam-store\/steam-release"
+        ],
+        "replaces": [
+            "yt-Dtm6xIj-wM4,1494.4333333333334,1548.122373"
+        ]
+    },
+    "yt-BmKMv6SZJ5M,145.62,168.98": {
+        "title": "Q&A: What will the price be on Steam?",
+        "date": "2020-04-02",
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
+        "duplicatedby": "_UZr4JLSA1c"
+    },
+    "yt-BmKMv6SZJ5M,122.12,145.62": {
+        "title": "Q&A: When is the Steam release going to come?",
+        "date": "2020-04-02",
+        "topics": [
+            "retail\/steam-store\/steam-release"
+        ],
+        "duplicates": [
+            "gOgyvgKAGAQ",
+            "yt-Dtm6xIj-wM4,3280.698724,3286.654122",
+            "yt-QBE1Xl94s9o,100.04,137.04"
+        ],
+        "seealso": [
+            "Kfn13oEuA0c"
+        ]
+    },
+    "yt-BmKMv6SZJ5M,206.74,237.3": {
+        "title": "Q&A: Will there be cross-platform support between Steam and Epic?",
+        "date": "2020-04-02",
+        "topics": [
+            "features\/multiplayer\/crossplay",
+            "retail\/steam-store\/steam-release"
+        ],
+        "replacedby": "zekvCEX_mv8"
+    },
     "G8K0Bjs8mNo": {
         "title": "Q&A: Achievements?",
         "date": "2020-03-24",
@@ -22527,13 +22583,7 @@
         "topics": [
             "retail\/steam-store\/steam-release"
         ],
-        "duplicates": [
-            "gOgyvgKAGAQ",
-            "yt-Dtm6xIj-wM4,3280.698724,3286.654122"
-        ],
-        "seealso": [
-            "Kfn13oEuA0c"
-        ]
+        "duplicatedby": "yt-BmKMv6SZJ5M,122.12,145.62"
     },
     "yt-QBE1Xl94s9o,145.92,158.64": {
         "title": "Q&A: Will I be able to play with people from Epic on the Steam version?",
@@ -23145,7 +23195,7 @@
             "retail\/epic-store\/epic-store-exclusivity",
             "retail\/steam-store\/steam-release"
         ],
-        "duplicatedby": "yt-QBE1Xl94s9o,100.04,137.04"
+        "duplicatedby": "yt-BmKMv6SZJ5M,122.12,145.62"
     },
     "LWyO9jzxduo": {
         "title": "Q&A: What's the joke with Pipes, why do people want them?",
@@ -26789,7 +26839,7 @@
         "topics": [
             "retail\/steam-store\/steam-release"
         ],
-        "duplicatedby": "yt-QBE1Xl94s9o,100.04,137.04"
+        "duplicatedby": "yt-BmKMv6SZJ5M,122.12,145.62"
     },
     "yt-Dtm6xIj-wM4,2974.6666666666665,3016.687892": {
         "title": "Q&A: Besides the starting areas,will there be random spawns in the release?",
@@ -27096,7 +27146,8 @@
         "seealso": [
             "CgGc8VRspUA",
             "Kfn13oEuA0c"
-        ]
+        ],
+        "replacedby": "yt-BmKMv6SZJ5M,168.98,187.22"
     },
     "yt-Dtm6xIj-wM4,1733.7666666666667,1775.710975": {
         "title": "Q&A: Is 4 players the recommended number?",
