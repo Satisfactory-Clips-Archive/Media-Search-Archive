@@ -570,23 +570,18 @@
         "community\/kibitz": 1612299257
     },
     "PLbjDnnBIxiErSWX2noEv1twPQ9F4lRZi1": {
-        "neshkor": 1612296843,
         "coffee-stainers\/neshkor": 1612299257
     },
     "PLbjDnnBIxiEqq2pvrf2fFltB6Nq9SX_4H": {
-        "ros": 1612296843,
         "coffee-stainers\/ros": 1612299257
     },
     "PLbjDnnBIxiEoePaWQkbGQfaANu4qRPb6C": {
-        "steel": 1612296843,
         "environment\/resources\/steel": 1612299257
     },
     "PLbjDnnBIxiEr4KkkPWBDMJdu4Y4S3Pn7x": {
-        "steve": 1612296843,
         "story-lore\/characters\/steve": 1612299257
     },
     "PLbjDnnBIxiEoNob1WtMvqzwc3KqxW9dvM": {
-        "vr": 1612296843,
         "features\/unplanned-features\/vr": 1612299257
     },
     "PLbjDnnBIxiEqV3H-fkFZVMqPZZ8M-Sexh": {
@@ -684,32 +679,25 @@
         "technology\/analytics": 1613576614
     },
     "PLbjDnnBIxiEqY1dlDDnwf4Fo9Z9l7YtM4": {
-        "dlss": 1613567434,
         "technology\/graphics\/dlss": 1613576614
     },
     "PLbjDnnBIxiErPmwCcdEax-8TIvyvjdlm2": {
-        "mac": 1613567434,
         "technology\/mac": 1613576831
     },
     "PLbjDnnBIxiErIs7tyigBsVwTUg4hsKvx1": {
-        "modular-build": 1613567434,
         "satisfactory-updates\/modular-build": 1613576614
     },
     "PLbjDnnBIxiErp1LdzC2TRke-xZQJTc3m5": {
-        "power-storage": 1613567434,
         "power-management\/power-storage": 1613576614,
         "features\/power-management\/power-storage": 1613579210
     },
     "PLbjDnnBIxiEqd09Y91Qt4sfvmiIY_jN_J": {
-        "ray-tracing": 1613567434,
         "technology\/graphics\/ray-tracing": 1613576614
     },
     "PLbjDnnBIxiEoJs6pgkkriityQb1BaPgnx": {
-        "simon-saga": 1613567434,
         "coffee-stainers\/simon\/simon-saga": 1613576614
     },
     "PLbjDnnBIxiEo6DXBwcUjUqDH7Mqjx5zmM": {
-        "terrible-jokes": 1613567434,
         "off-topic\/terrible-jokes": 1613576614
     },
     "PLbjDnnBIxiEqe6yJj8TvkF6VxhLGiah3b": {
@@ -863,29 +851,24 @@
         "satisfacory-update-5": 1616021325
     },
     "Zip Strips": {
-        "zip-strips": 1616021325,
         "mods\/zip-strips": 1616024271
     },
     "Update 4 Patch Notes Video": {
         "satisfactory-updates\/teasers-trailers\/update-4-patch-notes-video": 1616242955
     },
     "Satisfactory News": {
-        "satisfactory-news": 1616245000,
         "community\/satisfactory-news": 1616246406
     },
     "Smelters": {
         "smelters": 1616245000
     },
     "Update 3 Patch Notes Video": {
-        "update-3-patch-notes-video": 1616245000,
         "satisfactory-updates\/teasers-trailers\/update-3-patch-notes-video": 1616246406
     },
     "Update 3 Reveal Trailer": {
-        "update-3-reveal-trailer": 1616245000,
         "satisfactory-updates\/teasers-trailers\/update-3-reveal-trailer": 1616246692
     },
     "Update 4 Launch Stream": {
-        "update-4-launch-stream": 1616245000,
         "satisfactory-updates\/teasers-trailers\/update-4-launch-stream": 1616246406
     },
     "Update 4 Teasers": {
@@ -899,7 +882,6 @@
         "coffee-stainers\/pontus": 1616269600
     },
     "DrawingXaos": {
-        "drawingxaos": 1616269600,
         "community\/drawingxaos": 1616269821
     },
     "Nuclear Pasta": {
@@ -924,7 +906,6 @@
         "qa-site": 1616669575
     },
     "3D Text": {
-        "3d-text": 1617207889,
         "mods\/3d-text": 1617211475
     },
     "PLbjDnnBIxiErIOO8TJyFU5Z1Snw8Ze7-O": {
@@ -937,15 +918,12 @@
         "community\/satisfactory-calculator": 1617207889
     },
     "Haigen": {
-        "haigen": 1617207889,
         "community\/haigen": 1617211475
     },
     "Item Dispenser": {
-        "item-dispenser": 1617207889,
         "mods\/item-dispenser": 1617211475
     },
     "Micro Manage": {
-        "micro-manage": 1617207889,
         "mods\/micro-manage": 1617211475
     },
     "Area Actions": {
@@ -1027,37 +1005,27 @@
         "community\/tom": 1617993683
     },
     "Jannik": {
-        "jannik": 1617993937,
         "coffee-stainers\/jannik": 1617994540
     },
     "Joel": {
-        "joel": 1617993937,
         "coffee-stainers\/joel": 1617994540
     },
-    "Non-Flying Bird": {
-        "non-flying-bird": 1617993937
-    },
     "Sofi": {
-        "sofi": 1617993937,
         "coffee-stainers\/sofi": 1617994540
     },
     "Etienne": {
-        "etienne": 1618413739,
         "coffee-stainers\/etienne": 1618414779
     },
     "Michiel": {
-        "michiel": 1618413739,
         "coffee-stainers\/michiel": 1618414779
     },
     "Update 4 Launch Trailer": {
         "satisfactory-updates\/teasers-trailers\/update-4-launch-trailer": 1618413739
     },
     "Tobias": {
-        "tobias": 1618413739,
         "coffee-stainers\/tobias": 1618414779
     },
     "Torsten": {
-        "torsten": 1618413739,
         "coffee-stainers\/torsten": 1618414779
     }
 }
