@@ -1143,7 +1143,18 @@ foreach ($api->dated_playlists() as $playlist_id => $date) {
 uksort(
 	$playlists_by_date,
 	static function (string $a, string $b) use ($data_by_date) : int {
-		return $data_by_date[$b][0] - $data_by_date[$a][0];
+		$sort = $data_by_date[$b][0] <=> $data_by_date[$a][0];
+
+		if ($sort === 0) {
+			$is_date_a = preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $a);
+			$is_date_b = preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $b);
+
+			if ($is_date_a !== $is_date_b) {
+				return $is_date_a ? 1 : -1;
+			}
+		}
+
+		return $sort;
 	}
 );
 

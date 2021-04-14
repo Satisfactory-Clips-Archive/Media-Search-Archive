@@ -256,20 +256,31 @@ class Markdownify
 		if (null === $found) {
 			return '';
 		}
-		$found_date = determine_date_for_video(
-			$found,
-			$this->injected->cache['playlists'],
-			$this->injected->api->dated_playlists()
-		);
-		$playlist_id = array_search(
-			$found_date,
-			$this->injected->api->dated_playlists(), true
-		);
+
+		/** @var string|null */
+		$playlist_id = null;
+
+		foreach (
+			array_keys(
+				$this->injected->api->dated_playlists()
+			) as $maybe_playlist_id
+		) {
+			if (
+				in_array(
+					$found,
+					$this->injected->cache['playlists'][$maybe_playlist_id][2],
+					true
+				)
+			) {
+				$playlist_id = $maybe_playlist_id;
+				break;
+			}
+		}
 
 		if ( ! is_string($playlist_id)) {
 			throw new RuntimeException(sprintf(
 				'Could not find playlist id for %s',
-				$video_id
+				$found
 			));
 		}
 
@@ -309,23 +320,31 @@ class Markdownify
 		$out = '';
 
 		foreach ($video_other_parts as $other_video_id) {
-			if (null === $playlist_id) {
-				$other_video_date = determine_date_for_video(
-					$other_video_id,
-					$injected->cache['playlists'],
-					$injected->api->dated_playlists()
-				);
-				$playlist_id = array_search(
-					$other_video_date,
-					$injected->api->dated_playlists(), true
-				);
+			/** @var string|null */
+			$playlist_id = null;
 
-				if ( ! is_string($playlist_id)) {
-					throw new RuntimeException(sprintf(
-						'Could not find playlist id for %s',
-						$other_video_id
-					));
+			foreach (
+				array_keys(
+					$this->injected->api->dated_playlists()
+				) as $maybe_playlist_id
+			) {
+				if (
+					in_array(
+						$other_video_id,
+						$this->injected->cache['playlists'][$maybe_playlist_id][2],
+						true
+					)
+				) {
+					$playlist_id = $maybe_playlist_id;
+					break;
 				}
+			}
+
+			if ( ! is_string($playlist_id)) {
+				throw new RuntimeException(sprintf(
+					'Could not find playlist id for %s',
+					$other_video_id
+				));
 			}
 
 			$out .= '* '
