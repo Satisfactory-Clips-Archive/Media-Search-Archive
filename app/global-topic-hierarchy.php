@@ -1097,9 +1097,6 @@ $injected_global_topic_hierarchy = [
 		'Etienne' => [
 			'Coffee Stainers',
 		],
-		'Michiel' => [
-			'Coffee Stainers',
-		],
 		'Tobias' => [
 			'Coffee Stainers',
 		],
