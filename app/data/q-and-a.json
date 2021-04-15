@@ -804,7 +804,8 @@
         ],
         "seealso": [
             "L2-j0MZepbI",
-            "Vc-zgbseTCc"
+            "Vc-zgbseTCc",
+            "yt-0kmDHBWf640,551.0838666666667,584.3170666666667"
         ]
     },
     "QxJ8e_0r9uE": {
@@ -5671,7 +5672,8 @@
             "RCaCXVVAtb0"
         ],
         "seealso": [
-            "9dX8qNTbRvo"
+            "9dX8qNTbRvo",
+            "yt-0kmDHBWf640,65.79906666666666,154.401842"
         ]
     },
     "wcP5kwfOfSc": {
@@ -11028,7 +11030,8 @@
             "technology\/unreal-engine"
         ],
         "seealso": [
-            "6BahsrvlPJs"
+            "6BahsrvlPJs",
+            "yt-0kmDHBWf640,551.0838666666667,584.3170666666667"
         ]
     },
     "-9WFYJETif4": {
@@ -11904,6 +11907,28 @@
             "yt-njXBs_p2l1w,333.23290000000003,443.557086"
         ],
         "replacedby": "Rv6FRkWjJfU"
+    },
+    "yt-0kmDHBWf640,551.0838666666667,584.3170666666667": {
+        "title": "Q&A: Does this mean we will lose the color palette \/ preset functionality?",
+        "date": "2020-11-27",
+        "topics": [
+            "features\/paint",
+            "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "i1-FmJGxPPg",
+            "OTsxz-Twmys"
+        ]
+    },
+    "yt-0kmDHBWf640,65.79906666666666,154.401842": {
+        "title": "Q&A: Why do we upgrade the engine?",
+        "date": "2020-11-27",
+        "topics": [
+            "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "9QEf5938sPk"
+        ]
     },
     "mASNXinF0mA": {
         "title": "Q&A: Alien creature launcher - evict the giant Tick?",
