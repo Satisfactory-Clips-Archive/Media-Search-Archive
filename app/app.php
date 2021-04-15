@@ -892,7 +892,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	$playlist_lines[] = (
 		'---' . "\n"
-		. sprintf('title: "%s"' . "\n", $title)
+		. sprintf('title: "%s"' . "\n", str_replace('"', '\"', $title))
 		. sprintf('date: "%s"' . "\n", date('Y-m-d', $title_unix))
 		. 'layout: livestream' . "\n"
 		. '---' . "\n"

@@ -2210,7 +2210,7 @@ function process_dated_csv(
 	if ($write_files && ! $skip_header) {
 		$out = array_merge($out, [
 			'---' . "\n",
-			sprintf('title: "%s"', $data['title']) . "\n",
+			sprintf('title: "%s"', str_replace('"', '\"', $data['title'])) . "\n",
 			sprintf('date: "%s"', $date) . "\n",
 			'layout: livestream' . "\n",
 			'---' . "\n",
