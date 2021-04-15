@@ -11,23 +11,6 @@
 * CGb3HtdOy_w
 * yt-NlIVwoRqjVk,917.1162,957.1562
 
-# fluids update videos
-* yt-rATcozDE25c,1062.4280333333334,1119.4850333333334
-* yt-rATcozDE25c,527.5603666666667,538.5713666666667
-
-## adjustable jump pads
-* yt-R0S19_caQuw,428.86,433.1
-* k3WWTRfFo_s
-
-## packager videos
-* these need to be appropriate flagged for duplicates, replaces, & see alsos
-
-## ladder videos
-* these need to be appropriately flagged for duplicates, replaces, & see alsos
-
-## tc-AnnoyingSavageParrotWoofer
-* add the valve announcement in the fluids update here
-
 # merch store
 add links to merch store announcement
 * tc-FunOriginalPistachioNerfRedBlaster
