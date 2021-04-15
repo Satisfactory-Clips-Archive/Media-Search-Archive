@@ -945,11 +945,10 @@ $not_a_livestream = [
 	'2021-01-15' => 'Video',
 	'2021-02-05' => 'Video',
 	'2021-02-19' => 'Video',
-	'2021-02-26' => 'Video',
+	'2021-02-26' => 'Videos',
 	'2021-03-12' => 'Video',
 	'2021-03-26' => 'Video',
 	'2021-01-22' => 'Instagram AMA',
-	'2021-02-26' => 'Instagram AMA',
 	'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY' => 'Satisfactory Update 4 Patch Notes vid commentary',
 ];
 
