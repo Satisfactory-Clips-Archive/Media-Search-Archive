@@ -949,6 +949,7 @@ $not_a_livestream = [
 	'2020-10-27' => 'Patch Notes',
 	'2020-11-05' => 'Dev Vlog',
 	'2020-11-12' => 'Video',
+	'2020-11-16' => 'Embracer Group Video',
 	'2020-12-11' => 'Teasers',
 	'2021-01-15' => 'Video',
 	'2021-02-05' => 'Video',
@@ -1116,6 +1117,9 @@ $injected_global_topic_hierarchy = [
 			'Coffee Stainers',
 		],
 		'Torsten' => [
+			'Coffee Stainers',
+		],
+		'Anna' => [
 			'Coffee Stainers',
 		],
 	],
