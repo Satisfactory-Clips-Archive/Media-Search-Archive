@@ -12,6 +12,9 @@
 * yt-NlIVwoRqjVk,917.1162,957.1562
 
 # fluids update videos
+* yt-rATcozDE25c,1062.4280333333334,1119.4850333333334
+* yt-rATcozDE25c,527.5603666666667,538.5713666666667
+
 ## adjustable jump pads
 * yt-R0S19_caQuw,428.86,433.1
 * k3WWTRfFo_s
@@ -48,8 +51,9 @@ add links to merch store announcement
 * weWtkbvOxdU
 * t9_0R3vkYOk
 
-# cONX37SiszU
-* add seealso to developer highlights video
+# add seealso to developer highlights video
+* cONX37SiszU
+* yt-rATcozDE25c,781.3472333333333,823.1223
 
 # ECP5Jvr7RSk
 * check ben's featured videos to see if this is answered for seealsos
