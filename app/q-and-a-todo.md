@@ -6,11 +6,10 @@
 * dkVq6ix0lQM
 * 1i0dU7zYdqs
 
-# qqzCKyEWttg
-* find appropriate video to flag as "replacedby"
-
-# CGb3HtdOy_w
-* find appropriate video to flag as "replacedby"
+# find appropriate video to flag as "replacedby"
+* qqzCKyEWttg
+* CGb3HtdOy_w
+* yt-NlIVwoRqjVk,917.1162,957.1562
 
 # fluids update videos
 ## adjustable jump pads
