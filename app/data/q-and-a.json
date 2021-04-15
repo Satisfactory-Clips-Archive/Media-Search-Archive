@@ -6601,6 +6601,7 @@
             "KwsiVfRUKNE",
             "ycNS0lA5JWc",
             "yt-CB9bSigNYH8,1190.626477,1203.37129",
+            "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-Dtm6xIj-wM4,3518.277144,3545.070455",
             "yt-N1o3tK1h8cM,72.68,192.138596",
             "yt-W1E6EWrAsII,520.44,538.52"
@@ -11077,6 +11078,7 @@
         "seealso": [
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
+            "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-N1o3tK1h8cM,72.68,192.138596"
         ]
     },
@@ -12830,6 +12832,7 @@
             "yt-CB9bSigNYH8,1688.029579,1694.520021",
             "yt-CB9bSigNYH8,2630.888348,2723.033543",
             "yt-CB9bSigNYH8,3266.313772,3335.428417",
+            "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-N1o3tK1h8cM,72.68,192.138596"
         ]
     },
@@ -13712,7 +13715,8 @@
             "coffee-stainers\/ben"
         ],
         "seealso": [
-            "ECP5Jvr7RSk"
+            "ECP5Jvr7RSk",
+            "yt-CG-63B4g11U,158.391799,232.364692"
         ]
     },
     "yt-omjFqZQV9fI,1557.4892666666667,1611.657276": {
@@ -22253,6 +22257,41 @@
         ],
         "duplicatedby": "GPP6rcB8ROw"
     },
+    "yt-CG-63B4g11U,158.391799,232.364692": {
+        "title": "Q&A: What does Art Direction entail?",
+        "date": "2020-04-10",
+        "topics": [
+            "coffee-stainers\/torsten"
+        ],
+        "seealso": [
+            "ECP5Jvr7RSk",
+            "yt-omjFqZQV9fI,26.651097,87.75433333333334"
+        ]
+    },
+    "yt-CG-63B4g11U,130.208023,158.391799": {
+        "title": "Q&A: Who is Torsten?",
+        "date": "2020-04-10",
+        "topics": [
+            "coffee-stainers\/torsten"
+        ],
+        "seealso": [
+            "1SJA0S2IagA",
+            "KwsiVfRUKNE",
+            "MQSdhIKAjNc",
+            "yt-N1o3tK1h8cM,72.68,192.138596"
+        ]
+    },
+    "yt-CG-63B4g11U,391.581169,426.157201": {
+        "title": "Q&A: Will the Train Station redesign be in the Steam Release?",
+        "date": "2020-04-10",
+        "topics": [
+            "features\/transportation\/trains",
+            "retail\/steam-store\/steam-release"
+        ],
+        "seealso": [
+            "yt-CG-63B4g11U,232.364692,310.635063"
+        ]
+    },
     "yt-BmKMv6SZJ5M,187.22,206.74": {
         "title": "Q&A: Can I transfer my Epic version to Steam?",
         "date": "2020-04-02",
@@ -23733,6 +23772,7 @@
         "date": "2019-12-19",
         "topics": [],
         "seealso": [
+            "yt-CG-63B4g11U,158.391799,232.364692",
             "yt-omjFqZQV9fI,26.651097,87.75433333333334"
         ]
     },
@@ -23930,7 +23970,8 @@
         "seealso": [
             "1SJA0S2IagA",
             "KwsiVfRUKNE",
-            "MQSdhIKAjNc"
+            "MQSdhIKAjNc",
+            "yt-CG-63B4g11U,130.208023,158.391799"
         ]
     },
     "yt-Fsod_UF5eus,367,403.76": {
