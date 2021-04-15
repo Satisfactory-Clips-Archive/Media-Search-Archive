@@ -951,6 +951,7 @@ $not_a_livestream = [
 	'2020-11-12' => 'Video',
 	'2020-11-16' => 'Embracer Group Video',
 	'2020-11-27' => 'Video',
+	'2020-12-04' => 'Video',
 	'2020-12-11' => 'Teasers',
 	'2021-01-15' => 'Video',
 	'2021-02-05' => 'Video',
