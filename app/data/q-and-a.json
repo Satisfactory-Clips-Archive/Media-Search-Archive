@@ -6648,6 +6648,7 @@
             "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-Dtm6xIj-wM4,3518.277144,3545.070455",
             "yt-N1o3tK1h8cM,72.68,192.138596",
+            "yt-VYyFA7-yRKc,12.72,57",
             "yt-W1E6EWrAsII,520.44,538.52"
         ]
     },
@@ -12908,7 +12909,8 @@
             "yt-CB9bSigNYH8,2630.888348,2723.033543",
             "yt-CB9bSigNYH8,3266.313772,3335.428417",
             "yt-CG-63B4g11U,130.208023,158.391799",
-            "yt-N1o3tK1h8cM,72.68,192.138596"
+            "yt-N1o3tK1h8cM,72.68,192.138596",
+            "yt-VYyFA7-yRKc,12.72,57"
         ]
     },
     "l8e-RamsN-U": {
@@ -12951,6 +12953,20 @@
             "yt-Tmpors_r_Vw,,26.259566666666668"
         ],
         "replacedby": "yt-Tmpors_r_Vw,197.79760000000002,266.43283333333335"
+    },
+    "yt-VYyFA7-yRKc,12.72,57": {
+        "title": "Q&A: Who is Birk?",
+        "date": "2020-11-12",
+        "topics": [
+            "coffee-stainers\/birk"
+        ],
+        "seealso": [
+            "1SJA0S2IagA",
+            "KwsiVfRUKNE",
+            "MQSdhIKAjNc",
+            "yt-CG-63B4g11U,130.208023,158.391799",
+            "yt-N1o3tK1h8cM,72.68,192.138596"
+        ]
     },
     "bthe_Dhs6uo": {
         "title": "Q&A: Achievements system?",
@@ -23092,7 +23108,8 @@
             "1SJA0S2IagA",
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
-            "yt-N1o3tK1h8cM,72.68,192.138596"
+            "yt-N1o3tK1h8cM,72.68,192.138596",
+            "yt-VYyFA7-yRKc,12.72,57"
         ]
     },
     "yt-CG-63B4g11U,391.581169,426.157201": {
@@ -24786,7 +24803,8 @@
             "1SJA0S2IagA",
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
-            "yt-CG-63B4g11U,130.208023,158.391799"
+            "yt-CG-63B4g11U,130.208023,158.391799",
+            "yt-VYyFA7-yRKc,12.72,57"
         ]
     },
     "yt-Fsod_UF5eus,367,403.76": {
