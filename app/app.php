@@ -41,6 +41,7 @@ use function min;
 use function mkdir;
 use function natcasesort;
 use const PHP_EOL;
+use function preg_match;
 use function realpath;
 use RuntimeException;
 use function sprintf;
@@ -1145,7 +1146,7 @@ uksort(
 	static function (string $a, string $b) use ($data_by_date) : int {
 		$sort = $data_by_date[$b][0] <=> $data_by_date[$a][0];
 
-		if ($sort === 0) {
+		if (0 === $sort) {
 			$is_date_a = preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $a);
 			$is_date_b = preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $b);
 

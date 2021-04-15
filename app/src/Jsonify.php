@@ -7,6 +7,7 @@ declare(strict_types=1);
 namespace SignpostMarv\VideoClipNotes;
 
 use function array_diff;
+use function array_keys;
 use function array_search;
 use function array_values;
 use function count;
