@@ -3850,7 +3850,8 @@
             "SbKFw6yksO0",
             "tc-RelievedTawdryEelDogFace",
             "YLNHkPa8XTc",
-            "yt-1dUNmBBbExs,66.83333333333333,70.13333333333334"
+            "yt-1dUNmBBbExs,66.83333333333333,70.13333333333334",
+            "yt-dSnqRq1hLZY,38.2,72.3"
         ],
         "duplicates": [
             "hI0wqMQqj68",
@@ -7363,6 +7364,7 @@
             "tc-SpunkyHyperWasabi4Head",
             "WpsGOpaoH1o",
             "YhiTxpNy9Ao",
+            "yt-dSnqRq1hLZY,136.4,145.46666666666667",
             "Z4ossbr19xo"
         ],
         "seealso": [
@@ -10723,7 +10725,8 @@
             "IXeIE9qV-lA",
             "kj_vdE5-CEI",
             "mNtdBj-DpK0",
-            "PYyvu8feZqA"
+            "PYyvu8feZqA",
+            "yt-dSnqRq1hLZY,145.46666666666667,159.96666666666667"
         ],
         "seealso": [
             "dPyS44dffR8"
@@ -17542,6 +17545,50 @@
         ],
         "duplicatedby": "hKlILzyla-Y"
     },
+    "yt-dSnqRq1hLZY,162.96666666666667,249.6": {
+        "title": "Q&A: Are there any more designs coming?",
+        "date": "2020-09-09",
+        "topics": [
+            "merch"
+        ],
+        "seealso": [
+            "yt-dSnqRq1hLZY,159.96666666666667,162.96666666666667"
+        ]
+    },
+    "yt-dSnqRq1hLZY,159.96666666666667,162.96666666666667": {
+        "title": "Q&A: Did Coffee Stain become sellouts?",
+        "date": "2020-09-09",
+        "topics": [
+            "merch"
+        ],
+        "seealso": [
+            "yt-dSnqRq1hLZY,162.96666666666667,249.6"
+        ]
+    },
+    "yt-dSnqRq1hLZY,38.2,72.3": {
+        "title": "Q&A: When will Update 4 be coming out?",
+        "date": "2020-09-09",
+        "topics": [
+            "satisfactory-updates\/released\/satisfactory-update-4"
+        ],
+        "replacedby": "wFSyxgWHquw"
+    },
+    "yt-dSnqRq1hLZY,136.4,145.46666666666667": {
+        "title": "Q&A: Where's the mug?",
+        "date": "2020-09-09",
+        "topics": [
+            "merch"
+        ],
+        "replacedby": "bQnAGoo8jQA"
+    },
+    "yt-dSnqRq1hLZY,145.46666666666667,159.96666666666667": {
+        "title": "Q&A: Why is shipping so expensive (outside of the US)?",
+        "date": "2020-09-09",
+        "topics": [
+            "merch"
+        ],
+        "duplicatedby": "iyFXDTn2YPM"
+    },
     "LZvHStKqoQI": {
         "title": "Q&A: A hard-reset option for the paint presets used for the painted surfaces",
         "date": "2020-09-08",
@@ -18629,6 +18676,7 @@
             "merch"
         ],
         "duplicates": [
+            "PIlduefx6Vk",
             "yt-1dUNmBBbExs,101.20356,116.33333333333333"
         ],
         "seealso": [
@@ -21009,7 +21057,8 @@
         "date": "2020-08-18",
         "topics": [
             "merch"
-        ]
+        ],
+        "replacedby": "yt-dSnqRq1hLZY,14.199802,26.81167"
     },
     "tc-OpenIntelligentPizzaYouWHY": {
         "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 1)",
@@ -22851,7 +22900,8 @@
         "date": "2020-03-24",
         "topics": [
             "merch"
-        ]
+        ],
+        "duplicatedby": "jQyDj_wa0LA"
     },
     "zfdV2qIDHP4": {
         "title": "Q&A: Multiple Foundation creation?",
