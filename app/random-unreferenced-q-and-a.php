@@ -46,4 +46,10 @@ $questions = array_filter(
 	[$filtering, 'QuestionDataNoReferences']
 );
 
+if ('--show-all' === ($argv[2] ?? null)) {
+	echo "\n", implode("\n", array_keys($questions)), "\n";
+
+	return;
+}
+
 echo array_rand($questions);
