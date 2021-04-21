@@ -895,6 +895,34 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEomDrLRY8jOvB_l8DEGgrnG' => [ // Satisfactory Calculator
 			'Community',
 		],
+		'PLbjDnnBIxiEq4mhfpNDUXpX3dVhF5Vnmw' => [ // Rifle
+			'Features',
+			'Equipment',
+		],
+		'PLbjDnnBIxiEq6HX-1Nude7wjby2B29wEt' => [ // Multiple Body Slots
+			'Features',
+			'Requested Features',
+		],
+		'PLbjDnnBIxiEqQq_lP1_OYqhjcEng5hkOx' => [ // Gas Mask
+			'Features',
+			'Equipment',
+		],
+		'PLbjDnnBIxiEpTVb0_x1OKn63RM6I9ScVq' => [ // Color Gun
+			'Features',
+			'Equipment',
+		],
+		'PLbjDnnBIxiEpQHQYvzPxQNBl2NvsugIO0' => [ // Holstering Equipment
+			'Features',
+			'Requested Features',
+		],
+		'PLbjDnnBIxiEo53bRP06aC5lXPWjSx84Cx' => [ // Cup
+			'Features',
+			'Equipment',
+		],
+		'PLbjDnnBIxiEqy8rMgGZL8AmMomES_Hzf8' => [ // Holograms
+			'Technology',
+			'User Interface',
+		],
 	],
 ];
 
@@ -1022,6 +1050,9 @@ $injected_global_topic_hierarchy = [
 			'Features',
 		],
 		'Unreleased Features' => [
+			'Features',
+		],
+		'Requested Features' => [
 			'Features',
 		],
 		'Free Weekends' => [
