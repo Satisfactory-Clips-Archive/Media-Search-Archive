@@ -997,6 +997,7 @@ $not_a_livestream = [
 	'2021-03-26' => 'Video',
 	'2021-01-22' => 'Instagram AMA',
 	'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY' => 'Satisfactory Update 4 Patch Notes vid commentary',
+	'2021-04-23' => 'Video',
 ];
 
 $not_a_livestream_date_lookup = [
