@@ -202,15 +202,6 @@ $externals_dates = array_keys(get_externals());
 
 $sorting = new Sorting($cache);
 
-$cache['playlists'] = array_map(
-	static function (array $data) use ($sorting) : array {
-		uasort($data[2], [$sorting, 'sort_video_ids_alphabetically']);
-
-		return $data;
-	},
-	$cache['playlists']
-);
-
 $sorting->cache = $cache;
 
 $no_topics = [];
@@ -512,8 +503,6 @@ $skipping = json_decode(
 $checked = 0;
 
 $all_video_ids = array_keys($video_playlists);
-
-natcasesort($all_video_ids);
 
 $statistics = $api->getStatistics(...$all_video_ids);
 
@@ -868,8 +857,6 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	$video_ids = ($cache['playlists'][$playlist_id] ?? [2 => []])[2];
 	$video_ids = filter_video_ids_for_legacy_alts($cache, ...$video_ids);
-
-	usort($video_ids, [$sorting, 'sort_video_ids_alphabetically']);
 
 	$content_arrays = [
 		'Related answer clips' => [],

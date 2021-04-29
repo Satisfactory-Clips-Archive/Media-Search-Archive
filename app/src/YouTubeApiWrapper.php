@@ -253,8 +253,6 @@ class YouTubeApiWrapper
 				/** @var list<string> */
 				$playlist = array_values(array_unique($playlist));
 
-				sort($playlist);
-
 				file_put_contents(
 					$cache_file,
 					json_encode($playlist, JSON_PRETTY_PRINT)
@@ -856,8 +854,6 @@ class YouTubeApiWrapper
 	private function sort_playist_items() : void
 	{
 		$videos = array_map('current', $this->fetch_all_videos_in_playlists());
-
-		natcasesort($videos);
 
 		$videos = array_keys($videos);
 
