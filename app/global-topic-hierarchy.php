@@ -923,6 +923,16 @@ $global_topic_hierarchy = [
 			'Technology',
 			'User Interface',
 		],
+		'PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep' => [ // Golf
+			'Features',
+			'Requested Features',
+		],
+		'PLbjDnnBIxiEot9p9zUqcWo-SABtobaM9V' => [ // Gnutt
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEoIWT_BxcmHV8fcZ1m38gGz' => [ // Sofi
+			'Coffee Stainers',
+		],
 	],
 ];
 
@@ -1142,9 +1152,6 @@ $injected_global_topic_hierarchy = [
 			'Coffee Stainers',
 		],
 		'Joel' => [
-			'Coffee Stainers',
-		],
-		'Sofi' => [
 			'Coffee Stainers',
 		],
 		'Update 4 Launch Trailer' => [
