@@ -21,6 +21,7 @@ module.exports = async () => {
 				{
 					"@context": "https://schema.org",
 					"@type": "WebSite",
+					'name': 'Satisfactory Q&A Clips Archive',
 					"url": "https://archive.satisfactory.video/",
 					"potentialAction": {
 						"@type": "SearchAction",
