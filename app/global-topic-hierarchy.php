@@ -933,6 +933,15 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEoIWT_BxcmHV8fcZ1m38gGz' => [ // Sofi
 			'Coffee Stainers',
 		],
+		'PLbjDnnBIxiEqFD6h2jA0BQQ2mkp0R5joi' => [ // Cheatcrete
+			'Features',
+			'Buildables',
+			'Foundations',
+		],
+		'PLbjDnnBIxiEpQNWBETWpyzpgjN3Q6bHnj' => [ // Snutt Burger Time
+			'Coffee Stainers',
+			'Snutt',
+		],
 	],
 ];
 
