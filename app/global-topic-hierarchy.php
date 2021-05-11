@@ -94,7 +94,7 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6' => [ // Satisfactory Update 5
 			5,
 			'Satisfactory Updates',
-			'Speculative',
+			'Pending',
 		],
 		'PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR' => [ // Satisfactory Update 6
 			6,
