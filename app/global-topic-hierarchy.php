@@ -942,6 +942,9 @@ $global_topic_hierarchy = [
 			'Coffee Stainers',
 			'Snutt',
 		],
+		'PLbjDnnBIxiErx_HMSb_4tVLA_MBo9bphw' => [ // Tom
+			'Community',
+		],
 	],
 ];
 
@@ -1152,9 +1155,6 @@ $injected_global_topic_hierarchy = [
 			'Mods',
 		],
 		'Haigen' => [
-			'Community',
-		],
-		'Tom' => [
 			'Community',
 		],
 		'Jannik' => [
