@@ -39,6 +39,16 @@ $global_topic_hierarchy = [
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
+		'PLbjDnnBIxiEpSyvmQgCEC-hEKtmowhDVV' => [ // Update 5 Teasers
+			500,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'PLbjDnnBIxiEp1tfSvG0zuVBRf93GM6-Np' => [ // Update 5 Patch Notes Video
+			502,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
 		'PLbjDnnBIxiEq-eP01Lynsg2Jv-wLEWQ7e' => [ // Satisfactory Prototypes
 			-5,
 			'Satisfactory Updates',
