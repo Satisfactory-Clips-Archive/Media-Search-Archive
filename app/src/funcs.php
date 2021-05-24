@@ -124,7 +124,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		return $overrides[$video_id];
 	}
 
-	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){2}/', $video_id)) {
+	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){1,2}/', $video_id)) {
 		$parts = explode(',', $video_id);
 		[$video_id, $start] = $parts;
 
