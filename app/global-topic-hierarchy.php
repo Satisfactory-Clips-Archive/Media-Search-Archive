@@ -955,6 +955,16 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiErx_HMSb_4tVLA_MBo9bphw' => [ // Tom
 			'Community',
 		],
+		'PLbjDnnBIxiEppNaw6qpmiVy9MlWIiTQnY' => [ // SignpostMarv
+			'Community',
+		],
+		'PLbjDnnBIxiEoaUKIHhuYY0F1iQexBj2ll' => [ // Distance Fields
+			'Technology',
+			'Unreal Engine',
+		],
+		'PLbjDnnBIxiEpS1BDtD6ZonY3QdNz6g9Gj' => [ // DirectX
+			'Technology'
+		],
 	],
 ];
 

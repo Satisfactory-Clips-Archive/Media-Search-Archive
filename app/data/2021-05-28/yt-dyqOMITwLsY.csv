@@ -1,0 +1,24 @@
+,94.694665,Intro
+94.694665,886.7608749999999,Lights
+102.398474,167.292125,Q&A: What was the main issue with implementing Lights?
+167.292125,199.03216666666665,Snutt & Ben Talk: Unreal Engine Object Limit
+199.03216666666665,448.69825,Q&A: Can you give a quick explanation of how the system for Lights works right now?
+448.69825,500.75024999999994,Q&A: Is there anything else aside from Conveyor Belts that's not using Distance Fields?
+500.75024999999994,597.456414,Q&A: Are we going to be able to turn Lights upside down?
+597.456414,647.6052916666666,Q&A: Is there anything else you're planning to do with Lights in the future?
+647.6052916666666,691.144145,Snutt & Ben Talk: Fake fog planes on Ceiling Lights
+691.144145,783.2824999999999,Snutt & Ben Talk: Light Pooling
+783.279574,808.618017,Snutt & Ben Talked: Consequences of too many lights
+808.618017,886.779315,Snutt & Ben Talk: Other places Fog Planes are used
+886.779315,945.720316,Ben Talk: Other optimisations to Constructors
+945.7364583333333,1330.7460833333332,Holograms
+945.7364583333333,1065.561195,Snutt & Ben Talk: New Holograms
+1065.5645,1164.0795833333332,Q&A: Could you quickly describe what instancing means?
+1164.0795833333332,1286.773104,Snutt & Ben Talk: Holograms now use Stencils
+1286.7855,1330.7460833333332,Ben Talk: Custom Hologram colours coming in the future
+1330.7460833333332,1837.377208333333,Conveyor Belts
+1330.7460833333332,1726.746974,Snutt & Ben Talk: Impact of the Engine Upgrade on Conveyor Belt performance
+1726.746974,1837.377208333333,Q&A: How does picking items off the belt work?
+1837.377208333333,1944.0671249999998,Q&A: What's coming in the future for optimisations to Satisfactory?
+1944.0671249999998,1964.754458333333,Outro
+1964.754458333333,,End Tag
