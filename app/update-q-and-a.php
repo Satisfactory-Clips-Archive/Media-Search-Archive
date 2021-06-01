@@ -166,7 +166,7 @@ foreach ($all_topic_ids as $topic_id) {
 	[$slug_string] = topic_to_slug(
 		$topic_id,
 		$cache,
-		$global_topic_hierarchy['satisfactory'],
+		$global_topic_hierarchy,
 		$slugify
 	);
 
@@ -315,7 +315,7 @@ foreach (array_keys($faq) as $video_id) {
 file_put_contents(
 	(
 		__DIR__
-		. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/FAQ.md'
+		. '/../video-clip-notes/docs/FAQ.md'
 	),
 	ob_get_clean()
 );

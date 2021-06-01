@@ -72,7 +72,7 @@ $questions = new Questions($injected);
 $jsonify = new Jsonify($injected, $questions);
 
 $cache = $injected->cache;
-$global_topic_hierarchy = ['satisfactory' => $injected->topics_hierarchy];
+$global_topic_hierarchy = $injected->topics_hierarchy;
 file_put_contents(
 	__DIR__ . '/data/play.json',
 	str_replace(
@@ -88,7 +88,7 @@ file_put_contents(
 $playlist_satisfactory =
 	realpath(
 		__DIR__
-		. '/playlists/coffeestainstudiosdevs/satisfactory.json'
+		. '/playlists/youtube.json'
 	);
 
 if ( ! is_string($playlist_satisfactory)) {
@@ -100,7 +100,7 @@ $playlists = array_map(
 	static function (string $filename) : string {
 		return
 			__DIR__
-			. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
+			. '/../video-clip-notes/docs/'
 			. $filename
 			. '.md'
 		;
@@ -109,10 +109,7 @@ $playlists = array_map(
 );
 
 foreach ($playlists as $playlist_path) {
-	$dirname = dirname($playlist_path);
-	$basename = basename($playlist_path);
-
-	if ( ! is_file($dirname . '/' . $basename)) {
+	if ( ! is_file($playlist_path)) {
 		touch($playlist_path);
 	}
 }
@@ -249,7 +246,7 @@ $all_topic_ids = array_merge(
 $topic_nesting = [];
 
 foreach ($all_topic_ids as $topic_id) {
-	$topic_nesting['satisfactory'][$topic_id] = [
+	$topic_nesting[$topic_id] = [
 		'children' => [],
 		'left' => -1,
 		'right' => -1,
@@ -257,16 +254,15 @@ foreach ($all_topic_ids as $topic_id) {
 	];
 }
 
-foreach ($global_topic_hierarchy as $basename => $topics) {
-	foreach ($topics as $topic_id => $topic_ancestors) {
-		if ( ! isset($topic_nesting[$basename][$topic_id])) {
+foreach ($global_topic_hierarchy as $topic_id => $topic_ancestors) {
+		if ( ! isset($topic_nesting[$topic_id])) {
 			throw new RuntimeException(sprintf(
 				'topic %s not already added!',
 				$topic_id
 			));
 		}
 
-		$topic_nesting[$basename][$topic_id]['level'] = count($topic_ancestors);
+		$topic_nesting[$topic_id]['level'] = count($topic_ancestors);
 
 		$topic_ancestors = array_filter($topic_ancestors, 'is_string');
 
@@ -285,11 +281,11 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 			if (
 				! in_array(
 					$topic_descendant_id,
-					$topic_nesting[$basename][$topic_ancestor_id]['children'],
+					$topic_nesting[$topic_ancestor_id]['children'],
 					true
 				)
 			) {
-				$topic_nesting[$basename][$topic_ancestor_id]['children'][] =
+				$topic_nesting[$topic_ancestor_id]['children'][] =
 					$topic_descendant_id;
 			}
 
@@ -297,9 +293,9 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 		}
 	}
 
-	$basename_topics_nesting_ids = array_keys($topic_nesting[$basename]);
+	$basename_topics_nesting_ids = array_keys($topic_nesting);
 
-	$topic_nesting[$basename] = array_map(
+	$topic_nesting = array_map(
 		static function (
 			array $data
 		) use (
@@ -326,11 +322,11 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 
 			return $data;
 		},
-		$topic_nesting[$basename]
+		$topic_nesting
 	);
 
-	$topic_nesting[$basename] = array_filter(
-		$topic_nesting[$basename],
+	$topic_nesting = array_filter(
+		$topic_nesting,
 		static function (string $maybe) use ($playlists) : bool {
 			return ! isset($playlists[$maybe]);
 		},
@@ -338,7 +334,7 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 	);
 
 	$topic_nesting_roots = array_keys(array_filter(
-		$topic_nesting[$basename],
+		$topic_nesting,
 		static function (array $maybe) : bool {
 			return -1 === $maybe['level'];
 		}
@@ -360,31 +356,30 @@ foreach ($global_topic_hierarchy as $basename => $topics) {
 	$current_left = 0;
 
 	foreach ($topic_nesting_roots as $topic_id) {
-		[$current_left, $topic_nesting[$basename]] = adjust_nesting(
-			$topic_nesting[$basename],
+		[$current_left, $topic_nesting] = adjust_nesting(
+			$topic_nesting,
 			$topic_id,
 			$current_left,
-			$global_topic_hierarchy[$basename],
+			$global_topic_hierarchy,
 			$cache
 		);
 	}
 
-	$topics = $topic_nesting[$basename];
+	$topics = $topic_nesting;
 
 	uasort(
 		$topics,
 		[$sorting, 'sort_by_nleft']
 	);
 
-	$topic_nesting[$basename] = $topics;
-}
+	$topic_nesting = $topics;
 
 file_put_contents(__DIR__ . '/topics-nested.json', json_encode(
 	$topic_nesting,
 	JSON_PRETTY_PRINT
 ));
 
-$api->sort_playlists_by_nested_data($topic_nesting['satisfactory']);
+$api->sort_playlists_by_nested_data($topic_nesting);
 
 usort($all_topic_ids, static function (
 	string $a,
@@ -398,7 +393,7 @@ usort($all_topic_ids, static function (
 	 *	level: int
 	 * }
 	 */
-	$nested_a = $topic_nesting['satisfactory'][$a] ?? null;
+	$nested_a = $topic_nesting[$a] ?? null;
 
 	/**
 	 * @var null|array{
@@ -408,7 +403,7 @@ usort($all_topic_ids, static function (
 	 *	level: int
 	 * }
 	 */
-	$nested_b = $topic_nesting['satisfactory'][$b] ?? null;
+	$nested_b = $topic_nesting[$b] ?? null;
 
 	if ( ! isset($nested_a, $nested_b)) {
 		return strnatcasecmp(
@@ -444,7 +439,7 @@ foreach ($all_topic_ids as $topic_id) {
 	[$slug_string, $slug] = topic_to_slug(
 		$topic_id,
 		$cache,
-		$global_topic_hierarchy['satisfactory'],
+		$global_topic_hierarchy,
 		$slugify
 	);
 
@@ -950,9 +945,9 @@ foreach (array_keys($playlists) as $playlist_id) {
 	if (count($video_ids) > 0) {
 		$topics_for_date = filter_nested(
 			$playlist_id,
-			$topic_nesting['satisfactory'],
+			$topic_nesting,
 			$cache,
-			$global_topic_hierarchy['satisfactory'],
+			$global_topic_hierarchy,
 			...$video_ids
 		);
 	}
@@ -1019,7 +1014,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 				. topic_to_slug(
 					$topic_id,
 					$cache,
-					$global_topic_hierarchy['satisfactory'],
+					$global_topic_hierarchy,
 					$slugify
 				)[0]
 				. '.md)';
@@ -1104,13 +1099,11 @@ usleep(100);
 
 $save_path =
 	__DIR__
-	. '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
+	. '/../video-clip-notes/docs/'
 ;
 $data = $api->dated_playlists();
 
-$basename = basename($save_path);
-
-$file_path = $save_path . '/../' . $basename . '/topics.md';
+$file_path = $save_path . '/topics.md';
 
 /** @var list<string> */
 $file_lines = [];
@@ -1165,7 +1158,7 @@ foreach ($playlist_ids as $playlist_id) {
 	[, $slug] = topic_to_slug(
 		$playlist_id,
 		$cache,
-		$global_topic_hierarchy[$basename],
+		$global_topic_hierarchy,
 		$slugify
 	);
 
@@ -1187,8 +1180,6 @@ foreach ($playlist_ids as $playlist_id) {
 	$slug_path =
 		realpath(
 			$save_path
-			. '/../'
-			. $basename
 			. '/topics/'
 		)
 		. '/'
@@ -1238,8 +1229,7 @@ foreach ($playlist_ids as $playlist_id) {
 					$not_a_livestream,
 					$not_a_livestream_date_lookup,
 					$slug_count,
-					$slugify,
-					$basename
+					$slugify
 				) : string {
 					[$parent_id] = determine_playlist_id(
 						$slug_parent,
@@ -1254,7 +1244,7 @@ foreach ($playlist_ids as $playlist_id) {
 					[, $parent_parts] = topic_to_slug(
 						$parent_id,
 						$cache,
-						$global_topic_hierarchy[$basename],
+						$global_topic_hierarchy,
 						$slugify
 					);
 
@@ -1279,7 +1269,7 @@ foreach ($playlist_ids as $playlist_id) {
 
 	$topic_children = nesting_children(
 		$playlist_id,
-		$topic_nesting[$basename],
+		$topic_nesting,
 		false
 	);
 
@@ -1305,7 +1295,6 @@ foreach ($playlist_ids as $playlist_id) {
 					static function (
 						string $subtopic_id
 					) use (
-						$basename,
 						$cache,
 						$global_topic_hierarchy,
 						$slugify,
@@ -1314,7 +1303,7 @@ foreach ($playlist_ids as $playlist_id) {
 						[, $sub_slug] = topic_to_slug(
 							$subtopic_id,
 							$cache,
-							$global_topic_hierarchy[$basename],
+							$global_topic_hierarchy,
 							$slugify
 						);
 
@@ -1389,7 +1378,7 @@ $file_lines[] = (
 	. '---' . "\n"
 );
 
-$basename_topic_nesting = $topic_nesting[$basename];
+$basename_topic_nesting = $topic_nesting;
 
 $past_first = false;
 
@@ -1449,7 +1438,7 @@ file_put_contents($file_path, implode('', $file_lines));
 
 echo 'rebuilding index', "\n";
 
-$file_path = __DIR__ . '/../video-clip-notes/coffeestainstudiosdevs/satisfactory/index.md';
+$file_path = __DIR__ . '/../video-clip-notes/docs/index.md';
 
 /** @var list<string> */
 $lines = [

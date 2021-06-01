@@ -111,7 +111,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 			(array) json_decode(
 			file_get_contents(
 				__DIR__
-				. '/../playlists/coffeestainstudiosdevs/satisfactory.url-overrides.json'
+				. '/../playlists/url-overrides.json'
 			),
 			true
 			),
@@ -168,7 +168,7 @@ function transcription_filename(string $video_id) : string
 	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){2}/', $video_id)) {
 		return
 			__DIR__
-			. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
+			. '/../../video-clip-notes/docs/transcriptions/'
 			. $video_id
 			. '.md';
 	}
@@ -176,14 +176,14 @@ function transcription_filename(string $video_id) : string
 	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
 		return
 			__DIR__
-			. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
+			. '/../../video-clip-notes/docs/transcriptions/'
 			. $video_id
 			. '.md';
 	}
 
 	return
 		__DIR__
-		. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/yt-'
+		. '/../../video-clip-notes/docs/transcriptions/yt-'
 		. $video_id
 		. '.md';
 }
@@ -203,7 +203,7 @@ function maybe_transcript_link_and_video_url_data(
 		if (
 			is_file(
 				__DIR__
-				. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
+				. '/../../video-clip-notes/docs/transcriptions/'
 				. $video_id
 				. '.md'
 			)
@@ -242,7 +242,7 @@ function maybe_transcript_link_and_video_url(
 		if (
 			is_file(
 				__DIR__
-				. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
+				. '/../../video-clip-notes/docs/transcriptions/'
 				. $video_id
 				. '.md'
 			)
@@ -543,7 +543,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 			$injected_global_topic_hierarchy
 		);
 
-		foreach ($global_topic_hierarchy['satisfactory'] as $parents) {
+		foreach ($global_topic_hierarchy as $parents) {
 			foreach ($parents as $topic) {
 				if ( ! is_string($topic)) {
 					continue;
@@ -566,7 +566,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 
 		foreach (
 			array_keys(
-				$injected_global_topic_hierarchy['satisfactory']
+				$injected_global_topic_hierarchy
 			) as $topic
 		) {
 			[$topic_id, $topic_name] = determine_playlist_id(
@@ -2047,7 +2047,7 @@ function process_externals(
 
 			$filename = (
 				__DIR__
-				. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/'
+				. '/../../video-clip-notes/docs/'
 				. $date .
 				'.md'
 			);
@@ -2475,7 +2475,7 @@ function process_dated_csv(
 			if ($write_files && '' !== trim($csv_captions[$i][3])) {
 				$files_out[
 					__DIR__
-					. '/../../video-clip-notes/coffeestainstudiosdevs/satisfactory/transcriptions/'
+					. '/../../video-clip-notes/docs/transcriptions/'
 					. $basename
 				] = [
 					'---' . "\n",
@@ -2506,7 +2506,7 @@ function process_dated_csv(
 									$not_a_livestream_date_lookup
 								)[0],
 								$cache,
-								$global_topic_hierarchy['satisfactory'],
+								$global_topic_hierarchy,
 								$slugify
 							)[0];
 						},
@@ -2546,7 +2546,7 @@ function process_dated_csv(
 									$not_a_livestream_date_lookup
 								)[0],
 								$cache,
-								$global_topic_hierarchy['satisfactory'],
+								$global_topic_hierarchy,
 								$slugify
 							);
 

@@ -468,7 +468,7 @@ class YouTubeApiWrapper
 								(array) json_decode(
 									file_get_contents(
 										__DIR__
-										. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
+										. '/../playlists/youtube.json'
 									),
 									true
 								),
@@ -479,7 +479,7 @@ class YouTubeApiWrapper
 								(array) json_decode(
 									file_get_contents(
 										__DIR__
-										. '/../playlists/coffeestainstudiosdevs/satisfactory.injected.json'
+										. '/../playlists/injected.json'
 									),
 									true
 								),
@@ -508,7 +508,7 @@ class YouTubeApiWrapper
 			(array) json_decode(
 				(string) file_get_contents(
 					__DIR__
-					. '/../playlists/coffeestainstudiosdevs/satisfactory.json'
+					. '/../playlists/youtube.json'
 				)
 			),
 			'is_string',

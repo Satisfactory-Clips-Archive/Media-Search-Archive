@@ -92,7 +92,7 @@ class Injected
 			$this->not_a_livestream_date_lookup,
 		] = $prepared;
 
-		$this->topics_hierarchy = $prepared[1]['satisfactory'];
+		$this->topics_hierarchy = $prepared[1];
 		$this->playlists_date_ref = $api->dated_playlists();
 
 		$this->sorting = new Sorting($this->cache);

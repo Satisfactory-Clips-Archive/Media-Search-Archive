@@ -5,7 +5,6 @@
 declare(strict_types=1);
 
 $global_topic_hierarchy = [
-	'satisfactory' => [
 		'PLbjDnnBIxiEo8RlgfifC8OhLmJl8SgpJE' => [ // State of Dev
 			-7,
 			'Satisfactory Updates',
@@ -965,7 +964,6 @@ $global_topic_hierarchy = [
 		'PLbjDnnBIxiEpS1BDtD6ZonY3QdNz6g9Gj' => [ // DirectX
 			'Technology'
 		],
-	],
 ];
 
 $not_a_livestream = [
@@ -1056,7 +1054,6 @@ foreach (\array_keys($not_a_livestream) as $maybe_date) {
 }
 
 $injected_global_topic_hierarchy = [
-	'satisfactory' => [
 		'Buildables' => [
 			'Features',
 		],
@@ -1200,5 +1197,4 @@ $injected_global_topic_hierarchy = [
 		'Anna' => [
 			'Coffee Stainers',
 		],
-	],
 ];

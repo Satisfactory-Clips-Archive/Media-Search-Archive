@@ -49,7 +49,7 @@ module.exports = (e) => {
 	return {
 		dir: {
 			data: '../../../11ty/data',
-			input: './video-clip-notes/coffeestainstudiosdevs/satisfactory',
+			input: './video-clip-notes/docs',
 			layouts: '../../../11ty/layouts',
 			includes: '../../../11ty/includes',
 			output: './src',

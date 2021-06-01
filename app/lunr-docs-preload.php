@@ -69,8 +69,8 @@ foreach (
 
 	$slug = [];
 
-	if (isset($global_topic_hierarchy['satisfactory'][$playlist_id])) {
-		$slug = array_filter($global_topic_hierarchy['satisfactory'][$playlist_id], 'is_string');
+	if (isset($global_topic_hierarchy[$playlist_id])) {
+		$slug = array_filter($global_topic_hierarchy[$playlist_id], 'is_string');
 	}
 
 	if (($slug[0] ?? '') !== $playlist_title) {
