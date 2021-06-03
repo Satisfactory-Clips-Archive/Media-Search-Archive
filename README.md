@@ -16,12 +16,6 @@ Static site generator for
 ## 2021-03-05
 * implemented topic support in custom transcripts
 
-## 2021-03-04
-* adding March 2nd, 2021 stream
-
-## 2021-03-03
-* adding February 20th, 2019 stream
-
 ## 2021-03-01
 * use data-driven FAQ page instead of markdown-driven FAQ page
 
@@ -31,10 +25,8 @@ Static site generator for
 ## 2021-02-26
 * implement search filters
 * updating FAQ implementation
-* adding February 26th, 2021 info video + instagram AMA
 
 ## 2021-02-25
-* adding February 23rd, 2021 + topic changes
 * duplicates tracking implemented
 * replacements tracking implemented
 * implement open/close transcripts on search
@@ -47,9 +39,6 @@ Static site generator for
 
 ## 2021-02-19
 * Updated build with topic changes originating in q-and-a-tracking branch
-
-## 2021-02-18
-* Updated build with topic changes
 
 ## 2021-02-17
 * Restored ability to clear out non-dated playlists
