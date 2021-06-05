@@ -235,6 +235,13 @@ $all_topic_ids = array_merge(
 	array_keys($cache['stubPlaylists'] ?? [])
 );
 
+$topics_without_direct_content = array_filter(
+	$all_topic_ids,
+	static function (string $topic_id) use ($cache) {
+		return count($cache['playlists'][$topic_id] ?? []) < 1;
+	}
+);
+
 /**
  * @var array{satisfactory: array<string, array{
  *	children: list<string>,
@@ -1141,17 +1148,28 @@ uksort(
 
 $playlist_ids = array_keys(($cache['playlists'] ?? []));
 
-foreach ($playlist_ids as $playlist_id) {
+foreach (
+	array_merge(
+		$playlist_ids,
+		$topics_without_direct_content
+	) as $playlist_id
+) {
 	if (isset($data[$playlist_id])) {
 		continue;
 	} elseif ( ! isset($cache['playlists'][$playlist_id])) {
-		throw new RuntimeException(sprintf(
-			'Playlist cache data not found! (%s)',
-			$playlist_id
-		));
-	}
-
+		$playlist_data = [
+			'',
+			determine_playlist_id(
+				$playlist_id,
+				$cache,
+				$not_a_livestream,
+				$not_a_livestream_date_lookup
+			)[1],
+			[],
+		];
+	} else {
 	$playlist_data = $cache['playlists'][$playlist_id];
+	}
 
 	[, $playlist_title, $playlist_items] = $playlist_data;
 

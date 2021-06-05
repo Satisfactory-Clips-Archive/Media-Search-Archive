@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-06-06
+* added topic docs for topics that have no direct content
+
 ## 2021-06-05
 * fixed bug overlooked in previous commit with eleventy config
 
