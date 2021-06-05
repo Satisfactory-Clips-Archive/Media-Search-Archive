@@ -964,6 +964,63 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiEpS1BDtD6ZonY3QdNz6g9Gj' => [ // DirectX
 		'Technology'
 	],
+	'PLbjDnnBIxiEpOl-wg1r4-qo3TyvXUy-ev' => [ // Requested Features
+		'Features',
+	],
+	'PLbjDnnBIxiEqGt2sjZVdmGPpirMrXcDkA' => [ // Elevators
+		'Features',
+		'Requested Features',
+	],
+	'PLbjDnnBIxiEqpoKbEqKcyh5D006HnL3xJ' => [ // Underground Biome
+		'Features',
+		'Possible Features',
+	],
+	'PLbjDnnBIxiEoOlTxmOqYZ2ZkyD1dtpyz5' => [ // Grass Fields
+		'Environment',
+		'Biomes',
+	],
+	'PLbjDnnBIxiEpHMQnntpucC_MweaYIIJ_U' => [ // Dune Desert
+		'Environment',
+		'Biomes',
+	],
+	'PLbjDnnBIxiEoCacOLYEU4xHZMKJwPyTzl' => [ // Blue Crater
+		'Environment',
+		'Biomes',
+	],
+	'PLbjDnnBIxiErtxu53LKc8Z8vFR13XeKfG' => [ // Northern Forest
+		'Environment',
+		'Biomes',
+	],
+	'PLbjDnnBIxiEoGfsgeuz9AkG6fxwj9EHJz' => [ // Spire Coast
+		'Environment',
+		'Biomes',
+	],
+	'PLbjDnnBIxiErB5o0Ng2yayZnaugDJX4BM' => [ // Setting up a Coal Generator
+		'June 2021 Epic Mega Sale Stream',
+	],
+	'PLbjDnnBIxiEphc1QenCFLI8cOhJF8szkh' => [ // Power Slug
+		'Environment',
+		'Resources',
+	],
+	'PLbjDnnBIxiErkUXKPTQ6N5HfY2SOgKGQg' => [ // Setting up Modular Frame production
+		'June 2021 Epic Mega Sale Stream',
+	],
+	'PLbjDnnBIxiErcP0g2Ihv6H7ZJUVB8sOqH' => [ // Overclocking & Underclocking
+		'Features',
+		'Buildings',
+	],
+	'PLbjDnnBIxiErj8197l1Qd4RzczUtlYgF4' => [ // Coal
+		'Environment',
+		'Resources',
+	],
+	'PLbjDnnBIxiEr1rRsrKhfeFO8lpQ3ETpbe' => [ // Coal Generator
+		'Features',
+		'Buildings',
+	],
+	'PLbjDnnBIxiEqE6cyJPicfKslpaX5zwjCq' => [ // Unreal Engine 5
+		'Technology',
+		'Unreal Engine',
+	],
 ];
 
 $not_a_livestream = [
@@ -1092,9 +1149,6 @@ $injected_global_topic_hierarchy = [
 	'Unreleased Features' => [
 		'Features',
 	],
-	'Requested Features' => [
-		'Features',
-	],
 	'Free Weekends' => [
 		'Satisfactory Updates',
 	],
@@ -1103,10 +1157,6 @@ $injected_global_topic_hierarchy = [
 	],
 	'Oscar' => [
 		'Coffee Stainers',
-	],
-	'Power Slug' => [
-		'Environment',
-		'Resources',
 	],
 	'Signs Mod' => [
 		'Mods',
@@ -1196,5 +1246,21 @@ $injected_global_topic_hierarchy = [
 	],
 	'Anna' => [
 		'Coffee Stainers',
+	],
+	'Rocky Desert' => [
+		'Environment',
+		'Biomes',
+	],
+	'Red Jungle' => [
+		'Environment',
+		'Biomes',
+	],
+	'Red Bamboo Fields' => [
+		'Environment',
+		'Biomes',
+	],
+	'Swamp' => [
+		'Environment',
+		'Biomes',
 	],
 ];
