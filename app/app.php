@@ -262,124 +262,124 @@ foreach ($all_topic_ids as $topic_id) {
 }
 
 foreach ($global_topic_hierarchy as $topic_id => $topic_ancestors) {
-		if ( ! isset($topic_nesting[$topic_id])) {
-			throw new RuntimeException(sprintf(
-				'topic %s not already added!',
-				$topic_id
-			));
-		}
-
-		$topic_nesting[$topic_id]['level'] = count($topic_ancestors);
-
-		$topic_ancestors = array_filter($topic_ancestors, 'is_string');
-
-		$topic_ancestors = array_reverse($topic_ancestors);
-
-		$topic_descendant_id = $topic_id;
-
-		foreach ($topic_ancestors as $topic_ancestor_name) {
-			[$topic_ancestor_id] = determine_playlist_id(
-				$topic_ancestor_name,
-				$cache,
-				$not_a_livestream,
-				$not_a_livestream_date_lookup
-			);
-
-			if (
-				! in_array(
-					$topic_descendant_id,
-					$topic_nesting[$topic_ancestor_id]['children'],
-					true
-				)
-			) {
-				$topic_nesting[$topic_ancestor_id]['children'][] =
-					$topic_descendant_id;
-			}
-
-			$topic_descendant_id = $topic_ancestor_id;
-		}
+	if ( ! isset($topic_nesting[$topic_id])) {
+		throw new RuntimeException(sprintf(
+			'topic %s not already added!',
+			$topic_id
+		));
 	}
 
-	$basename_topics_nesting_ids = array_keys($topic_nesting);
+	$topic_nesting[$topic_id]['level'] = count($topic_ancestors);
 
-	$topic_nesting = array_map(
-		static function (
-			array $data
-		) use (
-			$basename_topics_nesting_ids
-		) : array {
-			usort(
-				$data['children'],
-				static function (
-					string $a,
-					string $b
-				) use (
-					$basename_topics_nesting_ids
-				) : int {
-					return
-						(int) array_search(
-							$a,
-							$basename_topics_nesting_ids, true
-						) - (int) array_search(
-							$b,
-							$basename_topics_nesting_ids, true
-						);
-				}
-			);
+	$topic_ancestors = array_filter($topic_ancestors, 'is_string');
 
-			return $data;
-		},
-		$topic_nesting
-	);
+	$topic_ancestors = array_reverse($topic_ancestors);
 
-	$topic_nesting = array_filter(
-		$topic_nesting,
-		static function (string $maybe) use ($playlists) : bool {
-			return ! isset($playlists[$maybe]);
-		},
-		ARRAY_FILTER_USE_KEY
-	);
+	$topic_descendant_id = $topic_id;
 
-	$topic_nesting_roots = array_keys(array_filter(
-		$topic_nesting,
-		static function (array $maybe) : bool {
-			return -1 === $maybe['level'];
+	foreach ($topic_ancestors as $topic_ancestor_name) {
+		[$topic_ancestor_id] = determine_playlist_id(
+			$topic_ancestor_name,
+			$cache,
+			$not_a_livestream,
+			$not_a_livestream_date_lookup
+		);
+
+		if (
+			! in_array(
+				$topic_descendant_id,
+				$topic_nesting[$topic_ancestor_id]['children'],
+				true
+			)
+		) {
+			$topic_nesting[$topic_ancestor_id]['children'][] =
+				$topic_descendant_id;
 		}
-	));
 
-	usort(
-		$topic_nesting_roots,
-		static function (
-			string $a,
-			string $b
-		) use ($cache) : int {
-			return strnatcasecmp(
-				determine_topic_name($a, $cache),
-				determine_topic_name($b, $cache)
-			);
-		}
-	);
+		$topic_descendant_id = $topic_ancestor_id;
+	}
+}
 
-	$current_left = 0;
+$basename_topics_nesting_ids = array_keys($topic_nesting);
 
-	foreach ($topic_nesting_roots as $topic_id) {
-		[$current_left, $topic_nesting] = adjust_nesting(
-			$topic_nesting,
-			$topic_id,
-			$current_left,
-			$global_topic_hierarchy,
-			$cache
+$topic_nesting = array_map(
+	static function (
+		array $data
+	) use (
+		$basename_topics_nesting_ids
+	) : array {
+		usort(
+			$data['children'],
+			static function (
+				string $a,
+				string $b
+			) use (
+				$basename_topics_nesting_ids
+			) : int {
+				return
+					(int) array_search(
+						$a,
+						$basename_topics_nesting_ids, true
+					) - (int) array_search(
+						$b,
+						$basename_topics_nesting_ids, true
+					);
+			}
+		);
+
+		return $data;
+	},
+	$topic_nesting
+);
+
+$topic_nesting = array_filter(
+	$topic_nesting,
+	static function (string $maybe) use ($playlists) : bool {
+		return ! isset($playlists[$maybe]);
+	},
+	ARRAY_FILTER_USE_KEY
+);
+
+$topic_nesting_roots = array_keys(array_filter(
+	$topic_nesting,
+	static function (array $maybe) : bool {
+		return -1 === $maybe['level'];
+	}
+));
+
+usort(
+	$topic_nesting_roots,
+	static function (
+		string $a,
+		string $b
+	) use ($cache) : int {
+		return strnatcasecmp(
+			determine_topic_name($a, $cache),
+			determine_topic_name($b, $cache)
 		);
 	}
+);
 
-	$topics = $topic_nesting;
+$current_left = 0;
 
-	uasort(
-		$topics,
-		[$sorting, 'sort_by_nleft']
+foreach ($topic_nesting_roots as $topic_id) {
+	[$current_left, $topic_nesting] = adjust_nesting(
+		$topic_nesting,
+		$topic_id,
+		$current_left,
+		$global_topic_hierarchy,
+		$cache
 	);
+}
 
-	$topic_nesting = $topics;
+$topics = $topic_nesting;
+
+uasort(
+	$topics,
+	[$sorting, 'sort_by_nleft']
+);
+
+$topic_nesting = $topics;
 
 file_put_contents(__DIR__ . '/topics-nested.json', json_encode(
 	$topic_nesting,
@@ -1168,7 +1168,7 @@ foreach (
 			[],
 		];
 	} else {
-	$playlist_data = $cache['playlists'][$playlist_id];
+		$playlist_data = $cache['playlists'][$playlist_id];
 	}
 
 	[, $playlist_title, $playlist_items] = $playlist_data;
