@@ -10,6 +10,12 @@ Static site generator for
 
 # Changelog
 
+## 2021-06-05
+* fixed bug overlooked in previous commit with eleventy config
+
+## 2021-06-01
+* moved files around to locations more appropriate to single-project management (original intent was to track multiple games in one repository, it's now more managable to refactor & fork the repository)
+
 ## 2021-03-11
 * implemented (possibly inefficient) FAQ sorting
 
