@@ -129,8 +129,48 @@
         ],
         "legacyof": []
     },
+    "tc-SplendidAffluentVampireNotLikeThis": {
+        "title": "Build Limit (Part 1):",
+        "tags": [
+            "faq"
+        ],
+        "topics": [
+            "Unreal Engine"
+        ],
+        "legacyof": []
+    },
+    "tc-UnusualExquisiteKuduDendiFace": {
+        "title": "Build Limit (Part 2):",
+        "tags": [
+            "faq"
+        ],
+        "topics": [
+            "Unreal Engine"
+        ],
+        "legacyof": []
+    },
+    "tc-SullenColdbloodedDiscEagleEye": {
+        "title": "Build Limit (Part 3):",
+        "tags": [
+            "faq"
+        ],
+        "topics": [
+            "Unreal Engine"
+        ],
+        "legacyof": []
+    },
     "tc-BlitheEnergeticEelPRChase": {
         "title": "Build Limit (Part 4):",
+        "tags": [
+            "faq"
+        ],
+        "topics": [
+            "Unreal Engine"
+        ],
+        "legacyof": []
+    },
+    "tc-GiantGeniusGooseCclamChamp": {
+        "title": "Build Limit (Part 5):",
         "tags": [
             "faq"
         ],
@@ -359,16 +399,6 @@
         "tags": [],
         "topics": [
             "Accessibility"
-        ],
-        "legacyof": []
-    },
-    "tc-GiantGeniusGooseCclamChamp": {
-        "title": "Build Limit (Part 5):",
-        "tags": [
-            "faq"
-        ],
-        "topics": [
-            "Unreal Engine"
         ],
         "legacyof": []
     },
@@ -607,16 +637,6 @@
         "topics": [],
         "legacyof": []
     },
-    "tc-SplendidAffluentVampireNotLikeThis": {
-        "title": "Build Limit (Part 1):",
-        "tags": [
-            "faq"
-        ],
-        "topics": [
-            "Unreal Engine"
-        ],
-        "legacyof": []
-    },
     "tc-SpoopyPlacidPepperoniSoonerLater": {
         "title": "Q&A: Will 1.0 require a reset of the game?",
         "tags": [],
@@ -631,16 +651,6 @@
         "topics": [
             "Satisfactory 1.0",
             "Story & Lore"
-        ],
-        "legacyof": []
-    },
-    "tc-SullenColdbloodedDiscEagleEye": {
-        "title": "Build Limit (Part 3):",
-        "tags": [
-            "faq"
-        ],
-        "topics": [
-            "Unreal Engine"
         ],
         "legacyof": []
     },
@@ -675,16 +685,6 @@
         ],
         "topics": [
             "Multiplayer"
-        ],
-        "legacyof": []
-    },
-    "tc-UnusualExquisiteKuduDendiFace": {
-        "title": "Build Limit (Part 2):",
-        "tags": [
-            "faq"
-        ],
-        "topics": [
-            "Unreal Engine"
         ],
         "legacyof": []
     },

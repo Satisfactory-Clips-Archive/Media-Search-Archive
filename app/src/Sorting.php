@@ -115,6 +115,25 @@ class Sorting
 		$maybe = strtotime($b_date) <=> strtotime($a_date);
 
 		if (0 === $maybe) {
+			$a_id = $this->playlists_date_ref[$a_date] ?? null;
+			$b_id = $this->playlists_date_ref[$b_date] ?? null;
+
+			if (
+				$a_id === $b_id
+				&& isset($this->cache['playlists'][$a_id])
+			) {
+				return
+					array_search(
+						$a,
+						$this->cache['playlists'][$a_id][2],
+						true
+					) <=> array_search(
+						$b,
+						$this->cache['playlists'][$b_id][2],
+						true
+					);
+			}
+
 			return $this->sort_video_ids_alphabetically($a, $b);
 		}
 
