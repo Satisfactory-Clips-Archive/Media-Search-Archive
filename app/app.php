@@ -39,7 +39,6 @@ use const JSON_PRETTY_PRINT;
 use function mb_substr;
 use function min;
 use function mkdir;
-use function natcasesort;
 use const PHP_EOL;
 use function preg_match;
 use function realpath;

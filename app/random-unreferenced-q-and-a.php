@@ -7,8 +7,10 @@ declare(strict_types=1);
 namespace SignpostMarv\VideoClipNotes;
 
 use function array_filter;
+use function array_keys;
 use function array_rand;
 use function file_get_contents;
+use function implode;
 use function json_decode;
 
 require_once (__DIR__ . '/../vendor/autoload.php');

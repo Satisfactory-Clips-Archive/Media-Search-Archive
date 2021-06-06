@@ -962,7 +962,7 @@ $global_topic_hierarchy = [
 		'Unreal Engine',
 	],
 	'PLbjDnnBIxiEpS1BDtD6ZonY3QdNz6g9Gj' => [ // DirectX
-		'Technology'
+		'Technology',
 	],
 	'PLbjDnnBIxiEpOl-wg1r4-qo3TyvXUy-ev' => [ // Requested Features
 		'Features',
