@@ -76,6 +76,23 @@ layout: transcriptions
 %} <a rel="noopener" target="_blank" href="{{duplicate[2]}}">{{duplicate[2]}}</a></li>{% endfor %}
 </ul>
 </details>{% endif %}{%
+			if transcript.seealsos[1].length > 0
+%}<details>
+	<summary>{{transcript.seealsos[0]}}</summary>
+	<ul>{%
+		for seealso in transcript.seealsos[1]
+%}
+<li>{%
+			if seealso[1]
+%}<a href="../{{seealso[1]}}/">{{seealso[0]}}</a>{%
+			else
+%}{{seealso[0]}}{%
+			endif
+%} <a rel="noopener" target="_blank" href="{{seealso[2]}}">{{seealso[2]}}</a></li>{% endfor %}
+</ul>
+</details>{%
+			endif
+%}{%
 	if transcript.topics.length > 0
 %}
 <h3>Topics</h3>

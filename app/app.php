@@ -592,6 +592,7 @@ foreach ($all_video_ids as $video_id) {
 		'has_duplicates' => (
 				$jsonify->content_if_video_has_duplicates($video_id)
 		),
+		'seealsos' => $jsonify->content_if_video_has_seealsos($video_id),
 		'transcript' => array_map(
 			static function (string $line) : string {
 				return str_replace(

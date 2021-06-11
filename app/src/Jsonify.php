@@ -248,6 +248,75 @@ class Jsonify
 	}
 
 	/**
+	 * @return false|array{0:int, 1:string}
+	 */
+	public function content_if_video_has_seealsos(
+		string $video_id,
+		Questions $questions = null
+	) {
+		$questions = $questions ?? $this->questions;
+
+		$faq_duplicates = $questions->process()[0][$video_id]['seealso'] ?? [];
+
+		if ([] === $faq_duplicates) {
+			return false;
+		}
+
+		$injected = $questions->injected;
+
+		uasort(
+			$faq_duplicates,
+			[$injected->sorting, 'sort_video_ids_by_date']
+		);
+
+		$faq_duplicate_dates = [];
+
+		$faq_duplicates_for_date_checking = array_values(array_diff(
+			$faq_duplicates,
+			[
+				$video_id,
+			]
+		));
+
+		foreach ($faq_duplicates_for_date_checking as $other_video_id) {
+			$faq_duplicate_video_date = determine_date_for_video(
+				$other_video_id,
+				$injected->cache['playlists'],
+				$injected->api->dated_playlists()
+			);
+
+			if (
+				! in_array($faq_duplicate_video_date, $faq_duplicate_dates, true)
+			) {
+				$faq_duplicate_dates[] = $faq_duplicate_video_date;
+			}
+		}
+
+		return [
+			(
+				sprintf(
+					'This question has %s related %s',
+					(
+						count($faq_duplicates_for_date_checking) > 1
+							? count($faq_duplicates_for_date_checking)
+							: 'a'
+					),
+					(
+						count($faq_duplicates_for_date_checking) > 1
+							? 'videos'
+							: 'video'
+					)
+				)
+			),
+			$this->content_from_other_video_parts(
+				null,
+				$faq_duplicates_for_date_checking,
+				$questions
+			),
+		];
+	}
+
+	/**
 	 * @return false|array{0:string, 1:string|false, 2:string}
 	 */
 	public function content_if_video_is_a_duplicate(string $video_id)
