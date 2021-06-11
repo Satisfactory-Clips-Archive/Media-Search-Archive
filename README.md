@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2021-06-11
 * finally render related videos into the transcription pages
+* added "Subnautica" and "Crossovers" topics
 
 ## 2021-06-06
 * added topic docs for topics that have no direct content
