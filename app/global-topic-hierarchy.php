@@ -1021,6 +1021,13 @@ $global_topic_hierarchy = [
 		'Technology',
 		'Unreal Engine',
 	],
+	'PLbjDnnBIxiEpb1WTHN6Sos7AvvW-rY_Cr' => [ // Subnautica
+		'Off-Topic',
+	],
+	'PLbjDnnBIxiEpKiw3DB9RBHUTClS4pQa5s' => [ // Crosovers
+		'Features',
+		'Requested Features',
+	],
 ];
 
 $not_a_livestream = [
