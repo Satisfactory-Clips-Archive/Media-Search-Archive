@@ -19,8 +19,7 @@ use function trim;
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
  *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts:array<string, list<string>>,
- *	internalxref:array<string, string>
+ *	legacyAlts:array<string, list<string>>
  * }
  */
 class Sorting
@@ -36,7 +35,6 @@ class Sorting
 		'videoTags' => [],
 		'stubPlaylists' => [],
 		'legacyAlts' => [],
-		'internalxref' => [],
 	];
 
 	/**

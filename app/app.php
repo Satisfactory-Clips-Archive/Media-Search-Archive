@@ -58,7 +58,7 @@ use function usort;
 require_once (__DIR__ . '/../vendor/autoload.php');
 require_once (__DIR__ . '/global-topic-hierarchy.php');
 
-$start = time();
+$stat_start = time();
 
 $api = new YouTubeApiWrapper();
 
@@ -423,7 +423,14 @@ foreach(get_externals() as $date => $externals_data_groups) {
 			if (
 				isset($csv_captions[$i])
 				&& '' !== trim($csv_captions[$i][3])
+				&& is_file(
+					__DIR__
+					. '/../video-clip-notes/docs/transcriptions/'
+					. $clip_id
+					. '.md'
+				)
 			) {
+
 				$embed_data['has_captions'] = sprintf(
 					'../transcriptions/%s',
 					sprintf(
@@ -439,11 +446,6 @@ foreach(get_externals() as $date => $externals_data_groups) {
 		$grouped_dated_data_for_json[$date]['externals'][] = $externals_for_json;
 	}
 }
-
-file_put_contents(__DIR__ . '/../11ty/data/dated.json', json_encode(
-	array_values($grouped_dated_data_for_json),
-	JSON_PRETTY_PRINT
-));
 
 process_externals(
 	$cache,
@@ -796,18 +798,18 @@ foreach ($all_video_ids as $video_id) {
 			'compiling transcription %s of %s videos (%s seconds elapsed)',
 			$checked,
 			count($all_video_ids),
-			time() - $start
+			time() - $stat_start
 		)
 	;
-
-	if (in_array($video_id, $skipping, true)) {
-		continue;
-	}
 
 	$caption_lines = captions(
 		$video_id,
 		$playlist_topic_strings_reverse_lookup
 	);
+
+	if (in_array($video_id, $skipping, true)) {
+		continue;
+	}
 
 	if (count($caption_lines) < 1) {
 		$skipping[] = $video_id;
@@ -887,7 +889,7 @@ echo "\n",
 		'processing %s of %s transcriptions (%s seconds elapsed)',
 		$checked,
 		count($all_video_ids),
-		time() - $start
+		time() - $stat_start
 	)
 ;
 
@@ -903,7 +905,7 @@ foreach ($transcripts_json as $video_id => $video_data) {
 			'processing %s of %s transcriptions (%s seconds elapsed)',
 			$checked,
 			count($transcripts_json),
-			time() - $start
+			time() - $stat_start
 		)
 	;
 
@@ -1134,6 +1136,12 @@ foreach (array_keys($playlists) as $playlist_id) {
 		'Livestream clips (non-exhaustive)'
 	);
 
+	$data_for_dated_json = [
+		'title' => $title,
+		'categories' => [],
+		'uncategorised' => [],
+	];
+
 	/** @var list<string> */
 	$playlist_lines = [];
 
@@ -1145,32 +1153,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 		. '---' . "\n"
 	);
 
-	$xref_video_id = $cache['internalxref'][$playlist_id] ?? null;
-
-	if (null !== $xref_video_id) {
-		[, $lines_to_write] = process_dated_csv(
-			date('Y-m-d', $title_unix),
-			[
-				'playlists' => [],
-				'playlistItems' => [],
-				'videoTags' => [],
-			],
-			get_dated_csv(date('Y-m-d', $title_unix), $xref_video_id, false),
-			$cache,
-			$global_topic_hierarchy,
-			$not_a_livestream,
-			$not_a_livestream_date_lookup,
-			$slugify,
-			true,
-			false,
-			true,
-			false
-		);
-
-		[$lines_to_write] = $lines_to_write;
-
-		$playlist_lines[] = implode('', $lines_to_write);
-	} elseif (in_array(date('Y-m-d', $title_unix), $externals_dates, true)) {
+	if (in_array(date('Y-m-d', $title_unix), $externals_dates, true)) {
 		foreach (
 			get_externals()[date('Y-m-d', $title_unix)] as $external_for_date
 		) {
@@ -1266,6 +1249,26 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 		$depth = min(6, $topics_for_date[$topic_id]['level'] + 2);
 
+		$data_for_dated_json['categorised'][$topic_id] = [
+			'title' => determine_topic_name($topic_id, $cache),
+			'depth' => $topics_for_date[$topic_id]['level'],
+			'slug' => topic_to_slug(
+				$topic_id,
+				$cache,
+				$global_topic_hierarchy,
+				$slugify
+			)[0],
+			'clips' => array_map(
+				static function (string $video_id) use ($cache) : array {
+					return maybe_transcript_link_and_video_url_data(
+						$video_id,
+						$cache['playlistItems'][$video_id][1]
+					);
+				},
+				array_keys($video_data)
+			),
+		];
+
 		if (
 			! isset($cache['playlists'][$topic_id])
 			|| count($cache['playlists'][$topic_id][2]) < 1
@@ -1304,7 +1307,24 @@ foreach (array_keys($playlists) as $playlist_id) {
 		));
 	}
 
+	$data_for_dated_json['categorised'] = array_values(
+		$data_for_dated_json['categorised']
+	);
+
 	if (count($content_arrays['Single video clips']) > 0) {
+		$data_for_dated_json['uncategorised'] = [
+			'title' => determine_topic_name($topic_id, $cache),
+			'clips' => array_map(
+				static function (string $video_id) use ($cache) : array {
+					return maybe_transcript_link_and_video_url_data(
+						$video_id,
+						$cache['playlistItems'][$video_id][1]
+					);
+				},
+				$content_arrays['Single video clips']
+			),
+		];
+
 		$playlist_lines[] =
 			(
 				''
@@ -1327,8 +1347,30 @@ foreach (array_keys($playlists) as $playlist_id) {
 			$content_arrays['Single video clips']
 	));
 
+	if ( ! isset($grouped_dated_data_for_json[
+		date('Y-m-d', $title_unix)
+	])) {
+		$grouped_dated_data_for_json[
+			date('Y-m-d', $title_unix)
+		] = [
+			'date' => date('Y-m-d', $title_unix),
+			'date_friendly' => date('F jS, Y', $title_unix),
+			'externals' => [],
+			'internals' => [],
+		];
+	}
+
+	$grouped_dated_data_for_json[
+		date('Y-m-d', $title_unix)
+	]['internals'][] = $data_for_dated_json;
+
 	file_put_contents($playlists[$playlist_id], implode('', $playlist_lines));
 }
+
+file_put_contents(__DIR__ . '/../11ty/data/dated.json', json_encode(
+	array_values($grouped_dated_data_for_json),
+	JSON_PRETTY_PRINT
+));
 
 $now = time();
 
@@ -1814,4 +1856,4 @@ foreach ($sortable as $year => $months) {
 
 file_put_contents($file_path, implode('', $lines));
 
-echo sprintf('completed in %s seconds', time() - $start), "\n";
+echo sprintf('completed in %s seconds', time() - $stat_start), "\n";

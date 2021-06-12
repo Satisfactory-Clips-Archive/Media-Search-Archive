@@ -311,8 +311,7 @@ function vendor_prefixed_video_id(string $video_id) : string
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
  *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts?:array<string, list<string>>,
- *	internalxref?:array<string, string>
+ *	legacyAlts?:array<string, list<string>>
  * }
  *
  * @param CACHE $cache
@@ -323,8 +322,7 @@ function vendor_prefixed_video_id(string $video_id) : string
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
  *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts:array<string, list<string>>,
- *	internalxref:array<string, string>
+ *	legacyAlts:array<string, list<string>>
  * }
  */
 function inject_caches(array $cache, array ...$caches) : array
@@ -335,10 +333,6 @@ function inject_caches(array $cache, array ...$caches) : array
 
 	if ( ! isset($cache['legacyAlts'])) {
 		$cache['legacyAlts'] = [];
-	}
-
-	if ( ! isset($cache['internalxref'])) {
-		$cache['internalxref'] = [];
 	}
 
 	foreach ($caches as $inject) {
@@ -403,19 +397,6 @@ function inject_caches(array $cache, array ...$caches) : array
 				sort($cache['legacyAlts'][$video_id]);
 			}
 		}
-
-		if (isset($inject['internalxref'])) {
-			foreach ($inject['internalxref'] as $playlist_id => $video_id) {
-				if (isset($cache['internalxref'][$playlist_id])) {
-					throw new RuntimeException(sprintf(
-						'Playlist cross-reference for internal clip data already specified! (%s)',
-						$playlist_id
-					));
-				}
-
-				$cache['internalxref'][$playlist_id] = $video_id;
-			}
-		}
 	}
 
 	/**
@@ -424,8 +405,7 @@ function inject_caches(array $cache, array ...$caches) : array
 	 *	playlistItems:array<string, array{0:string, 1:string}>,
 	 *	videoTags:array<string, array{0:string, list<string>}>,
 	 *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
-	 *	legacyAlts:array<string, list<string>>,
-	 *	internalxref:array<string, string>
+	 *	legacyAlts:array<string, list<string>>
 	 * }
 	 */
 	return $cache;
@@ -438,8 +418,7 @@ function inject_caches(array $cache, array ...$caches) : array
  *		playlistItems:array<string, array{0:string, 1:string}>,
  *		videoTags:array<string, array{0:string, list<string>}>,
  *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *		legacyAlts:array<string, list<string>>,
- *		internalxref:array<string, string>
+ *		legacyAlts:array<string, list<string>>
  *	},
  *	1:array{satisfactory:array<string, list<int|string>>},
  *	2:array<string, string>,
@@ -455,8 +434,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 	 *		playlistItems:array<string, array{0:string, 1:string}>,
 	 *		videoTags:array<string, array{0:string, list<string>}>,
 	 *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
-	 *		legacyAlts:array<string, list<string>>,
-	 *		internalxref:array<string, string>
+	 *		legacyAlts:array<string, list<string>>
 	 *	},
 	 *	1:array{satisfactory:array<string, list<int|string>>},
 	 *	2:array<string, string>,
@@ -603,8 +581,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 		 *		playlistItems:array<string, array{0:string, 1:string}>,
 		 *		videoTags:array<string, array{0:string, list<string>}>,
 		 *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
-		 *		legacyAlts:array<string, list<string>>,
-		 *		internalxref:array<string, string>
+		 *		legacyAlts:array<string, list<string>>
 		 *	},
 		 *	1:array{satisfactory:array<string, list<int|string>>},
 		 *	2:array<string, string>,
@@ -768,8 +745,7 @@ function determine_playlist_id(
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
  *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts:array<string, list<string>>,
- *	internalxref:array<string, string>
+ *	legacyAlts:array<string, list<string>>
  * } $cache
  * @param array<string, list<int|string>> $topics_hierarchy
  *
@@ -951,8 +927,7 @@ function nesting_children(
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
  *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts:array<string, list<string>>,
- *	internalxref:array<string, string>
+ *	legacyAlts:array<string, list<string>>
  * } $cache
  */
 function determine_topic_name(string $topic, array $cache) : string
@@ -973,8 +948,7 @@ function determine_topic_name(string $topic, array $cache) : string
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
  *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts:array<string, list<string>>,
- *	internalxref:array<string, string>
+ *	legacyAlts:array<string, list<string>>
  * } $cache
  * @param array<string, list<int|string>> $topic_hierarchy
  *
@@ -1145,8 +1119,7 @@ function filter_nested(
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
  *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts:array<string, list<string>>,
- *	internalxref:array<string, string>
+ *	legacyAlts:array<string, list<string>>
  * } $cache
  *
  * @return list<string>
@@ -2014,8 +1987,7 @@ function get_dated_csv(
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
  *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts?:array<string, list<string>>,
- *	internalxref?:array<string, string>
+ *	legacyAlts?:array<string, list<string>>
  * } $cache
  * @param array{
  *	satisfactory: array<string, list<int|string>>
@@ -2169,8 +2141,7 @@ function process_externals(
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>,
  *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts?:array<string, list<string>>,
- *	internalxref?:array<string, string>
+ *	legacyAlts?:array<string, list<string>>
  * }
  *
  * @param CACHE $inject
@@ -2750,6 +2721,25 @@ function determine_date_for_video(
 ) : string {
 	/** @var false|string */
 	$found = false;
+
+	/** @var array<string, string>|null */
+	static $externals_unpacked = null;
+
+	if (preg_match('/^(.{2}\-[^,]+),\d+/', $video_id, $video_id_matches)) {
+		if (null === $externals_unpacked) {
+			$externals_unpacked = [];
+
+			foreach (get_externals() as $date => $checking_here) {
+				foreach ($checking_here as $maybe) {
+					$externals_unpacked[$maybe[0]] = $date;
+				}
+			}
+		}
+
+		if (isset($externals_unpacked[$video_id_matches[1]])) {
+			return $externals_unpacked[$video_id_matches[1]];
+		}
+	}
 
 	foreach (array_keys($playlist_date_ref) as $playlist_id) {
 		if ( ! $ignore_lack_of_data && ! isset($playlists[$playlist_id])) {
