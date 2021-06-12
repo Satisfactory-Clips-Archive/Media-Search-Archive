@@ -427,7 +427,7 @@ foreach(get_externals() as $date => $externals_data_groups) {
 				$embed_data['has_captions'] = sprintf(
 					'../transcriptions/%s',
 					sprintf(
-						'%s.md',
+						'%s/',
 						$clip_id
 					)
 				);
