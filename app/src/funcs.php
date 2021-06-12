@@ -2629,6 +2629,13 @@ function timestamp_link(string $video_id, $start) : string
 	$vendorless_video_id = preg_replace('/,.*$/', '', mb_substr($video_id, 3));
 
 	if (preg_match('/^yt-/', $video_id)) {
+		if (0 === $start) {
+			return sprintf(
+				'https://youtu.be/%s',
+				$vendorless_video_id
+			);
+		}
+
 		return sprintf(
 			'https://youtu.be/%s?t=%s',
 			$vendorless_video_id,

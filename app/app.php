@@ -187,6 +187,264 @@ file_put_contents(__DIR__ . '/playlist-date-history.json', json_encode(
 	JSON_PRETTY_PRINT
 ));
 
+$grouped_dated_data_for_json = [];
+
+foreach(get_externals() as $date => $externals_data_groups) {
+	if ( ! isset($grouped_dated_data_for_json[$date])) {
+		$grouped_dated_data_for_json[$date] = [
+			'date' => $date,
+			'date_friendly' => date('F jS, Y', (int) strtotime($date)),
+			'externals' => [],
+			'internals' => [],
+		];
+	}
+
+	foreach ($externals_data_groups as $externals_data) {
+		[$video_id, $externals_csv, $data_for_external] = $externals_data;
+
+		$externals_for_json = [
+			'title' => $data_for_external['title'],
+			'embed_data' => [],
+			'contentUrl' => timestamp_link($video_id, 0),
+			'thumbnail' => false,
+		];
+
+		if (preg_match('/^yt-/', vendor_prefixed_video_id($video_id))) {
+			$externals_for_json['thumbnail'] = sprintf(
+				'https://img.youtube.com/vi/%/hqdefault.jpg',
+				preg_replace('/,.*$/', '', mb_substr($video_id, 3))
+			);
+		}
+
+		$captions = raw_captions($video_id);
+
+		if (
+			array_key_exists(0, $captions)
+			&& array_key_exists(1, $captions)
+			&& null === $captions[0]
+		) {
+			/**
+			 * @var array{0:null, 1:list<array{
+			 *	text:string|list<string|array{text:string, about?:string}>,
+			 *	startTime:string,
+			 *	endTime:string,
+			 *	speaker?:list<string>,
+			 *	followsOnFromPrevious?:bool,
+			 *	webvtt?: array{
+			 *		position?:positive-int,
+			 *		line?:int,
+			 *		size?:positive-int,
+			 *		align?:'start'|'middle'|'end'
+			 *	}
+			 * }>}
+			 */
+			$captions = $captions;
+
+			$captions_with_start_time = array_map(
+				/**
+				 * @return array{
+				 *	0:numeric-string,
+				 *	1:numeric-string,
+				 *	2:string,
+				 *	3:bool
+				 * }
+				 */
+				static function (array $caption_line) : array {
+					if (is_array($caption_line['text'])) {
+						throw new RuntimeException(
+							'JSON transcription not yet supported here!'
+						);
+					}
+
+					/**
+					 * @var array{
+					 *	0:numeric-string,
+					 *	1:numeric-string,
+					 *	2:string,
+					 *	3:bool
+					 * }
+					 */
+					return [
+						mb_substr($caption_line['startTime'], 2, -1),
+						mb_substr($caption_line['endTime'], 2, -1),
+						$caption_line['text'],
+						$caption_line['followsOnFromPrevious'] ?? false,
+					];
+				},
+				$captions[1]
+			);
+		} else {
+			/** @var list<SimpleXmlElement> */
+			$lines = ($captions[1] ?? []);
+
+			foreach ($lines as $caption_line) {
+				$attrs = iterator_to_array(
+					$caption_line->attributes()
+				);
+
+				/** @var array{0:numeric-string, 1:numeric-string, 2:string} */
+				$captions_with_start_time_row = [
+					(string) $attrs['start'],
+					(string) $attrs['dur'],
+					(string) preg_replace_callback(
+						'/&#(\d+);/',
+						static function (array $match) : string {
+							return chr((int) $match[1]);
+						},
+						(string) $caption_line
+					),
+				];
+
+				$captions_with_start_time[] = $captions_with_start_time_row;
+			}
+		}
+
+		$csv_captions = array_map(
+			/**
+			 * @param array{
+			 *	0:numeric-string|'',
+			 *	1:numeric-string|'',
+			 *	2:string
+			 * } $csv_line
+			 *
+			 * @return array{
+			 *	0:numeric-string|'',
+			 *	1:numeric-string|'',
+			 *	2:string,
+			 *	3:string
+			 * }
+			 */
+			static function (array $csv_line) use ($captions_with_start_time) : array {
+				$csv_line_captions = trim(implode("\n", array_reduce(
+					array_filter(
+						$captions_with_start_time,
+						static function (array $maybe) use ($csv_line) : bool {
+							[$start, $end] = $csv_line;
+
+							$start = (float) $start;
+
+							$from = (float) $maybe[0];
+							$to = $from + (float) $maybe[1];
+
+							if ('' === $end) {
+								return $from >= $start;
+							}
+
+							return $from >= $start && $to <= (float) $end;
+						}
+					),
+					/**
+					 * @param non-empty-list<string> $out
+					 * @param array{2:string, 3?:bool} $caption_line
+					 *
+					 * @return non-empty-list<string>
+					 */
+					static function (array $out, array $caption_line) : array {
+						$follows_on_from_previous = $caption_line[3] ?? false;
+
+						if ($follows_on_from_previous) {
+							$out[] = preg_replace(
+								'/\s+/',
+								' ',
+								array_pop($out) . ' ' . $caption_line[2]
+							);
+						} else {
+							$out[] = $caption_line[2];
+						}
+
+						return $out;
+					},
+					['']
+				)));
+
+				$csv_line[3] = $csv_line_captions;
+
+				return $csv_line;
+			},
+			array_filter(
+				$externals_csv,
+				static function (int $k) use ($data_for_external) : bool {
+					return
+						isset($data_for_external['skip'][$k])
+							? ( ! $data_for_external['skip'][$k])
+							: (false !== ($data_for_external['topics'][$k] ?? false));
+				},
+				ARRAY_FILTER_USE_KEY
+			)
+		);
+
+		foreach ($externals_csv as $i => $line) {
+			[$start, $end, $clip_title] = $line;
+			$clip_id = sprintf(
+				'%s,%s',
+				$video_id,
+				$start . ('' === $end ? '' : (',' . $end))
+			);
+
+			$start = ($start ?: '0.0');
+
+			$start_hours = str_pad((string) floor(((float) $start) / 3600), 2, '0', STR_PAD_LEFT);
+			$start_minutes = str_pad((string) floor((((float) $start) % 3600) / 60), 2, '0', STR_PAD_LEFT);
+			$start_seconds = str_pad((string) (((float) $start) % 60), 2, '0', STR_PAD_LEFT);
+
+			$embed_data = [
+				'autoplay' => 1,
+				'start' => floor((float) ($start ?: '0')),
+				'end' => $end,
+				'title' => $clip_title,
+				'has_captions' => false,
+				'started_formated' => sprintf(
+					'%s:%s:%s',
+					$start_hours,
+					$start_minutes,
+					$start_seconds
+				),
+				'link' => (
+					(
+						is_array($data_for_external['topics'][$i] ?? null)
+						&& preg_match('/^ts\-\d+$/', $video_id)
+						&& '' !== $end
+					)
+						? embed_link(
+							$video_id,
+							$line[0],
+							$line[1]
+						)
+						: timestamp_link($video_id, $start)
+				)
+			];
+
+			if ('' === $embed_data['end']) {
+				unset($embed_data['end']);
+			} else {
+				$embed_data['end'] = ceil((float) $embed_data['end']);
+			}
+
+			if (
+				isset($csv_captions[$i])
+				&& '' !== trim($csv_captions[$i][3])
+			) {
+				$embed_data['has_captions'] = sprintf(
+					'../transcriptions/%s',
+					sprintf(
+						'%s.md',
+						$clip_id
+					)
+				);
+			}
+
+			$externals_for_json['embed_data'][$i] = $embed_data;
+		}
+
+		$grouped_dated_data_for_json[$date]['externals'][] = $externals_for_json;
+	}
+}
+
+file_put_contents(__DIR__ . '/../11ty/data/dated.json', json_encode(
+	array_values($grouped_dated_data_for_json),
+	JSON_PRETTY_PRINT
+));
+
 process_externals(
 	$cache,
 	$global_topic_hierarchy,

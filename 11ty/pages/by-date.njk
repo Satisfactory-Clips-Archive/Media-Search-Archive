@@ -1,0 +1,52 @@
+---
+pagination:
+    data: dated
+    size: 1
+    alias: group
+permalink: "alt-{{ group.date }}/"
+layout: livestream
+---
+{% for external in group.externals %}
+<section
+	itemscope
+	itemtype="https://schema.org/VideoObject"
+>
+	<h1>{{
+		group.date_friendly
+	}} <span itemprop="name">{{
+		external.title
+	}}</span></h1>
+	<ol>
+	{% for line in external.embed_data %}
+		<li itemprop="hasPart" itemscope itemtype="https://schema.org/Clip">
+			<a
+				rel="noopener"
+				target="_blank"
+				href="{{line.link}}"
+				itemprop="url"
+			>{{line.started_formated}}</a>
+			{% if line.has_captions %}<a
+				itemprop="url"
+				href="{{line.has_captions}}"
+			>{% endif %}<span itemprop="name">{{line.title}}</span>{%
+				if line.has_captions
+			%}</a>{% endif %}
+			<meta itemprop="startOffset" content="{{line.start}}">
+			{% if line.end %}
+			<meta itemprop="endOffset" content="{{line.end}}">
+			{% endif %}
+		</li>
+	{% endfor %}
+	</ol>
+	<meta itemprop="contentUrl" content="{{external.contentUrl}}">
+	{% if external.description %}
+	<meta itemprop="description" content="{{external.description}}">
+	{% else %}
+	<meta itemprop="description" content="clips from {{external.title}}">
+	{% endif %}
+	<meta itemprop="uploadDate" content="{{group.date}}">
+	{% if external.thumbnail %}
+	<meta itemprop="thumbnailUrl" content="{{external.thumbnail}}">
+	{% endif %}
+</section>
+{% endfor %}
