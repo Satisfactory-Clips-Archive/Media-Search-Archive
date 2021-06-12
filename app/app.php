@@ -205,7 +205,7 @@ foreach(get_externals() as $date => $externals_data_groups) {
 		$externals_for_json = [
 			'title' => $data_for_external['title'],
 			'embed_data' => [],
-			'contentUrl' => timestamp_link($video_id, 0),
+			'contentUrl' => timestamp_link($video_id, -1),
 			'thumbnail' => false,
 		];
 
