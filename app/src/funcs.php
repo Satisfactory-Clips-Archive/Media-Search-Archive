@@ -1223,6 +1223,19 @@ function captions(
 		return [];
 	}
 
+	$captions_cache_file =
+		__DIR__
+		. '/../captions-cache/'
+		. $video_id
+		. '.json';
+
+	if (is_file($captions_cache_file)) {
+		return json_decode(
+			file_get_contents($captions_cache_file),
+			true
+		);
+	}
+
 	if (array_key_exists(0, $maybe) && null === $maybe[0]) {
 		/**
 		 * @var list<ITEM>
@@ -1378,6 +1391,15 @@ function captions(
 	$lines = $process_chunks($lines, $chunks);
 
 	$chunk = implode("\n", $lines);
+
+	file_put_contents($captions_cache_file, str_replace(
+		PHP_EOL,
+		"\n",
+		json_encode(
+			$lines,
+			JSON_PRETTY_PRINT
+		)
+	));
 
 	return $lines;
 }

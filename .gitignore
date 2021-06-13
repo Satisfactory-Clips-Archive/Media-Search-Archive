@@ -15,6 +15,7 @@
 /app/*-auth.json
 /.php_cs.cache
 /app/captions/
+/app/captions-cache/
 /app/cache.json
 /app/topics-satisfactory.json
 /app/lunr/
