@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-06-13
+* fixed specific case where video sorting did not behave as expected
+
 ## 2021-06-11
 * finally render related videos into the transcription pages
 * added "Subnautica" and "Crossovers" topics

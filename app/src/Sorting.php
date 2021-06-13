@@ -121,6 +121,52 @@ class Sorting
 			if (
 				$a_id === $b_id
 				&& isset($this->cache['playlists'][$a_id])
+				&& false === array_search(
+					$a,
+					$this->cache['playlists'][$a_id][2],
+					true
+				)
+				&& false === array_search(
+					$b,
+					$this->cache['playlists'][$b_id][2],
+					true
+				)
+			) {
+				$maybe_other = array_filter(
+					$this->playlists_date_ref,
+					function (
+						string $value,
+						string $key
+					) use (
+						$a,
+						$b,
+						$a_date
+					) : bool {
+						return
+							$value === $a_date
+							&& $key !== $a_date
+							&& in_array(
+								$a,
+								$this->cache['playlists'][$key][2],
+								true
+							)
+							&& in_array(
+								$b,
+								$this->cache['playlists'][$key][2],
+								true
+							);
+					},
+					ARRAY_FILTER_USE_BOTH
+				);
+
+				if (1 === count($maybe_other)) {
+					$a_id = $b_id = key($maybe_other);
+				}
+			}
+
+			if (
+				$a_id === $b_id
+				&& isset($this->cache['playlists'][$a_id])
 			) {
 				return
 					array_search(

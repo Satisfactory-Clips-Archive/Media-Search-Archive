@@ -21202,67 +21202,6 @@
         ],
         "duplicatedby": "aIproPDd8V0"
     },
-    "s1ibMeMeBT8": {
-        "title": "Q&A: Does the Packager also do unpacking?",
-        "date": "2020-10-27",
-        "topics": [
-            "features\/buildings\/packager",
-            "satisfactory-updates\/released\/satisfactory-fluids-update"
-        ],
-        "duplicates": [
-            "usWp2cMLGwE"
-        ],
-        "seealso": [
-            "yt-iahxEfLCFWU,101.66823333333333,162.12863333333334"
-        ]
-    },
-    "2VPFgDYAwLc": {
-        "title": "Q&A: Are we going to be releasing a video with the Fluids Update?",
-        "date": "2020-10-27",
-        "topics": [
-            "satisfactory-updates\/released\/satisfactory-fluids-update"
-        ]
-    },
-    "yYgOLddw8nY": {
-        "title": "Q&A: What was with the song?",
-        "date": "2020-10-27",
-        "topics": [
-            "satisfactory-updates\/released\/satisfactory-fluids-update",
-            "satisfactory-updates\/teasers-trailers"
-        ]
-    },
-    "qDzU3niTLPI": {
-        "title": "Q&A: Are Mods okay on Experimental?",
-        "date": "2020-10-27",
-        "topics": [
-            "mods"
-        ]
-    },
-    "q23PowF0dXM": {
-        "title": "Q&A: The pipes thing- is that a reskin?",
-        "date": "2020-10-27",
-        "topics": [
-            "features\/fluids\/pipes",
-            "satisfactory-updates\/released\/satisfactory-fluids-update"
-        ],
-        "seealso": [
-            "2BJzwTVi_Ww"
-        ]
-    },
-    "d9u5Na0jBfo": {
-        "title": "Q&A: Can I play my Early Access save on Experimental?",
-        "date": "2020-10-27",
-        "topics": [],
-        "duplicatedby": "yt-F-q3vfj__M4,112.71260000000001,182.71586666666667"
-    },
-    "OSM9wYZLbjk": {
-        "title": "Q&A: Is this (Fluid Updates) coming in Update 4?",
-        "date": "2020-10-27",
-        "topics": [
-            "satisfactory-updates\/released\/satisfactory-fluids-update",
-            "satisfactory-updates\/released\/satisfactory-update-4"
-        ]
-    },
     "6KdakqhC8Q4": {
         "title": "Q&A: Can you make it so we can use closed Conveyor Belts to help with Rendering?",
         "date": "2020-10-27",
@@ -21272,43 +21211,13 @@
         ],
         "duplicatedby": "JDJ5hvAkrWw"
     },
-    "UGymBt3-jxU": {
-        "title": "Q&A: What are the technical reasons (behind 600upm limit on pipes)?",
+    "O9cRWaKhSRo": {
+        "title": "Q&A: What about a new Map?",
         "date": "2020-10-27",
         "topics": [
-            "features\/fluids\/pipes",
-            "satisfactory-updates\/released\/satisfactory-fluids-update"
+            "environment\/world-map"
         ],
-        "seealso": [
-            "SiU_cgb0XhI"
-        ]
-    },
-    "JSAcfBylMmA": {
-        "title": "Q&A: Any word on merging platforms to reduce object count?",
-        "date": "2020-10-27",
-        "topics": [
-            "technology\/graphics"
-        ]
-    },
-    "lSeLNlkKo1w": {
-        "title": "Q&A: Is ADA computer generated or a voice actress?",
-        "date": "2020-10-27",
-        "topics": [
-            "story-lore\/characters\/ada"
-        ],
-        "duplicatedby": "pDGX-8_vTW0"
-    },
-    "dh0tcSlSjNE": {
-        "title": "Q&A: What was the Mystery Machine?",
-        "date": "2020-10-27",
-        "topics": [
-            "features\/buildings\/packager",
-            "satisfactory-updates\/released\/satisfactory-fluids-update"
-        ],
-        "seealso": [
-            "x07FQZjbA_c",
-            "yt-iahxEfLCFWU,101.66823333333333,162.12863333333334"
-        ]
+        "duplicatedby": "yR31iCrXx4w"
     },
     "WUyc9WI1DBc": {
         "title": "Q&A: Can Mk.1 Pump push 600upm through Mk.2 Pipes?",
@@ -21325,23 +21234,28 @@
             "sXfGrrX3E0E"
         ]
     },
-    "TbPMkoLwW4U": {
-        "title": "Q&A: Will we see performance improvements?",
+    "lSeLNlkKo1w": {
+        "title": "Q&A: Is ADA computer generated or a voice actress?",
         "date": "2020-10-27",
         "topics": [
-            "features\/multiplayer",
-            "satisfactory-updates\/released\/satisfactory-fluids-update",
-            "technology\/graphics"
+            "story-lore\/characters\/ada"
+        ],
+        "duplicatedby": "pDGX-8_vTW0"
+    },
+    "qDzU3niTLPI": {
+        "title": "Q&A: Are Mods okay on Experimental?",
+        "date": "2020-10-27",
+        "topics": [
+            "mods"
         ]
     },
-    "jtLq06ZLwEY": {
-        "title": "Q&A: Will there be Modular Build introduced in this Update?",
+    "yYgOLddw8nY": {
+        "title": "Q&A: What was with the song?",
         "date": "2020-10-27",
         "topics": [
-            "satisfactory-updates\/modular-build",
-            "satisfactory-updates\/released\/satisfactory-fluids-update"
-        ],
-        "replacedby": "uL_cajdKTcg"
+            "satisfactory-updates\/released\/satisfactory-fluids-update",
+            "satisfactory-updates\/teasers-trailers"
+        ]
     },
     "unAf5J6OtDE": {
         "title": "Q&A: Talking about Engine Update, was that Unreal Engine 5?",
@@ -21352,6 +21266,31 @@
             "technology\/unreal-engine\/unreal-engine-5"
         ],
         "duplicatedby": "ZvVALD7ZCOA"
+    },
+    "8I6SrlovQvo": {
+        "title": "Q&A: When you have 200,000 Foundations, Walls would be good too.",
+        "date": "2020-10-27",
+        "topics": [
+            "features\/buildables\/foundations",
+            "features\/buildables\/walls",
+            "features\/unplanned-features\/mass-building",
+            "technology\/graphics"
+        ]
+    },
+    "JSAcfBylMmA": {
+        "title": "Q&A: Any word on merging platforms to reduce object count?",
+        "date": "2020-10-27",
+        "topics": [
+            "technology\/graphics"
+        ]
+    },
+    "ez909nY4cQI": {
+        "title": "Q&A: Any plans to let us cycle through Foundation thickness with the R key?",
+        "date": "2020-10-27",
+        "topics": [
+            "features\/buildables\/foundations",
+            "technology\/user-interface"
+        ]
     },
     "jfn3FOb5Jdw": {
         "title": "Q&A: What about Multiplayer Updates?",
@@ -21364,14 +21303,87 @@
         ],
         "duplicatedby": "doX5Pn5A6Tc"
     },
-    "UKbF_tNNin0": {
-        "title": "Q&A: Patch Notes",
+    "j79cJptq5h8": {
+        "title": "Q&A: Fluid Sink ever going to happen?",
         "date": "2020-10-27",
         "topics": [
+            "features\/buildings",
+            "features\/buildings\/awesome-sink",
+            "features\/fluids"
+        ],
+        "duplicatedby": "FQqUQHMw4QA"
+    },
+    "jtLq06ZLwEY": {
+        "title": "Q&A: Will there be Modular Build introduced in this Update?",
+        "date": "2020-10-27",
+        "topics": [
+            "satisfactory-updates\/modular-build",
+            "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "replacedby": "uL_cajdKTcg"
+    },
+    "UGymBt3-jxU": {
+        "title": "Q&A: What are the technical reasons (behind 600upm limit on pipes)?",
+        "date": "2020-10-27",
+        "topics": [
+            "features\/fluids\/pipes",
             "satisfactory-updates\/released\/satisfactory-fluids-update"
         ],
         "seealso": [
-            "yt-Gdz6SUv9Om4,15345.195156,15370.710615"
+            "SiU_cgb0XhI"
+        ]
+    },
+    "q23PowF0dXM": {
+        "title": "Q&A: The pipes thing- is that a reskin?",
+        "date": "2020-10-27",
+        "topics": [
+            "features\/fluids\/pipes",
+            "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "seealso": [
+            "2BJzwTVi_Ww"
+        ]
+    },
+    "s1ibMeMeBT8": {
+        "title": "Q&A: Does the Packager also do unpacking?",
+        "date": "2020-10-27",
+        "topics": [
+            "features\/buildings\/packager",
+            "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "duplicates": [
+            "usWp2cMLGwE"
+        ],
+        "seealso": [
+            "yt-iahxEfLCFWU,101.66823333333333,162.12863333333334"
+        ]
+    },
+    "TbPMkoLwW4U": {
+        "title": "Q&A: Will we see performance improvements?",
+        "date": "2020-10-27",
+        "topics": [
+            "features\/multiplayer",
+            "satisfactory-updates\/released\/satisfactory-fluids-update",
+            "technology\/graphics"
+        ]
+    },
+    "dh0tcSlSjNE": {
+        "title": "Q&A: What was the Mystery Machine?",
+        "date": "2020-10-27",
+        "topics": [
+            "features\/buildings\/packager",
+            "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "seealso": [
+            "x07FQZjbA_c",
+            "yt-iahxEfLCFWU,101.66823333333333,162.12863333333334"
+        ]
+    },
+    "2VPFgDYAwLc": {
+        "title": "Q&A: Are we going to be releasing a video with the Fluids Update?",
+        "date": "2020-10-27",
+        "topics": [
+            "satisfactory-updates\/released\/satisfactory-fluids-update"
         ]
     },
     "2BJzwTVi_Ww": {
@@ -21388,41 +21400,29 @@
             "q23PowF0dXM"
         ]
     },
-    "ez909nY4cQI": {
-        "title": "Q&A: Any plans to let us cycle through Foundation thickness with the R key?",
+    "UKbF_tNNin0": {
+        "title": "Q&A: Patch Notes",
         "date": "2020-10-27",
         "topics": [
-            "features\/buildables\/foundations",
-            "technology\/user-interface"
+            "satisfactory-updates\/released\/satisfactory-fluids-update"
+        ],
+        "seealso": [
+            "yt-Gdz6SUv9Om4,15345.195156,15370.710615"
         ]
     },
-    "8I6SrlovQvo": {
-        "title": "Q&A: When you have 200,000 Foundations, Walls would be good too.",
+    "d9u5Na0jBfo": {
+        "title": "Q&A: Can I play my Early Access save on Experimental?",
+        "date": "2020-10-27",
+        "topics": [],
+        "duplicatedby": "yt-F-q3vfj__M4,112.71260000000001,182.71586666666667"
+    },
+    "OSM9wYZLbjk": {
+        "title": "Q&A: Is this (Fluid Updates) coming in Update 4?",
         "date": "2020-10-27",
         "topics": [
-            "features\/buildables\/foundations",
-            "features\/buildables\/walls",
-            "features\/unplanned-features\/mass-building",
-            "technology\/graphics"
+            "satisfactory-updates\/released\/satisfactory-fluids-update",
+            "satisfactory-updates\/released\/satisfactory-update-4"
         ]
-    },
-    "j79cJptq5h8": {
-        "title": "Q&A: Fluid Sink ever going to happen?",
-        "date": "2020-10-27",
-        "topics": [
-            "features\/buildings",
-            "features\/buildings\/awesome-sink",
-            "features\/fluids"
-        ],
-        "duplicatedby": "FQqUQHMw4QA"
-    },
-    "O9cRWaKhSRo": {
-        "title": "Q&A: What about a new Map?",
-        "date": "2020-10-27",
-        "topics": [
-            "environment\/world-map"
-        ],
-        "duplicatedby": "yR31iCrXx4w"
     },
     "Kjvxn4xcr0A": {
         "title": "Q&A: Any chance of DRM-free release?",
@@ -31089,390 +31089,6 @@
             "zHYxze67E28"
         ]
     },
-    "cONX37SiszU": {
-        "title": "Q&A: Favourite problem to solve in the UI so far?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/nathalie",
-            "features\/crafting",
-            "technology\/user-interface"
-        ]
-    },
-    "diuFSFaPAJ4": {
-        "title": "Q&A: Does Simon even like the game?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/simon"
-        ]
-    },
-    "caJMcQ-Z0eE": {
-        "title": "Q&A: Are there any plans on releasing these arts?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/jace",
-            "merch"
-        ]
-    },
-    "L5MBf2GoTxQ": {
-        "title": "Q&A: Can Jace smile for us?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/jace"
-        ],
-        "replaces": [
-            "yt-Dtm6xIj-wM4,2388.716191,2413.575214"
-        ],
-        "seealso": [
-            "yt-S_AKfh38880,,73.8"
-        ]
-    },
-    "Qonz6WXDEeM": {
-        "title": "Q&A: Are there any plans of adding Keanu Reeves to Satisfactory?",
-        "date": "2019-12-19",
-        "topics": [],
-        "duplicatedby": "w3aiQMS3xBA"
-    },
-    "gcdDfoBWaog": {
-        "title": "Q&A: Is Hannah working on a new level?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/hannah",
-            "environment\/world-map"
-        ],
-        "seealso": [
-            "sDZjuyYO-zE",
-            "y8FchPasYvI",
-            "yR31iCrXx4w",
-            "yt-CB9bSigNYH8,266.6333333333333,359.388323"
-        ]
-    },
-    "cuGHH7KF9BI": {
-        "title": "Q&A: Will there be larger underground spaces?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/possible-features\/underground-biome"
-        ],
-        "replacedby": "zho1Gn_x76w"
-    },
-    "mFxik_NlE0w": {
-        "title": "Q&A: Is there going to be a storyline?",
-        "date": "2019-12-19",
-        "topics": [
-            "story-lore"
-        ],
-        "duplicatedby": "U1s8L1JR36Q"
-    },
-    "pRuIjTp-u5I": {
-        "title": "Q&A: Improve Vehicles in general?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/transportation\/vehicles"
-        ],
-        "duplicatedby": "79CHl9qFo90"
-    },
-    "06YaY3zGZeg": {
-        "title": "Q&A: Are there any Easter Eggs in the landscape?",
-        "date": "2019-12-19",
-        "topics": [
-            "easter-eggs",
-            "environment\/world-map"
-        ],
-        "duplicatedby": "57Cc22ZK5aw"
-    },
-    "yRdv_AYUVR4": {
-        "title": "Q&A: How is Simon so jacked?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/simon",
-            "off-topic"
-        ],
-        "seealso": [
-            "VkIGrj60KtI",
-            "yt--JXPsTlJIiI,791.4573333333334,808.0739333333333"
-        ]
-    },
-    "HGwoBSLqtcw": {
-        "title": "Q&A: Human Elevators?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/requested-features\/elevators"
-        ],
-        "duplicatedby": "snzgCf54CIQ"
-    },
-    "HI6jRWp82Dg": {
-        "title": "Q&A: Are you going to delete the bugs?",
-        "date": "2019-12-19",
-        "topics": []
-    },
-    "BEOwkK8suFc": {
-        "title": "Q&A: Can Birk slap Jace?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/birk",
-            "coffee-stainers\/jace",
-            "off-topic"
-        ]
-    },
-    "pkYEJmwJWrg": {
-        "title": "Q&A: Hotbars?",
-        "date": "2019-12-19",
-        "topics": [
-            "technology\/user-interface"
-        ],
-        "seealso": [
-            "MUBE6tb7AjQ",
-            "xwwx4N37G8M"
-        ]
-    },
-    "Fb6JnI4Bb4I": {
-        "title": "Q&A: Give us a flight vehicle?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/transportation\/vehicles",
-            "features\/unplanned-features\/aerial-travel"
-        ],
-        "duplicatedby": "E-c_NfjMqUM"
-    },
-    "f3TtRJWOI2Q": {
-        "title": "Q&A: How about personal elevators?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/requested-features\/elevators"
-        ],
-        "duplicatedby": "snzgCf54CIQ"
-    },
-    "Zlq2K0-z0_8": {
-        "title": "Q&A: Is there going to be a central computer plant where you can check the whole production?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/buildings\/the-hub",
-            "technology\/user-interface"
-        ],
-        "duplicatedby": "tHzH3dkTZ4s"
-    },
-    "pm7VqpwLgEE": {
-        "title": "Q&A: How much Swedish do you need to know to work at a Swedish company?",
-        "date": "2019-12-19",
-        "topics": [],
-        "seealso": [
-            "0X8cNWXohRY",
-            "QHqLDc6L46g"
-        ]
-    },
-    "qFYvqvrAFf8": {
-        "title": "Q&A: Has Simon tried key pizza?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/simon",
-            "off-topic\/pizza"
-        ],
-        "seealso": [
-            "dj20zgoTvA0",
-            "t9_0R3vkYOk",
-            "Xv-yl9jnC4s"
-        ]
-    },
-    "RlSL5DONzns": {
-        "title": "Q&A: Does it mean we get Goats?",
-        "date": "2019-12-19",
-        "topics": [
-            "environment\/creatures",
-            "off-topic\/goat-simulator"
-        ],
-        "duplicatedby": "KlD55eNxra0"
-    },
-    "RbDtGuXHEH0": {
-        "title": "Q&A: Bananas on Pizza?",
-        "date": "2019-12-19",
-        "topics": [
-            "off-topic\/pizza"
-        ],
-        "seealso": [
-            "cWHt7D471vI"
-        ]
-    },
-    "r4TS6nRxy9k": {
-        "title": "Q&A: Colour blind accessibility stuff?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/accessibility",
-            "technology\/user-interface"
-        ],
-        "seealso": [
-            "4acLhZvD1PU",
-            "tc-CrepuscularInterestingWerewolfBCWarrior",
-            "tc-DignifiedSmoggyKathyAMPEnergyCherry",
-            "tc-FurtiveConcernedPuppySMOrc",
-            "tc-PrettiestBloodyBadgerDendiFace"
-        ]
-    },
-    "sn0yrFw_Lfw": {
-        "title": "Q&A: Can we put the \"Nani\u203d\" back in?",
-        "date": "2019-12-19",
-        "topics": [
-            "easter-eggs",
-            "features\/crafting",
-            "technology\/user-interface"
-        ]
-    },
-    "UDguGGIxs3c": {
-        "title": "Q&A: Can we deform the terrain?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/unplanned-features\/terraforming"
-        ],
-        "duplicatedby": "_fE2dbyaJZg"
-    },
-    "A8P2p-jaPho": {
-        "title": "Q&A: Beta Keys?",
-        "date": "2019-12-19",
-        "topics": [],
-        "seealso": [
-            "Kuj7AhSysV8"
-        ]
-    },
-    "aeNPY1Wpos8": {
-        "title": "Q&A: Did you meet the makers of Space Engineers?",
-        "date": "2019-12-19",
-        "topics": [
-            "off-topic"
-        ],
-        "seealso": [
-            "1dxC-6nvkMY"
-        ]
-    },
-    "EBG0144tNiQ": {
-        "title": "Q&A: Do you know how much we love you?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/nathalie"
-        ],
-        "seealso": [
-            "ZSFnn5PWzpU"
-        ]
-    },
-    "KYox3m1mePU": {
-        "title": "Q&A: Have you considerd Flying Drones?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/transportation\/vehicles\/drones"
-        ],
-        "duplicatedby": "E-c_NfjMqUM"
-    },
-    "3YZMayi1Qec": {
-        "title": "Q&A: Will there be goats?",
-        "date": "2019-12-19",
-        "topics": [
-            "environment\/creatures"
-        ],
-        "duplicatedby": "KlD55eNxra0"
-    },
-    "QXK9y3pnWGg": {
-        "title": "Q&A: Underwater Worlds?",
-        "date": "2019-12-19",
-        "topics": [
-            "environment\/biomes\/unplanned-biomes\/underwater",
-            "environment\/world-map"
-        ],
-        "duplicatedby": "loc82lE_XK4"
-    },
-    "QGR8OUtf08c": {
-        "title": "Q&A: Will Birk take Snutt's hat & put it on?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/birk",
-            "coffee-stainers\/snutt",
-            "off-topic"
-        ],
-        "seealso": [
-            "lUszjzA7Rpc"
-        ]
-    },
-    "TfKysphS2S4": {
-        "title": "Q&A: Will we get a bigger World Map?",
-        "date": "2019-12-19",
-        "topics": [
-            "environment\/world-map"
-        ],
-        "duplicatedby": "3Vm_v02GWco"
-    },
-    "TFg_ppmX8OE": {
-        "title": "Q&A: Will price go up after Early Access ends?",
-        "date": "2019-12-19",
-        "topics": [
-            "retail\/early-access",
-            "satisfactory-updates\/pending\/satisfactory-1-0"
-        ],
-        "duplicates": [
-            "RVdtG9yWW68",
-            "yt-Dtm6xIj-wM4,354.60912,371.76666666666665",
-            "yt-iFAy1NZUOGU,99.44,119.72"
-        ]
-    },
-    "krQI-cHEAl8": {
-        "title": "Q&A: Will Snutt carry on Jace's legacy thinking about Pipes?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/jace",
-            "coffee-stainers\/snutt",
-            "features\/fluids\/pipes"
-        ],
-        "seealso": [
-            "OsetK7Ww2zI"
-        ]
-    },
-    "zaE2VeeV2mY": {
-        "title": "Q&A: What is the job of Community Managers?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/jace",
-            "coffee-stainers\/snutt",
-            "community"
-        ],
-        "seealso": [
-            "VeGSy0F0mVY",
-            "vr0RPVS158o"
-        ]
-    },
-    "ZyYaL3ubiHY": {
-        "title": "Q&A: What was Birk doing before coming to Coffee Stain?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/birk"
-        ],
-        "seealso": [
-            "L5P4V2YcjBc",
-            "yt-CB9bSigNYH8,2806.0333333333333,2883.561275"
-        ]
-    },
-    "yDZRa_7BTrU": {
-        "title": "Q&A: What would Hannah look for in an Environment Artist's portfolio?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/hannah"
-        ],
-        "seealso": [
-            "yt-CB9bSigNYH8,4977.019619,4987.213353"
-        ]
-    },
-    "SYWPIjbe_4Y": {
-        "title": "Q&A: Will Mercer Spheres and Somersloops be useful soon?",
-        "date": "2019-12-19",
-        "topics": [
-            "environment\/resources\/mercer-sphere",
-            "environment\/resources\/somersloop",
-            "story-lore"
-        ],
-        "duplicatedby": "jBOgtsE6VYQ"
-    },
-    "aOzSvX8iaYg": {
-        "title": "Q&A: Who is the voice of A.D.A. ?",
-        "date": "2019-12-19",
-        "topics": [
-            "story-lore\/characters\/ada"
-        ],
-        "duplicatedby": "pDGX-8_vTW0"
-    },
     "weWtkbvOxdU": {
         "title": "Q&A: Which one was Simon's favourite Simon Saga video?",
         "date": "2019-12-19",
@@ -31482,31 +31098,6 @@
         ],
         "seealso": [
             "t9_0R3vkYOk"
-        ]
-    },
-    "gHZsodBmCms": {
-        "title": "Q&A: We want a Simon body pillow?",
-        "date": "2019-12-19",
-        "topics": [
-            "merch"
-        ],
-        "seealso": [
-            "FlOFnqAw5go"
-        ]
-    },
-    "vn8SMPtHoJM": {
-        "title": "Q&A: Why does Hannah look like Billie Eilish?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/hannah"
-        ]
-    },
-    "I5HA-EknTDo": {
-        "title": "Q&A: Did Coffee Stain start in Sk\u00f6vde?",
-        "date": "2019-12-19",
-        "topics": [],
-        "seealso": [
-            "l2URp9VhoTU"
         ]
     },
     "o3Nr13tH7dY": {
@@ -31524,16 +31115,117 @@
             "xq7HQ_tIkbY"
         ]
     },
-    "bNX04zqQ-uY": {
-        "title": "Q&A: No Coffee in Coffee Stain?",
+    "Zlq2K0-z0_8": {
+        "title": "Q&A: Is there going to be a central computer plant where you can check the whole production?",
         "date": "2019-12-19",
         "topics": [
+            "features\/buildings\/the-hub",
+            "technology\/user-interface"
+        ],
+        "duplicatedby": "tHzH3dkTZ4s"
+    },
+    "HGwoBSLqtcw": {
+        "title": "Q&A: Human Elevators?",
+        "date": "2019-12-19",
+        "topics": [
+            "features\/requested-features\/elevators"
+        ],
+        "duplicatedby": "snzgCf54CIQ"
+    },
+    "diuFSFaPAJ4": {
+        "title": "Q&A: Does Simon even like the game?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/simon"
+        ]
+    },
+    "qFYvqvrAFf8": {
+        "title": "Q&A: Has Simon tried key pizza?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/simon",
+            "off-topic\/pizza"
+        ],
+        "seealso": [
+            "dj20zgoTvA0",
+            "t9_0R3vkYOk",
+            "Xv-yl9jnC4s"
+        ]
+    },
+    "yRdv_AYUVR4": {
+        "title": "Q&A: How is Simon so jacked?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/simon",
             "off-topic"
         ],
         "seealso": [
-            "7ICCduhRHfw",
-            "yt-Zo2ybvs7keI,492.44,502.32"
+            "VkIGrj60KtI",
+            "yt--JXPsTlJIiI,791.4573333333334,808.0739333333333"
         ]
+    },
+    "3YZMayi1Qec": {
+        "title": "Q&A: Will there be goats?",
+        "date": "2019-12-19",
+        "topics": [
+            "environment\/creatures"
+        ],
+        "duplicatedby": "KlD55eNxra0"
+    },
+    "SYWPIjbe_4Y": {
+        "title": "Q&A: Will Mercer Spheres and Somersloops be useful soon?",
+        "date": "2019-12-19",
+        "topics": [
+            "environment\/resources\/mercer-sphere",
+            "environment\/resources\/somersloop",
+            "story-lore"
+        ],
+        "duplicatedby": "jBOgtsE6VYQ"
+    },
+    "irJw2itG4wM": {
+        "title": "Q&A: S.A.M. Ore?",
+        "date": "2019-12-19",
+        "topics": [
+            "environment\/resources\/sam-ore"
+        ],
+        "duplicatedby": "pSqiS44lqIg"
+    },
+    "sMGWvbL09qA": {
+        "title": "Q&A: Will there be more competitive stuff?",
+        "date": "2019-12-19",
+        "topics": [
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/game-modes",
+            "mods\/mods-vs-features"
+        ],
+        "duplicatedby": "rtOmNkt5whw"
+    },
+    "aOzSvX8iaYg": {
+        "title": "Q&A: Who is the voice of A.D.A. ?",
+        "date": "2019-12-19",
+        "topics": [
+            "story-lore\/characters\/ada"
+        ],
+        "duplicatedby": "pDGX-8_vTW0"
+    },
+    "RbDtGuXHEH0": {
+        "title": "Q&A: Bananas on Pizza?",
+        "date": "2019-12-19",
+        "topics": [
+            "off-topic\/pizza"
+        ],
+        "seealso": [
+            "cWHt7D471vI"
+        ]
+    },
+    "QXK9y3pnWGg": {
+        "title": "Q&A: Underwater Worlds?",
+        "date": "2019-12-19",
+        "topics": [
+            "environment\/biomes\/unplanned-biomes\/underwater",
+            "environment\/world-map"
+        ],
+        "duplicatedby": "loc82lE_XK4"
     },
     "Xv-yl9jnC4s": {
         "title": "Q&A: What happened to the keys?",
@@ -31545,6 +31237,203 @@
         "seealso": [
             "dj20zgoTvA0",
             "t9_0R3vkYOk"
+        ]
+    },
+    "pRuIjTp-u5I": {
+        "title": "Q&A: Improve Vehicles in general?",
+        "date": "2019-12-19",
+        "topics": [
+            "features\/transportation\/vehicles"
+        ],
+        "duplicatedby": "79CHl9qFo90"
+    },
+    "f3TtRJWOI2Q": {
+        "title": "Q&A: How about personal elevators?",
+        "date": "2019-12-19",
+        "topics": [
+            "features\/requested-features\/elevators"
+        ],
+        "duplicatedby": "snzgCf54CIQ"
+    },
+    "mmaqnomYjFQ": {
+        "title": "Q&A: Snutt Jace's baby Community Manager?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt",
+            "community"
+        ],
+        "seealso": [
+            "vr0RPVS158o"
+        ]
+    },
+    "KYox3m1mePU": {
+        "title": "Q&A: Have you considerd Flying Drones?",
+        "date": "2019-12-19",
+        "topics": [
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "duplicatedby": "E-c_NfjMqUM"
+    },
+    "ayGH9w3sEBo": {
+        "title": "Q&A: Vehicle Lifts?",
+        "date": "2019-12-19",
+        "topics": [
+            "features\/requested-features\/elevators",
+            "features\/transportation\/vehicles"
+        ],
+        "duplicatedby": "snzgCf54CIQ"
+    },
+    "byPiSQZOAhw": {
+        "title": "Q&A: Is there going to be a way to destroy the fart rock?",
+        "date": "2019-12-19",
+        "topics": [
+            "environment\/world-map",
+            "features\/gases"
+        ],
+        "duplicatedby": "zjpwvKcY2ss"
+    },
+    "ECP5Jvr7RSk": {
+        "title": "Q&A: What does a Technical Artist do?",
+        "date": "2019-12-19",
+        "topics": [],
+        "seealso": [
+            "yt-CG-63B4g11U,158.391799,232.364692",
+            "yt-omjFqZQV9fI,26.651097,87.75433333333334"
+        ]
+    },
+    "sDZjuyYO-zE": {
+        "title": "Q&A: What's Hannah's favourite part of level design?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/hannah",
+            "environment\/world-map"
+        ],
+        "seealso": [
+            "gcdDfoBWaog",
+            "y8FchPasYvI"
+        ]
+    },
+    "y8FchPasYvI": {
+        "title": "Q&A: What's Hannah's take on rocks that aren't on the ground?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/hannah",
+            "environment\/world-map",
+            "story-lore",
+            "trolling"
+        ],
+        "seealso": [
+            "gcdDfoBWaog",
+            "sDZjuyYO-zE"
+        ]
+    },
+    "UDguGGIxs3c": {
+        "title": "Q&A: Can we deform the terrain?",
+        "date": "2019-12-19",
+        "topics": [
+            "features\/unplanned-features\/terraforming"
+        ],
+        "duplicatedby": "_fE2dbyaJZg"
+    },
+    "cuGHH7KF9BI": {
+        "title": "Q&A: Will there be larger underground spaces?",
+        "date": "2019-12-19",
+        "topics": [
+            "features\/possible-features\/underground-biome"
+        ],
+        "replacedby": "zho1Gn_x76w"
+    },
+    "TfKysphS2S4": {
+        "title": "Q&A: Will we get a bigger World Map?",
+        "date": "2019-12-19",
+        "topics": [
+            "environment\/world-map"
+        ],
+        "duplicatedby": "3Vm_v02GWco"
+    },
+    "caJMcQ-Z0eE": {
+        "title": "Q&A: Are there any plans on releasing these arts?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/jace",
+            "merch"
+        ]
+    },
+    "Qonz6WXDEeM": {
+        "title": "Q&A: Are there any plans of adding Keanu Reeves to Satisfactory?",
+        "date": "2019-12-19",
+        "topics": [],
+        "duplicatedby": "w3aiQMS3xBA"
+    },
+    "aeNPY1Wpos8": {
+        "title": "Q&A: Did you meet the makers of Space Engineers?",
+        "date": "2019-12-19",
+        "topics": [
+            "off-topic"
+        ],
+        "seealso": [
+            "1dxC-6nvkMY"
+        ]
+    },
+    "mFxik_NlE0w": {
+        "title": "Q&A: Is there going to be a storyline?",
+        "date": "2019-12-19",
+        "topics": [
+            "story-lore"
+        ],
+        "duplicatedby": "U1s8L1JR36Q"
+    },
+    "06YaY3zGZeg": {
+        "title": "Q&A: Are there any Easter Eggs in the landscape?",
+        "date": "2019-12-19",
+        "topics": [
+            "easter-eggs",
+            "environment\/world-map"
+        ],
+        "duplicatedby": "57Cc22ZK5aw"
+    },
+    "mzJAHopMW8o": {
+        "title": "Q&A: What software does Nathalie use?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/nathalie"
+        ]
+    },
+    "sn0yrFw_Lfw": {
+        "title": "Q&A: Can we put the \"Nani\u203d\" back in?",
+        "date": "2019-12-19",
+        "topics": [
+            "easter-eggs",
+            "features\/crafting",
+            "technology\/user-interface"
+        ]
+    },
+    "cONX37SiszU": {
+        "title": "Q&A: Favourite problem to solve in the UI so far?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/nathalie",
+            "features\/crafting",
+            "technology\/user-interface"
+        ]
+    },
+    "I5HA-EknTDo": {
+        "title": "Q&A: Did Coffee Stain start in Sk\u00f6vde?",
+        "date": "2019-12-19",
+        "topics": [],
+        "seealso": [
+            "l2URp9VhoTU"
+        ]
+    },
+    "yDZRa_7BTrU": {
+        "title": "Q&A: What would Hannah look for in an Environment Artist's portfolio?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/hannah"
+        ],
+        "seealso": [
+            "yt-CB9bSigNYH8,4977.019619,4987.213353"
         ]
     },
     "Pum1v7HDgzU": {
@@ -31561,64 +31450,88 @@
             "yt-Dtm6xIj-wM4,3289.36842,3333.678121"
         ]
     },
-    "ECP5Jvr7RSk": {
-        "title": "Q&A: What does a Technical Artist do?",
-        "date": "2019-12-19",
-        "topics": [],
-        "seealso": [
-            "yt-CG-63B4g11U,158.391799,232.364692",
-            "yt-omjFqZQV9fI,26.651097,87.75433333333334"
-        ]
-    },
-    "sMGWvbL09qA": {
-        "title": "Q&A: Will there be more competitive stuff?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/buildings\/the-hub",
-            "features\/possible-features\/game-modes",
-            "mods\/mods-vs-features"
-        ],
-        "duplicatedby": "rtOmNkt5whw"
-    },
-    "ayGH9w3sEBo": {
-        "title": "Q&A: Vehicle Lifts?",
-        "date": "2019-12-19",
-        "topics": [
-            "features\/requested-features\/elevators",
-            "features\/transportation\/vehicles"
-        ],
-        "duplicatedby": "snzgCf54CIQ"
-    },
-    "mmaqnomYjFQ": {
-        "title": "Q&A: Snutt Jace's baby Community Manager?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/jace",
-            "coffee-stainers\/snutt",
-            "community"
-        ],
-        "seealso": [
-            "vr0RPVS158o"
-        ]
-    },
-    "sDZjuyYO-zE": {
-        "title": "Q&A: What's Hannah's favourite part of level design?",
+    "gcdDfoBWaog": {
+        "title": "Q&A: Is Hannah working on a new level?",
         "date": "2019-12-19",
         "topics": [
             "coffee-stainers\/hannah",
             "environment\/world-map"
         ],
         "seealso": [
-            "gcdDfoBWaog",
-            "y8FchPasYvI"
+            "sDZjuyYO-zE",
+            "y8FchPasYvI",
+            "yR31iCrXx4w",
+            "yt-CB9bSigNYH8,266.6333333333333,359.388323"
         ]
     },
-    "mzJAHopMW8o": {
-        "title": "Q&A: What software does Nathalie use?",
+    "vn8SMPtHoJM": {
+        "title": "Q&A: Why does Hannah look like Billie Eilish?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/hannah"
+        ]
+    },
+    "krQI-cHEAl8": {
+        "title": "Q&A: Will Snutt carry on Jace's legacy thinking about Pipes?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt",
+            "features\/fluids\/pipes"
+        ],
+        "seealso": [
+            "OsetK7Ww2zI"
+        ]
+    },
+    "EBG0144tNiQ": {
+        "title": "Q&A: Do you know how much we love you?",
         "date": "2019-12-19",
         "topics": [
             "coffee-stainers\/nathalie"
+        ],
+        "seealso": [
+            "ZSFnn5PWzpU"
         ]
+    },
+    "pkYEJmwJWrg": {
+        "title": "Q&A: Hotbars?",
+        "date": "2019-12-19",
+        "topics": [
+            "technology\/user-interface"
+        ],
+        "seealso": [
+            "MUBE6tb7AjQ",
+            "xwwx4N37G8M"
+        ]
+    },
+    "HI6jRWp82Dg": {
+        "title": "Q&A: Are you going to delete the bugs?",
+        "date": "2019-12-19",
+        "topics": []
+    },
+    "r4TS6nRxy9k": {
+        "title": "Q&A: Colour blind accessibility stuff?",
+        "date": "2019-12-19",
+        "topics": [
+            "features\/accessibility",
+            "technology\/user-interface"
+        ],
+        "seealso": [
+            "4acLhZvD1PU",
+            "tc-CrepuscularInterestingWerewolfBCWarrior",
+            "tc-DignifiedSmoggyKathyAMPEnergyCherry",
+            "tc-FurtiveConcernedPuppySMOrc",
+            "tc-PrettiestBloodyBadgerDendiFace"
+        ]
+    },
+    "Fb6JnI4Bb4I": {
+        "title": "Q&A: Give us a flight vehicle?",
+        "date": "2019-12-19",
+        "topics": [
+            "features\/transportation\/vehicles",
+            "features\/unplanned-features\/aerial-travel"
+        ],
+        "duplicatedby": "E-c_NfjMqUM"
     },
     "QVQZ2qgtTsQ": {
         "title": "Q&A: Satisfactory on Switch?",
@@ -31628,36 +31541,123 @@
         ],
         "duplicatedby": "u1rxQ_Hwo-U"
     },
-    "irJw2itG4wM": {
-        "title": "Q&A: S.A.M. Ore?",
+    "TFg_ppmX8OE": {
+        "title": "Q&A: Will price go up after Early Access ends?",
         "date": "2019-12-19",
         "topics": [
-            "environment\/resources\/sam-ore"
+            "retail\/early-access",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "pSqiS44lqIg"
-    },
-    "y8FchPasYvI": {
-        "title": "Q&A: What's Hannah's take on rocks that aren't on the ground?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/hannah",
-            "environment\/world-map",
-            "story-lore",
-            "trolling"
-        ],
-        "seealso": [
-            "gcdDfoBWaog",
-            "sDZjuyYO-zE"
+        "duplicates": [
+            "RVdtG9yWW68",
+            "yt-Dtm6xIj-wM4,354.60912,371.76666666666665",
+            "yt-iFAy1NZUOGU,99.44,119.72"
         ]
     },
-    "byPiSQZOAhw": {
-        "title": "Q&A: Is there going to be a way to destroy the fart rock?",
+    "QGR8OUtf08c": {
+        "title": "Q&A: Will Birk take Snutt's hat & put it on?",
         "date": "2019-12-19",
         "topics": [
-            "environment\/world-map",
-            "features\/gases"
+            "coffee-stainers\/birk",
+            "coffee-stainers\/snutt",
+            "off-topic"
         ],
-        "duplicatedby": "zjpwvKcY2ss"
+        "seealso": [
+            "lUszjzA7Rpc"
+        ]
+    },
+    "ZyYaL3ubiHY": {
+        "title": "Q&A: What was Birk doing before coming to Coffee Stain?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/birk"
+        ],
+        "seealso": [
+            "L5P4V2YcjBc",
+            "yt-CB9bSigNYH8,2806.0333333333333,2883.561275"
+        ]
+    },
+    "pm7VqpwLgEE": {
+        "title": "Q&A: How much Swedish do you need to know to work at a Swedish company?",
+        "date": "2019-12-19",
+        "topics": [],
+        "seealso": [
+            "0X8cNWXohRY",
+            "QHqLDc6L46g"
+        ]
+    },
+    "BEOwkK8suFc": {
+        "title": "Q&A: Can Birk slap Jace?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/birk",
+            "coffee-stainers\/jace",
+            "off-topic"
+        ]
+    },
+    "RlSL5DONzns": {
+        "title": "Q&A: Does it mean we get Goats?",
+        "date": "2019-12-19",
+        "topics": [
+            "environment\/creatures",
+            "off-topic\/goat-simulator"
+        ],
+        "duplicatedby": "KlD55eNxra0"
+    },
+    "L5MBf2GoTxQ": {
+        "title": "Q&A: Can Jace smile for us?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/jace"
+        ],
+        "replaces": [
+            "yt-Dtm6xIj-wM4,2388.716191,2413.575214"
+        ],
+        "seealso": [
+            "yt-S_AKfh38880,,73.8"
+        ]
+    },
+    "A8P2p-jaPho": {
+        "title": "Q&A: Beta Keys?",
+        "date": "2019-12-19",
+        "topics": [],
+        "seealso": [
+            "Kuj7AhSysV8"
+        ]
+    },
+    "zaE2VeeV2mY": {
+        "title": "Q&A: What is the job of Community Managers?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt",
+            "community"
+        ],
+        "seealso": [
+            "VeGSy0F0mVY",
+            "vr0RPVS158o"
+        ]
+    },
+    "gHZsodBmCms": {
+        "title": "Q&A: We want a Simon body pillow?",
+        "date": "2019-12-19",
+        "topics": [
+            "merch"
+        ],
+        "seealso": [
+            "FlOFnqAw5go"
+        ]
+    },
+    "bNX04zqQ-uY": {
+        "title": "Q&A: No Coffee in Coffee Stain?",
+        "date": "2019-12-19",
+        "topics": [
+            "off-topic"
+        ],
+        "seealso": [
+            "7ICCduhRHfw",
+            "yt-Zo2ybvs7keI,492.44,502.32"
+        ]
     },
     "yt-52nYaN8imgo,24.46,25.22": {
         "title": "Q&A: Early Access info, localisation, save files + more (March 2019)",
