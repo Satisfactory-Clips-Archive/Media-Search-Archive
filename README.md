@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2021-06-13
 * fixed specific case where video sorting did not behave as expected
+* sorted matching external video clips by start time
 
 ## 2021-06-12
 * partial implementation of structured data for clips

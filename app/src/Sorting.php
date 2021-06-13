@@ -164,6 +164,15 @@ class Sorting
 
 			if (
 				$a_id === $b_id
+				&& preg_match('/,\d+/', $a)
+				&& preg_match('/,\d+/', $b)
+			) {
+				[, $a_start] = explode(',', $a);
+				[, $b_start] = explode(',', $b);
+
+				return ((float) $a_start) <=> ((float) $b_start);
+			} elseif (
+				$a_id === $b_id
 				&& isset($this->cache['playlists'][$a_id])
 			) {
 				return
