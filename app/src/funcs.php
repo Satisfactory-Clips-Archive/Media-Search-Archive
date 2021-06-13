@@ -2729,10 +2729,10 @@ function determine_date_for_video(
 		if (null === $externals_unpacked) {
 			$externals_unpacked = [];
 
-			foreach (get_externals() as $date => $checking_here) {
-				foreach ($checking_here as $maybe) {
-					$externals_unpacked[$maybe[0]] = $date;
-				}
+			foreach (glob(__DIR__ . '/../data/*/*.csv') as $file) {
+				$externals_unpacked[
+					mb_substr(basename($file), 0, -4)
+				] = basename(dirname($file));
 			}
 		}
 

@@ -56,10 +56,9 @@
 * 2020-08-25: 11 of 134 questions found with no other references
 * 2020-08-18: 9 of 55 questions found with no other references
 * 2020-08-11: 1 of 38 questions found with no other references
-* 2020-07-30: 0 of 6 questions found with no other references
+* 2020-07-30: 0 of 11 questions found with no other references
 * 2020-07-28: 0 of 10 questions found with no other references
 * 2020-07-21: 0 of 5 questions found with no other references
-* 2020-07-08: 0 of 5 questions found with no other references
 * 2020-06-08: 3 of 39 questions found with no other references
 * 2020-05-19: 3 of 24 questions found with no other references
 * 2020-05-15: 2 of 34 questions found with no other references
