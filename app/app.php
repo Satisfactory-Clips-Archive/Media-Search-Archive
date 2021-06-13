@@ -211,7 +211,7 @@ foreach(get_externals() as $date => $externals_data_groups) {
 
 		if (preg_match('/^yt-/', vendor_prefixed_video_id($video_id))) {
 			$externals_for_json['thumbnail'] = sprintf(
-				'https://img.youtube.com/vi/%/hqdefault.jpg',
+				'https://img.youtube.com/vi/%s/hqdefault.jpg',
 				preg_replace('/,.*$/', '', mb_substr($video_id, 3))
 			);
 		}
