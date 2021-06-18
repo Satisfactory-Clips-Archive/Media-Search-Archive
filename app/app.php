@@ -218,6 +218,16 @@ foreach(get_externals() as $date => $externals_data_groups) {
 
 		$captions = raw_captions($video_id);
 
+		/**
+		 * @var list<array{
+		 *	0:numeric-string|'',
+		 *	1:numeric-string|'',
+		 *	2:string,
+		 *	3?:bool
+		 * }>
+		 */
+		$captions_with_start_time = [];
+
 		if (
 			array_key_exists(0, $captions)
 			&& array_key_exists(1, $captions)
