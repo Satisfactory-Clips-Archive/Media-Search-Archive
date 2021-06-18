@@ -333,6 +333,12 @@ class YouTubeApiWrapper
 						. $video_id
 						. '.json'
 					);
+					$description_cache_file = (
+						__DIR__
+						. '/../data/api-cache/video-descriptions/'
+						. $video_id
+						. '.json'
+					);
 
 					if (
 						realpath(
@@ -348,9 +354,16 @@ class YouTubeApiWrapper
 						));
 					}
 
+					[$title, $tags, $description] = $data;
+
 					file_put_contents(
 						$cache_file,
-						json_encode($data, JSON_PRETTY_PRINT)
+						json_encode([$title, $tags], JSON_PRETTY_PRINT)
+					);
+
+					file_put_contents(
+						$description_cache_file,
+						json_encode($description, JSON_PRETTY_PRINT)
 					);
 				}
 			}
@@ -777,6 +790,7 @@ class YouTubeApiWrapper
 		 *		id:string,
 		 *		snippet:object{
 		 *			title:string,
+		 *			description:string,
 		 *			tags:list<string>|null
 		 *		}
 		 *	}>
@@ -791,6 +805,7 @@ class YouTubeApiWrapper
 			$out[$item->id] = [
 				$item->snippet->title,
 				$item->snippet->tags ?? [],
+				$item->snippet->description,
 			];
 		}
 
