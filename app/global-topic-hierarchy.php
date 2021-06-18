@@ -458,6 +458,7 @@ $global_topic_hierarchy = [
 	],
 	'PLbjDnnBIxiEqr7yS5ijjDUeaivXoHd4Rm' => [ // Pizza
 		'Off-Topic',
+		'Food & Drink',
 	],
 	'PLbjDnnBIxiErPq-K_XJmklK3wFLBycvVr' => [ // Refinery
 		'Features',
@@ -612,6 +613,7 @@ $global_topic_hierarchy = [
 	],
 	'PLbjDnnBIxiEq-TyD3B3FYRk-YaTyPt7_k' => [ // Semlor
 		'Off-Topic',
+		'Food & Drink',
 	],
 	'PLbjDnnBIxiEpWd9yLFdA-rdx0uR6EJfRh' => [ // Farming
 		'Features',
@@ -1028,6 +1030,32 @@ $global_topic_hierarchy = [
 		'Features',
 		'Requested Features',
 	],
+	'PLbjDnnBIxiErnqhP4QT4xxKBYd7q9wqH5' => [ // Roadmap
+		'Features',
+	],
+	'PLbjDnnBIxiEqyvBwUfe5uPRaYXnxqzV7F' => [ // Food & Drink
+		'Off-Topic',
+	],
+	'PLbjDnnBIxiEoAocvkqdiufABlldkC0MiI' => [ // Coffee
+		'Off-Topic',
+		'Food & Drink',
+	],
+	'PLbjDnnBIxiEpAdZpi9bywSwC-YRlCfSq4' => [ // Milk
+		'Off-Topic',
+		'Food & Drink',
+	],
+	'PLbjDnnBIxiEqfR1MnhVFg3l7gIipzbOSD' => [ // Songs of Conquest
+		'Off-Topic',
+	],
+	'PLbjDnnBIxiErOg6qL6X20cbjiFMP7nhFj' => [ // Torsten
+		'Coffee Stainers',
+	],
+	'PLbjDnnBIxiEq56xXfXdlR0ILAI6JtYU41' => [ // E3
+		'Off-Topic',
+	],
+	'PLbjDnnBIxiEorrhm28SKQy37Zdc9gfiMr' => [ // EU Merch Store
+		'Merch',
+	],
 ];
 
 $not_a_livestream = [
@@ -1246,9 +1274,6 @@ $injected_global_topic_hierarchy = [
 		'Coffee Stainers',
 	],
 	'Tobias' => [
-		'Coffee Stainers',
-	],
-	'Torsten' => [
 		'Coffee Stainers',
 	],
 	'Anna' => [
