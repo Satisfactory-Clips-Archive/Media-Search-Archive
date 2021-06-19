@@ -13,7 +13,9 @@ layout: transcriptions
 	else
 %}<h2>{%
 	endif
-%}{{ transcript.title }}</h2>
+%}{{ transcript.title }}</h2>{% if transcript.description %}
+<section itemprop="description">{{ transcript.description }}</section>
+{% endif %}
 <p><a rel="nofollow" target="_blank" href="{{
 	transcript.url
 }}">{{

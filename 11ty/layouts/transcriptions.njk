@@ -7,7 +7,15 @@
 <meta property="og:article:release_date" content="{{transcript.date}}">
 {% for topic_id in transcript.topics %}
 <meta property="og:article:tag" content="{{ topicStrings[topic_id] }}">
-{% endfor %}
+{%
+	endfor
+%}{%
+	if transcript.video_object
+%}<script type="application/ld+json">{{
+	transcript.video_object | json | safe
+}}</script>{%
+	endif
+%}
 </head>
 {% if r/Q&A: /.test(transcript.title) %}
 <body itemscope itemtype="https://schema.org/QAPage">

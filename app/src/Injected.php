@@ -47,7 +47,7 @@ class Injected
 	 *
 	 * @var array{
 	 *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
-	 *	playlistItems:array<string, array{0:string, 1:string}>,
+	 *	playlistItems:array<string, array{0:string, 1:string, 2:string}>,
 	 *	videoTags:array<string, array{0:string, list<string>}>,
 	 *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
 	 *	legacyAlts:array<string, list<string>>
@@ -181,6 +181,15 @@ class Injected
 		}
 
 		return $cache[$video_id];
+	}
+
+	public function determine_video_description(string $video_id) : ? string
+	{
+		$maybe = (
+			$this->api->fetch_all_videos_in_playlists()[$video_id][2] ?? null
+		);
+
+		return $maybe === '🏭' ? null : $maybe;
 	}
 
 	public function all_video_ids() : array

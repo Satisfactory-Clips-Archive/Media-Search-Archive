@@ -264,7 +264,7 @@ class YouTubeApiWrapper
 	}
 
 	/**
-	 * @return array<string, array{0:string, 1:list<string>}>
+	 * @return array<string, array{0:string, 1:list<string>, 2:string}>
 	 */
 	public function fetch_all_videos_in_playlists() : array
 	{
@@ -298,6 +298,12 @@ class YouTubeApiWrapper
 						. $video_id
 						. '.json'
 					);
+					$description_cache_file = (
+						__DIR__
+						. '/../data/api-cache/video-descriptions/'
+						. $video_id
+						. '.json'
+					);
 
 					if (
 						realpath(
@@ -313,7 +319,10 @@ class YouTubeApiWrapper
 						));
 					}
 
-					return ! is_file($cache_file);
+					return (
+						! is_file($cache_file)
+						|| ! is_file($description_cache_file)
+					);
 				}
 			);
 
@@ -375,8 +384,19 @@ class YouTubeApiWrapper
 					. $video_id
 					. '.json'
 				);
+				$description_cache_file = (
+					__DIR__
+					. '/../data/api-cache/video-descriptions/'
+					. $video_id
+					. '.json'
+				);
 
 				if ( ! is_file($cache_file)) {
+					throw new RuntimeException(sprintf(
+						'No cache data for %s',
+						$video_id
+					));
+				} elseif ( ! is_file($description_cache_file)) {
 					throw new RuntimeException(sprintf(
 						'No cache data for %s',
 						$video_id
@@ -389,12 +409,19 @@ class YouTubeApiWrapper
 					true
 				);
 
+				/** @var scalar|array|object|null */
+				$description = json_decode(
+					file_get_contents($description_cache_file),
+					true
+				);
+
 				if (
 					! is_array($data)
-					|| ! isset($data[0], $data[1])
+					|| ! isset($data[0], $data[1], $description)
 					|| 2 !== count($data)
 					|| ! is_string($data[0])
 					|| ! is_array($data[1])
+					|| ! is_string($description)
 				) {
 					throw new RuntimeException(sprintf(
 						'Unsupported cache data found for %s',
@@ -405,6 +432,7 @@ class YouTubeApiWrapper
 				$out[$video_id] = [
 					$data[0],
 					array_values(array_filter($data[1], 'is_string')),
+					$description,
 				];
 			}
 		}

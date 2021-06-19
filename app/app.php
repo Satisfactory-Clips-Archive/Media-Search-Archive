@@ -844,6 +844,7 @@ foreach ($all_video_ids as $video_id) {
 			$not_a_livestream_date_lookup
 		)[1],
 		'title' => $cache['playlistItems'][$video_id][1],
+		'description' => $injected->determine_video_description($video_id),
 		'topics' => array_values(array_filter(
 			$video_playlists[$video_id],
 			static function (string $maybe) use ($playlists) : bool {
@@ -876,7 +877,44 @@ foreach ($all_video_ids as $video_id) {
 		'like_count' => (int) (
 			$statistics[vendor_prefixed_video_id($video_id)]['likeCount'] ?? 0
 		),
+		'video_object' => null,
 	];
+
+	/** @var string|null */
+	$thumbnail_url = null;
+
+	if (preg_match('/^yt-/', vendor_prefixed_video_id($video_id))) {
+		$thumbnail_url = sprintf(
+			'https://img.youtube.com/vi/%s/hqdefault.jpg',
+			preg_replace('/,.*$/', '', mb_substr($video_id, 3))
+		);
+	}
+
+	if (
+		null !== $thumbnail_url
+		&& null !== $transcripts_json[$video_id]['description']
+	) {
+		$transcripts_json[$video_id]['video_object'] = [
+			'@context' => 'https://schema.org',
+			'@type' => 'VideoObject',
+			'name' => $transcripts_json[$video_id]['title'],
+			'description' => $transcripts_json[$video_id]['description'],
+			'thumbnailUrl' => $thumbnail_url,
+			'contentUrl' => timestamp_link($video_id, -1),
+			'url' => [
+				timestamp_link($video_id, -1),
+				sprintf(
+					'https://archive.satisfactory.video/transcriptions/%s/',
+					vendor_prefixed_video_id($video_id)
+				)
+			],
+			'uploadDate' => determine_date_for_video(
+				$video_id,
+				$cache['playlists'],
+				$api->dated_playlists()
+			),
+		];
+	}
 }
 
 file_put_contents(

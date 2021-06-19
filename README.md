@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-06-19
+* partial implementation of video descriptions via VideoObject embeds
+
 ## 2021-06-13
 * fixed specific case where video sorting did not behave as expected
 * sorted matching external video clips by start time
