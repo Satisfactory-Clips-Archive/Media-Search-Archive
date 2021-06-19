@@ -28,8 +28,8 @@ use RuntimeException;
 use function sprintf;
 use function str_replace;
 
-require_once (__DIR__ . '/../vendor/autoload.php');
-require_once (__DIR__ . '/global-topic-hierarchy.php');
+require_once(__DIR__ . '/../vendor/autoload.php');
+require_once(__DIR__ . '/global-topic-hierarchy.php');
 
 $filtering = new Filtering();
 

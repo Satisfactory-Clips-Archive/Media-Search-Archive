@@ -30,7 +30,7 @@ use function sprintf;
 use function strtotime;
 use function uksort;
 
-require_once (__DIR__ . '/../vendor/autoload.php');
+require_once(__DIR__ . '/../vendor/autoload.php');
 
 $api = new YouTubeApiWrapper();
 

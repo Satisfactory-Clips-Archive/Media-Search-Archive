@@ -10,6 +10,7 @@ use function array_combine;
 use function array_diff;
 use function array_filter;
 use const ARRAY_FILTER_USE_KEY;
+use function array_key_exists;
 use function array_keys;
 use function array_map;
 use function array_merge;
@@ -21,6 +22,7 @@ use function array_unique;
 use function array_values;
 use function asort;
 use function basename;
+use function chr;
 use function count;
 use function date;
 use function dirname;
@@ -30,6 +32,7 @@ use function hash;
 use function hash_file;
 use function implode;
 use function in_array;
+use function is_array;
 use function is_dir;
 use function is_file;
 use function is_string;
@@ -44,6 +47,7 @@ use function preg_match;
 use function realpath;
 use RuntimeException;
 use function sprintf;
+use const STR_PAD_LEFT;
 use function str_repeat;
 use function str_replace;
 use function strnatcasecmp;
@@ -55,8 +59,8 @@ use function uksort;
 use function usleep;
 use function usort;
 
-require_once (__DIR__ . '/../vendor/autoload.php');
-require_once (__DIR__ . '/global-topic-hierarchy.php');
+require_once(__DIR__ . '/../vendor/autoload.php');
+require_once(__DIR__ . '/global-topic-hierarchy.php');
 
 $stat_start = time();
 
@@ -189,7 +193,7 @@ file_put_contents(__DIR__ . '/playlist-date-history.json', json_encode(
 
 $grouped_dated_data_for_json = [];
 
-foreach(get_externals() as $date => $externals_data_groups) {
+foreach (get_externals() as $date => $externals_data_groups) {
 	if ( ! isset($grouped_dated_data_for_json[$date])) {
 		$grouped_dated_data_for_json[$date] = [
 			'date' => $date,
@@ -421,7 +425,7 @@ foreach(get_externals() as $date => $externals_data_groups) {
 							$line[1]
 						)
 						: timestamp_link($video_id, $start)
-				)
+				),
 			];
 
 			if ('' === $embed_data['end']) {
@@ -440,7 +444,6 @@ foreach(get_externals() as $date => $externals_data_groups) {
 					. '.md'
 				)
 			) {
-
 				$embed_data['has_captions'] = sprintf(
 					'../transcriptions/%s',
 					sprintf(
@@ -906,7 +909,7 @@ foreach ($all_video_ids as $video_id) {
 				sprintf(
 					'https://archive.satisfactory.video/transcriptions/%s/',
 					vendor_prefixed_video_id($video_id)
-				)
+				),
 			],
 			'uploadDate' => determine_date_for_video(
 				$video_id,

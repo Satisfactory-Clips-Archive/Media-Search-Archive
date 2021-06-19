@@ -51,6 +51,7 @@ use function is_int;
 use function is_string;
 use function iterator_to_array;
 use function json_decode;
+use const JSON_PRETTY_PRINT;
 use function key;
 use function ksort;
 use function mb_strlen;
@@ -61,6 +62,7 @@ use function parse_str;
 use function parse_url;
 use function pathinfo;
 use const PATHINFO_FILENAME;
+use const PHP_EOL;
 use const PHP_URL_QUERY;
 use function preg_match;
 use function preg_match_all;
@@ -444,7 +446,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 	static $out = null;
 
 	if (null === $out) {
-		require (__DIR__ . '/../global-topic-hierarchy.php');
+		require(__DIR__ . '/../global-topic-hierarchy.php');
 
 		$api->update();
 		$cache = $api->toLegacyCacheFormat();

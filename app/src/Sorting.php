@@ -6,7 +6,9 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use const ARRAY_FILTER_USE_BOTH;
 use function count;
+use function in_array;
 use function mb_strtolower;
 use function preg_match;
 use function strnatcasecmp;
@@ -24,7 +26,7 @@ use function trim;
  */
 class Sorting
 {
-	const regex_typed_clip = '/^(?|([^:]+)\s*:([^\(]+)\([Pp]art\s+(\d+)\)|([^:]+)\s*:\s*(.+))\s*$/';
+	public const regex_typed_clip = '/^(?|([^:]+)\s*:([^\(]+)\([Pp]art\s+(\d+)\)|([^:]+)\s*:\s*(.+))\s*$/';
 
 	/**
 	 * @var CACHE

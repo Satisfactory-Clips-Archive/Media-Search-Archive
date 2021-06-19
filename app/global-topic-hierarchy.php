@@ -1139,8 +1139,8 @@ $not_a_livestream_date_lookup = [
 	'2020-09-04' => 'PLbjDnnBIxiEoEYUiAzSSmePa-9JIADFrO',
 ];
 
-foreach (\array_keys($not_a_livestream) as $maybe_date) {
-	if (\preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $maybe_date)) {
+foreach (array_keys($not_a_livestream) as $maybe_date) {
+	if (preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $maybe_date)) {
 		$not_a_livestream_date_lookup[$maybe_date] = $maybe_date;
 	}
 }

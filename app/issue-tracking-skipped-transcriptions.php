@@ -16,7 +16,7 @@ use function preg_match;
 use function rawurlencode;
 use function sprintf;
 
-require_once (__DIR__ . '/../vendor/autoload.php');
+require_once(__DIR__ . '/../vendor/autoload.php');
 
 /** @var list<string> */
 $data = json_decode(

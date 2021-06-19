@@ -29,7 +29,7 @@ use function mb_substr;
 use function preg_replace;
 use function trim;
 
-require_once (__DIR__ . '/../vendor/autoload.php');
+require_once(__DIR__ . '/../vendor/autoload.php');
 
 $api = new YouTubeApiWrapper();
 $slugify = new Slugify();

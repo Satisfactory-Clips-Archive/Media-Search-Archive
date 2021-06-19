@@ -13,7 +13,7 @@ use function file_get_contents;
 use function implode;
 use function json_decode;
 
-require_once (__DIR__ . '/../vendor/autoload.php');
+require_once(__DIR__ . '/../vendor/autoload.php');
 
 $filtering = new Filtering();
 

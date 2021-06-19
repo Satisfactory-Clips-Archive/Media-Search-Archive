@@ -189,7 +189,7 @@ class Injected
 			$this->api->fetch_all_videos_in_playlists()[$video_id][2] ?? null
 		);
 
-		return $maybe === '🏭' ? null : $maybe;
+		return '🏭' === $maybe ? null : $maybe;
 	}
 
 	public function all_video_ids() : array

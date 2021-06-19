@@ -24,9 +24,9 @@ use function uasort;
 
 class Jsonify
 {
-	const link_part_regex = '/^(.+) \[[^\]]+\]\(([^\)]+)\)$/';
+	public const link_part_regex = '/^(.+) \[[^\]]+\]\(([^\)]+)\)$/';
 
-	const transcript_part_regex = '/^\[([^\]]+)\]\(\.([^\)]+)\.md\)$/';
+	public const transcript_part_regex = '/^\[([^\]]+)\]\(\.([^\)]+)\.md\)$/';
 
 	private Injected $injected;
 

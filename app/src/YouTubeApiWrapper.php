@@ -319,10 +319,10 @@ class YouTubeApiWrapper
 						));
 					}
 
-					return (
+					return
 						! is_file($cache_file)
 						|| ! is_file($description_cache_file)
-					);
+					;
 				}
 			);
 
