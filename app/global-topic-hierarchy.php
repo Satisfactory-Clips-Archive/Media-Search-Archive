@@ -1056,6 +1056,12 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiEorrhm28SKQy37Zdc9gfiMr' => [ // EU Merch Store
 		'Merch',
 	],
+	'PLbjDnnBIxiEovRzGRSnxOCvPCJODjbey_' => [ // Stefan
+		'Coffee Stainers',
+	],
+	'PLbjDnnBIxiEp9DQ8xVeTCFqcFSLB_9tJj' => [ // Buildables
+		'Features',
+	],
 ];
 
 $not_a_livestream = [
@@ -1146,9 +1152,6 @@ foreach (array_keys($not_a_livestream) as $maybe_date) {
 }
 
 $injected_global_topic_hierarchy = [
-	'Buildables' => [
-		'Features',
-	],
 	'Merch Prototypes' => [
 		'Merch',
 	],
