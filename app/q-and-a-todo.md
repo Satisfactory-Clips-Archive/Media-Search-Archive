@@ -1,16 +1,3 @@
-# clip up engine upgrade video & link to per-instance data segment
-* i1-FmJGxPPg
-* OTsxz-Twmys
-
-# add link to "update 4 will break your saves"
-* dkVq6ix0lQM
-* 1i0dU7zYdqs
-
-# find appropriate video to flag as "replacedby"
-* qqzCKyEWttg
-* CGb3HtdOy_w
-* yt-NlIVwoRqjVk,917.1162,957.1562
-
 # merch store
 add links to merch store announcement
 * tc-FunOriginalPistachioNerfRedBlaster

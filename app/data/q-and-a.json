@@ -7107,6 +7107,7 @@
             "AOAJRBqkvp8",
             "L2-j0MZepbI",
             "Vc-zgbseTCc",
+            "yt-0kmDHBWf640,364.09706666666665,551.0838666666667",
             "yt-0kmDHBWf640,551.0838666666667,584.3170666666667"
         ]
     },
@@ -9524,6 +9525,9 @@
             "environment\/resources",
             "features\/crafting",
             "satisfactory-updates\/released\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "yt-KH5SkE4nzhg,261.1942666666667,306.2726333333333"
         ]
     },
     "SU1kBDjZGhM": {
@@ -18594,6 +18598,7 @@
         ],
         "seealso": [
             "6BahsrvlPJs",
+            "yt-0kmDHBWf640,364.09706666666665,551.0838666666667",
             "yt-0kmDHBWf640,551.0838666666667,584.3170666666667"
         ]
     },
@@ -19205,6 +19210,9 @@
         "date": "2020-12-08",
         "topics": [
             "satisfactory-updates\/released\/satisfactory-update-4"
+        ],
+        "seealso": [
+            "yt-KH5SkE4nzhg,261.1942666666667,306.2726333333333"
         ]
     },
     "pmm8JzrMM78": {
@@ -23108,7 +23116,8 @@
         ],
         "seealso": [
             "qqzCKyEWttg"
-        ]
+        ],
+        "replacedby": "yt-iahxEfLCFWU,17.967950000000002,101.66823333333333"
     },
     "fRiHEwAwDpw": {
         "title": "Q&A: Is that not actual gameplay footage?",
@@ -23259,7 +23268,8 @@
         ],
         "seealso": [
             "CGb3HtdOy_w"
-        ]
+        ],
+        "replacedby": "yt-iahxEfLCFWU,17.967950000000002,101.66823333333333"
     },
     "fqq4ndn8_94": {
         "title": "Q&A: Can old save games still be used in the upcoming patch?",
@@ -30777,7 +30787,8 @@
         "date": "2020-05-15",
         "topics": [
             "features\/buildings"
-        ]
+        ],
+        "replacedby": "yt-iahxEfLCFWU,101.66823333333333,162.12863333333334"
     },
     "yt-NlIVwoRqjVk,957.1562,987.6199666666666": {
         "title": "Q&A: Any 3rd person toggle planned?",
@@ -32065,17 +32076,6 @@
             "yt-R0S19_caQuw,,46.2"
         ]
     },
-    "weWtkbvOxdU": {
-        "title": "Q&A: Which one was Simon's favourite Simon Saga video?",
-        "date": "2019-12-19",
-        "topics": [
-            "coffee-stainers\/simon",
-            "coffee-stainers\/simon\/simon-saga"
-        ],
-        "seealso": [
-            "t9_0R3vkYOk"
-        ]
-    },
     "yt-52nYaN8imgo,201.34,216.1": {
         "title": "Q&A: Satisfactory exclusive to Epic Games Store (December 2018)",
         "date": "2019-12-19",
@@ -32086,6 +32086,17 @@
         ],
         "seealso": [
             "yt-7V4UPiBOshY,35.26,161.28"
+        ]
+    },
+    "weWtkbvOxdU": {
+        "title": "Q&A: Which one was Simon's favourite Simon Saga video?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/simon",
+            "coffee-stainers\/simon\/simon-saga"
+        ],
+        "seealso": [
+            "t9_0R3vkYOk"
         ]
     },
     "yt-52nYaN8imgo,284.4,287.44": {
