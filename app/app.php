@@ -472,6 +472,7 @@ $externals_dates = array_keys(get_externals());
 $sorting = new Sorting($cache);
 
 $sorting->cache = $cache;
+$sorting->playlists_date_ref = $api->dated_playlists();
 
 $no_topics = [];
 
@@ -1699,6 +1700,8 @@ foreach (
 			$cache,
 			...$video_ids
 		);
+
+		usort($video_ids, [$sorting, 'sort_video_ids_by_date']);
 
 		$slug_lines[] =
 			(

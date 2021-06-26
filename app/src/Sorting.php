@@ -115,8 +115,8 @@ class Sorting
 		$maybe = strtotime($b_date) <=> strtotime($a_date);
 
 		if (0 === $maybe) {
-			$a_id = $this->playlists_date_ref[$a_date] ?? null;
-			$b_id = $this->playlists_date_ref[$b_date] ?? null;
+			$a_id = array_search($a_date, $this->playlists_date_ref);
+			$b_id = array_search($b_date, $this->playlists_date_ref);
 
 			if (
 				$a_id === $b_id

@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2021-06-26
 * getting consistent i/o performance by using a tarball for the 9500+ caption files
+* fixing bug in sort order algorithm
 
 ## 2021-06-19
 * partial implementation of video descriptions via VideoObject embeds
