@@ -62,6 +62,7 @@ use function parse_str;
 use function parse_url;
 use function pathinfo;
 use const PATHINFO_FILENAME;
+use PharData;
 use const PHP_EOL;
 use const PHP_URL_QUERY;
 use function preg_match;
@@ -1401,6 +1402,23 @@ function raw_captions(string $video_id) : array
 	/** @var Slugify|null */
 	static $slugify = null;
 
+	/** @var PharData|null */
+	static $captions_data = null;
+
+	if (null === $captions_data) {
+		$captions_data = new PharData(
+			(
+				__DIR__
+				. '/../captions.tar'
+			),
+			(
+				PharData::CURRENT_AS_PATHNAME
+				| PharData::SKIP_DOTS
+				| PharData::UNIX_PATHS
+			)
+		);
+	}
+
 	if (null === $slugify) {
 		$slugify = new Slugify();
 	}
@@ -1519,9 +1537,9 @@ function raw_captions(string $video_id) : array
 		return [null, $transcript['text']];
 	}
 
-	$html_cache = __DIR__ . '/../captions/' . $video_id . '.html';
+	$html_cache = $video_id . '.html';
 
-	if ( ! is_file($html_cache)) {
+	if ( ! isset($captions_data[$html_cache])) {
 		$page = file_get_contents(
 			'https://youtube.com/watch?' .
 			http_build_query([
@@ -1529,9 +1547,11 @@ function raw_captions(string $video_id) : array
 			])
 		);
 
-		file_put_contents($html_cache, $page);
+		$captions_data->addFromString($html_cache, $page);
 	} else {
-		$page = file_get_contents($html_cache);
+		$page = $captions_data[$html_cache];
+
+		$page = file_get_contents($page->getPathname());
 	}
 
 	$urls = preg_match_all(
@@ -1615,8 +1635,7 @@ function raw_captions(string $video_id) : array
 	$tt = null;
 
 	$tt_cache = (
-		__DIR__
-		. '/../captions/'
+		''
 		. $video_id
 		. '.xml'
 	);
@@ -1627,20 +1646,19 @@ function raw_captions(string $video_id) : array
 		}
 
 		$tt_cache = (
-			__DIR__
-			. '/../captions/'
+			''
 			. $video_id
 			. ','
 			. key($url_matches)
 			. '.xml'
 		);
 
-		if ( ! is_file($tt_cache)) {
+		if ( ! isset($captions_data[$tt_cache])) {
 			$tt = file_get_contents((string) current($url_matches));
 
-			file_put_contents($tt_cache, $tt);
+			$captions_data->addFromString($tt_cache, $tt);
 		} else {
-			$tt = file_get_contents($tt_cache);
+			$tt = file_get_contents($captions_data[$tt_cache]->getPathname());
 		}
 
 		if ('' !== $tt) {
@@ -1656,12 +1674,12 @@ function raw_captions(string $video_id) : array
 		}
 	}
 
-	$fallback_tt_cache = __DIR__ . '/../captions/' . $video_id . '.xml';
+	$fallback_tt_cache = $video_id . '.xml';
 
-	if ('' === $tt && is_file($fallback_tt_cache)) {
+	if ('' === $tt && isset($captions_data[$fallback_tt_cache])) {
 		$tt_cache = $fallback_tt_cache;
 
-		$tt = file_get_contents($tt_cache);
+		$tt = file_get_contents($captions_data[$fallback_tt_cache]->getPathname());
 	}
 
 	if ('' === (string) $tt) {
