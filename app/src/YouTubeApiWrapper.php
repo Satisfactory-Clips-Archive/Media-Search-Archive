@@ -73,6 +73,12 @@ class YouTubeApiWrapper
 	 */
 	private $fetch_playlist_items = null;
 
+	/** @var list<string> */
+	private array $skipped_playlists = [];
+
+	/** @var list<string> */
+	private array $skipped_videos = [];
+
 	public function __construct()
 	{
 		$client = new Google_Client();
@@ -736,6 +742,7 @@ class YouTubeApiWrapper
 		 *	nextPageToken?:string,
 		 *	items:list<object{
 		 *		id:string,
+		 *		status:\Google_Service_YouTube_PlaylistStatus,
 		 *		snippet:object{
 		 *			title:string
 		 *		}
@@ -743,11 +750,17 @@ class YouTubeApiWrapper
 		 * }
 		 */
 		$response = $this->service_playlists()->listPlaylists(
-			'id,snippet',
+			'id,snippet,status',
 			$args
 		);
 
 		foreach ($response->items as $playlist) {
+			if ('public' !== $playlist->status->privacyStatus) {
+				$this->skipped_playlists[] = $playlist->id;
+
+				continue;
+			}
+
 			$out[$playlist->id] = $playlist->snippet->title;
 		}
 
@@ -780,16 +793,27 @@ class YouTubeApiWrapper
 			implode(',', [
 				'id',
 				'snippet',
+				'status',
 			]),
 			$args
 		);
 
 		foreach ($response->items as $playlist_item) {
+
 			/** @var Google_Service_YouTube_VideoSnippet */
 			$video_snippet = $playlist_item->snippet;
 
 			/** @var Google_Service_YouTube_ResourceId */
 			$video_snippet_resourceId = $video_snippet->resourceId;
+
+			/** @var \Google_Service_YouTube_PlaylistItemStatus */
+			$status = $playlist_item->status;
+
+			if ('public' !== $status->privacyStatus) {
+				$this->skipped_videos[] = (string) $video_snippet_resourceId->videoId;
+
+				continue;
+			}
 
 			$out[] = (string) $video_snippet_resourceId->videoId;
 		}

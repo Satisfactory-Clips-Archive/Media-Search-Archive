@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-07-02
+* skipping unlisted content
+
 ## 2021-06-26
 * getting consistent i/o performance by using a tarball for the 9500+ caption files
 * fixing bug in sort order algorithm
