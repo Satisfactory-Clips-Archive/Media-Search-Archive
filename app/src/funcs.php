@@ -2493,9 +2493,9 @@ function process_dated_csv(
 				] = [
 					'---' . "\n",
 					sprintf(
-						'title: "%s"' . "\n",
+						'title: "%s - %s"' . "\n",
 						$friendly_date,
-						$clip_title
+						str_replace('"', '\"', $clip_title)
 					),
 					sprintf('date: "%s"', $date) . "\n",
 					'layout: transcript' . "\n",
