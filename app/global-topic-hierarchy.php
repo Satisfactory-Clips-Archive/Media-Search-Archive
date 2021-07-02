@@ -1080,6 +1080,10 @@ $global_topic_hierarchy = [
 		'Possible Features',
 		'DLC',
 	],
+	'PLbjDnnBIxiEq6PNjgFFfdxBwNkW0KOJeI' => [ // Factory Maintenance
+		'Features',
+		'Unplanned Features',
+	],
 ];
 
 $not_a_livestream = [

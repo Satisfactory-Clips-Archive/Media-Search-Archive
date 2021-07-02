@@ -2623,8 +2623,8 @@
         "title": "Q&A: Would be interesting to have Machines break or need maintenance?",
         "date": "2021-05-25",
         "topics": [
-            "features\/buildings",
-            "features\/unplanned-features\/base-defense"
+            "features\/unplanned-features\/base-defense",
+            "features\/unplanned-features\/factory-maintenance"
         ],
         "duplicates": [
             "O02Z9u7DpPo",
@@ -16475,7 +16475,7 @@
         "title": "Q&A: Any plans for deterioration or maintenance mechanics for Buildings?",
         "date": "2021-01-26",
         "topics": [
-            "features\/buildings"
+            "features\/unplanned-features\/factory-maintenance"
         ],
         "duplicatedby": "eou80scmTqE"
     },
@@ -27996,7 +27996,7 @@
         "title": "Q&A: Fixing machines that break?",
         "date": "2020-08-25",
         "topics": [
-            "features\/buildings"
+            "features\/unplanned-features\/factory-maintenance"
         ],
         "legacyalts": [
             "tc-EnergeticInexpensiveDillCurseLit"
@@ -29861,9 +29861,9 @@
         "title": "Q&A: What do you think about a game mode with weather effects doing damage or slowing machines?",
         "date": "2020-07-21",
         "topics": [
-            "features\/buildings",
             "features\/possible-features\/game-modes",
-            "features\/possible-features\/weather-systems"
+            "features\/possible-features\/weather-systems",
+            "features\/unplanned-features\/factory-maintenance"
         ],
         "seealso": [
             "eou80scmTqE"
@@ -36418,7 +36418,8 @@
         "title": "Q&A: Will there be breakdowns of machines and we have to fix & repair?",
         "date": "2019-02-06",
         "topics": [
-            "features\/buildings"
+            "features\/buildings",
+            "features\/unplanned-features\/factory-maintenance"
         ],
         "duplicatedby": "eou80scmTqE"
     },
