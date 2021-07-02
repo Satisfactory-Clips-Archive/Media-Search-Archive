@@ -899,8 +899,8 @@
         "title": "Q&A: Any plans for quality of life improvements?",
         "date": "2021-06-15",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-5",
-            "technology\/user-interface"
+            "features\/planned-features\/build-modes",
+            "satisfactory-updates\/pending\/satisfactory-update-5"
         ],
         "seealso": [
             "2AMBinmPITg",
@@ -9195,7 +9195,7 @@
         "date": "2021-03-30",
         "topics": [
             "coffee-stainers\/snutt",
-            "technology\/user-interface"
+            "features\/planned-features\/build-modes"
         ],
         "duplicates": [
             "akmmqVmHmzM",
@@ -27523,6 +27523,7 @@
         "title": "Q&A: Drag-to-build Mode?",
         "date": "2020-08-25",
         "topics": [
+            "features\/planned-features\/build-modes",
             "features\/unplanned-features\/mass-building"
         ],
         "legacyalts": [
