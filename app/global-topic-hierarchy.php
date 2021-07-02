@@ -1062,6 +1062,10 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiEp9DQ8xVeTCFqcFSLB_9tJj' => [ // Buildables
 		'Features',
 	],
+	'PLbjDnnBIxiEqY7gI4bEGW0mH9AWoFv7P6' => [ // Third-person View
+		'Features',
+		'Requested Features',
+	],
 ];
 
 $not_a_livestream = [
