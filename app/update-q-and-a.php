@@ -42,6 +42,11 @@ $jsonify = new Jsonify($injected, $questions);
 
 $cache = $injected->cache;
 
+$sorting = new Sorting($cache);
+
+$sorting->cache = $cache;
+$sorting->playlists_date_ref = $api->dated_playlists();
+
 $playlists = $api->dated_playlists();
 
 $all_video_ids = $injected->all_video_ids();
@@ -56,6 +61,8 @@ foreach (array_keys($injected->all_topics()) as $topic_id) {
 		$cache['playlists'][$topic_id][2]
 	));
 }
+
+uksort($existing, [$sorting, 'sort_video_ids_by_date']);
 
 $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
 

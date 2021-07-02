@@ -162,6 +162,21 @@ class Sorting
 				if (1 === count($maybe_other)) {
 					$a_id = $b_id = key($maybe_other);
 				}
+			} elseif (
+				(
+					preg_match('/,\d+/', $a)
+					|| preg_match('/,\d+/', $b)
+				)
+				&& ! (
+					preg_match('/,\d+/', $a)
+					&& preg_match('/,\d+/', $b)
+				)
+			) {
+				if (preg_match('/,\d+/', $b)) {
+					return -1;
+				}
+
+				return 1;
 			}
 
 			if (
