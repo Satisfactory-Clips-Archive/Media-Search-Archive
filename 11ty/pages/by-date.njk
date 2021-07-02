@@ -80,7 +80,7 @@ layout: livestream
 		{% for clip in category.clips %}
 			<li>
 				{% if clip[1] %}
-					<a href="../transcriptions/{{clip[1]}}">{{clip[0]}}</a>
+					<a href="../transcriptions/{{clip[1]}}/">{{clip[0]}}</a>
 				{% else %}
 					{{clip[0]}}
 				{% endif %}
@@ -99,7 +99,7 @@ layout: livestream
 		{% for clip in internal.uncategorised.clips %}
 			<li>
 				{% if clip[1] %}
-					<a href="../transcriptions/{{clip[1]}}">{{clip[0]}}</a>
+					<a href="../transcriptions/{{clip[1]}}/">{{clip[0]}}</a>
 				{% else %}
 					{{clip[0]}}
 				{% endif %}
