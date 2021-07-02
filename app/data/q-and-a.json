@@ -999,6 +999,7 @@
         ],
         "seealso": [
             "25Uqa4KOKqc",
+            "ithVAX7EptE",
             "yt-1UqIDp_byFc,88.32,103.98"
         ]
     },
@@ -1300,35 +1301,22 @@
         "title": "Q&A: $1 Toilet Paper DLC?",
         "date": "2021-06-08",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc",
+            "features\/possible-features\/dlc\/toilet-paper-dlc"
         ],
         "duplicates": [
+            "8S1NK72uyLE",
             "BEv9D4YpBJk",
-            "FlaP38G7O5U",
-            "ithVAX7EptE",
-            "kitahOI_c88",
-            "mBpIB3ojMC8",
-            "oa5g8FKujqk",
-            "qgNE5bu73j0",
-            "Z7KaqsyT7_k"
+            "tc-AuspiciousPrettiestAlfalfaKAPOW"
         ],
         "seealso": [
             "1-xFJyIBosU",
-            "5sqgxrPlcUI",
             "7HtEV_DVbgw",
-            "8S1NK72uyLE",
             "25Uqa4KOKqc",
-            "64xmTN-rhbs",
-            "99HzTmnXLaE",
-            "AeWfPCZQZBQ",
-            "b06s0rzssTc",
-            "b7ZVKjoH7CQ",
             "d8RBkY8oP1Q",
-            "En8viTUiojc",
-            "JSE233L0yRA",
-            "Ka4Y6908xq0",
-            "unZciwmFlwA",
-            "ydJvaDmoy0U"
+            "FlaP38G7O5U",
+            "JSE233L0yRA"
         ]
     },
     "V20SFRk4jpw": {
@@ -1913,20 +1901,19 @@
         "title": "Q&A: Toilet DLC?",
         "date": "2021-06-01",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "ekFl5tlk2ig"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "bSD9Vj_ZKek": {
         "title": "Q&A: Working HUB Toilet?",
         "date": "2021-06-01",
         "topics": [
             "features\/buildings\/the-hub",
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "seealso": [
-            "qgNE5bu73j0"
-        ]
+        "duplicatedby": "FlaP38G7O5U"
     },
     "QwPENhdmGrs": {
         "title": "Q&A: Is this Satisfactory Hot Tub stream?",
@@ -1998,7 +1985,7 @@
         "topics": [
             "features\/fluids",
             "features\/fluids\/pipes",
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
         "seealso": [
             "99HzTmnXLaE",
@@ -2064,7 +2051,8 @@
             "features\/possible-features\/dlc"
         ],
         "seealso": [
-            "ekFl5tlk2ig"
+            "ekFl5tlk2ig",
+            "FlaP38G7O5U"
         ]
     },
     "snzgCf54CIQ": {
@@ -2143,10 +2131,11 @@
         "date": "2021-06-01",
         "topics": [
             "features\/buildings\/awesome-sink",
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
         "seealso": [
-            "ekFl5tlk2ig",
+            "FlaP38G7O5U",
             "pWwXk0cJ9Fk"
         ]
     },
@@ -2163,10 +2152,10 @@
         "date": "2021-06-01",
         "topics": [
             "features\/fluids\/pipes",
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
         "seealso": [
-            "ekFl5tlk2ig",
+            "FlaP38G7O5U",
             "pWwXk0cJ9Fk"
         ]
     },
@@ -2264,11 +2253,14 @@
         "title": "Q&A: Will DLCs have microtransactions per flush?",
         "date": "2021-06-01",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc",
+            "features\/possible-features\/dlc\/toilet-paper-dlc",
+            "features\/unplanned-features\/microtransactions"
         ],
         "seealso": [
-            "b06s0rzssTc",
             "ekFl5tlk2ig",
+            "FlaP38G7O5U",
             "V2cOLLcElBI"
         ]
     },
@@ -2464,7 +2456,8 @@
         "topics": [
             "features\/buildings\/awesome-store",
             "features\/buildings\/the-hub",
-            "features\/possible-features\/dlc",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc",
+            "features\/possible-features\/dlc\/toilet-paper-dlc",
             "june-2021-epic-mega-sale-stream"
         ],
         "duplicatedby": "ekFl5tlk2ig"
@@ -5504,31 +5497,10 @@
         "title": "Q&A: Toilet flush?",
         "date": "2021-05-04",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicates": [
-            "24KsUKR3T-4",
-            "64xmTN-rhbs",
-            "AeWfPCZQZBQ",
-            "b7ZVKjoH7CQ",
-            "clJjkvA5whw",
-            "sve9kjgML2E",
-            "unZciwmFlwA",
-            "ydJvaDmoy0U",
-            "zoVojtGZw9A"
-        ],
-        "seealso": [
-            "1-xFJyIBosU",
-            "5sqgxrPlcUI",
-            "7HtEV_DVbgw",
-            "8S1NK72uyLE",
-            "25Uqa4KOKqc",
-            "bSD9Vj_ZKek",
-            "d8RBkY8oP1Q",
-            "ekFl5tlk2ig",
-            "En8viTUiojc",
-            "JSE233L0yRA"
-        ]
+        "duplicatedby": "FlaP38G7O5U"
     },
     "84Mwit3dmQk": {
         "title": "Q&A: Can we use beds to sleep overnight?",
@@ -5684,9 +5656,10 @@
         "title": "Q&A: Toilet DLC, when?",
         "date": "2021-05-04",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "ekFl5tlk2ig"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "SZI2qdSlTFc": {
         "title": "Q&A: What's the theme of the stream?",
@@ -7271,9 +7244,9 @@
         "date": "2021-04-20",
         "topics": [
             "features\/buildings\/the-hub",
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "b06s0rzssTc"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "m7zB1crQc00": {
         "title": "Q&A: Are there hidden puzzles in the game?",
@@ -8579,9 +8552,9 @@
         "date": "2021-03-30",
         "topics": [
             "features\/buildings\/the-hub",
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "ekFl5tlk2ig"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "qPw6GNV42QI": {
         "title": "Q&A: When will the Update come to the stable client?",
@@ -14488,9 +14461,10 @@
         "title": "Q&A: $1 Toilet DLC?",
         "date": "2021-02-09",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "ekFl5tlk2ig"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "071RPMJfFJk": {
         "title": "Q&A: What Operating System will the Dedicated Servers be?",
@@ -15151,9 +15125,9 @@
         "date": "2021-02-09",
         "topics": [
             "features\/buildings\/the-hub",
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "b06s0rzssTc"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "93DSnzyAqFI": {
         "title": "Q&A: Strict secret mode, so leaks in two weeks?",
@@ -15471,9 +15445,10 @@
         "title": "Q&A: Will the Toilet flush?",
         "date": "2021-02-02",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "b06s0rzssTc"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "pY14Dudonjc": {
         "title": "Q&A: Are we getting a new teaser this week?",
@@ -15766,19 +15741,10 @@
         "title": "Q&A: When will we get the toilet DLC?",
         "date": "2021-01-26",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "seealso": [
-            "1-xFJyIBosU",
-            "5sqgxrPlcUI",
-            "7HtEV_DVbgw",
-            "8S1NK72uyLE",
-            "d8RBkY8oP1Q",
-            "ekFl5tlk2ig",
-            "En8viTUiojc",
-            "JSE233L0yRA"
-        ],
-        "duplicatedby": "b06s0rzssTc"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "5vlFsF0dm3E": {
         "title": "Q&A: News for the Work In Progress collectables for anything in Update 4?",
@@ -16137,7 +16103,8 @@
         "title": "Q&A: Will DLC be paid or will it be free updates?",
         "date": "2021-01-26",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
         "seealso": [
             "oVm-OJKlrZM"
@@ -16163,23 +16130,12 @@
         "title": "Q&A: Please, Toilet DLC before Official DLC?",
         "date": "2021-01-26",
         "topics": [
+            "features\/buildings\/the-hub",
             "features\/possible-features\/dlc",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc",
             "features\/transportation\/vehicles\/drones"
         ],
-        "seealso": [
-            "1-xFJyIBosU",
-            "7HtEV_DVbgw",
-            "8S1NK72uyLE",
-            "64xmTN-rhbs",
-            "AeWfPCZQZBQ",
-            "b06s0rzssTc",
-            "d8RBkY8oP1Q",
-            "ekFl5tlk2ig",
-            "En8viTUiojc",
-            "JSE233L0yRA",
-            "unZciwmFlwA",
-            "ydJvaDmoy0U"
-        ]
+        "duplicatedby": "FlaP38G7O5U"
     },
     "kDwywg_UJoc": {
         "title": "Q&A: Ability to sleep coming any time?",
@@ -18020,24 +17976,11 @@
         "title": "Q&A: The game is not done until I can flush the toilet?",
         "date": "2021-01-12",
         "topics": [
-            "features\/possible-features\/dlc",
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "seealso": [
-            "1-xFJyIBosU",
-            "5sqgxrPlcUI",
-            "7HtEV_DVbgw",
-            "8S1NK72uyLE",
-            "AeWfPCZQZBQ",
-            "b06s0rzssTc",
-            "d8RBkY8oP1Q",
-            "ekFl5tlk2ig",
-            "En8viTUiojc",
-            "JSE233L0yRA",
-            "unZciwmFlwA",
-            "ydJvaDmoy0U"
-        ],
-        "duplicatedby": "b06s0rzssTc"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "wvvaIdmUTT0": {
         "title": "Q&A: Why no partner with Twitch?",
@@ -18861,22 +18804,9 @@
         "date": "2020-12-15",
         "topics": [
             "features\/buildings\/the-hub",
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "seealso": [
-            "1-xFJyIBosU",
-            "5sqgxrPlcUI",
-            "7HtEV_DVbgw",
-            "8S1NK72uyLE",
-            "64xmTN-rhbs",
-            "AeWfPCZQZBQ",
-            "b06s0rzssTc",
-            "d8RBkY8oP1Q",
-            "ekFl5tlk2ig",
-            "JSE233L0yRA",
-            "unZciwmFlwA",
-            "ydJvaDmoy0U"
-        ]
+        "duplicatedby": "FlaP38G7O5U"
     },
     "lacIs2by7tk": {
         "title": "Q&A: Are you going to add more functionality to the HUB?",
@@ -18887,6 +18817,7 @@
         "seealso": [
             "dbyTU3Wdpog",
             "ekFl5tlk2ig",
+            "FlaP38G7O5U",
             "kDwywg_UJoc",
             "tHzH3dkTZ4s"
         ]
@@ -20078,21 +20009,14 @@
         "date": "2020-11-24",
         "topics": [
             "features\/buildings\/the-hub",
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/decor"
         ],
         "seealso": [
-            "5sqgxrPlcUI",
             "7HtEV_DVbgw",
-            "8S1NK72uyLE",
-            "64xmTN-rhbs",
-            "AeWfPCZQZBQ",
-            "b06s0rzssTc",
             "d8RBkY8oP1Q",
             "ekFl5tlk2ig",
-            "En8viTUiojc",
-            "JSE233L0yRA",
-            "unZciwmFlwA",
-            "ydJvaDmoy0U"
+            "FlaP38G7O5U",
+            "JSE233L0yRA"
         ]
     },
     "_fE2dbyaJZg": {
@@ -20809,25 +20733,10 @@
         "title": "Q&A: When does the Toilet Paper DLC come out?",
         "date": "2020-11-10",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/toilet-paper-dlc"
         ],
-        "duplicates": [
-            "tc-AuspiciousPrettiestAlfalfaKAPOW"
-        ],
-        "seealso": [
-            "1-xFJyIBosU",
-            "5sqgxrPlcUI",
-            "7HtEV_DVbgw",
-            "64xmTN-rhbs",
-            "AeWfPCZQZBQ",
-            "b06s0rzssTc",
-            "d8RBkY8oP1Q",
-            "ekFl5tlk2ig",
-            "En8viTUiojc",
-            "JSE233L0yRA",
-            "unZciwmFlwA",
-            "ydJvaDmoy0U"
-        ]
+        "duplicatedby": "ekFl5tlk2ig"
     },
     "AjCUCamZMTk": {
         "title": "Q&A: Does Coffee Stain \"matrix\" it's people across different games?",
@@ -21387,9 +21296,9 @@
         "date": "2020-11-10",
         "topics": [
             "features\/buildings\/the-hub",
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "b06s0rzssTc"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "l2URp9VhoTU": {
         "title": "Q&A: Is your office in Sk\u00f6vde?",
@@ -21899,7 +21808,8 @@
         "title": "Q&A: Will there be DLCs?",
         "date": "2020-11-03",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
         "duplicates": [
             "4VxcyGiOSHw",
@@ -21907,7 +21817,8 @@
         ],
         "seealso": [
             "5sqgxrPlcUI",
-            "ekFl5tlk2ig"
+            "ekFl5tlk2ig",
+            "FlaP38G7O5U"
         ],
         "duplicatedby": "oVm-OJKlrZM"
     },
@@ -24751,22 +24662,10 @@
         "title": "Q&A: Where is the Toilet DLC?",
         "date": "2020-09-22",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "seealso": [
-            "1-xFJyIBosU",
-            "5sqgxrPlcUI",
-            "7HtEV_DVbgw",
-            "8S1NK72uyLE",
-            "64xmTN-rhbs",
-            "AeWfPCZQZBQ",
-            "d8RBkY8oP1Q",
-            "ekFl5tlk2ig",
-            "En8viTUiojc",
-            "JSE233L0yRA",
-            "ydJvaDmoy0U"
-        ],
-        "duplicatedby": "b06s0rzssTc"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "GcWk8f29OBM": {
         "title": "Q&A: Any chance of a new Map?",
@@ -25589,9 +25488,10 @@
         "title": "Q&A: FICSIT Toilet soon?",
         "date": "2020-09-15",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "b06s0rzssTc"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "cqz8zcpP2og": {
         "title": "Q&A: How many Devs are working on the Game approximately?",
@@ -25824,9 +25724,10 @@
         "title": "Q&A: When will the Toilet be operative?",
         "date": "2020-09-08",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "b06s0rzssTc"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "-sa8wjg4lYk": {
         "title": "Q&A: What're your guys thoughts on transport beyond Jetpacks ?",
@@ -26485,9 +26386,10 @@
         "title": "Q&A: Flushable Toilet DLC?",
         "date": "2020-09-01",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "ekFl5tlk2ig"
+        "duplicatedby": "FlaP38G7O5U"
     },
     "wZOVw8KV1rQ": {
         "title": "Q&A: Let Hannah finish her work on the map before expanding?",
@@ -27648,7 +27550,8 @@
             "features\/possible-features\/dlc"
         ],
         "seealso": [
-            "ekFl5tlk2ig"
+            "ekFl5tlk2ig",
+            "FlaP38G7O5U"
         ]
     },
     "vZxhnaT88dc": {
@@ -28946,9 +28849,10 @@
         "title": "Q&A: Any plans to add toilet paper in the bathroom?",
         "date": "2020-08-18",
         "topics": [
-            "features\/buildings\/the-hub"
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/toilet-paper-dlc"
         ],
-        "duplicatedby": "8S1NK72uyLE"
+        "duplicatedby": "ekFl5tlk2ig"
     },
     "tc-AverageRenownedAxeWholeWheat": {
         "title": "Q&A: Why does Snutt have many guitars?",
@@ -30115,9 +30019,38 @@
         "date": "2020-06-08",
         "topics": [
             "features\/buildings\/the-hub",
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
-        "duplicatedby": "ekFl5tlk2ig"
+        "duplicates": [
+            "5sqgxrPlcUI",
+            "24KsUKR3T-4",
+            "64xmTN-rhbs",
+            "AeWfPCZQZBQ",
+            "b06s0rzssTc",
+            "b7ZVKjoH7CQ",
+            "bSD9Vj_ZKek",
+            "clJjkvA5whw",
+            "En8viTUiojc",
+            "kitahOI_c88",
+            "mBpIB3ojMC8",
+            "oa5g8FKujqk",
+            "qgNE5bu73j0",
+            "sve9kjgML2E",
+            "unZciwmFlwA",
+            "ydJvaDmoy0U",
+            "Z7KaqsyT7_k",
+            "zoVojtGZw9A"
+        ],
+        "seealso": [
+            "1-xFJyIBosU",
+            "7HtEV_DVbgw",
+            "25Uqa4KOKqc",
+            "99HzTmnXLaE",
+            "d8RBkY8oP1Q",
+            "ekFl5tlk2ig",
+            "JSE233L0yRA",
+            "Ka4Y6908xq0"
+        ]
     },
     "F0Lu47hMTD8": {
         "title": "Q&A: Will there be a cosy place for the Pioneer to live in?",
@@ -30568,11 +30501,12 @@
         "title": "Q&A: Tier 14 Toilet?",
         "date": "2020-05-19",
         "topics": [
-            "features\/possible-features\/dlc",
+            "features\/buildings\/the-hub",
             "features\/tiers"
         ],
         "seealso": [
-            "ekFl5tlk2ig"
+            "ekFl5tlk2ig",
+            "FlaP38G7O5U"
         ]
     },
     "lQC68q7s21c": {
@@ -31258,6 +31192,7 @@
         "seealso": [
             "at2Y5iISicY",
             "ekFl5tlk2ig",
+            "FlaP38G7O5U",
             "j8UaqapuLZw",
             "RpmitKGrznw"
         ]
@@ -31887,9 +31822,12 @@
         "title": "Q&A: Microtranscation DLC?",
         "date": "2020-01-22",
         "topics": [
-            "features\/possible-features\/dlc"
+            "features\/possible-features\/dlc",
+            "features\/unplanned-features\/microtransactions"
         ],
-        "duplicatedby": "ekFl5tlk2ig"
+        "seealso": [
+            "V2cOLLcElBI"
+        ]
     },
     "4qkNiPphEbw": {
         "title": "Q&A: When will Stardew Valley spouses be introduced?",

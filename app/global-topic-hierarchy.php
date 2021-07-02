@@ -1070,6 +1070,16 @@ $global_topic_hierarchy = [
 		'Features',
 		'Planned Features',
 	],
+	'PLbjDnnBIxiEo6-Jsza66SWDUgX688DEh5' => [ // Flushable Toilet DLC
+		'Features',
+		'Possible Features',
+		'DLC',
+	],
+	'PLbjDnnBIxiEprsambYVkRLAij70izxfVD' => [ // Toilet Paper DLC
+		'Features',
+		'Possible Features',
+		'DLC',
+	],
 ];
 
 $not_a_livestream = [
