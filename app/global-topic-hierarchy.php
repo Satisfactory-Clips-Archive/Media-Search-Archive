@@ -1088,6 +1088,10 @@ $global_topic_hierarchy = [
 		'Features',
 		'Unplanned Features',
 	],
+	'PLbjDnnBIxiErwuxp-AwGwlUCua_gQh6QU' => [ // Ultrawide Monitors
+		'Technology',
+		'Graphics',
+	],
 ];
 
 $not_a_livestream = [
