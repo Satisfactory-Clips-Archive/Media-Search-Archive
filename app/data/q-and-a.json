@@ -6071,7 +6071,7 @@
         "date": "2021-04-27",
         "topics": [
             "coffee-stainers",
-            "features\/buildings"
+            "features\/unplanned-features\/mk-2-buildings"
         ],
         "duplicates": [
             "b9z-MopRxic",
@@ -8336,8 +8336,8 @@
         "title": "Q&A: Mk.2 Factory Buildings?",
         "date": "2021-04-06",
         "topics": [
-            "features\/buildings",
-            "features\/buildings\/overclocking-underclocking"
+            "features\/buildings\/overclocking-underclocking",
+            "features\/unplanned-features\/mk-2-buildings"
         ],
         "duplicatedby": "1mj3Rql5vGQ"
     },
@@ -10145,7 +10145,12 @@
         "title": "Q&A: Will we ever see Mk.2 versions of the Constructor, Assembler, Refinery etc.?",
         "date": "2021-03-23",
         "topics": [
-            "features\/buildings"
+            "features\/buildings",
+            "features\/buildings\/assembler",
+            "features\/buildings\/constructor",
+            "features\/buildings\/refinery",
+            "features\/buildings\/smelter",
+            "features\/unplanned-features\/mk-2-buildings"
         ],
         "seealso": [
             "5ANUhKoS4uQ"
@@ -20978,7 +20983,8 @@
         "topics": [
             "features\/buildings",
             "features\/buildings\/overclocking-underclocking",
-            "features\/buildings\/smelter"
+            "features\/buildings\/smelter",
+            "features\/unplanned-features\/mk-2-buildings"
         ],
         "duplicatedby": "1mj3Rql5vGQ"
     },
@@ -23153,22 +23159,22 @@
         ]
     },
     "d6uqZlgK7ao": {
-        "title": "Q&A: I think the price for mk. 3 & 4 belts are great, but mk. 2 I skip almost every time.",
+        "title": "Q&A: I think the price for mk.3 & mk.4 belts are great, but mk.2 I skip almost every time.",
         "date": "2020-10-13",
         "topics": [
             "environment\/resources",
-            "features\/buildings"
+            "features\/buildables\/conveyor-belts"
         ],
         "seealso": [
             "DE_UxFAQUm0"
         ]
     },
     "1xgb-jbAWt4": {
-        "title": "Q&A: Only use it (mk. 2 belts) for Load Balancing.",
+        "title": "Q&A: Only use it (mk.2 belts) for Load Balancing.",
         "date": "2020-10-13",
         "topics": [
             "environment\/resources",
-            "features\/buildings"
+            "features\/buildables\/conveyor-belts"
         ]
     },
     "qqzCKyEWttg": {
@@ -24443,10 +24449,10 @@
         "duplicatedby": "JDJ5hvAkrWw"
     },
     "NiBLAUCxIEs": {
-        "title": "Q&A: What about Mk. 6 Belts?",
+        "title": "Q&A: What about Mk.6 Belts?",
         "date": "2020-09-29",
         "topics": [
-            "features\/buildings",
+            "features\/buildables\/conveyor-belts",
             "mods\/mods-vs-features",
             "technology\/graphics"
         ],
@@ -24912,7 +24918,7 @@
         "title": "Q&A: Would implementing covered belts reduce the number of objects in the world?",
         "date": "2020-09-22",
         "topics": [
-            "features\/buildings",
+            "features\/buildables\/conveyor-belts",
             "features\/unplanned-features\/mass-building",
             "technology\/graphics",
             "technology\/unreal-engine\/object-limit"

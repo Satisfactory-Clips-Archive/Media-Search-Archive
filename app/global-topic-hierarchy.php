@@ -1084,6 +1084,10 @@ $global_topic_hierarchy = [
 		'Features',
 		'Unplanned Features',
 	],
+	'PLbjDnnBIxiErkR6x1_jWiiIrfVBF2fatT' => [ // Mk.2 Buildings
+		'Features',
+		'Unplanned Features',
+	],
 ];
 
 $not_a_livestream = [
