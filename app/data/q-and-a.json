@@ -1,4 +1,760 @@
 {
+    "VwrPzpHGFcg": {
+        "title": "Q&A: Favourite unofficial game modes from the modding folks?",
+        "date": "2021-06-29",
+        "topics": [
+            "community",
+            "mods\/ficsit-farming"
+        ]
+    },
+    "U8-r7GQXOdU": {
+        "title": "Q&A: Satisfactory crossed with Stardew Valley?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/requested-features\/crossovers"
+        ]
+    },
+    "U9bVS61gZCE": {
+        "title": "Q&A: How was Midsummer?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt",
+            "off-topic\/sweden"
+        ]
+    },
+    "vrBRxuX6YyA": {
+        "title": "Q&A: Please add Achievements & badges on Steam",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/buildings\/space-elevator",
+            "features\/possible-features\/third-party-service-integration\/achievements"
+        ]
+    },
+    "V96viZIrKfQ": {
+        "title": "Q&A: Do you do any work outside of the streams?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt"
+        ]
+    },
+    "yXa-4uTFKJ0": {
+        "title": "Q&A: Was the Update 4 Trailer music written for you?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates\/teasers-trailers\/update-4-teasers",
+            "soundtrack"
+        ]
+    },
+    "oQKGmRdLdvs": {
+        "title": "Q&A: Can you release an official statement if it's okay to stream the game with music on Twitch?",
+        "date": "2021-06-29",
+        "topics": [
+            "soundtrack"
+        ]
+    },
+    "nsejnx28EKk": {
+        "title": "Q&A: Can we see Jace stream his Aluminium factory build?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers\/jace",
+            "environment\/resources"
+        ]
+    },
+    "JV12w3UZIHE": {
+        "title": "Q&A: Do you have an approximate timeline for when 1.0 will be ready?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "J_Dzjr_-8Hc": {
+        "title": "Q&A: When are you guys adding Battle Royale mode?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/possible-features\/game-modes\/battle-royale"
+        ]
+    },
+    "C5qsDMH6vRU": {
+        "title": "Q&A: Early Access, any regrets?",
+        "date": "2021-06-29",
+        "topics": [
+            "retail\/early-access"
+        ]
+    },
+    "hJSXfLTVMHE": {
+        "title": "Q&A: Any plans for supporting Dedicated Servers on Linux?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/planned-features\/dedicated-servers",
+            "technology\/linux"
+        ]
+    },
+    "-nAX-cCDJRI": {
+        "title": "Q&A: Is peaceful mode basically no creatures?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/possible-features\/game-modes\/peaceful-mode"
+        ]
+    },
+    "NBcrfP9kxG8": {
+        "title": "Q&A: Will 1.0 be out before the world ends?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "trolling"
+        ]
+    },
+    "W56wGXyT_sA": {
+        "title": "Q&A: Equipment Hotkey, when?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/equipment",
+            "technology\/user-interface"
+        ]
+    },
+    "L0-x7Htlj14": {
+        "title": "Q&A: Will Drones ever be able to carry the Pioneer?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/transportation\/vehicles\/drones",
+            "features\/unplanned-features\/aerial-travel"
+        ]
+    },
+    "pLGMWKj9AW0": {
+        "title": "Q&A: Can you make it so friends in multiplayer can have more rights like setting Train routes?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/multiplayer"
+        ]
+    },
+    "MKrIZzZe0aQ": {
+        "title": "Q&A: Can you give information about new Build Modes coming out?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/planned-features\/build-modes"
+        ]
+    },
+    "WJpe_Y6e9es": {
+        "title": "Q&A: I heard a bunch of appointments opened up in Stockholm today, are you guys getting vaccinated?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt",
+            "off-topic\/sweden"
+        ]
+    },
+    "453B0wDDHFA": {
+        "title": "Q&A: Will you add more decoration options so we don't have to rely on Mods so much?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/possible-features\/decor",
+            "mods\/mods-vs-features"
+        ]
+    },
+    "dJhg5hbiMoQ": {
+        "title": "Q&A: Did you guys know that today was Matt Mercer's birthday?",
+        "date": "2021-06-29",
+        "topics": [
+            "off-topic"
+        ]
+    },
+    "3rgaLHEbzMg": {
+        "title": "Q&A: Does Train Collision mean that Trains will collide with terrain & buildings like Trucks do?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/transportation\/trains\/train-signals",
+            "technology\/physics"
+        ]
+    },
+    "PBccbfC_x2E": {
+        "title": "Q&A: Turbofuel for Jetpacks?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/crafting\/fuel",
+            "features\/equipment\/jetpack"
+        ]
+    },
+    "m9Uh0DXTSss": {
+        "title": "Q&A: Any plans for future videos with devs like the Lighting video?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers"
+        ]
+    },
+    "DiLr2o5ealA": {
+        "title": "Q&A: Do you have plans for S.A.M. Ore?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/resources\/sam-ore"
+        ]
+    },
+    "Z9c7weKgaz0": {
+        "title": "Q&A: Any plans for random map generation?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/unplanned-features\/procedural-generation"
+        ]
+    },
+    "o7yp11NU3bQ": {
+        "title": "Q&A: Any optimisations in the future?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates"
+        ]
+    },
+    "SwjERGgPOgU": {
+        "title": "Q&A: Can we get Hannah on stream or pre-recorded?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers\/hannah"
+        ]
+    },
+    "zb-kBKU_EZo": {
+        "title": "Q&A: Do you get meetings at any pub, can we join?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers"
+        ]
+    },
+    "Uof19aszfFc": {
+        "title": "Q&A: Are you going to reinstate\/expand gameplay telemetry?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/analytics"
+        ]
+    },
+    "WiDZuigYT2c": {
+        "title": "Q&A: Will we always have sky factories or will we need to figure out how to build on the ground?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/physics"
+        ]
+    },
+    "8AAgPIENmZ0": {
+        "title": "Q&A: Any plans for player-generated maps?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/world-map",
+            "mods\/official-mod-support"
+        ]
+    },
+    "UjLAYqr2L6g": {
+        "title": "Q&A: Have you read my latest crash report?",
+        "date": "2021-06-29",
+        "topics": [
+            "mods"
+        ]
+    },
+    "4OudGoLGTuk": {
+        "title": "Q&A: Will Update 5 break Mods?",
+        "date": "2021-06-29",
+        "topics": [
+            "mods",
+            "satisfactory-updates\/pending\/satisfactory-update-5"
+        ]
+    },
+    "MW1lkjm7g3U": {
+        "title": "Q&A: Will there be a proper use for the toilet in The HUB one day?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/buildings\/the-hub",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
+        ]
+    },
+    "5THxL1hH6GI": {
+        "title": "Q&A: How can I play with a friend, Epic\/Steam?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/multiplayer\/crossplay"
+        ]
+    },
+    "VtM58J6-DDQ": {
+        "title": "Q&A: Any news on EU store?",
+        "date": "2021-06-29",
+        "topics": [
+            "merch",
+            "merch\/eu-merch-store"
+        ]
+    },
+    "IAMN_jSQRaQ": {
+        "title": "Q&A: Do you think you'll fix being able to build under the map, or keep it because people like it?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/world-map"
+        ]
+    },
+    "wHbulAfnOyc": {
+        "title": "Q&A: Are you thinking of implementing a system like Satisfactory Calculator?",
+        "date": "2021-06-29",
+        "topics": [
+            "community\/satisfactory-calculator",
+            "technology\/user-interface"
+        ]
+    },
+    "YZU9cZ0XzIk": {
+        "title": "Q&A: More Sulfur nodes in the future, like you did with Bauxite?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/resources"
+        ]
+    },
+    "4gWw_2sQIvc": {
+        "title": "Q&A: Did Snutt practice his juggling?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers\/snutt"
+        ]
+    },
+    "pZozYHy8vNk": {
+        "title": "Q&A: Add a scratch pad in game?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/user-interface"
+        ]
+    },
+    "ksexAXZNcGg": {
+        "title": "Q&A: Is the foliage system getting reworked?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/plants"
+        ]
+    },
+    "Q7VGYiAagwA": {
+        "title": "Q&A: In-game whiteboard?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/possible-features\/decor",
+            "technology\/user-interface"
+        ]
+    },
+    "NfxKGSt-Ogw": {
+        "title": "Q&A: Are you allowed to comment on new ores, like S.A.M. Ore?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/resources\/sam-ore"
+        ]
+    },
+    "I92-EFlUd4U": {
+        "title": "Q&A: Can you put \"Snake\" in The HUB?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/buildings\/the-hub"
+        ]
+    },
+    "NYHU62S6czs": {
+        "title": "Q&A: Blueprints, for repetitive factory setups?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/possible-features\/blueprints"
+        ]
+    },
+    "HmJNJUmQyGQ": {
+        "title": "Q&A: What's your opinion on Hyper Tube accelerators?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/transportation\/hyper-tubes"
+        ]
+    },
+    "1FZ1xfDjOww": {
+        "title": "Q&A: Will you release in 2022 or 2023?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "trolling"
+        ]
+    },
+    "n2iZ5LMi2QI": {
+        "title": "Q&A: Did Jace become Dora of Coffee Stain Studios?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers\/jace",
+            "satisfactory-updates\/teasers-trailers\/update-4-patch-notes-video"
+        ]
+    },
+    "rSX888DAE0Y": {
+        "title": "Q&A: Will you be able to set your own routes for Trains, the AI does not always use the best route?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/transportation\/trains"
+        ]
+    },
+    "kvFxIEqyL8E": {
+        "title": "Q&A: Can you make flower petals renewable?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/plants"
+        ]
+    },
+    "Ib023Qb25Pw": {
+        "title": "Q&A: In an infinite building game how do you quantify an acceptable performance on standard specs?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/graphics"
+        ]
+    },
+    "hIKBX_gy5tk": {
+        "title": "Q&A: Will we have to rebuild parts of our factory for Update 5 like we did back with Update 3?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-5"
+        ]
+    },
+    "SGvX6YFSVJI": {
+        "title": "Q&A: What does LOD Dithering do in the game?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/graphics\/lod"
+        ]
+    },
+    "jmFnfqKlRLI": {
+        "title": "Q&A: Can I use that low-res model all the time?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/graphics\/lod"
+        ]
+    },
+    "hSZdK3Pg9AE": {
+        "title": "Q&A: Can we get a Goat Simulator easter egg in the game?",
+        "date": "2021-06-29",
+        "topics": [
+            "easter-eggs",
+            "off-topic\/goat-simulator"
+        ]
+    },
+    "EfqxH78tmFc": {
+        "title": "Q&A: Are the team thinking to release 1.0 in 2022?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "l_Ex-qIRiwo": {
+        "title": "Q&A: Will the big monster from the trailer get released?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/creatures\/crab-boss"
+        ]
+    },
+    "f05_-GJTYyg": {
+        "title": "Q&A: Any thoughts on an expensive mode?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/resources",
+            "features\/possible-features\/game-modes"
+        ]
+    },
+    "MiBdM3dSRPQ": {
+        "title": "Q&A: When will we get ranged weapons in the game?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/equipment"
+        ]
+    },
+    "TZZ14bWUnZM": {
+        "title": "Q&A: Feature Creep party you say?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-5",
+            "trolling"
+        ]
+    },
+    "oMusY1HxVhA": {
+        "title": "Q&A: Do you recommend the game?",
+        "date": "2021-06-29",
+        "topics": [
+            "off-topic\/goat-simulator",
+            "off-topic\/sanctum",
+            "off-topic\/valheim",
+            "trolling"
+        ]
+    },
+    "PxxImwwm5ko": {
+        "title": "Q&A: Will there be Lights for Vehicles?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/buildables\/lights",
+            "features\/transportation\/vehicles"
+        ]
+    },
+    "6t4_ersHMTA": {
+        "title": "Q&A: Will there be Mod support?",
+        "date": "2021-06-29",
+        "topics": [
+            "mods\/official-mod-support"
+        ]
+    },
+    "w_ZCP0Syl-A": {
+        "title": "Q&A: What's the greatest number of people you've had in a Multiplayer session?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/multiplayer"
+        ]
+    },
+    "YKThpL6o12Y": {
+        "title": "Q&A: How would you suggest learning C++?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology"
+        ]
+    },
+    "yNnIzPtYBcs": {
+        "title": "Q&A: How about a male character model?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/possible-features\/character-customisation"
+        ]
+    },
+    "fvvftnYCayg": {
+        "title": "Q&A: Native Linux support?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/linux"
+        ]
+    },
+    "utp7TQEksi0": {
+        "title": "Q&A: Are we going to get changes to the basic material Recipes?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/crafting\/recipes",
+            "satisfactory-updates\/pending\/satisfactory-update-5"
+        ]
+    },
+    "XKjzX-knQU0": {
+        "title": "Q&A: Collab with CDPR, when?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/requested-features\/crossovers"
+        ]
+    },
+    "yHr48ojeNho": {
+        "title": "Q&A: How much do you think Unreal Engine 5 would help development of the game?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/unreal-engine\/unreal-engine-5"
+        ]
+    },
+    "dm_Nlh1ZMm4": {
+        "title": "Q&A: Do you think the changes you've made would block you from migrating to Unreal Engine 5?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/unreal-engine\/unreal-engine-5"
+        ]
+    },
+    "pf0uO8nhD_Q": {
+        "title": "Q&A: Update 5 trailer, when?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video",
+            "satisfactory-updates\/teasers-trailers\/update-5-teasers"
+        ]
+    },
+    "SOQlMqZBglM": {
+        "title": "Q&A: What are the odds of an Update 6?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-6"
+        ]
+    },
+    "Os0322plJss": {
+        "title": "Q&A: Can we get a suit powered by Fuel Rods & Nuclear Pasta?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/resources\/nuclear-pasta",
+            "features\/crafting\/fuel",
+            "features\/equipment"
+        ]
+    },
+    "xp3hSA1CwFM": {
+        "title": "Q&A: What are the problems you are facing with Dedicated Servers?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/planned-features\/dedicated-servers"
+        ]
+    },
+    "z6UlNwXqRCg": {
+        "title": "Q&A: What do you guys hope to see in end-game?",
+        "date": "2021-06-29",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "trolling"
+        ]
+    },
+    "9KV0D_VniRI": {
+        "title": "Q&A: Do you know what S.A.M. stands for?",
+        "date": "2021-06-29",
+        "topics": [
+            "environment\/resources\/sam-ore"
+        ]
+    },
+    "fRuFxL5hv-I": {
+        "title": "Q&A: Elevators, when?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/requested-features\/elevators"
+        ]
+    },
+    "_psXx_dfadY": {
+        "title": "Q&A: Global grid?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/requested-features\/global-build-grid"
+        ]
+    },
+    "fXSxpjRKyts": {
+        "title": "Q&A: Burger or Pizza today, Snutt?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers\/snutt\/snutt-burger-time"
+        ]
+    },
+    "gl_O6eDr9yM": {
+        "title": "Q&A: What is a Calzone, but a Pizza sandwich?",
+        "date": "2021-06-29",
+        "topics": [
+            "community\/signpostmarv",
+            "off-topic\/food-drink\/pizza"
+        ]
+    },
+    "RbQ1QpTvJi8": {
+        "title": "Q&A: Is a Hot Dog a sandwich?",
+        "date": "2021-06-29",
+        "topics": [
+            "off-topic\/food-drink"
+        ]
+    },
+    "yUkplMNxmcM": {
+        "title": "Q&A: Is cereal a soup?",
+        "date": "2021-06-29",
+        "topics": [
+            "off-topic\/food-drink"
+        ]
+    },
+    "IueQtEGBigw": {
+        "title": "Q&A: DLSS?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/graphics\/dlss"
+        ]
+    },
+    "eWzUtouLQrI": {
+        "title": "Q&A: FSR?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/graphics"
+        ]
+    },
+    "klWHGzjUQe4": {
+        "title": "Q&A: Windows 11 support?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology"
+        ]
+    },
+    "Ow5LVDtlPpE": {
+        "title": "Q&A: Would you classify Lasagne as Spaghetti, or Mac & Cheese?",
+        "date": "2021-06-29",
+        "topics": [
+            "off-topic\/food-drink"
+        ]
+    },
+    "yVe94ABvZ88": {
+        "title": "Q&A: Dedicated Servers on Windows & Linux?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/planned-features\/dedicated-servers"
+        ]
+    },
+    "ZZKygLGMC7w": {
+        "title": "Q&A: DirectX 12 support?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/directx"
+        ]
+    },
+    "tRB1pMdoCIE": {
+        "title": "Q&A: My friend doesn't want to play because it's in Early Access, what do I do?",
+        "date": "2021-06-29",
+        "topics": [
+            "community"
+        ]
+    },
+    "MDQAA3IdUbo": {
+        "title": "Q&A: Is Satisfactory optimised on the M1 chip?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/mac"
+        ]
+    },
+    "I6mpLei5WZk": {
+        "title": "Q&A: How do you figure out the Recipes?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/crafting\/recipes"
+        ]
+    },
+    "IP_jZskvU6k": {
+        "title": "Q&A: Will Vehicle physics ever get a revisit?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/transportation\/vehicles",
+            "technology\/physics"
+        ]
+    },
+    "5qjtJ3Qwbjo": {
+        "title": "Q&A: Toggle for Fog?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology\/graphics"
+        ]
+    },
+    "wOqgDgyjNqk": {
+        "title": "Q&A: Why do Mk.3 and Mk.5 belts have weird transfer speeds?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/buildables\/conveyor-belts"
+        ]
+    },
+    "dSQu_22pC_w": {
+        "title": "Q&A: Do you live in a fog?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers\/jace",
+            "trolling"
+        ]
+    },
+    "jkMcXbJhFoQ": {
+        "title": "Q&A: Any thoughts about attaching Splitters directly to machines\/Miners?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/buildables\/conveyor-belts",
+            "features\/buildings"
+        ]
+    },
+    "scyn-JQyOuU": {
+        "title": "Q&A: In Multiplayer will we each have our own levels on the server?",
+        "date": "2021-06-29",
+        "topics": [
+            "features\/multiplayer",
+            "features\/planned-features\/dedicated-servers"
+        ]
+    },
+    "ZUBPh6l13G8": {
+        "title": "Q&A: How do you make your animations, what programs do you use?",
+        "date": "2021-06-29",
+        "topics": [
+            "technology"
+        ]
+    },
+    "tvc_Q0s8_Uo": {
+        "title": "Q&A: What are your summer vacation plans?",
+        "date": "2021-06-29",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt"
+        ]
+    },
     "n12v8TIWFOo": {
         "title": "Q&A: What does an Art Director do?",
         "date": "2021-06-22",
@@ -16138,8 +16894,7 @@
         "topics": [
             "features\/buildings\/the-hub",
             "features\/possible-features\/dlc",
-            "features\/possible-features\/dlc\/flushable-toilet-dlc",
-            "features\/transportation\/vehicles\/drones"
+            "features\/possible-features\/dlc\/flushable-toilet-dlc"
         ],
         "duplicatedby": "FlaP38G7O5U"
     },
