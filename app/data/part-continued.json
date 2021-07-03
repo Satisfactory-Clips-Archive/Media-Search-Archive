@@ -863,16 +863,16 @@
         "title": "Multiplayer desync issues (Part 1)",
         "date": "2020-08-18"
     },
-    "tc-AwkwardBloodyNightingaleShadyLulu": {
-        "previous": "tc-RelievedRelievedCroissantMingLee",
-        "next": null,
-        "title": "Q&A: What's in Tier 8? (part 2)",
+    "tc-VastScrumptiousEyeballLeeroyJenkins": {
+        "previous": "tc-AliveHomelySandwichGivePLZ",
+        "next": "tc-TsundereHandsomeBottleCharlietheUnicorn",
+        "title": "Multiplayer desync issues (Part 2)",
         "date": "2020-08-18"
     },
-    "tc-BelovedWrongCiderBCouch": {
-        "previous": "tc-RealFastShieldDoubleRainbow",
+    "tc-TsundereHandsomeBottleCharlietheUnicorn": {
+        "previous": "tc-VastScrumptiousEyeballLeeroyJenkins",
         "next": null,
-        "title": "Snutt & Jace Talk: Accessibility (part 6)",
+        "title": "Multiplayer desync issues (Part 3)",
         "date": "2020-08-18"
     },
     "tc-SplendidAffluentVampireNotLikeThis": {
@@ -905,34 +905,22 @@
         "title": "Build Limit (Part 5):",
         "date": "2020-08-18"
     },
-    "tc-BlueBadWeaselPMSTwin": {
-        "previous": "tc-WittyYawningSangJKanStyle",
-        "next": null,
-        "title": "Q&A: How did you make the character slide in Satisfactory? (part 2)",
-        "date": "2020-08-18"
-    },
     "tc-BoxySmallAsparagusSmoocherZ": {
         "previous": "tc-GiantGeniusGooseCclamChamp",
         "next": null,
         "title": "Build Limit (Part 6):",
         "date": "2020-08-18"
     },
-    "tc-CorrectAlertEggplantPJSalt": {
-        "previous": "tc-OriginalDifficultTeaKevinTurtle",
-        "next": "tc-ShakingNastyJaguarGrammarKing",
-        "title": "Mods vs. Features (Part 3)",
-        "date": "2020-08-18"
-    },
-    "tc-CrackyBombasticEggUWot": {
-        "previous": "tc-PolishedThirstyDinosaurOhMyDog",
-        "next": null,
-        "title": "Q&A: Session Privacy \/ Join Button not working? (Part 2)",
-        "date": "2020-08-18"
-    },
     "tc-CrowdedSplendidSalamanderSoonerLater": {
         "previous": null,
         "next": "tc-PrettiestBloodyBadgerDendiFace",
         "title": "Snutt Talk: Accessibility (part 1)",
+        "date": "2020-08-18"
+    },
+    "tc-PrettiestBloodyBadgerDendiFace": {
+        "previous": "tc-CrowdedSplendidSalamanderSoonerLater",
+        "next": "tc-DignifiedSmoggyKathyAMPEnergyCherry",
+        "title": "Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes? (part 2)",
         "date": "2020-08-18"
     },
     "tc-DignifiedSmoggyKathyAMPEnergyCherry": {
@@ -947,10 +935,28 @@
         "title": "Snutt & Jace Talk: Accessibility - Colour Blindness (part 4)",
         "date": "2020-08-18"
     },
+    "tc-RealFastShieldDoubleRainbow": {
+        "previous": "tc-FurtiveConcernedPuppySMOrc",
+        "next": "tc-BelovedWrongCiderBCouch",
+        "title": "Snutt & Jace Talk: Accessibility - Hard of Hearing (part 5)",
+        "date": "2020-08-18"
+    },
+    "tc-BelovedWrongCiderBCouch": {
+        "previous": "tc-RealFastShieldDoubleRainbow",
+        "next": null,
+        "title": "Snutt & Jace Talk: Accessibility (part 6)",
+        "date": "2020-08-18"
+    },
     "tc-HandsomeJoyousPigeonYouWHY": {
         "previous": null,
         "next": "tc-ResilientTalentedSalsifySSSsss",
         "title": "Snutt & Jace Talk: Arachnophobia Mode (part 1)",
+        "date": "2020-08-18"
+    },
+    "tc-ResilientTalentedSalsifySSSsss": {
+        "previous": "tc-HandsomeJoyousPigeonYouWHY",
+        "next": "tc-ModernExquisiteJayFeelsBadMan",
+        "title": "Snutt & Jace Talk: Arachnophobia Mode (part 2)",
         "date": "2020-08-18"
     },
     "tc-ModernExquisiteJayFeelsBadMan": {
@@ -971,40 +977,10 @@
         "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 1)",
         "date": "2020-08-18"
     },
-    "tc-OriginalDifficultTeaKevinTurtle": {
-        "previous": "tc-CorrectAlertEggplantPJSalt",
-        "next": "tc-ShakingCredulousGalagoCopyThis",
-        "title": "Mods vs. Features (Part 2)",
-        "date": "2020-08-18"
-    },
-    "tc-PolishedThirstyDinosaurOhMyDog": {
-        "previous": null,
-        "next": "tc-CrackyBombasticEggUWot",
-        "title": "Q&A: Session Privacy \/ Join Button not working? (Part 1)",
-        "date": "2020-08-18"
-    },
-    "tc-PrettiestBloodyBadgerDendiFace": {
-        "previous": "tc-CrowdedSplendidSalamanderSoonerLater",
-        "next": "tc-DignifiedSmoggyKathyAMPEnergyCherry",
-        "title": "Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes? (part 2)",
-        "date": "2020-08-18"
-    },
-    "tc-RealFastShieldDoubleRainbow": {
-        "previous": "tc-FurtiveConcernedPuppySMOrc",
-        "next": "tc-BelovedWrongCiderBCouch",
-        "title": "Snutt & Jace Talk: Accessibility - Hard of Hearing (part 5)",
-        "date": "2020-08-18"
-    },
-    "tc-RelievedRelievedCroissantMingLee": {
-        "previous": null,
-        "next": "tc-AwkwardBloodyNightingaleShadyLulu",
-        "title": "Q&A: What's in Tier 8? (part 1)",
-        "date": "2020-08-18"
-    },
-    "tc-ResilientTalentedSalsifySSSsss": {
-        "previous": "tc-HandsomeJoyousPigeonYouWHY",
-        "next": "tc-ModernExquisiteJayFeelsBadMan",
-        "title": "Snutt & Jace Talk: Arachnophobia Mode (part 2)",
+    "tc-TardyBitterGnatDatSheffy": {
+        "previous": "tc-OpenIntelligentPizzaYouWHY",
+        "next": "tc-SavagePopularBatChocolateRain",
+        "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 2)",
         "date": "2020-08-18"
     },
     "tc-SavagePopularBatChocolateRain": {
@@ -1013,10 +989,46 @@
         "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 3)",
         "date": "2020-08-18"
     },
+    "tc-PolishedThirstyDinosaurOhMyDog": {
+        "previous": null,
+        "next": "tc-CrackyBombasticEggUWot",
+        "title": "Q&A: Session Privacy \/ Join Button not working? (Part 1)",
+        "date": "2020-08-18"
+    },
+    "tc-CrackyBombasticEggUWot": {
+        "previous": "tc-PolishedThirstyDinosaurOhMyDog",
+        "next": null,
+        "title": "Q&A: Session Privacy \/ Join Button not working? (Part 2)",
+        "date": "2020-08-18"
+    },
+    "tc-RelievedRelievedCroissantMingLee": {
+        "previous": null,
+        "next": "tc-AwkwardBloodyNightingaleShadyLulu",
+        "title": "Q&A: What's in Tier 8? (part 1)",
+        "date": "2020-08-18"
+    },
+    "tc-AwkwardBloodyNightingaleShadyLulu": {
+        "previous": "tc-RelievedRelievedCroissantMingLee",
+        "next": null,
+        "title": "Q&A: What's in Tier 8? (part 2)",
+        "date": "2020-08-18"
+    },
     "tc-ShakingCredulousGalagoCopyThis": {
         "previous": null,
         "next": "tc-OriginalDifficultTeaKevinTurtle",
         "title": "Mods vs. Features (Part 1)",
+        "date": "2020-08-18"
+    },
+    "tc-OriginalDifficultTeaKevinTurtle": {
+        "previous": "tc-CorrectAlertEggplantPJSalt",
+        "next": "tc-ShakingCredulousGalagoCopyThis",
+        "title": "Mods vs. Features (Part 2)",
+        "date": "2020-08-18"
+    },
+    "tc-CorrectAlertEggplantPJSalt": {
+        "previous": "tc-OriginalDifficultTeaKevinTurtle",
+        "next": "tc-ShakingNastyJaguarGrammarKing",
+        "title": "Mods vs. Features (Part 3)",
         "date": "2020-08-18"
     },
     "tc-ShakingNastyJaguarGrammarKing": {
@@ -1025,28 +1037,16 @@
         "title": "Mods vs. Features (Part 4)",
         "date": "2020-08-18"
     },
-    "tc-TardyBitterGnatDatSheffy": {
-        "previous": "tc-OpenIntelligentPizzaYouWHY",
-        "next": "tc-SavagePopularBatChocolateRain",
-        "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 2)",
-        "date": "2020-08-18"
-    },
-    "tc-TsundereHandsomeBottleCharlietheUnicorn": {
-        "previous": "tc-VastScrumptiousEyeballLeeroyJenkins",
-        "next": null,
-        "title": "Multiplayer desync issues (Part 3)",
-        "date": "2020-08-18"
-    },
-    "tc-VastScrumptiousEyeballLeeroyJenkins": {
-        "previous": "tc-AliveHomelySandwichGivePLZ",
-        "next": "tc-TsundereHandsomeBottleCharlietheUnicorn",
-        "title": "Multiplayer desync issues (Part 2)",
-        "date": "2020-08-18"
-    },
     "tc-WittyYawningSangJKanStyle": {
         "previous": null,
         "next": "tc-BlueBadWeaselPMSTwin",
         "title": "Q&A: How did you make the character slide in Satisfactory? (part 1)",
+        "date": "2020-08-18"
+    },
+    "tc-BlueBadWeaselPMSTwin": {
+        "previous": "tc-WittyYawningSangJKanStyle",
+        "next": null,
+        "title": "Q&A: How did you make the character slide in Satisfactory? (part 2)",
         "date": "2020-08-18"
     },
     "tc-BoxyZanyPancakeKeepo": {

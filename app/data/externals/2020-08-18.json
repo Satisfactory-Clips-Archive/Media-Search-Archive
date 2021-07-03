@@ -21,6 +21,26 @@
         ],
         "legacyof": []
     },
+    "tc-VastScrumptiousEyeballLeeroyJenkins": {
+        "title": "Multiplayer desync issues (Part 2)",
+        "tags": [
+            "faq"
+        ],
+        "topics": [
+            "Multiplayer"
+        ],
+        "legacyof": []
+    },
+    "tc-TsundereHandsomeBottleCharlietheUnicorn": {
+        "title": "Multiplayer desync issues (Part 3)",
+        "tags": [
+            "faq"
+        ],
+        "topics": [
+            "Multiplayer"
+        ],
+        "legacyof": []
+    },
     "tc-AlluringScrumptiousBaboonHeyGirl": {
         "title": "Q&A: Any ice\/snow biome plans?",
         "tags": [
@@ -78,17 +98,6 @@
         ],
         "legacyof": []
     },
-    "tc-AwkwardBloodyNightingaleShadyLulu": {
-        "title": "Q&A: What's in Tier 8? (part 2)",
-        "tags": [
-            "faq"
-        ],
-        "topics": [
-            "Satisfactory Update 4",
-            "Tier 8"
-        ],
-        "legacyof": []
-    },
     "tc-BashfulDependableBobaWTRuck": {
         "title": "Q&A: Offline Play",
         "tags": [],
@@ -111,14 +120,6 @@
         "topics": [
             "Paint",
             "Trains"
-        ],
-        "legacyof": []
-    },
-    "tc-BelovedWrongCiderBCouch": {
-        "title": "Snutt & Jace Talk: Accessibility (part 6)",
-        "tags": [],
-        "topics": [
-            "Accessibility"
         ],
         "legacyof": []
     },
@@ -177,14 +178,6 @@
         ],
         "topics": [
             "Unreal Engine"
-        ],
-        "legacyof": []
-    },
-    "tc-BlueBadWeaselPMSTwin": {
-        "title": "Q&A: How did you make the character slide in Satisfactory? (part 2)",
-        "tags": [],
-        "topics": [
-            "Pioneer"
         ],
         "legacyof": []
     },
@@ -264,14 +257,6 @@
         ],
         "legacyof": []
     },
-    "tc-CorrectAlertEggplantPJSalt": {
-        "title": "Mods vs. Features (Part 3)",
-        "tags": [],
-        "topics": [
-            "Mods vs. Features"
-        ],
-        "legacyof": []
-    },
     "tc-CorrectNiceStingraySpicyBoy": {
         "title": "Snutt Talk: Macro Plan towards 1.0",
         "tags": [],
@@ -285,14 +270,6 @@
         "tags": [],
         "topics": [
             "Character Customisation"
-        ],
-        "legacyof": []
-    },
-    "tc-CrackyBombasticEggUWot": {
-        "title": "Q&A: Session Privacy \/ Join Button not working? (Part 2)",
-        "tags": [],
-        "topics": [
-            "Multiplayer"
         ],
         "legacyof": []
     },
@@ -322,8 +299,40 @@
         ],
         "legacyof": []
     },
+    "tc-PrettiestBloodyBadgerDendiFace": {
+        "title": "Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes? (part 2)",
+        "tags": [],
+        "topics": [
+            "Accessibility"
+        ],
+        "legacyof": []
+    },
     "tc-DignifiedSmoggyKathyAMPEnergyCherry": {
         "title": "Jace Talk: Accessibility - Arachnophobia & Colour Blindness (part 3)",
+        "tags": [],
+        "topics": [
+            "Accessibility"
+        ],
+        "legacyof": []
+    },
+    "tc-FurtiveConcernedPuppySMOrc": {
+        "title": "Snutt & Jace Talk: Accessibility - Colour Blindness (part 4)",
+        "tags": [],
+        "topics": [
+            "Accessibility"
+        ],
+        "legacyof": []
+    },
+    "tc-RealFastShieldDoubleRainbow": {
+        "title": "Snutt & Jace Talk: Accessibility - Hard of Hearing (part 5)",
+        "tags": [],
+        "topics": [
+            "Accessibility"
+        ],
+        "legacyof": []
+    },
+    "tc-BelovedWrongCiderBCouch": {
+        "title": "Snutt & Jace Talk: Accessibility (part 6)",
         "tags": [],
         "topics": [
             "Accessibility"
@@ -395,27 +404,11 @@
         ],
         "legacyof": []
     },
-    "tc-FurtiveConcernedPuppySMOrc": {
-        "title": "Snutt & Jace Talk: Accessibility - Colour Blindness (part 4)",
-        "tags": [],
-        "topics": [
-            "Accessibility"
-        ],
-        "legacyof": []
-    },
     "tc-GloriousTangentialSalmonPastaThat": {
         "title": "Q&A: Are you going to upgrade to UE5?",
         "tags": [],
         "topics": [
             "Unreal Engine 5"
-        ],
-        "legacyof": []
-    },
-    "tc-HandsomeJoyousPigeonYouWHY": {
-        "title": "Snutt & Jace Talk: Arachnophobia Mode (part 1)",
-        "tags": [],
-        "topics": [
-            "Arachnophobia Mode"
         ],
         "legacyof": []
     },
@@ -455,6 +448,22 @@
         ],
         "legacyof": []
     },
+    "tc-HandsomeJoyousPigeonYouWHY": {
+        "title": "Snutt & Jace Talk: Arachnophobia Mode (part 1)",
+        "tags": [],
+        "topics": [
+            "Arachnophobia Mode"
+        ],
+        "legacyof": []
+    },
+    "tc-ResilientTalentedSalsifySSSsss": {
+        "title": "Snutt & Jace Talk: Arachnophobia Mode (part 2)",
+        "tags": [],
+        "topics": [
+            "Arachnophobia Mode"
+        ],
+        "legacyof": []
+    },
     "tc-ModernExquisiteJayFeelsBadMan": {
         "title": "Snutt & Jace Talk: Arachnophobia Mode (part 3)",
         "tags": [],
@@ -479,11 +488,19 @@
         ],
         "legacyof": []
     },
-    "tc-OriginalDifficultTeaKevinTurtle": {
-        "title": "Mods vs. Features (Part 2)",
+    "tc-TardyBitterGnatDatSheffy": {
+        "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 2)",
         "tags": [],
         "topics": [
-            "Mods vs. Features"
+            "Multiplayer"
+        ],
+        "legacyof": []
+    },
+    "tc-SavagePopularBatChocolateRain": {
+        "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 3)",
+        "tags": [],
+        "topics": [
+            "Multiplayer"
         ],
         "legacyof": []
     },
@@ -505,11 +522,11 @@
         ],
         "legacyof": []
     },
-    "tc-PrettiestBloodyBadgerDendiFace": {
-        "title": "Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes? (part 2)",
+    "tc-CrackyBombasticEggUWot": {
+        "title": "Q&A: Session Privacy \/ Join Button not working? (Part 2)",
         "tags": [],
         "topics": [
-            "Accessibility"
+            "Multiplayer"
         ],
         "legacyof": []
     },
@@ -520,14 +537,6 @@
         ],
         "topics": [
             "Base Defense"
-        ],
-        "legacyof": []
-    },
-    "tc-RealFastShieldDoubleRainbow": {
-        "title": "Snutt & Jace Talk: Accessibility - Hard of Hearing (part 5)",
-        "tags": [],
-        "topics": [
-            "Accessibility"
         ],
         "legacyof": []
     },
@@ -553,6 +562,17 @@
         ],
         "legacyof": []
     },
+    "tc-AwkwardBloodyNightingaleShadyLulu": {
+        "title": "Q&A: What's in Tier 8? (part 2)",
+        "tags": [
+            "faq"
+        ],
+        "topics": [
+            "Satisfactory Update 4",
+            "Tier 8"
+        ],
+        "legacyof": []
+    },
     "tc-RelievedTawdryEelDogFace": {
         "title": "Q&A: When is Update 4 pencilled for?",
         "tags": [
@@ -560,14 +580,6 @@
         ],
         "topics": [
             "Satisfactory Update 4"
-        ],
-        "legacyof": []
-    },
-    "tc-ResilientTalentedSalsifySSSsss": {
-        "title": "Snutt & Jace Talk: Arachnophobia Mode (part 2)",
-        "tags": [],
-        "topics": [
-            "Arachnophobia Mode"
         ],
         "legacyof": []
     },
@@ -588,14 +600,6 @@
         ],
         "legacyof": []
     },
-    "tc-SavagePopularBatChocolateRain": {
-        "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 3)",
-        "tags": [],
-        "topics": [
-            "Multiplayer"
-        ],
-        "legacyof": []
-    },
     "tc-ScaryTangibleTeaMrDestructoid": {
         "title": "Q&A: Will there be a no combat\/fight version?",
         "tags": [
@@ -608,6 +612,22 @@
     },
     "tc-ShakingCredulousGalagoCopyThis": {
         "title": "Mods vs. Features (Part 1)",
+        "tags": [],
+        "topics": [
+            "Mods vs. Features"
+        ],
+        "legacyof": []
+    },
+    "tc-OriginalDifficultTeaKevinTurtle": {
+        "title": "Mods vs. Features (Part 2)",
+        "tags": [],
+        "topics": [
+            "Mods vs. Features"
+        ],
+        "legacyof": []
+    },
+    "tc-CorrectAlertEggplantPJSalt": {
+        "title": "Mods vs. Features (Part 3)",
         "tags": [],
         "topics": [
             "Mods vs. Features"
@@ -671,34 +691,6 @@
         ],
         "legacyof": []
     },
-    "tc-TardyBitterGnatDatSheffy": {
-        "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 2)",
-        "tags": [],
-        "topics": [
-            "Multiplayer"
-        ],
-        "legacyof": []
-    },
-    "tc-TsundereHandsomeBottleCharlietheUnicorn": {
-        "title": "Multiplayer desync issues (Part 3)",
-        "tags": [
-            "faq"
-        ],
-        "topics": [
-            "Multiplayer"
-        ],
-        "legacyof": []
-    },
-    "tc-VastScrumptiousEyeballLeeroyJenkins": {
-        "title": "Multiplayer desync issues (Part 2)",
-        "tags": [
-            "faq"
-        ],
-        "topics": [
-            "Multiplayer"
-        ],
-        "legacyof": []
-    },
     "tc-ViscousFuriousPonyPhilosoraptor": {
         "title": "Q&A: Custom game engine?",
         "tags": [],
@@ -709,6 +701,14 @@
     },
     "tc-WittyYawningSangJKanStyle": {
         "title": "Q&A: How did you make the character slide in Satisfactory? (part 1)",
+        "tags": [],
+        "topics": [
+            "Pioneer"
+        ],
+        "legacyof": []
+    },
+    "tc-BlueBadWeaselPMSTwin": {
+        "title": "Q&A: How did you make the character slide in Satisfactory? (part 2)",
         "tags": [],
         "topics": [
             "Pioneer"

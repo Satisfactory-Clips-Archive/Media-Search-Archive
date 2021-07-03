@@ -28868,14 +28868,6 @@
         ],
         "duplicatedby": "rkt-OLWCJ8k"
     },
-    "tc-AwkwardBloodyNightingaleShadyLulu": {
-        "title": "Q&A: What's in Tier 8? (part 2)",
-        "date": "2020-08-18",
-        "topics": [
-            "features\/tiers\/tier-8",
-            "satisfactory-updates\/released\/satisfactory-update-4"
-        ]
-    },
     "tc-BashfulDependableBobaWTRuck": {
         "title": "Q&A: Offline Play",
         "date": "2020-08-18",
@@ -28911,13 +28903,6 @@
         "seealso": [
             "-2Z0rsxuisQ",
             "ufYriERRzwc"
-        ]
-    },
-    "tc-BlueBadWeaselPMSTwin": {
-        "title": "Q&A: How did you make the character slide in Satisfactory? (part 2)",
-        "date": "2020-08-18",
-        "topics": [
-            "features\/pioneer"
         ]
     },
     "tc-BoldAgileSquidDoggo": {
@@ -28986,16 +28971,6 @@
         ],
         "duplicatedby": "ox4zHZlziCg"
     },
-    "tc-CrackyBombasticEggUWot": {
-        "title": "Q&A: Session Privacy \/ Join Button not working? (Part 2)",
-        "date": "2020-08-18",
-        "topics": [
-            "features\/multiplayer"
-        ],
-        "seealso": [
-            "M8fKrDV7i1k"
-        ]
-    },
     "tc-CrepuscularInterestingWerewolfBCWarrior": {
         "title": "Q&A: I can definitely work around my colour deficiency - but the colour picker doesn't work",
         "date": "2020-08-18",
@@ -29015,6 +28990,18 @@
         "date": "2020-08-18",
         "topics": [
             "features\/save-system\/autosave"
+        ]
+    },
+    "tc-PrettiestBloodyBadgerDendiFace": {
+        "title": "Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes? (part 2)",
+        "date": "2020-08-18",
+        "topics": [
+            "features\/accessibility"
+        ],
+        "seealso": [
+            "4acLhZvD1PU",
+            "r4TS6nRxy9k",
+            "tc-CrepuscularInterestingWerewolfBCWarrior"
         ]
     },
     "tc-DoubtfulNaiveCroquettePeoplesChamp": {
@@ -29123,6 +29110,20 @@
             "9Fe7lcAQx9I"
         ]
     },
+    "tc-TardyBitterGnatDatSheffy": {
+        "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 2)",
+        "date": "2020-08-18",
+        "topics": [
+            "features\/multiplayer"
+        ]
+    },
+    "tc-SavagePopularBatChocolateRain": {
+        "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 3)",
+        "date": "2020-08-18",
+        "topics": [
+            "features\/multiplayer"
+        ]
+    },
     "tc-PlausibleEnthusiasticGrassRedCoat": {
         "title": "Q&A: Any different maps planned?",
         "date": "2020-08-18",
@@ -29146,16 +29147,14 @@
             "M8fKrDV7i1k"
         ]
     },
-    "tc-PrettiestBloodyBadgerDendiFace": {
-        "title": "Q&A: We get this awesome phobia system but people still have trouble with colour blindness modes? (part 2)",
+    "tc-CrackyBombasticEggUWot": {
+        "title": "Q&A: Session Privacy \/ Join Button not working? (Part 2)",
         "date": "2020-08-18",
         "topics": [
-            "features\/accessibility"
+            "features\/multiplayer"
         ],
         "seealso": [
-            "4acLhZvD1PU",
-            "r4TS6nRxy9k",
-            "tc-CrepuscularInterestingWerewolfBCWarrior"
+            "M8fKrDV7i1k"
         ]
     },
     "tc-ProtectiveTubularCatJebaited": {
@@ -29186,6 +29185,14 @@
         ],
         "replacedby": "1Xgd1ANF9gw"
     },
+    "tc-AwkwardBloodyNightingaleShadyLulu": {
+        "title": "Q&A: What's in Tier 8? (part 2)",
+        "date": "2020-08-18",
+        "topics": [
+            "features\/tiers\/tier-8",
+            "satisfactory-updates\/released\/satisfactory-update-4"
+        ]
+    },
     "tc-RelievedTawdryEelDogFace": {
         "title": "Q&A: When is Update 4 pencilled for?",
         "date": "2020-08-18",
@@ -29210,13 +29217,6 @@
             "story-lore"
         ],
         "duplicatedby": "jBOgtsE6VYQ"
-    },
-    "tc-SavagePopularBatChocolateRain": {
-        "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 3)",
-        "date": "2020-08-18",
-        "topics": [
-            "features\/multiplayer"
-        ]
     },
     "tc-ScaryTangibleTeaMrDestructoid": {
         "title": "Q&A: Will there be a no combat\/fight version?",
@@ -29277,13 +29277,6 @@
         ],
         "duplicatedby": "Ildv99O7E0M"
     },
-    "tc-TardyBitterGnatDatSheffy": {
-        "title": "Q&A: When will multiplayer reach 128 so we can build a tower? (Part 2)",
-        "date": "2020-08-18",
-        "topics": [
-            "features\/multiplayer"
-        ]
-    },
     "tc-ViscousFuriousPonyPhilosoraptor": {
         "title": "Q&A: Custom game engine?",
         "date": "2020-08-18",
@@ -29297,6 +29290,13 @@
     },
     "tc-WittyYawningSangJKanStyle": {
         "title": "Q&A: How did you make the character slide in Satisfactory? (part 1)",
+        "date": "2020-08-18",
+        "topics": [
+            "features\/pioneer"
+        ]
+    },
+    "tc-BlueBadWeaselPMSTwin": {
+        "title": "Q&A: How did you make the character slide in Satisfactory? (part 2)",
         "date": "2020-08-18",
         "topics": [
             "features\/pioneer"
