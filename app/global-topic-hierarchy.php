@@ -1100,6 +1100,9 @@ $global_topic_hierarchy = [
 		'Features',
 		'Requested Features',
 	],
+	'PLbjDnnBIxiEoYcnK5o9ipaJlkK58MApga' => [ // Vulkan
+		'Technology',
+	],
 ];
 
 $not_a_livestream = [
