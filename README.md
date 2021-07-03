@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2021-07-03
 * fixing typo
+* changing how unlisted content is skipped
 
 ## 2021-07-02
 * skipping unlisted content

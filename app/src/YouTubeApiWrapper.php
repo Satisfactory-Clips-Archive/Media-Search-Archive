@@ -755,7 +755,7 @@ class YouTubeApiWrapper
 		);
 
 		foreach ($response->items as $playlist) {
-			if ('public' !== $playlist->status->privacyStatus) {
+			if ('private' === $playlist->status->privacyStatus) {
 				$this->skipped_playlists[] = $playlist->id;
 
 				continue;
@@ -809,7 +809,7 @@ class YouTubeApiWrapper
 			/** @var \Google_Service_YouTube_PlaylistItemStatus */
 			$status = $playlist_item->status;
 
-			if ('public' !== $status->privacyStatus) {
+			if ('private' === $status->privacyStatus) {
 				$this->skipped_videos[] = (string) $video_snippet_resourceId->videoId;
 
 				continue;
