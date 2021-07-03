@@ -13,6 +13,8 @@ Static site generator for
 ## 2021-07-03
 * fixing typo
 * changing how unlisted content is skipped
+* alter sort order for captions processing
+* alter logging for build process
 
 ## 2021-07-02
 * skipping unlisted content

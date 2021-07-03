@@ -804,10 +804,33 @@ echo "\n",
 	)
 ;
 
+usort($all_video_ids, [$sorting, 'sort_video_ids_by_date']);
+
+$all_video_ids = array_reverse($all_video_ids);
+
+$last_compile_date = null;
+$carriage_return = true;
+
 foreach ($all_video_ids as $video_id) {
 	++$checked;
 
-	echo "\r",
+	$current_compile_date = determine_date_for_video(
+		$video_id,
+		$cache['playlists'],
+		$api->dated_playlists()
+	);
+
+	if ($last_compile_date !== $current_compile_date) {
+		echo
+			"\n\n",
+			sprintf('compiling transcrptions for %s', $current_compile_date),
+			"\n";
+
+		$last_compile_date = $current_compile_date;
+		$carriage_return = false;
+	}
+
+	echo ($carriage_return ? "\r" : ''),
 		sprintf(
 			'compiling transcription %s of %s videos (%s seconds elapsed)',
 			$checked,
@@ -815,6 +838,8 @@ foreach ($all_video_ids as $video_id) {
 			time() - $stat_start
 		)
 	;
+
+	$carriage_return = true;
 
 	$caption_lines = captions(
 		$video_id,
@@ -920,6 +945,8 @@ foreach ($all_video_ids as $video_id) {
 		];
 	}
 }
+
+$all_video_ids = array_reverse($all_video_ids);
 
 file_put_contents(
 	(
