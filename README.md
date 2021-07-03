@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-07-03
+* fixing typo
+
 ## 2021-07-02
 * skipping unlisted content
 

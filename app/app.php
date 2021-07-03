@@ -1190,7 +1190,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	$data_for_dated_json = [
 		'title' => $title,
-		'categories' => [],
+		'categorised' => [],
 		'uncategorised' => [],
 	];
 
