@@ -1092,6 +1092,10 @@ $global_topic_hierarchy = [
 		'Technology',
 		'Graphics',
 	],
+	'PLbjDnnBIxiErGWyROgM1QN46mY7Am9SgY' => [ // LOD
+		'Technology',
+		'Graphics',
+	],
 ];
 
 $not_a_livestream = [

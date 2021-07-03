@@ -15868,7 +15868,7 @@
         "topics": [
             "features\/buildables\/walls",
             "features\/paint",
-            "technology\/graphics"
+            "technology\/graphics\/lod"
         ],
         "seealso": [
             "6DayBMofsHs",
@@ -36309,7 +36309,7 @@
         "title": "Q&A: How many LOD levels do you use?",
         "date": "2019-02-06",
         "topics": [
-            "technology\/graphics"
+            "technology\/graphics\/lod"
         ],
         "seealso": [
             "ewLgyoLFAtE",
