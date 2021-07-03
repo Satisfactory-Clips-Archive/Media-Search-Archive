@@ -8643,7 +8643,7 @@
         "date": "2021-03-30",
         "topics": [
             "features\/buildables\/foundations",
-            "technology\/user-interface"
+            "features\/requested-features\/global-build-grid"
         ],
         "duplicates": [
             "Xi9S_sVklB8"
@@ -9168,7 +9168,8 @@
         "date": "2021-03-30",
         "topics": [
             "coffee-stainers\/snutt",
-            "features\/planned-features\/build-modes"
+            "features\/planned-features\/build-modes",
+            "features\/requested-features\/global-build-grid"
         ],
         "duplicates": [
             "akmmqVmHmzM",
@@ -17165,7 +17166,7 @@
         "topics": [
             "environment\/world-map",
             "features\/buildables\/foundations",
-            "technology\/user-interface"
+            "features\/requested-features\/global-build-grid"
         ],
         "duplicatedby": "QxJ8e_0r9uE"
     },
@@ -28779,7 +28780,7 @@
         "date": "2020-08-25",
         "topics": [
             "features\/buildables\/foundations",
-            "technology\/user-interface"
+            "features\/requested-features\/global-build-grid"
         ],
         "seealso": [
             "QxJ8e_0r9uE"

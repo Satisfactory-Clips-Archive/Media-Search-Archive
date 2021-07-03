@@ -1096,6 +1096,10 @@ $global_topic_hierarchy = [
 		'Technology',
 		'Graphics',
 	],
+	'PLbjDnnBIxiEr68wcM_BJQsE35xXzjmwqX' => [ // Global Build Grid
+		'Features',
+		'Requested Features',
+	],
 ];
 
 $not_a_livestream = [
