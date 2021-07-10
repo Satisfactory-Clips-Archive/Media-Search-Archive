@@ -5,6 +5,9 @@
 <title>{% if (page.url.startsWith('/topics/')) or ('/FAQ/' === page.url) %}Q&amp;A Clips Archive - {% endif %}{{title}}</title>
 {% include 'head.njk' %}
 <meta property="og:article:modified_time" content="{{page.date.toUTCString()}}">
+{% if external_link %}
+<link href="{{external_link}}" title="External Link">
+{% endif %}
 </head>
 <body>
 <header>

@@ -11,11 +11,14 @@ layout: livestream
 	itemscope
 	itemtype="https://schema.org/VideoObject"
 >
+	<header>
 	<h1>{{
 		group.date_friendly
 	}} <span itemprop="name">{{
 		external.title
 	}}</span></h1>
+		<p><a href="{{external.contentUrl}}" rel="noopener" target="_blank">External Link</a></p>
+	</header>
 	<ol>
 	{% for line in external.embed_data %}
 		<li itemprop="hasPart" itemscope itemtype="https://schema.org/Clip">
@@ -53,7 +56,12 @@ layout: livestream
 {% for internal in group.internals %}
 <section
 >
+	<header>
 	<h1>{{internal.title}}</h1>
+	{% if internal.contentUrl %}
+		<p><a href="{{internal.contentUrl}}" rel="noopener" target="_blank">External Link</a></p>
+	{% endif %}
+	</header>
 	{% for category in internal.categorised %}
 		{% if category.depth === 0 %}
 			<h2><a

@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-07-10
+* added external playlist links, closing [issue #5](https://github.com/Satisfactory-Clips-Archive/Media-Search-Archive/issues/5)
+
 ## 2021-07-03
 * fixing typo
 * changing how unlisted content is skipped

@@ -1221,6 +1221,13 @@ foreach (array_keys($playlists) as $playlist_id) {
 		'uncategorised' => [],
 	];
 
+	if (preg_match('/^PLbjDnnBIxiE/', $playlist_id)) {
+		$data_for_dated_json['contentUrl'] = sprintf(
+			'https://www.youtube.com/playlist?list=%s',
+			rawurlencode($playlist_id)
+		);
+	}
+
 	/** @var list<string> */
 	$playlist_lines = [];
 
@@ -1611,6 +1618,17 @@ foreach (
 			. sprintf(
 				'title: "%s"' . "\n",
 				$playlist_title
+			)
+			. (
+				preg_match('/^PLbjDnnBIxiE/', $playlist_id)
+					? sprintf(
+						'external_link: %s' . "\n",
+						sprintf(
+							'https://www.youtube.com/playlist?list=%s',
+							rawurlencode($playlist_id)
+						)
+					)
+					: ''
 			)
 			. 'date: Last Modified' . "\n"
 			. '---' . "\n"
