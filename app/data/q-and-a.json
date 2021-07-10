@@ -8718,7 +8718,8 @@
         "title": "Q&A: How many tiers will you need to reveal what Project Assembly is?",
         "date": "2021-04-20",
         "topics": [
-            "features\/buildings\/space-elevator\/food-court"
+            "features\/buildings\/space-elevator\/food-court",
+            "story-lore\/project-assembly"
         ],
         "duplicatedby": "46jdMN3bb28"
     },
@@ -29881,7 +29882,7 @@
         "title": "Q&A: Will there be any further goals besides Research & Development stages?",
         "date": "2020-08-25",
         "topics": [
-            "story-lore"
+            "story-lore\/project-assembly"
         ],
         "legacyalts": [
             "tc-TsundereOutstandingNuggetsFUNgineer"
@@ -35172,7 +35173,7 @@
         "title": "Q&A: What's the final objective of the game?",
         "date": "2019-03-09",
         "topics": [
-            "story-lore"
+            "story-lore\/project-assembly"
         ],
         "duplicatedby": "hhckg5vm5_w"
     },

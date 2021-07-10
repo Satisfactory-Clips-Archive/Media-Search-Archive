@@ -1103,6 +1103,9 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiEoYcnK5o9ipaJlkK58MApga' => [ // Vulkan
 		'Technology',
 	],
+	'PLbjDnnBIxiErDv_Gc-PQatZJDvGk1JA9l' => [ // Project Assembly
+		'Story & Lore',
+	],
 ];
 
 $not_a_livestream = [
