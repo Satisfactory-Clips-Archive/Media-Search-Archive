@@ -570,7 +570,9 @@
         "title": "Q&A: When will you stop updating the game for language translation and patch this broken map?",
         "date": "2021-07-06",
         "topics": [
-            "technology\/graphics"
+            "environment",
+            "environment\/world-map",
+            "localisation"
         ],
         "seealso": [
             "gdTe3A1S7eU"
