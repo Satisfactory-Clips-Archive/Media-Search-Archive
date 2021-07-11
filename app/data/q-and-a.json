@@ -2965,7 +2965,6 @@
             "XATD7Tg7YmQ",
             "XuFfkTTZnoA",
             "yt--JXPsTlJIiI,1151.6505,1208.0401666666667",
-            "yt-1dUNmBBbExs,73.73333333333333,88.2",
             "yt-cF3QleeEiJo,1558.322977,1707.162654",
             "yt-cF3QleeEiJo,6901.607817790491,6950.851175",
             "yt-Dtm6xIj-wM4,718.308644,808.471513",
@@ -13245,7 +13244,6 @@
         "seealso": [
             "3Ad-13NANOg",
             "AssBQa36jAM",
-            "yt-1dUNmBBbExs,70.13333333333334,73.73333333333333",
             "yt-Gdz6SUv9Om4,8746.466666666667,8837.409742",
             "yt-Gdz6SUv9Om4,8900.100787,8976.705202"
         ]
@@ -13331,7 +13329,6 @@
             "SbKFw6yksO0",
             "tc-RelievedTawdryEelDogFace",
             "YLNHkPa8XTc",
-            "yt-1dUNmBBbExs,66.83333333333333,70.13333333333334",
             "yt-dSnqRq1hLZY,38.2,72.3"
         ],
         "duplicates": [
@@ -19605,8 +19602,7 @@
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
         "replaces": [
-            "4BbgGgUb1rA",
-            "yt-1dUNmBBbExs,88.2,101.20356"
+            "4BbgGgUb1rA"
         ],
         "duplicates": [
             "2GeQaPM1UGg",
@@ -28398,8 +28394,7 @@
         ],
         "duplicates": [
             "1Mdtq6Ytb1g",
-            "PIlduefx6Vk",
-            "yt-1dUNmBBbExs,101.20356,116.33333333333333"
+            "PIlduefx6Vk"
         ],
         "seealso": [
             "j-2qEMyqXCY",
@@ -28532,7 +28527,6 @@
         "date": "2020-09-01",
         "topics": [],
         "seealso": [
-            "yt-1dUNmBBbExs,63.43333333333333,66.83333333333333",
             "yt-Jxh8kvtUuxY,,46.3463"
         ]
     },
@@ -31628,59 +31622,6 @@
         "seealso": [
             "8MbgpOLyXyY"
         ]
-    },
-    "yt-1dUNmBBbExs,63.43333333333333,66.83333333333333": {
-        "title": "Q&A: Why no Updates? Is the game dead?",
-        "date": "2020-07-30",
-        "topics": [
-            "satisfactory-updates"
-        ],
-        "seealso": [
-            "lhbj5mWOmeo"
-        ]
-    },
-    "yt-1dUNmBBbExs,66.83333333333333,70.13333333333334": {
-        "title": "Q&A: When is Update 4 going to come out?",
-        "date": "2020-07-30",
-        "topics": [
-            "satisfactory-updates\/released\/satisfactory-update-4"
-        ],
-        "replacedby": "wFSyxgWHquw"
-    },
-    "yt-1dUNmBBbExs,70.13333333333334,73.73333333333333": {
-        "title": "Q&A: What's going to be in Update 4?",
-        "date": "2020-07-30",
-        "topics": [
-            "satisfactory-updates\/released\/satisfactory-update-4"
-        ],
-        "seealso": [
-            "3spifwbAEDE"
-        ]
-    },
-    "yt-1dUNmBBbExs,73.73333333333333,88.2": {
-        "title": "Q&A: Dedicated Servers when?",
-        "date": "2020-07-30",
-        "topics": [
-            "features\/planned-features\/dedicated-servers"
-        ],
-        "duplicatedby": "0KMqyzOeiEU"
-    },
-    "yt-1dUNmBBbExs,88.2,101.20356": {
-        "title": "Q&A: Will Dedicated Servers be part of Update 4?",
-        "date": "2020-07-30",
-        "topics": [
-            "features\/planned-features\/dedicated-servers",
-            "satisfactory-updates\/released\/satisfactory-update-4"
-        ],
-        "replacedby": "-3JqJE_94g0"
-    },
-    "yt-1dUNmBBbExs,101.20356,116.33333333333333": {
-        "title": "Q&A: Merch?",
-        "date": "2020-07-30",
-        "topics": [
-            "merch"
-        ],
-        "duplicatedby": "jQyDj_wa0LA"
     },
     "yt-1dUNmBBbExs,1086.385008,1097.2333333333333": {
         "title": "Q&A: Where's the Tony Hawk Pro Skater mod so you can grind that sick rail",

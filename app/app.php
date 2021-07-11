@@ -467,7 +467,8 @@ process_externals(
 	$not_a_livestream_date_lookup,
 	$slugify
 );
-$externals_dates = array_keys(get_externals());
+$externals_values = get_externals();
+$externals_dates = array_keys($externals_values);
 
 $sorting = new Sorting($cache);
 
@@ -1007,10 +1008,35 @@ foreach ($transcripts_json as $video_id => $video_data) {
 			'Video found on multiple dates!'
 		);
 	} elseif (count($maybe_playlist_id) < 1) {
+		$normalised = vendor_prefixed_video_id(preg_replace(
+			'/^yt-([^,]+).*/',
+			'$1',
+			vendor_prefixed_video_id($video_id)
+		));
+
+		$maybe_playlist_id = array_keys(array_filter(
+			$externals_values,
+			static function (array $data) use ($normalised) : bool {
+				return count(array_filter(
+					$data,
+					static function (
+						array $maybe
+					) use (
+						$normalised
+					) : bool {
+						return $normalised === $maybe[0];
+					}
+				)) > 0;
+			}
+		));
+
+		if (count($maybe_playlist_id) !== 1) {
+			var_dump($video_id, $normalised, $maybe_playlist_id);exit(1);
 		throw new RuntimeException(sprintf(
 			'Video found on no dates! (%s)',
 			$video_id
 		));
+		}
 	}
 
 	[$playlist_id] = $maybe_playlist_id;
