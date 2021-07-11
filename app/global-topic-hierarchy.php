@@ -1106,6 +1106,15 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiErDv_Gc-PQatZJDvGk1JA9l' => [ // Project Assembly
 		'Story & Lore',
 	],
+	'PLbjDnnBIxiEpVJCCTQQ_c4bLewQLEd0Bv' => [ // Localization Community Highlight
+		'Localisation',
+	],
+	'PLbjDnnBIxiEptL0Ii53upU5uykokXvIpE' => [ // McGalleon
+		'Community',
+	],
+	'PLbjDnnBIxiEqF0rRv9aGsHsbBLogS1lLp' => [ // RogerHN
+		'Community',
+	],
 ];
 
 $not_a_livestream = [
