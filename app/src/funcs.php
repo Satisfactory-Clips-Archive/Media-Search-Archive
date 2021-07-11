@@ -168,7 +168,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 
 function transcription_filename(string $video_id) : string
 {
-	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){2}/', $video_id)) {
+	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){1,2}/', $video_id)) {
 		return
 			__DIR__
 			. '/../../video-clip-notes/docs/transcriptions/'
@@ -202,7 +202,7 @@ function maybe_transcript_link_and_video_url_data(
 	$initial_segment = false;
 
 	if (
-		preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){2}/', $video_id)) {
+		preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){1,2}/', $video_id)) {
 		if (
 			is_file(
 				__DIR__
@@ -241,7 +241,7 @@ function maybe_transcript_link_and_video_url(
 			? str_repeat('../', $repeat_directory_up)
 			: './';
 
-	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){2}/', $video_id)) {
+	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){1,2}/', $video_id)) {
 		if (
 			is_file(
 				__DIR__
@@ -300,7 +300,7 @@ function vendor_prefixed_video_id(string $video_id) : string
 			11 !== mb_strlen($video_id)
 			&& preg_match('/^(tc|is|ts)\-/', $video_id)
 		)
-		|| preg_match('/^yt-.{11}(?:(?:,(?:\d+(?:\.\d+)?)?){2})?$/', $video_id)
+		|| preg_match('/^yt-.{11}(?:(?:,(?:\d+(?:\.\d+)?)?){1,2})?$/', $video_id)
 	) {
 		return $video_id;
 	}
@@ -1186,7 +1186,7 @@ function captions(
 ) : array {
 	if (
 		! preg_match(
-			'/^https:\/\/youtu\.be\//',
+			'/^https:\/\/(?:youtu\.be|youtube\.com\/embed)\//',
 			video_url_from_id($video_id, true)
 		)
 	) {
@@ -1380,6 +1380,109 @@ function captions(
 	return $lines;
 }
 
+function video_id_json_caption_source(string $video_id) : string
+{
+	$video_id = preg_replace('/^yt-(.{11})/', '$1', $video_id);
+
+	$json_source =
+		__DIR__
+		. '/../../Media-Archive-Metadata/transcriptions/'
+		. vendor_prefixed_video_id($video_id)
+		. '.json';
+
+	return $json_source;
+}
+
+/**
+ * @param list<string> $video_ids
+ */
+function prepare_uncached_captions_html(array $video_ids) : void
+{
+	$does_not_have_json = array_filter(
+		$video_ids,
+		static function (string $maybe) : bool {
+			return ! is_file(video_id_json_caption_source($maybe));
+		}
+	);
+
+	$captions_data = captions_data();
+
+	$does_not_have_html = array_values(array_filter(
+		$does_not_have_json,
+		static function (string $maybe) use ($captions_data) : bool {
+			$video_id = preg_replace(
+				'/^yt-([^,]+).*/',
+				'$1',
+				vendor_prefixed_video_id($maybe)
+			);
+
+			$html_cache = $video_id . '.html';
+
+			return ! isset($captions_data[$html_cache]);
+		}
+	));
+
+	$can_have_html = array_unique(array_map(
+		static function (string $unmodified) : string {
+			return preg_replace(
+				'/^yt-([^,]+).*/',
+				'$1',
+				vendor_prefixed_video_id($unmodified)
+			);
+		},
+		array_filter(
+			$does_not_have_html,
+			static function (string $maybe) : bool {
+				return (bool) preg_match(
+					'/^yt-([^,]{11})/',
+					vendor_prefixed_video_id(
+						$maybe
+					)
+				);
+			}
+		)
+	));
+
+	$i = 0;
+	$count = count($can_have_html);
+	foreach ($can_have_html as $video_id) {
+		echo "\r", sprintf('Prefetching %s of %s', ++$i, $count);
+
+		$html_cache = $video_id . '.html';
+
+		$url = (
+			'https://youtube.com/watch?' .
+			http_build_query([
+				'v' => $video_id,
+			])
+		);
+
+		$captions_data->addFromString($html_cache, $url);
+	}
+}
+
+function captions_data() : PharData
+{
+	/** @var PharData|null */
+	static $captions_data = null;
+
+	if (null === $captions_data) {
+		$captions_data = new PharData(
+			(
+				__DIR__
+				. '/../captions.tar'
+			),
+			(
+				PharData::CURRENT_AS_PATHNAME
+				| PharData::SKIP_DOTS
+				| PharData::UNIX_PATHS
+			)
+		);
+	}
+
+	return $captions_data;
+}
+
 /**
  * @psalm-type JSON = list<array{
  *	text:string|list<string|array{text:string, about?:string}>,
@@ -1402,34 +1505,15 @@ function raw_captions(string $video_id) : array
 	/** @var Slugify|null */
 	static $slugify = null;
 
-	/** @var PharData|null */
-	static $captions_data = null;
-
-	if (null === $captions_data) {
-		$captions_data = new PharData(
-			(
-				__DIR__
-				. '/../captions.tar'
-			),
-			(
-				PharData::CURRENT_AS_PATHNAME
-				| PharData::SKIP_DOTS
-				| PharData::UNIX_PATHS
-			)
-		);
-	}
+	$captions_data = captions_data();
 
 	if (null === $slugify) {
 		$slugify = new Slugify();
 	}
 
-	$video_id = preg_replace('/^yt-(.{11})/', '$1', $video_id);
+	$video_id = preg_replace('/^yt-([^,]+).*/', '$1', $video_id);
 
-	$json_source =
-		__DIR__
-		. '/../../Media-Archive-Metadata/transcriptions/'
-		. vendor_prefixed_video_id($video_id)
-		. '.json';
+	$json_source = video_id_json_caption_source($video_id);
 
 	if (is_file($json_source)) {
 		/**
@@ -1536,6 +1620,12 @@ function raw_captions(string $video_id) : array
 
 		return [null, $transcript['text']];
 	}
+
+	$video_id = preg_replace(
+		'/^yt-([^,]+).*/',
+		'$1',
+		vendor_prefixed_video_id($video_id)
+	);
 
 	$html_cache = $video_id . '.html';
 

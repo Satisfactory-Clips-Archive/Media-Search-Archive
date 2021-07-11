@@ -796,6 +796,12 @@ $statistics = $api->getStatistics(...$all_video_ids);
  */
 $transcripts_json = [];
 
+usort($all_video_ids, [$sorting, 'sort_video_ids_by_date']);
+
+$all_video_ids = array_reverse($all_video_ids);
+
+prepare_uncached_captions_html($all_video_ids);
+
 echo "\n",
 	sprintf(
 		'compiling transcription 0 of %s videos (%s seconds elapsed)',
@@ -803,10 +809,6 @@ echo "\n",
 		0
 	)
 ;
-
-usort($all_video_ids, [$sorting, 'sort_video_ids_by_date']);
-
-$all_video_ids = array_reverse($all_video_ids);
 
 $last_compile_date = null;
 $carriage_return = true;
