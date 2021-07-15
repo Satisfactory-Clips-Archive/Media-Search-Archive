@@ -1,0 +1,22 @@
+<OpenSearchDescription
+	xmlns="http://a9.com/-/spec/opensearch/1.1/"
+>
+	<ShortName>Q&amp;A Clips</ShortName>
+	<LongName>Q&amp;A Clips Archive - Search</LongName>
+	<Description>Q&amp;A Clips Archive - Search: an unofficial archive for Q&amp;A Clips for Coffee Stain Studio's Satisfactory-related livestreams &amp; other videos</Description>
+	<InputEncoding>UTF-8</InputEncoding>
+	<Image
+		width="16"
+		height="16"
+		type="image/x-icon"
+	>https://i.img.archive.satisfactory.video/favicon.ico</Image>
+	<Url
+		type="text/html"
+		template="https://archive.satisfactory.video/search/?q={searchTerms}"
+	/>
+	<Url
+		type="application/opensearchdescription+xml"
+		rel="self"
+		template="https://archive.satisfactory.video/ossd.xml"
+	/>
+</OpenSearchDescription>

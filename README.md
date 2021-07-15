@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2021-07-15
+* Changed search defaults
+* Added browser search plugin
+
 ## 2021-07-11
 * fixed some bugs with transcript caching & fetching
 

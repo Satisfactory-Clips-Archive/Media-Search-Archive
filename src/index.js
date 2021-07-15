@@ -416,7 +416,7 @@
 			if (params.has('dt')) {
 				date_to_value_by_date(params.get('dt'));
 			} else {
-				date_to_value_by_index(date_to.min);
+				date_to_value_by_index(date_to.max);
 			}
 
 			if (params.has('t')) {
@@ -453,10 +453,10 @@
 				filter_results_checkbox.checked = false;
 			}
 
-			if ( ! params.has('a') || '1' !== params.get('a')) {
-				qandaonly_checkbox.checked = false;
-			} else {
+			if ( ! params.has('a') || '0' !== params.get('a')) {
 				qandaonly_checkbox.checked = true;
+			} else {
+				qandaonly_checkbox.checked = false;
 			}
 
 			date_from_output_update();

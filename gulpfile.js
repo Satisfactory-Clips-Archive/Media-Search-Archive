@@ -161,6 +161,11 @@ gulp.task('sync-browserconfig', () => {
 		gulp.dest('./tmp/')
 	);
 });
+gulp.task('sync-ossd', () => {
+	return gulp.src('./src/ossd.xml').pipe(
+		gulp.dest('./tmp/')
+	);
+});
 gulp.task('sync-lunr', () => {
 	return gulp.src('./node_modules/lunr/lunr.min.js').pipe(
 		gulp.dest('./src/')
@@ -309,6 +314,7 @@ gulp.task('build', gulp.series(
 		'css',
 		'topics',
 		'sync-browserconfig',
+		'sync-ossd',
 		'lunr'
 	),
 	'rev',
