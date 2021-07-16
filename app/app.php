@@ -736,6 +736,10 @@ file_put_contents(
 	json_encode($playlist_topic_strings, JSON_PRETTY_PRINT)
 );
 file_put_contents(
+	__DIR__ . '/../11ty/data/topicStrings_reverse.json',
+	json_encode($playlist_topic_strings_reverse_lookup, JSON_PRETTY_PRINT)
+);
+file_put_contents(
 	__DIR__ . '/../11ty/data/topics.json',
 	json_encode($topics_json, JSON_PRETTY_PRINT)
 );

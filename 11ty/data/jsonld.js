@@ -1,4 +1,6 @@
 const topics = require('../../src/topics.json');
+/** @var {[key:string]: string} */
+const reverse_lookup = require('./topicStrings_reverse.json');
 
 module.exports = async () => {
 	const [
@@ -37,6 +39,8 @@ module.exports = async () => {
 		const [slug, data] = e;
 		const permalink = `/topics/${slug}/`;
 
+		const archive_url = `https://archive.satisfactory.video${permalink}`;
+
 		if ( ! (permalink in out)) {
 			out[permalink] = [
 				{
@@ -46,6 +50,7 @@ module.exports = async () => {
 					"description": `Satisfactory clips about ${
 						data[data.length - 1]
 					}`,
+					url: archive_url,
 					"about": [
 						satisfactory,
 					]
@@ -89,17 +94,20 @@ module.exports = async () => {
 			return 2 === entry.length;
 		});
 
+		const archive_url = `https://archive.satisfactory.video${permalink}`;
+
 		if (
 			('@type' in data[0])
 			&& ['Person'].includes(data[0]['@type'])
 		) {
 			data[0] = {
 				"@context": "https://schema.org",
-				"@type": "CreativeWork",
+				"@type": "WebPage",
 				"name": data[0].name,
 				"description": `Satisfactory Livestream clips about ${
 					data[0].name
 				}`,
+				url: archive_url,
 				"about": [
 					data[0],
 				]
@@ -107,6 +115,31 @@ module.exports = async () => {
 
 			if ('image' in data[0].about[0]) {
 				data[0].image = data[0].about[0].image;
+			}
+		}
+
+		const slug = permalink.replace(/^\/topics\/(.+)\//, '$1');
+
+		if (
+			(slug in reverse_lookup)
+			&& reverse_lookup[slug].startsWith('PLbjDnnBIxi')
+		) {
+			if ( ! ('relatedLink' in data[0])) {
+				data[0].relatedLink = [];
+			}
+			if (
+				data[0].url !== archive_url
+				&& ! data[0].relatedLink.includes(archive_url)
+			) {
+				data[0].relatedLink.push(archive_url);
+			}
+
+			const playlist_url = `https://www.youtube.com/playlist?list=${
+				encodeURIComponent(reverse_lookup[slug])
+			}`;
+
+			if ( ! data[0].relatedLink.includes(playlist_url)) {
+				data[0].relatedLink.push(playlist_url);
 			}
 		}
 
