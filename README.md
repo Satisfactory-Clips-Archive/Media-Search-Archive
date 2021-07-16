@@ -13,6 +13,7 @@ Static site generator for
 ## 2021-07-16
 * Added topic page link in structured data
 * Swapped non-semantic external link for structured data related link
+* Modified support for primary structured data
 
 ## 2021-07-15
 * Changed search defaults

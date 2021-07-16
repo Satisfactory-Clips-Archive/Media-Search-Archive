@@ -98,7 +98,10 @@ module.exports = async () => {
 
 		if (
 			('@type' in data[0])
-			&& ['Person'].includes(data[0]['@type'])
+			&& [
+				'Person',
+				'CreativeWorkSeries',
+			].includes(data[0]['@type'])
 		) {
 			data[0] = {
 				"@context": "https://schema.org",
