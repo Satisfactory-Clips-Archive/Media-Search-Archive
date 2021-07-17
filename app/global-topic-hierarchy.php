@@ -1115,6 +1115,10 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiEqF0rRv9aGsHsbBLogS1lLp' => [ // RogerHN
 		'Community',
 	],
+	'PLbjDnnBIxiEp8Ab7iwgw8Y9_QVtMmfH_t' => [ // PionR
+		'Features',
+		'Requested Features',
+	],
 ];
 
 $not_a_livestream = [
