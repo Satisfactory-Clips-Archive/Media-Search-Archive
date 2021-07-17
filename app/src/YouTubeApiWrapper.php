@@ -32,6 +32,7 @@ use function glob;
 use Google_Client;
 use Google_Service_YouTube;
 use Google_Service_YouTube_PlaylistItem;
+use Google_Service_YouTube_PlaylistItemStatus;
 use Google_Service_YouTube_Resource_PlaylistItems;
 use Google_Service_YouTube_Resource_Playlists;
 use Google_Service_YouTube_Resource_Videos;
@@ -799,14 +800,13 @@ class YouTubeApiWrapper
 		);
 
 		foreach ($response->items as $playlist_item) {
-
 			/** @var Google_Service_YouTube_VideoSnippet */
 			$video_snippet = $playlist_item->snippet;
 
 			/** @var Google_Service_YouTube_ResourceId */
 			$video_snippet_resourceId = $video_snippet->resourceId;
 
-			/** @var \Google_Service_YouTube_PlaylistItemStatus */
+			/** @var Google_Service_YouTube_PlaylistItemStatus */
 			$status = $playlist_item->status;
 
 			if ('private' === $status->privacyStatus) {

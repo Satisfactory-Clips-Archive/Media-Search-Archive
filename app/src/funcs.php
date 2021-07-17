@@ -53,9 +53,9 @@ use function is_string;
 use function iterator_to_array;
 use function json_decode;
 use const JSON_PRETTY_PRINT;
+use const JSON_THROW_ON_ERROR;
 use function key;
 use function ksort;
-use Masterminds\HTML5;
 use function mb_strlen;
 use function mb_strpos;
 use function mb_substr;
@@ -3125,7 +3125,7 @@ function yt_cards_uncached(string $video_id) : array
 	$preprocess = array_values(array_filter(
 		$raw->cards->cardCollectionRenderer->cards,
 		static function (object $maybe) : bool {
-			return (
+			return
 				isset(
 					$maybe->cardRenderer,
 					$maybe->cardRenderer->teaser,
@@ -3167,7 +3167,7 @@ function yt_cards_uncached(string $video_id) : array
 						)
 					)
 				)
-			);
+			;
 		}
 	));
 

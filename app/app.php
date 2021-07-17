@@ -857,8 +857,7 @@ foreach ($all_video_ids as $video_id) {
 	);
 
 	if ($last_compile_date !== $current_compile_date) {
-		echo
-			"\n\n",
+		echo "\n\n",
 			sprintf('compiling transcrptions for %s', $current_compile_date),
 			"\n";
 
@@ -866,7 +865,7 @@ foreach ($all_video_ids as $video_id) {
 		$carriage_return = false;
 	}
 
-	echo ($carriage_return ? "\r" : ''),
+	echo($carriage_return ? "\r" : ''),
 		sprintf(
 			'compiling transcription %s of %s videos (%s seconds elapsed)',
 			$checked,
@@ -1063,7 +1062,7 @@ foreach ($transcripts_json as $video_id => $video_data) {
 			}
 		));
 
-		if (count($maybe_playlist_id) !== 1) {
+		if (1 !== count($maybe_playlist_id)) {
 			throw new RuntimeException(sprintf(
 				'Video found on no dates! (%s)',
 				$video_id
