@@ -84,6 +84,11 @@ class Questions
 			ARRAY_FILTER_USE_BOTH
 		);
 
+		$cards = json_decode(
+			file_get_contents(__DIR__ . '/../data/info-cards.json'),
+			true
+		);
+
 		$existing = array_map(
 			/**
 			 * @param MAYBE $data
@@ -111,6 +116,33 @@ class Questions
 			},
 			$existing
 		);
+
+		foreach (array_keys($existing) as $video_id) {
+			unset(
+				$existing[$video_id]['seealso_video_cards'],
+				$existing[$video_id]['seealso_topic_cards']
+			);
+
+			if (isset($cards[$video_id]) && count($cards[$video_id])) {
+				$see_also_card_videos = [];
+				$see_also_card_playlists = [];
+
+				foreach ($cards[$video_id] as $card) {
+					if ('playlist' === $card[2]) {
+						$see_also_card_playlists[] = $card[3];
+					} elseif ('video' === $card[2]) {
+						$see_also_card_videos[] = $card[3];
+					}
+				}
+
+				if (count($see_also_card_videos)) {
+					$existing[$video_id]['seealso_video_cards'] = $see_also_card_videos;
+				}
+				if (count($see_also_card_playlists)) {
+					$existing[$video_id]['seealso_topic_cards'] = $see_also_card_playlists;
+				}
+			}
+		}
 
 		return $existing;
 	}

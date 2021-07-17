@@ -807,6 +807,35 @@ $all_video_ids = array_reverse($all_video_ids);
 
 prepare_uncached_captions_html($all_video_ids);
 
+$cards = array_combine(
+	$all_video_ids,
+	array_map(
+		__NAMESPACE__ . '\yt_cards',
+		$all_video_ids
+	)
+);
+
+file_put_contents(
+	(
+		__DIR__
+		. '/data/info-cards.json'
+	),
+	str_replace(
+		PHP_EOL,
+		"\n",
+		json_encode(
+			array_combine(
+				$all_video_ids,
+				array_map(
+					__NAMESPACE__ . '\yt_cards',
+					$all_video_ids
+				)
+			),
+			JSON_PRETTY_PRINT
+		)
+	)
+);
+
 echo "\n",
 	sprintf(
 		'compiling transcription 0 of %s videos (%s seconds elapsed)',

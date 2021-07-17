@@ -33,3 +33,5 @@
 /11ty/data/topics.json
 /app/data/play.json
 /11ty/data/dated.json
+/app/cards-cache/
+/app/data/info-cards.json

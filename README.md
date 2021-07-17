@@ -13,6 +13,7 @@ Static site generator for
 ## 2021-07-17
 * Fixing bug in transcription preparation
 * Added ability to remove cache entries without manually opening tarball
+* Adding initial support for info cards
 
 ## 2021-07-16
 * Added topic page link in structured data

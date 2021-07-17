@@ -29,6 +29,8 @@
 	"require-dev": {
 		"cocur/slugify": "^4.0",
 		"google/apiclient": "^2.7",
+		"masterminds/html5": "^2.7",
+		"querypath/querypath": "^3.0",
 		"roave/security-advisories": "dev-master",
 		"signpostmarv/php-cs-fixer-config": "^0.20.1",
 		"vimeo/psalm": "^4.6"

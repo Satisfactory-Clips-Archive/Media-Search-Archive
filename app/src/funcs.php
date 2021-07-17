@@ -41,6 +41,7 @@ use function filemtime;
 use function floor;
 use function fopen;
 use function glob;
+use function html5qp;
 use function http_build_query;
 use function implode;
 use function in_array;
@@ -54,6 +55,7 @@ use function json_decode;
 use const JSON_PRETTY_PRINT;
 use function key;
 use function ksort;
+use Masterminds\HTML5;
 use function mb_strlen;
 use function mb_strpos;
 use function mb_substr;
@@ -3002,4 +3004,216 @@ function other_video_parts(string $video_id, bool $include_self = true) : array
 	}
 
 	return $out;
+}
+
+function yt_cards(string $video_id) : array
+{
+	static $cache = [];
+
+	$video_id = vendor_prefixed_video_id($video_id);
+
+	if ( ! isset($cache[$video_id])) {
+		$cache_file =
+			__DIR__
+			. '/../cards-cache/'
+			. $video_id
+			. '.json';
+
+		if ( ! is_file($cache_file)) {
+			file_put_contents($cache_file, str_replace(
+				PHP_EOL,
+				"\n",
+				json_encode(
+					yt_cards_uncached($video_id),
+					JSON_PRETTY_PRINT
+				)
+			));
+		}
+
+		$cache[$video_id] = json_decode(
+			file_get_contents($cache_file),
+			true,
+			JSON_THROW_ON_ERROR
+		);
+	}
+
+	return $cache[$video_id];
+}
+
+/**
+ * @psalm-type CARD = object{
+ *	cardRenderer: object{
+ *		teaser: object{
+ *			simpleCardTeaserRenderer: object{
+ *				message: object{
+ *					simpleText: string
+ *				}
+ *			}
+ *		},
+ *		cueRanges: array{0: object{
+ *	 		startCardActiveMs: numeric-string
+ *		}},
+ *		content: object{
+ *			videoInfoCardContentRenderer: object{
+ *				action: object{
+ *					watchEndpoint: object{
+ *						videoId: string
+ *					}
+ *				}
+ *			}
+ *		}|object{
+ *			playlistInfoCardContentRenderer: object{
+ *				action: object{
+ *					watchEndpoint: object{
+ *						playlistId: string
+ *					}
+ *				}
+ *			}
+ *		}
+ *	}
+ * }
+ */
+function yt_cards_uncached(string $video_id) : array
+{
+	$page = video_page($video_id);
+
+	if ('' === $page) {
+		return [];
+	}
+
+	$nodes = [];
+
+	foreach (html5qp($page, 'script') as $node) {
+		$nodes[] = $node->text();
+	}
+
+	$nodes = array_values(array_filter(
+		$nodes,
+		static function (string $maybe) : bool {
+			return (bool) preg_match('/ytInitialPlayerResponse =/', $maybe);
+		}
+	));
+
+	if (1 !== count($nodes)) {
+		return [];
+	} elseif ( ! preg_match('/ytInitialPlayerResponse = (.+);(var|const|let)/', $nodes[0], $matches)) {
+		if (
+			! preg_match('/ytInitialPlayerResponse = (.+);$/', $nodes[0], $matches)
+			&& null === json_decode($matches[1])
+		) {
+			return [];
+		}
+	}
+
+	$raw = json_decode($matches[1]);
+
+	if (
+		! isset(
+			$raw,
+			$raw->cards,
+			$raw->cards->cardCollectionRenderer,
+			$raw->cards->cardCollectionRenderer->cards
+		)
+		|| ! is_array($raw->cards->cardCollectionRenderer->cards)
+	) {
+		return [];
+	}
+
+	/**
+	 * @var list<CARD>
+	 */
+	$preprocess = array_values(array_filter(
+		$raw->cards->cardCollectionRenderer->cards,
+		static function (object $maybe) : bool {
+			return (
+				isset(
+					$maybe->cardRenderer,
+					$maybe->cardRenderer->teaser,
+					$maybe->cardRenderer->teaser->simpleCardTeaserRenderer,
+					$maybe->cardRenderer->teaser->simpleCardTeaserRenderer->message,
+					$maybe->cardRenderer->teaser->simpleCardTeaserRenderer->message->simpleText,
+					$maybe->cardRenderer->cueRanges,
+					$maybe->cardRenderer->content
+				)
+				&& is_string($maybe->cardRenderer->teaser->simpleCardTeaserRenderer->message->simpleText)
+				&& is_array($maybe->cardRenderer->cueRanges)
+				&& isset(
+					$maybe->cardRenderer->cueRanges[0],
+					$maybe->cardRenderer->cueRanges[0]->startCardActiveMs
+				)
+				&& is_string($maybe->cardRenderer->cueRanges[0]->startCardActiveMs)
+				&& ctype_digit($maybe->cardRenderer->cueRanges[0]->startCardActiveMs)
+				&& (
+					(
+						isset(
+							$maybe->cardRenderer->content->videoInfoCardContentRenderer,
+							$maybe->cardRenderer->content->videoInfoCardContentRenderer->action,
+							$maybe->cardRenderer->content->videoInfoCardContentRenderer->action->watchEndpoint,
+							$maybe->cardRenderer->content->videoInfoCardContentRenderer->action->watchEndpoint->videoId
+						)
+						&& is_string(
+							$maybe->cardRenderer->content->videoInfoCardContentRenderer->action->watchEndpoint->videoId
+						)
+					)
+					|| (
+						isset(
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer,
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action,
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action->watchEndpoint,
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action->watchEndpoint->playlistId
+						)
+						&& is_string(
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action->watchEndpoint->playlistId
+						)
+					)
+				)
+			);
+		}
+	));
+
+	if (count($preprocess) < 1) {
+		return [];
+	}
+
+	/**
+	 * @var list<array{
+	 *	0:string,
+	 *	1:int,
+	 *	2:playlist|video,
+	 *	3:string
+	 * }>
+	 */
+	$processed = array_map(
+		/**
+		 * @param CARD $card
+		 *
+		 * @return array{
+		 *	0:string,
+		 *	1:int,
+		 *	2:playlist|video,
+		 *	3:string
+		 * }
+		 */
+		static function (object $card) : array {
+			return [
+				$card->cardRenderer->teaser->simpleCardTeaserRenderer->message->simpleText,
+				(int) $card->cardRenderer->cueRanges[0]->startCardActiveMs,
+				(
+					isset(
+						$card->cardRenderer->content->playlistInfoCardContentRenderer
+					) ? 'playlist' : 'video'
+				),
+				(
+					isset(
+						$card->cardRenderer->content->playlistInfoCardContentRenderer
+					)
+						? $card->cardRenderer->content->playlistInfoCardContentRenderer->action->watchEndpoint->playlistId
+						: $card->cardRenderer->content->videoInfoCardContentRenderer->action->watchEndpoint->videoId
+				),
+			];
+		},
+		$preprocess
+	);
+
+	return $processed;
 }
