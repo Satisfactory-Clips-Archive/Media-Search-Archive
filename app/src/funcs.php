@@ -1418,7 +1418,14 @@ function prepare_uncached_captions_html(array $video_ids) : void
 
 			$html_cache = $video_id . '.html';
 
-			return ! isset($captions_data[$html_cache]);
+			$url = (
+				'https://youtube.com/watch?' .
+				http_build_query([
+					'v' => $video_id,
+				])
+			);
+
+			return ! isset($captions_data[$html_cache]) || $captions_data[$html_cache]->getContent() === $url;
 		}
 	));
 
@@ -1448,16 +1455,17 @@ function prepare_uncached_captions_html(array $video_ids) : void
 	foreach ($can_have_html as $video_id) {
 		echo "\r", sprintf('Prefetching %s of %s', ++$i, $count);
 
-		$html_cache = $video_id . '.html';
-
-		$url = (
-			'https://youtube.com/watch?' .
-			http_build_query([
-				'v' => $video_id,
-			])
+		$video_id = preg_replace(
+			'/^yt-([^,]+).*/',
+			'$1',
+			vendor_prefixed_video_id($video_id)
 		);
 
-		$captions_data->addFromString($html_cache, $url);
+		$html_cache = $video_id . '.html';
+
+		unset($captions_data[$html_cache]);
+
+		video_page($video_id);
 	}
 }
 
@@ -1481,6 +1489,38 @@ function captions_data() : PharData
 	}
 
 	return $captions_data;
+}
+
+function video_page(string $video_id) : string
+{
+	$vendor_prefixed = vendor_prefixed_video_id($video_id);
+
+	if ( ! preg_match('/^yt-/', $vendor_prefixed)) {
+		return '';
+	}
+
+	$captions_data = captions_data();
+
+	$video_id = preg_replace(
+		'/^yt-([^,]+).*/',
+		'$1',
+		$vendor_prefixed
+	);
+
+	$html_cache = $video_id . '.html';
+
+	$url = (
+		'https://youtube.com/watch?' .
+		http_build_query([
+			'v' => $video_id,
+		])
+	);
+
+	if ( ! isset($captions_data[$html_cache])) {
+		$captions_data->addFromString($html_cache, file_get_contents($url));
+	}
+
+	return $captions_data[$html_cache]->getContent();
 }
 
 /**
@@ -1629,20 +1669,7 @@ function raw_captions(string $video_id) : array
 
 	$html_cache = $video_id . '.html';
 
-	if ( ! isset($captions_data[$html_cache])) {
-		$page = file_get_contents(
-			'https://youtube.com/watch?' .
-			http_build_query([
-				'v' => $video_id,
-			])
-		);
-
-		$captions_data->addFromString($html_cache, $page);
-	} else {
-		$page = $captions_data[$html_cache];
-
-		$page = file_get_contents($page->getPathname());
-	}
+	$page = video_page($video_id);
 
 	$urls = preg_match_all(
 		(

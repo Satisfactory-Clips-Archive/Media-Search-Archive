@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-07-17
+* Fixing bug in transcription preparation
+
 ## 2021-07-16
 * Added topic page link in structured data
 * Swapped non-semantic external link for structured data related link
