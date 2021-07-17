@@ -105,7 +105,7 @@ set_error_handler(static function (
 	));
 });
 
-function video_url_from_id(string $video_id, bool $short = false) : string
+function maybe_video_override(string $video_id) : ? string
 {
 	/** @var array<string, string>|null */
 	static $overrides = null;
@@ -125,8 +125,15 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		);
 	}
 
-	if (isset($overrides[$video_id])) {
-		return $overrides[$video_id];
+	return $overrides[$video_id] ?? null;
+}
+
+function video_url_from_id(string $video_id, bool $short = false) : string
+{
+	$maybe = maybe_video_override($video_id);
+
+	if (null !== $maybe) {
+		return $maybe;
 	}
 
 	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){1,2}/', $video_id)) {
@@ -698,10 +705,25 @@ function determine_playlist_id(
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup
 ) : array {
+	/** @var array<string, array{0:string, 1:string}|false> */
+	static $matches = [];
+
+	if (isset($matches[$playlist_name])) {
+		if (false === $matches[$playlist_name]) {
+			throw new RuntimeException(
+				'Invalid date found!'
+			);
+		}
+
+		return $matches[$playlist_name];
+	}
+
 	if (preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $playlist_name)) {
 		$unix = strtotime($playlist_name);
 
 		if (false === $unix) {
+			$matches[$playlist_name] = false;
+
 			throw new RuntimeException(
 				'Invalid date found!'
 			);
@@ -732,7 +754,9 @@ function determine_playlist_id(
 		$friendly = $playlist_name;
 	}
 
-	return [$maybe_playlist_id, $friendly];
+	$matches[$playlist_name] = [$maybe_playlist_id, $friendly];
+
+	return $matches[$playlist_name];
 }
 
 /**
@@ -1830,7 +1854,7 @@ function raw_captions(string $video_id) : array
 }
 
 /**
- * @return array<
+ * @psalm-type T = array<
  *	string,
  *	list<array{
  *		0:string,
@@ -1846,9 +1870,15 @@ function raw_captions(string $video_id) : array
  *		}
  *	}>
  * >
+ *
+ * @return T
  */
 function get_externals() : array
 {
+	/** @var T|null */
+	static $cached = null;
+
+	if (null === $cached) {
 	$csv_files =
 		array_filter(
 			glob(__DIR__ . '/../data/*/*.csv'),
@@ -1876,7 +1906,7 @@ function get_externals() : array
 		return filemtime($b) <=> filemtime($a);
 	});
 
-	return array_reduce(
+	$cached = array_reduce(
 		$csv_files,
 		/**
 		 * @param array<
@@ -1936,18 +1966,27 @@ function get_externals() : array
 		},
 		[]
 	);
+	}
+
+	return $cached;
 }
 
 /**
- * @return array<string, array<string, array{
+ * @psalm-type T = array<string, array<string, array{
  *	title:string,
  *	tags:list<string>,
  *	topics:list<string>,
  *	legacyof:list<string>
  * }>>
+ *
+ * @return T
  */
 function get_additional_externals() : array
 {
+	/** @var T|null */
+	static $cached = null;
+
+	if (null === $cached) {
 	$inject_externals = array_filter(
 		glob(__DIR__ . '/../data/externals/*.json'),
 		static function (string $path) : bool {
@@ -1959,7 +1998,7 @@ function get_additional_externals() : array
 		}
 	);
 
-	return array_combine(
+	$cached = array_combine(
 		array_map(
 			static function (string $path) : string {
 				return pathinfo($path, PATHINFO_FILENAME);
@@ -1989,6 +2028,9 @@ function get_additional_externals() : array
 			$inject_externals
 		)
 	);
+	}
+
+	return $cached;
 }
 
 /**
@@ -2781,6 +2823,16 @@ function timestamp_link(string $video_id, $start) : string
  */
 function embed_link(string $video_id, $start, $end) : string
 {
+	if (null !== $start || null !== $end) {
+		$maybe = maybe_video_override($video_id . ',' . (string) $start . ',' . (string) $end);
+	} else {
+		$maybe = maybe_video_override($video_id);
+	}
+
+	if (null !== $maybe) {
+		return $maybe;
+	}
+
 	$video_id = vendor_prefixed_video_id($video_id);
 	$vendorless_video_id = preg_replace('/,.*$/', '', mb_substr($video_id, 3));
 
@@ -2858,6 +2910,20 @@ function determine_date_for_video(
 	array $playlist_date_ref,
 	bool $ignore_lack_of_data = false
 ) : string {
+	/** @var array<string, string|false> */
+	static $matches = [];
+
+	if (isset($matches[$video_id])) {
+		if (false === $matches[$video_id]) {
+			throw new RuntimeException(sprintf(
+				'No data available for playlist %s',
+				$playlist_id
+			));
+		}
+
+		return $matches[$video_id];
+	}
+
 	/** @var false|string */
 	$found = false;
 
@@ -2876,6 +2942,8 @@ function determine_date_for_video(
 		}
 
 		if (isset($externals_unpacked[$video_id_matches[1]])) {
+			$matches[$video_id] = $externals_unpacked[$video_id_matches[1]];
+
 			return $externals_unpacked[$video_id_matches[1]];
 		}
 	}
@@ -2891,6 +2959,8 @@ function determine_date_for_video(
 			&& in_array($video_id, $playlists[$playlist_id][2], true)
 		) {
 			if (false !== $found) {
+				$matches[$video_id] = false;
+
 				throw new InvalidArgumentException(sprintf(
 					'Video %s already found on %s',
 					$video_id,
@@ -2903,11 +2973,14 @@ function determine_date_for_video(
 	}
 
 	if (false === $found) {
+		$matches[$video_id] = false;
 		throw new InvalidArgumentException(sprintf(
 			'Video %s was not found in any playlist!',
 			$video_id
 		));
 	}
+
+	$matches[$video_id] = $playlist_date_ref[$found];
 
 	return $playlist_date_ref[$found];
 }

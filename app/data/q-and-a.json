@@ -1,4 +1,104 @@
 {
+    "yt-Z2WggHmVHGI,39.1391,95.22846666666666": {
+        "title": "Q&A: Does Satisfactory have Official Mod Support?",
+        "date": "2021-07-16",
+        "topics": [
+            "mods\/official-mod-support"
+        ],
+        "duplicates": [
+            "6-uSzpX-zZ0",
+            "6t4_ersHMTA",
+            "25ssduoFoiA",
+            "D5-Y6LYR7jk",
+            "IlACElBWukM",
+            "iOk7KMpNMEo",
+            "JRyAZT7y44g",
+            "o7FFLZpEf_Y",
+            "TQdwxoxIfX0",
+            "uRoRq878QHw",
+            "yt-CB9bSigNYH8,3390.447786,3418.942904",
+            "yt-NlIVwoRqjVk,288.288,301.33436666666665",
+            "yt-W1E6EWrAsII,91.24,120.52",
+            "z4Uv-UNMETw"
+        ],
+        "seealso": [
+            "dWHUW2vrUYE",
+            "IKfM_x8yKOA",
+            "yt-Gdz6SUv9Om4,10364.210786,10559.687955"
+        ]
+    },
+    "yt-Z2WggHmVHGI,95.26183333333333,135.70223333333334": {
+        "title": "Q&A: Are you okay with people modding Satisfactory\u203d",
+        "date": "2021-07-16",
+        "topics": [
+            "coffee-stainers",
+            "mods"
+        ],
+        "duplicates": [
+            "IalBixhW2ck"
+        ],
+        "seealso": [
+            "o7FFLZpEf_Y"
+        ]
+    },
+    "yt-Z2WggHmVHGI,135.7356,235.10153333333335": {
+        "title": "Q&A: Will there be Steam Workshop?",
+        "date": "2021-07-16",
+        "topics": [
+            "mods\/official-mod-support\/steam-workshop"
+        ],
+        "duplicates": [
+            "0M3RKdwK5mA",
+            "5KyHoIVdGzc",
+            "dy137Wbx24M",
+            "FkG749zfA2w",
+            "GC8pyFLf1Rw",
+            "Ildv99O7E0M",
+            "n4fagQ4eivI",
+            "PwFxPAf0nuM",
+            "qzu-mnG_8uA",
+            "sKwcRFzwGzI",
+            "tc-SwissTameCoffeeDansGame",
+            "U2Dufcqf9G8",
+            "yt-NlIVwoRqjVk,346.41273333333334,368.9352333333333"
+        ],
+        "seealso": [
+            "R2NhOHsOEO8"
+        ]
+    },
+    "yt-Z2WggHmVHGI,235.13490000000002,308.97533333333337": {
+        "title": "Q&A: Are you influenced by Mods?",
+        "date": "2021-07-16",
+        "topics": [
+            "mods\/mods-vs-features"
+        ],
+        "seealso": [
+            "frBQ5YZKqvg",
+            "GGXuWbV11S4",
+            "mH06GfDfnQc"
+        ]
+    },
+    "yt-Z2WggHmVHGI,364.8645,545.6784666666666": {
+        "title": "Q&A: Why haven't you added [Feature] into the base game?",
+        "date": "2021-07-16",
+        "topics": [
+            "features\/requested-features",
+            "mods\/mods-vs-features"
+        ],
+        "seealso": [
+            "mH06GfDfnQc"
+        ]
+    },
+    "yt-Z2WggHmVHGI,545.7118333333333,614.9476666666667": {
+        "title": "Q&A: I use mods and my game is crashing. Can you help?",
+        "date": "2021-07-16",
+        "topics": [
+            "mods"
+        ],
+        "seealso": [
+            "WC8Aac0hko8"
+        ]
+    },
     "iwOHi2NY5UI": {
         "title": "Q&A: When is Update 5 coming?",
         "date": "2021-07-13",
@@ -171,7 +271,8 @@
             "m5cNknxrsMY",
             "MmcJSWmQA9w",
             "sZ8wWJtYzWc",
-            "UjLAYqr2L6g"
+            "UjLAYqr2L6g",
+            "yt-Z2WggHmVHGI,545.7118333333333,614.9476666666667"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqqhOELGDMQdwRCiQAo99bW",
@@ -3924,29 +4025,10 @@
         "topics": [
             "mods\/official-mod-support"
         ],
-        "duplicates": [
-            "6-uSzpX-zZ0",
-            "25ssduoFoiA",
-            "D5-Y6LYR7jk",
-            "IlACElBWukM",
-            "iOk7KMpNMEo",
-            "JRyAZT7y44g",
-            "o7FFLZpEf_Y",
-            "TQdwxoxIfX0",
-            "uRoRq878QHw",
-            "yt-CB9bSigNYH8,3390.447786,3418.942904",
-            "yt-NlIVwoRqjVk,288.288,301.33436666666665",
-            "yt-W1E6EWrAsII,91.24,120.52",
-            "z4Uv-UNMETw"
-        ],
-        "seealso": [
-            "dWHUW2vrUYE",
-            "IKfM_x8yKOA",
-            "yt-Gdz6SUv9Om4,10364.210786,10559.687955"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEolhfvxFmSHBd2Ct-lyZW6N"
-        ]
+        ],
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "w_ZCP0Syl-A": {
         "title": "Q&A: What's the greatest number of people you've had in a Multiplayer session?",
@@ -4792,7 +4874,8 @@
         "seealso": [
             "frBQ5YZKqvg",
             "mH06GfDfnQc",
-            "xVR-okEmoTI"
+            "xVR-okEmoTI",
+            "yt-Z2WggHmVHGI,235.13490000000002,308.97533333333337"
         ]
     },
     "xVR-okEmoTI": {
@@ -4928,6 +5011,7 @@
             "2KJvQH-8V28",
             "GGXuWbV11S4",
             "mH06GfDfnQc",
+            "yt-Z2WggHmVHGI,235.13490000000002,308.97533333333337",
             "ZFZtORSMblg"
         ]
     },
@@ -6111,23 +6195,7 @@
             "mods\/official-mod-support",
             "mods\/official-mod-support\/steam-workshop"
         ],
-        "duplicates": [
-            "0M3RKdwK5mA",
-            "5KyHoIVdGzc",
-            "dy137Wbx24M",
-            "FkG749zfA2w",
-            "GC8pyFLf1Rw",
-            "n4fagQ4eivI",
-            "PwFxPAf0nuM",
-            "qzu-mnG_8uA",
-            "sKwcRFzwGzI",
-            "tc-SwissTameCoffeeDansGame",
-            "U2Dufcqf9G8",
-            "yt-NlIVwoRqjVk,346.41273333333334,368.9352333333333"
-        ],
-        "seealso": [
-            "R2NhOHsOEO8"
-        ]
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "Y_FlnlBYZ2k": {
         "title": "Q&A: What's your favourite mod?",
@@ -8241,7 +8309,7 @@
         "topics": [
             "mods\/official-mod-support"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "vfclN0P_Mfk": {
         "title": "Q&A: Are you aware we can place Water Extractors in the air?",
@@ -10899,7 +10967,7 @@
             "community",
             "mods\/official-mod-support\/steam-workshop"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "oHxP9OXQn5w": {
         "title": "Q&A: Solar Power?",
@@ -12183,7 +12251,7 @@
         "topics": [
             "mods\/official-mod-support"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "xiTNXgLoNK8": {
         "title": "Q&A: Will Satisfactory support ray tracing?",
@@ -13447,7 +13515,7 @@
         "topics": [
             "mods\/official-mod-support"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "pTyR9FXrU_E": {
         "title": "Q&A: More space-based stuff coming?",
@@ -14187,7 +14255,9 @@
             "tc-ElegantKindPrariedogGrammarKing",
             "tc-OriginalDifficultTeaKevinTurtle",
             "tc-ShakingCredulousGalagoCopyThis",
-            "tc-ShakingNastyJaguarGrammarKing"
+            "tc-ShakingNastyJaguarGrammarKing",
+            "yt-Z2WggHmVHGI,235.13490000000002,308.97533333333337",
+            "yt-Z2WggHmVHGI,364.8645,545.6784666666666"
         ]
     },
     "IMkdm7T3SDo": {
@@ -14851,7 +14921,7 @@
         "topics": [
             "mods\/official-mod-support\/steam-workshop"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "tudG4BUUsnM": {
         "title": "Q&A: Will you add an Arachnophobia Mode that isn't actually scarier than spiders?",
@@ -18437,7 +18507,7 @@
         "topics": [
             "mods\/official-mod-support\/steam-workshop"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "-p_fC8A9LoE": {
         "title": "Q&A: Is Snutt ever going to join Jace's Monday stream?",
@@ -19530,7 +19600,7 @@
             "PwFxPAf0nuM",
             "tc-SwissTameCoffeeDansGame"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "k-UDNJY0PWA": {
         "title": "Q&A: Any plans to improve the visual part of building in the game?",
@@ -24075,7 +24145,7 @@
         "topics": [
             "mods\/official-mod-support"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "sI7zMjVad1c": {
         "title": "Q&A: Are Coffee Stain looking for Unreal Engine programmers - do you hire remotely?",
@@ -25065,7 +25135,7 @@
             "features\/save-system",
             "mods\/official-mod-support"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "Y6RYXEZ3aek": {
         "title": "Q&A: Any plans for customising the Build Menu organisation?",
@@ -25167,7 +25237,7 @@
         "topics": [
             "mods\/official-mod-support\/steam-workshop"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "ZpYMIZFGegw": {
         "title": "Q&A: Can we get an update on Walls?",
@@ -26236,7 +26306,7 @@
             "mods",
             "mods\/official-mod-support"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "XhFZ61biXEg": {
         "title": "Q&A: Why are we rushing stuff to Early Access?",
@@ -27604,7 +27674,7 @@
         "topics": [
             "mods"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "1uPcFbl-bAU": {
         "title": "Q&A: Packagers out yet?",
@@ -28511,9 +28581,7 @@
         "topics": [
             "mods"
         ],
-        "seealso": [
-            "o7FFLZpEf_Y"
-        ]
+        "duplicatedby": "yt-Z2WggHmVHGI,95.26183333333333,135.70223333333334"
     },
     "SG9tehaWHsE": {
         "title": "Q&A: (re: the wiki) So the old data-mined data?",
@@ -30333,7 +30401,7 @@
             "mods\/official-mod-support",
             "mods\/official-mod-support\/steam-workshop"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "Eo_4p0KSPSY": {
         "title": "Q&A: Is there a plan to deal with Nuclear Waste?",
@@ -30859,7 +30927,7 @@
         "topics": [
             "mods\/official-mod-support\/steam-workshop"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "G9PuZ0WvoOM": {
         "title": "Q&A: When are we expecting to get Dedicated Servers?",
@@ -31612,7 +31680,7 @@
         "topics": [
             "mods\/official-mod-support\/steam-workshop"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "iOniZ-OPIps": {
         "title": "Q&A: What is your opinion on the most downloaded mods?",
@@ -32904,7 +32972,7 @@
             "tc-HumbleRenownedTofuLitty",
             "tc-OnerousDeterminedMoonRlyTho"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "oYFn3xvAOHs": {
         "title": "Q&A: Fixing machines that break?",
@@ -34213,7 +34281,7 @@
         "topics": [
             "mods\/official-mod-support\/steam-workshop"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "tc-ViscousFuriousPonyPhilosoraptor": {
         "title": "Q&A: Custom game engine?",
@@ -35069,7 +35137,7 @@
             "2fGzXvdPYEU",
             "5kcpbR2ViOg"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "2fGzXvdPYEU": {
         "title": "Q&A: Will there be Steam Trading Cards?",
@@ -35316,7 +35384,7 @@
         "topics": [
             "mods\/official-mod-support\/steam-workshop"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "Ggro568KcHA": {
         "title": "Q&A: Does Coffee Stain have any analytics for what players do in the game?",
@@ -35513,7 +35581,7 @@
             "fI7gnbG4Omk",
             "mci92Mhr7MM"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "yt-NlIVwoRqjVk,301.33436666666665,346.41273333333334": {
         "title": "Q&A: Will there be Steam Cards and Achievements? Also do you intend to use Steam Workshop?",
@@ -35542,7 +35610,7 @@
             "fI7gnbG4Omk",
             "mci92Mhr7MM"
         ],
-        "duplicatedby": "Ildv99O7E0M"
+        "duplicatedby": "yt-Z2WggHmVHGI,135.7356,235.10153333333335"
     },
     "yt-NlIVwoRqjVk,368.9352333333333,374.5742": {
         "title": "Q&A: Will there be a sale when it first releases on Steam?",
@@ -36603,7 +36671,7 @@
             "coffee-stainers\/birk",
             "mods\/official-mod-support"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "73Nx4m0LjbU": {
         "title": "Q&A: Do Markus & G2 have any favourite programming languages?",
@@ -39107,7 +39175,7 @@
             "features\/roadmap",
             "mods\/official-mod-support"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "xG0mfuXiFY8": {
         "title": "Q&A: What's the final objective of the game?",
@@ -40030,7 +40098,7 @@
         "topics": [
             "mods\/official-mod-support"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "yt-CB9bSigNYH8,3445.663578,3480.212684": {
         "title": "Q&A: Why is the world not randomly generated?",
@@ -42347,7 +42415,7 @@
         "topics": [
             "mods\/official-mod-support"
         ],
-        "duplicatedby": "6t4_ersHMTA"
+        "duplicatedby": "yt-Z2WggHmVHGI,39.1391,95.22846666666666"
     },
     "yt-W1E6EWrAsII,120.52,176.6": {
         "title": "Q&A: Plans for post-launch?",
