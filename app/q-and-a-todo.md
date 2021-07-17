@@ -17,10 +17,6 @@ add links to merch store announcement
 ## simon saga "eat the keys" scene
 * qFYvqvrAFf8
 
-## add see also to simon saga playlist
-* weWtkbvOxdU
-* t9_0R3vkYOk
-
 # add seealso to developer highlights video
 * cONX37SiszU
 * yt-rATcozDE25c,781.3472333333333,823.1223

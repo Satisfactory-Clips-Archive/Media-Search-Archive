@@ -120,7 +120,8 @@ class Questions
 		foreach (array_keys($existing) as $video_id) {
 			unset(
 				$existing[$video_id]['seealso_video_cards'],
-				$existing[$video_id]['seealso_topic_cards']
+				$existing[$video_id]['seealso_topic_cards'],
+				$existing[$video_id]['incoming_video_cards']
 			);
 
 			if (isset($cards[$video_id]) && count($cards[$video_id])) {
@@ -140,6 +141,22 @@ class Questions
 				}
 				if (count($see_also_card_playlists)) {
 					$existing[$video_id]['seealso_topic_cards'] = $see_also_card_playlists;
+				}
+			}
+		}
+
+		foreach (array_keys($existing) as $video_id) {
+			if (isset($existing[$video_id]['seealso_video_cards'])) {
+				foreach ($existing[$video_id]['seealso_video_cards'] as $other_video_id) {
+					if ( ! isset($existing[$other_video_id])) {
+						continue;
+					}
+
+					if ( ! isset($existing[$other_video_id]['incoming_video_cards'])) {
+						$existing[$other_video_id]['incoming_video_cards'] = [];
+					}
+
+					$existing[$other_video_id]['incoming_video_cards'][] = $video_id;
 				}
 			}
 		}

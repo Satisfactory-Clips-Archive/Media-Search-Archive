@@ -32,12 +32,20 @@ class Jsonify
 
 	private Questions $questions;
 
+	/**
+	 * @var array<string, string>
+	 *
+	 * @readonly
+	 */
+	private array $topics;
+
 	public function __construct(
 		Injected $injected,
 		Questions $questions = null
 	) {
 		$this->injected = $injected;
 		$this->questions = $questions ?? new Questions($injected);
+		$this->topics = $injected->all_topics();
 	}
 
 	/**
@@ -248,7 +256,10 @@ class Jsonify
 	}
 
 	/**
-	 * @return false|array{0:int, 1:string}
+	 * @return false|array{
+	 *	0:string,
+	 *	1:list<array{0:string, 1:string, 2:string, 3:string}|array{0:string, 1:string}>
+	 * }
 	 */
 	public function content_if_video_has_seealsos(
 		string $video_id,
@@ -256,11 +267,55 @@ class Jsonify
 	) {
 		$questions = $questions ?? $this->questions;
 
-		$faq_duplicates = $questions->process()[0][$video_id]['seealso'] ?? [];
+		$process = $questions->process()[0];
 
-		if ([] === $faq_duplicates) {
+		$video_ids = array_keys($process);
+
+		$filter = static function (string $maybe) use ($video_ids) : bool {
+			return in_array($maybe, $video_ids, true);
+		};
+
+		$faq_duplicates = array_unique(array_merge(
+			$process[$video_id]['seealso'] ?? [],
+			array_filter(
+				$process[$video_id]['seealso_video_cards'] ?? [],
+				$filter
+			),
+			array_filter(
+				$process[$video_id]['incoming_video_cards'] ?? [],
+				$filter
+			)
+		));
+
+		$seealso_topics = array_filter(
+			$process[$video_id]['seealso_topic_cards'] ?? [],
+			function (string $maybe) : bool {
+				return isset($this->topics[$maybe]);
+			}
+		);
+
+		if (count($faq_duplicates) < 1 && count($seealso_topics) < 1) {
 			return false;
 		}
+
+		$topics_content = array_combine(
+			$seealso_topics,
+			array_map(
+				/**
+				 * @return array{0:string, 1:string}
+				 */
+				function (string $topic) : array {
+					return [
+						determine_topic_name(
+							$topic,
+							$this->injected->cache
+						),
+						'/topics/' . $this->topics[$topic],
+					];
+				},
+				$seealso_topics
+			)
+		);
 
 		$injected = $questions->injected;
 
@@ -292,8 +347,10 @@ class Jsonify
 			}
 		}
 
-		return [
-			(
+		$opening_line = '';
+
+		if (count($topics_content) < 1) {
+			$opening_line = (
 				sprintf(
 					'This question has %s related %s',
 					(
@@ -307,12 +364,61 @@ class Jsonify
 							: 'video'
 					)
 				)
-			),
+			);
+		} elseif (count($faq_duplicates_for_date_checking) > 0) {
+			$opening_line = sprintf(
+				'This question has %s related %s, and %s related %s',
+				(
+					count($faq_duplicates_for_date_checking) > 1
+						? count($faq_duplicates_for_date_checking)
+						: 'a'
+				),
+				(
+					count($faq_duplicates_for_date_checking) > 1
+						? 'videos'
+						: 'video'
+				),
+				(
+					count($topics_content) > 1
+						? count($topics_content)
+						: 'a'
+				),
+				(
+					count($topics_content) > 1
+						? 'topics'
+						: 'topic'
+				),
+			);
+		} else {
+			$opening_line = sprintf(
+				'This question %s related %s',
+				(
+					count($topics_content) > 1
+						? count($topics_content)
+						: 'a'
+				),
+				(
+					count($topics_content) > 1
+						? 'topics'
+						: 'topic'
+				),
+			);
+		}
+
+		$content =
 			$this->content_from_other_video_parts(
 				null,
 				$faq_duplicates_for_date_checking,
 				$questions
-			),
+		);
+
+		foreach ($topics_content as $row) {
+			$content[] = $row;
+		}
+
+		return [
+			$opening_line,
+			$content,
 		];
 	}
 

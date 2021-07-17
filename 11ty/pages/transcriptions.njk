@@ -86,11 +86,11 @@ layout: transcriptions
 %}
 <li>{%
 			if seealso[1]
-%}<a href="../{{seealso[1]}}/">{{seealso[0]}}</a>{%
+%}{% if seealso.length === 2 %}<a href="{{seealso[1]}}">{% else %}<a href="../{{seealso[1]}}/">{% endif %}{{seealso[0]}}</a>{%
 			else
 %}{{seealso[0]}}{%
 			endif
-%} <a rel="noopener" target="_blank" href="{{seealso[2]}}">{{seealso[2]}}</a></li>{% endfor %}
+%}{% if seealso.length > 2 %} <a rel="noopener" target="_blank" href="{{seealso[2]}}">{{seealso[2]}}</a>{% endif %}</li>{% endfor %}
 </ul>
 </details>{%
 			endif

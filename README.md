@@ -14,6 +14,8 @@ Static site generator for
 * Fixing bug in transcription preparation
 * Added ability to remove cache entries without manually opening tarball
 * Adding initial support for info cards
+	* merging internal video card data with the manual "see also" data
+	* merging internal playlists into the "see also" section
 
 ## 2021-07-16
 * Added topic page link in structured data

@@ -23,6 +23,8 @@ class Filtering
 			count($maybe['duplicates'] ?? []) < 1
 			&& count($maybe['replaces'] ?? []) < 1
 			&& count($maybe['seealso'] ?? []) < 1
+			&& count($maybe['seealso_video_cards'] ?? []) < 1
+			&& count($maybe['incoming_video_cards'] ?? []) < 1
 			&& ! isset($maybe['replacedby'])
 			&& ! isset($maybe['duplicatedby'])
 		;
