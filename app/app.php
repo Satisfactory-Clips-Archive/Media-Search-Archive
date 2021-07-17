@@ -1035,10 +1035,10 @@ foreach ($transcripts_json as $video_id => $video_data) {
 		));
 
 		if (count($maybe_playlist_id) !== 1) {
-		throw new RuntimeException(sprintf(
-			'Video found on no dates! (%s)',
-			$video_id
-		));
+			throw new RuntimeException(sprintf(
+				'Video found on no dates! (%s)',
+				$video_id
+			));
 		}
 	}
 
