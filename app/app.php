@@ -68,12 +68,11 @@ echo 'preloading captions data...';
 
 captions_data();
 
-register_shutdown_function(function () use ($stat_start) {
+register_shutdown_function(static function () use ($stat_start) {
 	echo "\n", sprintf('done in %s seconds', microtime(true) - $stat_start), "\n";
 });
 
-echo
-	"\r"
+echo "\r"
 	, sprintf('preloaded captions data in %s seconds', microtime(true) - $stat_start)
 	, "\n";
 

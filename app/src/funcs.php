@@ -64,7 +64,6 @@ use function parse_str;
 use function parse_url;
 use function pathinfo;
 use const PATHINFO_FILENAME;
-use Phar;
 use PharData;
 use const PHP_EOL;
 use const PHP_URL_QUERY;
@@ -1909,13 +1908,13 @@ function raw_captions(string $video_id) : array
 			}
 		}
 	} else {
-	foreach ($xml->children() as $line) {
-		if (null === $line) {
-			continue;
-		}
+		foreach ($xml->children() as $line) {
+			if (null === $line) {
+				continue;
+			}
 
-		$lines[] = $line;
-	}
+			$lines[] = $line;
+		}
 	}
 
 	return [$xml, $lines];
@@ -1947,7 +1946,7 @@ function get_externals() : array
 	static $cached = null;
 
 	if (null === $cached) {
-	$csv_files =
+		$csv_files =
 		array_filter(
 			glob(__DIR__ . '/../data/*/*.csv'),
 			static function (string $maybe) : bool {
@@ -1960,21 +1959,21 @@ function get_externals() : array
 			}
 	);
 
-	usort($csv_files, static function (string $a, string $b) : int {
-		$a_basename = basename($a);
-		$b_basename = basename($b);
+		usort($csv_files, static function (string $a, string $b) : int {
+			$a_basename = basename($a);
+			$b_basename = basename($b);
 
-		if (
+			if (
 			preg_match('/^ts\-\d+\.csv$/', $a_basename)
 			|| preg_match('/^ts\-\d+\.csv$/', $b_basename)
 		) {
-			return strnatcasecmp($a_basename, $b_basename);
-		}
+				return strnatcasecmp($a_basename, $b_basename);
+			}
 
-		return filemtime($b) <=> filemtime($a);
-	});
+			return filemtime($b) <=> filemtime($a);
+		});
 
-	$cached = array_reduce(
+		$cached = array_reduce(
 		$csv_files,
 		/**
 		 * @param array<
@@ -2055,7 +2054,7 @@ function get_additional_externals() : array
 	static $cached = null;
 
 	if (null === $cached) {
-	$inject_externals = array_filter(
+		$inject_externals = array_filter(
 		glob(__DIR__ . '/../data/externals/*.json'),
 		static function (string $path) : bool {
 			$info = pathinfo($path, PATHINFO_FILENAME);
@@ -2066,7 +2065,7 @@ function get_additional_externals() : array
 		}
 	);
 
-	$cached = array_combine(
+		$cached = array_combine(
 		array_map(
 			static function (string $path) : string {
 				return pathinfo($path, PATHINFO_FILENAME);
