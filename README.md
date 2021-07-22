@@ -17,6 +17,7 @@ Static site generator for
 	* merging internal video card data with the manual "see also" data
 	* merging internal playlists into the "see also" section
 * Improved overriden video url support
+* Compressing captions tarball
 
 ## 2021-07-16
 * Added topic page link in structured data

@@ -64,6 +64,7 @@ use function parse_str;
 use function parse_url;
 use function pathinfo;
 use const PATHINFO_FILENAME;
+use Phar;
 use PharData;
 use const PHP_EOL;
 use const PHP_URL_QUERY;
@@ -1504,7 +1505,7 @@ function captions_data() : PharData
 		$captions_data = new PharData(
 			(
 				__DIR__
-				. '/../captions.tar'
+				. '/../captions.tar.bz2'
 			),
 			(
 				PharData::CURRENT_AS_PATHNAME
