@@ -22,8 +22,6 @@ $videos = array_filter(
 );
 
 if (count($videos)) {
-	$captions = captions_data();
-
 	foreach ($videos as $video_id) {
 		$video_id = preg_replace(
 			'/^yt-([^,]+).*/',
@@ -31,6 +29,6 @@ if (count($videos)) {
 			vendor_prefixed_video_id($video_id)
 		);
 
-		unset($captions[$video_id . '.html']);
+		remove_captions_cache_fileunset($video_id . '.html');
 	}
 }

@@ -1426,11 +1426,9 @@ function prepare_uncached_captions_html(array $video_ids) : void
 		}
 	);
 
-	$captions_data = captions_data();
-
 	$does_not_have_html = array_values(array_filter(
 		$does_not_have_json,
-		static function (string $maybe) use ($captions_data) : bool {
+		static function (string $maybe) : bool {
 			$video_id = preg_replace(
 				'/^yt-([^,]+).*/',
 				'$1',
@@ -1446,7 +1444,7 @@ function prepare_uncached_captions_html(array $video_ids) : void
 				])
 			);
 
-			return ! isset($captions_data[$html_cache]) || $captions_data[$html_cache]->getContent() === $url;
+			return ! captions_content_exists($html_cache) || captions_get_content($html_cache) === $url;
 		}
 	));
 
@@ -1484,7 +1482,7 @@ function prepare_uncached_captions_html(array $video_ids) : void
 
 		$html_cache = $video_id . '.html';
 
-		unset($captions_data[$html_cache]);
+		remove_captions_cache_file($html_cache);
 
 		video_page($video_id);
 	}
@@ -1512,6 +1510,34 @@ function captions_data() : PharData
 	return $captions_data;
 }
 
+function remove_captions_cache_file(string $filename) : void
+{
+	$captions_data = captions_data();
+
+	unset($captions_data[$filename]);
+}
+
+function captions_add_from_string(string $filename, string $contents) : void
+{
+	$captions_data = captions_data();
+
+	$captions_data->addFromString($filename, $contents);
+}
+
+function captions_get_content(string $filename) : string
+{
+	$captions_data = captions_data();
+
+	return file_get_contents($captions_data[$filename]->getPathname());
+}
+
+function captions_content_exists(string $filename) : bool
+{
+	$captions_data = captions_data();
+
+	return isset($captions_data[$filename]);
+}
+
 function video_page(string $video_id) : string
 {
 	$vendor_prefixed = vendor_prefixed_video_id($video_id);
@@ -1519,8 +1545,6 @@ function video_page(string $video_id) : string
 	if ( ! preg_match('/^yt-/', $vendor_prefixed)) {
 		return '';
 	}
-
-	$captions_data = captions_data();
 
 	$video_id = preg_replace(
 		'/^yt-([^,]+).*/',
@@ -1537,11 +1561,11 @@ function video_page(string $video_id) : string
 		])
 	);
 
-	if ( ! isset($captions_data[$html_cache])) {
-		$captions_data->addFromString($html_cache, file_get_contents($url));
+	if ( ! captions_content_exists($html_cache)) {
+		captions_add_from_string($html_cache, file_get_contents($url));
 	}
 
-	return $captions_data[$html_cache]->getContent();
+	return captions_get_content($html_cache);
 }
 
 /**
@@ -1565,8 +1589,6 @@ function raw_captions(string $video_id) : array
 {
 	/** @var Slugify|null */
 	static $slugify = null;
-
-	$captions_data = captions_data();
 
 	if (null === $slugify) {
 		$slugify = new Slugify();
@@ -1797,12 +1819,12 @@ function raw_captions(string $video_id) : array
 			. '.xml'
 		);
 
-		if ( ! isset($captions_data[$tt_cache])) {
+		if ( ! captions_content_exists($tt_cache)) {
 			$tt = file_get_contents((string) current($url_matches));
 
-			$captions_data->addFromString($tt_cache, $tt);
+			captions_add_from_string($tt_cache, $tt);
 		} else {
-			$tt = file_get_contents($captions_data[$tt_cache]->getPathname());
+			$tt = captions_get_content($tt_cache);
 		}
 
 		if ('' !== $tt) {
@@ -1820,10 +1842,10 @@ function raw_captions(string $video_id) : array
 
 	$fallback_tt_cache = $video_id . '.xml';
 
-	if ('' === $tt && isset($captions_data[$fallback_tt_cache])) {
+	if ('' === $tt && captions_content_exists($fallback_tt_cache)) {
 		$tt_cache = $fallback_tt_cache;
 
-		$tt = file_get_contents($captions_data[$fallback_tt_cache]->getPathname());
+		$tt = captions_get_content($fallback_tt_cache);
 	}
 
 	if ('' === (string) $tt) {
