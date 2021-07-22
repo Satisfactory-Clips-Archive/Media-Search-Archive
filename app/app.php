@@ -604,7 +604,7 @@ foreach ($all_video_ids as $video_id) {
 
 	if ($last_compile_date !== $current_compile_date) {
 		echo "\n\n",
-			sprintf('compiling transcrptions for %s', $current_compile_date),
+			sprintf('compiling transcriptions for %s', $current_compile_date),
 			"\n";
 
 		$last_compile_date = $current_compile_date;
