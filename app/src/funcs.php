@@ -1728,8 +1728,6 @@ function raw_captions(string $video_id) : array
 		vendor_prefixed_video_id($video_id)
 	);
 
-	$html_cache = $video_id . '.html';
-
 	$page = video_page($video_id);
 
 	$urls = preg_match_all(
