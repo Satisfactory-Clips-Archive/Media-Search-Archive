@@ -1340,13 +1340,7 @@ function captions(
 
 	$lines = [];
 
-	$old_lines = [];
-
 	$chunks = [];
-
-	$attrs = $xml_lines[0]->attributes();
-
-	$last_end = (float) $attrs['start'];
 
 	$process_chunks = static function (array $old, array $new) : array {
 		$out = [];
@@ -1578,7 +1572,13 @@ function raw_captions(string $video_id) : array
 		$slugify = new Slugify();
 	}
 
-	$video_id = preg_replace('/^yt-([^,]+).*/', '$1', $video_id);
+	preg_match(
+		'/^yt-[^,]{11},(?<start>\d+(?:\.\d+)?)?(?:,(?<end>\d+(?:\.\d+)?)?)?$/',
+		vendor_prefixed_video_id($video_id),
+		$video_id_matches
+	);
+
+	$video_id = preg_replace('/^yt-([^,]+).*/', '$1', vendor_prefixed_video_id($video_id));
 
 	$json_source = video_id_json_caption_source($video_id);
 
@@ -1843,12 +1843,40 @@ function raw_captions(string $video_id) : array
 		);
 	}
 
+	if (isset($video_id_matches['start']) || isset($video_id_matches['end'])) {
+		$start = (float) ($video_id_matches['start'] ?? 0);
+		$end = (string) ($video_id_matches['end'] ?? null);
+
+		foreach ($xml->children() as $caption_line) {
+			$attrs = array_map('strval', iterator_to_array(
+				$caption_line->attributes()
+			));
+
+			if ( ! isset($attrs['start'], $attrs['dur'])) {
+				throw new RuntimeException(
+					'Line found without start or duration'
+				);
+			}
+
+			$from = (float) $attrs['start'];
+
+			$to = $from + (float) $attrs['dur'];
+
+			if (
+				('' === $end && $from >= $start)
+				|| ('' !== $end && $from >= $start && $to <= (float) $end)
+			) {
+				$lines[] = $caption_line;
+			}
+		}
+	} else {
 	foreach ($xml->children() as $line) {
 		if (null === $line) {
 			continue;
 		}
 
 		$lines[] = $line;
+	}
 	}
 
 	return [$xml, $lines];

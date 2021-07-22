@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-07-22
+* Fixed bug in transcription generation
+
 ## 2021-07-17
 * Fixing bug in transcription preparation
 * Added ability to remove cache entries without manually opening tarball
