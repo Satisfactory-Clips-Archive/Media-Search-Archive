@@ -62,7 +62,20 @@ use function usort;
 require_once(__DIR__ . '/../vendor/autoload.php');
 require_once(__DIR__ . '/global-topic-hierarchy.php');
 
-$stat_start = time();
+$stat_start = microtime(true);
+
+echo 'preloading captions data...';
+
+captions_data();
+
+register_shutdown_function(function () use ($stat_start) {
+	echo "\n", sprintf('done in %s seconds', microtime(true) - $stat_start), "\n";
+});
+
+echo
+	"\r"
+	, sprintf('preloaded captions data in %s seconds', microtime(true) - $stat_start)
+	, "\n";
 
 $api = new YouTubeApiWrapper();
 

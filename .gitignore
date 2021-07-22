@@ -15,6 +15,7 @@
 /app/*-auth.json
 /.php_cs.cache
 /.php-cs-fixer.cache
+/app/captions/
 /app/captions.*
 /app/captions-cache/
 /app/cache.json

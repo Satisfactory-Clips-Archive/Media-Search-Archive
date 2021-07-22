@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2021-07-22
 * Fixed bug in transcription generation
+* Prepared for some updates to cache handling
 
 ## 2021-07-17
 * Fixing bug in transcription preparation

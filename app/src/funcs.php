@@ -1497,7 +1497,7 @@ function captions_data() : PharData
 		$captions_data = new PharData(
 			(
 				__DIR__
-				. '/../captions.tar.bz2'
+				. '/../captions.tar'
 			),
 			(
 				PharData::CURRENT_AS_PATHNAME
@@ -1512,6 +1512,9 @@ function captions_data() : PharData
 
 function remove_captions_cache_file(string $filename) : void
 {
+	/*
+	unlink(__DIR__ . '/../captions/' . $filename);
+	*/
 	$captions_data = captions_data();
 
 	unset($captions_data[$filename]);
@@ -1519,6 +1522,9 @@ function remove_captions_cache_file(string $filename) : void
 
 function captions_add_from_string(string $filename, string $contents) : void
 {
+	/*
+	file_put_contents(__DIR__ . '/../captions/' . $filename, $contents);
+	*/
 	$captions_data = captions_data();
 
 	$captions_data->addFromString($filename, $contents);
@@ -1526,6 +1532,9 @@ function captions_add_from_string(string $filename, string $contents) : void
 
 function captions_get_content(string $filename) : string
 {
+	/*
+	return file_get_contents(__DIR__ . '/../captions/' . $filename);
+	*/
 	$captions_data = captions_data();
 
 	return file_get_contents($captions_data[$filename]->getPathname());
@@ -1533,6 +1542,9 @@ function captions_get_content(string $filename) : string
 
 function captions_content_exists(string $filename) : bool
 {
+	/*
+	return is_file(__DIR__ . '/../captions/' . $filename);
+	*/
 	$captions_data = captions_data();
 
 	return isset($captions_data[$filename]);
