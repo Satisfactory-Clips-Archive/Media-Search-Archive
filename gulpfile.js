@@ -27,6 +27,8 @@ const lunr = require('lunr');
 const synonyms = require('./app/synonyms.json');
 const synonym_keys = Object.keys(synonyms);
 
+const {GulpMultiThreadTask} = require('gulp-multi-thread-task');
+
 function aliasSatisfactoryVocabulary(builder) {
 	const pipeline = (token) => {
 		const lowercase = token.toString().toLowerCase();
@@ -173,8 +175,18 @@ gulp.task('sync-lunr', () => {
 });
 
 gulp.task('brotli', () => {
-	return gulp.src(
+	return GulpMultiThreadTask(
+		'brotli',
+		[
 		'./tmp/**/*.{js,json,css,html,xml}'
+		],
+		dobrotli
+	);
+});
+
+function dobrotli(done, src) {
+	return gulp.src(
+		src
 	).pipe(
 		newer({
 			dest: './tmp/',
@@ -186,8 +198,8 @@ gulp.task('brotli', () => {
 		})
 	).pipe(
 		gulp.dest('./tmp/')
-	)
-});
+	);
+}
 
 gulp.task('zopfli', () => {
 	return gulp.src(
@@ -292,7 +304,17 @@ gulp.task('q-and-a-tracking', (cb) => {
 });
 
 gulp.task('sync-tmp-to-store', () => {
-	return gulp.src('./tmp/**/*.{js,css,html,json,xml,gz,br}').pipe(
+	return GulpMultiThreadTask(
+		'brotli',
+		[
+			'./tmp/**/*.{js,css,html,json,xml,gz,br}'
+		],
+		sync_tmp_to_store
+	);
+});
+
+function sync_tmp_to_store(done, src) {
+	return gulp.src(src).pipe(
 		changed(
 			'./dist/',
 			{
@@ -304,7 +326,7 @@ gulp.task('sync-tmp-to-store', () => {
 			'./dist/'
 		)
 	);
-});
+}
 
 gulp.task('build', gulp.series(
 	'lunr-index',
