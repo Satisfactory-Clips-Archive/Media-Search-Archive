@@ -1876,8 +1876,10 @@ function raw_captions(string $video_id) : array
 	}
 
 	if (isset($video_id_matches['start']) || isset($video_id_matches['end'])) {
-		$start = (float) ($video_id_matches['start'] ?? 0);
+		$start = (float) ($video_id_matches['start'] ?? 0) - 1.1;
 		$end = (string) ($video_id_matches['end'] ?? null);
+
+		$append = false;
 
 		foreach ($xml->children() as $caption_line) {
 			$attrs = array_map('strval', iterator_to_array(
@@ -1894,11 +1896,16 @@ function raw_captions(string $video_id) : array
 
 			$to = $from + (float) $attrs['dur'];
 
-			if (
-				('' === $end && $from >= $start)
-				|| ('' !== $end && $from >= $start && $to <= (float) $end)
-			) {
+			if ( ! $append && $from >= $start) {
+				$append = true;
+			}
+
+			if ($append) {
 				$lines[] = $caption_line;
+
+				if ('' !== $end && $to > (float) $end) {
+					break;
+				}
 			}
 		}
 	} else {
