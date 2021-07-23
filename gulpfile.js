@@ -27,8 +27,6 @@ const lunr = require('lunr');
 const synonyms = require('./app/synonyms.json');
 const synonym_keys = Object.keys(synonyms);
 
-const {GulpMultiThreadTask} = require('gulp-multi-thread-task');
-
 function aliasSatisfactoryVocabulary(builder) {
 	const pipeline = (token) => {
 		const lowercase = token.toString().toLowerCase();
@@ -175,18 +173,8 @@ gulp.task('sync-lunr', () => {
 });
 
 gulp.task('brotli', () => {
-	return GulpMultiThreadTask(
-		'brotli',
-		[
-		'./tmp/**/*.{js,json,css,html,xml}'
-		],
-		dobrotli
-	);
-});
-
-function dobrotli(done, src) {
 	return gulp.src(
-		src
+		'./tmp/**/*.{js,json,css,html,xml}'
 	).pipe(
 		newer({
 			dest: './tmp/',
@@ -198,8 +186,8 @@ function dobrotli(done, src) {
 		})
 	).pipe(
 		gulp.dest('./tmp/')
-	);
-}
+	)
+});
 
 gulp.task('zopfli', () => {
 	return gulp.src(
@@ -304,17 +292,7 @@ gulp.task('q-and-a-tracking', (cb) => {
 });
 
 gulp.task('sync-tmp-to-store', () => {
-	return GulpMultiThreadTask(
-		'brotli',
-		[
-			'./tmp/**/*.{js,css,html,json,xml,gz,br}'
-		],
-		sync_tmp_to_store
-	);
-});
-
-function sync_tmp_to_store(done, src) {
-	return gulp.src(src).pipe(
+	return gulp.src('./tmp/**/*.{js,css,html,json,xml,gz,br}').pipe(
 		changed(
 			'./dist/',
 			{
@@ -326,7 +304,7 @@ function sync_tmp_to_store(done, src) {
 			'./dist/'
 		)
 	);
-}
+});
 
 gulp.task('build', gulp.series(
 	'lunr-index',
