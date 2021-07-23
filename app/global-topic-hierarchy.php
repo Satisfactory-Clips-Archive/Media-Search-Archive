@@ -1119,6 +1119,17 @@ $global_topic_hierarchy = [
 		'Features',
 		'Requested Features',
 	],
+	'PLbjDnnBIxiErXB1CoQVmEvgh_SrtAj90t' => [ // Australia
+		'Off-Topic',
+	],
+	'PLbjDnnBIxiEooqHzCQjhtwuRXP4-M-ojs' => [ // Bacon
+		'Off-Topic',
+		'Food & Drink',
+	],
+	'PLbjDnnBIxiEpoFpjdF4FZ_AMTdxdsmO1U' => [ // Coffee Stainers can't pronounce hannah's last name
+		9999999,
+		'Coffee Stainers',
+	],
 ];
 
 $not_a_livestream = [

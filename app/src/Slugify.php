@@ -26,6 +26,9 @@ class Slugify extends Base
 			'm.a.m' => 'mam',
 			'mk++' => 'mk-plus-plus',
 			'Mk++' => 'mk-plus-plus',
+			'Hannah\'s' => 'hannahs',
+			'hannah\'s' => 'hannahs',
+			'can\'t' => 'cant',
 		];
 
 		parent::__construct($options, $provider);
