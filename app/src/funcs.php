@@ -1902,7 +1902,7 @@ function raw_captions(string $video_id) : array
 			if ($append) {
 				$lines[] = $caption_line;
 
-				if ('' !== $end && $to > (float) $end) {
+				if ('' !== $end && $to > (((float) $end) + 2.4)) {
 					break;
 				}
 			}
