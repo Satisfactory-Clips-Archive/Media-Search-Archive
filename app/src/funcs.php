@@ -1212,7 +1212,7 @@ function captions(
 ) : array {
 	if (
 		! preg_match(
-			'/^https:\/\/(?:youtu\.be|youtube\.com\/embed)\//',
+			'/^https:\/\/(?:youtu\.be|youtube\.com\/(?:embed|clip))\//',
 			video_url_from_id($video_id, true)
 		)
 	) {
