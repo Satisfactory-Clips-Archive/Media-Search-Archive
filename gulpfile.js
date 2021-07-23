@@ -189,47 +189,22 @@ function make_brotli_task(src) {
 	)
 }
 
-const brotli_subtasks = [];
+const brotli_subtasks = [
+	'brotli--most-everything',
+	'brotli--json',
+	'brotli--html',
+];
 
-[
-	'js',
-	'json',
-	'css',
-	'xml',
-].forEach((ext) => {
-	const taskname = `brotli--ext--${ext}`;
-	brotli_subtasks.push(taskname);
-
-	gulp.task(taskname, () => {
-		return make_brotli_task(`./tmp/**/*.${ext}`);
-	});
-});
-[
-	'2017-*',
-	'2018-*',
-	'2019-*',
-	'2020-*',
-	'2021-*',
-	'FAQ',
-	'search',
-	'topics',
-	'transcriptions',
-].forEach((dirmatch) => {
-	const taskname = `brotli--dirmatch--${dirmatch}`;
-	brotli_subtasks.push(taskname);
-
-	gulp.task(taskname, () => {
-		return make_brotli_task(`./tmp/${dirmatch}/**/*.html`);
-	});
+gulp.task('brotli--most-everything', () => {
+	return make_brotli_task('./tmp/**/*.{js,css,xml}');
 });
 
-brotli_subtasks.push('brotli--html-remaining');
-gulp.task('brotli--html-remaining', () => {
-	return make_brotli_task('./tmp/*.html');
+gulp.task('brotli--json', () => {
+	return make_brotli_task('./tmp/**/*.{json}');
 });
 
-gulp.task('brotli', () => {
-	return gulp.parallel(...brotli_subtasks);
+gulp.task('brotli--html', () => {
+	return make_brotli_task('./tmp/**/*.{html}');
 });
 
 gulp.task('zopfli', () => {
