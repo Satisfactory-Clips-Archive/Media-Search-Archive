@@ -724,6 +724,8 @@ foreach ($all_video_ids as $video_id) {
 			),
 		];
 	}
+
+	usleep(1);
 }
 
 $all_video_ids = array_reverse($all_video_ids);
