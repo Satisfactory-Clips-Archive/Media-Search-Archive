@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-07-24
+* Fixed a copy/paste typo in a utility script
+
 ## 2021-07-23
 * Further escaping of front matter content
 * Fixing bug in brotli selector

@@ -29,6 +29,6 @@ if (count($videos)) {
 			vendor_prefixed_video_id($video_id)
 		);
 
-		remove_captions_cache_fileunset($video_id . '.html');
+		remove_captions_cache_file($video_id . '.html');
 	}
 }
