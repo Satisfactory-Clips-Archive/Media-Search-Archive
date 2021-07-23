@@ -14,6 +14,7 @@ Static site generator for
 * Further escaping of front matter content
 * Fixing bug in brotli selector
 * Fixing bug that prevented transcriptions being used with YouTube's native clip feature
+* Removing trailing whitespace
 
 ## 2021-07-22
 * Fixed bug in transcription generation

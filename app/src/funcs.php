@@ -2727,7 +2727,7 @@ function process_dated_csv(
 					),
 					sprintf('date: "%s"', $date) . "\n",
 					'layout: transcript' . "\n",
-					'topics: ' . "\n",
+					'topics:' . "\n",
 					'    - "',
 					implode('"' . "\n" . '    - "', array_map(
 						static function (
