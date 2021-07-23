@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-07-23
+* Further escaping of front matter content
+
 ## 2021-07-22
 * Fixed bug in transcription generation
 * Prepared for some updates to cache handling

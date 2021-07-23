@@ -856,14 +856,14 @@ foreach ($transcripts_json as $video_id => $video_data) {
 		'---' . "\n"
 		. sprintf(
 			'title: "%s"' . "\n",
+			str_replace('"', '\"',
 			(
 				$injected->friendly_dated_playlist_name($playlist_id)
 				. ' '
-				. str_replace(
-					'"',
-					'\\"',
+				. (
 					$cache['playlistItems'][$video_id][1]
 				)
+			)
 			)
 		)
 		. sprintf(
@@ -1688,7 +1688,7 @@ foreach (
 			'---' . "\n"
 			. sprintf(
 				'title: "%s"' . "\n",
-				$playlist_title
+				str_replace('"', '\"', $playlist_title)
 			)
 			. (
 				preg_match('/^PLbjDnnBIxiE/', $playlist_id)
