@@ -200,11 +200,11 @@ gulp.task('brotli--most-everything', () => {
 });
 
 gulp.task('brotli--json', () => {
-	return make_brotli_task('./tmp/**/*.{json}');
+	return make_brotli_task('./tmp/**/*.json');
 });
 
 gulp.task('brotli--html', () => {
-	return make_brotli_task('./tmp/**/*.{html}');
+	return make_brotli_task('./tmp/**/*.html');
 });
 
 gulp.task('zopfli', () => {

@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2021-07-23
 * Further escaping of front matter content
+* Fixing bug in brotli selector
 
 ## 2021-07-22
 * Fixed bug in transcription generation
