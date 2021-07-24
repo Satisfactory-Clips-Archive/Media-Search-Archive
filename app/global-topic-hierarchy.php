@@ -1139,6 +1139,10 @@ $global_topic_hierarchy = [
 		'Coffee Stainers',
 		'Jace',
 	],
+	'PLbjDnnBIxiEoG6lwU-O6r80aNvpbMk7HK' => [ // Jace Art
+		'Coffee Stainers',
+		'Jace',
+	],
 ];
 
 $not_a_livestream = [
