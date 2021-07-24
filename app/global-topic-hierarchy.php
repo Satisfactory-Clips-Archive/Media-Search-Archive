@@ -1143,6 +1143,18 @@ $global_topic_hierarchy = [
 		'Coffee Stainers',
 		'Jace',
 	],
+	'PLbjDnnBIxiEp58J3v3DhH_Z9Gh5uKVi7H' => [ // Coffee Stain North
+		'Embracer Group',
+		'Coffee Stain Holding',
+	],
+	'PLbjDnnBIxiEptX96QtBua2K2IhL4SbwWv' => [ // Lavapotion
+		'Embracer Group',
+		'Coffee Stain Holding',
+	],
+	'PLbjDnnBIxiEoUgIUnNtnxxto0lrwkWz9V' => [ // Coffee Stain Studios
+		'Embracer Group',
+		'Coffee Stain Holding',
+	],
 ];
 
 $not_a_livestream = [
@@ -1377,5 +1389,8 @@ $injected_global_topic_hierarchy = [
 	'Swamp' => [
 		'Environment',
 		'Biomes',
+	],
+	'Coffee Stain Holding' => [
+		'Embracer Group',
 	],
 ];
