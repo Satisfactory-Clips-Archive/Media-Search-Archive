@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2021-07-24
 * Fixed a copy/paste typo in a utility script
+* Initial implementation of tracking skipped cards
 
 ## 2021-07-23
 * Further escaping of front matter content

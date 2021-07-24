@@ -3150,7 +3150,40 @@ function yt_cards(string $video_id) : array
 {
 	static $cache = [];
 
+	/** @var list<string>|null */
+	static $skipping = null;
+
 	$video_id = vendor_prefixed_video_id($video_id);
+
+	if (null === $skipping) {
+		$skipping = array_values(array_filter(
+			(array) json_decode(
+				file_get_contents(__DIR__ . '/../data/skipping-cards.json')
+			),
+			'is_string'
+		));
+
+		register_shutdown_function(function () use (& $skipping) : void {
+			file_put_contents(
+				(
+					__DIR__
+					. '/../data/skipping-cards.json'
+				),
+				str_replace(
+					PHP_EOL,
+					"\n",
+					json_encode(
+						$skipping,
+						JSON_PRETTY_PRINT
+					)
+				)
+			);
+		});
+	}
+
+	if (in_array($video_id, $skipping, true)) {
+		return [];
+	}
 
 	if ( ! isset($cache[$video_id])) {
 		$cache_file =
@@ -3175,6 +3208,10 @@ function yt_cards(string $video_id) : array
 			true,
 			JSON_THROW_ON_ERROR
 		);
+
+		if ([] === $cache[$video_id]) {
+			$skipping[] = $video_id;
+		}
 	}
 
 	return $cache[$video_id];
