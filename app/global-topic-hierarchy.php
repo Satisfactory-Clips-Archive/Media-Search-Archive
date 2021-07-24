@@ -1132,8 +1132,8 @@ $global_topic_hierarchy = [
 		'Food & Drink',
 	],
 	'PLbjDnnBIxiEpoFpjdF4FZ_AMTdxdsmO1U' => [ // Coffee Stainers can't pronounce hannah's last name
-		9999999,
 		'Coffee Stainers',
+		'Hannah',
 	],
 	'PLbjDnnBIxiEoUB0-Iz-ci4sxnKfg1zVa_' => [ // "Fix Jace" QA Site Posts
 		'Coffee Stainers',
