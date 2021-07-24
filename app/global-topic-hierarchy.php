@@ -129,9 +129,14 @@ $global_topic_hierarchy = [
 		'Satisfactory Updates',
 	],
 	'PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT' => [ // Satisfactory 1.0
-		10,
+		100,
 		'Satisfactory Updates',
 		'Pending',
+	],
+	'PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS' => [
+		200,
+		'Satisfactory Updates',
+		'Speculative',
 	],
 	'PLbjDnnBIxiErq1cTFe-14F7UISclc1uc-' => [ // Seasonal Events
 		11,
