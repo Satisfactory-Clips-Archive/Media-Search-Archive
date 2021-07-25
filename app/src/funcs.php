@@ -1416,7 +1416,7 @@ function video_id_json_caption_source(string $video_id) : string
 /**
  * @param list<string> $video_ids
  */
-function prepare_uncached_captions_html(array $video_ids) : void
+function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_expiry = false) : array
 {
 	$does_not_have_json = array_filter(
 		$video_ids,
@@ -1427,7 +1427,7 @@ function prepare_uncached_captions_html(array $video_ids) : void
 
 	$does_not_have_html = array_values(array_filter(
 		$does_not_have_json,
-		static function (string $maybe) : bool {
+		static function (string $maybe) use ($check_expiry) : bool {
 			$video_id = preg_replace(
 				'/^yt-([^,]+).*/',
 				'$1',
@@ -1442,6 +1442,50 @@ function prepare_uncached_captions_html(array $video_ids) : void
 					'v' => $video_id,
 				])
 			);
+
+			if ($check_expiry && captions_content_exists($html_cache)) {
+				$page = captions_get_content($html_cache);
+
+				$urls = preg_match_all(
+					(
+						'/https:\/\/www\.youtube\.com\/api\/timedtext\?v=' .
+						preg_quote($video_id, '/') .
+						'[^"]+/'
+					),
+					$page,
+					$matches
+				);
+
+				if ($urls > 0){
+					$time = time();
+
+					/** @var list<bool> */
+					$expiries = array_values(array_map(
+						static function (int $maybe) use ($time) : bool {
+							return $maybe < $time;
+						},
+						array_unique(array_map(
+							static function (string $url) : int {
+								parse_str(
+									str_replace(
+										'\u0026',
+										'&',
+										parse_url($url, PHP_URL_QUERY)
+									),
+									$query
+								);
+
+								return (int) $query['expire'];
+							},
+							$matches[0]
+						))
+					));
+
+					if (in_array(true, $expiries, true)) {
+						return true;
+					}
+				}
+			}
 
 			return ! captions_content_exists($html_cache) || captions_get_content($html_cache) === $url;
 		}
@@ -1468,6 +1512,13 @@ function prepare_uncached_captions_html(array $video_ids) : void
 		)
 	));
 
+	return array_values($can_have_html);
+}
+
+function prepare_uncached_captions_html(array $video_ids, bool $check_expiry = false) : void
+{
+	$can_have_html = prepare_uncached_captions_html_video_ids($video_ids, $check_expiry);
+
 	$i = 0;
 	$count = count($can_have_html);
 	foreach ($can_have_html as $video_id) {
@@ -1484,6 +1535,8 @@ function prepare_uncached_captions_html(array $video_ids) : void
 		remove_captions_cache_file($html_cache);
 
 		video_page($video_id);
+		raw_captions($video_id);
+		yt_cards($video_id, true);
 	}
 }
 
@@ -3146,7 +3199,7 @@ function other_video_parts(string $video_id, bool $include_self = true) : array
 	return $out;
 }
 
-function yt_cards(string $video_id) : array
+function yt_cards(string $video_id, bool $skip_file = false) : array
 {
 	static $cache = [];
 
@@ -3192,7 +3245,7 @@ function yt_cards(string $video_id) : array
 			. $video_id
 			. '.json';
 
-		if ( ! is_file($cache_file)) {
+		if ( ! is_file($cache_file) || $skip_file) {
 			file_put_contents($cache_file, str_replace(
 				PHP_EOL,
 				"\n",

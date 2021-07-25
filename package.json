@@ -27,6 +27,7 @@
     "gulp-sitemap": "^8.0.0",
     "gulp-zopfli-green": "^5.0.1",
     "html-minifier": "^4.0.0",
+    "node-fetch": "^2.6.1",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.3"
   }

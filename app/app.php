@@ -550,7 +550,27 @@ usort($all_video_ids, [$sorting, 'sort_video_ids_by_date']);
 
 $all_video_ids = array_reverse($all_video_ids);
 
-prepare_uncached_captions_html($all_video_ids);
+$needs_fresh_data = prepare_uncached_captions_html_video_ids(
+	$all_video_ids,
+	true
+);
+
+if (count($needs_fresh_data)) {
+	file_put_contents(
+		__DIR__ . '/data/needs-fetching.json',
+		str_replace(
+			PHP_EOL,
+			"\n",
+			json_encode(
+				$needs_fresh_data,
+				JSON_PRETTY_PRINT
+			)
+		)
+	);
+
+	echo 'fresh data needed', "\n";
+	exit(1);
+}
 
 $cards = array_combine(
 	$all_video_ids,
