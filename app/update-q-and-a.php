@@ -31,6 +31,12 @@ use function str_replace;
 require_once(__DIR__ . '/../vendor/autoload.php');
 require_once(__DIR__ . '/global-topic-hierarchy.php');
 
+$stat_start = microtime(true);
+
+register_shutdown_function(static function () use ($stat_start) {
+	echo "\n", sprintf('done in %s seconds', microtime(true) - $stat_start), "\n";
+});
+
 $filtering = new Filtering();
 
 $api = new YouTubeApiWrapper();
@@ -51,7 +57,11 @@ $playlists = $api->dated_playlists();
 
 $all_video_ids = $injected->all_video_ids();
 
+echo sprintf('Ready after %s seconds' . "\n", microtime(true) - $stat_start);
+
 [$existing, $duplicates] = $questions->process();
+
+echo sprintf('Processed after %s seconds' . "\n", microtime(true) - $stat_start);
 
 $by_topic = [];
 
@@ -67,6 +77,8 @@ uksort($existing, [$sorting, 'sort_video_ids_by_date']);
 $data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
 
 file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
+
+echo sprintf('Written after %s seconds' . "\n", microtime(true) - $stat_start);
 
 $filtered = array_filter(
 	$existing,

@@ -53,3 +53,6 @@ add links to non-question jace art clip
 # external video references
 ## ZaVKeo3QXqg
 * add 1dUNmBBbExs as previous
+
+# ceiling power mounts
+* Zm5JwUYCe8M
