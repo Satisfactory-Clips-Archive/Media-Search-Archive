@@ -1,0 +1,24 @@
+,24.44953,Intro
+24.44953,51.005634,"Q&A: What are Drones, what do they do?"
+51.005634,64.1,Q&A: Can we pilot Drones?
+64.13333333333334,111.36666666666666,Q&A: What was the basic development progression of Drones like?
+111.4,158.56666666666666,Tobias & Jace Talk: Drone World Grid
+158.6,187.73333333333332,Q&A: How do Drones deal with things that might be above them?
+187.76666666666668,225.43333333333334,Q&A: Does the Drone World Grid take into account players' Buildings?
+225.46666666666667,270.3333333333333,Tobias Talk: Battery consumption of Drones
+270.3666666666667,291,Jace Math: Drones are more efficient the further they travel
+291.03333333333336,317,Q&A: What if your Drone path changes?
+317.03333333333336,357.56666666666666,Q&A: When are the Batteries used by Drones?
+357.6,383.6666666666667,Q&A: Are there bugs with Drone's Battery consumption?
+383.7,454.06666666666666,Q&A: What are some of the biggest challenges you had when working on the Drones?
+454.1,503.56666666666666,Q&A: Will people be able to ride on the Drones?
+503.6,533.1,Q&A: What future plans are there for Drones?
+533.1,789.6666666666666,Drone WIP Footage
+536.6333333333333,562.6666666666666,Tobias & Jace Talk: Drone WIP Footage - First implementation of Drones
+562.7,619.3,Tobias & Jace Talk: Drone WIP Footage - First implementation of the Drone World Grid
+619.3333333333334,644.908873,Tobias & Jace Talk: Drone WIP Footage - Drones using their World Grid to pathfind
+644.908873,688.0666666666667,"Q&A: Drones fly through the center of their World Grid, they don't fly diagonally?"
+688.1,743.823032,Tobias Talk: Drone WIP Footage - First implementation of docking & take-off animation
+743.823032,766.6333333333333,Q&A: What's the timer for?
+766.672609,789.6666666666666,Tobias & Jace Talk: Drone WIP Footage - Drone World Grid height updates
+789.6666666666666,,Outro

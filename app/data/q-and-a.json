@@ -1,4 +1,157 @@
 {
+    "yt-FyOHDcxtEUA,24.44953,51.005634": {
+        "title": "Q&A: What are Drones, what do they do?",
+        "date": "2021-07-23",
+        "topics": [
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "seealso": [
+            "8osAjUGF1QM",
+            "yt-FyOHDcxtEUA,51.005634,64.1"
+        ]
+    },
+    "yt-FyOHDcxtEUA,51.005634,64.1": {
+        "title": "Q&A: Can we pilot Drones?",
+        "date": "2021-07-23",
+        "topics": [
+            "features\/transportation\/vehicles\/drones",
+            "features\/unplanned-features\/aerial-travel"
+        ],
+        "seealso": [
+            "38OwCUgGOjs",
+            "yt-FyOHDcxtEUA,24.44953,51.005634",
+            "yt-FyOHDcxtEUA,454.1,503.56666666666666"
+        ]
+    },
+    "yt-FyOHDcxtEUA,64.13333333333334,111.36666666666666": {
+        "title": "Q&A: What was the basic development progression of Drones like?",
+        "date": "2021-07-23",
+        "topics": [
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "seealso": [
+            "yt-FyOHDcxtEUA,383.7,454.06666666666666"
+        ]
+    },
+    "yt-FyOHDcxtEUA,158.6,187.73333333333332": {
+        "title": "Q&A: How do Drones deal with things that might be above them?",
+        "date": "2021-07-23",
+        "topics": [
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "seealso": [
+            "WLe1_rdbPqM",
+            "yt-FyOHDcxtEUA,187.76666666666668,225.43333333333334",
+            "yt-FyOHDcxtEUA,291.03333333333336,317"
+        ]
+    },
+    "yt-FyOHDcxtEUA,187.76666666666668,225.43333333333334": {
+        "title": "Q&A: Does the Drone World Grid take into account players' Buildings?",
+        "date": "2021-07-23",
+        "topics": [
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "seealso": [
+            "WLe1_rdbPqM",
+            "yt-FyOHDcxtEUA,158.6,187.73333333333332",
+            "yt-FyOHDcxtEUA,644.908873,688.0666666666667"
+        ]
+    },
+    "yt-FyOHDcxtEUA,291.03333333333336,317": {
+        "title": "Q&A: What if your Drone path changes?",
+        "date": "2021-07-23",
+        "topics": [
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "seealso": [
+            "yt-FyOHDcxtEUA,158.6,187.73333333333332",
+            "yt-FyOHDcxtEUA,644.908873,688.0666666666667"
+        ]
+    },
+    "yt-FyOHDcxtEUA,317.03333333333336,357.56666666666666": {
+        "title": "Q&A: When are the Batteries used by Drones?",
+        "date": "2021-07-23",
+        "topics": [
+            "environment\/resources",
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "seealso": [
+            "ALrzPviod04",
+            "px6Cmk_amfI",
+            "yt-FyOHDcxtEUA,357.6,383.6666666666667"
+        ]
+    },
+    "yt-FyOHDcxtEUA,357.6,383.6666666666667": {
+        "title": "Q&A: Are there bugs with Drone's Battery consumption?",
+        "date": "2021-07-23",
+        "topics": [
+            "environment\/resources",
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "seealso": [
+            "yt-FyOHDcxtEUA,317.03333333333336,357.56666666666666",
+            "_Gfr5kJzcro"
+        ]
+    },
+    "yt-FyOHDcxtEUA,383.7,454.06666666666666": {
+        "title": "Q&A: What are some of the biggest challenges you had when working on the Drones?",
+        "date": "2021-07-23",
+        "topics": [
+            "coffee-stainers\/tobias",
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "seealso": [
+            "uQWR7_55EEI",
+            "yt-FyOHDcxtEUA,64.13333333333334,111.36666666666666"
+        ]
+    },
+    "yt-FyOHDcxtEUA,454.1,503.56666666666666": {
+        "title": "Q&A: Will people be able to ride on the Drones?",
+        "date": "2021-07-23",
+        "topics": [
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "duplicates": [
+            "0tHe5NBul6M",
+            "L0-x7Htlj14"
+        ],
+        "seealso": [
+            "38OwCUgGOjs",
+            "Lw9r_gSLLOE",
+            "yt-FyOHDcxtEUA,51.005634,64.1"
+        ]
+    },
+    "yt-FyOHDcxtEUA,503.6,533.1": {
+        "title": "Q&A: What future plans are there for Drones?",
+        "date": "2021-07-23",
+        "topics": [
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "duplicates": [
+            "IMkdm7T3SDo"
+        ],
+        "seealso": [
+            "ykbt3XMUIus"
+        ]
+    },
+    "yt-FyOHDcxtEUA,644.908873,688.0666666666667": {
+        "title": "Q&A: Drones fly through the center of their World Grid, they don't fly diagonally?",
+        "date": "2021-07-23",
+        "topics": [
+            "features\/transportation\/vehicles\/drones"
+        ],
+        "seealso": [
+            "yt-FyOHDcxtEUA,187.76666666666668,225.43333333333334",
+            "yt-FyOHDcxtEUA,291.03333333333336,317"
+        ]
+    },
+    "yt-FyOHDcxtEUA,743.823032,766.6333333333333": {
+        "title": "Q&A: What's the timer for?",
+        "date": "2021-07-23",
+        "topics": [
+            "features\/transportation\/vehicles\/drones"
+        ]
+    },
     "ihdKZQwk4jQ": {
         "title": "Q&A: How much coffee does an average Coffee Stainer drink on each day?",
         "date": "2021-07-20",
@@ -2551,7 +2704,8 @@
         "seealso": [
             "21diy9LWH8g",
             "LmzVhKaW_5I",
-            "M1UV6EJdd2c"
+            "M1UV6EJdd2c",
+            "tc-CrispyCheerfulCrocodilePanicBasket"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErz2wvc36rgBLUdiLdLIQdb"
@@ -4625,16 +4779,10 @@
             "features\/transportation\/vehicles\/drones",
             "features\/unplanned-features\/aerial-travel"
         ],
-        "duplicates": [
-            "0tHe5NBul6M"
-        ],
-        "seealso": [
-            "38OwCUgGOjs",
-            "Lw9r_gSLLOE"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoJXfr9MUsQgAjnRHJrZJWM"
-        ]
+        ],
+        "duplicatedby": "yt-FyOHDcxtEUA,454.1,503.56666666666666"
     },
     "pLGMWKj9AW0": {
         "title": "Q&A: Can you make it so friends in multiplayer can have more rights like setting Train routes?",
@@ -7156,7 +7304,8 @@
         ],
         "seealso": [
             "gKZmQ7vZZbU",
-            "m9Uh0DXTSss"
+            "m9Uh0DXTSss",
+            "yt-Dtm6xIj-wM4,1872.81796,1925.453116"
         ]
     },
     "DE_UxFAQUm0": {
@@ -7265,6 +7414,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-5"
         ],
         "seealso": [
+            "yt-FyOHDcxtEUA,317.03333333333336,357.56666666666666",
             "_Gfr5kJzcro"
         ]
     },
@@ -9885,7 +10035,8 @@
             "technology\/user-interface"
         ],
         "seealso": [
-            "mMZ2YPeda_A"
+            "mMZ2YPeda_A",
+            "yt-FyOHDcxtEUA,383.7,454.06666666666666"
         ]
     },
     "lD9c8z6BYJI": {
@@ -10501,7 +10652,7 @@
         "topics": [
             "features\/transportation\/vehicles\/drones"
         ],
-        "duplicatedby": "L0-x7Htlj14"
+        "duplicatedby": "yt-FyOHDcxtEUA,454.1,503.56666666666666"
     },
     "ifM6AIYMw80": {
         "title": "Q&A: Technical presentation of Lights, Simulation, and Trains, etc. ?",
@@ -11844,7 +11995,7 @@
         "seealso": [
             "0tHe5NBul6M",
             "6eG84oRSwjE",
-            "L0-x7Htlj14"
+            "yt-FyOHDcxtEUA,454.1,503.56666666666666"
         ]
     },
     "A9o2zd2uN80": {
@@ -13578,7 +13729,8 @@
         ],
         "seealso": [
             "px6Cmk_amfI",
-            "uL-1FhPazSQ"
+            "uL-1FhPazSQ",
+            "yt-FyOHDcxtEUA,357.6,383.6666666666667"
         ]
     },
     "I1q8M9cnCQg": {
@@ -15626,9 +15778,7 @@
         "topics": [
             "features\/transportation\/vehicles\/drones"
         ],
-        "seealso": [
-            "ykbt3XMUIus"
-        ]
+        "duplicatedby": "yt-FyOHDcxtEUA,503.6,533.1"
     },
     "EbERjXIk_x4": {
         "title": "Q&A: If you could add a feature yourself right now, what would that be ?",
@@ -15659,7 +15809,8 @@
             "features\/transportation\/vehicles\/drones"
         ],
         "seealso": [
-            "yt-Dp77ih_XmkY,409.4583333333333,458.9583333333333"
+            "yt-Dp77ih_XmkY,409.4583333333333,458.9583333333333",
+            "yt-FyOHDcxtEUA,317.03333333333336,357.56666666666666"
         ]
     },
     "RAyToKIKD2I": {
@@ -16315,7 +16466,8 @@
             "dWU4c-MjLWE"
         ],
         "seealso": [
-            "hSVNzU27It0"
+            "hSVNzU27It0",
+            "yt-Dtm6xIj-wM4,1872.81796,1925.453116"
         ]
     },
     "oEjEowDbetQ": {
@@ -16483,7 +16635,8 @@
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
         "seealso": [
-            "yt-Dp77ih_XmkY,409.4583333333333,458.9583333333333"
+            "yt-Dp77ih_XmkY,409.4583333333333,458.9583333333333",
+            "yt-FyOHDcxtEUA,24.44953,51.005634"
         ]
     },
     "WLe1_rdbPqM": {
@@ -16494,7 +16647,9 @@
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
         "seealso": [
-            "yt-Dp77ih_XmkY,409.4583333333333,458.9583333333333"
+            "yt-Dp77ih_XmkY,409.4583333333333,458.9583333333333",
+            "yt-FyOHDcxtEUA,158.6,187.73333333333332",
+            "yt-FyOHDcxtEUA,187.76666666666668,225.43333333333334"
         ]
     },
     "lUpSf3XrMpk": {
@@ -21319,6 +21474,7 @@
             "lQC68q7s21c",
             "m4ur5WEWkRY",
             "tc-AgreeableTentativeBeeCurseLit",
+            "tc-AwkwardBloodyNightingaleShadyLulu",
             "tc-DoubtfulNaiveCroquettePeoplesChamp",
             "tc-RelievedRelievedCroissantMingLee"
         ],
@@ -32380,7 +32536,10 @@
     "L3Pi9Mydc60": {
         "title": "Q&A: Any info on possible build contests?",
         "date": "2020-09-08",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "tc-SparklingJazzyJayBCWarrior"
+        ]
     },
     "B3bO7b-5jHA": {
         "title": "Q&A: Elements of Survival ?",
@@ -35303,7 +35462,10 @@
     "tc-BashfulDependableBobaWTRuck": {
         "title": "Q&A: Offline Play",
         "date": "2020-08-18",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "yt-t1LfyNfuMVQ,236.16,250"
+        ]
     },
     "tc-BashfulFantasticPotDAESuppy": {
         "title": "Q&A: What convinced you to add pipes?",
@@ -35425,6 +35587,9 @@
         "date": "2020-08-18",
         "topics": [
             "features\/save-system\/autosave"
+        ],
+        "seealso": [
+            "cIhVRJPmBoc"
         ]
     },
     "tc-PrettiestBloodyBadgerDendiFace": {
@@ -35628,7 +35793,8 @@
         "topics": [
             "features\/tiers\/tier-8",
             "satisfactory-updates\/released\/satisfactory-update-4"
-        ]
+        ],
+        "replacedby": "1Xgd1ANF9gw"
     },
     "tc-RelievedTawdryEelDogFace": {
         "title": "Q&A: When is Update 4 pencilled for?",
@@ -35674,7 +35840,10 @@
     "tc-SparklingJazzyJayBCWarrior": {
         "title": "Q&A: Quarterly Build Contest?",
         "date": "2020-08-18",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "L3Pi9Mydc60"
+        ]
     },
     "tc-SpoopyPlacidPepperoniSoonerLater": {
         "title": "Q&A: Will 1.0 require a reset of the game?",
@@ -36737,8 +36906,8 @@
             "technology\/unreal-engine"
         ],
         "seelso": [
-            "8I6SrlovQvo",
-            "Cnw8Vw-BFO4"
+            "nRYObYdENUQ",
+            "8I6SrlovQvo"
         ]
     },
     "egY71egazyQ": {
@@ -39370,6 +39539,7 @@
             "features\/save-system\/cloud-sync"
         ],
         "seealso": [
+            "tc-BashfulDependableBobaWTRuck",
             "yt-t1LfyNfuMVQ,218.32,236.16",
             "yt-t1LfyNfuMVQ,272.56,307.28"
         ]
@@ -42673,6 +42843,10 @@
         "topics": [
             "coffee-stainers",
             "coffee-stainers\/jace"
+        ],
+        "seealso": [
+            "gKZmQ7vZZbU",
+            "hSVNzU27It0"
         ]
     },
     "yt-Dtm6xIj-wM4,1925.453116,1939.640283": {
