@@ -36,3 +36,5 @@
 /app/cards-cache/
 /app/data/info-cards.json
 /app/data/needs-fetching.json
+/images/internal/content/
+/images-tmp/

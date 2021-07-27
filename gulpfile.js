@@ -20,9 +20,19 @@ const json_transform = require('gulp-json-transform');
 const {
 	readFileSync,
 	writeFileSync,
+	readFile,
 } = require('fs');
 const inline_source = require('gulp-inline-source');
 const lunr = require('lunr');
+const libsquoosh = require('gulp-libsquoosh');
+const {
+	promisify,
+} = require('util');
+const glob = promisify(require('glob'));
+const prom = {
+	readFile: promisify(readFile),
+};
+const svgToImg = require('svg-to-img');
 
 const synonyms = require('./app/synonyms.json');
 const synonym_keys = Object.keys(synonyms);
@@ -324,7 +334,32 @@ gulp.task('sync-tmp-to-store', () => {
 	);
 });
 
-gulp.task('build', gulp.series(
+gulp.task('images-svg-conversion--png', () => {
+	return gulp.src('./images-tmp/internal/content/**/*.png').pipe(
+		libsquoosh({
+			webp: {},
+		})
+	).pipe(gulp.dest('./images/internal/content/'));
+});
+
+gulp.task('images-svg-conversion', async (cb) => {
+	const files = await glob('./images-tmp/internal/content/**/*.svg');
+
+	for (let file of files) {
+		const svg = await prom.readFile(file);
+
+		await svgToImg.from(svg).toPng({path: file.replace(/\.svg$/, '.png')});
+	}
+
+	cb();
+});
+
+gulp.task('images-svg', gulp.series(...[
+	'images-svg-conversion',
+	'images-svg-conversion--png',
+]));
+
+gulp.task('build', gulp.series(...[
 	'lunr-index',
 	gulp.parallel(
 		'q-and-a-tracking',
@@ -347,8 +382,9 @@ gulp.task('build', gulp.series(
 	gulp.parallel(
 		'sync-favicon',
 	),
-	'sync-tmp-to-store'
-));
+	'sync-tmp-to-store',
+	'images-svg',
+]));
 
 gulp.task('html-error_docs', () => {
 	return gulp.src('./tmp-error_docs/**/*.html').pipe(

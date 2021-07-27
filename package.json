@@ -2,7 +2,7 @@
   "scripts": {
     "error_docs": "eleventy --config=./.eleventy.error_docs.js && gulp html-error_docs",
     "update": "php app/app.php && php app/update-q-and-a.php && php app/part-continued.php && php app/lunr-docs-preload.php",
-    "build": "npm run -s update && gulp topics && eleventy && eleventy --config=./.eleventy.pages.js && gulp build"
+    "build": "npm run -s update && gulp topics && eleventy && eleventy --config=./.eleventy.pages.js && eleventy --config=./.eleventy.images.js && gulp build"
   },
   "dependencies": {
     "lunr": "^2.3.9"
@@ -10,7 +10,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "cssnano": "^4.1.10",
-    "glob": "^7.1.6",
+    "glob": "^7.1.7",
     "gulp": "^4.0.2",
     "gulp-brotli": "^3.0.0",
     "gulp-changed": "^4.0.2",
@@ -18,6 +18,7 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-inline-source": "^4.0.0",
     "gulp-json-transform": "^0.4.7",
+    "gulp-libsquoosh": "^1.0.9",
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
@@ -25,10 +26,13 @@
     "gulp-rev": "^9.0.0",
     "gulp-rev-replace": "^0.4.4",
     "gulp-sitemap": "^8.0.0",
+    "gulp-svg2png-update": "^2.2.1",
     "gulp-zopfli-green": "^5.0.1",
     "html-minifier": "^4.0.0",
     "node-fetch": "^2.6.1",
     "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.2.3"
+    "postcss-nested": "^4.2.3",
+    "svg-to-img": "^2.0.9",
+    "svg2png": "^4.1.1"
   }
 }

@@ -102,12 +102,19 @@ module.exports = async () => {
 						);
 					}
 
-					if ( ! ('twitter:image' in out[permalink])) {
-						const ImageObject = row.image[0];
+					if (
+						! ('twitter:image' in out[permalink])
+						&& 'twitter:title' in out[permalink]
+					) {
+						out[permalink]['twitter:card'] = 'summary_large_image';
 						out[permalink][
 							'twitter:image'
-						] = ImageObject.contentUrl;
-						out[permalink]['twitter:image:alt'] = ImageObject.name;
+						] = `https://i.img.archive.satisfactory.video/content/${
+							permalink.slice(0, -1)
+						}.webp`;
+						out[permalink]['twitter:image:alt'] = `Embed for ${
+							out[permalink]['twitter:title']
+						}`;
 					}
 				}
 

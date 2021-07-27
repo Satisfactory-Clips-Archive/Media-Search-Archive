@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-07-27
+* Rendering custom embed images
+
 ## 2021-07-24
 * Fixed a copy/paste typo in a utility script
 * Initial implementation of tracking skipped cards

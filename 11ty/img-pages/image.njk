@@ -1,0 +1,183 @@
+---
+pagination:
+    data: images
+    size: 1
+    alias: image
+permalink: "content/{{ image.permalink}}"
+---
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="1200"
+   height="628"
+   viewBox="0 0 1200 628"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2">
+	 <filter x="0" y="0" width="1" height="1" id="tape">
+	 <!-- via https://stackoverflow.com/a/31013492 -->
+	 	<feFlood flood-color="#f7ed9a" result="bg" />
+		<feMerge>
+			<feMergeNode in="bg" />
+			<feMergeNode in="SourceGraphic" />
+		</feMerge>
+	 </filter>
+    <pattern
+       xlink:href="#pattern1282"
+       id="pattern2321"
+       patternTransform="matrix(2,0,0,2,-4,0)" />
+    <symbol
+       id="symbol933">
+      <rect
+         style="fill:#5f668c;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect931"
+         width="6.3500004"
+         height="6.3500004"
+         x="1.0583334"
+         y="1.0583334" />
+    </symbol>
+    <symbol
+       id="g1078">
+      <rect
+         style="fill:#e5e7f1;fill-opacity:1;stroke-width:0.265;stroke-linecap:round;paint-order:markers stroke fill"
+         id="rect842"
+         width="27.516666"
+         height="27.516666"
+         x="0"
+         y="0" />
+      <use
+         xlink:href="#symbol933"
+         id="use936" />
+      <use
+         xlink:href="#symbol933"
+         id="use950"
+         transform="translate(6.6145834)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use970"
+         transform="translate(13.49375)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use970-9"
+         transform="translate(20.108334)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use936-6"
+         transform="translate(-9.691162e-8,6.6145834)" />
+      <use
+         xlink:href="#symbol933"
+         id="use950-2"
+         transform="translate(6.6145831,6.6145834)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use970-3"
+         transform="translate(13.49375,6.6145834)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use970-9-0"
+         transform="translate(20.108334,6.6145834)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use936-7"
+         transform="translate(-3.7838136e-7,13.49375)" />
+      <use
+         xlink:href="#symbol933"
+         id="use950-7"
+         transform="translate(6.6145828,13.49375)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use970-8"
+         transform="translate(13.493749,13.49375)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use970-9-7"
+         transform="translate(20.108333,13.49375)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use936-6-1"
+         transform="translate(-3.7838136e-7,20.108334)" />
+      <use
+         xlink:href="#symbol933"
+         id="use950-2-0"
+         transform="translate(6.6145825,20.108334)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use970-3-7"
+         transform="translate(13.493749,20.108334)"
+          />
+      <use
+         xlink:href="#symbol933"
+         id="use970-9-0-4"
+         transform="translate(20.108333,20.108334)"
+          />
+    </symbol>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="104"
+       height="104"
+       id="pattern1282">
+      <use
+         xlink:href="#g1078"
+         id="use1169"
+         transform="scale(3.7795275)" />
+    </pattern>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:url(#pattern2321);fill-opacity:1;stroke:none;stroke-width:0.264998;stroke-linecap:round;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2265"
+       width="1200"
+       height="628"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     id="image">
+    <rect
+       x="600"
+       y="314"
+       transform="translate(-251.2, -251.2)"
+       width="502.4"
+       height="502.4"
+       stroke-width="64"
+       stroke="#fa9549"
+       fill="#fa9549"
+       id="rect4627" />
+    <image
+       x="600"
+       y="314"
+       transform="translate(-251.2, -251.2)"
+       width="502.4"
+       height="502.4"
+       href="data:image/png;base64,{{image.source}}"
+       id="image4629" />
+  </g>
+	<text
+		xml:space="preserve"
+		id="text5225"
+		style="font-size:40px;line-height:1.25;font-family:Satisfontory;white-space:pre;fill:#000000;fill-opacity:1;"
+		x="600"
+		y="580"
+		text-anchor="middle"
+		filter="url(#tape)"
+	>
+		<tspan></tspan><tspan dy="10">{{image.name}}</tspan><tspan dy="10"> </tspan>
+	</text>
+</svg>

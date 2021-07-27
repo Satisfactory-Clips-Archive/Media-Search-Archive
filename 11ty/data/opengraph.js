@@ -8,7 +8,18 @@ module.exports = async () => {
 			data.forEach((row) => {
 				if ('image' in row) {
 					if ( ! (permalink in out)) {
-						out[permalink] = [];
+						out[permalink] = [
+							[
+								'og:image:url',
+								`https://i.img.archive.satisfactory.video/content/${
+									permalink.slice(0, -1)
+								}.webp`
+							],
+							['og:image:type', 'image/webp'],
+							['og:image:width', '1200'],
+							['og:image:height', '628'],
+							['og:image:alt', `Embed for ${row.image[0].name}`],
+						];
 					}
 
 					row.image.forEach((ImageObject) => {
