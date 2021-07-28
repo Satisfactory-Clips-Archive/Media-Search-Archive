@@ -39,7 +39,6 @@ use function usort;
  *	replacedby?:string,
  *	duplicatedby?:string,
  *	seealso?:list<string>,
- *	suggested?:list<string>,
  *	legacyalts?:list<string>
  * }
  * @psalm-type DEFINITELY = array{
@@ -51,7 +50,6 @@ use function usort;
  *	replacedby?:string,
  *	duplicatedby?:string,
  *	seealso:list<string>,
- *	suggested:list<string>,
  *	legacyalts:list<string>
  * }
  */
@@ -102,7 +100,6 @@ class Questions
 						'duplicates',
 						'replaces',
 						'seealso',
-						'suggested',
 						'legacyalts',
 					] as $required
 				) {
@@ -196,7 +193,6 @@ class Questions
 				'duplicates' => [],
 				'replaces' => [],
 				'seealso' => [],
-				'suggested' => [],
 				'duplicatedby' => [],
 			];
 
@@ -215,7 +211,6 @@ class Questions
 					'duplicates',
 					'replaces',
 					'seealso',
-					'suggested',
 				] as $required
 			) {
 				$existing[$video_id][$required] = array_values(array_filter(
@@ -380,8 +375,6 @@ class Questions
 					$seealsos[$video_id][] = $seealso;
 				}
 			}
-
-			$existing[$video_id]['suggested'] = [];
 		}
 
 		foreach ($seealsos as $video_id => $video_ids) {
@@ -409,56 +402,6 @@ class Questions
 
 			foreach ($merged_see_also as $other_video_id) {
 				$seealsos[$other_video_id] = $merged_see_also;
-			}
-		}
-
-		foreach (array_keys($seealsos) as $video_id) {
-			foreach ($seealsos[$video_id] as $seealso) {
-				if ( ! isset($existing[$seealso])) {
-					continue;
-				}
-
-				$existing[$seealso]['suggested'] = array_filter(
-					$seealsos[$video_id],
-					static function (string $maybe) use ($seealso, $existing) : bool {
-						if (
-							(
-								isset($existing[$seealso]['duplicatedby'])
-								&& $maybe === $existing[$seealso]['duplicatedby']
-							)
-							|| (
-								isset($existing[$seealso]['replacedby'])
-								&& $maybe === $existing[$seealso]['replacedby']
-							)
-							|| (
-								isset($existing[$seealso]['duplicates'])
-								&& in_array(
-									$maybe,
-									$existing[$seealso]['duplicates'],
-									true
-								)
-							)
-							|| (
-								isset($existing[$seealso]['replaces'])
-								&& in_array(
-									$maybe,
-									$existing[$seealso]['replaces'],
-									true
-								)
-							)
-						) {
-							return false;
-						}
-
-						return
-							$maybe !== $seealso
-							&& ! in_array(
-								$maybe,
-								$existing[$seealso]['seealso'] ?? [],
-								true
-							);
-					}
-				);
 			}
 		}
 
@@ -519,7 +462,6 @@ class Questions
 					'duplicates',
 					'replaces',
 					'seealso',
-					'suggested',
 				] as $required
 			) {
 				natcasesort($existing[$lookup][$required]);
@@ -561,7 +503,6 @@ class Questions
 					'duplicates',
 					'replaces',
 					'seealso',
-					'suggested',
 				] as $required
 			) {
 				$data[$required] = array_filter(
@@ -600,21 +541,11 @@ class Questions
 				)
 			);
 
-			$existing[$video_id]['suggested'] = $data['suggested'] = array_values(
-				array_filter(
-					$data['suggested'],
-					static function (string $maybe) use ($video_id) : bool {
-						return ! in_array($maybe, other_video_parts($video_id), true);
-					}
-				)
-			);
-
 			foreach (
 				[
 					'duplicates',
 					'replaces',
 					'seealso',
-					'suggested',
 					'legacyalts',
 				] as $required
 			) {
@@ -622,8 +553,6 @@ class Questions
 					unset($existing[$video_id][$required]);
 				}
 			}
-
-			unset($existing[$video_id]['suggested']);
 		}
 
 		foreach ($replacements_not_in_existing as $video_id => $replacement) {
@@ -748,13 +677,6 @@ class Questions
 				! isset($a['seealso'])
 				|| $a['seealso'] === array_values(array_filter(
 					(array) $a['seealso'],
-					'is_string'
-				))
-			)
-			&& (
-				! isset($a['suggested'])
-				|| $a['suggested'] === array_values(array_filter(
-					(array) $a['suggested'],
 					'is_string'
 				))
 			)
