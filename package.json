@@ -2,7 +2,8 @@
   "scripts": {
     "error_docs": "eleventy --config=./.eleventy.error_docs.js && gulp html-error_docs",
     "update": "php app/app.php && php app/update-q-and-a.php && php app/part-continued.php && php app/lunr-docs-preload.php",
-    "build": "npm run -s update && gulp topics && eleventy --config=./.eleventy.images.js && gulp images-svg && eleventy && eleventy --config=./.eleventy.pages.js && gulp build"
+		"images-svg": "eleventy --config=./.eleventy.images.js && gulp images-svg",
+    "build": "npm run -s update && gulp topics && npm run -s images-svg && eleventy && eleventy --config=./.eleventy.pages.js && gulp build"
   },
   "dependencies": {
     "lunr": "^2.3.9"
