@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-07-31
+* Amended rendering of custom images
+
 ## 2021-07-27
 * Rendering custom embed images
 

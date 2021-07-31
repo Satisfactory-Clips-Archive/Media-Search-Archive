@@ -148,8 +148,15 @@ permalink: "content/{{ image.permalink}}"
        x="0"
        y="0" />
   </g>
+  <!-- {{image.permalink}} -->
+{% if (image.permalink in topicStatistics) %}
+	<g
+		transform="translate(-306, 0)"
+		id="image">
+{% else %}
   <g
      id="image">
+{% endif %}
     <rect
        x="600"
        y="314"
@@ -168,7 +175,6 @@ permalink: "content/{{ image.permalink}}"
        height="502.4"
        href="data:image/png;base64,{{image.source}}"
        id="image4629" />
-  </g>
 	<text
 		xml:space="preserve"
 		id="text5225"
@@ -180,4 +186,58 @@ permalink: "content/{{ image.permalink}}"
 	>
 		<tspan></tspan><tspan dy="10">{{image.name}}</tspan><tspan dy="10"> </tspan>
 	</text>
+  </g>
+{% if (image.permalink in topicStatistics) %}
+	<g
+		transform="translate(595.4, 59.5)"
+		id="statistics"
+	>
+		<text
+			xml:space="preserve"
+			id="text5225"
+			style="text-align:left;font-size:30px;line-height:1.25;font-family:Orbitron;white-space:pre;fill:#000000;fill-opacity:1;"
+			x="0"
+			y="0"
+			text-anchor="left"
+			filter="url(#tape)"
+		><tspan></tspan><tspan
+				dy="10"
+				x="10"
+			>• {{topicStatistics[image.permalink][0]}} Clips</tspan><tspan
+				dy="10"
+			> </tspan></text>
+{% if topicStatistics[image.permalink][1] %}
+		<text
+			xml:space="preserve"
+			id="text5225"
+			style="text-align:left;font-size:30px;line-height:1.25;font-family:Orbitron;white-space:pre;fill:#000000;fill-opacity:1;"
+			x="0"
+			y="71.25"
+			text-anchor="left"
+			filter="url(#tape)"
+		><tspan></tspan><tspan
+				dy="10"
+				x="10"
+			>• Recently clipped {{topicStatistics[image.permalink][1]}}</tspan><tspan
+				dy="10"
+			> </tspan></text>
+{% endif %}
+{% if (topicStatistics[image.permalink][2]) %}
+		<text
+			xml:space="preserve"
+			id="text5225"
+			style="text-align:left;font-size:30px;line-height:1.25;font-family:Orbitron;white-space:pre;fill:#000000;fill-opacity:1;"
+			x="0"
+			y="142.5"
+			text-anchor="left"
+			filter="url(#tape)"
+		><tspan></tspan><tspan
+				dy="10"
+				x="10"
+			>• First clipped {{topicStatistics[image.permalink][2]}}</tspan><tspan
+				dy="10"
+			> </tspan></text>
+{% endif %}
+	</g>
+{% endif %}
 </svg>

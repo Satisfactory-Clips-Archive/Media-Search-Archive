@@ -1,3 +1,10 @@
+const {
+	readFileSync,
+} = require('fs');
+const {
+	createHash,
+} = require('crypto');
+
 module.exports = async () => {
 	const jsonld = await require('./jsonld.js')();
 
@@ -8,12 +15,23 @@ module.exports = async () => {
 			data.forEach((row) => {
 				if ('image' in row) {
 					if ( ! (permalink in out)) {
+						const hash = createHash('sha512');
+						hash.update(readFileSync(
+							`${__dirname}/../../images/internal/content/${
+								permalink.slice(0, -1)
+							}.webp`
+						));
+
 						out[permalink] = [
 							[
 								'og:image:url',
 								`https://i.img.archive.satisfactory.video/content/${
 									permalink.slice(0, -1)
-								}.webp`
+								}.webp?h=${
+									encodeURIComponent(
+										hash.digest('hex').slice(0, 4)
+									)
+								}`
 							],
 							['og:image:type', 'image/webp'],
 							['og:image:width', '1200'],

@@ -460,6 +460,9 @@ foreach (array_keys($api->fetch_all_playlists()) as $playlist_id) {
 $topics_json = [];
 $playlist_topic_strings = [];
 $playlist_topic_strings_reverse_lookup = [];
+$topic_statistics = [];
+
+$dated_playlists = $api->dated_playlists();
 
 foreach ($all_topic_ids as $topic_id) {
 	[$slug_string, $slug] = topic_to_slug(
@@ -474,8 +477,49 @@ foreach ($all_topic_ids as $topic_id) {
 	}
 	$playlist_topic_strings[$topic_id] = $slug_string;
 	$playlist_topic_strings_reverse_lookup[$slug_string] = $topic_id;
+
+	if ( ! in_array($topic_id, $dated_playlists, true)) {
+		$topic_video_ids = ($cache['playlists'][$topic_id] ?? [2 => []])[2] ?? [];
+
+		usort($topic_video_ids, [$sorting, 'sort_video_ids_by_date']);
+
+		$topic_video_ids_count = count($topic_video_ids);
+
+		$topic_statistics['/topics/' . $slug_string . '.svg'] = [
+			$topic_video_ids_count,
+			(
+				$topic_video_ids_count > 0
+					? date('jS M, Y', strtotime(determine_date_for_video(
+						current($topic_video_ids),
+						$cache['playlists'],
+						$dated_playlists
+					)))
+					: false
+			),
+			(
+				$topic_video_ids_count > 0
+					? date('jS M, Y', strtotime(determine_date_for_video(
+						end($topic_video_ids),
+						$cache['playlists'],
+						$dated_playlists
+					)))
+					: false
+			),
+		];
+	}
 }
 
+file_put_contents(
+	__DIR__ . '/../11ty/img-data/topicStatistics.json',
+	str_replace(
+		PHP_EOL,
+		"\n",
+		json_encode(
+			$topic_statistics,
+			JSON_PRETTY_PRINT
+		)
+	)
+);
 file_put_contents(
 	__DIR__ . '/../11ty/data/topicStrings.json',
 	json_encode($playlist_topic_strings, JSON_PRETTY_PRINT)

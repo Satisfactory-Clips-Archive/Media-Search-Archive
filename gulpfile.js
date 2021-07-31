@@ -383,7 +383,6 @@ gulp.task('build', gulp.series(...[
 		'sync-favicon',
 	),
 	'sync-tmp-to-store',
-	'images-svg',
 ]));
 
 gulp.task('html-error_docs', () => {
