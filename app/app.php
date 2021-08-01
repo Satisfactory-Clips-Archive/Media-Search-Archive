@@ -922,14 +922,16 @@ foreach ($transcripts_json as $video_id => $video_data) {
 		'---' . "\n"
 		. sprintf(
 			'title: "%s"' . "\n",
-			str_replace('"', '\"',
-			(
-				$injected->friendly_dated_playlist_name($playlist_id)
-				. ' '
-				. (
-					$cache['playlistItems'][$video_id][1]
+			str_replace(
+				'"',
+				'\"',
+				(
+					$injected->friendly_dated_playlist_name($playlist_id)
+					. ' '
+					. (
+						$cache['playlistItems'][$video_id][1]
+					)
 				)
-			)
 			)
 		)
 		. sprintf(
@@ -1548,11 +1550,10 @@ foreach (array_keys($playlists) as $playlist_id) {
 			),
 		];
 
-		$playlist_lines[] =
-			(
-				''
-				. '## Uncategorised'
-				. "\n"
+		$playlist_lines[] = (
+			''
+			. '## Uncategorised'
+			. "\n"
 		);
 	}
 
@@ -1749,74 +1750,73 @@ foreach (
 		mkdir($slug_dir, 0755, true);
 	}
 
-	$slug_lines[] =
-		(
-			'---' . "\n"
-			. sprintf(
-				'title: "%s"' . "\n",
-				str_replace('"', '\"', $playlist_title)
-			)
-			. (
-				preg_match('/^PLbjDnnBIxiE/', $playlist_id)
-					? sprintf(
-						'external_link: %s' . "\n",
-						sprintf(
-							'https://www.youtube.com/playlist?list=%s',
-							rawurlencode($playlist_id)
-						)
+	$slug_lines[] = (
+		'---' . "\n"
+		. sprintf(
+			'title: "%s"' . "\n",
+			str_replace('"', '\"', $playlist_title)
+		)
+		. (
+			preg_match('/^PLbjDnnBIxiE/', $playlist_id)
+				? sprintf(
+					'external_link: %s' . "\n",
+					sprintf(
+						'https://www.youtube.com/playlist?list=%s',
+						rawurlencode($playlist_id)
 					)
-					: ''
-			)
-			. 'date: Last Modified' . "\n"
-			. '---' . "\n"
-			. '# [Topics]('
-			. str_repeat('../', $slug_count)
-			. 'topics.md)'
-			. implode('', array_map(
-				static function (
-					string $slug_parent
-				) use (
+				)
+				: ''
+		)
+		. 'date: Last Modified' . "\n"
+		. '---' . "\n"
+		. '# [Topics]('
+		. str_repeat('../', $slug_count)
+		. 'topics.md)'
+		. implode('', array_map(
+			static function (
+				string $slug_parent
+			) use (
+				$cache,
+				$global_topic_hierarchy,
+				$not_a_livestream,
+				$not_a_livestream_date_lookup,
+				$slug_count,
+				$slugify
+			) : string {
+				[$parent_id] = determine_playlist_id(
+					$slug_parent,
+					$cache,
+					$not_a_livestream,
+					$not_a_livestream_date_lookup
+				);
+				if (count(($cache['playlists'][$parent_id] ?? [2 => []])[2]) < 1) {
+					return ' > ' . $slug_parent;
+				}
+
+				[, $parent_parts] = topic_to_slug(
+					$parent_id,
 					$cache,
 					$global_topic_hierarchy,
-					$not_a_livestream,
-					$not_a_livestream_date_lookup,
-					$slug_count,
 					$slugify
-				) : string {
-					[$parent_id] = determine_playlist_id(
-						$slug_parent,
-						$cache,
-						$not_a_livestream,
-						$not_a_livestream_date_lookup
-					);
-					if (count(($cache['playlists'][$parent_id] ?? [2 => []])[2]) < 1) {
-						return ' > ' . $slug_parent;
-					}
+				);
 
-					[, $parent_parts] = topic_to_slug(
-						$parent_id,
-						$cache,
-						$global_topic_hierarchy,
-						$slugify
-					);
-
-					return
-						' > ['
-						. $slug_parent
-						. ']('
-						. str_repeat('../', $slug_count)
-						. 'topics/'
-						. implode('/', array_map(
-							[$slugify, 'slugify'],
-							$parent_parts
-						))
-						. '.md)';
-				},
-				$slug_parents
-			))
-			. ' > '
-			. $playlist_title
-			. "\n"
+				return
+					' > ['
+					. $slug_parent
+					. ']('
+					. str_repeat('../', $slug_count)
+					. 'topics/'
+					. implode('/', array_map(
+						[$slugify, 'slugify'],
+						$parent_parts
+					))
+					. '.md)';
+			},
+			$slug_parents
+		))
+		. ' > '
+		. $playlist_title
+		. "\n"
 	);
 
 	$topic_children = nesting_children(
@@ -1841,39 +1841,38 @@ foreach (
 	);
 
 	if (count($topic_children) > 0) {
-		$slug_lines[] =
-			(
-				implode("\n", array_map(
-					static function (
-						string $subtopic_id
-					) use (
+		$slug_lines[] = (
+			implode("\n", array_map(
+				static function (
+					string $subtopic_id
+				) use (
+					$cache,
+					$global_topic_hierarchy,
+					$slugify,
+					$slug_count
+				) : string {
+					[, $sub_slug] = topic_to_slug(
+						$subtopic_id,
 						$cache,
 						$global_topic_hierarchy,
-						$slugify,
-						$slug_count
-					) : string {
-						[, $sub_slug] = topic_to_slug(
-							$subtopic_id,
-							$cache,
-							$global_topic_hierarchy,
-							$slugify
-						);
+						$slugify
+					);
 
-						return
-							'* ['
-							. determine_topic_name($subtopic_id, $cache)
-							. ']('
-							. str_repeat('../', $slug_count)
-							. 'topics/'
-							. implode('/', array_map(
-								[$slugify, 'slugify'],
-								$sub_slug
-							))
-							. '.md)';
-					},
-					$topic_children
-				))
-				. "\n"
+					return
+						'* ['
+						. determine_topic_name($subtopic_id, $cache)
+						. ']('
+						. str_repeat('../', $slug_count)
+						. 'topics/'
+						. implode('/', array_map(
+							[$slugify, 'slugify'],
+							$sub_slug
+						))
+						. '.md)';
+				},
+				$topic_children
+			))
+			. "\n"
 		);
 	}
 
@@ -2080,11 +2079,10 @@ foreach ($sortable as $year => $months) {
 		foreach ($grouped[$year][$readable_month] as $line_data) {
 			[$readable_date, $filename] = $line_data;
 
-			$lines[] =
-				sprintf(
-					'* [%s](%s)' . "\n",
-					$readable_date,
-					$filename
+			$lines[] = sprintf(
+				'* [%s](%s)' . "\n",
+				$readable_date,
+				$filename
 			);
 		}
 	}
