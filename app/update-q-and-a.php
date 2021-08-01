@@ -16,17 +16,13 @@ use function count;
 use function file_put_contents;
 use function in_array;
 use function is_string;
-use function json_encode;
-use const JSON_PRETTY_PRINT;
 use function ob_flush;
 use function ob_get_clean;
 use function ob_get_contents;
 use function ob_start;
-use const PHP_EOL;
 use function preg_match;
 use RuntimeException;
 use function sprintf;
-use function str_replace;
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 require_once(__DIR__ . '/global-topic-hierarchy.php');
