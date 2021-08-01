@@ -28,13 +28,13 @@ $topic_slugs = json_decode(
 );
 
 $topic_slugs_check = array_map(
-		static function (string $slug) : string {
-			return
-				__DIR__
-				. '/../Media-Archive-Metadata/src/permalinked/topics/'
-				. $slug
-				. '.js';
-		},
+	static function (string $slug) : string {
+		return
+			__DIR__
+			. '/../Media-Archive-Metadata/src/permalinked/topics/'
+			. $slug
+			. '.js';
+	},
 	array_combine(array_keys($topic_slugs), array_keys($topic_slugs))
 );
 
