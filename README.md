@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-08-01
+* Refactored copypasted json_encode usage to single function
+
 ## 2021-07-31
 * Amended rendering of custom images
 

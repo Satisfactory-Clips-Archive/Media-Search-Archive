@@ -74,7 +74,7 @@ foreach (array_keys($injected->all_topics()) as $topic_id) {
 
 uksort($existing, [$sorting, 'sort_video_ids_by_date']);
 
-$data = str_replace(PHP_EOL, "\n", json_encode($existing, JSON_PRETTY_PRINT));
+$data = json_encode_pretty($existing);
 
 file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
 
@@ -339,17 +339,16 @@ file_put_contents(
 	ob_get_clean()
 );
 
-$data = str_replace(PHP_EOL, "\n", json_encode($by_topic, JSON_PRETTY_PRINT));
+$data = json_encode_pretty($by_topic);
 
 file_put_contents(__DIR__ . '/data/video-id-by-topic.json', $data);
 
-$data = str_replace(PHP_EOL, "\n", json_encode(
-	$injected->all_topics(),
-	JSON_PRETTY_PRINT
-));
+$data = json_encode_pretty(
+	$injected->all_topics()
+);
 
 file_put_contents(__DIR__ . '/data/all-topic-slugs.json', $data);
 
-$data = str_replace(PHP_EOL, "\n", json_encode($faq_json, JSON_PRETTY_PRINT));
+$data = json_encode_pretty($faq_json);
 
 file_put_contents(__DIR__ . '/../11ty/data/faq.json', $data);

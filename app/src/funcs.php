@@ -3222,13 +3222,8 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
 					__DIR__
 					. '/../data/skipping-cards.json'
 				),
-				str_replace(
-					PHP_EOL,
-					"\n",
-					json_encode(
-						$skipping,
-						JSON_PRETTY_PRINT
-					)
+				json_encode_pretty(
+						$skipping
 				)
 			);
 		});
@@ -3246,13 +3241,8 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
 			. '.json';
 
 		if ( ! is_file($cache_file) || $skip_file) {
-			file_put_contents($cache_file, str_replace(
-				PHP_EOL,
-				"\n",
-				json_encode(
-					yt_cards_uncached($video_id),
-					JSON_PRETTY_PRINT
-				)
+			file_put_contents($cache_file, json_encode_pretty(
+					yt_cards_uncached($video_id)
 			));
 		}
 
@@ -3446,4 +3436,16 @@ function yt_cards_uncached(string $video_id) : array
 	);
 
 	return $processed;
+}
+
+function json_encode_pretty(array $data) : string
+{
+	return str_replace(
+		PHP_EOL,
+		"\n",
+		json_encode(
+			$data,
+			JSON_PRETTY_PRINT
+		)
+	);
 }

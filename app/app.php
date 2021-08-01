@@ -90,13 +90,8 @@ $cache = $injected->cache;
 $global_topic_hierarchy = $injected->topics_hierarchy;
 file_put_contents(
 	__DIR__ . '/data/play.json',
-	str_replace(
-		PHP_EOL,
-		"\n",
-		json_encode(
-			$injected->format_play(),
-			JSON_PRETTY_PRINT
-		)
+	json_encode_pretty(
+			$injected->format_play()
 	)
 );
 
@@ -511,13 +506,8 @@ foreach ($all_topic_ids as $topic_id) {
 
 file_put_contents(
 	__DIR__ . '/../11ty/img-data/topicStatistics.json',
-	str_replace(
-		PHP_EOL,
-		"\n",
-		json_encode(
-			$topic_statistics,
-			JSON_PRETTY_PRINT
-		)
+	json_encode_pretty(
+			$topic_statistics
 	)
 );
 file_put_contents(
@@ -602,13 +592,8 @@ $needs_fresh_data = prepare_uncached_captions_html_video_ids(
 if (count($needs_fresh_data)) {
 	file_put_contents(
 		__DIR__ . '/data/needs-fetching.json',
-		str_replace(
-			PHP_EOL,
-			"\n",
-			json_encode(
-				$needs_fresh_data,
-				JSON_PRETTY_PRINT
-			)
+		json_encode_pretty(
+			$needs_fresh_data
 		)
 	);
 
@@ -629,19 +614,14 @@ file_put_contents(
 		__DIR__
 		. '/data/info-cards.json'
 	),
-	str_replace(
-		PHP_EOL,
-		"\n",
-		json_encode(
+	json_encode_pretty(
 			array_combine(
 				$all_video_ids,
 				array_map(
 					__NAMESPACE__ . '\yt_cards',
 					$all_video_ids
 				)
-			),
-			JSON_PRETTY_PRINT
-		)
+			)
 	)
 );
 
@@ -799,13 +779,8 @@ file_put_contents(
 		__DIR__
 		. '/../11ty/data/transcriptions.json'
 	),
-	str_replace(
-		PHP_EOL,
-		"\n",
-		json_encode(
-			array_values($transcripts_json),
-			JSON_PRETTY_PRINT
-		)
+	json_encode_pretty(
+			array_values($transcripts_json)
 	)
 );
 
