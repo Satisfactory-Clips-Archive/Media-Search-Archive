@@ -585,7 +585,7 @@ $all_video_ids = array_reverse($all_video_ids);
 
 $needs_fresh_data = prepare_uncached_captions_html_video_ids(
 	$all_video_ids,
-	true
+	'yes' === getenv('VCN_FRESH_CAPTIONS')
 );
 
 if (count($needs_fresh_data)) {
