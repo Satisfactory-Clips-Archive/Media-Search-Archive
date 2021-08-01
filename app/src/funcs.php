@@ -1456,7 +1456,7 @@ function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_
 					$matches
 				);
 
-				if ($urls > 0){
+				if ($urls > 0) {
 					$time = time();
 
 					/** @var list<bool> */
@@ -3216,7 +3216,7 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
 			'is_string'
 		));
 
-		register_shutdown_function(function () use (& $skipping) : void {
+		register_shutdown_function(static function () use (&$skipping) : void {
 			file_put_contents(
 				(
 					__DIR__
