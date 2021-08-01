@@ -27,8 +27,7 @@ $topic_slugs = json_decode(
 	true
 );
 
-$has_structured_data = array_filter(
-	array_map(
+$topic_slugs_check = array_map(
 		static function (string $slug) : string {
 			return
 				__DIR__
@@ -36,9 +35,24 @@ $has_structured_data = array_filter(
 				. $slug
 				. '.js';
 		},
-		array_keys($topic_slugs)
-	),
+	array_combine(array_keys($topic_slugs), array_keys($topic_slugs))
+);
+
+$has_structured_data = array_filter(
+	$topic_slugs_check,
 	'is_file'
+);
+
+$has_no_structured_data = array_keys(array_filter(
+	$topic_slugs_check,
+	static function (string $maybe) : bool {
+		return ! is_file($maybe);
+	}
+));
+
+file_put_contents(
+	(__DIR__ . '/data/topic-has-no-structured-data.json'),
+	json_encode_pretty($has_no_structured_data)
 );
 
 $skipping_transcriptions = count(json_decode(file_get_contents(
