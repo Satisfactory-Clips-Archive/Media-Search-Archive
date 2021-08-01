@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2021-08-01
 * Refactored copypasted json_encode usage to single function
+* Implemented statistics page
 
 ## 2021-07-31
 * Amended rendering of custom images

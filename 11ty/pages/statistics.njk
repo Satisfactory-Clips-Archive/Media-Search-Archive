@@ -1,0 +1,40 @@
+---
+title: Statistics
+date: Last Modified
+---
+<section
+>
+	<table>
+		<caption>{{title}}</caption>
+		<thead>
+			<tr>
+				<th>Statistic</th>
+				<th colspan="2">Progress / Count</th>
+			</tr>
+		</thead>
+		<tbody>
+{% for statistic in statistics %}
+			<tr>
+				<th scope="row">{{statistic.title}}</th>
+{% if ('count' in statistic) %}
+				<td colspan="2">{{statistic.count}}</td>
+{% else %}
+				<td title="Percentage">{{statistic.percentage}}%</td>
+				<td><progress value="{{statistic.progress}}"></progress></td>
+{% endif %}
+			</tr>
+{% endfor %}
+		</tbody>
+	</table>
+	<style>
+	th:first-child
+	{
+		text-align: right ;
+	}
+	th,
+	td
+	{
+		padding: .25rem ;
+	}
+	</style>
+</section>
