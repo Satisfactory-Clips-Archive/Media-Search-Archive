@@ -11,7 +11,7 @@ Static site generator for
 # Changelog
 
 ## 2021-08-04
-* Amended auto-webpage types in structured data handler
+* Amended auto-WebPage types in structured data handler
 * Assigned url to WebPage types lacking an url
 
 ## 2021-08-01
