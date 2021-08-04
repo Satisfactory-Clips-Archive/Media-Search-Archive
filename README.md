@@ -13,6 +13,7 @@ Static site generator for
 ## 2021-08-04
 * Amended auto-WebPage types in structured data handler
 * Assigned url to WebPage types lacking an url
+* Corrected & Updated wiki links
 
 ## 2021-08-01
 * Refactored copypasted json_encode usage to single function
