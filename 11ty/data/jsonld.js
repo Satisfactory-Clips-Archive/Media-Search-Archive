@@ -120,6 +120,14 @@ module.exports = async () => {
 			if ('image' in data[0].about[0]) {
 				data[0].image = data[0].about[0].image;
 			}
+		} else if (
+			('@type' in data[0])
+			&& [
+				'WebPage',
+			].includes(data[0]['@type'])
+			&& ! ('url' in data[0])
+		) {
+			data[0].url = archive_url;
 		}
 
 		const slug = permalink.replace(/^\/topics\/(.+)\//, '$1');
