@@ -101,6 +101,7 @@ module.exports = async () => {
 			&& [
 				'Person',
 				'CreativeWorkSeries',
+				'VideoGame',
 			].includes(data[0]['@type'])
 		) {
 			data[0] = {
