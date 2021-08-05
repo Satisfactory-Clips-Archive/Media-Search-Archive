@@ -35,6 +35,7 @@ const prom = {
 const svgToImg = require('svg-to-img');
 
 const synonyms = require('./app/synonyms.json');
+const squoosh = require('gulp-libsquoosh');
 const synonym_keys = Object.keys(synonyms);
 
 function aliasSatisfactoryVocabulary(builder) {
@@ -352,6 +353,35 @@ gulp.task('images-svg-conversion', async (cb) => {
 	}
 
 	cb();
+});
+
+gulp.task('images-svg--background--flannel', () => {
+	return gulp.src(
+		'./images-ref/red-flannel/12951396883_d05fb22ed8_o.webp'
+	).pipe(
+		squoosh({
+			preprocessOptions: {
+				resize: {
+					enabled: true,
+					width: 504,
+					height: 504,
+					premultiply: true,
+					linearRGB: true,
+				},
+			},
+			encodeOptions: {
+				webp: {
+					lossless: 1,
+					near_lossless: 50,
+					effort: 9,
+				},
+			},
+		})
+	).pipe(
+		rename('flannel--bg.webp')
+	).pipe(gulp.dest(
+		'./images/internal/content/topics/coffee-stainers/'
+	))
 });
 
 gulp.task('images-svg', gulp.series(...[
