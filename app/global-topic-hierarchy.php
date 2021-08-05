@@ -1153,6 +1153,9 @@ $global_topic_hierarchy = [
 		'Embracer Group',
 		'Coffee Stain Holding',
 	],
+	'PLbjDnnBIxiEoFLmKQaDWq_Rl7qd-H_GIA' => [ // Flannel
+		'Coffee Stainers',
+	],
 ];
 
 $not_a_livestream = [
