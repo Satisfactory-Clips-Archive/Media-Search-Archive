@@ -230,7 +230,8 @@ $global_topic_hierarchy = [
 		'Environment',
 	],
 	'PLbjDnnBIxiErB8M3t_-CDtAh-q9TXdooO' => [ // Polution
-		'Environment',
+		'Features',
+		'Requested Features',
 	],
 	'PLbjDnnBIxiEr1a23kLgbSYkwgfuD1tQao' => [ // Resources
 		'Environment',
