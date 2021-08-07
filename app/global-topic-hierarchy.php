@@ -1157,6 +1157,20 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiEoFLmKQaDWq_Rl7qd-H_GIA' => [ // Flannel
 		'Coffee Stainers',
 	],
+	'PLbjDnnBIxiEqK9nRVDCg0Z3bb47I6gPod' => [ // Caves
+		'Environment',
+		'Biomes',
+	],
+	'PLbjDnnBIxiEqNe4SQNEAvhKRLQX39g9Ix' => [ // #SaveTheWillows
+		'Satisfactory Updates',
+		'Pending',
+		'Satisfactory Update 5',
+	],
+	'PLbjDnnBIxiEoRdndnsQZEZnZcL35VZRmD' => [ // Northern Forest World Update Q&A with Hannah
+		'Satisfactory Updates',
+		'Pending',
+		'Satisfactory Update 5',
+	],
 ];
 
 $not_a_livestream = [

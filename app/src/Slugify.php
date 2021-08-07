@@ -29,6 +29,10 @@ class Slugify extends Base
 			'Hannah\'s' => 'hannahs',
 			'hannah\'s' => 'hannahs',
 			'can\'t' => 'cant',
+			'#SaveTheWillows' => 'save-the-willows',
+			'#savethewillows' => 'save-the-willows',
+			'Northern Forest World Update Q&A with Hannah' => 'northern-forest-world-update-q-and-a-with-hannah',
+			'northern forest world update q&a with hannah' => 'northern-forest-world-update-q-and-a-with-hannah',
 		];
 
 		parent::__construct($options, $provider);

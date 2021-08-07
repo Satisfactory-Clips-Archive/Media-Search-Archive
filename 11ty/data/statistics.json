@@ -1,34 +1,34 @@
 [
     {
         "title": "Total Clips",
-        "count": 4127
+        "count": 4240
     },
     {
         "title": "Total Topics",
-        "count": 372
+        "count": 375
     },
     {
         "title": "Number of days worth of source streams & videos indexed",
-        "count": 131
+        "count": 133
     },
     {
         "title": "Clips probably having standard description",
-        "progress": "0.264598",
-        "percentage": "26.45"
+        "progress": "0.285849",
+        "percentage": "28.58"
     },
     {
         "title": "Clips with any transcription",
-        "progress": "0.846135",
-        "percentage": "84.61"
+        "progress": "0.847641",
+        "percentage": "84.76"
     },
     {
         "title": "Clips with structured transcription",
-        "progress": "0.004603",
-        "percentage": "0.46"
+        "progress": "0.004481",
+        "percentage": "0.44"
     },
     {
         "title": "Topics with structured data",
-        "progress": "0.137096",
-        "percentage": "13.70"
+        "progress": "0.141333",
+        "percentage": "14.13"
     }
 ]
