@@ -292,6 +292,11 @@ gulp.task('sitemap', () => {
 			siteUrl: 'https://archive.satisfactory.video/',
 		})
 	).pipe(
+		replace(
+			'<loc>https://archive.satisfactory.video/</loc>',
+			'<loc>https://archive.satisfactory.video/</loc><changefreq>weekly</changefreq>'
+		)
+	).pipe(
 		gulp.dest('./tmp')
 	)
 });
