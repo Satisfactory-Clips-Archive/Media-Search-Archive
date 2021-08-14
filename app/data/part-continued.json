@@ -1,4 +1,58 @@
 {
+    "ejFvm7ESxk0": {
+        "previous": null,
+        "next": "K5YpKYuj2W0",
+        "title": "Jace Talk: Golf (Part 1)",
+        "date": "2021-08-10"
+    },
+    "K5YpKYuj2W0": {
+        "previous": "ejFvm7ESxk0",
+        "next": "_puACB8clXQ",
+        "title": "Jace Talk: Golf (Part 2)",
+        "date": "2021-08-10"
+    },
+    "_puACB8clXQ": {
+        "previous": "K5YpKYuj2W0",
+        "next": "JvloiZrUmgs",
+        "title": "Jace Talk: Golf (Part 3)",
+        "date": "2021-08-10"
+    },
+    "JvloiZrUmgs": {
+        "previous": "_puACB8clXQ",
+        "next": "1YsAHChZmrs",
+        "title": "Jace Talk: Golf (Part 4)",
+        "date": "2021-08-10"
+    },
+    "1YsAHChZmrs": {
+        "previous": "JvloiZrUmgs",
+        "next": "SN1SSlPdSUo",
+        "title": "Jace Talk: Golf (Part 5)",
+        "date": "2021-08-10"
+    },
+    "SN1SSlPdSUo": {
+        "previous": "1YsAHChZmrs",
+        "next": "DFibHuakmB0",
+        "title": "Jace Talk: Golf (Part 6)",
+        "date": "2021-08-10"
+    },
+    "3WrMpHoUWFM": {
+        "previous": null,
+        "next": "F00TKCiz4RY",
+        "title": "Q&A: It is a myth that you can finish Satisfactory in 1000 hours? (Part 1)",
+        "date": "2021-08-10"
+    },
+    "F00TKCiz4RY": {
+        "previous": "3WrMpHoUWFM",
+        "next": null,
+        "title": "Q&A: It is a myth that you can finish Satisfactory in 1000 hours? (Part 2)",
+        "date": "2021-08-10"
+    },
+    "DFibHuakmB0": {
+        "previous": "SN1SSlPdSUo",
+        "next": null,
+        "title": "Jace Talk: Golf (Part 7)",
+        "date": "2021-08-10"
+    },
     "8unTVigMkpU": {
         "previous": null,
         "next": "WrLwZOzni3o",

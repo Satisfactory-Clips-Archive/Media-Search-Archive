@@ -1171,6 +1171,9 @@ $global_topic_hierarchy = [
 		'Pending',
 		'Satisfactory Update 5',
 	],
+	'PLbjDnnBIxiEq2WihzbvSUt1YdFzZ4CBP8' => [ // Meza
+		'Community',
+	],
 ];
 
 $not_a_livestream = [
