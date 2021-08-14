@@ -289,7 +289,7 @@ gulp.task('sitemap', () => {
 		'./dist/**/*.html'
 	).pipe(
 		sitemap({
-			siteUrl: 'https://archive.satisfactory.video/'
+			siteUrl: 'https://archive.satisfactory.video/',
 		})
 	).pipe(
 		gulp.dest('./tmp')
