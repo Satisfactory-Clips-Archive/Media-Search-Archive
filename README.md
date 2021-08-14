@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-08-14
+* Added tool to auto swap seealso entries (useful for when the parent entry for a list of duplicates has changed)
+
 ## 2021-08-04
 * Amended auto-WebPage types in structured data handler
 * Assigned url to WebPage types lacking an url
