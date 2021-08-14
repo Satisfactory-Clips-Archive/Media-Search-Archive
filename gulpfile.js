@@ -286,7 +286,7 @@ gulp.task('sync-favicon', () => {
 
 gulp.task('sitemap', () => {
 	return gulp.src(
-		'./tmp/**/*.html'
+		'./dist/**/*.html'
 	).pipe(
 		sitemap({
 			siteUrl: 'https://archive.satisfactory.video/'
@@ -426,13 +426,15 @@ gulp.task('build', gulp.series(...[
 	'lunr-clean',
 	'rev',
 	'html',
-	'sitemap',
 	gulp.parallel(
 		...brotli_subtasks
 	),
 	gulp.parallel(
 		'sync-favicon',
 	),
+	'sync-tmp-to-store',
+	'sitemap',
+	'brotli--most-everything',
 	'sync-tmp-to-store',
 ]));
 

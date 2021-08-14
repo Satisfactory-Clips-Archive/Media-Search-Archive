@@ -13,6 +13,7 @@ Static site generator for
 ## 2021-08-14
 * Added tool to auto swap seealso entries (useful for when the parent entry for a list of duplicates has changed)
 * Added suggested wiki reference code
+* Tweaked sitemap generation process
 
 ## 2021-08-04
 * Amended auto-WebPage types in structured data handler
