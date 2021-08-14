@@ -355,32 +355,53 @@ gulp.task('images-svg-conversion', async (cb) => {
 	cb();
 });
 
+const webp_options = {
+	preprocessOptions: {
+		resize: {
+			enabled: false,
+			premultiply: true,
+			linearRGB: true,
+		},
+	},
+	encodeOptions: {
+		webp: {
+			lossless: 1,
+			near_lossless: 50,
+			effort: 9,
+		},
+	},
+}
+
 gulp.task('images-svg--background--flannel', () => {
+	const squoosh_options = Object.assign({}, webp_options);
+
+	squoosh_options.preprocessOptions.resize.width = 504;
+	squoosh_options.preprocessOptions.resize.height = 504;
+
 	return gulp.src(
 		'./images-ref/red-flannel/12951396883_d05fb22ed8_o.webp'
 	).pipe(
-		squoosh({
-			preprocessOptions: {
-				resize: {
-					enabled: true,
-					width: 504,
-					height: 504,
-					premultiply: true,
-					linearRGB: true,
-				},
-			},
-			encodeOptions: {
-				webp: {
-					lossless: 1,
-					near_lossless: 50,
-					effort: 9,
-				},
-			},
-		})
+		squoosh(squoosh_options)
 	).pipe(
 		rename('flannel--bg.webp')
 	).pipe(gulp.dest(
 		'./images/internal/content/topics/coffee-stainers/'
+	))
+});
+
+gulp.task('images-svg--background--golf', () => {
+	const squoosh_options = Object.assign({}, webp_options);
+
+	squoosh_options.preprocessOptions.resize.height = 504;
+
+	return gulp.src(
+		'./images-ref/golf-2571830/golf-2571830.jpg'
+	).pipe(
+		squoosh(squoosh_options)
+	).pipe(
+		rename('golf--bg.webp')
+	).pipe(gulp.dest(
+		'./images/internal/content/topics/features/requested-features/'
 	))
 });
 
