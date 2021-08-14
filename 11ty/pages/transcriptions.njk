@@ -95,6 +95,13 @@ layout: transcriptions
 </details>{%
 			endif
 %}{%
+			if (transcript.id.startsWith('yt-'))
+%}<details>
+	<summary>Suggested Wiki Reference Code</summary>
+	<code>&lt;ref name="{{transcript.id}}"&gt;[{{transcript.url}} YouTube - {{transcript.dateTitle}} - {{transcript.title}}]&lt;/ref&gt;</code>
+</details>{%
+			endif
+%}{%
 	if transcript.topics.length > 0
 %}
 <h3>Topics</h3>
