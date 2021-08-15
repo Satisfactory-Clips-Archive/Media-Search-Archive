@@ -438,18 +438,20 @@ gulp.task('chart--all-topics', async (cb) => {
 			}" width="16" height="${
 				height_a
 			}"><title>${
-				e[0]
-			}: ${
 				e[1][0]
-			} clips</title></rect><rect class="qna" x="${
+			} Total clips for ${
+				e[0]
+			}</title></rect><rect class="qna" x="${
 				32 + (i * 32)}" y="${
 					32 + ((max * 16) - height_b)
 			}" width="16" height="${
 				height_b
 			}"><title>${
-				e[0]
-			}: ${
 				e[1][1]
+			} questions of ${
+				e[1][0]
+			} total clips for ${
+				e[0]
 			} questions</title></rect></g>`
 	});
 
