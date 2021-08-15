@@ -415,6 +415,75 @@ gulp.task('images-svg', gulp.series(...[
 	'images-svg-conversion--png',
 ]));
 
+gulp.task('chart--all-topics', async (cb) => {
+	const data = JSON.parse(readFileSync(
+		`${__dirname}/app/data/dated-video-statistics.json`
+	));
+
+	const entries = Object.entries(data);
+
+	let max = 0;
+
+	entries.forEach((e) => {
+		max = Math.max(max, e[1][0], e[1][1]);
+	});
+
+	const bars = entries.map((e, i) => {
+		const height_a = e[1][0] * 16;
+		const height_b = e[1][1] * 16;
+
+		return `<g><rect class="all" x="${
+			32 + (i * 32)}" y="${
+				32 + ((max * 16) - height_a)
+			}" width="16" height="${
+				height_a
+			}"><title>${
+				e[0]
+			}: ${
+				e[1][0]
+			} clips</title></rect><rect class="qna" x="${
+				32 + (i * 32)}" y="${
+					32 + ((max * 16) - height_b)
+			}" width="16" height="${
+				height_b
+			}"><title>${
+				e[0]
+			}: ${
+				e[1][1]
+			} questions</title></rect></g>`
+	});
+
+	const svg_width = 32 + (entries.length * 32) + 32;
+	const svg_height = (max * 16) + 64;
+
+	const svg = `<svg width="${
+			svg_width
+		}" height="${
+			svg_height
+		}" viewbox="0 0 ${
+			svg_width
+		} ${
+			svg_height
+		}"
+		preserveAspectRatio="none"
+		xmlns="http://www.w3.org/2000/svg"><style>${
+			[
+				'.all{ fill:#fa9549; }',
+				'.qna{ fill:#5f668c; }',
+			].join('\n')
+		}</style>${bars.join('\n')}</svg>`;
+
+	writeFileSync(`${__dirname}/11ty/charts/stats.svg`, svg);
+
+	cb();
+});
+
+const charts = [
+	'chart--all-topics',
+];
+
+gulp.task('charts', gulp.parallel(...charts));
+
 gulp.task('build', gulp.series(...[
 	'lunr-index',
 	gulp.parallel(

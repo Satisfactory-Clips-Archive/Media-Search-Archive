@@ -1980,6 +1980,9 @@ $lines = [
 
 $grouped = [];
 
+/** @var array<string, array{0:int, 1:int}> */
+$total_statistics = [];
+
 $sortable = [];
 
 foreach ($playlists as $filename) {
@@ -1999,6 +2002,11 @@ foreach ($playlists as $filename) {
 	}
 
 	$grouped[$year][$readable_month][] = [$readable_date, basename($filename), $unix];
+
+	$total_statistics[date('Y-m-d', $unix)] = [
+		0,
+		0,
+	];
 }
 
 $grouped = array_reverse($grouped, true);
@@ -2063,5 +2071,32 @@ foreach ($sortable as $year => $months) {
 }
 
 file_put_contents($file_path, implode('', $lines));
+
+foreach (filter_video_ids_for_legacy_alts($cache, ...$all_video_ids) as $video_id) {
+	$date = date('Y-m-d', strtotime(determine_date_for_video(
+		$video_id,
+		$cache['playlists'],
+		$dated_playlists
+	)));
+
+	if ( ! isset($total_statistics[$date])) {
+		throw new UnexpectedValueException(
+			'Video found without prefilled statistics date!'
+		);
+	}
+
+	$total_statistics[$date][0] += 1;
+
+	if (preg_match(Questions::REGEX_IS_QUESTION, $cache['playlistItems'][$video_id][1])) {
+		$total_statistics[$date][1] += 1;
+	}
+}
+
+ksort($total_statistics);
+
+file_put_contents(
+	__DIR__ . '/data/dated-video-statistics.json',
+	json_encode_pretty($total_statistics)
+);
 
 echo sprintf('completed in %s seconds', time() - $stat_start), "\n";

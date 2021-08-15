@@ -1,8 +1,8 @@
 {
   "scripts": {
     "error_docs": "eleventy --config=./.eleventy.error_docs.js && gulp html-error_docs",
-    "update": "php app/app.php && php app/update-q-and-a.php && php app/part-continued.php && php app/lunr-docs-preload.php && php app/statistics.php",
-		"images-svg": "eleventy --config=./.eleventy.images.js && gulp images-svg",
+    "update": "php app/app.php && php app/update-q-and-a.php && php app/part-continued.php && php app/lunr-docs-preload.php && php app/statistics.php && gulp charts",
+    "images-svg": "eleventy --config=./.eleventy.images.js && gulp images-svg",
     "build": "npm run -s update && gulp topics && npm run -s images-svg && eleventy && eleventy --config=./.eleventy.pages.js && gulp build"
   },
   "dependencies": {
@@ -11,6 +11,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "cssnano": "^4.1.10",
+    "eleventy-plugin-svg-contents": "^0.7.0",
     "glob": "^7.1.7",
     "gulp": "^4.0.2",
     "gulp-brotli": "^3.0.0",

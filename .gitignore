@@ -40,3 +40,5 @@
 /images-tmp/
 /11ty/img-data/topicStatistics.json
 /app/data/video-playlists.json
+/11ty/charts/
+/app/data/dated-video-statistics.json

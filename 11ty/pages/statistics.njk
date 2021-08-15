@@ -26,7 +26,26 @@ date: Last Modified
 {% endfor %}
 		</tbody>
 	</table>
+	<section>
+		<h1>Clips vs. Questions over time</h1>
+		{{ ' ../../11ty/charts/stats.svg' | svgContents | safe }}
+	</section>
 	<style>
+	svg
+	{
+		background: #e5e7f1;
+		width: 100% ;
+		max-height: 40vh ;
+	}
+
+	@media (prefers-color-scheme: dark)
+	{
+		svg
+		{
+			background: #828282 ;
+		}
+	}
+
 	th:first-child
 	{
 		text-align: right ;

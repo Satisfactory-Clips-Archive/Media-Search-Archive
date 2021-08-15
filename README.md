@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-08-15
+* Experimenting with bar charts for statistics
+
 ## 2021-08-14
 * Added tool to auto swap seealso entries (useful for when the parent entry for a list of duplicates has changed)
 * Added suggested wiki reference code
