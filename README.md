@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-08-16
+* Experimenting with per-topic statistics
+
 ## 2021-08-15
 * Experimenting with bar charts for statistics
 

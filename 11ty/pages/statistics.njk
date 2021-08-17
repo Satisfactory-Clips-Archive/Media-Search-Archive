@@ -26,21 +26,24 @@ date: Last Modified
 {% endfor %}
 		</tbody>
 	</table>
-	<section>
-		<h1>Total Clips per day <abbr title="versus">vs.</abbr> Questions per day.</h1>
-		{{ ' ../../11ty/charts/stats.svg' | svgContents | safe }}
-	</section>
 	<style>
-	svg
+	svg,
+	img[src$=".svg"]
 	{
 		background: #e5e7f1;
 		width: 100% ;
 		max-height: 40vh ;
 	}
 
+	h3 > a:not(:last-child)::after
+	{
+		content: ' > ' ;
+	}
+
 	@media (prefers-color-scheme: dark)
 	{
-		svg
+		svg,
+		img[src$=".svg"]
 		{
 			background: #828282 ;
 		}
@@ -56,4 +59,18 @@ date: Last Modified
 		padding: .25rem ;
 	}
 	</style>
+	<section>
+		<h1>Total Clips per day <abbr title="versus">vs.</abbr> Questions per day.</h1>
+		{{ ' ../../11ty/charts/stats.svg' | svgContents | safe }}
+		<h2>Total Clips per topic per day <abbr title="versus">vs.</abbr> Questions per topic per day.</h2>
+{% for topic_chart in topic_charts %}
+		<h3>{% for topic_slug, topic_text in topic_chart[0] %}<a href="/topics/{{ topic_slug }}/">{{topic_text}}</a>{% endfor %}</h3>
+		<img
+			src="/statistics/charts/topics/{{topic_chart[1]}}.svg"
+			width="{{topic_chart[2]}}"
+			height="{{topic_chart[3]}}"
+		>
+{% endfor %}
+		</section>
+	</section>
 </section>

@@ -131,7 +131,7 @@ gulp.task('css', () => {
 });
 
 gulp.task('rev', () => {
-	return gulp.src('./src/**/*.{js,json,css}').pipe(
+	return gulp.src('./src/**/*.{js,json,css,svg}').pipe(
 		rev()
 	).pipe(
 		gulp.dest('./tmp/')
@@ -204,6 +204,7 @@ const brotli_subtasks = [
 	'brotli--most-everything',
 	'brotli--json',
 	'brotli--html',
+	'brotli--svg',
 ];
 
 gulp.task('brotli--most-everything', () => {
@@ -216,6 +217,10 @@ gulp.task('brotli--json', () => {
 
 gulp.task('brotli--html', () => {
 	return make_brotli_task('./tmp/**/*.html');
+});
+
+gulp.task('brotli--svg', () => {
+	return make_brotli_task('./tmp/**/*.svg');
 });
 
 gulp.task('zopfli', () => {
@@ -326,7 +331,7 @@ gulp.task('q-and-a-tracking', (cb) => {
 });
 
 gulp.task('sync-tmp-to-store', () => {
-	return gulp.src('./tmp/**/*.{js,css,html,json,xml,gz,br}').pipe(
+	return gulp.src('./tmp/**/*.{js,css,html,json,xml,svg,gz,br}').pipe(
 		changed(
 			'./dist/',
 			{
@@ -480,8 +485,86 @@ gulp.task('chart--all-topics', async (cb) => {
 	cb();
 });
 
+gulp.task('chart--separate-topics', (cb) => {
+	const data = JSON.parse(readFileSync(
+		`${__dirname}/app/data/dated-topic-statistics.json`,
+	));
+
+	const processed = Object.entries(data).map((entry) => {
+		const entries = Object.entries(entry[1][1]);
+
+		let max = 0;
+
+		entries.forEach((e) => {
+			max = Math.max(max, e[1][0], e[1][1]);
+		});
+
+		const bars = entries.map((e, i) => {
+			const height_a = e[1][0] * 16;
+			const height_b = e[1][1] * 16;
+
+			return `<g><rect class="all" x="${
+				32 + (i * 32)}" y="${
+					32 + ((max * 16) - height_a)
+				}" width="16" height="${
+					height_a
+				}"><title>${
+					e[1][0]
+				} Total clips for ${
+					e[0]
+				}</title></rect><rect class="qna" x="${
+					32 + (i * 32)}" y="${
+						32 + ((max * 16) - height_b)
+				}" width="16" height="${
+					height_b
+				}"><title>${
+					e[1][1]
+				} questions of ${
+					e[1][0]
+				} total clips for ${
+					e[0]
+				} questions</title></rect></g>`
+		});
+
+		const svg_width = 32 + (entries.length * 32) + 32;
+		const svg_height = (max * 16) + 64;
+
+		const svg = `<svg width="${
+				svg_width
+			}" height="${
+				svg_height
+			}" viewbox="0 0 ${
+				svg_width
+			} ${
+				svg_height
+			}"
+			preserveAspectRatio="none"
+			xmlns="http://www.w3.org/2000/svg"><style>${
+				[
+					'.all{ fill:#fa9549; }',
+					'.qna{ fill:#5f668c; }',
+				].join('\n')
+			}</style>${bars.join('\n')}</svg>`;
+
+		writeFileSync(
+			`${__dirname}/src/statistics/charts/topics/${entry[0]}.svg`,
+			svg
+		);
+
+		return [entry[1][0], entry[0], svg_width, svg_height];
+	});
+
+	writeFileSync(
+		`${__dirname}/11ty/data/topic_charts.json`,
+		JSON.stringify(processed)
+	);
+
+	cb();
+});
+
 const charts = [
 	'chart--all-topics',
+	'chart--separate-topics',
 ];
 
 gulp.task('charts', gulp.parallel(...charts));

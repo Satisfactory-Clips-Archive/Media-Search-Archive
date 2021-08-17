@@ -2009,6 +2009,8 @@ foreach ($playlists as $filename) {
 	];
 }
 
+ksort($total_statistics);
+
 $grouped = array_reverse($grouped, true);
 
 $grouped = array_map(
@@ -2072,6 +2074,96 @@ foreach ($sortable as $year => $months) {
 
 file_put_contents($file_path, implode('', $lines));
 
+/**
+ * @var array<
+ *	string,
+ *	array{
+ *		0:array<string, string>,
+ *		1:array<string, array{0:int, 1:int}>
+ *	}
+ * >
+ */
+$topic_statistics = [];
+
+$undated_topic_ids = array_filter(
+	$all_topic_ids,
+	static function (string $maybe) use($dated_playlists) : bool {
+		return ! isset($dated_playlists[$maybe]);
+	}
+);
+
+usort($undated_topic_ids, static function (
+	string $a,
+	string $b
+) use ($topic_nesting, $cache) : int {
+	/**
+	 * @var null|array{
+	 *	children: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }
+	 */
+	$nested_a = $topic_nesting[$a] ?? null;
+
+	/**
+	 * @var null|array{
+	 *	children: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }
+	 */
+	$nested_b = $topic_nesting[$b] ?? null;
+
+	if ( ! isset($nested_a, $nested_b)) {
+		return strnatcasecmp(
+			$cache['playlists'][$a][1] ?? $a,
+			$cache['playlists'][$b][1] ?? $b
+		);
+	}
+
+	return
+		$nested_a['left']
+		- $nested_b['left'];
+});
+
+foreach ($undated_topic_ids as $topic_id) {
+	[$slug_string, $slug] = topic_to_slug(
+		$topic_id,
+		$cache,
+		$global_topic_hierarchy,
+		$slugify
+	);
+
+	$slug_breadcrumbs = [];
+
+	$sub_slugs = [];
+
+	foreach (explode('/', $slug_string) as $sub_slug) {
+		$sub_slugs[] = $sub_slug;
+
+		$sub_slug_string = implode('/', $sub_slugs);
+
+		if ( ! isset($playlist_topic_strings_reverse_lookup[$sub_slug_string])) {
+			throw new UnexpectedValueException('Could not find topic id!');
+		}
+
+		$slug_breadcrumbs[$sub_slug_string] = determine_topic_name(
+			$playlist_topic_strings_reverse_lookup[$sub_slug_string],
+			$cache
+		);
+	}
+
+	$topic_statistics[$topic_id] = [
+		$slug_breadcrumbs,
+		array_combine(
+			array_keys($total_statistics),
+			array_values($total_statistics)
+		),
+	];
+}
+
 foreach (filter_video_ids_for_legacy_alts($cache, ...$all_video_ids) as $video_id) {
 	$date = date('Y-m-d', strtotime(determine_date_for_video(
 		$video_id,
@@ -2087,16 +2179,33 @@ foreach (filter_video_ids_for_legacy_alts($cache, ...$all_video_ids) as $video_i
 
 	$total_statistics[$date][0] += 1;
 
+	$is_question = false;
+
 	if (preg_match(Questions::REGEX_IS_QUESTION, $cache['playlistItems'][$video_id][1])) {
+		$is_question = true;
+
 		$total_statistics[$date][1] += 1;
 	}
-}
 
-ksort($total_statistics);
+	foreach ($video_playlists[$video_id] as $topic_id) {
+		if (isset($topic_statistics[$topic_id])) {
+			$topic_statistics[$topic_id][1][$date][0] += 1;
+
+			if ($is_question) {
+				$topic_statistics[$topic_id][1][$date][1] += 1;
+			}
+		}
+	}
+}
 
 file_put_contents(
 	__DIR__ . '/data/dated-video-statistics.json',
 	json_encode_pretty($total_statistics)
+);
+
+file_put_contents(
+	__DIR__ . '/data/dated-topic-statistics.json',
+	json_encode_pretty($topic_statistics)
 );
 
 echo sprintf('completed in %s seconds', time() - $stat_start), "\n";
