@@ -9,7 +9,7 @@
     },
     {
         "title": "Number of days worth of source streams & videos indexed",
-        "count": 134
+        "count": 135
     },
     {
         "title": "Clips probably having standard description",
@@ -18,8 +18,8 @@
     },
     {
         "title": "Clips with any transcription",
-        "progress": "0.850471",
-        "percentage": "85.04"
+        "progress": "0.850241",
+        "percentage": "85.02"
     },
     {
         "title": "Clips with structured transcription",
