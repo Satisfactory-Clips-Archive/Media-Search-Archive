@@ -1174,6 +1174,12 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiEq2WihzbvSUt1YdFzZ4CBP8' => [ // Meza
 		'Community',
 	],
+	'PLbjDnnBIxiEpUYS6KsdUeKIGxi-NsEL_0' => [ // Unplanned Features
+		'Features',
+	],
+	'PLbjDnnBIxiErA3azFQ6tmG_bui881Xkpm' => [ // I Love Strawberries
+		'Off-Topic',
+	],
 ];
 
 $not_a_livestream = [
@@ -1290,9 +1296,6 @@ $injected_global_topic_hierarchy = [
 		'Features',
 	],
 	'Possible Features' => [
-		'Features',
-	],
-	'Unplanned Features' => [
 		'Features',
 	],
 	'Unreleased Features' => [
