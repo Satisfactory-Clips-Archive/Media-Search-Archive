@@ -58,19 +58,98 @@ date: Last Modified
 	{
 		padding: .25rem ;
 	}
+
+	fieldset,
+	fieldset ol
+	{
+		padding: .5rem ;
+	}
+
+	fieldset > fieldset > ol
+	{
+		max-height: 40vh ;
+		overflow: auto ;
+		display: flex ;
+		flex-direction: column ;
+	}
+
+	li.checked
+	{
+		order: 0 ;
+	}
+
+	li:not(.checked)
+	{
+		order: 1 ;
+	}
 	</style>
-	<section>
+	<section id="topic-charts">
 		<h1>Total Clips per day <abbr title="versus">vs.</abbr> Questions per day.</h1>
 		{{ ' ../../11ty/charts/stats.svg' | svgContents | safe }}
-		<h2>Total Clips per topic per day <abbr title="versus">vs.</abbr> Questions per topic per day.</h2>
-{% for topic_chart in topic_charts %}
-		<h3>{% for topic_slug, topic_text in topic_chart[0] %}<a href="/topics/{{ topic_slug }}/">{{topic_text}}</a>{% endfor %}</h3>
-		<img
-			src="/statistics/charts/topics/{{topic_chart[1]}}.svg"
-			width="{{topic_chart[2]}}"
-			height="{{topic_chart[3]}}"
-		>
-{% endfor %}
+		<link rel="preload" as="fetch" href="/data/dated-topic-statistics.json">
+		<section id="topic-charts-controls">
+			<p>JavaScript is required for this application to function.</p>
+			<p>If you can still see this notice,
+				then the application is either not ready,
+				or your browser is not supported.</p>
 		</section>
+		<script async type="module" src="/statistics/statistics.js"></script>
+		<template id="bars">
+			<svg>
+				<g>
+					<rect class="all" x="0" y="0" width="16" height="0">
+						<title></title>
+					</rect>
+					<rect class="qna" x="0" y="0" width="16" height="0">
+						<title></title>
+					</rect>
+				</g>
+			</svg>
+		</template>
+		<template id="svg">
+			<svg
+				width="0"
+				height="0"
+				viewbox="0 0 0 0"
+				preserveAspectRatio="none"
+				xmlns="http://www.w3.org/2000/svg"
+				title="foo"
+			>
+				<style>
+					.all
+					{
+						fill: #fa9549 ;
+					}
+					.qna
+					{
+						fill: #5f668c ;
+					}
+				</style>
+			</svg>
+		</template>
+		<template id="checkbox">
+			<li>
+				<input
+					id=""
+					name="topic[]"
+					value=""
+					type="checkbox"
+				>
+				<label for=""></label>
+			</li>
+		</template>
+		<template id="controls">
+			<form>
+				<button data-action="update" type="button" title="Reload Chart">🔃</button>
+				<fieldset>
+					<legend>Topic Statistics Controls</legend>
+					<fieldset>
+						<legend>Topics</legend>
+						<ol id="topic-checkboxes"></ol>
+					</fieldset>
+				</fieldset>
+				<button data-action="update" type="button" title="Reload Chart">🔃</button>
+			</form>
+		</template>
 	</section>
 </section>

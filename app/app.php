@@ -2208,4 +2208,9 @@ file_put_contents(
 	json_encode_pretty($topic_statistics)
 );
 
+file_put_contents(
+	__DIR__ . '/../src/data/dated-topic-statistics.json',
+	json_encode($topic_statistics)
+);
+
 echo sprintf('completed in %s seconds', time() - $stat_start), "\n";

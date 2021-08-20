@@ -564,7 +564,9 @@ gulp.task('chart--separate-topics', (cb) => {
 
 const charts = [
 	'chart--all-topics',
+	/*
 	'chart--separate-topics',
+	*/
 ];
 
 gulp.task('charts', gulp.parallel(...charts));
