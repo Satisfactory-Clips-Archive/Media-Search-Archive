@@ -33,9 +33,10 @@ const prom = {
 	readFile: promisify(readFile),
 };
 const svgToImg = require('svg-to-img');
+const squoosh = require('gulp-libsquoosh');
 
 const synonyms = require('./app/synonyms.json');
-const squoosh = require('gulp-libsquoosh');
+
 const synonym_keys = Object.keys(synonyms);
 
 function aliasSatisfactoryVocabulary(builder) {
