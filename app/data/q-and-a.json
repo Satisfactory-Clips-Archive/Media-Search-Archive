@@ -4714,7 +4714,7 @@
         "title": "Q&A: Fences that can go around corners?",
         "date": "2021-07-20",
         "topics": [
-            "features\/buildables"
+            "features\/buildables\/railings"
         ],
         "seealso": [
             "t8yHcCZPSF4"
@@ -6140,22 +6140,19 @@
         "title": "Q&A: When will we have fences for ramps?",
         "date": "2021-07-13",
         "topics": [
-            "features\/buildables\/foundations"
+            "features\/buildables\/foundations",
+            "features\/buildables\/railings"
         ],
         "duplicates": [
-            "0-3ITfkBKZw",
-            "96m9d5aWQtY",
             "cXFXfI1lRDs",
             "F4RJIokIzlY",
             "JVp03wXCxWY",
-            "LFH3YB0pV24",
-            "Nf6bTwsv-_w",
-            "UK0P7CWe1V4",
+            "R2e5PQBCJRc",
             "ZpYMIZFGegw"
         ],
         "seealso": [
-            "R2e5PQBCJRc",
-            "RFKNtwyObH4"
+            "RFKNtwyObH4",
+            "UK0P7CWe1V4"
         ]
     },
     "3xmta8wRxz8": {
@@ -10991,6 +10988,7 @@
         "date": "2021-06-08",
         "topics": [
             "features\/buildables\/foundations",
+            "features\/buildables\/railings",
             "features\/buildables\/walls",
             "features\/possible-features\/decor"
         ],
@@ -14034,11 +14032,10 @@
         "title": "Q&A: Will there be sloped frame foundations?",
         "date": "2021-05-11",
         "topics": [
-            "features\/buildables\/foundations"
+            "features\/buildables\/foundations",
+            "features\/buildables\/railings"
         ],
-        "seealso": [
-            "t8yHcCZPSF4"
-        ]
+        "duplicatedby": "t8yHcCZPSF4"
     },
     "nYtAQHDSH1Q": {
         "title": "Q&A: Did you ever try that PB&J?",
@@ -16002,7 +15999,7 @@
         "title": "Q&A: Any news on ramp fences?",
         "date": "2021-04-27",
         "topics": [
-            "features\/buildables\/walls"
+            "features\/buildables\/railings"
         ],
         "duplicatedby": "t8yHcCZPSF4"
     },
@@ -16707,7 +16704,7 @@
         "topics": [
             "features\/buildables\/walls"
         ],
-        "duplicatedby": "t8yHcCZPSF4"
+        "duplicatedby": "96m9d5aWQtY"
     },
     "A0eW8XU9Dgc": {
         "title": "Q&A: Can you make the hologram outline a little thicker?",
@@ -18848,7 +18845,7 @@
         "title": "Q&A: Tilted fences?",
         "date": "2021-03-30",
         "topics": [
-            "features\/buildables\/walls"
+            "features\/buildables\/railings"
         ],
         "duplicatedby": "t8yHcCZPSF4"
     },
@@ -19273,7 +19270,7 @@
         "date": "2021-03-23",
         "topics": [
             "features\/buildables\/foundations",
-            "features\/buildables\/walls"
+            "features\/buildables\/railings"
         ],
         "duplicatedby": "t8yHcCZPSF4"
     },
@@ -19818,7 +19815,15 @@
             "features\/buildables\/foundations",
             "features\/buildables\/walls"
         ],
-        "duplicatedby": "t8yHcCZPSF4"
+        "duplicates": [
+            "0-3ITfkBKZw",
+            "Nf6bTwsv-_w"
+        ],
+        "seealso": [
+            "t8yHcCZPSF4",
+            "UK0P7CWe1V4",
+            "ZpYMIZFGegw"
+        ]
     },
     "EcuPtUGKdBc": {
         "title": "Q&A: I like the MK+ mod, any plan to make it in vanilla?",
@@ -24582,7 +24587,13 @@
             "features\/buildables\/foundations",
             "features\/buildables\/walls"
         ],
-        "duplicatedby": "t8yHcCZPSF4"
+        "duplicates": [
+            "LFH3YB0pV24"
+        ],
+        "seealso": [
+            "96m9d5aWQtY",
+            "t8yHcCZPSF4"
+        ]
     },
     "Wp15rkFmIS8": {
         "title": "Q&A: Why Jace & Snutt?",
@@ -28834,7 +28845,7 @@
             "features\/buildables\/walls",
             "features\/fluids\/pipes"
         ],
-        "duplicatedby": "t8yHcCZPSF4"
+        "duplicatedby": "UK0P7CWe1V4"
     },
     "TYZBVCcqLzg": {
         "title": "Q&A: Will Hyper Tube cannons be broken by the Engine Upgrade?",
@@ -29944,7 +29955,7 @@
         "topics": [
             "features\/buildables\/walls"
         ],
-        "duplicatedby": "t8yHcCZPSF4"
+        "duplicatedby": "96m9d5aWQtY"
     },
     "KEJYlYO511Q": {
         "title": "Q&A: Is Console confirmed for Satisfactory?",
@@ -30436,6 +30447,9 @@
         "topics": [
             "features\/buildables\/walls",
             "technology\/user-interface"
+        ],
+        "seealso": [
+            "96m9d5aWQtY"
         ],
         "duplicatedby": "t8yHcCZPSF4"
     },
@@ -39965,6 +39979,7 @@
         "date": "2020-07-30",
         "topics": [
             "community\/haigen",
+            "features\/buildables\/railings",
             "mods"
         ],
         "seealso": [

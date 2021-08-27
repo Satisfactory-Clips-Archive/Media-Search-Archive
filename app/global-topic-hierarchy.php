@@ -1180,6 +1180,10 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiErA3azFQ6tmG_bui881Xkpm' => [ // I Love Strawberries
 		'Off-Topic',
 	],
+	'PLbjDnnBIxiEqASInsJuI3DFUgB2Tzv01M' => [ // Railings
+		'Features',
+		'Buildables',
+	],
 ];
 
 $not_a_livestream = [
