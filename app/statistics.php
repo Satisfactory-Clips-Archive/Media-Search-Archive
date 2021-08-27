@@ -52,9 +52,11 @@ $has_no_structured_data = array_keys(array_filter(
 	}
 ));
 
+natsort($has_no_structured_data);
+
 file_put_contents(
 	(__DIR__ . '/data/topic-has-no-structured-data.json'),
-	json_encode_pretty($has_no_structured_data)
+	json_encode_pretty(array_values($has_no_structured_data))
 );
 
 $skipping_transcriptions = count(json_decode(file_get_contents(
