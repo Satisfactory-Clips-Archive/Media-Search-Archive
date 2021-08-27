@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-08-24
+* Added structured data for Snutt Burger Time with image of tweet via Puppeteer
+
 ## 2021-08-20
 * Interactive per-topic statistics rather than separate charts
 

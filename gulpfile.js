@@ -34,6 +34,7 @@ const prom = {
 };
 const svgToImg = require('svg-to-img');
 const squoosh = require('gulp-libsquoosh');
+const puppeteer = require('puppeteer');
 
 const synonyms = require('./app/synonyms.json');
 
@@ -571,6 +572,36 @@ const charts = [
 ];
 
 gulp.task('charts', gulp.parallel(...charts));
+
+gulp.task('snutt-burger-time', async () => {
+	const browser = await puppeteer.launch();
+	const page = await browser.newPage();
+	await page.setViewport({
+		width: 1920,
+		height: 1080,
+	});
+	await page.goto(
+		'https://twitter.com/BustaSnutt/status/1430230082270937090',
+		{
+			waitUntil: 'networkidle0',
+		}
+	);
+	await page.evaluate(() => {
+		const buttons = document.querySelector('article [role="group"]');
+
+		buttons.parentNode.removeChild(buttons);
+	});
+	const tweet = await page.$('article');
+
+	const filename = `${
+		__dirname
+	}/images/internal/content/topics/coffee-stainers/snutt/snutt-burger-time--bg.png`;
+
+	return await tweet.screenshot({
+		path: filename,
+		type: 'png',
+	});
+});
 
 gulp.task('build', gulp.series(...[
 	'lunr-index',
