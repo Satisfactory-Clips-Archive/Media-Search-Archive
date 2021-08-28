@@ -1341,9 +1341,18 @@ function captions(
 
 	$chunks = [];
 
-	$process_chunks = static function (array $old, array $new) : array {
+	$process_chunks =
+		/**
+		 * @param list<string> $old
+		 * @param list<string> $new
+		 *
+		 * @return list<string>
+		 */
+		static function (array $old, array $new) : array {
+		/** @var list<string> */
 		$out = [];
 
+		/** @var list<string> */
 		$chunks = [];
 
 		foreach ($new as $line) {
@@ -1714,6 +1723,9 @@ function raw_captions(string $video_id) : array
 					is_array($text)
 					&& count($text) === count(array_filter($text, 'is_string'))
 				) {
+					/** @var list<string> */
+					$text = $text;
+
 					$text = implode('', $text);
 				}
 

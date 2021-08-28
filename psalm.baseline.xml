@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="4.8.1@f73f2299dbc59a3e6c4d66cff4605176e728ee69">
+<files psalm-version="4.9.3@4c262932602b9bbab5020863d1eb22d49de0dbf4">
   <file src="app/app.php">
     <ArgumentTypeCoercion occurrences="3">
       <code>$line[0]</code>
@@ -48,7 +48,7 @@
     <PossiblyUndefinedGlobalVariable occurrences="1">
       <code>$topic_id</code>
     </PossiblyUndefinedGlobalVariable>
-    <RedundantConditionGivenDocblockType occurrences="1">
+    <RedundantConditionGivenDocblockType occurrences="2">
       <code>$start</code>
     </RedundantConditionGivenDocblockType>
     <UndefinedClass occurrences="2">
@@ -205,10 +205,9 @@
       <code>$start ?: 0</code>
     </InvalidScalarArgument>
     <LessSpecificReturnStatement occurrences="1"/>
-    <MixedArgument occurrences="11">
+    <MixedArgument occurrences="10">
       <code>$caption_line['endTime']</code>
       <code>$caption_line['startTime']</code>
-      <code>$line</code>
       <code>$matches[1]</code>
       <code>$nodes[0]</code>
       <code>$nodes[0]</code>
@@ -234,10 +233,9 @@
       <code>$injected_cache['legacyAlts'][$legacyof]</code>
       <code>$injected_cache['legacyAlts'][$legacyof]</code>
     </MixedArrayOffset>
-    <MixedAssignment occurrences="6">
+    <MixedAssignment occurrences="5">
       <code>$cache[$video_id]</code>
       <code>$legacyof</code>
-      <code>$line</code>
       <code>$node</code>
       <code>$nodes[]</code>
       <code>$topic</code>
@@ -264,9 +262,6 @@
     <MixedReturnStatement occurrences="2">
       <code>$cache[$video_id]</code>
     </MixedReturnStatement>
-    <MixedReturnTypeCoercion occurrences="1">
-      <code>$lines</code>
-    </MixedReturnTypeCoercion>
     <MoreSpecificReturnType occurrences="1"/>
     <PossiblyNullReference occurrences="1">
       <code>attributes</code>
