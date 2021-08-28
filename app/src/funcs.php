@@ -1415,6 +1415,8 @@ function video_id_json_caption_source(string $video_id) : string
 
 /**
  * @param list<string> $video_ids
+ *
+ * @return list<string>
  */
 function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_expiry = false) : array
 {
@@ -3325,11 +3327,20 @@ function yt_cards_uncached(string $video_id) : array
 		}
 	}
 
+	/**
+	 * @var scalar|array|resource|null|object{
+	 *	cards?:object{
+	 *		cardCollectionRenderer?:object{
+	 *			cards?:scalar|array|object|resource|null
+	 *		}
+	 *	}
+	 * }
+	 */
 	$raw = json_decode($matches[1]);
 
 	if (
-		! isset(
-			$raw,
+		! is_object($raw)
+		|| ! isset(
 			$raw->cards,
 			$raw->cards->cardCollectionRenderer,
 			$raw->cards->cardCollectionRenderer->cards
@@ -3344,6 +3355,42 @@ function yt_cards_uncached(string $video_id) : array
 	 */
 	$preprocess = array_values(array_filter(
 		$raw->cards->cardCollectionRenderer->cards,
+		/**
+		 * @param object{
+		 *	cardRenderer?: object{
+		 *		teaser?: object{
+		 *			simpleCardTeaserRenderer?: object{
+		 *				message?: object{
+		 *					simpleText?:scalar|array|object|resource|null
+		 *				}
+		 *			}
+		 *		},
+		 *		cueRanges: null|array{
+		 *			0?: object{
+		 *				startCardActiveMs?:scalar|array|object|resource|null
+		 *			}
+		 *		},
+		 *		content?: object{
+		 *			videoInfoCardContentRenderer?: object{
+		 *				action?: object{
+		 *					watchEndpoint?: object{
+		 *						videoId?:scalar|array|object|resource|null
+		 *					}
+		 *				}
+		 *			},
+		 *			playlistInfoCardContentRenderer?: object{
+		 *				action?: object{
+		 *					watchEndpoint?: object{
+		 *						playlistId?: scalar|array|object|resource|null
+		 *					}
+		 *				}
+		 *			}
+		 *		}
+		 *	}
+		 * } $maybe
+		 *
+		 * @psalm-assert-if-true CARD $maybe
+		 */
 		static function (object $maybe) : bool {
 			return
 				isset(

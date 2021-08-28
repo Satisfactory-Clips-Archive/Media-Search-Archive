@@ -247,7 +247,7 @@
       <code>$start ?: 0</code>
     </InvalidScalarArgument>
     <LessSpecificReturnStatement occurrences="1"/>
-    <MixedArgument occurrences="12">
+    <MixedArgument occurrences="11">
       <code>$caption_line['endTime']</code>
       <code>$caption_line['startTime']</code>
       <code>$line</code>
@@ -259,7 +259,6 @@
       <code>$skipping</code>
       <code>$topic</code>
       <code>$topic</code>
-      <code>$video_id</code>
     </MixedArgument>
     <MixedArgumentTypeCoercion occurrences="1">
       <code>$video_ids</code>
@@ -277,15 +276,13 @@
       <code>$injected_cache['legacyAlts'][$legacyof]</code>
       <code>$injected_cache['legacyAlts'][$legacyof]</code>
     </MixedArrayOffset>
-    <MixedAssignment occurrences="8">
+    <MixedAssignment occurrences="6">
       <code>$cache[$video_id]</code>
       <code>$legacyof</code>
       <code>$line</code>
       <code>$node</code>
       <code>$nodes[]</code>
-      <code>$raw</code>
       <code>$topic</code>
-      <code>$video_id</code>
     </MixedAssignment>
     <MixedInferredReturnType occurrences="2">
       <code>array</code>
@@ -294,9 +291,8 @@
     <MixedMethodCall occurrences="1">
       <code>text</code>
     </MixedMethodCall>
-    <MixedPropertyFetch occurrences="19">
+    <MixedPropertyFetch occurrences="10">
       <code>$card-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action</code>
-      <code>$maybe-&gt;cardRenderer-&gt;content</code>
       <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer</code>
       <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer-&gt;action</code>
       <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer-&gt;action-&gt;watchEndpoint</code>
@@ -305,15 +301,7 @@
       <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action</code>
       <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action-&gt;watchEndpoint</code>
       <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action-&gt;watchEndpoint-&gt;videoId</code>
-      <code>$maybe-&gt;cardRenderer-&gt;cueRanges</code>
       <code>$maybe-&gt;cardRenderer-&gt;cueRanges[0]-&gt;startCardActiveMs</code>
-      <code>$maybe-&gt;cardRenderer-&gt;teaser</code>
-      <code>$maybe-&gt;cardRenderer-&gt;teaser-&gt;simpleCardTeaserRenderer</code>
-      <code>$maybe-&gt;cardRenderer-&gt;teaser-&gt;simpleCardTeaserRenderer-&gt;message</code>
-      <code>$maybe-&gt;cardRenderer-&gt;teaser-&gt;simpleCardTeaserRenderer-&gt;message-&gt;simpleText</code>
-      <code>$raw-&gt;cards</code>
-      <code>$raw-&gt;cards-&gt;cardCollectionRenderer</code>
-      <code>$raw-&gt;cards-&gt;cardCollectionRenderer-&gt;cards</code>
     </MixedPropertyFetch>
     <MixedReturnStatement occurrences="2">
       <code>$cache[$video_id]</code>
