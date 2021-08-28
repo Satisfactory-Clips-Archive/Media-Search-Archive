@@ -79,12 +79,6 @@
       <code>$slug[0]</code>
     </InvalidArrayOffset>
   </file>
-  <file src="app/src/Filtering.php">
-    <MixedArgument occurrences="2">
-      <code>$maybe['incoming_video_cards'] ?? []</code>
-      <code>$maybe['seealso_video_cards'] ?? []</code>
-    </MixedArgument>
-  </file>
   <file src="app/src/Injected.php">
     <InvalidPropertyAssignmentValue occurrences="1">
       <code>$prepared[1]</code>
@@ -101,11 +95,6 @@
     <LessSpecificReturnStatement occurrences="1">
       <code>$out</code>
     </LessSpecificReturnStatement>
-    <MixedArgument occurrences="3">
-      <code>$process[$video_id]['incoming_video_cards'] ?? []</code>
-      <code>$process[$video_id]['seealso_topic_cards'] ?? []</code>
-      <code>$process[$video_id]['seealso_video_cards'] ?? []</code>
-    </MixedArgument>
     <MoreSpecificReturnType occurrences="1">
       <code>list&lt;array{0:string, 1:string, 2:string, 3:string}&gt;</code>
     </MoreSpecificReturnType>
@@ -125,34 +114,6 @@
     </UnusedVariable>
   </file>
   <file src="app/src/Questions.php">
-    <InvalidArrayOffset occurrences="1">
-      <code>$existing[$video_id]['incoming_video_cards']</code>
-    </InvalidArrayOffset>
-    <MixedArgument occurrences="1">
-      <code>$cards[$video_id]</code>
-    </MixedArgument>
-    <MixedArrayAccess occurrences="4">
-      <code>$card[2]</code>
-      <code>$card[2]</code>
-      <code>$card[3]</code>
-      <code>$card[3]</code>
-    </MixedArrayAccess>
-    <MixedArrayOffset occurrences="3">
-      <code>$existing[$other_video_id]</code>
-      <code>$existing[$other_video_id]</code>
-      <code>$existing[$other_video_id]</code>
-    </MixedArrayOffset>
-    <MixedAssignment occurrences="5">
-      <code>$card</code>
-      <code>$cards</code>
-      <code>$other_video_id</code>
-      <code>$see_also_card_playlists[]</code>
-      <code>$see_also_card_videos[]</code>
-    </MixedAssignment>
-    <MixedReturnTypeCoercion occurrences="2">
-      <code>$existing</code>
-      <code>array&lt;string, DEFINITELY&gt;</code>
-    </MixedReturnTypeCoercion>
     <ReferenceConstraintViolation occurrences="1">
       <code>$cache</code>
     </ReferenceConstraintViolation>

@@ -39,6 +39,9 @@ use function usort;
  *	replacedby?:string,
  *	duplicatedby?:string,
  *	seealso?:list<string>,
+ *	seealso_video_cards?:list<string>,
+ *	seealso_topic_cards?:list<string>,
+ *	incoming_video_cards?:list<string>,
  *	legacyalts?:list<string>
  * }
  * @psalm-type DEFINITELY = array{
@@ -50,6 +53,9 @@ use function usort;
  *	replacedby?:string,
  *	duplicatedby?:string,
  *	seealso:list<string>,
+ *	seealso_video_cards?:list<string>,
+ *	seealso_topic_cards?:list<string>,
+ *	incoming_video_cards?:list<string>,
  *	legacyalts:list<string>
  * }
  */
@@ -84,6 +90,14 @@ class Questions
 			ARRAY_FILTER_USE_BOTH
 		);
 
+		/**
+		 * @var array<string, list<array{
+		 *	0:string,
+		 *	1:int,
+		 *	2:'video'|'playlist',
+		 *	3:string
+		 * }>>
+		 */
 		$cards = json_decode(
 			file_get_contents(__DIR__ . '/../data/info-cards.json'),
 			true
@@ -103,6 +117,9 @@ class Questions
 						'replaces',
 						'seealso',
 						'legacyalts',
+						'seealso_video_cards',
+						'seealso_topic_cards',
+						'incoming_video_cards',
 					] as $required
 				) {
 					$data[$required] = $data[$required] ?? [];
@@ -116,7 +133,9 @@ class Questions
 			$existing
 		);
 
-		foreach (array_keys($existing) as $video_id) {
+		$existing_keys = array_keys($existing);
+
+		foreach ($existing_keys as $video_id) {
 			unset(
 				$existing[$video_id]['seealso_video_cards'],
 				$existing[$video_id]['seealso_topic_cards'],
@@ -144,7 +163,7 @@ class Questions
 			}
 		}
 
-		foreach (array_keys($existing) as $video_id) {
+		foreach ($existing_keys as $video_id) {
 			if (isset($existing[$video_id]['seealso_video_cards'])) {
 				foreach ($existing[$video_id]['seealso_video_cards'] as $other_video_id) {
 					if ( ! isset($existing[$other_video_id])) {
