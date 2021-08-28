@@ -297,7 +297,7 @@ class Injected
 					 *	0:string,
 					 *	1:string,
 					 *	2:numeric-string,
-					 *	3:numeric-string
+					 *	3:numeric-string,
 					 *	4:string
 					 * }
 					 */

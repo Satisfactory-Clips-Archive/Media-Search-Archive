@@ -86,12 +86,9 @@
     </MixedArgument>
   </file>
   <file src="app/src/Injected.php">
-    <InvalidDocblock occurrences="1"/>
     <InvalidPropertyAssignmentValue occurrences="1">
       <code>$prepared[1]</code>
     </InvalidPropertyAssignmentValue>
-    <LessSpecificReturnStatement occurrences="1"/>
-    <MoreSpecificReturnType occurrences="1"/>
     <PropertyTypeCoercion occurrences="1">
       <code>$this-&gt;cache</code>
     </PropertyTypeCoercion>
