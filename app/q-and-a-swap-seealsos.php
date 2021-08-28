@@ -6,6 +6,8 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function in_array;
+
 require_once(__DIR__ . '/../vendor/autoload.php');
 
 [, $replace_this, $with_this] = $argv;

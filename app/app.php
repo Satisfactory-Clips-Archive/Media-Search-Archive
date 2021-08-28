@@ -2087,7 +2087,7 @@ $topic_statistics = [];
 
 $undated_topic_ids = array_filter(
 	$all_topic_ids,
-	static function (string $maybe) use($dated_playlists) : bool {
+	static function (string $maybe) use ($dated_playlists) : bool {
 		return ! isset($dated_playlists[$maybe]);
 	}
 );
@@ -2177,22 +2177,22 @@ foreach (filter_video_ids_for_legacy_alts($cache, ...$all_video_ids) as $video_i
 		);
 	}
 
-	$total_statistics[$date][0] += 1;
+	++$total_statistics[$date][0];
 
 	$is_question = false;
 
 	if (preg_match(Questions::REGEX_IS_QUESTION, $cache['playlistItems'][$video_id][1])) {
 		$is_question = true;
 
-		$total_statistics[$date][1] += 1;
+		++$total_statistics[$date][1];
 	}
 
 	foreach ($video_playlists[$video_id] as $topic_id) {
 		if (isset($topic_statistics[$topic_id])) {
-			$topic_statistics[$topic_id][1][$date][0] += 1;
+			++$topic_statistics[$topic_id][1][$date][0];
 
 			if ($is_question) {
-				$topic_statistics[$topic_id][1][$date][1] += 1;
+				++$topic_statistics[$topic_id][1][$date][1];
 			}
 		}
 	}

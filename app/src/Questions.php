@@ -55,7 +55,7 @@ use function usort;
  */
 class Questions
 {
-	const REGEX_IS_QUESTION = '/^(.+\ )?q&a:/i';
+	public const REGEX_IS_QUESTION = '/^(.+\ )?q&a:/i';
 
 	/**
 	 * @readonly
