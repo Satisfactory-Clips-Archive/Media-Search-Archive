@@ -76,6 +76,21 @@ file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
 
 echo sprintf('Written after %s seconds' . "\n", microtime(true) - $stat_start);
 
+$is_a_subsequent_part = array_keys(array_filter(
+	json_decode(file_get_contents(__DIR__ . '/data/part-continued.json'), true),
+	/**
+	 * @param array{
+	 *	previous:null|string,
+	 *	next:string,
+	 *	title:string,
+	 *	date:string
+	 * } $maybe
+	 */
+	static function (array $maybe) : bool {
+		return is_string($maybe['previous']);
+	}
+));
+
 $filtered = array_filter(
 	$existing,
 	static function (array $data) : bool {
@@ -83,6 +98,14 @@ $filtered = array_filter(
 			! in_array('trolling', $data['topics'] ?? [], true)
 			&& ! in_array('off-topic', $data['topics'] ?? [], true);
 	});
+
+$filtered = array_filter(
+	$filtered,
+	static function (string $maybe) use ($is_a_subsequent_part) : bool {
+		return ! in_array($maybe, $is_a_subsequent_part, true);
+	},
+	ARRAY_FILTER_USE_KEY
+);
 
 ob_start();
 
