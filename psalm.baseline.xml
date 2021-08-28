@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="4.8.1@f73f2299dbc59a3e6c4d66cff4605176e728ee69">
+  <file src="app/app.php">
+    <ArgumentTypeCoercion occurrences="3">
+      <code>$line[0]</code>
+      <code>$line[1]</code>
+      <code>$start</code>
+    </ArgumentTypeCoercion>
+    <DocblockTypeContradiction occurrences="1">
+      <code>'0'</code>
+    </DocblockTypeContradiction>
+    <InvalidArgument occurrences="7">
+      <code>$global_topic_hierarchy</code>
+      <code>$global_topic_hierarchy</code>
+      <code>$topic_nesting</code>
+      <code>$topic_nesting</code>
+      <code>$topic_nesting</code>
+      <code>$topic_nesting</code>
+    </InvalidArgument>
+    <InvalidCast occurrences="1">
+      <code>$caption_line</code>
+    </InvalidCast>
+    <InvalidThrow occurrences="2">
+      <code>throw new UnexpectedValueException('Could not find topic id!');</code>
+    </InvalidThrow>
+    <MixedArgument occurrences="4">
+      <code>$caption_line-&gt;attributes()</code>
+      <code>$caption_line['endTime']</code>
+      <code>$caption_line['startTime']</code>
+      <code>$topic_id</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="1"/>
+    <PossiblyInvalidArgument occurrences="4">
+      <code>$data['children']</code>
+      <code>$depth</code>
+      <code>$nesting_data['children']</code>
+      <code>$topic_nesting[$topic_ancestor_id]['children']</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidArrayAccess occurrences="1">
+      <code>$statistics[vendor_prefixed_video_id($video_id)]['likeCount']</code>
+    </PossiblyInvalidArrayAccess>
+    <PossiblyInvalidArrayAssignment occurrences="1">
+      <code>$topic_nesting[$topic_ancestor_id]['children'][]</code>
+    </PossiblyInvalidArrayAssignment>
+    <PossiblyInvalidOperand occurrences="1">
+      <code>1</code>
+    </PossiblyInvalidOperand>
+    <PossiblyUndefinedGlobalVariable occurrences="1">
+      <code>$topic_id</code>
+    </PossiblyUndefinedGlobalVariable>
+    <RedundantConditionGivenDocblockType occurrences="1">
+      <code>$start</code>
+    </RedundantConditionGivenDocblockType>
+    <UndefinedClass occurrences="2">
+      <code>UnexpectedValueException</code>
+      <code>UnexpectedValueException</code>
+    </UndefinedClass>
+    <UndefinedDocblockClass occurrences="2">
+      <code>$caption_line</code>
+      <code>$lines</code>
+    </UndefinedDocblockClass>
+    <UnusedVariable occurrences="2">
+      <code>$cards</code>
+      <code>$slug</code>
+    </UnusedVariable>
+  </file>
   <file src="app/global-topic-hierarchy.php">
     <UnusedVariable occurrences="3">
       <code>$global_topic_hierarchy</code>
@@ -7,20 +71,315 @@
       <code>$not_a_livestream_date_lookup</code>
     </UnusedVariable>
   </file>
+  <file src="app/lunr-docs-preload.php">
+    <DocblockTypeContradiction occurrences="1">
+      <code>'is_string'</code>
+    </DocblockTypeContradiction>
+    <InvalidArrayOffset occurrences="1">
+      <code>$slug[0]</code>
+    </InvalidArrayOffset>
+  </file>
+  <file src="app/src/Filtering.php">
+    <MixedArgument occurrences="2">
+      <code>$maybe['incoming_video_cards'] ?? []</code>
+      <code>$maybe['seealso_video_cards'] ?? []</code>
+    </MixedArgument>
+  </file>
+  <file src="app/src/Injected.php">
+    <InvalidDocblock occurrences="1"/>
+    <InvalidPropertyAssignmentValue occurrences="1">
+      <code>$prepared[1]</code>
+    </InvalidPropertyAssignmentValue>
+    <LessSpecificReturnStatement occurrences="1"/>
+    <MoreSpecificReturnType occurrences="1"/>
+    <PropertyTypeCoercion occurrences="1">
+      <code>$this-&gt;cache</code>
+    </PropertyTypeCoercion>
+  </file>
   <file src="app/src/Jsonify.php">
-    <UnusedVariable occurrences="1"/>
+    <InvalidReturnStatement occurrences="1"/>
+    <InvalidReturnType occurrences="1">
+      <code>false|array{0:int, 1:string}</code>
+    </InvalidReturnType>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>$out</code>
+    </LessSpecificReturnStatement>
+    <MixedArgument occurrences="3">
+      <code>$process[$video_id]['incoming_video_cards'] ?? []</code>
+      <code>$process[$video_id]['seealso_topic_cards'] ?? []</code>
+      <code>$process[$video_id]['seealso_video_cards'] ?? []</code>
+    </MixedArgument>
+    <MoreSpecificReturnType occurrences="1">
+      <code>list&lt;array{0:string, 1:string, 2:string, 3:string}&gt;</code>
+    </MoreSpecificReturnType>
+    <UnusedVariable occurrences="3">
+      <code>$injected</code>
+      <code>$opening_line</code>
+      <code>$playlist_id</code>
+    </UnusedVariable>
   </file>
   <file src="app/src/Markdownify.php">
     <PossiblyUnusedMethod occurrences="1">
       <code>content_if_video_has_seealsos</code>
     </PossiblyUnusedMethod>
+    <UnusedVariable occurrences="2">
+      <code>$injected</code>
+      <code>$playlist_id</code>
+    </UnusedVariable>
   </file>
   <file src="app/src/Questions.php">
+    <InvalidArrayOffset occurrences="1">
+      <code>$existing[$video_id]['incoming_video_cards']</code>
+    </InvalidArrayOffset>
+    <MixedArgument occurrences="1">
+      <code>$cards[$video_id]</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="4">
+      <code>$card[2]</code>
+      <code>$card[2]</code>
+      <code>$card[3]</code>
+      <code>$card[3]</code>
+    </MixedArrayAccess>
+    <MixedArrayOffset occurrences="3">
+      <code>$existing[$other_video_id]</code>
+      <code>$existing[$other_video_id]</code>
+      <code>$existing[$other_video_id]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="5">
+      <code>$card</code>
+      <code>$cards</code>
+      <code>$other_video_id</code>
+      <code>$see_also_card_playlists[]</code>
+      <code>$see_also_card_videos[]</code>
+    </MixedAssignment>
+    <MixedReturnTypeCoercion occurrences="2">
+      <code>$existing</code>
+      <code>array&lt;string, DEFINITELY&gt;</code>
+    </MixedReturnTypeCoercion>
     <ReferenceConstraintViolation occurrences="1">
       <code>$cache</code>
     </ReferenceConstraintViolation>
     <UndefinedDocblockClass occurrences="1">
       <code>$cache = null</code>
     </UndefinedDocblockClass>
+  </file>
+  <file src="app/src/Sorting.php">
+    <PossiblyInvalidArrayOffset occurrences="2">
+      <code>$this-&gt;cache['playlists'][$b_id]</code>
+      <code>$this-&gt;cache['playlists'][$b_id]</code>
+    </PossiblyInvalidArrayOffset>
+    <PossiblyUnusedReturnValue occurrences="2">
+      <code>int</code>
+      <code>int</code>
+    </PossiblyUnusedReturnValue>
+  </file>
+  <file src="app/src/YouTubeApiWrapper.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$out</code>
+    </ArgumentTypeCoercion>
+    <LessSpecificReturnStatement occurrences="2">
+      <code>$out</code>
+      <code>$out</code>
+    </LessSpecificReturnStatement>
+    <MixedAssignment occurrences="1">
+      <code>$cached[vendor_prefixed_video_id($aliased)]</code>
+    </MixedAssignment>
+    <MixedPropertyFetch occurrences="5">
+      <code>$item-&gt;statistics-&gt;commentCount</code>
+      <code>$item-&gt;statistics-&gt;dislikeCount</code>
+      <code>$item-&gt;statistics-&gt;favoriteCount</code>
+      <code>$item-&gt;statistics-&gt;likeCount</code>
+      <code>$item-&gt;statistics-&gt;viewCount</code>
+    </MixedPropertyFetch>
+    <MixedReturnTypeCoercion occurrences="2">
+      <code>array&lt;string, false|array&gt;</code>
+    </MixedReturnTypeCoercion>
+    <MoreSpecificReturnType occurrences="2">
+      <code>array&lt;string, array{0:string, 1:list&lt;string&gt;, 2:string}&gt;</code>
+      <code>array&lt;string, array{0:string, 1:list&lt;string&gt;}&gt;</code>
+    </MoreSpecificReturnType>
+    <TooManyArguments occurrences="1">
+      <code>listStatistics</code>
+    </TooManyArguments>
+    <UndefinedVariable occurrences="1">
+      <code>$part</code>
+    </UndefinedVariable>
+    <UnusedVariable occurrences="1">
+      <code>$video_id</code>
+    </UnusedVariable>
+  </file>
+  <file src="app/src/funcs.php">
+    <ArgumentTypeCoercion occurrences="7">
+      <code>$end</code>
+      <code>$line[0]</code>
+      <code>$line[1]</code>
+      <code>$start</code>
+      <code>$start</code>
+      <code>$start</code>
+      <code>'' === $end ? null : $end</code>
+    </ArgumentTypeCoercion>
+    <DocblockTypeContradiction occurrences="4">
+      <code>$card-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action-&gt;watchEndpoint-&gt;videoId</code>
+      <code>'video'</code>
+      <code>-1 === $start</code>
+      <code>-1 === $start</code>
+    </DocblockTypeContradiction>
+    <InvalidArgument occurrences="3">
+      <code>$global_topic_hierarchy</code>
+      <code>$global_topic_hierarchy</code>
+      <code>$injected_cache</code>
+    </InvalidArgument>
+    <InvalidArrayOffset occurrences="2">
+      <code>$video['title']</code>
+      <code>$video['topics']</code>
+    </InvalidArrayOffset>
+    <InvalidReturnStatement occurrences="2">
+      <code>$cached</code>
+      <code>$cached</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>T</code>
+      <code>T</code>
+    </InvalidReturnType>
+    <InvalidScalarArgument occurrences="3">
+      <code>$end</code>
+      <code>$start</code>
+      <code>$start ?: 0</code>
+    </InvalidScalarArgument>
+    <LessSpecificReturnStatement occurrences="1"/>
+    <MixedArgument occurrences="12">
+      <code>$caption_line['endTime']</code>
+      <code>$caption_line['startTime']</code>
+      <code>$line</code>
+      <code>$matches[1]</code>
+      <code>$nodes[0]</code>
+      <code>$nodes[0]</code>
+      <code>$playlist_id</code>
+      <code>$skipping</code>
+      <code>$skipping</code>
+      <code>$topic</code>
+      <code>$topic</code>
+      <code>$video_id</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="1">
+      <code>$video_ids</code>
+    </MixedArgumentTypeCoercion>
+    <MixedArrayAccess occurrences="2">
+      <code>$cache[$video_id]</code>
+      <code>$matches[1]</code>
+    </MixedArrayAccess>
+    <MixedArrayAssignment occurrences="2">
+      <code>$cache[$video_id]</code>
+      <code>$skipping[]</code>
+    </MixedArrayAssignment>
+    <MixedArrayOffset occurrences="3">
+      <code>$injected_cache['legacyAlts'][$legacyof]</code>
+      <code>$injected_cache['legacyAlts'][$legacyof]</code>
+      <code>$injected_cache['legacyAlts'][$legacyof]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="8">
+      <code>$cache[$video_id]</code>
+      <code>$legacyof</code>
+      <code>$line</code>
+      <code>$node</code>
+      <code>$nodes[]</code>
+      <code>$raw</code>
+      <code>$topic</code>
+      <code>$video_id</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="2">
+      <code>array</code>
+      <code>list&lt;string&gt;</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="1">
+      <code>text</code>
+    </MixedMethodCall>
+    <MixedPropertyFetch occurrences="19">
+      <code>$card-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action</code>
+      <code>$maybe-&gt;cardRenderer-&gt;content</code>
+      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer</code>
+      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer-&gt;action</code>
+      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer-&gt;action-&gt;watchEndpoint</code>
+      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer-&gt;action-&gt;watchEndpoint-&gt;playlistId</code>
+      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer</code>
+      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action</code>
+      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action-&gt;watchEndpoint</code>
+      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action-&gt;watchEndpoint-&gt;videoId</code>
+      <code>$maybe-&gt;cardRenderer-&gt;cueRanges</code>
+      <code>$maybe-&gt;cardRenderer-&gt;cueRanges[0]-&gt;startCardActiveMs</code>
+      <code>$maybe-&gt;cardRenderer-&gt;teaser</code>
+      <code>$maybe-&gt;cardRenderer-&gt;teaser-&gt;simpleCardTeaserRenderer</code>
+      <code>$maybe-&gt;cardRenderer-&gt;teaser-&gt;simpleCardTeaserRenderer-&gt;message</code>
+      <code>$maybe-&gt;cardRenderer-&gt;teaser-&gt;simpleCardTeaserRenderer-&gt;message-&gt;simpleText</code>
+      <code>$raw-&gt;cards</code>
+      <code>$raw-&gt;cards-&gt;cardCollectionRenderer</code>
+      <code>$raw-&gt;cards-&gt;cardCollectionRenderer-&gt;cards</code>
+    </MixedPropertyFetch>
+    <MixedReturnStatement occurrences="2">
+      <code>$cache[$video_id]</code>
+    </MixedReturnStatement>
+    <MixedReturnTypeCoercion occurrences="1">
+      <code>$lines</code>
+    </MixedReturnTypeCoercion>
+    <MoreSpecificReturnType occurrences="1"/>
+    <PossiblyNullReference occurrences="1">
+      <code>attributes</code>
+    </PossiblyNullReference>
+    <PossiblyUndefinedVariable occurrences="1">
+      <code>$matches</code>
+    </PossiblyUndefinedVariable>
+    <RedundantConditionGivenDocblockType occurrences="3">
+      <code>is_string($topic)</code>
+    </RedundantConditionGivenDocblockType>
+    <ReferenceConstraintViolation occurrences="3">
+      <code>$cached</code>
+      <code>$cached</code>
+      <code>$skipping</code>
+    </ReferenceConstraintViolation>
+    <UndefinedDocblockClass occurrences="3">
+      <code>$cached = null</code>
+      <code>$cached = null</code>
+      <code>$processed</code>
+    </UndefinedDocblockClass>
+    <UndefinedVariable occurrences="1">
+      <code>$playlist_id</code>
+    </UndefinedVariable>
+    <UnnecessaryVarAnnotation occurrences="1">
+      <code>list&lt;bool&gt;</code>
+    </UnnecessaryVarAnnotation>
+    <UnusedVariable occurrences="1">
+      <code>$chunk</code>
+    </UnusedVariable>
+  </file>
+  <file src="app/statistics.php">
+    <MixedArgument occurrences="5">
+      <code>$topic_slugs</code>
+      <code>$topic_slugs</code>
+      <code>$topic_slugs</code>
+      <code>$topic_slugs</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="1"/>
+    <MixedAssignment occurrences="1">
+      <code>$topic_slugs</code>
+    </MixedAssignment>
+    <PossiblyNullArgument occurrences="4">
+      <code>$progress</code>
+      <code>$progress</code>
+      <code>$progress</code>
+      <code>$progress</code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="app/uncache-pages.php">
+    <MixedArgument occurrences="1">
+      <code>$video_id</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$video_id</code>
+    </MixedAssignment>
+  </file>
+  <file src="app/update-q-and-a.php">
+    <MixedArgument occurrences="1">
+      <code>json_decode(file_get_contents(__DIR__ . '/data/part-continued.json'), true)</code>
+    </MixedArgument>
   </file>
 </files>
