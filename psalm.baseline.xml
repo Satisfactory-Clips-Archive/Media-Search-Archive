@@ -176,11 +176,12 @@
       <code>$start</code>
       <code>'' === $end ? null : $end</code>
     </ArgumentTypeCoercion>
-    <DocblockTypeContradiction occurrences="4">
+    <DocblockTypeContradiction occurrences="5">
       <code>$card-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action-&gt;watchEndpoint-&gt;videoId</code>
       <code>'video'</code>
       <code>-1 === $start</code>
       <code>-1 === $start</code>
+      <code>null === $line</code>
     </DocblockTypeContradiction>
     <InvalidArgument occurrences="3">
       <code>$global_topic_hierarchy</code>
@@ -199,7 +200,7 @@
       <code>T</code>
       <code>T</code>
     </InvalidReturnType>
-    <InvalidScalarArgument occurrences="3">
+    <InvalidScalarArgument occurrences="4">
       <code>$end</code>
       <code>$start</code>
       <code>$start ?: 0</code>
