@@ -33,6 +33,6 @@
 		"querypath/querypath": "^3.0",
 		"roave/security-advisories": "dev-master",
 		"signpostmarv/php-cs-fixer-config": "^0.21.1",
-		"vimeo/psalm": "^4.9"
+		"vimeo/psalm": "^4.10"
 	}
 }
