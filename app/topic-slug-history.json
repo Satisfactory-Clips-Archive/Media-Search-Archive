@@ -1296,5 +1296,13 @@
     },
     "PLbjDnnBIxiEqASInsJuI3DFUgB2Tzv01M": {
         "features\/buildables\/railings": 1630052266
+    },
+    "PLbjDnnBIxiErZo9O0eu76IWRdAr1DQ0p6": {
+        "roofs": 1633719457,
+        "features\/buildables\/roofs": 1633762771
+    },
+    "PLbjDnnBIxiEpb4NX67UDEpTqags7V2VGB": {
+        "windows": 1633719457,
+        "features\/buildables\/windows": 1633762771
     }
 }

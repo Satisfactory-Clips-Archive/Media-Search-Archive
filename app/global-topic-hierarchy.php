@@ -1184,6 +1184,14 @@ $global_topic_hierarchy = [
 		'Features',
 		'Buildables',
 	],
+	'PLbjDnnBIxiErZo9O0eu76IWRdAr1DQ0p6' => [ // Roofs
+		'Features',
+		'Buildables',
+	],
+	'PLbjDnnBIxiEpb4NX67UDEpTqags7V2VGB' => [ // Windows
+		'Features',
+		'Buildables',
+	],
 ];
 
 $not_a_livestream = [
