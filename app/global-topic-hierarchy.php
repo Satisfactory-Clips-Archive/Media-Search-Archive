@@ -1200,6 +1200,21 @@ $global_topic_hierarchy = [
 		'Features',
 		'Buildables',
 	],
+	'PLbjDnnBIxiErG8xome5LS0FQBrQsdR_vb' => [ // Hard & Soft Clearance
+		'Features',
+		'Planned Features',
+		'Build Modes',
+	],
+	'PLbjDnnBIxiErGzhsUN4suUKqAYQpEPrbm' => [ // Quick Switch
+		'Features',
+		'Planned Features',
+		'Build Modes',
+	],
+	'PLbjDnnBIxiEo_Zh8wGap9N34W6DrbfWN-' => [ // Zooping
+		'Features',
+		'Planned Features',
+		'Build Modes',
+	],
 ];
 
 $not_a_livestream = [

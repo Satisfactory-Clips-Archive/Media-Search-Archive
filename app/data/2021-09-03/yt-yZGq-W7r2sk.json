@@ -2,9 +2,9 @@
 	false,
 	["Satisfactory Update 5", "Update 5 Teasers", "Pillars"],
 	["Satisfactory Update 5", "Update 5 Teasers", "Pillars"],
-	["Satisfactory Update 5", "Build Modes"],
+	["Satisfactory Update 5", "Quick Switch"],
 	["Satisfactory Update 5", "Update 5 Teasers", "Railings"],
-	["Satisfactory Update 5", "Build Modes", "Railings"],
+	["Satisfactory Update 5", "Quick Switch", "Railings"],
 	["Satisfactory Update 5", "Update 5 Teasers", "Roofs", "Windows"],
 	["Satisfactory Update 5", "Update 5 Teasers", "Walls", "Foundations"],
 	["Satisfactory Update 5", "Update 5 Teasers", "Beams"],
@@ -12,8 +12,8 @@
 	["Satisfactory Update 5", "Update 5 Teasers", "Buildables", "Walls", "Railings", "Roofs"],
 	["Satisfactory Update 5", "Update 5 Teasers", "Buildables", "Walkways", "Drones"],
 	["Satisfactory Update 5", "User Interface", "Buildables"],
-	["Satisfactory Update 5", "Build Modes"],
-	["Satisfactory Update 5", "Build Modes", "Particle Accelerator"],
-	["Satisfactory Update 5", "Build Modes", "User Interface"],
+	["Satisfactory Update 5", "Hard & Soft Clearance"],
+	["Satisfactory Update 5", "Hard & Soft Clearance", "Particle Accelerator"],
+	["Satisfactory Update 5", "Zooping", "User Interface"],
 	false
 ]}
