@@ -1298,25 +1298,26 @@ $not_a_livestream = array_merge($not_a_livestream, array_reduce(
 
 			return
 				is_file($maybe)
-				&& is_string($maybe_date)
 				&& preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $maybe_date)
 				&& ! isset($not_a_livestream[$maybe_date]);
 		}
 	),
 	/**
-	 * @template T as array<string, string>
+	 * @psalm-type T = array<string, string>
 	 *
 	 * @param T $result
 	 *
 	 * @return T
 	 */
 	static function(array $result, string $file) : array {
-		/** @var string */
 		$date = basename(dirname($file));
 
 		$result[$date] = 'Video';
 
-		$title = json_decode(file_get_contents($file))->title;
+		/** @var object{title:string} */
+		$data = json_decode(file_get_contents($file));
+
+		$title = $data->title;
 
 		if (
 			preg_match(
