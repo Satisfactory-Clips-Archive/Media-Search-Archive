@@ -1290,6 +1290,51 @@ $not_a_livestream = [
 	'2021-04-23' => 'Video',
 ];
 
+$not_a_livestream = array_merge($not_a_livestream, array_reduce(
+	array_filter(
+		glob(__DIR__ . '/data/*/yt-*.json'),
+		static function (string $maybe) use ($not_a_livestream) : bool {
+			$maybe_date = basename(dirname($maybe));
+
+			return
+				is_file($maybe)
+				&& is_string($maybe_date)
+				&& preg_match('/^\d{4,}\-\d{2}\-\d{2}$/', $maybe_date)
+				&& ! isset($not_a_livestream[$maybe_date]);
+		}
+	),
+	/**
+	 * @template T as array<string, string>
+	 *
+	 * @param T $result
+	 *
+	 * @return T
+	 */
+	static function(array $result, string $file) : array {
+		/** @var string */
+		$date = basename(dirname($file));
+
+		$result[$date] = 'Video';
+
+		$title = json_decode(file_get_contents($file))->title;
+
+		if (
+			preg_match(
+				'/^(Dev [BV]log)\:/i',
+				$title,
+				$matches
+			)
+		) {
+			$result[$date] = $matches[1];
+		} elseif (preg_match('/\bstream\b/i', $title)) {
+			$result[$date] = 'Livestream';
+		}
+
+		return $result;
+	},
+	[]
+));
+
 $not_a_livestream_date_lookup = [
 	'2021-03-17' => 'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY',
 	'2021-01-15' => 'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ',
