@@ -1317,7 +1317,7 @@ $not_a_livestream = array_merge($not_a_livestream, array_reduce(
 	 *
 	 * @return T
 	 */
-	static function(array $result, string $file) : array {
+	static function (array $result, string $file) : array {
 		$date = basename(dirname($file));
 
 		$result[$date] = 'Video';
