@@ -63,14 +63,18 @@ class Injected
 	public array $topics_hierarchy;
 
 	/**
+	 * @readonly
+	 *
 	 * @var array<string, string>
 	 */
-	private array $not_a_livestream;
+	public array $not_a_livestream;
 
 	/**
+	 * @readonly
+	 *
 	 * @var array<string, string>
 	 */
-	private array $not_a_livestream_date_lookup;
+	public array $not_a_livestream_date_lookup;
 
 	/**
 	 * @var array<string, string>

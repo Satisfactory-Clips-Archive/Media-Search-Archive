@@ -1225,6 +1225,7 @@ $global_topic_hierarchy = [
 	],
 ];
 
+/** @var array<string, string> */
 $not_a_livestream = [
 	'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ' => 'Teasers',
 	'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
@@ -1344,6 +1345,7 @@ $not_a_livestream = array_merge($not_a_livestream, array_reduce(
 	[]
 ));
 
+/** @var array<string, string> */
 $not_a_livestream_date_lookup = [
 	'2021-03-17' => 'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY',
 	'2021-01-15' => 'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ',
@@ -1357,6 +1359,7 @@ foreach (array_keys($not_a_livestream) as $maybe_date) {
 	}
 }
 
+/** @var array<string, list<int|string>> */
 $injected_global_topic_hierarchy = [
 	'Merch Prototypes' => [
 		'Merch',

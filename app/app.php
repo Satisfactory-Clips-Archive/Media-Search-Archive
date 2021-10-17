@@ -88,6 +88,8 @@ $jsonify = new Jsonify($injected, $questions);
 
 $cache = $injected->cache;
 $global_topic_hierarchy = $injected->topics_hierarchy;
+$not_a_livestream = $injected->not_a_livestream;
+$not_a_livestream_date_lookup = $injected->not_a_livestream_date_lookup;
 file_put_contents(
 	__DIR__ . '/data/play.json',
 	json_encode_pretty(

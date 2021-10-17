@@ -457,6 +457,18 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 	static $out = null;
 
 	if (null === $out) {
+		/** @var array<string, list<int|string>> */
+		$global_topic_hierarchy = [];
+
+		/** @var array<string, list<int|string>> */
+		$injected_global_topic_hierarchy = [];
+
+		/** @var array<string, string> */
+		$not_a_livestream = [];
+
+		/** @var array<string, string> */
+		$not_a_livestream_date_lookup = [];
+
 		require(__DIR__ . '/../global-topic-hierarchy.php');
 
 		$api->update();

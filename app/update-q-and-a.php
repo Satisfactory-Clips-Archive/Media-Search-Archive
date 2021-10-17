@@ -43,6 +43,8 @@ $questions = new Questions($injected);
 $markdownify = new Markdownify($injected, $questions);
 $jsonify = new Jsonify($injected, $questions);
 
+$global_topic_hierarchy = $injected->topics_hierarchy;
+
 $cache = $injected->cache;
 
 $sorting = new Sorting($cache);
