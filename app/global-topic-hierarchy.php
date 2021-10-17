@@ -4,6 +4,7 @@
  */
 declare(strict_types=1);
 
+/** @var array<string, list<int|string>> */
 $global_topic_hierarchy = [
 	'PLbjDnnBIxiEo8RlgfifC8OhLmJl8SgpJE' => [ // State of Dev
 		-7,

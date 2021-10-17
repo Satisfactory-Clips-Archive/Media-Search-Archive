@@ -256,12 +256,12 @@ $topics_without_direct_content = array_filter(
 );
 
 /**
- * @var array{satisfactory: array<string, array{
+ * @var array<string, array{
  *	children: list<string>,
  *	left: positive-int,
  *	right: positive-int,
  *	level: int
- * }>}
+ * }>
  */
 $topic_nesting = [];
 

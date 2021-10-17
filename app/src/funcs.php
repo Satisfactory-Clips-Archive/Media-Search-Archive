@@ -432,7 +432,7 @@ function inject_caches(array $cache, array ...$caches) : array
  *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *		legacyAlts:array<string, list<string>>
  *	},
- *	1:array{satisfactory:array<string, list<int|string>>},
+ *	1:array<string, list<int|string>>,
  *	2:array<string, string>,
  *	3:array<string, string>
  * }
@@ -448,7 +448,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 	 *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
 	 *		legacyAlts:array<string, list<string>>
 	 *	},
-	 *	1:array{satisfactory:array<string, list<int|string>>},
+	 *	1:array<string, list<int|string>>,
 	 *	2:array<string, string>,
 	 *	3:array<string, string>
 	 * }|null
@@ -527,7 +527,6 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 			}
 		}
 
-		/** @var array{satisfactory:array<string, list<int|string>>} */
 		$global_topic_hierarchy = array_merge_recursive(
 			$global_topic_hierarchy,
 			$injected_global_topic_hierarchy
@@ -595,7 +594,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 		 *		stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
 		 *		legacyAlts:array<string, list<string>>
 		 *	},
-		 *	1:array{satisfactory:array<string, list<int|string>>},
+		 *	1:array<string, list<int|string>>,
 		 *	2:array<string, string>,
 		 *	3:array<string, string>
 		 * }
@@ -2304,9 +2303,7 @@ function get_dated_csv(
  *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	legacyAlts?:array<string, list<string>>
  * } $cache
- * @param array{
- *	satisfactory: array<string, list<int|string>>
- * } $global_topic_hierarchy
+ * @param array<string, list<int|string>> $global_topic_hierarchy
  * @param array<string, string> $not_a_livestream
  * @param array<string, string> $not_a_livestream_date_lookup
  *
@@ -2474,9 +2471,7 @@ function process_externals(
  *	}
  * } $externals_data
  * @param CACHE $cache
- * @param array{
- *	satisfactory: array<string, list<int|string>>
- * } $global_topic_hierarchy
+ * @param array<string, list<int|string>> $global_topic_hierarchy
  * @param array<string, string> $not_a_livestream
  * @param array<string, string> $not_a_livestream_date_lookup
  *
