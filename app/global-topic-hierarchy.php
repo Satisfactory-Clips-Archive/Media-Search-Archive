@@ -1215,6 +1215,9 @@ $global_topic_hierarchy = [
 		'Planned Features',
 		'Build Modes',
 	],
+	'PLbjDnnBIxiEobP4EgydtWaC_BJKd0w9Vi' => [ // Rasmus
+		'Coffee Stainers',
+	],
 ];
 
 $not_a_livestream = [

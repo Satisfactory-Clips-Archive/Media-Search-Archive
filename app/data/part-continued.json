@@ -1,4 +1,34 @@
 {
+    "OxIDYdXp5jM": {
+        "previous": null,
+        "next": "XOclHeWo2Mk",
+        "title": "Snutt & Jace Talk: You can no longer delete Autopilot path nodes (Part 1)",
+        "date": "2021-09-14"
+    },
+    "AsHymUPXtrU": {
+        "previous": null,
+        "next": "UrUHlWoT-cc",
+        "title": "Q&A: When will Trains be fixed? (Part 1)",
+        "date": "2021-09-14"
+    },
+    "UrUHlWoT-cc": {
+        "previous": "AsHymUPXtrU",
+        "next": "_n-R6qpB1FU",
+        "title": "Q&A: When will Trains be fixed? (Part 2)",
+        "date": "2021-09-14"
+    },
+    "_n-R6qpB1FU": {
+        "previous": "UrUHlWoT-cc",
+        "next": null,
+        "title": "Q&A: When will Trains be fixed? (Part 3)",
+        "date": "2021-09-14"
+    },
+    "XOclHeWo2Mk": {
+        "previous": "OxIDYdXp5jM",
+        "next": null,
+        "title": "Snutt & Jace Talk: You can no longer delete Autopilot path nodes (Part 2)",
+        "date": "2021-09-14"
+    },
     "ejFvm7ESxk0": {
         "previous": null,
         "next": "K5YpKYuj2W0",
