@@ -4,6 +4,10 @@
  */
 declare(strict_types=1);
 
+namespace SignpostMarv\VideoClipNotes;
+
+use function dirname;
+
 /** @var array<string, list<int|string>> */
 $global_topic_hierarchy = [
 	'PLbjDnnBIxiEo8RlgfifC8OhLmJl8SgpJE' => [ // State of Dev
