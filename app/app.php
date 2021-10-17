@@ -55,6 +55,7 @@ use function time;
 use function touch;
 use function uasort;
 use function uksort;
+use UnexpectedValueException;
 use function usleep;
 use function usort;
 

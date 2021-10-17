@@ -12,9 +12,6 @@
     <InvalidCast occurrences="1">
       <code>$caption_line</code>
     </InvalidCast>
-    <InvalidThrow occurrences="2">
-      <code>throw new UnexpectedValueException('Could not find topic id!');</code>
-    </InvalidThrow>
     <MixedArgument occurrences="4">
       <code>$caption_line-&gt;attributes()</code>
       <code>$caption_line['endTime']</code>
@@ -31,10 +28,6 @@
     <RedundantConditionGivenDocblockType occurrences="1">
       <code>$start</code>
     </RedundantConditionGivenDocblockType>
-    <UndefinedClass occurrences="2">
-      <code>UnexpectedValueException</code>
-      <code>UnexpectedValueException</code>
-    </UndefinedClass>
     <UndefinedDocblockClass occurrences="2">
       <code>$caption_line</code>
       <code>$lines</code>
