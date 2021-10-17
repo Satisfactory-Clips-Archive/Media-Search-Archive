@@ -1348,37 +1348,37 @@ function captions(
 		 * @return list<string>
 		 */
 		static function (array $old, array $new) : array {
-		/** @var list<string> */
-		$out = [];
+			/** @var list<string> */
+			$out = [];
 
-		/** @var list<string> */
-		$chunks = [];
+			/** @var list<string> */
+			$chunks = [];
 
-		foreach ($new as $line) {
-			$line = trim($line);
+			foreach ($new as $line) {
+				$line = trim($line);
 
-			if (
-				preg_match('/^\[[^\]]+\]$/', $line)
-				|| preg_match('/^[^:]+: .+$/', $line)
-			) {
-				if (count($chunks) > 0) {
-					$out[] = implode(' ', $chunks);
+				if (
+					preg_match('/^\[[^\]]+\]$/', $line)
+					|| preg_match('/^[^:]+: .+$/', $line)
+				) {
+					if (count($chunks) > 0) {
+						$out[] = implode(' ', $chunks);
 
-					$chunks = [];
+						$chunks = [];
+					}
+
+					$out[] = $line;
+				} else {
+					$chunks[] = $line;
 				}
-
-				$out[] = $line;
-			} else {
-				$chunks[] = $line;
 			}
-		}
 
-		if (count($chunks) > 0) {
-			$out[] = implode(' ', $chunks);
-		}
+			if (count($chunks) > 0) {
+				$out[] = implode(' ', $chunks);
+			}
 
-		return array_merge($old, $out);
-	};
+			return array_merge($old, $out);
+		};
 
 	foreach ($xml_lines as $line) {
 		$line_text = trim((string) $line);
