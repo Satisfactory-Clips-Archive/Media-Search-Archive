@@ -28196,6 +28196,7 @@
         ],
         "replaces": [
             "1nSztPm_B14",
+            "2SqpfMeDmcw",
             "2ZbRpgGteaI",
             "cxWdU5_ai-0",
             "Eo_4p0KSPSY",
@@ -36083,12 +36084,12 @@
         ]
     },
     "2SqpfMeDmcw": {
-        "title": "Q&A: I report a bug and include a screenshot- is there an easy way to do it in-game?",
+        "title": "Q&A: Will there be a way to deal with Nuclear Waste?",
         "date": "2020-11-10",
         "topics": [
-            "features\/power-management",
-            "features\/power-management\/nuclear-energy"
-        ]
+            "features\/power-management\/nuclear-energy\/nuclear-waste"
+        ],
+        "replacedby": "Rv6FRkWjJfU"
     },
     "BGsCkZHbcco": {
         "title": "Q&A: I report a bug and include a screenshot- is there an easy way to do it in-game?",
