@@ -584,7 +584,7 @@ $global_topic_hierarchy = [
 		'Features',
 		'Tiers',
 	],
-	'Tier 10' => [
+	'PLbjDnnBIxiEqf1Wl9_sGGwfZG55fsCNbS' => [ // Tier 10
 		'Features',
 		'Tiers',
 	],
