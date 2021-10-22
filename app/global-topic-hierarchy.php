@@ -1223,6 +1223,10 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiEobP4EgydtWaC_BJKd0w9Vi' => [ // Rasmus
 		'Coffee Stainers',
 	],
+	'PLbjDnnBIxiEo7Ms7bNf5SWMTAacyDC6M1' => [ // Red Bamboo Fields
+		'Environment',
+		'Biomes',
+	],
 ];
 
 /** @var array<string, string> */
@@ -1493,10 +1497,6 @@ $injected_global_topic_hierarchy = [
 		'Biomes',
 	],
 	'Red Jungle' => [
-		'Environment',
-		'Biomes',
-	],
-	'Red Bamboo Fields' => [
 		'Environment',
 		'Biomes',
 	],
