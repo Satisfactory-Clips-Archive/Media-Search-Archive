@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-10-24
+* Adding a tool to aid in the identification of clips needing native YouTube clips
+
 ## 2021-08-27
 * Sorting the "no structured data" dump for consistent diffs
 
