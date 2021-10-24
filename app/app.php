@@ -638,6 +638,8 @@ echo "\n",
 $last_compile_date = null;
 $carriage_return = true;
 
+$all_video_ids = array_reverse($all_video_ids);
+
 foreach ($all_video_ids as $video_id) {
 	++$checked;
 
@@ -773,8 +775,6 @@ foreach ($all_video_ids as $video_id) {
 
 	usleep(1);
 }
-
-$all_video_ids = array_reverse($all_video_ids);
 
 file_put_contents(
 	(
