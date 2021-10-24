@@ -1,28 +1,18 @@
 {
 	"title": "Community Manager Introduction - Coffee Stain Studios",
-	"skip": [
-		true,
+	"topics": [
 		false,
-		false,
-		false,
-		true
-	],
-	"topics": {
-		"2": [
+		[
 			"Jace"
 		],
-		"3": [
+		[
 			"Jace",
 			"Pizza"
 		],
-		"4": [
+		[
 			"Jace",
 			"Goat Simulator",
 			"Trolling"
-		],
-		"5": [
-			"Jace",
-			"Trolling"
 		]
-	}
+	]
 }
