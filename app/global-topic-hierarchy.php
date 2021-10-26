@@ -1227,6 +1227,9 @@ $global_topic_hierarchy = [
 		'Environment',
 		'Biomes',
 	],
+	'PLbjDnnBIxiEqilvgLbk4PUBQSyokspJyD' => [ // Tobias
+		'Coffee Stainers',
+	],
 ];
 
 /** @var array<string, string> */
@@ -1486,9 +1489,6 @@ $injected_global_topic_hierarchy = [
 	'Etienne' => [
 		'Coffee Stainers',
 	],
-	'Tobias' => [
-		'Coffee Stainers',
-	],
 	'Anna' => [
 		'Coffee Stainers',
 	],
@@ -1506,5 +1506,11 @@ $injected_global_topic_hierarchy = [
 	],
 	'Coffee Stain Holding' => [
 		'Embracer Group',
+	],
+	'Complex Clearance' => [
+		'Features',
+		'Planned Features',
+		'Build Modes',
+		'Hard & Soft Clearance',
 	],
 ];
