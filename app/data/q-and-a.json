@@ -8964,12 +8964,7 @@
         "topics": [
             "features\/possible-features\/farming"
         ],
-        "duplicates": [
-            "yt-rATcozDE25c,905.4712333333333,936.7691666666667"
-        ],
-        "seealso": [
-            "nwkc5YeXylk"
-        ]
+        "duplicatedby": "yt-rATcozDE25c,905.4712333333333,936.7691666666667"
     },
     "1AOF1qFxGm0": {
         "title": "Q&A: Would it be possible to have a Map Randomly Generated in Satisfactory?",
@@ -42626,11 +42621,16 @@
         "topics": [
             "features\/possible-features\/farming"
         ],
+        "duplicates": [
+            "IWbaPON5Dq0"
+        ],
+        "seealso": [
+            "nwkc5YeXylk"
+        ],
         "seealso_video_cards": [
             "8WYNwGDLYNE",
             "PkozY8_q-LE"
-        ],
-        "duplicatedby": "IWbaPON5Dq0"
+        ]
     },
     "yt-rATcozDE25c,936.7691666666667,972.8051666666667": {
         "title": "Q&A: Do you plan on adding something like roads, placeable similarly to rails but wider?",
