@@ -123,12 +123,17 @@ $global_topic_hierarchy = [
 		'Satisfactory Updates',
 		'Speculative',
 	],
+	'PLbjDnnBIxiEoEnwlt8CGTgTcPFQVZWpmx' => [ // Satisfactory Update 9
+		9,
+		'Satisfactory Updates',
+		'Speculative',
+	],
 	'PLbjDnnBIxiErIs7tyigBsVwTUg4hsKvx1' => [ // Modular Builds
-		8,
+		98,
 		'Satisfactory Updates',
 	],
 	'PLbjDnnBIxiEqrvp3UlLgVHZbY9Yb045zj' => [ // Release Builds
-		9,
+		99,
 		'Satisfactory Updates',
 	],
 	'PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT' => [ // Satisfactory 1.0
