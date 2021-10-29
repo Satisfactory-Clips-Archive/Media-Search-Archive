@@ -1518,4 +1518,9 @@ $injected_global_topic_hierarchy = [
 		'Build Modes',
 		'Hard & Soft Clearance',
 	],
+	'Update 5 Launch Stream' => [
+		503,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+	],
 ];
