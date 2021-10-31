@@ -3,6 +3,7 @@ const {
 } = require('util');
 const {
 	readFile:readFileAsync,
+	writeFile:writeFileAsync,
 	existsSync,
 } = require('fs');
 const {
@@ -10,13 +11,16 @@ const {
 	basename,
 } = require('path');
 const readFile = promisify(readFileAsync);
+const writeFile = promisify(writeFileAsync);
 const glob = promisify(require('glob'));
 const csv = promisify(require('csv-parse'));
 
-const done = require('./playlists/url-overrides.json');
+const done = require(`${__dirname}/playlists/url-overrides.json`);
 const done_keys = Object.keys(done);
 
 (async () => {
+	let native_clips_needed_markdown:string = '';
+
 	const files = (await Promise.all(((await Promise.all(
 		(
 			await glob('./app/data/*/yt-*.csv')
@@ -135,8 +139,18 @@ const done_keys = Object.keys(done);
 		}
 	}
 
-	Object.entries(files).forEach((e) => {
+	Object.entries(files).forEach((e, i) => {
 		const [date, rows] = e;
+
+		if (i > 0) {
+			native_clips_needed_markdown += '\n';
+		}
+
+		native_clips_needed_markdown += `## ${date} \n`;
+
+		rows.forEach((row) => {
+			native_clips_needed_markdown += `- [ ] ${row[0]} - ${row[1][2]}\n`;
+		});
 
 		console.log(date);
 		console.table(
@@ -145,4 +159,9 @@ const done_keys = Object.keys(done);
 			})
 		);
 	});
+
+	await writeFile(
+		`${__dirname}/native-clip-needed.md`,
+		native_clips_needed_markdown
+	);
 })()
