@@ -1349,67 +1349,40 @@
     "Update 5 Launch Stream": {
         "satisfactory-updates\/teasers-trailers\/update-5-launch-stream": 1635422312
     },
-    "Alternative Recipes": {
-        "alternative-recipes": 1635633237
-    },
-    "Rails": {
-        "rails": 1635633237
-    },
-    "Update 5": {
-        "update-5": 1635633237
-    },
     "Update 5 Art Giveaway": {
-        "update-5-art-giveaway": 1635633237,
         "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/art-giveaway": 1635633950
     },
     "Update 5 Challenge Run": {
-        "update-5-challenge-run": 1635633237,
         "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/challenge-run": 1635633950
     },
     "Update 5 Final Countdown": {
-        "update-5-final-countdown": 1635633237,
         "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/its-the-final-countdown": 1635633950
     },
     "Update 5 Loot": {
-        "update-5-loot": 1635633237,
         "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/loot": 1635633950
     },
     "Update 5 Quiz: Underrated\/Overrated": {
-        "update-5-quiz-underrated-overrated": 1635633237,
         "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/underrated-or-overrated-quiz": 1635633950
     },
     "Update 5 Revealed": {
-        "update-5-revealed": 1635633237,
         "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/update-5-revealed": 1635633950
     },
-    "World Updates": {
-        "world-updates": 1635633237
-    },
-    "Dune Dessert": {
-        "dune-dessert": 1635708767
-    },
     "Foundation Stencils": {
-        "foundation-stencils": 1635708767,
         "features\/buildables\/foundations\/stencils": 1635709367
     },
     "Juice Velvet": {
-        "juice-velvet": 1635708767,
         "coffee-stainers\/jace\/juice-velvet": 1635709367
     },
     "Snutty Mays": {
-        "snutty-mays": 1635708767,
         "coffee-stainers\/snutt\/snutty-mays": 1635709367
     },
     "Snutty Mays & Juice Velvet Present: The Customizer\u2122": {
-        "snutty-mays-juice-velvet-present-the-customizer": 1635708767,
         "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video\/snutty-mays-and-juice-velvet-present-the-customizer": 1635709367
     },
     "The Customizer": {
-        "the-customizer": 1635708767,
         "features\/equipment\/the-customizer": 1635709367
     },
     "Update 5 Wager on releasing Golf versus Dedicated Servers": {
-        "update-5-wager-on-releasing-golf-versus-dedicated-servers": 1635708767,
         "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video\/update-5-wager-on-releasing-golf-versus-dedicated-servers": 1635709367
     }
 }
