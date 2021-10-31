@@ -1,4 +1,73 @@
 {
+    "yt-QfaReoks6OM,323.2083333333333,338.780872": {
+        "title": "Q&A: Can we just place the Build piece with the Material I wanted from the get-go?",
+        "date": "2021-10-26",
+        "topics": [
+            "coffee-stainers\/jace\/juice-velvet",
+            "features\/buildables",
+            "features\/equipment\/the-customizer",
+            "satisfactory-updates\/released\/satisfactory-update-5",
+            "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video",
+            "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video\/snutty-mays-and-juice-velvet-present-the-customizer",
+            "technology\/user-interface"
+        ],
+        "seealso_video_cards": [
+            "yZGq-W7r2sk",
+            "kh3lVrBdjFE",
+            "2-JM_JP8RNc",
+            "CskxkIepX6Y",
+            "Nn-1s87JJxc"
+        ]
+    },
+    "yt-QfaReoks6OM,338.8333333333333,359.555311": {
+        "title": "Q&A: What about Colors?",
+        "date": "2021-10-26",
+        "topics": [
+            "coffee-stainers\/jace\/juice-velvet",
+            "coffee-stainers\/snutt\/snutty-mays",
+            "features\/equipment\/color-gun",
+            "features\/equipment\/the-customizer",
+            "features\/paint",
+            "satisfactory-updates\/released\/satisfactory-update-5",
+            "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video",
+            "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video\/snutty-mays-and-juice-velvet-present-the-customizer",
+            "technology\/user-interface"
+        ],
+        "seealso": [
+            "yt-QfaReoks6OM,359.5833333333333,366.5"
+        ],
+        "seealso_video_cards": [
+            "yZGq-W7r2sk",
+            "kh3lVrBdjFE",
+            "2-JM_JP8RNc",
+            "CskxkIepX6Y",
+            "Nn-1s87JJxc"
+        ]
+    },
+    "yt-QfaReoks6OM,359.5833333333333,366.5": {
+        "title": "Q&A: Can we set the Colors to the Hot Bar too?",
+        "date": "2021-10-26",
+        "topics": [
+            "coffee-stainers\/jace\/juice-velvet",
+            "coffee-stainers\/snutt\/snutty-mays",
+            "features\/equipment\/the-customizer",
+            "features\/paint",
+            "satisfactory-updates\/released\/satisfactory-update-5",
+            "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video",
+            "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video\/snutty-mays-and-juice-velvet-present-the-customizer",
+            "technology\/user-interface"
+        ],
+        "seealso": [
+            "yt-QfaReoks6OM,338.8333333333333,359.555311"
+        ],
+        "seealso_video_cards": [
+            "yZGq-W7r2sk",
+            "kh3lVrBdjFE",
+            "2-JM_JP8RNc",
+            "CskxkIepX6Y",
+            "Nn-1s87JJxc"
+        ]
+    },
     "yt-Rumqu_lyapg,786.0666666666667,805.495442": {
         "title": "Q&A: Covid situation in Sweden?",
         "date": "2021-10-26",
@@ -1301,7 +1370,8 @@
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErdYb5Nn5q1dZBDC_ktf1h_"
-        ]
+        ],
+        "replacedby": "yt-QfaReoks6OM,644.5,681.534533"
     },
     "9DPH8dxJkA8": {
         "title": "Q&A: Can you kickflip the Factory Cart?",
@@ -1684,7 +1754,8 @@
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
-        ]
+        ],
+        "replacedby": "yt-QfaReoks6OM,1068.1666666666667,1079.875"
     },
     "Rfg7rUVG1xc": {
         "title": "Q&A: Are there plans for indigenous animals?",

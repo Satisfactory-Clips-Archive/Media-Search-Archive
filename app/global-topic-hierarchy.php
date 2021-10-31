@@ -1560,4 +1560,33 @@ $injected_global_topic_hierarchy = [
 		'Teasers & Trailers',
 		'Update 5 Launch Stream',
 	],
+	'Update 5 Wager on releasing Golf versus Dedicated Servers' => [
+		1,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+		'Update 5 Patch Notes Video',
+	],
+	'Snutty Mays & Juice Velvet Present: The Customizer™' => [
+		2,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+		'Update 5 Patch Notes Video',
+	],
+	'The Customizer' => [
+		'Features',
+		'Equipment',
+	],
+	'Snutty Mays' => [
+		'Coffee Stainers',
+		'Snutt',
+	],
+	'Juice Velvet' => [
+		'Coffee Stainers',
+		'Jace',
+	],
+	'Foundation Stencils' => [
+		'Features',
+		'Buildables',
+		'Foundations',
+	],
 ];

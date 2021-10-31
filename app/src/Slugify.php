@@ -38,6 +38,8 @@ class Slugify extends Base
 			'Update 5 Art Giveaway' => 'art-giveaway',
 			'Update 5 Challenge Run' => 'challenge-run',
 			'Update 5 Final Countdown' => 'its-the-final-countdown',
+			'Foundation Stencils' => 'stencils',
+			'Snutty Mays & Juice Velvet Present: The Customizer™' => 'snutty-mays-and-juice-velvet-present-the-customizer',
 		];
 
 		parent::__construct($options, $provider);
