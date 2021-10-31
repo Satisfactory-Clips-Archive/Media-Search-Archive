@@ -33,6 +33,11 @@ class Slugify extends Base
 			'#savethewillows' => 'save-the-willows',
 			'Northern Forest World Update Q&A with Hannah' => 'northern-forest-world-update-q-and-a-with-hannah',
 			'northern forest world update q&a with hannah' => 'northern-forest-world-update-q-and-a-with-hannah',
+			'Update 5 Quiz: Underrated/Overrated' => 'underrated-or-overrated-quiz',
+			'Update 5 Loot' => 'loot',
+			'Update 5 Art Giveaway' => 'art-giveaway',
+			'Update 5 Challenge Run' => 'challenge-run',
+			'Update 5 Final Countdown' => 'its-the-final-countdown',
 		];
 
 		parent::__construct($options, $provider);

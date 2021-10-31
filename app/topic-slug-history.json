@@ -1343,5 +1343,41 @@
     },
     "Update 5 Launch Stream": {
         "satisfactory-updates\/teasers-trailers\/update-5-launch-stream": 1635422312
+    },
+    "Alternative Recipes": {
+        "alternative-recipes": 1635633237
+    },
+    "Rails": {
+        "rails": 1635633237
+    },
+    "Update 5": {
+        "update-5": 1635633237
+    },
+    "Update 5 Art Giveaway": {
+        "update-5-art-giveaway": 1635633237,
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/art-giveaway": 1635633950
+    },
+    "Update 5 Challenge Run": {
+        "update-5-challenge-run": 1635633237,
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/challenge-run": 1635633950
+    },
+    "Update 5 Final Countdown": {
+        "update-5-final-countdown": 1635633237,
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/its-the-final-countdown": 1635633950
+    },
+    "Update 5 Loot": {
+        "update-5-loot": 1635633237,
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/loot": 1635633950
+    },
+    "Update 5 Quiz: Underrated\/Overrated": {
+        "update-5-quiz-underrated-overrated": 1635633237,
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/underrated-or-overrated-quiz": 1635633950
+    },
+    "Update 5 Revealed": {
+        "update-5-revealed": 1635633237,
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/update-5-revealed": 1635633950
+    },
+    "World Updates": {
+        "world-updates": 1635633237
     }
 }

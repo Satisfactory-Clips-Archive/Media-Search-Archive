@@ -1309,6 +1309,7 @@ $not_a_livestream = [
 	'2021-01-22' => 'Instagram AMA',
 	'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY' => 'Satisfactory Update 4 Patch Notes vid commentary',
 	'2021-04-23' => 'Video',
+	'2021-10-26' => 'Update 5 Launch Stream and Patch Notes Video',
 ];
 
 $not_a_livestream = array_merge($not_a_livestream, array_reduce(
@@ -1522,5 +1523,41 @@ $injected_global_topic_hierarchy = [
 		503,
 		'Satisfactory Updates',
 		'Teasers & Trailers',
+	],
+	'Update 5 Quiz: Underrated/Overrated' => [
+		1,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+		'Update 5 Launch Stream',
+	],
+	'Update 5 Loot' => [
+		2,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+		'Update 5 Launch Stream',
+	],
+	'Update 5 Art Giveaway' => [
+		3,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+		'Update 5 Launch Stream',
+	],
+	'Update 5 Challenge Run' => [
+		4,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+		'Update 5 Launch Stream',
+	],
+	'Update 5 Final Countdown' => [
+		5,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+		'Update 5 Launch Stream',
+	],
+	'Update 5 Revealed' => [
+		6,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+		'Update 5 Launch Stream',
 	],
 ];
