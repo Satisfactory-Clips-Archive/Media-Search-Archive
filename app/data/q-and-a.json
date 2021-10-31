@@ -1,4 +1,137 @@
 {
+    "yt-Nn-1s87JJxc,34.2342,61.59486666666667": {
+        "title": "Q&A: Did you just add a Dedicated Server model to the game?",
+        "date": "2021-10-27",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers",
+            "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video",
+            "trolling"
+        ],
+        "seealso": [
+            "yt-Nn-1s87JJxc,140.70723333333333,196.0959"
+        ],
+        "seealso_video_cards": [
+            "QfaReoks6OM"
+        ]
+    },
+    "yt-Nn-1s87JJxc,140.70723333333333,196.0959": {
+        "title": "Q&A: Where can I get the Dedicated Servers?",
+        "date": "2021-10-27",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers",
+            "retail\/steam-store"
+        ],
+        "duplicates": [
+            "yt-Rumqu_lyapg,16555.266666666666,16579.106841"
+        ],
+        "seealso": [
+            "B5BoBKZ8SF8",
+            "yt-Nn-1s87JJxc,34.2342,61.59486666666667",
+            "yt-Rumqu_lyapg,16587.433333333334,16599.146002",
+            "yt-Rumqu_lyapg,16750.9,16781.100663"
+        ],
+        "seealso_video_cards": [
+            "QfaReoks6OM"
+        ]
+    },
+    "yt-Nn-1s87JJxc,196.12926666666667,206.1059": {
+        "title": "Q&A: What operating systems do you support?",
+        "date": "2021-10-27",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers",
+            "technology\/linux"
+        ],
+        "duplicates": [
+            "yt-Rumqu_lyapg,16579.133333333335,16587.4"
+        ],
+        "seealso_video_cards": [
+            "QfaReoks6OM"
+        ]
+    },
+    "yt-Nn-1s87JJxc,206.13926666666666,207.87433333333334": {
+        "title": "Q&A: Are the Servers headless?",
+        "date": "2021-10-27",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers"
+        ],
+        "replaces": [
+            "Cnw_Ow3K29I"
+        ],
+        "seealso_video_cards": [
+            "QfaReoks6OM"
+        ]
+    },
+    "yt-Nn-1s87JJxc,207.9077,273.13953333333336": {
+        "title": "Q&A: How do you set up the Servers?",
+        "date": "2021-10-27",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers"
+        ],
+        "seealso_video_cards": [
+            "QfaReoks6OM"
+        ]
+    },
+    "yt-Nn-1s87JJxc,273.1729,382.44873333333334": {
+        "title": "Q&A: What Features are available?",
+        "date": "2021-10-27",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers"
+        ],
+        "replaces": [
+            "h6mpSh0JH5o"
+        ],
+        "seealso_video_cards": [
+            "QfaReoks6OM"
+        ]
+    },
+    "yt-Nn-1s87JJxc,382.4821,433.36626666666666": {
+        "title": "Q&A: How many people can fit on one Server?",
+        "date": "2021-10-27",
+        "topics": [
+            "features\/multiplayer",
+            "features\/multiplayer\/dedicated-servers"
+        ],
+        "seealso": [
+            "7uSzql6YPJc",
+            "tc-OpenIntelligentPizzaYouWHY"
+        ],
+        "seealso_video_cards": [
+            "QfaReoks6OM"
+        ]
+    },
+    "yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667": {
+        "title": "Q&A: Are Coffee Stain hosting any official Dedicated Servers?",
+        "date": "2021-10-27",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers"
+        ],
+        "duplicates": [
+            "6lPmum6YM3Y",
+            "Cn6M79rc4kE",
+            "TYf5xLi8060",
+            "yt-Rumqu_lyapg,16543.633333333335,16555.245545"
+        ],
+        "seealso": [
+            "-1_j_CPi6YI",
+            "R9wpbVHJggc"
+        ],
+        "seealso_video_cards": [
+            "QfaReoks6OM"
+        ]
+    },
+    "yt-Nn-1s87JJxc,447.21343333333334,490.72356666666667": {
+        "title": "Q&A: Has Coffee Stain partnered with any external vendors?",
+        "date": "2021-10-27",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers"
+        ],
+        "seealso": [
+            "yt-Rumqu_lyapg,16587.433333333334,16599.146002"
+        ],
+        "seealso_video_cards": [
+            "QfaReoks6OM"
+        ]
+    },
     "yt-QfaReoks6OM,323.2083333333333,338.780872": {
         "title": "Q&A: Can we just place the Build piece with the Material I wanted from the get-go?",
         "date": "2021-10-26",
@@ -1196,15 +1329,7 @@
             "satisfactory-updates\/teasers-trailers\/update-5-launch-stream",
             "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/update-5-revealed"
         ],
-        "duplicates": [
-            "6lPmum6YM3Y",
-            "Cn6M79rc4kE",
-            "TYf5xLi8060"
-        ],
-        "seealso": [
-            "-1_j_CPi6YI",
-            "R9wpbVHJggc"
-        ]
+        "duplicatedby": "yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667"
     },
     "yt-Rumqu_lyapg,16555.266666666666,16579.106841": {
         "title": "Q&A: Where do we get the Dedicated Servers?",
@@ -1217,11 +1342,7 @@
         "replaces": [
             "yt-Rumqu_lyapg,1873.1,2083.733333333333"
         ],
-        "seealso": [
-            "B5BoBKZ8SF8",
-            "yt-Rumqu_lyapg,16587.433333333334,16599.146002",
-            "yt-Rumqu_lyapg,16750.9,16781.100663"
-        ]
+        "duplicatedby": "yt-Nn-1s87JJxc,140.70723333333333,196.0959"
     },
     "yt-Rumqu_lyapg,16579.133333333335,16587.4": {
         "title": "Q&A: Will they be on Linux?",
@@ -1234,7 +1355,8 @@
         ],
         "replaces": [
             "L0KTZCuWT_E"
-        ]
+        ],
+        "duplicatedby": "yt-Nn-1s87JJxc,196.12926666666667,206.1059"
     },
     "yt-Rumqu_lyapg,16587.433333333334,16599.146002": {
         "title": "Q&A: Will paid servers be available?",
@@ -1245,7 +1367,8 @@
             "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/update-5-revealed"
         ],
         "seealso": [
-            "yt-Rumqu_lyapg,16543.633333333335,16555.245545"
+            "yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667",
+            "yt-Nn-1s87JJxc,447.21343333333334,490.72356666666667"
         ]
     },
     "yt-Rumqu_lyapg,16648.890993,16654.348917": {
@@ -1283,7 +1406,7 @@
             "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/update-5-revealed"
         ],
         "seealso": [
-            "yt-Rumqu_lyapg,16555.266666666666,16579.106841"
+            "yt-Nn-1s87JJxc,140.70723333333333,196.0959"
         ]
     },
     "yt-Rumqu_lyapg,16820.433333333334,16842.066021": {
@@ -3486,7 +3609,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl"
         ],
-        "duplicatedby": "yt-Rumqu_lyapg,16543.633333333335,16555.245545"
+        "duplicatedby": "yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667"
     },
     "L0KTZCuWT_E": {
         "title": "Q&A: Server Hosting on Linux?",
@@ -3500,7 +3623,6 @@
             "299eeYGePHM",
             "B9WzFDA9Lq8",
             "bF5wXdGjeG0",
-            "Cnw_Ow3K29I",
             "hJSXfLTVMHE",
             "oaRqXpLhZ4k",
             "Sa-E2cCLdbI",
@@ -3510,6 +3632,7 @@
             "yyhNw1SsYx0"
         ],
         "seealso": [
+            "Cnw_Ow3K29I",
             "NaW1NBgb70I",
             "SyUOpmEn7Aw",
             "y_8BiuOg4zg"
@@ -9327,7 +9450,7 @@
         "topics": [
             "features\/multiplayer\/dedicated-servers"
         ],
-        "duplicatedby": "yt-Rumqu_lyapg,16543.633333333335,16555.245545"
+        "duplicatedby": "yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667"
     },
     "uTcx8PYGUXU": {
         "title": "Q&A: Can we get a Satisfactory OST available on Spotify?",
@@ -22070,7 +22193,8 @@
             "yt-Dtm6xIj-wM4,1733.7666666666667,1775.710975"
         ],
         "seealso": [
-            "9Fe7lcAQx9I"
+            "9Fe7lcAQx9I",
+            "yt-Nn-1s87JJxc,382.4821,433.36626666666666"
         ]
     },
     "HTgGZVI4PfM": {
@@ -25108,7 +25232,7 @@
         ],
         "seealso": [
             "0KMqyzOeiEU",
-            "yt-Rumqu_lyapg,16543.633333333335,16555.245545"
+            "yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667"
         ]
     },
     "OhNboZ3vVuU": {
@@ -40875,7 +40999,7 @@
         "topics": [
             "features\/multiplayer\/dedicated-servers"
         ],
-        "duplicatedby": "yt-Rumqu_lyapg,16543.633333333335,16555.245545"
+        "duplicatedby": "yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667"
     },
     "zrHzxTVBc3w": {
         "title": "Q&A: Will Story need a new Save File?",
@@ -49281,7 +49405,7 @@
             "PD79jEZuOAU",
             "th80RuBpaRk",
             "tkUBo4RzAn8",
-            "yt-Rumqu_lyapg,16555.266666666666,16579.106841"
+            "yt-Nn-1s87JJxc,140.70723333333333,196.0959"
         ],
         "legacyalts": [
             "tc-ShinyFunnyJellyfishSMOrc"
@@ -49643,7 +49767,8 @@
         ],
         "seealso": [
             "9Fe7lcAQx9I",
-            "w_ZCP0Syl-A"
+            "w_ZCP0Syl-A",
+            "yt-Nn-1s87JJxc,382.4821,433.36626666666666"
         ]
     },
     "tc-TardyBitterGnatDatSheffy": {
@@ -52522,7 +52647,8 @@
         "seealso": [
             "Dj2hOG7UjVA",
             "pLGMWKj9AW0"
-        ]
+        ],
+        "replacedby": "yt-Nn-1s87JJxc,273.1729,382.44873333333334"
     },
     "5a34CUK1K3k": {
         "title": "Q&A: Linux support for Dedicated Servers?",
@@ -53999,7 +54125,7 @@
             "features\/multiplayer\/dedicated-servers",
             "technology\/linux"
         ],
-        "duplicatedby": "L0KTZCuWT_E"
+        "replacedby": "yt-Nn-1s87JJxc,206.13926666666666,207.87433333333334"
     },
     "TTZzooohufI": {
         "title": "Q&A: Any way to disable motion blur?",
