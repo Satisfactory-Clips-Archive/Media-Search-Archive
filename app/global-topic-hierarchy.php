@@ -258,7 +258,7 @@ $global_topic_hierarchy = [
 	],
 	'PLbjDnnBIxiErdYb5Nn5q1dZBDC_ktf1h_' => [ // Signs
 		'Features',
-		'Planned Features',
+		'Buildables',
 	],
 	'PLbjDnnBIxiEp3QMTxKRnehenCwo17MuJy' => [ // Conveyor Belts
 		'Features',

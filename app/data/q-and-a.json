@@ -1332,7 +1332,7 @@
         "title": "Q&A: I know you can't say, but do a cartwheel if you can confirm sweet Signs in Update 5?",
         "date": "2021-10-19",
         "topics": [
-            "features\/planned-features\/signs",
+            "features\/buildables\/signs",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "duplicates": [
@@ -2710,7 +2710,7 @@
         "title": "Q&A: Any sign of Signs?",
         "date": "2021-10-12",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErdYb5Nn5q1dZBDC_ktf1h_",
@@ -3945,7 +3945,7 @@
         "title": "Q&A: Signs coming when, it's most wanted in QA?",
         "date": "2021-10-05",
         "topics": [
-            "features\/planned-features\/signs",
+            "features\/buildables\/signs",
             "qa-site"
         ],
         "seealso_topic_cards": [
@@ -8011,7 +8011,7 @@
         "title": "Q&A: Any news about Signs?",
         "date": "2021-09-14",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErdYb5Nn5q1dZBDC_ktf1h_",
@@ -11243,7 +11243,7 @@
         "title": "Q&A: Will you add Signs in the game?",
         "date": "2021-08-17",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErdYb5Nn5q1dZBDC_ktf1h_"
@@ -14591,7 +14591,7 @@
         "title": "Q&A: Will we ever see writable signs to label stuff?",
         "date": "2021-08-03",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErdYb5Nn5q1dZBDC_ktf1h_"
@@ -16324,7 +16324,7 @@
         "title": "Q&A: Add name tag on Container?",
         "date": "2021-07-13",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "seealso": [
             "_oCXPPoGHHg"
@@ -17546,7 +17546,7 @@
         "title": "Q&A: Would you consider adding custom text signs?",
         "date": "2021-07-13",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErdYb5Nn5q1dZBDC_ktf1h_"
@@ -20391,8 +20391,8 @@
         "title": "Q&A: Will Signs be in the AWESOME Shop?",
         "date": "2021-06-22",
         "topics": [
-            "features\/buildings\/awesome-store",
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs",
+            "features\/buildings\/awesome-store"
         ],
         "seealso": [
             "_oCXPPoGHHg"
@@ -20561,7 +20561,7 @@
         "title": "Q&A: Will we have Signs?",
         "date": "2021-06-18",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -20757,7 +20757,7 @@
         "title": "Q&A: Are there any plans to put Signs in the game?",
         "date": "2021-06-15",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -22101,7 +22101,7 @@
         "title": "Q&A: Screen we can program, write, or draw something on?",
         "date": "2021-06-01",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "seealso": [
             "Q7VGYiAagwA",
@@ -22838,8 +22838,8 @@
         "title": "Q&A: What's the status of Golf on the QA Site?",
         "date": "2021-05-25",
         "topics": [
+            "features\/buildables\/signs",
             "features\/multiplayer\/dedicated-servers",
-            "features\/planned-features\/signs",
             "features\/unplanned-features\/golf",
             "qa-site",
             "trolling"
@@ -23528,7 +23528,7 @@
         "date": "2021-05-18",
         "topics": [
             "coffee-stainers\/birk",
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -26134,7 +26134,7 @@
         "title": "Q&A: Can we get signs soon?",
         "date": "2021-04-27",
         "topics": [
-            "features\/planned-features\/signs",
+            "features\/buildables\/signs",
             "features\/unplanned-features\/golf",
             "qa-site"
         ],
@@ -27016,7 +27016,7 @@
         "title": "Q&A: Signs?",
         "date": "2021-04-20",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -28012,7 +28012,7 @@
         "title": "Q&A: Signs?",
         "date": "2021-04-06",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -28732,8 +28732,8 @@
         "title": "Q&A: Can we get a sign in the game that says \"Upvote that on the QA Site\"",
         "date": "2021-03-30",
         "topics": [
-            "features\/buildings\/the-hub",
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs",
+            "features\/buildings\/the-hub"
         ],
         "seealso": [
             "_oCXPPoGHHg"
@@ -29874,7 +29874,7 @@
         "title": "Q&A: Signs when?",
         "date": "2021-03-23",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -31307,7 +31307,7 @@
         "title": "Q&A: Will there be signs in Update 4?",
         "date": "2021-03-02",
         "topics": [
-            "features\/planned-features\/signs",
+            "features\/buildables\/signs",
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
         "duplicatedby": "_oCXPPoGHHg"
@@ -33599,7 +33599,7 @@
         "title": "Q&A: Will there be signs in future updates?",
         "date": "2021-02-16",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -36221,7 +36221,7 @@
         "title": "Q&A: Are we getting signs any time soon?",
         "date": "2021-01-26",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -36941,7 +36941,7 @@
         "title": "Q&A: Is there a plan to add Screens to the game?",
         "date": "2021-01-19",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "seealso": [
             "1i0dU7zYdqs"
@@ -37979,7 +37979,7 @@
         "title": "Q&A: Will we get signs any time soon?",
         "date": "2020-12-17",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "seealso_video_cards": [
             "KH5SkE4nzhg",
@@ -41668,7 +41668,7 @@
         "title": "Q&A: When do Signs come?",
         "date": "2020-11-03",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -44989,7 +44989,7 @@
         "title": "Q&A: Can we get Signs in the game?",
         "date": "2020-09-29",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -47491,7 +47491,7 @@
         "title": "Q&A: Why do big updates at all - why not just release everything in small bites?",
         "date": "2020-08-25",
         "topics": [
-            "features\/planned-features\/signs",
+            "features\/buildables\/signs",
             "features\/roadmap",
             "features\/transportation\/trains\/train-signals",
             "satisfactory-updates\/pending\/satisfactory-1-0",
@@ -47989,7 +47989,7 @@
         "title": "Q&A: Signs for Hypertube Entrances?",
         "date": "2020-08-25",
         "topics": [
-            "features\/planned-features\/signs",
+            "features\/buildables\/signs",
             "features\/transportation\/hyper-tubes"
         ],
         "legacyalts": [
@@ -50203,7 +50203,7 @@
         "title": "Q&A: When are we getting Signs?",
         "date": "2020-07-30",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
@@ -50241,7 +50241,7 @@
         "title": "Q&A: Signs & Planets",
         "date": "2020-07-28",
         "topics": [
-            "features\/planned-features\/signs",
+            "features\/buildables\/signs",
             "features\/unplanned-features\/space-exploration"
         ],
         "seealso": [
@@ -50521,7 +50521,7 @@
         "title": "Q&A: What about Signs?",
         "date": "2020-06-08",
         "topics": [
-            "features\/planned-features\/signs"
+            "features\/buildables\/signs"
         ],
         "duplicatedby": "_oCXPPoGHHg"
     },
