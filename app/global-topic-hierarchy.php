@@ -106,7 +106,7 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6' => [ // Satisfactory Update 5
 		5,
 		'Satisfactory Updates',
-		'Pending',
+		'Released',
 	],
 	'PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR' => [ // Satisfactory Update 6
 		6,
@@ -183,7 +183,7 @@ $global_topic_hierarchy = [
 	],
 	'PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl' => [ // Dedicated Servers
 		'Features',
-		'Planned Features',
+		'Multiplayer',
 	],
 	'PLbjDnnBIxiEqn_GaVtEJZl0kP0-zlNlDa' => [ // DLC
 		'Features',
@@ -950,7 +950,7 @@ $global_topic_hierarchy = [
 	],
 	'PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep' => [ // Golf
 		'Features',
-		'Requested Features',
+		'Unplanned Features',
 	],
 	'PLbjDnnBIxiEot9p9zUqcWo-SABtobaM9V' => [ // Gnutt
 		'Coffee Stainers',
@@ -1173,12 +1173,12 @@ $global_topic_hierarchy = [
 	],
 	'PLbjDnnBIxiEqNe4SQNEAvhKRLQX39g9Ix' => [ // #SaveTheWillows
 		'Satisfactory Updates',
-		'Pending',
+		'Released',
 		'Satisfactory Update 5',
 	],
 	'PLbjDnnBIxiEoRdndnsQZEZnZcL35VZRmD' => [ // Northern Forest World Update Q&A with Hannah
 		'Satisfactory Updates',
-		'Pending',
+		'Released',
 		'Satisfactory Update 5',
 	],
 	'PLbjDnnBIxiEq2WihzbvSUt1YdFzZ4CBP8' => [ // Meza

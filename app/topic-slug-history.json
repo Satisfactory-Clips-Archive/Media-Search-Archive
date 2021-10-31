@@ -215,7 +215,8 @@
         "features\/planned-features": 1611444659
     },
     "PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl": {
-        "features\/planned-features\/dedicated-servers": 1611444659
+        "features\/planned-features\/dedicated-servers": 1611444659,
+        "features\/multiplayer\/dedicated-servers": 1635673303
     },
     "PLbjDnnBIxiEqDSLRIdyHmUlI71j458DqR": {
         "features\/planned-features\/lights": 1611444659,
@@ -413,7 +414,8 @@
     },
     "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6": {
         "satisfactory-updates\/speculative\/satisfactory-update-5": 1611444659,
-        "satisfactory-updates\/pending\/satisfactory-update-5": 1620744909
+        "satisfactory-updates\/pending\/satisfactory-update-5": 1620744909,
+        "satisfactory-updates\/released\/satisfactory-update-5": 1635673303
     },
     "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR": {
         "satisfactory-updates\/speculative\/satisfactory-update-6": 1611444659
@@ -1061,7 +1063,8 @@
         "coffee-stainers\/gnutt": 1619668659
     },
     "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep": {
-        "features\/requested-features\/golf": 1619668659
+        "features\/requested-features\/golf": 1619668659,
+        "features\/unplanned-features\/golf": 1635673303
     },
     "PLbjDnnBIxiEoIWT_BxcmHV8fcZ1m38gGz": {
         "coffee-stainers\/sofi": 1619668659
@@ -1274,14 +1277,16 @@
     },
     "PLbjDnnBIxiEqNe4SQNEAvhKRLQX39g9Ix": {
         "savethewillows": 1628342087,
-        "satisfactory-updates\/pending\/satisfactory-update-5\/save-the-willows": 1628342484
+        "satisfactory-updates\/pending\/satisfactory-update-5\/save-the-willows": 1628342484,
+        "satisfactory-updates\/released\/satisfactory-update-5\/save-the-willows": 1635673303
     },
     "PLbjDnnBIxiEqK9nRVDCg0Z3bb47I6gPod": {
         "environment\/biomes\/caves": 1628342087
     },
     "PLbjDnnBIxiEoRdndnsQZEZnZcL35VZRmD": {
         "northern-forest-world-update-q-a-with-hannah": 1628342087,
-        "satisfactory-updates\/pending\/satisfactory-update-5\/northern-forest-world-update-q-and-a-with-hannah": 1628342484
+        "satisfactory-updates\/pending\/satisfactory-update-5\/northern-forest-world-update-q-and-a-with-hannah": 1628342484,
+        "satisfactory-updates\/released\/satisfactory-update-5\/northern-forest-world-update-q-and-a-with-hannah": 1635673303
     },
     "PLbjDnnBIxiEq2WihzbvSUt1YdFzZ4CBP8": {
         "meza": 1628942232,
