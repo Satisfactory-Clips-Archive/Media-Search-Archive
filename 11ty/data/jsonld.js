@@ -120,6 +120,10 @@ module.exports = async () => {
 			if ('image' in data[0].about[0]) {
 				data[0].image = data[0].about[0].image;
 			}
+
+			if ('/topics/coffee-stainers/g2/' === permalink) {
+				data[0].name = 'G2';
+			}
 		} else if (
 			('@type' in data[0])
 			&& [
