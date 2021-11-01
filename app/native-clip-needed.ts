@@ -146,7 +146,7 @@ const done_keys = Object.keys(done);
 			native_clips_needed_markdown += '\n';
 		}
 
-		native_clips_needed_markdown += `## ${date} \n`;
+		native_clips_needed_markdown += `## ${date}\n`;
 
 		rows.forEach((row) => {
 			native_clips_needed_markdown += `- [ ] ${row[0]} - ${row[1][2]}\n`;
