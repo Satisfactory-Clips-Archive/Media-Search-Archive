@@ -1,4 +1,4 @@
-## 2017-08-01 
+## 2017-08-01
 - [ ] yt-ZW0OOikcWN0,25.186806,57.8 - Jace Talk: Changing Localisation via the Swedish menus
 - [ ] yt-ZW0OOikcWN0,73.32,100.230344 - Jace Talk: Basic Movement & Controls
 - [ ] yt-ZW0OOikcWN0,100.230344,155.16 - Jace Talk: Multiplayer Ping & Text Chat
@@ -9,17 +9,17 @@
 - [ ] yt-ZW0OOikcWN0,1407.56,1426.24 - Jace Talk: Exploring for different Resources
 - [ ] yt-ZW0OOikcWN0,1426.24,1462.88 - Outro
 
-## 2017-11-17 
+## 2017-11-17
 - [ ] yt-6HZzPbgw3pg,72.16,127.08 - How can we be friends if you know nothing about me?
 - [ ] yt-6HZzPbgw3pg,127.08,170.16 - Why would we need a Community Manager now?
 
-## 2018-03-09 
+## 2018-03-09
 - [ ] yt-Zo2ybvs7keI,300.32,310.36 - Q&A: Who is the better colleague, Nathalie or Hannah?
 - [ ] yt-Zo2ybvs7keI,344.96,382.8 - Q&A: Are the first two letters of your next game's title really "Sa" ?
 - [ ] yt-Zo2ybvs7keI,428.16,439.88 - Q&A: What is your favourite character from Sanctum?
 - [ ] yt-Zo2ybvs7keI,492.44,502.32 - Q&A: Coffee or tea?
 
-## 2018-06-22 
+## 2018-06-22
 - [ ] yt-W1E6EWrAsII,91.24,120.52 - Q&A: Will there be mods?
 - [ ] yt-W1E6EWrAsII,120.52,176.6 - Q&A: Plans for post-launch?
 - [ ] yt-W1E6EWrAsII,176.6,214.36 - Q&A: Will we need to defend our factory?
@@ -35,7 +35,7 @@
 - [ ] yt-W1E6EWrAsII,492.52,520.44 - Q&A: Was the trailer a cinematic, or shot in-engine?
 - [ ] yt-W1E6EWrAsII,520.44,538.52 - Q&A: Let's talk about Simon?
 
-## 2018-07-04 
+## 2018-07-04
 - [ ] yt-vUW3pockA5Y,90.92,117.8 - Oscar Talk: Combat is a part of the game but not a super big part
 - [ ] yt-vUW3pockA5Y,117.8,173.04 - Oscar Talk: The scope of gameplay and automation
 - [ ] yt-vUW3pockA5Y,173.04,188.92 - Oscar Talk: We have signs planned
@@ -43,10 +43,10 @@
 - [ ] yt-vUW3pockA5Y,280.289085,302.64 - That infamous moment with the coffee
 - [ ] yt-vUW3pockA5Y,300.2,353.16 - Oscar Talk: Getting feedback on Satisfactory
 
-## 2018-07-19 
+## 2018-07-19
 - [ ] yt-IxoCzb2M0vQ,88.366511,130.550701 - Tractor
 
-## 2018-08-01 
+## 2018-08-01
 - [ ] yt-iFAy1NZUOGU,14,29 - Q&A: Will there be a Creative Mode?
 - [ ] yt-iFAy1NZUOGU,29,58.6 - Q&A: Will there be a top-down view?
 - [ ] yt-iFAy1NZUOGU,58.6,60.36 - Q&A: Is there Weather in the game?
@@ -68,7 +68,7 @@
 - [ ] yt-iFAy1NZUOGU,252.8,275.24 - Q&A: Why spend time adding Arachnophobia Mode?
 - [ ] yt-iFAy1NZUOGU,275.24,323.24 - Q&A: But... will there be Pipes?
 
-## 2018-08-15 
+## 2018-08-15
 - [ ] yt-PkozY8_q-LE,6.88,55.48 - Sofi Talk: Being a Concept Artist at Coffee Stain
 - [ ] yt-PkozY8_q-LE,55.48,114.64 - Sofi Talk: Pioneer Concept Art (Part 1)
 - [ ] yt-PkozY8_q-LE,114.64,155.08 - Sofi Talk: Working with Concept Art
@@ -76,18 +76,18 @@
 - [ ] yt-PkozY8_q-LE,183.72,205.52 - Sofi Talk: Food Court
 - [ ] yt-PkozY8_q-LE,300.84,338.16 - Sofi Talk: My own art
 
-## 2018-09-12 
+## 2018-09-12
 - [ ] yt-31XJ1Q_glAw,33.2,76.44 - pushing the Alpha back
 - [ ] yt-31XJ1Q_glAw,76.44,96.88 - Alpha launch date
 
-## 2018-09-19 
+## 2018-09-19
 - [ ] yt-LDbnPHbnba0,5.12,56.94 - Joel Talk: Sound Design
 - [ ] yt-LDbnPHbnba0,56.94,113.16 - Joel Talk: Ambient Sound Design
 - [ ] yt-LDbnPHbnba0,113.16,141.24 - Joel Talk: Building Sound Design
 - [ ] yt-LDbnPHbnba0,205.2,218.16 - Joel Talk: Hardware
 - [ ] yt-LDbnPHbnba0,218.16,246.62 - Joel Talk: Joel's favourite sound effect
 
-## 2018-09-26 
+## 2018-09-26
 - [ ] yt-Y7G72e0LLBg,7.94,29.52 - Jannik Talk: Other games composed for
 - [ ] yt-Y7G72e0LLBg,29.52,71.42 - Jannik Talk: The vision for the Satisfactory music
 - [ ] yt-Y7G72e0LLBg,71.42,114.46 - Jannik Talk: Four different types of Satisfactory music
@@ -95,7 +95,7 @@
 - [ ] yt-Y7G72e0LLBg,239.28,280.26 - Jannik Talk: Musical styles
 - [ ] yt-Y7G72e0LLBg,280.26,303.68 - Jannik Talk: Community Feedback
 
-## 2018-10-03 
+## 2018-10-03
 - [ ] yt-1OQk7vNt6-0,28.38,84.52 - Q&A: How many people will be selected for the Alpha?
 - [ ] yt-1OQk7vNt6-0,84.52,92.08 - Q&A: But what if I still don't get an alpha key?
 - [ ] yt-1OQk7vNt6-0,92.08,102.64 - Q&A: How long will the Alpha last?
@@ -105,15 +105,15 @@
 - [ ] yt-1OQk7vNt6-0,233.42,261.62 - Q&A: Will there be an NDA?
 - [ ] yt-1OQk7vNt6-0,261.62,292.16 - Q&A: Localisation/Translation?
 
-## 2018-11-08 
+## 2018-11-08
 - [ ] yt-J_Dznt1OG-0,515.824177,568.31775 - Reinforced Iron Plates being created
 
-## 2018-11-23 
+## 2018-11-23
 - [ ] yt-1UqIDp_byFc,36.12,88.32 - Q&A: Did THQ Nordic buy Coffee Stain?
 - [ ] yt-1UqIDp_byFc,88.32,103.98 - Q&A: Are your games going to be full of Microtransactions now?
 - [ ] yt-1UqIDp_byFc,103.98,117.24 - Q&A: Is THQ Nordic Coffee Stain's publisher?
 
-## 2018-12-12 
+## 2018-12-12
 - [ ] yt-7V4UPiBOshY,14.407161,29.68 - Jace Talk: Satisfactory will be an Epic Store exclusive
 - [ ] yt-7V4UPiBOshY,29.68,35.26 - Q&A: Who forced you to do this‽
 - [ ] yt-7V4UPiBOshY,161.28,186.1 - Q&A: Is it a timed exclusive deal?
@@ -139,10 +139,10 @@
 - [ ] yt-7V4UPiBOshY,612.98,643.72 - Q&A: What are the payment options for the Epic Games Store?
 - [ ] yt-7V4UPiBOshY,643.72,660.88 - Community FYI: Your Community Manager is unprofessional, you should be ashamed
 
-## 2018-12-25 
+## 2018-12-25
 - [ ] yt-S_AKfh38880,157.12,193.2 - Outro
 
-## 2019-01-19 
+## 2019-01-19
 - [ ] yt-SslJr_Fv6qw,6.38,30.74 - Nathalie Talk: Satisfactory's previous UI/UX
 - [ ] yt-SslJr_Fv6qw,30.74,60.7 - Nathalie Talk: UI/UX
 - [ ] yt-SslJr_Fv6qw,60.7,96.68 - Nathalie Talk: Making the UI fun
@@ -152,7 +152,7 @@
 - [ ] yt-SslJr_Fv6qw,242.68,261.74 - Nathalie Talk: Cross-discipline work
 - [ ] yt-SslJr_Fv6qw,261.74,310.52 - Nathalie Talk: Hardware & Software
 
-## 2019-02-06 
+## 2019-02-06
 - [ ] yt-Dtm6xIj-wM4,271.997687,278.693237 - Q&A: What is wrong with your face?
 - [ ] yt-Dtm6xIj-wM4,278.693237,280.42817 - Q&A: Pipes?
 - [ ] yt-Dtm6xIj-wM4,354.60912,371.76666666666665 - Q&A: How much will Satisfactory cost?
@@ -233,7 +233,7 @@
 - [ ] yt-Dtm6xIj-wM4,4023.871916,4027.748785 - Q&A: Long-range transport?
 - [ ] yt-Dtm6xIj-wM4,4048.165275,4050.819876 - Q&A: Pipes?
 
-## 2019-02-20 
+## 2019-02-20
 - [ ] yt-CB9bSigNYH8,359.388323,361.317611 - Q&A: What is this?
 - [ ] yt-CB9bSigNYH8,361.317611,374.51402 - Q&A: Where is Hannah from?
 - [ ] yt-CB9bSigNYH8,374.51402,385.67962 - Q&A: Underwater gameplay?
@@ -392,7 +392,7 @@
 - [ ] yt-CB9bSigNYH8,5436.988277,5448.739181 - Q&A: Will co-op be available from the start in Early Access?
 - [ ] yt-CB9bSigNYH8,5450.593416,5454.661311 - Q&A: Will there be seasons?
 
-## 2019-03-07 
+## 2019-03-07
 - [ ] yt-VHr4x1vNeoY,35.34,47.56 - Q&A: Why Early Access?
 - [ ] yt-VHr4x1vNeoY,47.56,69.16 - Q&A: How much will it cost?
 - [ ] yt-VHr4x1vNeoY,69.16,117.14 - Q&A: Regional Pricing?
@@ -401,7 +401,7 @@
 - [ ] yt-VHr4x1vNeoY,302.5,354.4 - Q&A: What happens after the Alpha Test Weekend and before Early Access?
 - [ ] yt-VHr4x1vNeoY,354.4,375.68 - Q&A: The minimum system requirements are kinda high... Why?
 
-## 2019-03-15 
+## 2019-03-15
 - [ ] yt-R0S19_caQuw,46.2,55.16 - Q&A: When exactly will Early Access launch?
 - [ ] yt-R0S19_caQuw,55.16,67.94 - Community FYI: Satisfactory isn't appearing in my library even thought I pre-purchased it
 - [ ] yt-R0S19_caQuw,67.94,69.96 - Q&A: Can I pre-download the game?
@@ -420,13 +420,13 @@
 - [ ] yt-R0S19_caQuw,428.86,433.1 - Q&A: Any plans to make jump pads adjustable?
 - [ ] yt-R0S19_caQuw,433.1,447.14 - Q&A: Any ETA on Dedicated Servers?
 
-## 2019-04-17 
+## 2019-04-17
 - [ ] yt-s9JIUKS0p2Q,96.64,112 - Dancing coffee stainer
 
-## 2019-04-26 
+## 2019-04-26
 - [ ] yt--eBlSsTmUSE,167.8,226.24 - Jace Talk: Milo tutorial delays Update
 
-## 2019-05-14 
+## 2019-05-14
 - [ ] yt-aceacdNX9WA,31.712972,55.112001 - Jace Talk: Opening up Localisation & changing Roadmap
 - [ ] yt-aceacdNX9WA,69.676137,85.946572 - Jace Talk: Conveyor Lifts
 - [ ] yt-aceacdNX9WA,85.946572,96.095281 - Jace Talk: New resources, Quartz & Sulfur
@@ -437,7 +437,7 @@
 - [ ] yt-aceacdNX9WA,152.279617,162.126431 - Jace Talk: We've added a Rifle
 - [ ] yt-aceacdNX9WA,162.126431,170.318853 - Jace Talk: Rifle Mk.2
 
-## 2019-05-24 
+## 2019-05-24
 - [ ] yt-fI7gnbG4Omk,6.28,35 - Kristoffer Talk: History at Coffee Stain
 - [ ] yt-fI7gnbG4Omk,35,73.6 - Kristoffer Talk: Amount of animation in Satisfactory
 - [ ] yt-fI7gnbG4Omk,73.6,91.66 - Kristoffer Talk: Kristoffer's favourite animations
@@ -445,23 +445,23 @@
 - [ ] yt-fI7gnbG4Omk,243.56,258.52 - Kristoffer Talk: Hardware
 - [ ] yt-fI7gnbG4Omk,258.52,304.52 - Kristoffer Talk: Easter Eggs & Community Feedback
 
-## 2019-06-07 
+## 2019-06-07
 - [ ] yt-RvKmQs6m_iY,17.36,65.3 - Jace Talk: Satisfactory sales figures
 - [ ] yt-RvKmQs6m_iY,65.3,120.22 - Jace Talk: Thank you to our Community
 
-## 2019-07-02 
+## 2019-07-02
 - [ ] yt-mtVwiCQ5sZI,194.15229166666666,201.326125 - Jace Talk: We've revampled the end-game areas
 - [ ] yt-mtVwiCQ5sZI,208.79191666666665,222.76420833333333 - Jace Talk: Upgraded buildings available
 - [ ] yt-mtVwiCQ5sZI,227.68579166666666,244.7445 - Jace Talk: Bauxite
 - [ ] yt-mtVwiCQ5sZI,244.7445,261.97004166666665 - Jace Talk: Snutt's little baby
 - [ ] yt-mtVwiCQ5sZI,276.85991666666666,312.72908333333334 - Jace Talk: We've added Nuclear Power
 
-## 2019-07-06 
+## 2019-07-06
 - [ ] yt-OXblIR1BnIM,9.070002,19.33124 - Jace Talk: Coffee Stain Summer break
 - [ ] yt-OXblIR1BnIM,19.33124,42.166271 - Jace Talk: No major updates while we're on break
 - [ ] yt-OXblIR1BnIM,42.166271,60.158046 - Jace Talk: Update 3 scheduled for planning after the Summer break
 
-## 2019-09-13 
+## 2019-09-13
 - [ ] yt-s3m74qGSYK4,15.320043,39.543556 - Jace Talk: Dev Highlights editing stream
 - [ ] yt-s3m74qGSYK4,39.543556,56.82 - Jace Talk: We want to do more dev/programming streams
 - [ ] yt-s3m74qGSYK4,56.82,101.62 - Jace Talk: Community priotisation of Dedicated Servers vs. Mod Support
@@ -469,7 +469,7 @@
 - [ ] yt-s3m74qGSYK4,145.56,164.32 - Jace Talk: Mass dismantle
 - [ ] yt-s3m74qGSYK4,164.32,202.64 - Jace Talk: Cloud saves
 
-## 2019-09-25 
+## 2019-09-25
 - [ ] yt-t1LfyNfuMVQ,30.72,52.88 - Snutt Talk: Backup your saves
 - [ ] yt-t1LfyNfuMVQ,52.88,84.28 - Snutt Talk: Train bug fixes
 - [ ] yt-t1LfyNfuMVQ,84.28,100.36 - Snutt Talk: Mass Dismantle
@@ -479,7 +479,7 @@
 - [ ] yt-t1LfyNfuMVQ,250,272.56 - Community FYI: I don't see some of my save files in game
 - [ ] yt-t1LfyNfuMVQ,272.56,307.28 - Q&A: Why am I seeing duplicates of my save files?
 
-## 2019-10-24 
+## 2019-10-24
 - [ ] yt-8WYNwGDLYNE,11.34,45.84 - Hannah Talk: Becoming the Level Designer at Coffee Stain
 - [ ] yt-8WYNwGDLYNE,45.84,89.4 - Hannah Talk: Starting out in Level Design
 - [ ] yt-8WYNwGDLYNE,89.4,132.8 - Hannah Talk: Level Design vs. World Design
@@ -490,7 +490,7 @@
 - [ ] yt-8WYNwGDLYNE,362.38,417.64 - Hannah Talk: World Updates interfering with factories
 - [ ] yt-8WYNwGDLYNE,417.64,439.88 - Hannah Talk: First job in the industry
 
-## 2019-11-05 
+## 2019-11-05
 - [ ] yt-Fsod_UF5eus,20.779934,37.720185 - Jace Talk: Hannah's Dev Highlight video
 - [ ] yt-Fsod_UF5eus,40.28,74.36 - Q&A: Update 3 release date?
 - [ ] yt-Fsod_UF5eus,138.04,156.08 - Q&A: Is this the last update?
@@ -498,14 +498,14 @@
 - [ ] yt-Fsod_UF5eus,321.48,367 - Q&A: What about smaller updates? Bug fixes etc.?
 - [ ] yt-Fsod_UF5eus,367,403.76 - Q&A: Dedicated Servers?
 
-## 2019-12-02 
+## 2019-12-02
 - [ ] yt-JahYj98r0dQ,18.0051,72.8 - Jace Talk: We do see the bug reports and crash reports on the Experimental version of the game
 
-## 2019-12-13 
+## 2019-12-13
 - [ ] yt-N1o3tK1h8cM,27.8,61.72 - Snutt Talk: I'm not replacing Jace
 - [ ] yt-N1o3tK1h8cM,61.72,72.68 - Snutt Talk: Improving Community Engagement
 
-## 2019-12-19 
+## 2019-12-19
 - [ ] yt-52nYaN8imgo,21.58,24.46 - April Update Info + Milo tutorial (April 2019)
 - [ ] yt-52nYaN8imgo,24.46,25.22 - Q&A: Early Access info, localisation, save files + more (March 2019)
 - [ ] yt-52nYaN8imgo,25.22,34.16 - Coffee Stain are hiring a Community Manager! [BTS] (November 2018)
@@ -556,7 +556,7 @@
 - [ ] yt-52nYaN8imgo,345.8,359.58 - Update #2: Trains & Nuclear (July 2019)
 - [ ] yt-52nYaN8imgo,359.58,365.44 - Studio Tour of Coffee Stain Studios [BTS] (June 2019)
 
-## 2020-01-20 
+## 2020-01-20
 - [ ] yt-pTKDTJSsAm4,38.30493333333333,89.267366 - Jace Talk: Shop Teaser
 - [ ] yt-pTKDTJSsAm4,89.267366,136.60313333333335 - Jace Talk: Microtransactions
 - [ ] yt-pTKDTJSsAm4,136.60313333333335,157.8577 - Jace Talk: Another Teaser Trailer
@@ -565,7 +565,7 @@
 - [ ] yt-pTKDTJSsAm4,247.8476,300.9006 - Save Files in Update 3
 - [ ] yt-pTKDTJSsAm4,300.9006,359.09206666666665 - Most Annoying Bugs?
 
-## 2020-03-12 
+## 2020-03-12
 - [ ] yt-DsbHR1Nc8fw,32.57420833333333,55.97258333333333 - Jace & Snutt Talk: lolnope
 - [ ] yt-DsbHR1Nc8fw,67.81774999999999,97.51408333333333 - Jace Talk: Finding the most amazing pipes
 - [ ] yt-DsbHR1Nc8fw,118.57679166666667,123.28983333333332 - Snutt & Jace Talk: Jace climbs into an airplane engine
@@ -581,7 +581,7 @@
 - [ ] yt-DsbHR1Nc8fw,453.4947083333333,469.5107083333333 - Jace Talk: Hyper Tubes
 - [ ] yt-DsbHR1Nc8fw,513.8466666666666,523.138287 - Jace Talk: Biiiiig Pipe
 
-## 2020-04-02 
+## 2020-04-02
 - [ ] yt-BmKMv6SZJ5M,24.68,79.06 - Jace Talk: Impact of global pandemic
 - [ ] yt-BmKMv6SZJ5M,79.06,122.12 - Jace Talk: Steam Release
 - [ ] yt-BmKMv6SZJ5M,122.12,145.62 - Q&A: When is the Steam release going to come?
@@ -591,13 +591,13 @@
 - [ ] yt-BmKMv6SZJ5M,206.74,237.3 - Q&A: Will there be cross-platform support between Steam and Epic?
 - [ ] yt-BmKMv6SZJ5M,237.3,254.96 - Jace Talk: More information on Steam release and next Update coming soon
 
-## 2020-04-30 
+## 2020-04-30
 - [ ] yt-mci92Mhr7MM,54.88816666666667,96.964745 - Simon & Jace Talk: Welcome to the video
 - [ ] yt-mci92Mhr7MM,711.0436666666667,726.1587666666667 - Q&A: What does the Somersloop do?
 - [ ] yt-mci92Mhr7MM,893.1589333333334,928.6944333333333 - Simon & Jace Talk: Kristoffer
 - [ ] yt-mci92Mhr7MM,928.6944333333333,947.2796666666667 - Simon & Jace Talk: VFX for Buildings (Part 2)
 
-## 2020-05-15 
+## 2020-05-15
 - [ ] yt-NlIVwoRqjVk,26.760066666666667,70.83743333333334 - Q&A: Is there any plans for any sort of flying vehicle?
 - [ ] yt-NlIVwoRqjVk,211.4112,226.3261 - Q&A: Will the Steam version of the game run on Linux? Either native or with Proton?
 - [ ] yt-NlIVwoRqjVk,288.288,301.33436666666665 - Q&A: Official Mod Support?
@@ -629,16 +629,16 @@
 - [ ] yt-NlIVwoRqjVk,1176.7088666666666,1213.6124 - Q&A: What are your thoughts regarding replayability?
 - [ ] yt-NlIVwoRqjVk,1213.6124,1227.0591666666667 - Q&A: In a far and glorious future will we have other maps?
 
-## 2020-05-29 
+## 2020-05-29
 - [ ] yt-loADR1sAjJ8,18.291818,38.1381 - Jace Talk: Release date for bringing Experimental Branch to Early Access
 - [ ] yt-loADR1sAjJ8,38.1381,47.7477 - Jace Talk: Release date for Steam Release
 
-## 2020-06-12 
+## 2020-06-12
 - [ ] yt-dWVeL2caR6o,10.109714,42.024589 - Jace Talk: We released the game on Steam
 - [ ] yt-dWVeL2caR6o,42.024589,68.534158 - Jace Talk: Sales figures
 - [ ] yt-dWVeL2caR6o,68.534158,126.14538 - Jace Talk: The "Delay" video
 
-## 2020-07-23 
+## 2020-07-23
 - [ ] yt-JOBcS413hwY,27.660966666666667,60.427033333333334 - Jace Talk: JaceArt
 - [ ] yt-JOBcS413hwY,60.427033333333334,94.46103333333333 - Jace Art: You guys want boats? I'll give you boats.
 - [ ] yt-JOBcS413hwY,94.46103333333333,120.3202 - Jace Talk: #looking-for-group
@@ -649,7 +649,7 @@
 - [ ] yt-JOBcS413hwY,441.40763333333337,489.3221666666667 - Jace Art: Packing up the base
 - [ ] yt-JOBcS413hwY,489.3221666666667,533.2660666666667 - Jace Art: Programmable Automation Robot
 
-## 2020-07-30 
+## 2020-07-30
 - [ ] yt-1dUNmBBbExs,655.75986,667.119423 - Community FYI: Uses standard popup with custom disconnect message
 - [ ] yt-1dUNmBBbExs,1086.385008,1097.2333333333333 - Q&A: Where's the Tony Hawk Pro Skater mod so you can grind that sick rail
 - [ ] yt-1dUNmBBbExs,1097.238666,1142.529312 - Mod highlight part 1: Mk++
@@ -668,7 +668,7 @@
 - [ ] yt-1dUNmBBbExs,3224.978273,3283.3333333333335 - Q&A: What is your favourite Mod?
 - [ ] yt-1dUNmBBbExs,3395.015298,3450.885972 - Q&A: What's in the box?
 
-## 2020-09-09 
+## 2020-09-09
 - [ ] yt-dSnqRq1hLZY,14.199802,26.81167 - Snutt Talk: Merch launch on For Fans By Fans
 - [ ] yt-dSnqRq1hLZY,38.2,72.3 - Q&A: When will Update 4 be coming out?
 - [ ] yt-dSnqRq1hLZY,72.3,102.46666666666667 - Snutt Talk: Fluids Update
@@ -677,7 +677,7 @@
 - [ ] yt-dSnqRq1hLZY,145.46666666666667,159.96666666666667 - Q&A: Why is shipping so expensive (outside of the US)?
 - [ ] yt-dSnqRq1hLZY,159.96666666666667,162.96666666666667 - Q&A: Did Coffee Stain become sellouts?
 
-## 2020-10-01 
+## 2020-10-01
 - [ ] yt-rATcozDE25c,52.48576666666667,86.3863 - Q&A: Will there be a feature to allow multiple bases for competitive multiplayer?
 - [ ] yt-rATcozDE25c,86.3863,134.26746666666668 - Q&A: Are there any plans beyond 1.0?
 - [ ] yt-rATcozDE25c,134.26746666666668,137.0369 - Q&A: How are you?
@@ -710,7 +710,7 @@
 - [ ] yt-rATcozDE25c,1132.131,1166.9324333333334 - Q&A: Will there be an official peaceful/passive mode?
 - [ ] yt-rATcozDE25c,1166.9324333333334,1212.1442666666667 - Q&A: How do you guys feel about an underground biome?
 
-## 2020-10-27 
+## 2020-10-27
 - [ ] yt-iahxEfLCFWU,162.12863333333334,186.2861 - Snutt Talk: Pipes Mk.2
 - [ ] yt-iahxEfLCFWU,186.2861,224.15726666666666 - Snutt Talk: Pump Mk.2
 - [ ] yt-iahxEfLCFWU,224.15726666666666,245.06148333333334 - Snutt Talk: Valves
@@ -718,7 +718,7 @@
 - [ ] yt-iahxEfLCFWU,283.90028333333333,298.3981 - Snutt Talk: Wall & Ceiling-mounted Power Connections
 - [ ] yt-iahxEfLCFWU,298.3981,309.309 - Snutt Talk: Ladders
 
-## 2020-11-05 
+## 2020-11-05
 - [ ] yt-omjFqZQV9fI,87.75433333333334,146.332766 - Ben & Jace Talk: Waterfalls
 - [ ] yt-omjFqZQV9fI,263.127195,312.229396 - Ben & Jace Talk: Screen-space Reflections
 - [ ] yt-omjFqZQV9fI,312.229396,339.184635 - Ben & Jace Talk: Fancy Caustics
@@ -730,7 +730,7 @@
 - [ ] yt-omjFqZQV9fI,1557.4892666666667,1611.657276 - Q&A: What are Baked Materials?
 - [ ] yt-omjFqZQV9fI,1611.657276,1670.669 - Ben & Jace Talk: Optimisation review - Refinery (Part 2)
 
-## 2020-11-12 
+## 2020-11-12
 - [ ] yt-VYyFA7-yRKc,12.72,57 - Q&A: Who is Birk?
 - [ ] yt-VYyFA7-yRKc,118,132.32 - Birk Talk: Core content updates
 - [ ] yt-VYyFA7-yRKc,132.32,151.88 - Birk Talk: Ongoing content
@@ -739,12 +739,12 @@
 - [ ] yt-VYyFA7-yRKc,210.48,250.84 - Birk Talk: Update 4
 - [ ] yt-VYyFA7-yRKc,250.84,277.08 - Birk Talk: Updates after Update 4 and before 1.0
 
-## 2020-11-16 
+## 2020-11-16
 - [ ] yt-UT9iNA3WGT4,311.51120000000003,343.0760666666667 - Nathalie Talk: How Nathalie joined Coffee Stain
 - [ ] yt-UT9iNA3WGT4,343.0760666666667,366.07956 - Hannah Talk: How Hannah joined Coffee Stain
 - [ ] yt-UT9iNA3WGT4,366.07956,402.7023 - Anna Talk: How Anna joined Coffee Stain
 
-## 2020-11-27 
+## 2020-11-27
 - [ ] yt-0kmDHBWf640,217.75086666666667,269.13553333333334 - Jace Talk: Packet Reordering
 - [ ] yt-0kmDHBWf640,269.13553333333334,296.0958 - Jace Talk: Improved I/O Speeds
 - [ ] yt-0kmDHBWf640,551.0838666666667,584.3170666666667 - Q&A: Does this mean we will lose the color palette / preset functionality?
@@ -752,7 +752,7 @@
 - [ ] yt-0kmDHBWf640,607.2066,644.796035 - Jace Talk: Screen Space Global Illumination
 - [ ] yt-0kmDHBWf640,644.796035,691.9245666666667 - Jace Talk: Sky and Atmosphere System
 
-## 2020-12-04 
+## 2020-12-04
 - [ ] yt-KH5SkE4nzhg,18.952266666666667,37.2372 - Jace Talk: Tier 8 in Update 4
 - [ ] yt-KH5SkE4nzhg,37.2372,45.237345 - Jace Talk: When Update 4 will come out
 - [ ] yt-KH5SkE4nzhg,45.237345,77.938843 - Jace Talk: Tier 8 & the change in vision for Tier 7
@@ -765,12 +765,12 @@
 - [ ] yt-KH5SkE4nzhg,237.3371,261.1942666666667 - Jace Talk: Lost Progress / Broken saves?
 - [ ] yt-KH5SkE4nzhg,261.1942666666667,306.2726333333333 - Jace Talk: Director Mark's Top 10 Tips on how to prepare for Update 4
 
-## 2020-12-11 
+## 2020-12-11
 - [ ] yt-njXBs_p2l1w,95.36193333333334,124.9248 - New Parts coming in Update 4
 - [ ] yt-njXBs_p2l1w,124.9248,154.154 - Coffee Stain R&D Factory
 - [ ] yt-njXBs_p2l1w,713.1457666666666,757.1897666666666 - Outro
 
-## 2020-12-17 
+## 2020-12-17
 - [ ] yt--JXPsTlJIiI,148.11463333333333,192.3922 - Q&A: Will FICS⁕MAS and seasonal events in general be a regular thing?
 - [ ] yt--JXPsTlJIiI,192.3922,201.23436666666666 - Q&A: Will we get signs any time soon?
 - [ ] yt--JXPsTlJIiI,201.23436666666666,203.1029 - Q&A: How are you?
@@ -807,32 +807,32 @@
 - [ ] yt--JXPsTlJIiI,1151.6505,1208.0401666666667 - Q&A: Dedicated Server status report!
 - [ ] yt--JXPsTlJIiI,1208.0401666666667,1266.3651 - Q&A: Do you plan to add copy & paste functionality / blueprints?
 
-## 2021-01-15 
+## 2021-01-15
 - [ ] yt-Jxh8kvtUuxY,46.3463,56.38966666666667 - Nitrogen
 - [ ] yt-Jxh8kvtUuxY,56.38966666666667,100.56713333333333 - Resource Wells
 - [ ] yt-Jxh8kvtUuxY,100.56713333333333,136.00253333333333 - Headlift for Gases
 - [ ] yt-Jxh8kvtUuxY,136.00253333333333,187.084505 - Q&A: What will Gases be used for?
 
-## 2021-02-05 
+## 2021-02-05
 - [ ] yt-rI5kRMSwo5Q,42.273444,75.54611 - UI Change - Open in Codex
 - [ ] yt-rI5kRMSwo5Q,263.8969666666667,286.05243333333334 - UI Change - Unreleased Building sneak-peek (don't tell anyone)
 - [ ] yt-rI5kRMSwo5Q,286.05243333333334,330.36336666666665 - UI Change - Power Management
 
-## 2021-02-19 
+## 2021-02-19
 - [ ] yt-Tmpors_r_Vw,26.259566666666668,78.078 - Power Switch
 - [ ] yt-Tmpors_r_Vw,138.50503333333333,197.79760000000002 - Geothermal Generators
 - [ ] yt-Tmpors_r_Vw,266.43283333333335,323.323 - Outro Surprise
 
-## 2021-02-26 
+## 2021-02-26
 - [ ] yt-F-q3vfj__M4,11.610235,31.36466666666667 - Update 4 Expected Release Date on Experimental
 - [ ] yt-F-q3vfj__M4,31.36466666666667,80.08 - Q&A: Why does it go to Experimental first?
 - [ ] yt-F-q3vfj__M4,80.08,112.71260000000001 - Q&A: When's it going to be on Early Access?
 
-## 2021-03-12 
+## 2021-03-12
 - [ ] yt-xLLyS6RvFm8,65.43203333333334,82.253109 - All of the Update 4 related things in a playlist
 - [ ] yt-xLLyS6RvFm8,82.253109,99.371802 - Jace is going on an extended break
 
-## 2021-03-16 
+## 2021-03-16
 - [ ] yt-Dp77ih_XmkY,117.674411,163.625 - Tier 7 is getting a makeover
 - [ ] yt-Dp77ih_XmkY,163.625,185.58333333333334 - We're also adding Nitrogen Gas
 - [ ] yt-Dp77ih_XmkY,185.58333333333334,195.325577 - The Blender
@@ -907,7 +907,7 @@
 - [ ] yt-Gdz6SUv9Om4,15345.195156,15370.710615 - Q&A: Patch Notes?
 - [ ] yt-Gdz6SUv9Om4,15421.888035,15449.754378 - Snutt Talk: We do these streams every week
 
-## 2021-03-26 
+## 2021-03-26
 - [ ] yt-jmrABq4cCzY,46.916666666666664,67.75 - Snutt Talk: If you have bugs or feedback, use the QA Site
 - [ ] yt-jmrABq4cCzY,67.75,92.66666666666667 - Snutt Talk: Accessing the Experimental Branch
 - [ ] yt-jmrABq4cCzY,92.66666666666667,109.25 - Snutt Talk: Expected date for Update 4 on Early Access
@@ -916,7 +916,7 @@
 - [ ] yt-jmrABq4cCzY,252.91666666666666,279.75 - Snutt Talk: Tweaking Update 4 Alt Recipes
 - [ ] yt-jmrABq4cCzY,279.75,305.2916666666667 - Snutt Talk: If you have thoughts or feedback about Recipe balancing, use the QA Site
 
-## 2021-04-13 
+## 2021-04-13
 - [ ] yt-cF3QleeEiJo,606.00038713619193,621.383652 - State of Dev: Releasing Update 4 on Early Access today
 - [ ] yt-cF3QleeEiJo,636.86561,687.994812 - State of Dev: Jace is still on vacation
 - [ ] yt-cF3QleeEiJo,775.109813,827.4339818257979 - Snutt Talk: Snutt's Beard & Beanie
@@ -942,13 +942,13 @@
 - [ ] yt-cF3QleeEiJo,7280.486312,7320.342219 - Snutt Talk: Update 4 Trailer Music
 - [ ] yt-cF3QleeEiJo,7320.342219,7347.74998 - Snutt Talk: Update 4 is out
 
-## 2021-04-23 
+## 2021-04-23
 - [ ] yt-vuDlUdTeEMI,11.458333333333334,36.208333333333336 - Snutt Talk: Last week we launched Update 4 on Early Access
 - [ ] yt-vuDlUdTeEMI,279.2083333333333,322.7083333333333 - Snutt Talk: Connectivity Issues and work arounds
 - [ ] yt-vuDlUdTeEMI,322.7083333333333,358.8333333333333 - Snutt Talk: Foliage bugs
 - [ ] yt-vuDlUdTeEMI,421.3333333333333,461.7083333333333 - Snutt Talk: Mods aren't officially supported (yet)
 
-## 2021-05-28 
+## 2021-05-28
 - [ ] yt-dyqOMITwLsY,167.292125,199.03216666666665 - Snutt & Ben Talk: Unreal Engine Object Limit
 - [ ] yt-dyqOMITwLsY,448.69825,500.75024999999994 - Q&A: Is there anything else aside from Conveyor Belts that's not using Distance Fields?
 - [ ] yt-dyqOMITwLsY,597.456414,647.6052916666666 - Q&A: Is there anything else you're planning to do with Lights in the future?
@@ -957,14 +957,14 @@
 - [ ] yt-dyqOMITwLsY,886.779315,945.720316 - Ben Talk: Other optimisations to Constructors
 - [ ] yt-dyqOMITwLsY,1286.7855,1330.7460833333332 - Ben Talk: Custom Hologram colours coming in the future
 
-## 2021-06-18 
+## 2021-06-18
 - [ ] yt-slNYE26evgc,83.45003333333334,131.86506666666668 - Q&A: When is Update 5 coming?
 - [ ] yt-slNYE26evgc,200.86733333333333,248.61503333333334 - Jace Talk: Train Updates
 - [ ] yt-slNYE26evgc,248.61503333333334,291.32436666666666 - Q&A: Will we have Signs?
 - [ ] yt-slNYE26evgc,434.4673666666667,492.492 - Jace Talk: Dedicated Servers
 - [ ] yt-slNYE26evgc,492.492,543.543 - Jace Talk: Merch Updates & EU Store
 
-## 2021-10-15 
+## 2021-10-15
 - [ ] yt-jTIAMuPqSlI,24.051364,54.621233333333336 - Jace Talk: We're hiring for a Generalist Game Designer
 - [ ] yt-jTIAMuPqSlI,54.6546,80.08 - Jace Talk: Ramp snapping improvements
 - [ ] yt-jTIAMuPqSlI,149.58276666666666,173.49957 - Jace Talk: More freedom with Stairs
@@ -976,12 +976,47 @@
 - [ ] yt-jTIAMuPqSlI,369.9028666666667,396.86313333333334 - Jace Talk: You can now modify Hologram colours to your liking
 - [ ] yt-jTIAMuPqSlI,496.8964,518.4179 - Jace Talk: List of Buildings with Complex Clearance
 
-## 2021-10-22 
+## 2021-10-22
 - [ ] yt-cNBKEaJMLyM,4.935811,50.68396666666667 - Jace Talk: Update 5 Experimental Release
 - [ ] yt-cNBKEaJMLyM,50.726218,67.70096666666667 - Jace Talk: Chat reactions to Update 4 Patch Notes
 - [ ] yt-cNBKEaJMLyM,67.73433333333334,114.28083333333333 - Jace Talk: What we've released so far on Update 5
 
-## 2021-10-26 
+## 2021-10-26
+- [ ] yt-QfaReoks6OM,13.375,34.688486 - Jace & Snutt Talk: Introductions
+- [ ] yt-QfaReoks6OM,34.75,57.333333333333336 - Jace & Snutt Talk: Golf
+- [ ] yt-QfaReoks6OM,124.41666666666667,163.20833333333334 - Jace Talk: Hard & Soft Clearance
+- [ ] yt-QfaReoks6OM,163.25,185.29166666666666 - Snutt Talk: Quick Switch Improvements
+- [ ] yt-QfaReoks6OM,185.33333333333334,200.29166666666666 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 2)
+- [ ] yt-QfaReoks6OM,200.33333333333334,222.20833333333334 - Snutt Talk: Zooping
+- [ ] yt-QfaReoks6OM,222.25,231.70833333333334 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 3)
+- [ ] yt-QfaReoks6OM,231.75,262.75 - Snutt & Jace Talk: More Cosmetic Build Pieces
+- [ ] yt-QfaReoks6OM,262.7916666666667,269.8333333333333 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 4)
+- [ ] yt-QfaReoks6OM,269.875,281.4166666666667 - Jace & Snutt Talk: The Customizer
+- [ ] yt-QfaReoks6OM,292.875,305.7916666666667 - Snutty Mays & Juice Velvet Talk: Introducing The Customizer™
+- [ ] yt-QfaReoks6OM,305.8333333333333,323.1666666666667 - Snutty Mays Talk: Customizer Build Menu
+- [ ] yt-QfaReoks6OM,323.2083333333333,338.780872 - Q&A: Can we just place the Build piece with the Material I wanted from the get-go?
+- [ ] yt-QfaReoks6OM,338.8333333333333,359.555311 - Q&A: What about Colors?
+- [ ] yt-QfaReoks6OM,359.5833333333333,366.5 - Q&A: Can we set the Colors to the Hot Bar too?
+- [ ] yt-QfaReoks6OM,366.5416666666667,382.7083333333333 - Snutty Mays Talk: Foundation Stencils
+- [ ] yt-QfaReoks6OM,382.7916666666667,403.0416666666667 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 5)
+- [ ] yt-QfaReoks6OM,403.0833333333333,437.7916666666667 - Snutt Talk: Huge Update to automated Vehicle pathing & surrounding systems
+- [ ] yt-QfaReoks6OM,437.8333333333333,460.125 - Jace Talk: Save & Load Vehicle Paths
+- [ ] yt-QfaReoks6OM,440.494852,444.0833333333333 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 6)
+- [ ] yt-QfaReoks6OM,460.1666666666667,474.8333333333333 - Jace Talk: Truck Stations have gotten an Update
+- [ ] yt-QfaReoks6OM,474.875,481.4117 - Jace Talk: We've updated the Truck Station UI
+- [ ] yt-QfaReoks6OM,481.4583333333333,502.9583333333333 - Snutt Talk: You can Paint Vehicles now
+- [ ] yt-QfaReoks6OM,500.5416666666667,551.5416666666666 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 7)
+- [ ] yt-QfaReoks6OM,551.5833333333334,584.2916666666666 - Snutt & Jace Talk: We've updated the Northern Forest
+- [ ] yt-QfaReoks6OM,584.3333333333334,595.0416666666666 - Jace Talk: Dune Desert is getting an Update
+- [ ] yt-QfaReoks6OM,595.0833333333334,606.7916666666666 - Jace Talk: We're updating some of the Caves
+- [ ] yt-QfaReoks6OM,606.8333333333334,644.4583333333334 - Snutt & Jace Talk: No more Dora
+- [ ] yt-QfaReoks6OM,644.5,681.534533 - Snutt & Jace Talk: We're finally adding Signs to the game
+- [ ] yt-QfaReoks6OM,681.5833333333334,707.75 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 8)
+- [ ] yt-QfaReoks6OM,707.7916666666666,764.0416666666666 - Snutt & Jace Talk: Train Signals and Collisions
+- [ ] yt-QfaReoks6OM,764.0833333333334,783.137801 - Snutt Talk: An Update to Train Timetables
+- [ ] yt-QfaReoks6OM,1018.375,1045.875 - Snutt & Jace Talk: Jace won, we get Dedicated Servers
+- [ ] yt-QfaReoks6OM,1045.9166666666667,1068.12962 - Jace & Snutt Talk: There's a lot more coming to Update 5
+- [ ] yt-QfaReoks6OM,1068.1666666666667,1079.875 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 11)
 - [ ] yt-Rumqu_lyapg,652.347712,661.434899 - Snutt & Jace Talk: Bisexual Finger Guns (Part 1)
 - [ ] yt-Rumqu_lyapg,786.0666666666667,805.495442 - Q&A: Covid situation in Sweden?
 - [ ] yt-Rumqu_lyapg,805.5333333333333,844.62595 - Snutt & Jace Talk: Showing off the current office streaming setup
@@ -1094,3 +1129,37 @@
 - [ ] yt-Rumqu_lyapg,16781.133333333335,16820.401456 - Snutt & Jace Talk: Do check out the Patch Notes Video on YouTube
 - [ ] yt-Rumqu_lyapg,16820.433333333334,16842.066021 - Q&A: When will Update 5 come to Early Access?
 - [ ] yt-Rumqu_lyapg,16911.8,16917.930858 - End Tag
+
+## 2021-10-27
+- [ ] yt-Nn-1s87JJxc,34.2342,61.59486666666667 - Q&A: Did you just add a Dedicated Server model to the game?
+- [ ] yt-Nn-1s87JJxc,61.628233333333334,88.92216666666667 - Jace Talk: Dedicated Servers are super experimental
+- [ ] yt-Nn-1s87JJxc,88.95553333333334,140.67386666666667 - Jace Talk: We would appreciate your feedback on the Dedicated Servers
+- [ ] yt-Nn-1s87JJxc,140.70723333333333,196.0959 - Q&A: Where can I get the Dedicated Servers?
+- [ ] yt-Nn-1s87JJxc,196.12926666666667,206.1059 - Q&A: What operating systems do you support?
+- [ ] yt-Nn-1s87JJxc,206.13926666666666,207.87433333333334 - Q&A: Are the Servers headless?
+- [ ] yt-Nn-1s87JJxc,382.4821,433.36626666666666 - Q&A: How many people can fit on one Server?
+- [ ] yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667 - Q&A: Are Coffee Stain hosting any official Dedicated Servers?
+- [ ] yt-Nn-1s87JJxc,447.21343333333334,490.72356666666667 - Q&A: Has Coffee Stain partnered with any external vendors?
+- [ ] yt-Nn-1s87JJxc,490.75693333333334,517.1833333333334 - Jace Talk: Setting up a Server
+- [ ] yt-Nn-1s87JJxc,517.2167000000001,557.020737 - Jace Talk: How to find Satisfactory Dedicated Server in Steam
+- [ ] yt-Nn-1s87JJxc,557.0565,613.9466666666667 - Jace Talk: Launching a Dedicated Server
+- [ ] yt-Nn-1s87JJxc,800.3328666666666,822.1546666666667 - Jace Talk: Administrator permissions
+
+## 2021-10-28
+- [ ] yt-YSPnFZbTvxE,12.9129,50.7507 - Jace Talk: Lizard Doggo Plush
+- [ ] yt-YSPnFZbTvxE,50.78406666666667,66.69996666666667 - Jace Talk: Dave from Heroic Replicas
+- [ ] yt-YSPnFZbTvxE,66.73333333333333,88.42166666666667 - Jace Talk: Heroic Replicas and the Xenobasher prototype
+
+## 2021-10-29
+- [ ] yt-rePLsjw-eEY,45.311933333333336,78.41166666666666 - Jace Talk: A lot of love from the Studio to you guys
+- [ ] yt-rePLsjw-eEY,78.44503333333334,114.48103333333333 - Jace Talk: Update 5 bug reports
+- [ ] yt-rePLsjw-eEY,195.987197,212.21200000000002 - Q&A: Do I need to buy the game on Steam to use Dedicated Servers if I already have the game on Epic?
+- [ ] yt-rePLsjw-eEY,226.3261,274.14053333333334 - Jace Talk: Steam/Epic bug
+- [ ] yt-rePLsjw-eEY,274.1739,307.37373333333335 - Jace Talk: Missing Uranium & Bauxite nodes
+- [ ] yt-rePLsjw-eEY,307.4071,338.814696 - Jace Talk: Stackable Conveyor Poles & Floor Holes have Hard Clearance
+- [ ] yt-rePLsjw-eEY,385.7854,405.30490000000003 - Snutt Talk: You can Paint Vehicles, Trains, and Drones
+- [ ] yt-rePLsjw-eEY,513.0458666666667,572.2049666666667 - Snutt Talk: Toggling Conveyor Lift direction
+- [ ] yt-rePLsjw-eEY,664.0634,690.3897000000001 - Snutt Talk: We've added a lot more Emotes to the game
+- [ ] yt-rePLsjw-eEY,690.4564333333334,702.2348666666667 - Snutt Talk: We've added more Personal Storage Boxes
+- [ ] yt-rePLsjw-eEY,765.7983666666667,798.4977 - Snutt Talk: We've added more music
+- [ ] yt-rePLsjw-eEY,798.5310666666667,840.6398 - Snutt Talk: Fine-grained volume controls
