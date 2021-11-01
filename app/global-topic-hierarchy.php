@@ -1589,4 +1589,12 @@ $injected_global_topic_hierarchy = [
 		'Buildables',
 		'Foundations',
 	],
+	'Doors' => [
+		'Features',
+		'Buildables',
+	],
+	'Floor Holes' => [
+		'Features',
+		'Buildables',
+	],
 ];

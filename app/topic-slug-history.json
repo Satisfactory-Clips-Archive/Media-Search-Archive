@@ -1385,5 +1385,13 @@
     },
     "Update 5 Wager on releasing Golf versus Dedicated Servers": {
         "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video\/update-5-wager-on-releasing-golf-versus-dedicated-servers": 1635709367
+    },
+    "Doors": {
+        "doors": 1635723492,
+        "features\/buildables\/doors": 1635724298
+    },
+    "Floor Holes": {
+        "floor-holes": 1635723492,
+        "features\/buildables\/floor-holes": 1635724298
     }
 }

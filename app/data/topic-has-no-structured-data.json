@@ -60,6 +60,8 @@
     "features\/buildables",
     "features\/buildables\/beams",
     "features\/buildables\/conveyor-belts",
+    "features\/buildables\/doors",
+    "features\/buildables\/floor-holes",
     "features\/buildables\/foundations",
     "features\/buildables\/foundations\/cheatcrete",
     "features\/buildables\/foundations\/stencils",

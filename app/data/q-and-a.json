@@ -1,4 +1,20 @@
 {
+    "yt-rePLsjw-eEY,195.987197,212.21200000000002": {
+        "title": "Q&A: Do I need to buy the game on Steam to use Dedicated Servers if I already have the game on Epic?",
+        "date": "2021-10-29",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers",
+            "retail\/epic-store",
+            "retail\/steam-store",
+            "satisfactory-updates\/released\/satisfactory-update-5"
+        ],
+        "replaces": [
+            "tc-ConfidentLittleSnood4Head"
+        ],
+        "seealso_video_cards": [
+            "QfaReoks6OM"
+        ]
+    },
     "yt-Nn-1s87JJxc,34.2342,61.59486666666667": {
         "title": "Q&A: Did you just add a Dedicated Server model to the game?",
         "date": "2021-10-27",
@@ -1394,7 +1410,8 @@
             "retail\/steam-store",
             "satisfactory-updates\/teasers-trailers\/update-5-launch-stream",
             "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/update-5-revealed"
-        ]
+        ],
+        "replacedby": "yt-rePLsjw-eEY,226.3261,274.14053333333334"
     },
     "yt-Rumqu_lyapg,16750.9,16781.100663": {
         "title": "Q&A: What if we can't see the Dedicated Servers on Steam?",
@@ -3214,7 +3231,8 @@
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp3QMTxKRnehenCwo17MuJy"
-        ]
+        ],
+        "replacedby": "yt-rePLsjw-eEY,513.0458666666667,572.2049666666667"
     },
     "pSBR2kkCdB0": {
         "title": "Q&A: Is the reminder coming back where it tells you you're a potato for playing for 2 hours?",
@@ -5076,7 +5094,8 @@
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoAqIqsBIdN_uoV-HsP8YDJ"
-        ]
+        ],
+        "replacedby": "yt-rePLsjw-eEY,901.9010000000001,966.2319333333334"
     },
     "y7y-w8tPtLw": {
         "title": "Q&A: Will there be overclocking on Vehicles?",
@@ -5602,7 +5621,8 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpH9vCWSguzYfXrsjagXgyE",
             "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6"
-        ]
+        ],
+        "replacedby": "yt-rePLsjw-eEY,765.7983666666667,798.4977"
     },
     "H8Rj4XIl2VA": {
         "title": "Q&A: Do you have a goal for the expected game time for Story & 1.0?",
@@ -8660,7 +8680,8 @@
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq1lyHQw0wVik2U0W0lmO1p"
-        ]
+        ],
+        "replacedby": "yt-rePLsjw-eEY,405.3382666666667,513.0125"
     },
     "Kdro87BHOmo": {
         "title": "Q&A: Will we get rebindable copy\/paste?",
@@ -12091,7 +12112,8 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp9DQ8xVeTCFqcFSLB_9tJj",
             "PLbjDnnBIxiEr6Nss4Y03AxUncqfZfcu1L"
-        ]
+        ],
+        "replacedby": "yt-rePLsjw-eEY,405.3382666666667,513.0125"
     },
     "C4n6x_JOdP8": {
         "title": "Q&A: Gonna hurt your 1000 hour save?",
@@ -12303,7 +12325,8 @@
         "seealso": [
             "1ANLQo9YLJI",
             "Qye9x2Ht1AI"
-        ]
+        ],
+        "replacedby": "yt-rePLsjw-eEY,572.2383333333333,664.0300333333333"
     },
     "lV5xV4bi3Fw": {
         "title": "Q&A: Any chance of asteroid or volcano smashing through our factory?",
@@ -34679,7 +34702,8 @@
         "seealso": [
             "Lv_BZl7rgOE",
             "Q4BRujPmgN0"
-        ]
+        ],
+        "replacedby": "yt-rePLsjw-eEY,664.0634,690.3897000000001"
     },
     "7R_kqWfRwhA": {
         "title": "Q&A: Can there be a first-person view for driving cars?",
@@ -35236,7 +35260,8 @@
         "seealso": [
             "6KmwHFLnoO4",
             "HDlxFGP87Oo"
-        ]
+        ],
+        "replacedby": "yt-rePLsjw-eEY,798.5310666666667,840.6398"
     },
     "bfXUQNNIPRY": {
         "title": "Q&A: Multiplayer, how's it going- when came better sync in Multiplayer?",
@@ -50385,7 +50410,8 @@
             "H6FZ4VqocHw",
             "SdB0QlhgmGs",
             "WEq2xEXVVQ0"
-        ]
+        ],
+        "replacedby": "yt-rePLsjw-eEY,195.987197,212.21200000000002"
     },
     "tc-DirtyHilariousPancakeWow": {
         "title": "Q&A: More Wildlife?",
