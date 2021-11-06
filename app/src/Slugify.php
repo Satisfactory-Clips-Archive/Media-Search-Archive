@@ -40,6 +40,7 @@ class Slugify extends Base
 			'Update 5 Final Countdown' => 'its-the-final-countdown',
 			'Foundation Stencils' => 'stencils',
 			'Snutty Mays & Juice Velvet Present: The Customizer™' => 'snutty-mays-and-juice-velvet-present-the-customizer',
+			'Update 5 Torsten\'s Cosmetics Whiteboard' => 'torstens-cosmetics-whiteboard',
 		];
 
 		parent::__construct($options, $provider);

@@ -53,6 +53,11 @@ $global_topic_hierarchy = [
 		'Satisfactory Updates',
 		'Teasers & Trailers',
 	],
+	'PLbjDnnBIxiEqV8w9wOvrxi26vETzqpoFE' => [ // Update 5 Launch Stream
+		503,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+	],
 	'PLbjDnnBIxiEq-eP01Lynsg2Jv-wLEWQ7e' => [ // Satisfactory Prototypes
 		-5,
 		'Satisfactory Updates',
@@ -1235,6 +1240,16 @@ $global_topic_hierarchy = [
 	'PLbjDnnBIxiEqilvgLbk4PUBQSyokspJyD' => [ // Tobias
 		'Coffee Stainers',
 	],
+	'PLbjDnnBIxiEpJ3RlWlRcK-b0kRERkWQvC' => [ // Foundation Stencils
+		'Features',
+		'Buildables',
+		'Foundations',
+	],
+	'PLbjDnnBIxiEoBGB6CsIIsXKJwXx_cRwrg' => [ // Update 5 Torsten's Cosmetics Whiteboard
+		'Satisfactory Updates',
+		'Released',
+		'Satisfactory Update 5',
+	],
 ];
 
 /** @var array<string, string> */
@@ -1519,11 +1534,6 @@ $injected_global_topic_hierarchy = [
 		'Build Modes',
 		'Hard & Soft Clearance',
 	],
-	'Update 5 Launch Stream' => [
-		503,
-		'Satisfactory Updates',
-		'Teasers & Trailers',
-	],
 	'Update 5 Quiz: Underrated/Overrated' => [
 		1,
 		'Satisfactory Updates',
@@ -1583,11 +1593,6 @@ $injected_global_topic_hierarchy = [
 	'Juice Velvet' => [
 		'Coffee Stainers',
 		'Jace',
-	],
-	'Foundation Stencils' => [
-		'Features',
-		'Buildables',
-		'Foundations',
 	],
 	'Doors' => [
 		'Features',
