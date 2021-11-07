@@ -464,7 +464,7 @@
 ## 2019-09-13
 - [ ] yt-s3m74qGSYK4,15.320043,39.543556 - Jace Talk: Dev Highlights editing stream
 - [ ] yt-s3m74qGSYK4,39.543556,56.82 - Jace Talk: We want to do more dev/programming streams
-- [ ] yt-s3m74qGSYK4,56.82,101.62 - Jace Talk: Community prioritisation of Dedicated Servers vs. Mod Support
+- [x] yt-s3m74qGSYK4,56.82,101.62 - Jace Talk: Community prioritisation of Dedicated Servers vs. Mod Support
 - [ ] yt-s3m74qGSYK4,101.62,145.56 - Jace Talk: Train fixes
 - [ ] yt-s3m74qGSYK4,145.56,164.32 - Jace Talk: Mass dismantle
 - [ ] yt-s3m74qGSYK4,164.32,202.64 - Jace Talk: Cloud saves
