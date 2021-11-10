@@ -1254,6 +1254,27 @@ $global_topic_hierarchy = [
 		'Coffee Stainers',
 		'Jace',
 	],
+	'PLbjDnnBIxiErnQCb-1B-c4ZGlEyHNjJeJ' => [ // Xeno-Zapper
+		'Features',
+		'Equipment',
+	],
+	'PLbjDnnBIxiErK7fd-2751XSaF1RQrw2a8' => [ // Xeno-Basher
+		'Features',
+		'Equipment',
+	],
+	'PLbjDnnBIxiEpBFizujOmT7WUoGNxq-qFg' => [ // Resource Scanner
+		'Features',
+		'Equipment',
+	],
+	'PLbjDnnBIxiEpuOTI51V9B1koMUCsNYuIA' => [ // Nobelisk
+		'Features',
+		'Equipment',
+	],
+	'PLbjDnnBIxiEpMcQCwqBC_U-M431lx1DoG' => [ // Nobelisk Detonator
+		'Features',
+		'Equipment',
+		'Nobelisk',
+	],
 ];
 
 /** @var array<string, string> */
@@ -1586,7 +1607,7 @@ $injected_global_topic_hierarchy = [
 		'Teasers & Trailers',
 		'Update 5 Patch Notes Video',
 	],
-	'The Customizer' => [
+	'Customizer' => [
 		'Features',
 		'Equipment',
 	],
@@ -1605,5 +1626,9 @@ $injected_global_topic_hierarchy = [
 	'Floor Holes' => [
 		'Features',
 		'Buildables',
+	],
+	'Parachute' => [
+		'Features',
+		'Equipment',
 	],
 ];

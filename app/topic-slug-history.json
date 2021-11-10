@@ -365,7 +365,8 @@
     },
     "PLbjDnnBIxiEqr7yS5ijjDUeaivXoHd4Rm": {
         "off-topic\/pizza": 1611444659,
-        "off-topic\/food-drink\/pizza": 1624051607
+        "off-topic\/food-drink\/pizza": 1624051607,
+        "off-topic\/food-and-drink\/pizza": 1636539478
     },
     "PLbjDnnBIxiEp9qgkHSjAgFlLTm5-ZWSQD": {
         "off-topic\/sanctum": 1611444659
@@ -434,7 +435,8 @@
         "special-guests": 1611444659
     },
     "PLbjDnnBIxiEqVFI-QzAYCAwlivLcFxa61": {
-        "story-lore": 1611444659
+        "story-lore": 1611444659,
+        "story-and-lore": 1636539478
     },
     "Technology": {
         "technology": 1611444659
@@ -515,7 +517,8 @@
     },
     "PLbjDnnBIxiEq-TyD3B3FYRk-YaTyPt7_k": {
         "off-topic\/semlor": 1611887963,
-        "off-topic\/food-drink\/semlor": 1624051607
+        "off-topic\/food-drink\/semlor": 1624051607,
+        "off-topic\/food-and-drink\/semlor": 1636539478
     },
     "PLbjDnnBIxiEp0LTS_gLsiacb7JQimuAra": {
         "off-topic\/the-cycle": 1611887963
@@ -533,10 +536,12 @@
         "mods\/ficsit-farming": 1611992269
     },
     "Characters": {
-        "story-lore\/characters": 1611992269
+        "story-lore\/characters": 1611992269,
+        "story-and-lore\/characters": 1636539478
     },
     "PLbjDnnBIxiErZY7hh-HMSgx77BlCLUgRb": {
-        "story-lore\/characters\/ada": 1611992269
+        "story-lore\/characters\/ada": 1611992269,
+        "story-and-lore\/characters\/ada": 1636539478
     },
     "PLbjDnnBIxiEontiBSe54bXKMMdsRG7Q3_": {
         "community\/josh": 1612074854
@@ -558,7 +563,8 @@
     },
     "PLbjDnnBIxiEqHIuDkJqcpobQ_z7NknHVJ": {
         "caterina-parks": 1612296843,
-        "story-lore\/characters\/caterina-parks": 1612299257
+        "story-lore\/characters\/caterina-parks": 1612299257,
+        "story-and-lore\/characters\/caterina-parks": 1636539478
     },
     "PLbjDnnBIxiEpZz_Py2KcHNItA7jY1nTrB": {
         "factorio": 1612296843,
@@ -586,7 +592,8 @@
         "environment\/resources\/steel": 1612299257
     },
     "PLbjDnnBIxiEr4KkkPWBDMJdu4Y4S3Pn7x": {
-        "story-lore\/characters\/steve": 1612299257
+        "story-lore\/characters\/steve": 1612299257,
+        "story-and-lore\/characters\/steve": 1636539478
     },
     "PLbjDnnBIxiEoNob1WtMvqzwc3KqxW9dvM": {
         "features\/unplanned-features\/vr": 1612299257
@@ -750,7 +757,8 @@
         "features\/equipment\/blade-runners": 1614225057
     },
     "PLbjDnnBIxiEp-sFymxlcEagoTYEPciGUc": {
-        "satisfactory-updates\/teasers-trailers": 1614225057
+        "satisfactory-updates\/teasers-trailers": 1614225057,
+        "satisfactory-updates\/teasers-and-trailers": 1636539478
     },
     "Easter Eggs": {
         "easter-eggs": 1614370716
@@ -986,19 +994,24 @@
         "off-topic\/sweden": 1617662993
     },
     "PLbjDnnBIxiEpQ6aOWoeKjQHAvB5VZAJsj": {
-        "satisfactory-updates\/teasers-trailers\/update-3-reveal-trailer": 1617662993
+        "satisfactory-updates\/teasers-trailers\/update-3-reveal-trailer": 1617662993,
+        "satisfactory-updates\/teasers-and-trailers\/update-3-reveal-trailer": 1636539478
     },
     "PLbjDnnBIxiEoJKFR8oveQqco9GX9ct3MJ": {
-        "satisfactory-updates\/teasers-trailers\/update-3-patch-notes-video": 1617662993
+        "satisfactory-updates\/teasers-trailers\/update-3-patch-notes-video": 1617662993,
+        "satisfactory-updates\/teasers-and-trailers\/update-3-patch-notes-video": 1636539478
     },
     "PLbjDnnBIxiEq5RG94oLoX2Uh2s1qdO7pT": {
-        "satisfactory-updates\/teasers-trailers\/update-4-teasers": 1617662993
+        "satisfactory-updates\/teasers-trailers\/update-4-teasers": 1617662993,
+        "satisfactory-updates\/teasers-and-trailers\/update-4-teasers": 1636539478
     },
     "PLbjDnnBIxiEooFFzttwXeeagqJmJRQi_V": {
-        "satisfactory-updates\/teasers-trailers\/update-4-launch-stream": 1617662993
+        "satisfactory-updates\/teasers-trailers\/update-4-launch-stream": 1617662993,
+        "satisfactory-updates\/teasers-and-trailers\/update-4-launch-stream": 1636539478
     },
     "PLbjDnnBIxiEo1tIwenNsU5NhXb8oK3gC-": {
-        "satisfactory-updates\/teasers-trailers\/update-4-patch-notes-video": 1617662993
+        "satisfactory-updates\/teasers-trailers\/update-4-patch-notes-video": 1617662993,
+        "satisfactory-updates\/teasers-and-trailers\/update-4-patch-notes-video": 1636539478
     },
     "PLbjDnnBIxiEomDrLRY8jOvB_l8DEGgrnG": {
         "community\/satisfactory-calculator": 1617790706
@@ -1025,7 +1038,8 @@
         "coffee-stainers\/michiel": 1618414779
     },
     "Update 4 Launch Trailer": {
-        "satisfactory-updates\/teasers-trailers\/update-4-launch-trailer": 1618413739
+        "satisfactory-updates\/teasers-trailers\/update-4-launch-trailer": 1618413739,
+        "satisfactory-updates\/teasers-and-trailers\/update-4-launch-trailer": 1636539478
     },
     "Tobias": {
         "coffee-stainers\/tobias": 1618414779
@@ -1080,10 +1094,12 @@
         "community\/tom": 1620853797
     },
     "PLbjDnnBIxiEpSyvmQgCEC-hEKtmowhDVV": {
-        "satisfactory-updates\/teasers-trailers\/update-5-teasers": 1621427414
+        "satisfactory-updates\/teasers-trailers\/update-5-teasers": 1621427414,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-teasers": 1636539478
     },
     "PLbjDnnBIxiEp1tfSvG0zuVBRf93GM6-Np": {
-        "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video": 1621427414
+        "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video": 1621427414,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-patch-notes-video": 1636539478
     },
     "PLbjDnnBIxiEpS1BDtD6ZonY3QdNz6g9Gj": {
         "technology\/directx": 1622291071
@@ -1129,7 +1145,8 @@
         "environment\/resources\/power-slug": 1622921459
     },
     "PLbjDnnBIxiErcP0g2Ihv6H7ZJUVB8sOqH": {
-        "features\/buildings\/overclocking-underclocking": 1622921459
+        "features\/buildings\/overclocking-underclocking": 1622921459,
+        "features\/buildings\/overclocking-and-underclocking": 1636539478
     },
     "PLbjDnnBIxiEqpoKbEqKcyh5D006HnL3xJ": {
         "features\/possible-features\/underground-biome": 1622921459
@@ -1178,13 +1195,16 @@
         "off-topic\/songs-of-conquest": 1624051607
     },
     "PLbjDnnBIxiEqyvBwUfe5uPRaYXnxqzV7F": {
-        "off-topic\/food-drink": 1624051607
+        "off-topic\/food-drink": 1624051607,
+        "off-topic\/food-and-drink": 1636539478
     },
     "PLbjDnnBIxiEoAocvkqdiufABlldkC0MiI": {
-        "off-topic\/food-drink\/coffee": 1624051607
+        "off-topic\/food-drink\/coffee": 1624051607,
+        "off-topic\/food-and-drink\/coffee": 1636539478
     },
     "PLbjDnnBIxiEpAdZpi9bywSwC-YRlCfSq4": {
-        "off-topic\/food-drink\/milk": 1624051607
+        "off-topic\/food-drink\/milk": 1624051607,
+        "off-topic\/food-and-drink\/milk": 1636539478
     },
     "PLbjDnnBIxiErfSRFGVD72KG2FQQkUqXOf": {
         "concept-art": 1624588104
@@ -1226,7 +1246,8 @@
         "technology\/vulkan": 1625314870
     },
     "PLbjDnnBIxiErDv_Gc-PQatZJDvGk1JA9l": {
-        "story-lore\/project-assembly": 1625918510
+        "story-lore\/project-assembly": 1625918510,
+        "story-and-lore\/project-assembly": 1636539478
     },
     "PLbjDnnBIxiEqF0rRv9aGsHsbBLogS1lLp": {
         "rogerhn": 1625944040,
@@ -1250,7 +1271,8 @@
         "off-topic\/australia": 1627028398
     },
     "PLbjDnnBIxiEooqHzCQjhtwuRXP4-M-ojs": {
-        "off-topic\/food-drink\/bacon": 1627028398
+        "off-topic\/food-drink\/bacon": 1627028398,
+        "off-topic\/food-and-drink\/bacon": 1636539478
     },
     "PLbjDnnBIxiEoUB0-Iz-ci4sxnKfg1zVa_": {
         "coffee-stainers\/jace\/fix-jace-qa-site-posts": 1627067213
@@ -1318,7 +1340,8 @@
         "features\/buildables\/pillars": 1633818357
     },
     "PLbjDnnBIxiErG8xome5LS0FQBrQsdR_vb": {
-        "features\/planned-features\/build-modes\/hard-soft-clearance": 1633857755
+        "features\/planned-features\/build-modes\/hard-soft-clearance": 1633857755,
+        "features\/planned-features\/build-modes\/hard-and-soft-clearance": 1636539478
     },
     "PLbjDnnBIxiErGzhsUN4suUKqAYQpEPrbm": {
         "features\/planned-features\/build-modes\/quick-switch": 1633857755
@@ -1339,7 +1362,8 @@
         "coffee-stainers\/tobias": 1635187834
     },
     "Complex Clearance": {
-        "features\/planned-features\/build-modes\/hard-soft-clearance\/complex-clearance": 1635187834
+        "features\/planned-features\/build-modes\/hard-soft-clearance\/complex-clearance": 1635187834,
+        "features\/planned-features\/build-modes\/hard-and-soft-clearance\/complex-clearance": 1636539478
     },
     "Satisfactory Update 5 Launch Stream": {
         "satisfactory-update-5-launch-stream": 1635422312
@@ -1351,22 +1375,28 @@
         "satisfactory-updates\/teasers-trailers\/update-5-launch-stream": 1635422312
     },
     "Update 5 Art Giveaway": {
-        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/art-giveaway": 1635633950
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/art-giveaway": 1635633950,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-launch-stream\/art-giveaway": 1636539478
     },
     "Update 5 Challenge Run": {
-        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/challenge-run": 1635633950
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/challenge-run": 1635633950,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-launch-stream\/challenge-run": 1636539478
     },
     "Update 5 Final Countdown": {
-        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/its-the-final-countdown": 1635633950
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/its-the-final-countdown": 1635633950,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-launch-stream\/its-the-final-countdown": 1636539478
     },
     "Update 5 Loot": {
-        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/loot": 1635633950
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/loot": 1635633950,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-launch-stream\/loot": 1636539478
     },
     "Update 5 Quiz: Underrated\/Overrated": {
-        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/underrated-or-overrated-quiz": 1635633950
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/underrated-or-overrated-quiz": 1635633950,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-launch-stream\/underrated-or-overrated-quiz": 1636539478
     },
     "Update 5 Revealed": {
-        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/update-5-revealed": 1635633950
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream\/update-5-revealed": 1635633950,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-launch-stream\/update-5-revealed": 1636539478
     },
     "Foundation Stencils": {
         "features\/buildables\/foundations\/stencils": 1635709367
@@ -1378,13 +1408,12 @@
         "coffee-stainers\/snutt\/snutty-mays": 1635709367
     },
     "Snutty Mays & Juice Velvet Present: The Customizer\u2122": {
-        "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video\/snutty-mays-and-juice-velvet-present-the-customizer": 1635709367
-    },
-    "The Customizer": {
-        "features\/equipment\/the-customizer": 1635709367
+        "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video\/snutty-mays-and-juice-velvet-present-the-customizer": 1635709367,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-patch-notes-video\/snutty-mays-and-juice-velvet-present-the-customizer": 1636539478
     },
     "Update 5 Wager on releasing Golf versus Dedicated Servers": {
-        "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video\/update-5-wager-on-releasing-golf-versus-dedicated-servers": 1635709367
+        "satisfactory-updates\/teasers-trailers\/update-5-patch-notes-video\/update-5-wager-on-releasing-golf-versus-dedicated-servers": 1635709367,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-patch-notes-video\/update-5-wager-on-releasing-golf-versus-dedicated-servers": 1636539478
     },
     "Doors": {
         "doors": 1635723492,
@@ -1398,12 +1427,35 @@
         "features\/buildables\/foundations\/stencils": 1636206852
     },
     "PLbjDnnBIxiEqV8w9wOvrxi26vETzqpoFE": {
-        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream": 1636206852
+        "satisfactory-updates\/teasers-trailers\/update-5-launch-stream": 1636206852,
+        "satisfactory-updates\/teasers-and-trailers\/update-5-launch-stream": 1636539478
     },
     "PLbjDnnBIxiEoBGB6CsIIsXKJwXx_cRwrg": {
         "satisfactory-updates\/released\/satisfactory-update-5\/torstens-cosmetics-whiteboard": 1636237609
     },
     "PLbjDnnBIxiEoS0LAKAPcnVrP2IDwb4kqi": {
         "coffee-stainers\/jace\/hello-fresh": 1636287736
+    },
+    "Customizer": {
+        "features\/equipment\/the-customizer": 1635709367,
+        "features\/equipment\/customizer": 1636498685
+    },
+    "PLbjDnnBIxiEpuOTI51V9B1koMUCsNYuIA": {
+        "features\/equipment\/nobelisk": 1636498685
+    },
+    "PLbjDnnBIxiEpMcQCwqBC_U-M431lx1DoG": {
+        "features\/equipment\/nobelisk\/detonator": 1636498843
+    },
+    "Parachute": {
+        "features\/equipment\/parachute": 1636498685
+    },
+    "PLbjDnnBIxiEpBFizujOmT7WUoGNxq-qFg": {
+        "features\/equipment\/resource-scanner": 1636498685
+    },
+    "PLbjDnnBIxiErnQCb-1B-c4ZGlEyHNjJeJ": {
+        "features\/equipment\/xeno-basher": 1636498685
+    },
+    "PLbjDnnBIxiErK7fd-2751XSaF1RQrw2a8": {
+        "features\/equipment\/xeno-zapper": 1636498685
     }
 }

@@ -42,6 +42,8 @@ class Slugify extends Base
 			'Snutty Mays & Juice Velvet Present: The Customizer™' => 'snutty-mays-and-juice-velvet-present-the-customizer',
 			'Update 5 Torsten\'s Cosmetics Whiteboard' => 'torstens-cosmetics-whiteboard',
 			'Jace\'s HelloFresh Deliveries' => 'hello-fresh',
+			'Nobelisk Detonator' => 'detonator',
+			'&' => 'and',
 		];
 
 		parent::__construct($options, $provider);
