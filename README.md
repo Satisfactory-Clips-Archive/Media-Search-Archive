@@ -6,7 +6,7 @@ Static site generator for
 
 # See Also
 
-* [Satisfactory Q&A Clips Archive](https://archive.satisfactory.video/) - Serves as an archive for Q&A Clips for Coffee Stain Studio's Satisfactory-related livestreams & other videos.
+* [Satisfactory Clips Archive](https://archive.satisfactory.video/) - Serves as an archive for Clips for Coffee Stain Studio's Satisfactory-related livestreams & other videos.
 
 # Changelog
 
@@ -15,6 +15,7 @@ Static site generator for
 * Fixing transcriptions cache bypass bug
 * Modified custom Slugify class to transpose "&" to literal "and"
 * Updated logo
+* Rebranded from "Q&A Clips Archive" to "Satisfactory Clips Archive"
 
 ## 2021-10-24
 * Adding a tool to aid in the identification of clips needing native YouTube clips
