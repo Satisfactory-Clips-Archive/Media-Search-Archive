@@ -26,6 +26,7 @@ use function chr;
 use function count;
 use function date;
 use function dirname;
+use ErrorException;
 use function file_get_contents;
 use function file_put_contents;
 use function hash;
@@ -640,6 +641,9 @@ $carriage_return = true;
 
 $all_video_ids = array_reverse($all_video_ids);
 
+/** @var array<string, string> */
+$erroring = [];
+
 foreach ($all_video_ids as $video_id) {
 	++$checked;
 
@@ -650,6 +654,15 @@ foreach ($all_video_ids as $video_id) {
 	);
 
 	if ($last_compile_date !== $current_compile_date) {
+		if (count($erroring)) {
+			echo "\n", implode(',' . "\n", array_keys($erroring)), ',', "\n";
+
+			throw new RuntimeException(sprintf(
+				'Errored on %s videos',
+				count($erroring)
+			));
+		}
+
 		echo "\n\n",
 			sprintf('compiling transcriptions for %s', $current_compile_date),
 			"\n";
@@ -669,10 +682,20 @@ foreach ($all_video_ids as $video_id) {
 
 	$carriage_return = true;
 
+	try {
 	$caption_lines = captions(
 		$video_id,
 		$playlist_topic_strings_reverse_lookup
 	);
+	} catch (ErrorException $e) {
+		if (false !== strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')) {
+			$erroring[$video_id] = $e->getMessage();
+
+			continue;
+		} else {
+			throw $e;
+		}
+	}
 
 	if (in_array($video_id, $skipping, true)) {
 		continue;
@@ -774,6 +797,15 @@ foreach ($all_video_ids as $video_id) {
 	}
 
 	usleep(1);
+}
+
+if (count($erroring)) {
+	echo "\n", implode(',' . "\n", array_keys($erroring)), ',', "\n";
+
+	throw new RuntimeException(sprintf(
+		'Errored on %s videos',
+		count($erroring)
+	));
 }
 
 file_put_contents(

@@ -1222,18 +1222,24 @@ function captions(
 	string $video_id,
 	array $playlist_topic_strings_reverse_lookup
 ) : array {
+	/** @var list<string>|null */
+	static $previously_skipped = null;
+
+	if (null === $previously_skipped) {
+		/** @var list<string> */
+		$previously_skipped = json_decode(
+			file_get_contents(__DIR__ . '/../skipping-transcriptions.json'),
+			true
+		);
+	}
+
 	if (
 		! preg_match(
 			'/^https:\/\/(?:youtu\.be|youtube\.com\/(?:embed|clip))\//',
 			video_url_from_id($video_id, true)
 		)
+		|| in_array($video_id, $previously_skipped, true)
 	) {
-		return [];
-	}
-
-	$maybe = raw_captions($video_id);
-
-	if ( ! isset($maybe[1])) {
 		return [];
 	}
 
@@ -1248,6 +1254,12 @@ function captions(
 			file_get_contents($captions_cache_file),
 			true
 		);
+	}
+
+	$maybe = raw_captions($video_id);
+
+	if ( ! isset($maybe[1])) {
+		return [];
 	}
 
 	if (array_key_exists(0, $maybe) && null === $maybe[0]) {
@@ -2345,10 +2357,20 @@ function process_externals(
 	/** @var array<string, bool> */
 	$file_blanked = [];
 
+	/** @var array<string, string> */
+	$erroring = [];
+
+	ksort($externals);
+
 	foreach ($externals as $date => $externals_data_groups) {
 		$file_blanked[$date] = false;
 
+		echo 'processing externals for ', $date, "\n";
+
 		foreach ($externals_data_groups as $externals_data) {
+			[$externals_video_id] = $externals_data;
+
+			try {
 			[$inject, $lines_to_write] = process_dated_csv(
 				$date,
 				$inject,
@@ -2363,6 +2385,15 @@ function process_externals(
 				$file_blanked[$date],
 				$file_blanked[$date] && 1 === count($externals_data_groups)
 			);
+			} catch (ErrorException $e) {
+				if (false !== strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')) {
+					$erroring[$externals_video_id] = $e->getMessage();
+
+					continue;
+				} else {
+					throw $e;
+				}
+			}
 
 			$filename = (
 				__DIR__
@@ -2455,6 +2486,14 @@ function process_externals(
 				}
 			}
 		}
+	}
+
+	if (count($erroring)) {
+		throw new RuntimeException(sprintf(
+			'Errored on %s videos: %s',
+			count($erroring),
+			implode(', ', array_keys($erroring))
+		));
 	}
 
 	return $inject;

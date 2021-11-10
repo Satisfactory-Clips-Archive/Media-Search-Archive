@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2021-11-10
+* Increased logging to alert for missing transcriptions
+* Fixing transcriptions cache bypass bug
+
 ## 2021-10-24
 * Adding a tool to aid in the identification of clips needing native YouTube clips
 * Move array reversal to avoid cache expiry on recently-added clips
