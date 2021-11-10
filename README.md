@@ -14,6 +14,7 @@ Static site generator for
 * Increased logging to alert for missing transcriptions
 * Fixing transcriptions cache bypass bug
 * Modified custom Slugify class to transpose "&" to literal "and"
+* Updated logo
 
 ## 2021-10-24
 * Adding a tool to aid in the identification of clips needing native YouTube clips
