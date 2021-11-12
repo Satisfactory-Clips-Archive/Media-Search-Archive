@@ -44,6 +44,7 @@ class Slugify extends Base
 			'Jace\'s HelloFresh Deliveries' => 'hello-fresh',
 			'Nobelisk Detonator' => 'detonator',
 			'&' => 'and',
+			'Skövde' => 'skovde',
 		];
 
 		parent::__construct($options, $provider);

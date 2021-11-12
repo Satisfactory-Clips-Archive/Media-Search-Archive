@@ -1275,6 +1275,18 @@ $global_topic_hierarchy = [
 		'Equipment',
 		'Nobelisk',
 	],
+	'PLbjDnnBIxiErBLos6ENvogn0gMaKYXchP' => [ // Stockholm
+		'Off-Topic',
+		'Sweden',
+	],
+	'PLbjDnnBIxiEopm69tGZl3zGYMEiuNszkt' => [ // Gothenburg
+		'Off-Topic',
+		'Sweden',
+	],
+	'PLbjDnnBIxiEr2vtUnFdTP3FRsy4HvyZhc' => [ // Skövde
+		'Off-Topic',
+		'Sweden',
+	],
 ];
 
 /** @var array<string, string> */
