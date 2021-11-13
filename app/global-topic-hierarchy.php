@@ -1287,6 +1287,43 @@ $global_topic_hierarchy = [
 		'Off-Topic',
 		'Sweden',
 	],
+	'PLbjDnnBIxiEq_ghuvlyXJ2TEs1dfgjh-3' => [ // Complex Clearance
+		'Features',
+		'Planned Features',
+		'Build Modes',
+		'Hard & Soft Clearance',
+	],
+	'PLbjDnnBIxiEozxUoff-ZKsVPXst-9HXPY' => [ // Update 5 Wager on releasing Golf versus Dedicated Servers
+		1,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+		'Update 5 Patch Notes Video',
+	],
+	'PLbjDnnBIxiEoMPT69J5UFBMeR3yqm2XEY' => [ // Snutty Mays & Juice Velvet Present: The Customizer™
+		2,
+		'Satisfactory Updates',
+		'Teasers & Trailers',
+		'Update 5 Patch Notes Video',
+	],
+	'PLbjDnnBIxiErHf4MzxQldu5ULKXwa8BhQ' => [ // Customizer
+		'Features',
+		'Equipment',
+	],
+	'PLbjDnnBIxiErPJIX0NWiekKXFIrs8d4mO' => [ // Snutty Mays
+		'Coffee Stainers',
+		'Snutt',
+	],
+	'PLbjDnnBIxiEosygjoYTHIREXy9ZtlTDfQ' => [ // Juice Velvet
+		'Coffee Stainers',
+		'Jace',
+	],
+	'PLbjDnnBIxiEpRC5dr7s1leuOT-eStCxyU' => [ // Floor Holes
+		'Features',
+		'Buildables',
+	],
+	'PLbjDnnBIxiEoXYctP6dDr666y85Qe74Nl' => [ // Vilsol
+		'Community',
+	],
 ];
 
 /** @var array<string, string> */
@@ -1565,12 +1602,6 @@ $injected_global_topic_hierarchy = [
 	'Coffee Stain Holding' => [
 		'Embracer Group',
 	],
-	'Complex Clearance' => [
-		'Features',
-		'Planned Features',
-		'Build Modes',
-		'Hard & Soft Clearance',
-	],
 	'Update 5 Quiz: Underrated/Overrated' => [
 		1,
 		'Satisfactory Updates',
@@ -1607,35 +1638,7 @@ $injected_global_topic_hierarchy = [
 		'Teasers & Trailers',
 		'Update 5 Launch Stream',
 	],
-	'Update 5 Wager on releasing Golf versus Dedicated Servers' => [
-		1,
-		'Satisfactory Updates',
-		'Teasers & Trailers',
-		'Update 5 Patch Notes Video',
-	],
-	'Snutty Mays & Juice Velvet Present: The Customizer™' => [
-		2,
-		'Satisfactory Updates',
-		'Teasers & Trailers',
-		'Update 5 Patch Notes Video',
-	],
-	'Customizer' => [
-		'Features',
-		'Equipment',
-	],
-	'Snutty Mays' => [
-		'Coffee Stainers',
-		'Snutt',
-	],
-	'Juice Velvet' => [
-		'Coffee Stainers',
-		'Jace',
-	],
 	'Doors' => [
-		'Features',
-		'Buildables',
-	],
-	'Floor Holes' => [
 		'Features',
 		'Buildables',
 	],
