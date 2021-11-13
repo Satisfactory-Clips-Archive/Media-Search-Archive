@@ -306,7 +306,7 @@
 - [ ] yt-CB9bSigNYH8,2909.614069,2937.959243 - Q&A: Requirements so far?
 - [ ] yt-CB9bSigNYH8,2937.9666666666667,2987.945714 - Q&A: Say something in French for the French community?
 - [ ] yt-CB9bSigNYH8,2992.465457,3010.894374 - Q&A: Now say something in German?
-- [ ] yt-CB9bSigNYH8,3090.973157,3125.355289 - Hannah Talk: Level Design Stream (Part 6)
+- [x] yt-CB9bSigNYH8,3090.973157,3125.355289 - Hannah Talk: Level Design Stream (Part 6)
 - [ ] yt-CB9bSigNYH8,3125.355289,3145.082652 - Q&A: Who is Hannah's favourite member of Coffee Stain?
 - [ ] yt-CB9bSigNYH8,3150.343797,3165.212187 - Q&A: Is the World procedurally generated?
 - [ ] yt-CB9bSigNYH8,3186.400967,3198.158213 - Q&A: Is Coffee Stain based in Sweden?
