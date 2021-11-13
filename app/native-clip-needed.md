@@ -1146,9 +1146,9 @@
 - [ ] yt-Nn-1s87JJxc,800.3328666666666,822.1546666666667 - Jace Talk: Administrator permissions
 
 ## 2021-10-28
-- [ ] yt-YSPnFZbTvxE,12.9129,50.7507 - Jace Talk: Lizard Doggo Plush
-- [ ] yt-YSPnFZbTvxE,50.78406666666667,66.69996666666667 - Jace Talk: Dave from Heroic Replicas
-- [ ] yt-YSPnFZbTvxE,66.73333333333333,88.42166666666667 - Jace Talk: Heroic Replicas and the Xeno-Basher prototype
+- [x] yt-YSPnFZbTvxE,12.9129,50.7507 - Jace Talk: Lizard Doggo Plush
+- [x] yt-YSPnFZbTvxE,50.78406666666667,66.69996666666667 - Jace Talk: Dave from Heroic Replicas
+- [x] yt-YSPnFZbTvxE,66.73333333333333,88.42166666666667 - Jace Talk: Heroic Replicas and the Xeno-Basher prototype
 
 ## 2021-10-29
 - [ ] yt-rePLsjw-eEY,45.311933333333336,78.41166666666666 - Jace Talk: A lot of love from the Studio to you guys
