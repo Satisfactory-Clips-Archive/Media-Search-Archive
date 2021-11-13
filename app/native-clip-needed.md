@@ -90,7 +90,7 @@
 ## 2018-09-26
 - [ ] yt-Y7G72e0LLBg,7.94,29.52 - Jannik Talk: Other games composed for
 - [ ] yt-Y7G72e0LLBg,29.52,71.42 - Jannik Talk: The vision for the Satisfactory music
-- [ ] yt-Y7G72e0LLBg,71.42,114.46 - Jannik Talk: Four different types of Satisfactory music
+- [x] yt-Y7G72e0LLBg,71.42,114.46 - Jannik Talk: Four different types of Satisfactory music
 - [ ] yt-Y7G72e0LLBg,194.44,239.28 - Jannik Talk: Productivity
 - [ ] yt-Y7G72e0LLBg,239.28,280.26 - Jannik Talk: Musical styles
 - [ ] yt-Y7G72e0LLBg,280.26,303.68 - Jannik Talk: Community Feedback
@@ -374,7 +374,7 @@
 - [ ] yt-CB9bSigNYH8,5141.221945,5152.209084 - Q&A: Can we deform terrain?
 - [ ] yt-CB9bSigNYH8,5159.481807,5167.186143 - Q&A: Will the players be able to make their own Maps?
 - [ ] yt-CB9bSigNYH8,5168.751997,5186.038783 - Hannah Talk: Level Design Stream (Part 9)
-- [ ] yt-CB9bSigNYH8,5186.033333333334,5200.942785 - Q&A: What about Snow in the game's future?
+- [x] yt-CB9bSigNYH8,5186.033333333334,5200.942785 - Q&A: What about Snow in the game's future?
 - [ ] yt-CB9bSigNYH8,5200.933333333333,5234.485233 - Hannah Talk: Level Design Stream (Part 10)
 - [ ] yt-CB9bSigNYH8,5234.485233,5238.267007 - Q&A: Weather confirmed?
 - [ ] yt-CB9bSigNYH8,5238.267007,5244.490972 - Q&A: How big is the map?
@@ -390,7 +390,7 @@
 - [ ] yt-CB9bSigNYH8,5404.066666666667,5416.979985 - Hannah Talk: Level Design Stream (Part 14)
 - [ ] yt-CB9bSigNYH8,5416.966666666666,5436.988277 - Q&A: Is this the kind of game that you wanted to design?
 - [ ] yt-CB9bSigNYH8,5436.988277,5448.739181 - Q&A: Will co-op be available from the start in Early Access?
-- [ ] yt-CB9bSigNYH8,5450.593416,5454.661311 - Q&A: Will there be seasons?
+- [x] yt-CB9bSigNYH8,5450.593416,5454.661311 - Q&A: Will there be seasons?
 
 ## 2019-03-07
 - [ ] yt-VHr4x1vNeoY,35.34,47.56 - Q&A: Why Early Access?
@@ -567,10 +567,10 @@
 
 ## 2020-03-12
 - [ ] yt-DsbHR1Nc8fw,32.57420833333333,55.97258333333333 - Jace & Snutt Talk: lolnope
-- [ ] yt-DsbHR1Nc8fw,67.81774999999999,97.51408333333333 - Jace Talk: Finding the most amazing pipes
+- [x] yt-DsbHR1Nc8fw,67.81774999999999,97.51408333333333 - Jace Talk: Finding the most amazing pipes
 - [ ] yt-DsbHR1Nc8fw,118.57679166666667,123.28983333333332 - Snutt & Jace Talk: Jace climbs into an airplane engine
 - [ ] yt-DsbHR1Nc8fw,123.28983333333332,155.44695833333333 - Jace Talk: We're sleeping in a plane, but we won't be adding planes
-- [ ] yt-DsbHR1Nc8fw,160.70220833333332,176.63479166666664 - Jace Talk: Jumbo Stay
+- [x] yt-DsbHR1Nc8fw,160.70220833333332,176.63479166666664 - Jace Talk: Jumbo Stay
 - [ ] yt-DsbHR1Nc8fw,184.759462,221.864578 - Jace Talk: We're in an airport
 - [ ] yt-DsbHR1Nc8fw,221.864578,254.54595833333332 - Jace Talk: Update to the Dune Desert
 - [ ] yt-DsbHR1Nc8fw,254.54595833333332,274.02375 - Jace Talk: Searching for pipes in Geneva
