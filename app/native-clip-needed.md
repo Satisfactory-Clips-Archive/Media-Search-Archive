@@ -1062,7 +1062,7 @@
 - [ ] yt-Rumqu_lyapg,8365.5,8392.938864 - Community FYI: Play your own game
 - [ ] yt-Rumqu_lyapg,8483.298649,8517.375811 - Snutt & Jace Talk: "Just flick the Balls" ~ Snutt, 2021
 - [ ] yt-Rumqu_lyapg,8987.7,9021.319615 - Snutt & Jace Talk: Lizard Doggo Plush
-- [ ] yt-Rumqu_lyapg,9021.366666666667,9049.045752 - Snutt & Jace Talk: Xenobasher replica (Part 1)
+- [ ] yt-Rumqu_lyapg,9021.366666666667,9049.045752 - Snutt & Jace Talk: Xeno-Basher replica (Part 1)
 - [ ] yt-Rumqu_lyapg,9048.466666666667,9052.844165 - Q&A: Where is the link?
 - [ ] yt-Rumqu_lyapg,9165.033333333333,9210.1 - Community FYI: That's a big Doggo
 - [ ] yt-Rumqu_lyapg,9210.119275,9236.247841 - Snutt & Jace Talk: Caesar, Office Doggo
@@ -1148,7 +1148,7 @@
 ## 2021-10-28
 - [ ] yt-YSPnFZbTvxE,12.9129,50.7507 - Jace Talk: Lizard Doggo Plush
 - [ ] yt-YSPnFZbTvxE,50.78406666666667,66.69996666666667 - Jace Talk: Dave from Heroic Replicas
-- [ ] yt-YSPnFZbTvxE,66.73333333333333,88.42166666666667 - Jace Talk: Heroic Replicas and the Xenobasher prototype
+- [ ] yt-YSPnFZbTvxE,66.73333333333333,88.42166666666667 - Jace Talk: Heroic Replicas and the Xeno-Basher prototype
 
 ## 2021-10-29
 - [ ] yt-rePLsjw-eEY,45.311933333333336,78.41166666666666 - Jace Talk: A lot of love from the Studio to you guys
