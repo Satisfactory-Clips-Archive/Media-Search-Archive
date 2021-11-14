@@ -195,5 +195,5 @@ licenses apply where appropriate or necessary.
 # Additional Licenses
 
 ## Satisfactory
-**Content** intended for distribution in the [Satisfactory Wiki](https://satisfactory.gamepedia.com/) is licensed under
+**Content** intended for distribution in the [Satisfactory Wiki](https://satisfactory.fandom.com/) is licensed under
 [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
