@@ -15,6 +15,38 @@ const csv = promisify(require('csv-parse'));
 const readFile = promisify(readFileAsync);
 const writeFile = promisify(writeFileAsync);
 
+const playlist_date_regex = /(January|February|March|April|May|June|July|August|September|October|November|December) (\d+)(?:st|nd|rd|th), (\d{4,}) .+$/;
+
+const dated_playlists = Object.fromEntries(
+	Object.entries(
+		require(`${__dirname}/data/api-cache/playlists.json`) as {[key:string]: string}
+	).filter((e) => {
+		const [, title] = e;
+
+		return playlist_date_regex.test(title);
+	}).map((e) => {
+		const [id, title] = e;
+
+		const date = (new Date(
+			title.replace(playlist_date_regex, '$3 $1 $2')
+		)).toISOString().split('T')[0];
+
+		return [id, [title, date, require(`${__dirname}/data/api-cache/playlists/${id}.json`)]];
+	})
+);
+
+async function date_for_video_id(video_id:string) : Promise<string> {
+	const maybe = Object.values(dated_playlists).find((maybe) => {
+		return maybe[2].includes(video_id);
+	});
+
+	if (undefined === maybe) {
+		throw new Error(`Could not find date for ${video_id}`);
+	}
+
+	return maybe[1];
+}
+
 declare type blamehannah = {
 	author: {
 		id: string,
@@ -87,6 +119,33 @@ export_these.forEach(async (data, i) => {
 			date,
 			title,
 			url: url_overrides[id],
+			via: {
+				name: 'Satisfactory Clips Archive',
+				source: 'youtube',
+				id: 'UCJamaIaFLyef0HjZ2LBEz1A',
+				date,
+			},
+		};
+	} else if (/^yt-[^,]+$/.test(id)) {
+		const source_id = id.substring(3);
+
+		const [title] = require(
+			`${__dirname}/data/api-cache/videos/${source_id}.json`
+		);
+
+		const date = await date_for_video_id(source_id);
+
+		result = {
+			author: {
+				id: 'UCnXVz_l-_r_sLXNe1ESDhHA',
+				name: 'Coffee Stain',
+			},
+			source: 'youtube',
+			screenshot_timestamp,
+			id,
+			date,
+			title,
+			url: `https://youtu.be/${source_id}`,
 			via: {
 				name: 'Satisfactory Clips Archive',
 				source: 'youtube',
