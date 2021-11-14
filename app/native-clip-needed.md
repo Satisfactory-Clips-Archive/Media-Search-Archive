@@ -925,7 +925,7 @@
 - [ ] yt-cF3QleeEiJo,1386.6346418457936,1444.599012 - Snutt Talk: Verify your game files before checking the QA site
 - [ ] yt-cF3QleeEiJo,1455.1347226958824,1505.837998 - Snutt Talk: We'll post the patch notes and everything when the Update drops
 - [ ] yt-cF3QleeEiJo,1505.837998,1558.322977 - Snutt Talk: Snutt hasn't had time for lunch
-- [ ] yt-cF3QleeEiJo,2105.731039,2156.762994 - Hannah Talk: Floating rocks
+- [x] yt-cF3QleeEiJo,2105.731039,2156.762994 - Hannah Talk: Floating rocks
 - [ ] yt-cF3QleeEiJo,4421.216082,4464.700819 - Snutt Talk: Update 4 being released on Early Access
 - [ ] yt-cF3QleeEiJo,4464.700819,4519.685072 - Q&A: Will Update 4 on Early Access break Mods?
 - [ ] yt-cF3QleeEiJo,4551.729517,4563.536908 - Q&A: Mods?
