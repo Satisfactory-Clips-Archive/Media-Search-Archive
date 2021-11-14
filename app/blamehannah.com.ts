@@ -9,7 +9,7 @@ const {
 } = require('fs');
 const export_these = require(
 	`${__dirname}/data/blamehannah.com.json`
-) as [string, number][];
+) as [string, number, string][];
 const url_overrides = require(`${__dirname}/playlists/url-overrides.json`);
 const csv = promisify(require('csv-parse'));
 const readFile = promisify(readFileAsync);
@@ -54,6 +54,7 @@ declare type blamehannah = {
 	},
 	source: 'youtube',
 	screenshot_timestamp: number,
+	alt: string,
 	id: string,
 	date: string,
 	title: string,
@@ -67,7 +68,7 @@ declare type blamehannah = {
 };
 
 export_these.forEach(async (data, i) => {
-	const [id, screenshot_timestamp] = data;
+	const [id, screenshot_timestamp, alt] = data;
 	let result:blamehannah;
 
 	if (/^yt-[^,]+\,/.test(id)) {
@@ -115,6 +116,7 @@ export_these.forEach(async (data, i) => {
 			},
 			source: 'youtube',
 			screenshot_timestamp,
+			alt,
 			id,
 			date,
 			title,
@@ -142,6 +144,7 @@ export_these.forEach(async (data, i) => {
 			},
 			source: 'youtube',
 			screenshot_timestamp,
+			alt,
 			id,
 			date,
 			title,
