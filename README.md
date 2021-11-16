@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-11-13
+* Adding support for generating data for blamehannah.com
+
 ## 2021-11-10
 * Increased logging to alert for missing transcriptions
 * Fixing transcriptions cache bypass bug

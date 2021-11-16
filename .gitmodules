@@ -4,3 +4,6 @@
 [submodule "Media-Archive-Metadata"]
 	path = Media-Archive-Metadata
 	url = https://github.com/Satisfactory-Clips-Archive/Media-Archive-Metadata.git
+[submodule "blamehannah.com"]
+	path = blamehannah.com
+	url = https://github.com/Satisfactory-Clips-Archive/blamehannah.com.git
