@@ -1,4 +1,656 @@
 {
+    "xtKjKykv2X0": {
+        "title": "Q&A: When did the World Grid come out?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/requested-features\/global-build-grid",
+            "satisfactory-updates\/released\/satisfactory-update-5"
+        ],
+        "replaces": [
+            "iiNu3aKc1VI"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEr68wcM_BJQsE35xXzjmwqX",
+            "PLbjDnnBIxiEp9DQ8xVeTCFqcFSLB_9tJj"
+        ]
+    },
+    "TGuLDBd8Wao": {
+        "title": "Q&A: Are you guys going to increase the build limit now that we can place more items?",
+        "date": "2021-11-16",
+        "topics": [
+            "technology\/unreal-engine\/object-limit"
+        ],
+        "duplicates": [
+            "JuzKAS5cvOQ"
+        ],
+        "seealso": [
+            "cVhPGZZyMn8",
+            "eReH6Sdroq8",
+            "WfU45N1EvQ0",
+            "zhXICAd27NQ"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqa47-NYtnxl93i8azA089W",
+            "PLbjDnnBIxiEp5eh0gKJcMENUPjCcoHNVH"
+        ],
+        "incoming_video_cards": [
+            "zhXICAd27NQ"
+        ]
+    },
+    "MvLBb_yKxmM": {
+        "title": "Q&A: The patch notes mentions network scalability options, what is the change really?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/multiplayer",
+            "satisfactory-updates\/released\/satisfactory-update-5"
+        ],
+        "seealso": [
+            "u3Y3HsXyatM"
+        ]
+    },
+    "b-Z4VVc06zg": {
+        "title": "Q&A: Can joining friends' games (Steam from Epic) can we have a cleaner way than Session IDs?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/multiplayer\/crossplay"
+        ],
+        "seealso": [
+            "0BJijGAInLU"
+        ]
+    },
+    "PZK2xcjLJw8": {
+        "title": "Q&A: Have you any ideas about improving tutorials to help with Train Signalling?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/transportation\/trains\/train-signals",
+            "satisfactory-updates\/released\/satisfactory-update-5"
+        ],
+        "seealso": [
+            "yvrH5XwPi4k"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErrg7lK40K9vEj_Jl2dS1hd"
+        ]
+    },
+    "v6qKwwjqagg": {
+        "title": "Q&A: FICS\u2055MAS?",
+        "date": "2021-11-16",
+        "topics": [
+            "satisfactory-updates\/seasonal-events\/fics-mas"
+        ],
+        "duplicates": [
+            "01DJ6EPqTk4",
+            "6XovxrktCDA",
+            "CmQgxVzbXoQ",
+            "FqUcLve4Oyc",
+            "kpaIwFsaOAo",
+            "MQLuFiVQPYY",
+            "nZjZGFce1lE",
+            "pcMtby2DOxQ",
+            "R16PE1knvWc",
+            "u2ckbRb5PkA",
+            "yt-Rumqu_lyapg,14624.7,14668.876814"
+        ],
+        "seealso": [
+            "-z7a6lVWssE",
+            "O_cRHUcRZ3Q",
+            "pt-jn5xUdhk",
+            "VeD6hOmySbE"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEq84iBBkP2g69rPYXD-yWMy",
+            "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6"
+        ]
+    },
+    "zhXICAd27NQ": {
+        "title": "Q&A: In regards to the build limit, is it better to build longer railway segments?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/transportation\/trains",
+            "technology\/unreal-engine\/object-limit"
+        ],
+        "seealso": [
+            "cVhPGZZyMn8",
+            "TGuLDBd8Wao"
+        ],
+        "seealso_video_cards": [
+            "TGuLDBd8Wao"
+        ]
+    },
+    "G58lDUp0lhk": {
+        "title": "Q&A: Will the Server be multi-threaded like the game client?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers"
+        ],
+        "duplicates": [
+            "sRtTjntZEMc",
+            "XencmubF6hA"
+        ],
+        "seealso": [
+            "5xMB9YAL06E",
+            "oRvsgiDJRR8"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEozm5BT2Qi4Mvu9uI6ga2uJ"
+        ]
+    },
+    "nPj_soas-a8": {
+        "title": "Q&A: Can Experimental saves be moved over to Early Access without issue?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/save-system",
+            "satisfactory-updates\/release-builds"
+        ],
+        "duplicates": [
+            "-m_-g6ELKsY",
+            "a66KD67ymLs",
+            "b586YMEHeRk",
+            "EBoS-s9O_oU",
+            "wRc1dgpRDrM",
+            "yt-cF3QleeEiJo,1303.766903,1386.648083",
+            "yt-t1LfyNfuMVQ,186.48,218.32"
+        ],
+        "seealso": [
+            "yt-F-q3vfj__M4,112.71260000000001,182.71586666666667",
+            "yt-R0S19_caQuw,86.32,144.32"
+        ]
+    },
+    "GNlkXUsq_Do": {
+        "title": "Q&A: Can we expect a fix for the reappearing explodable rocks on Dedicated Servers?",
+        "date": "2021-11-16",
+        "topics": [
+            "environment",
+            "features\/multiplayer\/dedicated-servers"
+        ],
+        "seealso": [
+            "IQjrq9QmHqA"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl",
+            "PLbjDnnBIxiEqqhOELGDMQdwRCiQAo99bW"
+        ]
+    },
+    "nSSAH4CPCNo": {
+        "title": "Q&A: Will we be able to use the Customizer to replace Foundations with Glass Foundations?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/buildables\/foundations",
+            "features\/equipment\/customizer"
+        ],
+        "seealso": [
+            "yt-8Tok_vdqZH8,58.140699,132.6324930266828"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErHf4MzxQldu5ULKXwa8BhQ"
+        ]
+    },
+    "bBdZgoKTPZ4": {
+        "title": "Q&A: Will you consider adding a feature to limit how much of a Container we can fill?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/buildables\/storage-containers",
+            "features\/requested-features"
+        ],
+        "duplicates": [
+            "KSP1Zs560Rs",
+            "xL7xZ3W_MQ0"
+        ],
+        "seealso": [
+            "KsKSqvk27Qk",
+            "pzQu_zUweOI"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErau2lNl-y0Uv9FHhiZc6Pl",
+            "PLbjDnnBIxiEqqhOELGDMQdwRCiQAo99bW"
+        ]
+    },
+    "uyKaboVm6Q0": {
+        "title": "Q&A: Some of the animations on the Blender have disappeared, any ideas what causes this?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/buildings\/blender",
+            "satisfactory-updates\/released\/satisfactory-update-5"
+        ],
+        "seealso": [
+            "Belfb_lFLmc"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqVBjXPO21-ZkvLV76plSGV",
+            "PLbjDnnBIxiErGWyROgM1QN46mY7Am9SgY",
+            "PLbjDnnBIxiEqqhOELGDMQdwRCiQAo99bW"
+        ]
+    },
+    "bpKi2UaaQLs": {
+        "title": "Q&A: Any chance the game will be on GOG at some point?",
+        "date": "2021-11-16",
+        "topics": [
+            "retail"
+        ],
+        "duplicates": [
+            "el3XMRbeP_Y"
+        ],
+        "seealso_video_cards": [
+            "8wS_NI7M5NU"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEoxt-MkPSDtxi9DBMOneqyT",
+            "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
+        ]
+    },
+    "WcsqEVLXPfU": {
+        "title": "Q&A: Will there ever be an option to toggle off monsters for those who want to just build?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/possible-features\/game-modes\/peaceful-mode"
+        ],
+        "duplicates": [
+            "KFT0l0kO5qg",
+            "MDBg0w3FweM",
+            "NQcQeykbc1E",
+            "P2H7Yidopbo",
+            "pPeoQr8CpGg",
+            "tc-ScaryTangibleTeaMrDestructoid",
+            "WMZBpM-POak",
+            "yS_1rXuvxFw",
+            "yt-rATcozDE25c,1132.131,1166.9324333333334"
+        ],
+        "seealso": [
+            "-nAX-cCDJRI",
+            "UZSByyzQ3DA",
+            "xit3DLnmAhE"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl"
+        ]
+    },
+    "WNg80maIy8E": {
+        "title": "Q&A: Do you miss being developers?",
+        "date": "2021-11-16",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt"
+        ],
+        "seealso": [
+            "jcViVJ1DsW8",
+            "PccFeGsFlE4"
+        ]
+    },
+    "PmA6ft2RJNg": {
+        "title": "Q&A: Names in Photo Mode?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/photo-mode",
+            "features\/requested-features"
+        ],
+        "duplicates": [
+            "yt--JXPsTlJIiI,928.7611666666667,979.7454333333334"
+        ],
+        "seealso_video_cards": [
+            "QpQr_1dZcSQ"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEr_y5FuYy4mEW7F87dLs1ve"
+        ]
+    },
+    "_QYLbsfnNsw": {
+        "title": "Q&A: Did you ever find out why Ramps didn't get alternate materials?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/buildables\/foundations",
+            "satisfactory-updates\/released\/satisfactory-update-5"
+        ]
+    },
+    "qt5BFAJuJSM": {
+        "title": "Q&A: Is there a height build limit?",
+        "date": "2021-11-16",
+        "topics": [],
+        "duplicates": [
+            "yt-Dtm6xIj-wM4,2288.708088,2329.657223",
+            "yt-Dtm6xIj-wM4,2806.989791,2816.5666666666666",
+            "yt-W1E6EWrAsII,434.4,492.52"
+        ]
+    },
+    "DxB17x3welQ": {
+        "title": "Q&A: Add reverse Conveyor Belts like Lifts?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/buildables\/conveyor-belts",
+            "satisfactory-updates\/released\/satisfactory-update-5"
+        ],
+        "duplicates": [
+            "MhYk3tCLUi8"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqqhOELGDMQdwRCiQAo99bW",
+            "PLbjDnnBIxiErB8iPe1PpO-x4cGtPIEN24"
+        ]
+    },
+    "lron8sfb7zg": {
+        "title": "Q&A: Any voxel editing planned?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/unplanned-features"
+        ],
+        "seealso": [
+            "TnrPTpK7Ibw"
+        ]
+    },
+    "5_yx7QQx9HU": {
+        "title": "Q&A: Who is the voice for ADA?",
+        "date": "2021-11-16",
+        "topics": [
+            "story-and-lore\/characters\/ada"
+        ],
+        "duplicates": [
+            "aOzSvX8iaYg",
+            "aYUTkfL-jKk",
+            "isjOJ0Aczl4",
+            "lSeLNlkKo1w",
+            "pDGX-8_vTW0"
+        ],
+        "seealso": [
+            "kQW8lEkmYH8"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErZY7hh-HMSgx77BlCLUgRb",
+            "PLbjDnnBIxiEqWsWfqsODRxzdiXYbKbHzX"
+        ]
+    },
+    "z9lRpGyZ_dY": {
+        "title": "Q&A: Trailer video for Update 5 Early Access release?",
+        "date": "2021-11-16",
+        "topics": [
+            "satisfactory-updates\/teasers-and-trailers\/update-5-teasers"
+        ],
+        "seealso": [
+            "yTJ4Q0FBmKw"
+        ]
+    },
+    "5kAcisPqt4Y": {
+        "title": "Q&A: Please do a voice for Pirate English?",
+        "date": "2021-11-16",
+        "topics": [
+            "localisation",
+            "story-and-lore\/characters\/ada"
+        ],
+        "seealso": [
+            "afBBnes2wzE",
+            "mKUON_7AYp8"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEoMPT69J5UFBMeR3yqm2XEY"
+        ]
+    },
+    "Ce_ljLUkF3A": {
+        "title": "Q&A: Will most of the crashes and bugs be fixed with the Update 5 Early Access release?",
+        "date": "2021-11-16",
+        "topics": [
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-5"
+        ],
+        "seealso": [
+            "PCdXgs4GZ7U"
+        ]
+    },
+    "BQ7X8ZyR7QU": {
+        "title": "Q&A: Any plans to change the Train pathing from static to dynamic?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/transportation\/trains",
+            "features\/transportation\/trains\/train-signals"
+        ],
+        "duplicates": [
+            "ziGn1954IJg"
+        ],
+        "seealso": [
+            "2ZSa-x9tGEk",
+            "D2xSksdPhck",
+            "FIHOFtzAxNs"
+        ]
+    },
+    "mtLqH_BpG1U": {
+        "title": "Q&A: Are there going to be more Resources added for the next Tier?",
+        "date": "2021-11-16",
+        "topics": [
+            "environment\/resources",
+            "features\/tiers",
+            "satisfactory-updates"
+        ],
+        "duplicates": [
+            "LWek-LtjnU0"
+        ],
+        "seealso": [
+            "Ae-z-5fkjU8"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqOZ_KZZ80tAfzJmF5RNakK",
+            "PLbjDnnBIxiEr1a23kLgbSYkwgfuD1tQao"
+        ]
+    },
+    "pe4P1er1TEk": {
+        "title": "Q&A: Are you going to add more Vehicles to the game?",
+        "date": "2021-11-16",
+        "topics": [
+            "features\/transportation\/vehicles"
+        ],
+        "duplicates": [
+            "2OR5iK5zy7E",
+            "OUZzVPXgtSM",
+            "tc-EsteemedNurturingHyenaWOOP",
+            "Y3WBeGuXOeQ"
+        ],
+        "seealso": [
+            "8ABDvvluVbs",
+            "41mxgVg4jNA",
+            "Qh2Gvvy68G4",
+            "sSs9x9PnyTI"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEr97STV5beB_aCFM6jZaVDL"
+        ]
+    },
+    "LlBIU7YGobQ": {
+        "title": "Q&A: Do you have any tips for someone who wants to become a game dev?",
+        "date": "2021-11-16",
+        "topics": [
+            "off-topic"
+        ]
+    },
+    "oPY1o6s9X-k": {
+        "title": "Q&A: What's the purpose of S.A.M. Ore?",
+        "date": "2021-11-16",
+        "topics": [
+            "environment\/resources\/sam-ore"
+        ],
+        "duplicates": [
+            "-b2L_nlW_Fo",
+            "2pUioeu_oKE",
+            "6r-s6Hk7QwY",
+            "7zXN4R-njHk",
+            "DiLr2o5ealA",
+            "f0Z9VIAK5Iw",
+            "irJw2itG4wM",
+            "jdOQXcBiSH0",
+            "L4jQG4tp_4c",
+            "maWDJJM4ID8",
+            "ow33F_nK6nc",
+            "pSqiS44lqIg",
+            "SqyfGfz3APc",
+            "tc-BovineDistinctOrangeRiPepperonis",
+            "tSUBtq9ny4g",
+            "tXqk1eu0-BQ",
+            "vBGfC7j2AyI",
+            "VVYzPlbpSwM",
+            "y8zrEB5BiwQ",
+            "yt--JXPsTlJIiI,1076.5421333333334,1078.9779",
+            "yt-NlIVwoRqjVk,807.1730333333334,849.9491"
+        ],
+        "seealso": [
+            "7R7T4kiIFDY",
+            "9KV0D_VniRI",
+            "85XNSiDpeZw",
+            "bmRdzV3-wJI",
+            "ccmgnLh1oO0",
+            "ChxmSYhIRA8",
+            "JM24GmqDQ8M",
+            "mzMRZqpxaug",
+            "NfxKGSt-Ogw",
+            "tc-InventiveBillowingEggPMSTwin"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEp8wlgAM7rcgGivq1zvs1Do",
+            "PLbjDnnBIxiEqVFI-QzAYCAwlivLcFxa61"
+        ]
+    },
+    "PCdXgs4GZ7U": {
+        "title": "Q&A: Are you both more focussed on bug fixes or game expansion?",
+        "date": "2021-11-16",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt",
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
+            "satisfactory-updates"
+        ],
+        "seealso": [
+            "Ce_ljLUkF3A",
+            "IQjrq9QmHqA"
+        ]
+    },
+    "BhGBXKzEeyo": {
+        "title": "Q&A: Do you hate answering the same questions every week?",
+        "date": "2021-11-16",
+        "topics": [
+            "community"
+        ],
+        "duplicates": [
+            "Ak3zLYWXuDk",
+            "ZV4gjWn8uCg"
+        ],
+        "seealso": [
+            "9Dcxqpq1G6k",
+            "hexlRuMQ27I",
+            "j7Z2TwjQtBQ"
+        ]
+    },
+    "yoD51h2g5T0": {
+        "title": "Q&A: Is there an actual date for the official release of the game?",
+        "date": "2021-11-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "duplicates": [
+            "-AjFbGOOAQI",
+            "9Um_UtQI8yE",
+            "aclI7pbRT3I",
+            "aP6v6JbuHTk",
+            "Diz3iZ5irII",
+            "EfqxH78tmFc",
+            "GXHh2ZFq3FI",
+            "H0HcDZTv_ts",
+            "HgHTtGAk-Jk",
+            "IPQfi2Gv4Zc",
+            "JV12w3UZIHE",
+            "KvCsUb7f0KY",
+            "LSx6aBL0q3Q",
+            "W2O4gfNYj9s",
+            "WoWR5Xsuav8",
+            "y51YDVf8VOI",
+            "yt--JXPsTlJIiI,254.92133333333334,325.4251",
+            "yt-CB9bSigNYH8,4250.630211,4256.657128",
+            "yt-cF3QleeEiJo,6610.940808051914,6635.114829",
+            "yt-Dtm6xIj-wM4,3487.8333333333335,3508.867162",
+            "yt-NlIVwoRqjVk,226.3261,288.288",
+            "yt-NlIVwoRqjVk,995.8949,1008.3073",
+            "Z0yYtiR__Nk",
+            "_VPyUP6E2pE"
+        ],
+        "seealso": [
+            "1FZ1xfDjOww",
+            "6LTinIiS1ss",
+            "FazJegnOGqM",
+            "haID3MR0-fQ",
+            "jEt3dU9LTw4",
+            "Jy8mbOy0BJ0",
+            "NBcrfP9kxG8",
+            "R9u6_oxcsX4",
+            "yt--JXPsTlJIiI,1266.3651,1375.9412333333335",
+            "yt-Dtm6xIj-wM4,280.42817,354.60912",
+            "yt-Rumqu_lyapg,13581.733333333334,13635.10936"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqZex4vbgYkVTsT4vBy6ycE"
+        ]
+    },
+    "RtVbl7ivbaM": {
+        "title": "Q&A: Who is Uzu?",
+        "date": "2021-11-16",
+        "topics": [
+            "coffee-stainers\/uzu"
+        ],
+        "seealso": [
+            "1SJA0S2IagA",
+            "E9cvnFnfm0M",
+            "hCcT5uhzwso",
+            "KwsiVfRUKNE",
+            "MQSdhIKAjNc",
+            "yt-CB9bSigNYH8,361.317611,374.51402",
+            "yt-CB9bSigNYH8,1688.029579,1694.520021",
+            "yt-CB9bSigNYH8,2630.888348,2723.033543",
+            "yt-CB9bSigNYH8,3266.313772,3335.428417",
+            "yt-CG-63B4g11U,130.208023,158.391799",
+            "yt-N1o3tK1h8cM,72.68,192.138596",
+            "yt-VYyFA7-yRKc,12.72,57"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqe6yJj8TvkF6VxhLGiah3b"
+        ]
+    },
+    "TaAxXh2ZXQo": {
+        "title": "Q&A: How do you guys still making money out of Satisfactory, when is the point you run out of money?",
+        "date": "2021-11-16",
+        "topics": [
+            "retail"
+        ],
+        "duplicates": [
+            "ub_jfqVBxfs"
+        ],
+        "seealso": [
+            "1Q7R8pQ4WrE",
+            "j8UaqapuLZw"
+        ]
+    },
+    "_YMb9-PyjTQ": {
+        "title": "Q&A: What's your favourite programming language?",
+        "date": "2021-11-16",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt"
+        ],
+        "seealso": [
+            "73Nx4m0LjbU",
+            "e0zlCy61u4w",
+            "TicJq4FxVFA"
+        ]
+    },
+    "X_bCuUtXSqQ": {
+        "title": "Q&A: Have you ever completed the last-Tier challenge?",
+        "date": "2021-11-16",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt",
+            "features\/buildings\/space-elevator",
+            "features\/equipment",
+            "features\/tiers"
+        ],
+        "seealso": [
+            "HqsTQOHIwgc",
+            "T38Lc3xS3BE"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqV2AcIJNb7Y3TkYLQ3Bif-"
+        ]
+    },
     "yt-8Tok_vdqZH8,26.836685,55.727455": {
         "title": "Q&A: When will the game be available on the Early Access branch?",
         "date": "2021-11-12",
@@ -18,6 +670,7 @@
         ],
         "seealso": [
             "ewSNOJgHryQ",
+            "nSSAH4CPCNo",
             "yt-8Tok_vdqZH8,132.649176359139,186.51965686016527",
             "yt-8Tok_vdqZH8,345.5785484974475,398.58149571075205"
         ],
@@ -70,7 +723,8 @@
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp3QMTxKRnehenCwo17MuJy"
-        ]
+        ],
+        "duplicatedby": "DxB17x3welQ"
     },
     "ewSNOJgHryQ": {
         "title": "Q&A: Is there any idea on improving the order of items you place?",
@@ -661,7 +1315,9 @@
             "satisfactory-updates\/speculative\/satisfactory-update-6"
         ],
         "seealso": [
-            "-MxqS9W0Gps"
+            "-MxqS9W0Gps",
+            "GNlkXUsq_Do",
+            "PCdXgs4GZ7U"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR",
@@ -675,17 +1331,11 @@
         "topics": [
             "features\/multiplayer\/dedicated-servers"
         ],
-        "duplicates": [
-            "XencmubF6hA"
-        ],
-        "seealso": [
-            "5xMB9YAL06E",
-            "oRvsgiDJRR8"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl",
             "PLbjDnnBIxiEp5eh0gKJcMENUPjCcoHNVH"
-        ]
+        ],
+        "duplicatedby": "G58lDUp0lhk"
     },
     "ub_jfqVBxfs": {
         "title": "Q&A: Is the game still fully-funded?",
@@ -695,12 +1345,10 @@
             "retail\/early-access",
             "retail\/epic-store\/epic-store-exclusivity"
         ],
-        "seealso": [
-            "j8UaqapuLZw"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEofikmXnRJhU7m4yhEZfPhH"
-        ]
+        ],
+        "duplicatedby": "TaAxXh2ZXQo"
     },
     "kiUlJOZmhKs": {
         "title": "Q&A: Are there any Easter Eggs that still haven't been found?",
@@ -785,28 +1433,11 @@
         "topics": [
             "satisfactory-updates\/seasonal-events\/fics-mas"
         ],
-        "duplicates": [
-            "01DJ6EPqTk4",
-            "6XovxrktCDA",
-            "CmQgxVzbXoQ",
-            "FqUcLve4Oyc",
-            "MQLuFiVQPYY",
-            "nZjZGFce1lE",
-            "pcMtby2DOxQ",
-            "R16PE1knvWc",
-            "u2ckbRb5PkA",
-            "yt-Rumqu_lyapg,14624.7,14668.876814"
-        ],
-        "seealso": [
-            "-z7a6lVWssE",
-            "O_cRHUcRZ3Q",
-            "pt-jn5xUdhk",
-            "VeD6hOmySbE"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq84iBBkP2g69rPYXD-yWMy",
             "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6"
-        ]
+        ],
+        "duplicatedby": "v6qKwwjqagg"
     },
     "WemkAmsN1xM": {
         "title": "Q&A: If Factory Cart is the only good Vehicle, when will be able to replace Trains with it?",
@@ -908,6 +1539,9 @@
         "topics": [
             "features\/buildables\/foundations",
             "satisfactory-updates\/released\/satisfactory-update-5"
+        ],
+        "seealso": [
+            "ClOiLPOWYVI"
         ]
     },
     "Zg9VbXSH6Zg": {
@@ -940,7 +1574,8 @@
             "prxWjP-hNdw",
             "SYEIsZ6KVgU",
             "Wqkx9p4mbn0"
-        ]
+        ],
+        "replacedby": "xtKjKykv2X0"
     },
     "kYn6eCYtK6w": {
         "title": "Q&A: Golf, when?",
@@ -1346,15 +1981,11 @@
             "features\/transportation\/trains",
             "features\/transportation\/trains\/train-signals"
         ],
-        "seealso": [
-            "2ZSa-x9tGEk",
-            "D2xSksdPhck",
-            "FIHOFtzAxNs"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEosbWcrHc-p6N-xeS77Rv5P",
             "PLbjDnnBIxiEqqhOELGDMQdwRCiQAo99bW"
-        ]
+        ],
+        "duplicatedby": "BQ7X8ZyR7QU"
     },
     "tJb8dz7sNSk": {
         "title": "Q&A: Diagonal Walls?",
@@ -1479,25 +2110,11 @@
         "topics": [
             "features\/possible-features\/game-modes\/peaceful-mode"
         ],
-        "duplicates": [
-            "KFT0l0kO5qg",
-            "MDBg0w3FweM",
-            "NQcQeykbc1E",
-            "P2H7Yidopbo",
-            "pPeoQr8CpGg",
-            "tc-ScaryTangibleTeaMrDestructoid",
-            "yS_1rXuvxFw",
-            "yt-rATcozDE25c,1132.131,1166.9324333333334"
-        ],
-        "seealso": [
-            "-nAX-cCDJRI",
-            "UZSByyzQ3DA",
-            "xit3DLnmAhE"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl",
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
-        ]
+        ],
+        "duplicatedby": "WcsqEVLXPfU"
     },
     "8S5_UFCaBkc": {
         "title": "Q&A: What's a game jam?",
@@ -2360,7 +2977,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl"
         ],
-        "duplicatedby": "sRtTjntZEMc"
+        "duplicatedby": "G58lDUp0lhk"
     },
     "-1kh2fAn5_M": {
         "title": "Q&A: Where is basic Wall 2m which Jace promised in the Update 5 cosmetics video?",
@@ -2551,6 +3168,7 @@
             "1AOF1qFxGm0",
             "4nzTdrIc2hg",
             "35jxkNZh7mA",
+            "lron8sfb7zg",
             "v6sWQLM4fMM"
         ],
         "seealso_topic_cards": [
@@ -4081,7 +4699,7 @@
         ],
         "seealso": [
             "7hJDZCiH0o0",
-            "Diz3iZ5irII"
+            "yoD51h2g5T0"
         ]
     },
     "yt-Rumqu_lyapg,13692.5,13743.91043": {
@@ -4151,7 +4769,7 @@
             "satisfactory-updates\/teasers-and-trailers\/update-5-launch-stream",
             "satisfactory-updates\/teasers-and-trailers\/update-5-launch-stream\/its-the-final-countdown"
         ],
-        "duplicatedby": "kpaIwFsaOAo"
+        "duplicatedby": "v6qKwwjqagg"
     },
     "yt-Rumqu_lyapg,16543.633333333335,16555.245545": {
         "title": "Q&A: Will you be hosting any Dedicated Servers?",
@@ -4897,7 +5515,7 @@
         ],
         "seealso": [
             "-226kRinKxI",
-            "kpaIwFsaOAo"
+            "v6qKwwjqagg"
         ],
         "seealso_video_cards": [
             "OhUDUOtdVtE",
@@ -5051,7 +5669,7 @@
             "PLbjDnnBIxiEq84iBBkP2g69rPYXD-yWMy",
             "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6"
         ],
-        "duplicatedby": "kpaIwFsaOAo"
+        "duplicatedby": "v6qKwwjqagg"
     },
     "prxWjP-hNdw": {
         "title": "Q&A: Ever thought about a general grid overlay rather than just eyeballing it?",
@@ -5082,7 +5700,8 @@
         "date": "2021-10-19",
         "topics": [
             "retail"
-        ]
+        ],
+        "duplicatedby": "bpKi2UaaQLs"
     },
     "39UtG3exx2s": {
         "title": "Q&A: How is Golf doing?",
@@ -5323,11 +5942,11 @@
             "satisfactory-updates\/teasers-and-trailers\/update-5-teasers"
         ],
         "seealso": [
+            "BQ7X8ZyR7QU",
             "FIHOFtzAxNs",
             "iou8oA3lKpQ",
             "sSQS4wpAgUM",
-            "tnGG0nyqFZE",
-            "ziGn1954IJg"
+            "tnGG0nyqFZE"
         ],
         "seealso_video_cards": [
             "13ofNtLHhr8"
@@ -5366,8 +5985,8 @@
         ],
         "seealso": [
             "4vjr-DTj-9Q",
-            "ZatbGvRS-o4",
-            "ziGn1954IJg"
+            "BQ7X8ZyR7QU",
+            "ZatbGvRS-o4"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEosbWcrHc-p6N-xeS77Rv5P"
@@ -5452,10 +6071,10 @@
             "satisfactory-updates\/teasers-and-trailers\/update-5-teasers"
         ],
         "seealso": [
+            "BQ7X8ZyR7QU",
             "D2xSksdPhck",
             "Q6RuDeIJ94E",
-            "tnGG0nyqFZE",
-            "ziGn1954IJg"
+            "tnGG0nyqFZE"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEosbWcrHc-p6N-xeS77Rv5P"
@@ -5798,6 +6417,7 @@
             "localisation"
         ],
         "seealso": [
+            "5kAcisPqt4Y",
             "IiD0uWYDg8w",
             "Y3-RO6oNiEg"
         ],
@@ -6358,7 +6978,8 @@
         ],
         "seealso": [
             "OQJe-ZDBGJQ",
-            "yt-Rumqu_lyapg,14382.104674,14409.711793"
+            "yt-Rumqu_lyapg,14382.104674,14409.711793",
+            "z9lRpGyZ_dY"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6"
@@ -6371,20 +6992,10 @@
             "features\/transportation\/vehicles",
             "satisfactory-updates"
         ],
-        "duplicates": [
-            "2OR5iK5zy7E",
-            "tc-EsteemedNurturingHyenaWOOP",
-            "Y3WBeGuXOeQ"
-        ],
-        "seealso": [
-            "8ABDvvluVbs",
-            "41mxgVg4jNA",
-            "Qh2Gvvy68G4",
-            "sSs9x9PnyTI"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEr97STV5beB_aCFM6jZaVDL"
-        ]
+        ],
+        "duplicatedby": "pe4P1er1TEk"
     },
     "qb-w6XoyRJo": {
         "title": "Q&A: When a faster Train comes from the back & a slower Train is in front do they crash?",
@@ -8129,7 +8740,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq84iBBkP2g69rPYXD-yWMy"
         ],
-        "duplicatedby": "kpaIwFsaOAo"
+        "duplicatedby": "v6qKwwjqagg"
     },
     "1sDKlvkvGWY": {
         "title": "Q&A: Do we get a \"Save+\"?",
@@ -8759,47 +9370,10 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicates": [
-            "-AjFbGOOAQI",
-            "9Um_UtQI8yE",
-            "aclI7pbRT3I",
-            "aP6v6JbuHTk",
-            "EfqxH78tmFc",
-            "GXHh2ZFq3FI",
-            "H0HcDZTv_ts",
-            "HgHTtGAk-Jk",
-            "IPQfi2Gv4Zc",
-            "JV12w3UZIHE",
-            "KvCsUb7f0KY",
-            "LSx6aBL0q3Q",
-            "W2O4gfNYj9s",
-            "WoWR5Xsuav8",
-            "y51YDVf8VOI",
-            "yt--JXPsTlJIiI,254.92133333333334,325.4251",
-            "yt-CB9bSigNYH8,4250.630211,4256.657128",
-            "yt-cF3QleeEiJo,6610.940808051914,6635.114829",
-            "yt-Dtm6xIj-wM4,3487.8333333333335,3508.867162",
-            "yt-NlIVwoRqjVk,226.3261,288.288",
-            "yt-NlIVwoRqjVk,995.8949,1008.3073",
-            "Z0yYtiR__Nk",
-            "_VPyUP6E2pE"
-        ],
-        "seealso": [
-            "1FZ1xfDjOww",
-            "6LTinIiS1ss",
-            "FazJegnOGqM",
-            "haID3MR0-fQ",
-            "jEt3dU9LTw4",
-            "Jy8mbOy0BJ0",
-            "NBcrfP9kxG8",
-            "R9u6_oxcsX4",
-            "yt--JXPsTlJIiI,1266.3651,1375.9412333333335",
-            "yt-Dtm6xIj-wM4,280.42817,354.60912",
-            "yt-Rumqu_lyapg,13581.733333333334,13635.10936"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
-        ]
+        ],
+        "duplicatedby": "yoD51h2g5T0"
     },
     "6LTinIiS1ss": {
         "title": "Q&A: When Satisfactory does hit 1.0, will you do a complete playthrough on-stream?",
@@ -8808,9 +9382,9 @@
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "seealso": [
-            "Diz3iZ5irII",
             "Fu1oJLSiJo0",
-            "lnQ9cDrRIjM"
+            "lnQ9cDrRIjM",
+            "yoD51h2g5T0"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
@@ -8837,7 +9411,8 @@
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "seealso": [
-            "T38Lc3xS3BE"
+            "T38Lc3xS3BE",
+            "X_bCuUtXSqQ"
         ]
     },
     "LP3IgdK7OwA": {
@@ -9601,7 +10176,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEr97STV5beB_aCFM6jZaVDL"
         ],
-        "duplicatedby": "OUZzVPXgtSM"
+        "duplicatedby": "pe4P1er1TEk"
     },
     "EFBH7CmbZnA": {
         "title": "Q&A: Next video with Mark?",
@@ -10082,16 +10657,10 @@
         "topics": [
             "features\/buildables\/storage-containers"
         ],
-        "duplicates": [
-            "KSP1Zs560Rs"
-        ],
-        "seealso": [
-            "KsKSqvk27Qk",
-            "pzQu_zUweOI"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErau2lNl-y0Uv9FHhiZc6Pl"
-        ]
+        ],
+        "duplicatedby": "bBdZgoKTPZ4"
     },
     "mNWjxU1WVtw": {
         "title": "Q&A: What about water\/solar energy?",
@@ -10529,7 +11098,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "S2_Ni6CmTFI": {
         "title": "Q&A: Tick saddles, when?",
@@ -10768,7 +11337,7 @@
             "PLbjDnnBIxiEq84iBBkP2g69rPYXD-yWMy",
             "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6"
         ],
-        "duplicatedby": "kpaIwFsaOAo"
+        "duplicatedby": "v6qKwwjqagg"
     },
     "k7PY6CVBSnA": {
         "title": "Q&A: Can Trucks get stuck if they use more Fuel than expected?",
@@ -10827,45 +11396,12 @@
         "topics": [
             "environment\/resources\/sam-ore"
         ],
-        "duplicates": [
-            "-b2L_nlW_Fo",
-            "2pUioeu_oKE",
-            "6r-s6Hk7QwY",
-            "7zXN4R-njHk",
-            "DiLr2o5ealA",
-            "f0Z9VIAK5Iw",
-            "irJw2itG4wM",
-            "jdOQXcBiSH0",
-            "maWDJJM4ID8",
-            "ow33F_nK6nc",
-            "pSqiS44lqIg",
-            "SqyfGfz3APc",
-            "tc-BovineDistinctOrangeRiPepperonis",
-            "tSUBtq9ny4g",
-            "tXqk1eu0-BQ",
-            "vBGfC7j2AyI",
-            "VVYzPlbpSwM",
-            "y8zrEB5BiwQ",
-            "yt--JXPsTlJIiI,1076.5421333333334,1078.9779",
-            "yt-NlIVwoRqjVk,807.1730333333334,849.9491"
-        ],
-        "seealso": [
-            "7R7T4kiIFDY",
-            "9KV0D_VniRI",
-            "85XNSiDpeZw",
-            "bmRdzV3-wJI",
-            "ccmgnLh1oO0",
-            "ChxmSYhIRA8",
-            "JM24GmqDQ8M",
-            "mzMRZqpxaug",
-            "NfxKGSt-Ogw",
-            "tc-InventiveBillowingEggPMSTwin"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp8wlgAM7rcgGivq1zvs1Do",
             "PLbjDnnBIxiEqVFI-QzAYCAwlivLcFxa61",
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
-        ]
+        ],
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "DXB_o7NPkOM": {
         "title": "Q&A: Chance of a new Biome?",
@@ -11506,9 +12042,9 @@
         ],
         "seealso": [
             "-jMLTqAu7t8",
-            "Diz3iZ5irII",
             "nwkc5YeXylk",
-            "VvnI641_TLs"
+            "VvnI641_TLs",
+            "yoD51h2g5T0"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT",
@@ -11611,7 +12147,8 @@
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
-            "v2-4y3n9dBw"
+            "v2-4y3n9dBw",
+            "XZrSYPFfxYE"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqASInsJuI3DFUgB2Tzv01M"
@@ -11819,8 +12356,8 @@
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "seealso": [
-            "Diz3iZ5irII",
-            "Mzh3VpE5y8Q"
+            "Mzh3VpE5y8Q",
+            "yoD51h2g5T0"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT",
@@ -12053,6 +12590,7 @@
             "zekvCEX_mv8"
         ],
         "seealso": [
+            "b-Z4VVc06zg",
             "kgQjKxY0oGQ",
             "kY7AIyEvJN0",
             "lfm0vKovpLc",
@@ -12091,9 +12629,9 @@
             "LUM8i_wyJ-Y"
         ],
         "seealso": [
+            "G58lDUp0lhk",
             "kQqy4aJLiO0",
             "oRvsgiDJRR8",
-            "sRtTjntZEMc",
             "yt-rATcozDE25c,854.7539,905.4712333333333"
         ]
     },
@@ -12898,11 +13436,6 @@
             "satisfactory-updates\/released\/satisfactory-update-5",
             "technology\/unreal-engine\/object-limit"
         ],
-        "seealso": [
-            "cVhPGZZyMn8",
-            "eReH6Sdroq8",
-            "WfU45N1EvQ0"
-        ],
         "seealso_video_cards": [
             "PnhnPFB18Sg"
         ],
@@ -12910,7 +13443,8 @@
             "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6",
             "PLbjDnnBIxiEqa47-NYtnxl93i8azA089W",
             "PLbjDnnBIxiEqhhpjoy5eqGRQQGUItie6A"
-        ]
+        ],
+        "duplicatedby": "TGuLDBd8Wao"
     },
     "PRdSxdarJpQ": {
         "title": "Q&A: Do you guys work near Paradox Interactive headquarters in Sweden?",
@@ -13256,9 +13790,9 @@
             "GPP6rcB8ROw"
         ],
         "seealso": [
-            "L4jQG4tp_4c",
             "nZsSk1ftKZk",
             "OhElJ-ySLD4",
+            "oPY1o6s9X-k",
             "Y0Z_OwnDN20",
             "yt-mci92Mhr7MM,711.0436666666667,726.1587666666667"
         ],
@@ -13615,7 +14149,7 @@
         ],
         "seealso": [
             "6jozauxOEbc",
-            "LWek-LtjnU0"
+            "mtLqH_BpG1U"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErp1tjQWToGbsDM6fsjInME",
@@ -13642,7 +14176,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "tkfbRxpk2m4": {
         "title": "Q&A: Are there plans for an option to tell the Train to hold at the Station until the dock is full?",
@@ -13905,10 +14439,10 @@
         ],
         "seealso": [
             "05RIKX2c9o0",
+            "bBdZgoKTPZ4",
             "M4OewQoE91A",
             "Plp6VuXxdgc",
             "pzQu_zUweOI",
-            "xL7xZ3W_MQ0",
             "ZC4yrPdg0LY"
         ],
         "seealso_topic_cards": [
@@ -14068,7 +14602,7 @@
             "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl",
             "PLbjDnnBIxiEralVcWNAwdbnP_tRGbAhFx"
         ],
-        "duplicatedby": "WMZBpM-POak"
+        "duplicatedby": "WcsqEVLXPfU"
     },
     "v-m1sbuYaqw": {
         "title": "Q&A: Trailers for Tractors?",
@@ -14587,7 +15121,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp8wlgAM7rcgGivq1zvs1Do"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "HOtX8hK6Lxg": {
         "title": "Q&A: Is Update 5 bigger than Update 4?",
@@ -15115,7 +15649,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "jM_iu4s-OJ8": {
         "title": "Q&A: You're self-publishing, right? Is Satisfactory technically an indie game?",
@@ -17683,7 +18217,7 @@
         "incoming_video_cards": [
             "JM24GmqDQ8M"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "3tQ8lO7Yk6g": {
         "title": "Q&A: You said that Dedicated Servers would be released with the Steam Release though?",
@@ -17740,7 +18274,7 @@
         ],
         "seealso": [
             "85XNSiDpeZw",
-            "L4jQG4tp_4c"
+            "oPY1o6s9X-k"
         ],
         "seealso_video_cards": [
             "VVYzPlbpSwM",
@@ -18108,7 +18642,7 @@
         ],
         "seealso": [
             "jBOgtsE6VYQ",
-            "L4jQG4tp_4c",
+            "oPY1o6s9X-k",
             "yt-mci92Mhr7MM,711.0436666666667,726.1587666666667"
         ],
         "seealso_topic_cards": [
@@ -18588,7 +19122,7 @@
             "environment\/resources\/sam-ore"
         ],
         "seealso": [
-            "L4jQG4tp_4c"
+            "oPY1o6s9X-k"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp8wlgAM7rcgGivq1zvs1Do",
@@ -18983,7 +19517,7 @@
         ],
         "seealso": [
             "GOqWeaYileA",
-            "OUZzVPXgtSM"
+            "pe4P1er1TEk"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEr97STV5beB_aCFM6jZaVDL",
@@ -19573,7 +20107,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl"
         ],
-        "duplicatedby": "WMZBpM-POak"
+        "duplicatedby": "WcsqEVLXPfU"
     },
     "uL-1FhPazSQ": {
         "title": "Q&A: Can you fix the things?",
@@ -19912,7 +20446,7 @@
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
-            "OUZzVPXgtSM"
+            "pe4P1er1TEk"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6",
@@ -20184,7 +20718,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp8wlgAM7rcgGivq1zvs1Do"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "HmdG5XPGjN8": {
         "title": "Q&A: Would you consider adding custom text signs?",
@@ -20290,9 +20824,10 @@
             "xhEIChHi0Qc"
         ],
         "seealso": [
+            "5kAcisPqt4Y",
+            "5_yx7QQx9HU",
             "kQW8lEkmYH8",
-            "lUpSf3XrMpk",
-            "pDGX-8_vTW0"
+            "lUpSf3XrMpk"
         ],
         "seealso_video_cards": [
             "n2iZ5LMi2QI"
@@ -20414,10 +20949,10 @@
             "fpfVLWArJpo"
         ],
         "seealso": [
+            "5_yx7QQx9HU",
             "6v8kQysRYRs",
             "IiD0uWYDg8w",
-            "mKUON_7AYp8",
-            "pDGX-8_vTW0"
+            "mKUON_7AYp8"
         ],
         "seealso_video_cards": [
             "mKUON_7AYp8",
@@ -20872,8 +21407,8 @@
         ],
         "seealso": [
             "bk2ojhuil-g",
-            "JuzKAS5cvOQ",
             "SNPdVSInCCQ",
+            "TGuLDBd8Wao",
             "XcfIWDujsxA",
             "yt-omjFqZQV9fI,1670.669,1752.6509"
         ],
@@ -21370,7 +21905,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "J_Dzjr_-8Hc": {
         "title": "Q&A: When are you guys adding Battle Royale mode?",
@@ -21407,7 +21942,7 @@
             "features\/possible-features\/game-modes\/peaceful-mode"
         ],
         "seealso": [
-            "WMZBpM-POak"
+            "WcsqEVLXPfU"
         ]
     },
     "NBcrfP9kxG8": {
@@ -21419,7 +21954,7 @@
         ],
         "seealso": [
             "1FZ1xfDjOww",
-            "Diz3iZ5irII"
+            "yoD51h2g5T0"
         ]
     },
     "W56wGXyT_sA": {
@@ -21551,7 +22086,7 @@
         "topics": [
             "environment\/resources\/sam-ore"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "Z9c7weKgaz0": {
         "title": "Q&A: Any plans for random map generation?",
@@ -21815,7 +22350,7 @@
             "environment\/resources\/sam-ore"
         ],
         "seealso": [
-            "L4jQG4tp_4c"
+            "oPY1o6s9X-k"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp8wlgAM7rcgGivq1zvs1Do",
@@ -21869,8 +22404,8 @@
             "trolling"
         ],
         "seealso": [
-            "Diz3iZ5irII",
-            "NBcrfP9kxG8"
+            "NBcrfP9kxG8",
+            "yoD51h2g5T0"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoXyQTLOJbkWv8yo-nzAsSH"
@@ -22010,7 +22545,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "l_Ex-qIRiwo": {
         "title": "Q&A: Will the big monster from the trailer get released?",
@@ -22324,7 +22859,7 @@
             "environment\/resources\/sam-ore"
         ],
         "seealso": [
-            "L4jQG4tp_4c"
+            "oPY1o6s9X-k"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoXyQTLOJbkWv8yo-nzAsSH"
@@ -23691,7 +24226,7 @@
             "community"
         ],
         "seealso": [
-            "Ak3zLYWXuDk"
+            "BhGBXKzEeyo"
         ]
     },
     "YVs3sPwwZhg": {
@@ -24038,7 +24573,8 @@
             "coffee-stainers\/snutt"
         ],
         "seealso": [
-            "PccFeGsFlE4"
+            "PccFeGsFlE4",
+            "WNg80maIy8E"
         ],
         "seealso_video_cards": [
             "6HZzPbgw3pg",
@@ -24229,7 +24765,7 @@
         "seealso_video_cards": [
             "0KgGoU6uZ9A"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "h0N-cNnuBks": {
         "title": "Q&A: Will there be an end to the Story?",
@@ -24571,7 +25107,7 @@
         "topics": [
             "environment\/resources\/sam-ore"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "Lw9r_gSLLOE": {
         "title": "Q&A: Can you stand on the Space Elevator while it launches?",
@@ -25157,7 +25693,7 @@
         ],
         "seealso": [
             "5xMB9YAL06E",
-            "sRtTjntZEMc"
+            "G58lDUp0lhk"
         ],
         "seealso_video_cards": [
             "dyqOMITwLsY"
@@ -25739,7 +26275,8 @@
         "seealso": [
             "e0zlCy61u4w",
             "hrzcMd0csWE",
-            "PccFeGsFlE4"
+            "PccFeGsFlE4",
+            "_YMb9-PyjTQ"
         ]
     },
     "hrzcMd0csWE": {
@@ -26184,6 +26721,7 @@
             "6ZEIqmoSzBc",
             "btJHOT-HkO0",
             "hnCgAR0cxiQ",
+            "uyKaboVm6Q0",
             "y5z4GmkeGhA"
         ]
     },
@@ -26221,7 +26759,7 @@
             "trolling"
         ],
         "seealso": [
-            "L4jQG4tp_4c"
+            "oPY1o6s9X-k"
         ]
     },
     "RyU3sk4C5d8": {
@@ -26298,15 +26836,7 @@
         "topics": [
             "story-and-lore\/characters\/ada"
         ],
-        "duplicates": [
-            "aOzSvX8iaYg",
-            "aYUTkfL-jKk",
-            "isjOJ0Aczl4",
-            "lSeLNlkKo1w"
-        ],
-        "seealso": [
-            "kQW8lEkmYH8"
-        ]
+        "duplicatedby": "5_yx7QQx9HU"
     },
     "zQU4_LMkM0w": {
         "title": "Q&A: Are you allowed to say if there are plans for base building stuff like furniture?",
@@ -26395,7 +26925,8 @@
             "environment"
         ],
         "seealso": [
-            "KwsiVfRUKNE"
+            "KwsiVfRUKNE",
+            "RtVbl7ivbaM"
         ]
     },
     "CJ8fQV1ttF4": {
@@ -27017,7 +27548,7 @@
         "topics": [
             "features\/possible-features\/game-modes\/peaceful-mode"
         ],
-        "duplicatedby": "WMZBpM-POak"
+        "duplicatedby": "WcsqEVLXPfU"
     },
     "3u0vyx3Dh6I": {
         "title": "Q&A: Will enemies ever become more of a threat?",
@@ -27072,7 +27603,7 @@
         "topics": [
             "features\/transportation\/vehicles"
         ],
-        "duplicatedby": "OUZzVPXgtSM"
+        "duplicatedby": "pe4P1er1TEk"
     },
     "THQ2-ZTc7Jk": {
         "title": "Q&A: Is Snutt left-handed?",
@@ -27667,7 +28198,8 @@
             "features\/tiers\/tier-8"
         ],
         "seealso": [
-            "HqsTQOHIwgc"
+            "HqsTQOHIwgc",
+            "X_bCuUtXSqQ"
         ]
     },
     "xQ9mh8bgHJ8": {
@@ -27819,7 +28351,7 @@
             "environment\/resources\/sam-ore",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "QL_YLSmR5pc": {
         "title": "Q&A: Will you do free updates after release, paid DLC, or just move on?",
@@ -28192,7 +28724,7 @@
         "topics": [
             "features\/buildables\/storage-containers"
         ],
-        "duplicatedby": "xL7xZ3W_MQ0"
+        "duplicatedby": "bBdZgoKTPZ4"
     },
     "E1c7SsWhb0s": {
         "title": "Q&A: Boats?",
@@ -28399,14 +28931,7 @@
             "coffee-stainers\/snutt",
             "community"
         ],
-        "duplicates": [
-            "ZV4gjWn8uCg"
-        ],
-        "seealso": [
-            "9Dcxqpq1G6k",
-            "hexlRuMQ27I",
-            "j7Z2TwjQtBQ"
-        ]
+        "duplicatedby": "BhGBXKzEeyo"
     },
     "WdgSK2Le_eQ": {
         "title": "Q&A: Is Satisfactory inspired by Factorio?",
@@ -29722,7 +30247,7 @@
             "environment\/resources\/sam-ore",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "at2Y5iISicY": {
         "title": "Q&A: Will there be any updates after 1.0?",
@@ -30204,18 +30729,7 @@
             "satisfactory-updates\/release-builds",
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
-        "duplicates": [
-            "-m_-g6ELKsY",
-            "a66KD67ymLs",
-            "b586YMEHeRk",
-            "EBoS-s9O_oU",
-            "wRc1dgpRDrM",
-            "yt-t1LfyNfuMVQ,186.48,218.32"
-        ],
-        "seealso": [
-            "yt-F-q3vfj__M4,112.71260000000001,182.71586666666667",
-            "yt-R0S19_caQuw,86.32,144.32"
-        ]
+        "duplicatedby": "nPj_soas-a8"
     },
     "yt-cF3QleeEiJo,1558.322977,1707.162654": {
         "title": "Q&A: Dedicated Servers?",
@@ -30281,7 +30795,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "yt-cF3QleeEiJo,6652.069241,6679.928238": {
         "title": "Q&A: Anything about achievements?",
@@ -30909,7 +31423,7 @@
             "MEubHHz2-Rw",
             "N9-tzL5aozw",
             "nty-h2xgybU",
-            "OUZzVPXgtSM",
+            "pe4P1er1TEk",
             "tc-ElatedBlueNightingaleMau5",
             "yt-NlIVwoRqjVk,849.9491,867.3998666666666",
             "ZZ4xIUGehNU"
@@ -31022,7 +31536,7 @@
             "features\/possible-features\/game-modes\/peaceful-mode",
             "off-topic\/subnautica"
         ],
-        "duplicatedby": "WMZBpM-POak"
+        "duplicatedby": "WcsqEVLXPfU"
     },
     "Vc-zgbseTCc": {
         "title": "Q&A: Will the Color Gun be fixed?",
@@ -31120,7 +31634,7 @@
         "topics": [
             "environment\/resources\/sam-ore"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "CDZ1Hu5vKzQ": {
         "title": "Q&A: How do I remove disconnected players?, they just sit there and block builds.",
@@ -31583,7 +32097,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "1ekgStY-lEc": {
         "title": "Q&A: New Suit Skins?",
@@ -31667,7 +32181,7 @@
         "topics": [
             "features\/possible-features\/game-modes\/peaceful-mode"
         ],
-        "duplicatedby": "WMZBpM-POak"
+        "duplicatedby": "WcsqEVLXPfU"
     },
     "dUS1wSorYGA": {
         "title": "Q&A: Hard Mode?",
@@ -31684,7 +32198,7 @@
             "features\/possible-features\/game-modes\/peaceful-mode"
         ],
         "seealso": [
-            "WMZBpM-POak"
+            "WcsqEVLXPfU"
         ]
     },
     "DOFC8O2yXNw": {
@@ -31995,7 +32509,7 @@
             "satisfactory-updates\/release-builds",
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "VLSmQSlinEU": {
         "title": "Q&A: There's a pause?",
@@ -32109,7 +32623,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "ALrzPviod04": {
         "title": "Q&A: Why to Drones have jet thrusters when they only consume Batteries?",
@@ -32751,7 +33265,7 @@
             "features\/save-system",
             "satisfactory-updates\/release-builds"
         ],
-        "duplicatedby": "yt-cF3QleeEiJo,1303.766903,1386.648083"
+        "duplicatedby": "nPj_soas-a8"
     },
     "U2Dufcqf9G8": {
         "title": "Q&A: Is it possible to have Steam Workshop in the game?",
@@ -32785,7 +33299,7 @@
             "features\/save-system",
             "satisfactory-updates\/release-builds"
         ],
-        "duplicatedby": "yt-cF3QleeEiJo,1303.766903,1386.648083"
+        "duplicatedby": "nPj_soas-a8"
     },
     "gKZmQ7vZZbU": {
         "title": "Q&A: Have you guys considered writing\/vlogging more about the technical sides of development?",
@@ -33022,7 +33536,8 @@
             "8fKtiNULcMM",
             "jcViVJ1DsW8",
             "TicJq4FxVFA",
-            "VeGSy0F0mVY"
+            "VeGSy0F0mVY",
+            "WNg80maIy8E"
         ]
     },
     "zweSj25goYs": {
@@ -33213,7 +33728,7 @@
             "story-and-lore\/characters\/ada"
         ],
         "seealso": [
-            "pDGX-8_vTW0",
+            "5_yx7QQx9HU",
             "RRo4HMCuIxc"
         ]
     },
@@ -33751,7 +34266,7 @@
             "satisfactory-updates\/release-builds",
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
-        "duplicatedby": "yt-cF3QleeEiJo,1303.766903,1386.648083"
+        "duplicatedby": "nPj_soas-a8"
     },
     "B2LmiIWJu8o": {
         "title": "Q&A: Will we ever get a second body slot?",
@@ -33769,7 +34284,7 @@
             "satisfactory-updates\/release-builds",
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
-        "duplicatedby": "yt-cF3QleeEiJo,1303.766903,1386.648083"
+        "duplicatedby": "nPj_soas-a8"
     },
     "ST1-4v5RMPQ": {
         "title": "Q&A: Will we ever get perfect half Foundations?",
@@ -34744,8 +35259,8 @@
             "features\/buildables\/storage-containers"
         ],
         "seealso": [
-            "KsKSqvk27Qk",
-            "xL7xZ3W_MQ0"
+            "bBdZgoKTPZ4",
+            "KsKSqvk27Qk"
         ]
     },
     "5KRdfYoVv-c": {
@@ -34846,7 +35361,7 @@
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "story-and-lore"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "dWHUW2vrUYE": {
         "title": "Q&A: How about Mod safety- how do you guys assure no malware installed with the Mods we use?",
@@ -35552,7 +36067,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "2cO89rhg6sQ": {
         "title": "Q&A: No Experimental?",
@@ -35734,6 +36249,7 @@
             "1SJA0S2IagA",
             "diuFSFaPAJ4",
             "KwsiVfRUKNE",
+            "RtVbl7ivbaM",
             "ycNS0lA5JWc",
             "yt-CB9bSigNYH8,1190.626477,1203.37129",
             "yt-CG-63B4g11U,130.208023,158.391799",
@@ -35907,8 +36423,8 @@
         ],
         "seealso": [
             "6E68mgIXKUk",
-            "Diz3iZ5irII",
-            "LSc7QIlaGg4"
+            "LSc7QIlaGg4",
+            "yoD51h2g5T0"
         ]
     },
     "L-HM1a7oSK8": {
@@ -36195,7 +36711,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "qYBAKknb7WA": {
         "title": "Q&A: Will 1.0 go to Experimental?",
@@ -36757,7 +37273,7 @@
             "community",
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
-        "duplicatedby": "Ak3zLYWXuDk"
+        "duplicatedby": "BhGBXKzEeyo"
     },
     "GdrTnF4-6ZQ": {
         "title": "Q&A: How girthy will the Update 4 download be?",
@@ -36794,7 +37310,7 @@
         ],
         "seealso": [
             "0KMqyzOeiEU",
-            "Ak3zLYWXuDk"
+            "BhGBXKzEeyo"
         ]
     },
     "oaPsSg5iwBc": {
@@ -38030,7 +38546,7 @@
             "gAO072mzibQ",
             "tc-CorrectNiceStingraySpicyBoy"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "bhFmwWIY_dw": {
         "title": "Q&A: Release date for Dedicated Servers?",
@@ -38260,7 +38776,7 @@
         ],
         "seealso": [
             "8Dkl-S-nTu8",
-            "JuzKAS5cvOQ"
+            "TGuLDBd8Wao"
         ]
     },
     "gqIBbkGCxdI": {
@@ -38283,7 +38799,7 @@
             "features\/save-system",
             "satisfactory-updates\/release-builds"
         ],
-        "duplicatedby": "yt-cF3QleeEiJo,1303.766903,1386.648083"
+        "duplicatedby": "nPj_soas-a8"
     },
     "2WRhQ9QNyfI": {
         "title": "Q&A: Did Linus do the Valheim trailer?",
@@ -38501,7 +39017,7 @@
         "topics": [
             "satisfactory-updates\/seasonal-events\/fics-mas"
         ],
-        "duplicatedby": "kpaIwFsaOAo"
+        "duplicatedby": "v6qKwwjqagg"
     },
     "xUdlPZfMgDw": {
         "title": "Q&A: Release date on PS4?",
@@ -38732,7 +39248,7 @@
             "retail\/early-access",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "IQYDSa80AL0": {
         "title": "Q&A: Do you ever lurk on Satisfactory streams and watch vids?",
@@ -38881,7 +39397,8 @@
         "seealso": [
             "TicJq4FxVFA",
             "yJH2nTjQ9Tc",
-            "yt-Dtm6xIj-wM4,3016.687892,3049.733333333333"
+            "yt-Dtm6xIj-wM4,3016.687892,3049.733333333333",
+            "_YMb9-PyjTQ"
         ]
     },
     "xJ3zk3Yvav0": {
@@ -40259,6 +40776,9 @@
         ],
         "duplicates": [
             "jJOvimJ-Jcc"
+        ],
+        "seealso": [
+            "PZK2xcjLJw8"
         ]
     },
     "Bu2TPRFV_2o": {
@@ -40316,7 +40836,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "QViQ--AWYjY": {
         "title": "Q&A: Does the game get a deeper Story?",
@@ -40343,7 +40863,7 @@
             "environment\/resources\/sam-ore",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "MwKAp32wO_A": {
         "title": "Q&A: Is Snutt rocking two watches?",
@@ -40654,7 +41174,7 @@
             "KH5SkE4nzhg",
             "njXBs_p2l1w"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "yt--JXPsTlJIiI,325.4251,379.5124666666667": {
         "title": "Q&A: Will we keep our FICS\u2055MAS stuff after the event ends?",
@@ -40972,7 +41492,8 @@
         "seealso_video_cards": [
             "KH5SkE4nzhg",
             "njXBs_p2l1w"
-        ]
+        ],
+        "duplicatedby": "PmA6ft2RJNg"
     },
     "yt--JXPsTlJIiI,979.7454333333334,1005.5712333333333": {
         "title": "Q&A: Any thoughts on adding drones to the game?",
@@ -41039,7 +41560,7 @@
             "KH5SkE4nzhg",
             "njXBs_p2l1w"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "yt--JXPsTlJIiI,1078.9779,1094.8270666666667": {
         "title": "Q&A: How do you have your coffee and\/or tea?",
@@ -41101,7 +41622,7 @@
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "seealso": [
-            "Diz3iZ5irII"
+            "yoD51h2g5T0"
         ],
         "seealso_video_cards": [
             "KH5SkE4nzhg",
@@ -41172,7 +41693,7 @@
             "mods\/mods-vs-features",
             "satisfactory-updates\/seasonal-events\/fics-mas"
         ],
-        "duplicatedby": "kpaIwFsaOAo"
+        "duplicatedby": "v6qKwwjqagg"
     },
     "HeezNCrsBRU": {
         "title": "Q&A: Dedicated Servers?",
@@ -41197,7 +41718,7 @@
             "satisfactory-updates\/seasonal-events",
             "satisfactory-updates\/seasonal-events\/fics-mas"
         ],
-        "duplicatedby": "kpaIwFsaOAo"
+        "duplicatedby": "v6qKwwjqagg"
     },
     "ospbB7hdDdI": {
         "title": "Q&A: Will FICS\u2055MAS Buildings and items still be in the World after the event is over?",
@@ -41327,6 +41848,7 @@
         "seealso": [
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
+            "RtVbl7ivbaM",
             "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-N1o3tK1h8cM,72.68,192.138596"
         ]
@@ -41602,7 +42124,7 @@
             "satisfactory-updates\/released\/satisfactory-update-4"
         ],
         "seealso": [
-            "Diz3iZ5irII"
+            "yoD51h2g5T0"
         ]
     },
     "nSC4C_h1ONo": {
@@ -41628,7 +42150,7 @@
         "topics": [
             "satisfactory-updates\/seasonal-events\/fics-mas"
         ],
-        "duplicatedby": "kpaIwFsaOAo"
+        "duplicatedby": "v6qKwwjqagg"
     },
     "8k6D9_7yPmw": {
         "title": "Q&A: Do you have an in-house tool for calculating balance of factory outputs and the like?",
@@ -41807,7 +42329,7 @@
         "topics": [
             "satisfactory-updates\/seasonal-events\/fics-mas"
         ],
-        "duplicatedby": "kpaIwFsaOAo"
+        "duplicatedby": "v6qKwwjqagg"
     },
     "BxAAQTxvy-Y": {
         "title": "Q&A: DirectX 12 when?",
@@ -41823,7 +42345,7 @@
         "topics": [
             "satisfactory-updates\/seasonal-events\/fics-mas"
         ],
-        "duplicatedby": "kpaIwFsaOAo"
+        "duplicatedby": "v6qKwwjqagg"
     },
     "dkVq6ix0lQM": {
         "title": "Q&A: As Update 4 gets closer will you be releasing more info on how to prepare for the changes?",
@@ -42347,7 +42869,7 @@
         ],
         "seealso": [
             "cVhPGZZyMn8",
-            "JuzKAS5cvOQ"
+            "TGuLDBd8Wao"
         ]
     },
     "H2WwaLFOI9Q": {
@@ -42445,7 +42967,7 @@
         ],
         "seealso": [
             "at2Y5iISicY",
-            "ub_jfqVBxfs"
+            "TaAxXh2ZXQo"
         ]
     },
     "HSoBZKjAN1k": {
@@ -43245,6 +43767,7 @@
         ],
         "seealso": [
             "KwsiVfRUKNE",
+            "RtVbl7ivbaM",
             "yt-CB9bSigNYH8,3125.355289,3145.082652",
             "yt-Zo2ybvs7keI,300.32,310.36"
         ],
@@ -43285,6 +43808,7 @@
             "E9cvnFnfm0M",
             "hCcT5uhzwso",
             "MQSdhIKAjNc",
+            "RtVbl7ivbaM",
             "yt-CB9bSigNYH8,361.317611,374.51402",
             "yt-CB9bSigNYH8,1688.029579,1694.520021",
             "yt-CB9bSigNYH8,2630.888348,2723.033543",
@@ -43347,6 +43871,7 @@
             "1SJA0S2IagA",
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
+            "RtVbl7ivbaM",
             "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-N1o3tK1h8cM,72.68,192.138596"
         ]
@@ -43671,6 +44196,9 @@
         "date": "2020-11-10",
         "topics": [
             "retail"
+        ],
+        "seealso": [
+            "TaAxXh2ZXQo"
         ]
     },
     "cynkLEnrC8s": {
@@ -44050,7 +44578,8 @@
             "features\/multiplayer"
         ],
         "seealso": [
-            "MSt300MAcq8"
+            "MSt300MAcq8",
+            "MvLBb_yKxmM"
         ]
     },
     "RuzL7DdAJ1o": {
@@ -44128,7 +44657,8 @@
             "satisfactory-updates\/pre-alpha"
         ],
         "seealso": [
-            "piTvF4dhY0I"
+            "piTvF4dhY0I",
+            "RtVbl7ivbaM"
         ]
     },
     "g2rxJ3D_m3s": {
@@ -44189,7 +44719,7 @@
             "retail\/early-access",
             "satisfactory-updates\/release-builds"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "yt-omjFqZQV9fI,26.651097,87.75433333333334": {
         "title": "Q&A: So what is a \"Technical Artist\"?",
@@ -44856,7 +45386,7 @@
         "topics": [
             "story-and-lore\/characters\/ada"
         ],
-        "duplicatedby": "pDGX-8_vTW0"
+        "duplicatedby": "5_yx7QQx9HU"
     },
     "qDzU3niTLPI": {
         "title": "Q&A: Are Mods okay on Experimental?",
@@ -45414,7 +45944,7 @@
             "environment\/resources\/sam-ore",
             "story-and-lore"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "djGcxAQ9Xkk": {
         "title": "Q&A: How does the Questions site transfer to Feature in game?",
@@ -46077,7 +46607,8 @@
         ],
         "seealso": [
             "Ae-z-5fkjU8"
-        ]
+        ],
+        "duplicatedby": "mtLqH_BpG1U"
     },
     "g6B1-vYXXd0": {
         "title": "Q&A: Do you use emacs or vim?",
@@ -46441,7 +46972,7 @@
         "topics": [
             "story-and-lore\/characters\/ada"
         ],
-        "duplicatedby": "pDGX-8_vTW0"
+        "duplicatedby": "5_yx7QQx9HU"
     },
     "bmRdzV3-wJI": {
         "title": "Q&A: When are these Work In Progress (WIP) items going to be used?",
@@ -47291,7 +47822,7 @@
             "8WYNwGDLYNE",
             "PkozY8_q-LE"
         ],
-        "duplicatedby": "WMZBpM-POak"
+        "duplicatedby": "WcsqEVLXPfU"
     },
     "yt-rATcozDE25c,1166.9324333333334,1212.1442666666667": {
         "title": "Q&A: How do you guys feel about an underground biome?",
@@ -47666,7 +48197,7 @@
         "incoming_video_cards": [
             "JM24GmqDQ8M"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "H9x0HyRXNTE": {
         "title": "Q&A: How big is the Dev Team?",
@@ -48298,7 +48829,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "Z870GlRbfjk": {
         "title": "Q&A: Any chance Update 4 unlocks the Work In Progress items?",
@@ -49344,7 +49875,7 @@
         "topics": [
             "features\/possible-features\/game-modes\/peaceful-mode"
         ],
-        "duplicatedby": "WMZBpM-POak"
+        "duplicatedby": "WcsqEVLXPfU"
     },
     "rlBA0k1-sWs": {
         "title": "Q&A: Can we upload a Spider image other than a Cat?",
@@ -51479,7 +52010,7 @@
         "legacyalts": [
             "tc-CharmingHeadstrongAsparagusBCouch"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "gNfCEV1J-2Q": {
         "title": "Q&A: Like a new map for Satisfactory?",
@@ -51515,7 +52046,7 @@
         ],
         "seealso": [
             "JM24GmqDQ8M",
-            "L4jQG4tp_4c",
+            "oPY1o6s9X-k",
             "v4zf3_-seAg",
             "yt-Dtm6xIj-wM4,1939.6333333333334,1962.712002"
         ],
@@ -51834,7 +52365,7 @@
         "legacyalts": [
             "tc-ArtisticGlutenFreeSpindleDxAbomb"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "08PQFXaEac8": {
         "title": "Q&A: Will we ever have proper multi-core support?",
@@ -52078,7 +52609,7 @@
         "topics": [
             "environment\/resources\/sam-ore"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "tc-CheerfulLightAsteriskGOWSkull": {
         "title": "Q&A: Any plans for 1-click multi-building?",
@@ -52200,7 +52731,7 @@
         "topics": [
             "features\/transportation\/vehicles"
         ],
-        "duplicatedby": "OUZzVPXgtSM"
+        "duplicatedby": "pe4P1er1TEk"
     },
     "tc-FunOriginalPistachioNerfRedBlaster": {
         "title": "Q&A: When will have Merch?",
@@ -52394,7 +52925,7 @@
         "topics": [
             "features\/possible-features\/game-modes\/peaceful-mode"
         ],
-        "duplicatedby": "WMZBpM-POak"
+        "duplicatedby": "WcsqEVLXPfU"
     },
     "tc-SneakyLovelyCrabsAMPEnergyCherry": {
         "title": "Q&A: What are some of the priorities for the next update?",
@@ -53085,7 +53616,7 @@
         "seealso": [
             "B5eQjR_7TxY",
             "H_jxvn-F_WY",
-            "WMZBpM-POak"
+            "WcsqEVLXPfU"
         ]
     },
     "XuFfkTTZnoA": {
@@ -53759,7 +54290,7 @@
             "fI7gnbG4Omk",
             "mci92Mhr7MM"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "yt-NlIVwoRqjVk,288.288,301.33436666666665": {
         "title": "Q&A: Official Mod Support?",
@@ -53932,7 +54463,7 @@
             "fI7gnbG4Omk",
             "mci92Mhr7MM"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "yt-NlIVwoRqjVk,849.9491,867.3998666666666": {
         "title": "Q&A: Do you plan on introducing more ways of transportation?",
@@ -54042,7 +54573,7 @@
             "fI7gnbG4Omk",
             "mci92Mhr7MM"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "yt-NlIVwoRqjVk,1008.3073,1019.9856333333333": {
         "title": "Q&A: Will we ever be able to leave this planet?",
@@ -54236,6 +54767,7 @@
             "1SJA0S2IagA",
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
+            "RtVbl7ivbaM",
             "yt-N1o3tK1h8cM,72.68,192.138596",
             "yt-VYyFA7-yRKc,12.72,57"
         ]
@@ -54479,7 +55011,7 @@
         "topics": [
             "story-and-lore\/characters\/ada"
         ],
-        "duplicatedby": "pDGX-8_vTW0"
+        "duplicatedby": "5_yx7QQx9HU"
     },
     "V8r96lmiV9k": {
         "title": "Q&A: What about Story, will more of it come?",
@@ -54706,7 +55238,7 @@
         "topics": [
             "environment\/resources\/sam-ore"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "1Mdtq6Ytb1g": {
         "title": "Q&A: Merch?",
@@ -54885,7 +55417,8 @@
             "coffee-stainers\/markus"
         ],
         "seealso": [
-            "L-HM1a7oSK8"
+            "L-HM1a7oSK8",
+            "_YMb9-PyjTQ"
         ]
     },
     "BwJG6ZHR7Io": {
@@ -55824,7 +56357,7 @@
         "topics": [
             "story-and-lore\/characters\/ada"
         ],
-        "duplicatedby": "pDGX-8_vTW0"
+        "duplicatedby": "5_yx7QQx9HU"
     },
     "ECP5Jvr7RSk": {
         "title": "Q&A: What does a Technical Artist do?",
@@ -55934,7 +56467,7 @@
         "topics": [
             "environment\/resources\/sam-ore"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "SYWPIjbe_4Y": {
         "title": "Q&A: Will Mercer Spheres and Somersloops be useful soon?",
@@ -56065,6 +56598,7 @@
             "1SJA0S2IagA",
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
+            "RtVbl7ivbaM",
             "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-VYyFA7-yRKc,12.72,57"
         ]
@@ -56135,7 +56669,7 @@
         "topics": [
             "features\/save-system"
         ],
-        "duplicatedby": "yt-cF3QleeEiJo,1303.766903,1386.648083"
+        "duplicatedby": "nPj_soas-a8"
     },
     "yt-t1LfyNfuMVQ,218.32,236.16": {
         "title": "Q&A: Can I disable Cloud Saves ?",
@@ -56219,7 +56753,7 @@
             "features\/save-system"
         ],
         "seealso": [
-            "yt-cF3QleeEiJo,1303.766903,1386.648083"
+            "nPj_soas-a8"
         ]
     },
     "yt-R0S19_caQuw,144.32,209.08": {
@@ -56413,7 +56947,7 @@
             "retail\/early-access",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "OHrWEP9zmy8": {
         "title": "Q&A: How many bosses in Satisfactory?",
@@ -56732,7 +57266,7 @@
         "topics": [
             "environment\/resources\/sam-ore"
         ],
-        "duplicatedby": "L4jQG4tp_4c"
+        "duplicatedby": "oPY1o6s9X-k"
     },
     "clmX0WGZBfg": {
         "title": "Q&A: I think the milestones are too cheap",
@@ -57585,7 +58119,8 @@
         ],
         "seealso": [
             "-nsfNFSevf4",
-            "KwsiVfRUKNE"
+            "KwsiVfRUKNE",
+            "RtVbl7ivbaM"
         ]
     },
     "yt-CB9bSigNYH8,374.51402,385.67962": {
@@ -57988,6 +58523,7 @@
         ],
         "seealso": [
             "KwsiVfRUKNE",
+            "RtVbl7ivbaM",
             "yt-CB9bSigNYH8,1091.87394,1115.557953",
             "yt-CB9bSigNYH8,2538.87854,2605.465214"
         ]
@@ -58186,6 +58722,7 @@
         ],
         "seealso": [
             "KwsiVfRUKNE",
+            "RtVbl7ivbaM",
             "vyG5w8eQfQM"
         ]
     },
@@ -58371,7 +58908,8 @@
             "coffee-stainers\/hannah"
         ],
         "seealso": [
-            "KwsiVfRUKNE"
+            "KwsiVfRUKNE",
+            "RtVbl7ivbaM"
         ]
     },
     "yt-CB9bSigNYH8,3335.4333333333334,3346.242026": {
@@ -58606,7 +59144,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "yt-CB9bSigNYH8,4259.409187,4274.556616": {
         "title": "Q&A: How long does it usually take for sending off for the Alpha to get a response?",
@@ -59607,10 +60145,7 @@
         "topics": [
             "environment\/world-map"
         ],
-        "duplicates": [
-            "yt-Dtm6xIj-wM4,2806.989791,2816.5666666666666",
-            "yt-W1E6EWrAsII,434.4,492.52"
-        ]
+        "duplicatedby": "qt5BFAJuJSM"
     },
     "yt-Dtm6xIj-wM4,2329.453589,2391.550622": {
         "title": "Q&A: Where have you learned your Unreal skills?",
@@ -59725,7 +60260,7 @@
         "topics": [
             "environment\/world-map"
         ],
-        "duplicatedby": "yt-Dtm6xIj-wM4,2288.708088,2329.657223"
+        "duplicatedby": "qt5BFAJuJSM"
     },
     "yt-Dtm6xIj-wM4,2816.569184,2836.733333333333": {
         "title": "Q&A: Any plans for stuff like Blueprints?",
@@ -59911,7 +60446,7 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "Diz3iZ5irII"
+        "duplicatedby": "yoD51h2g5T0"
     },
     "yt-Dtm6xIj-wM4,3518.277144,3545.070455": {
         "title": "Q&A: Where is Simon?",
@@ -60867,7 +61402,7 @@
             "BF0MYqw_SpM",
             "tc-ImpartialHardSageBigBrother"
         ],
-        "duplicatedby": "yt-Dtm6xIj-wM4,2288.708088,2329.657223"
+        "duplicatedby": "qt5BFAJuJSM"
     },
     "yt-W1E6EWrAsII,492.52,520.44": {
         "title": "Q&A: Was the trailer a cinematic, or shot in-engine?",
