@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-11-18
+* Partially restoring support for local filesystem captions data
+
 ## 2021-11-13
 * Adding support for generating data for blamehannah.com
 
