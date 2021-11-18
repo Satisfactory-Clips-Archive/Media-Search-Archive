@@ -2374,19 +2374,19 @@ function process_externals(
 
 			try {
 				[$inject, $lines_to_write] = process_dated_csv(
-				$date,
-				$inject,
-				$externals_data,
-				$cache,
-				$global_topic_hierarchy,
-				$not_a_livestream,
-				$not_a_livestream_date_lookup,
-				$slugify,
-				$write_files,
-				true,
-				$file_blanked[$date],
-				$file_blanked[$date] && 1 === count($externals_data_groups)
-			);
+					$date,
+					$inject,
+					$externals_data,
+					$cache,
+					$global_topic_hierarchy,
+					$not_a_livestream,
+					$not_a_livestream_date_lookup,
+					$slugify,
+					$write_files,
+					true,
+					$file_blanked[$date],
+					$file_blanked[$date] && 1 === count($externals_data_groups)
+				);
 			} catch (ErrorException $e) {
 				if (false !== mb_strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')) {
 					$erroring[$externals_video_id] = $e->getMessage();
