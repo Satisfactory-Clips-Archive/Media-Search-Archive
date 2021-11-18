@@ -1609,7 +1609,7 @@ function remove_captions_cache_file(string $filename) : void
 function captions_add_from_string(string $filename, string $contents) : void
 {
 	if ( ! is_file(__DIR__ . '/../captions/' . $filename)) {
-	file_put_contents(__DIR__ . '/../captions/' . $filename, $contents);
+		file_put_contents(__DIR__ . '/../captions/' . $filename, $contents);
 
 		return;
 	}
@@ -1621,7 +1621,7 @@ function captions_add_from_string(string $filename, string $contents) : void
 function captions_get_content(string $filename) : string
 {
 	if (is_file(__DIR__ . '/../captions/' . $filename)) {
-	return file_get_contents(__DIR__ . '/../captions/' . $filename);
+		return file_get_contents(__DIR__ . '/../captions/' . $filename);
 	}
 
 	$captions_data = captions_data();
@@ -1632,7 +1632,7 @@ function captions_get_content(string $filename) : string
 function captions_content_exists(string $filename) : bool
 {
 	if (is_file(__DIR__ . '/../captions/' . $filename)) {
-	return is_file(__DIR__ . '/../captions/' . $filename);
+		return is_file(__DIR__ . '/../captions/' . $filename);
 	}
 	$captions_data = captions_data();
 
@@ -2373,7 +2373,7 @@ function process_externals(
 			[$externals_video_id] = $externals_data;
 
 			try {
-			[$inject, $lines_to_write] = process_dated_csv(
+				[$inject, $lines_to_write] = process_dated_csv(
 				$date,
 				$inject,
 				$externals_data,
@@ -2388,13 +2388,12 @@ function process_externals(
 				$file_blanked[$date] && 1 === count($externals_data_groups)
 			);
 			} catch (ErrorException $e) {
-				if (false !== strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')) {
+				if (false !== mb_strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')) {
 					$erroring[$externals_video_id] = $e->getMessage();
 
 					continue;
-				} else {
-					throw $e;
 				}
+				throw $e;
 			}
 
 			$filename = (
