@@ -3,7 +3,7 @@
         "title": "Q&A: When did the World Grid come out?",
         "date": "2021-11-16",
         "topics": [
-            "features\/requested-features\/global-build-grid",
+            "features\/global-build-grid",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "replaces": [
@@ -1559,7 +1559,7 @@
         "title": "Q&A: Will there ever be an option to set a grid map-wide?",
         "date": "2021-11-09",
         "topics": [
-            "features\/requested-features\/global-build-grid"
+            "features\/global-build-grid"
         ],
         "duplicates": [
             "QxJ8e_0r9uE",
@@ -5675,7 +5675,7 @@
         "title": "Q&A: Ever thought about a general grid overlay rather than just eyeballing it?",
         "date": "2021-10-19",
         "topics": [
-            "features\/requested-features\/global-build-grid"
+            "features\/global-build-grid"
         ],
         "seealso": [
             "iiNu3aKc1VI"
@@ -19907,7 +19907,7 @@
         "title": "Q&A: Will there ever be global grid options based off of your first Foundation?",
         "date": "2021-07-13",
         "topics": [
-            "features\/requested-features\/global-build-grid"
+            "features\/global-build-grid"
         ],
         "seealso": [
             "iiNu3aKc1VI",
@@ -22881,7 +22881,7 @@
         "title": "Q&A: Global grid?",
         "date": "2021-06-29",
         "topics": [
-            "features\/requested-features\/global-build-grid"
+            "features\/global-build-grid"
         ],
         "seealso_video_cards": [
             "3et3lB1Ak7A"
@@ -31462,7 +31462,7 @@
         "date": "2021-03-30",
         "topics": [
             "features\/buildables\/foundations",
-            "features\/requested-features\/global-build-grid"
+            "features\/global-build-grid"
         ],
         "duplicatedby": "iiNu3aKc1VI"
     },
@@ -31976,8 +31976,8 @@
         "date": "2021-03-30",
         "topics": [
             "coffee-stainers\/snutt",
-            "features\/planned-features\/build-modes",
-            "features\/requested-features\/global-build-grid"
+            "features\/global-build-grid",
+            "features\/planned-features\/build-modes"
         ],
         "duplicates": [
             "akmmqVmHmzM",
@@ -40183,7 +40183,7 @@
         "topics": [
             "environment\/world-map",
             "features\/buildables\/foundations",
-            "features\/requested-features\/global-build-grid"
+            "features\/global-build-grid"
         ],
         "duplicatedby": "iiNu3aKc1VI"
     },
@@ -52468,7 +52468,7 @@
         "date": "2020-08-25",
         "topics": [
             "features\/buildables\/foundations",
-            "features\/requested-features\/global-build-grid"
+            "features\/global-build-grid"
         ],
         "seealso": [
             "iiNu3aKc1VI"

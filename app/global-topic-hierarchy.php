@@ -1117,7 +1117,6 @@ $global_topic_hierarchy = [
 	],
 	'PLbjDnnBIxiEr68wcM_BJQsE35xXzjmwqX' => [ // Global Build Grid
 		'Features',
-		'Requested Features',
 	],
 	'PLbjDnnBIxiEoYcnK5o9ipaJlkK58MApga' => [ // Vulkan
 		'Technology',
