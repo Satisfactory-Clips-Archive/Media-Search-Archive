@@ -872,9 +872,21 @@ class YouTubeApiWrapper
 
 	/**
 	 * @param array{id:string, pageToken?:string} $args
-	 * @param array<string, array{0:string, 1:list<string>}> $out
+	 * @param array<string, array{
+	 *	commentCount: 0|positive-int,
+	 *	dislikeCount: 0|positive-int,
+	 *	favoriteCount: 0|positive-int,
+	 *	likeCount: 0|positive-int,
+	 *	viewCount: 0|positive-int
+	 * }> $out
 	 *
-	 * @return array<string, array{0:string, 1:list<string>}>
+	 * @return array<string, array{
+	 *	commentCount: 0|positive-int,
+	 *	dislikeCount: 0|positive-int,
+	 *	favoriteCount: 0|positive-int,
+	 *	likeCount: 0|positive-int,
+	 *	viewCount: 0|positive-int
+	 * }>
 	 */
 	private function listStatistics(
 		array $args,
@@ -885,6 +897,13 @@ class YouTubeApiWrapper
 		 *	pageToken?:string,
 		 *	items: iterable<object{
 		 *		id:string,
+		 *		statistics: object{
+		 *			commentCount: 0|positive-int,
+		 *			dislikeCount: 0|positive-int,
+		 *			favoriteCount: 0|positive-int,
+		 *			likeCount: 0|positive-int,
+		 *			viewCount: 0|positive-int
+		 *		},
 		 *		snippet:object{
 		 *			title:string,
 		 *			tags:list<string>|null

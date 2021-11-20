@@ -36,29 +36,18 @@
     </PossiblyUnusedReturnValue>
   </file>
   <file src="app/src/YouTubeApiWrapper.php">
-    <ArgumentTypeCoercion occurrences="1">
-      <code>$out</code>
-    </ArgumentTypeCoercion>
-    <LessSpecificReturnStatement occurrences="2">
+    <LessSpecificReturnStatement occurrences="1">
       <code>$out</code>
       <code>$out</code>
     </LessSpecificReturnStatement>
     <MixedAssignment occurrences="1">
       <code>$cached[vendor_prefixed_video_id($aliased)]</code>
     </MixedAssignment>
-    <MixedPropertyFetch occurrences="5">
-      <code>$item-&gt;statistics-&gt;commentCount</code>
-      <code>$item-&gt;statistics-&gt;dislikeCount</code>
-      <code>$item-&gt;statistics-&gt;favoriteCount</code>
-      <code>$item-&gt;statistics-&gt;likeCount</code>
-      <code>$item-&gt;statistics-&gt;viewCount</code>
-    </MixedPropertyFetch>
     <MixedReturnTypeCoercion occurrences="2">
       <code>array&lt;string, false|array&gt;</code>
     </MixedReturnTypeCoercion>
-    <MoreSpecificReturnType occurrences="2">
+    <MoreSpecificReturnType occurrences="1">
       <code>array&lt;string, array{0:string, 1:list&lt;string&gt;, 2:string}&gt;</code>
-      <code>array&lt;string, array{0:string, 1:list&lt;string&gt;}&gt;</code>
     </MoreSpecificReturnType>
     <TooManyArguments occurrences="1">
       <code>listStatistics</code>
