@@ -1278,6 +1278,7 @@ foreach (get_externals() as $date => $externals_data_groups) {
 				$start . ('' === $end ? '' : (',' . $end))
 			);
 
+			/** @var numeric-string */
 			$start = ($start ?: '0.0');
 
 			$start_hours = str_pad((string) floor(((float) $start) / 3600), 2, '0', STR_PAD_LEFT);

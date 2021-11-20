@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="4.12.0@e42bc4a23f67acba28a23bb09c348e2ff38a1d87">
   <file src="app/app.php">
-    <ArgumentTypeCoercion occurrences="3">
+    <ArgumentTypeCoercion occurrences="2">
       <code>$line[0]</code>
       <code>$line[1]</code>
-      <code>$start</code>
     </ArgumentTypeCoercion>
-    <DocblockTypeContradiction occurrences="1">
-      <code>'0'</code>
-    </DocblockTypeContradiction>
     <InvalidCast occurrences="1">
       <code>$caption_line</code>
     </InvalidCast>
@@ -25,9 +21,6 @@
     <PossiblyUndefinedGlobalVariable occurrences="1">
       <code>$topic_id</code>
     </PossiblyUndefinedGlobalVariable>
-    <RedundantConditionGivenDocblockType occurrences="1">
-      <code>$start</code>
-    </RedundantConditionGivenDocblockType>
     <UndefinedDocblockClass occurrences="2">
       <code>$caption_line</code>
       <code>$lines</code>
