@@ -1059,6 +1059,8 @@ echo "\n";
 
 $skipping = array_unique($skipping);
 
+usort($skipping, [$sorting, 'sort_video_ids_by_date']);
+
 file_put_contents(__DIR__ . '/skipping-transcriptions.json', json_encode(
 	$skipping,
 	JSON_PRETTY_PRINT

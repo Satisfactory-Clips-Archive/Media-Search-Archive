@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-11-20
+* Ensure skip list is sorted
+
 ## 2021-11-18
 * Partially restoring support for local filesystem captions data
 
