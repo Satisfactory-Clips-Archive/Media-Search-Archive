@@ -36,19 +36,12 @@
     </PossiblyUnusedReturnValue>
   </file>
   <file src="app/src/YouTubeApiWrapper.php">
-    <LessSpecificReturnStatement occurrences="1">
-      <code>$out</code>
-      <code>$out</code>
-    </LessSpecificReturnStatement>
     <MixedAssignment occurrences="1">
       <code>$cached[vendor_prefixed_video_id($aliased)]</code>
     </MixedAssignment>
     <MixedReturnTypeCoercion occurrences="2">
       <code>array&lt;string, false|array&gt;</code>
     </MixedReturnTypeCoercion>
-    <MoreSpecificReturnType occurrences="1">
-      <code>array&lt;string, array{0:string, 1:list&lt;string&gt;, 2:string}&gt;</code>
-    </MoreSpecificReturnType>
     <TooManyArguments occurrences="1">
       <code>listStatistics</code>
     </TooManyArguments>

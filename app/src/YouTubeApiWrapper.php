@@ -275,7 +275,7 @@ class YouTubeApiWrapper
 	 */
 	public function fetch_all_videos_in_playlists() : array
 	{
-		/** @var array<string, array{0:string, 1:list<string>}>|null */
+		/** @var array<string, array{0:string, 1:list<string>, 2:string}>|null */
 		static $out = null;
 
 		if (null === $out) {
