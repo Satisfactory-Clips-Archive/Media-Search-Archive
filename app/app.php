@@ -691,13 +691,12 @@ foreach ($all_video_ids as $video_id) {
 			$playlist_topic_strings_reverse_lookup
 		);
 	} catch (ErrorException $e) {
-		if (false !== strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')) {
+		if (false !== mb_strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')) {
 			$erroring[$video_id] = $e->getMessage();
 
 			continue;
-		} else {
-			throw $e;
 		}
+		throw $e;
 	}
 
 	if (in_array($video_id, $skipping, true)) {

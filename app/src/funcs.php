@@ -2085,38 +2085,38 @@ function get_externals() : array
 			/**
 			 * @param array<
 			 *	string,
-			*	list<array{
-			*		0:string,
-			*		1:list<array{
-			*			0:numeric-string|'',
-			*			1:numeric-string|'',
-			*			2:string
-			*		}>,
-			*		2:array{
-			*			title:string,
-			*			skip:list<bool>,
-			*			topics:array<int, list<string>>
-			*		}
-			*	}>
-			* > $out
-			*
-			* @return array<
-			*	string,
-			*	list<array{
-			*		0:string,
-			*		1:list<array{
-			*			0:numeric-string|'',
-			*			1:numeric-string|'',
-			*			2:string
-			*		}>,
-			*		2:array{
-			*			title:string,
-			*			skip:list<bool>,
-			*			topics:array<int, list<string>>
-			*		}
-			*	}>
-			* >
-			*/
+			 *	list<array{
+			 *		0:string,
+			 *		1:list<array{
+			 *			0:numeric-string|'',
+			 *			1:numeric-string|'',
+			 *			2:string
+			 *		}>,
+			 *		2:array{
+			 *			title:string,
+			 *			skip:list<bool>,
+			 *			topics:array<int, list<string>>
+			 *		}
+			 *	}>
+			 * > $out
+			 *
+			 * @return array<
+			 *	string,
+			 *	list<array{
+			 *		0:string,
+			 *		1:list<array{
+			 *			0:numeric-string|'',
+			 *			1:numeric-string|'',
+			 *			2:string
+			 *		}>,
+			 *		2:array{
+			 *			title:string,
+			 *			skip:list<bool>,
+			 *			topics:array<int, list<string>>
+			 *		}
+			 *	}>
+			 * >
+			 */
 			static function (array $out, string $path) : array {
 				$date = pathinfo(dirname($path), PATHINFO_FILENAME);
 				$unix = strtotime($date);
@@ -2188,20 +2188,20 @@ function get_additional_externals() : array
 				/**
 				 * @return array<string, array{
 				 *	title:string,
-				*	tags:list<string>,
-				*	topics:list<string>,
-				*	legacyof:list<string>
-				* }>
-				*/
+				 *	tags:list<string>,
+				 *	topics:list<string>,
+				 *	legacyof:list<string>
+				 * }>
+				 */
 				static function (string $path) : array {
 					/**
 					 * @var array<string, array{
 					 *	title:string,
-					*	tags:list<string>,
-					*	topics:list<string>,
-					*	legacyof:list<string>
-					* }>
-					*/
+					 *	tags:list<string>,
+					 *	topics:list<string>,
+					 *	legacyof:list<string>
+					 * }>
+					 */
 					return (array) json_decode(file_get_contents($path), true);
 				},
 				$inject_externals
@@ -2391,7 +2391,7 @@ function process_externals(
 		foreach ($externals_data_groups as $externals_data) {
 			[$externals_video_id] = $externals_data;
 
-			$lines_to_write = [['',''], []];
+			$lines_to_write = [['', ''], []];
 
 			try {
 				[$inject, $lines_to_write] = process_dated_csv(
