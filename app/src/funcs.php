@@ -1977,9 +1977,12 @@ function raw_captions(string $video_id) : array
 		$append = false;
 
 		foreach ($xml->children() as $caption_line) {
-			$attrs = array_map('strval', iterator_to_array(
+			/** @var array<string, SimpleXMLElement> */
+			$caption_line_attributes = iterator_to_array(
 				$caption_line->attributes()
-			));
+			);
+
+			$attrs = array_map('strval', $caption_line_attributes);
 
 			if ( ! isset($attrs['start'], $attrs['dur'])) {
 				throw new RuntimeException(
@@ -3005,7 +3008,7 @@ function timestamp_link(string $video_id, $start) : string
 		return sprintf(
 			'https://youtu.be/%s?t=%s',
 			$vendorless_video_id,
-			floor($start)
+			floor((float) $start)
 		);
 	} elseif (preg_match('/^ts-/', $video_id)) {
 		$hours = floor($start / 3600);
@@ -3051,8 +3054,8 @@ function embed_link(string $video_id, $start, $end) : string
 	$vendorless_video_id = preg_replace('/,.*$/', '', mb_substr($video_id, 3));
 
 	if (preg_match('/^yt-/', $video_id)) {
-		$start = floor($start ?: 0);
-		$end = isset($end) ? ceil($end) : null;
+		$start = floor($start ? (float) $start : 0);
+		$end = isset($end) ? ceil((float) $end) : null;
 		$embed_data = [
 			'autoplay' => 1,
 			'start' => $start,

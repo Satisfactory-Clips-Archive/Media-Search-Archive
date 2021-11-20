@@ -43,11 +43,6 @@
       <code>-1 === $start</code>
       <code>null === $line</code>
     </DocblockTypeContradiction>
-    <InvalidScalarArgument occurrences="4">
-      <code>$end</code>
-      <code>$start</code>
-      <code>$start ?: 0</code>
-    </InvalidScalarArgument>
     <MixedArgument occurrences="8">
       <code>$caption_line['endTime']</code>
       <code>$caption_line['startTime']</code>
