@@ -682,6 +682,8 @@ foreach ($all_video_ids as $video_id) {
 
 	$carriage_return = true;
 
+	$caption_lines = [];
+
 	try {
 		$caption_lines = captions(
 			$video_id,

@@ -2372,6 +2372,8 @@ function process_externals(
 		foreach ($externals_data_groups as $externals_data) {
 			[$externals_video_id] = $externals_data;
 
+			$lines_to_write = [['',''], []];
+
 			try {
 				[$inject, $lines_to_write] = process_dated_csv(
 					$date,
