@@ -47,7 +47,7 @@ class Injected
 	 *
 	 * @var array{
 	 *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
-	 *	playlistItems:array<string, array{0:string, 1:string, 2:string}>,
+	 *	playlistItems:array<string, array{0:string, 1:string}>,
 	 *	videoTags:array<string, array{0:string, list<string>}>,
 	 *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
 	 *	legacyAlts:array<string, list<string>>

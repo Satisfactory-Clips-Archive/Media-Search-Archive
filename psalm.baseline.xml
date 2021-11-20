@@ -37,11 +37,6 @@
       <code>$not_a_livestream_date_lookup</code>
     </UnusedVariable>
   </file>
-  <file src="app/src/Injected.php">
-    <PropertyTypeCoercion occurrences="1">
-      <code>$this-&gt;cache</code>
-    </PropertyTypeCoercion>
-  </file>
   <file src="app/src/Jsonify.php">
     <InvalidReturnStatement occurrences="1"/>
     <InvalidReturnType occurrences="1">
