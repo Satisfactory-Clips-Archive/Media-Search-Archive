@@ -592,7 +592,20 @@ class Questions
 
 	/**
 	 * @return array{
-	 *	0:array<string, MAYBE>,
+	 *	0:array<string, array{
+	 *		title:string,
+	 *		date:string,
+	 *		topics?:list<string>,
+	 *		duplicates?:list<string>,
+	 *		replaces?:list<string>,
+	 *		replacedby?:string,
+	 *		duplicatedby?:string,
+	 *		seealso?:list<string>,
+	 *		seealso_video_cards?:list<string>,
+	 *		seealso_topic_cards?:list<string>,
+	 *		incoming_video_cards?:list<string>,
+	 *		legacyalts?:list<string>
+	 *	}>,
 	 *	1:array<string, list<string>>,
 	 *	2:array<string, list<string>>
 	 * }
@@ -601,7 +614,20 @@ class Questions
 	{
 		/**
 		 * @var array{
-		 *	0:array<string, MAYBE>,
+		 *	0:array<string, array{
+		 *		title:string,
+		 *		date:string,
+		 *		topics?:list<string>,
+		 *		duplicates?:list<string>,
+		 *		replaces?:list<string>,
+		 *		replacedby?:string,
+		 *		duplicatedby?:string,
+		 *		seealso?:list<string>,
+		 *		seealso_video_cards?:list<string>,
+		 *		seealso_topic_cards?:list<string>,
+		 *		incoming_video_cards?:list<string>,
+		 *		legacyalts?:list<string>
+		 *	}>,
 		 *	1:array<string, list<string>>,
 		 *	2:array<string, list<string>>
 		 * }|null
@@ -627,7 +653,20 @@ class Questions
 
 		/**
 		 * @var array{
-		 *	0:array<string, MAYBE>,
+		 *	0:array<string, array{
+		 *		title:string,
+		 *		date:string,
+		 *		topics?:list<string>,
+		 *		duplicates?:list<string>,
+		 *		replaces?:list<string>,
+		 *		replacedby?:string,
+		 *		duplicatedby?:string,
+		 *		seealso?:list<string>,
+		 *		seealso_video_cards?:list<string>,
+		 *		seealso_topic_cards?:list<string>,
+		 *		incoming_video_cards?:list<string>,
+		 *		legacyalts?:list<string>
+		 *	}>,
 		 *	1:array<string, list<string>>,
 		 *	2:array<string, list<string>>
 		 * }
