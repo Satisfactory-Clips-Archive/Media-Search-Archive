@@ -73,6 +73,7 @@ use function preg_match_all;
 use function preg_quote;
 use function preg_replace;
 use function preg_replace_callback;
+use QueryPath\DOMQuery;
 use function rawurlencode;
 use RuntimeException;
 use function set_error_handler;
@@ -3301,6 +3302,14 @@ function other_video_parts(string $video_id, bool $include_self = true) : array
 
 function yt_cards(string $video_id, bool $skip_file = false) : array
 {
+	/**
+	 * @var array<string, list<array{
+	 *	0:string,
+	 *	1:0|positive-int,
+	 *	2:'string'|'playlist',
+	 *	3:string
+	 * }>>
+	 */
 	static $cache = [];
 
 	/** @var list<string>|null */
@@ -3347,11 +3356,21 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
 			));
 		}
 
-		$cache[$video_id] = json_decode(
+		/**
+		 * @var list<array{
+		 *	0:string,
+		 *	1:0|positive-int,
+		 *	2:'string'|'playlist',
+		 *	3:string
+		 * }>
+		 */
+		$json = json_decode(
 			file_get_contents($cache_file),
 			true,
 			JSON_THROW_ON_ERROR
 		);
+
+		$cache[$video_id] = $json;
 
 		if ([] === $cache[$video_id]) {
 			$skipping[] = $video_id;
@@ -3402,10 +3421,20 @@ function yt_cards_uncached(string $video_id) : array
 		return [];
 	}
 
+	/** @var list<string> */
 	$nodes = [];
 
 	foreach (html5qp($page, 'script') as $node) {
-		$nodes[] = $node->text();
+		/** @var DOMQuery|string */
+		$node_text = $node->text();
+
+		if ( ! is_string($node_text)) {
+			throw new UnexpectedValueException(
+				'Unsupported text value found!'
+			);
+		}
+
+		$nodes[] = $node_text;
 	}
 
 	$nodes = array_values(array_filter(
