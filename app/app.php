@@ -46,6 +46,7 @@ use function mkdir;
 use function preg_match;
 use function realpath;
 use RuntimeException;
+use SimpleXmlElement;
 use function sprintf;
 use const STR_PAD_LEFT;
 use function str_repeat;

@@ -2014,7 +2014,7 @@ function raw_captions(string $video_id) : array
 }
 
 /**
- * @psalm-type T = array<
+ * @return array<
  *	string,
  *	list<array{
  *		0:string,
@@ -2030,12 +2030,27 @@ function raw_captions(string $video_id) : array
  *		}
  *	}>
  * >
- *
- * @return T
  */
 function get_externals() : array
 {
-	/** @var T|null */
+	/**
+	 * @var array<
+	 *	string,
+	 *	list<array{
+	 *		0:string,
+	 *		1:list<array{
+	 *			0:numeric-string|'',
+	 *			1:numeric-string|'',
+	 *			2:string
+	 *		}>,
+	 *		2:array{
+	 *			title:string,
+	 *			skip:list<bool>,
+	 *			topics:array<int, list<string>>
+	 *		}
+	 *	}>
+	 * >|null
+	 */
 	static $cached = null;
 
 	if (null === $cached) {
@@ -2132,18 +2147,23 @@ function get_externals() : array
 }
 
 /**
- * @psalm-type T = array<string, array<string, array{
+ * @return array<string, array<string, array{
  *	title:string,
  *	tags:list<string>,
  *	topics:list<string>,
  *	legacyof:list<string>
  * }>>
- *
- * @return T
  */
 function get_additional_externals() : array
 {
-	/** @var T|null */
+	/**
+	 * @var array<string, array<string, array{
+	 *	title:string,
+	 *	tags:list<string>,
+	 *	topics:list<string>,
+	 *	legacyof:list<string>
+	 * }>>|null
+	 */
 	static $cached = null;
 
 	if (null === $cached) {
@@ -3508,7 +3528,7 @@ function yt_cards_uncached(string $video_id) : array
 	 * @var list<array{
 	 *	0:string,
 	 *	1:int,
-	 *	2:playlist|video,
+	 *	2:'playlist'|'video',
 	 *	3:string
 	 * }>
 	 */
@@ -3519,7 +3539,7 @@ function yt_cards_uncached(string $video_id) : array
 		 * @return array{
 		 *	0:string,
 		 *	1:int,
-		 *	2:playlist|video,
+		 *	2:'playlist'|'video',
 		 *	3:string
 		 * }
 		 */

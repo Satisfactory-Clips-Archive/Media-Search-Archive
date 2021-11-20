@@ -5,11 +5,7 @@
       <code>$line[0]</code>
       <code>$line[1]</code>
     </ArgumentTypeCoercion>
-    <InvalidCast occurrences="1">
-      <code>$caption_line</code>
-    </InvalidCast>
-    <MixedArgument occurrences="4">
-      <code>$caption_line-&gt;attributes()</code>
+    <MixedArgument occurrences="3">
       <code>$caption_line['endTime']</code>
       <code>$caption_line['startTime']</code>
       <code>$topic_id</code>
@@ -21,10 +17,6 @@
     <PossiblyUndefinedGlobalVariable occurrences="1">
       <code>$topic_id</code>
     </PossiblyUndefinedGlobalVariable>
-    <UndefinedDocblockClass occurrences="2">
-      <code>$caption_line</code>
-      <code>$lines</code>
-    </UndefinedDocblockClass>
     <UnusedVariable occurrences="2">
       <code>$cards</code>
       <code>$slug</code>
@@ -133,28 +125,13 @@
       <code>-1 === $start</code>
       <code>null === $line</code>
     </DocblockTypeContradiction>
-    <InvalidArgument occurrences="1">
-      <code>$injected_cache</code>
-    </InvalidArgument>
-    <InvalidArrayOffset occurrences="2">
-      <code>$video['title']</code>
-      <code>$video['topics']</code>
-    </InvalidArrayOffset>
-    <InvalidReturnStatement occurrences="2">
-      <code>$cached</code>
-      <code>$cached</code>
-    </InvalidReturnStatement>
-    <InvalidReturnType occurrences="2">
-      <code>T</code>
-      <code>T</code>
-    </InvalidReturnType>
     <InvalidScalarArgument occurrences="4">
       <code>$end</code>
       <code>$start</code>
       <code>$start ?: 0</code>
     </InvalidScalarArgument>
     <LessSpecificReturnStatement occurrences="1"/>
-    <MixedArgument occurrences="9">
+    <MixedArgument occurrences="8">
       <code>$caption_line['endTime']</code>
       <code>$caption_line['startTime']</code>
       <code>$matches[1]</code>
@@ -163,7 +140,6 @@
       <code>$playlist_id</code>
       <code>$skipping</code>
       <code>$skipping</code>
-      <code>$topic</code>
     </MixedArgument>
     <MixedArgumentTypeCoercion occurrences="1">
       <code>$video_ids</code>
@@ -176,17 +152,10 @@
       <code>$cache[$video_id]</code>
       <code>$skipping[]</code>
     </MixedArrayAssignment>
-    <MixedArrayOffset occurrences="3">
-      <code>$injected_cache['legacyAlts'][$legacyof]</code>
-      <code>$injected_cache['legacyAlts'][$legacyof]</code>
-      <code>$injected_cache['legacyAlts'][$legacyof]</code>
-    </MixedArrayOffset>
-    <MixedAssignment occurrences="5">
+    <MixedAssignment occurrences="3">
       <code>$cache[$video_id]</code>
-      <code>$legacyof</code>
       <code>$node</code>
       <code>$nodes[]</code>
-      <code>$topic</code>
     </MixedAssignment>
     <MixedInferredReturnType occurrences="2">
       <code>array</code>
@@ -215,16 +184,9 @@
       <code>$matches</code>
     </PossiblyUndefinedVariable>
     <RedundantConditionGivenDocblockType occurrences="2"/>
-    <ReferenceConstraintViolation occurrences="3">
-      <code>$cached</code>
-      <code>$cached</code>
+    <ReferenceConstraintViolation occurrences="1">
       <code>$skipping</code>
     </ReferenceConstraintViolation>
-    <UndefinedDocblockClass occurrences="3">
-      <code>$cached = null</code>
-      <code>$cached = null</code>
-      <code>$processed</code>
-    </UndefinedDocblockClass>
     <UndefinedVariable occurrences="1">
       <code>$playlist_id</code>
     </UndefinedVariable>
