@@ -683,10 +683,10 @@ foreach ($all_video_ids as $video_id) {
 	$carriage_return = true;
 
 	try {
-	$caption_lines = captions(
-		$video_id,
-		$playlist_topic_strings_reverse_lookup
-	);
+		$caption_lines = captions(
+			$video_id,
+			$playlist_topic_strings_reverse_lookup
+		);
 	} catch (ErrorException $e) {
 		if (false !== strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')) {
 			$erroring[$video_id] = $e->getMessage();
