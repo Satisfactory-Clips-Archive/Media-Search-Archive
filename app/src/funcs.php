@@ -1425,8 +1425,6 @@ function captions(
 
 	$lines = $process_chunks($lines, $chunks);
 
-	$chunk = implode("\n", $lines);
-
 	file_put_contents($captions_cache_file, str_replace(
 		PHP_EOL,
 		"\n",
