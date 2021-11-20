@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d1b5df633895270ba329f08a6ec1cff",
+    "content-hash": "03c814ec8fead81ad85d48f90a359e09",
     "packages": [],
     "packages-dev": [
         {
@@ -3102,28 +3102,28 @@
         },
         {
             "name": "signpostmarv/php-cs-fixer-config",
-            "version": "v0.21.1",
+            "version": "v0.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SignpostMarv/PHP-CS-Fixer-Config.git",
-                "reference": "28705f57fcfb0fb51e961c730605816026a549bf"
+                "reference": "9a60786bb487bda76aa8995fe7214f4bb40242eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SignpostMarv/PHP-CS-Fixer-Config/zipball/28705f57fcfb0fb51e961c730605816026a549bf",
-                "reference": "28705f57fcfb0fb51e961c730605816026a549bf",
+                "url": "https://api.github.com/repos/SignpostMarv/PHP-CS-Fixer-Config/zipball/9a60786bb487bda76aa8995fe7214f4bb40242eb",
+                "reference": "9a60786bb487bda76aa8995fe7214f4bb40242eb",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "^3.0",
+                "friendsofphp/php-cs-fixer": "^3.3",
                 "php": "^7.4|^8.0"
             },
             "require-dev": {
                 "maglnet/composer-require-checker": "^3.2",
                 "povils/phpmnd": "^2.4",
-                "roave/security-advisories": "dev-master",
+                "roave/security-advisories": "dev-latest",
                 "sebastian/phpcpd": "^6.0",
-                "vimeo/psalm": "^4.7"
+                "vimeo/psalm": "^4.12"
             },
             "type": "library",
             "autoload": {
@@ -3144,9 +3144,9 @@
             "description": "PHP-CS-Fixer Config",
             "support": {
                 "issues": "https://github.com/SignpostMarv/PHP-CS-Fixer-Config/issues",
-                "source": "https://github.com/SignpostMarv/PHP-CS-Fixer-Config/tree/v0.21.1"
+                "source": "https://github.com/SignpostMarv/PHP-CS-Fixer-Config/tree/v0.22.0"
             },
-            "time": "2021-06-13T12:23:44+00:00"
+            "time": "2021-11-20T03:50:59+00:00"
         },
         {
             "name": "symfony/console",

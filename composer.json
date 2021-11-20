@@ -32,7 +32,7 @@
 		"masterminds/html5": "^2.7",
 		"querypath/querypath": "^3.0",
 		"roave/security-advisories": "dev-latest",
-		"signpostmarv/php-cs-fixer-config": "^0.21.1",
+		"signpostmarv/php-cs-fixer-config": "^0.22.0",
 		"vimeo/psalm": "^4.12"
 	}
 }
