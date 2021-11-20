@@ -80,7 +80,6 @@
     <PossiblyUndefinedVariable occurrences="1">
       <code>$matches</code>
     </PossiblyUndefinedVariable>
-    <RedundantConditionGivenDocblockType occurrences="1"/>
     <ReferenceConstraintViolation occurrences="1">
       <code>$skipping</code>
     </ReferenceConstraintViolation>

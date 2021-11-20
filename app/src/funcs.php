@@ -3576,7 +3576,36 @@ function yt_cards_uncached(string $video_id) : array
 	 */
 	$processed = array_map(
 		/**
-		 * @param CARD $card
+		 * @param object{
+		 *	cardRenderer: object{
+		 *		teaser: object{
+		 *			simpleCardTeaserRenderer: object{
+		 *				message: object{
+		 *					simpleText: string
+		 *				}
+		 *			}
+		 *		},
+		 *		cueRanges: array{0: object{
+		 *	 		startCardActiveMs: numeric-string
+		 *		}},
+		 *		content: object{
+		 *			videoInfoCardContentRenderer?: object{
+		 *				action: object{
+		 *					watchEndpoint: object{
+		 *						videoId:string
+		 *					}
+		 *				}
+		 *			},
+		 *			playlistInfoCardContentRenderer?: object{
+		 *				action: object{
+		 *					watchEndpoint: object{
+		 *						playlistId: string
+		 *					}
+		 *				}
+		 *			}
+		 *		}
+		 *	}
+		 * } $card
 		 *
 		 * @return array{
 		 *	0:string,
@@ -3598,15 +3627,7 @@ function yt_cards_uncached(string $video_id) : array
 				$id = $renderer->action->watchEndpoint->playlistId;
 			} else {
 				$type = 'video';
-				/**
-				 * @var object{
-				 *	action: object{
-				 *		watchEndpoint: object{
-				 *			videoId: string
-				 *		}
-				 *	}
-				 * }
-				 */
+
 				$renderer = $card->cardRenderer->content->videoInfoCardContentRenderer;
 
 				$id = $renderer->action->watchEndpoint->videoId;
