@@ -3486,17 +3486,32 @@ function yt_cards_uncached(string $video_id) : array
 				&& is_string($maybe->cardRenderer->teaser->simpleCardTeaserRenderer->message->simpleText)
 				&& is_array($maybe->cardRenderer->cueRanges)
 				&& isset(
-					$maybe->cardRenderer->cueRanges[0],
+					$maybe->cardRenderer->cueRanges[0]
+				)
+				&& is_object($maybe->cardRenderer->cueRanges[0])
+				&& isset(
 					$maybe->cardRenderer->cueRanges[0]->startCardActiveMs
 				)
 				&& is_string($maybe->cardRenderer->cueRanges[0]->startCardActiveMs)
 				&& ctype_digit($maybe->cardRenderer->cueRanges[0]->startCardActiveMs)
+				&& is_object($maybe->cardRenderer->content)
 				&& (
 					(
 						isset(
-							$maybe->cardRenderer->content->videoInfoCardContentRenderer,
-							$maybe->cardRenderer->content->videoInfoCardContentRenderer->action,
-							$maybe->cardRenderer->content->videoInfoCardContentRenderer->action->watchEndpoint,
+							$maybe->cardRenderer->content->videoInfoCardContentRenderer
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->videoInfoCardContentRenderer
+						)
+						&& isset(
+							$maybe->cardRenderer->content->videoInfoCardContentRenderer->action
+						)
+						&& is_object($maybe->cardRenderer->content->videoInfoCardContentRenderer->action)
+						&& isset(
+							$maybe->cardRenderer->content->videoInfoCardContentRenderer->action->watchEndpoint
+						)
+						&& is_object($maybe->cardRenderer->content->videoInfoCardContentRenderer->action->watchEndpoint)
+						&& isset(
 							$maybe->cardRenderer->content->videoInfoCardContentRenderer->action->watchEndpoint->videoId
 						)
 						&& is_string(
@@ -3505,9 +3520,24 @@ function yt_cards_uncached(string $video_id) : array
 					)
 					|| (
 						isset(
-							$maybe->cardRenderer->content->playlistInfoCardContentRenderer,
-							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action,
-							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action->watchEndpoint,
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer
+						)
+						&& isset(
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action
+						)
+						&& isset(
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action->watchEndpoint
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action->watchEndpoint
+						)
+						&& isset(
 							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action->watchEndpoint->playlistId
 						)
 						&& is_string(

@@ -91,17 +91,8 @@
     <MixedMethodCall occurrences="1">
       <code>text</code>
     </MixedMethodCall>
-    <MixedPropertyFetch occurrences="10">
+    <MixedPropertyFetch occurrences="1">
       <code>$card-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action</code>
-      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer</code>
-      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer-&gt;action</code>
-      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer-&gt;action-&gt;watchEndpoint</code>
-      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;playlistInfoCardContentRenderer-&gt;action-&gt;watchEndpoint-&gt;playlistId</code>
-      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer</code>
-      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action</code>
-      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action-&gt;watchEndpoint</code>
-      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action-&gt;watchEndpoint-&gt;videoId</code>
-      <code>$maybe-&gt;cardRenderer-&gt;cueRanges[0]-&gt;startCardActiveMs</code>
     </MixedPropertyFetch>
     <MixedReturnStatement occurrences="2">
       <code>$cache[$video_id]</code>
