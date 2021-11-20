@@ -149,10 +149,10 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		$parts = explode(',', $video_id);
 		[$video_id, $start] = $parts;
 
-		/** @var null|numeric-string */
+		/** @var numeric-string|null */
 		$start = '' === trim($start) ? null : $start;
 
-		/** @var null|numeric-string */
+		/** @var numeric-string|null */
 		$end = $parts[2] ?? null;
 
 		return embed_link($video_id, $start, $end);
@@ -2861,7 +2861,6 @@ function process_dated_csv(
 			}
 
 			if ($write_files && '' !== trim($csv_captions[$i][3])) {
-
 				$files_out[
 					__DIR__
 					. '/../../video-clip-notes/docs/transcriptions/'

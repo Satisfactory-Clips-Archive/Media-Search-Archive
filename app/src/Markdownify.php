@@ -21,7 +21,6 @@ use function sprintf;
 use function str_replace;
 use function strtotime;
 use function uasort;
-use function usort;
 
 class Markdownify
 {
