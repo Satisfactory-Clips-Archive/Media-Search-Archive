@@ -3424,7 +3424,10 @@ function yt_cards_uncached(string $video_id) : array
 	/** @var list<string> */
 	$nodes = [];
 
-	foreach (html5qp($page, 'script') as $node) {
+	/** @var iterable<DOMQuery> */
+	$html5qp = html5qp($page, 'script');
+
+	foreach ($html5qp as $node) {
 		/** @var DOMQuery|string */
 		$node_text = $node->text();
 
