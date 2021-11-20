@@ -2010,6 +2010,7 @@ function raw_captions(string $video_id) : array
 			}
 		}
 	} else {
+		/** @var null|SimpleXMLElement */
 		foreach ($xml->children() as $line) {
 			if (null === $line) {
 				continue;
@@ -3000,7 +3001,7 @@ function process_dated_csv(
 }
 
 /**
- * @param float|numeric-string $start
+ * @param -1|float|numeric-string $start
  */
 function timestamp_link(string $video_id, $start) : string
 {

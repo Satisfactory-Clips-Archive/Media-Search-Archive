@@ -35,13 +35,6 @@
       <code>int</code>
     </PossiblyUnusedReturnValue>
   </file>
-  <file src="app/src/funcs.php">
-    <DocblockTypeContradiction occurrences="3">
-      <code>-1 === $start</code>
-      <code>-1 === $start</code>
-      <code>null === $line</code>
-    </DocblockTypeContradiction>
-  </file>
   <file src="app/statistics.php">
     <MixedArgument occurrences="5">
       <code>$topic_slugs</code>
