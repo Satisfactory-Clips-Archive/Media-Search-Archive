@@ -29,11 +29,6 @@
       <code>$not_a_livestream_date_lookup</code>
     </UnusedVariable>
   </file>
-  <file src="app/src/Markdownify.php">
-    <PossiblyUnusedMethod occurrences="1">
-      <code>content_if_video_has_seealsos</code>
-    </PossiblyUnusedMethod>
-  </file>
   <file src="app/src/Questions.php">
     <ReferenceConstraintViolation occurrences="1">
       <code>$cache</code>

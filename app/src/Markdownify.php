@@ -175,49 +175,6 @@ class Markdownify
 		return $out;
 	}
 
-	public function content_if_video_has_seealsos(
-		string $video_id,
-		Questions $questions = null
-	) : string {
-		$questions = $questions ?? $this->questions;
-
-		$see_alsos = $questions->process()[2][$video_id] ?? [];
-
-		if ([] === $see_alsos) {
-			return '';
-		}
-
-		$injected = $questions->injected;
-
-		usort(
-			$see_alsos,
-			[$injected->sorting, 'sort_video_ids_by_date']
-		);
-
-		$out = "\n"
-			. '<details>'
-			. "\n"
-			. '<summary>'
-			. sprintf(
-				'There %2$s %1$u other %3$s that may be related to this one',
-				count($see_alsos),
-				count($see_alsos) > 1 ? 'are' : 'is',
-				count($see_alsos) > 1 ? 'videos' : 'video'
-			)
-			. '</summary>'
-			. "\n"
-		;
-
-		$out .= "\n";
-		$out .= $this->content_from_other_video_parts(
-			$see_alsos
-		);
-
-		$out .= '</details>' . "\n";
-
-		return $out;
-	}
-
 	public function content_if_video_is_a_duplicate(string $video_id) : string
 	{
 		return $this->content_if_video_is_thinged(
