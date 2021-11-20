@@ -1158,7 +1158,7 @@
 - [ ] yt-rePLsjw-eEY,274.1739,307.37373333333335 - Jace Talk: Missing Uranium & Bauxite nodes
 - [ ] yt-rePLsjw-eEY,307.4071,338.814696 - Jace Talk: Stackable Conveyor Poles & Floor Holes have Hard Clearance
 - [ ] yt-rePLsjw-eEY,385.7854,405.30490000000003 - Snutt Talk: You can Paint Vehicles, Trains, and Drones
-- [ ] yt-rePLsjw-eEY,513.0458666666667,572.2049666666667 - Snutt Talk: Toggling Conveyor Lift direction
+- [x] yt-rePLsjw-eEY,513.0458666666667,572.2049666666667 - Snutt Talk: Toggling Conveyor Lift direction
 - [ ] yt-rePLsjw-eEY,664.0634,690.3897000000001 - Snutt Talk: We've added a lot more Emotes to the game
 - [ ] yt-rePLsjw-eEY,690.4564333333334,702.2348666666667 - Snutt Talk: We've added more Personal Storage Boxes
 - [ ] yt-rePLsjw-eEY,765.7983666666667,798.4977 - Snutt Talk: We've added more music
