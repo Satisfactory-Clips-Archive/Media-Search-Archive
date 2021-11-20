@@ -3320,7 +3320,7 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
 					. '/../data/skipping-cards.json'
 				),
 				json_encode_pretty(
-						$skipping
+					$skipping
 				)
 			);
 		});
