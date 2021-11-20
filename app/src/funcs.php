@@ -3573,6 +3573,14 @@ function yt_cards_uncached(string $video_id) : array
 		 * }
 		 */
 		static function (object $card) : array {
+			/**
+			 * @var array{
+			 *	0:string,
+			 *	1:int,
+			 *	2:'playlist'|'video',
+			 *	3:string
+			 * }
+			 */
 			return [
 				$card->cardRenderer->teaser->simpleCardTeaserRenderer->message->simpleText,
 				(int) $card->cardRenderer->cueRanges[0]->startCardActiveMs,

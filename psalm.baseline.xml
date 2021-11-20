@@ -57,7 +57,6 @@
       <code>$start</code>
       <code>$start ?: 0</code>
     </InvalidScalarArgument>
-    <LessSpecificReturnStatement occurrences="1"/>
     <MixedArgument occurrences="8">
       <code>$caption_line['endTime']</code>
       <code>$caption_line['startTime']</code>
@@ -97,7 +96,6 @@
     <MixedReturnStatement occurrences="2">
       <code>$cache[$video_id]</code>
     </MixedReturnStatement>
-    <MoreSpecificReturnType occurrences="1"/>
     <PossiblyUndefinedVariable occurrences="1">
       <code>$matches</code>
     </PossiblyUndefinedVariable>
