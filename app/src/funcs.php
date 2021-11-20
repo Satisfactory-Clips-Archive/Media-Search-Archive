@@ -149,7 +149,10 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		$parts = explode(',', $video_id);
 		[$video_id, $start] = $parts;
 
+		/** @var null|numeric-string */
 		$start = '' === trim($start) ? null : $start;
+
+		/** @var null|numeric-string */
 		$end = $parts[2] ?? null;
 
 		return embed_link($video_id, $start, $end);
@@ -2787,6 +2790,13 @@ function process_dated_csv(
 
 	foreach ($externals_csv as $i => $line) {
 		[$start, $end, $clip_title] = $line;
+
+		/** @var numeric-string|null */
+		$start_or_null = '' === $start ? null : $start;
+
+		/** @var numeric-string|null */
+		$end_or_null = '' === $end ? null : $end;
+
 		$clip_id = sprintf(
 			'%s,%s',
 			$video_id,
@@ -2805,6 +2815,7 @@ function process_dated_csv(
 			$embed_data['end'] = ceil((float) $embed_data['end']);
 		}
 
+		/** @var numeric-string */
 		$start = ($start ?: '0.0');
 
 		$start_hours = str_pad((string) floor(((float) $start) / 3600), 2, '0', STR_PAD_LEFT);
@@ -2850,6 +2861,7 @@ function process_dated_csv(
 			}
 
 			if ($write_files && '' !== trim($csv_captions[$i][3])) {
+
 				$files_out[
 					__DIR__
 					. '/../../video-clip-notes/docs/transcriptions/'
@@ -2901,7 +2913,7 @@ function process_dated_csv(
 					embed_link(
 						$video_id,
 						$start,
-						'' === $end ? null : $end
+						$end_or_null
 					),
 					"\n",
 					'### Topics' . "\n",
@@ -2962,8 +2974,8 @@ function process_dated_csv(
 					)
 						? embed_link(
 							$video_id,
-							$line[0],
-							$line[1]
+							$start_or_null,
+							$end_or_null
 						)
 						: timestamp_link($video_id, $start)
 				),

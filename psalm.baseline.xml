@@ -36,15 +36,6 @@
     </PossiblyUnusedReturnValue>
   </file>
   <file src="app/src/funcs.php">
-    <ArgumentTypeCoercion occurrences="7">
-      <code>$end</code>
-      <code>$line[0]</code>
-      <code>$line[1]</code>
-      <code>$start</code>
-      <code>$start</code>
-      <code>$start</code>
-      <code>'' === $end ? null : $end</code>
-    </ArgumentTypeCoercion>
     <DocblockTypeContradiction occurrences="5">
       <code>$card-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action-&gt;watchEndpoint-&gt;videoId</code>
       <code>'video'</code>
