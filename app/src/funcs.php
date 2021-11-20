@@ -2054,8 +2054,7 @@ function get_externals() : array
 	static $cached = null;
 
 	if (null === $cached) {
-		$csv_files =
-		array_filter(
+		$csv_files = array_filter(
 			glob(__DIR__ . '/../data/*/*.csv'),
 			static function (string $maybe) : bool {
 				$dir = dirname($maybe);
@@ -2065,7 +2064,7 @@ function get_externals() : array
 					preg_match('/^(?:yt|ts)\-/', $info)
 					&& is_file($dir . '/' . $info . '.json');
 			}
-	);
+		);
 
 		usort($csv_files, static function (string $a, string $b) : int {
 			$a_basename = basename($a);
@@ -2083,64 +2082,64 @@ function get_externals() : array
 
 		$cached = array_reduce(
 		$csv_files,
-		/**
-		 * @param array<
-		 *	string,
-		 *	list<array{
-		 *		0:string,
-		 *		1:list<array{
-		 *			0:numeric-string|'',
-		 *			1:numeric-string|'',
-		 *			2:string
-		 *		}>,
-		 *		2:array{
-		 *			title:string,
-		 *			skip:list<bool>,
-		 *			topics:array<int, list<string>>
-		 *		}
-		 *	}>
-		 * > $out
-		 *
-		 * @return array<
-		 *	string,
-		 *	list<array{
-		 *		0:string,
-		 *		1:list<array{
-		 *			0:numeric-string|'',
-		 *			1:numeric-string|'',
-		 *			2:string
-		 *		}>,
-		 *		2:array{
-		 *			title:string,
-		 *			skip:list<bool>,
-		 *			topics:array<int, list<string>>
-		 *		}
-		 *	}>
-		 * >
-		 */
-		static function (array $out, string $path) : array {
-			$date = pathinfo(dirname($path), PATHINFO_FILENAME);
-			$unix = strtotime($date);
+			/**
+			 * @param array<
+			 *	string,
+			*	list<array{
+			*		0:string,
+			*		1:list<array{
+			*			0:numeric-string|'',
+			*			1:numeric-string|'',
+			*			2:string
+			*		}>,
+			*		2:array{
+			*			title:string,
+			*			skip:list<bool>,
+			*			topics:array<int, list<string>>
+			*		}
+			*	}>
+			* > $out
+			*
+			* @return array<
+			*	string,
+			*	list<array{
+			*		0:string,
+			*		1:list<array{
+			*			0:numeric-string|'',
+			*			1:numeric-string|'',
+			*			2:string
+			*		}>,
+			*		2:array{
+			*			title:string,
+			*			skip:list<bool>,
+			*			topics:array<int, list<string>>
+			*		}
+			*	}>
+			* >
+			*/
+			static function (array $out, string $path) : array {
+				$date = pathinfo(dirname($path), PATHINFO_FILENAME);
+				$unix = strtotime($date);
 
-			if (false === $unix) {
-				throw new RuntimeException(sprintf(
-					'Unsupported date found for: %s',
-					$path
-				));
-			} elseif ( ! isset($out[$date])) {
-				$out[$date] = [];
-			}
+				if (false === $unix) {
+					throw new RuntimeException(sprintf(
+						'Unsupported date found for: %s',
+						$path
+					));
+				} elseif ( ! isset($out[$date])) {
+					$out[$date] = [];
+				}
 
-			$video_id = pathinfo($path, PATHINFO_FILENAME);
+				$video_id = pathinfo($path, PATHINFO_FILENAME);
 
-			$dated_csv = get_dated_csv($date, $video_id);
+				$dated_csv = get_dated_csv($date, $video_id);
 
-			$out[$date][] = $dated_csv;
+				$out[$date][] = $dated_csv;
 
-			return $out;
-		},
-		[]
-	);
+				return $out;
+			},
+			[]
+		);
 	}
 
 	return $cached;
@@ -2168,46 +2167,46 @@ function get_additional_externals() : array
 
 	if (null === $cached) {
 		$inject_externals = array_filter(
-		glob(__DIR__ . '/../data/externals/*.json'),
-		static function (string $path) : bool {
-			$info = pathinfo($path, PATHINFO_FILENAME);
+			glob(__DIR__ . '/../data/externals/*.json'),
+			static function (string $path) : bool {
+				$info = pathinfo($path, PATHINFO_FILENAME);
 
-			$unix = strtotime($info);
+				$unix = strtotime($info);
 
-			return false !== $unix && date('Y-m-d', $unix) === $info;
-		}
-	);
+				return false !== $unix && date('Y-m-d', $unix) === $info;
+			}
+		);
 
 		$cached = array_combine(
-		array_map(
-			static function (string $path) : string {
-				return pathinfo($path, PATHINFO_FILENAME);
-			},
-			$inject_externals
-		),
-		array_map(
-			/**
-			 * @return array<string, array{
-			 *	title:string,
-			 *	tags:list<string>,
-			 *	topics:list<string>,
-			 *	legacyof:list<string>
-			 * }>
-			 */
-			static function (string $path) : array {
+			array_map(
+				static function (string $path) : string {
+					return pathinfo($path, PATHINFO_FILENAME);
+				},
+				$inject_externals
+			),
+			array_map(
 				/**
-				 * @var array<string, array{
+				 * @return array<string, array{
 				 *	title:string,
-				 *	tags:list<string>,
-				 *	topics:list<string>,
-				 *	legacyof:list<string>
-				 * }>
-				 */
-				return (array) json_decode(file_get_contents($path), true);
-			},
-			$inject_externals
-		)
-	);
+				*	tags:list<string>,
+				*	topics:list<string>,
+				*	legacyof:list<string>
+				* }>
+				*/
+				static function (string $path) : array {
+					/**
+					 * @var array<string, array{
+					 *	title:string,
+					*	tags:list<string>,
+					*	topics:list<string>,
+					*	legacyof:list<string>
+					* }>
+					*/
+					return (array) json_decode(file_get_contents($path), true);
+				},
+				$inject_externals
+			)
+		);
 	}
 
 	return $cached;
