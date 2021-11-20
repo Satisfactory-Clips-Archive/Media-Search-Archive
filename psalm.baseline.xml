@@ -41,10 +41,9 @@
       <code>-1 === $start</code>
       <code>null === $line</code>
     </DocblockTypeContradiction>
-    <MixedArgument occurrences="8">
+    <MixedArgument occurrences="7">
       <code>$caption_line['endTime']</code>
       <code>$caption_line['startTime']</code>
-      <code>$matches[1]</code>
       <code>$nodes[0]</code>
       <code>$nodes[0]</code>
       <code>$playlist_id</code>
@@ -54,9 +53,8 @@
     <MixedArgumentTypeCoercion occurrences="1">
       <code>$video_ids</code>
     </MixedArgumentTypeCoercion>
-    <MixedArrayAccess occurrences="2">
+    <MixedArrayAccess occurrences="1">
       <code>$cache[$video_id]</code>
-      <code>$matches[1]</code>
     </MixedArrayAccess>
     <MixedArrayAssignment occurrences="2">
       <code>$cache[$video_id]</code>
@@ -77,9 +75,6 @@
     <MixedReturnStatement occurrences="2">
       <code>$cache[$video_id]</code>
     </MixedReturnStatement>
-    <PossiblyUndefinedVariable occurrences="1">
-      <code>$matches</code>
-    </PossiblyUndefinedVariable>
     <UndefinedVariable occurrences="1">
       <code>$playlist_id</code>
     </UndefinedVariable>

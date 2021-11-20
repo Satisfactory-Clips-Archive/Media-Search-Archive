@@ -89,6 +89,7 @@ use Throwable;
 use function trim;
 use function uasort;
 use function uksort;
+use UnexpectedValueException;
 use function usort;
 
 set_error_handler(static function (
@@ -3413,7 +3414,9 @@ function yt_cards_uncached(string $video_id) : array
 
 	if (1 !== count($nodes)) {
 		return [];
-	} elseif ( ! preg_match('/ytInitialPlayerResponse = (.+);(var|const|let)/', $nodes[0], $matches)) {
+	}
+
+	if ( ! preg_match('/ytInitialPlayerResponse = (.+);(var|const|let)/', $nodes[0], $matches)) {
 		if (
 			! preg_match('/ytInitialPlayerResponse = (.+);$/', $nodes[0], $matches)
 			&& null === json_decode($matches[1])
@@ -3421,6 +3424,9 @@ function yt_cards_uncached(string $video_id) : array
 			return [];
 		}
 	}
+
+	/** @var array{0:string, 1:string, 2?:string} */
+	$matches = $matches;
 
 	/**
 	 * @var scalar|array|resource|null|object{
