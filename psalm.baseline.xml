@@ -30,10 +30,6 @@
     </UnusedVariable>
   </file>
   <file src="app/src/Sorting.php">
-    <PossiblyInvalidArrayOffset occurrences="2">
-      <code>$this-&gt;cache['playlists'][$b_id]</code>
-      <code>$this-&gt;cache['playlists'][$b_id]</code>
-    </PossiblyInvalidArrayOffset>
     <PossiblyUnusedReturnValue occurrences="2">
       <code>int</code>
       <code>int</code>
