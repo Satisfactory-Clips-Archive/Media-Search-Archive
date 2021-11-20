@@ -80,9 +80,6 @@
     <PossiblyUndefinedVariable occurrences="1">
       <code>$matches</code>
     </PossiblyUndefinedVariable>
-    <ReferenceConstraintViolation occurrences="1">
-      <code>$skipping</code>
-    </ReferenceConstraintViolation>
     <UndefinedVariable occurrences="1">
       <code>$playlist_id</code>
     </UndefinedVariable>

@@ -3305,6 +3305,7 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
 	$video_id = vendor_prefixed_video_id($video_id);
 
 	if (null === $skipping) {
+		/** @var list<string> */
 		$skipping = array_values(array_filter(
 			(array) json_decode(
 				file_get_contents(__DIR__ . '/../data/skipping-cards.json')
