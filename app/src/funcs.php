@@ -1553,6 +1553,9 @@ function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_
 	return array_values($can_have_html);
 }
 
+/**
+ * @param list<string> $video_ids
+ */
 function prepare_uncached_captions_html(array $video_ids, bool $check_expiry = false) : void
 {
 	$can_have_html = prepare_uncached_captions_html_video_ids($video_ids, $check_expiry);

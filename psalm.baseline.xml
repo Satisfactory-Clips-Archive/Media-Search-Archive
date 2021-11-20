@@ -50,9 +50,6 @@
       <code>$skipping</code>
       <code>$skipping</code>
     </MixedArgument>
-    <MixedArgumentTypeCoercion occurrences="1">
-      <code>$video_ids</code>
-    </MixedArgumentTypeCoercion>
     <MixedArrayAccess occurrences="1">
       <code>$cache[$video_id]</code>
     </MixedArrayAccess>
