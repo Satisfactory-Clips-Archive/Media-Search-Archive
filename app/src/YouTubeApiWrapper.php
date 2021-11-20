@@ -650,10 +650,21 @@ class YouTubeApiWrapper
 				&& 0 === mb_strpos($cache_file, $dir)
 				&& ($time - filemtime($cache_file)) < 86400
 			) {
-				$cached[vendor_prefixed_video_id($aliased)] = json_decode(
+				/**
+				 * @var array{
+				 *	commentCount: 0|positive-int,
+				 *	dislikeCount: 0|positive-int,
+				 *	favoriteCount: 0|positive-int,
+				 *	likeCount: 0|positive-int,
+				 *	viewCount: 0|positive-int
+				 * }
+				 */
+				$json_from_cache = json_decode(
 					file_get_contents($cache_file),
 					true
 				);
+
+				$cached[vendor_prefixed_video_id($aliased)] = $json_from_cache;
 			} elseif (
 				! in_array($aliased, $to_fetch, true)
 				&& (bool) preg_match(
