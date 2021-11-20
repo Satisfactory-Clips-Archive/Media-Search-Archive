@@ -2647,6 +2647,13 @@ function process_dated_csv(
 
 		$captions_with_start_time = array_map(
 			/**
+			 * @param array{
+			 *	text:string|array,
+			 *	startTime:string,
+			 *	endTime:string,
+			 *	followsOnFromPrevious?:bool
+			 * } $caption_line
+			 *
 			 * @return array{
 			 *	0:numeric-string,
 			 *	1:numeric-string,
@@ -3138,8 +3145,8 @@ function determine_date_for_video(
 	if (isset($matches[$video_id])) {
 		if (false === $matches[$video_id]) {
 			throw new RuntimeException(sprintf(
-				'No data available for playlist %s',
-				$playlist_id
+				'No data available for video %s',
+				$video_id
 			));
 		}
 
@@ -3328,6 +3335,9 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
 		));
 
 		register_shutdown_function(static function () use (&$skipping) : void {
+			/** @var list<string> */
+			$skipping = $skipping;
+
 			file_put_contents(
 				(
 					__DIR__
@@ -3339,6 +3349,9 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
 			);
 		});
 	}
+
+	/** @var list<string> */
+	$skipping = $skipping;
 
 	if (in_array($video_id, $skipping, true)) {
 		return [];

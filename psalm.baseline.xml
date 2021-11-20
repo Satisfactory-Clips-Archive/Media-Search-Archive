@@ -41,19 +41,6 @@
       <code>-1 === $start</code>
       <code>null === $line</code>
     </DocblockTypeContradiction>
-    <MixedArgument occurrences="5">
-      <code>$caption_line['endTime']</code>
-      <code>$caption_line['startTime']</code>
-      <code>$playlist_id</code>
-      <code>$skipping</code>
-      <code>$skipping</code>
-    </MixedArgument>
-    <MixedArrayAssignment occurrences="1">
-      <code>$skipping[]</code>
-    </MixedArrayAssignment>
-    <UndefinedVariable occurrences="1">
-      <code>$playlist_id</code>
-    </UndefinedVariable>
     <UnusedVariable occurrences="1">
       <code>$chunk</code>
     </UnusedVariable>
