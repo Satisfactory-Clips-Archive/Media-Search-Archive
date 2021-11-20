@@ -29,31 +29,10 @@
       <code>$not_a_livestream_date_lookup</code>
     </UnusedVariable>
   </file>
-  <file src="app/src/Jsonify.php">
-    <InvalidReturnStatement occurrences="1"/>
-    <InvalidReturnType occurrences="1">
-      <code>false|array{0:int, 1:string}</code>
-    </InvalidReturnType>
-    <LessSpecificReturnStatement occurrences="1">
-      <code>$out</code>
-    </LessSpecificReturnStatement>
-    <MoreSpecificReturnType occurrences="1">
-      <code>list&lt;array{0:string, 1:string, 2:string, 3:string}&gt;</code>
-    </MoreSpecificReturnType>
-    <UnusedVariable occurrences="3">
-      <code>$injected</code>
-      <code>$opening_line</code>
-      <code>$playlist_id</code>
-    </UnusedVariable>
-  </file>
   <file src="app/src/Markdownify.php">
     <PossiblyUnusedMethod occurrences="1">
       <code>content_if_video_has_seealsos</code>
     </PossiblyUnusedMethod>
-    <UnusedVariable occurrences="2">
-      <code>$injected</code>
-      <code>$playlist_id</code>
-    </UnusedVariable>
   </file>
   <file src="app/src/Questions.php">
     <ReferenceConstraintViolation occurrences="1">

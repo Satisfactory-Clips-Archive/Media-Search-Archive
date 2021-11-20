@@ -90,7 +90,6 @@ class Markdownify
 		}
 
 		$out .= $this->content_from_other_video_parts(
-			$playlist_id,
 			$video_other_parts
 		);
 
@@ -168,9 +167,7 @@ class Markdownify
 
 		$out .= "\n";
 		$out .= $this->content_from_other_video_parts(
-			null,
-			$faq_duplicates_for_date_checking,
-			$questions
+			$faq_duplicates_for_date_checking
 		);
 
 		$out .= '</details>' . "\n";
@@ -213,9 +210,7 @@ class Markdownify
 
 		$out .= "\n";
 		$out .= $this->content_from_other_video_parts(
-			null,
-			$see_alsos,
-			$questions
+			$see_alsos
 		);
 
 		$out .= '</details>' . "\n";
@@ -309,15 +304,8 @@ class Markdownify
 	 * @param list<string> $video_other_parts
 	 */
 	private function content_from_other_video_parts(
-		? string $playlist_id,
-		array $video_other_parts,
-		Questions $questions = null
+		array $video_other_parts
 	) : string {
-		$injected =
-			null === $questions
-				? $this->injected
-				: $questions->injected;
-		$reset_playlist_id = null === $playlist_id;
 		$out = '';
 
 		foreach ($video_other_parts as $other_video_id) {
@@ -363,10 +351,6 @@ class Markdownify
 				)
 				. "\n"
 			;
-
-			if ($reset_playlist_id) {
-				$playlist_id = null;
-			}
 		}
 
 		return $out;
