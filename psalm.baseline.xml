@@ -36,9 +36,7 @@
     </PossiblyUnusedReturnValue>
   </file>
   <file src="app/src/funcs.php">
-    <DocblockTypeContradiction occurrences="5">
-      <code>$card-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action-&gt;watchEndpoint-&gt;videoId</code>
-      <code>'video'</code>
+    <DocblockTypeContradiction occurrences="3">
       <code>-1 === $start</code>
       <code>-1 === $start</code>
       <code>null === $line</code>
@@ -76,16 +74,13 @@
     <MixedMethodCall occurrences="1">
       <code>text</code>
     </MixedMethodCall>
-    <MixedPropertyFetch occurrences="1">
-      <code>$card-&gt;cardRenderer-&gt;content-&gt;videoInfoCardContentRenderer-&gt;action</code>
-    </MixedPropertyFetch>
     <MixedReturnStatement occurrences="2">
       <code>$cache[$video_id]</code>
     </MixedReturnStatement>
     <PossiblyUndefinedVariable occurrences="1">
       <code>$matches</code>
     </PossiblyUndefinedVariable>
-    <RedundantConditionGivenDocblockType occurrences="2"/>
+    <RedundantConditionGivenDocblockType occurrences="1"/>
     <ReferenceConstraintViolation occurrences="1">
       <code>$skipping</code>
     </ReferenceConstraintViolation>

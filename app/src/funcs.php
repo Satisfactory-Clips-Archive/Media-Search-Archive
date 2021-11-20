@@ -3586,6 +3586,32 @@ function yt_cards_uncached(string $video_id) : array
 		 * }
 		 */
 		static function (object $card) : array {
+			if (
+				isset(
+					$card->cardRenderer->content->playlistInfoCardContentRenderer
+				)
+			) {
+				$type = 'playlist';
+
+				$renderer = $card->cardRenderer->content->playlistInfoCardContentRenderer;
+
+				$id = $renderer->action->watchEndpoint->playlistId;
+			} else {
+				$type = 'video';
+				/**
+				 * @var object{
+				 *	action: object{
+				 *		watchEndpoint: object{
+				 *			videoId: string
+				 *		}
+				 *	}
+				 * }
+				 */
+				$renderer = $card->cardRenderer->content->videoInfoCardContentRenderer;
+
+				$id = $renderer->action->watchEndpoint->videoId;
+			}
+
 			/**
 			 * @var array{
 			 *	0:string,
@@ -3597,18 +3623,8 @@ function yt_cards_uncached(string $video_id) : array
 			return [
 				$card->cardRenderer->teaser->simpleCardTeaserRenderer->message->simpleText,
 				(int) $card->cardRenderer->cueRanges[0]->startCardActiveMs,
-				(
-					isset(
-						$card->cardRenderer->content->playlistInfoCardContentRenderer
-					) ? 'playlist' : 'video'
-				),
-				(
-					isset(
-						$card->cardRenderer->content->playlistInfoCardContentRenderer
-					)
-						? $card->cardRenderer->content->playlistInfoCardContentRenderer->action->watchEndpoint->playlistId
-						: $card->cardRenderer->content->videoInfoCardContentRenderer->action->watchEndpoint->videoId
-				),
+				$type,
+				$id,
 			];
 		},
 		$preprocess
