@@ -51,10 +51,6 @@
     <MixedArrayAssignment occurrences="1">
       <code>$skipping[]</code>
     </MixedArrayAssignment>
-    <MixedInferredReturnType occurrences="1">
-      <code>list&lt;string&gt;</code>
-    </MixedInferredReturnType>
-    <MixedReturnStatement occurrences="1"/>
     <UndefinedVariable occurrences="1">
       <code>$playlist_id</code>
     </UndefinedVariable>

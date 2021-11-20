@@ -1255,6 +1255,7 @@ function captions(
 		. '.json';
 
 	if (is_file($captions_cache_file)) {
+		/** @var list<string> */
 		return json_decode(
 			file_get_contents($captions_cache_file),
 			true
