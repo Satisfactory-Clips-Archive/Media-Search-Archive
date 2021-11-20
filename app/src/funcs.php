@@ -3343,7 +3343,7 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
 
 		if ( ! is_file($cache_file) || $skip_file) {
 			file_put_contents($cache_file, json_encode_pretty(
-					yt_cards_uncached($video_id)
+				yt_cards_uncached($video_id)
 			));
 		}
 
