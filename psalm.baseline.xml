@@ -35,17 +35,6 @@
       <code>int</code>
     </PossiblyUnusedReturnValue>
   </file>
-  <file src="app/src/YouTubeApiWrapper.php">
-    <TooManyArguments occurrences="1">
-      <code>listStatistics</code>
-    </TooManyArguments>
-    <UndefinedVariable occurrences="1">
-      <code>$part</code>
-    </UndefinedVariable>
-    <UnusedVariable occurrences="1">
-      <code>$video_id</code>
-    </UnusedVariable>
-  </file>
   <file src="app/src/funcs.php">
     <ArgumentTypeCoercion occurrences="7">
       <code>$end</code>

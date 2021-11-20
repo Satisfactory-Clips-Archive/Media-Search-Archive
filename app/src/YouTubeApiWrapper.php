@@ -641,7 +641,7 @@ class YouTubeApiWrapper
 
 		$to_fetch = [];
 
-		foreach ($processed_video_ids as $video_id => $aliased) {
+		foreach ($processed_video_ids as $aliased) {
 			$cache_file = realpath($dir . '/' . $aliased . '.json');
 
 			if (
@@ -940,7 +940,7 @@ class YouTubeApiWrapper
 		if (isset($response->nextPageToken)) {
 			$args['pageToken'] = (string) $response->nextPageToken;
 
-			$out = $this->listStatistics($args, $out, $part);
+			$out = $this->listStatistics($args, $out);
 		}
 
 		return $out;
