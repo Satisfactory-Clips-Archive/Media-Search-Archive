@@ -92,9 +92,6 @@
     <UndefinedVariable occurrences="1">
       <code>$playlist_id</code>
     </UndefinedVariable>
-    <UnnecessaryVarAnnotation occurrences="1">
-      <code>list&lt;bool&gt;</code>
-    </UnnecessaryVarAnnotation>
     <UnusedVariable occurrences="1">
       <code>$chunk</code>
     </UnusedVariable>

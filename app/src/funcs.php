@@ -1497,7 +1497,6 @@ function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_
 				if ($urls > 0) {
 					$time = time();
 
-					/** @var list<bool> */
 					$expiries = array_values(array_map(
 						static function (int $maybe) use ($time) : bool {
 							return $maybe < $time;
