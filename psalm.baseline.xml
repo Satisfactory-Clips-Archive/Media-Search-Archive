@@ -61,9 +61,4 @@
       <code>$video_id</code>
     </MixedAssignment>
   </file>
-  <file src="app/update-q-and-a.php">
-    <MixedArgument occurrences="1">
-      <code>json_decode(file_get_contents(__DIR__ . '/data/part-continued.json'), true)</code>
-    </MixedArgument>
-  </file>
 </files>

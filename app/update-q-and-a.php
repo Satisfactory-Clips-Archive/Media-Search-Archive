@@ -79,8 +79,21 @@ file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
 
 echo sprintf('Written after %s seconds' . "\n", microtime(true) - $stat_start);
 
+/**
+ * @var array<string, array{
+ *	previous:string|null,
+ *	next:string,
+ *	title:string,
+ *	date:string
+ * }>
+ */
+$part_continued = json_decode(
+	file_get_contents(__DIR__ . '/data/part-continued.json'),
+	true
+);
+
 $is_a_subsequent_part = array_keys(array_filter(
-	json_decode(file_get_contents(__DIR__ . '/data/part-continued.json'), true),
+	$part_continued,
 	/**
 	 * @param array{
 	 *	previous:null|string,
