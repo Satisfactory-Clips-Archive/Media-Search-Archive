@@ -2161,7 +2161,7 @@ usort($undated_topic_ids, static function (
 });
 
 foreach ($undated_topic_ids as $topic_id) {
-	[$slug_string, $slug] = topic_to_slug(
+	[$slug_string] = topic_to_slug(
 		$topic_id,
 		$cache,
 		$global_topic_hierarchy,

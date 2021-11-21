@@ -17,9 +17,6 @@
     <PossiblyUndefinedGlobalVariable occurrences="1">
       <code>$topic_id</code>
     </PossiblyUndefinedGlobalVariable>
-    <UnusedVariable occurrences="1">
-      <code>$slug</code>
-    </UnusedVariable>
   </file>
   <file src="app/global-topic-hierarchy.php">
     <UnusedVariable occurrences="3">
