@@ -5,10 +5,6 @@
       <code>$line[0]</code>
       <code>$line[1]</code>
     </ArgumentTypeCoercion>
-    <MixedArgument occurrences="2">
-      <code>$caption_line['endTime']</code>
-      <code>$caption_line['startTime']</code>
-    </MixedArgument>
   </file>
   <file src="app/global-topic-hierarchy.php">
     <UnusedVariable occurrences="3">

@@ -1140,6 +1140,13 @@ foreach (get_externals() as $date => $externals_data_groups) {
 
 			$captions_with_start_time = array_map(
 				/**
+				 * @param array{
+				 *	text:string|array,
+				 *	startTime:string,
+				 *	endTime:string,
+				 *	followsOnFromPrevious?:bool,
+				 * } $caption_line
+				 *
 				 * @return array{
 				 *	0:numeric-string,
 				 *	1:numeric-string,
