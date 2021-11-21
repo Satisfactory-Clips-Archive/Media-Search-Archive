@@ -1419,6 +1419,15 @@ foreach (array_keys($playlists) as $playlist_id) {
 		. "\n"
 	);
 
+	/**
+	 * @var array<string, array{
+	 *	children: list<string>,
+	 *	videos: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }>
+	 */
 	$topics_for_date = [];
 
 	if (count($video_ids) > 0) {
@@ -1456,9 +1465,12 @@ foreach (array_keys($playlists) as $playlist_id) {
 		$nested_video_ids
 	);
 
+	/** @var array<string, array{0:string, 1:array<string, string>}> */
+	$related_answer_clips = [];
+
 	foreach ($topics_for_date as $topic_id => $data) {
 		$title = determine_topic_name($topic_id, $cache);
-		$content_arrays['Related answer clips'][$title] = [
+		$related_answer_clips[$title] = [
 			$topic_id,
 			array_combine(
 				$data['videos'],
@@ -1475,8 +1487,13 @@ foreach (array_keys($playlists) as $playlist_id) {
 		];
 	}
 
+	$content_arrays['Related answer clips'] = $related_answer_clips;
+
 	foreach ($content_arrays['Related answer clips'] as $data) {
 		[$topic_id, $video_data] = $data;
+
+		/** @var list<string> */
+		$video_data_ids = array_keys($video_data);
 
 		$depth = min(6, $topics_for_date[$topic_id]['level'] + 2);
 
@@ -1496,7 +1513,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 						$cache['playlistItems'][$video_id][1]
 					);
 				},
-				array_keys($video_data)
+				$video_data_ids
 			),
 		];
 

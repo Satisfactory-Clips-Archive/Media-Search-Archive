@@ -10,7 +10,6 @@
       <code>$caption_line['startTime']</code>
       <code>$topic_id</code>
     </MixedArgument>
-    <MixedArgumentTypeCoercion occurrences="1"/>
     <PossiblyInvalidArrayAccess occurrences="1">
       <code>$statistics[vendor_prefixed_video_id($video_id)]['likeCount']</code>
     </PossiblyInvalidArrayAccess>
