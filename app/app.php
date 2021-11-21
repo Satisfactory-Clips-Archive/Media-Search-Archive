@@ -709,7 +709,10 @@ foreach ($all_video_ids as $video_id) {
 
 	$vendor_prefixed_video_id = vendor_prefixed_video_id($video_id);
 
-	if (false === $statistics[$vendor_prefixed_video_id]) {
+	if (
+		isset($statistics[$vendor_prefixed_video_id])
+		&& false === $statistics[$vendor_prefixed_video_id]
+	) {
 		throw new UnexpectedValueException(sprintf(
 			'No like count available for %s',
 			$vendor_prefixed_video_id
@@ -758,7 +761,7 @@ foreach ($all_video_ids as $video_id) {
 			$caption_lines
 		),
 		'like_count' => (int) (
-			$statistics[$vendor_prefixed_video_id]['likeCount'] ?? 0
+			(($statistics[$vendor_prefixed_video_id] ?? []) ?: [])['likeCount'] ?? 0
 		),
 		'video_object' => null,
 	];
@@ -1286,6 +1289,28 @@ foreach (get_externals() as $date => $externals_data_groups) {
 				$start . ('' === $end ? '' : (',' . $end))
 			);
 
+			assert(
+				is_numeric($line[0]) || '' === $line[0],
+				new UnexpectedValueException(sprintf(
+					'non-numeric, non-null value found (%s)!',
+					var_export($line[0], true)
+				))
+			);
+
+			assert(
+				is_numeric($line[1]) || '' === $line[1],
+				new UnexpectedValueException(sprintf(
+					'non-numeric, non-null value found (%s)!',
+					var_export($line[1], true)
+				))
+			);
+
+			/** @var numeric-string|null */
+			$embed_link_line_0 = '' === $line[0] ? null : $line[0];
+
+			/** @var numeric-string|null */
+			$embed_link_line_1 = '' === $line[1] ? null : $line[1];
+
 			/** @var numeric-string */
 			$start = ($start ?: '0.0');
 
@@ -1313,8 +1338,8 @@ foreach (get_externals() as $date => $externals_data_groups) {
 					)
 						? embed_link(
 							$video_id,
-							$line[0],
-							$line[1]
+							$embed_link_line_0,
+							$embed_link_line_1
 						)
 						: timestamp_link($video_id, $start)
 				),
