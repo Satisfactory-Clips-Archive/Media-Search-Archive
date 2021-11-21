@@ -53,12 +53,4 @@
       <code>$progress</code>
     </PossiblyNullArgument>
   </file>
-  <file src="app/uncache-pages.php">
-    <MixedArgument occurrences="1">
-      <code>$video_id</code>
-    </MixedArgument>
-    <MixedAssignment occurrences="1">
-      <code>$video_id</code>
-    </MixedAssignment>
-  </file>
 </files>
