@@ -1561,7 +1561,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	if (count($content_arrays['Single video clips']) > 0) {
 		$data_for_dated_json['uncategorised'] = [
-			'title' => determine_topic_name($topic_id, $cache),
+			'title' => 'Uncategorised',
 			'clips' => array_map(
 				static function (string $video_id) use ($cache) : array {
 					return maybe_transcript_link_and_video_url_data(
