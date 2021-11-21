@@ -21,6 +21,7 @@ $probably_has_standard_description = array_filter(
 	}
 );
 
+/** @var array<string, list<string>> */
 $topic_slugs = json_decode(
 	file_get_contents(
 		__DIR__
@@ -59,10 +60,13 @@ file_put_contents(
 	json_encode_pretty(array_values($has_no_structured_data))
 );
 
-$skipping_transcriptions = count(json_decode(file_get_contents(
+/** @var list<string> */
+$skipping_transcriptions = json_decode(file_get_contents(
 	__DIR__
 	. '/skipping-transcriptions.json'
-)));
+));
+
+$skipping_transcriptions_count = count($skipping_transcriptions);
 
 $has_structured_transcription = array_filter(
 	array_map(
@@ -76,6 +80,34 @@ $has_structured_transcription = array_filter(
 		array_keys($contents)
 	),
 	'is_file'
+);
+
+/** @var numeric-string */
+$progress_probably_has_standard_description = bcdiv(
+	(string) count($probably_has_standard_description),
+	(string) count($contents),
+	6
+);
+
+/** @var numeric-string */
+$progress_with_any_transcription = bcdiv(
+	(string) (count($contents) - $skipping_transcriptions_count),
+	(string) count($contents),
+	6
+);
+
+/** @var numeric-string */
+$progress_with_structured_transcription = bcdiv(
+	(string) count($has_structured_transcription),
+	(string) count($contents),
+	6
+);
+
+/** @var numeric-string */
+$progress_topic_with_structured_data = bcdiv(
+	(string) count($has_structured_data),
+	(string) count($topic_slugs),
+	6
 );
 
 /**
@@ -101,53 +133,37 @@ $statistics = [
 	],
 	[
 		'title' => 'Clips probably having standard description',
-		'progress' => ($progress = bcdiv(
-			(string) count($probably_has_standard_description),
-			(string) count($contents),
-			6
-		)),
+		'progress' => $progress_probably_has_standard_description,
 		'percentage' => bcmul(
 			'100',
-			$progress,
+			$progress_probably_has_standard_description,
 			2
 		),
 	],
 	[
 		'title' => 'Clips with any transcription',
-		'progress' => ($progress = bcdiv(
-			(string) (count($contents) - $skipping_transcriptions),
-			(string) count($contents),
-			6
-		)),
+		'progress' => $progress_with_any_transcription,
 		'percentage' => bcmul(
 			'100',
-			$progress,
+			$progress_with_any_transcription,
 			2
 		),
 	],
 	[
 		'title' => 'Clips with structured transcription',
-		'progress' => ($progress = bcdiv(
-			(string) count($has_structured_transcription),
-			(string) count($contents),
-			6
-		)),
+		'progress' => $progress_with_structured_transcription,
 		'percentage' => bcmul(
 			'100',
-			$progress,
+			$progress_with_structured_transcription,
 			2
 		),
 	],
 	[
 		'title' => 'Topics with structured data',
-		'progress' => ($progress = bcdiv(
-			(string) count($has_structured_data),
-			(string) count($topic_slugs),
-			6
-		)),
+		'progress' => $progress_topic_with_structured_data,
 		'percentage' => bcmul(
 			'100',
-			$progress,
+			$progress_topic_with_structured_data,
 			2
 		),
 	],

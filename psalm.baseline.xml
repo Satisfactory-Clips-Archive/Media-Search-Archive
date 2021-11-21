@@ -35,22 +35,4 @@
       <code>int</code>
     </PossiblyUnusedReturnValue>
   </file>
-  <file src="app/statistics.php">
-    <MixedArgument occurrences="5">
-      <code>$topic_slugs</code>
-      <code>$topic_slugs</code>
-      <code>$topic_slugs</code>
-      <code>$topic_slugs</code>
-    </MixedArgument>
-    <MixedArgumentTypeCoercion occurrences="1"/>
-    <MixedAssignment occurrences="1">
-      <code>$topic_slugs</code>
-    </MixedAssignment>
-    <PossiblyNullArgument occurrences="4">
-      <code>$progress</code>
-      <code>$progress</code>
-      <code>$progress</code>
-      <code>$progress</code>
-    </PossiblyNullArgument>
-  </file>
 </files>
