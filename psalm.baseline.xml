@@ -17,8 +17,7 @@
     <PossiblyUndefinedGlobalVariable occurrences="1">
       <code>$topic_id</code>
     </PossiblyUndefinedGlobalVariable>
-    <UnusedVariable occurrences="2">
-      <code>$cards</code>
+    <UnusedVariable occurrences="1">
       <code>$slug</code>
     </UnusedVariable>
   </file>

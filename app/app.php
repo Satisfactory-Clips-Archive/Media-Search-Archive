@@ -605,14 +605,6 @@ if (count($needs_fresh_data)) {
 	exit(1);
 }
 
-$cards = array_combine(
-	$all_video_ids,
-	array_map(
-		__NAMESPACE__ . '\yt_cards',
-		$all_video_ids
-	)
-);
-
 file_put_contents(
 	(
 		__DIR__
