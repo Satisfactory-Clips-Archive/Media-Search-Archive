@@ -117,11 +117,11 @@ function maybe_video_override(string $video_id) : ? string
 		/** @var array<string, string> */
 		$overrides = array_filter(
 			(array) json_decode(
-			file_get_contents(
-				__DIR__
-				. '/../playlists/url-overrides.json'
-			),
-			true
+				file_get_contents(
+					__DIR__
+					. '/../playlists/url-overrides.json'
+				),
+				true
 			),
 			[new Filtering(), 'kvp_string_string'],
 			ARRAY_FILTER_USE_BOTH
