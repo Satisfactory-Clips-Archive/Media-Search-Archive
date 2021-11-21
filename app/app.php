@@ -611,13 +611,13 @@ file_put_contents(
 		. '/data/info-cards.json'
 	),
 	json_encode_pretty(
-			array_combine(
-				$all_video_ids,
-				array_map(
-					__NAMESPACE__ . '\yt_cards',
-					$all_video_ids
-				)
+		array_combine(
+			$all_video_ids,
+			array_map(
+				__NAMESPACE__ . '\yt_cards',
+				$all_video_ids
 			)
+		)
 	)
 );
 
