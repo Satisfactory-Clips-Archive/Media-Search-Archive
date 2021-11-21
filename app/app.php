@@ -707,8 +707,17 @@ foreach ($all_video_ids as $video_id) {
 		$api->dated_playlists()
 	);
 
+	$vendor_prefixed_video_id = vendor_prefixed_video_id($video_id);
+
+	if (false === $statistics[$vendor_prefixed_video_id]) {
+		throw new UnexpectedValueException(sprintf(
+			'No like count available for %s',
+			$vendor_prefixed_video_id
+		));
+	}
+
 	$transcripts_json[$video_id] = [
-		'id' => vendor_prefixed_video_id($video_id),
+		'id' => $vendor_prefixed_video_id,
 		'url' => video_url_from_id($video_id, true),
 		'date' => $date,
 		'dateTitle' => determine_playlist_id(
@@ -749,7 +758,7 @@ foreach ($all_video_ids as $video_id) {
 			$caption_lines
 		),
 		'like_count' => (int) (
-			$statistics[vendor_prefixed_video_id($video_id)]['likeCount'] ?? 0
+			$statistics[$vendor_prefixed_video_id]['likeCount'] ?? 0
 		),
 		'video_object' => null,
 	];
@@ -757,7 +766,7 @@ foreach ($all_video_ids as $video_id) {
 	/** @var string|null */
 	$thumbnail_url = null;
 
-	if (preg_match('/^yt-/', vendor_prefixed_video_id($video_id))) {
+	if (preg_match('/^yt-/', $vendor_prefixed_video_id)) {
 		$thumbnail_url = sprintf(
 			'https://img.youtube.com/vi/%s/hqdefault.jpg',
 			preg_replace('/,.*$/', '', mb_substr($video_id, 3))
@@ -779,7 +788,7 @@ foreach ($all_video_ids as $video_id) {
 				timestamp_link($video_id, -1),
 				sprintf(
 					'https://archive.satisfactory.video/transcriptions/%s/',
-					vendor_prefixed_video_id($video_id)
+					$vendor_prefixed_video_id
 				),
 			],
 			'uploadDate' => determine_date_for_video(
