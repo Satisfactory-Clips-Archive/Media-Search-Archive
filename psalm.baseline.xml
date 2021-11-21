@@ -8,7 +8,7 @@
     </UnusedVariable>
   </file>
   <file src="app/src/Sorting.php">
-    <PossiblyUnusedReturnValue occurrences="2">
+    <PossiblyUnusedReturnValue occurrences="1">
       <code>int</code>
       <code>int</code>
     </PossiblyUnusedReturnValue>

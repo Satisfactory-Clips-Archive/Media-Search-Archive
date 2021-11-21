@@ -10,8 +10,12 @@
 >
 	<projectFiles>
 		<directory name="app" />
+		<directory name="tests" />
 		<ignoreFiles>
 			<directory name="vendor" />
 		</ignoreFiles>
 	</projectFiles>
+	<plugins>
+		<pluginClass class="Psalm\PhpUnitPlugin\Plugin" />
+	</plugins>
 </psalm>

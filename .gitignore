@@ -44,3 +44,5 @@
 /11ty/data/topic_charts.json
 /app/data/dated-video-statistics.json
 /app/data/dated-topic-statistics.json
+/.phpunit.cache/
+/coverage/
