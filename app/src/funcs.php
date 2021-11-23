@@ -97,8 +97,7 @@ set_error_handler(static function (
 	int $_errno,
 	string $errstr,
 	string $errfile,
-	int $errline,
-	array $_errcontext
+	int $errline
 ) : bool {
 	throw new ErrorException(sprintf(
 		'%s:%s %s',
@@ -443,8 +442,11 @@ function inject_caches(array $cache, array ...$caches) : array
  *	3:array<string, string>
  * }
  */
-function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
-{
+function prepare_injections(
+	YouTubeApiWrapper $api,
+	Slugify $slugify,
+	SkippingTranscriptions $skipping
+) : array {
 	/**
 	 * @var array{
 	 *	0:array{
@@ -598,6 +600,7 @@ function prepare_injections(YouTubeApiWrapper $api, Slugify $slugify) : array
 			$not_a_livestream,
 			$not_a_livestream_date_lookup,
 			$slugify,
+			$skipping,
 			false
 		);
 
@@ -1225,25 +1228,15 @@ function filter_video_ids_for_legacy_alts(
  */
 function captions(
 	string $video_id,
-	array $playlist_topic_strings_reverse_lookup
+	array $playlist_topic_strings_reverse_lookup,
+	SkippingTranscriptions $skipping
 ) : array {
-	/** @var list<string>|null */
-	static $previously_skipped = null;
-
-	if (null === $previously_skipped) {
-		/** @var list<string> */
-		$previously_skipped = json_decode(
-			file_get_contents(__DIR__ . '/../skipping-transcriptions.json'),
-			true
-		);
-	}
-
 	if (
 		! preg_match(
 			'/^https:\/\/(?:youtu\.be|youtube\.com\/(?:embed|clip))\//',
 			video_url_from_id($video_id, true)
 		)
-		|| in_array($video_id, $previously_skipped, true)
+		|| in_array($video_id, $skipping->video_ids, true)
 	) {
 		return [];
 	}
@@ -1262,7 +1255,7 @@ function captions(
 		);
 	}
 
-	$maybe = raw_captions($video_id);
+	$maybe = raw_captions($video_id, $skipping);
 
 	if ( ! isset($maybe[1])) {
 		return [];
@@ -1556,8 +1549,11 @@ function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_
 /**
  * @param list<string> $video_ids
  */
-function prepare_uncached_captions_html(array $video_ids, bool $check_expiry = false) : void
-{
+function prepare_uncached_captions_html(
+	array $video_ids,
+	SkippingTranscriptions $skipping,
+	bool $check_expiry = false
+) : void {
 	$can_have_html = prepare_uncached_captions_html_video_ids($video_ids, $check_expiry);
 
 	$i = 0;
@@ -1576,7 +1572,7 @@ function prepare_uncached_captions_html(array $video_ids, bool $check_expiry = f
 		remove_captions_cache_file($html_cache);
 
 		video_page($video_id);
-		raw_captions($video_id);
+		raw_captions($video_id, $skipping);
 		yt_cards($video_id, true);
 	}
 }
@@ -1692,8 +1688,18 @@ function video_page(string $video_id) : string
  *
  * @return array<empty, empty>|array{0:SimpleXMLElement, 1:list<SimpleXMLElement>}|array{0:null, JSON}
  */
-function raw_captions(string $video_id) : array
+function raw_captions(string $video_id, SkippingTranscriptions $skipping) : array
 {
+	if (
+		in_array(
+			vendor_prefixed_video_id($video_id),
+			$skipping->video_ids,
+			true
+		)
+	) {
+		return [];
+	}
+
 	/** @var Slugify|null */
 	static $slugify = null;
 
@@ -1839,6 +1845,8 @@ function raw_captions(string $video_id) : array
 	);
 
 	if ( ! $urls) {
+		$skipping->video_ids[] = vendor_prefixed_video_id($video_id);
+
 		return [];
 	}
 
@@ -1957,6 +1965,8 @@ function raw_captions(string $video_id) : array
 	}
 
 	if ('' === (string) $tt) {
+		$skipping->video_ids[] = vendor_prefixed_video_id($video_id);
+
 		return [];
 	}
 
@@ -2375,6 +2385,7 @@ function process_externals(
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup,
 	Slugify $slugify,
+	SkippingTranscriptions $skipping,
 	bool $write_files = true
 ) : array {
 	$externals = get_externals();
@@ -2413,13 +2424,17 @@ function process_externals(
 					$not_a_livestream,
 					$not_a_livestream_date_lookup,
 					$slugify,
+					$skipping,
 					$write_files,
 					true,
 					$file_blanked[$date],
 					$file_blanked[$date] && 1 === count($externals_data_groups)
 				);
 			} catch (ErrorException $e) {
-				if (false !== mb_strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')) {
+				if (
+					false !== mb_strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')
+					|| false !== mb_strpos($e->getMessage(), 'Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found')
+				) {
 					$erroring[$externals_video_id] = $e->getMessage();
 
 					continue;
@@ -2573,6 +2588,7 @@ function process_dated_csv(
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup,
 	Slugify $slugify,
+	SkippingTranscriptions $skipping,
 	bool $write_files = true,
 	bool $do_injection = true,
 	bool $skip_header = false,
@@ -2590,7 +2606,7 @@ function process_dated_csv(
 
 	[$video_id, $externals_csv, $data] = $externals_data;
 
-	$captions = raw_captions($video_id);
+	$captions = raw_captions($video_id, $skipping);
 
 	$friendly_date = date('F jS, Y', (int) strtotime($date));
 
@@ -3158,7 +3174,6 @@ function determine_date_for_video(
 	/** @var array<string, string>|null */
 	static $externals_unpacked = null;
 
-	if (preg_match('/^(.{2}\-[^,]+),\d+/', $video_id, $video_id_matches)) {
 		if (null === $externals_unpacked) {
 			$externals_unpacked = [];
 
@@ -3169,11 +3184,16 @@ function determine_date_for_video(
 			}
 		}
 
+	if (preg_match('/^(.{2}\-[^,]+),\d+/', $video_id, $video_id_matches)) {
 		if (isset($externals_unpacked[$video_id_matches[1]])) {
 			$matches[$video_id] = $externals_unpacked[$video_id_matches[1]];
 
 			return $externals_unpacked[$video_id_matches[1]];
 		}
+	} elseif (isset($externals_unpacked[$video_id])) {
+		$matches[$video_id] = $externals_unpacked[$video_id];
+
+		return $externals_unpacked[$video_id];
 	}
 
 	foreach (array_keys($playlist_date_ref) as $playlist_id) {
@@ -3202,6 +3222,9 @@ function determine_date_for_video(
 
 	if (false === $found) {
 		$matches[$video_id] = false;
+
+		var_dump($externals_unpacked, $video_id);exit(1);
+
 		throw new InvalidArgumentException(sprintf(
 			'Video %s was not found in any playlist!',
 			$video_id

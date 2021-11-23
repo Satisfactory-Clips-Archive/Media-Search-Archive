@@ -34,6 +34,8 @@ require_once(__DIR__ . '/../vendor/autoload.php');
 $api = new YouTubeApiWrapper();
 $slugify = new Slugify();
 
+$skipping = SkippingTranscriptions::i();
+
 /**
  * @var array<string, array{
  *	game: 'satisfactory',
@@ -50,7 +52,7 @@ $out = [];
 [
 	$cache,
 	$global_topic_hierarchy,
-] = prepare_injections($api, $slugify);
+] = prepare_injections($api, $slugify, $skipping);
 
 $dated_playlists = $api->dated_playlists();
 

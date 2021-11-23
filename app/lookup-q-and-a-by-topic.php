@@ -30,6 +30,8 @@ use function sprintf;
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 
+$skipping = SkippingTranscriptions::i();
+
 /**
  * @var array<string, array{
  *	title:string,
@@ -80,7 +82,7 @@ $slugify = new Slugify();
 
 [
 	$cache,
-] = prepare_injections($api, $slugify);
+] = prepare_injections($api, $slugify, $skipping);
 
 if ( ! is_string($lookup)) {
 	echo 'no video id specified!'

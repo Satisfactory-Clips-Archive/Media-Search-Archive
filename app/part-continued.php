@@ -34,9 +34,12 @@ require_once(__DIR__ . '/../vendor/autoload.php');
 
 $api = new YouTubeApiWrapper();
 
+$skipping = SkippingTranscriptions::i();
+
 [$cache] = prepare_injections(
 	$api,
-	new Slugify()
+	new Slugify(),
+	$skipping
 );
 
 /**

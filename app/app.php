@@ -82,7 +82,9 @@ $api = new YouTubeApiWrapper();
 
 $slugify = new Slugify();
 
-$injected = new Injected($api, $slugify);
+$skipping = SkippingTranscriptions::i();
+
+$injected = new Injected($api, $slugify, $skipping);
 
 $markdownify = new Markdownify($injected);
 $questions = new Questions($injected);
@@ -209,7 +211,8 @@ process_externals(
 	$global_topic_hierarchy,
 	$not_a_livestream,
 	$not_a_livestream_date_lookup,
-	$slugify
+	$slugify,
+	$skipping
 );
 $externals_values = get_externals();
 $externals_dates = array_keys($externals_values);
@@ -557,12 +560,6 @@ $topic_slug_history = json_decode(
 	true
 );
 
-/** @var list<string> */
-$skipping = json_decode(
-	file_get_contents(__DIR__ . '/skipping-transcriptions.json'),
-	true
-);
-
 $checked = 0;
 
 $all_video_ids = array_keys($video_playlists);
@@ -680,10 +677,14 @@ foreach ($all_video_ids as $video_id) {
 	try {
 		$caption_lines = captions(
 			$video_id,
-			$playlist_topic_strings_reverse_lookup
+			$playlist_topic_strings_reverse_lookup,
+			$skipping
 		);
 	} catch (ErrorException $e) {
-		if (false !== mb_strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')) {
+		if (
+			false !== mb_strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')
+			|| false !== mb_strpos($e->getMessage(), 'Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found')
+		) {
 			$erroring[$video_id] = $e->getMessage();
 
 			continue;
@@ -691,12 +692,12 @@ foreach ($all_video_ids as $video_id) {
 		throw $e;
 	}
 
-	if (in_array($video_id, $skipping, true)) {
+	if (in_array($video_id, $skipping->video_ids, true)) {
 		continue;
 	}
 
 	if (count($caption_lines) < 1) {
-		$skipping[] = $video_id;
+		$skipping->video_ids[] = $video_id;
 
 		continue;
 	}
@@ -1063,14 +1064,7 @@ foreach ($transcripts_json as $video_id => $video_data) {
 
 echo "\n";
 
-$skipping = array_unique($skipping);
-
-usort($skipping, [$sorting, 'sort_video_ids_by_date']);
-
-file_put_contents(__DIR__ . '/skipping-transcriptions.json', json_encode(
-	$skipping,
-	JSON_PRETTY_PRINT
-));
+$skipping->sync($sorting);
 
 echo sprintf(
 		'%s subtitles checked of %s videos cached',
@@ -1107,7 +1101,7 @@ foreach (get_externals() as $date => $externals_data_groups) {
 			);
 		}
 
-		$captions = raw_captions($video_id);
+		$captions = raw_captions($video_id, $skipping);
 
 		/**
 		 * @var list<array{
@@ -1442,6 +1436,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 				$not_a_livestream,
 				$not_a_livestream_date_lookup,
 				$slugify,
+				$skipping,
 				true,
 				false,
 				true,

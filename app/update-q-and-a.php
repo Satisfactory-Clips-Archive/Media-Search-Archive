@@ -38,7 +38,8 @@ $filtering = new Filtering();
 
 $api = new YouTubeApiWrapper();
 $slugify = new Slugify();
-$injected = new Injected($api, $slugify);
+$skipping = SkippingTranscriptions::i();
+$injected = new Injected($api, $slugify, $skipping);
 $questions = new Questions($injected);
 $markdownify = new Markdownify($injected, $questions);
 $jsonify = new Jsonify($injected, $questions);
@@ -228,7 +229,11 @@ foreach ($all_topic_ids as $topic_id) {
 }
 
 foreach (array_keys($faq) as $video_id) {
-	$transcription = captions($video_id, $playlist_topic_strings_reverse_lookup);
+	$transcription = captions(
+		$video_id,
+		$playlist_topic_strings_reverse_lookup,
+		$skipping
+	);
 
 	$faq_date = determine_date_for_video(
 		$video_id,

@@ -44,6 +44,11 @@ class Injected
 
 	/**
 	 * @readonly
+	 */
+	public SkippingTranscriptions $skipping;
+
+	/**
+	 * @readonly
 	 *
 	 * @var array{
 	 *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
@@ -81,12 +86,20 @@ class Injected
 	 */
 	private array $playlists_date_ref;
 
-	public function __construct(YouTubeApiWrapper $api, Slugify $slugify)
-	{
+	public function __construct(
+		YouTubeApiWrapper $api,
+		Slugify $slugify,
+		SkippingTranscriptions $skipping
+	) {
 		$this->api = $api;
 		$this->slugify = $slugify;
+		$this->skipping = $skipping;
 
-		$prepared = prepare_injections($this->api, $this->slugify);
+		$prepared = prepare_injections(
+			$this->api,
+			$this->slugify,
+			$this->skipping
+		);
 
 		[
 			$this->cache,
