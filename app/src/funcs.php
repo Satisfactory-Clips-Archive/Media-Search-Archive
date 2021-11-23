@@ -3223,8 +3223,6 @@ function determine_date_for_video(
 	if (false === $found) {
 		$matches[$video_id] = false;
 
-		var_dump($externals_unpacked, $video_id);exit(1);
-
 		throw new InvalidArgumentException(sprintf(
 			'Video %s was not found in any playlist!',
 			$video_id
