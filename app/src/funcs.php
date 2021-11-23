@@ -3174,15 +3174,15 @@ function determine_date_for_video(
 	/** @var array<string, string>|null */
 	static $externals_unpacked = null;
 
-		if (null === $externals_unpacked) {
-			$externals_unpacked = [];
+	if (null === $externals_unpacked) {
+		$externals_unpacked = [];
 
-			foreach (glob(__DIR__ . '/../data/*/*.csv') as $file) {
-				$externals_unpacked[
-					mb_substr(basename($file), 0, -4)
-				] = basename(dirname($file));
-			}
+		foreach (glob(__DIR__ . '/../data/*/*.csv') as $file) {
+			$externals_unpacked[
+				mb_substr(basename($file), 0, -4)
+			] = basename(dirname($file));
 		}
+	}
 
 	if (preg_match('/^(.{2}\-[^,]+),\d+/', $video_id, $video_id_matches)) {
 		if (isset($externals_unpacked[$video_id_matches[1]])) {
