@@ -30,7 +30,6 @@ foreach (array_keys($data) as $video_id) {
 		isset($data[$video_id]['seealso'])
 		&& in_array($replace_this, $data[$video_id]['seealso'], true)
 	) {
-		/** @var array<string, string> */
 		$seealso = array_combine(
 			$data[$video_id]['seealso'],
 			$data[$video_id]['seealso']

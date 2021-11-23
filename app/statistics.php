@@ -82,28 +82,24 @@ $has_structured_transcription = array_filter(
 	'is_file'
 );
 
-/** @var numeric-string */
 $progress_probably_has_standard_description = bcdiv(
 	(string) count($probably_has_standard_description),
 	(string) count($contents),
 	6
 );
 
-/** @var numeric-string */
 $progress_with_any_transcription = bcdiv(
 	(string) (count($contents) - $skipping_transcriptions_count),
 	(string) count($contents),
 	6
 );
 
-/** @var numeric-string */
 $progress_with_structured_transcription = bcdiv(
 	(string) count($has_structured_transcription),
 	(string) count($contents),
 	6
 );
 
-/** @var numeric-string */
 $progress_topic_with_structured_data = bcdiv(
 	(string) count($has_structured_data),
 	(string) count($topic_slugs),

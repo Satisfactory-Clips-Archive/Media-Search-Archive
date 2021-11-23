@@ -1528,7 +1528,6 @@ foreach (array_keys($playlists) as $playlist_id) {
 	foreach ($content_arrays['Related answer clips'] as $data) {
 		[$topic_id, $video_data] = $data;
 
-		/** @var list<string> */
 		$video_data_ids = array_keys($video_data);
 
 		$depth = min(6, $topics_for_date[$topic_id]['level'] + 2);

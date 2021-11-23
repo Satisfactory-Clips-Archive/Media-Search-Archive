@@ -1850,7 +1850,6 @@ function raw_captions(string $video_id, SkippingTranscriptions $skipping) : arra
 		return [];
 	}
 
-	/** @var array<string, string> */
 	$url_matches = array_combine(
 		array_map(
 			static function (string $remap) use ($slugify) : string {

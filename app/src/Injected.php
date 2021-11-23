@@ -283,7 +283,7 @@ class Injected
 						$this->not_a_livestream,
 						$this->not_a_livestream_date_lookup
 					)[1],
-					'has_transcriptions' => count(captions($id, [])) > 0,
+					'has_transcriptions' => count(captions($id, [], $this->skipping)) > 0,
 					'embed_data' => [
 						$twitch_id,
 						$start,
