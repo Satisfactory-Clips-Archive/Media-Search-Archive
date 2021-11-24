@@ -1151,15 +1151,15 @@
 - [x] yt-YSPnFZbTvxE,66.73333333333333,88.42166666666667 - Jace Talk: Heroic Replicas and the Xeno-Basher prototype
 
 ## 2021-10-29
-- [ ] yt-rePLsjw-eEY,45.311933333333336,78.41166666666666 - Jace Talk: A lot of love from the Studio to you guys
-- [ ] yt-rePLsjw-eEY,78.44503333333334,114.48103333333333 - Jace Talk: Update 5 bug reports
-- [ ] yt-rePLsjw-eEY,195.987197,212.21200000000002 - Q&A: Do I need to buy the game on Steam to use Dedicated Servers if I already have the game on Epic?
-- [ ] yt-rePLsjw-eEY,226.3261,274.14053333333334 - Jace Talk: Steam/Epic bug
-- [ ] yt-rePLsjw-eEY,274.1739,307.37373333333335 - Jace Talk: Missing Uranium & Bauxite nodes
-- [ ] yt-rePLsjw-eEY,307.4071,338.814696 - Jace Talk: Stackable Conveyor Poles & Floor Holes have Hard Clearance
-- [ ] yt-rePLsjw-eEY,385.7854,405.30490000000003 - Snutt Talk: You can Paint Vehicles, Trains, and Drones
+- [x] yt-rePLsjw-eEY,45.311933333333336,78.41166666666666 - Jace Talk: A lot of love from the Studio to you guys
+- [x] yt-rePLsjw-eEY,78.44503333333334,114.48103333333333 - Jace Talk: Update 5 bug reports
+- [x] yt-rePLsjw-eEY,195.987197,212.21200000000002 - Q&A: Do I need to buy the game on Steam to use Dedicated Servers if I already have the game on Epic?
+- [x] yt-rePLsjw-eEY,226.3261,274.14053333333334 - Jace Talk: Steam/Epic bug
+- [x] yt-rePLsjw-eEY,274.1739,307.37373333333335 - Jace Talk: Missing Uranium & Bauxite nodes
+- [x] yt-rePLsjw-eEY,307.4071,338.814696 - Jace Talk: Stackable Conveyor Poles & Floor Holes have Hard Clearance
+- [x] yt-rePLsjw-eEY,385.7854,405.30490000000003 - Snutt Talk: You can Paint Vehicles, Trains, and Drones
 - [x] yt-rePLsjw-eEY,513.0458666666667,572.2049666666667 - Snutt Talk: Toggling Conveyor Lift direction
-- [ ] yt-rePLsjw-eEY,664.0634,690.3897000000001 - Snutt Talk: We've added a lot more Emotes to the game
-- [ ] yt-rePLsjw-eEY,690.4564333333334,702.2348666666667 - Snutt Talk: We've added more Personal Storage Boxes
-- [ ] yt-rePLsjw-eEY,765.7983666666667,798.4977 - Snutt Talk: We've added more music
-- [ ] yt-rePLsjw-eEY,798.5310666666667,840.6398 - Snutt Talk: Fine-grained volume controls
+- [x] yt-rePLsjw-eEY,664.0634,690.3897000000001 - Snutt Talk: We've added a lot more Emotes to the game
+- [x] yt-rePLsjw-eEY,690.4564333333334,702.2348666666667 - Snutt Talk: We've added more Personal Storage Boxes
+- [x] yt-rePLsjw-eEY,765.7983666666667,798.4977 - Snutt Talk: We've added more music
+- [x] yt-rePLsjw-eEY,798.5310666666667,840.6398 - Snutt Talk: Fine-grained volume controls
