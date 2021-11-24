@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-11-24
+* adding tool to automatically correct CSV timestamps
+
 ## 2021-11-20
 * Ensure skip list is sorted
 
