@@ -26,7 +26,6 @@ use RuntimeException;
 use function sprintf;
 
 require_once(__DIR__ . '/../vendor/autoload.php');
-require_once(__DIR__ . '/global-topic-hierarchy.php');
 
 $stat_start = microtime(true);
 

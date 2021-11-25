@@ -62,7 +62,6 @@ use function usleep;
 use function usort;
 
 require_once(__DIR__ . '/../vendor/autoload.php');
-require_once(__DIR__ . '/global-topic-hierarchy.php');
 
 $stat_start = microtime(true);
 
