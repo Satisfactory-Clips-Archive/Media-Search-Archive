@@ -6,11 +6,17 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use const ARRAY_FILTER_USE_BOTH;
+use function count;
+use function dirname;
+use function is_array;
+use function is_int;
+use function is_string;
 use UnexpectedValueException;
 
 class TopicData
 {
-	const GLOBAL_TOPIC_HIERARCHY = [
+	public const GLOBAL_TOPIC_HIERARCHY = [
 		'PLbjDnnBIxiEo8RlgfifC8OhLmJl8SgpJE' => [ // State of Dev
 			-7,
 			'Satisfactory Updates',
@@ -1326,7 +1332,7 @@ class TopicData
 		],
 	];
 
-	const NOT_A_LIVESTREAM = [
+	public const NOT_A_LIVESTREAM = [
 		'PLbjDnnBIxiEqbUTvxOt7tlshFbT-skT_2' => 'Satisfactory Update 5 Patch Notes vid commentary',
 		'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ' => 'Teasers',
 		'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
@@ -1442,8 +1448,8 @@ class TopicData
 					 * @psalm-assert-if-true int $maybe_key
 					 * @psalm-assert-if-true int|string $maybe_value
 					 */
-					static function($maybe_value, $maybe_key) : bool {
-						return (
+					static function ($maybe_value, $maybe_key) : bool {
+						return
 							is_int($maybe_key)
 							&& (
 								is_string($maybe_value)
@@ -1452,7 +1458,7 @@ class TopicData
 									&& 0 === $maybe_key
 								)
 							)
-						);
+						;
 					},
 					ARRAY_FILTER_USE_BOTH
 				));
@@ -1480,10 +1486,10 @@ class TopicData
 				 * @psalm-assert-if-true array $maybe_value
 				 */
 				static function ($maybe_value, $maybe_key) : bool {
-					return (
+					return
 						is_string($maybe_key)
 						&& is_array($maybe_value)
-					);
+					;
 				},
 				ARRAY_FILTER_USE_BOTH
 			)

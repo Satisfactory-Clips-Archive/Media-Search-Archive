@@ -6,15 +6,16 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use BadFunctionCallException;
 use function bcadd;
 use function count;
+use function dirname;
 use function explode;
 use function glob;
 use function max;
 use function mb_strlen;
 use function preg_match;
 use function sprintf;
-use BadFunctionCallException;
 use UnexpectedValueException;
 
 require_once(__DIR__ . '/../vendor/autoload.php');

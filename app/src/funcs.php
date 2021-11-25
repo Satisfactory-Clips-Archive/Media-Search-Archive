@@ -2015,7 +2015,7 @@ function raw_captions(string $video_id, SkippingTranscriptions $skipping) : arra
 			}
 		}
 	} else {
-		/** @var null|SimpleXMLElement */
+		/** @var SimpleXMLElement|null */
 		foreach ($xml->children() as $line) {
 			if (null === $line) {
 				continue;

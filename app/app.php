@@ -21,6 +21,7 @@ use function array_slice;
 use function array_unique;
 use function array_values;
 use function asort;
+use function assert;
 use function basename;
 use function chr;
 use function count;
