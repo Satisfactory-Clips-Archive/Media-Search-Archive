@@ -42,8 +42,8 @@ use function usort;
  *	seealso?:list<string>,
  *	seealso_video_cards?:list<string>,
  *	seealso_topic_cards?:list<string>,
- *	seealso_card_urls?:list<array{0:'url', 1:string, 2:string, 3:string}>,
- *	seealso_card_channels?:list<array{0:'channel', 1:string, 2:string}>,
+ *	seealso_card_urls?:list<array{0:string, 1:string, 2:string}>,
+ *	seealso_card_channels?:list<array{0:string, 1:string}>,
  *	incoming_video_cards?:list<string>,
  *	legacyalts?:list<string>
  * }
@@ -58,8 +58,8 @@ use function usort;
  *	seealso:list<string>,
  *	seealso_video_cards?:list<string>,
  *	seealso_topic_cards?:list<string>,
- *	seealso_card_urls?:list<array{0:'url', 1:string, 2:string, 3:string}>,
- *	seealso_card_channels?:list<array{0:'channel', 1:string, 2:string}>,
+ *	seealso_card_urls?:list<array{0:string, 1:string, 2:string}>,
+ *	seealso_card_channels?:list<array{0:string, 1:string}>,
  *	incoming_video_cards?:list<string>,
  *	legacyalts:list<string>
  * }
@@ -99,7 +99,7 @@ class Questions
 		 * @var array<string, list<array{
 		 *	0:string,
 		 *	1:int,
-		 *	2:'video'|'playlist',
+		 *	2:'video'|'playlist'|'url'|'channel',
 		 *	3:string
 		 * }>>
 		 */
@@ -152,9 +152,16 @@ class Questions
 			);
 
 			if (isset($cards[$video_id]) && count($cards[$video_id])) {
+				/** @var list<string> */
 				$see_also_card_videos = [];
+
+				/** @var list<string> */
 				$see_also_card_playlists = [];
+
+				/** @var list<array{0:string, 1:string, 2:string}> */
 				$see_also_card_urls = [];
+
+				/** @var list<array{0:string, 1:string}> */
 				$see_also_card_channels = [];
 
 				foreach ($cards[$video_id] as $card) {
@@ -163,11 +170,10 @@ class Questions
 					} elseif ('video' === $card[2]) {
 						$see_also_card_videos[] = $card[3];
 					} elseif ('url' === $card[2]) {
-						$maybe_entry = json_decode($card[3], true, 2);
+						$maybe_entry = (array) json_decode($card[3], true, 2);
 
 						if (
-							! is_array($maybe_entry)
-							|| 3 !== count($maybe_entry)
+							3 !== count($maybe_entry)
 							|| ! isset($maybe_entry[0], $maybe_entry[1], $maybe_entry[2])
 							|| ! is_string($maybe_entry[0])
 							|| ! is_string($maybe_entry[1])
@@ -181,11 +187,10 @@ class Questions
 
 						$see_also_card_urls[] = $maybe_entry;
 					} elseif ('channel' === $card[2]) {
-						$maybe_entry = json_decode($card[3], true, 2);
+						$maybe_entry = (array) json_decode($card[3], true, 2);
 
 						if (
-							! is_array($maybe_entry)
-							|| 2 !== count($maybe_entry)
+							2 !== count($maybe_entry)
 							|| ! isset($maybe_entry[0], $maybe_entry[1])
 							|| ! is_string($maybe_entry[0])
 							|| ! is_string($maybe_entry[1])
@@ -664,8 +669,8 @@ class Questions
 	 *		seealso?:list<string>,
 	 *		seealso_video_cards?:list<string>,
 	 *		seealso_topic_cards?:list<string>,
-	 *		seealso_card_urls?:list<array{0:'url', 1:string, 2:string, 3:string}>,
-	 *		seealso_card_channels?:list<array{0:'channel', 1:string, 2:string}>,
+	 *		seealso_card_urls?:list<array{0:string, 1:string, 2:string}>,
+	 *		seealso_card_channels?:list<array{0:string, 1:string}>,
 	 *		incoming_video_cards?:list<string>,
 	 *		legacyalts?:list<string>
 	 *	}>,
@@ -688,8 +693,8 @@ class Questions
 		 *		seealso?:list<string>,
 		 *		seealso_video_cards?:list<string>,
 		 *		seealso_topic_cards?:list<string>,
-		 *		seealso_card_urls?:list<array{0:'url', 1:string, 2:string, 3:string}>,
-		 *		seealso_card_channels?:list<array{0:'channel', 1:string, 2:string}>,
+		 *		seealso_card_urls?:list<array{0:string, 1:string, 2:string}>,
+		 *		seealso_card_channels?:list<array{0:string, 1:string}>,
 		 *		incoming_video_cards?:list<string>,
 		 *		legacyalts?:list<string>
 		 *	}>,
@@ -729,8 +734,8 @@ class Questions
 		 *		seealso?:list<string>,
 		 *		seealso_video_cards?:list<string>,
 		 *		seealso_topic_cards?:list<string>,
-		 *		seealso_card_urls?:list<array{0:'url', 1:string, 2:string, 3:string}>,
-		 *		seealso_card_channels?:list<array{0:'channel', 1:string, 2:string}>,
+		 *		seealso_card_urls?:list<array{0:string, 1:string, 2:string}>,
+		 *		seealso_card_channels?:list<array{0:string, 1:string}>,
 		 *		incoming_video_cards?:list<string>,
 		 *		legacyalts?:list<string>
 		 *	}>,

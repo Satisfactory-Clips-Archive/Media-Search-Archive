@@ -374,7 +374,10 @@ class Jsonify
 			);
 		}
 
-		if (count($process[$video_id]['seealso_card_urls'] ?? [])) {
+		if (
+			isset($process[$video_id]['seealso_card_urls'])
+			&& count($process[$video_id]['seealso_card_urls'])
+		) {
 			$opening_line_parts[] = sprintf(
 				'%s related %s',
 				(
@@ -390,7 +393,10 @@ class Jsonify
 			);
 		}
 
-		if (count($process[$video_id]['seealso_card_channels'] ?? [])) {
+		if (
+			isset($process[$video_id]['seealso_card_channels'])
+			&& count($process[$video_id]['seealso_card_channels'])
+		) {
 			$opening_line_parts[] = sprintf(
 				'%s related %s',
 				(
