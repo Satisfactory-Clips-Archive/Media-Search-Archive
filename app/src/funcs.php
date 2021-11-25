@@ -464,12 +464,9 @@ function prepare_injections(
 	static $out = null;
 
 	if (null === $out) {
-		/** @var array<string, list<int|string>> */
-		$global_topic_hierarchy = [];
-
-		require(__DIR__ . '/../global-topic-hierarchy.php');
-
 		$topic_data = TopicData::i();
+
+		$global_topic_hierarchy = TopicData::GLOBAL_TOPIC_HIERARCHY;
 
 		$not_a_livestream = $topic_data->not_a_livestream;
 
