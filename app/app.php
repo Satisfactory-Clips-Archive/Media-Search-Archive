@@ -1308,9 +1308,11 @@ foreach (get_externals() as $date => $externals_data_groups) {
 			/** @var numeric-string */
 			$start = ($start ?: '0.0');
 
+			$decimals = mb_strlen(explode('.', $start)[1] ?? '');
+
 			$start_hours = str_pad((string) floor(((float) $start) / 3600), 2, '0', STR_PAD_LEFT);
-			$start_minutes = str_pad((string) floor((((float) $start) % 3600) / 60), 2, '0', STR_PAD_LEFT);
-			$start_seconds = str_pad((string) (((float) $start) % 60), 2, '0', STR_PAD_LEFT);
+			$start_minutes = str_pad((string) floor((float) bcdiv(bcmod($start, '3600', $decimals) ?? '0', '60', $decimals)), 2, '0', STR_PAD_LEFT);
+			$start_seconds = str_pad((string) floor((float) bcmod($start, '60', $decimals)), 2, '0', STR_PAD_LEFT);
 
 			$embed_data = [
 				'autoplay' => 1,

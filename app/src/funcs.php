@@ -2843,9 +2843,11 @@ function process_dated_csv(
 		/** @var numeric-string */
 		$start = ($start ?: '0.0');
 
+		$decimals = mb_strlen(explode('.', $start)[1] ?? '');
+
 		$start_hours = str_pad((string) floor(((float) $start) / 3600), 2, '0', STR_PAD_LEFT);
-		$start_minutes = str_pad((string) floor((((float) $start) % 3600) / 60), 2, '0', STR_PAD_LEFT);
-		$start_seconds = str_pad((string) (((float) $start) % 60), 2, '0', STR_PAD_LEFT);
+		$start_minutes = str_pad((string) floor((float) bcdiv(bcmod($start, '3600', $decimals) ?? '0', '60', $decimals)), 2, '0', STR_PAD_LEFT);
+		$start_seconds = str_pad((string) floor((float) bcmod($start, '60', $decimals)), 2, '0', STR_PAD_LEFT);
 
 		$clip_title_maybe = $clip_title;
 
