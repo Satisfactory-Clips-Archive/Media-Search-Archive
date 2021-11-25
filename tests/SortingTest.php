@@ -263,4 +263,122 @@ class SortingTest extends TestCase
 			$b
 		));
 	}
+
+	/**
+	 * @psalm-type IN = array{
+	 *	children: list<string>,
+	 *	videos?: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }
+	 *
+	 * @return list<array{
+	 *	0:CACHE|null,
+	 *	1:array<string, string>,
+	 *	2:IN,
+	 *	3:IN,
+	 *	4:int
+	 * }>
+	 */
+	public function data_sort_by_nleft() : array
+	{
+		/**
+		 * @var list<array{
+		 *	0:CACHE|null,
+		 *	1:array<string, string>,
+		 *	2:IN,
+		 *	3:IN,
+		 *	4:int
+		 * }>
+		 */
+		return [
+			[
+				null,
+				[],
+				[
+					'children' => [],
+					'left' => 0,
+					'right' => 1,
+					'level' => 0,
+				],
+				[
+					'children' => [],
+					'left' => 2,
+					'right' => 3,
+					'level' => 0,
+				],
+				-2,
+			],
+			[
+				null,
+				[],
+				[
+					'children' => [],
+					'left' => 2,
+					'right' => 3,
+					'level' => 0,
+				],
+				[
+					'children' => [],
+					'left' => 0,
+					'right' => 1,
+					'level' => 0,
+				],
+				2,
+			],
+			[
+				null,
+				[],
+				[
+					'children' => [],
+					'left' => 0,
+					'right' => 1,
+					'level' => 0,
+				],
+				[
+					'children' => [],
+					'left' => 0,
+					'right' => 1,
+					'level' => 0,
+				],
+				0,
+			],
+		];
+	}
+
+	/**
+	 * @psalm-type IN = array{
+	 *	children: list<string>,
+	 *	videos?: list<string>,
+	 *	left: positive-int,
+	 *	right: positive-int,
+	 *	level: int
+	 * }
+	 *
+	 * @param CACHE|null $cache
+	 * @param array<string, string> $playlists_date_ref
+	 * @param IN $a
+	 * @param IN $b
+	 *
+	 * @dataProvider data_sort_by_nleft
+	 *
+	 * @covers \SignpostMarv\VideoClipNotes\Sorting::__construct
+	 * @covers \SignpostMarv\VideoClipNotes\Sorting::sort_by_nleft
+	 */
+	public function test_sort_by_nleft(
+		? array $cache,
+		array $playlists_date_ref,
+		array $a,
+		array $b,
+		int $expected
+	) : void {
+		$sorting = new Sorting($cache);
+		$sorting->playlists_date_ref = $playlists_date_ref;
+
+		$this->assertSame($expected, $sorting->sort_by_nleft(
+			$a,
+			$b
+		));
+	}
 }

@@ -7,10 +7,4 @@
       <code>$not_a_livestream_date_lookup</code>
     </UnusedVariable>
   </file>
-  <file src="app/src/Sorting.php">
-    <PossiblyUnusedReturnValue occurrences="1">
-      <code>int</code>
-      <code>int</code>
-    </PossiblyUnusedReturnValue>
-  </file>
 </files>
