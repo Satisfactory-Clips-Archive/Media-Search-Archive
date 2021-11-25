@@ -467,9 +467,6 @@ function prepare_injections(
 		/** @var array<string, list<int|string>> */
 		$global_topic_hierarchy = [];
 
-		/** @var array<string, list<int|string>> */
-		$injected_global_topic_hierarchy = [];
-
 		/** @var array<string, string> */
 		$not_a_livestream = [];
 
@@ -477,6 +474,10 @@ function prepare_injections(
 		$not_a_livestream_date_lookup = [];
 
 		require(__DIR__ . '/../global-topic-hierarchy.php');
+
+		$topic_data = TopicData::i();
+
+		$injected_global_topic_hierarchy = $topic_data->injected;
 
 		$api->update();
 		$cache = $api->toLegacyCacheFormat();
