@@ -72,6 +72,9 @@ foreach ($csv as $row) {
 	$changed = false;
 
 	if ('' !== $start) {
+		/** @var numeric-string */
+		$start = $start;
+
 		$decimals = max(
 			$offset_decimals,
 			mb_strlen(explode('.', $start)[1] ?? '')
@@ -83,6 +86,9 @@ foreach ($csv as $row) {
 	}
 
 	if ('' !== $end) {
+		/** @var numeric-string */
+		$end = $end;
+
 		$decimals = max(
 			$offset_decimals,
 			mb_strlen(explode('.', $end)[1] ?? '')
@@ -118,6 +124,8 @@ if (count($replace_old_with_new)) {
 	) {
 		echo $skipping_filepath, "\n";
 		echo 'reading into memory', "\n";
+
+		/** @var list<string> */
 		$skipping = array_filter(
 			(array) json_decode(file_get_contents($skipping_filepath)),
 			'is_string'
@@ -204,9 +212,12 @@ if (count($replace_old_with_new)) {
 
 		foreach (['seealso', 'duplicates', 'replaces'] as $maybe) {
 			if (isset($v[$maybe])) {
+				/** @var list<string> */
+				$values = $v[$maybe];
+
 				$v[$maybe] = array_map(
 					static function (
-						$maybe_replace
+						string $maybe_replace
 					) use (
 						$replace_old_with_new
 					) : string {
@@ -216,7 +227,7 @@ if (count($replace_old_with_new)) {
 
 						return $maybe_replace;
 					},
-					$v[$maybe]
+					$values
 				);
 			}
 		}
