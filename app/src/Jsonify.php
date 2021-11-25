@@ -291,10 +291,6 @@ class Jsonify
 			}
 		);
 
-		if (count($faq_duplicates) < 1 && count($seealso_topics) < 1) {
-			return false;
-		}
-
 		$topics_content = array_combine(
 			$seealso_topics,
 			array_map(
@@ -344,25 +340,11 @@ class Jsonify
 			}
 		}
 
-		if (count($topics_content) < 1) {
-			$opening_line = (
-				sprintf(
-					'This question has %s related %s',
-					(
-						count($faq_duplicates_for_date_checking) > 1
-							? count($faq_duplicates_for_date_checking)
-							: 'a'
-					),
-					(
-						count($faq_duplicates_for_date_checking) > 1
-							? 'videos'
-							: 'video'
-					)
-				)
-			);
-		} elseif (count($faq_duplicates_for_date_checking) > 0) {
-			$opening_line = sprintf(
-				'This question has %s related %s, and %s related %s',
+		$opening_line_parts = [];
+
+		if (count($faq_duplicates_for_date_checking)) {
+			$opening_line_parts[] = sprintf(
+				'%s related %s',
 				(
 					count($faq_duplicates_for_date_checking) > 1
 						? count($faq_duplicates_for_date_checking)
@@ -372,33 +354,71 @@ class Jsonify
 					count($faq_duplicates_for_date_checking) > 1
 						? 'videos'
 						: 'video'
-				),
-				(
-					count($topics_content) > 1
-						? count($topics_content)
-						: 'a'
-				),
-				(
-					count($topics_content) > 1
-						? 'topics'
-						: 'topic'
-				),
-			);
-		} else {
-			$opening_line = sprintf(
-				'This question %s related %s',
-				(
-					count($topics_content) > 1
-						? count($topics_content)
-						: 'a'
-				),
-				(
-					count($topics_content) > 1
-						? 'topics'
-						: 'topic'
-				),
+				)
 			);
 		}
+
+		if (count($topics_content)) {
+			$opening_line_parts[] = sprintf(
+				'%s related %s',
+				(
+					count($topics_content) > 1
+						? count($topics_content)
+						: 'a'
+				),
+				(
+					count($topics_content) > 1
+						? 'topics'
+						: 'topic'
+				)
+			);
+		}
+
+		if (count($process[$video_id]['seealso_card_urls'] ?? [])) {
+			$opening_line_parts[] = sprintf(
+				'%s related %s',
+				(
+					count($process[$video_id]['seealso_card_urls']) > 1
+						? count($process[$video_id]['seealso_card_urls'])
+						: 'a'
+				),
+				(
+					count($process[$video_id]['seealso_card_urls']) > 1
+						? 'links'
+						: 'link'
+				)
+			);
+		}
+
+		if (count($process[$video_id]['seealso_card_channels'] ?? [])) {
+			$opening_line_parts[] = sprintf(
+				'%s related %s',
+				(
+					count($process[$video_id]['seealso_card_channels']) > 1
+						? count($process[$video_id]['seealso_card_channels'])
+						: 'a'
+				),
+				(
+					count($process[$video_id]['seealso_card_channels']) > 1
+						? 'channels'
+						: 'channel'
+				)
+			);
+		}
+
+		if (count($opening_line_parts) < 1) {
+			return false;
+		}
+
+		if (count($opening_line_parts) > 0) {
+			$last_opening_part = array_pop($opening_line_parts);
+
+			$opening_line_parts[] = 'and ' . $last_opening_part;
+		}
+
+		$opening_line =
+			'This question has '
+			. implode(', ', $opening_line_parts);
 
 		$content =
 			$this->content_from_other_video_parts(
@@ -407,6 +427,14 @@ class Jsonify
 
 		foreach ($topics_content as $row) {
 			$content[] = $row;
+		}
+
+		foreach (($process[$video_id]['seealso_card_urls'] ?? []) as $row) {
+			$content[] = ['url', $row[0], $row[1], $row[2]];
+		}
+
+		foreach (($process[$video_id]['seealso_card_channels'] ?? []) as $row) {
+			$content[] = ['channel', $row[0], $row[1]];
 		}
 
 		return [

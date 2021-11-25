@@ -84,13 +84,22 @@ layout: transcriptions
 	<ul>{%
 		for seealso in transcript.seealsos[1]
 %}
-<li>{%
+<li>{% if (seealso.length === 4 and seealso[0] === 'url') %} <a
+	rel="noopener"
+	target="_blank"
+	title="{{seealso[2]}}"
+	href="{{seealso[3]}}"
+	>{{seealso[1]}}</a>{% elif (seealso.length === 3 and seealso[0] === 'channel') %} <a
+	rel="noopener"
+	target="_blank"
+	href="https://youtube.com{{seealso[1]}}"
+	>{{seealso[2]}}</a>{% else %}{%
 			if seealso[1]
 %}{% if seealso.length === 2 %}<a href="{{seealso[1]}}">{% else %}<a href="../{{seealso[1]}}/">{% endif %}{{seealso[0]}}</a>{%
 			else
 %}{{seealso[0]}}{%
 			endif
-%}{% if seealso.length > 2 %} <a rel="noopener" target="_blank" href="{{seealso[2]}}">{{seealso[2]}}</a>{% endif %}</li>{% endfor %}
+%}{% if seealso.length > 2 %} <a rel="noopener" target="_blank" href="{{seealso[2]}}">{{seealso[2]}}</a>{% endif %}{% endif %}</li>{% endfor %}
 </ul>
 </details>{%
 			endif

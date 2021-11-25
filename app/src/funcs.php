@@ -107,7 +107,10 @@ set_error_handler(static function (
 	));
 });
 
-function maybe_video_override(string $video_id) : ? string
+/**
+ * @return array<string, string>
+ */
+function url_overrides() : array
 {
 	/** @var array<string, string>|null */
 	static $overrides = null;
@@ -127,7 +130,21 @@ function maybe_video_override(string $video_id) : ? string
 		);
 	}
 
+	return $overrides;
+}
+
+function maybe_video_override(string $video_id) : ? string
+{
+	$overrides = url_overrides();
+
 	return $overrides[$video_id] ?? null;
+}
+
+function maybe_video_id_from_url_override(string $url) : ? string
+{
+	$maybe = array_search($url, url_overrides());
+
+	return $maybe ?: null;
 }
 
 function video_url_from_id(string $video_id, bool $short = false) : string
@@ -3440,6 +3457,33 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
  *					}
  *				}
  *			}
+ *		}|object{
+ *			collaboratorInfoCardContentRenderer: object{
+ *				channelName: object{
+ *					simpleText: string
+ *				},
+ *				endPoint: object{
+ *					commandMetadata: object{
+ *						webCommandMetadata: object{
+ *							url: string
+ *						}
+ *					}
+ *				}
+ *			}
+ *		}|object{
+ *			simpleCardContentRenderer: object{
+ *				title: object{
+ *					simpleText: string
+ *				},
+ *				callToAction: object{
+ *					simpleText: string
+ *				},
+ *				command: object{
+ *					urlEndpoint: object{
+ *						url: string
+ *					}
+ *				}
+ *			}
  *		}
  *	}
  * }
@@ -3551,6 +3595,32 @@ function yt_cards_uncached(string $video_id) : array
 		 *						playlistId?: scalar|array|object|resource|null
 		 *					}
 		 *				}
+		 *			},
+		 *			collaboratorInfoCardContentRenderer?: object{
+		 *				channelName: object{
+		 *					simpleText: string
+		 *				},
+		 *				endPoint: object{
+		 *					commandMetadata: object{
+		 *						webCommandMetadata: object{
+		 *							url: string
+		 *						}
+		 *					}
+		 *				}
+		 *			},
+		 *			simpleCardContentRenderer?: object{
+		 *					title: object{
+		 *						simpleText: string
+		 *					},
+		 *					callToAction: object{
+		 *						simpleText: string
+		 *					},
+		 *					command: object{
+		 *						urlEndpoint: object{
+		 *							url: string
+		 *						}
+		 *					}
+		 *				}
 		 *			}
 		 *		}
 		 *	}
@@ -3559,7 +3629,7 @@ function yt_cards_uncached(string $video_id) : array
 		 * @psalm-assert-if-true CARD $maybe
 		 */
 		static function (object $maybe) : bool {
-			return
+			$result =
 				isset(
 					$maybe->cardRenderer,
 					$maybe->cardRenderer->teaser,
@@ -3630,8 +3700,105 @@ function yt_cards_uncached(string $video_id) : array
 							$maybe->cardRenderer->content->playlistInfoCardContentRenderer->action->watchEndpoint->playlistId
 						)
 					)
+					|| (
+						isset(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer
+						)
+						&& isset(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->channelName,
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->endpoint
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->channelName
+						)
+						&& isset(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->channelName->simpleText
+						)
+						&& is_string(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->channelName->simpleText
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->endpoint
+						)
+						&& isset(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->endpoint->commandMetadata
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->endpoint->commandMetadata
+						)
+						&& isset(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->endpoint->commandMetadata->webCommandMetadata
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->endpoint->commandMetadata->webCommandMetadata
+						)
+						&& isset(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->endpoint->commandMetadata->webCommandMetadata->url
+						)
+						&& is_string(
+							$maybe->cardRenderer->content->collaboratorInfoCardContentRenderer->endpoint->commandMetadata->webCommandMetadata->url
+						)
+					)
+					|| (
+						isset(
+							$maybe->cardRenderer->content->simpleCardContentRenderer
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->simpleCardContentRenderer
+						)
+						&& isset(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->title,
+							$maybe->cardRenderer->content->simpleCardContentRenderer->callToAction,
+							$maybe->cardRenderer->content->simpleCardContentRenderer->command
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->title
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->callToAction
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->command
+						)
+						&& isset(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->title->simpleText
+						)
+						&& is_string(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->title->simpleText
+						)
+						&& isset(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->callToAction->simpleText
+						)
+						&& is_string(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->callToAction->simpleText
+						)
+						&& isset(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint
+						)
+						&& is_object(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint
+						)
+						&& isset(
+							$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
+						)
+						&& preg_match(
+							'/^https:\/\/(?:www\.)?youtube\.com\/(?:clip\/|redirect\?event=infocard&.+q=https)/',
+							$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
+						)
+					)
 				)
 			;
+
+			if (false === $result) {
+				throw new UnexpectedValueException(
+					'Unsupported info card found!'
+				);
+			}
+
+			return $result;
 		}
 	));
 
@@ -3675,6 +3842,32 @@ function yt_cards_uncached(string $video_id) : array
 		 *						playlistId: string
 		 *					}
 		 *				}
+		 *			},
+		 *			collaboratorInfoCardContentRenderer?: object{
+		 *				channelName: object{
+		 *					simpleText: string
+		 *				},
+		 *				endPoint: object{
+		 *					commandMetadata: object{
+		 *						webCommandMetadata: object{
+		 *							url: string
+		 *						}
+		 *					}
+		 *				}
+		 *			},
+		 *			simpleCardContentRenderer?: object{
+		 *					title: object{
+		 *						simpleText: string
+		 *					},
+		 *					callToAction: object{
+		 *						simpleText: string
+		 *					},
+		 *					command: object{
+		 *						urlEndpoint: object{
+		 *							url: string
+		 *						}
+		 *					}
+		 *				}
 		 *			}
 		 *		}
 		 *	}
@@ -3683,7 +3876,7 @@ function yt_cards_uncached(string $video_id) : array
 		 * @return array{
 		 *	0:string,
 		 *	1:int,
-		 *	2:'playlist'|'video',
+		 *	2:'playlist'|'video'|'channel'|'url',
 		 *	3:string
 		 * }
 		 */
@@ -3698,6 +3891,67 @@ function yt_cards_uncached(string $video_id) : array
 				$renderer = $card->cardRenderer->content->playlistInfoCardContentRenderer;
 
 				$id = $renderer->action->watchEndpoint->playlistId;
+			} elseif (
+				isset(
+					$card->cardRenderer->content->collaboratorInfoCardContentRenderer
+				)
+			) {
+				$type = 'channel';
+
+				$renderer = $card->cardRenderer->content->collaboratorInfoCardContentRenderer;
+
+				$id = json_encode(
+					[
+						$card->cardRenderer->content->collaboratorInfoCardContentRenderer->endpoint->commandMetadata->webCommandMetadata->url,
+						$card->cardRenderer->content->collaboratorInfoCardContentRenderer->channelName->simpleText
+					]
+				);
+			} elseif (
+				isset(
+					$card->cardRenderer->content->simpleCardContentRenderer
+				)
+			) {
+				$type = 'url';
+
+				$renderer = $card->cardRenderer->content->simpleCardContentRenderer;
+
+				if (
+					preg_match(
+						'/^https:\/\/(?:www\.)?youtube\.com\/redirect\?event=infocard&.+q=https/',
+						$card->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
+					)
+				) {
+					parse_str(
+						parse_url(
+							$card->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url,
+							PHP_URL_QUERY
+						),
+						$url
+					);
+
+					/** @var array{q:string} */
+					$url = $url;
+
+					$url = $url['q'];
+				} else {
+					$url = $card->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url;
+				}
+
+				$id = json_encode(
+					[
+						$card->cardRenderer->content->simpleCardContentRenderer->title->simpleText,
+						$card->cardRenderer->content->simpleCardContentRenderer->callToAction->simpleText,
+						$url,
+					]
+				);
+
+				$maybe_video = maybe_video_id_from_url_override($url);
+
+				if (is_string($maybe_video)) {
+					$type = 'video';
+
+					$id = $maybe_video;
+				}
 			} else {
 				$type = 'video';
 
@@ -3710,7 +3964,7 @@ function yt_cards_uncached(string $video_id) : array
 			 * @var array{
 			 *	0:string,
 			 *	1:int,
-			 *	2:'playlist'|'video',
+			 *	2:'playlist'|'video'|'channel'|'url',
 			 *	3:string
 			 * }
 			 */
