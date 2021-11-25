@@ -142,7 +142,7 @@ function maybe_video_override(string $video_id) : ? string
 
 function maybe_video_id_from_url_override(string $url) : ? string
 {
-	$maybe = array_search($url, url_overrides());
+	$maybe = array_search($url, url_overrides(), true);
 
 	return $maybe ?: null;
 }
@@ -3978,7 +3978,7 @@ function yt_cards_uncached(string $video_id) : array
 				$id = json_encode(
 					[
 						$renderer->endpoint->commandMetadata->webCommandMetadata->url,
-						$renderer->channelName->simpleText
+						$renderer->channelName->simpleText,
 					]
 				);
 			} elseif (
