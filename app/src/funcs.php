@@ -467,15 +467,13 @@ function prepare_injections(
 		/** @var array<string, list<int|string>> */
 		$global_topic_hierarchy = [];
 
-		/** @var array<string, string> */
-		$not_a_livestream = [];
-
-		/** @var array<string, string> */
-		$not_a_livestream_date_lookup = [];
-
 		require(__DIR__ . '/../global-topic-hierarchy.php');
 
 		$topic_data = TopicData::i();
+
+		$not_a_livestream = $topic_data->not_a_livestream;
+
+		$not_a_livestream_date_lookup = $topic_data->not_a_livestream_date_lookup;
 
 		$injected_global_topic_hierarchy = $topic_data->injected;
 

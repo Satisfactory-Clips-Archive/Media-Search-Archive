@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="4.13.0@cd489407a0219b93cadd04d5aff9845a942f7e5d">
   <file src="app/global-topic-hierarchy.php">
-    <UnusedVariable occurrences="2">
+    <UnusedVariable occurrences="1">
       <code>$global_topic_hierarchy</code>
-      <code>$not_a_livestream_date_lookup</code>
     </UnusedVariable>
   </file>
 </files>
