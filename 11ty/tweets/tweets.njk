@@ -1,0 +1,60 @@
+---
+pagination:
+    data: tweets
+    size: 1
+    alias: thread
+permalink: "transcriptions/{{ thread.id }}/"
+layout: twitter-thread
+---
+<h1 itemprop="name">{{thread.title}}</h1>
+{% for tweet in thread.tweets %}
+<article itemprop="itemListElement" itemscope itemtype="https://schema.org/SocialMediaPosting">
+	<section
+		itemprop="articleBody"
+		lang="{{tweet.data.lang}}"
+	>{{tweet | tweet | safe}}</section>
+	{% if not thread.all_in_same_thread %}
+	<footer>
+		<p>
+			<span
+				itemprop="author"
+				itemscope
+				itemtype="https://schema.org/Person"
+			>
+			<a
+				rel="noopener"
+				target="_blank"
+				href="https://twitter.com/{{tweet.author.username}}"
+				itemprop="url"
+			>@<span itemprop="name" title="{{tweet.author.name}}">{{tweet.author.username}}</span></a>
+			</span>
+			- <a
+				rel="noopener"
+				target="_blank"
+				href="https://twitter.com/{{tweet.author.username}}/status/{{tweet.data.id}}"
+			><time
+				datetime="{{tweet.created_at}}"
+			>{{tweet.data.created_at | format_date}}</time></a>
+		</p>
+	</footer>
+	{% endif %}
+</article>
+{% endfor %}
+{% if thread.all_in_same_thread %}
+	<footer>
+		<p>
+			<a
+				rel="noopener"
+				target="_blank"
+				href="https://twitter.com/{{thread.tweets[0].author.username}}"
+			>@<span itemprop="name" title="{{thread.tweets[0].author.name}}">{{thread.tweets[0].author.username}}</span></a>
+			- <a
+				rel="noopener"
+				target="_blank"
+				href="https://twitter.com/{{thread.tweets[0].author.username}}/status/{{thread.tweets[0].data.id}}"
+			><time
+				datetime="{{thread.tweets[0].created_at}}"
+			>{{thread.tweets[0].data.created_at | format_date}}</time></a>
+		</p>
+	</footer>
+{% endif %}

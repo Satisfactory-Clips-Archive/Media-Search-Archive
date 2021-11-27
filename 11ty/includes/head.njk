@@ -3,6 +3,8 @@
 {%
 	if undefined !== transcript
 %}<meta property="og:title" content="{{ transcript.dateTitle }} {{ transcript.title }}">{%
+	elif undefined !== thread
+%}<meta property="og:title" content="Satisfactory Clips Archive - Tweets - {{ thread.title }}">{%
 	else
 %}<meta property="og:title" content="{{title}}">{%
 	endif

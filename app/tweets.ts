@@ -11,16 +11,21 @@ declare type TweetThread = {
 	seealso: string[],
 };
 
+declare type TweetAuthor = {
+	name: string,
+	username: string,
+};
+
 declare type DecoratedTweet = TweetV2SingleResult & {
-	author_url: string,
-	author_name: string,
-	author_username: string,
+	author: TweetAuthor,
 };
 
 declare type TweetThreadWithTweets = TweetThread & {
 	id: string,
 	archive_date: string,
 	tweets: DecoratedTweet[],
+	authors: TweetAuthor[],
+	all_in_same_thread: boolean,
 };
 
 const auth = require(`${__dirname}/twitter-auth.json`);
@@ -161,9 +166,10 @@ const client = (new TwitterApi(auth)).readOnly;
 		}
 
 		return Object.assign({}, twitter_tweet, {
-			author_url: `https://twitter.com/${author.username}`,
-			author_name: author.name,
-			author_username: author.username,
+			author: {
+				username: author.username,
+				name: author.name,
+			},
 		}) as DecoratedTweet;
 	}
 
@@ -237,6 +243,32 @@ const client = (new TwitterApi(auth)).readOnly;
 			id,
 			archive_date,
 			tweets,
+			authors: Object.values(tweets.map(e => e.author).reduce(
+				(
+					out:{[key:string]:TweetAuthor},
+					value:TweetAuthor
+				):{[key:string]:TweetAuthor} => {
+					out[value.username] = value;
+
+					return out;
+				},
+				{}
+			)),
+			all_in_same_thread: tweets.reduce(
+				(maybe, tweet) => {
+					if (
+						maybe
+						&& tweets[0].data.id === (
+							tweet.data.conversation_id ?? undefined
+						)
+					) {
+						return true;
+					}
+
+					return false;
+				},
+				true
+			),
 		}));
 	}
 

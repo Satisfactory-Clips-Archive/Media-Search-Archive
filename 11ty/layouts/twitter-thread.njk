@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>{{ thread.title }}</title>
+<title>Satisfactory Clips Archive - Tweets - {{ thread.title }}</title>
 {% include 'head.njk' %}
 <meta property="og:article:release_date" content="{{thread.archive_date}}">
 {% for topic_id in thread.topics %}
@@ -13,10 +13,16 @@
 </head>
 <body>
 <header>
-	<h1>{{ thread.title }}</h1>
+	<h1>Satisfactory Clips Archive - Tweets from {%
+	for author in thread.authors
+%}{% if loop.index0 > 0 %}, {% endif %}<a
+	href="https://twitter.com/{{author.username}}"
+	target="_blank"
+	rel="noopener nofollow"
+	>@{{author.username}}</a>{% endfor %}</h1>
 {% include 'nav.njk' %}
 </header>
-<main itemscope itemtype="https://schema.org/ItemList">
+<main itemscope itemtype="https://schema.org/ItemList" class="twitter-thread">
 {{ content | safe }}</main>
 {% include 'footer.njk' %}
 </body>

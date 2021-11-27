@@ -5,7 +5,8 @@
     "images-svg": "eleventy --config=./.eleventy.images.js && gulp images-svg",
     "native-clip-needed": "ts-node ./app/native-clip-needed.ts",
     "generate-blamehannah.com-data": "ts-node ./app/blamehannah.com.ts",
-    "build": "npm run -s update && gulp topics && npm run -s images-svg && eleventy && eleventy --config=./.eleventy.pages.js && gulp build"
+    "tweets": "ts-node ./app/tweets.ts && eleventy --config=./.eleventy.tweets.js",
+    "build": "npm run -s update && gulp topics && npm run -s images-svg && npm run -s tweets && eleventy && eleventy --config=./.eleventy.pages.js && gulp build"
   },
   "dependencies": {
     "lunr": "^2.3.9"
