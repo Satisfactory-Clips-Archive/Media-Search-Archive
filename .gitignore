@@ -46,3 +46,5 @@
 /app/data/dated-topic-statistics.json
 /.phpunit.cache/
 /coverage/
+/app/tweet-cache/
+/11ty/data/tweets.json

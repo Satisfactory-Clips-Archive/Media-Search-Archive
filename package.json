@@ -42,6 +42,8 @@
     "svg-to-img": "^2.0.9",
     "svg2png": "^4.1.1",
     "ts-node": "^10.4.0",
+    "twitter-api-v2": "^1.7.0",
+    "twitter-text": "^3.1.0",
     "typescript": "^4.4.4"
   }
 }

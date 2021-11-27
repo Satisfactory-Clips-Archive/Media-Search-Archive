@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ thread.title }}</title>
+{% include 'head.njk' %}
+<meta property="og:article:release_date" content="{{thread.archive_date}}">
+{% for topic_id in thread.topics %}
+<meta property="og:article:tag" content="{{ topicStrings[topic_id] }}">
+{%
+	endfor
+%}
+</head>
+<body>
+<header>
+	<h1>{{ thread.title }}</h1>
+{% include 'nav.njk' %}
+</header>
+<main itemscope itemtype="https://schema.org/ItemList">
+{{ content | safe }}</main>
+{% include 'footer.njk' %}
+</body>
+</html>
