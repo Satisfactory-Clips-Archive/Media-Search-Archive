@@ -343,6 +343,41 @@ class Jsonify
 		$opening_line_parts = [];
 
 		if (count($faq_duplicates_for_date_checking)) {
+			$plural = 'videos';
+			$singular = 'video';
+
+			$all_twitter_threads = count(
+				$faq_duplicates_for_date_checking
+			) === count(array_filter(
+				$faq_duplicates_for_date_checking,
+				static function (string $maybe) : bool {
+					return (bool) preg_match('/^tt-\d+(?:,\d+)*$/', $maybe);
+				}
+			));
+
+			foreach ($faq_duplicates_for_date_checking as $maybe) {
+				if (preg_match('/^tt-\d+$/', $maybe)) {
+					$plural = 'videos or tweets';
+					$singular = 'tweet';
+
+					if ($all_twitter_threads) {
+						$plural = 'tweets';
+						$singular = 'tweet';
+					}
+				}
+				if (preg_match('/^tt-\d+(?:,\d+)+$/', $maybe)) {
+					$plural = 'videos or twitter threads';
+					$singular = 'twitter thread';
+
+					if ($all_twitter_threads) {
+						$plural = 'twitter threads';
+						$singular = 'twitter thread';
+					}
+
+					break;
+				}
+			}
+
 			$opening_line_parts[] = sprintf(
 				'%s related %s',
 				(
@@ -352,8 +387,8 @@ class Jsonify
 				),
 				(
 					count($faq_duplicates_for_date_checking) > 1
-						? 'videos'
-						: 'video'
+						? $plural
+						: $singular
 				)
 			);
 		}
@@ -540,7 +575,25 @@ class Jsonify
 	) : array {
 		$out = [];
 
+		$twitter_threads = twitter_threads();
+
 		foreach ($video_other_parts as $other_video_id) {
+			if (
+				preg_match('/^tt-\d+(?:,\d+)*$/', $other_video_id)
+				&& isset($twitter_threads[$other_video_id])
+			) {
+				$out[] = [
+					$twitter_threads[$other_video_id]['title'],
+					$other_video_id,
+					sprintf(
+						'/transcriptions/%s',
+						$other_video_id
+					),
+				];
+
+				continue;
+			}
+
 			/** @var string|null */
 			$playlist_id = null;
 

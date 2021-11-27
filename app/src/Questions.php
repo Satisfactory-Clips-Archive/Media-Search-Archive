@@ -309,7 +309,7 @@ class Questions
 					 * @param scalar|array|object|resource|null $maybe_value
 					 * @param array-key $maybe_key
 					 */
-					static function (
+					function (
 						$maybe_value,
 						$maybe_key
 					) use (
@@ -318,7 +318,14 @@ class Questions
 						return
 							is_string($maybe_value)
 							&& is_int($maybe_key)
-							&& isset($cache['playlistItems'][$maybe_value])
+							&& (
+								isset($cache['playlistItems'][$maybe_value])
+								|| in_array(
+									$maybe_value,
+									$this->twitter_thread_ids(),
+									true
+								)
+							)
 						;
 					},
 					ARRAY_FILTER_USE_BOTH
@@ -822,5 +829,35 @@ class Questions
 				))
 			)
 		;
+	}
+
+	/**
+	 * @return list<string>
+	 */
+	public function twitter_thread_ids() : array
+	{
+		/** @var list<string>|null */
+		static $ids = null;
+
+		if (null === $ids) {
+			/**
+			 * @var list<array{
+			 *	tweet_ids: list<string>
+			 * }>
+			 */
+			$data = json_decode(
+				file_get_contents(__DIR__ . '/../data/tweets.json'),
+				true
+			);
+
+			$ids = array_map(
+				static function (array $row) : string {
+					return sprintf('tt-%s', implode(',', $row['tweet_ids']));
+				},
+				$data
+			);
+		}
+
+		return $ids;
 	}
 }

@@ -3182,6 +3182,18 @@ function determine_date_for_video(
 		return $matches[$video_id];
 	}
 
+	if (preg_match('/^tt-\d+(?:,\d+)*$/', $video_id)) {
+		$twitter_threads = twitter_threads();
+
+		if (isset($twitter_threads[$video_id])) {
+			$matches[$video_id] = $twitter_threads[$video_id]['archive_date'];
+		} else {
+			$matches[$video_id] = false;
+		}
+
+		return $matches[$video_id];
+	}
+
 	/** @var false|string */
 	$found = false;
 
@@ -4066,4 +4078,89 @@ function json_encode_pretty(array $data) : string
 			JSON_PRETTY_PRINT
 		)
 	);
+}
+
+/**
+ * @psalm-type THREAD = array{
+ *	title: string,
+ *	tweet_ids: list<string>,
+ *	topics: list<string>,
+ *	seealso: list<string>,
+ *	id: string,
+ *	archive_date: string,
+ *	tweets: list<array{
+ *		data: {
+ *			author_id: string,
+ *			id: string,
+ *			text: string,
+ *			possibly_sensitive: bool,
+ *			lang: string,
+ *			created_at: string,
+ *			conversation_id: string,
+ *			attachments: array{
+ *				media_keys: list<string>
+ *			},
+ *			entities: array{
+ *				urls: list<array{
+ *					start: 0|positive-int,
+ *					end: 0|positive-int,
+ *					url: string,
+ *					display_url: string,
+ *					status?: 0|positive-int,
+ *					title?: string,
+ *					description?: string,
+ *					unwound_url?: string
+ *				}>
+ *			}
+ *		},
+ *		includes: array{
+ *			media: list<array{
+ *				type: 'photo',
+ *				height: positive-int,
+ *				width: positive-int,
+ *				url: string,
+ *				media_key: string
+ *			}>,
+ *			users: list<array{
+ *				id: string,
+ *				name: string,
+ *				username: string
+ *			}>
+ *		},
+ *		author: array{
+ *			username: string,
+ *			name: string
+ *		}
+ *	}
+ * }
+ *
+ * @return array{string: THREAD}
+ */
+function twitter_threads() : array
+{
+	/** @var list<THREAD>|null */
+	static $data = null;
+
+	if (null === $data) {
+		/** @var list<THREAD> */
+		$data = json_decode(
+			file_get_contents(__DIR__ . '/../../11ty/data/tweets.json'),
+			true
+		);
+
+		$data = array_combine(
+			array_map(
+				/**
+				 * @param THREAD $thread
+				 */
+				static function (array $thread) : string {
+					return $thread['id'];
+				},
+				$data
+			),
+			$data
+		);
+	}
+
+	return $data;
 }
