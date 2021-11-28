@@ -3188,7 +3188,9 @@ function determine_date_for_video(
 		if (isset($twitter_threads[$video_id])) {
 			$matches[$video_id] = $twitter_threads[$video_id]['archive_date'];
 		} else {
-			$matches[$video_id] = false;
+			throw new InvalidArgumentException(
+				'Twitter thread not found!'
+			);
 		}
 
 		return $matches[$video_id];
@@ -4089,7 +4091,7 @@ function json_encode_pretty(array $data) : string
  *	id: string,
  *	archive_date: string,
  *	tweets: list<array{
- *		data: {
+ *		data: array{
  *			author_id: string,
  *			id: string,
  *			text: string,
@@ -4131,14 +4133,13 @@ function json_encode_pretty(array $data) : string
  *			username: string,
  *			name: string
  *		}
- *	}
+ *	}>
  * }
  *
- * @return array{string: THREAD}
+ * @return array<string, THREAD>
  */
 function twitter_threads() : array
 {
-	/** @var list<THREAD>|null */
 	static $data = null;
 
 	if (null === $data) {
@@ -4162,5 +4163,6 @@ function twitter_threads() : array
 		);
 	}
 
+	/** @var array<string, THREAD> */
 	return $data;
 }
