@@ -1500,7 +1500,7 @@ class TopicData
 			self::NOT_A_LIVESTREAM,
 			array_reduce(
 				array_filter(
-					glob(__DIR__ . '/../data/*/yt-*.json'),
+					glob(__DIR__ . '/../data/dated/*/yt-*.json'),
 					static function (string $maybe) : bool {
 						$maybe_date = basename(dirname($maybe));
 

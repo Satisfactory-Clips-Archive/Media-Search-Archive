@@ -23,7 +23,7 @@ const done_keys = Object.keys(done);
 
 	const files = (await Promise.all(((await Promise.all(
 		(
-			await glob('./app/data/*/yt-*.csv')
+			await glob('./app/data/dated/*/yt-*.csv')
 		).filter((maybe:string) => {
 			if ( ! existsSync(maybe.replace(/\.csv$/, '.json'))) {
 				console.error(`Corresponding JSON file for ${maybe} missing!`);

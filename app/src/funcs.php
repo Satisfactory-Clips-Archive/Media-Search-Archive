@@ -2085,7 +2085,7 @@ function get_externals() : array
 
 	if (null === $cached) {
 		$csv_files = array_filter(
-			glob(__DIR__ . '/../data/*/*.csv'),
+			glob(__DIR__ . '/../data/dated/*/*.csv'),
 			static function (string $maybe) : bool {
 				$dir = dirname($maybe);
 				$info = pathinfo($maybe, PATHINFO_FILENAME);
@@ -2259,7 +2259,7 @@ function get_dated_csv(
 	string $video_id,
 	bool $require_json = true
 ) : array {
-	$path = __DIR__ . '/../data/' . $date . '/' . $video_id . '.csv';
+	$path = __DIR__ . '/../data/dated/' . $date . '/' . $video_id . '.csv';
 
 	if ( ! is_file($path)) {
 		throw new InvalidArgumentException(sprintf(
@@ -3193,7 +3193,7 @@ function determine_date_for_video(
 	if (null === $externals_unpacked) {
 		$externals_unpacked = [];
 
-		foreach (glob(__DIR__ . '/../data/*/*.csv') as $file) {
+		foreach (glob(__DIR__ . '/../data/dated/*/*.csv') as $file) {
 			$externals_unpacked[
 				mb_substr(basename($file), 0, -4)
 			] = basename(dirname($file));

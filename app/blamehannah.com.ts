@@ -80,7 +80,7 @@ export_these.forEach(async (data, i) => {
 
 		const [source_id, start, end] = id.substring(3).split(',');
 
-		const maybe = await glob(`${__dirname}/data/*/yt-${source_id}.csv`);
+		const maybe = await glob(`${__dirname}/data/dated/*/yt-${source_id}.csv`);
 
 		if (1 !== maybe.length) {
 			throw new Error(
