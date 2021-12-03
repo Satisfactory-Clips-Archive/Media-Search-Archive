@@ -1,50 +1,37 @@
-{"title": "Alpha Release Date, Selection Process + more", "skip": [true,
-	false,
-	false,
-	false,
-	false,
-	false,
-	false,
-	false,
-	false,
-	false,
-	true,
-	true
-	],
-	"topics": {
-		"1": [
+{"title": "Alpha Release Date, Selection Process + more", "topics": [false,
+		[
 			"Satisfactory Alpha"
 		],
-		"2": [
+		[
 			"Satisfactory Alpha"
 		],
-		"3": [
+		[
 			"Satisfactory Alpha"
 		],
-		"4": [
+		[
 			"Satisfactory Alpha"
 		],
-		"5": [
+		[
 			"Satisfactory Alpha",
 			"Multiplayer"
 		],
-		"6": [
+		[
 			"Satisfactory Alpha",
 			"Tiers",
 			"World Map",
 			"Biomes"
 		],
-		"7": [
+		[
 			"Satisfactory Alpha"
 		],
-		"8": [
+		[
 			"Satisfactory Alpha",
 			"Localisation",
 			"Simon"
 		],
-		"9": [
+		[
 			"Satisfactory Alpha",
 			"Simon"
 		]
-	}
+	]
 }

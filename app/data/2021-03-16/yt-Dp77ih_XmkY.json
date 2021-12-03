@@ -1,32 +1,8 @@
 {
 	"title": "Update 4: Patch Notes Treasure Hunt!",
-	"skip": [
-		true,
-		true,
-		false,
-		false,
-		false,
-		false,
-		false,
-		true,
-		false,
-		false,
-		false,
-		false,
-		false,
-		true,
-		false,
-		false,
-		true,
-		false,
-		true,
-		false
-	],
 	"topics": [
-		[
-		],
-		[
-		],
+		false,
+		false,
 		[
 			"Satisfactory Update 4",
 			"Tier 7",
@@ -58,8 +34,7 @@
 			"Nuclear Waste",
 			"Nuclear Energy"
 		],
-		[
-		],
+		false,
 		[
 			"Satisfactory Update 4",
 			"Power Storage"
@@ -81,8 +56,7 @@
 			"Satisfactory Update 4",
 			"Lights"
 		],
-		[
-		],
+		false,
 		[
 			"Satisfactory Update 4",
 			"Drones"
@@ -91,14 +65,12 @@
 			"Satisfactory Update 4",
 			"Hover Pack"
 		],
-		[
-		],
+		false,
 		[
 			"Satisfactory Update 4",
 			"Zip Lines"
 		],
-		[
-		],
+		false,
 		[
 			"Satisfactory Update 4",
 			"Particle Accelerator"

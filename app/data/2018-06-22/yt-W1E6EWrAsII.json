@@ -1,30 +1,11 @@
 {
 	"title": "Q&A #2: Satisfactory Multiplayer, mods, lizard doggo plushies, and more!",
-	"skip": [
-		true,
+	"topics": [
 		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		true,
-		true
-	],
-	"topics": {
-		"1": [
+		[
 			"Official Mod Support"
 		],
-		"2": [
+		[
 			"Satisfactory 1.0",
 			"DLC",
 			"Goat Simulator",
@@ -32,61 +13,62 @@
 			"Microtransactions",
 			"Loot Boxes"
 		],
-		"3": [
+		[
 			"Base Defense",
 			"Oscar",
 			"Creatures",
 			"Sanctum"
 		],
-		"4": [
+		[
 			"Lizard Doggo",
 			"Merch"
 		],
-		"5": [
+		[
 			"Satisfactory Alpha"
 		],
-		"6": [
+		[
 			"Multiplayer",
 			"Dedicated Servers",
 			"Simon"
 		],
-		"7": [
+		[
 			"World Map",
 			"Procedural Generation",
 			"Resources"
 		],
-		"8": [
+		[
 			"Localisation"
 		],
-		"9": [
+		[
 			"Vehicles"
 		],
-		"10": [
+		[
 			"Story & Lore",
 			"Caterina Parks",
 			"Steve"
 		],
-		"11": [
+		[
 			"Linux",
 			"Console Release"
 		],
-		"12": [
+		[
 			"Teasers & Trailers",
 			"Space Elevator",
 			"Food Court",
 			"Pizza"
 		],
-		"13": [
+		[
 			"World Map"
 		],
-		"14": [
+		[
 			"Teasers & Trailers"
 		],
-		"15": [
+		[
 			"Simon"
 		],
-		"17": [
+		false,
+		[
 			"Simon"
 		]
-	}
+	]
 }

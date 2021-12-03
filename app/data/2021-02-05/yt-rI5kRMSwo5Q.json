@@ -1,42 +1,32 @@
 {
-	"skip": [
-		true,
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		true,
-		true
-	],
 	"title": "Update 4 UI Changes (including the new Resource Well Pressurizers & Extractors)",
-	"topics": {
-		"1": [
+	"topics": [
+		false,
+		[
 			"Recipes",
 			"User Interface",
 			"Satisfactory Update 4"
 		],
-		"2": [
+		[
 			"User Interface",
 			"Satisfactory Update 4",
 			"AWESOME Store"
 		],
-		"3": [
+		[
 			"User Interface",
 			"Satisfactory Update 4",
 			"Buildings"
 		],
-		"4": [
+		[
 			"User Interface",
 			"Satisfactory Update 4"
 		],
-		"5": [
+		[
 			"User Interface",
 			"Satisfactory Update 4",
 			"Power Management"
 		],
-		"6": [
+		[
 			"Overclocking & Underclocking",
 			"User Interface",
 			"Satisfactory Update 4",
@@ -45,5 +35,5 @@
 			"Resource Well Extractor",
 			"Gases"
 		]
-	}
+	]
 }

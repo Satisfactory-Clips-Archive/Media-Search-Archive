@@ -1266,10 +1266,7 @@ foreach (get_externals() as $date => $externals_data_groups) {
 			array_filter(
 				$externals_csv,
 				static function (int $k) use ($data_for_external) : bool {
-					return
-						isset($data_for_external['skip'][$k])
-							? ( ! $data_for_external['skip'][$k])
-							: (false !== ($data_for_external['topics'][$k] ?? false));
+					return false !== ($data_for_external['topics'][$k] ?? false);
 				},
 				ARRAY_FILTER_USE_KEY
 			)

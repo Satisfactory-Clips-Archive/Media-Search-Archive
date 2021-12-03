@@ -1,375 +1,383 @@
 {
 	"title": "Satisfactory Q&A/Hangout Stream",
-	"skip": {
-		"9": false,
-		"51": false,
-		"70": false
-	},
-	"topics": {
-		"2": [
+	"topics": [
+		false,
+		false,
+		[
 			"Jace"
 		],
-		"3": [
+		[
 			"Pipes"
 		],
-		"4": [
+		[
 			"Satisfactory Alpha",
 			"Satisfactory 1.0"
 		],
-		"5": [
+		[
 			"Retail"
 		],
-		"6": [
+		[
 			"Jace"
 		],
-		"7": [
+		[
 			"Jace",
 			"Hannah"
 		],
-		"8": [
+		[
 			"Satisfactory Alpha",
 			"Multiplayer"
 		],
-		"10": [
+		[],
+		[
 			"Game Modes",
 			"Creatures"
 		],
-		"11": [
+		[
 			"Multiplayer"
 		],
-		"12": [
+		[
 			"Dedicated Servers",
 			"Official Mod Support"
 		],
-		"13": [
+		[
 			"Story & Lore"
 		],
-		"14": [
+		[
 			"Story & Lore",
 			"Simon",
 			"G2"
 		],
-		"15": [
+		[
 			"Flannel",
 			"Character Customisation"
 		],
-		"16": [
+		[
 			"Terraforming"
 		],
-		"17": [
+		[
 			"Vehicles",
 			"Conveyor Belts",
 			"Trains"
 		],
-		"18": [
+		[
 			"Merch",
 			"Simon"
 		],
-		"19": [
+		[
 			"Hannah",
 			"Unreal Engine"
 		],
-		"20": [
+		[
 			"User Interface"
 		],
-		"21": [
+		[
 			"Markus",
 			"Save System",
 			"Unreal Engine"
 		],
-		"22": [
+		[
 			"Third-person View"
 		],
-		"23": [
+		[
 			"Buildings"
 		],
-		"24": [
+		[
 			"World Map",
 			"Underground Biome",
 			"Biomes"
 		],
-		"25": [
+		[
 			"Coffee Stainers",
 			"Technology"
 		],
-		"26": [
+		[
 			"Epic Store Exclusivity",
 			"Steam Release"
 		],
-		"27": [
+		[
 			"Mods",
 			"World Map"
 		],
-		"28": [
+		[
 			"Localisation"
 		],
-		"29": [
+		[
 			"DLC"
 		],
-		"31": [
+		[],
+		[
 			"World Map",
 			"Creatures"
 		],
-		"32": [
+		[
 			"Satisfactory Alpha"
 		],
-		"33": [
+		[
 			"Hannah",
 			"Satisfactory Alpha"
 		],
-		"34": [
+		[
 			"Vehicles"
 		],
-		"35": [
+		[
 			"Retail",
 			"Save System"
 		],
-		"36": [
+		[
 			"DLC",
 			"Satisfactory 1.0"
 		],
-		"37": [
+		[
 			"Game Modes"
 		],
-		"38": [
+		[
 			"Base Defense",
 			"Sanctum",
 			"Mods vs. Features"
 		],
-		"39": [
+		[
 			"Multiplayer",
 			"Game Modes"
 		],
-		"41": [
+		[],
+		[
 			"Pioneer"
 		],
-		"42": [
+		[
 			"Multiplayer",
 			"World Map"
 		],
-		"43": [
+		[
 			"Technology"
 		],
-		"44": [
+		[
 			"Multiplayer"
 		],
-		"45": [
+		[
 			"Multiplayer",
 			"Snutt",
 			"Hannah"
 		],
-		"46": [
+		[
 			"Character Customisation"
 		],
-		"47": [
+		[
 			"Multiplayer"
 		],
-		"48": [
+		[
 			"Pollution"
 		],
-		"49": [
+		[
 			"Satisfactory Alpha",
 			"Retail"
 		],
-		"50": [
+		[
 			"Coffee Stainers",
 			"Jace"
 		],
-		"52": [
+		[],
+		[
 			"Resources"
 		],
-		"53": [
+		[
 			"Creative Mode"
 		],
-		"54": [
+		[
 			"Simon",
 			"Trolling"
 		],
-		"55": [
+		[
 			"Technology",
 			"Conveyor Belts"
 		],
-		"56": [
+		[
 			"Satisfactory Alpha",
 			"Snutt"
 		],
-		"57": [
+		[
 			"Merch",
 			"Jace"
 		],
-		"58": [
+		[
 			"Easter Eggs",
 			"World Map"
 		],
-		"59": [
+		[
 			"Jace"
 		],
-		"60": [
+		[
 			"World Map"
 		],
-		"61": [
+		[
 			"Coffee Stain Studios",
 			"Coffee Stainers",
 			"Unreal Engine"
 		],
-		"62": [
+		[
 			"Jace",
 			"THQ Nordic"
 		],
-		"63": [
+		[
 			"Game Modes"
 		],
-		"64": [
+		[
 			"THQ Nordic"
 		],
-		"65": [
+		[
 			"VR",
 			"Multiplayer"
 		],
-		"66": [
+		[
 			"Coffee Stain Studios",
 			"Coffee Stainers",
 			"Jace",
 			"Vehicles"
 		],
-		"67": [
+		[
 			"Creatures",
 			"Game Modes",
 			"Lizard Doggo",
 			"Non Flying Bird"
 		],
-		"68": [
+		[
 			"Story & Lore"
 		],
-		"69": [
+		[
 			"Coffee Stainers",
 			"Simon"
 		],
-		"71": [
+		[],
+		[
 			"World Map"
 		],
-		"72": [
+		[
 			"Blueprints"
 		],
-		"73": [
+		[
 			"Space Exploration"
 		],
-		"74": [
+		[
 			"Pre-Alpha",
 			"Jace",
 			"Coffee Stainers"
 		],
-		"76": [
+		[],
+		[
 			"World Map",
 			"Pioneer",
 			"Save System"
 		],
-		"77": [
+		[
 			"Jace",
 			"Hannah",
 			"Snutt"
 		],
-		"78": [
+		[
 			"Game Modes",
 			"Sanctum"
 		],
-		"79": [
+		[
 			"Hannah",
 			"World Map"
 		],
-		"80": [
+		[
 			"Community"
 		],
-		"81": [
+		[
 			"Snutt"
 		],
-		"82": [
+		[
 			"Hannah"
 		],
-		"83": [
+		[
 			"Multiplayer",
 			"Vehicles"
 		],
-		"84": [
+		[
 			"Resources",
 			"Crafting"
 		],
-		"85": [
+		[
 			"Snutt"
 		],
-		"86": [
+		[
 			"LOD"
 		],
-		"87": [
+		[
 			"Steam Release"
 		],
-		"88": [
+		[
 			"Snutt"
 		],
-		"89": [
+		[
 			"Satisfactory Alpha",
 			"Simon"
 		],
-		"90": [
+		[
 			"Coffee Stain Studios",
 			"Coffee Stainers",
 			"Community"
 		],
-		"92": [
+		[],
+		[
 			"Satisfactory 1.0"
 		],
-		"93": [
+		[
 			"Simon"
 		],
-		"94": [
+		[
 			"Lizard Doggo"
 		],
-		"95": [
+		[
 			"Third-person View"
 		],
-		"96": [
+		[
 			"Jace",
 			"Buildings",
 			"Vehicles"
 		],
-		"97": [
+		[
 			"Coffee Stainers",
 			"Sanctum",
 			"Goat Simulator"
 		],
-		"98": [
+		[
 			"Factory Maintenance",
 			"Buildings"
 		],
-		"99": [
+		[
 			"Creatures"
 		],
-		"100": [
+		[
 			"Coffee Stainers"
 		],
-		"101": [
+		[
 			"Walls",
 			"Vehicles",
 			"Paint",
 			"Character Customisation"
 		],
-		"102": [
+		[
 			"Jetpack"
 		],
-		"103": [
+		[
 			"Satisfactory Alpha",
 			"Walls",
 			"Paint",
 			"Community"
 		],
-		"104": [
+		[
 			"Trains"
 		],
-		"107": [
+		[],
+		[
+			"Off-Topic"
+		],
+		[
 			"Pipes"
 		],
-		"108": [
+		[
 			"User Interface"
 		]
-	}
+	]
 }

@@ -1,14 +1,5 @@
 {
 	"title": "New Power Changes in Update 4",
-	"skip": [
-		false,
-		false,
-		false,
-		false,
-		false,
-		false,
-		true
-	],
 	"topics": [
 		[
 			"Power Management",

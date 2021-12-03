@@ -1,8 +1,7 @@
 {
 	"title": "Q&A: Alpha Test Weekend, Early Access, Regional pricing + more",
-	"skip": [true],
 	"topics": [
-		[],
+		false,
 		[
 			"Early Access"
 		],

@@ -2057,7 +2057,6 @@ function raw_captions(string $video_id, SkippingTranscriptions $skipping) : arra
  *		}>,
  *		2:array{
  *			title:string,
- *			skip:list<bool>,
  *			topics:array<int, list<string>>
  *		}
  *	}>
@@ -2077,7 +2076,6 @@ function get_externals() : array
 	 *		}>,
 	 *		2:array{
 	 *			title:string,
-	 *			skip:list<bool>,
 	 *			topics:array<int, list<string>>
 	 *		}
 	 *	}>
@@ -2126,7 +2124,6 @@ function get_externals() : array
 			 *		}>,
 			 *		2:array{
 			 *			title:string,
-			 *			skip:list<bool>,
 			 *			topics:array<int, list<string>>
 			 *		}
 			 *	}>
@@ -2143,7 +2140,6 @@ function get_externals() : array
 			 *		}>,
 			 *		2:array{
 			 *			title:string,
-			 *			skip:list<bool>,
 			 *			topics:array<int, list<string>>
 			 *		}
 			 *	}>
@@ -2254,7 +2250,6 @@ function get_additional_externals() : array
  *	}>,
  *	2:array{
  *		title:string,
- *		skip:list<bool>,
  *		topics:array<int, list<string>>
  *	}
  * }
@@ -2322,7 +2317,6 @@ function get_dated_csv(
 		 *	}>,
 		 *	2:array{
 		 *		title:string,
-		 *		skip:list<bool>,
 		 *		topics:array<int, list<string>>
 		 *	}
 		 * }
@@ -2337,7 +2331,6 @@ function get_dated_csv(
 	/**
 	 * @var array{
 	 *	title:string,
-	 *	skip:list<bool>,
 	 *	topics:array<int, list<string>>
 	 * }
 	 */
@@ -2361,7 +2354,6 @@ function get_dated_csv(
 	 *	}>,
 	 *	2:array{
 	 *		title:string,
-	 *		skip:list<bool>,
 	 *		topics:array<int, list<string>>
 	 *	}
 	 * }
@@ -2577,7 +2569,6 @@ function process_externals(
  *	}>,
  *	2:array{
  *		title:string,
- *		skip:list<bool>,
  *		topics:array<int, list<string>>
  *	}
  * } $externals_data
@@ -2803,10 +2794,7 @@ function process_dated_csv(
 		array_filter(
 			$externals_csv,
 			static function (int $k) use ($data) : bool {
-				return
-					isset($data['skip'][$k])
-						? ( ! $data['skip'][$k])
-						: (false !== ($data['topics'][$k] ?? false));
+				return false !== ($data['topics'][$k] ?? false);
 			},
 			ARRAY_FILTER_USE_KEY
 		)

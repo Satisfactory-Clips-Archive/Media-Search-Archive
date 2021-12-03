@@ -1,0 +1,33 @@
+{
+	"$id": "http://archive.satisfactory.video/csv-metadata.json",
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"required": [
+		"title",
+		"topics"
+	],
+	"type": "object",
+	"properties": {
+		"title": {
+			"type": "string"
+		},
+		"topics": {
+			"type": "array",
+			"items": {
+				"anyOf": [
+					{
+						"type": "boolean",
+						"const": false
+					},
+					{
+						"type": "array",
+						"items": {
+							"uniqueItems": true,
+							"type": "string"
+						}
+					}
+				]
+			}
+		}
+	},
+	"additionalProperties": false
+}

@@ -1,39 +1,31 @@
 {
 	"title": "Dev Blog #1: Vehicles",
-	"skip": [
-		true,
-		true,
+	"topics": [
 		false,
 		false,
-		false,
-		false,
-		false,
-		false,
-		true,
-		false
-	],
-	"topics": {
-		"3": [
+		[],
+		[
 			"Tractor",
 			"Explorer",
 			"Truck",
 			"Trains"
 		],
-		"4": [
+		[
 			"Autopilot",
 			"User Interface"
 		],
-		"5": [
+		[
 			"Truck"
 		],
-		"6": [
+		[
 			"Explorer"
 		],
-		"7": [
+		[
 			"Trains"
 		],
-		"9": [
+		false,
+		[
 			"Jace"
 		]
-	}
+	]
 }
