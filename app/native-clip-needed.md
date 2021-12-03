@@ -1085,7 +1085,7 @@
 - [ ] yt-Rumqu_lyapg,13207.682546,13218.552505 - Coffee Stainer Talk: Challenge Run (Part 3)
 - [ ] yt-Rumqu_lyapg,13429.799814,13455.362483 - Coffee Stainer Talk: Challenge Run (Part 4)
 - [ ] yt-Rumqu_lyapg,13455.4,13508.066657 - Q&A: Does Mark think there's going to be another Quality of Life Update in the future?
-- [ ] yt-Rumqu_lyapg,13581.733333333334,13635.10936 - Q&A: Is there going to be a polish push be fore 1.0?
+- [ ] yt-Rumqu_lyapg,13581.733333333334,13635.10936 - Q&A: Is there going to be a polish push before 1.0?
 - [ ] yt-Rumqu_lyapg,13635.133333333333,13692.466666666667 - Coffee Stainer Talk: Challenge Run (Part 6)
 - [ ] yt-Rumqu_lyapg,13692.5,13743.91043 - Q&A: What is Mark most excited about for Update 5?
 - [ ] yt-Rumqu_lyapg,13936.566666666668,13955.577188 - Coffee Stainer Talk: Challenge Run (Part 7)
