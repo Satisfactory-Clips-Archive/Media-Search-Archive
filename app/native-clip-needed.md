@@ -1,17 +1,17 @@
 ## 2017-08-01
-- [ ] yt-ZW0OOikcWN0,25.186806,57.8 - Jace Talk: Changing Localisation via the Swedish menus
-- [ ] yt-ZW0OOikcWN0,73.32,100.230344 - Jace Talk: Basic Movement & Controls
-- [ ] yt-ZW0OOikcWN0,100.230344,155.16 - Jace Talk: Multiplayer Ping & Text Chat
-- [ ] yt-ZW0OOikcWN0,243.88,303 - Jace Talk: Gathering Resources
-- [ ] yt-ZW0OOikcWN0,444.2,459.28 - Jace Talk: Multiplayer Crafting
-- [ ] yt-ZW0OOikcWN0,968.818506,1014.32 - Jace Talk: Automating Crafting (Part 2)
-- [ ] yt-ZW0OOikcWN0,1187.12,1217.6 - Jace Talk: Factory Overview
-- [ ] yt-ZW0OOikcWN0,1407.56,1426.24 - Jace Talk: Exploring for different Resources
-- [ ] yt-ZW0OOikcWN0,1426.24,1462.88 - Outro
+- [x] yt-ZW0OOikcWN0,25.186806,57.8 - Jace Talk: Changing Localisation via the Swedish menus
+- [x] yt-ZW0OOikcWN0,73.32,100.230344 - Jace Talk: Basic Movement & Controls
+- [x] yt-ZW0OOikcWN0,100.230344,155.16 - Jace Talk: Multiplayer Ping & Text Chat
+- [x] yt-ZW0OOikcWN0,243.88,303 - Jace Talk: Gathering Resources
+- [x] yt-ZW0OOikcWN0,444.2,459.28 - Jace Talk: Multiplayer Crafting
+- [x] yt-ZW0OOikcWN0,968.818506,1014.32 - Jace Talk: Automating Crafting (Part 2)
+- [x] yt-ZW0OOikcWN0,1187.12,1217.6 - Jace Talk: Factory Overview
+- [x] yt-ZW0OOikcWN0,1407.56,1426.24 - Jace Talk: Exploring for different Resources
+- [x] yt-ZW0OOikcWN0,1426.24,1462.88 - Outro
 
 ## 2017-11-17
-- [ ] yt-6HZzPbgw3pg,72.16,127.08 - How can we be friends if you know nothing about me?
-- [ ] yt-6HZzPbgw3pg,127.08,170.16 - Why would we need a Community Manager now?
+- [x] yt-6HZzPbgw3pg,72.16,127.08 - How can we be friends if you know nothing about me?
+- [x] yt-6HZzPbgw3pg,127.08,170.16 - Why would we need a Community Manager now?
 
 ## 2018-03-09
 - [ ] yt-Zo2ybvs7keI,300.32,310.36 - Q&A: Who is the better colleague, Nathalie or Hannah?
