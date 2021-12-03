@@ -773,6 +773,36 @@ class Questions
 	}
 
 	/**
+	 * @return list<string>
+	 */
+	public function twitter_thread_ids() : array
+	{
+		/** @var list<string>|null */
+		static $ids = null;
+
+		if (null === $ids) {
+			/**
+			 * @var list<array{
+			 *	tweet_ids: list<string>
+			 * }>
+			 */
+			$data = json_decode(
+				file_get_contents(__DIR__ . '/../data/tweets.json'),
+				true
+			);
+
+			$ids = array_map(
+				static function (array $row) : string {
+					return sprintf('tt-%s', implode(',', $row['tweet_ids']));
+				},
+				$data
+			);
+		}
+
+		return $ids;
+	}
+
+	/**
 	 * @psalm-assert-if-true array $a
 	 * @psalm-assert-if-true string $b
 	 *
@@ -829,35 +859,5 @@ class Questions
 				))
 			)
 		;
-	}
-
-	/**
-	 * @return list<string>
-	 */
-	public function twitter_thread_ids() : array
-	{
-		/** @var list<string>|null */
-		static $ids = null;
-
-		if (null === $ids) {
-			/**
-			 * @var list<array{
-			 *	tweet_ids: list<string>
-			 * }>
-			 */
-			$data = json_decode(
-				file_get_contents(__DIR__ . '/../data/tweets.json'),
-				true
-			);
-
-			$ids = array_map(
-				static function (array $row) : string {
-					return sprintf('tt-%s', implode(',', $row['tweet_ids']));
-				},
-				$data
-			);
-		}
-
-		return $ids;
 	}
 }
