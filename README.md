@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-12-03
+* tweaked `determine_date_for_video()`
+
 ## 2021-11-24
 * adding tool to automatically correct CSV timestamps
 

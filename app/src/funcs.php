@@ -3222,6 +3222,14 @@ function determine_date_for_video(
 		$matches[$video_id] = $externals_unpacked[$video_id];
 
 		return $externals_unpacked[$video_id];
+	} elseif (
+		preg_match(
+			'/^yt-(.{11})(?:,\d*,\d*)?$/',
+			$video_id,
+			$matches
+		)
+	) {
+		$video_id = $matches[1];
 	}
 
 	foreach (array_keys($playlist_date_ref) as $playlist_id) {
