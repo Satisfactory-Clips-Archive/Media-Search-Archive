@@ -44,6 +44,7 @@
 - [ ] yt-vUW3pockA5Y,300.2,353.16 - Oscar Talk: Getting feedback on Satisfactory
 
 ## 2018-07-19
+- [ ] yt-IxoCzb2M0vQ,64.609344,88.366511 - Introducing: Tractors, Explorers, Trucks, and Trains
 - [ ] yt-IxoCzb2M0vQ,88.366511,130.550701 - Tractor
 
 ## 2018-08-01
@@ -112,6 +113,9 @@
 - [ ] yt-1UqIDp_byFc,36.12,88.32 - Q&A: Did THQ Nordic buy Coffee Stain?
 - [ ] yt-1UqIDp_byFc,88.32,103.98 - Q&A: Are your games going to be full of Microtransactions now?
 - [ ] yt-1UqIDp_byFc,103.98,117.24 - Q&A: Is THQ Nordic Coffee Stain's publisher?
+- [ ] yt-1UqIDp_byFc,117.24,126.88 - Q&A: Will this affect Coffee Stain games?
+- [ ] yt-1UqIDp_byFc,126.88,160.62 - Q&A: Why did Coffee Stain sell? Were you going bankrupt?
+- [ ] yt-1UqIDp_byFc,160.62,174.32 - Q&A: You say things are fine now, but what about in 5 years?
 
 ## 2018-12-12
 - [ ] yt-7V4UPiBOshY,14.407161,29.68 - Jace Talk: Satisfactory will be an Epic Store exclusive
@@ -158,6 +162,7 @@
 - [ ] yt-Dtm6xIj-wM4,354.60912,371.76666666666665 - Q&A: How much will Satisfactory cost?
 - [ ] yt-Dtm6xIj-wM4,371.76666666666665,378.135744 - Q&A: Why is Jace the PR?
 - [ ] yt-Dtm6xIj-wM4,408.559369,418.865174 - Q&A: Jace & Hannah, do you go clothes shopping in the same place?
+- [ ] yt-Dtm6xIj-wM4,567.312526,585.24344 - Q&A: Job Opportunities?
 - [ ] yt-Dtm6xIj-wM4,586.378155,622.648759 - Q&A: Will there be PvE or PvP ?
 - [ ] yt-Dtm6xIj-wM4,622.6333333333333,663.567847 - Q&A: Is it Server Multiplayer, Dedicated Servers, or Peer to Peer?
 - [ ] yt-Dtm6xIj-wM4,912.113976,952.667535 - Q&A: Is there an end-game/goal?
@@ -173,6 +178,7 @@
 - [ ] yt-Dtm6xIj-wM4,1307.57972,1334.740485 - Q&A: Will the move to Epic Store be timed-exclusive or permanent?
 - [ ] yt-Dtm6xIj-wM4,1398.110387,1429.840647 - Q&A: Localisation support?
 - [ ] yt-Dtm6xIj-wM4,1429.8333333333333,1437.887831 - Q&A: Any DLCs planned?
+- [ ] yt-Dtm6xIj-wM4,1437.887831,1449.6 - Q&A: Can we have some gameplay?
 - [ ] yt-Dtm6xIj-wM4,1449.6,1458.2666666666667 - Q&A: Hazards in the Map?
 - [ ] yt-Dtm6xIj-wM4,1458.2666666666667,1476.412324 - Jace, Hannah, & Snutt Talk: Alpha is not a scam
 - [ ] yt-Dtm6xIj-wM4,1476.4,1489.634846 - Q&A: Is that an Alpha Key around your neck?
@@ -182,6 +188,7 @@
 - [ ] yt-Dtm6xIj-wM4,1573.58823,1589.649941 - Q&A: Any plans for PvP?
 - [ ] yt-Dtm6xIj-wM4,1589.6333333333334,1639.062223 - Q&A: Why not turrets like Sanctum?
 - [ ] yt-Dtm6xIj-wM4,1639.0666666666666,1652.193414 - Q&A: Is co-op style in line or are you focussed on solo?
+- [ ] yt-Dtm6xIj-wM4,1652.2,1663.964039 - Q&A: What plugins are you using ?
 - [ ] yt-Dtm6xIj-wM4,1663.964039,1669.29091 - Q&A: What happens when you die?
 - [ ] yt-Dtm6xIj-wM4,1669.29091,1687.97075 - Q&A: Does the game use any lock step- any concern for desync across a large map?
 - [ ] yt-Dtm6xIj-wM4,1687.9666666666667,1705.396807 - Q&A: What do you make your models/textures with?
@@ -192,6 +199,7 @@
 - [ ] yt-Dtm6xIj-wM4,1834.645233,1861.372808 - Q&A: Will there be CO₂ emissions and will it effect the ecosystem?
 - [ ] yt-Dtm6xIj-wM4,1861.372808,1872.81796 - Q&A: Will there be a Founder's pack with Alpha Access?
 - [ ] yt-Dtm6xIj-wM4,1872.81796,1925.453116 - Q&A: Developer diaries?
+- [ ] yt-Dtm6xIj-wM4,1925.453116,1939.640283 - Q&A: Are you in a cinema?
 - [ ] yt-Dtm6xIj-wM4,1939.6333333333334,1962.712002 - Q&A: With resource nodes are you going to have to run out of one node, and have to change nodes?
 - [ ] yt-Dtm6xIj-wM4,1962.712002,2009.493406 - Q&A: Sandbox mode available?
 - [ ] yt-Dtm6xIj-wM4,2009.5,2017.005329 - Q&A: Is Simon going to be the last Boss?
@@ -205,9 +213,11 @@
 - [ ] yt-Dtm6xIj-wM4,2685.5,2726.329682 - Q&A: You mentioned enemies earlier but now you say there'll be nothing to worry about?
 - [ ] yt-Dtm6xIj-wM4,2726.329682,2733.426542 - Q&A: Are there going to be NPCs that you get quests from?
 - [ ] yt-Dtm6xIj-wM4,2733.4333333333334,2765.667433 - Q&A: Who is the funniest at the stand-ups?
+- [ ] yt-Dtm6xIj-wM4,2765.6666666666665,2806.989791 - Q&A: How long does it take to build a medium-sized factory?
 - [ ] yt-Dtm6xIj-wM4,2806.989791,2816.5666666666666 - Q&A: Can I build as high as I want?
 - [ ] yt-Dtm6xIj-wM4,2816.569184,2836.733333333333 - Q&A: Any plans for stuff like Blueprints?
 - [ ] yt-Dtm6xIj-wM4,2836.733333333333,2840.698964 - Q&A: Will there be outer space & galaxies?
+- [ ] yt-Dtm6xIj-wM4,2949.0666666666666,2974.665846 - Jace Talk: Getting a lot of questions that have been asked before?
 - [ ] yt-Dtm6xIj-wM4,2974.6666666666665,3016.687892 - Q&A: Besides the starting areas,will there be random spawns in the release?
 - [ ] yt-Dtm6xIj-wM4,3016.687892,3049.733333333333 - Q&A: How long have Jace, Hannah, and Snutt been in game dev?
 - [ ] yt-Dtm6xIj-wM4,3049.733333333333,3077.641329 - Q&A: Can we crush our friends with orbital drops, like Sanctum-style?
@@ -222,6 +232,7 @@
 - [ ] yt-Dtm6xIj-wM4,3280.698724,3286.654122 - Q&A: Available on Steam in future?
 - [ ] yt-Dtm6xIj-wM4,3289.36842,3333.678121 - Q&A: What made Snutt cut his hair?
 - [ ] yt-Dtm6xIj-wM4,3433.002272,3481.1666666666665 - Q&A: You are one of the rare studios to be (openly) LGBTQ-friendly, why is that so important to you?
+- [ ] yt-Dtm6xIj-wM4,3481.1666666666665,3487.84442 - Community FYI: Thank you for the honest answer on Alpha Keys
 - [ ] yt-Dtm6xIj-wM4,3487.8333333333335,3508.867162 - Q&A: Any timeline on when the end game will be released?
 - [ ] yt-Dtm6xIj-wM4,3518.277144,3545.070455 - Q&A: Where is Simon?
 - [ ] yt-Dtm6xIj-wM4,3610.872363,3623.301698 - Q&A: Can you see your character in third-person?
@@ -231,6 +242,8 @@
 - [ ] yt-Dtm6xIj-wM4,3976.5,3984.431848 - Q&A: Will there be Jetpacks in Satisfactory?
 - [ ] yt-Dtm6xIj-wM4,3984.431848,4022.49158 - Q&A: Have the Alpha Testers done any art using Walls and Paint Guns?
 - [ ] yt-Dtm6xIj-wM4,4023.871916,4027.748785 - Q&A: Long-range transport?
+- [ ] yt-Dtm6xIj-wM4,4026.366666666667,4036.169452 - Jace, Hannah, & Snutt Talk: One more good question
+- [ ] yt-Dtm6xIj-wM4,4036.169452,4043.827266 - Q&A: Can I play a Civilisation session with you guys?
 - [ ] yt-Dtm6xIj-wM4,4048.165275,4050.819876 - Q&A: Pipes?
 
 ## 2019-02-20
