@@ -1144,19 +1144,19 @@
 - [ ] yt-Rumqu_lyapg,16911.8,16917.930858 - End Tag
 
 ## 2021-10-27
-- [ ] yt-Nn-1s87JJxc,34.2342,61.59486666666667 - Q&A: Did you just add a Dedicated Server model to the game?
-- [ ] yt-Nn-1s87JJxc,61.628233333333334,88.92216666666667 - Jace Talk: Dedicated Servers are super experimental
-- [ ] yt-Nn-1s87JJxc,88.95553333333334,140.67386666666667 - Jace Talk: We would appreciate your feedback on the Dedicated Servers
-- [ ] yt-Nn-1s87JJxc,140.70723333333333,196.0959 - Q&A: Where can I get the Dedicated Servers?
-- [ ] yt-Nn-1s87JJxc,196.12926666666667,206.1059 - Q&A: What operating systems do you support?
+- [x] yt-Nn-1s87JJxc,34.2342,61.59486666666667 - Q&A: Did you just add a Dedicated Server model to the game?
+- [x] yt-Nn-1s87JJxc,61.628233333333334,88.92216666666667 - Jace Talk: Dedicated Servers are super experimental
+- [x] yt-Nn-1s87JJxc,88.95553333333334,140.67386666666667 - Jace Talk: We would appreciate your feedback on the Dedicated Servers
+- [x] yt-Nn-1s87JJxc,140.70723333333333,196.0959 - Q&A: Where can I get the Dedicated Servers?
+- [x] yt-Nn-1s87JJxc,196.12926666666667,206.1059 - Q&A: What operating systems do you support?
 - [ ] yt-Nn-1s87JJxc,206.13926666666666,207.87433333333334 - Q&A: Are the Servers headless?
-- [ ] yt-Nn-1s87JJxc,382.4821,433.36626666666666 - Q&A: How many people can fit on one Server?
-- [ ] yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667 - Q&A: Are Coffee Stain hosting any official Dedicated Servers?
-- [ ] yt-Nn-1s87JJxc,447.21343333333334,490.72356666666667 - Q&A: Has Coffee Stain partnered with any external vendors?
-- [ ] yt-Nn-1s87JJxc,490.75693333333334,517.1833333333334 - Jace Talk: Setting up a Server
-- [ ] yt-Nn-1s87JJxc,517.2167000000001,557.020737 - Jace Talk: How to find Satisfactory Dedicated Server in Steam
-- [ ] yt-Nn-1s87JJxc,557.0565,613.9466666666667 - Jace Talk: Launching a Dedicated Server
-- [ ] yt-Nn-1s87JJxc,800.3328666666666,822.1546666666667 - Jace Talk: Administrator permissions
+- [x] yt-Nn-1s87JJxc,382.4821,433.36626666666666 - Q&A: How many people can fit on one Server?
+- [x] yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667 - Q&A: Are Coffee Stain hosting any official Dedicated Servers?
+- [x] yt-Nn-1s87JJxc,447.21343333333334,490.72356666666667 - Q&A: Has Coffee Stain partnered with any external vendors?
+- [x] yt-Nn-1s87JJxc,490.75693333333334,517.1833333333334 - Jace Talk: Setting up a Server
+- [x] yt-Nn-1s87JJxc,517.2167000000001,557.020737 - Jace Talk: How to find Satisfactory Dedicated Server in Steam
+- [x] yt-Nn-1s87JJxc,557.0565,613.9466666666667 - Jace Talk: Launching a Dedicated Server
+- [x] yt-Nn-1s87JJxc,800.3328666666666,822.1546666666667 - Jace Talk: Administrator permissions
 
 ## 2021-10-28
 - [x] yt-YSPnFZbTvxE,12.9129,50.7507 - Jace Talk: Lizard Doggo Plush
