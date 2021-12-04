@@ -50,11 +50,6 @@
 ## 2018-08-01
 - [ ] yt-iFAy1NZUOGU,14,29 - Q&A: Will there be a Creative Mode?
 - [ ] yt-iFAy1NZUOGU,29,58.6 - Q&A: Will there be a top-down view?
-- [ ] yt-iFAy1NZUOGU,58.6,60.36 - Q&A: Is there Weather in the game?
-- [ ] yt-iFAy1NZUOGU,60.36,62.6 - Q&A: Will there be Pollution in the game?
-- [ ] yt-iFAy1NZUOGU,62.6,66.08 - Q&A: Will there be landscape deformation or Terraforming?
-- [ ] yt-iFAy1NZUOGU,66.08,68.24 - Q&A: What about VR support?
-- [ ] yt-iFAy1NZUOGU,68.24,72.44 - Q&A: Any more news on the alpha? Can we pay to get in?
 - [ ] yt-iFAy1NZUOGU,72.44,99.44 - Q&A: How many Buildings will there be? What kind of complexity can we expect?
 - [ ] yt-iFAy1NZUOGU,99.44,119.72 - Q&A: How much will the game cost when it's released?
 - [ ] yt-iFAy1NZUOGU,119.72,131.28 - Q&A: Will there be Steam achievements?
@@ -63,7 +58,6 @@
 - [ ] yt-iFAy1NZUOGU,170.36,188.8 - Q&A: Won't the factory stop working if you're really far away?
 - [ ] yt-iFAy1NZUOGU,188.8,208.96 - Q&A: Arachnophobia mode?
 - [ ] yt-iFAy1NZUOGU,208.96,227.8 - Q&A: What if I'm also afraid of cats? What about changing the cats' head to Simon's head instead?
-- [ ] yt-iFAy1NZUOGU,227.8,231.6 - Q&A: Can we change the sprite ourselves?
 - [ ] yt-iFAy1NZUOGU,231.6,237.4 - Q&A: Will cat sprites affect the creature's hitboxes?
 - [ ] yt-iFAy1NZUOGU,237.4,252.8 - Q&A: Are there actual spiders in the game?
 - [ ] yt-iFAy1NZUOGU,252.8,275.24 - Q&A: Why spend time adding Arachnophobia Mode?
@@ -124,14 +118,12 @@
 - [ ] yt-7V4UPiBOshY,186.1,216.28 - Community FYI: But I hate Epic! All of my games are on Steam!
 - [ ] yt-7V4UPiBOshY,216.28,245.84 - Community FYI: I actually can't use the Epic Launcher
 - [ ] yt-7V4UPiBOshY,245.84,270.48 - Community FYI: But I don't want to have another launcher open in the background!
-- [ ] yt-7V4UPiBOshY,270.48,273.12 - Q&A: Is there an Early Access feature on the Epic Store?
 - [ ] yt-7V4UPiBOshY,273.12,292.18 - Q&A: Don't you think not revealing anything sooner was misleading?
 - [ ] yt-7V4UPiBOshY,292.18,317.8 - Q&A: Do you even use the Epic Launcher as gamers‽
 - [ ] yt-7V4UPiBOshY,317.8,337.32 - Q&A: But do your evil corporate decision makers play video games‽
 - [ ] yt-7V4UPiBOshY,337.32,347.92 - Community FYI: You're an evil corporation!!!!!!!!!
 - [ ] yt-7V4UPiBOshY,347.92,355.96 - Community FYI: But revenue share doesn't matter if you don't have any customers
 - [ ] yt-7V4UPiBOshY,355.96,412.48 - Q&A: Why did you leave it on Steam for so long then do a bait and switch?
-- [ ] yt-7V4UPiBOshY,412.48,414.76 - Q&A: Is the Alpha being done via Epic?
 - [ ] yt-7V4UPiBOshY,414.76,436 - Community FYI: But Epic Launcher doesn't have [insert feature]
 - [ ] yt-7V4UPiBOshY,436,452 - Community FYI: But look at what Epic did with their other games
 - [ ] yt-7V4UPiBOshY,452,460.08 - Q&A: Was the Alpha always on Epic?
@@ -158,7 +150,6 @@
 
 ## 2019-02-06
 - [ ] yt-Dtm6xIj-wM4,271.997687,278.693237 - Q&A: What is wrong with your face?
-- [ ] yt-Dtm6xIj-wM4,278.693237,280.42817 - Q&A: Pipes?
 - [ ] yt-Dtm6xIj-wM4,354.60912,371.76666666666665 - Q&A: How much will Satisfactory cost?
 - [ ] yt-Dtm6xIj-wM4,371.76666666666665,378.135744 - Q&A: Why is Jace the PR?
 - [ ] yt-Dtm6xIj-wM4,408.559369,418.865174 - Q&A: Jace & Hannah, do you go clothes shopping in the same place?
@@ -182,7 +173,6 @@
 - [ ] yt-Dtm6xIj-wM4,1449.6,1458.2666666666667 - Q&A: Hazards in the Map?
 - [ ] yt-Dtm6xIj-wM4,1458.2666666666667,1476.412324 - Jace, Hannah, & Snutt Talk: Alpha is not a scam
 - [ ] yt-Dtm6xIj-wM4,1476.4,1489.634846 - Q&A: Is that an Alpha Key around your neck?
-- [ ] yt-Dtm6xIj-wM4,1489.6333333333334,1494.42192 - Q&A: Can you make custom cars/trucks?
 - [ ] yt-Dtm6xIj-wM4,1494.4333333333334,1548.122373 - Q&A: If I buy on Epic now and another platform later, will the save files be compatible?
 - [ ] yt-Dtm6xIj-wM4,1550.571925,1573.58823 - Q&A: Are there going to be free updates after the game is released, or is it all going to be DLCs?
 - [ ] yt-Dtm6xIj-wM4,1573.58823,1589.649941 - Q&A: Any plans for PvP?
@@ -216,7 +206,6 @@
 - [ ] yt-Dtm6xIj-wM4,2765.6666666666665,2806.989791 - Q&A: How long does it take to build a medium-sized factory?
 - [ ] yt-Dtm6xIj-wM4,2806.989791,2816.5666666666666 - Q&A: Can I build as high as I want?
 - [ ] yt-Dtm6xIj-wM4,2816.569184,2836.733333333333 - Q&A: Any plans for stuff like Blueprints?
-- [ ] yt-Dtm6xIj-wM4,2836.733333333333,2840.698964 - Q&A: Will there be outer space & galaxies?
 - [ ] yt-Dtm6xIj-wM4,2949.0666666666666,2974.665846 - Jace Talk: Getting a lot of questions that have been asked before?
 - [ ] yt-Dtm6xIj-wM4,2974.6666666666665,3016.687892 - Q&A: Besides the starting areas,will there be random spawns in the release?
 - [ ] yt-Dtm6xIj-wM4,3016.687892,3049.733333333333 - Q&A: How long have Jace, Hannah, and Snutt been in game dev?
@@ -228,7 +217,6 @@
 - [ ] yt-Dtm6xIj-wM4,3171.605804,3200.183129 - Q&A: What happens to players eventually when they are run over by a friend in a vehicle?
 - [ ] yt-Dtm6xIj-wM4,3200.183129,3219.325619 - Q&A: How many items exist?
 - [ ] yt-Dtm6xIj-wM4,3219.325619,3265.022 - Jace, Hannah, & Snutt Talk: Snutt looks like Michael from VSauce
-- [ ] yt-Dtm6xIj-wM4,3264.910326,3268.219046 - Q&A: How many LOD levels do you use?
 - [ ] yt-Dtm6xIj-wM4,3280.698724,3286.654122 - Q&A: Available on Steam in future?
 - [ ] yt-Dtm6xIj-wM4,3289.36842,3333.678121 - Q&A: What made Snutt cut his hair?
 - [ ] yt-Dtm6xIj-wM4,3433.002272,3481.1666666666665 - Q&A: You are one of the rare studios to be (openly) LGBTQ-friendly, why is that so important to you?
@@ -241,20 +229,16 @@
 - [ ] yt-Dtm6xIj-wM4,3923.903388,3977.117038 - Q&A: Will there be any cosmetics available?
 - [ ] yt-Dtm6xIj-wM4,3976.5,3984.431848 - Q&A: Will there be Jetpacks in Satisfactory?
 - [ ] yt-Dtm6xIj-wM4,3984.431848,4022.49158 - Q&A: Have the Alpha Testers done any art using Walls and Paint Guns?
-- [ ] yt-Dtm6xIj-wM4,4023.871916,4027.748785 - Q&A: Long-range transport?
 - [ ] yt-Dtm6xIj-wM4,4026.366666666667,4036.169452 - Jace, Hannah, & Snutt Talk: One more good question
 - [ ] yt-Dtm6xIj-wM4,4036.169452,4043.827266 - Q&A: Can I play a Civilisation session with you guys?
-- [ ] yt-Dtm6xIj-wM4,4048.165275,4050.819876 - Q&A: Pipes?
 
 ## 2019-02-20
-- [ ] yt-CB9bSigNYH8,359.388323,361.317611 - Q&A: What is this?
 - [ ] yt-CB9bSigNYH8,361.317611,374.51402 - Q&A: Where is Hannah from?
 - [ ] yt-CB9bSigNYH8,374.51402,385.67962 - Q&A: Underwater gameplay?
 - [ ] yt-CB9bSigNYH8,385.6666666666667,393.696476 - Q&A: What's the glowing ball?
 - [ ] yt-CB9bSigNYH8,393.7,421 - Hannah Talk: Level Design Stream (Part 1)
 - [ ] yt-CB9bSigNYH8,421.013576,427.456855 - Q&A: Can I swim?
 - [ ] yt-CB9bSigNYH8,427.46666666666664,437.20508 - Q&A: How many Dutch people at Coffee Stain?
-- [ ] yt-CB9bSigNYH8,437.2,439.256018 - Q&A: Does Satisfactory have caves?
 - [ ] yt-CB9bSigNYH8,501.647011,524.513606 - Q&A: Do different Biomes contain different Resources?
 - [ ] yt-CB9bSigNYH8,524.513606,534.622601 - Q&A: Are there Easter Eggs in the game?
 - [ ] yt-CB9bSigNYH8,536.959135,560.135106 - Q&A: Will you be able to use the Map Editor?
@@ -381,7 +365,6 @@
 - [ ] yt-CB9bSigNYH8,5050.579615,5056.929969 - Q&A: Can you have your own pet in the game?
 - [ ] yt-CB9bSigNYH8,5073.28789,5081.553759 - Q&A: Can Hannah do a little gameplay?
 - [ ] yt-CB9bSigNYH8,5081.553759,5093.168545 - Q&A: When you studied in Breda, did you think you would work on this kind of big project?
-- [ ] yt-CB9bSigNYH8,5103.592539,5106.64023 - Q&A: What version control software does Coffee Stain use?
 - [ ] yt-CB9bSigNYH8,5109.490199,5126.785633 - Q&A: What are the red dome things?
 - [ ] yt-CB9bSigNYH8,5128.56594,5136.281677 - Q&A: Are you going to make Easter Eggs?
 - [ ] yt-CB9bSigNYH8,5141.221945,5152.209084 - Q&A: Can we deform terrain?
@@ -389,13 +372,10 @@
 - [ ] yt-CB9bSigNYH8,5168.751997,5186.038783 - Hannah Talk: Level Design Stream (Part 9)
 - [x] yt-CB9bSigNYH8,5186.033333333334,5200.942785 - Q&A: What about Snow in the game's future?
 - [ ] yt-CB9bSigNYH8,5200.933333333333,5234.485233 - Hannah Talk: Level Design Stream (Part 10)
-- [ ] yt-CB9bSigNYH8,5234.485233,5238.267007 - Q&A: Weather confirmed?
 - [ ] yt-CB9bSigNYH8,5238.267007,5244.490972 - Q&A: How big is the map?
 - [ ] yt-CB9bSigNYH8,5245.97296,5251.640578 - Q&A: Does Coffee Stain pay you in Coffee?
 - [ ] yt-CB9bSigNYH8,5251.633333333333,5287.2614 - Hannah Talk: Level Design Stream (Part 11)
-- [ ] yt-CB9bSigNYH8,5287.2614,5291.710206 - Q&A: Does Coffee Stain pay you in foot-long subs?
 - [ ] yt-CB9bSigNYH8,5291.710206,5304.230151 - Q&A: Will there be christmas/new year events or something like that when the game is finished?
-- [ ] yt-CB9bSigNYH8,5304.233333333334,5307.797919 - Q&A: Tea drinker?
 - [ ] yt-CB9bSigNYH8,5307.8,5336.08426 - Hannah Talk: Level Design Stream (Part 12)
 - [ ] yt-CB9bSigNYH8,5336.08426,5347.37039 - Q&A: How often will the Map be updated?
 - [ ] yt-CB9bSigNYH8,5347.366666666667,5390.335913 - Hannah Talk: Level Design Stream (Part 13)
@@ -417,8 +397,6 @@
 ## 2019-03-15
 - [ ] yt-R0S19_caQuw,46.2,55.16 - Q&A: When exactly will Early Access launch?
 - [ ] yt-R0S19_caQuw,55.16,67.94 - Community FYI: Satisfactory isn't appearing in my library even thought I pre-purchased it
-- [ ] yt-R0S19_caQuw,67.94,69.96 - Q&A: Can I pre-download the game?
-- [ ] yt-R0S19_caQuw,69.96,74.2 - Q&A: Are there perks for pre-purchase?
 - [ ] yt-R0S19_caQuw,74.2,86.32 - Q&A: Why would I pre-purchase?
 - [ ] yt-R0S19_caQuw,86.32,144.32 - Q&A: Will our Alpha Test save files still work?
 - [ ] yt-R0S19_caQuw,209.08,264.36 - Q&A: Will the game be localised into any other languages before Early Access?
@@ -427,10 +405,7 @@
 - [ ] yt-R0S19_caQuw,384.72,393.2 - Q&A: If I buy the game on Epic now, can I have it moved to my Steam account later?
 - [ ] yt-R0S19_caQuw,393.2,403.32 - Q&A: Is the 1 Year Epic Store exclusivity from EA launch, or one year from full launch?
 - [ ] yt-R0S19_caQuw,403.32,412.34 - Q&A: Please, please, please make a Linux based dedicated server that can run headless.
-- [ ] yt-R0S19_caQuw,412.34,415.66 - Q&A: You guys fixed the M.A.M. hard drive crash yet?
 - [ ] yt-R0S19_caQuw,415.66,426.78 - Q&A: Are there plans to have more than 7 tiers?
-- [ ] yt-R0S19_caQuw,426.78,428.86 - Q&A: Sanctum 3 when?
-- [ ] yt-R0S19_caQuw,428.86,433.1 - Q&A: Any plans to make jump pads adjustable?
 - [ ] yt-R0S19_caQuw,433.1,447.14 - Q&A: Any ETA on Dedicated Servers?
 
 ## 2019-04-17
@@ -454,7 +429,6 @@
 - [ ] yt-fI7gnbG4Omk,6.28,35 - Kristoffer Talk: History at Coffee Stain
 - [ ] yt-fI7gnbG4Omk,35,73.6 - Kristoffer Talk: Amount of animation in Satisfactory
 - [ ] yt-fI7gnbG4Omk,73.6,91.66 - Kristoffer Talk: Kristoffer's favourite animations
-- [ ] yt-fI7gnbG4Omk,164.9,168.34 - Crab Boss animation - Release Babies
 - [ ] yt-fI7gnbG4Omk,243.56,258.52 - Kristoffer Talk: Hardware
 - [ ] yt-fI7gnbG4Omk,258.52,304.52 - Kristoffer Talk: Easter Eggs & Community Feedback
 
@@ -519,53 +493,29 @@
 - [ ] yt-N1o3tK1h8cM,61.72,72.68 - Snutt Talk: Improving Community Engagement
 
 ## 2019-12-19
-- [ ] yt-52nYaN8imgo,21.58,24.46 - April Update Info + Milo tutorial (April 2019)
-- [ ] yt-52nYaN8imgo,24.46,25.22 - Q&A: Early Access info, localisation, save files + more (March 2019)
 - [ ] yt-52nYaN8imgo,25.22,34.16 - Coffee Stain are hiring a Community Manager! [BTS] (November 2018)
-- [ ] yt-52nYaN8imgo,34.16,37.1 - The REAL meaning of fear... [not clickbait] (July 2018)
 - [ ] yt-52nYaN8imgo,37.1,45.26 - Alpha Keys - Simon Saga Ep. 13 [BTS] (February 2019)
-- [ ] yt-52nYaN8imgo,45.26,48.86 - EPIC amount of Alpha Keys - Simon Saga Ep. 7 (December 2018)
 - [ ] yt-52nYaN8imgo,48.86,58.54 - End of April™ Update (May 2019)
 - [ ] yt-52nYaN8imgo,58.54,66.84 - Developer Highlight - Game Design (July 2018)
-- [ ] yt-52nYaN8imgo,66.84,68.82 - More Alpha Keys - Simon Saga Ep. 3 [BTS] (November 2018)
 - [ ] yt-52nYaN8imgo,68.82,75.48 - Alpha Keys! - Simon Saga Ep. 11 [BTS] (January 2019)
-- [ ] yt-52nYaN8imgo,75.48,80.4 - Developer Highlight - Level Design [BTS] (October 2019)
 - [ ] yt-52nYaN8imgo,80.4,88.42 - 500 Alpha Keys Sent Out! - Simon Saga Ep. 2 [BTS] (October 2018)
-- [ ] yt-52nYaN8imgo,88.42,92.16 - Alpha Keys - Simon Saga Ep. 12 (February 2019)
 - [ ] yt-52nYaN8imgo,92.16,105.12 - New Community Manager - REVEALED (December 2019)
-- [ ] yt-52nYaN8imgo,105.12,106.12 - New Community Manager - REVEALED [BTS] (December 2019)
-- [ ] yt-52nYaN8imgo,106.12,109.4 - Even MORE keys! - Simon Saga Ep. 4 (November 2018)
-- [ ] yt-52nYaN8imgo,109.4,110.44 - Alpha Keys - Simon Saga Ep. 13 [BTS] (February 2019)
 - [ ] yt-52nYaN8imgo,110.44,116.48 - Alpha Key Counts
 - [ ] yt-52nYaN8imgo,116.48,126.04 - Simon Saga Finale (March 2019)
-- [ ] yt-52nYaN8imgo,126.04,127.62 - Even MORE keys! - Simon Saga Ep. 4 [BTS] (November 2018)
-- [ ] yt-52nYaN8imgo,127.62,128.34 - Bonus Experimental Bugfix patch (December 2019)
 - [ ] yt-52nYaN8imgo,128.34,134.06 - Studio Tour of Coffee Stain Studios (June 2019)
 - [ ] yt-52nYaN8imgo,134.06,139.12 - Alpha Release Date, Selection Process + more (October 2018)
-- [ ] yt-52nYaN8imgo,139.12,142.38 - Cyberwagon Reveal - Satisfactory (November 2019)
 - [ ] yt-52nYaN8imgo,142.38,148.52 - Developer Highlights - What kind of hardware do you use?
-- [ ] yt-52nYaN8imgo,148.52,152.94 - Coffee Stain are hiring a Community Manager! [BTS] (November 2018)
 - [ ] yt-52nYaN8imgo,152.94,169.54 - Developer Highlights - Helping Jace with programming
-- [ ] yt-52nYaN8imgo,169.54,173.56 - Developer Highlight - Concept Art (August 2018)
 - [ ] yt-52nYaN8imgo,173.56,190.88 - Update #2: Trains & Nuclear (July 2019)
-- [ ] yt-52nYaN8imgo,190.88,194.28 - Developer Highlights - Who's your favourite person in the office?
 - [ ] yt-52nYaN8imgo,194.28,201.34 - Snutt's Little Baby
 - [ ] yt-52nYaN8imgo,201.34,216.1 - Q&A: Satisfactory exclusive to Epic Games Store (December 2018)
-- [ ] yt-52nYaN8imgo,216.1,220.56 - Dev Blog #2: Conveyor Belts/Basic Production Gameplay + Alpha Key info! (November 2018)
 - [ ] yt-52nYaN8imgo,220.56,232.76 - Developer Highlight - Music/ Developer Highlight - Sound Design [BTS] (September 2018)
-- [ ] yt-52nYaN8imgo,232.76,237.16 - On the first day of Jacemas...
-- [ ] yt-52nYaN8imgo,237.16,240.56 - Studio Tour of Coffee Stain Studios (June 2019)
-- [ ] yt-52nYaN8imgo,240.56,245.24 - Studio Tour of Coffee Stain Studios [BTS] (June 2019)
-- [ ] yt-52nYaN8imgo,245.24,250.1 - Jace thinking about pipes for 1 hour [livestream]
 - [ ] yt-52nYaN8imgo,250.1,284.4 - Simon Saga Finale [BTS] (May 2019)
-- [ ] yt-52nYaN8imgo,284.4,287.44 - Q&A: Satisfactory exclusive to Epic Games Store (December 2018)
 - [ ] yt-52nYaN8imgo,287.44,292.66 - Alpha keys - Simon Saga Ep. 8 [BTS] (December 2018)
 - [ ] yt-52nYaN8imgo,292.66,305 - Developer Highlight - Level Design [BTS] (October 2019)
 - [ ] yt-52nYaN8imgo,305,314.06 - Developer Highlight - Music/ Developer Highlight - Sound Design [BTS] (September 2018)
-- [ ] yt-52nYaN8imgo,314.06,318.02 - Developer Highlight - Level Design (October 2019)
 - [ ] yt-52nYaN8imgo,318.02,332.44 - Developer Highlight - Level Design [BTS] (October 2019)
 - [ ] yt-52nYaN8imgo,332.44,343.44 - Simon Saga Finale [BTS] (May 2019)
-- [ ] yt-52nYaN8imgo,343.44,345.8 - New Community Manager - REVEALED (Deccember 2019)
 - [ ] yt-52nYaN8imgo,345.8,359.58 - Update #2: Trains & Nuclear (July 2019)
 - [ ] yt-52nYaN8imgo,359.58,365.44 - Studio Tour of Coffee Stain Studios [BTS] (June 2019)
 
@@ -581,7 +531,6 @@
 ## 2020-03-12
 - [ ] yt-DsbHR1Nc8fw,32.57420833333333,55.97258333333333 - Jace & Snutt Talk: lolnope
 - [x] yt-DsbHR1Nc8fw,67.81774999999999,97.51408333333333 - Jace Talk: Finding the most amazing pipes
-- [ ] yt-DsbHR1Nc8fw,118.57679166666667,123.28983333333332 - Snutt & Jace Talk: Jace climbs into an airplane engine
 - [ ] yt-DsbHR1Nc8fw,123.28983333333332,155.44695833333333 - Jace Talk: We're sleeping in a plane, but we won't be adding planes
 - [x] yt-DsbHR1Nc8fw,160.70220833333332,176.63479166666664 - Jace Talk: Jumbo Stay
 - [ ] yt-DsbHR1Nc8fw,184.759462,221.864578 - Jace Talk: We're in an airport
@@ -629,7 +578,6 @@
 - [ ] yt-NlIVwoRqjVk,917.1162,957.1562 - Q&A: Will new buildings be added into the game?
 - [ ] yt-NlIVwoRqjVk,957.1562,987.6199666666666 - Q&A: Any 3rd person toggle planned?
 - [ ] yt-NlIVwoRqjVk,987.6199666666666,994.1932 - Q&A: Customisation of our characters?
-- [ ] yt-NlIVwoRqjVk,994.1932,995.8949 - Q&A: Didn't you quit?
 - [ ] yt-NlIVwoRqjVk,995.8949,1008.3073 - Q&A: Do you have any rough expectation of when the full release of the game will be?
 - [ ] yt-NlIVwoRqjVk,1008.3073,1019.9856333333333 - Q&A: Will we ever be able to leave this planet?
 - [ ] yt-NlIVwoRqjVk,1019.9856333333333,1034.8338 - Q&A: Any chance of a holster keybind so we can lower our hand slot when not in use?
@@ -688,15 +636,12 @@
 - [ ] yt-dSnqRq1hLZY,102.46666666666667,127.36666666666666 - Snutt Talk: Dedicated Servers
 - [ ] yt-dSnqRq1hLZY,136.4,145.46666666666667 - Q&A: Where's the mug?
 - [ ] yt-dSnqRq1hLZY,145.46666666666667,159.96666666666667 - Q&A: Why is shipping so expensive (outside of the US)?
-- [ ] yt-dSnqRq1hLZY,159.96666666666667,162.96666666666667 - Q&A: Did Coffee Stain become sellouts?
 
 ## 2020-10-01
 - [ ] yt-rATcozDE25c,52.48576666666667,86.3863 - Q&A: Will there be a feature to allow multiple bases for competitive multiplayer?
 - [ ] yt-rATcozDE25c,86.3863,134.26746666666668 - Q&A: Are there any plans beyond 1.0?
-- [ ] yt-rATcozDE25c,134.26746666666668,137.0369 - Q&A: How are you?
 - [ ] yt-rATcozDE25c,137.0369,163.83033333333333 - Q&A: Do you have a timeline on when you want to start implementing lore? Is it on the near horizon?
 - [ ] yt-rATcozDE25c,261.52793333333335,305.83886666666666 - Q&A: Are there any hidden parts of the map you think people haven't found?
-- [ ] yt-rATcozDE25c,305.83886666666666,309.87623333333335 - Q&A: How many likes on this YouTube video for Jace to get fired?
 - [ ] yt-rATcozDE25c,309.87623333333335,354.5542 - Q&A: Can we get survival features added in a mode for those of us who want more of a challenge?
 - [ ] yt-rATcozDE25c,354.5542,371.83813333333336 - Q&A: What was your inspiration of making Satisfactory?
 - [ ] yt-rATcozDE25c,371.83813333333336,390.9238666666667 - Q&A: Will there be a 1:1 Lizard Doggo plushie?
@@ -708,7 +653,6 @@
 - [ ] yt-rATcozDE25c,538.5713666666667,591.3240666666667 - Q&A: Are there any plans to put a blueprint system in the game?
 - [ ] yt-rATcozDE25c,591.3240666666667,600.6 - Q&A: What about the giant crab in the trailer, can we get that?
 - [ ] yt-rATcozDE25c,600.6,632.7321000000001 - Q&A: Will there be vehicle optimization for co-op?
-- [ ] yt-rATcozDE25c,695.2278666666667,696.7961 - Q&A: How's life?
 - [ ] yt-rATcozDE25c,696.7961,736.1020333333333 - Q&A: Will we ever be able to do something with Nuclear Waste?
 - [ ] yt-rATcozDE25c,736.1020333333333,763.0623 - Q&A: How about water craft or underwater exploration?
 - [ ] yt-rATcozDE25c,763.0623,781.3472333333333 - Q&A: Any new maps coming?
@@ -786,7 +730,6 @@
 ## 2020-12-17
 - [ ] yt--JXPsTlJIiI,148.11463333333333,192.3922 - Q&A: Will FICS⁕MAS and seasonal events in general be a regular thing?
 - [ ] yt--JXPsTlJIiI,192.3922,201.23436666666666 - Q&A: Will we get signs any time soon?
-- [ ] yt--JXPsTlJIiI,201.23436666666666,203.1029 - Q&A: How are you?
 - [ ] yt--JXPsTlJIiI,203.1029,229.86296666666667 - Q&A: Are there going to be more types of foundation shapes?
 - [ ] yt--JXPsTlJIiI,229.86296666666667,254.92133333333334 - Q&A: Will Trains be getting any updates? Signals? Collision?
 - [ ] yt--JXPsTlJIiI,325.4251,379.5124666666667 - Q&A: Will we keep our FICS⁕MAS stuff after the event ends?
@@ -814,7 +757,6 @@
 - [ ] yt--JXPsTlJIiI,979.7454333333334,1005.5712333333333 - Q&A: Any thoughts on adding drones to the game?
 - [ ] yt--JXPsTlJIiI,1005.5712333333333,1026.3920333333333 - Q&A: Do you miss Australia
 - [ ] yt--JXPsTlJIiI,1036.5688666666667,1076.5421333333334 - Q&A: Do you enjoying working from home or are you looking forward to getting back in the office?
-- [ ] yt--JXPsTlJIiI,1076.5421333333334,1078.9779 - Q&A: Will S.A.M. Ore ever be useful?
 - [ ] yt--JXPsTlJIiI,1078.9779,1094.8270666666667 - Q&A: How do you have your coffee and/or tea?
 - [ ] yt--JXPsTlJIiI,1094.8270666666667,1151.6505 - Q&A: Do you look at the mods and think there are features you'd like to include in the full game?
 - [ ] yt--JXPsTlJIiI,1151.6505,1208.0401666666667 - Q&A: Dedicated Server status report!
@@ -882,7 +824,6 @@
 - [ ] yt-Gdz6SUv9Om4,8510.129594,8558.020136 - Q&A: Do you already have plans for Update 5?
 - [ ] yt-Gdz6SUv9Om4,8629.687946,8638.987881 - Q&A: Will Update 4 be 1.0?
 - [ ] yt-Gdz6SUv9Om4,8639.527952,8653.206655 - Q&A: Will there be a Creative Mode?
-- [ ] yt-Gdz6SUv9Om4,8718.629605,8722.762527 - Q&A: What about Alien Artefact things?
 - [ ] yt-Gdz6SUv9Om4,8722.762527,8746.471534 - Q&A: Storyline?
 - [ ] yt-Gdz6SUv9Om4,8837.4,8896.691814 - Q&A: How long is the patch notes video?
 - [ ] yt-Gdz6SUv9Om4,9522.380484,9562.849744 - Mod highlight part 2 Q&A: What is the most installed mod?
@@ -1014,7 +955,6 @@
 - [ ] yt-QfaReoks6OM,382.7916666666667,403.0416666666667 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 5)
 - [ ] yt-QfaReoks6OM,403.0833333333333,437.7916666666667 - Snutt Talk: Huge Update to automated Vehicle pathing & surrounding systems
 - [ ] yt-QfaReoks6OM,437.8333333333333,460.125 - Jace Talk: Save & Load Vehicle Paths
-- [ ] yt-QfaReoks6OM,440.494852,444.0833333333333 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 6)
 - [ ] yt-QfaReoks6OM,460.1666666666667,474.8333333333333 - Jace Talk: Truck Stations have gotten an Update
 - [ ] yt-QfaReoks6OM,474.875,481.4117 - Jace Talk: We've updated the Truck Station UI
 - [ ] yt-QfaReoks6OM,481.4583333333333,502.9583333333333 - Snutt Talk: You can Paint Vehicles now
@@ -1037,7 +977,6 @@
 - [ ] yt-Rumqu_lyapg,1249.51403,1305 - Snutt & Jace Talk: Countdown to Update 5 (Part 2)
 - [ ] yt-Rumqu_lyapg,1305.0333333333333,1362.294154 - Q&A: Do you have to know Swedish to work in Sweden?
 - [ ] yt-Rumqu_lyapg,1362.3333333333333,1402.7333333333333 - Q&A: Bingo Card?
-- [ ] yt-Rumqu_lyapg,1402.7666666666667,1406.3333333333333 - Q&A: Is Sweden basically a bilingual country?
 - [ ] yt-Rumqu_lyapg,1406.3666666666666,1426.840284 - Q&A: Is Coffee Stain still 20% Dutch?
 - [ ] yt-Rumqu_lyapg,1654.6666666666667,1713.964802 - Snutt & Jace Talk: Satisfactory running on Steam Deck (Part 2)
 - [ ] yt-Rumqu_lyapg,1714,1720.69791 - Community FYI: We crashed the website
@@ -1046,7 +985,6 @@
 - [ ] yt-Rumqu_lyapg,2975.560513,3001.223334 - Snutt & Jace Talk: Factory Cart racing stream
 - [ ] yt-Rumqu_lyapg,3037.959361,3069.562254 - Q&A: How far has Tobias gotten in Satisfactory?
 - [ ] yt-Rumqu_lyapg,3322.766666666667,3347.757244 - Q&A: What was the first version of the game Tobias played?
-- [ ] yt-Rumqu_lyapg,5524.233333333334,5526.346767 - Q&A: Can you program the Cyber Wagon?
 - [ ] yt-Rumqu_lyapg,5526.366666666667,5537.34265 - Q&A: Is that a Cyber Truck?
 - [ ] yt-Rumqu_lyapg,5868.249272,5925.166666666667 - Q&A: Does queuing only work in one direction, or does it work bi-directionally?
 - [ ] yt-Rumqu_lyapg,6398.912497,6416.693821 - Simon, Dylan, and Snutt Talk: Simon Saga
@@ -1076,7 +1014,6 @@
 - [ ] yt-Rumqu_lyapg,8483.298649,8517.375811 - Snutt & Jace Talk: "Just flick the Balls" ~ Snutt, 2021
 - [ ] yt-Rumqu_lyapg,8987.7,9021.319615 - Snutt & Jace Talk: Lizard Doggo Plush
 - [ ] yt-Rumqu_lyapg,9021.366666666667,9049.045752 - Snutt & Jace Talk: Xeno-Basher replica (Part 1)
-- [ ] yt-Rumqu_lyapg,9048.466666666667,9052.844165 - Q&A: Where is the link?
 - [ ] yt-Rumqu_lyapg,9165.033333333333,9210.1 - Community FYI: That's a big Doggo
 - [ ] yt-Rumqu_lyapg,9210.119275,9236.247841 - Snutt & Jace Talk: Caesar, Office Doggo
 - [ ] yt-Rumqu_lyapg,9236.266666666666,9246.75271 - Community FYI: Jace and Caesar have the same hair
@@ -1102,7 +1039,6 @@
 - [ ] yt-Rumqu_lyapg,13635.133333333333,13692.466666666667 - Coffee Stainer Talk: Challenge Run (Part 6)
 - [ ] yt-Rumqu_lyapg,13692.5,13743.91043 - Q&A: What is Mark most excited about for Update 5?
 - [ ] yt-Rumqu_lyapg,13936.566666666668,13955.577188 - Coffee Stainer Talk: Challenge Run (Part 7)
-- [ ] yt-Rumqu_lyapg,13955.6,13959.111671 - Community FYI: Ramp Rails are stupid
 - [ ] yt-Rumqu_lyapg,13959.133333333333,13985.808039 - Coffee Stainer Talk: Challenge Run (Part 8)
 - [ ] yt-Rumqu_lyapg,13984.7,14003.201938 - Community FYI: Ramp Rails video was S+ Tier Marketing
 - [ ] yt-Rumqu_lyapg,14001.7,14049.604756 - Coffee Stainer Talk: Challenge Run (Part 9)
@@ -1117,15 +1053,11 @@
 - [ ] yt-Rumqu_lyapg,14382.104674,14409.711793 - Q&A: Are you nervous about the Update 5 Patch Notes Video reveal?
 - [ ] yt-Rumqu_lyapg,14409.733333333334,14443.259708 - Snutt & Jace Talk: Preparing to share the Update 5 Patch Notes Video (Part 2)
 - [ ] yt-Rumqu_lyapg,14624.7,14668.876814 - Q&A: Are you going to do FICS⁕MAS this year?
-- [ ] yt-Rumqu_lyapg,14668.9,14673.183107 - Snutt & Jace Talk: Preparing to share the Update 5 Patch Notes Video (Part 3)
 - [ ] yt-Rumqu_lyapg,14678.166666666666,14696.051269 - Snutt & Jace Talk: Preparing to share the Update 5 Patch Notes Video (Part 4)
 - [ ] yt-Rumqu_lyapg,14777.884582,14801.886618 - Snutt & Jace Talk: Preparing to share the Update 5 Patch Notes Video (Part 5)
 - [ ] yt-Rumqu_lyapg,14801.933333333332,14854.441646 - Snutt & Jace Talk: Shoutout to the 'Stainers who joined
 - [ ] yt-Rumqu_lyapg,14937.333333333334,14966.7 - Snutt & Jace Talk: Preparing to share the Update 5 Patch Notes Video (Part 6)
 - [ ] yt-Rumqu_lyapg,15031.533333333333,15067.266666666666 - Terrible Joke: Muted Patch Notes
-- [ ] yt-Rumqu_lyapg,15101.966666666667,15103.266666666666 - Jace Talk: HAHAHAHAHA No.
-- [ ] yt-Rumqu_lyapg,15450.605555,15452.071252 - Jace Talk: FUCK GOLF!
-- [ ] yt-Rumqu_lyapg,16129.179678,16131.791889 - Jace Talk: Golf sucks
 - [ ] yt-Rumqu_lyapg,16184.101494,16201.2 - Snutt & Jace Talk: There's no Golf, but there are Dedicated Servers
 - [ ] yt-Rumqu_lyapg,16392.833333333332,16425.933333333334 - Snutt & Jace Talk: The Update should be live on Experimental branch now
 - [ ] yt-Rumqu_lyapg,16543.633333333335,16555.245545 - Q&A: Will you be hosting any Dedicated Servers?
@@ -1149,7 +1081,6 @@
 - [x] yt-Nn-1s87JJxc,88.95553333333334,140.67386666666667 - Jace Talk: We would appreciate your feedback on the Dedicated Servers
 - [x] yt-Nn-1s87JJxc,140.70723333333333,196.0959 - Q&A: Where can I get the Dedicated Servers?
 - [x] yt-Nn-1s87JJxc,196.12926666666667,206.1059 - Q&A: What operating systems do you support?
-- [ ] yt-Nn-1s87JJxc,206.13926666666666,207.87433333333334 - Q&A: Are the Servers headless?
 - [x] yt-Nn-1s87JJxc,382.4821,433.36626666666666 - Q&A: How many people can fit on one Server?
 - [x] yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667 - Q&A: Are Coffee Stain hosting any official Dedicated Servers?
 - [x] yt-Nn-1s87JJxc,447.21343333333334,490.72356666666667 - Q&A: Has Coffee Stain partnered with any external vendors?

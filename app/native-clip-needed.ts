@@ -95,6 +95,7 @@ const done_keys = Object.keys(done);
 
 		return (
 			length <= 60
+			&& length >= 5
 			&& ! done_keys.includes(maybe[1])
 		);
 	}).reduce(
