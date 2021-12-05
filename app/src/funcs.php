@@ -1614,7 +1614,10 @@ function captions_data() : PharData
 
 function remove_captions_cache_file(string $filename) : void
 {
-	unlink(__DIR__ . '/../captions/' . $filename);
+	$filepath = __DIR__ . '/../captions/' . $filename;
+	if (is_file($filepath)) {
+		unlink($filepath);
+	}
 
 	$captions_data = captions_data();
 
@@ -3812,7 +3815,7 @@ function yt_cards_uncached(string $video_id) : array
 							$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
 						)
 						&& preg_match(
-							'/^https:\/\/(?:www\.)?youtube\.com\/(?:clip\/|redirect\?event=infocard&.+q=https)/',
+							'/^https:\/\/(?:www\.)?youtube\.com\/(?:clip\/|redirect\?event=infocard&.+q=https|watch\?v=[^&]{11}(?:&t=\d+s)?)/',
 							$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
 						)
 					)

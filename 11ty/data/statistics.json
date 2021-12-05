@@ -1,7 +1,7 @@
 [
     {
         "title": "Total Clips",
-        "count": 5598
+        "count": 5615
     },
     {
         "title": "Total Topics",
@@ -13,17 +13,17 @@
     },
     {
         "title": "Clips probably having standard description",
-        "progress": "0.466773",
-        "percentage": "46.67"
+        "progress": "0.468566",
+        "percentage": "46.85"
     },
     {
         "title": "Clips with any transcription",
-        "progress": "0.835298",
-        "percentage": "83.52"
+        "progress": "0.834728",
+        "percentage": "83.47"
     },
     {
         "title": "Clips with structured transcription",
-        "progress": "0.003394",
+        "progress": "0.003383",
         "percentage": "0.33"
     },
     {
