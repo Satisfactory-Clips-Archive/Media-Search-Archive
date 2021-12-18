@@ -44,7 +44,7 @@ $skipping = SkippingTranscriptions::i();
  *	transcription: string,
  *	urls: list<string>,
  *	topics: list<string>,
- *	quotes: list<string>
+ *	alts: list<string>
  * }>
  */
 $out = [];
@@ -111,7 +111,6 @@ foreach ($video_ids as $video_id) {
 	[, $title] = $video_data;
 
 	$urls = [video_url_from_id($video_id)];
-	$quotes = [];
 	$transcription = '';
 	$date = '0000-00-00';
 
@@ -179,7 +178,6 @@ foreach ($video_ids as $video_id) {
 		'transcription' => $transcription,
 		'urls' => $urls,
 		'topics' => $topics_for_video,
-		'quotes' => $quotes,
 		'alts' => array_map(
 			__NAMESPACE__ . '\\vendor_prefixed_video_id',
 			($cache['legacyAlts'][$video_id] ?? [])
