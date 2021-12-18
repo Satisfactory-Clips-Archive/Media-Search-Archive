@@ -76,7 +76,6 @@ gulp.task('lunr-index', () => {
 				this.field('urls');
 				this.field('topics');
 				*/
-				this.field('quotes');
 				this.use(aliasSatisfactoryVocabulary);
 				/*
 				this.metadataWhitelist = [

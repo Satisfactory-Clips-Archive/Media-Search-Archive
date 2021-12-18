@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-12-18
+* remove long-deprecated quotes field from search
+
 ## 2021-12-03
 * tweaked `determine_date_for_video()`
 
