@@ -112,9 +112,13 @@ declare type doc = {
 		return ! not_matching_youtube.includes(maybe);
 	});
 
+	if (not_matching.length > 0) {
 	console.table(Object.fromEntries(not_matching.map((key) => {
 		return [key, titles[key]];
 	})));
+
+		throw new Error('Titles not matching expected pattern found!');
+	}
 
 	console.table({
 		'Q&A:': qanda.length,

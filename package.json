@@ -2,7 +2,7 @@
   "scripts": {
     "test": "ajv validate -s ./json-schema/csv-metadata.json -d \"./app/data/*/yt-*.json\"",
     "error_docs": "eleventy --config=./.eleventy.error_docs.js && gulp html-error_docs",
-    "update": "php app/app.php && php app/update-q-and-a.php && php app/part-continued.php && php app/lunr-docs-preload.php && php app/statistics.php && gulp charts",
+    "update": "php app/app.php && ts-node ./app/title-pattern-check.ts && php app/update-q-and-a.php && php app/part-continued.php && php app/lunr-docs-preload.php && php app/statistics.php && gulp charts",
     "images-svg": "eleventy --config=./.eleventy.images.js && gulp images-svg",
     "native-clip-needed": "ts-node ./app/native-clip-needed.ts",
     "generate-blamehannah.com-data": "ts-node ./app/blamehannah.com.ts",
