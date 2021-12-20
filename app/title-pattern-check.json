@@ -1,0 +1,30 @@
+{
+	"qanda": [
+		"^((?:Mod highlight part 2 )?Q&A): ",
+		"\\?$"
+	],
+	"talk": [
+		"^(?:[^:]+ (?:Talk|Math)|(?:(?:Snutt) )?PSA|Special Guest|State of Stream): "
+	],
+	"community_fyi": [
+		"^Community FYI: "
+	],
+	"state_of_dev": [
+		"^State of Dev: "
+	],
+	"community_highlights": [
+		"^(?:(?:(?:Localization) )?Community|Mod)(?: (?:Highlights?|highlight))?(?: part \\d+)?: "
+	],
+	"trolling": [
+		"^Trolling: "
+	],
+	"jace_art": [
+		"^Jace Art: "
+	],
+	"random": [
+		"^Random: "
+	],
+	"terrible_jokes": [
+		"^Terrible Jokes?: "
+	]
+}

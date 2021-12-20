@@ -21,6 +21,7 @@ use function is_array;
 use function is_int;
 use function is_string;
 use function json_decode;
+use const JSON_THROW_ON_ERROR;
 use function natcasesort;
 use function preg_match;
 use RuntimeException;
@@ -66,16 +67,98 @@ use function usort;
  */
 class Questions
 {
-	public const REGEX_IS_QUESTION = '/^(.+\ )?q&a:/i';
-
 	/**
 	 * @readonly
 	 */
 	public Injected $injected;
 
+	/**
+	 * @readonly
+	 *
+	 * @var array{
+	 *	qanda: list<string>,
+	 *	talk: list<string>,
+	 *	community_fyi: list<string>,
+	 *	state_of_dev: list<string>,
+	 *	community_highlights: list<string>,
+	 *	trolling: list<string>,
+	 *	jace_art: list<string>,
+	 *	random: list<string>,
+	 *	terrible_jokes: list<string>
+	 * }
+	 */
+	public array $title_pattern_check;
+
 	public function __construct(Injected $injected)
 	{
 		$this->injected = $injected;
+
+		/**
+		 * @var array{
+		 *	qanda: list<string>,
+		 *	talk: list<string>,
+		 *	community_fyi: list<string>,
+		 *	state_of_dev: list<string>,
+		 *	community_highlights: list<string>,
+		 *	trolling: list<string>,
+		 *	jace_art: list<string>,
+		 *	random: list<string>,
+		 *	terrible_jokes: list<string>
+		 * }
+		 */
+		$title_pattern_check = json_decode(
+			file_get_contents(__DIR__ . '/../title-pattern-check.json'),
+			true,
+			3,
+			JSON_THROW_ON_ERROR
+		);
+
+		$title_pattern_check = array_map(
+			/**
+			 * @param list<string> $strings
+			 *
+			 * @return list<string>
+			 */
+			static function (array $strings) : array {
+				return array_map(
+					static function (string $str) : string {
+						return sprintf('/%s/', $str);
+					},
+					$strings
+				);
+			},
+			$title_pattern_check
+		);
+
+		$this->title_pattern_check = $title_pattern_check;
+	}
+
+	public function string_is_probably_question(string $maybe) : bool
+	{
+		$result = false;
+
+		foreach ($this->title_pattern_check['qanda'] as $regex) {
+			if (preg_match($regex, $maybe)) {
+				$result = true;
+				break;
+			}
+		}
+
+		if ($result) {
+			foreach ($this->title_pattern_check as $str => $regexes) {
+				if ('qanda' === $str) {
+					continue;
+				}
+
+				foreach ($regexes as $regex) {
+					if (preg_match($regex, $maybe)) {
+						return false;
+					}
+				}
+			}
+		}
+
+		return $result;
 	}
 
 	/**
@@ -266,8 +349,8 @@ class Questions
 			},
 			array_filter(
 				$cache['playlistItems'],
-				static function (array $maybe) : bool {
-					return (bool) preg_match(self::REGEX_IS_QUESTION, $maybe[1]);
+				function (array $maybe) : bool {
+					return $this->string_is_probably_question($maybe[1]);
 				}
 			)
 		);

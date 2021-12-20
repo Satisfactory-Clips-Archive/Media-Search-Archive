@@ -2264,7 +2264,7 @@ foreach (filter_video_ids_for_legacy_alts($cache, ...$all_video_ids) as $video_i
 
 	$is_question = false;
 
-	if (preg_match(Questions::REGEX_IS_QUESTION, $cache['playlistItems'][$video_id][1])) {
+	if ($questions->string_is_probably_question($cache['playlistItems'][$video_id][1])) {
 		$is_question = true;
 
 		++$total_statistics[$date][1];

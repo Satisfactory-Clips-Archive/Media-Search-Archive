@@ -10,6 +10,18 @@ declare type doc = {
 	alts: string[],
 };
 
+declare type regexes_type = {
+	qanda: string[],
+	talk: string[],
+	community_fyi: string[],
+	state_of_dev: string[],
+	community_highlights: string[],
+	trolling: string[],
+	jace_art: string[],
+	random: string[],
+	terrible_jokes: string[],
+};
+
 (async () => {
 	const {
 		promisify,
@@ -45,50 +57,74 @@ declare type doc = {
 		[key:string]: doc
 	};
 
+	const regexes = Object.fromEntries(
+		Object.entries(
+			require(`${__dirname}/title-pattern-check.json`) as regexes_type
+		).map((e) => {
+			return [
+				e[0],
+				e[1].map((str) => {
+					return new RegExp(str);
+				}),
+			];
+		})
+	);
+
+	function filter(list_of_keys:string[], str:keyof regexes_type) : string[] {
+		return list_of_keys.filter((maybe:string) : boolean => {
+			let result = false;
+
+			for (let regex of regexes[str]) {
+				if (regex.test(titles[maybe])) {
+					result = true;
+					break;
+				}
+			}
+
+			if ('qanda' === str && result) {
+				for (
+					let other_str of Object.keys(regexes).filter((maybe_str) => {
+						return 'qanda' !== maybe_str;
+					})
+				) {
+					if (
+						1 === filter(
+							[maybe],
+							other_str as keyof regexes_type
+						).length
+					) {
+						return false;
+					}
+				}
+			}
+
+			return result;
+		});
+	}
+
 	const keys = Object.keys(docs);
 
 	const titles = Object.fromEntries(Object.entries(docs).map((e) => {
 		return [e[0], e[1].title];
 	}));
 
-	const qanda = keys.filter((key) => {
-		return (
-			/^((?:Mod highlight part 2 )?Q&A): /.test(titles[key])
-			|| /\?$/.test(titles[key])
-		);
-	});
+	const qanda = filter(keys, 'qanda');
 
-	const talk = keys.filter((key) => {
-		return /^(?:[^:]+ (?:Talk|Math)|(?:(?:Snutt) )?PSA|Special Guest|State of Stream): /.test(titles[key]);
-	});
+	const talk = filter(keys, 'talk');
 
-	const community_fyi = keys.filter((key) => {
-		return /^Community FYI: /.test(titles[key]);
-	});
+	const community_fyi = filter(keys, 'community_fyi');
 
-	const state_of_dev = keys.filter((key) => {
-		return /^State of Dev: /.test(titles[key]);
-	});
+	const state_of_dev = filter(keys, 'state_of_dev');
 
-	const community_highlights = keys.filter((key) => {
-		return /^(?:(?:(?:Localization) )?Community|Mod)(?: (?:Highlights?|highlight))?(?: part \d+)?: /.test(titles[key]);
-	});
+	const community_highlights = filter(keys, 'community_highlights');
 
-	const trolling = keys.filter((key) => {
-		return /^Trolling: /.test(titles[key]);
-	});
+	const trolling = filter(keys, 'trolling');
 
-	const jace_art = keys.filter((key) => {
-		return /^Jace Art: /.test(titles[key]);
-	});
+	const jace_art = filter(keys, 'jace_art');
 
-	const random = keys.filter((key) => {
-		return /^Random: /.test(titles[key]);
-	});
+	const random = filter(keys, 'random');
 
-	const terrible_jokes = keys.filter((key) => {
-		return /^Terrible Jokes?: /.test(titles[key]);
-	});
+	const terrible_jokes = filter(keys, 'terrible_jokes');
 
 	let not_matching = keys.filter((maybe) => {
 		return (
