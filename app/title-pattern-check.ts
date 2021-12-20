@@ -113,9 +113,9 @@ declare type doc = {
 	});
 
 	if (not_matching.length > 0) {
-	console.table(Object.fromEntries(not_matching.map((key) => {
-		return [key, titles[key]];
-	})));
+		console.table(Object.fromEntries(not_matching.map((key) => {
+			return [key, titles[key]];
+		})));
 
 		throw new Error('Titles not matching expected pattern found!');
 	}
