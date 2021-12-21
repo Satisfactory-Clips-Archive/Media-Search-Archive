@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-12-20
+* worked on a replacement classifier for what is & isn't a question
+
 ## 2021-12-18
 * remove long-deprecated quotes field from search
 
