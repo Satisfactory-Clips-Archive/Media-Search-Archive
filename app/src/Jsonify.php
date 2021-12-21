@@ -34,10 +34,8 @@ class Jsonify
 
 	/**
 	 * @var array<string, string>
-	 *
-	 * @readonly
 	 */
-	private array $topics;
+	private readonly array $topics;
 
 	public function __construct(
 		Injected $injected,

@@ -61,10 +61,7 @@ use function unlink;
 
 class YouTubeApiWrapper
 {
-	/**
-	 * @readonly
-	 */
-	private Google_Service_YouTube $service;
+	private readonly Google_Service_YouTube $service;
 
 	/** @var array<string, string>|null */
 	private $playlists = null;

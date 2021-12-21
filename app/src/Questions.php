@@ -67,14 +67,9 @@ use function usort;
  */
 class Questions
 {
-	/**
-	 * @readonly
-	 */
-	public Injected $injected;
+	public readonly Injected $injected;
 
 	/**
-	 * @readonly
-	 *
 	 * @var array{
 	 *	qanda: list<string>,
 	 *	talk: list<string>,
@@ -87,7 +82,7 @@ class Questions
 	 *	terrible_jokes: list<string>
 	 * }
 	 */
-	public array $title_pattern_check;
+	public readonly array $title_pattern_check;
 
 	public function __construct(Injected $injected)
 	{

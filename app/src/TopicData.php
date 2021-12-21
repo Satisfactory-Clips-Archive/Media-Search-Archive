@@ -1409,24 +1409,18 @@ class TopicData
 
 	/**
 	 * @var array<string, list<int|string>>
-	 *
-	 * @readonly
 	 */
-	public array $injected = [];
+	public readonly array $injected;
 
 	/**
 	 * @var array<string, string>
-	 *
-	 * @readonly
 	 */
-	public array $not_a_livestream = [];
+	public readonly array $not_a_livestream;
 
 	/**
 	 * @var array<string, string>
-	 *
-	 * @readonly
 	 */
-	public array $not_a_livestream_date_lookup = [];
+	public readonly array $not_a_livestream_date_lookup;
 
 	protected function __construct()
 	{

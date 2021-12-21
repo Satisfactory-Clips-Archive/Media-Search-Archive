@@ -27,29 +27,15 @@ use function usort;
 
 class Injected
 {
-	/**
-	 * @readonly
-	 */
-	public YouTubeApiWrapper $api;
+	public readonly YouTubeApiWrapper $api;
+
+	public readonly Slugify $slugify;
+
+	public readonly Sorting $sorting;
+
+	public readonly SkippingTranscriptions $skipping;
 
 	/**
-	 * @readonly
-	 */
-	public Slugify $slugify;
-
-	/**
-	 * @readonly
-	 */
-	public Sorting $sorting;
-
-	/**
-	 * @readonly
-	 */
-	public SkippingTranscriptions $skipping;
-
-	/**
-	 * @readonly
-	 *
 	 * @var array{
 	 *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
 	 *	playlistItems:array<string, array{0:string, 1:string}>,
@@ -58,28 +44,22 @@ class Injected
 	 *	legacyAlts:array<string, list<string>>
 	 * }
 	 */
-	public array $cache;
+	public readonly array $cache;
 
 	/**
-	 * @readonly
-	 *
 	 * @var array<string, list<int|string>>
 	 */
-	public array $topics_hierarchy;
+	public readonly array $topics_hierarchy;
 
 	/**
-	 * @readonly
-	 *
 	 * @var array<string, string>
 	 */
-	public array $not_a_livestream;
+	public readonly array $not_a_livestream;
 
 	/**
-	 * @readonly
-	 *
 	 * @var array<string, string>
 	 */
-	public array $not_a_livestream_date_lookup;
+	public readonly array $not_a_livestream_date_lookup;
 
 	/**
 	 * @var array<string, string>
