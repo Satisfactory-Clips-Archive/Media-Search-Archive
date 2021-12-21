@@ -25,17 +25,17 @@
 		"sort-packages": true
 	},
 	"require": {
-		"php": "^8.0"
+		"php": "^8.1"
 	},
 	"require-dev": {
 		"cocur/slugify": "^4.0",
-		"google/apiclient": "^2.11",
+		"google/apiclient": "^2.12",
 		"masterminds/html5": "^2.7",
 		"phpunit/phpunit": "^9.5",
 		"psalm/plugin-phpunit": "^0.16.1",
 		"querypath/querypath": "^3.0",
 		"roave/security-advisories": "dev-latest",
 		"signpostmarv/php-cs-fixer-config": "^0.22.0",
-		"vimeo/psalm": "^4.13"
+		"vimeo/psalm": "^4.15"
 	}
 }

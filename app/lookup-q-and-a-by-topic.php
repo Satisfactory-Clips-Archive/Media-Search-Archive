@@ -160,7 +160,7 @@ $legacy_alts = array_reduce(
 	 * @return list<string>
 	 */
 	static function (array $out, array $alts) : array {
-		return array_values(array_merge($out, array_diff($alts, $out)));
+		return array_merge($out, array_diff($alts, $out));
 	},
 	[]
 );

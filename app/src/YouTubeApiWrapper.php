@@ -279,7 +279,7 @@ class YouTubeApiWrapper
 		static $out = null;
 
 		if (null === $out) {
-			$reduced = array_values(array_reduce(
+			$reduced = array_reduce(
 				$this->fetch_playlist_items(),
 				/**
 				 * @param list<string> $out
@@ -294,7 +294,7 @@ class YouTubeApiWrapper
 					);
 				},
 				[]
-			));
+			);
 
 			$filtered = array_filter(
 				$reduced,
@@ -821,12 +821,12 @@ class YouTubeApiWrapper
 			$status = $playlist_item->status;
 
 			if ('private' === $status->privacyStatus) {
-				$this->skipped_videos[] = (string) $video_snippet_resourceId->videoId;
+				$this->skipped_videos[] = $video_snippet_resourceId->videoId;
 
 				continue;
 			}
 
-			$out[] = (string) $video_snippet_resourceId->videoId;
+			$out[] = $video_snippet_resourceId->videoId;
 		}
 
 		if (isset($response->nextPageToken)) {

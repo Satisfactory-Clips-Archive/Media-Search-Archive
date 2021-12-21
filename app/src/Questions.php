@@ -642,10 +642,6 @@ class Questions
 				] as $required
 			) {
 				natcasesort($existing[$lookup][$required]);
-
-				$existing[$lookup][$required] = array_values(
-					$existing[$lookup][$required]
-				);
 			}
 
 			$replacements_tmp = array_filter(
