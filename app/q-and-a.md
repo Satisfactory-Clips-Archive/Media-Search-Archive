@@ -1,7 +1,7 @@
 # Progress
-* 5140 questions found out of 7648 clips
-* 4942 non-trolling & on-topic questions found out of 5140 total questions
-* 202 questions found with no other references
+* 5149 questions found out of 7648 clips
+* 4949 non-trolling & on-topic questions found out of 5149 total questions
+* 201 questions found with no other references
 ## grouped by date
 * 2021-12-14: 3 of 44 questions found with no other references
 * 2021-12-07: 6 of 54 questions found with no other references
@@ -52,7 +52,7 @@
 * 2021-04-13: 0 of 13 questions found with no other references
 * 2021-04-06: 0 of 35 questions found with no other references
 * 2021-03-30: 2 of 87 questions found with no other references
-* 2021-03-23: 5 of 107 questions found with no other references
+* 2021-03-23: 5 of 108 questions found with no other references
 * 2021-03-17: 4 of 22 questions found with no other references
 * 2021-03-16: 0 of 33 questions found with no other references
 * 2021-03-09: 0 of 29 questions found with no other references
@@ -106,14 +106,15 @@
 * 2020-02-20: 0 of 4 questions found with no other references
 * 2020-02-11: 0 of 34 questions found with no other references
 * 2020-01-22: 0 of 28 questions found with no other references
-* 2019-12-19: 1 of 54 questions found with no other references
+* 2020-01-20: 0 of 1 questions found with no other references
+* 2019-12-19: 0 of 55 questions found with no other references
 * 2019-12-13: 0 of 1 questions found with no other references
 * 2019-11-05: 0 of 6 questions found with no other references
 * 2019-09-25: 0 of 4 questions found with no other references
 * 2019-03-15: 0 of 17 questions found with no other references
 * 2019-03-09: 8 of 110 questions found with no other references
 * 2019-03-07: 0 of 8 questions found with no other references
-* 2019-02-20: 1 of 128 questions found with no other references
+* 2019-02-20: 1 of 131 questions found with no other references
 * 2019-02-06: 4 of 100 questions found with no other references
 * 2018-12-12: 0 of 16 questions found with no other references
 * 2018-11-23: 0 of 5 questions found with no other references
@@ -121,3 +122,4 @@
 * 2018-08-01: 0 of 18 questions found with no other references
 * 2018-06-22: 0 of 14 questions found with no other references
 * 2018-03-09: 0 of 5 questions found with no other references
+* 2017-11-17: 0 of 1 questions found with no other references

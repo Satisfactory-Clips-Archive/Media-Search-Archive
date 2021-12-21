@@ -2727,7 +2727,8 @@
             "3lddewDsNzw",
             "8T_tAhaxVvw",
             "BQMF8vlv_s0",
-            "RnS8tAhQGWI"
+            "RnS8tAhQGWI",
+            "yt-pTKDTJSsAm4,300.9006,359.09206666666665"
         ]
     },
     "yt-iVDRQg_aWpU,6717.066078234568,6772.139635": {
@@ -3404,6 +3405,7 @@
             "hCcT5uhzwso",
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
+            "yt-6HZzPbgw3pg,72.16,127.08",
             "yt-CB9bSigNYH8,361.317611,374.51402",
             "yt-CB9bSigNYH8,1688.029579,1694.520021",
             "yt-CB9bSigNYH8,2630.888348,2723.033543",
@@ -26039,6 +26041,7 @@
             "coffee-stainers\/torsten"
         ],
         "seealso": [
+            "yt-52nYaN8imgo,142.38,148.52",
             "yt-CB9bSigNYH8,766.088354,772.860817",
             "yt-CG-63B4g11U,130.208023,158.391799"
         ]
@@ -35574,6 +35577,17 @@
         ],
         "duplicatedby": "o_kTaVSOdg4"
     },
+    "i1cimOkbLHs": {
+        "title": "Do you plan to integrate an automatic path travel for Trucks?",
+        "date": "2021-03-23",
+        "topics": [
+            "features\/transportation\/vehicles\/autopilot",
+            "features\/transportation\/vehicles\/truck"
+        ],
+        "seealso": [
+            "V7BwnNzG8I0"
+        ]
+    },
     "F3BYeHIbZzU": {
         "title": "Q&A: Signs when?",
         "date": "2021-03-23",
@@ -38844,6 +38858,7 @@
             "KwsiVfRUKNE",
             "RtVbl7ivbaM",
             "ycNS0lA5JWc",
+            "yt-6HZzPbgw3pg,72.16,127.08",
             "yt-CB9bSigNYH8,1190.626477,1203.37129",
             "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-Dtm6xIj-wM4,3518.277144,3545.070455",
@@ -44439,6 +44454,7 @@
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
             "RtVbl7ivbaM",
+            "yt-6HZzPbgw3pg,72.16,127.08",
             "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-N1o3tK1h8cM,72.68,192.138596"
         ]
@@ -46577,10 +46593,13 @@
             "hCcT5uhzwso",
             "MQSdhIKAjNc",
             "RtVbl7ivbaM",
+            "yt-6HZzPbgw3pg,72.16,127.08",
+            "yt-52nYaN8imgo,190.88,194.28",
             "yt-CB9bSigNYH8,361.317611,374.51402",
             "yt-CB9bSigNYH8,1688.029579,1694.520021",
             "yt-CB9bSigNYH8,2630.888348,2723.033543",
             "yt-CB9bSigNYH8,3266.313772,3335.428417",
+            "yt-CB9bSigNYH8,4535.706068,4587.220174",
             "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-N1o3tK1h8cM,72.68,192.138596",
             "yt-VYyFA7-yRKc,12.72,57"
@@ -46640,6 +46659,7 @@
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
             "RtVbl7ivbaM",
+            "yt-6HZzPbgw3pg,72.16,127.08",
             "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-N1o3tK1h8cM,72.68,192.138596"
         ]
@@ -57542,6 +57562,7 @@
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
             "RtVbl7ivbaM",
+            "yt-6HZzPbgw3pg,72.16,127.08",
             "yt-N1o3tK1h8cM,72.68,192.138596",
             "yt-VYyFA7-yRKc,12.72,57"
         ]
@@ -58722,6 +58743,20 @@
         ],
         "duplicatedby": "tc-ConfidentLittleSnood4Head"
     },
+    "yt-pTKDTJSsAm4,300.9006,359.09206666666665": {
+        "title": "Most Annoying Bugs?",
+        "date": "2020-01-20",
+        "topics": [
+            "community"
+        ],
+        "seealso": [
+            "HI6jRWp82Dg",
+            "yt-iVDRQg_aWpU,6661.0327500895055,6717.017889"
+        ],
+        "seealso_video_cards": [
+            "EhcBjLjLjUY"
+        ]
+    },
     "TFg_ppmX8OE": {
         "title": "Q&A: Will price go up after Early Access ends?",
         "date": "2019-12-19",
@@ -58927,7 +58962,10 @@
     "HI6jRWp82Dg": {
         "title": "Q&A: Are you going to delete the bugs?",
         "date": "2019-12-19",
-        "topics": []
+        "topics": [],
+        "seealso": [
+            "yt-pTKDTJSsAm4,300.9006,359.09206666666665"
+        ]
     },
     "pkYEJmwJWrg": {
         "title": "Q&A: Hotbars?",
@@ -59008,6 +59046,7 @@
             "coffee-stainers\/hannah"
         ],
         "seealso": [
+            "yt-CB9bSigNYH8,4535.706068,4587.220174",
             "yt-CB9bSigNYH8,4977.019619,4987.213353"
         ]
     },
@@ -59341,6 +59380,33 @@
             "yt-R0S19_caQuw,,46.2"
         ]
     },
+    "yt-52nYaN8imgo,142.38,148.52": {
+        "title": "Developer Highlights - What kind of hardware do you use?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/joel",
+            "coffee-stainers\/kristoffer",
+            "coffee-stainers\/nathalie",
+            "coffee-stainers\/sofi",
+            "trolling"
+        ],
+        "seealso": [
+            "-Nec7kcgPnc"
+        ]
+    },
+    "yt-52nYaN8imgo,190.88,194.28": {
+        "title": "Developer Highlights - Who's your favourite person in the office?",
+        "date": "2019-12-19",
+        "topics": [
+            "coffee-stainers\/hannah",
+            "coffee-stainers\/jace",
+            "coffee-stainers\/sofi"
+        ],
+        "seealso": [
+            "KwsiVfRUKNE",
+            "yt-6HZzPbgw3pg,72.16,127.08"
+        ]
+    },
     "yt-52nYaN8imgo,201.34,216.1": {
         "title": "Q&A: Satisfactory exclusive to Epic Games Store (December 2018)",
         "date": "2019-12-19",
@@ -59374,6 +59440,7 @@
             "KwsiVfRUKNE",
             "MQSdhIKAjNc",
             "RtVbl7ivbaM",
+            "yt-6HZzPbgw3pg,72.16,127.08",
             "yt-CG-63B4g11U,130.208023,158.391799",
             "yt-VYyFA7-yRKc,12.72,57"
         ]
@@ -59790,6 +59857,7 @@
         ],
         "seealso": [
             "gddxBoi8DxY",
+            "i1cimOkbLHs",
             "yt-W1E6EWrAsII,375.64,391.24",
             "yzhYoMChQ6Q"
         ]
@@ -60950,7 +61018,8 @@
             "h_MDCRRxWsM",
             "yt-CB9bSigNYH8,673.676351,691.064019",
             "yt-CB9bSigNYH8,1333.602132,1342.9333333333334",
-            "yt-CB9bSigNYH8,1792.112783,1798.185879"
+            "yt-CB9bSigNYH8,1792.112783,1798.185879",
+            "yt-CB9bSigNYH8,4144.261196,4169.009739"
         ]
     },
     "yt-CB9bSigNYH8,501.647011,524.513606": {
@@ -61312,7 +61381,8 @@
         ],
         "seealso": [
             "yt-CB9bSigNYH8,2723.033543,2733.855787",
-            "yt-CB9bSigNYH8,3524.5333333333333,3638.601169"
+            "yt-CB9bSigNYH8,3524.5333333333333,3638.601169",
+            "yt-CB9bSigNYH8,4144.261196,4169.009739"
         ]
     },
     "yt-CB9bSigNYH8,1766.070784,1792.112783": {
@@ -61880,6 +61950,18 @@
             "yt-CB9bSigNYH8,1526.886263,1559.959363"
         ]
     },
+    "yt-CB9bSigNYH8,4144.261196,4169.009739": {
+        "title": "Are we going to be stuck in the cave looking at speleothems the whole stream?",
+        "date": "2019-02-20",
+        "topics": [
+            "environment\/biomes\/caves",
+            "level-design-stream"
+        ],
+        "seealso": [
+            "yt-CB9bSigNYH8,437.2,439.256018",
+            "yt-CB9bSigNYH8,1696.76254,1745.665541"
+        ]
+    },
     "yt-CB9bSigNYH8,4169.009739,4174.063485": {
         "title": "Q&A: What School did Hannah go to?",
         "date": "2019-02-20",
@@ -62019,6 +62101,19 @@
             "yt-IxoCzb2M0vQ,358.2,424.68"
         ]
     },
+    "yt-CB9bSigNYH8,4535.706068,4587.220174": {
+        "title": "I see you're sculpting the Environment. I thought that was something Environment Artists do?",
+        "date": "2019-02-20",
+        "topics": [
+            "coffee-stainers",
+            "environment",
+            "level-design-stream"
+        ],
+        "seealso": [
+            "KwsiVfRUKNE",
+            "yDZRa_7BTrU"
+        ]
+    },
     "yt-CB9bSigNYH8,4587.220174,4600.881774": {
         "title": "Q&A: Is the game a scam?",
         "date": "2019-02-20",
@@ -62126,6 +62221,16 @@
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "duplicatedby": "H8Rj4XIl2VA"
+    },
+    "yt-CB9bSigNYH8,5017.8,5049.442939": {
+        "title": "Simon says: Can I go to the bathroom?",
+        "date": "2019-02-20",
+        "topics": [
+            "coffee-stainers\/simon"
+        ],
+        "seealso": [
+            "yt-Dtm6xIj-wM4,3518.277144,3545.070455"
+        ]
     },
     "yt-CB9bSigNYH8,5050.579615,5056.929969": {
         "title": "Q&A: Can you have your own pet in the game?",
@@ -63244,7 +63349,8 @@
         ],
         "seealso": [
             "MQSdhIKAjNc",
-            "yt-CB9bSigNYH8,3241.081332,3247.056294"
+            "yt-CB9bSigNYH8,3241.081332,3247.056294",
+            "yt-CB9bSigNYH8,5017.8,5049.442939"
         ]
     },
     "yt-Dtm6xIj-wM4,3545.070455,3610.872363": {
@@ -64273,6 +64379,9 @@
         "topics": [
             "off-topic\/sanctum"
         ],
+        "replaces": [
+            "yt-6HZzPbgw3pg,127.08,170.16"
+        ],
         "duplicatedby": "TOKME3PCYXo"
     },
     "yt-Zo2ybvs7keI,645.8": {
@@ -64284,5 +64393,34 @@
         "seealso": [
             "TOKME3PCYXo"
         ]
+    },
+    "yt-6HZzPbgw3pg,72.16,127.08": {
+        "title": "How can we be friends if you know nothing about me?",
+        "date": "2017-11-17",
+        "topics": [
+            "coffee-stainers\/jace",
+            "off-topic\/food-and-drink\/pizza"
+        ],
+        "seealso": [
+            "1SJA0S2IagA",
+            "KwsiVfRUKNE",
+            "MQSdhIKAjNc",
+            "RtVbl7ivbaM",
+            "yt-52nYaN8imgo,190.88,194.28",
+            "yt-CG-63B4g11U,130.208023,158.391799",
+            "yt-Dtm6xIj-wM4,3433.002272,3481.1666666666665",
+            "yt-N1o3tK1h8cM,72.68,192.138596",
+            "yt-VYyFA7-yRKc,12.72,57"
+        ]
+    },
+    "yt-6HZzPbgw3pg,127.08,170.16": {
+        "title": "Why would we need a Community Manager now?",
+        "date": "2017-11-17",
+        "topics": [
+            "coffee-stainers\/jace",
+            "off-topic\/goat-simulator",
+            "trolling"
+        ],
+        "replacedby": "yt-Zo2ybvs7keI,502.32,614.16"
     }
 }
