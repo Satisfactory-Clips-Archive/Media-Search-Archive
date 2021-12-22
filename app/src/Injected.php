@@ -182,7 +182,11 @@ class Injected
 
 	public function determine_video_title(string $video_id) : ? string
 	{
-		return $this->api->fetch_all_videos_in_playlists()[$video_id][0];
+		if ( ! isset($this->cache['playlistItems'][$video_id])) {
+			$video_id = preg_replace('/^yt-/', '', $video_id);
+		}
+
+		return $this->cache['playlistItems'][$video_id][1];
 	}
 
 	public function determine_video_description(string $video_id) : ? string
