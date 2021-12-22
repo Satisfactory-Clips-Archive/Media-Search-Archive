@@ -50,26 +50,43 @@
 		);
 	}
 
-	async function merge_search(query, for_dates) {
+	async function merge_search(query, for_dates, qandaonly) {
 		for_dates.forEach((date) => {
 			if ( ! (date in searches_cache)) {
-				searches_cache[date] = [
-					searches_dates[date][0](),
-					searches_dates[date][1]().then((prebuilt) => {
+				searches_cache[date] = {};
+			}
+
+			Object.entries(searches_dates[date]).forEach((e) => {
+				const [category, proms] = e;
+
+				if (qandaonly && 'qanda' !== category) {
+					return;
+				} else if ( ! (category in searches_cache[date])) {
+					searches_cache[date][category] = [
+						proms[0](),
+						proms[1]().then((prebuilt) => {
 						return lunr.Index.load(prebuilt);
 					}),
 				];
-			}
+				}
+			});
 		});
 
 		const merged_result = [];
 
 		for (let i = 0; i < for_dates.length; i++) {
+			const date = for_dates[i];
+
+			for (let category in searches_dates[date]) {
+				if (qandaonly && 'qanda' !== category) {
+					continue;
+				}
 			const [docs, index] = await Promise.all(
-				searches_cache[for_dates[i]]
+					searches_cache[date][category]
 			);
 
 			merged_result.push(...search(query, index, docs));
+			};
 		}
 
 		return merged_result;
@@ -163,7 +180,8 @@
 				query.split(' ').map((e) => {
 					return e.replace(/\.+$/, '');
 				}).join(' '),
-				dates_for_search
+				dates_for_search,
+				qandaonly
 			)).filter((e) => {
 				const [doc, result] = e;
 				const dateint = parseInt(doc.date.replace(/\-/g, ''), 10);
@@ -177,12 +195,6 @@
 					)
 				);
 			});
-
-			if (qandaonly) {
-				docs_results = docs_results.filter((maybe) => {
-					return /^q&a:/i.test(maybe[0].title);
-				});
-			}
 
 			if (filter_results) {
 				const docs_results_ids = docs_results.map((e) => {
@@ -660,17 +672,26 @@
 
 	const searches_entries = Object.entries(searches);
 
-	const searches_dates = Object.keys(searches).map(
-		(filename) => {
-			return filename.replace(
-				/^docs-(\d{4,}\-\d{2}-\d{2}).+$/,
-				'$1'
-			);
+	const searches_dates = {};
+
+	searches_entries.forEach((e) => {
+		const [docs_path, lunr_path] = e;
+
+		const date = docs_path.replace(
+			/^docs-[^-]+-(\d{4,}\-\d{2}-\d{2}).+$/,
+			'$1'
+		);
+		const category = docs_path.replace(
+			/^docs-([^-]+)-(\d{4,}\-\d{2}-\d{2}).+$/,
+			'$1'
+		);
+
+		if ( ! (date in searches_dates)) {
+			searches_dates[date] = {};
 		}
-	).reduce(
-		(out, date, i) => {
-			const [docs_path, lunr_path] = searches_entries[i];
-			out[date] = [
+
+		if ( ! (category in searches_dates[date])) {
+			searches_dates[date][category] = [
 				async () => {
 					return await (await fetch('/lunr/' + docs_path)).json();
 				},
@@ -678,11 +699,8 @@
 					return await (await fetch('/lunr/' + lunr_path)).json();
 				},
 			];
-
-			return out;
-		},
-		{}
-	);
+		}
+	});
 
 	//#endregion
 

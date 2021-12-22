@@ -36,6 +36,9 @@ $slugify = new Slugify();
 
 $skipping = SkippingTranscriptions::i();
 
+$injected = new Injected($api, $slugify, $skipping);
+$questions = new Questions($injected);
+
 /**
  * @var array<string, array{
  *	game: 'satisfactory',
@@ -187,40 +190,38 @@ foreach ($video_ids as $video_id) {
 
 $dated = [];
 
-foreach ($out as $id => $data) {
+foreach (Questions::REGEX_TYPES as $category) {
+	$dated[$category] = [];
+
+	foreach ($questions->filter_video_ids(array_keys($out), $category) as $id) {
+		$data = $out[$id];
 	$date = $data['date'];
 
-	if ( ! isset($dated[$date])) {
-		$dated[$date] = [];
+		if ( ! isset($dated[$category][$date])) {
+			$dated[$category][$date] = [];
 	}
 
-	$dated[$date][$id] = $data;
+		$dated[$category][$date][$id] = $data;
+}
 }
 
-foreach ($dated as $date => $data) {
+$search_json = [];
+
+foreach ($dated as $category => $dated_category) {
+	foreach ($dated_category as $date => $data) {
+		$filename = 'docs-' . $category . '-' . $date . '.json';
 	file_put_contents(
-		(__DIR__ . '/lunr/docs-' . $date . '.json'),
+			__DIR__ . '/lunr/' . $filename,
 		json_encode($data, JSON_PRETTY_PRINT)
 	);
+		$search_json[$filename] = 'lunr-' . $category . '-' . $date . '.json';
+	}
 }
 
 file_put_contents(
 	__DIR__ . '/lunr/search.json',
 	json_encode(
-		array_combine(
-			array_map(
-				static function (string $date) : string {
-					return 'docs-' . $date . '.json';
-				},
-				array_keys($dated)
-			),
-			array_map(
-				static function (string $date) : string {
-					return 'lunr-' . $date . '.json';
-				},
-				array_keys($dated)
-			)
-		),
+		$search_json,
 		JSON_PRETTY_PRINT
 	)
 );

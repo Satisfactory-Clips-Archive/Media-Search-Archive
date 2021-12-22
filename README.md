@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-12-22
+* separate indexes by category to reduce initial download with default search options
+
 ## 2021-12-21
 * ported typescript code to php, added test to ensure consistency in behaviour
 
