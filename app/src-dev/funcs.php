@@ -6,6 +6,8 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use const JSON_PRETTY_PRINT;
+
 function dump_video_title_kvp() : void
 {
 	$api = new YouTubeApiWrapper();
