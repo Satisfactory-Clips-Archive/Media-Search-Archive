@@ -11,6 +11,7 @@
 	],
 	"autoload-dev": {
 		"files": [
+			"./app/src-dev/funcs.php",
 			"./app/src/funcs.php"
 		],
 		"psr-4": {

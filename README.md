@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2021-12-21
+* ported typescript code to php, added test to ensure consistency in behaviour
+
 ## 2021-12-20
 * worked on a replacement classifier for what is & isn't a question
 

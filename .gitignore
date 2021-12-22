@@ -48,3 +48,4 @@
 /coverage/
 /app/tweet-cache/
 /11ty/data/tweets.json
+/tests/fixtures/

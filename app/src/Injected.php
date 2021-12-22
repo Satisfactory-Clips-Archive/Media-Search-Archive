@@ -180,6 +180,11 @@ class Injected
 		return $cache[$video_id];
 	}
 
+	public function determine_video_title(string $video_id) : ? string
+	{
+		return $this->api->fetch_all_videos_in_playlists()[$video_id][0];
+	}
+
 	public function determine_video_description(string $video_id) : ? string
 	{
 		$maybe = (

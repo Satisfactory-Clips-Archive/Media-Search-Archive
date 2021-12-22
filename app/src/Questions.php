@@ -64,23 +64,37 @@ use function usort;
  *	incoming_video_cards?:list<string>,
  *	legacyalts:list<string>
  * }
+ *
+ * @psalm-type REGEXES = array{
+ *	qanda: list<string>,
+ *	talk: list<string>,
+ *	community_fyi: list<string>,
+ *	state_of_dev: list<string>,
+ *	community_highlights: list<string>,
+ *	trolling: list<string>,
+ *	jace_art: list<string>,
+ *	random: list<string>,
+ *	terrible_jokes: list<string>
+ * }
  */
 class Questions
 {
+	public const REGEX_TYPES = [
+		'qanda',
+		'talk',
+		'community_fyi',
+		'state_of_dev',
+		'community_highlights',
+		'trolling',
+		'jace_art',
+		'random',
+		'terrible_jokes',
+	];
+
 	public readonly Injected $injected;
 
 	/**
-	 * @var array{
-	 *	qanda: list<string>,
-	 *	talk: list<string>,
-	 *	community_fyi: list<string>,
-	 *	state_of_dev: list<string>,
-	 *	community_highlights: list<string>,
-	 *	trolling: list<string>,
-	 *	jace_art: list<string>,
-	 *	random: list<string>,
-	 *	terrible_jokes: list<string>
-	 * }
+	 * @var REGEXES
 	 */
 	public readonly array $title_pattern_check;
 
@@ -89,17 +103,7 @@ class Questions
 		$this->injected = $injected;
 
 		/**
-		 * @var array{
-		 *	qanda: list<string>,
-		 *	talk: list<string>,
-		 *	community_fyi: list<string>,
-		 *	state_of_dev: list<string>,
-		 *	community_highlights: list<string>,
-		 *	trolling: list<string>,
-		 *	jace_art: list<string>,
-		 *	random: list<string>,
-		 *	terrible_jokes: list<string>
-		 * }
+		 * @var REGEXES
 		 */
 		$title_pattern_check = json_decode(
 			file_get_contents(__DIR__ . '/../title-pattern-check.json'),
@@ -154,6 +158,54 @@ class Questions
 		}
 
 		return $result;
+	}
+
+	/**
+	 * @param list<string> $video_ids
+	 * @param value-of<self::REGEX_TYPES> $type
+	 *
+	 * @return list<string>
+	 */
+	public function filter_video_ids(array $video_ids, string $type) : array
+	{
+		return array_values(array_filter(
+			$video_ids,
+			function (string $maybe) use ($type) : bool {
+				$result = false;
+
+				foreach ($this->title_pattern_check[$type] as $regex) {
+					if (
+						preg_match(
+							$regex,
+							$this->injected->determine_video_title(
+								$maybe
+							) ?? ''
+						)
+					) {
+						$result = true;
+						break;
+					}
+				}
+
+				if ('qanda' === $type && $result) {
+					foreach (
+						array_keys($this->title_pattern_check) as $other_str
+					) {
+						if ('qanda' === $other_str) {
+							continue;
+						} elseif (
+							1 === count(
+								$this->filter_video_ids([$maybe], $other_str)
+							)
+						) {
+							return false;
+						}
+					}
+				}
+
+				return $result;
+			}
+		));
 	}
 
 	/**

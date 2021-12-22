@@ -10,6 +10,7 @@
 >
 	<projectFiles>
 		<directory name="app" />
+		<directory name="app-dev" />
 		<directory name="tests" />
 		<ignoreFiles>
 			<directory name="vendor" />

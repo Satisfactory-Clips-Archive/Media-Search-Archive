@@ -1,26 +1,8 @@
-declare type doc = {
-	id: string,
-	game: 'satisfactory',
-	date: string,
-	title: string,
-	transcription: string,
-	urls: string[],
-	topics: string[],
-	quotes: string[],
-	alts: string[],
-};
-
-declare type regexes_type = {
-	qanda: string[],
-	talk: string[],
-	community_fyi: string[],
-	state_of_dev: string[],
-	community_highlights: string[],
-	trolling: string[],
-	jace_art: string[],
-	random: string[],
-	terrible_jokes: string[],
-};
+import {
+	doc,
+	regexes_type,
+	filter_title_pattern_check as filter,
+} from './ts/exports';
 
 (async () => {
 	const {
@@ -57,74 +39,29 @@ declare type regexes_type = {
 		[key:string]: doc
 	};
 
-	const regexes = Object.fromEntries(
-		Object.entries(
-			require(`${__dirname}/title-pattern-check.json`) as regexes_type
-		).map((e) => {
-			return [
-				e[0],
-				e[1].map((str) => {
-					return new RegExp(str);
-				}),
-			];
-		})
-	);
-
-	function filter(list_of_keys:string[], str:keyof regexes_type) : string[] {
-		return list_of_keys.filter((maybe:string) : boolean => {
-			let result = false;
-
-			for (let regex of regexes[str]) {
-				if (regex.test(titles[maybe])) {
-					result = true;
-					break;
-				}
-			}
-
-			if ('qanda' === str && result) {
-				for (
-					let other_str of Object.keys(regexes).filter((maybe_str) => {
-						return 'qanda' !== maybe_str;
-					})
-				) {
-					if (
-						1 === filter(
-							[maybe],
-							other_str as keyof regexes_type
-						).length
-					) {
-						return false;
-					}
-				}
-			}
-
-			return result;
-		});
-	}
-
 	const keys = Object.keys(docs);
 
 	const titles = Object.fromEntries(Object.entries(docs).map((e) => {
 		return [e[0], e[1].title];
 	}));
 
-	const qanda = filter(keys, 'qanda');
+	const qanda = filter(keys, 'qanda', titles);
 
-	const talk = filter(keys, 'talk');
+	const talk = filter(keys, 'talk', titles);
 
-	const community_fyi = filter(keys, 'community_fyi');
+	const community_fyi = filter(keys, 'community_fyi', titles);
 
-	const state_of_dev = filter(keys, 'state_of_dev');
+	const state_of_dev = filter(keys, 'state_of_dev', titles);
 
-	const community_highlights = filter(keys, 'community_highlights');
+	const community_highlights = filter(keys, 'community_highlights', titles);
 
-	const trolling = filter(keys, 'trolling');
+	const trolling = filter(keys, 'trolling', titles);
 
-	const jace_art = filter(keys, 'jace_art');
+	const jace_art = filter(keys, 'jace_art', titles);
 
-	const random = filter(keys, 'random');
+	const random = filter(keys, 'random', titles);
 
-	const terrible_jokes = filter(keys, 'terrible_jokes');
+	const terrible_jokes = filter(keys, 'terrible_jokes', titles);
 
 	let not_matching = keys.filter((maybe) => {
 		return (
