@@ -34,8 +34,8 @@
 		"masterminds/html5": "^2.7",
 		"phpunit/phpunit": "^9.5",
 		"psalm/plugin-phpunit": "^0.16.1",
-		"querypath/querypath": "^3.0",
 		"roave/security-advisories": "dev-latest",
+		"satisfactory-clips-archive/querypath": "^1.0",
 		"signpostmarv/php-cs-fixer-config": "^0.22.0",
 		"vimeo/psalm": "^4.16"
 	}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f107ced0fdd92a519633b5e60818ed5",
+    "content-hash": "b6426e4267694b7a03a247bc0313ce69",
     "packages": [],
     "packages-dev": [
         {
@@ -3385,52 +3385,6 @@
             "time": "2021-07-14T16:46:02+00:00"
         },
         {
-            "name": "querypath/querypath",
-            "version": "3.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/technosophos/querypath.git",
-                "reference": "6b8e2395fac61fac25bbe962f94def556cb85f7d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/technosophos/querypath/zipball/6b8e2395fac61fac25bbe962f94def556cb85f7d",
-                "reference": "6b8e2395fac61fac25bbe962f94def556cb85f7d",
-                "shasum": ""
-            },
-            "require": {
-                "masterminds/html5": "2.*",
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "QueryPath": "src/"
-                },
-                "files": [
-                    "src/qp_functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "HTML/XML querying (CSS 4 or XPath) and processing (like jQuery)",
-            "homepage": "https://github.com/technosophos/querypath",
-            "keywords": [
-                "css",
-                "html",
-                "jquery",
-                "xml",
-                "xslt"
-            ],
-            "support": {
-                "issues": "https://github.com/technosophos/querypath/issues",
-                "source": "https://github.com/technosophos/querypath/tree/master"
-            },
-            "time": "2016-08-01T22:40:30+00:00"
-        },
-        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -3906,6 +3860,77 @@
                 }
             ],
             "time": "2021-12-17T20:13:17+00:00"
+        },
+        {
+            "name": "satisfactory-clips-archive/querypath",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Satisfactory-Clips-Archive/querypath.git",
+                "reference": "be7d46a67ec266b3765002e25ef345d8affbbf89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Satisfactory-Clips-Archive/querypath/zipball/be7d46a67ec266b3765002e25ef345d8affbbf89",
+                "reference": "be7d46a67ec266b3765002e25ef345d8affbbf89",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-filter": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-xsl": "*",
+                "masterminds/html5": "^2.7",
+                "php": "^8.1"
+            },
+            "conflict": {
+                "arthurkushman/query-path": "*",
+                "querypath/querypath": "*",
+                "vimeo/psalm": "<4.16"
+            },
+            "require-dev": {
+                "maglnet/composer-require-checker": "^4.0",
+                "phpunit/phpunit": "^9.5",
+                "psalm/plugin-phpunit": "^0.16.1",
+                "roave/security-advisories": "dev-latest",
+                "signpostmarv/php-cs-fixer-config": "^0.22.0",
+                "vimeo/psalm": "^4.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "QueryPath\\": "src/"
+                },
+                "files": [
+                    "src/qp_functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "HTML/XML querying (CSS 4 or XPath) and processing (like jQuery)",
+            "homepage": "https://github.com/satisfactory-clips-archive/querypath",
+            "keywords": [
+                "PHP7",
+                "css",
+                "html",
+                "jquery",
+                "xml",
+                "xslt"
+            ],
+            "support": {
+                "source": "https://github.com/Satisfactory-Clips-Archive/querypath/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/SignpostMarv",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-01-01T17:46:13+00:00"
         },
         {
             "name": "sebastian/cli-parser",
