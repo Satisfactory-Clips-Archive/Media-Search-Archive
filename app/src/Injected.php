@@ -195,6 +195,14 @@ class Injected
 			$this->api->fetch_all_videos_in_playlists()[$video_id][2] ?? null
 		);
 
+		if (null !== $maybe) {
+			$maybe = trim(str_replace(
+				'Reminder: This is an unofficial channel, support requests should be directed to https://questions.satisfactorygame.com/',
+				'',
+				$maybe
+			));
+		}
+
 		return '🏭' === $maybe ? null : $maybe;
 	}
 
