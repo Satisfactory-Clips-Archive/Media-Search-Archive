@@ -1,0 +1,14 @@
+{
+	"files": [
+		"./src/index.ts"
+	],
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"removeComments": false,
+		"newLine": "lf",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true
+	}
+}

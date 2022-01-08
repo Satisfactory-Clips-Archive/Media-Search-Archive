@@ -717,3 +717,9 @@ gulp.task('images', gulp.series(
 		'brotli-images'
 	)
 ));
+
+gulp.task('fixtsc', () => {
+	return gulp.src('./src/**/*.js').pipe(
+		replace('    ', '\t')
+	).pipe(gulp.dest('./src/'))
+});

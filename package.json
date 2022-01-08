@@ -2,7 +2,8 @@
   "scripts": {
     "test": "ajv validate -s ./json-schema/csv-metadata.json -d \"./app/data/*/yt-*.json\"",
     "error_docs": "eleventy --config=./.eleventy.error_docs.js && gulp html-error_docs",
-    "update": "php app/app.php && ts-node ./app/title-pattern-check.ts && php app/update-q-and-a.php && php app/part-continued.php && php app/lunr-docs-preload.php && php app/statistics.php && gulp charts",
+    "typescript": "tsc -p ./src-tsconfig.json && gulp fixtsc",
+    "update": "php app/app.php && npm run -s typescript && ts-node ./app/title-pattern-check.ts && php app/update-q-and-a.php && php app/part-continued.php && php app/lunr-docs-preload.php && php app/statistics.php && gulp charts",
     "images-svg": "eleventy --config=./.eleventy.images.js && gulp images-svg",
     "native-clip-needed": "ts-node ./app/native-clip-needed.ts",
     "generate-blamehannah.com-data": "ts-node ./app/blamehannah.com.ts",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "@types/lunr": "^2.3.4",
     "@types/node": "^16.11.4",
     "ajv-cli": "^5.0.0",
     "cssnano": "^4.1.10",
@@ -47,6 +49,6 @@
     "ts-node": "^10.4.0",
     "twitter-api-v2": "^1.7.0",
     "twitter-text": "^3.1.0",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.4"
   }
 }
