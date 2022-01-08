@@ -201,6 +201,11 @@ class Injected
 				'',
 				$maybe
 			));
+			$maybe = trim(preg_replace(
+				'/Clips for the [A-z]+ \d+(?:st|nd|rd|th), 20\d+ Livestream originally streamed on https:\/\/www\.twitch\.tv\/coffeestainstudiosdevs/',
+				'',
+				$maybe
+			));
 		}
 
 		return '🏭' === $maybe ? null : $maybe;
