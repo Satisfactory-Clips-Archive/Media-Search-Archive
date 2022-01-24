@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-01-24
+* added support for YouTube embed links in the info card regex
+
 ## 2021-12-22
 * separate indexes by category to reduce initial download with default search options
 
