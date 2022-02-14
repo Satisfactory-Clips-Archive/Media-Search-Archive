@@ -857,7 +857,7 @@ function adjust_nesting(
 			static function (
 				string $a,
 				string $b
-			) use ($cache, $data) : int {
+			) use ($cache, $data, $topics_hierarchy) : int {
 				$maybe_a = count($data[$a]['children'] ?? []) > 0;
 				$maybe_b = count($data[$b]['children'] ?? []) > 0;
 
@@ -865,6 +865,26 @@ function adjust_nesting(
 					return -1;
 				} elseif ($maybe_a && ! $maybe_b) {
 					return 1;
+				} elseif (
+					is_int($topics_hierarchy[$a][0])
+					|| is_int($topics_hierarchy[$b][0])
+				) {
+					$int_a = is_int($topics_hierarchy[$a][0]);
+					$int_b = is_int($topics_hierarchy[$b][0]);
+
+					if ($int_a && !$int_b) {
+						return -1;
+					} elseif (!$int_a) {
+						return 1;
+					} else {
+						/** @var int */
+						$a_int = $topics_hierarchy[$a][0];
+
+						/** @var int */
+						$b_int = $topics_hierarchy[$b][0];
+
+						return $a_int - $b_int;
+					}
 				}
 
 				return strnatcasecmp(

@@ -1,4 +1,333 @@
 {
+    "he-m1c2zsTI": {
+        "title": "Q&A: What if you're both Arachnophobic and Ailurophobic?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/accessibility",
+            "features\/accessibility\/arachnophobia-mode"
+        ],
+        "seealso": [
+            "r2fO6iMAGoE"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEr8-tKvQxrwXxCKw4R5_PoP",
+            "PLbjDnnBIxiErABErNV8_bjXIF_CFZILeP",
+            "PLbjDnnBIxiEqC9fXtj3M18h0ZeCfZ2u6I"
+        ]
+    },
+    "r2fO6iMAGoE": {
+        "title": "Q&A: Do you guys have Arachnophobia Mode enabled because it's so fun to see the cats?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/accessibility\/arachnophobia-mode"
+        ],
+        "seealso": [
+            "0S0ISLTI2es",
+            "he-m1c2zsTI",
+            "y3vztWYw7kY"
+        ],
+        "seealso_video_cards": [
+            "QMne-wqTs08"
+        ]
+    },
+    "lidkhceF2oc": {
+        "title": "Q&A: Blueprints?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/possible-features\/blueprints"
+        ],
+        "duplicates": [
+            "-sQgPUaxR-Y",
+            "0HoRmIFZq4Y",
+            "9Yqc4z9NPI8",
+            "A3GSOZWzGqs",
+            "e2YhcCwJNNg",
+            "EbTEcw5zg8k",
+            "hpl23B1A0Qk",
+            "LdNJwc9xclw",
+            "NYHU62S6czs",
+            "T1w4TV8Y8Lk",
+            "tJSLxVZ-sFg",
+            "tkwKMTaTpV8",
+            "Vm5LIvY8TtA",
+            "x0N2HGv49Eg",
+            "yP3yd9rIfUk",
+            "yt--JXPsTlJIiI,1208.0401666666667,1266.3651",
+            "yt-Dtm6xIj-wM4,2816.569184,2836.733333333333",
+            "yt-rATcozDE25c,538.5713666666667,591.3240666666667",
+            "Ywq4zdWMiq8"
+        ],
+        "seealso": [
+            "DFWtj9NjVXY",
+            "qXBAzxHoAH0",
+            "RdDroPYu1sk",
+            "ueGK9d55G_Q"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP"
+        ]
+    },
+    "QfRPustlQ24": {
+        "title": "Q&A: Can you un-automate Coal?",
+        "date": "2022-02-11",
+        "topics": [
+            "environment\/resources\/coal",
+            "features\/buildings\/coal-generator"
+        ],
+        "seealso": [
+            "z0W_JQb_K-A"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErj8197l1Qd4RzczUtlYgF4",
+            "PLbjDnnBIxiEr1rRsrKhfeFO8lpQ3ETpbe"
+        ]
+    },
+    "y3vztWYw7kY": {
+        "title": "Q&A: What about crabphobia?",
+        "date": "2022-02-11",
+        "topics": [
+            "environment\/creatures\/crab-boss"
+        ],
+        "seealso": [
+            "r2fO6iMAGoE"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEpWutLTcipkGc48H1VdSe2K"
+        ]
+    },
+    "W-JJiO1VetQ": {
+        "title": "Q&A: Can we enable those cheats on Dedicated Servers?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers",
+            "features\/save-system"
+        ],
+        "seealso": [
+            "si20TQaDIXs"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl",
+            "PLbjDnnBIxiEomDrLRY8jOvB_l8DEGgrnG"
+        ]
+    },
+    "mM2BzlGYiJI": {
+        "title": "Q&A: Is there any talk for updating the Map or making it more in depth?",
+        "date": "2022-02-11",
+        "topics": [
+            "environment",
+            "environment\/world-map"
+        ],
+        "seealso": [
+            "ej4HO0ZrhQQ",
+            "G_t_K2YsnvE",
+            "tpu1ubYrWVg"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqNB46ydy3DN3k5Pn2ZyHrS"
+        ]
+    },
+    "AnhjxHz7VgM": {
+        "title": "Q&A: Do I take damage if I'm playing the Package game?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/buildings\/the-hub"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEpz0p3GUy76rNNYI0kiJ0iW"
+        ]
+    },
+    "kN04A1jy75Q": {
+        "title": "Q&A: What happens if you play the mini-game and remove the HUB?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/buildings\/the-hub"
+        ],
+        "seealso": [
+            "AnhjxHz7VgM"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEpz0p3GUy76rNNYI0kiJ0iW",
+            "PLbjDnnBIxiEoXyQTLOJbkWv8yo-nzAsSH"
+        ]
+    },
+    "9E9oc-IQ45w": {
+        "title": "Q&A: Could we build over the existing walkways to change the type of it?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/buildables\/walkways",
+            "technology\/user-interface"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEpmT1vmxxciR96Op1TkWR8J"
+        ]
+    },
+    "xtDwb-7lGP4": {
+        "title": "Q&A: Do Pipes still simulate viscosity?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/fluids",
+            "features\/fluids\/pipes"
+        ],
+        "seealso": [
+            "nI5VJXbiGJw",
+            "szunlP3nxJs"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEr5Ks1V8bqkO3qCZeI796Xk",
+            "PLbjDnnBIxiEp9MC5RZraDAl95pvC0YVvW"
+        ]
+    },
+    "z0W_JQb_K-A": {
+        "title": "Q&A: Truck Stations unloading Lizard Doggo inventory for automated Biomass?",
+        "date": "2022-02-11",
+        "topics": [
+            "environment\/creatures\/lizard-doggo",
+            "environment\/resources",
+            "features\/transportation\/vehicles\/truck"
+        ],
+        "seealso": [
+            "QfRPustlQ24"
+        ]
+    },
+    "szunlP3nxJs": {
+        "title": "Q&A: What's the expensive part of showing Fluid in Pipes?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/fluids",
+            "features\/fluids\/pipes"
+        ],
+        "seealso": [
+            "nI5VJXbiGJw",
+            "xtDwb-7lGP4"
+        ],
+        "seealso_video_cards": [
+            "oXTmafKdXb4"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEo53bRP06aC5lXPWjSx84Cx"
+        ]
+    },
+    "bRHq_jz2j1k": {
+        "title": "Q&A: What kind of YouTube video are you setting up for?",
+        "date": "2022-02-11",
+        "topics": [
+            "coffee-stainers\/hot-potato-save-file"
+        ],
+        "seealso": [
+            "5qw8BrjLT3w",
+            "qbpnDhWRUVc",
+            "rIlnQuk_FRw",
+            "ywJGwl3ojFM"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEq4wbB8B6tiSFThCg1tfmAu"
+        ]
+    },
+    "qbpnDhWRUVc": {
+        "title": "Q&A: Does everyone have to keep what they're doing secret?",
+        "date": "2022-02-11",
+        "topics": [
+            "coffee-stainers\/hot-potato-save-file"
+        ],
+        "seealso": [
+            "bRHq_jz2j1k",
+            "ywJGwl3ojFM"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqWsWfqsODRxzdiXYbKbHzX"
+        ]
+    },
+    "ywJGwl3ojFM": {
+        "title": "Q&A: How many people will be playing it?",
+        "date": "2022-02-11",
+        "topics": [
+            "coffee-stainers\/hot-potato-save-file"
+        ],
+        "seealso": [
+            "4POx-6Z_LKQ",
+            "bRHq_jz2j1k",
+            "qbpnDhWRUVc"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEq4wbB8B6tiSFThCg1tfmAu",
+            "PLbjDnnBIxiEoAqIqsBIdN_uoV-HsP8YDJ"
+        ]
+    },
+    "35WSy5FR8Z0": {
+        "title": "Q&A: Can you revive players?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/multiplayer"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEoqQvPLEn3mTEcUnBX4Osqd"
+        ]
+    },
+    "4POx-6Z_LKQ": {
+        "title": "Q&A: Gallery of Sign pixel art gallery for people to sign their work on the Hot Potato save?",
+        "date": "2022-02-11",
+        "topics": [
+            "coffee-stainers\/hot-potato-save-file",
+            "features\/buildables\/signs"
+        ],
+        "seealso": [
+            "ywJGwl3ojFM"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEq4wbB8B6tiSFThCg1tfmAu"
+        ]
+    },
+    "rIlnQuk_FRw": {
+        "title": "Q&A: Are you paid for doing this?",
+        "date": "2022-02-11",
+        "topics": [
+            "coffee-stainers\/hot-potato-save-file",
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt"
+        ],
+        "seealso": [
+            "bRHq_jz2j1k"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEq4wbB8B6tiSFThCg1tfmAu"
+        ]
+    },
+    "tmaEVRmrmhw": {
+        "title": "Q&A: Any chance of more Personal Storage Box skins, like \"flammable\" or \"explosive\" ?",
+        "date": "2022-02-11",
+        "topics": [
+            "features\/buildables\/storage-containers"
+        ]
+    },
+    "5qw8BrjLT3w": {
+        "title": "Q&A: Can you publish the final save somewhere so we can all enjoy it?",
+        "date": "2022-02-11",
+        "topics": [
+            "coffee-stainers\/hot-potato-save-file"
+        ],
+        "seealso": [
+            "bRHq_jz2j1k"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEq4wbB8B6tiSFThCg1tfmAu"
+        ]
+    },
+    "vQZoIxR3rqQ": {
+        "title": "Q&A: Would it be weird if I ordered a full-sized Jace body pillow?",
+        "date": "2022-02-11",
+        "topics": [
+            "coffee-stainers\/jace",
+            "merch"
+        ],
+        "seealso": [
+            "5k0P-54_WHw",
+            "gHZsodBmCms",
+            "z6_iEXhMjfE"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqC9fXtj3M18h0ZeCfZ2u6I"
+        ]
+    },
     "1mrJkO17-nw": {
         "title": "Q&A: Any movement on the Mk.2 Pipe thing?",
         "date": "2022-02-08",
@@ -25,6 +354,7 @@
         ],
         "seealso": [
             "-Fc7oEsjCX4",
+            "mM2BzlGYiJI",
             "tpu1ubYrWVg",
             "uC9IEN1An1o"
         ],
@@ -508,7 +838,8 @@
         ],
         "seealso": [
             "f05_-GJTYyg",
-            "m5NFRXkFgUg"
+            "m5NFRXkFgUg",
+            "W-JJiO1VetQ"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpI_eZ6JseCdaLBHV5IokQ1",
@@ -2182,6 +2513,7 @@
             "satisfactory-updates\/world-update"
         ],
         "seealso": [
+            "mM2BzlGYiJI",
             "mrwqBvr2eTk",
             "tpu1ubYrWVg",
             "ZfTLZTQMWU0"
@@ -2250,6 +2582,7 @@
             "gqIBbkGCxdI",
             "gy1FELPzm2w",
             "G_t_K2YsnvE",
+            "mM2BzlGYiJI",
             "NslEtzx_gLs",
             "ouDTfnrZDKo",
             "QHQ60VKYtS4",
@@ -5788,6 +6121,7 @@
         ],
         "seealso": [
             "gHZsodBmCms",
+            "vQZoIxR3rqQ",
             "z6_iEXhMjfE"
         ],
         "incoming_video_cards": [
@@ -7312,35 +7646,10 @@
         "topics": [
             "features\/possible-features\/blueprints"
         ],
-        "duplicates": [
-            "-sQgPUaxR-Y",
-            "0HoRmIFZq4Y",
-            "9Yqc4z9NPI8",
-            "A3GSOZWzGqs",
-            "e2YhcCwJNNg",
-            "EbTEcw5zg8k",
-            "hpl23B1A0Qk",
-            "LdNJwc9xclw",
-            "NYHU62S6czs",
-            "T1w4TV8Y8Lk",
-            "tJSLxVZ-sFg",
-            "tkwKMTaTpV8",
-            "Vm5LIvY8TtA",
-            "x0N2HGv49Eg",
-            "yt--JXPsTlJIiI,1208.0401666666667,1266.3651",
-            "yt-Dtm6xIj-wM4,2816.569184,2836.733333333333",
-            "yt-rATcozDE25c,538.5713666666667,591.3240666666667",
-            "Ywq4zdWMiq8"
-        ],
-        "seealso": [
-            "DFWtj9NjVXY",
-            "qXBAzxHoAH0",
-            "RdDroPYu1sk",
-            "ueGK9d55G_Q"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP"
-        ]
+        ],
+        "duplicatedby": "lidkhceF2oc"
     },
     "D_ZQVOw9O2I": {
         "title": "Q&A: Any info on Steam Deck compatibility?",
@@ -12301,7 +12610,8 @@
         ],
         "seealso": [
             "5k0P-54_WHw",
-            "MgzUxL3jGfs"
+            "MgzUxL3jGfs",
+            "vQZoIxR3rqQ"
         ],
         "seealso_video_cards": [
             "gHZsodBmCms"
@@ -12374,7 +12684,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "d-MzgqyOzAI": {
         "title": "Q&A: When are you putting ragdoll back in?",
@@ -20056,7 +20366,7 @@
             "features\/buildables\/conveyor-belts"
         ],
         "seealso": [
-            "yP3yd9rIfUk"
+            "lidkhceF2oc"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp3QMTxKRnehenCwo17MuJy"
@@ -20355,6 +20665,7 @@
         ],
         "seealso": [
             "7sOGo3WJo8s",
+            "r2fO6iMAGoE",
             "tudG4BUUsnM"
         ]
     },
@@ -22997,7 +23308,7 @@
             "features\/possible-features\/blueprints"
         ],
         "seealso": [
-            "yP3yd9rIfUk"
+            "lidkhceF2oc"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP",
@@ -26268,7 +26579,7 @@
             "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP",
             "PLbjDnnBIxiEpy0dbl8UJNZFunrmillCCR"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "HmJNJUmQyGQ": {
         "title": "Q&A: What's your opinion on Hyper Tube accelerators?",
@@ -27567,7 +27878,7 @@
             "satisfactory-updates\/released\/satisfactory-update-5",
             "technology\/user-interface"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "ZPyYBY3IW00": {
         "title": "Q&A: What about river physics, textures- any updates on that any time soon?",
@@ -30179,7 +30490,7 @@
             "U3HL6b4ugC4"
         ],
         "seealso": [
-            "yP3yd9rIfUk",
+            "lidkhceF2oc",
             "Z0H06UJbb4E"
         ]
     },
@@ -33713,7 +34024,7 @@
         "topics": [
             "features\/possible-features\/blueprints"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "VjL5GczlMSE": {
         "title": "Q&A: I have a texture bug where certain items on the belts use grey and rainbow placeholder textures",
@@ -34748,7 +35059,7 @@
         "topics": [
             "features\/possible-features\/blueprints"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "aXJMTzXDwrI": {
         "title": "Q&A: Sinking Fluids?",
@@ -39265,7 +39576,7 @@
             "coffee-stainers\/mark",
             "features\/possible-features\/blueprints"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "Rb-gKC3AQ64": {
         "title": "Q&A: Can you make Coffee give you 1% speed boost when building?",
@@ -45452,7 +45763,7 @@
             "KH5SkE4nzhg",
             "njXBs_p2l1w"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "yt--JXPsTlJIiI,1266.3651,1375.9412333333335": {
         "title": "Q&A: Has the decision to press on to 1.0 recently been prompted - at least in part - by financials?",
@@ -47671,7 +47982,7 @@
         "topics": [
             "features\/unplanned-features\/mass-building"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "tqB7YuLM2Fs": {
         "title": "Q&A: Is Console support coming?",
@@ -47857,7 +48168,7 @@
         "topics": [
             "features\/possible-features\/blueprints"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "5snNwUqWAxA": {
         "title": "Q&A: Circular Foundations?",
@@ -48941,7 +49252,7 @@
         "topics": [
             "features\/possible-features\/blueprints"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "2yoGAha7ju0": {
         "title": "Q&A: Map is amazing, but infinite generation?",
@@ -50722,6 +51033,10 @@
             "features\/fluids",
             "features\/fluids\/pipes",
             "off-topic\/factorio"
+        ],
+        "seealso": [
+            "szunlP3nxJs",
+            "xtDwb-7lGP4"
         ]
     },
     "PS73jBKTEtQ": {
@@ -51615,7 +51930,7 @@
             "8WYNwGDLYNE",
             "PkozY8_q-LE"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "yt-rATcozDE25c,591.3240666666667,600.6": {
         "title": "Q&A: What about the giant crab in the trailer, can we get that?",
@@ -51868,7 +52183,7 @@
         "topics": [
             "features\/possible-features\/blueprints"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "kPehSO8Mts4": {
         "title": "Q&A: Will Security Cams become a feature?",
@@ -52128,7 +52443,7 @@
         ],
         "seealso": [
             "a49jT6lb3ZU",
-            "yP3yd9rIfUk",
+            "lidkhceF2oc",
             "Z0H06UJbb4E"
         ]
     },
@@ -53036,7 +53351,7 @@
             "features\/buildings",
             "features\/possible-features\/blueprints"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "UDUl59IZntc": {
         "title": "Q&A: Any plans for Switches to divert items?",
@@ -53987,7 +54302,7 @@
             "features\/possible-features\/blueprints",
             "off-topic\/factorio"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "rJVLbdJMJWk": {
         "title": "Q&A: Will Update 4 be like Update 3, will it break saves?",
@@ -54941,7 +55256,7 @@
             "tc-FreezingCuriousHeronDatBoi",
             "tc-LuckyNastyLionDogFace"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "TDbNru0heoU": {
         "title": "Q&A: New enemies \/ creatures?",
@@ -54968,7 +55283,7 @@
         "legacyalts": [
             "tc-RacyHilariousMangoStinkyCheese"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "omtlLJxraPk": {
         "title": "Q&A: Today I Learned - there's a mass dismantle?",
@@ -57834,7 +58149,7 @@
             "features\/possible-features\/blueprints",
             "features\/unplanned-features\/mass-building"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "9MVglCjtlwY": {
         "title": "Q&A: What are plans for Trains?",
@@ -60037,7 +60352,8 @@
         ],
         "seealso": [
             "5k0P-54_WHw",
-            "FlOFnqAw5go"
+            "FlOFnqAw5go",
+            "vQZoIxR3rqQ"
         ],
         "incoming_video_cards": [
             "z6_iEXhMjfE"
@@ -64391,7 +64707,7 @@
         "topics": [
             "features\/possible-features\/blueprints"
         ],
-        "duplicatedby": "yP3yd9rIfUk"
+        "duplicatedby": "lidkhceF2oc"
     },
     "yt-Dtm6xIj-wM4,2836.733333333333,2840.698964": {
         "title": "Q&A: Will there be outer space & galaxies?",

@@ -1331,11 +1331,11 @@ class TopicData
 			'Community',
 		],
 		'PLbjDnnBIxiEryYdXQnzrtmN8P6h6BSsA2' => [ // Coffee Stainer Karaoke
-			-100,
+			0,
 			'Coffee Stainers',
 		],
 		'PLbjDnnBIxiEq4wbB8B6tiSFThCg1tfmAu' => [ // Hot Potato Save File
-			-99,
+			1,
 			'Coffee Stainers',
 		],
 	];
