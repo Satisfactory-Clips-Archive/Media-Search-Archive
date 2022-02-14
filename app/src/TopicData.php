@@ -1330,6 +1330,14 @@ class TopicData
 		'PLbjDnnBIxiEoXYctP6dDr666y85Qe74Nl' => [ // Vilsol
 			'Community',
 		],
+		'PLbjDnnBIxiEryYdXQnzrtmN8P6h6BSsA2' => [ // Coffee Stainer Karaoke
+			-100,
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEq4wbB8B6tiSFThCg1tfmAu' => [ // Hot Potato Save File
+			-99,
+			'Coffee Stainers',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [

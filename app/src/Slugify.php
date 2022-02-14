@@ -45,6 +45,7 @@ class Slugify extends Base
 			'Nobelisk Detonator' => 'detonator',
 			'&' => 'and',
 			'Skövde' => 'skovde',
+			'Coffee Stainer Karaoke' => 'karaoke',
 		];
 
 		parent::__construct($options, $provider);
