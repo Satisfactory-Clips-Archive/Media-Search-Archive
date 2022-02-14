@@ -1341,6 +1341,7 @@ class TopicData
 	];
 
 	public const NOT_A_LIVESTREAM = [
+		'PLbjDnnBIxiEqAMkhgXTQCn7bK98wWQbPg' => 'Hot Potato Bonus Stream',
 		'PLbjDnnBIxiEqbUTvxOt7tlshFbT-skT_2' => 'Satisfactory Update 5 Patch Notes vid commentary',
 		'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ' => 'Teasers',
 		'PLbjDnnBIxiEpmVEhuMrGff6ES5V34y2wW' => 'Teasers',
