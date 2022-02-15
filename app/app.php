@@ -1676,7 +1676,7 @@ file_put_contents(__DIR__ . '/../11ty/data/dated.json', json_encode(
 	JSON_PRETTY_PRINT
 ));
 
-if (null === $title_unix_min) {
+if (null === $title_unix_min || null === $title_unix_max) {
 	throw new RuntimeException('No min/max dates!');
 }
 
