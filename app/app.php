@@ -1730,11 +1730,13 @@ while ($date->getTimestamp() <= $end) {
 		$date->modify('-1 day');
 	}
 
-	if ( ! $reset && (int) $date->format('j') <= 7) {
+	$j = (int) $date->format('j');
+
+	if ( ! $reset && $j > 1 && $j <= 7) {
 		$date->modify('-1 week');
 
 		$reset = true;
-	} elseif ($reset && (int) $date->format('j') > 7) {
+	} elseif ($reset && $j > 7) {
 		$reset = false;
 	}
 
