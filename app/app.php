@@ -26,6 +26,8 @@ use function basename;
 use function chr;
 use function count;
 use function date;
+use DateTime;
+use DateTimeImmutable;
 use function dirname;
 use ErrorException;
 use function file_get_contents;
@@ -634,6 +636,12 @@ $all_video_ids = array_reverse($all_video_ids);
 /** @var array<string, string> */
 $erroring = [];
 
+/** @var int|null */
+$title_unix_min = null;
+
+/** @var int|null */
+$title_unix_max = null;
+
 foreach ($all_video_ids as $video_id) {
 	++$checked;
 
@@ -642,6 +650,15 @@ foreach ($all_video_ids as $video_id) {
 		$cache['playlists'],
 		$api->dated_playlists()
 	);
+
+	$current_compile_date_unix = strtotime($current_compile_date);
+
+	if (null === $title_unix_min) {
+		$title_unix_min = $title_unix_max = $current_compile_date_unix;
+	}
+
+	$title_unix_min = min($title_unix_min, $current_compile_date_unix);
+	$title_unix_max = max($title_unix_max, $current_compile_date_unix);
 
 	if ($last_compile_date !== $current_compile_date) {
 		if (count($erroring)) {
@@ -1389,6 +1406,13 @@ foreach (array_keys($playlists) as $playlist_id) {
 		-3
 	));
 
+	if (null === $title_unix_min) {
+		$title_unix_min = $title_unix_max = $title_unix;
+	}
+
+	$title_unix_min = min($title_unix_min, $title_unix);
+	$title_unix_max = max($title_unix_max, $title_unix);
+
 	$title = $injected->friendly_dated_playlist_name(
 		$playlist_id,
 		'Livestream clips (non-exhaustive)'
@@ -1652,6 +1676,101 @@ file_put_contents(__DIR__ . '/../11ty/data/dated.json', json_encode(
 	array_values($grouped_dated_data_for_json),
 	JSON_PRETTY_PRINT
 ));
+
+if (null === $title_unix_min) {
+	throw new RuntimeException('No min/max dates!');
+}
+
+$date = new DateTime(date('Y-m-d', $title_unix_min));
+$date->setDate(
+	(int) $date->format('Y'),
+	(int) $date->format('n'),
+	1
+);
+$end = new DateTime(date('Y-m-d', $title_unix_max));
+$end->setDate(
+	(int) $end->format('Y'),
+	(int) $end->format('n'),
+	(int) $end->format('t')
+);
+$end = $end->getTimestamp();
+
+/**
+ * @var array<
+ *	int,
+ *	array<
+ *		'January'|'February'|'March'|'April'|'May'|'June'|'July'|'August'|'September'|'October'|'November'|'December',
+ *		list<array{
+ *	 		0:array{0:numeric-string, 1:false},
+ *	 		1:array{0:numeric-string, 1:false},
+ *	 		2:array{0:numeric-string, 1:false},
+ *	 		3:array{0:numeric-string, 1:false},
+ *	 		4:array{0:numeric-string, 1:false},
+ *	 		5:array{0:numeric-string, 1:false},
+ *	 		6:array{0:numeric-string, 1:false}
+ *		}>
+ * >>
+ */
+$grouped_dated_data_for_index_json = [];
+
+$reset = false;
+
+while ($date->getTimestamp() <= $end) {
+	$date_initial_Y = $date->format('Y');
+	$date_initial_month = $date->format('F');
+	$date_initial_Ym = $date->format('Y-m');
+
+	if ( ! isset($grouped_dated_data_for_index_json[$date_initial_Y])) {
+		$grouped_dated_data_for_index_json[$date_initial_Y] = [];
+	}
+	if ( ! isset($grouped_dated_data_for_index_json[$date_initial_Y][$date_initial_month])) {
+		$grouped_dated_data_for_index_json[$date_initial_Y][$date_initial_month] = [];
+	}
+
+	while ('1' !== $date->format('N')) {
+		$date->modify('-1 day');
+	}
+
+	if ( ! $reset && (int) $date->format('j') <= 7) {
+		$date->modify('-1 week');
+
+		$reset = true;
+	} elseif ($reset && (int) $date->format('j') > 7) {
+		$reset = false;
+	}
+
+	$date_row = [];
+	$date_row_Ymd = $date->format('Y-m-d');
+
+	for ($i=0; $i<7; ++$i) {
+		$date_Ymd = $date->format('Y-m-d');
+
+		$date_row[$date_Ymd] = [
+			$date->format('j'),
+			$date->format('Y-m') === $date_initial_Ym && isset(
+				$grouped_dated_data_for_json[$date_Ymd]
+			),
+		];
+		$date->modify('+1 day');
+		$date->setTime(0, 0, 0);
+	}
+
+	$grouped_dated_data_for_index_json[$date_initial_Y][$date_initial_month][
+		$date_row_Ymd
+	] = $date_row;
+}
+
+krsort($grouped_dated_data_for_index_json);
+
+file_put_contents(
+	__DIR__ . '/../11ty/data/indexDated.json',
+	json_encode_pretty($grouped_dated_data_for_index_json)
+);
+
+file_put_contents(
+	__DIR__ . '/../11ty/data/indexDatedKeys.json',
+	json_encode_pretty(array_keys($grouped_dated_data_for_index_json))
+);
 
 $now = time();
 

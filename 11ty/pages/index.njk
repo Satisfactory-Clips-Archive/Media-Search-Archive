@@ -1,0 +1,38 @@
+---
+permalink: "/"
+date: Last Modified
+---
+{% for year in indexDatedKeys %}
+<section class="calendars">
+	<h1>{{year}}</h1>
+	{% for month, weeks in indexDated[year] %}
+	<table>
+		<caption>{{month}}</caption>
+		<thead>
+			<tr>
+				<th title="Monday">M</th>
+				<th title="Tuesday">T</th>
+				<th title="Wednesday">W</th>
+				<th title="Thursday">T</th>
+				<th title="Friday">F</th>
+				<th title="Saturday">S</th>
+				<th title="Sunday">S</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for weekstr, week in weeks %}
+			<tr>
+			{% for datestr, linked in week %}
+				{% if linked[1] %}<td
+					class="has-archive"
+				>{% else %}<td>{% endif %}{% if linked[1] %}<a
+					href="./{{datestr}}/"
+					>{{linked[0]}}</a>{% else %}{{linked[0]}}{% endif %}</td>
+			{% endfor %}
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	{% endfor %}
+</section>
+{% endfor %}

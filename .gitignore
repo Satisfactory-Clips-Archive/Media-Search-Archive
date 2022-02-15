@@ -49,3 +49,5 @@
 /app/tweet-cache/
 /11ty/data/tweets.json
 /tests/fixtures/
+/11ty/data/indexDated.json
+/11ty/data/indexDatedKeys.json

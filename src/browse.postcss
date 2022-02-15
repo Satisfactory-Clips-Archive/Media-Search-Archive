@@ -5,3 +5,50 @@ main
 		list-style: inside disc ;
 	}
 }
+
+.calendars
+{
+	display: flex ;
+	flex-wrap: wrap ;
+	padding: .125em ;
+	margin: 1em -.25em 0 ;
+
+	&:first-child
+	{
+		margin-top: 0 ;
+	}
+
+	h1
+	{
+		width: 100% ;
+	}
+
+	table
+	{
+		align-self: flex-start ;
+		border: 1px solid ;
+		margin: .25em ;
+	}
+
+	td
+	{
+		text-align: center ;
+		padding: 0 ;
+
+		&.has-archive
+		{
+			a
+			{
+				display: block ;
+				line-height: 1 ;
+				padding: 0 .25em ;
+			}
+		}
+
+		&:not(.has-archive)
+		{
+			opacity: .5 ;
+			padding: 0 .25em ;
+		}
+	}
+}

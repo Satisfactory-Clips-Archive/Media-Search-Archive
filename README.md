@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2022-02-14
 * adjusted sort order of topics
+* deployed long-planned calendar view for index
 
 ## 2022-01-24
 * added support for YouTube embed links in the info card regex
