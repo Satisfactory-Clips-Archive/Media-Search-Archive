@@ -27,7 +27,6 @@ use function chr;
 use function count;
 use function date;
 use DateTime;
-use DateTimeImmutable;
 use function dirname;
 use ErrorException;
 use function file_get_contents;
@@ -1742,7 +1741,7 @@ while ($date->getTimestamp() <= $end) {
 	$date_row = [];
 	$date_row_Ymd = $date->format('Y-m-d');
 
-	for ($i=0; $i<7; ++$i) {
+	for ($i = 0; $i < 7; ++$i) {
 		$date_Ymd = $date->format('Y-m-d');
 
 		$date_row[$date_Ymd] = [

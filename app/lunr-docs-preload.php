@@ -6,7 +6,6 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
-use function array_combine;
 use function array_diff;
 use function array_filter;
 use const ARRAY_FILTER_USE_KEY;
@@ -195,14 +194,14 @@ foreach (Questions::REGEX_TYPES as $category) {
 
 	foreach ($questions->filter_video_ids(array_keys($out), $category) as $id) {
 		$data = $out[$id];
-	$date = $data['date'];
+		$date = $data['date'];
 
 		if ( ! isset($dated[$category][$date])) {
 			$dated[$category][$date] = [];
-	}
+		}
 
 		$dated[$category][$date][$id] = $data;
-}
+	}
 }
 
 $search_json = [];
@@ -210,7 +209,7 @@ $search_json = [];
 foreach ($dated as $category => $dated_category) {
 	foreach ($dated_category as $date => $data) {
 		$filename = 'docs-' . $category . '-' . $date . '.json';
-	file_put_contents(
+		file_put_contents(
 			__DIR__ . '/lunr/' . $filename,
 		json_encode($data, JSON_PRETTY_PRINT)
 	);

@@ -872,19 +872,18 @@ function adjust_nesting(
 					$int_a = is_int($topics_hierarchy[$a][0]);
 					$int_b = is_int($topics_hierarchy[$b][0]);
 
-					if ($int_a && !$int_b) {
+					if ($int_a && ! $int_b) {
 						return -1;
-					} elseif (!$int_a) {
+					} elseif ( ! $int_a) {
 						return 1;
-					} else {
-						/** @var int */
-						$a_int = $topics_hierarchy[$a][0];
-
-						/** @var int */
-						$b_int = $topics_hierarchy[$b][0];
-
-						return $a_int - $b_int;
 					}
+					/** @var int */
+					$a_int = $topics_hierarchy[$a][0];
+
+					/** @var int */
+					$b_int = $topics_hierarchy[$b][0];
+
+					return $a_int - $b_int;
 				}
 
 				return strnatcasecmp(
