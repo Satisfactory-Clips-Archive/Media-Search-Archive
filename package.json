@@ -14,7 +14,7 @@
     "lunr": "^2.3.9"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@types/lunr": "^2.3.4",
     "@types/node": "^16.11.4",
     "ajv-cli": "^5.0.0",
