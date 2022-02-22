@@ -1338,6 +1338,9 @@ class TopicData
 			1,
 			'Coffee Stainers',
 		],
+		'PLbjDnnBIxiEoun-5sdS3OekZiIK9hdQkd' => [ // Final Fantasy
+			'Off-Topic',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
