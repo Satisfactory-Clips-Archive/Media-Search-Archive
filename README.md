@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-02-25
+* expanded supported card urls
+
 ## 2022-02-14
 * adjusted sort order of topics
 * deployed long-planned calendar view for index

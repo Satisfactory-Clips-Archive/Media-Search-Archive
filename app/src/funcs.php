@@ -3834,7 +3834,7 @@ function yt_cards_uncached(string $video_id) : array
 							$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
 						)
 						&& preg_match(
-							'/^https:\/\/(?:www\.)?youtube\.com\/(?:clip\/|redirect\?event=infocard&.+q=https|watch\?v=[^&]{11}(?:&t=\d+s)?|embed\/)/',
+							'/^https:\/\/(?:(?:www\.)?youtube\.com\/(?:clip\/|redirect\?event=infocard&.+q=https|watch\?v=[^&]{11}(?:&t=\d+s)?|embed\/)|youtu.be\/[^&]{11}(?:&t=\d+s)?)/',
 							$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
 						)
 					)
