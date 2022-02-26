@@ -1907,6 +1907,7 @@ function raw_captions(string $video_id, SkippingTranscriptions $skipping) : arra
 								'hl',
 								'kind',
 								'lang',
+								'name',
 							],
 							true
 						);

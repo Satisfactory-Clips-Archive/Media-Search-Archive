@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-02-26
+* avoided conflicts in transcription cache names
+
 ## 2022-02-25
 * expanded supported card urls
 
