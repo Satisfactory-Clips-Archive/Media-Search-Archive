@@ -3662,6 +3662,7 @@ function yt_cards_uncached(string $video_id) : array
 		 * @psalm-assert-if-true CARD $maybe
 		 */
 		static function (object $maybe) : bool {
+			$youtube_redirect = false;
 			$result =
 				isset($maybe->cardRenderer)
 				&& is_object($maybe->cardRenderer)
@@ -3834,9 +3835,17 @@ function yt_cards_uncached(string $video_id) : array
 						&& is_string(
 							$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
 						)
-						&& preg_match(
-							'/^https:\/\/(?:(?:www\.)?youtube\.com\/(?:clip\/|redirect\?event=infocard&.+q=https|watch\?v=[^&]{11}(?:&t=\d+s)?|embed\/)|youtu.be\/[^&]{11}(?:&t=\d+s)?)/',
-							$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
+						&& (
+							preg_match(
+								'/^https:\/\/(?:(?:www\.)?youtube\.com\/(?:clip\/|redirect\?event=infocard&.+q=https|watch\?v=[^&]{11}(?:&t=\d+s)?|embed\/)|youtu.be\/[^&]{11}(?:&t=\d+s)?)/',
+								$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
+							)
+							|| (
+								$youtube_redirect = preg_match(
+									'/^https:\/\/(?:www\.)?youtube\.com\/redirect\?event=infocard&redir_token=[^&]+&q=([^&]+).*$/',
+									$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url
+								)
+							)
 						)
 					)
 				)
@@ -3846,6 +3855,29 @@ function yt_cards_uncached(string $video_id) : array
 				throw new UnexpectedValueException(
 					'Unsupported info card found!'
 				);
+			} elseif ($youtube_redirect) {
+				parse_str(
+					parse_url(
+						$maybe->cardRenderer->content->simpleCardContentRenderer->command->urlEndpoint->url,
+						PHP_URL_QUERY
+					),
+					$parts
+				);
+
+				$result = $parts['q'];
+
+				if (
+					! preg_match(
+						'/^https?:\/\/(?:(?:(?:update\d+|www)\.)?satisfactorygame\.com)\//',
+						$result
+					)
+				) {
+					throw new UnexpectedValueException(
+						'Unsupported info card found!'
+					);
+				}
+
+				return !! $result;
 			}
 
 			return $result;

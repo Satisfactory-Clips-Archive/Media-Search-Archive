@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-02-27
+* fixed bugs identified when rebuilding cache with transcription cache conflict bug fixed
+
 ## 2022-02-26
 * avoided conflicts in transcription cache names
 
