@@ -108,6 +108,24 @@ if (count($has_legacy_alts)) {
 	$video_ids = array_diff($video_ids, $legacy_alts);
 }
 
+$transcriptions = json_decode(
+	file_get_contents(__DIR__ . '/../11ty/data/transcriptions.json'),
+	true
+);
+
+$transcriptions = array_combine(
+	array_map(
+		/**
+		 * @param array{id:string} $data
+		 */
+		static function (array $data) : string {
+			return $data['id'];
+		},
+		$transcriptions
+	),
+	$transcriptions
+);
+
 foreach ($video_ids as $video_id) {
 	$video_data = $cache['playlistItems'][$video_id];
 	[, $title] = $video_data;
@@ -138,39 +156,14 @@ foreach ($video_ids as $video_id) {
 		}
 	}
 
-	$transcription_file = transcription_filename($video_id);
-
-	if (is_file($transcription_file)) {
-		$transcription_raw = file_get_contents($transcription_file);
-
-		$transcription_raw = mb_substr(
-			$transcription_raw,
-			(int) mb_strpos($transcription_raw, '---', 4)
-		);
-
-		$transcription_raw = mb_substr(
-			$transcription_raw,
-			(int) mb_strpos($transcription_raw, "\n" . '>')
-		);
-
-		$transcription = trim(implode("\n", array_map(
-			static function (string $line) : string {
-				$line = preg_replace('/^> /', '', $line);
-
-				if ('>' === $line) {
-					return "\n";
-				}
-
-				return trim($line);
-			},
-			explode(
-				"\n",
-				$transcription_raw
-			)
-		)));
-	}
-
 	$vendor_video_id = vendor_prefixed_video_id($video_id);
+
+	if (isset($transcriptions[$vendor_video_id])) {
+		$transcription = implode(
+			"\n",
+			$transcriptions[$vendor_video_id]['transcript']
+		);
+	}
 
 	$out[$vendor_video_id] = [
 		'id' => $vendor_video_id,

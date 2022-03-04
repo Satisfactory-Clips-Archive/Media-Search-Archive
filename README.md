@@ -16,6 +16,7 @@ Static site generator for
 * transpose `i` to `I`, `i'm` to `I'm`, etc.
 * de-hesitate `I I` to either `I` or `I- I` depending on context
 * clean up content broken by de-hesitator
+* switched lunr-docs-preload script to use 11ty data source
 
 ## 2022-02-27
 * fixed bugs identified when rebuilding cache with transcription cache conflict bug fixed
