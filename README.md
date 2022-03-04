@@ -13,6 +13,8 @@ Static site generator for
 ## 2022-03-04
 * added line breaks to better support multi-line descriptions
 * initial pass on de-hesitating transcriptions
+* transpose `i` to `I`, `i'm` to `I'm`, etc.
+* de-hesitate `I I` to either `I` or `I- I` depending on context
 
 ## 2022-02-27
 * fixed bugs identified when rebuilding cache with transcription cache conflict bug fixed

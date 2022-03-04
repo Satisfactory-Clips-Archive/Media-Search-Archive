@@ -1480,6 +1480,16 @@ function maybe_dehesitate(string $video_id, string ...$lines) : array
 		preg_replace('/\bu[hm]\b/', ', ', $lines)
 	);
 
+	$lines = preg_replace('/\bI(?:\ I)+\b/', 'I', preg_replace(
+		'/\b(?:\ I){2,}\b/',
+		'- I',
+		preg_replace(
+			'/\bi\b/',
+			'I',
+			$lines
+		)
+	));
+
 	if (isset($lines[0])) {
 		$lines[0] = trim($lines[0], ', ');
 	}
