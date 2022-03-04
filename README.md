@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-03-04
+* added line breaks to better support multi-line descriptions
+
 ## 2022-02-27
 * fixed bugs identified when rebuilding cache with transcription cache conflict bug fixed
 
