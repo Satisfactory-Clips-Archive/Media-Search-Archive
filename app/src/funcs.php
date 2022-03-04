@@ -1462,6 +1462,31 @@ function captions(
 	return $lines;
 }
 
+/**
+ * @return list<string>
+ */
+function maybe_dehesitate(string $video_id, string ...$lines) : array
+{
+	if (is_file(video_id_json_caption_source($video_id))) {
+		/**
+		 * If lines originate from manually transcribed sources, do not process
+		 */
+		return $lines;
+	}
+
+	$lines = preg_replace(
+		'/\ *(?:, ){2, }/',
+		', ',
+		preg_replace('/\bu[hm]\b/', ', ', $lines)
+	);
+
+	if (isset($lines[0])) {
+		$lines[0] = trim($lines[0], ', ');
+	}
+
+	return $lines;
+}
+
 function video_id_json_caption_source(string $video_id) : string
 {
 	$video_id = preg_replace('/^yt-(.{11})/', '$1', $video_id);

@@ -767,7 +767,7 @@ foreach ($all_video_ids as $video_id) {
 			$jsonify->content_if_video_has_duplicates($video_id)
 		),
 		'seealsos' => $jsonify->content_if_video_has_seealsos($video_id),
-		'transcript' => array_map(
+		'transcript' => maybe_dehesitate($video_id, ...array_map(
 			static function (string $line) : string {
 				return str_replace(
 					'](/topics/',
@@ -776,7 +776,7 @@ foreach ($all_video_ids as $video_id) {
 				);
 			},
 			$caption_lines
-		),
+		)),
 		'like_count' => (int) (
 			(($statistics[$vendor_prefixed_video_id] ?? []) ?: [])['likeCount'] ?? 0
 		),
@@ -1060,6 +1060,12 @@ foreach ($transcripts_json as $video_id => $video_data) {
 	$transcription_lines[] = markdownify_transcription_lines(...$caption_lines);
 
 	$transcription_content = implode('', $transcription_lines);
+
+	$transcription_content = preg_replace(
+		'/\ *,\ +/',
+		', ',
+		$transcription_content
+	);
 
 	if (
 		! is_file($transcriptions_file)
