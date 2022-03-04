@@ -1490,6 +1490,9 @@ function maybe_dehesitate(string $video_id, string ...$lines) : array
 		)
 	));
 
+	$lines = preg_replace('/\b(?:([\w\']+)\s*, - \1)\b/', '\1', $lines);
+	$lines = preg_replace('/\s*(?:,\s+){2,}/', ', ', $lines);
+
 	if (isset($lines[0])) {
 		$lines[0] = trim($lines[0], ', ');
 	}
