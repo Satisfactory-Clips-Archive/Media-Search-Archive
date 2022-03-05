@@ -181,5 +181,15 @@
 	"Parachute": [
 		"Features",
 		"Equipment"
+	],
+	"Bogdan": [
+		"Coffee Stainers"
+	],
+	"Lym": [
+		"Coffee Stainers"
+	],
+	"Stairs": [
+		"Features",
+		"Buildables"
 	]
 }
