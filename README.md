@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-03-05
+* fixed bug in title pattern check
+
 ## 2022-03-04
 * added line breaks to better support multi-line descriptions
 * initial pass on de-hesitating transcriptions

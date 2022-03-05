@@ -10,8 +10,18 @@ import {
 	} = require('util');
 	const glob = promisify(require('glob'));
 
-	const docs = (
+	const files = (
 		await glob(`${__dirname}/../src/lunr/docs-*.json`) as string[]
+	);
+
+	if (files.length < 1) {
+		console.log('No files to check!');
+
+		return;
+	}
+
+	const docs = (
+		files
 	).map(
 		(filename) => {
 			return require(filename);
