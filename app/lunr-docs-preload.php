@@ -130,7 +130,7 @@ foreach ($video_ids as $video_id) {
 	$video_data = $cache['playlistItems'][$video_id];
 	[, $title] = $video_data;
 
-	$urls = [video_url_from_id($video_id)];
+	$urls = [video_url_from_id($video_id, true)];
 	$transcription = '';
 	$date = '0000-00-00';
 

@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2022-03-12
+* fixed bug with uncategorised clips
+* switched to short urls in search
+
 ## 2022-03-05
 * fixed bug in title pattern check
 
