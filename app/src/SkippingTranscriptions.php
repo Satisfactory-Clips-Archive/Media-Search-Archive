@@ -6,6 +6,8 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function count;
+use function in_array;
 use const JSON_PRETTY_PRINT;
 
 class SkippingTranscriptions

@@ -1469,7 +1469,7 @@ function maybe_dehesitate(string $video_id, string ...$lines) : array
 {
 	if (is_file(video_id_json_caption_source($video_id))) {
 		/**
-		 * If lines originate from manually transcribed sources, do not process
+		 * If lines originate from manually transcribed sources, do not process.
 		 */
 		return $lines;
 	}
@@ -3916,7 +3916,7 @@ function yt_cards_uncached(string $video_id) : array
 					);
 				}
 
-				return !! $result;
+				return (bool) $result;
 			}
 
 			return $result;

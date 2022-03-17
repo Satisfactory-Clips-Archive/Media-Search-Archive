@@ -15,18 +15,12 @@ use function array_merge;
 use function array_reduce;
 use function array_unique;
 use function count;
-use function explode;
 use function file_get_contents;
 use function file_put_contents;
 use function implode;
 use function in_array;
-use function is_file;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
-use function mb_strpos;
-use function mb_substr;
-use function preg_replace;
-use function trim;
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 

@@ -6,8 +6,6 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
-use function count;
-
 require_once(__DIR__ . '/../vendor/autoload.php');
 
 $ids = array_map(
