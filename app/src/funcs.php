@@ -1764,6 +1764,14 @@ function video_page(string $video_id) : string
  */
 function raw_captions(string $video_id, SkippingTranscriptions $skipping) : array
 {
+	preg_match(
+		'/^yt-[^,]{11},(?<start>\d+(?:\.\d+)?)?(?:,(?<end>\d+(?:\.\d+)?)?)?$/',
+		vendor_prefixed_video_id($video_id),
+		$video_id_matches
+	);
+
+	$video_id = preg_replace('/^yt-([^,]+).*/', '$1', vendor_prefixed_video_id($video_id));
+
 	if (
 		in_array(
 			vendor_prefixed_video_id($video_id),
@@ -1780,14 +1788,6 @@ function raw_captions(string $video_id, SkippingTranscriptions $skipping) : arra
 	if (null === $slugify) {
 		$slugify = new Slugify();
 	}
-
-	preg_match(
-		'/^yt-[^,]{11},(?<start>\d+(?:\.\d+)?)?(?:,(?<end>\d+(?:\.\d+)?)?)?$/',
-		vendor_prefixed_video_id($video_id),
-		$video_id_matches
-	);
-
-	$video_id = preg_replace('/^yt-([^,]+).*/', '$1', vendor_prefixed_video_id($video_id));
 
 	$json_source = video_id_json_caption_source($video_id);
 

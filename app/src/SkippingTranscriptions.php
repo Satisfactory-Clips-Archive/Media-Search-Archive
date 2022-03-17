@@ -26,9 +26,75 @@ class SkippingTranscriptions
 
 	public function sync(Sorting $sorting) : void
 	{
-		$skipping = array_unique($this->video_ids);
+		$skipping = array_unique(array_map(
+			__NAMESPACE__ . '\vendor_prefixed_video_id',
+			$this->video_ids
+		));
 
 		usort($skipping, [$sorting, 'sort_video_ids_by_date']);
+
+		$might_not_actually_be_skipped = array_filter(
+			$skipping,
+			static function (string $maybe) : bool {
+				return (bool) preg_match('/^yt-[^,]+,/', $maybe);
+			}
+		);
+
+		$might_not_actually_be_skipped = array_combine(
+			$might_not_actually_be_skipped,
+			array_map(
+				static function (string $id) : string {
+					return preg_replace('/^yt-([^,]+)(?:,.*)$/', '$1', $id);
+				},
+				$might_not_actually_be_skipped
+			)
+		);
+
+		$might_also_not_actually_be_skipped = array_map(
+			__NAMESPACE__ . '\vendor_prefixed_video_id',
+			$might_not_actually_be_skipped
+		);
+
+		$probably_not_actually_skipped = [];
+
+		foreach (array_keys($might_not_actually_be_skipped) as $maybe) {
+			if (
+				! in_array(
+					$might_not_actually_be_skipped[$maybe],
+					$skipping,
+					true
+				)
+				&& ! in_array(
+					$might_also_not_actually_be_skipped[$maybe],
+					$skipping,
+					true
+				)
+			) {
+				if ( ! isset($probably_not_actually_skipped[$might_not_actually_be_skipped[$maybe]])) {
+					$probably_not_actually_skipped[$might_not_actually_be_skipped[$maybe]] = [];
+				}
+
+				$probably_not_actually_skipped[$might_not_actually_be_skipped[$maybe]][] = $maybe;
+			}
+		}
+
+		if (count($probably_not_actually_skipped)) {
+			$faux_skipping = new self();
+			$faux_skipping->video_ids = [];
+
+			$not_actually_skipped = [];
+
+			foreach (array_keys($probably_not_actually_skipped) as $maybe) {
+				if (count(raw_captions($maybe, $faux_skipping))) {
+					$not_actually_skipped[] = $maybe;
+				}
+			}
+
+			$skipping = array_values(array_diff(
+				$skipping,
+				...array_values($probably_not_actually_skipped)
+			));
+		}
 
 		$this->video_ids = $skipping;
 

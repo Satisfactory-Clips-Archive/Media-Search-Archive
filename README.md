@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-03-17
+* filtered unnecessary inclusions from the persisted transcriptions skip log
+
 ## 2022-03-12
 * fixed bug with uncategorised clips
 * switched to short urls in search
