@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-03-22
+* added required php extensions to composer.json
+
 ## 2022-03-17
 * filtered unnecessary inclusions from the persisted transcriptions skip log
 
