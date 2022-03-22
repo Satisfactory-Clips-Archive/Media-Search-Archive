@@ -12,6 +12,7 @@ Static site generator for
 
 ## 2022-03-22
 * added required php extensions to composer.json
+* shift eleventy-specific tasks into separately addressable build script
 
 ## 2022-03-17
 * filtered unnecessary inclusions from the persisted transcriptions skip log
