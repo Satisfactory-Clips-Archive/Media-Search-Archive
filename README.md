@@ -335,3 +335,204 @@ Static site generator for
 	Splitting by date means not having to discard the previous search index when a new livestream comes out.
 
 	There's a slightly longer load delay on first visit as each index & set of documents are fetched, but subsequent visits and date-filtered searches should load faster.
+
+# Building
+Building from scratch is currently unsupported without the appropriate auth files, making PRs for just the static site generator portion of things a little difficult. `./app/generate-blank-data.ts` will generate some of the files from the 11ty data directory that are created during the course of `npm run update`.
+
+Docs are incomplete, your mileage may vary.
+
+## 11ty Data File Examples
+
+### `./11ty/data/dated.json`
+```json
+[
+	{
+		"date": "2022-03-15",
+		"date_friendly": "March 15th, 2022",
+		"externals": [],
+		"internals": [
+			{
+				"title": "March 15th, 2022 Livestream clips (non-exhaustive)",
+				"categorised": [
+					{
+						"title": "Coffee Stainers",
+						"depth": 0,
+						"slug": "coffee-stainers",
+						"clips": [
+							[
+								"Q&A: Do either of you get Satis Merch, or do you have to get your own?",
+								"yt-sQJRb9leaPc",
+								"https:\/\/www.youtube.com\/watch?v=sQJRb9leaPc"
+							]
+						]
+					}
+				],
+				"uncategorised": {
+					"title": "Uncategorised",
+					"clips": [
+						[
+							"Snutt & Jace Talk: New streaming schedule",
+							"yt-5w5PAVgDppA",
+							"https:\/\/www.youtube.com\/watch?v=5w5PAVgDppA"
+						]
+					]
+				},
+				"contentUrl": "https:\/\/www.youtube.com\/playlist?list=PLbjDnnBIxiEqCxCoY5LHKjn1YyyEzxPEM"
+			}
+		]
+	}
+]
+```
+
+### `./11ty/data/faq.json`
+```json
+{
+	"2022-03-15_March 15th, 2022 Livestream": {
+		"lnYChdXeOJQ": [
+			"Q&A: Golf, when?",
+			"\/transcriptions\/yt-lnYChdXeOJQ",
+			"https:\/\/www.youtube.com\/watch?v=lnYChdXeOJQ",
+			[
+				"so yes golf when never easy"
+			],
+			"This question may have been asked previously at least 7 other times, as recently as March 2022 and as early as November 2021.",
+			{
+				"5fao-wsp_CM": [
+					"Q&A: Is it true you guys are adding Golf?",
+					"\/transcriptions\/yt-5fao-wsp_CM",
+					"https:\/\/www.youtube.com\/watch?v=5fao-wsp_CM"
+				]
+			},
+			false
+		]
+	}
+}
+```
+
+### `./11ty/data/indexDated.json`
+
+A multi-level object describing the layout and status of the dated links for the index page.
+
+```json
+{
+	"2022": {
+		"January": {
+			"2021-12-27": {
+				"2021-12-27": [
+					"27",
+					false
+				]
+			}
+		}
+	}
+}
+```
+
+### `./11ty/data/indexDatedKeys.json`
+
+A list the object keys from `./11ty/data/indexDated.json`, representing the years covered as integers.
+
+```json
+[
+	2022,
+	2021,
+	2020,
+	2019,
+	2018,
+	2017
+]
+```
+
+### `./11ty/data/topic_charts.json`
+
+Probably deprecated.
+
+### `./11ty/data/topics.json`
+
+A key-value pair of the directory-separated topic slugs and list of strings used to generate the slug. Some strings are overriden in `./app/src/Slugify.php` (i.e. "Coffee Stainer Karaoke" becomes "karaoke").
+
+```json
+{
+	"coffee-stainers": [
+		"Coffee Stainers"
+	],
+	"coffee-stainers\/karaoke": [
+		"Coffee Stainers",
+		"Coffee Stainer Karaoke"
+	],
+	"coffee-stainers\/hot-potato-save-file": [
+		"Coffee Stainers",
+		"Hot Potato Save File"
+	]
+}
+```
+
+### `./11ty/data/topicStrings.json`
+
+A key-value pair of playlist ids and topic strings.
+```json
+{
+	"PLbjDnnBIxiEq19o51RGWKNiq8qu2KySZJ": "coffee-stainers",
+	"PLbjDnnBIxiEryYdXQnzrtmN8P6h6BSsA2": "coffee-stainers\/karaoke",
+}
+```
+
+
+#### `./11ty/data/topicStrings_reverse.json`
+A key-value pair of topic slugs and playlist ids
+
+```json
+{
+	"coffee-stainers": "PLbjDnnBIxiEq19o51RGWKNiq8qu2KySZJ",
+	"coffee-stainers\/karaoke": "PLbjDnnBIxiEryYdXQnzrtmN8P6h6BSsA2",
+	"coffee-stainers\/hot-potato-save-file": "PLbjDnnBIxiEq4wbB8B6tiSFThCg1tfmAu",
+	"PLbjDnnBIxiEq4wbB8B6tiSFThCg1tfmAu": "coffee-stainers\/hot-potato-save-file"
+}
+```
+
+### `./11ty/data/transcriptions.json`
+An array of data for videos that have transcriptions (some do not and thus aren't listed / do not generate links in templates).
+
+```json
+[
+	{
+		"id": "yt-VBGakEZilwk,,63.129733333333334",
+		"url": "https:\/\/youtube.com\/embed\/VBGakEZilwk?autoplay=1&start=0&end=64",
+		"date": "2022-03-18",
+		"dateTitle": "March 18th, 2022 Video",
+		"title": "Intro",
+		"description": null,
+		"topics": [
+			"PLbjDnnBIxiEqC9fXtj3M18h0ZeCfZ2u6I",
+			"PLbjDnnBIxiEoAqIqsBIdN_uoV-HsP8YDJ",
+			"PLbjDnnBIxiEqKQQAwFUt5ePvF0mAGeQeB",
+			"PLbjDnnBIxiErS9sKol90eUQvUOe0Bl_GI"
+		],
+		"other_parts": false,
+		"is_replaced": false,
+		"is_duplicate": false,
+		"has_duplicates": false,
+		"seealsos": false,
+		"transcript": [
+			"multiline text can be handled in one of two ways",
+			"1) multiple strings in a list\n2) newline separated strings"
+		],
+		"like_count": 0,
+		"video_object": null
+	}
+]
+```
+
+### `./11ty/data/tweets.json`
+An array of twitter threads, generated from parsing `./app/data/tweets.json` & interacting with the Twitter API.
+
+#### Properties
+- title (string)
+- tweet_ids (list of twitter ids)
+- topics (list of topic names)
+- seealso (list of other indexed clips/thread ids)
+- id (string, csv of tweet_ids prefixed by `tt-`)
+- archive_date (string, YYYY-MM-DD formatted date)
+- tweets (list of twitter api responses for )
+- authors (unique list of twitter api responses for authors of tweets)
+- all_in_same_thread (boolean, indicates if tweets are from the same twitter thread or from separate threads)
