@@ -19,7 +19,7 @@ const docs = glob.sync(
 	Object.values(data).forEach((row) => {
 		const permalink = `/transcriptions/${row.id}/`;
 
-		out[permalink] = row;
+		out[permalink] = {alts: row.alts};
 
 		out[permalink].alts = out[permalink].alts.filter((video_id) => {
 			return /^(?:yt|tc)\-/.test(video_id);
@@ -36,9 +36,15 @@ const docs = glob.sync(
 		if (maybe) {
 			out[permalink].alts.push(maybe);
 		}
+
+		out[permalink].alts = out[permalink].alts.filter((str) => {
+			return ! str.includes(',');
+		});
 	});
 
-	return out;
+	return Object.fromEntries(Object.entries(out).filter((pair) => {
+		return pair[1].alts.length > 0;
+	}));
 }, {});
 
 module.exports = docs;

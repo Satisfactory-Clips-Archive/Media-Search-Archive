@@ -13,7 +13,7 @@ const fetch = require('node-fetch');
 const writeFilePromise = promisify(writeFile);
 
 module.exports = async() => {
-	const jsonld = await require('../data/jsonld.js')();
+	const jsonld = require('../data/jsonld.json');
 
 	const out = await Promise.all(Object.entries(jsonld).filter((e) => {
 		const [, data] = e;

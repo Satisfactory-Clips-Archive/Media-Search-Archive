@@ -51,3 +51,7 @@
 /tests/fixtures/
 /11ty/data/indexDated.json
 /11ty/data/indexDatedKeys.json
+/11ty/data/jsonld.json
+/11ty/data/opengraph.json
+/11ty/data/tcn.json
+/11ty/data/twitter.json

@@ -1,6 +1,6 @@
 const topics = require('../../src/topics.json');
 /** @var {[key:string]: string} */
-const reverse_lookup = require('./topicStrings_reverse.json');
+const reverse_lookup = require('../../11ty/data/topicStrings_reverse.json');
 
 module.exports = async () => {
 	const [

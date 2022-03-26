@@ -589,6 +589,53 @@ const charts = [
 
 gulp.task('charts', gulp.parallel(...charts));
 
+gulp.task('11ty-data-tcn', async () => {
+	const docs = require(`${__dirname}/app-dev/11ty-data/tcn.js`);
+
+	writeFileSync(
+		`${__dirname}/11ty/data/tcn.json`,
+		JSON.stringify(docs, null, '\t')
+	);
+});
+
+gulp.task('11ty-data-jsonld', async () => {
+	const jsonld = await require(`${__dirname}/app-dev/11ty-data/jsonld.js`)();
+
+	writeFileSync(
+		`${__dirname}/11ty/data/jsonld.json`,
+		JSON.stringify(jsonld, null, '\t')
+	);
+});
+
+gulp.task('11ty-data-opengraph', async () => {
+	const opengraph = await require(
+		`${__dirname}/app-dev/11ty-data/opengraph.js`
+	)();
+
+	writeFileSync(
+		`${__dirname}/11ty/data/opengraph.json`,
+		JSON.stringify(opengraph, null, '\t')
+	);
+});
+
+gulp.task('11ty-data-twitter', async () => {
+	const twitter = await require(
+		`${__dirname}/app-dev/11ty-data/twitter.js`
+	)();
+
+	writeFileSync(
+		`${__dirname}/11ty/data/twitter.json`,
+		JSON.stringify(twitter, null, '\t')
+	);
+});
+
+gulp.task('11ty-data', gulp.parallel(...[
+	'11ty-data-tcn',
+	'11ty-data-jsonld',
+	'11ty-data-opengraph',
+	'11ty-data-twitter',
+]));
+
 gulp.task('snutt-burger-time', async () => {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
