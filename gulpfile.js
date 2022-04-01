@@ -433,6 +433,22 @@ gulp.task('images-svg--background--vulkan', () => {
 	))
 });
 
+gulp.task('images-svg--background--final-fantasy', () => {
+	const squoosh_options = Object.assign({}, webp_options);
+
+	squoosh_options.preprocessOptions.resize.width = 504;
+
+	return gulp.src(
+		'./images-ref/final-fantasy.webp'
+	).pipe(
+		squoosh(squoosh_options)
+	).pipe(
+		rename('final-fantasy--bg.webp')
+	).pipe(gulp.dest(
+		'./images/internal/content/topics/off-topic/'
+	));
+});
+
 gulp.task('images-svg', gulp.series(...[
 	'images-svg-conversion',
 	'images-svg-conversion--png',

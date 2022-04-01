@@ -1519,5 +1519,8 @@
     },
     "Stairs": {
         "features\/buildables\/stairs": 1646484229
+    },
+    "Alternative Recipes": {
+        "alternative-recipes": 1648828490
     }
 }
