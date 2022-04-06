@@ -1345,6 +1345,10 @@ class TopicData
 			'Coffee Stainers',
 			'Jace',
 		],
+		'PLbjDnnBIxiEpxr6FUca-fshICRZu7e6zj' => [ // The Official Satisfactory PODCAST
+			'Off-Topic',
+			'Final Fantasy',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
