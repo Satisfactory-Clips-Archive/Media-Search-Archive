@@ -280,6 +280,9 @@ foreach ($all_topic_ids as $topic_id) {
 		'left' => -1,
 		'right' => -1,
 		'level' => -1,
+		'hdepth_for_templates' => 1,
+		'clips' => 0,
+		'id' => $topic_id,
 	];
 }
 
@@ -291,9 +294,16 @@ foreach ($global_topic_hierarchy as $topic_id => $topic_ancestors) {
 		));
 	}
 
-	$topic_nesting[$topic_id]['level'] = count($topic_ancestors);
+	$video_ids = ($cache['playlists'][$playlist_id] ?? [2 => []])[2] ?? [];
+	$topic_nesting[$topic_id]['clips'] = count($video_ids);
 
 	$topic_ancestors = array_filter($topic_ancestors, 'is_string');
+
+	$topic_nesting[$topic_id]['level'] = count($topic_ancestors);
+	$topic_nesting[$topic_id]['hdepth_for_templates'] = min(
+		6,
+		($topic_nesting[$topic_id]['level'] + 1)
+	);
 
 	$topic_ancestors = array_reverse($topic_ancestors);
 
@@ -405,6 +415,11 @@ $topic_nesting = $topics;
 
 file_put_contents(__DIR__ . '/topics-nested.json', json_encode(
 	$topic_nesting,
+	JSON_PRETTY_PRINT
+));
+
+file_put_contents(__DIR__ . '/../11ty/data/topicsNested.json', json_encode(
+	array_values($topic_nesting),
 	JSON_PRETTY_PRINT
 ));
 

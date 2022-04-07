@@ -1,0 +1,43 @@
+---
+title: Browse Topics
+date: Last Modified
+---
+<style>
+main ol
+{
+	list-style: inside disc ;
+}
+</style>
+{% for topic_nlevel in topicsNested %}
+	{% if topic_nlevel.children.length > 0 %}
+		{% if loop.index0 > 0 %}
+			</ol>
+			{% if (loop.index0 > 0) and (topicsNested[loop.index0 - 1].level > topic_nlevel.level) %}
+			<hr>
+			{% endif %}
+		{% elif (loop.index0 > 0) and (topicsNested[loop.index0 - 1].level > topic_nlevel.level) %}
+			<hr>
+		{% endif %}
+		{% if topic_nlevel.hdepth_for_templates === 1 %}
+			<h1><a href="/topics/{{topicStrings[topic_nlevel.id]}}">{{topics[topicStrings[topic_nlevel.id]] | last}}</a></h1>
+		{% elif topic_nlevel.hdepth_for_templates === 2 %}
+			<h2><a href="/topics/{{topicStrings[topic_nlevel.id]}}">{{topics[topicStrings[topic_nlevel.id]] | last}}</a></h2>
+		{% elif topic_nlevel.hdepth_for_templates === 3 %}
+			<h3><a href="/topics/{{topicStrings[topic_nlevel.id]}}">{{topics[topicStrings[topic_nlevel.id]] | last}}</a></h3>
+		{% elif topic_nlevel.hdepth_for_templates === 4 %}
+			<h4><a href="/topics/{{topicStrings[topic_nlevel.id]}}">{{topics[topicStrings[topic_nlevel.id]] | last}}</a></h4>
+		{% elif topic_nlevel.hdepth_for_templates === 5 %}
+			<h5><a href="/topics/{{topicStrings[topic_nlevel.id]}}">{{topics[topicStrings[topic_nlevel.id]] | last}}</a></h5>
+		{% else %}
+			<h6><a href="/topics/{{topicStrings[topic_nlevel.id]}}">{{topics[topicStrings[topic_nlevel.id]] | last}}</a></h6>
+		{% endif %}
+		<ol>
+	{% else %}
+		{% if (loop.index0 > 0) and (topicsNested[loop.index0 - 1].level > topic_nlevel.level) %}
+			</ol>
+			<hr>
+			<ol>
+		{% endif %}
+				<li><a href="/topics/{{topicStrings[topic_nlevel.id]}}">{{topics[topicStrings[topic_nlevel.id]] | last}}</a></li>
+	{% endif %}
+{% endfor %}
