@@ -1,0 +1,37 @@
+---
+pagination:
+    data: dated_alt
+    size: 1
+    alias: group
+permalink: "{{ group.date }}/"
+layout: livestream
+---
+{% for external in group.externals %}
+<section
+	itemscope
+	itemtype="https://schema.org/VideoObject"
+>
+	<header>
+		<h1>{{
+			group.date_friendly
+		}} <span itemprop="name">{{
+			external.title
+		}}</span></h1>
+			<p><a href="{{external.contentUrl}}" rel="noopener" target="_blank">External Link</a></p>
+	</header>
+	{% for section in external.embed_data %}
+		{% include 'externals-alt.njk' %}
+	{% endfor %}
+	<meta itemprop="contentUrl" content="{{external.contentUrl}}">
+	{% if external.description %}
+	<meta itemprop="description" content="{{external.description}}">
+	{% else %}
+	<meta itemprop="description" content="clips from {{external.title}}">
+	{% endif %}
+	<meta itemprop="uploadDate" content="{{group.date}}">
+	{% if external.thumbnail %}
+	<meta itemprop="thumbnailUrl" content="{{external.thumbnail}}">
+	{% endif %}
+</section>
+{% endfor %}
+{% include 'internals.njk' %}

@@ -2173,7 +2173,7 @@ function get_externals() : array
 		});
 
 		$cached = array_reduce(
-		$csv_files,
+			$csv_files,
 			/**
 			 * @param array<
 			 *	string,
