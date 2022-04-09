@@ -3220,7 +3220,6 @@ function process_dated_csv_for_alt_layout(
 	}
 
 	foreach ($sections as $i => $maybe_subsection) {
-
 		if ($maybe_subsection instanceof VideoSection) {
 			$maybe_sub_start = $maybe_subsection->start;
 			$maybe_sub_end = $maybe_subsection->end;

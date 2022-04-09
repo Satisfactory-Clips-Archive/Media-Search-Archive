@@ -303,12 +303,12 @@ class Markdownify
 					}
 				}
 
-			if ( ! is_string($playlist_id)) {
-				throw new RuntimeException(sprintf(
+				if ( ! is_string($playlist_id)) {
+					throw new RuntimeException(sprintf(
 					'Could not find playlist id for %s',
 					$other_video_id
 				));
-			}
+				}
 
 				$out .= '* '
 					. maybe_transcript_link_and_video_url(

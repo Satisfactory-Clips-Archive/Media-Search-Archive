@@ -67,7 +67,7 @@ $existing = array_filter(
 	 * @param scalar|array|object|null $maybe
 	 * @param array-key $maybe_key
 	 */
-	static function ($maybe, $maybe_key) use ($cache, $injected) : bool {
+	static function ($maybe, $maybe_key) use ($injected) : bool {
 		return
 			is_string($maybe_key)
 			&& is_string($injected->determine_video_title($maybe_key))
@@ -177,7 +177,7 @@ uksort($existing, [$sorting, 'sort_video_ids_by_date']);
 
 uksort(
 	$existing,
-	static function (string $a, string $b) use ($sorting, $existing) : int {
+	static function (string $a, string $b) use ($existing) : int {
 		$a_id = explode(',', $a)[0];
 		$b_id = explode(',', $b)[0];
 

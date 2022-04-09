@@ -6,8 +6,9 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
-use BadMethodCallException;
-use JsonSerializable;
+use function count;
+use function is_array;
+use const STR_PAD_LEFT;
 
 class VideoSection
 {
@@ -106,9 +107,9 @@ class VideoSection
 						$subsection['is_section'] = false;
 
 						return $subsection;
-					} else {
-						return $subsection->jsonSerialize();
 					}
+
+					return $subsection->jsonSerialize();
 				},
 				$this->subsections
 			),

@@ -24,7 +24,6 @@ use function str_pad;
 use const STR_PAD_LEFT;
 use function strtotime;
 use function usort;
-use UnexpectedValueException;
 
 class Injected
 {
@@ -189,7 +188,7 @@ class Injected
 		}
 
 		if (isset($this->cache['playlistItems'][$video_id])) {
-		return $this->cache['playlistItems'][$video_id][1];
+			return $this->cache['playlistItems'][$video_id][1];
 		}
 
 		foreach (get_externals() as $dated) {
