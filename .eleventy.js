@@ -6,6 +6,43 @@ module.exports = (e) => {
 		linkify: true,
 	});
 
+	//#region adapted from https://github.com/markdown-it/markdown-it/blob/bda94b0521f206a02427ec58cb9a848d9c993ccb/docs/architecture.md#renderer
+
+	const defaultRender = markdown.renderer.rules.link_open || function(
+		tokens,
+		idx,
+		options,
+		env,
+		self
+	) {
+		return self.renderToken(tokens, idx, options);
+	};
+
+	markdown.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+		// If you are sure other plugins can't add `target` - drop check below
+		const target = tokens[idx].attrIndex('target');
+		const rel = tokens[idx].attrIndex('rel');
+
+		if (target < 0) {
+			// add new attribute
+			tokens[idx].attrPush(['target', '_blank']);
+		} else {
+			// replace value of existing attr
+			tokens[idx].attrs[target][1] = '_blank';
+		}
+
+		if (rel < 0) {
+			tokens[idx].attrPush(['rel', 'noopener']);
+		} else {
+			throw new Error('Unsupported modification needed here');
+		}
+
+		// pass token to default renderer.
+		return defaultRender(tokens, idx, options, env, self);
+	};
+
+	//#endregion
+
 	e.setLibrary('md', markdown);
 
 	e.addFilter('json', (value) => {

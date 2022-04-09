@@ -445,6 +445,96 @@ class YouTubeApiWrapper
 	}
 
 	/**
+	 * @return array<string, string>
+	 */
+	public function cache_all_video_descriptions_for_externals() : array
+	{
+		/** @var array<string, string>|null */
+		static $out = null;
+
+		if (null === $out) {
+			$ids = [];
+
+			foreach (get_externals() as $by_date) {
+				foreach ($by_date as $external) {
+					$ids[] = vendor_prefixed_video_id($external[0]);
+				}
+			}
+
+			$ids = array_filter($ids, static function (string $maybe) : bool {
+				return (bool) preg_match('/^yt-/', $maybe);
+			});
+
+			$ids = array_map(
+				static function (string $id) : string {
+					return preg_replace('/^yt-/', '', $id);
+				},
+				$ids
+			);
+
+			$filtered = array_filter(
+				$ids,
+				static function (string $video_id) : bool {
+					$description_cache_file = (
+						__DIR__
+						. '/../data/api-cache/video-descriptions/'
+						. $video_id
+						. '.json'
+					);
+
+					return ! is_file($description_cache_file);
+				}
+			);
+
+			foreach (array_chunk($filtered, 50) as $video_ids) {
+				$chunk = $this->listVideos(
+					[
+						'id' => implode(',', $video_ids),
+					]
+				);
+
+				foreach ($chunk as $video_id => $data) {
+					$description_cache_file = (
+						__DIR__
+						. '/../data/api-cache/video-descriptions/'
+						. $video_id
+						. '.json'
+					);
+
+					[, , $description] = $data;
+
+					file_put_contents(
+						$description_cache_file,
+						json_encode($description, JSON_PRETTY_PRINT)
+					);
+				}
+			}
+
+			$out = [];
+
+			foreach ($ids as $video_id) {
+				$description_cache_file = (
+					__DIR__
+					. '/../data/api-cache/video-descriptions/'
+					. $video_id
+					. '.json'
+				);
+
+				if (is_file($description_cache_file)) {
+					$out[
+						vendor_prefixed_video_id($video_id)
+					] = (string) json_decode(
+						file_get_contents($description_cache_file),
+						true
+					);
+				}
+			}
+		}
+
+		return $out;
+	}
+
+	/**
 	 * @param array<string, array{
 	 *	children: list<string>,
 	 *	left: positive-int,

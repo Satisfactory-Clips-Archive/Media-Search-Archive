@@ -192,6 +192,8 @@ class Injected
 
 	public function determine_video_description(string $video_id) : ? string
 	{
+		$video_id = preg_replace('/^yt-([^,]+)/', '$1', $video_id);
+
 		$maybe = (
 			$this->api->fetch_all_videos_in_playlists()[$video_id][2] ?? null
 		);
@@ -207,6 +209,10 @@ class Injected
 				'',
 				$maybe
 			));
+		} else {
+			$maybe = (
+				$this->api->cache_all_video_descriptions_for_externals()
+			)[vendor_prefixed_video_id($video_id)] ?? null;
 		}
 
 		return '🏭' === $maybe ? null : $maybe;

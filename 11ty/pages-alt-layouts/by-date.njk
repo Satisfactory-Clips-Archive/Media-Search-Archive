@@ -19,6 +19,12 @@ layout: livestream
 		}}</span></h1>
 			<p><a href="{{external.contentUrl}}" rel="noopener" target="_blank">External Link</a></p>
 	</header>
+	{% if external.description %}
+	<details>
+		<summary>Description</summary>
+		<section>{{external.description | markdownify | safe}}</section>
+	</details>
+	{% endif %}
 	{% for section in external.sections %}
 		{% include 'externals-alt.njk' %}
 	{% endfor %}

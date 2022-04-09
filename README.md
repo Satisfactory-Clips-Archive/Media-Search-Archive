@@ -13,6 +13,7 @@ Static site generator for
 ## 2022-04-09
 * made improvements to handling of ./app/part-continued.php
 * added support for alterntaive layout of external videos
+* improved support for descriptions and markdownified content
 
 ## 2022-03-22
 * added required php extensions to composer.json
