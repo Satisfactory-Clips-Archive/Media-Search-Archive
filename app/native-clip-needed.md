@@ -1,18 +1,3 @@
-## 2017-08-01
-- [x] yt-ZW0OOikcWN0,25.186806,57.8 - Jace Talk: Changing Localisation via the Swedish menus
-- [x] yt-ZW0OOikcWN0,73.32,100.230344 - Jace Talk: Basic Movement & Controls
-- [x] yt-ZW0OOikcWN0,100.230344,155.16 - Jace Talk: Multiplayer Ping & Text Chat
-- [x] yt-ZW0OOikcWN0,243.88,303 - Jace Talk: Gathering Resources
-- [x] yt-ZW0OOikcWN0,444.2,459.28 - Jace Talk: Multiplayer Crafting
-- [x] yt-ZW0OOikcWN0,968.818506,1014.32 - Jace Talk: Automating Crafting (Part 2)
-- [x] yt-ZW0OOikcWN0,1187.12,1217.6 - Jace Talk: Factory Overview
-- [x] yt-ZW0OOikcWN0,1407.56,1426.24 - Jace Talk: Exploring for different Resources
-- [x] yt-ZW0OOikcWN0,1426.24,1462.88 - Outro
-
-## 2017-11-17
-- [x] yt-6HZzPbgw3pg,72.16,127.08 - How can we be friends if you know nothing about me?
-- [x] yt-6HZzPbgw3pg,127.08,170.16 - Why would we need a Community Manager now?
-
 ## 2018-03-09
 - [ ] yt-Zo2ybvs7keI,300.32,310.36 - Q&A: Who is the better colleague, Nathalie or Hannah?
 - [ ] yt-Zo2ybvs7keI,344.96,382.8 - Q&A: Are the first two letters of your next game's title really "Sa" ?
@@ -33,7 +18,6 @@
 - [ ] yt-W1E6EWrAsII,421.68,434.4 - Q&A: Is that a Space Elevator at the end of the trailer?
 - [ ] yt-W1E6EWrAsII,434.4,492.52 - Q&A: Is there a height limit in the game?
 - [ ] yt-W1E6EWrAsII,492.52,520.44 - Q&A: Was the trailer a cinematic, or shot in-engine?
-- [ ] yt-W1E6EWrAsII,520.44,538.52 - Q&A: Let's talk about Simon?
 
 ## 2018-07-04
 - [ ] yt-vUW3pockA5Y,90.92,117.8 - Oscar Talk: Combat is a part of the game but not a super big part
@@ -85,7 +69,6 @@
 ## 2018-09-26
 - [ ] yt-Y7G72e0LLBg,7.94,29.52 - Jannik Talk: Other games composed for
 - [ ] yt-Y7G72e0LLBg,29.52,71.42 - Jannik Talk: The vision for the Satisfactory music
-- [x] yt-Y7G72e0LLBg,71.42,114.46 - Jannik Talk: Four different types of Satisfactory music
 - [ ] yt-Y7G72e0LLBg,194.44,239.28 - Jannik Talk: Productivity
 - [ ] yt-Y7G72e0LLBg,239.28,280.26 - Jannik Talk: Musical styles
 - [ ] yt-Y7G72e0LLBg,280.26,303.68 - Jannik Talk: Community Feedback
@@ -288,7 +271,6 @@
 - [ ] yt-CB9bSigNYH8,1887.534825,1907.485701 - Q&A: Can you put something in this cave to make it easy to identify?
 - [ ] yt-CB9bSigNYH8,1913.6,1927.475112 - Q&A: Can we see the tile?
 - [ ] yt-CB9bSigNYH8,1928.64112,1947.23304 - Hannah Talk: Level Design Stream (Part 4)
-- [ ] yt-CB9bSigNYH8,1955.775013,1966.289331 - Q&A: Will water affect items on the belts?
 - [ ] yt-CB9bSigNYH8,2205.555024,2213.124563 - Q&A: Is there Lava?
 - [ ] yt-CB9bSigNYH8,2326.909993,2335.545536 - Q&A: How many suns & moons/planets does this planet have?
 - [ ] yt-CB9bSigNYH8,2353.5666666666666,2375.497716 - Q&A: Do the level names come back in game Lore?
@@ -303,7 +285,6 @@
 - [ ] yt-CB9bSigNYH8,2909.614069,2937.959243 - Q&A: Requirements so far?
 - [ ] yt-CB9bSigNYH8,2937.9666666666667,2987.945714 - Q&A: Say something in French for the French community?
 - [ ] yt-CB9bSigNYH8,2992.465457,3010.894374 - Q&A: Now say something in German?
-- [x] yt-CB9bSigNYH8,3090.973157,3125.355289 - Hannah Talk: Level Design Stream (Part 6)
 - [ ] yt-CB9bSigNYH8,3125.355289,3145.082652 - Q&A: Who is Hannah's favourite member of Coffee Stain?
 - [ ] yt-CB9bSigNYH8,3150.343797,3165.212187 - Q&A: Is the World procedurally generated?
 - [ ] yt-CB9bSigNYH8,3186.400967,3198.158213 - Q&A: Is Coffee Stain based in Sweden?
@@ -370,7 +351,6 @@
 - [ ] yt-CB9bSigNYH8,5141.221945,5152.209084 - Q&A: Can we deform terrain?
 - [ ] yt-CB9bSigNYH8,5159.481807,5167.186143 - Q&A: Will the players be able to make their own Maps?
 - [ ] yt-CB9bSigNYH8,5168.751997,5186.038783 - Hannah Talk: Level Design Stream (Part 9)
-- [x] yt-CB9bSigNYH8,5186.033333333334,5200.942785 - Q&A: What about Snow in the game's future?
 - [ ] yt-CB9bSigNYH8,5200.933333333333,5234.485233 - Hannah Talk: Level Design Stream (Part 10)
 - [ ] yt-CB9bSigNYH8,5238.267007,5244.490972 - Q&A: How big is the map?
 - [ ] yt-CB9bSigNYH8,5245.97296,5251.640578 - Q&A: Does Coffee Stain pay you in Coffee?
@@ -383,7 +363,6 @@
 - [ ] yt-CB9bSigNYH8,5404.066666666667,5416.979985 - Hannah Talk: Level Design Stream (Part 14)
 - [ ] yt-CB9bSigNYH8,5416.966666666666,5436.988277 - Q&A: Is this the kind of game that you wanted to design?
 - [ ] yt-CB9bSigNYH8,5436.988277,5448.739181 - Q&A: Will co-op be available from the start in Early Access?
-- [x] yt-CB9bSigNYH8,5450.593416,5454.661311 - Q&A: Will there be seasons?
 
 ## 2019-03-07
 - [ ] yt-VHr4x1vNeoY,35.34,47.56 - Q&A: Why Early Access?
@@ -451,7 +430,6 @@
 ## 2019-09-13
 - [ ] yt-s3m74qGSYK4,15.320043,39.543556 - Jace Talk: Dev Highlights editing stream
 - [ ] yt-s3m74qGSYK4,39.543556,56.82 - Jace Talk: We want to do more dev/programming streams
-- [x] yt-s3m74qGSYK4,56.82,101.62 - Jace Talk: Community prioritisation of Dedicated Servers vs. Mod Support
 - [ ] yt-s3m74qGSYK4,101.62,145.56 - Jace Talk: Train fixes
 - [ ] yt-s3m74qGSYK4,145.56,164.32 - Jace Talk: Mass dismantle
 - [ ] yt-s3m74qGSYK4,164.32,202.64 - Jace Talk: Cloud saves
@@ -530,9 +508,7 @@
 
 ## 2020-03-12
 - [ ] yt-DsbHR1Nc8fw,32.57420833333333,55.97258333333333 - Jace & Snutt Talk: lolnope
-- [x] yt-DsbHR1Nc8fw,67.81774999999999,97.51408333333333 - Jace Talk: Finding the most amazing pipes
 - [ ] yt-DsbHR1Nc8fw,123.28983333333332,155.44695833333333 - Jace Talk: We're sleeping in a plane, but we won't be adding planes
-- [x] yt-DsbHR1Nc8fw,160.70220833333332,176.63479166666664 - Jace Talk: Jumbo Stay
 - [ ] yt-DsbHR1Nc8fw,184.759462,221.864578 - Jace Talk: We're in an airport
 - [ ] yt-DsbHR1Nc8fw,221.864578,254.54595833333332 - Jace Talk: Update to the Dune Desert
 - [ ] yt-DsbHR1Nc8fw,254.54595833333332,274.02375 - Jace Talk: Searching for pipes in Geneva
@@ -802,7 +778,7 @@
 - [ ] yt-Dp77ih_XmkY,468.081481,498.0833333333333 - Hover Pack
 - [ ] yt-Dp77ih_XmkY,565.625,573.0833333333334 - Zip Lines
 - [ ] yt-Dp77ih_XmkY,604.9583333333334,639.8333333333334 - Particle Accelerator
-- [ ] yt-Gdz6SUv9Om4,222.394479,246.433174 - State of Dev
+- [ ] yt-Gdz6SUv9Om4,222.394479,246.433174 - State of Dev: March 16th, 2021
 - [ ] yt-Gdz6SUv9Om4,325.214703,362.595642 - Q&A: How are you feeling Snutt?
 - [ ] yt-Gdz6SUv9Om4,439.23333333333335,450.521525 - Q&A: Rickroll?
 - [ ] yt-Gdz6SUv9Om4,478.168215,489.981815 - Community FYI: I moved to Steam chat for a higher chance of Jace reading my comment
@@ -879,7 +855,6 @@
 - [ ] yt-cF3QleeEiJo,1386.6346418457936,1444.599012 - Snutt Talk: Verify your game files before checking the QA site
 - [ ] yt-cF3QleeEiJo,1455.1347226958824,1505.837998 - Snutt Talk: We'll post the patch notes and everything when the Update drops
 - [ ] yt-cF3QleeEiJo,1505.837998,1558.322977 - Snutt Talk: Snutt hasn't had time for lunch
-- [x] yt-cF3QleeEiJo,2105.731039,2156.762994 - Hannah Talk: Floating rocks
 - [ ] yt-cF3QleeEiJo,4421.216082,4464.700819 - Snutt Talk: Update 4 being released on Early Access
 - [ ] yt-cF3QleeEiJo,4464.700819,4519.685072 - Q&A: Will Update 4 on Early Access break Mods?
 - [ ] yt-cF3QleeEiJo,4551.729517,4563.536908 - Q&A: Mods?
@@ -907,7 +882,7 @@
 - [ ] yt-dyqOMITwLsY,448.69825,500.75024999999994 - Q&A: Is there anything else aside from Conveyor Belts that's not using Distance Fields?
 - [ ] yt-dyqOMITwLsY,597.456414,647.6052916666666 - Q&A: Is there anything else you're planning to do with Lights in the future?
 - [ ] yt-dyqOMITwLsY,647.6052916666666,691.144145 - Snutt & Ben Talk: Fake fog planes on Ceiling Lights
-- [ ] yt-dyqOMITwLsY,783.279574,808.618017 - Snutt & Ben Talked: Consequences of too many lights
+- [ ] yt-dyqOMITwLsY,783.279574,808.618017 - Snutt & Ben Talk: Consequences of too many lights
 - [ ] yt-dyqOMITwLsY,886.779315,945.720316 - Ben Talk: Other optimisations to Constructors
 - [ ] yt-dyqOMITwLsY,1286.7855,1330.7460833333332 - Ben Talk: Custom Hologram colours coming in the future
 
@@ -941,7 +916,6 @@
 - [ ] yt-QfaReoks6OM,124.41666666666667,163.20833333333334 - Jace Talk: Hard & Soft Clearance
 - [ ] yt-QfaReoks6OM,163.25,185.29166666666666 - Snutt Talk: Quick Switch Improvements
 - [ ] yt-QfaReoks6OM,185.33333333333334,200.29166666666666 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 2)
-- [ ] yt-QfaReoks6OM,200.33333333333334,222.20833333333334 - Snutt Talk: Zooping
 - [ ] yt-QfaReoks6OM,222.25,231.70833333333334 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 3)
 - [ ] yt-QfaReoks6OM,231.75,262.75 - Snutt & Jace Talk: More Cosmetic Build Pieces
 - [ ] yt-QfaReoks6OM,262.7916666666667,269.8333333333333 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 4)
@@ -969,7 +943,6 @@
 - [ ] yt-QfaReoks6OM,764.0833333333334,783.137801 - Snutt Talk: An Update to Train Timetables
 - [ ] yt-QfaReoks6OM,1018.375,1045.875 - Snutt & Jace Talk: Jace won, we get Dedicated Servers
 - [ ] yt-QfaReoks6OM,1045.9166666666667,1068.12962 - Jace & Snutt Talk: There's a lot more coming to Update 5
-- [ ] yt-QfaReoks6OM,1068.1666666666667,1079.875 - Snutt & Jace Talk: Wager on releasing Golf versus Dedicated Servers (Part 11)
 - [ ] yt-Rumqu_lyapg,652.347712,661.434899 - Snutt & Jace Talk: Bisexual Finger Guns (Part 1)
 - [ ] yt-Rumqu_lyapg,786.0666666666667,805.495442 - Q&A: Covid situation in Sweden?
 - [ ] yt-Rumqu_lyapg,805.5333333333333,844.62595 - Snutt & Jace Talk: Showing off the current office streaming setup
@@ -1075,35 +1048,117 @@
 - [ ] yt-Rumqu_lyapg,16820.433333333334,16842.066021 - Q&A: When will Update 5 come to Early Access?
 - [ ] yt-Rumqu_lyapg,16911.8,16917.930858 - End Tag
 
-## 2021-10-27
-- [x] yt-Nn-1s87JJxc,34.2342,61.59486666666667 - Q&A: Did you just add a Dedicated Server model to the game?
-- [x] yt-Nn-1s87JJxc,61.628233333333334,88.92216666666667 - Jace Talk: Dedicated Servers are super experimental
-- [x] yt-Nn-1s87JJxc,88.95553333333334,140.67386666666667 - Jace Talk: We would appreciate your feedback on the Dedicated Servers
-- [x] yt-Nn-1s87JJxc,140.70723333333333,196.0959 - Q&A: Where can I get the Dedicated Servers?
-- [x] yt-Nn-1s87JJxc,196.12926666666667,206.1059 - Q&A: What operating systems do you support?
-- [x] yt-Nn-1s87JJxc,382.4821,433.36626666666666 - Q&A: How many people can fit on one Server?
-- [x] yt-Nn-1s87JJxc,433.3996333333333,447.1800666666667 - Q&A: Are Coffee Stain hosting any official Dedicated Servers?
-- [x] yt-Nn-1s87JJxc,447.21343333333334,490.72356666666667 - Q&A: Has Coffee Stain partnered with any external vendors?
-- [x] yt-Nn-1s87JJxc,490.75693333333334,517.1833333333334 - Jace Talk: Setting up a Server
-- [x] yt-Nn-1s87JJxc,517.2167000000001,557.020737 - Jace Talk: How to find Satisfactory Dedicated Server in Steam
-- [x] yt-Nn-1s87JJxc,557.0565,613.9466666666667 - Jace Talk: Launching a Dedicated Server
-- [x] yt-Nn-1s87JJxc,800.3328666666666,822.1546666666667 - Jace Talk: Administrator permissions
+## 2022-01-21
+- [ ] yt-t7pRHznihEA,53.229233,106.33956666666667 - Jace Talk: Satisfactory Constructor Lego
 
-## 2021-10-28
-- [x] yt-YSPnFZbTvxE,12.9129,50.7507 - Jace Talk: Lizard Doggo Plush
-- [x] yt-YSPnFZbTvxE,50.78406666666667,66.69996666666667 - Jace Talk: Dave from Heroic Replicas
-- [x] yt-YSPnFZbTvxE,66.73333333333333,88.42166666666667 - Jace Talk: Heroic Replicas and the Xeno-Basher prototype
+## 2022-02-04
+- [ ] yt-J4LlorYbVV0,95.1951,102.8027 - Jace Talk: Bugfixes
+- [ ] yt-J4LlorYbVV0,102.83606666666667,149.38256666666666 - Jace Talk: Preamble to 6 things we're NEVER adding to Satisfactory
 
-## 2021-10-29
-- [x] yt-rePLsjw-eEY,45.311933333333336,78.41166666666666 - Jace Talk: A lot of love from the Studio to you guys
-- [x] yt-rePLsjw-eEY,78.44503333333334,114.48103333333333 - Jace Talk: Update 5 bug reports
-- [x] yt-rePLsjw-eEY,195.987197,212.21200000000002 - Q&A: Do I need to buy the game on Steam to use Dedicated Servers if I already have the game on Epic?
-- [x] yt-rePLsjw-eEY,226.3261,274.14053333333334 - Jace Talk: Steam/Epic bug
-- [x] yt-rePLsjw-eEY,274.1739,307.37373333333335 - Jace Talk: Missing Uranium & Bauxite nodes
-- [x] yt-rePLsjw-eEY,307.4071,338.814696 - Jace Talk: Stackable Conveyor Poles & Floor Holes have Hard Clearance
-- [x] yt-rePLsjw-eEY,385.7854,405.30490000000003 - Snutt Talk: You can Paint Vehicles, Trains, and Drones
-- [x] yt-rePLsjw-eEY,513.0458666666667,572.2049666666667 - Snutt Talk: Toggling Conveyor Lift direction
-- [x] yt-rePLsjw-eEY,664.0634,690.3897000000001 - Snutt Talk: We've added a lot more Emotes to the game
-- [x] yt-rePLsjw-eEY,690.4564333333334,702.2348666666667 - Snutt Talk: We've added more Personal Storage Boxes
-- [x] yt-rePLsjw-eEY,765.7983666666667,798.4977 - Snutt Talk: We've added more music
-- [x] yt-rePLsjw-eEY,798.5310666666667,840.6398 - Snutt Talk: Fine-grained volume controls
+## 2022-03-04
+- [ ] yt-AbggpyCo1kc,81.006473,96.044044 - Snutt & Jace Talk: Hot Potato Pong
+- [ ] yt-AbggpyCo1kc,96.044044,111.84506666666667 - Snutt & Jace Talk: The gayest ceiling
+- [ ] yt-AbggpyCo1kc,111.87843333333333,118.68523333333333 - Snutt & Jace Talk: Hot Coffee Potato Stainers
+- [ ] yt-AbggpyCo1kc,118.672224,132.36556666666667 - Snutt & Jace Talk: Jace owes Lym $1
+- [ ] yt-AbggpyCo1kc,136.00253333333333,160.69386666666668 - Snutt & Jace Talk: Hot Potato RiQRoll
+- [ ] yt-AbggpyCo1kc,160.72723333333334,178.24473333333333 - Snutt & Jace Talk: Hot Potato Devs
+- [ ] yt-AbggpyCo1kc,276.74313333333333,313.9469666666667 - Snutt & Jace Talk: Hot Potato Docking Stations
+- [ ] yt-AbggpyCo1kc,379.6793,393.8935 - Snutt & Jace Talk: Jace's Spiral Coal Plant
+- [ ] yt-AbggpyCo1kc,393.9268666666667,422.503885 - Snutt & Jace Talk: Welcome to leg day walkway
+- [ ] yt-AbggpyCo1kc,486.98650000000004,497.2300666666667 - Snutt & Jace Talk: The wrong way to pet a Doggo
+
+## 2022-04-01
+- [ ] yt-jAc8Fnj1o9w,2204.446101,2236.046494 - Snutt & Jace Talk: The Legend of Dragoon
+- [ ] yt-jAc8Fnj1o9w,2236.046494,2282.773257 - Snutt & Jace Talk: PS1-era gaming
+
+## 2022-04-08
+- [ ] yt-o6ao9-UIZIQ,103.93716666666667,133.5334 - Jace Talk: Unreal Engine 4 (Part 1)
+- [ ] yt-o6ao9-UIZIQ,133.56676666666667,153.72023333333334 - Jace Talk: Google
+- [ ] yt-o6ao9-UIZIQ,153.7536,176.4763 - Jace Talk: Perforce
+- [ ] yt-o6ao9-UIZIQ,176.50966666666667,183.41656666666668 - Jace Talk: Unreal Game Sync
+- [ ] yt-o6ao9-UIZIQ,183.44993333333335,224.4242 - Jace Talk: Microsoft 365 (Part 1)
+- [ ] yt-o6ao9-UIZIQ,224.45756666666668,232.89933333333335 - Jace Talk: Monday.com (Part 1)
+- [ ] yt-o6ao9-UIZIQ,232.9327,245.47856666666667 - Jace Talk: Wireguard
+- [ ] yt-o6ao9-UIZIQ,245.51193333333333,257.8242333333333 - Jace Talk: Steam, Epic, Humble
+- [ ] yt-o6ao9-UIZIQ,264.5643,308.6750333333333 - Jace Talk: Unreal Engine 4 (Part 2)
+- [ ] yt-o6ao9-UIZIQ,275.8756,308.6750333333333 - Q&A: Do your programs use C++ or Blueprints?
+- [ ] yt-o6ao9-UIZIQ,308.7084,355.82213333333334 - Jace Talk: Visual Studio / Rider (Part 1)
+- [ ] yt-o6ao9-UIZIQ,355.8555,396.06233333333336 - Jace Talk: Beyond Compare
+- [ ] yt-o6ao9-UIZIQ,396.0957,419.25216666666665 - Jace Talk: Notepad / Notepad++
+- [ ] yt-o6ao9-UIZIQ,421.3209,449.98286666666667 - Jace Talk: Blender (Part 1)
+- [ ] yt-o6ao9-UIZIQ,450.01623333333333,462.3619 - Jace Talk: Substance Designer (Part 1)
+- [ ] yt-o6ao9-UIZIQ,462.39526666666666,479.0786 - Jace Talk: Substance Painter (Part 1)
+- [ ] yt-o6ao9-UIZIQ,479.11196666666666,519.8860333333333 - Jace Talk: Adobe Photoshop (Part 1)
+- [ ] yt-o6ao9-UIZIQ,519.9194,556.1556 - Jace Talk: Marmoset Toolbag 3
+- [ ] yt-o6ao9-UIZIQ,556.1889666666667,562.4952666666667 - Jace Talk: xNormal
+- [ ] yt-o6ao9-UIZIQ,562.5286333333333,586.9530333333333 - Jace Talk: ZBrush
+- [ ] yt-o6ao9-UIZIQ,586.9864,604.4371666666667 - Jace Talk: Autodesk Maya (Part 1)
+- [ ] yt-o6ao9-UIZIQ,604.4705333333334,627.7271000000001 - Jace Talk: PureRef
+- [ ] yt-o6ao9-UIZIQ,627.7604666666667,674.5405333333333 - 2D Art
+- [ ] yt-o6ao9-UIZIQ,630.1295,644.644 - Jace Talk: Adobe Photoshop (Part 2)
+- [ ] yt-o6ao9-UIZIQ,644.6773666666667,657.5902666666667 - Jace Talk: ProCreate
+- [ ] yt-o6ao9-UIZIQ,657.6236333333334,674.5405333333333 - Jace Talk: Unreal Engine 4 (Part 3)
+- [ ] yt-o6ao9-UIZIQ,674.5739,692.0246666666667 - Jace Talk: What UI/UX means
+- [ ] yt-o6ao9-UIZIQ,771.3038666666666,792.8253666666667 - Jace Talk: Adobe Photoshop (Part 3)
+- [ ] yt-o6ao9-UIZIQ,792.8587333333334,839.9724666666667 - Jace Talk: Unreal Engine 4 (Part 4)
+- [ ] yt-o6ao9-UIZIQ,840.0058333333334,864.4302333333334 - Jace Talk: Microsoft Visio / yED (Part 1)
+- [ ] yt-o6ao9-UIZIQ,864.4636,874.1065666666667 - Jace Talk: Hardware (Part 1)
+- [ ] yt-o6ao9-UIZIQ,874.1399333333334,918.0171 - Animation
+- [ ] yt-o6ao9-UIZIQ,876.4756,918.0171 - Jace Talk: Autodesk Maya (Part 2)
+- [ ] yt-o6ao9-UIZIQ,924.2566666666667,956.7558 - Jace Talk: Houdini (Part 1)
+- [ ] yt-o6ao9-UIZIQ,956.7891666666667,973.0721 - Jace Talk: Blender (Part 2)
+- [ ] yt-o6ao9-UIZIQ,973.1054666666666,988.4207666666667 - Jace Talk: Unreal Engine 4 (Part 5)
+- [ ] yt-o6ao9-UIZIQ,988.4541333333334,1000.1324666666667 - Jace Talk: Substance Designer (Part 2)
+- [ ] yt-o6ao9-UIZIQ,1000.1658333333334,1006.6389666666666 - Jace Talk: Adobe Photoshop (Part 4)
+- [ ] yt-o6ao9-UIZIQ,1023.7894333333334,1043.3089333333332 - Jace Talk: Visual Studio / Rider (Part 2)
+- [ ] yt-o6ao9-UIZIQ,1110.4426666666666,1129.7286 - Jace Talk: Python (Part 1)
+- [ ] yt-o6ao9-UIZIQ,1129.7619666666667,1168.7008666666668 - Jace Talk: Blender (Part 3)
+- [ ] yt-o6ao9-UIZIQ,1168.7342333333333,1177.4763 - Jace Talk: Adobe Photoshop (Part 5)
+- [ ] yt-o6ao9-UIZIQ,1177.5096666666666,1200.6661333333334 - Jace Talk: Substance Designer (Part 3)
+- [ ] yt-o6ao9-UIZIQ,1207.0725333333335,1230.1289 - Jace Talk: Wwise
+- [ ] yt-o6ao9-UIZIQ,1230.1622666666667,1249.2146333333333 - Jace Talk: Reaper
+- [ ] yt-o6ao9-UIZIQ,1249.248,1272.4712 - Jace Talk: Vital
+- [ ] yt-o6ao9-UIZIQ,1272.5045666666667,1303.6690333333333 - Jace Talk: Hardware (Part 2)
+- [ ] yt-o6ao9-UIZIQ,1315.8145,1347.9799666666668 - Jace Talk: Microsoft 365 (Part 2)
+- [ ] yt-o6ao9-UIZIQ,1348.0133333333333,1372.5044666666668 - Jace Talk: GSuite
+- [ ] yt-o6ao9-UIZIQ,1372.5378333333333,1383.3152666666667 - Jace Talk: Slack
+- [ ] yt-o6ao9-UIZIQ,1383.3486333333333,1409.6749333333335 - Jace Talk: Monday.com (Part 2)
+- [ ] yt-o6ao9-UIZIQ,1411.7436666666667,1462.6612 - Jace Talk: Unreal Engine 4 (Part 6)
+- [ ] yt-o6ao9-UIZIQ,1462.6945666666668,1493.5587333333333 - Jace Talk: Microsoft Excel (Part 1)
+- [ ] yt-o6ao9-UIZIQ,1493.5921,1518.517 - Jace Talk: Microsoft Word (Part 1)
+- [ ] yt-o6ao9-UIZIQ,1518.5503666666666,1542.9080333333334 - Jace Talk: Microsoft PowerPoint
+- [ ] yt-o6ao9-UIZIQ,1542.9414,1554.8866666666668 - Jace Talk: Adobe Photoshop (Part 6)
+- [ ] yt-o6ao9-UIZIQ,1554.9200333333333,1572.9714000000001 - Jace Talk: Microsoft Paint (Part 1)
+- [ ] yt-o6ao9-UIZIQ,1573.0047666666667,1586.2847 - Jace Talk: Microsoft Visio (Part 2)
+- [ ] yt-o6ao9-UIZIQ,1586.3180666666667,1596.5616333333335 - Jace Talk: Hardware (Part 3)
+- [ ] yt-o6ao9-UIZIQ,1599.2977,1622.1872333333333 - Jace Talk: Unreal Engine 4 (Part 7)
+- [ ] yt-o6ao9-UIZIQ,1622.2206,1653.6186333333333 - Jace Talk: Microsoft Word / Microsoft PowerPoint (Part 2)
+- [ ] yt-o6ao9-UIZIQ,1653.652,1682.9813 - Jace Talk: Microsoft Excel (Part 2)
+- [ ] yt-o6ao9-UIZIQ,1683.0146666666667,1699.8982 - Jace Talk: Google Earth
+- [ ] yt-o6ao9-UIZIQ,1699.9315666666666,1744.3426 - Jace Talk: Adobe Photoshop (Part 7)
+- [ ] yt-o6ao9-UIZIQ,1747.2455,1772.7042666666666 - Jace Talk: Unreal Engine 4 (Part 8)
+- [ ] yt-o6ao9-UIZIQ,1772.7376333333334,1794.7930000000001 - Jace Talk: Crowdin
+- [ ] yt-o6ao9-UIZIQ,1794.8263666666667,1852.7175333333334 - Jace Talk: Python (Part 2)
+- [ ] yt-o6ao9-UIZIQ,1852.7509,1866.3978666666667 - Jace Talk: Visual Studio Code
+- [ ] yt-o6ao9-UIZIQ,1866.4312333333335,1896.3277666666668 - Jace Talk: Google Sheets
+- [ ] yt-o6ao9-UIZIQ,1896.3611333333333,1925.1232 - Jace Talk: Discord
+- [ ] yt-o6ao9-UIZIQ,1925.1565666666668,1959.7244333333333 - Jace Talk: Don't mention Google Translate
+- [ ] yt-o6ao9-UIZIQ,1976.6079666666667,2013.5782333333334 - Jace Talk: PowerShell
+- [ ] yt-o6ao9-UIZIQ,2013.6116,2041.6729666666668 - Jace Talk: Python (Part 3)
+- [ ] yt-o6ao9-UIZIQ,2041.7063333333333,2092.1233666666667 - Jace Talk: Jenkins
+- [ ] yt-o6ao9-UIZIQ,2092.1567333333332,2120.2514666666666 - Jace Talk: Google Cloud Platform
+- [ ] yt-o6ao9-UIZIQ,2120.284833333333,2151.2824666666666 - Jace Talk: Incredibuild
+- [ ] yt-o6ao9-UIZIQ,2151.3158333333336,2174.3388333333332 - Jace Talk: IT rabbit hole
+- [ ] yt-o6ao9-UIZIQ,2178.176,2202.0331666666666 - Jace Talk: Social Media
+- [ ] yt-o6ao9-UIZIQ,2206.2707333333333,2225.7235 - Jace Talk: Adobe Premiere Pro
+- [ ] yt-o6ao9-UIZIQ,2225.7568666666666,2249.0468 - Jace Talk: Adobe After Effects
+- [ ] yt-o6ao9-UIZIQ,2249.0801666666666,2258.7898666666665 - Jace Talk: Adobe Photoshop (Part 8)
+- [ ] yt-o6ao9-UIZIQ,2258.8232333333335,2270.7017666666666 - Jace Talk: Microsoft Paint (Part 2)
+- [ ] yt-o6ao9-UIZIQ,2270.7351333333336,2280.0778 - Jace Talk: Audacity / Sonar / Adobe Audition
+- [ ] yt-o6ao9-UIZIQ,2280.1111666666666,2287.6520333333333 - Jace Talk: ShadowPlay
+- [ ] yt-o6ao9-UIZIQ,2287.6854,2299.9643333333333 - Jace Talk: OBS Studio
+- [ ] yt-o6ao9-UIZIQ,2303.9349666666667,2318.1825333333336 - Jace Talk: Restream
+- [ ] yt-o6ao9-UIZIQ,2318.2159,2328.959966666667 - Jace Talk: Google Slides
+- [ ] yt-o6ao9-UIZIQ,2328.9933333333333,2357.7554 - Stream Ass-istant
+- [ ] yt-o6ao9-UIZIQ,2357.7887666666666,2382.113066666667 - CEO
+- [ ] yt-o6ao9-UIZIQ,2361.5592,2382.113066666667 - Q&A: What tools does the CEO use?
