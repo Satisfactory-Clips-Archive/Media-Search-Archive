@@ -8,7 +8,7 @@
     "native-clip-needed": "ts-node ./app/native-clip-needed.ts",
     "generate-blamehannah.com-data": "ts-node ./app/blamehannah.com.ts",
     "tweets": "ts-node ./app/tweets.ts",
-    "eleventy": "eleventy --config=./.eleventy.tweets.js && eleventy && eleventy --config=./.eleventy.pages.js",
+    "eleventy": "eleventy --config=./.eleventy.tweets.js && eleventy && eleventy --config=./.eleventy.pages.js && eleventy --config=./.eleventy.pages-alt-layout.js",
     "build": "npm run -s tweets && npm run -s update && gulp topics && npm run -s images-svg && npm run -s eleventy && gulp build"
   },
   "dependencies": {

@@ -78,7 +78,8 @@ class Injected
 		$prepared = prepare_injections(
 			$this->api,
 			$this->slugify,
-			$this->skipping
+			$this->skipping,
+			$this
 		);
 
 		[

@@ -193,7 +193,7 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 	return
 		'https://www.youtube.com/watch?' .
 		http_build_query([
-			'v' => $video_id,
+			'v' => preg_replace('/^yt-/', '', $video_id),
 		]);
 }
 
@@ -462,7 +462,8 @@ function inject_caches(array $cache, array ...$caches) : array
 function prepare_injections(
 	YouTubeApiWrapper $api,
 	Slugify $slugify,
-	SkippingTranscriptions $skipping
+	SkippingTranscriptions $skipping,
+	Injected $injected
 ) : array {
 	/**
 	 * @var array{
@@ -614,6 +615,7 @@ function prepare_injections(
 			$not_a_livestream_date_lookup,
 			$slugify,
 			$skipping,
+			$injected,
 			false
 		);
 
@@ -2440,6 +2442,16 @@ function get_dated_csv(
  * @param array<string, string> $not_a_livestream_date_lookup
  *
  * @return array{
+ *	externals_needing_alt_layout: array{
+ *		string: array{
+ *			title:string,
+ *			contentUrl:string,
+ *			description:string,
+ *			date:string,
+ *			thumbnail?:string,
+ *			sections:VideoSection[]
+ *		}[]
+ *	},
  *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	playlistItems:array<string, array{0:string, 1:string}>,
  *	videoTags:array<string, array{0:string, list<string>}>
@@ -2452,11 +2464,13 @@ function process_externals(
 	array $not_a_livestream_date_lookup,
 	Slugify $slugify,
 	SkippingTranscriptions $skipping,
+	Injected $injected,
 	bool $write_files = true
 ) : array {
 	$externals = get_externals();
 
 	$inject = [
+		'externals_needing_alt_layout' => [],
 		'playlists' => [],
 		'playlistItems' => [],
 		'videoTags' => [],
@@ -2481,7 +2495,12 @@ function process_externals(
 			$lines_to_write = [['', ''], []];
 
 			try {
-				[$inject, $lines_to_write] = process_dated_csv(
+				[
+					$inject,
+					$lines_to_write,
+					$needs_alt_layout,
+					$embed_data_set,
+				] = process_dated_csv(
 					$date,
 					$inject,
 					$externals_data,
@@ -2597,6 +2616,19 @@ function process_externals(
 				foreach ($files_with_lines_to_write as $other_file => $lines) {
 					file_put_contents($other_file, implode('', $lines));
 				}
+
+				if ($needs_alt_layout) {
+					if ( ! isset($inject['externals_needing_alt_layout'][$date])) {
+						$inject['externals_needing_alt_layout'][$date] = [];
+					}
+
+					$inject['externals_needing_alt_layout'][$date][] = process_dated_csv_for_alt_layout(
+						$date,
+						$externals_data,
+						$embed_data_set,
+						$injected
+					);
+				}
 			}
 		}
 	}
@@ -2641,7 +2673,8 @@ function process_externals(
  *
  * @return array{
  *	0:CACHE,
- *	1:array{0:list<string>, 1:array<string, list<string>>}
+ *	1:array{0:list<string>, 1:array<string, list<string>>},
+ *	2:bool
  * }
  */
 function process_dated_csv(
@@ -2659,6 +2692,8 @@ function process_dated_csv(
 	bool $skip_header = false,
 	bool $skip_header_title = null
 ) : array {
+	$needs_alt_layout = false;
+
 	/** @var list<string> */
 	$out = [];
 
@@ -2856,11 +2891,19 @@ function process_dated_csv(
 		array_filter(
 			$externals_csv,
 			static function (int $k) use ($data) : bool {
-				return false !== ($data['topics'][$k] ?? false);
+				return false !== ($data['topics'][$k] ?? false) && null !== ($data['topics'][$k] ?? null);
 			},
 			ARRAY_FILTER_USE_KEY
 		)
 	);
+
+	foreach ($data['topics'] as $maybe_needs_alt_layout) {
+		if (null === $maybe_needs_alt_layout) {
+			$needs_alt_layout = true;
+
+			break;
+		}
+	}
 
 	if ($do_injection) {
 		$inject['playlists'][$date] = ['', $data['title'], array_merge(
@@ -2879,6 +2922,8 @@ function process_dated_csv(
 			)
 		)];
 	}
+
+	$embed_data_set = [];
 
 	foreach ($externals_csv as $i => $line) {
 		[$start, $end, $clip_title] = $line;
@@ -2899,6 +2944,7 @@ function process_dated_csv(
 			'autoplay' => 1,
 			'start' => floor((float) ($start ?: '0')),
 			'end' => $end,
+			'end-raw' => $end,
 		];
 
 		if ('' === $embed_data['end']) {
@@ -2906,6 +2952,8 @@ function process_dated_csv(
 		} else {
 			$embed_data['end'] = ceil((float) $embed_data['end']);
 		}
+
+		$embed_data_set[] = $embed_data;
 
 		/** @var numeric-string */
 		$start = ($start ?: '0.0');
@@ -3077,7 +3125,164 @@ function process_dated_csv(
 		}
 	}
 
-	return [$inject, [$out, $files_out]];
+	return [$inject, [$out, $files_out], $needs_alt_layout, $embed_data_set];
+}
+
+function process_dated_csv_for_alt_layout(
+	string $date,
+	array $externals_data,
+	array $embed_data_set,
+	Injected $injected
+) : array {
+	[$video_id, $externals_csv, $data] = $externals_data;
+
+	$alt_layout_data = [
+		'title' => $data['title'],
+		'contentUrl' => video_url_from_id($video_id),
+		'date' => $date,
+		'description' => $injected->determine_video_description($video_id),
+		'sections' => [],
+	];
+
+	/** @var list<VideoSection|array> */
+	$sections = [];
+	$has_parent = [];
+
+	foreach ($externals_csv as $i => $row) {
+		[$start,, $title] = $row;
+
+		$end = $embed_data_set[$i]['end-raw'];
+
+		$clip_id = sprintf(
+			'%s,%s',
+			$video_id,
+			$start . ('' === $end ? '' : (',' . $end))
+		);
+
+		if (null === $data['topics'][$i]) {
+			$sections[] = new VideoSection(
+				$title,
+				timestamp_link($video_id, $start),
+				$start,
+				$end ?: null
+			);
+		} else {
+			/** @var numeric-string */
+			$start = ($start ?: '0.0');
+
+			$decimals = mb_strlen(explode('.', $start)[1] ?? '');
+
+			$start_hours = str_pad((string) floor(((float) $start) / 3600), 2, '0', STR_PAD_LEFT);
+			$start_minutes = str_pad((string) floor((float) bcdiv(bcmod($start, '3600', $decimals) ?? '0', '60', $decimals)), 2, '0', STR_PAD_LEFT);
+			$start_seconds = str_pad((string) floor((float) bcmod($start, '60', $decimals)), 2, '0', STR_PAD_LEFT);
+
+			$embed_data = [
+				'autoplay' => 1,
+				'start' => $start,
+				'end' => $end,
+				'end-raw' => $end,
+				'title' => $title,
+				'has_captions' => false,
+				'started_formated' => sprintf(
+					'%s:%s:%s',
+					$start_hours,
+					$start_minutes,
+					$start_seconds
+				),
+				'link' => video_url_from_id($clip_id),
+			];
+
+			if ('' === $embed_data['end']) {
+				unset($embed_data['end']);
+			} else {
+				$embed_data['end'] = ceil((float) $embed_data['end']);
+			}
+
+			if (
+				is_file(
+					__DIR__
+					. '/../../video-clip-notes/docs/transcriptions/'
+					. $clip_id
+					. '.md'
+				)
+			) {
+				$embed_data['has_captions'] = sprintf(
+					'/transcriptions/%s',
+					sprintf(
+						'%s/',
+						$clip_id
+					)
+				);
+			}
+
+			$sections[] = $embed_data;
+		}
+	}
+
+	foreach ($sections as $i => $maybe_subsection) {
+
+		if ($maybe_subsection instanceof VideoSection) {
+			$maybe_sub_start = $maybe_subsection->start;
+			$maybe_sub_end = $maybe_subsection->end;
+		} else {
+			$maybe_sub_start = $maybe_subsection['start'];
+			$maybe_sub_end = $maybe_subsection['end-raw'];
+		}
+
+		$use_parent_section = null;
+
+		foreach ($sections as $j => $maybe_parent_section) {
+			if ($i === $j || is_array($maybe_parent_section)) {
+				continue;
+			}
+
+			$maybe_parent_start = $maybe_parent_section->start;
+			$maybe_parent_end = $maybe_parent_section->end;
+
+			if (
+				$use_parent_section
+				&& $maybe_sub_start < $maybe_parent_start
+			) {
+				continue;
+			}
+
+			if (
+				(
+					null !== $maybe_sub_end
+					&& null !== $maybe_sub_start
+					&& $maybe_sub_start >= $maybe_parent_start
+					&& $maybe_sub_end >= $maybe_parent_start
+					&& $maybe_sub_end <= $maybe_parent_end
+				)
+				|| (
+					null === $maybe_parent_end
+					&& $maybe_sub_start >= $maybe_parent_start
+				)
+			) {
+				$use_parent_section = $j;
+			}
+		}
+
+		if ($use_parent_section) {
+			if (is_array($sections[$use_parent_section])) {
+				throw new RuntimeException(
+					'arrays as parent sections not yet supported!'
+				);
+			}
+			$sections[$use_parent_section]->subsections[] = $maybe_subsection;
+			$has_parent[] = $i;
+		}
+	}
+
+	$alt_layout_data['sections'] = array_values(array_filter(
+		$sections,
+		static function (int $maybe) use ($has_parent) : bool {
+			return ! in_array($maybe, $has_parent, true);
+		},
+		ARRAY_FILTER_USE_KEY
+	));
+
+	return $alt_layout_data;
 }
 
 /**

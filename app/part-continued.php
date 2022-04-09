@@ -36,10 +36,15 @@ $api = new YouTubeApiWrapper();
 
 $skipping = SkippingTranscriptions::i();
 
+$slugify = new Slugify();
+
+$injected = new Injected($api, $slugify, $skipping);
+
 [$cache] = prepare_injections(
 	$api,
-	new Slugify(),
-	$skipping
+	$slugify,
+	$skipping,
+	$injected
 );
 
 /**
@@ -159,6 +164,23 @@ $existing['ZaVKeo3QXqg']['previous'] = '1dUNmBBbExs'; // not in index but is wha
 
 uksort($existing, [$sorting, 'sort_video_ids_by_date']);
 
+uksort(
+	$existing,
+	static function (string $a, string $b) use ($sorting, $existing) : int {
+		$a_id = explode(',', $a)[0];
+		$b_id = explode(',', $b)[0];
+
+		if ($a_id === $b_id) {
+			return strnatcasecmp(
+				$existing[$a]['title'],
+				$existing[$b]['title']
+			);
+		}
+
+		return 0;
+	}
+);
+
 file_put_contents(
 	__DIR__ . '/data/part-continued.json',
 	json_encode($existing, JSON_PRETTY_PRINT)
@@ -179,5 +201,7 @@ echo sprintf(
 		count($no_parts_specified),
 		count($existing)
 	),
+	"\n",
+	implode("\n", array_keys($no_parts_specified)),
 	"\n"
 ;

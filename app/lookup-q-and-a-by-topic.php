@@ -80,9 +80,11 @@ $api->update();
 
 $slugify = new Slugify();
 
+$injected = new Injected($api, $slugify, $skipping);
+
 [
 	$cache,
-] = prepare_injections($api, $slugify, $skipping);
+] = prepare_injections($api, $slugify, $skipping, $injected);
 
 if ( ! is_string($lookup)) {
 	echo 'no video id specified!'

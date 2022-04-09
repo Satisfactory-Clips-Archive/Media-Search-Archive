@@ -19,7 +19,7 @@ layout: livestream
 		}}</span></h1>
 			<p><a href="{{external.contentUrl}}" rel="noopener" target="_blank">External Link</a></p>
 	</header>
-	{% for section in external.embed_data %}
+	{% for section in external.sections %}
 		{% include 'externals-alt.njk' %}
 	{% endfor %}
 	<meta itemprop="contentUrl" content="{{external.contentUrl}}">

@@ -207,13 +207,14 @@ file_put_contents(__DIR__ . '/playlist-date-history.json', json_encode(
 
 $grouped_dated_data_for_json = [];
 
-process_externals(
+$process_externals_result = process_externals(
 	$cache,
 	$global_topic_hierarchy,
 	$not_a_livestream,
 	$not_a_livestream_date_lookup,
 	$slugify,
-	$skipping
+	$skipping,
+	$injected
 );
 $externals_values = get_externals();
 $externals_dates = array_keys($externals_values);
@@ -1692,6 +1693,30 @@ foreach (array_keys($playlists) as $playlist_id) {
 	file_put_contents($playlists[$playlist_id], implode('', $playlist_lines));
 }
 
+$grouped_dated_data_for_json_alt_layout = [];
+
+foreach ($process_externals_result['externals_needing_alt_layout'] as $date => $externals_needing_alt_layout) {
+	$grouped_dated_data_for_json_alt_layout[$date] = $grouped_dated_data_for_json[$date];
+	$grouped_dated_data_for_json_alt_layout[$date]['externals'] = $externals_needing_alt_layout;
+
+	foreach ($externals_needing_alt_layout as $i => $maybe_remap) {
+		$grouped_dated_data_for_json_alt_layout[$date]['externals'][$i]['sections'] = array_map(
+			static function (array|VideoSection $maybe_convert) : array {
+				if ($maybe_convert instanceof VideoSection) {
+					return $maybe_convert->jsonSerialize();
+				}
+
+				return $maybe_convert;
+			},
+			$maybe_remap['sections']
+		);
+	}
+}
+
+file_put_contents(__DIR__ . '/../11ty/data/dated_alt.json', json_encode(
+	array_values($grouped_dated_data_for_json_alt_layout),
+	JSON_PRETTY_PRINT
+));
 file_put_contents(__DIR__ . '/../11ty/data/dated.json', json_encode(
 	array_values($grouped_dated_data_for_json),
 	JSON_PRETTY_PRINT

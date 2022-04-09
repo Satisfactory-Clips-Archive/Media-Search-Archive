@@ -48,7 +48,7 @@ $out = [];
 [
 	$cache,
 	$global_topic_hierarchy,
-] = prepare_injections($api, $slugify, $skipping);
+] = prepare_injections($api, $slugify, $skipping, $injected);
 
 $dated_playlists = $api->dated_playlists();
 

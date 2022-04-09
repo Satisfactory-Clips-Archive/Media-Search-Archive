@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2022-04-09
+* made improvements to handling of ./app/part-continued.php
+* added support for alterntaive layout of external videos
+
 ## 2022-03-22
 * added required php extensions to composer.json
 * shift eleventy-specific tasks into separately addressable build script

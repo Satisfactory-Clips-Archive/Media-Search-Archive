@@ -382,7 +382,8 @@ class Questions
 		[$cache] = prepare_injections(
 			$this->injected->api,
 			$this->injected->slugify,
-			$this->injected->skipping
+			$this->injected->skipping,
+			$this->injected
 		);
 		$playlists = $this->injected->api->dated_playlists();
 
