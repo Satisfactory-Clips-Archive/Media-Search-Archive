@@ -74,7 +74,7 @@ const done_keys = Object.keys(done);
 		return Object.entries(json_data.topics).filter((e) => {
 			const [, maybe] = e;
 
-			return maybe !== false;
+			return maybe !== false && maybe !== null;
 		}).map((e) : [string, string, [string, string, string]] => {
 			const [key] = e;
 			const i = parseInt(key, 10);

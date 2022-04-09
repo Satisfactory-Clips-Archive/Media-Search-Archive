@@ -1072,93 +1072,93 @@
 - [ ] yt-jAc8Fnj1o9w,2236.046494,2282.773257 - Snutt & Jace Talk: PS1-era gaming
 
 ## 2022-04-08
-- [ ] yt-o6ao9-UIZIQ,103.93716666666667,133.5334 - Jace Talk: Unreal Engine 4 (Part 1)
-- [ ] yt-o6ao9-UIZIQ,133.56676666666667,153.72023333333334 - Jace Talk: Google
-- [ ] yt-o6ao9-UIZIQ,153.7536,176.4763 - Jace Talk: Perforce
-- [ ] yt-o6ao9-UIZIQ,176.50966666666667,183.41656666666668 - Jace Talk: Unreal Game Sync
-- [ ] yt-o6ao9-UIZIQ,183.44993333333335,224.4242 - Jace Talk: Microsoft 365 (Part 1)
-- [ ] yt-o6ao9-UIZIQ,224.45756666666668,232.89933333333335 - Jace Talk: Monday.com (Part 1)
-- [ ] yt-o6ao9-UIZIQ,232.9327,245.47856666666667 - Jace Talk: Wireguard
-- [ ] yt-o6ao9-UIZIQ,245.51193333333333,257.8242333333333 - Jace Talk: Steam, Epic, Humble
-- [ ] yt-o6ao9-UIZIQ,264.5643,308.6750333333333 - Jace Talk: Unreal Engine 4 (Part 2)
-- [ ] yt-o6ao9-UIZIQ,275.8756,308.6750333333333 - Q&A: Do your programs use C++ or Blueprints?
-- [ ] yt-o6ao9-UIZIQ,308.7084,355.82213333333334 - Jace Talk: Visual Studio / Rider (Part 1)
-- [ ] yt-o6ao9-UIZIQ,355.8555,396.06233333333336 - Jace Talk: Beyond Compare
-- [ ] yt-o6ao9-UIZIQ,396.0957,419.25216666666665 - Jace Talk: Notepad / Notepad++
-- [ ] yt-o6ao9-UIZIQ,421.3209,449.98286666666667 - Jace Talk: Blender (Part 1)
-- [ ] yt-o6ao9-UIZIQ,450.01623333333333,462.3619 - Jace Talk: Substance Designer (Part 1)
-- [ ] yt-o6ao9-UIZIQ,462.39526666666666,479.0786 - Jace Talk: Substance Painter (Part 1)
-- [ ] yt-o6ao9-UIZIQ,479.11196666666666,519.8860333333333 - Jace Talk: Adobe Photoshop (Part 1)
-- [ ] yt-o6ao9-UIZIQ,519.9194,556.1556 - Jace Talk: Marmoset Toolbag 3
-- [ ] yt-o6ao9-UIZIQ,556.1889666666667,562.4952666666667 - Jace Talk: xNormal
-- [ ] yt-o6ao9-UIZIQ,562.5286333333333,586.9530333333333 - Jace Talk: ZBrush
-- [ ] yt-o6ao9-UIZIQ,586.9864,604.4371666666667 - Jace Talk: Autodesk Maya (Part 1)
-- [ ] yt-o6ao9-UIZIQ,604.4705333333334,627.7271000000001 - Jace Talk: PureRef
-- [ ] yt-o6ao9-UIZIQ,627.7604666666667,674.5405333333333 - 2D Art
-- [ ] yt-o6ao9-UIZIQ,630.1295,644.644 - Jace Talk: Adobe Photoshop (Part 2)
-- [ ] yt-o6ao9-UIZIQ,644.6773666666667,657.5902666666667 - Jace Talk: ProCreate
-- [ ] yt-o6ao9-UIZIQ,657.6236333333334,674.5405333333333 - Jace Talk: Unreal Engine 4 (Part 3)
-- [ ] yt-o6ao9-UIZIQ,674.5739,692.0246666666667 - Jace Talk: What UI/UX means
-- [ ] yt-o6ao9-UIZIQ,771.3038666666666,792.8253666666667 - Jace Talk: Adobe Photoshop (Part 3)
-- [ ] yt-o6ao9-UIZIQ,792.8587333333334,839.9724666666667 - Jace Talk: Unreal Engine 4 (Part 4)
-- [ ] yt-o6ao9-UIZIQ,840.0058333333334,864.4302333333334 - Jace Talk: Microsoft Visio / yED (Part 1)
-- [ ] yt-o6ao9-UIZIQ,864.4636,874.1065666666667 - Jace Talk: Hardware (Part 1)
-- [ ] yt-o6ao9-UIZIQ,874.1399333333334,918.0171 - Animation
-- [ ] yt-o6ao9-UIZIQ,876.4756,918.0171 - Jace Talk: Autodesk Maya (Part 2)
-- [ ] yt-o6ao9-UIZIQ,924.2566666666667,956.7558 - Jace Talk: Houdini (Part 1)
-- [ ] yt-o6ao9-UIZIQ,956.7891666666667,973.0721 - Jace Talk: Blender (Part 2)
-- [ ] yt-o6ao9-UIZIQ,973.1054666666666,988.4207666666667 - Jace Talk: Unreal Engine 4 (Part 5)
-- [ ] yt-o6ao9-UIZIQ,988.4541333333334,1000.1324666666667 - Jace Talk: Substance Designer (Part 2)
-- [ ] yt-o6ao9-UIZIQ,1000.1658333333334,1006.6389666666666 - Jace Talk: Adobe Photoshop (Part 4)
-- [ ] yt-o6ao9-UIZIQ,1023.7894333333334,1043.3089333333332 - Jace Talk: Visual Studio / Rider (Part 2)
-- [ ] yt-o6ao9-UIZIQ,1110.4426666666666,1129.7286 - Jace Talk: Python (Part 1)
-- [ ] yt-o6ao9-UIZIQ,1129.7619666666667,1168.7008666666668 - Jace Talk: Blender (Part 3)
-- [ ] yt-o6ao9-UIZIQ,1168.7342333333333,1177.4763 - Jace Talk: Adobe Photoshop (Part 5)
-- [ ] yt-o6ao9-UIZIQ,1177.5096666666666,1200.6661333333334 - Jace Talk: Substance Designer (Part 3)
-- [ ] yt-o6ao9-UIZIQ,1207.0725333333335,1230.1289 - Jace Talk: Wwise
-- [ ] yt-o6ao9-UIZIQ,1230.1622666666667,1249.2146333333333 - Jace Talk: Reaper
-- [ ] yt-o6ao9-UIZIQ,1249.248,1272.4712 - Jace Talk: Vital
-- [ ] yt-o6ao9-UIZIQ,1272.5045666666667,1303.6690333333333 - Jace Talk: Hardware (Part 2)
-- [ ] yt-o6ao9-UIZIQ,1315.8145,1347.9799666666668 - Jace Talk: Microsoft 365 (Part 2)
-- [ ] yt-o6ao9-UIZIQ,1348.0133333333333,1372.5044666666668 - Jace Talk: GSuite
-- [ ] yt-o6ao9-UIZIQ,1372.5378333333333,1383.3152666666667 - Jace Talk: Slack
-- [ ] yt-o6ao9-UIZIQ,1383.3486333333333,1409.6749333333335 - Jace Talk: Monday.com (Part 2)
-- [ ] yt-o6ao9-UIZIQ,1411.7436666666667,1462.6612 - Jace Talk: Unreal Engine 4 (Part 6)
-- [ ] yt-o6ao9-UIZIQ,1462.6945666666668,1493.5587333333333 - Jace Talk: Microsoft Excel (Part 1)
-- [ ] yt-o6ao9-UIZIQ,1493.5921,1518.517 - Jace Talk: Microsoft Word (Part 1)
-- [ ] yt-o6ao9-UIZIQ,1518.5503666666666,1542.9080333333334 - Jace Talk: Microsoft PowerPoint
-- [ ] yt-o6ao9-UIZIQ,1542.9414,1554.8866666666668 - Jace Talk: Adobe Photoshop (Part 6)
-- [ ] yt-o6ao9-UIZIQ,1554.9200333333333,1572.9714000000001 - Jace Talk: Microsoft Paint (Part 1)
-- [ ] yt-o6ao9-UIZIQ,1573.0047666666667,1586.2847 - Jace Talk: Microsoft Visio (Part 2)
-- [ ] yt-o6ao9-UIZIQ,1586.3180666666667,1596.5616333333335 - Jace Talk: Hardware (Part 3)
-- [ ] yt-o6ao9-UIZIQ,1599.2977,1622.1872333333333 - Jace Talk: Unreal Engine 4 (Part 7)
-- [ ] yt-o6ao9-UIZIQ,1622.2206,1653.6186333333333 - Jace Talk: Microsoft Word / Microsoft PowerPoint (Part 2)
-- [ ] yt-o6ao9-UIZIQ,1653.652,1682.9813 - Jace Talk: Microsoft Excel (Part 2)
-- [ ] yt-o6ao9-UIZIQ,1683.0146666666667,1699.8982 - Jace Talk: Google Earth
-- [ ] yt-o6ao9-UIZIQ,1699.9315666666666,1744.3426 - Jace Talk: Adobe Photoshop (Part 7)
-- [ ] yt-o6ao9-UIZIQ,1747.2455,1772.7042666666666 - Jace Talk: Unreal Engine 4 (Part 8)
-- [ ] yt-o6ao9-UIZIQ,1772.7376333333334,1794.7930000000001 - Jace Talk: Crowdin
-- [ ] yt-o6ao9-UIZIQ,1794.8263666666667,1852.7175333333334 - Jace Talk: Python (Part 2)
-- [ ] yt-o6ao9-UIZIQ,1852.7509,1866.3978666666667 - Jace Talk: Visual Studio Code
-- [ ] yt-o6ao9-UIZIQ,1866.4312333333335,1896.3277666666668 - Jace Talk: Google Sheets
-- [ ] yt-o6ao9-UIZIQ,1896.3611333333333,1925.1232 - Jace Talk: Discord
-- [ ] yt-o6ao9-UIZIQ,1925.1565666666668,1959.7244333333333 - Jace Talk: Don't mention Google Translate
-- [ ] yt-o6ao9-UIZIQ,1976.6079666666667,2013.5782333333334 - Jace Talk: PowerShell
-- [ ] yt-o6ao9-UIZIQ,2013.6116,2041.6729666666668 - Jace Talk: Python (Part 3)
-- [ ] yt-o6ao9-UIZIQ,2041.7063333333333,2092.1233666666667 - Jace Talk: Jenkins
-- [ ] yt-o6ao9-UIZIQ,2092.1567333333332,2120.2514666666666 - Jace Talk: Google Cloud Platform
-- [ ] yt-o6ao9-UIZIQ,2120.284833333333,2151.2824666666666 - Jace Talk: Incredibuild
-- [ ] yt-o6ao9-UIZIQ,2151.3158333333336,2174.3388333333332 - Jace Talk: IT rabbit hole
-- [ ] yt-o6ao9-UIZIQ,2178.176,2202.0331666666666 - Jace Talk: Social Media
-- [ ] yt-o6ao9-UIZIQ,2206.2707333333333,2225.7235 - Jace Talk: Adobe Premiere Pro
-- [ ] yt-o6ao9-UIZIQ,2225.7568666666666,2249.0468 - Jace Talk: Adobe After Effects
-- [ ] yt-o6ao9-UIZIQ,2249.0801666666666,2258.7898666666665 - Jace Talk: Adobe Photoshop (Part 8)
-- [ ] yt-o6ao9-UIZIQ,2258.8232333333335,2270.7017666666666 - Jace Talk: Microsoft Paint (Part 2)
-- [ ] yt-o6ao9-UIZIQ,2270.7351333333336,2280.0778 - Jace Talk: Audacity / Sonar / Adobe Audition
-- [ ] yt-o6ao9-UIZIQ,2280.1111666666666,2287.6520333333333 - Jace Talk: ShadowPlay
-- [ ] yt-o6ao9-UIZIQ,2287.6854,2299.9643333333333 - Jace Talk: OBS Studio
-- [ ] yt-o6ao9-UIZIQ,2303.9349666666667,2318.1825333333336 - Jace Talk: Restream
-- [ ] yt-o6ao9-UIZIQ,2318.2159,2328.959966666667 - Jace Talk: Google Slides
-- [ ] yt-o6ao9-UIZIQ,2328.9933333333333,2357.7554 - Stream Ass-istant
-- [ ] yt-o6ao9-UIZIQ,2357.7887666666666,2382.113066666667 - CEO
-- [ ] yt-o6ao9-UIZIQ,2361.5592,2382.113066666667 - Q&A: What tools does the CEO use?
+- [x] yt-o6ao9-UIZIQ,103.93716666666667,133.5334 - Jace Talk: Unreal Engine 4 (Part 1)
+- [x] yt-o6ao9-UIZIQ,133.56676666666667,153.72023333333334 - Jace Talk: Google
+- [x] yt-o6ao9-UIZIQ,153.7536,176.4763 - Jace Talk: Perforce
+- [x] yt-o6ao9-UIZIQ,176.50966666666667,183.41656666666668 - Jace Talk: Unreal Game Sync
+- [x] yt-o6ao9-UIZIQ,183.44993333333335,224.4242 - Jace Talk: Microsoft 365 (Part 1)
+- [x] yt-o6ao9-UIZIQ,224.45756666666668,232.89933333333335 - Jace Talk: Monday.com (Part 1)
+- [x] yt-o6ao9-UIZIQ,232.9327,245.47856666666667 - Jace Talk: Wireguard
+- [x] yt-o6ao9-UIZIQ,245.51193333333333,257.8242333333333 - Jace Talk: Steam, Epic, Humble
+- [x] yt-o6ao9-UIZIQ,264.5643,308.6750333333333 - Jace Talk: Unreal Engine 4 (Part 2)
+- [x] yt-o6ao9-UIZIQ,275.8756,308.6750333333333 - Q&A: Do your programs use C++ or Blueprints?
+- [x] yt-o6ao9-UIZIQ,308.7084,355.82213333333334 - Jace Talk: Visual Studio / Rider (Part 1)
+- [x] yt-o6ao9-UIZIQ,355.8555,396.06233333333336 - Jace Talk: Beyond Compare
+- [x] yt-o6ao9-UIZIQ,396.0957,419.25216666666665 - Jace Talk: Notepad / Notepad++
+- [x] yt-o6ao9-UIZIQ,421.3209,449.98286666666667 - Jace Talk: Blender (Part 1)
+- [x] yt-o6ao9-UIZIQ,450.01623333333333,462.3619 - Jace Talk: Substance Designer (Part 1)
+- [x] yt-o6ao9-UIZIQ,462.39526666666666,479.0786 - Jace Talk: Substance Painter (Part 1)
+- [x] yt-o6ao9-UIZIQ,479.11196666666666,519.8860333333333 - Jace Talk: Adobe Photoshop (Part 1)
+- [x] yt-o6ao9-UIZIQ,519.9194,556.1556 - Jace Talk: Marmoset Toolbag 3
+- [x] yt-o6ao9-UIZIQ,556.1889666666667,562.4952666666667 - Jace Talk: xNormal
+- [x] yt-o6ao9-UIZIQ,562.5286333333333,586.9530333333333 - Jace Talk: ZBrush
+- [x] yt-o6ao9-UIZIQ,586.9864,604.4371666666667 - Jace Talk: Autodesk Maya (Part 1)
+- [x] yt-o6ao9-UIZIQ,604.4705333333334,627.7271000000001 - Jace Talk: PureRef
+- [x] yt-o6ao9-UIZIQ,627.7604666666667,674.5405333333333 - 2D Art
+- [x] yt-o6ao9-UIZIQ,630.1295,644.644 - Jace Talk: Adobe Photoshop (Part 2)
+- [x] yt-o6ao9-UIZIQ,644.6773666666667,657.5902666666667 - Jace Talk: ProCreate
+- [x] yt-o6ao9-UIZIQ,657.6236333333334,674.5405333333333 - Jace Talk: Unreal Engine 4 (Part 3)
+- [x] yt-o6ao9-UIZIQ,674.5739,692.0246666666667 - Jace Talk: What UI/UX means
+- [x] yt-o6ao9-UIZIQ,771.3038666666666,792.8253666666667 - Jace Talk: Adobe Photoshop (Part 3)
+- [x] yt-o6ao9-UIZIQ,792.8587333333334,839.9724666666667 - Jace Talk: Unreal Engine 4 (Part 4)
+- [x] yt-o6ao9-UIZIQ,840.0058333333334,864.4302333333334 - Jace Talk: Microsoft Visio / yED (Part 1)
+- [x] yt-o6ao9-UIZIQ,864.4636,874.1065666666667 - Jace Talk: Hardware (Part 1)
+- [x] yt-o6ao9-UIZIQ,874.1399333333334,918.0171 - Animation
+- [x] yt-o6ao9-UIZIQ,876.4756,918.0171 - Jace Talk: Autodesk Maya (Part 2)
+- [x] yt-o6ao9-UIZIQ,924.2566666666667,956.7558 - Jace Talk: Houdini (Part 1)
+- [x] yt-o6ao9-UIZIQ,956.7891666666667,973.0721 - Jace Talk: Blender (Part 2)
+- [x] yt-o6ao9-UIZIQ,973.1054666666666,988.4207666666667 - Jace Talk: Unreal Engine 4 (Part 5)
+- [x] yt-o6ao9-UIZIQ,988.4541333333334,1000.1324666666667 - Jace Talk: Substance Designer (Part 2)
+- [x] yt-o6ao9-UIZIQ,1000.1658333333334,1006.6389666666666 - Jace Talk: Adobe Photoshop (Part 4)
+- [x] yt-o6ao9-UIZIQ,1023.7894333333334,1043.3089333333332 - Jace Talk: Visual Studio / Rider (Part 2)
+- [x] yt-o6ao9-UIZIQ,1110.4426666666666,1129.7286 - Jace Talk: Python (Part 1)
+- [x] yt-o6ao9-UIZIQ,1129.7619666666667,1168.7008666666668 - Jace Talk: Blender (Part 3)
+- [x] yt-o6ao9-UIZIQ,1168.7342333333333,1177.4763 - Jace Talk: Adobe Photoshop (Part 5)
+- [x] yt-o6ao9-UIZIQ,1177.5096666666666,1200.6661333333334 - Jace Talk: Substance Designer (Part 3)
+- [x] yt-o6ao9-UIZIQ,1207.0725333333335,1230.1289 - Jace Talk: Wwise
+- [x] yt-o6ao9-UIZIQ,1230.1622666666667,1249.2146333333333 - Jace Talk: Reaper
+- [x] yt-o6ao9-UIZIQ,1249.248,1272.4712 - Jace Talk: Vital
+- [x] yt-o6ao9-UIZIQ,1272.5045666666667,1303.6690333333333 - Jace Talk: Hardware (Part 2)
+- [x] yt-o6ao9-UIZIQ,1315.8145,1347.9799666666668 - Jace Talk: Microsoft 365 (Part 2)
+- [x] yt-o6ao9-UIZIQ,1348.0133333333333,1372.5044666666668 - Jace Talk: GSuite
+- [x] yt-o6ao9-UIZIQ,1372.5378333333333,1383.3152666666667 - Jace Talk: Slack
+- [x] yt-o6ao9-UIZIQ,1383.3486333333333,1409.6749333333335 - Jace Talk: Monday.com (Part 2)
+- [x] yt-o6ao9-UIZIQ,1411.7436666666667,1462.6612 - Jace Talk: Unreal Engine 4 (Part 6)
+- [x] yt-o6ao9-UIZIQ,1462.6945666666668,1493.5587333333333 - Jace Talk: Microsoft Excel (Part 1)
+- [x] yt-o6ao9-UIZIQ,1493.5921,1518.517 - Jace Talk: Microsoft Word (Part 1)
+- [x] yt-o6ao9-UIZIQ,1518.5503666666666,1542.9080333333334 - Jace Talk: Microsoft PowerPoint
+- [x] yt-o6ao9-UIZIQ,1542.9414,1554.8866666666668 - Jace Talk: Adobe Photoshop (Part 6)
+- [x] yt-o6ao9-UIZIQ,1554.9200333333333,1572.9714000000001 - Jace Talk: Microsoft Paint (Part 1)
+- [x] yt-o6ao9-UIZIQ,1573.0047666666667,1586.2847 - Jace Talk: Microsoft Visio (Part 2)
+- [x] yt-o6ao9-UIZIQ,1586.3180666666667,1596.5616333333335 - Jace Talk: Hardware (Part 3)
+- [x] yt-o6ao9-UIZIQ,1599.2977,1622.1872333333333 - Jace Talk: Unreal Engine 4 (Part 7)
+- [x] yt-o6ao9-UIZIQ,1622.2206,1653.6186333333333 - Jace Talk: Microsoft Word / Microsoft PowerPoint (Part 2)
+- [x] yt-o6ao9-UIZIQ,1653.652,1682.9813 - Jace Talk: Microsoft Excel (Part 2)
+- [x] yt-o6ao9-UIZIQ,1683.0146666666667,1699.8982 - Jace Talk: Google Earth
+- [x] yt-o6ao9-UIZIQ,1699.9315666666666,1744.3426 - Jace Talk: Adobe Photoshop (Part 7)
+- [x] yt-o6ao9-UIZIQ,1747.2455,1772.7042666666666 - Jace Talk: Unreal Engine 4 (Part 8)
+- [x] yt-o6ao9-UIZIQ,1772.7376333333334,1794.7930000000001 - Jace Talk: Crowdin
+- [x] yt-o6ao9-UIZIQ,1794.8263666666667,1852.7175333333334 - Jace Talk: Python (Part 2)
+- [x] yt-o6ao9-UIZIQ,1852.7509,1866.3978666666667 - Jace Talk: Visual Studio Code
+- [x] yt-o6ao9-UIZIQ,1866.4312333333335,1896.3277666666668 - Jace Talk: Google Sheets
+- [x] yt-o6ao9-UIZIQ,1896.3611333333333,1925.1232 - Jace Talk: Discord
+- [x] yt-o6ao9-UIZIQ,1925.1565666666668,1959.7244333333333 - Jace Talk: Don't mention Google Translate
+- [x] yt-o6ao9-UIZIQ,1976.6079666666667,2013.5782333333334 - Jace Talk: PowerShell
+- [x] yt-o6ao9-UIZIQ,2013.6116,2041.6729666666668 - Jace Talk: Python (Part 3)
+- [x] yt-o6ao9-UIZIQ,2041.7063333333333,2092.1233666666667 - Jace Talk: Jenkins
+- [x] yt-o6ao9-UIZIQ,2092.1567333333332,2120.2514666666666 - Jace Talk: Google Cloud Platform
+- [x] yt-o6ao9-UIZIQ,2120.284833333333,2151.2824666666666 - Jace Talk: Incredibuild
+- [x] yt-o6ao9-UIZIQ,2151.3158333333336,2174.3388333333332 - Jace Talk: IT rabbit hole
+- [x] yt-o6ao9-UIZIQ,2178.176,2202.0331666666666 - Jace Talk: Social Media
+- [x] yt-o6ao9-UIZIQ,2206.2707333333333,2225.7235 - Jace Talk: Adobe Premiere Pro
+- [x] yt-o6ao9-UIZIQ,2225.7568666666666,2249.0468 - Jace Talk: Adobe After Effects
+- [x] yt-o6ao9-UIZIQ,2249.0801666666666,2258.7898666666665 - Jace Talk: Adobe Photoshop (Part 8)
+- [x] yt-o6ao9-UIZIQ,2258.8232333333335,2270.7017666666666 - Jace Talk: Microsoft Paint (Part 2)
+- [x] yt-o6ao9-UIZIQ,2270.7351333333336,2280.0778 - Jace Talk: Audacity / Sonar / Adobe Audition
+- [x] yt-o6ao9-UIZIQ,2280.1111666666666,2287.6520333333333 - Jace Talk: ShadowPlay
+- [x] yt-o6ao9-UIZIQ,2287.6854,2299.9643333333333 - Jace Talk: OBS Studio
+- [x] yt-o6ao9-UIZIQ,2303.9349666666667,2318.1825333333336 - Jace Talk: Restream
+- [x] yt-o6ao9-UIZIQ,2318.2159,2328.959966666667 - Jace Talk: Google Slides
+- [x] yt-o6ao9-UIZIQ,2328.9933333333333,2357.7554 - Stream Ass-istant
+- [x] yt-o6ao9-UIZIQ,2357.7887666666666,2382.113066666667 - CEO
+- [x] yt-o6ao9-UIZIQ,2361.5592,2382.113066666667 - Q&A: What tools does the CEO use?

@@ -14,6 +14,9 @@ Static site generator for
 * made improvements to handling of ./app/part-continued.php
 * added support for alterntaive layout of external videos
 * improved support for descriptions and markdownified content
+* expanding support for external video ids
+* add support for alt layout of external videos to the native-clip-needed tool
+* add support for alt layout of external videos to Jsonify & Markdownify
 
 ## 2022-03-22
 * added required php extensions to composer.json

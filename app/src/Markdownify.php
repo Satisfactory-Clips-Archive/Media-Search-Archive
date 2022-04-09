@@ -264,6 +264,8 @@ class Markdownify
 	) : string {
 		$out = '';
 
+		$externals = get_externals();
+
 		foreach ($video_other_parts as $other_video_id) {
 			/** @var string|null */
 			$playlist_id = null;
@@ -286,10 +288,43 @@ class Markdownify
 			}
 
 			if ( ! is_string($playlist_id)) {
+				foreach ($externals as $date => $dated) {
+					foreach ($dated as $external) {
+						if (
+							vendor_prefixed_video_id($external[0])
+							=== vendor_prefixed_video_id(
+								preg_replace('/,.+$/', '', $other_video_id)
+							)
+						) {
+							$playlist_id = $date;
+
+							break 2;
+						}
+					}
+				}
+
+			if ( ! is_string($playlist_id)) {
 				throw new RuntimeException(sprintf(
 					'Could not find playlist id for %s',
 					$other_video_id
 				));
+			}
+
+				$out .= '* '
+					. maybe_transcript_link_and_video_url(
+						$other_video_id,
+						(
+							$this->injected->friendly_dated_playlist_name(
+								$playlist_id
+							)
+							. ': '
+							. $this->injected->determine_video_title(
+								$other_video_id
+							)
+						)
+					);
+
+				continue;
 			}
 
 			$out .= '* '
@@ -302,7 +337,9 @@ class Markdownify
 							$playlist_id
 						)
 						. ' '
-						. $this->injected->cache['playlistItems'][$other_video_id][1]
+						. $this->injected->determine_video_title(
+							$other_video_id
+						)
 					)
 				)
 				. "\n"

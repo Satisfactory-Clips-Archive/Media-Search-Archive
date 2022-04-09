@@ -543,10 +543,27 @@ class Jsonify
 		}
 
 		if ( ! is_string($playlist_id)) {
+			foreach (get_externals() as $date => $dated) {
+				foreach ($dated as $external) {
+					if (
+						vendor_prefixed_video_id($external[0])
+						=== vendor_prefixed_video_id(
+							preg_replace('/,.+$/', '', $found)
+						)
+					) {
+						$playlist_id = $date;
+
+						break 2;
+					}
+				}
+			}
+
+		if ( ! is_string($playlist_id)) {
 			throw new RuntimeException(sprintf(
 				'Could not find playlist id for %s',
 				$found
 			));
+		}
 		}
 
 		return
@@ -557,7 +574,9 @@ class Jsonify
 					'Q&A:',
 					$this->injected->friendly_dated_playlist_name($playlist_id)
 					. ' '
-					. $this->injected->cache['playlistItems'][$found][1]
+					. $this->injected->determine_video_title(
+						$found
+					)
 				)
 			)
 		;
@@ -574,6 +593,8 @@ class Jsonify
 		$out = [];
 
 		$twitter_threads = twitter_threads();
+
+		$externals = get_externals();
 
 		foreach ($video_other_parts as $other_video_id) {
 			if (
@@ -613,10 +634,42 @@ class Jsonify
 			}
 
 			if ( ! is_string($playlist_id)) {
+				foreach ($externals as $date => $dated) {
+					foreach ($dated as $external) {
+						if (
+							vendor_prefixed_video_id($external[0])
+							=== vendor_prefixed_video_id(
+								preg_replace('/,.+$/', '', $other_video_id)
+							)
+						) {
+							$playlist_id = $date;
+
+							break 2;
+						}
+					}
+				}
+
+			if ( ! is_string($playlist_id)) {
 				throw new RuntimeException(sprintf(
 					'Could not find playlist id for %s',
 					$other_video_id
 				));
+			}
+
+				$out[] = maybe_transcript_link_and_video_url_data(
+					$other_video_id,
+					(
+						$this->injected->friendly_dated_playlist_name(
+							$playlist_id
+						)
+						. ': '
+						. $this->injected->determine_video_title(
+							$other_video_id
+						)
+					)
+				);
+
+				continue;
 			}
 
 			$out[] = maybe_transcript_link_and_video_url_data(
@@ -628,7 +681,7 @@ class Jsonify
 						$playlist_id
 					)
 					. ' '
-					. $this->injected->cache['playlistItems'][$other_video_id][1]
+					. $this->injected->determine_video_title($other_video_id)
 				)
 			);
 		}

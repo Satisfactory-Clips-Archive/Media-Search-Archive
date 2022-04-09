@@ -67,10 +67,10 @@ $existing = array_filter(
 	 * @param scalar|array|object|null $maybe
 	 * @param array-key $maybe_key
 	 */
-	static function ($maybe, $maybe_key) use ($cache) : bool {
+	static function ($maybe, $maybe_key) use ($cache, $injected) : bool {
 		return
 			is_string($maybe_key)
-			&& isset($cache['playlistItems'][$maybe_key])
+			&& is_string($injected->determine_video_title($maybe_key))
 			&& is_array($maybe)
 			&& 4 === count($maybe)
 			&& isset($maybe['title'])
@@ -84,14 +84,18 @@ $existing = array_filter(
 				null === $maybe['previous']
 				|| (
 					is_string($maybe['previous'])
-					&& isset($cache['playlistItems'][$maybe['previous']])
+					&& is_string(
+						$injected->determine_video_title($maybe['previous'])
+					)
 				)
 			)
 			&& (
 				null === $maybe['next']
 				|| (
 					is_string($maybe['next'])
-					&& isset($cache['playlistItems'][$maybe['next']])
+					&& is_string(
+						$injected->determine_video_title($maybe['next'])
+					)
 				)
 			)
 		;
@@ -99,13 +103,20 @@ $existing = array_filter(
 	ARRAY_FILTER_USE_BOTH
 );
 
+$hardcode = [
+	'yt-o6ao9-UIZIQ,275.8756,308.6750333333333',
+];
+
 $maybe_with_part = array_diff(
+	array_merge(
 	array_keys(array_filter(
 		$cache['playlistItems'],
 		static function (array $maybe) : bool {
 			return (bool) preg_match('/part \d+/i', $maybe[1]);
 		}
 	)),
+		$hardcode
+	),
 	array_keys($existing),
 	array_reduce(
 		$cache['legacyAlts'],
@@ -201,7 +212,9 @@ echo sprintf(
 		count($no_parts_specified),
 		count($existing)
 	),
+	/*
 	"\n",
 	implode("\n", array_keys($no_parts_specified)),
+	*/
 	"\n"
 ;

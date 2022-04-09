@@ -24,6 +24,7 @@ use function str_pad;
 use const STR_PAD_LEFT;
 use function strtotime;
 use function usort;
+use UnexpectedValueException;
 
 class Injected
 {
@@ -187,7 +188,36 @@ class Injected
 			$video_id = preg_replace('/^yt-/', '', $video_id);
 		}
 
+		if (isset($this->cache['playlistItems'][$video_id])) {
 		return $this->cache['playlistItems'][$video_id][1];
+		}
+
+		foreach (get_externals() as $dated) {
+			foreach ($dated as $external) {
+				if (
+					vendor_prefixed_video_id($external[0])
+					=== vendor_prefixed_video_id(
+						preg_replace('/,.+$/', '', $video_id)
+					)
+				) {
+					foreach ($external[1] as $externals_csv) {
+						[$start, $end, $clip_title] = $externals_csv;
+
+						$clip_id = sprintf(
+							'%s,%s',
+							vendor_prefixed_video_id($external[0]),
+							$start . ('' === $end ? '' : (',' . $end))
+						);
+
+						if ($clip_id === vendor_prefixed_video_id($video_id)) {
+							return $clip_title;
+						}
+					}
+				}
+			}
+		}
+
+		return null;
 	}
 
 	public function determine_video_description(string $video_id) : ? string
