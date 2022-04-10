@@ -2,10 +2,10 @@
 	"title": "VFX with Simon",
 	"topics": [
 		false,
-		false,
 		["Simon"],
 		["Simon", "Simon Saga"],
 		["Simon"],
+		null,
 		["Simon", "Graphics", "Nobelisk"],
 		["Simon", "Graphics", "Environment"],
 		["Simon", "Graphics", "Environment", "Biomes", "Northern Forest", "Grass Fields"],
@@ -15,7 +15,7 @@
 		["Kristoffer"],
 		["Simon", "Graphics", "Buildings"],
 		["Simon", "Graphics"],
-		false,
+		null,
 		false
 	]
 }

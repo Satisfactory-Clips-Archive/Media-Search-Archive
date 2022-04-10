@@ -3159,7 +3159,7 @@ function process_dated_csv_for_alt_layout(
 			$start . ('' === $end ? '' : (',' . $end))
 		);
 
-		if (null === $data['topics'][$i]) {
+		if (null === ($data['topics'][$i] ?? false)) {
 			$sections[] = new VideoSection(
 				$title,
 				timestamp_link($video_id, $start),
