@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-04-10
+* adjusting styles for alt layout of external videos
+
 ## 2022-04-09
 * made improvements to handling of ./app/part-continued.php
 * added support for alterntaive layout of external videos
