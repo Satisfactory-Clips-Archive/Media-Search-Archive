@@ -42,4 +42,16 @@ if (count($videos)) {
 			unlink($captions_cache);
 		}
 	}
+
+	$skipping_cache = __DIR__ . '/data/skipping-cards.json';
+
+	file_put_contents(
+		$skipping_cache,
+		json_encode_pretty(array_values(array_filter(
+			json_decode(file_get_contents($skipping_cache)),
+			static function (string $maybe) use($videos) : bool {
+				return ! in_array($maybe, $videos, true);
+			}
+		)))
+	);
 }
