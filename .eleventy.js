@@ -83,6 +83,31 @@ module.exports = (e) => {
 		return markdown.render(value);
 	});
 
+	e.addFilter('timestampify', (description, url) => {
+		if ( ! /^https:\/\/youtu\.be\/[^,\?]+$/.test(url)) {
+			return description;
+		}
+
+		return description.replaceAll(/(\d+:\d+) ([^\n]+)(\n)?/g, (
+			_line,
+			timestamp,
+			text,
+			newline
+		) => {
+			const [seconds, minutes, hours] = timestamp.split(':').reverse();
+
+			return `<a href="${
+				url
+			}?t=${
+				(parseInt(hours || 0) * 3600) + parseInt((minutes || 0) * 60) + parseInt(seconds || 0)
+			}" rel="noopener" target="_blank">${
+				timestamp
+			}</a> ${
+				text
+			}${newline || ''}`;
+		})
+	});
+
 	return {
 		dir: {
 			data: '../../11ty/data',

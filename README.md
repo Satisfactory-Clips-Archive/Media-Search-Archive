@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-04-15
+* support timestamps in video descriptions
+
 ## 2022-04-10
 * adjusting styles for alt layout of external videos
 
