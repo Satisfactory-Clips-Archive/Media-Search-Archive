@@ -25,9 +25,11 @@ layout: livestream
 		<section>{{external.description | markdownify | safe}}</section>
 	</details>
 	{% endif %}
-	{% for section in external.sections %}
-		{% include 'externals-alt.njk' %}
+	<ol>
+	{% for subsection in external.sections %}
+		{% include 'externals-alt-inner.njk' %}
 	{% endfor %}
+	</ol>
 	<meta itemprop="contentUrl" content="{{external.contentUrl}}">
 	{% if external.description %}
 	<meta itemprop="description" content="{{external.description}}">

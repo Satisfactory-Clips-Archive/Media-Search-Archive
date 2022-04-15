@@ -18,31 +18,8 @@
 {% else %}
 	<ol>
 	{% for subsection in section.subsections %}
-		{% if subsection.is_section %}
-			<li>
-				{% include 'externals-alt.njk' %}
-				{% set subsection = null %}
-			</li>
-		{% else %}
-			<li itemprop="hasPart" itemscope itemtype="https://schema.org/Clip">
-				<a
-					rel="noopener"
-					target="_blank"
-					href="{{subsection.link}}"
-					itemprop="url"
-				>{{subsection.started_formated}}</a>
-				{% if subsection.has_captions %}<a
-					itemprop="url"
-					href="{{subsection.has_captions}}"
-				>{% endif %}<span itemprop="name">{{subsection.title}}</span>{%
-					if subsection.has_captions
-				%}</a>{% endif %}
-				<meta itemprop="startOffset" content="{{subsection.start}}">
-				{% if subsection.end %}
-				<meta itemprop="endOffset" content="{{subsection.end}}">
-				{% endif %}
-			</li>
-		{% endif %}
+		{% include 'externals-alt-inner.njk' %}
+		{% set subsection = null %}
 	{% endfor %}
 	</ol>
 {% endif %}
