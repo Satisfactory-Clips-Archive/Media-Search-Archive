@@ -46,6 +46,7 @@ class Slugify extends Base
 			'&' => 'and',
 			'Skövde' => 'skovde',
 			'Coffee Stainer Karaoke' => 'karaoke',
+			'Malmö' => 'malmo',
 		];
 
 		parent::__construct($options, $provider);

@@ -1349,6 +1349,14 @@ class TopicData
 			'Off-Topic',
 			'Final Fantasy',
 		],
+		'PLbjDnnBIxiEq1h5_NQ0g0vcgaXGQ2k-Dq' => [ // Coffee Stain Malmö
+			'Embracer Group',
+			'Coffee Stain Holding',
+		],
+		'PLbjDnnBIxiEq9lna6BfVSSq_ahKhtr0j7' => [ // Coffee Stain Publishing
+			'Embracer Group',
+			'Coffee Stain Holding',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
