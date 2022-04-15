@@ -1357,6 +1357,42 @@ class TopicData
 			'Embracer Group',
 			'Coffee Stain Holding',
 		],
+		'Sprint 1' => [
+			'Satisfactory Updates',
+			'Satisfactory Prototypes',
+		],
+		'Sprint 2' => [
+			'Satisfactory Updates',
+			'Satisfactory Prototypes',
+		],
+		'Sprint 3' => [
+			'Satisfactory Updates',
+			'Satisfactory Prototypes',
+		],
+		'Sprint 6' => [
+			'Satisfactory Updates',
+			'Satisfactory Prototypes',
+		],
+		'Sprint 8' => [
+			'Satisfactory Updates',
+			'Satisfactory Prototypes',
+		],
+		'Sprint 12' => [
+			'Satisfactory Updates',
+			'Satisfactory Prototypes',
+		],
+		'Sprint 20' => [
+			'Satisfactory Updates',
+			'Satisfactory Prototypes',
+		],
+		'Sprint 23' => [
+			'Satisfactory Updates',
+			'Satisfactory Prototypes',
+		],
+		'Sprint 26' => [
+			'Satisfactory Updates',
+			'Satisfactory Prototypes',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
