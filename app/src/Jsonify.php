@@ -266,8 +266,6 @@ class Jsonify
 
 		$video_ids = array_keys($process);
 
-
-
 		if ( ! isset($process[$video_id])) {
 			$process[$video_id] = $this->seealso_cards($video_id);
 		}
