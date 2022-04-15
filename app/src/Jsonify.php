@@ -266,6 +266,12 @@ class Jsonify
 
 		$video_ids = array_keys($process);
 
+
+
+		if ( ! isset($process[$video_id])) {
+			$process[$video_id] = $this->seealso_cards($video_id);
+		}
+
 		$filter = static function (string $maybe) use ($video_ids) : bool {
 			return in_array($maybe, $video_ids, true);
 		};
@@ -449,7 +455,7 @@ class Jsonify
 			return false;
 		}
 
-		if (count($opening_line_parts) > 0) {
+		if (count($opening_line_parts) > 1) {
 			$last_opening_part = array_pop($opening_line_parts);
 
 			$opening_line_parts[] = 'and ' . $last_opening_part;
@@ -502,6 +508,93 @@ class Jsonify
 			$video_id,
 			'replacedby'
 		);
+	}
+
+	private function seealso_cards(string $video_id) : array
+	{
+		$cards = null;
+
+		if ( ! isset($cards)) {
+			/**
+			 * @var array<string, list<array{
+			 *	0:string,
+			 *	1:int,
+			 *	2:'video'|'playlist'|'url'|'channel',
+			 *	3:string
+			 * }>>
+			 */
+			$cards = json_decode(
+				file_get_contents(__DIR__ . '/../data/info-cards.json'),
+				true
+			);
+		}
+
+		/** @var list<string> */
+		$see_also_card_videos = [];
+
+		/** @var list<string> */
+		$see_also_card_playlists = [];
+
+		/** @var list<array{0:string, 1:string, 2:string}> */
+		$see_also_card_urls = [];
+
+		/** @var list<array{0:string, 1:string}> */
+		$see_also_card_channels = [];
+
+		if (isset($cards[$video_id]) && count($cards[$video_id])) {
+			foreach ($cards[$video_id] as $card) {
+				if ('playlist' === $card[2]) {
+					$see_also_card_playlists[] = $card[3];
+				} elseif ('video' === $card[2]) {
+					$see_also_card_videos[] = $card[3];
+				} elseif ('url' === $card[2]) {
+					$maybe_entry = (array) json_decode($card[3], true, 2);
+
+					if (
+						3 !== count($maybe_entry)
+						|| ! isset($maybe_entry[0], $maybe_entry[1], $maybe_entry[2])
+						|| ! is_string($maybe_entry[0])
+						|| ! is_string($maybe_entry[1])
+						|| ! is_string($maybe_entry[2])
+					) {
+						throw new UnexpectedValueException(sprintf(
+							'Unsupported URL card found on %s',
+							$video_id
+						));
+					}
+
+					$see_also_card_urls[] = $maybe_entry;
+				} elseif ('channel' === $card[2]) {
+					$maybe_entry = (array) json_decode($card[3], true, 2);
+
+					if (
+						2 !== count($maybe_entry)
+						|| ! isset($maybe_entry[0], $maybe_entry[1])
+						|| ! is_string($maybe_entry[0])
+						|| ! is_string($maybe_entry[1])
+					) {
+						throw new UnexpectedValueException(sprintf(
+							'Unsupported channel card found on %s',
+							$video_id
+						));
+					}
+
+					$see_also_card_channels[] = $maybe_entry;
+				} else {
+					throw new UnexpectedValueException(sprintf(
+						'Unsupported card found on %s',
+						$video_id
+					));
+				}
+			}
+		}
+
+		return [
+			'seealso_video_cards' => $see_also_card_videos,
+			'seealso_topic_cards' => $see_also_card_playlists,
+			'seealso_card_urls' => $see_also_card_urls,
+			'seealso_card_channels' => $see_also_card_channels,
+		];
 	}
 
 	/**

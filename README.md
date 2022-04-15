@@ -13,6 +13,7 @@ Static site generator for
 ## 2022-04-15
 * support timestamps in video descriptions
 * added tool to bulk-uncache video descriptions
+* enabling info cards on non-question clips
 
 ## 2022-04-10
 * adjusting styles for alt layout of external videos
