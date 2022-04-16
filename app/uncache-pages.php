@@ -42,6 +42,16 @@ if (count($videos)) {
 		if (is_file($captions_cache)) {
 			unlink($captions_cache);
 		}
+
+		$card_cache =
+			__DIR__
+			. '/cards-cache/'
+			. vendor_prefixed_video_id($video_id)
+			. '.json';
+
+		if (is_file($card_cache)) {
+			unlink($card_cache);
+		}
 	}
 
 	$skipping_cache = __DIR__ . '/data/skipping-cards.json';
