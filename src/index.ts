@@ -123,7 +123,7 @@ declare namespace SatisfactoryClipsArchive {
 
 		timeout = requestAnimationFrame(async () => {
 			const query = searchbar.value;
-			const title = `Q&A Clips Archive - Search - ${query}`;
+			const title = `Satisfactory Clips Archive - Search - ${query}`;
 
 			last_query = query;
 
@@ -841,6 +841,24 @@ declare namespace SatisfactoryClipsArchive {
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 		if (searchbar.checkValidity()) {
+			if (FormData && URLSearchParams && 'pushState' in history) {
+				const formdata = new FormData(form);
+				const a = date_values_sorted[
+					parseInt(formdata.get('df') as string, 10)
+				];
+				const b = date_values_sorted[
+					parseInt(formdata.get('dt') as string, 10)
+				];
+				formdata.set('df', date_int_to_date(Math.min(a, b)));
+				formdata.set('dt', date_int_to_date(Math.max(a, b)));
+				history.pushState(
+					{},
+					`Satisfactory Clips Archive - Search - ${searchbar.value}`,
+					`?${new URLSearchParams(
+						(formdata as any)
+					)}`
+				);
+			}
 			perform_search(false);
 		}
 	});

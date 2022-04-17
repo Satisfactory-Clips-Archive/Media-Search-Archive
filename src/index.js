@@ -85,7 +85,7 @@
 		nudge_visibility();
 		timeout = requestAnimationFrame(async () => {
 			const query = searchbar.value;
-			const title = `Q&A Clips Archive - Search - ${query}`;
+			const title = `Satisfactory Clips Archive - Search - ${query}`;
 			last_query = query;
 			const formdata = new FormData(form);
 			const a = date_values_sorted[parseInt(formdata.get('df'), 10)];
@@ -530,6 +530,14 @@
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 		if (searchbar.checkValidity()) {
+			if (FormData && URLSearchParams && 'pushState' in history) {
+				const formdata = new FormData(form);
+				const a = date_values_sorted[parseInt(formdata.get('df'), 10)];
+				const b = date_values_sorted[parseInt(formdata.get('dt'), 10)];
+				formdata.set('df', date_int_to_date(Math.min(a, b)));
+				formdata.set('dt', date_int_to_date(Math.max(a, b)));
+				history.pushState({}, `Satisfactory Clips Archive - Search - ${searchbar.value}`, `?${new URLSearchParams(formdata)}`);
+			}
 			perform_search(false);
 		}
 	});

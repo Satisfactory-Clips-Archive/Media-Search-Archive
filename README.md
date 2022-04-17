@@ -10,6 +10,10 @@ Static site generator for
 
 # Changelog
 
+## 2022-04-17
+* finally got around to restoring search address bar persistence
+* corrected some remaining titles
+
 ## 2022-04-15
 * support timestamps in video descriptions
 * added tool to bulk-uncache video descriptions

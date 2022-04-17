@@ -1,5 +1,5 @@
 ---
-title: Q&A Clips Archive - 404 Not Found
+title: Satisfactory Clips Archive - 404 Not Found
 permalink: not_found.html
 ---
 The content you were looking for could not be found- either it doesn't exist,

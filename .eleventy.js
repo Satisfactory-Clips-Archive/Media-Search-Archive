@@ -70,7 +70,7 @@ module.exports = (e) => {
 			return `Satisfactory Lviestream clips about ${maybe.name}.`;
 		}
 
-		return 'Serves as an unofficial archive for Q&A Clips for Coffee Stain Studio\'s Satisfactory-related livestreams';
+		return 'Serves as an unofficial archive for Clips for Coffee Stain Studio\'s Satisfactory-related livestreams';
 	});
 
 	e.addFilter('markdown_blockquote', (value) => {

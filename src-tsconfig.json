@@ -3,6 +3,7 @@
 		"./src/index.ts"
 	],
 	"compilerOptions": {
+		"allowUmdGlobalAccess": true,
 		"target": "esnext",
 		"module": "esnext",
 		"removeComments": false,
