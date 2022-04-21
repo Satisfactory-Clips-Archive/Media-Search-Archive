@@ -115,7 +115,7 @@
 - [ ] yt-7V4UPiBOshY,491.14,533.84 - Q&A: Is there regional pricing on the Epic Games Store?
 - [ ] yt-7V4UPiBOshY,533.84,558.4 - Q&A: Is the Epic Games Store DRM-free?
 - [ ] yt-7V4UPiBOshY,558.4,612.98 - Q&A: What about the security breaches in the past with Epic?
-- [ ] yt-7V4UPiBOshY,612.98,643.72 - Q&A: What are the payment options for the Epic Games Store?
+- [x] yt-7V4UPiBOshY,612.98,643.72 - Q&A: What are the payment options for the Epic Games Store?
 - [ ] yt-7V4UPiBOshY,643.72,660.88 - Community FYI: Your Community Manager is unprofessional, you should be ashamed
 
 ## 2018-12-25
@@ -202,7 +202,7 @@
 - [ ] yt-Dtm6xIj-wM4,3219.325619,3265.022 - Jace, Hannah, & Snutt Talk: Snutt looks like Michael from VSauce
 - [ ] yt-Dtm6xIj-wM4,3280.698724,3286.654122 - Q&A: Available on Steam in future?
 - [ ] yt-Dtm6xIj-wM4,3289.36842,3333.678121 - Q&A: What made Snutt cut his hair?
-- [ ] yt-Dtm6xIj-wM4,3433.002272,3481.1666666666665 - Q&A: You are one of the rare studios to be (openly) LGBTQ-friendly, why is that so important to you?
+- [x] yt-Dtm6xIj-wM4,3433.002272,3481.1666666666665 - Q&A: You are one of the rare studios to be (openly) LGBTQ-friendly, why is that so important to you?
 - [ ] yt-Dtm6xIj-wM4,3481.1666666666665,3487.84442 - Community FYI: Thank you for the honest answer on Alpha Keys
 - [ ] yt-Dtm6xIj-wM4,3487.8333333333335,3508.867162 - Q&A: Any timeline on when the end game will be released?
 - [ ] yt-Dtm6xIj-wM4,3518.277144,3545.070455 - Q&A: Where is Simon?
