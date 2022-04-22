@@ -1393,6 +1393,12 @@ class TopicData
 			'Satisfactory Updates',
 			'Satisfactory Prototypes',
 		],
+		'PLbjDnnBIxiErlTL3QMfUXxSdriWgMu4n2' => [ // Portal
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiEqxitfhaNUPTZSUGulBEU9u' => [ // Elden Ring
+			'Off-Topic',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
