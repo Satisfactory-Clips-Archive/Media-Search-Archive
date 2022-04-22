@@ -420,7 +420,8 @@
         "satisfactory-updates\/released\/satisfactory-update-5": 1635673303
     },
     "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR": {
-        "satisfactory-updates\/speculative\/satisfactory-update-6": 1611444659
+        "satisfactory-updates\/speculative\/satisfactory-update-6": 1611444659,
+        "satisfactory-updates\/pending\/satisfactory-update-6": 1650659752
     },
     "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo": {
         "satisfactory-updates\/speculative\/satisfactory-update-8": 1611444659
@@ -1566,5 +1567,11 @@
     "PLbjDnnBIxiErlTL3QMfUXxSdriWgMu4n2": {
         "portal": 1650585826,
         "off-topic\/portal": 1650586450
+    },
+    "Map": {
+        "map": 1650659752
+    },
+    "Update 6 Teasers": {
+        "satisfactory-updates\/teasers-and-trailers\/update-6-teasers": 1650659752
     }
 }

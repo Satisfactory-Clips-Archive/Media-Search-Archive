@@ -65,6 +65,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
+		'Update 6 Teasers' => [
+			600,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
 		'PLbjDnnBIxiEq-eP01Lynsg2Jv-wLEWQ7e' => [ // Satisfactory Prototypes
 			-5,
 			'Satisfactory Updates',
@@ -123,7 +128,7 @@ class TopicData
 		'PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR' => [ // Satisfactory Update 6
 			6,
 			'Satisfactory Updates',
-			'Speculative',
+			'Pending',
 		],
 		'PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO' => [ // Satisfactory Update 7
 			7,
