@@ -1404,9 +1404,13 @@ class TopicData
 		'PLbjDnnBIxiEqxitfhaNUPTZSUGulBEU9u' => [ // Elden Ring
 			'Off-Topic',
 		],
+		'PLbjDnnBIxiErhPBfSCwaZO_ToMm3FyVFu' => [ // J1mbers
+			'Community',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
+		'PLbjDnnBIxiEp8MbNepfH1unmPDOqQanxR' => 'Satisfactory x Portal Bonus Stream',
 		'PLbjDnnBIxiEqAMkhgXTQCn7bK98wWQbPg' => 'Hot Potato Bonus Stream',
 		'PLbjDnnBIxiEqbUTvxOt7tlshFbT-skT_2' => 'Satisfactory Update 5 Patch Notes vid commentary',
 		'PLbjDnnBIxiEpWeDmJ93Uxdxsp1ScQdfEZ' => 'Teasers',
