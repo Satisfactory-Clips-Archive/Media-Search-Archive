@@ -65,7 +65,7 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
-		'Update 6 Teasers' => [
+		'PLbjDnnBIxiErc1n63NJjRMX1hAq4CqmxI' => [
 			600,
 			'Satisfactory Updates',
 			'Teasers & Trailers',
@@ -1406,6 +1406,14 @@ class TopicData
 		],
 		'PLbjDnnBIxiErhPBfSCwaZO_ToMm3FyVFu' => [ // J1mbers
 			'Community',
+		],
+		'PLbjDnnBIxiEoT479WM0xVC9zbUY_nHJRS' => [ // Eat shit, chat!
+			'Coffee Stainers',
+			'Snutt',
+		],
+		'PLbjDnnBIxiEouDCpMNBcTf8W6gqQ85Qzz' => [ // Swamp
+			'Environment',
+			'Biomes',
 		],
 	];
 
