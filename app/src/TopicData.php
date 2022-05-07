@@ -1415,6 +1415,14 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
+		'Desert Canyons' => [
+			'Environment',
+			'Biomes',
+		],
+		'The Great Canyon' => [
+			'Environment',
+			'Biomes',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [

@@ -1586,5 +1586,13 @@
     },
     "PLbjDnnBIxiErc1n63NJjRMX1hAq4CqmxI": {
         "satisfactory-updates\/teasers-and-trailers\/update-6-teasers": 1651197688
+    },
+    "Desert Canyons": {
+        "desert-canyons": 1651878635,
+        "environment\/biomes\/desert-canyons": 1651882463
+    },
+    "The Great Canyon": {
+        "the-great-canyon": 1651878635,
+        "environment\/biomes\/the-great-canyon": 1651882463
     }
 }
