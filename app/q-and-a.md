@@ -3,7 +3,7 @@
 * 5443 non-trolling & on-topic questions found out of 5658 total questions
 * 231 questions found with no other references
 ## grouped by date
-* 2022-05-06: 6 of 51 questions found with no other references
+* 2022-05-03: 6 of 51 questions found with no other references
 * 2022-04-26: 1 of 14 questions found with no other references
 * 2022-04-22: 0 of 2 questions found with no other references
 * 2022-04-21: 0 of 14 questions found with no other references
