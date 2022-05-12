@@ -287,12 +287,12 @@ foreach ($all_topic_ids as $topic_id) {
 	];
 }
 
+/** @var list<string> */
+$missing_topics = [];
+
 foreach ($global_topic_hierarchy as $topic_id => $topic_ancestors) {
 	if ( ! isset($topic_nesting[$topic_id])) {
-		throw new RuntimeException(sprintf(
-			'topic %s not already added!',
-			$topic_id
-		));
+		$missing_topics[] = $topic_id;
 	}
 
 	$video_ids = ($cache['playlists'][$playlist_id] ?? [2 => []])[2] ?? [];
@@ -331,6 +331,13 @@ foreach ($global_topic_hierarchy as $topic_id => $topic_ancestors) {
 
 		$topic_descendant_id = $topic_ancestor_id;
 	}
+}
+
+if (count($missing_topics)) {
+	throw new RuntimeException(sprintf(
+		'topics %s not already added!',
+		implode(', ', $missing_topics)
+	));
 }
 
 $basename_topics_nesting_ids = array_keys($topic_nesting);

@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-05-12
+* improved error message for missing topics
+
 ## 2022-04-17
 * finally got around to restoring search address bar persistence
 * corrected some remaining titles
