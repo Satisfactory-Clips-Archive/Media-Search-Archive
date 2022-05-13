@@ -1415,11 +1415,15 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
-		'Desert Canyons' => [
+		'PLbjDnnBIxiEowf3xp2Div_KZ3R2y-Frn3' => [ // Desert Canyons
 			'Environment',
 			'Biomes',
 		],
-		'The Great Canyon' => [
+		'PLbjDnnBIxiEqI-OK9xVPZNsouE12dCynP' => [ // The Great Canyon
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEq7HBkdsrL-CNtflfQw2AOM' => [ // Rocky Desert
 			'Environment',
 			'Biomes',
 		],

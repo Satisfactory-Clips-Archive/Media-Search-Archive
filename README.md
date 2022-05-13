@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-05-13
+* added support for youtube collisions
+
 ## 2022-05-12
 * improved error message for missing topics
 

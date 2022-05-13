@@ -47,14 +47,12 @@ async function date_for_video_id(video_id:string) : Promise<string> {
 	return maybe[1];
 }
 
-declare type blamehannah = {
+declare type blamehannah_core = {
 	author: {
 		id: string,
 		name: string,
 	},
 	source: 'youtube',
-	screenshot_timestamp: number,
-	alt: string,
 	id: string,
 	date: string,
 	title: string,
@@ -67,9 +65,26 @@ declare type blamehannah = {
 	},
 };
 
+declare type blamehannah_video = {
+	id: string,
+	screenshot_timestamp: number,
+	alt: string,
+	url: string,
+};
+
+declare type blamehannah = blamehannah_core & blamehannah_video;
+
+declare type blamehannah_multiple = blamehannah_core & {
+	videos: blamehannah_video[]
+};
+
+const in_case_of_multiple:{
+	[key:string]: blamehannah|blamehannah_multiple
+} = {};
+
 export_these.forEach(async (data, i) => {
 	const [id, screenshot_timestamp, alt] = data;
-	let result:blamehannah;
+	let result:blamehannah|blamehannah_multiple;
 
 	if (/^yt-[^,]+\,/.test(id)) {
 		if (
@@ -158,6 +173,58 @@ export_these.forEach(async (data, i) => {
 		};
 	} else {
 		throw new Error(`Unsupported id specified at index ${i}: ${id}`)
+	}
+
+	if ( ! (result.id in in_case_of_multiple)) {
+		in_case_of_multiple[result.id] = result;
+	} else {
+		if ( ! ('videos' in in_case_of_multiple[result.id])) {
+			const was = in_case_of_multiple[result.id] as blamehannah;
+			in_case_of_multiple[result.id] = {
+				author: was.author,
+				source: was.source,
+				id: was.id,
+				date: was.date,
+				title: was.title,
+				via: was.via,
+				url: was.url,
+				videos: [
+					{
+						id: was.id,
+						screenshot_timestamp: was.screenshot_timestamp,
+						alt: was.alt,
+						url: (
+							result.id.includes(',')
+								? was.url
+								: `${
+									was.url
+								}?t=${
+									was.screenshot_timestamp
+								}`
+						),
+					}
+				]
+			};
+		}
+
+		(
+			in_case_of_multiple[result.id] as blamehannah_multiple
+		).videos.push({
+			id: result.id,
+			screenshot_timestamp: result.screenshot_timestamp,
+			alt: result.alt,
+			url: (
+				result.id.includes(',')
+					? result.url
+					: `${
+						result.url
+					}?t=${
+						result.screenshot_timestamp
+					}`
+			),
+		});
+
+		result = in_case_of_multiple[result.id];
 	}
 
 	await writeFile(
