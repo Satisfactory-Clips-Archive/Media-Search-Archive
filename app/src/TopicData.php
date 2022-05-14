@@ -1435,6 +1435,10 @@ class TopicData
 			'Technology',
 			'User Interface',
 		],
+		'Stamps' => [
+			'Technology',
+			'User Interface',
+		],
 		'PLbjDnnBIxiEpqlYReUyGQTwlAccY_VXj-' => [ // Ping
 			'Technology',
 			'User Interface',
