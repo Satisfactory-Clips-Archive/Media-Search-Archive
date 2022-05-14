@@ -293,6 +293,8 @@ $missing_topics = [];
 foreach ($global_topic_hierarchy as $topic_id => $topic_ancestors) {
 	if ( ! isset($topic_nesting[$topic_id])) {
 		$missing_topics[] = $topic_id;
+
+		continue;
 	}
 
 	$video_ids = ($cache['playlists'][$playlist_id] ?? [2 => []])[2] ?? [];
