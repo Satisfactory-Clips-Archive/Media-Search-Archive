@@ -490,8 +490,6 @@ function prepare_injections(
 
 		$not_a_livestream_date_lookup = $topic_data->not_a_livestream_date_lookup;
 
-		$injected_global_topic_hierarchy = $topic_data->injected;
-
 		$api->update();
 		$cache = $api->toLegacyCacheFormat();
 
@@ -561,11 +559,6 @@ function prepare_injections(
 			}
 		}
 
-		$global_topic_hierarchy = array_merge_recursive(
-			$global_topic_hierarchy,
-			$injected_global_topic_hierarchy
-		);
-
 		foreach ($global_topic_hierarchy as $parents) {
 			foreach ($parents as $topic) {
 				if ( ! is_string($topic)) {
@@ -585,25 +578,6 @@ function prepare_injections(
 					[],
 				];
 			}
-		}
-
-		foreach (
-			array_keys(
-				$injected_global_topic_hierarchy
-			) as $topic
-		) {
-			[$topic_id, $topic_name] = determine_playlist_id(
-				$topic,
-				$cache,
-				$not_a_livestream,
-				$not_a_livestream_date_lookup
-			);
-
-			$injected_cache['stubPlaylists'][$topic_id] = [
-				'',
-				$topic_name,
-				[],
-			];
 		}
 
 		$cache = inject_caches($cache, $injected_cache);

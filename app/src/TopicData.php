@@ -17,6 +17,18 @@ use UnexpectedValueException;
 class TopicData
 {
 	public const GLOBAL_TOPIC_HIERARCHY = [
+		'Pending' => [
+			'Satisfactory Updates',
+		],
+		'Released' => [
+			'Satisfactory Updates',
+		],
+		'Speculative' => [
+			'Satisfactory Updates',
+		],
+		'Free Weekends' => [
+			'Satisfactory Updates',
+		],
 		'PLbjDnnBIxiEo8RlgfifC8OhLmJl8SgpJE' => [ // State of Dev
 			-7,
 			'Satisfactory Updates',
@@ -50,6 +62,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
+		'Update 4 Launch Trailer' => [
+			404,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
 		'PLbjDnnBIxiEpSyvmQgCEC-hEKtmowhDVV' => [ // Update 5 Teasers
 			500,
 			'Satisfactory Updates',
@@ -64,6 +81,42 @@ class TopicData
 			503,
 			'Satisfactory Updates',
 			'Teasers & Trailers',
+		],
+		'Update 5 Quiz: Underrated/Overrated' => [
+			1,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+			'Update 5 Launch Stream',
+		],
+		'Update 5 Loot' => [
+			2,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+			'Update 5 Launch Stream',
+		],
+		'Update 5 Art Giveaway' => [
+			3,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+			'Update 5 Launch Stream',
+		],
+		'Update 5 Challenge Run' => [
+			4,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+			'Update 5 Launch Stream',
+		],
+		'Update 5 Final Countdown' => [
+			5,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+			'Update 5 Launch Stream',
+		],
+		'Update 5 Revealed' => [
+			6,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+			'Update 5 Launch Stream',
 		],
 		'PLbjDnnBIxiErc1n63NJjRMX1hAq4CqmxI' => [
 			600,
@@ -180,6 +233,81 @@ class TopicData
 		'PLbjDnnBIxiEolhfvxFmSHBd2Ct-lyZW6N' => [ // Official Mod Support
 			'Mods',
 		],
+		'Signs Mod' => [
+			'Mods',
+		],
+		'Power Suit' => [
+			'Mods',
+		],
+		'Structural Solutions' => [
+			'Mods',
+		],
+		'Flags' => [
+			'Mods',
+		],
+		'Refined Power' => [
+			'Mods',
+		],
+		'Inserters' => [
+			'Mods',
+		],
+		'Teleporters' => [
+			'Mods',
+		],
+		'Statue Mod' => [
+			'Mods',
+		],
+		'Pak Utility' => [
+			'Mods',
+		],
+		'Zip Strips' => [
+			'Mods',
+		],
+		'Moar Factory' => [
+			'Mods',
+		],
+		'Mk++' => [
+			'Mods',
+		],
+		'Ghost Construction' => [
+			'Mods',
+		],
+		'Farming Mod' => [
+			'Mods',
+		],
+		'3D Text' => [
+			'Mods',
+		],
+		'Utility Signs' => [
+			'Mods',
+		],
+		'Decoration' => [
+			'Mods',
+		],
+		'Teleporter' => [
+			'Mods',
+		],
+		'Micro Manage' => [
+			'Mods',
+		],
+		'Area Actions' => [
+			'Mods',
+		],
+		'Item Dispenser' => [
+			'Mods',
+		],
+		'Transportation' => [
+			'Features',
+		],
+		'Planned Features' => [
+			'Features',
+		],
+		'Possible Features' => [
+			'Features',
+		],
+		'Unreleased Features' => [
+			'Features',
+		],
 		'PLbjDnnBIxiEpeblSG5B1RXiCAdeDiTQPp' => [ // Accessibility
 			'Features',
 		],
@@ -250,6 +378,14 @@ class TopicData
 			'Features',
 			'Buildables',
 		],
+		'Doors' => [
+			'Features',
+			'Buildables',
+		],
+		'Stairs' => [
+			'Features',
+			'Buildables',
+		],
 		'PLbjDnnBIxiEpED5R4C4489wyekiGkNVe2' => [ // Creatures
 			'Environment',
 		],
@@ -313,6 +449,10 @@ class TopicData
 			'Features',
 		],
 		'PLbjDnnBIxiEqIkJnV32EKANow9vvvZtgO' => [ // Chainsaw
+			'Features',
+			'Equipment',
+		],
+		'Parachute' => [
 			'Features',
 			'Equipment',
 		],
@@ -463,6 +603,14 @@ class TopicData
 		],
 		'PLbjDnnBIxiEoD25ogJ2FI5QrNv6DMLSO_' => [ // Biomes
 			'Environment',
+		],
+		'Unplanned Biomes' => [
+			'Environment',
+			'Biomes',
+		],
+		'Red Jungle' => [
+			'Environment',
+			'Biomes',
 		],
 		'PLbjDnnBIxiErkd_Mfx2t-MUAbsERuK3fd' => [ // Fuel
 			'Features',
@@ -619,6 +767,9 @@ class TopicData
 		'PLbjDnnBIxiEps-bmHeQJHnTRQ-AsP3YfL' => [ // Joshie
 			'Community',
 		],
+		'Haigen' => [
+			'Community',
+		],
 		'PLbjDnnBIxiEob8i8BnGXs3MaviNDLKxQ5' => [ // Mercer Sphere
 			'Environment',
 			'Resources',
@@ -656,6 +807,9 @@ class TopicData
 		'PLbjDnnBIxiEpT_HG6yiXztZ5oNXPOutgR' => [ // Space Exploration
 			'Features',
 			'Unplanned Features',
+		],
+		'Characters' => [
+			'Story & Lore',
 		],
 		'PLbjDnnBIxiErZY7hh-HMSgx77BlCLUgRb' => [ // ADA
 			'Story & Lore',
@@ -784,6 +938,9 @@ class TopicData
 		'PLbjDnnBIxiEqRDaqJAxsDu8ejfRc_h1fn' => [ // Constructor
 			'Features',
 			'Buildings',
+		],
+		'Coffee Stain Holding' => [
+			'Embracer Group',
 		],
 		'PLbjDnnBIxiEqOpJsmyxhwRVWzfYKwmIKI' => [ // Gearbox Software
 			'Embracer Group',
@@ -1087,6 +1244,13 @@ class TopicData
 		'PLbjDnnBIxiEorrhm28SKQy37Zdc9gfiMr' => [ // EU Merch Store
 			'Merch',
 		],
+		'Merch Prototypes' => [
+			'Merch',
+		],
+		'FICSIT Cup Prototypes' => [
+			'Merch',
+			'Merch Prototypes',
+		],
 		'PLbjDnnBIxiEovRzGRSnxOCvPCJODjbey_' => [ // Stefan
 			'Coffee Stainers',
 		],
@@ -1343,6 +1507,27 @@ class TopicData
 			1,
 			'Coffee Stainers',
 		],
+		'Oscar' => [
+			'Coffee Stainers',
+		],
+		'Jannik' => [
+			'Coffee Stainers',
+		],
+		'Joel' => [
+			'Coffee Stainers',
+		],
+		'Etienne' => [
+			'Coffee Stainers',
+		],
+		'Anna' => [
+			'Coffee Stainers',
+		],
+		'Bogdan' => [
+			'Coffee Stainers',
+		],
+		'Lym' => [
+			'Coffee Stainers',
+		],
 		'PLbjDnnBIxiEoun-5sdS3OekZiIK9hdQkd' => [ // Final Fantasy
 			'Off-Topic',
 		],
@@ -1533,11 +1718,6 @@ class TopicData
 	];
 
 	/**
-	 * @var array<string, list<int|string>>
-	 */
-	public readonly array $injected;
-
-	/**
 	 * @var array<string, string>
 	 */
 	public readonly array $not_a_livestream;
@@ -1549,72 +1729,6 @@ class TopicData
 
 	protected function __construct()
 	{
-		/** @var array<string, list<int|string>> */
-		$injected_global_topic_hierarchy = array_map(
-			/**
-			 * @param mixed[] $route_to_topic
-			 *
-			 * @return list<int|string>
-			 */
-			static function (array $route_to_topic) : array {
-				/** @var list<int|string> */
-				$filtered = array_values(array_filter(
-					$route_to_topic,
-					/**
-					 * @param array-key $maybe_key
-					 * @param mixed $maybe_value
-					 *
-					 * @psalm-assert-if-true int $maybe_key
-					 * @psalm-assert-if-true int|string $maybe_value
-					 */
-					static function ($maybe_value, $maybe_key) : bool {
-						return
-							is_int($maybe_key)
-							&& (
-								is_string($maybe_value)
-								|| (
-									is_int($maybe_value)
-									&& 0 === $maybe_key
-								)
-							)
-						;
-					},
-					ARRAY_FILTER_USE_BOTH
-				));
-
-				if (count($filtered) !== count($route_to_topic)) {
-					throw new UnexpectedValueException(
-						'Unsupported value found in injected topics!'
-					);
-				}
-
-				return $filtered;
-			},
-			array_filter(
-				(array) json_decode(
-					file_get_contents(
-						__DIR__ . '/../topic-data/injected.json'
-					),
-					true
-				),
-				/**
-				 * @param array-key $maybe_key
-				 * @param mixed $maybe_value
-				 *
-				 * @psalm-assert-if-true string $maybe_key
-				 * @psalm-assert-if-true array $maybe_value
-				 */
-				static function ($maybe_value, $maybe_key) : bool {
-					return
-						is_string($maybe_key)
-						&& is_array($maybe_value)
-					;
-				},
-				ARRAY_FILTER_USE_BOTH
-			)
-		);
-
-		$this->injected = $injected_global_topic_hierarchy;
 		$this->not_a_livestream = array_merge(
 			self::NOT_A_LIVESTREAM,
 			array_reduce(

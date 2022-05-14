@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-05-14
+* refactored code to remove redundant properties
+
 ## 2022-05-13
 * added support for youtube collisions
 
