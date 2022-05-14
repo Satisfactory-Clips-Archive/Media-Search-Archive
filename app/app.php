@@ -266,25 +266,78 @@ $topics_without_direct_content = array_filter(
 );
 
 /**
- * @var array<string, array{
- *	children: list<string>,
- *	left: positive-int,
- *	right: positive-int,
- *	level: int
- * }>
+ * @var array<string, TopicNesting>
  */
 $topic_nesting = [];
 
 foreach ($all_topic_ids as $topic_id) {
-	$topic_nesting[$topic_id] = [
-		'children' => [],
-		'left' => -1,
-		'right' => -1,
-		'level' => -1,
-		'hdepth_for_templates' => 1,
-		'clips' => 0,
-		'id' => $topic_id,
-	];
+	$topic_nesting[$topic_id] = new TopicNesting(
+		$topic_id,
+		determine_topic_name($topic_id, $cache)
+	);
+}
+
+foreach (array_keys(TopicData::GLOBAL_TOPIC_HIERARCHY) as $topic_id) {
+	if ( ! isset($topic_nesting[$topic_id])) {
+		$topic_nesting[$topic_id] = new TopicNesting(
+			$topic_id,
+			determine_topic_name($topic_id, $cache)
+		);
+
+		foreach (
+			TopicData::GLOBAL_TOPIC_HIERARCHY[$topic_id] as $parent_topic_name
+		) {
+			if (is_string($parent_topic_name)) {
+				[$parent_topic_id] = determine_playlist_id(
+					$parent_topic_name,
+					$cache,
+					$not_a_livestream,
+					$not_a_livestream_date_lookup
+				);
+
+				if ( ! isset($topic_nesting[$parent_topic_id])) {
+					$topic_nesting[$parent_topic_id] = new TopicNesting(
+						$parent_topic_id,
+						determine_topic_name($topic_id, $cache)
+					);
+				}
+			}
+		}
+	}
+}
+
+foreach (TopicData::i()->injected as $topic_name => $sub_topics) {
+	[$topic_id] = determine_playlist_id(
+		$topic_name,
+		$cache,
+		$not_a_livestream,
+		$not_a_livestream_date_lookup
+	);
+
+	if ( ! isset($topic_nesting[$topic_id])) {
+		$topic_nesting[$topic_id] = new TopicNesting(
+			$topic_id,
+			determine_topic_name($topic_id, $cache)
+		);
+	}
+
+	foreach ($sub_topics as $maybe_topic_name) {
+		if (is_string($maybe_topic_name)) {
+			[$topic_id] = determine_playlist_id(
+				$maybe_topic_name,
+				$cache,
+				$not_a_livestream,
+				$not_a_livestream_date_lookup
+			);
+
+			if ( ! isset($topic_nesting[$topic_id])) {
+				$topic_nesting[$topic_id] = new TopicNesting(
+					$topic_id,
+					determine_topic_name($topic_id, $cache)
+				);
+			}
+		}
+	}
 }
 
 /** @var list<string> */
@@ -296,14 +349,15 @@ foreach ($global_topic_hierarchy as $topic_id => $topic_ancestors) {
 	}
 
 	$video_ids = ($cache['playlists'][$playlist_id] ?? [2 => []])[2] ?? [];
-	$topic_nesting[$topic_id]['clips'] = count($video_ids);
+
+	$topic_nesting[$topic_id]->clips = count($video_ids);
 
 	$topic_ancestors = array_filter($topic_ancestors, 'is_string');
 
-	$topic_nesting[$topic_id]['level'] = count($topic_ancestors);
-	$topic_nesting[$topic_id]['hdepth_for_templates'] = min(
+	$topic_nesting[$topic_id]->level = count($topic_ancestors);
+	$topic_nesting[$topic_id]->hdepth_for_templates = min(
 		6,
-		($topic_nesting[$topic_id]['level'] + 1)
+		($topic_nesting[$topic_id]->level + 1)
 	);
 
 	$topic_ancestors = array_reverse($topic_ancestors);
@@ -321,11 +375,11 @@ foreach ($global_topic_hierarchy as $topic_id => $topic_ancestors) {
 		if (
 			! in_array(
 				$topic_descendant_id,
-				$topic_nesting[$topic_ancestor_id]['children'],
+				$topic_nesting[$topic_ancestor_id]->children,
 				true
 			)
 		) {
-			$topic_nesting[$topic_ancestor_id]['children'][] =
+			$topic_nesting[$topic_ancestor_id]->children[] =
 				$topic_descendant_id;
 		}
 
@@ -344,12 +398,12 @@ $basename_topics_nesting_ids = array_keys($topic_nesting);
 
 $topic_nesting = array_map(
 	static function (
-		array $data
+		TopicNesting $data
 	) use (
 		$basename_topics_nesting_ids
-	) : array {
+	) : TopicNesting {
 		usort(
-			$data['children'],
+			$data->children,
 			static function (
 				string $a,
 				string $b
@@ -382,8 +436,8 @@ $topic_nesting = array_filter(
 
 $topic_nesting_roots = array_keys(array_filter(
 	$topic_nesting,
-	static function (array $maybe) : bool {
-		return -1 === $maybe['level'];
+	static function (TopicNesting $maybe) : bool {
+		return -1 === $maybe->level;
 	}
 ));
 
@@ -392,25 +446,45 @@ usort(
 	static function (
 		string $a,
 		string $b
-	) use ($cache) : int {
+	) use ($topic_nesting) : int {
 		return strnatcasecmp(
-			determine_topic_name($a, $cache),
-			determine_topic_name($b, $cache)
+			$topic_nesting[$a]->topic_name,
+			$topic_nesting[$b]->topic_name
 		);
 	}
 );
 
 $current_left = 0;
 
+$topic_id = null;
+
+echo 'presorting nested data children', "\n";
+
+adjust_nesting_presort_children($topic_nesting, $global_topic_hierarchy);
+
+$checking = 0;
+$checking_limit = count($topic_nesting_roots);
+
 foreach ($topic_nesting_roots as $topic_id) {
-	[$current_left, $topic_nesting] = adjust_nesting(
+	++$checking;
+
+	echo
+		sprintf(
+			'adjusting nesting of %s of %s root nodes (%s)',
+			$checking,
+			$checking_limit,
+			$topic_id
+		),
+		"\n";
+
+	adjust_nesting(
 		$topic_nesting,
 		$topic_id,
-		$current_left,
-		$global_topic_hierarchy,
-		$cache
+		$current_left
 	);
 }
+
+echo 'done adjusting nesting', "\n";
 
 $topics = $topic_nesting;
 
@@ -420,6 +494,8 @@ uasort(
 );
 
 $topic_nesting = $topics;
+
+unset($topics);
 
 file_put_contents(__DIR__ . '/topics-nested.json', json_encode(
 	$topic_nesting,
@@ -433,27 +509,19 @@ file_put_contents(__DIR__ . '/../11ty/data/topicsNested.json', json_encode(
 
 $api->sort_playlists_by_nested_data($topic_nesting);
 
+$all_topic_ids = array_keys($topic_nesting);
+
 usort($all_topic_ids, static function (
 	string $a,
 	string $b
 ) use ($topic_nesting, $cache) : int {
 	/**
-	 * @var null|array{
-	 *	children: list<string>,
-	 *	left: positive-int,
-	 *	right: positive-int,
-	 *	level: int
-	 * }
+	 * @var null|TopicNesting
 	 */
 	$nested_a = $topic_nesting[$a] ?? null;
 
 	/**
-	 * @var null|array{
-	 *	children: list<string>,
-	 *	left: positive-int,
-	 *	right: positive-int,
-	 *	level: int
-	 * }
+	 * @var null|TopicNesting
 	 */
 	$nested_b = $topic_nesting[$b] ?? null;
 
@@ -465,9 +533,11 @@ usort($all_topic_ids, static function (
 	}
 
 	return
-		$nested_a['left']
-		- $nested_b['left'];
+		$nested_a->left
+		- $nested_b->left;
 });
+
+echo 'associate videos with playlists', "\n";
 
 $video_playlists = [];
 
@@ -541,6 +611,9 @@ file_put_contents(
 			$topic_statistics
 	)
 );
+
+unset($topic_statistics);
+
 file_put_contents(
 	__DIR__ . '/../11ty/data/topicStrings.json',
 	json_encode($playlist_topic_strings, JSON_PRETTY_PRINT)
@@ -555,15 +628,39 @@ file_put_contents(
 );
 
 $video_playlists = array_map(
-	static function (array $topic_ids) use ($playlist_topic_strings) : array {
+	static function (
+		array $topic_ids
+	) use (
+		$cache,
+		$playlist_topic_strings,
+		$dated_playlists
+	) : array {
 		usort(
 			$topic_ids,
 			static function (
 				string $a,
 				string $b
 			) use (
+				$cache,
+				$dated_playlists,
 				$playlist_topic_strings
 			) : int {
+				$is_dated_a = isset($dated_playlists[$a]);
+				$is_dated_b = isset($dated_playlists[$b]);
+
+				if ($is_dated_a || $is_dated_b) {
+					if ($is_dated_a && $is_dated_b) {
+						return strnatcasecmp(
+							determine_topic_name($a, $cache),
+							determine_topic_name($b, $cache)
+						);
+					} elseif ($is_dated_a) {
+						return -1;
+					}
+
+					return 1;
+				}
+
 				return strnatcasecmp(
 					$playlist_topic_strings[$a],
 					$playlist_topic_strings[$b],
@@ -625,6 +722,8 @@ if (count($needs_fresh_data)) {
 	echo 'fresh data needed', "\n";
 	exit(1);
 }
+
+unset($needs_fresh_data);
 
 file_put_contents(
 	(
@@ -1531,12 +1630,11 @@ foreach (array_keys($playlists) as $playlist_id) {
 		$topics_for_date,
 		/**
 		 * @param list<string> $out
-		 * @param array{videos:list<string>} $data
 		 *
 		 * @return list<string>
 		 */
-		static function (array $out, array $data) : array {
-			foreach ($data['videos'] as $video_id) {
+		static function (array $out, TopicNesting $data) : array {
+			foreach ($data->videos as $video_id) {
 				if ( ! in_array($video_id, $out, true)) {
 					$out[] = $video_id;
 				}
@@ -1560,7 +1658,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 		$related_answer_clips[$title] = [
 			$topic_id,
 			array_combine(
-				$data['videos'],
+				$data->videos,
 				array_map(
 					static function (string $video_id) use ($cache) : string {
 						return maybe_transcript_link_and_video_url(
@@ -1568,7 +1666,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 							$cache['playlistItems'][$video_id][1]
 						);
 					},
-					$data['videos']
+					$data->videos
 				)
 			),
 		];
@@ -1581,11 +1679,11 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 		$video_data_ids = array_keys($video_data);
 
-		$depth = min(6, $topics_for_date[$topic_id]['level'] + 2);
+		$depth = min(6, $topics_for_date[$topic_id]->level + 2);
 
 		$data_for_dated_json['categorised'][$topic_id] = [
 			'title' => determine_topic_name($topic_id, $cache),
-			'depth' => $topics_for_date[$topic_id]['level'],
+			'depth' => $topics_for_date[$topic_id]->level,
 			'slug' => topic_to_slug(
 				$topic_id,
 				$cache,
@@ -1825,6 +1923,8 @@ file_put_contents(
 	__DIR__ . '/../11ty/data/indexDatedKeys.json',
 	json_encode_pretty(array_keys($grouped_dated_data_for_index_json))
 );
+
+unset($grouped_dated_data_for_index_json);
 
 $now = time();
 
@@ -2172,13 +2272,13 @@ foreach ($basename_topic_nesting as $topic_id => $nesting_data) {
 		continue;
 	}
 
-	if ($nesting_data['level'] < $last_level) {
+	if ($nesting_data->level < $last_level) {
 		$file_lines[] = '---' . "\n";
 	}
 
-	$last_level = $nesting_data['level'];
+	$last_level = $nesting_data->level;
 
-	$include_heading = count($nesting_data['children']) > 0;
+	$include_heading = count($nesting_data->children) > 0;
 
 	if (
 		! isset($cache['playlists'][$topic_id])
@@ -2195,7 +2295,7 @@ foreach ($basename_topic_nesting as $topic_id => $nesting_data) {
 	}
 
 	if ($include_heading) {
-		$depth = min(6, $nesting_data['level'] + 1);
+		$depth = min(6, $nesting_data->level + 1);
 
 		if ($past_first) {
 			$file_lines[] = "\n";
@@ -2353,22 +2453,12 @@ usort($undated_topic_ids, static function (
 	string $b
 ) use ($topic_nesting, $cache) : int {
 	/**
-	 * @var null|array{
-	 *	children: list<string>,
-	 *	left: positive-int,
-	 *	right: positive-int,
-	 *	level: int
-	 * }
+	 * @var null|TopicNesting
 	 */
 	$nested_a = $topic_nesting[$a] ?? null;
 
 	/**
-	 * @var null|array{
-	 *	children: list<string>,
-	 *	left: positive-int,
-	 *	right: positive-int,
-	 *	level: int
-	 * }
+	 * @var null|TopicNesting
 	 */
 	$nested_b = $topic_nesting[$b] ?? null;
 
@@ -2380,9 +2470,11 @@ usort($undated_topic_ids, static function (
 	}
 
 	return
-		$nested_a['left']
-		- $nested_b['left'];
+		$nested_a->left
+		- $nested_b->left;
 });
+
+unset($topic_nesting);
 
 foreach ($undated_topic_ids as $topic_id) {
 	[$slug_string] = topic_to_slug(

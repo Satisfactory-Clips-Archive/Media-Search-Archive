@@ -10,6 +10,9 @@ Static site generator for
 
 # Changelog
 
+## 2022-05-14
+* refactoring nested data
+
 ## 2022-05-13
 * added support for youtube collisions
 

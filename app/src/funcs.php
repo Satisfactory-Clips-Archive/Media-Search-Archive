@@ -665,21 +665,7 @@ function topic_to_slug(
 	array $topics_hierarchy,
 	Slugify $slugify
 ) : array {
-	if (
-		! isset($cache['playlists'][$topic_id])
-		&& ! isset($cache['stubPlaylists'][$topic_id])
-	) {
-		throw new InvalidArgumentException(sprintf(
-			'Topic not in cache! (%s)',
-			$topic_id
-		));
-	} elseif (isset($cache['playlists'][$topic_id])) {
-		$topic_data = $cache['playlists'][$topic_id];
-	} else {
-		$topic_data = $cache['stubPlaylists'][$topic_id];
-	}
-
-	[, $topic_title] = $topic_data;
+	$topic_title = determine_topic_name($topic_id, $cache);
 
 	$slug = $topics_hierarchy[$topic_id] ?? [];
 
@@ -795,51 +781,59 @@ function determine_playlist_id(
 }
 
 /**
- * @psalm-type DATA = array<string, array{
- *	children: list<string>,
- *	videos?: list<string>,
- *	left: positive-int,
- *	right: positive-int,
- *	level: int
- * }>
- *
- * @param DATA $data
- * @param array{
- *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	playlistItems:array<string, array{0:string, 1:string}>,
- *	videoTags:array<string, array{0:string, list<string>}>,
- *	stubPlaylists:array<string, array{0:string, 1:string, 2:list<string>}>,
- *	legacyAlts:array<string, list<string>>
- * } $cache
+ * @param array<string, TopicNesting> $data
  * @param array<string, list<int|string>> $topics_hierarchy
  *
- * @return array{0:int, 1:DATA}
+ * @return array{0:int, 1:array<string, TopicNesting>}
  */
 function adjust_nesting(
-	array $data,
+	array & $data,
 	string $current,
-	int $current_left,
-	array $topics_hierarchy,
-	array $cache,
+	int & $current_left,
 	int $level = 0
-) : array {
-	$data[$current]['left'] = $current_left;
-	$data[$current]['level'] = $level;
+) : void {
+	$data[$current]->left = $current_left;
+	$data[$current]->level = $level;
 
 	++$current_left;
 
+	foreach ($data[$current]->children as $child) {
+		adjust_nesting(
+			$data,
+			$child,
+			$current_left,
+			$level + 1
+		);
+	}
+
+	$data[$current]->right = $current_left + 1;
+}
+
+/**
+ * @param array<string, TopicNesting> $data
+ * @param array<string, list<int|string>> $topics_hierarchy
+ */
+function adjust_nesting_presort_children(
+	array & $data,
+	array $topics_hierarchy
+) : void {
+	foreach ($data as $current => $topic) {
 	$all_have_custom_sort = count(
 		array_filter(
-			$data[$current]['children'],
+			$data[$current]->children,
 			static function (string $maybe) use ($topics_hierarchy) : bool {
+				if ( ! isset($topics_hierarchy[$maybe])) {
+					return false;
+				}
+
 				return is_int($topics_hierarchy[$maybe][0]);
 			}
 		)
-	) === count($data[$current]['children']);
+	) === count($data[$current]->children);
 
-	if (count($data[$current]['children']) > 0 && $all_have_custom_sort) {
+	if (count($data[$current]->children) > 0 && $all_have_custom_sort) {
 		usort(
-			$data[$current]['children'],
+			$data[$current]->children,
 			static function (
 				string $a,
 				string $b
@@ -855,13 +849,13 @@ function adjust_nesting(
 		);
 	} else {
 		usort(
-			$data[$current]['children'],
+			$data[$current]->children,
 			static function (
 				string $a,
 				string $b
-			) use ($cache, $data, $topics_hierarchy) : int {
-				$maybe_a = count($data[$a]['children'] ?? []) > 0;
-				$maybe_b = count($data[$b]['children'] ?? []) > 0;
+			) use ($data, $topics_hierarchy) : int {
+				$maybe_a = count($data[$a]->children ?? []) > 0;
+				$maybe_b = count($data[$b]->children ?? []) > 0;
 
 				if ( ! $maybe_a && $maybe_b) {
 					return -1;
@@ -889,36 +883,17 @@ function adjust_nesting(
 				}
 
 				return strnatcasecmp(
-					determine_topic_name($a, $cache),
-					determine_topic_name($b, $cache)
+					$data[$a]->topic_name,
+					$data[$b]->topic_name
 				);
 			}
 		);
 	}
-
-	foreach ($data[$current]['children'] as $child) {
-		[$current_left, $data] = adjust_nesting(
-			$data,
-			$child,
-			$current_left,
-			$topics_hierarchy,
-			$cache,
-			$level + 1
-		);
 	}
-
-	$data[$current]['right'] = $current_left + 1;
-
-	return [$current_left, $data];
 }
 
 /**
- * @param array<string, array{
- *	children: list<string>,
- *	left: positive-int,
- *	right: positive-int,
- *	level: int
- * }> $data
+ * @param array<string, TopicNesting> $data
  *
  * @return list<string>
  */
@@ -932,21 +907,13 @@ function nesting_parents(
 		);
 	}
 
-	$left = $data[$target]['left'];
-	$right = $data[$target]['right'];
+	$left = $data[$target]->left;
+	$right = $data[$target]->right;
 
 	$parents = array_keys(array_filter(
 		$data,
-		/**
-		 * @param array{
-		 *	children: list<string>,
-		 *	left: positive-int,
-		 *	right: positive-int,
-		 *	level: int
-		 * } $maybe
-		 */
-		static function (array $maybe) use ($left, $right) : bool {
-			return $maybe['left'] <= $left && $maybe['right'] >= $right;
+		static function (TopicNesting $maybe) use ($left, $right) : bool {
+			return $maybe->left <= $left && $maybe->right >= $right;
 		}
 	));
 
@@ -954,12 +921,7 @@ function nesting_parents(
 }
 
 /**
- * @param array<string, array{
- *	children: list<string>,
- *	left: positive-int,
- *	right: positive-int,
- *	level: int
- * }> $data
+ * @param array<string, TopicNesting> $data
  *
  * @return list<string>
  */
@@ -974,21 +936,13 @@ function nesting_children(
 		);
 	}
 
-	$left = $data[$target]['left'];
-	$right = $data[$target]['right'];
+	$left = $data[$target]->left;
+	$right = $data[$target]->right;
 
 	$children = array_keys(array_filter(
 		$data,
-		/**
-		 * @param array{
-		 *	children: list<string>,
-		 *	left: positive-int,
-		 *	right: positive-int,
-		 *	level: int
-		 * } $maybe
-		 */
-		static function (array $maybe) use ($left, $right) : bool {
-			return $maybe['left'] > $left && $maybe['right'] <= $right;
+		static function (TopicNesting $maybe) use ($left, $right) : bool {
+			return $maybe->left > $left && $maybe->right <= $right;
 		}
 	));
 
@@ -996,7 +950,7 @@ function nesting_children(
 		$children = array_values(array_filter(
 			$children,
 			static function (string $maybe) use ($data, $target) : bool {
-				return $data[$maybe]['level'] === $data[$target]['level'] + 1;
+				return $data[$maybe]->level === $data[$target]->level + 1;
 			}
 		));
 	}
@@ -1015,17 +969,11 @@ function nesting_children(
  */
 function determine_topic_name(string $topic, array $cache) : string
 {
-	return ($cache['playlists'][$topic] ?? $cache['stubPlaylists'][$topic])[1];
+	return ($cache['playlists'][$topic] ?? ($cache['stubPlaylists'][$topic] ?? [1 => $topic]))[1];
 }
 
 /**
- * @param array<string, array{
- *	children: list<string>,
- *	videos?: list<string>,
- *	left: positive-int,
- *	right: positive-int,
- *	level: int
- * }> $nested
+ * @param array<string, TopicNesting> $nested
  * @param array{
  *	playlists:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	playlistItems:array<string, array{0:string, 1:string}>,
@@ -1035,13 +983,7 @@ function determine_topic_name(string $topic, array $cache) : string
  * } $cache
  * @param array<string, list<int|string>> $topic_hierarchy
  *
- * @return array<string, array{
- *	children: list<string>,
- *	videos: list<string>,
- *	left: positive-int,
- *	right: positive-int,
- *	level: int
- * }>
+ * @return array<string, TopicNesting>
  */
 function filter_nested(
 	string $_playlist_id,
@@ -1064,7 +1006,7 @@ function filter_nested(
 			));
 		}
 
-		$filtered[$topic_id]['videos'] = array_values(array_filter(
+		$filtered[$topic_id]->videos = array_values(array_filter(
 			($cache['playlists'][$topic_id][2] ?? []),
 			static function (string $video_id) use ($video_ids) : bool {
 				return in_array($video_id, $video_ids, true);
@@ -1072,8 +1014,10 @@ function filter_nested(
 		));
 	}
 
-	$too_few = array_filter($filtered, static function (array $maybe) : bool {
-		return count($maybe['videos'] ?? []) < 3 && $maybe['level'] > 0;
+	$too_few = array_filter(
+		$filtered,
+		static function (TopicNesting $maybe) : bool {
+			return count($maybe->videos) < 3 && $maybe->level > 0;
 	});
 
 	foreach ($too_few as $topic_id => $data) {
@@ -1085,53 +1029,54 @@ function filter_nested(
 			continue;
 		}
 
-		$filtered[$topic_id]['videos'] = [];
+		$filtered[$topic_id]->videos = [];
 
-		$filtered[$checking]['videos'] = array_values(
+		$filtered[$checking]->videos = array_values(
 			array_unique(
 				array_merge(
-					$filtered[$checking]['videos'] ?? [],
-					$data['videos'] ?? []
+					$filtered[$checking]->videos,
+					$data->videos
 				)
 			)
 		);
 	}
 
-	$filtered = array_filter($filtered, static function (array $data) : bool {
-		return count($data['videos'] ?? []) > 0;
+	$filtered = array_filter(
+		$filtered,
+		static function (TopicNesting $data) : bool {
+			return count($data->videos) > 0;
 	});
 
 	foreach (array_keys($filtered) as $topic_id) {
 		foreach (nesting_parents($topic_id, $nested) as $parent_id) {
 			if ( ! isset($filtered[$parent_id])) {
 				$filtered[$parent_id] = $nested[$parent_id];
-				$filtered[$parent_id]['videos'] = [];
+				$filtered[$parent_id]->videos = [];
 			}
 		}
 	}
 
 	/**
-	 * @var array<string, array{
-	 *	children: list<string>,
-	 *	videos: list<string>,
-	 *	left: positive-int,
-	 *	right: positive-int,
-	 *	level: int
-	 * }>
+	 * @var array<string, TopicNesting>
 	 */
 	$filtered = array_map(
-		static function (array $data) use ($filtered, $cache) : array {
-			$data['children'] = array_filter(
-				$data['children'],
+		static function (
+			TopicNesting $data
+		) use (
+			$filtered,
+			$cache
+		) : TopicNesting {
+			$data->children = array_filter(
+				$data->children,
 				static function (string $maybe) use ($filtered) : bool {
 					return isset($filtered[$maybe]);
 				}
 			);
 
-			$data['videos'] = $data['videos'] ?? [];
+			$data->videos = $data->videos ?? [];
 
 			usort(
-				$data['videos'],
+				$data->videos,
 				static function (string $a, string $b) use ($cache) : int {
 					return strnatcasecmp(
 						$cache['playlistItems'][$a][1],
@@ -1147,8 +1092,8 @@ function filter_nested(
 
 	$roots = array_keys(array_filter(
 		$filtered,
-		static function (array $maybe) : bool {
-			return 0 === $maybe['level'];
+		static function (TopicNesting $maybe) : bool {
+			return 0 === $maybe->level;
 		}
 	));
 
@@ -1159,28 +1104,28 @@ function filter_nested(
 		static function (
 			string $a,
 			string $b
-		) use ($cache) : int {
+		) use ($nested) : int {
 			return strnatcasecmp(
-				determine_topic_name($a, $cache),
-				determine_topic_name($b, $cache)
+				$nested[$a]->topic_name,
+				$nested[$b]->topic_name
 			);
 		}
 	);
 
+	adjust_nesting_presort_children($filtered, $topic_hierarchy);
+
 	foreach ($roots as $topic_id) {
-		[$current_left, $filtered] = adjust_nesting(
+		adjust_nesting(
 			$filtered,
 			$topic_id,
-			$current_left,
-			$topic_hierarchy,
-			$cache
+			$current_left
 		);
 	}
 
 	uasort(
 		$filtered,
-		static function (array $a, array $b) : int {
-			return $a['left'] <=> $b['left'];
+		static function (TopicNesting $a, TopicNesting $b) : int {
+			return $a->left <=> $b->left;
 		}
 	);
 
