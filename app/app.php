@@ -875,7 +875,11 @@ echo "\n",
 
 $checked = 0;
 
-foreach ($transcripts_json as $video_id => $video_data) {
+$transcripts_json_count = count($transcripts_json);
+
+foreach (array_keys($transcripts_json) as $video_id) {
+	$video_data = $transcripts_json[$video_id];
+
 	++$checked;
 
 	$caption_lines = $video_data['transcript'];
@@ -884,7 +888,7 @@ foreach ($transcripts_json as $video_id => $video_data) {
 		sprintf(
 			'processing %s of %s transcriptions (%s seconds elapsed)',
 			$checked,
-			count($transcripts_json),
+			$transcripts_json_count,
 			time() - $stat_start
 		)
 	;
@@ -1105,7 +1109,16 @@ foreach ($transcripts_json as $video_id => $video_data) {
 			$transcription_content
 		);
 	}
+
+	unset(
+		$transcripts_json[$video_id],
+		$video_data,
+		$transcription_lines,
+		$transcription_content
+	);
 }
+
+unset($transcripts_json);
 
 echo "\n";
 
