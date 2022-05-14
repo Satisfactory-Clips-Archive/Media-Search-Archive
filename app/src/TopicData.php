@@ -1427,6 +1427,28 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
+		'PLbjDnnBIxiEoKi2d-j2Gh6JCb_5zeGEJ4' => [ // Beacon
+			'Features',
+			'Equipment',
+		],
+		'Markers' => [
+			'Technology',
+			'User Interface',
+		],
+		'PLbjDnnBIxiEpqlYReUyGQTwlAccY_VXj-' => [ // Ping
+			'Technology',
+			'User Interface',
+		],
+		'PLbjDnnBIxiEoDvA8WqCrij0iTUq44vMju' => [ // The Legend of Zelda
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiEp0PLs0-wTfqXeuWWvookwm' => [ // The Lord of the Rings
+			'Off-Topic',
+		],
+		'PLbjDnnBIxiEoAUpfDNoyyk9jvgkUasWtM' => [ // Crash Site
+			'Features',
+			'Buildings',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [

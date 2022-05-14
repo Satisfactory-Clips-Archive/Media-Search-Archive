@@ -95,6 +95,7 @@
     "features\/buildings\/blender",
     "features\/buildings\/coal-generator",
     "features\/buildings\/constructor",
+    "features\/buildings\/crash-site",
     "features\/buildings\/m-a-m",
     "features\/buildings\/miner",
     "features\/buildings\/oil-extractor",
@@ -117,6 +118,7 @@
     "features\/crafting\/superposition-oscillator",
     "features\/emotes",
     "features\/equipment",
+    "features\/equipment\/beacon",
     "features\/equipment\/blade-runners",
     "features\/equipment\/chainsaw",
     "features\/equipment\/color-gun",
@@ -287,6 +289,8 @@
     "off-topic\/sweden\/stockholm",
     "off-topic\/terrible-jokes",
     "off-topic\/the-cycle",
+    "off-topic\/the-legend-of-zelda",
+    "off-topic\/the-lord-of-the-rings",
     "off-topic\/valheim",
     "qa-site",
     "retail",
@@ -376,5 +380,7 @@
     "technology\/unreal-engine\/unreal-engine-5",
     "technology\/user-interface",
     "technology\/user-interface\/holograms",
+    "technology\/user-interface\/markers",
+    "technology\/user-interface\/ping",
     "trolling"
 ]
