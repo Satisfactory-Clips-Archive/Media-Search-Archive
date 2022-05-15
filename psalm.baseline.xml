@@ -1,2 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="4.23.0@f1fe6ff483bf325c803df9f510d09a03fd796f88"/>
+<files psalm-version="4.23.0@f1fe6ff483bf325c803df9f510d09a03fd796f88">
+  <file src="app/app.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$maybe_convert</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>array</code>
+    </InvalidReturnType>
+    <PossiblyUndefinedGlobalVariable occurrences="1">
+      <code>$playlist_id</code>
+    </PossiblyUndefinedGlobalVariable>
+    <RedundantConditionGivenDocblockType occurrences="1">
+      <code>$maybe_convert instanceof VideoSection</code>
+    </RedundantConditionGivenDocblockType>
+  </file>
+  <file src="app/src/Jsonify.php">
+    <InvalidThrow occurrences="3"/>
+    <LessSpecificReturnStatement occurrences="1"/>
+    <MoreSpecificReturnType occurrences="1"/>
+    <RedundantCondition occurrences="1">
+      <code>isset($cards)</code>
+    </RedundantCondition>
+    <UndefinedClass occurrences="3">
+      <code>UnexpectedValueException</code>
+      <code>UnexpectedValueException</code>
+      <code>UnexpectedValueException</code>
+    </UndefinedClass>
+  </file>
+  <file src="app/src/SkippingTranscriptions.php">
+    <UnusedVariable occurrences="1">
+      <code>$not_actually_skipped</code>
+    </UnusedVariable>
+  </file>
+  <file src="app/src/VideoSection.php">
+    <InaccessibleProperty occurrences="1">
+      <code>$this-&gt;is_all_section</code>
+    </InaccessibleProperty>
+    <TypeDoesNotContainType occurrences="2"/>
+  </file>
+  <file src="app/src/funcs.php">
+    <DocblockTypeContradiction occurrences="1">
+      <code>null === $maybe_needs_alt_layout</code>
+    </DocblockTypeContradiction>
+    <InaccessibleProperty occurrences="1">
+      <code>$sections[$use_parent_section]-&gt;subsections</code>
+    </InaccessibleProperty>
+    <InvalidReturnStatement occurrences="1">
+      <code>$inject</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1"/>
+    <PossiblyUndefinedVariable occurrences="2">
+      <code>$embed_data_set</code>
+      <code>$needs_alt_layout</code>
+    </PossiblyUndefinedVariable>
+    <TypeDoesNotContainType occurrences="1">
+      <code>$youtube_redirect</code>
+    </TypeDoesNotContainType>
+    <UnusedVariable occurrences="1">
+      <code>$youtube_redirect</code>
+    </UnusedVariable>
+  </file>
+  <file src="app/uncache-skipping.php">
+    <UnusedVariable occurrences="1">
+      <code>$argv</code>
+    </UnusedVariable>
+  </file>
+</files>
