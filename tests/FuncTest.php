@@ -6,7 +6,9 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext;
 
 class FuncTest extends TestCase
 {
@@ -33,6 +35,9 @@ class FuncTest extends TestCase
 	 *
 	 * @covers \SignpostMarv\VideoClipNotes\maybe_video_override
 	 * @covers \SignpostMarv\VideoClipNotes\Filtering::kvp_string_string
+	 *
+	 * @throws RecursionContext\InvalidArgumentException but not really, phpstorm is overthinking things
+	 * @throws ExpectationFailedException if assertions fail
 	 */
 	public function test_maybe_video_override(
 		string $video_id,
@@ -94,7 +99,7 @@ class FuncTest extends TestCase
 			[
 				'yt-0123456789a',
 				false,
-				'https://www.youtube.com/watch?v=yt-0123456789a',
+				'https://www.youtube.com/watch?v=0123456789a',
 			],
 			[
 				'yt-0123456789a',
@@ -122,6 +127,9 @@ class FuncTest extends TestCase
 	 * @covers \SignpostMarv\VideoClipNotes\embed_link
 	 * @covers \SignpostMarv\VideoClipNotes\vendor_prefixed_video_id
 	 * @covers \SignpostMarv\VideoClipNotes\Filtering::kvp_string_string
+	 *
+	 * @throws RecursionContext\InvalidArgumentException but not really, phpstorm is overthinking things
+	 * @throws ExpectationFailedException if assertions fail
 	 */
 	public function test_video_url_from_id(
 		string $video_id,

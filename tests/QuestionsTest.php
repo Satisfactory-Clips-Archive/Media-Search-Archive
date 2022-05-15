@@ -6,12 +6,17 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext;
 
 class QuestionsTest extends TestCase
 {
 	/**
-	 * @covers \SignpostMarv\VideoClipNotes\Questions\filter_video_ids
+	 * @covers \SignpostMarv\VideoClipNotes\Questions::filter_video_ids
+	 *
+	 * @throws RecursionContext\InvalidArgumentException but not really, phpstorm is overthinking things
+	 * @throws ExpectationFailedException if assertions fail
 	 */
 	public function test_filter_video_ids_matches_typescript() : void
 	{

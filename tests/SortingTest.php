@@ -6,7 +6,9 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext;
 
 /**
  * @psalm-import-type CACHE from Sorting
@@ -132,6 +134,9 @@ class SortingTest extends TestCase
 	 *
 	 * @covers \SignpostMarv\VideoClipNotes\Sorting::__construct
 	 * @covers \SignpostMarv\VideoClipNotes\Sorting::sort_video_ids_alphabetically
+	 *
+	 * @throws RecursionContext\InvalidArgumentException but not really, phpstorm is overthinking things
+	 * @throws ExpectationFailedException if assertions fail
 	 */
 	public function test_sort_video_ids_alphabetically(
 		? array $cache,
@@ -233,7 +238,7 @@ class SortingTest extends TestCase
 				],
 				'a',
 				'b',
-				1,
+				0,
 			],
 		];
 	}
@@ -247,6 +252,9 @@ class SortingTest extends TestCase
 	 * @covers \SignpostMarv\VideoClipNotes\Sorting::__construct
 	 * @covers \SignpostMarv\VideoClipNotes\Sorting::sort_video_ids_by_date
 	 * @covers \SignpostMarv\VideoClipNotes\determine_date_for_video
+	 *
+	 * @throws RecursionContext\InvalidArgumentException but not really, phpstorm is overthinking things
+	 * @throws ExpectationFailedException if assertions fail
 	 */
 	public function test_sort_video_ids_by_date(
 		? array $cache,
@@ -365,6 +373,9 @@ class SortingTest extends TestCase
 	 *
 	 * @covers \SignpostMarv\VideoClipNotes\Sorting::__construct
 	 * @covers \SignpostMarv\VideoClipNotes\Sorting::sort_by_nleft
+	 *
+	 * @throws RecursionContext\InvalidArgumentException but not really, phpstorm is overthinking things
+	 * @throws ExpectationFailedException if assertions fail
 	 */
 	public function test_sort_by_nleft(
 		? array $cache,
