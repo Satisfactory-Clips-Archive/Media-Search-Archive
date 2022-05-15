@@ -69,13 +69,7 @@ class YouTubeApiWrapper
 	/**
 	 * @var array<string, list<string>>|null
 	 */
-	private $fetch_playlist_items = null;
-
-	/** @var list<string> */
-	private array $skipped_playlists = [];
-
-	/** @var list<string> */
-	private array $skipped_videos = [];
+	private ?array $fetch_playlist_items = null;
 
 	public function __construct()
 	{
@@ -855,8 +849,6 @@ class YouTubeApiWrapper
 
 		foreach ($response->items as $playlist) {
 			if ('private' === $playlist->status->privacyStatus) {
-				$this->skipped_playlists[] = $playlist->id;
-
 				continue;
 			}
 
@@ -908,8 +900,6 @@ class YouTubeApiWrapper
 			$status = $playlist_item->status;
 
 			if ('private' === $status->privacyStatus) {
-				$this->skipped_videos[] = $video_snippet_resourceId->videoId;
-
 				continue;
 			}
 
