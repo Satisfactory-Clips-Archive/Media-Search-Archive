@@ -35,7 +35,7 @@
 		"ext-simplexml": "*"
 	},
 	"require-dev": {
-		"cocur/slugify": "^4.0",
+		"cocur/slugify": "^4.1",
 		"google/apiclient": "^2.12",
 		"masterminds/html5": "^2.7",
 		"phpunit/phpunit": "^9.5",
@@ -43,6 +43,6 @@
 		"roave/security-advisories": "dev-latest",
 		"satisfactory-clips-archive/querypath": "^1.0",
 		"signpostmarv/php-cs-fixer-config": "^0.22.0",
-		"vimeo/psalm": "^4.16"
+		"vimeo/psalm": "^4.23"
 	}
 }
