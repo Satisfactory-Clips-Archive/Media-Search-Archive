@@ -7,6 +7,9 @@
     <InvalidReturnType occurrences="1">
       <code>array</code>
     </InvalidReturnType>
+    <MixedArrayOffset occurrences="1">
+      <code>$cache['playlists'][$playlist_id]</code>
+    </MixedArrayOffset>
     <PossiblyUndefinedGlobalVariable occurrences="1">
       <code>$playlist_id</code>
     </PossiblyUndefinedGlobalVariable>
@@ -14,10 +17,59 @@
       <code>$maybe_convert instanceof VideoSection</code>
     </RedundantConditionGivenDocblockType>
   </file>
+  <file src="app/lunr-docs-preload.php">
+    <MixedArgument occurrences="3">
+      <code>$transcriptions</code>
+      <code>$transcriptions</code>
+      <code>$transcriptions[$vendor_video_id]['transcript']</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="1">
+      <code>$transcriptions[$vendor_video_id]['transcript']</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="1">
+      <code>$transcriptions</code>
+    </MixedAssignment>
+  </file>
   <file src="app/src/Jsonify.php">
     <InvalidThrow occurrences="3"/>
     <LessSpecificReturnStatement occurrences="1"/>
+    <MixedArgument occurrences="15">
+      <code>$maybe</code>
+      <code>$maybe</code>
+      <code>$other_video_id</code>
+      <code>$process[$video_id]['incoming_video_cards'] ?? []</code>
+      <code>$process[$video_id]['seealso'] ?? []</code>
+      <code>$process[$video_id]['seealso_card_channels']</code>
+      <code>$process[$video_id]['seealso_card_channels']</code>
+      <code>$process[$video_id]['seealso_card_channels']</code>
+      <code>$process[$video_id]['seealso_card_channels']</code>
+      <code>$process[$video_id]['seealso_card_urls']</code>
+      <code>$process[$video_id]['seealso_card_urls']</code>
+      <code>$process[$video_id]['seealso_card_urls']</code>
+      <code>$process[$video_id]['seealso_card_urls']</code>
+      <code>$process[$video_id]['seealso_topic_cards'] ?? []</code>
+      <code>$process[$video_id]['seealso_video_cards'] ?? []</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="2">
+      <code>$faq_duplicates_for_date_checking</code>
+    </MixedArgumentTypeCoercion>
+    <MixedArrayAccess occurrences="5">
+      <code>$row[0]</code>
+      <code>$row[0]</code>
+      <code>$row[1]</code>
+      <code>$row[1]</code>
+      <code>$row[2]</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="4">
+      <code>$maybe</code>
+      <code>$other_video_id</code>
+      <code>$row</code>
+      <code>$row</code>
+    </MixedAssignment>
     <MoreSpecificReturnType occurrences="1"/>
+    <PossiblyNullOperand occurrences="3">
+      <code>$this-&gt;injected-&gt;determine_video_title($other_video_id)</code>
+    </PossiblyNullOperand>
     <RedundantCondition occurrences="1">
       <code>isset($cards)</code>
     </RedundantCondition>
@@ -27,7 +79,17 @@
       <code>UnexpectedValueException</code>
     </UndefinedClass>
   </file>
+  <file src="app/src/Markdownify.php">
+    <PossiblyNullOperand occurrences="2"/>
+  </file>
   <file src="app/src/SkippingTranscriptions.php">
+    <MixedArgumentTypeCoercion occurrences="2">
+      <code>$might_not_actually_be_skipped</code>
+      <code>usort($skipping, [$sorting, 'sort_video_ids_by_date'])</code>
+    </MixedArgumentTypeCoercion>
+    <MixedPropertyTypeCoercion occurrences="1">
+      <code>$skipping</code>
+    </MixedPropertyTypeCoercion>
     <UnusedVariable occurrences="1">
       <code>$not_actually_skipped</code>
     </UnusedVariable>
@@ -36,6 +98,9 @@
     <InaccessibleProperty occurrences="1">
       <code>$this-&gt;is_all_section</code>
     </InaccessibleProperty>
+    <MixedPropertyTypeCoercion occurrences="1">
+      <code>$subsections</code>
+    </MixedPropertyTypeCoercion>
     <TypeDoesNotContainType occurrences="2"/>
   </file>
   <file src="app/src/funcs.php">
@@ -49,6 +114,58 @@
       <code>$inject</code>
     </InvalidReturnStatement>
     <InvalidReturnType occurrences="1"/>
+    <MixedArgument occurrences="11">
+      <code>$data['topics']</code>
+      <code>$embed_data_set</code>
+      <code>$end ?: null</code>
+      <code>$i</code>
+      <code>$lines[0]</code>
+      <code>$maybe-&gt;cardRenderer-&gt;content-&gt;simpleCardContentRenderer-&gt;command-&gt;urlEndpoint-&gt;url</code>
+      <code>$result</code>
+      <code>$start</code>
+      <code>$start</code>
+      <code>$title</code>
+      <code>$video_id</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="7">
+      <code>$lines</code>
+      <code>$lines</code>
+      <code>$lines</code>
+      <code>$lines</code>
+      <code>preg_replace('/\bu[hm]\b/', ', ', $lines)</code>
+    </MixedArgumentTypeCoercion>
+    <MixedArrayAccess occurrences="6">
+      <code>$data['title']</code>
+      <code>$data['topics']</code>
+      <code>$data['topics']</code>
+      <code>$embed_data_set[$i]['end-raw']</code>
+      <code>$start</code>
+      <code>$title</code>
+    </MixedArrayAccess>
+    <MixedArrayOffset occurrences="1">
+      <code>$embed_data_set[$i]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="7">
+      <code>$end</code>
+      <code>$i</code>
+      <code>$maybe_sub_end</code>
+      <code>$maybe_sub_start</code>
+      <code>$result</code>
+      <code>$row</code>
+      <code>[$start,, $title]</code>
+    </MixedAssignment>
+    <MixedOperand occurrences="2">
+      <code>$end</code>
+      <code>$start</code>
+    </MixedOperand>
+    <MixedPropertyFetch occurrences="1">
+      <code>$maybe-&gt;cardRenderer-&gt;content</code>
+    </MixedPropertyFetch>
+    <MixedReturnTypeCoercion occurrences="3">
+      <code>$lines</code>
+      <code>$lines</code>
+      <code>list&lt;string&gt;</code>
+    </MixedReturnTypeCoercion>
     <PossiblyUndefinedVariable occurrences="2">
       <code>$embed_data_set</code>
       <code>$needs_alt_layout</code>
@@ -59,6 +176,11 @@
     <UnusedVariable occurrences="1">
       <code>$youtube_redirect</code>
     </UnusedVariable>
+  </file>
+  <file src="app/uncache-pages.php">
+    <MixedArgument occurrences="1">
+      <code>json_decode(file_get_contents($skipping_cache))</code>
+    </MixedArgument>
   </file>
   <file src="app/uncache-skipping.php">
     <UnusedVariable occurrences="1">
