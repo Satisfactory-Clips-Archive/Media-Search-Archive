@@ -3882,7 +3882,7 @@
         "title": "Q&A: Will we be able to mount the Rebar Gun on top of a buggy?",
         "date": "2022-03-29",
         "topics": [
-            "features\/equipment",
+            "features\/equipment\/rebar-gun",
             "features\/requested-features",
             "features\/transportation\/vehicles\/explorer"
         ],
@@ -25324,7 +25324,7 @@
         "title": "Q&A: Will the Explorer ever get a mounted nail gun?",
         "date": "2021-08-24",
         "topics": [
-            "features\/equipment",
+            "features\/equipment\/rebar-gun",
             "features\/transportation\/vehicles\/explorer"
         ],
         "seealso_topic_cards": [
@@ -37359,11 +37359,14 @@
         "title": "Q&A: Will the Rebar shotgun come back?",
         "date": "2021-05-25",
         "topics": [
-            "features\/equipment",
+            "features\/equipment\/rebar-gun",
             "features\/equipment\/rifle"
         ],
         "seealso": [
             "MiBdM3dSRPQ"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEq4mhfpNDUXpX3dVhF5Vnmw"
         ]
     },
     "erI4Q5kLjuc": {
@@ -39968,6 +39971,9 @@
         "seealso": [
             "5t56gFZ8I0M",
             "e4iY6zivsbU"
+        ],
+        "seealso_video_cards": [
+            "QYMHs1aTyOs"
         ]
     },
     "yT6M4mh83Vs": {
@@ -42425,6 +42431,12 @@
             "LGjLUSeHQ4w",
             "lNsmanCf4jk",
             "MiBdM3dSRPQ"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEq4mhfpNDUXpX3dVhF5Vnmw",
+            "PLbjDnnBIxiErnQCb-1B-c4ZGlEyHNjJeJ",
+            "PLbjDnnBIxiErY8-S-JLKk_ewHAJHUrzwM",
+            "PLbjDnnBIxiEogzZ5ihqFGBEDRmk9cEgAk"
         ]
     },
     "8wU1YvsAytE": {

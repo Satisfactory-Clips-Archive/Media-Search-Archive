@@ -1633,6 +1633,10 @@ class TopicData
 			'Features',
 			'Buildings',
 		],
+		'PLbjDnnBIxiErY8-S-JLKk_ewHAJHUrzwM' => [ // Rebar Gun
+			'Features',
+			'Equipment',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
