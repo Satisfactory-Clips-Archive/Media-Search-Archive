@@ -1616,11 +1616,11 @@ class TopicData
 			'Features',
 			'Equipment',
 		],
-		'Markers' => [
+		'PLbjDnnBIxiEqEAR3Wx0pIkb07wtrRi2qL' => [ // Markers
 			'Technology',
 			'User Interface',
 		],
-		'Stamps' => [
+		'PLbjDnnBIxiEpC-NAZq1zvnHD5fWHVqAUw' => [ // Stamps
 			'Technology',
 			'User Interface',
 		],

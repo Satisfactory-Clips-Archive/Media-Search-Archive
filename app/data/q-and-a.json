@@ -1,4 +1,468 @@
 {
+    "PFLDVpxGB-U": {
+        "title": "Q&A: Plan for in-game statistics?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/requested-features",
+            "technology\/user-interface"
+        ],
+        "duplicates": [
+            "-FK6cMdhe18",
+            "5rVqTHOiwh0",
+            "66gt7CjmdXs",
+            "aA0KIR6AKC8",
+            "CgAOx4N8rZ8",
+            "hVDlrmNvsIY",
+            "LXjxyiB6F3s",
+            "OnK4DcHAB4o",
+            "tHzH3dkTZ4s",
+            "yt--JXPsTlJIiI,808.0739333333333,844.2767666666667",
+            "Zlq2K0-z0_8"
+        ],
+        "seealso": [
+            "5owfQK47Hyg",
+            "CLFSgP1ywbI",
+            "oEz7zm8gldk"
+        ]
+    },
+    "7R13FVZlFPw": {
+        "title": "Q&A: What are the advantages and disadvantages of running the Experimental build?",
+        "date": "2022-05-17",
+        "topics": [
+            "satisfactory-updates\/release-builds"
+        ],
+        "seealso": [
+            "4mnVlMXrfyw",
+            "HtrCOtzx3Aw",
+            "nPj_soas-a8"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEpED5R4C4489wyekiGkNVe2",
+            "PLbjDnnBIxiEpb71JNThWu5nEdgz8LNUFL",
+            "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
+        ]
+    },
+    "-KPx46FPN5Q": {
+        "title": "Q&A: What is Coffee Stain anti daisy-chain?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/power-management",
+            "features\/unplanned-features"
+        ],
+        "seealso": [
+            "JoMBbznOXGs"
+        ],
+        "seealso_video_cards": [
+            "yt-7I3NGAm3j_4,477.34353333333337,494.5273666666667"
+        ]
+    },
+    "UjApMx6tYGg": {
+        "title": "Q&A: How will Weather affect general performance?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/possible-features\/weather-systems"
+        ],
+        "seealso": [
+            "CM3yWyHEU3Q",
+            "H43HfFnO8eU"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEovsoSQPihKXk6g7ttQ95sI",
+            "PLbjDnnBIxiEqDSLRIdyHmUlI71j458DqR"
+        ]
+    },
+    "4j-WwaYx9sQ": {
+        "title": "Q&A: What about the Uranium fuel alt?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/equipment\/beacon",
+            "features\/power-management\/nuclear-energy",
+            "features\/power-management\/nuclear-energy\/nuclear-refinement",
+            "satisfactory-updates\/pending\/satisfactory-update-6"
+        ],
+        "seealso": [
+            "8WbiYTDHfxM"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEp_OX3mKaOyTdkVijB78MU4",
+            "PLbjDnnBIxiEoYQyB8xMKJc0fOKdwncF5o",
+            "PLbjDnnBIxiEoKi2d-j2Gh6JCb_5zeGEJ4",
+            "PLbjDnnBIxiEpy0dbl8UJNZFunrmillCCR"
+        ]
+    },
+    "8WbiYTDHfxM": {
+        "title": "Q&A: Are Beacons decidedly being removed?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/equipment\/beacon",
+            "satisfactory-updates\/pending\/satisfactory-update-6"
+        ],
+        "seealso": [
+            "4j-WwaYx9sQ"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEoKi2d-j2Gh6JCb_5zeGEJ4",
+            "PLbjDnnBIxiEpTVb0_x1OKn63RM6I9ScVq",
+            "PLbjDnnBIxiErHf4MzxQldu5ULKXwa8BhQ",
+            "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6",
+            "PLbjDnnBIxiEq4mhfpNDUXpX3dVhF5Vnmw"
+        ]
+    },
+    "H43HfFnO8eU": {
+        "title": "Q&A: Can you ask the Dev team to release some info about the new Recipes?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/crafting\/recipes",
+            "features\/crafting\/recipes\/alternate-recipes",
+            "features\/equipment\/beacon",
+            "features\/power-management\/nuclear-energy",
+            "features\/power-management\/nuclear-energy\/nuclear-refinement",
+            "satisfactory-updates\/pending\/satisfactory-update-6"
+        ],
+        "seealso": [
+            "K7MGuYiuzno",
+            "oUM817ASjW4",
+            "UjApMx6tYGg"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErp1tjQWToGbsDM6fsjInME"
+        ]
+    },
+    "1Ex8swSlNP4": {
+        "title": "Q&A: Can we get a video of how the Pioneer is made?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/pioneer",
+            "story-and-lore"
+        ],
+        "seealso": [
+            "7W32eD2pZOM",
+            "uiNbMYVIqE0"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErbdgIq2TL2rTjyGvOiwC9O"
+        ]
+    },
+    "_1RGTTyHmMk": {
+        "title": "Q&A: Will the Radar Towers scan caves?",
+        "date": "2022-05-17",
+        "topics": [
+            "environment\/biomes\/caves",
+            "features\/buildings\/radar-tower",
+            "features\/requested-features",
+            "satisfactory-updates\/pending\/satisfactory-update-6"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEp_OX3mKaOyTdkVijB78MU4",
+            "PLbjDnnBIxiEqK9nRVDCg0Z3bb47I6gPod",
+            "PLbjDnnBIxiEr1a23kLgbSYkwgfuD1tQao"
+        ]
+    },
+    "QTl0IjtsttM": {
+        "title": "Q&A: Was there a reason for the separate Stamp and Marker beacons?",
+        "date": "2022-05-17",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
+            "technology\/user-interface\/markers",
+            "technology\/user-interface\/stamps"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqEAR3Wx0pIkb07wtrRi2qL",
+            "PLbjDnnBIxiEphc1QenCFLI8cOhJF8szkh",
+            "PLbjDnnBIxiEoKi2d-j2Gh6JCb_5zeGEJ4"
+        ]
+    },
+    "oUM817ASjW4": {
+        "title": "Q&A: Is the Recipe the same for the Towers?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/buildings\/radar-tower",
+            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/teasers-and-trailers\/update-6-teasers"
+        ],
+        "seealso": [
+            "H43HfFnO8eU"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEp_OX3mKaOyTdkVijB78MU4",
+            "PLbjDnnBIxiEoKi2d-j2Gh6JCb_5zeGEJ4"
+        ]
+    },
+    "gBuqX8R2jFc": {
+        "title": "Q&A: Are Stamps going to be the same as Beacons & not going to disappear from the compass?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/equipment\/beacon",
+            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "technology\/user-interface",
+            "technology\/user-interface\/stamps"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEpC-NAZq1zvnHD5fWHVqAUw",
+            "PLbjDnnBIxiEoKi2d-j2Gh6JCb_5zeGEJ4",
+            "PLbjDnnBIxiEp_OX3mKaOyTdkVijB78MU4"
+        ]
+    },
+    "zJy_dyJfNLc": {
+        "title": "Q&A: Will Turbofuel work with the Jetpack?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/crafting\/fuel",
+            "features\/equipment\/jetpack",
+            "features\/requested-features",
+            "technology\/user-interface"
+        ],
+        "duplicates": [
+            "5Ij3wWqZb8Q",
+            "5Z5pyzNiaVY",
+            "fo9YWVJyuVo",
+            "FqtXvF6LhVM",
+            "g-Om6IBMBq0",
+            "PBccbfC_x2E",
+            "pSGEDxxLn2E",
+            "yt-rATcozDE25c,476.04223333333334,527.5603666666667"
+        ],
+        "seealso": [
+            "6DpfaPCLwD4",
+            "PZLgmrsMIlc",
+            "xY2wDhyE7ZE"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEogzZ5ihqFGBEDRmk9cEgAk",
+            "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
+        ],
+        "seealso_card_urls": [
+            [
+                "SignpostMarv on Twitter",
+                "see the GIF, as promised",
+                "https:\/\/mobile.twitter.com\/SignpostMarv\/status\/1527405192458686472"
+            ]
+        ]
+    },
+    "l-LVFsZi9_E": {
+        "title": "Q&A: Map Marker limit as config thing?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/requested-features",
+            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "technology\/user-interface\/markers",
+            "technology\/user-interface\/stamps"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqEAR3Wx0pIkb07wtrRi2qL"
+        ]
+    },
+    "-kK37J52sSA": {
+        "title": "Q&A: Will different players have different colour highlighted markers?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/multiplayer",
+            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "technology\/user-interface",
+            "technology\/user-interface\/markers",
+            "technology\/user-interface\/stamps"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqEAR3Wx0pIkb07wtrRi2qL"
+        ]
+    },
+    "K7MGuYiuzno": {
+        "title": "Q&A: Will Beacons be replaced with something for building Vehicles?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/crafting\/recipes",
+            "features\/equipment\/beacon",
+            "features\/transportation\/vehicles",
+            "satisfactory-updates\/pending\/satisfactory-update-6"
+        ],
+        "seealso": [
+            "H43HfFnO8eU"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEoKi2d-j2Gh6JCb_5zeGEJ4",
+            "PLbjDnnBIxiEr97STV5beB_aCFM6jZaVDL"
+        ]
+    },
+    "ESh7mMnkJR8": {
+        "title": "Q&A: Any form of discussion to add pen & brush to the map?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/requested-features",
+            "technology\/user-interface"
+        ],
+        "seealso": [
+            "zZ0aGMG1xjM"
+        ]
+    },
+    "abVIIFQdQ9M": {
+        "title": "Q&A: Fixing quarter-pipe Foundations so we can use Materials?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/buildables\/foundations",
+            "features\/requested-features"
+        ],
+        "duplicates": [
+            "ORd4hZlYajw",
+            "s1Tz9QOFyZc",
+            "SntGjNRuKsc"
+        ],
+        "seealso": [
+            "AdOxeOT7cJ8",
+            "tdXyjapP9IM",
+            "_QYLbsfnNsw"
+        ]
+    },
+    "d5DUng9zgwM": {
+        "title": "Q&A: When will Satisfactory be available for Linux?",
+        "date": "2022-05-17",
+        "topics": [
+            "technology\/linux"
+        ],
+        "duplicates": [
+            "ADBTXxQnDL4",
+            "fvvftnYCayg",
+            "GR3xet5AyuE",
+            "jGFUMhD3WGg",
+            "JjyzyUK5tj8",
+            "vSFTo-1j-SA"
+        ],
+        "seealso": [
+            "EtKOY6OSFo0",
+            "yt-NlIVwoRqjVk,142.50903333333335,211.4112",
+            "yt-NlIVwoRqjVk,211.4112,226.3261",
+            "yt-W1E6EWrAsII,406.52,421.68"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEozm5BT2Qi4Mvu9uI6ga2uJ",
+            "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT",
+            "PLbjDnnBIxiErPmwCcdEax-8TIvyvjdlm2"
+        ]
+    },
+    "huRKK3aqoPk": {
+        "title": "Q&A: Any plans for automated Power before Coal?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/power-management",
+            "features\/unplanned-features"
+        ],
+        "seealso": [
+            "Hi-wSNVeFPU"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEr1rRsrKhfeFO8lpQ3ETpbe",
+            "PLbjDnnBIxiEqRBeGXVroVP5HrbSUxSTz6",
+            "PLbjDnnBIxiEoxt-MkPSDtxi9DBMOneqyT"
+        ]
+    },
+    "mDi4O1uN6Ng": {
+        "title": "Q&A: When will Doom be playable on the HUB computer?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/buildings\/the-hub",
+            "features\/requested-features"
+        ],
+        "duplicates": [
+            "lVjzwGuhM5I"
+        ],
+        "seealso": [
+            "I92-EFlUd4U",
+            "p0nELMGY4hA",
+            "PFLDVpxGB-U"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEpz0p3GUy76rNNYI0kiJ0iW",
+            "PLbjDnnBIxiEq19o51RGWKNiq8qu2KySZJ"
+        ]
+    },
+    "pwh9QNRmqFY": {
+        "title": "Q&A: Fixing bugs or doing new stuff?",
+        "date": "2022-05-17",
+        "topics": [
+            "coffee-stainers\/snutt",
+            "features\/transportation\/trains\/train-signals",
+            "satisfactory-updates",
+            "satisfactory-updates\/pending\/satisfactory-update-6"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErrg7lK40K9vEj_Jl2dS1hd",
+            "PLbjDnnBIxiEoAqIqsBIdN_uoV-HsP8YDJ"
+        ]
+    },
+    "vuORkiN-LE8": {
+        "title": "Q&A: What was the decision to put saves and photos in different folders?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/photo-mode",
+            "features\/save-system"
+        ],
+        "seealso_card_urls": [
+            [
+                "Satisfactory Q&A",
+                "see Marv's bug report",
+                "https:\/\/questions.satisfactorygame.com\/post\/6191af6f831c85205235dfef"
+            ]
+        ]
+    },
+    "ZdAfPR1J3OY": {
+        "title": "Q&A: How's the math going for those Mk.5 Belts?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/buildables\/conveyor-belts",
+            "features\/requested-features"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEp3QMTxKRnehenCwo17MuJy",
+            "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
+        ]
+    },
+    "LkRK9NUEPOk": {
+        "title": "Q&A: What was 14-year old Snutt's favourite video game?",
+        "date": "2022-05-17",
+        "topics": [
+            "coffee-stainers\/snutt",
+            "off-topic\/final-fantasy"
+        ],
+        "seealso": [
+            "GErK58lZabs"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEoAqIqsBIdN_uoV-HsP8YDJ",
+            "PLbjDnnBIxiEoun-5sdS3OekZiIK9hdQkd",
+            "PLbjDnnBIxiEoik7dzzDmMntF6tKuv-my2"
+        ]
+    },
+    "EwaNJ-K7Yd0": {
+        "title": "Q&A: Will video come out this Friday?",
+        "date": "2022-05-17",
+        "topics": [
+            "satisfactory-updates\/teasers-and-trailers\/update-6-teasers"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiErc1n63NJjRMX1hAq4CqmxI"
+        ],
+        "seealso_card_urls": [
+            [
+                "Special Guest",
+                "catch up on the news",
+                "https:\/\/www.youtube.com\/watch?v=pLBIAObULRg&t=270s"
+            ]
+        ]
+    },
+    "9QWK-qKXvoQ": {
+        "title": "Q&A: Any chance we'd get inverted Vehicle Y-axis sometime ?",
+        "date": "2022-05-17",
+        "topics": [
+            "features\/requested-features",
+            "features\/transportation\/vehicles"
+        ],
+        "duplicates": [
+            "yt-iVDRQg_aWpU,5574.738038,5618.038897"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEr97STV5beB_aCFM6jZaVDL"
+        ]
+    },
     "dIGez7lvcic": {
         "title": "Q&A: Any cool blueprint tool?",
         "date": "2022-05-10",
@@ -1561,7 +2025,8 @@
             "satisfactory-updates\/pending\/satisfactory-update-6"
         ],
         "seealso": [
-            "tEsHw1pXZlQ"
+            "tEsHw1pXZlQ",
+            "UjApMx6tYGg"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEovsoSQPihKXk6g7ttQ95sI"
@@ -2677,26 +3142,10 @@
             "features\/requested-features",
             "technology\/user-interface"
         ],
-        "duplicates": [
-            "-FK6cMdhe18",
-            "5rVqTHOiwh0",
-            "66gt7CjmdXs",
-            "aA0KIR6AKC8",
-            "hVDlrmNvsIY",
-            "LXjxyiB6F3s",
-            "OnK4DcHAB4o",
-            "tHzH3dkTZ4s",
-            "yt--JXPsTlJIiI,808.0739333333333,844.2767666666667",
-            "Zlq2K0-z0_8"
-        ],
-        "seealso": [
-            "5owfQK47Hyg",
-            "CLFSgP1ywbI",
-            "oEz7zm8gldk"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOl-wg1r4-qo3TyvXUy-ev"
-        ]
+        ],
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "__ik24Rn9AU": {
         "title": "Q&A: Jace, I thought you said April 32nd for the Update?",
@@ -3561,6 +4010,7 @@
             "coffee-stainers\/snutt"
         ],
         "seealso": [
+            "LkRK9NUEPOk",
             "yt-CB9bSigNYH8,2630.888348,2723.033543"
         ],
         "seealso_topic_cards": [
@@ -6007,6 +6457,9 @@
             "features\/transportation\/trains",
             "technology\/physics"
         ],
+        "seealso": [
+            "d-MzgqyOzAI"
+        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEosbWcrHc-p6N-xeS77Rv5P"
         ]
@@ -7638,14 +8091,11 @@
             "features\/buildables\/foundations",
             "features\/equipment\/customizer"
         ],
-        "duplicates": [
-            "ORd4hZlYajw",
-            "SntGjNRuKsc"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErHf4MzxQldu5ULKXwa8BhQ",
             "PLbjDnnBIxiEq1lyHQw0wVik2U0W0lmO1p"
-        ]
+        ],
+        "duplicatedby": "abVIIFQdQ9M"
     },
     "D_K9Y_YaBGU": {
         "title": "Q&A: Is \"developer creative time\" typical game development or unique to Coffee Stain?",
@@ -7864,7 +8314,7 @@
             "features\/requested-features"
         ],
         "seealso": [
-            "CgAOx4N8rZ8"
+            "PFLDVpxGB-U"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqRTal-bQ-tlGQPcGhOg1UL"
@@ -9137,7 +9587,7 @@
                 "https:\/\/questions.satisfactorygame.com\/post\/6178649e831c85205235265b"
             ]
         ],
-        "duplicatedby": "s1Tz9QOFyZc"
+        "duplicatedby": "abVIIFQdQ9M"
     },
     "DoywhI2s_3o": {
         "title": "Q&A: Answer about Soundtrack release?",
@@ -10256,7 +10706,7 @@
             "features\/equipment\/jetpack"
         ],
         "seealso": [
-            "g-Om6IBMBq0"
+            "zJy_dyJfNLc"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEogzZ5ihqFGBEDRmk9cEgAk"
@@ -10615,12 +11065,7 @@
             "features\/buildables\/foundations",
             "qa-site"
         ],
-        "seealso": [
-            "AdOxeOT7cJ8",
-            "tdXyjapP9IM",
-            "_QYLbsfnNsw"
-        ],
-        "duplicatedby": "s1Tz9QOFyZc"
+        "duplicatedby": "abVIIFQdQ9M"
     },
     "K2KL5Aaf9Do": {
         "title": "Q&A: Any comment on the leaked Toilet Flush DLC from Andrew?",
@@ -10822,7 +11267,7 @@
             "features\/buildables\/foundations"
         ],
         "seealso": [
-            "s1Tz9QOFyZc",
+            "abVIIFQdQ9M",
             "_QYLbsfnNsw"
         ],
         "seealso_topic_cards": [
@@ -11134,7 +11579,8 @@
         "topics": [
             "features\/requested-features",
             "features\/transportation\/vehicles"
-        ]
+        ],
+        "duplicatedby": "9QWK-qKXvoQ"
     },
     "yt-iVDRQg_aWpU,5618.797646,5733.849599": {
         "title": "Q&A: Will there be updates on Experimental?",
@@ -11496,6 +11942,7 @@
             "yt-t1LfyNfuMVQ,186.48,218.32"
         ],
         "seealso": [
+            "7R13FVZlFPw",
             "yt-F-q3vfj__M4,112.71260000000001,182.71586666666667",
             "yt-R0S19_caQuw,86.32,144.32"
         ]
@@ -11650,8 +12097,8 @@
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
+            "abVIIFQdQ9M",
             "AdOxeOT7cJ8",
-            "s1Tz9QOFyZc",
             "tdXyjapP9IM"
         ]
     },
@@ -12178,7 +12625,7 @@
             "features\/equipment\/jetpack"
         ],
         "seealso": [
-            "g-Om6IBMBq0"
+            "zJy_dyJfNLc"
         ]
     },
     "n1Y_di8jDpY": {
@@ -13552,7 +13999,7 @@
                 "https:\/\/questions.satisfactorygame.com\/post\/5e60079dc672159e0cdf9615"
             ]
         ],
-        "duplicatedby": "CgAOx4N8rZ8"
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "K1JZu9ulqAY": {
         "title": "Q&A: How are you able to save the files so small in megabyte size?",
@@ -13834,8 +14281,8 @@
             "satisfactory-updates\/released\/satisfactory-update-5\/torstens-cosmetics-whiteboard"
         ],
         "seealso": [
+            "abVIIFQdQ9M",
             "OXjbnXVYKw4",
-            "s1Tz9QOFyZc",
             "yt-8Tok_vdqZH8,283.1995684437661,294.82785116572813",
             "_QYLbsfnNsw"
         ],
@@ -19449,6 +19896,9 @@
         "date": "2021-09-28",
         "topics": [
             "features\/pioneer"
+        ],
+        "seealso": [
+            "IGwr-vvp3Nk"
         ]
     },
     "_Xl3Qs2LEJw": {
@@ -19901,6 +20351,7 @@
         ],
         "seealso": [
             "CfUusHOKqcY",
+            "huRKK3aqoPk",
             "L735aPTRivU",
             "M9XrXjf-GdU"
         ],
@@ -20388,6 +20839,7 @@
             "story-and-lore"
         ],
         "seealso": [
+            "1Ex8swSlNP4",
             "7W32eD2pZOM"
         ],
         "seealso_topic_cards": [
@@ -22927,24 +23379,11 @@
             "features\/equipment\/jetpack",
             "technology\/user-interface"
         ],
-        "duplicates": [
-            "5Ij3wWqZb8Q",
-            "5Z5pyzNiaVY",
-            "fo9YWVJyuVo",
-            "FqtXvF6LhVM",
-            "PBccbfC_x2E",
-            "pSGEDxxLn2E",
-            "yt-rATcozDE25c,476.04223333333334,527.5603666666667"
-        ],
-        "seealso": [
-            "6DpfaPCLwD4",
-            "PZLgmrsMIlc",
-            "xY2wDhyE7ZE"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEogzZ5ihqFGBEDRmk9cEgAk",
             "PLbjDnnBIxiEpy0dbl8UJNZFunrmillCCR"
-        ]
+        ],
+        "duplicatedby": "zJy_dyJfNLc"
     },
     "FKA_rMdiHtU": {
         "title": "Q&A: Will Update 5 mess up Mods like Update 4 did?",
@@ -23138,7 +23577,7 @@
             "nhwUgABKGmE"
         ],
         "seealso": [
-            "JjyzyUK5tj8",
+            "d5DUng9zgwM",
             "NXk08Ir5PCg"
         ],
         "seealso_topic_cards": [
@@ -24917,7 +25356,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEogzZ5ihqFGBEDRmk9cEgAk"
         ],
-        "duplicatedby": "g-Om6IBMBq0"
+        "duplicatedby": "zJy_dyJfNLc"
     },
     "0nc0vXpzr8o": {
         "title": "Q&A: Are the old-style Rails we currently have now going to have a Ramp version as well?",
@@ -25095,7 +25534,7 @@
             "PLbjDnnBIxiEpz0p3GUy76rNNYI0kiJ0iW",
             "PLbjDnnBIxiEpQNWBETWpyzpgjN3Q6bHnj"
         ],
-        "duplicatedby": "CgAOx4N8rZ8"
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "oAUq8kWdbZ8": {
         "title": "Q&A: Question about revamping the Spire Coast, is the plateau in the Dune Desert in the danger zone?",
@@ -26717,8 +27156,8 @@
             "features\/buildings\/the-hub"
         ],
         "seealso": [
-            "CgAOx4N8rZ8",
             "I92-EFlUd4U",
+            "PFLDVpxGB-U",
             "UBj-gw_Jv_8",
             "_M2lFTR8Xh0"
         ],
@@ -28437,22 +28876,10 @@
         "topics": [
             "technology\/linux"
         ],
-        "duplicates": [
-            "ADBTXxQnDL4",
-            "fvvftnYCayg",
-            "GR3xet5AyuE",
-            "jGFUMhD3WGg",
-            "vSFTo-1j-SA"
-        ],
-        "seealso": [
-            "EtKOY6OSFo0",
-            "yt-NlIVwoRqjVk,142.50903333333335,211.4112",
-            "yt-NlIVwoRqjVk,211.4112,226.3261",
-            "yt-W1E6EWrAsII,406.52,421.68"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEozm5BT2Qi4Mvu9uI6ga2uJ"
-        ]
+        ],
+        "duplicatedby": "d5DUng9zgwM"
     },
     "GYn_hCVhVlo": {
         "title": "Q&A: Any updates about Dedicated Servers?",
@@ -29943,7 +30370,7 @@
             "features\/buildings\/the-hub"
         ],
         "seealso": [
-            "CgAOx4N8rZ8",
+            "PFLDVpxGB-U",
             "s4YySOL2SC0"
         ],
         "seealso_topic_cards": [
@@ -32384,7 +32811,7 @@
         "incoming_video_cards": [
             "HUFsO3ZHBwI"
         ],
-        "duplicatedby": "CgAOx4N8rZ8"
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "7FkrFPCnP1w": {
         "title": "Q&A: Is there going to be a new island sometime?",
@@ -32486,6 +32913,7 @@
             "satisfactory-updates\/release-builds"
         ],
         "seealso": [
+            "7R13FVZlFPw",
             "zeyd67hqrB8"
         ]
     },
@@ -32935,7 +33363,7 @@
         "seealso_video_cards": [
             "pxBuKCXaE6Y"
         ],
-        "duplicatedby": "g-Om6IBMBq0"
+        "duplicatedby": "zJy_dyJfNLc"
     },
     "m9Uh0DXTSss": {
         "title": "Q&A: Any plans for future videos with devs like the Lighting video?",
@@ -33221,7 +33649,7 @@
             "features\/buildings\/the-hub"
         ],
         "seealso": [
-            "lVjzwGuhM5I",
+            "mDi4O1uN6Ng",
             "oEz7zm8gldk",
             "p0nELMGY4hA"
         ],
@@ -33568,7 +33996,7 @@
             "PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl",
             "PLbjDnnBIxiEqE6cyJPicfKslpaX5zwjCq"
         ],
-        "duplicatedby": "JjyzyUK5tj8"
+        "duplicatedby": "d5DUng9zgwM"
     },
     "utp7TQEksi0": {
         "title": "Q&A: Are we going to get changes to the basic material Recipes?",
@@ -35757,7 +36185,7 @@
         ],
         "seealso": [
             "I92-EFlUd4U",
-            "lVjzwGuhM5I"
+            "mDi4O1uN6Ng"
         ]
     },
     "kitahOI_c88": {
@@ -38243,7 +38671,7 @@
             "features\/equipment\/jetpack",
             "technology\/user-interface"
         ],
-        "duplicatedby": "g-Om6IBMBq0"
+        "duplicatedby": "zJy_dyJfNLc"
     },
     "jpy8YF462tk": {
         "title": "Q&A: How about using Batteries in Hover Packs?",
@@ -38765,6 +39193,7 @@
             "y86EDzn4-bY"
         ],
         "seealso": [
+            "-KPx46FPN5Q",
             "83vj59cC5wU"
         ]
     },
@@ -41386,7 +41815,7 @@
         "topics": [
             "features\/equipment\/jetpack"
         ],
-        "duplicatedby": "g-Om6IBMBq0"
+        "duplicatedby": "zJy_dyJfNLc"
     },
     "tdatHpgolVQ": {
         "title": "Q&A: Range upgrade for Hover Pack?",
@@ -44088,6 +44517,7 @@
         "seealso": [
             "1HNEIzjJm0w",
             "5qQx1URl8lY",
+            "7R13FVZlFPw",
             "Ns1NwYrB16M",
             "w3_T37dQba0"
         ]
@@ -48533,7 +48963,7 @@
             "features\/equipment\/jetpack",
             "technology\/user-interface"
         ],
-        "duplicatedby": "g-Om6IBMBq0"
+        "duplicatedby": "zJy_dyJfNLc"
     },
     "MbmXwZe8mXY": {
         "title": "Q&A: Can we sometimes drink Chai instead of Coffee?",
@@ -48564,8 +48994,8 @@
             "technology\/user-interface"
         ],
         "seealso": [
-            "g-Om6IBMBq0",
-            "pSGEDxxLn2E"
+            "pSGEDxxLn2E",
+            "zJy_dyJfNLc"
         ]
     },
     "xq7HQ_tIkbY": {
@@ -49897,8 +50327,8 @@
         ],
         "seealso": [
             "ADBTXxQnDL4",
+            "d5DUng9zgwM",
             "GR3xet5AyuE",
-            "JjyzyUK5tj8",
             "vSFTo-1j-SA"
         ]
     },
@@ -51603,7 +52033,7 @@
             "features\/buildings\/the-hub",
             "technology\/user-interface"
         ],
-        "duplicatedby": "CgAOx4N8rZ8"
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "6DayBMofsHs": {
         "title": "Q&A: My friend has a green colour preset for all walls in the world, is there a way to change this?",
@@ -52449,13 +52879,13 @@
         ],
         "seealso": [
             "HUFsO3ZHBwI",
-            "lVjzwGuhM5I"
+            "mDi4O1uN6Ng"
         ],
         "seealso_video_cards": [
             "KH5SkE4nzhg",
             "njXBs_p2l1w"
         ],
-        "duplicatedby": "CgAOx4N8rZ8"
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "yt--JXPsTlJIiI,844.2767666666667,875.7081666666667": {
         "title": "Q&A: Are farms going to be a thing?",
@@ -53046,10 +53476,10 @@
         ],
         "seealso": [
             "ceIkXx7rE7Y",
-            "CgAOx4N8rZ8",
             "dbyTU3Wdpog",
             "ekFl5tlk2ig",
-            "kDwywg_UJoc"
+            "kDwywg_UJoc",
+            "PFLDVpxGB-U"
         ]
     },
     "xwwx4N37G8M": {
@@ -53080,7 +53510,7 @@
         "seealso": [
             "KQmKBaywHHw"
         ],
-        "duplicatedby": "g-Om6IBMBq0"
+        "duplicatedby": "zJy_dyJfNLc"
     },
     "dcK5sAXkSPg": {
         "title": "Q&A: Will you let us upgrade Storage Containers to Industrial Storage Containers?",
@@ -53160,7 +53590,7 @@
             "satisfactory-updates\/release-builds",
             "technology\/linux"
         ],
-        "duplicatedby": "JjyzyUK5tj8"
+        "duplicatedby": "d5DUng9zgwM"
     },
     "01DJ6EPqTk4": {
         "title": "Q&A: If I backup current version, will FICS\u2055MAS still work after the 18th?",
@@ -53638,6 +54068,7 @@
             "z7QqNzK8OMU"
         ],
         "seealso": [
+            "1Ex8swSlNP4",
             "KUqrPtD8LF8",
             "uiNbMYVIqE0",
             "yt-CB9bSigNYH8,4284.443325,4301.268185"
@@ -54531,7 +54962,7 @@
         "topics": [
             "technology\/user-interface"
         ],
-        "duplicatedby": "CgAOx4N8rZ8"
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "5rVqTHOiwh0": {
         "title": "Q&A: Any chance to use the HUB Computer to display the statistics and production of the factory?",
@@ -54540,7 +54971,7 @@
             "features\/buildings\/the-hub",
             "technology\/user-interface"
         ],
-        "duplicatedby": "CgAOx4N8rZ8"
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "MKjtHTOMDZk": {
         "title": "Q&A: Are Dedicated Servers part of Update 4?",
@@ -58311,7 +58742,7 @@
             "technology\/linux"
         ],
         "seealso": [
-            "JjyzyUK5tj8",
+            "d5DUng9zgwM",
             "yt-NlIVwoRqjVk,211.4112,226.3261"
         ]
     },
@@ -58436,7 +58867,7 @@
         "date": "2020-10-06",
         "topics": [],
         "seealso": [
-            "JjyzyUK5tj8",
+            "d5DUng9zgwM",
             "NXk08Ir5PCg"
         ]
     },
@@ -58446,7 +58877,7 @@
         "topics": [
             "technology\/linux"
         ],
-        "duplicatedby": "JjyzyUK5tj8"
+        "duplicatedby": "d5DUng9zgwM"
     },
     "IalBixhW2ck": {
         "title": "Q&A: Are you okay with Mods?",
@@ -58825,7 +59256,7 @@
             "8WYNwGDLYNE",
             "PkozY8_q-LE"
         ],
-        "duplicatedby": "g-Om6IBMBq0"
+        "duplicatedby": "zJy_dyJfNLc"
     },
     "yt-rATcozDE25c,527.5603666666667,538.5713666666667": {
         "title": "Q&A: Will you add Pipes?",
@@ -59238,7 +59669,7 @@
         "seealso": [
             "yt-Tmpors_r_Vw,78.078,138.50503333333333"
         ],
-        "duplicatedby": "CgAOx4N8rZ8"
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "OnK4DcHAB4o": {
         "title": "Q&A: When are we getting a Production Overview in the game?",
@@ -59247,7 +59678,7 @@
             "features\/buildings",
             "features\/crafting"
         ],
-        "duplicatedby": "CgAOx4N8rZ8"
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "I5HR5ocUX9o": {
         "title": "Q&A: Any chance of larger Foundations?",
@@ -62704,11 +63135,7 @@
         "legacyalts": [
             "tc-DifficultDependableGooseAMPEnergyCherry"
         ],
-        "seealso": [
-            "CgAOx4N8rZ8",
-            "I92-EFlUd4U",
-            "p0nELMGY4hA"
-        ]
+        "duplicatedby": "mDi4O1uN6Ng"
     },
     "v2qV7Kfbcac": {
         "title": "Q&A: She\u203d Not me\u203d",
@@ -63739,7 +64166,7 @@
         "legacyalts": [
             "tc-DiligentDeafMangoPogChamp"
         ],
-        "duplicatedby": "JjyzyUK5tj8"
+        "duplicatedby": "d5DUng9zgwM"
     },
     "wTbRzvQ8ZLY": {
         "title": "Q&A: Please make the Walking Bean stop clipping?",
@@ -65605,7 +66032,7 @@
             "technology\/mac"
         ],
         "seealso": [
-            "JjyzyUK5tj8",
+            "d5DUng9zgwM",
             "NXk08Ir5PCg"
         ],
         "seealso_video_cards": [
@@ -65623,7 +66050,7 @@
             "technology\/linux"
         ],
         "seealso": [
-            "JjyzyUK5tj8",
+            "d5DUng9zgwM",
             "rmduvSAc3P4"
         ],
         "seealso_video_cards": [
@@ -67938,7 +68365,7 @@
             "features\/buildings\/the-hub",
             "technology\/user-interface"
         ],
-        "duplicatedby": "CgAOx4N8rZ8"
+        "duplicatedby": "PFLDVpxGB-U"
     },
     "o3Nr13tH7dY": {
         "title": "Q&A: When is Coffee going to be introduced to the game?",
@@ -68893,7 +69320,7 @@
             "technology\/linux",
             "technology\/mac"
         ],
-        "duplicatedby": "JjyzyUK5tj8"
+        "duplicatedby": "d5DUng9zgwM"
     },
     "XQioxcXDRqc": {
         "title": "Q&A: Are you adding support for Mac any time soon?",
@@ -72879,8 +73306,8 @@
             "technology\/linux"
         ],
         "seealso": [
+            "d5DUng9zgwM",
             "eQn0OjZHj_w",
-            "JjyzyUK5tj8",
             "NXk08Ir5PCg"
         ]
     },
