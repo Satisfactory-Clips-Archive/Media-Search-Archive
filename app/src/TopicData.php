@@ -1263,7 +1263,6 @@ class TopicData
 		],
 		'PLbjDnnBIxiErB8iPe1PpO-x4cGtPIEN24' => [ // Build Modes
 			'Features',
-			'Planned Features',
 		],
 		'PLbjDnnBIxiEo6-Jsza66SWDUgX688DEh5' => [ // Flushable Toilet DLC
 			'Features',
@@ -1392,17 +1391,14 @@ class TopicData
 		],
 		'PLbjDnnBIxiErG8xome5LS0FQBrQsdR_vb' => [ // Hard & Soft Clearance
 			'Features',
-			'Planned Features',
 			'Build Modes',
 		],
 		'PLbjDnnBIxiErGzhsUN4suUKqAYQpEPrbm' => [ // Quick Switch
 			'Features',
-			'Planned Features',
 			'Build Modes',
 		],
 		'PLbjDnnBIxiEo_Zh8wGap9N34W6DrbfWN-' => [ // Zooping
 			'Features',
-			'Planned Features',
 			'Build Modes',
 		],
 		'PLbjDnnBIxiEobP4EgydtWaC_BJKd0w9Vi' => [ // Rasmus
@@ -1464,7 +1460,6 @@ class TopicData
 		],
 		'PLbjDnnBIxiEq_ghuvlyXJ2TEs1dfgjh-3' => [ // Complex Clearance
 			'Features',
-			'Planned Features',
 			'Build Modes',
 			'Hard & Soft Clearance',
 		],

@@ -4172,7 +4172,7 @@
         "title": "Q&A: Any thoughts on making Zoop limit a gameplay setting?",
         "date": "2022-03-22",
         "topics": [
-            "features\/planned-features\/build-modes\/zooping",
+            "features\/build-modes\/zooping",
             "technology\/user-interface"
         ],
         "seealso": [
@@ -6683,8 +6683,8 @@
         "title": "Q&A: Thoughts on being able to copy\/paste Buildings with the settings also copied?",
         "date": "2022-02-22",
         "topics": [
+            "features\/build-modes",
             "features\/buildings",
-            "features\/planned-features\/build-modes",
             "technology\/user-interface"
         ],
         "seealso": [
@@ -7384,8 +7384,8 @@
         "title": "Q&A: Is there a way to change the default Power Poles you automatically place with the power line?",
         "date": "2022-02-15",
         "topics": [
+            "features\/build-modes",
             "features\/buildables",
-            "features\/planned-features\/build-modes",
             "features\/power-management"
         ]
     },
@@ -12484,8 +12484,8 @@
         "title": "Q&A: Reverse Build Mode, when?",
         "date": "2021-11-09",
         "topics": [
-            "features\/buildables\/conveyor-belts",
-            "features\/planned-features\/build-modes"
+            "features\/build-modes",
+            "features\/buildables\/conveyor-belts"
         ],
         "replaces": [
             "3wjuXlBaNIM"
@@ -12513,9 +12513,9 @@
         "title": "Q&A: Will there be improvements to hit boxes, specifically for Power Poles between two Constructors?",
         "date": "2021-11-09",
         "topics": [
+            "features\/build-modes\/hard-and-soft-clearance",
             "features\/buildables",
-            "features\/buildings\/constructor",
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance"
+            "features\/buildings\/constructor"
         ],
         "seealso": [
             "TKH7DyKIets"
@@ -12529,8 +12529,8 @@
         "title": "Q&A: Train Station had bigger clearance?",
         "date": "2021-11-09",
         "topics": [
+            "features\/build-modes\/hard-and-soft-clearance",
             "features\/buildings",
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance",
             "features\/transportation\/trains"
         ],
         "seealso": [
@@ -16713,9 +16713,9 @@
         "title": "Q&A: Can Machines be rotated like Foundations in Update 5?",
         "date": "2021-10-19",
         "topics": [
+            "features\/build-modes",
             "features\/buildables\/foundations",
             "features\/buildings",
-            "features\/planned-features\/build-modes",
             "satisfactory-updates\/released\/satisfactory-update-5",
             "satisfactory-updates\/teasers-and-trailers\/update-5-teasers"
         ],
@@ -16749,10 +16749,10 @@
         "title": "Q&A: Free placement on Foundations?",
         "date": "2021-10-19",
         "topics": [
+            "features\/build-modes",
             "features\/buildables",
             "features\/buildables\/foundations",
             "features\/buildings",
-            "features\/planned-features\/build-modes",
             "satisfactory-updates\/released\/satisfactory-update-5",
             "satisfactory-updates\/teasers-and-trailers\/update-5-teasers"
         ],
@@ -16800,9 +16800,9 @@
         "title": "Q&A: Does the Storage Container have Soft Clearance now so they can get closer to Walls??",
         "date": "2021-10-19",
         "topics": [
+            "features\/build-modes\/hard-and-soft-clearance",
             "features\/buildables\/storage-containers",
-            "features\/buildables\/walls",
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance"
+            "features\/buildables\/walls"
         ],
         "seealso": [
             "1sI1tJLivp4",
@@ -16968,10 +16968,10 @@
         "title": "Q&A: Will Splitter and Pipe snapping be limited to Machine inputs?",
         "date": "2021-10-19",
         "topics": [
+            "features\/build-modes",
             "features\/buildables\/conveyor-belts",
             "features\/buildings",
             "features\/fluids\/pipes",
-            "features\/planned-features\/build-modes",
             "satisfactory-updates\/released\/satisfactory-update-5",
             "satisfactory-updates\/teasers-and-trailers\/update-5-teasers"
         ],
@@ -17449,7 +17449,7 @@
         "title": "Q&A: Are Trains Hard or Soft Clearance?",
         "date": "2021-10-12",
         "topics": [
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance",
+            "features\/build-modes\/hard-and-soft-clearance",
             "features\/transportation\/trains",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
@@ -17486,7 +17486,7 @@
         "date": "2021-10-12",
         "topics": [
             "environment\/creatures\/space-giraffe-tick-penguin-whale-thing",
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance",
+            "features\/build-modes\/hard-and-soft-clearance",
             "satisfactory-updates\/released\/satisfactory-update-5",
             "satisfactory-updates\/teasers-and-trailers\/update-5-teasers"
         ],
@@ -18265,8 +18265,8 @@
         "title": "Q&A: Let us choose Belt and Lift direction manually, I'll do anything?",
         "date": "2021-10-12",
         "topics": [
-            "features\/buildables\/conveyor-belts",
-            "features\/planned-features\/build-modes"
+            "features\/build-modes",
+            "features\/buildables\/conveyor-belts"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp3QMTxKRnehenCwo17MuJy"
@@ -18824,8 +18824,8 @@
         "title": "Q&A: Grid for Pipes?",
         "date": "2021-10-05",
         "topics": [
-            "features\/fluids\/pipes",
-            "features\/planned-features\/build-modes"
+            "features\/build-modes",
+            "features\/fluids\/pipes"
         ],
         "seealso": [
             "iiNu3aKc1VI",
@@ -18870,7 +18870,7 @@
         "title": "Q&A: Any plans for separating the Build Hologram from the Pioneer camera?",
         "date": "2021-10-05",
         "topics": [
-            "features\/planned-features\/build-modes",
+            "features\/build-modes",
             "features\/requested-features",
             "technology\/user-interface\/holograms"
         ],
@@ -18897,8 +18897,8 @@
         "title": "Q&A: Zoop 50 slots, like destroying?",
         "date": "2021-10-05",
         "topics": [
-            "features\/planned-features\/build-modes",
-            "features\/planned-features\/build-modes\/zooping"
+            "features\/build-modes",
+            "features\/build-modes\/zooping"
         ],
         "seealso": [
             "FwIeJutZj98",
@@ -18913,8 +18913,8 @@
         "title": "Q&A: Does Zooping maintain the direction of the original piece?",
         "date": "2021-10-05",
         "topics": [
-            "features\/buildables",
-            "features\/planned-features\/build-modes\/zooping"
+            "features\/build-modes\/zooping",
+            "features\/buildables"
         ],
         "seealso": [
             "-Yr4UJlDy-o"
@@ -18927,8 +18927,8 @@
         "title": "Q&A: Is mass-deleting called Poozing now?",
         "date": "2021-10-05",
         "topics": [
-            "features\/planned-features\/build-modes",
-            "features\/planned-features\/build-modes\/zooping"
+            "features\/build-modes",
+            "features\/build-modes\/zooping"
         ],
         "seealso": [
             "aAxfKAh1DNk",
@@ -18984,8 +18984,8 @@
         "title": "Q&A: Will we have more freedom in how to place objects?",
         "date": "2021-10-05",
         "topics": [
-            "features\/planned-features\/build-modes",
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance",
+            "features\/build-modes",
+            "features\/build-modes\/hard-and-soft-clearance",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
@@ -19905,7 +19905,7 @@
         "title": "Q&A: I still don't understand what Zooping is?",
         "date": "2021-09-28",
         "topics": [
-            "features\/planned-features\/build-modes\/zooping"
+            "features\/build-modes\/zooping"
         ],
         "seealso": [
             "-Yr4UJlDy-o",
@@ -19947,7 +19947,7 @@
         "title": "Q&A: Where did the name \"Zoop\" come from?",
         "date": "2021-09-28",
         "topics": [
-            "features\/planned-features\/build-modes\/zooping"
+            "features\/build-modes\/zooping"
         ],
         "duplicates": [
             "HNK0TDmQBVU",
@@ -19974,7 +19974,7 @@
         "title": "Q&A: When you delete can you ctrl-toggle in case you mis-click?",
         "date": "2021-09-28",
         "topics": [
-            "features\/planned-features\/build-modes",
+            "features\/build-modes",
             "technology\/user-interface"
         ],
         "duplicates": [
@@ -21415,7 +21415,7 @@
         "title": "Q&A: How hard was the decision to introduce Soft Clearance into the game?",
         "date": "2021-09-21",
         "topics": [
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance",
+            "features\/build-modes\/hard-and-soft-clearance",
             "satisfactory-updates\/released\/satisfactory-update-5",
             "satisfactory-updates\/teasers-and-trailers\/update-5-teasers"
         ],
@@ -22201,7 +22201,7 @@
         "title": "Q&A: Will Zooping be available at Tier 0 or later?",
         "date": "2021-09-14",
         "topics": [
-            "features\/planned-features\/build-modes\/zooping",
+            "features\/build-modes\/zooping",
             "features\/tiers",
             "features\/tiers\/tier-0",
             "satisfactory-updates\/released\/satisfactory-update-5"
@@ -22500,7 +22500,7 @@
         "title": "Q&A: Can the Clearance mode be configurable in setting?",
         "date": "2021-09-14",
         "topics": [
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance",
+            "features\/build-modes\/hard-and-soft-clearance",
             "satisfactory-updates\/released\/satisfactory-update-5",
             "satisfactory-updates\/teasers-and-trailers\/update-5-teasers"
         ],
@@ -22524,7 +22524,7 @@
         "title": "Q&A: Does Soft Clearance apply to Hyper Tubes?",
         "date": "2021-09-14",
         "topics": [
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance",
+            "features\/build-modes\/hard-and-soft-clearance",
             "features\/transportation\/hyper-tubes",
             "satisfactory-updates\/released\/satisfactory-update-5",
             "satisfactory-updates\/teasers-and-trailers\/update-5-teasers"
@@ -23168,8 +23168,8 @@
         "title": "Q&A: Why is Power Pole considered Hard Clearance?",
         "date": "2021-09-07",
         "topics": [
+            "features\/build-modes\/hard-and-soft-clearance",
             "features\/buildables",
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
@@ -23192,8 +23192,8 @@
         "title": "Q&A: Will Splitters & Mergers have Soft or Hard Clearance?",
         "date": "2021-09-07",
         "topics": [
+            "features\/build-modes\/hard-and-soft-clearance",
             "features\/buildables\/conveyor-belts",
-            "features\/planned-features\/build-modes\/hard-and-soft-clearance",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
@@ -23216,7 +23216,7 @@
         "date": "2021-09-07",
         "topics": [
             "coffee-stainers\/mark",
-            "features\/planned-features\/build-modes\/zooping",
+            "features\/build-modes\/zooping",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso_video_cards": [
@@ -23236,7 +23236,7 @@
         "title": "Q&A: What can be Zooped?",
         "date": "2021-09-07",
         "topics": [
-            "features\/planned-features\/build-modes\/zooping",
+            "features\/build-modes\/zooping",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
@@ -23283,8 +23283,8 @@
         "title": "Q&A: Can you Zoop Walkways?",
         "date": "2021-09-07",
         "topics": [
+            "features\/build-modes\/zooping",
             "features\/buildables\/walkways",
-            "features\/planned-features\/build-modes\/zooping",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
@@ -23316,7 +23316,7 @@
         "date": "2021-09-07",
         "topics": [
             "coffee-stainers\/mark",
-            "features\/planned-features\/build-modes\/zooping",
+            "features\/build-modes\/zooping",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso_video_cards": [
@@ -23640,8 +23640,8 @@
         "title": "Q&A: When building Belts, can we Quick Switch from normal Conveyor Poles to Stackable Poles?",
         "date": "2021-09-07",
         "topics": [
+            "features\/build-modes\/quick-switch",
             "features\/buildables\/conveyor-belts",
-            "features\/planned-features\/build-modes\/quick-switch",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
@@ -23656,7 +23656,7 @@
         "title": "Q&A: Quick Switch is the same thing as the Radial Menu?",
         "date": "2021-09-07",
         "topics": [
-            "features\/planned-features\/build-modes\/quick-switch",
+            "features\/build-modes\/quick-switch",
             "satisfactory-updates\/released\/satisfactory-update-5",
             "technology\/user-interface"
         ],
@@ -23727,7 +23727,7 @@
         "date": "2021-09-07",
         "topics": [
             "coffee-stainers\/jace",
-            "features\/planned-features\/build-modes\/zooping"
+            "features\/build-modes\/zooping"
         ],
         "seealso": [
             "JanvR7rX-yk"
@@ -23757,7 +23757,7 @@
         "date": "2021-09-07",
         "topics": [
             "coffee-stainers\/jace",
-            "features\/planned-features\/build-modes\/zooping"
+            "features\/build-modes\/zooping"
         ],
         "seealso": [
             "-En6joXAomU"
@@ -24215,7 +24215,7 @@
         "title": "Q&A: Do you intend to put helpful building modes like Smart! mod to help players build faster?",
         "date": "2021-08-31",
         "topics": [
-            "features\/planned-features\/build-modes",
+            "features\/build-modes",
             "mods\/smart"
         ],
         "seealso_topic_cards": [
@@ -30777,7 +30777,7 @@
         "title": "Q&A: Will there be a Smart!-similar system for Update 5?",
         "date": "2021-07-13",
         "topics": [
-            "features\/planned-features\/build-modes",
+            "features\/build-modes",
             "mods\/smart",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
@@ -31378,8 +31378,8 @@
         "title": "Q&A: Would you circular Foundations in base game rather than using tricks from YouTube?",
         "date": "2021-07-13",
         "topics": [
-            "features\/buildables\/foundations",
-            "features\/planned-features\/build-modes"
+            "features\/build-modes",
+            "features\/buildables\/foundations"
         ],
         "seealso": [
             "4iUdXfx0v5k",
@@ -33301,7 +33301,7 @@
         "title": "Q&A: Can you give information about new Build Modes coming out?",
         "date": "2021-06-29",
         "topics": [
-            "features\/planned-features\/build-modes"
+            "features\/build-modes"
         ],
         "seealso": [
             "6y1VtRXTYXY",
@@ -35261,7 +35261,7 @@
         "title": "Q&A: Any plans for quality of life improvements?",
         "date": "2021-06-15",
         "topics": [
-            "features\/planned-features\/build-modes",
+            "features\/build-modes",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
@@ -43274,8 +43274,8 @@
         "date": "2021-03-30",
         "topics": [
             "coffee-stainers\/snutt",
-            "features\/global-build-grid",
-            "features\/planned-features\/build-modes"
+            "features\/build-modes",
+            "features\/global-build-grid"
         ],
         "duplicates": [
             "akmmqVmHmzM",
@@ -62835,7 +62835,7 @@
         "title": "Q&A: Drag-to-build Mode?",
         "date": "2020-08-25",
         "topics": [
-            "features\/planned-features\/build-modes",
+            "features\/build-modes",
             "features\/unplanned-features\/mass-building"
         ],
         "legacyalts": [
