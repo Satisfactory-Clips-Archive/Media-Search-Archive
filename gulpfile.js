@@ -5,7 +5,6 @@ const rev_replace = require('gulp-rev-replace');
 const newer = require('gulp-newer');
 const changed = require('gulp-changed');
 const brotli = require('gulp-brotli');
-const zopfli = require('gulp-zopfli-green');
 const postcss = require('gulp-postcss');
 const postcss_plugins = {
 	nested: require('postcss-nested'),
@@ -24,7 +23,6 @@ const {
 } = require('fs');
 const inline_source = require('gulp-inline-source');
 const lunr = require('lunr');
-const libsquoosh = require('gulp-libsquoosh');
 const {
 	promisify,
 } = require('util');
@@ -33,7 +31,6 @@ const prom = {
 	readFile: promisify(readFile),
 };
 const svgToImg = require('svg-to-img');
-const squoosh = require('gulp-libsquoosh');
 const puppeteer = require('puppeteer');
 
 const synonyms = require('./app/synonyms.json');
@@ -224,28 +221,6 @@ gulp.task('brotli--svg', () => {
 	return make_brotli_task('./tmp/**/*.svg');
 });
 
-gulp.task('zopfli', () => {
-	return gulp.src(
-		'./tmp/**/*.{js,json,css,html,xml}'
-	).pipe(
-		newer({
-			dest: './tmp/',
-			ext: '.gz',
-		})
-	).pipe(
-		zopfli({
-			verbose: false,
-			verbose_more: false,
-			numiterations: 15,
-			blocksplitting: true,
-			blocksplittinglast: false,
-			blocksplittingmax: 15,
-		})
-	).pipe(
-		gulp.dest('./tmp/')
-	)
-});
-
 gulp.task('html', () => {
 	return gulp.src(
 		'./src/**/*.html'
@@ -346,12 +321,15 @@ gulp.task('sync-tmp-to-store', () => {
 	);
 });
 
-gulp.task('images-svg-conversion--png', () => {
+gulp.task('images-svg-conversion--png', async (cb) => {
+	const {default: imagemin} = await import('gulp-imagemin');
+
 	return gulp.src('./images-tmp/internal/content/**/*.png').pipe(
-		libsquoosh({
-			webp: {},
-		})
+		imagemin([
+		])
 	).pipe(gulp.dest('./images/internal/content/'));
+
+	cb();
 });
 
 gulp.task('images-svg-conversion', async (cb) => {
@@ -384,6 +362,7 @@ const webp_options = {
 }
 
 gulp.task('images-svg--background--flannel', () => {
+	const squoosh = require('gulp-libsquoosh');
 	const squoosh_options = Object.assign({}, webp_options);
 
 	squoosh_options.preprocessOptions.resize.width = 504;
@@ -401,6 +380,7 @@ gulp.task('images-svg--background--flannel', () => {
 });
 
 gulp.task('images-svg--background--golf', () => {
+	const squoosh = require('gulp-libsquoosh');
 	const squoosh_options = Object.assign({}, webp_options);
 
 	squoosh_options.preprocessOptions.resize.height = 504;
@@ -417,6 +397,7 @@ gulp.task('images-svg--background--golf', () => {
 });
 
 gulp.task('images-svg--background--vulkan', () => {
+	const squoosh = require('gulp-libsquoosh');
 	const squoosh_options = Object.assign({}, webp_options);
 
 	squoosh_options.preprocessOptions.resize.width = 504;
@@ -434,6 +415,7 @@ gulp.task('images-svg--background--vulkan', () => {
 });
 
 gulp.task('images-svg--background--final-fantasy', () => {
+	const squoosh = require('gulp-libsquoosh');
 	const squoosh_options = Object.assign({}, webp_options);
 
 	squoosh_options.preprocessOptions.resize.width = 504;
@@ -750,33 +732,8 @@ gulp.task('brotli-images', () => {
 	)
 });
 
-gulp.task('zopfli-images', () => {
-	return gulp.src(
-		'./images/**/*.svg'
-	).pipe(
-		newer({
-			dest: './images/',
-			ext: '.gz',
-		})
-	).pipe(
-		zopfli({
-			verbose: false,
-			verbose_more: false,
-			numiterations: 15,
-			blocksplitting: true,
-			blocksplittinglast: false,
-			blocksplittingmax: 15,
-		})
-	).pipe(
-		gulp.dest('./images/')
-	)
-});
-
 gulp.task('images', gulp.series(
 	gulp.parallel(
-		/*
-		'zopfli-images',
-		*/
 		'brotli-images'
 	)
 ));

@@ -19,7 +19,7 @@ module.exports = async () => {
 						hash.update(readFileSync(
 							`${__dirname}/../../images/internal/content/${
 								permalink.slice(0, -1)
-							}.webp`
+							}.png`
 						));
 
 						out[permalink] = [
@@ -27,13 +27,13 @@ module.exports = async () => {
 								'og:image:url',
 								`https://i.img.archive.satisfactory.video/content/${
 									permalink.slice(0, -1)
-								}.webp?h=${
+								}.png?h=${
 									encodeURIComponent(
 										hash.digest('hex').slice(0, 4)
 									)
 								}`
 							],
-							['og:image:type', 'image/webp'],
+							['og:image:type', 'image/png'],
 							['og:image:width', '1200'],
 							['og:image:height', '628'],
 							['og:image:alt', `Embed for ${row.image[0].name}`],
