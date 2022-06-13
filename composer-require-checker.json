@@ -1,0 +1,8 @@
+{
+	"scan-files": [
+		"./app/*.php",
+		"./app/src/*.php",
+		"./app/src-dev/*.php",
+		"./app-dev/*.php"
+	]
+}

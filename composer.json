@@ -9,21 +9,34 @@
 			"email": "me@signpostmarv.name"
 		}
 	],
-	"autoload-dev": {
+	"autoload": {
 		"files": [
-			"./app/src-dev/funcs.php",
 			"./app/src/funcs.php"
 		],
 		"psr-4": {
 			"SignpostMarv\\VideoClipNotes\\": [
-				"./tests/",
 				"./app/src/"
+			]
+		}
+	},
+	"autoload-dev": {
+		"files": [
+			"./app/src-dev/funcs.php"
+		],
+		"psr-4": {
+			"SignpostMarv\\VideoClipNotes\\": [
+				"./tests/"
 			]
 		}
 	},
 	"config": {
 		"classmap-authoritative": true,
 		"sort-packages": true
+	},
+	"scripts": {
+		"composer-require-checker": [
+			"composer-require-checker check --config-file ./composer-require-checker.json -- ./composer.json"
+		]
 	},
 	"require": {
 		"php": "^8.1",
@@ -32,12 +45,13 @@
 		"ext-hash": "*",
 		"ext-json": "*",
 		"ext-mbstring": "*",
-		"ext-simplexml": "*"
-	},
-	"require-dev": {
+		"ext-simplexml": "*",
 		"cocur/slugify": "^4.1",
 		"google/apiclient": "^2.12",
-		"masterminds/html5": "^2.7",
+		"masterminds/html5": "^2.7"
+	},
+	"require-dev": {
+		"maglnet/composer-require-checker": "^4.0",
 		"phpunit/phpunit": "^9.5",
 		"psalm/plugin-phpunit": "^0.16.1",
 		"roave/security-advisories": "dev-latest",

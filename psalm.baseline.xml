@@ -31,7 +31,6 @@
     </MixedAssignment>
   </file>
   <file src="app/src/Jsonify.php">
-    <InvalidThrow occurrences="3"/>
     <LessSpecificReturnStatement occurrences="1"/>
     <MixedArgument occurrences="15">
       <code>$maybe</code>
@@ -73,11 +72,6 @@
     <RedundantCondition occurrences="1">
       <code>isset($cards)</code>
     </RedundantCondition>
-    <UndefinedClass occurrences="3">
-      <code>UnexpectedValueException</code>
-      <code>UnexpectedValueException</code>
-      <code>UnexpectedValueException</code>
-    </UndefinedClass>
   </file>
   <file src="app/src/Markdownify.php">
     <PossiblyNullOperand occurrences="2"/>
