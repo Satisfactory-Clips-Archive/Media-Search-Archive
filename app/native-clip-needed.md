@@ -1086,7 +1086,6 @@
 - [ ] yt-Z6bo0pjYghk,8276.579761613913,8293.536733681256 - Q&A: Did we ever get around to adding so you can turn Rain off?
 - [ ] yt-Z6bo0pjYghk,8305.051700759544,8360.260447025314 - Ben, Dylan, Simon, & Snutt Talk: Shenannnahgans
 - [ ] yt-Z6bo0pjYghk,8360.260447025314,8382.181263 - Ben, Dylan, Simon, & Snutt Talk: Alpaca
-- [ ] yt-Z6bo0pjYghk,8382.181263,8393.711847 - blamehannah.com - Ben, Dylan, Simon, & Snutt Talk: Stuck on terrain
 - [ ] yt-Z6bo0pjYghk,8774.878131481233,8803.197909 - Ben, Dylan, Simon, & Snutt Talk: Mark gets teabagged
 - [ ] yt-Z6bo0pjYghk,8860.29394891813,8878.897685 - Q&A: When is Update?
 - [ ] yt-Z6bo0pjYghk,9523.688078239968,9567.631431211938 - Q&A: What's the last time you pressed Play, Hannah?

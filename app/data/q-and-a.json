@@ -1,4 +1,48 @@
 {
+    "yt-acZOxaTkcCY,179.64613333333332,190.552814": {
+        "title": "Q&A: When's Update 7?",
+        "date": "2022-06-17",
+        "topics": [
+            "community",
+            "satisfactory-updates\/speculative\/satisfactory-update-7",
+            "trolling"
+        ],
+        "duplicates": [
+            "Az1jTvsJIGc",
+            "c-M3BviVCzE"
+        ],
+        "seealso": [
+            "po9Ba6ZL_UM",
+            "tDRRFuKP4y0",
+            "Y5j6qpGzT40"
+        ]
+    },
+    "yt-acZOxaTkcCY,190.552814,310.8105": {
+        "title": "Q&A: When is it going to be out on EA?",
+        "date": "2022-06-17",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/release-builds"
+        ],
+        "duplicatedby": "yt-acZOxaTkcCY,310.84386666666666,455.95550000000003"
+    },
+    "yt-acZOxaTkcCY,310.84386666666666,455.95550000000003": {
+        "title": "Q&A: What happens now?",
+        "date": "2022-06-17",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
+            "off-topic\/sweden",
+            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/release-builds"
+        ],
+        "duplicates": [
+            "k-cQOW2WL4w",
+            "yt-acZOxaTkcCY,190.552814,310.8105"
+        ],
+        "seealso": [
+            "pwh9QNRmqFY"
+        ]
+    },
     "yt-Z6bo0pjYghk,4692.516695,4762.732307": {
         "title": "Q&A: Any changes to Dedicated Servers in Update 6?",
         "date": "2022-06-14",
@@ -219,12 +263,10 @@
             "satisfactory-updates\/release-builds",
             "satisfactory-updates\/world-update"
         ],
-        "seealso": [
-            "pwh9QNRmqFY"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqNB46ydy3DN3k5Pn2ZyHrS"
-        ]
+        ],
+        "duplicatedby": "yt-acZOxaTkcCY,310.84386666666666,455.95550000000003"
     },
     "DU3eDSo4WZM": {
         "title": "Q&A: Can you make a Console port after 1.0?",
@@ -588,18 +630,11 @@
             "community",
             "satisfactory-updates\/speculative\/satisfactory-update-7"
         ],
-        "duplicates": [
-            "c-M3BviVCzE"
-        ],
-        "seealso": [
-            "po9Ba6ZL_UM",
-            "tDRRFuKP4y0",
-            "Y5j6qpGzT40"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO",
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
-        ]
+        ],
+        "duplicatedby": "yt-acZOxaTkcCY,179.64613333333332,190.552814"
     },
     "qgHAW162kE4": {
         "title": "Q&A: What does Snutt like on his Burger?",
@@ -1805,7 +1840,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-6"
         ],
         "seealso": [
-            "k-cQOW2WL4w"
+            "yt-acZOxaTkcCY,310.84386666666666,455.95550000000003"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErrg7lK40K9vEj_Jl2dS1hd",
@@ -5665,7 +5700,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-6"
         ],
         "seealso": [
-            "Az1jTvsJIGc"
+            "yt-acZOxaTkcCY,179.64613333333332,190.552814"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR",
@@ -6168,7 +6203,7 @@
                 "https:\/\/satisfactory.fandom.com\/wiki\/Future_content"
             ]
         ],
-        "duplicatedby": "Az1jTvsJIGc"
+        "duplicatedby": "yt-acZOxaTkcCY,179.64613333333332,190.552814"
     },
     "G-X_n18t6NA": {
         "title": "Q&A: Where is Jace streaming from?",
@@ -7505,7 +7540,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-6"
         ],
         "seealso": [
-            "Az1jTvsJIGc",
+            "yt-acZOxaTkcCY,179.64613333333332,190.552814",
             "yt-hkMTFsxa7rQ,677.3767,734.9008333333334"
         ],
         "seealso_topic_cards": [
@@ -18170,8 +18205,8 @@
             "satisfactory-updates\/speculative\/satisfactory-update-7"
         ],
         "seealso": [
-            "Az1jTvsJIGc",
             "NA6KIEms16E",
+            "yt-acZOxaTkcCY,179.64613333333332,190.552814",
             "yt-hkMTFsxa7rQ,677.3767,734.9008333333334"
         ],
         "seealso_video_cards": [
