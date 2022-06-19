@@ -1065,3 +1065,37 @@
 ## 2022-04-01
 - [ ] yt-jAc8Fnj1o9w,2204.446101,2236.046494 - Snutt & Jace Talk: The Legend of Dragoon
 - [ ] yt-jAc8Fnj1o9w,2236.046494,2282.773257 - Snutt & Jace Talk: PS1-era gaming
+
+## 2022-06-14
+- [ ] yt-Z6bo0pjYghk,2764.0333333333333,2820.724064 - Creepy_Conclusion - looking sharp
+- [ ] yt-Z6bo0pjYghk,3233.1833333333334,3289.797885 - GameGearMaster - BIG BUILD
+- [ ] yt-Z6bo0pjYghk,3897.05,3948.074682 - Intro
+- [ ] yt-Z6bo0pjYghk,4630.361819,4660 - Update 6 Main Menu
+- [ ] yt-Z6bo0pjYghk,5161.84648,5173.709039764452 - Coffee Stainers trolling each other
+- [ ] yt-Z6bo0pjYghk,5384.647315267558,5429.263761 - Mark & Snutt Talk: Multiple Body Slots
+- [ ] yt-Z6bo0pjYghk,5429.263761,5482.26162 - Mark & Snutt Talk: New Ammo types (Part 1)
+- [ ] yt-Z6bo0pjYghk,5775.547437,5794.547222 - Mark & Snutt Talk: Holstering
+- [ ] yt-Z6bo0pjYghk,5794.547222,5807.542091 - Q&A: Will you add Achievements?
+- [ ] yt-Z6bo0pjYghk,5869.254179,5926.311953 - Mark & Snutt Talk: New VFX for the Pulse Nobelisk & health recovery
+- [ ] yt-Z6bo0pjYghk,6054.512350962104,6108.120519 - Etienne, & Snutt Talk: Weapon changes snuck in early
+- [ ] yt-Z6bo0pjYghk,6248.647373115271,6289.66688 - Tobias, Etienne, & Snutt Talk: New Ammo types (Part 2)
+- [ ] yt-Z6bo0pjYghk,6898.664301,6925.322579 - Tobias, Etienne, & Snutt Talk: New Atmosphere system (Part 1)
+- [ ] yt-Z6bo0pjYghk,7516.174063735765,7553.63476 - Tobias, Etienne, & Snutt Talk: Stinger changes
+- [ ] yt-Z6bo0pjYghk,7589.446724349895,7642.892665033142 - Etienne & Snutt Talk: First-person-view improvements
+- [ ] yt-Z6bo0pjYghk,7848.671851,7880.700814 - Ben, Dylan, Simon, & Snutt Talk: Swamp (Part 1)
+- [ ] yt-Z6bo0pjYghk,8276.579761613913,8293.536733681256 - Q&A: Did we ever get around to adding so you can turn Rain off?
+- [ ] yt-Z6bo0pjYghk,8305.051700759544,8360.260447025314 - Ben, Dylan, Simon, & Snutt Talk: Shenannnahgans
+- [ ] yt-Z6bo0pjYghk,8360.260447025314,8382.181263 - Ben, Dylan, Simon, & Snutt Talk: Alpaca
+- [ ] yt-Z6bo0pjYghk,8382.181263,8393.711847 - blamehannah.com - Ben, Dylan, Simon, & Snutt Talk: Stuck on terrain
+- [ ] yt-Z6bo0pjYghk,8774.878131481233,8803.197909 - Ben, Dylan, Simon, & Snutt Talk: Mark gets teabagged
+- [ ] yt-Z6bo0pjYghk,8860.29394891813,8878.897685 - Q&A: When is Update?
+- [ ] yt-Z6bo0pjYghk,9523.688078239968,9567.631431211938 - Q&A: What's the last time you pressed Play, Hannah?
+- [ ] yt-Z6bo0pjYghk,9567.631431211938,9592.447603 - Hannah, Anna, Torsten, & Snutt Talk: Ben is Coffee Stain's resident Wizard
+- [ ] yt-Z6bo0pjYghk,10156.242717564744,10190.03842753694 - Hannah, Anna, Torsten, & Snutt Talk: New Ammo types (Part 7)
+- [ ] yt-Z6bo0pjYghk,10190.03842753694,10204.502641 - Hannah, Anna, Torsten, & Snutt Talk: New Water textures
+- [ ] yt-Z6bo0pjYghk,11129.395503,11178.812064025835 - Hannah, Anna, Torsten, & Snutt Talk: No Patch Notes or release trailer for Experimental Release (Part 1)
+- [ ] yt-Z6bo0pjYghk,11386.312668,11409.830664 - Snutt Talk: No Patch Notes or release trailer for Experimental Release (Part 2)
+- [ ] yt-Z6bo0pjYghk,12015.144401285379,12065.79417320965 - Q&A: Where are my save files?
+- [ ] yt-Z6bo0pjYghk,12140.575992,12189.344749108253 - Q&A: How does one backup save files?
+- [ ] yt-Z6bo0pjYghk,12191.890509,12236.083333333334 - Birk & Snutt Talk: Update 6 initial release Patch Notes (Part 2)
+- [ ] yt-Z6bo0pjYghk,12349.200313,12408.3994536901 - Birk & Snutt Talk: Remote Copy & Paste

@@ -1,4 +1,111 @@
 {
+    "yt-Z6bo0pjYghk,4692.516695,4762.732307": {
+        "title": "Q&A: Any changes to Dedicated Servers in Update 6?",
+        "date": "2022-06-14",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers",
+            "satisfactory-updates\/pending\/satisfactory-update-6"
+        ],
+        "seealso": [
+            "SRELaFzE78o"
+        ]
+    },
+    "yt-Z6bo0pjYghk,5794.547222,5807.542091": {
+        "title": "Q&A: Will you add Achievements?",
+        "date": "2022-06-14",
+        "topics": [
+            "features\/possible-features\/third-party-service-integration\/achievements"
+        ],
+        "duplicates": [
+            "3KRCUE3VOxE",
+            "5hha6bAuTTc",
+            "9tNel2ksYnI",
+            "bthe_Dhs6uo",
+            "G8K0Bjs8mNo",
+            "Gi08SVnHyLU",
+            "i-9UAyVFe6s",
+            "Kf33x3tiM5w",
+            "scxr_vl9Pzk",
+            "tO60WajNJis",
+            "UKot9dXEPXk",
+            "vrBRxuX6YyA",
+            "wMol1AoQSFQ",
+            "yt-cF3QleeEiJo,6652.069241,6679.928238",
+            "yt-iFAy1NZUOGU,119.72,131.28",
+            "yt-NlIVwoRqjVk,301.33436666666665,346.41273333333334",
+            "yt-rATcozDE25c,435.5351,476.04223333333334",
+            "_wKUYaG0Hwc"
+        ]
+    },
+    "yt-Z6bo0pjYghk,8276.579761613913,8293.536733681256": {
+        "title": "Q&A: Did we ever get around to adding so you can turn Rain off?",
+        "date": "2022-06-14",
+        "topics": [
+            "environment",
+            "features\/possible-features\/weather-systems",
+            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "technology\/graphics"
+        ],
+        "seealso": [
+            "G9tg6XTEBuU"
+        ]
+    },
+    "yt-Z6bo0pjYghk,8860.29394891813,8878.897685": {
+        "title": "Q&A: When is Update?",
+        "date": "2022-06-14",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/release-builds"
+        ],
+        "replacedby": "yt-Z6bo0pjYghk,12065.79417320965,12140.575992"
+    },
+    "yt-Z6bo0pjYghk,9523.688078239968,9567.631431211938": {
+        "title": "Q&A: What's the last time you pressed Play, Hannah?",
+        "date": "2022-06-14",
+        "topics": [
+            "coffee-stainers\/hannah",
+            "satisfactory-updates\/pending\/satisfactory-update-6"
+        ],
+        "seealso": [
+            "ZI0qceS8O4U"
+        ]
+    },
+    "yt-Z6bo0pjYghk,12015.144401285379,12065.79417320965": {
+        "title": "Q&A: Where are my save files?",
+        "date": "2022-06-14",
+        "topics": [
+            "features\/save-system"
+        ],
+        "duplicates": [
+            "yt-iVDRQg_aWpU,6133.666132253086,6201.518444"
+        ],
+        "seealso": [
+            "cgRW7enXuK8",
+            "yt-Z6bo0pjYghk,12140.575992,12189.344749108253"
+        ]
+    },
+    "yt-Z6bo0pjYghk,12065.79417320965,12140.575992": {
+        "title": "Q&A: Is it live?",
+        "date": "2022-06-14",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/release-builds"
+        ],
+        "replaces": [
+            "RHOcZ9dacAY",
+            "yt-Z6bo0pjYghk,8860.29394891813,8878.897685"
+        ]
+    },
+    "yt-Z6bo0pjYghk,12140.575992,12189.344749108253": {
+        "title": "Q&A: How does one backup save files?",
+        "date": "2022-06-14",
+        "topics": [
+            "features\/save-system"
+        ],
+        "seealso": [
+            "yt-Z6bo0pjYghk,12015.144401285379,12065.79417320965"
+        ]
+    },
     "yt-4pGTnG6Cy5E,222.25536666666667,268.43483333333336": {
         "title": "Q&A: What is that cabbage-looking yolk thing?",
         "date": "2022-06-10",
@@ -580,7 +687,8 @@
         ],
         "seealso": [
             "nMhVjlGVTlY",
-            "tEsHw1pXZlQ"
+            "tEsHw1pXZlQ",
+            "yt-Z6bo0pjYghk,8276.579761613913,8293.536733681256"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEovsoSQPihKXk6g7ttQ95sI"
@@ -720,7 +828,8 @@
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
-        ]
+        ],
+        "replacedby": "yt-Z6bo0pjYghk,12065.79417320965,12140.575992"
     },
     "PAwD9jhW37w": {
         "title": "Q&A: If I mine on nodes and they get moved will the Miner still work?",
@@ -941,7 +1050,8 @@
         ],
         "seealso": [
             "Q7I_FQhf3M0",
-            "W4W-x6usIVg"
+            "W4W-x6usIVg",
+            "yt-Z6bo0pjYghk,4692.516695,4762.732307"
         ]
     },
     "WA3JRlk-8M8": {
@@ -2035,6 +2145,9 @@
             "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
             "environment\/biomes\/northern-forest",
             "environment\/biomes\/rocky-desert"
+        ],
+        "seealso": [
+            "yt-Z6bo0pjYghk,9523.688078239968,9567.631431211938"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq7HBkdsrL-CNtflfQw2AOM",
@@ -9230,28 +9343,10 @@
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
         ],
-        "duplicates": [
-            "3KRCUE3VOxE",
-            "5hha6bAuTTc",
-            "9tNel2ksYnI",
-            "bthe_Dhs6uo",
-            "G8K0Bjs8mNo",
-            "Gi08SVnHyLU",
-            "Kf33x3tiM5w",
-            "scxr_vl9Pzk",
-            "tO60WajNJis",
-            "UKot9dXEPXk",
-            "vrBRxuX6YyA",
-            "wMol1AoQSFQ",
-            "yt-cF3QleeEiJo,6652.069241,6679.928238",
-            "yt-iFAy1NZUOGU,119.72,131.28",
-            "yt-NlIVwoRqjVk,301.33436666666665,346.41273333333334",
-            "yt-rATcozDE25c,435.5351,476.04223333333334",
-            "_wKUYaG0Hwc"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
-        ]
+        ],
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "aArVqGLCABg": {
         "title": "Q&A: What do you consider \"finishing the game\"?",
@@ -12235,7 +12330,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "DYb3hFnv9iA": {
         "title": "Q&A: Why doesn't Snutt have a strong accent?",
@@ -12724,9 +12819,7 @@
         "topics": [
             "features\/save-system"
         ],
-        "seealso": [
-            "cgRW7enXuK8"
-        ]
+        "duplicatedby": "yt-Z6bo0pjYghk,12015.144401285379,12065.79417320965"
     },
     "yt-iVDRQg_aWpU,6202.942437,6253.440432": {
         "title": "Q&A: Why are my log files more than 1.5 gigabytes?",
@@ -15389,7 +15482,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "6Trsm-es3TQ": {
         "title": "Q&A: Dedicated Servers don't show up in my Steam Library, is it a regional thing?",
@@ -21304,7 +21397,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "uJ5CvJE_DgE": {
         "title": "Q&A: Is a helpful description like \"I played the game\" good enough?",
@@ -24894,7 +24987,7 @@
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT",
             "PLbjDnnBIxiEoRw9O4Lx_d3-RNK0Grlm1c"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "jEt3dU9LTw4": {
         "title": "Q&A: 1.0 at 5000 Upvotes",
@@ -27931,7 +28024,7 @@
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT",
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "476NXSQVuK0": {
         "title": "Q&A: How is Jace feeling?",
@@ -34199,7 +34292,7 @@
             "features\/buildings\/space-elevator",
             "features\/possible-features\/third-party-service-integration\/achievements"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "V96viZIrKfQ": {
         "title": "Q&A: Do you do any work outside of the streams?",
@@ -42342,7 +42435,7 @@
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "kd-VVREKHLE": {
         "title": "Q&A: Why did the anti-spider mode went off?",
@@ -43174,7 +43267,7 @@
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "yt-cF3QleeEiJo,6681.040890790472,6698.939684": {
         "title": "Q&A: Train Collision?",
@@ -49228,7 +49321,7 @@
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "8pFxd37RLxk": {
         "title": "Q&A: What's the point of batteries if we don't have variable power?",
@@ -55467,7 +55560,7 @@
             "trolling"
         ],
         "seealso": [
-            "i-9UAyVFe6s"
+            "yt-Z6bo0pjYghk,5794.547222,5807.542091"
         ],
         "seealso_card_urls": [
             [
@@ -55476,7 +55569,7 @@
                 "https:\/\/twitter.com\/SatisfactoryAF\/status\/1329014289303285761"
             ]
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "yt-0kmDHBWf640,65.79906666666666,154.401842": {
         "title": "Q&A: Why do we upgrade the engine?",
@@ -56815,7 +56908,7 @@
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "eTALbWgKmuE": {
         "title": "Q&A: Randomising nodes?",
@@ -57731,7 +57824,7 @@
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "gZoINqh_HAY": {
         "title": "Q&A: Can you give us a hint about the Story of the game?",
@@ -60312,7 +60405,7 @@
             "8WYNwGDLYNE",
             "PkozY8_q-LE"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "yt-rATcozDE25c,476.04223333333334,527.5603666666667": {
         "title": "Q&A: Can we use Turbofuel in Jetpacks?",
@@ -60910,7 +61003,7 @@
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "P1hgqMJ8MW0": {
         "title": "Q&A: Can we get Signs in the game?",
@@ -67171,7 +67264,7 @@
             "fI7gnbG4Omk",
             "mci92Mhr7MM"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "yt-NlIVwoRqjVk,346.41273333333334,368.9352333333333": {
         "title": "Q&A: Do you intend to use Steam Workshop in any way?",
@@ -67914,7 +68007,7 @@
         "topics": [
             "features\/possible-features\/third-party-service-integration\/achievements"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "fKXR3PibLLA": {
         "title": "Q&A: Will the Steam release make reliability better?",
@@ -74123,7 +74216,7 @@
             "IxoCzb2M0vQ",
             "7gRGSXP0rW4"
         ],
-        "duplicatedby": "i-9UAyVFe6s"
+        "duplicatedby": "yt-Z6bo0pjYghk,5794.547222,5807.542091"
     },
     "yt-iFAy1NZUOGU,131.28,147.92": {
         "title": "Q&A: Did the Vehicle dev blog cover everything?",
