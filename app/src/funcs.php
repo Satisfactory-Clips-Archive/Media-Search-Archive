@@ -3882,6 +3882,29 @@ function yt_cards_uncached(string $video_id) : array
 		 * @psalm-assert-if-true CARD $maybe
 		 */
 		static function (object $maybe) : bool {
+			if (
+				isset($maybe->cardRenderer)
+				&& is_object($maybe->cardRenderer)
+				&& isset($maybe->cardRenderer->teaser)
+				&& is_object($maybe->cardRenderer->teaser)
+				&& isset($maybe->cardRenderer->teaser->simpleCardTeaserRenderer)
+				&& is_object($maybe->cardRenderer->teaser->simpleCardTeaserRenderer)
+				&& isset($maybe->cardRenderer->teaser->simpleCardTeaserRenderer->onTapCommand)
+				&& is_object($maybe->cardRenderer->teaser->simpleCardTeaserRenderer->onTapCommand)
+				&& isset(
+					$maybe->cardRenderer->teaser->simpleCardTeaserRenderer->onTapCommand->changeEngagementPanelVisibilityAction
+				)
+				&& is_object(
+					$maybe->cardRenderer->teaser->simpleCardTeaserRenderer->onTapCommand->changeEngagementPanelVisibilityAction
+				)
+				&& isset(
+					$maybe->cardRenderer->teaser->simpleCardTeaserRenderer->onTapCommand->changeEngagementPanelVisibilityAction->visibility
+				)
+				&& 'ENGAGEMENT_PANEL_VISIBILITY_EXPANDED' === $maybe->cardRenderer->teaser->simpleCardTeaserRenderer->onTapCommand->changeEngagementPanelVisibilityAction->visibility
+			) {
+				return false;
+			}
+
 			$youtube_redirect = false;
 			$result =
 				isset($maybe->cardRenderer)
