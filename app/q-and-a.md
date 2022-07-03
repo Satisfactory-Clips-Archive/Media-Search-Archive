@@ -1,8 +1,9 @@
 # Progress
-* 5788 questions found out of 8852 clips
-* 5570 non-trolling & on-topic questions found out of 5788 total questions
-* 243 questions found with no other references
+* 5852 questions found out of 8922 clips
+* 5634 non-trolling & on-topic questions found out of 5852 total questions
+* 252 questions found with no other references
 ## grouped by date
+* 2022-06-28: 9 of 64 questions found with no other references
 * 2022-06-17: 0 of 2 questions found with no other references
 * 2022-06-14: 0 of 8 questions found with no other references
 * 2022-06-10: 0 of 1 questions found with no other references

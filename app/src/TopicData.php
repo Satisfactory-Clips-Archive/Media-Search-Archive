@@ -82,6 +82,16 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
+		'PLbjDnnBIxiErc1n63NJjRMX1hAq4CqmxI' => [
+			600,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'PLbjDnnBIxiEruhM2QTAuTcg4QbgDFx_7u' => [ // Update 6 Patch Notes Video
+			601,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
 		'Update 5 Quiz: Underrated/Overrated' => [
 			1,
 			'Satisfactory Updates',
@@ -117,11 +127,6 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 			'Update 5 Launch Stream',
-		],
-		'PLbjDnnBIxiErc1n63NJjRMX1hAq4CqmxI' => [
-			600,
-			'Satisfactory Updates',
-			'Teasers & Trailers',
 		],
 		'PLbjDnnBIxiEq-eP01Lynsg2Jv-wLEWQ7e' => [ // Satisfactory Prototypes
 			-5,
@@ -608,7 +613,7 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
-		'Red Jungle' => [
+		'PLbjDnnBIxiEqYVwptXS9sZ59BdRPk4L35' => [ // Red Jungle
 			'Environment',
 			'Biomes',
 		],
@@ -1636,6 +1641,10 @@ class TopicData
 		'PLbjDnnBIxiErY8-S-JLKk_ewHAJHUrzwM' => [ // Rebar Gun
 			'Features',
 			'Equipment',
+		],
+		'PLbjDnnBIxiEq-wqDyEyzuV3H3ng4CcdyD' => [ // Titan Forest
+			'Environment',
+			'Biomes',
 		],
 	];
 
