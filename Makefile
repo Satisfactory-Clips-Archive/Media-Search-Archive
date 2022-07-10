@@ -56,7 +56,11 @@ topics:
 	cd . && ./node_modules/.bin/gulp topics
 
 eleventy:
-	cd . && ./node_modules/.bin/eleventy
+	cd . \
+	&& ./node_modules/.bin/eleventy --config=./.eleventy.tweets.js \
+	&& ./node_modules/.bin/eleventy \
+	&& ./node_modules/.bin/eleventy  --config=./.eleventy.pages.js \
+	&& ./node_modules/.bin/eleventy  --config=./.eleventy.pages-alt-layout.js
 
 build-post-update--actually-build:
 	cd . && ./node_modules/.bin/gulp build
