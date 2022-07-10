@@ -50,17 +50,15 @@ build: tweets update build-post-update
 tweets:
 	npm run -s tweets
 
-build-post-update:
+build-post-update: topics images eleventy build-post-update--actually-build
+
+topics:
 	cd . && ./node_modules/.bin/gulp topics
-	cd . && ./node_modules/.bin/eleventy --config=./.eleventy.images.js
-	docker run --rm \
-		-w /media-search-archive \
-		--user $(shell id -u):$(shell id -g) \
-		-v $(shell pwd)/:/media-search-archive \
-		-v ${HOME}/.npm/:/.npm/ \
-		-v $(shell pwd)/node_modules--docker/:/media-search-archive/node_modules/ \
-		satisfactory-clips-archive/media-search-archive:npm-latest ./node_modules/.bin/gulp images-svg
+
+eleventy:
 	cd . && ./node_modules/.bin/eleventy
+
+build-post-update--actually-build:
 	cd . && ./node_modules/.bin/gulp build
 
 images-prep:
