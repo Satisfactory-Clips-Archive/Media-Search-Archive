@@ -75,12 +75,14 @@ class Injected
 		$this->slugify = $slugify;
 		$this->skipping = $skipping;
 
+		echo "\n", 'preparing injections', "\n";
 		$prepared = prepare_injections(
 			$this->api,
 			$this->slugify,
 			$this->skipping,
 			$this
 		);
+		echo 'injections prepared', "\n";
 
 		[
 			$this->cache,

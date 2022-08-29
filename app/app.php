@@ -80,16 +80,24 @@ echo "\r"
 	, "\n";
 
 $api = new YouTubeApiWrapper();
+echo 'YouTube API Wrapper instantiated', "\n";
 
 $slugify = new Slugify();
 
 $skipping = SkippingTranscriptions::i();
+echo 'SkippingTranscriptions instantiated', "\n";
 
 $injected = new Injected($api, $slugify, $skipping);
+echo 'Injected instantiated', "\n";
 
 $markdownify = new Markdownify($injected);
+echo 'Markdownify instantiated', "\n";
+
 $questions = new Questions($injected);
+echo 'Questions instantiated', "\n";
+
 $jsonify = new Jsonify($injected, $questions);
+echo 'Jsonify instantiated', "\n";
 
 $cache = $injected->cache;
 $global_topic_hierarchy = $injected->topics_hierarchy;
@@ -101,6 +109,7 @@ file_put_contents(
 			$injected->format_play()
 	)
 );
+echo 'app/data/play.json updated', "\n";
 
 $playlist_satisfactory =
 	realpath(
@@ -216,13 +225,18 @@ $process_externals_result = process_externals(
 	$skipping,
 	$injected
 );
+echo "\n", 'done processing externals', "\n";
+
 $externals_values = get_externals();
+echo 'done getting externals', "\n";
 $externals_dates = array_keys($externals_values);
 
 $sorting = new Sorting($cache);
 
 $sorting->cache = $cache;
 $sorting->playlists_date_ref = $api->dated_playlists();
+
+echo "\n",'done setting up Sorting', "\n";
 
 $no_topics = [];
 
@@ -264,6 +278,8 @@ $topics_without_direct_content = array_filter(
 		return count($cache['playlists'][$topic_id] ?? []) < 1;
 	}
 );
+
+echo "\n", 'prepping topic nesting', "\n";
 
 /**
  * @var array<string, array{
@@ -334,6 +350,8 @@ foreach ($global_topic_hierarchy as $topic_id => $topic_ancestors) {
 		$topic_descendant_id = $topic_ancestor_id;
 	}
 }
+
+echo "\n", 'topic nesting data populated', "\n";
 
 if (count($missing_topics)) {
 	throw new RuntimeException(sprintf(
@@ -471,6 +489,10 @@ usort($all_topic_ids, static function (
 		- $nested_b['left'];
 });
 
+echo "\n", 'done with topic nesting', "\n";
+
+echo "\n", 'grouping videos by topic', "\n";
+
 $video_playlists = [];
 
 foreach (array_keys($api->fetch_all_playlists()) as $playlist_id) {
@@ -537,6 +559,8 @@ foreach ($all_topic_ids as $topic_id) {
 	}
 }
 
+echo "\n", 'writing video & topic data', "\n";
+
 file_put_contents(
 	__DIR__ . '/../11ty/img-data/topicStatistics.json',
 	json_encode_pretty(
@@ -590,7 +614,11 @@ $checked = 0;
 
 $all_video_ids = array_keys($video_playlists);
 
+echo "\n", 'getting statistics', "\n";
+
 $statistics = $api->getStatistics(...$all_video_ids);
+
+echo "\n", 'done getting statistics', "\n";
 
 /**
  * @var array<string, array{
@@ -611,10 +639,14 @@ usort($all_video_ids, [$sorting, 'sort_video_ids_by_date']);
 
 $all_video_ids = array_reverse($all_video_ids);
 
+echo "\n", 'determining what needs fresh captions', "\n";
+
 $needs_fresh_data = prepare_uncached_captions_html_video_ids(
 	$all_video_ids,
 	'yes' === getenv('VCN_FRESH_CAPTIONS')
 );
+
+echo "\n", count($needs_fresh_data), ' fresh data needed', "\n";
 
 if (count($needs_fresh_data)) {
 	file_put_contents(
@@ -685,6 +717,7 @@ foreach ($all_video_ids as $video_id) {
 	$title_unix_max = max($title_unix_max, $current_compile_date_unix);
 
 	if ($last_compile_date !== $current_compile_date) {
+		/*
 		if (count($erroring)) {
 			echo "\n", implode(',' . "\n", array_keys($erroring)), ',', "\n";
 
@@ -693,6 +726,7 @@ foreach ($all_video_ids as $video_id) {
 				count($erroring)
 			));
 		}
+		*/
 
 		echo "\n\n",
 			sprintf('compiling transcriptions for %s', $current_compile_date),
@@ -850,10 +884,16 @@ foreach ($all_video_ids as $video_id) {
 if (count($erroring)) {
 	echo "\n", implode(',' . "\n", array_keys($erroring)), ',', "\n";
 
+	file_put_contents(__DIR__ . '/data/erroring-on-transcriptions.json', json_encode_pretty(
+		$erroring
+	));
+
+	/*
 	throw new RuntimeException(sprintf(
 		'Errored on %s videos',
 		count($erroring)
 	));
+	*/
 }
 
 file_put_contents(

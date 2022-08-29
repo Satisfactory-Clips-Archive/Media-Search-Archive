@@ -31,13 +31,27 @@ async function bar()
 		chunks.push(needs_fetching.slice(i, i + 10));
 	}
 
-	for(chunk of chunks) {
+	let count = 0;
+
+	for(const chunk of chunks) {
+		++count;
+
 		await Promise.all(chunk.map(foo));
+
+		const sleep_for = Math.max(100, count % 30000);
+
+		if (sleep_for > 10000) {
+			console.log(`sleeping for ${sleep_for}`);
+		}
+
+		if (count > 100) {
+			throw new Error('Enough, continue regardless');
+		}
 
 		await new Promise((yup) => {
 			setTimeout(() => {
 				yup();
-			}, 100);
+			}, sleep_for);
 		});
 	}
 }

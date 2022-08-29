@@ -6,6 +6,8 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use JsonException;
+use stdClass;
 use function array_chunk;
 use function array_combine;
 use function array_diff;
@@ -134,11 +136,16 @@ class YouTubeApiWrapper
 
 	/**
 	 * @return array<string, string>
+	 *
+	 * @throws JsonException if json_encode fails
 	 */
 	public function fetch_all_playlists() : array
 	{
 		if (null === $this->playlists) {
 			$cache_file = (__DIR__ . '/../data/api-cache/playlists.json');
+			$cache_file_objects = __DIR__ . '/../data/api-cache/playlists-unmapped.json';
+
+			$was_as_objects = null;
 
 			if (is_file($cache_file)) {
 				/** @var array<string, string> */
@@ -153,11 +160,46 @@ class YouTubeApiWrapper
 					},
 					ARRAY_FILTER_USE_BOTH
 				);
+
+				$as_objects = json_decode(file_get_contents($cache_file_objects));
 			} else {
-				$to_sort = $this->listPlaylists([
+				$as_objects = $this->listPlaylists([
 					'channelId' => 'UCJamaIaFLyef0HjZ2LBEz1A',
 					'maxResults' => 50,
 				]);
+
+				if (is_file($cache_file_objects)) {
+					$was_as_objects = json_decode(file_get_contents($cache_file_objects));
+				}
+
+				file_put_contents($cache_file_objects, json_encode(
+					$as_objects,
+					JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR
+				));
+
+				$to_sort = [];
+
+				foreach ($as_objects as $playlist_id => $playlist_data) {
+					if ('private' === $playlist_data->status->privacyStatus) {
+						continue;
+					}
+
+					$to_sort[$playlist_id] = $playlist_data->snippet->title;
+				}
+			}
+
+			if ($was_as_objects) {
+				foreach ($was_as_objects as $playlist_id => $playlist_data) {
+					if (
+						property_exists($as_objects, $playlist_id)
+						&& $as_objects->{$playlist_id}->etag !== $playlist_data->etag
+					) {
+						throw new UnexpectedValueException(sprintf(
+							'Difference in playlist data found on %s',
+							$playlist_id
+						));
+					}
+				}
 			}
 
 			asort($to_sort);
@@ -822,24 +864,48 @@ class YouTubeApiWrapper
 	}
 
 	/**
+	 * @psalm-type API_RESULT = object{
+	 *	kind: 'youtube#playlist',
+	 *	etag: string,
+	 *	id: string,
+	 *	snippet: object{
+	 *		publishedAt: string,
+	 *		channelId: string,
+	 *		title: string,
+	 *		description: string,
+	 *		thumbnails: object<string, object{
+	 *			url: string,
+	 *			width: 0|positive-int,
+	 *			height: 0|positive-int
+	 *		}>,
+	 *		channelTitle: string,
+	 *		defaultLanguage: string,
+	 *		localized: object{
+	 *			title: string,
+	 *			description: string
+	 *		}
+	 *	},
+	 *	status: object{
+	 *		privacyStatus: string
+	 *	}
+	 * }
+	 *
 	 * @param array<string, string> $out
 	 *
-	 * @return array<string, string>
+	 * @return object<string, API_RESULT>
 	 */
 	private function listPlaylists(
 		array $args = [],
-		array $out = []
-	) : array {
+		object $out = null
+	) : object {
+		if (null === $out) {
+			$out = new stdClass();
+		}
+
 		/**
 		 * @var object{
 		 *	nextPageToken?:string,
-		 *	items:list<object{
-		 *		id:string,
-		 *		status:\Google_Service_YouTube_PlaylistStatus,
-		 *		snippet:object{
-		 *			title:string
-		 *		}
-		 *	}>
+		 *	items:list<API_RESULT>
 		 * }
 		 */
 		$response = $this->service_playlists()->listPlaylists(
@@ -848,11 +914,7 @@ class YouTubeApiWrapper
 		);
 
 		foreach ($response->items as $playlist) {
-			if ('private' === $playlist->status->privacyStatus) {
-				continue;
-			}
-
-			$out[$playlist->id] = $playlist->snippet->title;
+			$out->{$playlist->id} = $playlist;
 		}
 
 		if (isset($response->nextPageToken)) {

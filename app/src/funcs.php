@@ -490,7 +490,9 @@ function prepare_injections(
 
 		$not_a_livestream_date_lookup = $topic_data->not_a_livestream_date_lookup;
 
+		echo "\n", 'about to call $api->update()', "\n";
 		$api->update();
+		echo 'done updating', "\n";
 		$cache = $api->toLegacyCacheFormat();
 
 		$injected_cache = [
