@@ -857,25 +857,35 @@ foreach ($all_video_ids as $video_id) {
 		&& null !== $transcripts_json[$video_id]['description']
 	) {
 		$transcripts_json[$video_id]['video_object'] = [
-			'@context' => 'https://schema.org',
 			'@type' => 'VideoObject',
 			'name' => $transcripts_json[$video_id]['title'],
-			'description' => $transcripts_json[$video_id]['description'],
+			'description' => $injected->determine_video_description($video_id, false),
 			'thumbnailUrl' => $thumbnail_url,
 			'contentUrl' => timestamp_link($video_id, -1),
-			'url' => [
-				timestamp_link($video_id, -1),
-				sprintf(
-					'https://archive.satisfactory.video/transcriptions/%s/',
-					$vendor_prefixed_video_id
-				),
-			],
 			'uploadDate' => determine_date_for_video(
 				$video_id,
 				$cache['playlists'],
 				$api->dated_playlists()
 			),
 		];
+		$transcripts_json[$video_id]['video_object'] = [
+			'@context' => 'https://schema.org',
+			'@type' => 'WebPage',
+			'name' => $transcripts_json[$video_id]['title'],
+			'url' => [
+				sprintf(
+					'https://archive.satisfactory.video/transcriptions/%s/',
+					$vendor_prefixed_video_id
+				),
+			],
+			'about' => [
+				$transcripts_json[$video_id]['video_object'],
+			],
+		];
+
+		if ('' !== $transcripts_json[$video_id]['description']) {
+			$transcripts_json[$video_id]['video_object']['description'] = $transcripts_json[$video_id]['description'];
+		}
 	}
 
 	usleep(1);

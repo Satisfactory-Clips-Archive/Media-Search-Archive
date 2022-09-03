@@ -221,8 +221,10 @@ class Injected
 		return null;
 	}
 
-	public function determine_video_description(string $video_id) : ? string
-	{
+	public function determine_video_description(
+		string $video_id,
+		bool $strip_originally_streamed = true
+	) : ? string {
 		$video_id = preg_replace('/^yt-([^,]+)/', '$1', $video_id);
 
 		$maybe = (
@@ -235,11 +237,13 @@ class Injected
 				'',
 				$maybe
 			));
+			if ($strip_originally_streamed) {
 			$maybe = trim(preg_replace(
 				'/Clips for the [A-z]+ \d+(?:st|nd|rd|th), 20\d+ Livestream originally streamed on https:\/\/www\.twitch\.tv\/coffeestainstudiosdevs/',
 				'',
 				$maybe
 			));
+			}
 		} else {
 			$maybe = (
 				$this->api->cache_all_video_descriptions_for_externals()
