@@ -144,6 +144,7 @@ class YouTubeApiWrapper
 		if (null === $this->playlists) {
 			$cache_file = (__DIR__ . '/../data/api-cache/playlists.json');
 			$cache_file_objects = __DIR__ . '/../data/api-cache/playlists-unmapped.json';
+			$cache_file_objects_was = __DIR__ . '/../data/api-cache/playlists-unmapped--.json';
 
 			$was_as_objects = null;
 
@@ -169,6 +170,7 @@ class YouTubeApiWrapper
 				]);
 
 				if (is_file($cache_file_objects)) {
+					file_put_contents($cache_file_objects_was, file_get_contents($cache_file_objects));
 					$was_as_objects = json_decode(file_get_contents($cache_file_objects));
 				}
 
