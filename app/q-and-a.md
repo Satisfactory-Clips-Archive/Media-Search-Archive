@@ -1,13 +1,15 @@
 # Progress
-* 6064 questions found out of 9162 clips
-* 5841 non-trolling & on-topic questions found out of 6064 total questions
-* 287 questions found with no other references
+* 6097 questions found out of 9208 clips
+* 5874 non-trolling & on-topic questions found out of 6097 total questions
+* 291 questions found with no other references
 ## grouped by date
-* 2022-08-23: 6 of 60 questions found with no other references
+* 2022-09-02: 0 of 1 questions found with no other references
+* 2022-08-30: 4 of 32 questions found with no other references
+* 2022-08-23: 7 of 60 questions found with no other references
 * 2022-07-12: 25 of 71 questions found with no other references
 * 2022-07-08: 0 of 1 questions found with no other references
 * 2022-07-05: 15 of 75 questions found with no other references
-* 2022-06-28: 8 of 64 questions found with no other references
+* 2022-06-28: 7 of 64 questions found with no other references
 * 2022-06-17: 0 of 2 questions found with no other references
 * 2022-06-14: 0 of 8 questions found with no other references
 * 2022-06-10: 0 of 1 questions found with no other references
@@ -82,7 +84,7 @@
 * 2021-04-20: 2 of 87 questions found with no other references
 * 2021-04-13: 0 of 13 questions found with no other references
 * 2021-04-06: 0 of 35 questions found with no other references
-* 2021-03-30: 2 of 87 questions found with no other references
+* 2021-03-30: 3 of 87 questions found with no other references
 * 2021-03-23: 5 of 108 questions found with no other references
 * 2021-03-17: 4 of 22 questions found with no other references
 * 2021-03-16: 0 of 33 questions found with no other references
@@ -119,7 +121,7 @@
 * 2020-09-22: 2 of 59 questions found with no other references
 * 2020-09-15: 2 of 45 questions found with no other references
 * 2020-09-09: 0 of 5 questions found with no other references
-* 2020-09-08: 5 of 72 questions found with no other references
+* 2020-09-08: 4 of 72 questions found with no other references
 * 2020-09-01: 2 of 71 questions found with no other references
 * 2020-08-25: 1 of 135 questions found with no other references
 * 2020-08-18: 1 of 49 questions found with no other references
