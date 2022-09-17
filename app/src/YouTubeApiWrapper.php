@@ -60,6 +60,7 @@ use function sprintf;
 use function strtotime;
 use function time;
 use function unlink;
+use UnexpectedValueException;
 
 class YouTubeApiWrapper
 {
