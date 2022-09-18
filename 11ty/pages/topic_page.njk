@@ -1,0 +1,41 @@
+---
+pagination:
+    data: topic_page_data
+    size: 1
+    alias: topic
+permalink: "{{ topic.permalink }}/"
+layout: default
+---
+<h1><a href="/topics/">Topics</a> &gt; {% for crumb in topic.breadcrumbs %}<a href="/{{crumb.permalink}}/">{{crumb.title}}</a> &gt; {% endfor %}
+{{topic.title}}</h1>
+{% if topic.children|length %}
+<ul>
+{% for child in topic.children %}
+	<li><a href="/{{child.permalink}}/">{{child.title}}</a>
+{% endfor %}
+</ul>
+{% endif %}
+{% for by_date in topic.dates %}
+<h2> {{by_date.friendly_date}} </h2>
+{% if by_date.primary|length %}
+<ul>
+{% for clip_pair in by_date.primary %}
+<li>
+{% if clip_pair[0].permalink %}<a href="/{{clip_pair[0].permalink}}/">{{clip_pair[0].title}}</a>{% else %}{{clip_pair[0].title}}{% endif %}
+<a href="{{clip_pair[1].permalink}}" target="_blank" rel="nofollow noopener">{{clip_pair[1].permalink}}</a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% if by_date.references|length %}
+<h3>References</h3>
+<ul>
+{% for clip_pair in by_date.references %}
+<li>
+{% if clip_pair[0].permalink %}<a href="/{{clip_pair[0].permalink}}/">{{clip_pair[0].title}}</a>{% else %}{{clip_pair[0].title}}{% endif %}
+<a href="{{clip_pair[1].permalink}}" target="_blank" rel="nofollow noopener">{{clip_pair[1].permalink}}</a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endfor %}

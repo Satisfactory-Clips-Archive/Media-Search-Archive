@@ -5,6 +5,8 @@
 %}<meta property="og:title" content="{{ transcript.dateTitle }} {{ transcript.title }}">{%
 	elif undefined !== thread
 %}<meta property="og:title" content="Satisfactory Clips Archive - Tweets - {{ thread.title }}">{%
+	elif undefined !== topic
+%}<meta property="og:title" content="Satisfactory Clips Archive - {{ topic.title }}">{%
 	else
 %}<meta property="og:title" content="{{title}}">{%
 	endif

@@ -676,6 +676,34 @@ file_put_contents(
 	)
 );
 
+file_put_contents(
+	(__DIR__ . '/data/info-cards--augmented.json'),
+	json_encode_pretty(
+		array_map(
+			static function(string $video_id) use($cache, $api, $video_playlists, $playlists) : array {
+				return [
+					'id' => vendor_prefixed_video_id($video_id),
+					'date' => determine_date_for_video(
+						vendor_prefixed_video_id($video_id),
+						$cache['playlists'],
+						$api->dated_playlists()
+					),
+					'title' => $cache['playlistItems'][$video_id][1],
+					'video_url_from_id' => video_url_from_id(vendor_prefixed_video_id($video_id)),
+					'cards' => yt_cards($video_id),
+					'topics' => array_values(array_filter(
+						$video_playlists[$video_id],
+						static function (string $maybe) use ($playlists) : bool {
+							return ! isset($playlists[$maybe]);
+						}
+					)),
+				];
+			},
+			$all_video_ids
+		)
+	)
+);
+
 echo "\n",
 	sprintf(
 		'compiling transcription 0 of %s videos (%s seconds elapsed)',
@@ -1446,6 +1474,8 @@ foreach (get_externals() as $date => $externals_data_groups) {
 						)
 						: timestamp_link($video_id, $start)
 				),
+				'video_url_from_id' => video_url_from_id(vendor_prefixed_video_id($video_id)),
+				'topics' => $data_for_external['topics'][$i] ?? [],
 			];
 
 			if ('' === $embed_data['end']) {
@@ -1793,6 +1823,23 @@ file_put_contents(__DIR__ . '/../11ty/data/dated.json', json_encode(
 	array_values($grouped_dated_data_for_json),
 	JSON_PRETTY_PRINT
 ));
+file_put_contents(__DIR__ . '/../11ty/data/friendly_dates.json', json_encode_pretty(array_reduce(
+	$all_video_ids,
+	static function (array $was, string $video_id) use ($cache, $dated_playlists) {
+		$date = determine_date_for_video(
+			$video_id,
+			$cache['playlists'],
+			$dated_playlists
+		);
+
+		if ( ! isset($was[$date])) {
+			$was[$date] = date('F jS, Y', strtotime($date));
+		}
+
+		return $was;
+	},
+	[]
+)));
 
 if (null === $title_unix_min || null === $title_unix_max) {
 	throw new RuntimeException('No min/max dates!');

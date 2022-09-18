@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>{% if (page.url.startsWith('/topics/')) or ('/FAQ/' === page.url) %}Satisfactory Clips Archive - {% endif %}{{title}}</title>
+<title>{%
+	if (page.url.startsWith('/topics/')) or ('/FAQ/' === page.url) %}Satisfactory Clips Archive - {% endif %}{%
+	if topic %}{{topic.title}}{% else %}{{title}}{% endif %}</title>
 {% include 'head.njk' %}
 <meta property="og:article:modified_time" content="{{page.date.toUTCString()}}">
 </head>
 <body>
 <header>
-	<h1>{% if (page.url.startsWith('/topics/')) or ('/FAQ/' === page.url) %}Satisfactory Clips Archive - {% endif %}{{title}}</h1>
+	<h1>{%
+	if (page.url.startsWith('/topics/')) or ('/FAQ/' === page.url) %}Satisfactory Clips Archive - {% endif %}{%
+	if topic %}{{topic.title}}{% else %}{{title}}{% endif %}</h1>
 {% include 'nav.njk' %}
 </header>
 <main>{{content | safe}}</main>
