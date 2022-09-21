@@ -1651,6 +1651,10 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
+		'PLbjDnnBIxiEqYcK9flkYreg2WOtulKEki' => [ // Boombox
+			'Features',
+			'Equipment',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
