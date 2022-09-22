@@ -42,7 +42,7 @@
         "date": "2022-09-13",
         "topics": [
             "features\/equipment\/beacon",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "Mi7GvyXRA3g",
@@ -64,8 +64,8 @@
             "environment\/biomes\/spire-coast",
             "features\/equipment\/beacon",
             "features\/save-system",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "4tCjpG1zJc0",
@@ -288,7 +288,7 @@
             "easter-eggs",
             "features\/equipment\/boombox",
             "off-topic\/deep-rock-galactic",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "soundtrack"
         ],
         "seealso": [
@@ -559,8 +559,8 @@
         "title": "Q&A: Will we still have an Experimental build?",
         "date": "2022-09-13",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "HRMC8w8XgGI",
@@ -571,8 +571,8 @@
         "title": "Q&A: Update 6 stream?",
         "date": "2022-09-13",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "HRMC8w8XgGI",
@@ -874,8 +874,8 @@
         "topics": [
             "features\/requested-features",
             "retail\/geforce-now",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "ZgaAp-f2AI4"
@@ -915,7 +915,7 @@
         "date": "2022-09-06",
         "topics": [
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "technology\/user-interface"
         ],
         "seealso_topic_cards": [
@@ -1304,7 +1304,7 @@
         "title": "Q&A: When is Update 6 coming to the default Early Access branch?",
         "date": "2022-09-02",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "replaces": [
             "v3hZEGwwyJM"
@@ -1378,7 +1378,7 @@
             "features\/equipment\/beacon",
             "features\/power-management\/nuclear-energy",
             "features\/power-management\/nuclear-energy\/nuclear-refinement",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
@@ -1938,8 +1938,8 @@
         "date": "2022-08-30",
         "topics": [
             "features\/crafting\/recipes",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
@@ -2394,7 +2394,7 @@
         "topics": [
             "environment\/biomes\/spire-coast",
             "environment\/resources\/oil",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "replaces": [
             "V9tMeZUwtMg"
@@ -2794,7 +2794,7 @@
             "features\/equipment\/beacon",
             "features\/power-management\/nuclear-energy",
             "features\/power-management\/nuclear-energy\/nuclear-refinement",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicatedby": "4tCjpG1zJc0"
     },
@@ -2857,7 +2857,7 @@
             "environment",
             "features\/equipment\/nobelisk",
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "GNlkXUsq_Do"
@@ -3701,7 +3701,7 @@
             "environment\/creatures",
             "features\/equipment\/xeno-basher",
             "features\/equipment\/xeno-zapper",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ]
     },
     "Oq7uVu7ckw0": {
@@ -3775,7 +3775,7 @@
         "topics": [
             "features\/equipment\/nobelisk",
             "features\/power-management\/nuclear-energy\/nuclear-refinement",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ]
     },
     "OXf5T9BsY2M": {
@@ -3930,7 +3930,7 @@
         "title": "Q&A: How many new features that we don't know about are you working on for Update 6?",
         "date": "2022-07-12",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "g0mn1VtSams"
@@ -4031,7 +4031,7 @@
         "title": "Q&A: Why did you guys release Update 6 before you went on vacation?",
         "date": "2022-07-08",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/state-of-dev"
         ],
         "seealso": [
@@ -4168,7 +4168,7 @@
             "features\/equipment\/beacon",
             "features\/power-management\/nuclear-energy\/nuclear-refinement",
             "satisfactory-updates",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
@@ -4583,8 +4583,8 @@
             "environment",
             "environment\/biomes\/spire-coast",
             "features\/transportation\/vehicles\/drones",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/released\/satisfactory-update-5"
+            "satisfactory-updates\/released\/satisfactory-update-5",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_video_cards": [
             "61iyMsA4_2w"
@@ -4759,7 +4759,7 @@
         "topics": [
             "features\/power-management\/nuclear-energy",
             "features\/power-management\/nuclear-energy\/nuclear-waste",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoGfsgeuz9AkG6fxwj9EHJz"
@@ -4770,7 +4770,7 @@
         "date": "2022-07-05",
         "topics": [
             "features\/equipment\/nobelisk",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpuOTI51V9B1koMUCsNYuIA"
@@ -4943,7 +4943,7 @@
             "features\/crafting\/recipes",
             "features\/equipment\/nobelisk",
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpuOTI51V9B1koMUCsNYuIA"
@@ -4954,7 +4954,7 @@
         "date": "2022-07-05",
         "topics": [
             "features\/possible-features\/weather-systems",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "tEsHw1pXZlQ"
@@ -5012,8 +5012,8 @@
         "title": "Q&A: What's next in Update 6 before it hits EA?",
         "date": "2022-07-05",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "0hmv1nEov6U",
@@ -5130,8 +5130,8 @@
         "title": "Q&A: Is there an Update 6 stable release date yet?",
         "date": "2022-07-05",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
@@ -5380,7 +5380,7 @@
         "date": "2022-06-28",
         "topics": [
             "mods",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "UUNLmEB7Dlc"
@@ -5394,8 +5394,8 @@
         "date": "2022-06-28",
         "topics": [
             "features\/save-system",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "-m_-g6ELKsY",
@@ -5445,7 +5445,7 @@
         "topics": [
             "environment\/biomes\/spire-coast",
             "environment\/resources",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "seealso": [
@@ -5462,8 +5462,8 @@
         "date": "2022-06-28",
         "topics": [
             "features\/crafting\/recipes",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "9Mhn8S_U0DE"
@@ -5549,7 +5549,7 @@
         "date": "2022-06-28",
         "topics": [
             "environment\/creatures",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ]
     },
     "lvFdAmOYDks": {
@@ -5793,7 +5793,7 @@
         "title": "Q&A: Update 6 title?",
         "date": "2022-06-28",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
@@ -5809,7 +5809,7 @@
         "title": "Q&A: Any additions to the OST in Update 6?",
         "date": "2022-06-28",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "soundtrack"
         ],
         "duplicates": [
@@ -6037,7 +6037,7 @@
             "environment\/biomes\/spire-coast",
             "environment\/biomes\/swamp",
             "environment\/biomes\/titan-forest",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "seealso": [
@@ -6133,7 +6133,7 @@
         "title": "Q&A: Will we get a Patch Notes video for Update 6?",
         "date": "2022-06-28",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-patch-notes-video"
         ],
         "seealso_topic_cards": [
@@ -6209,8 +6209,8 @@
         "title": "Q&A: When is it going to be out on EA?",
         "date": "2022-06-17",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicatedby": "yt-acZOxaTkcCY,310.84386666666666,455.95550000000003"
     },
@@ -6220,8 +6220,8 @@
         "topics": [
             "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
             "off-topic\/sweden",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "k-cQOW2WL4w",
@@ -6237,7 +6237,7 @@
         "date": "2022-06-14",
         "topics": [
             "features\/multiplayer\/dedicated-servers",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "9w8y4G151Kw",
@@ -6258,7 +6258,7 @@
         "topics": [
             "environment",
             "features\/possible-features\/weather-systems",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "technology\/graphics"
         ],
         "duplicatedby": "5Opts7tOZys"
@@ -6267,8 +6267,8 @@
         "title": "Q&A: When is Update?",
         "date": "2022-06-14",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "replacedby": "yt-Z6bo0pjYghk,12065.79417320965,12140.575992"
     },
@@ -6277,7 +6277,7 @@
         "date": "2022-06-14",
         "topics": [
             "coffee-stainers\/hannah",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "ZI0qceS8O4U"
@@ -6301,8 +6301,8 @@
         "title": "Q&A: Is it live?",
         "date": "2022-06-14",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "v3hZEGwwyJM"
@@ -6327,7 +6327,7 @@
         "date": "2022-06-10",
         "topics": [
             "environment\/creatures",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers"
         ],
         "seealso_video_cards": [
@@ -6393,8 +6393,8 @@
         "topics": [
             "environment\/biomes\/spire-coast",
             "environment\/biomes\/swamp",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
             "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "seealso_topic_cards": [
@@ -6462,7 +6462,7 @@
             "features\/equipment\/nobelisk",
             "features\/equipment\/rebar-gun",
             "features\/equipment\/rifle",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "H5U1BtcMMIA",
@@ -6481,7 +6481,7 @@
             "features\/equipment\/nobelisk",
             "features\/gases",
             "features\/power-management\/nuclear-energy\/nuclear-waste",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "jYbQ9z-nqe0",
@@ -6538,7 +6538,7 @@
         "date": "2022-06-07",
         "topics": [
             "features\/equipment\/nobelisk",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "Mrexbr9w4H8",
@@ -6559,7 +6559,7 @@
         "date": "2022-06-07",
         "topics": [
             "features\/equipment\/nobelisk",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "VO5OR8mFNjs",
@@ -6575,7 +6575,7 @@
         "topics": [
             "environment\/creatures",
             "features\/equipment\/nobelisk",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "UYuRJ1Oxqq4"
@@ -6587,7 +6587,7 @@
         "topics": [
             "coffee-stainers\/ben",
             "environment\/resources\/water",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update",
             "technology\/graphics"
         ],
@@ -6640,7 +6640,7 @@
         "topics": [
             "features\/crafting\/recipes\/alternate-recipes",
             "features\/equipment\/beacon",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "8WbiYTDHfxM",
@@ -6740,7 +6740,7 @@
         "date": "2022-06-07",
         "topics": [
             "features\/possible-features\/weather-systems",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "technology\/graphics",
             "technology\/unreal-engine"
@@ -6768,7 +6768,7 @@
         "topics": [
             "features\/possible-features\/weather-systems",
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "5Opts7tOZys",
@@ -6787,7 +6787,7 @@
             "features\/equipment\/nobelisk",
             "features\/equipment\/rebar-gun",
             "features\/equipment\/rifle",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "Z2ncq57UyC0"
@@ -6869,7 +6869,7 @@
         "date": "2022-05-24",
         "topics": [
             "features\/equipment\/beacon",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "4tCjpG1zJc0",
@@ -6883,7 +6883,7 @@
         "topics": [
             "environment\/biomes\/spire-coast",
             "features\/buildings\/crash-site",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "08AYOkrt2dM",
@@ -6898,7 +6898,7 @@
         "title": "Q&A: Is the release date for Update 6 still early June?",
         "date": "2022-05-24",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "yt-hkMTFsxa7rQ,677.3767,734.9008333333334"
@@ -6923,7 +6923,7 @@
             "environment\/biomes\/spire-coast",
             "features\/buildings\/miner",
             "features\/buildings\/oil-extractor",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "68KABdE6tGI",
@@ -6938,7 +6938,7 @@
             "environment\/biomes\/spire-coast",
             "features\/buildings\/crash-site",
             "features\/crafting\/recipes\/alternate-recipes",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "o62O0oCl7yw"
@@ -6952,7 +6952,7 @@
             "features\/equipment\/beacon",
             "features\/power-management\/nuclear-energy",
             "features\/power-management\/nuclear-energy\/nuclear-refinement",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "4j-WwaYx9sQ",
@@ -6969,7 +6969,7 @@
         "date": "2022-05-24",
         "topics": [
             "features\/equipment\/beacon",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "technology\/user-interface\/markers",
             "technology\/user-interface\/stamps"
         ],
@@ -7023,7 +7023,7 @@
         "date": "2022-05-24",
         "topics": [
             "features\/equipment\/nobelisk",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/seasonal-events\/fics-mas"
         ],
         "seealso": [
@@ -7035,7 +7035,7 @@
         "date": "2022-05-24",
         "topics": [
             "features\/buildings\/overclocking-and-underclocking",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErcP0g2Ihv6H7ZJUVB8sOqH"
@@ -7089,7 +7089,7 @@
         "topics": [
             "features\/buildings\/overclocking-and-underclocking",
             "features\/power-management",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "qBEml9Qw5xE"
@@ -7100,7 +7100,7 @@
         "date": "2022-05-24",
         "topics": [
             "environment\/biomes\/spire-coast",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "3fvCJNbYSEw"
@@ -7250,7 +7250,7 @@
         "topics": [
             "features\/requested-features",
             "features\/requested-features\/multiple-body-slots",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "ees_UTtAc7Q"
@@ -7454,7 +7454,7 @@
             "features\/equipment\/beacon",
             "features\/power-management\/nuclear-energy",
             "features\/power-management\/nuclear-energy\/nuclear-refinement",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "4tCjpG1zJc0",
@@ -7473,7 +7473,7 @@
         "date": "2022-05-17",
         "topics": [
             "features\/equipment\/beacon",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "4j-WwaYx9sQ",
@@ -7497,7 +7497,7 @@
             "features\/equipment\/beacon",
             "features\/power-management\/nuclear-energy",
             "features\/power-management\/nuclear-energy\/nuclear-refinement",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "K7MGuYiuzno",
@@ -7530,7 +7530,7 @@
             "environment\/biomes\/caves",
             "features\/buildings\/radar-tower",
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp_OX3mKaOyTdkVijB78MU4",
@@ -7542,7 +7542,7 @@
         "title": "Q&A: Was there a reason for the separate Stamp and Marker beacons?",
         "date": "2022-05-17",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "technology\/user-interface\/markers",
             "technology\/user-interface\/stamps"
@@ -7558,7 +7558,7 @@
         "date": "2022-05-17",
         "topics": [
             "features\/buildings\/radar-tower",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers"
         ],
         "seealso": [
@@ -7574,7 +7574,7 @@
         "date": "2022-05-17",
         "topics": [
             "features\/equipment\/beacon",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "technology\/user-interface",
             "technology\/user-interface\/stamps"
         ],
@@ -7611,7 +7611,7 @@
         "date": "2022-05-17",
         "topics": [
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "technology\/user-interface\/markers",
             "technology\/user-interface\/stamps"
         ],
@@ -7624,7 +7624,7 @@
         "date": "2022-05-17",
         "topics": [
             "features\/multiplayer",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "technology\/user-interface",
             "technology\/user-interface\/markers",
             "technology\/user-interface\/stamps"
@@ -7640,7 +7640,7 @@
             "features\/crafting\/recipes",
             "features\/equipment\/beacon",
             "features\/transportation\/vehicles",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "H43HfFnO8eU"
@@ -7736,7 +7736,7 @@
             "coffee-stainers\/snutt",
             "features\/transportation\/trains\/train-signals",
             "satisfactory-updates",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "yt-acZOxaTkcCY,310.84386666666666,455.95550000000003"
@@ -7883,7 +7883,7 @@
         "topics": [
             "environment\/biomes\/northern-forest",
             "environment\/biomes\/the-great-canyon",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "satisfactory-updates\/world-update"
         ],
@@ -7901,7 +7901,7 @@
         "topics": [
             "environment\/biomes\/caves",
             "environment\/biomes\/spire-coast",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "satisfactory-updates\/world-update"
         ],
@@ -7952,7 +7952,7 @@
         "topics": [
             "environment\/biomes\/spire-coast",
             "features\/buildings\/water-extractor",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "satisfactory-updates\/world-update"
         ],
@@ -7965,7 +7965,7 @@
         "date": "2022-05-10",
         "topics": [
             "environment\/biomes\/dune-desert",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "replaces": [
@@ -7984,7 +7984,7 @@
         "date": "2022-05-10",
         "topics": [
             "environment",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "seealso": [
@@ -7996,7 +7996,7 @@
         "date": "2022-05-10",
         "topics": [
             "environment\/biomes\/desert-canyons",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "satisfactory-updates\/world-update",
             "technology\/unreal-engine"
@@ -8010,7 +8010,7 @@
         "date": "2022-05-10",
         "topics": [
             "environment\/biomes\/swamp",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "satisfactory-updates\/world-update"
         ],
@@ -8038,7 +8038,7 @@
         "topics": [
             "environment\/biomes\/dune-desert",
             "environment\/biomes\/spire-coast",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "satisfactory-updates\/world-update"
         ],
@@ -8055,7 +8055,7 @@
         "date": "2022-05-10",
         "topics": [
             "environment",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "duplicates": [
@@ -8096,7 +8096,7 @@
             "environment\/biomes",
             "environment\/biomes\/northern-forest",
             "environment\/biomes\/spire-coast",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "duplicates": [
@@ -8174,7 +8174,7 @@
         "topics": [
             "environment\/biomes\/spire-coast",
             "environment\/resources\/oil",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "seealso": [
@@ -8191,7 +8191,7 @@
         "date": "2022-05-03",
         "topics": [
             "features\/buildings\/overclocking-and-underclocking",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "BWHZtO7XcI0",
@@ -8306,7 +8306,7 @@
         "date": "2022-05-03",
         "topics": [
             "environment\/biomes\/spire-coast",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "satisfactory-updates\/world-update"
         ],
@@ -8435,7 +8435,7 @@
             "environment",
             "environment\/biomes\/spire-coast",
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "seealso_topic_cards": [
@@ -8497,7 +8497,7 @@
         "date": "2022-05-03",
         "topics": [
             "features\/tiers",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "gg0SE9FSwfM",
@@ -8539,7 +8539,7 @@
         "date": "2022-05-03",
         "topics": [
             "features\/requested-features\/multiple-body-slots",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "replaces": [
             "i7Oym1g9yio"
@@ -8561,7 +8561,7 @@
         "title": "Q&A: Any additional Lore coming in Update 6?",
         "date": "2022-05-03",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "story-and-lore"
         ],
@@ -8881,7 +8881,7 @@
         "topics": [
             "coffee-stainers",
             "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
@@ -8895,7 +8895,7 @@
             "environment\/biomes\/spire-coast",
             "features\/buildings\/crash-site",
             "features\/crafting\/recipes\/alternate-recipes",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "seealso": [
@@ -8925,7 +8925,7 @@
         "topics": [
             "coffee-stainers",
             "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "n7qo-qS8Jk4",
@@ -8941,7 +8941,7 @@
         "topics": [
             "environment\/biomes\/dune-desert",
             "environment\/biomes\/spire-coast",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "duplicates": [
@@ -9005,7 +9005,7 @@
         "topics": [
             "features\/buildings\/overclocking-and-underclocking",
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "technology\/user-interface"
         ],
@@ -9196,7 +9196,7 @@
         "title": "Q&A: What does improving the exploration aspect of Satisfactory mean?",
         "date": "2022-04-22",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "replaces": [
             "ytPhU2Nw6Nc"
@@ -9212,7 +9212,7 @@
         "title": "Q&A: When is the Satisfactory Update 6 release date?",
         "date": "2022-04-22",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "replaces": [
             "abjQnsElsdQ"
@@ -9224,7 +9224,7 @@
         "date": "2022-04-21",
         "topics": [
             "features\/possible-features\/dlc\/flushable-toilet-dlc",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_video_cards": [
             "hkMTFsxa7rQ"
@@ -9238,7 +9238,7 @@
         "date": "2022-04-21",
         "topics": [
             "features\/possible-features\/weather-systems",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "tEsHw1pXZlQ",
@@ -9338,7 +9338,7 @@
             "community\/community-highlights",
             "community\/j1mbers",
             "off-topic\/portal",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "trolling"
         ],
         "seealso": [
@@ -9544,7 +9544,7 @@
         "title": "Q&A: Where's the Update?",
         "date": "2022-04-19",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "oY1dlzul3WU",
@@ -9625,7 +9625,7 @@
         "title": "Q&A: Please tell us what it will contain?",
         "date": "2022-04-19",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "6i-IYIg-3s8",
@@ -9637,7 +9637,7 @@
         "title": "Q&A: Can I get a promise that it won't land before Sunday?",
         "date": "2022-04-19",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "6i-IYIg-3s8",
@@ -9652,7 +9652,7 @@
         "title": "Q&A: What is the rough length of the video on Friday?",
         "date": "2022-04-19",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "6i-IYIg-3s8",
@@ -9754,7 +9754,7 @@
         "title": "Q&A: Will this next Update have a completed Soundtrack?",
         "date": "2022-04-19",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "soundtrack"
         ],
         "seealso_topic_cards": [
@@ -10108,7 +10108,7 @@
         "title": "Q&A: Can you hype us up a bit more for the pre-pre announcement?",
         "date": "2022-04-12",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/state-of-dev"
         ],
         "seealso": [
@@ -10131,7 +10131,7 @@
         "date": "2022-04-12",
         "topics": [
             "coffee-stainers\/jace",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "9YYkdVZOzV8",
@@ -10334,7 +10334,7 @@
         "title": "Q&A: Jace, I thought you said April 32nd for the Update?",
         "date": "2022-04-12",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "trolling"
         ],
         "seealso": [
@@ -10466,7 +10466,7 @@
         "topics": [
             "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
             "satisfactory-updates",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "9YYkdVZOzV8"
@@ -11392,7 +11392,7 @@
         "title": "Q&A: Is it true the next Update is planned for the 17th of April?",
         "date": "2022-03-22",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "yt-acZOxaTkcCY,179.64613333333332,190.552814"
@@ -11816,7 +11816,7 @@
         "title": "Q&A: Is there a rough estimate for the next Update?",
         "date": "2022-03-15",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/speculative\/satisfactory-update-7"
         ],
         "seealso_topic_cards": [
@@ -12553,7 +12553,7 @@
         "topics": [
             "satisfactory-updates",
             "satisfactory-updates\/pending\/satisfactory-1-0",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "GM0CJlndusA",
@@ -12599,7 +12599,7 @@
         "topics": [
             "satisfactory-updates",
             "satisfactory-updates\/pending\/satisfactory-1-0",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
@@ -13085,7 +13085,7 @@
         "date": "2022-03-01",
         "topics": [
             "coffee-stainers\/jace\/robo-jace",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "yt-acZOxaTkcCY,179.64613333333332,190.552814",
@@ -13807,7 +13807,7 @@
         "topics": [
             "features\/possible-features\/decor",
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR",
@@ -14357,7 +14357,7 @@
         "title": "Q&A: Update 6 release date?",
         "date": "2022-02-15",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "-3F_QMKt5yo",
@@ -14718,7 +14718,7 @@
         "topics": [
             "environment\/biomes\/spire-coast",
             "satisfactory-updates\/pending\/satisfactory-1-0",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/speculative\/satisfactory-update-7",
             "satisfactory-updates\/world-update"
         ],
@@ -15750,7 +15750,7 @@
         "date": "2022-01-18",
         "topics": [
             "community\/wiki",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "yt-iVDRQg_aWpU,6717.066078234568,6772.139635"
@@ -16645,7 +16645,7 @@
         "title": "Q&A: Update 6, when?",
         "date": "2021-12-07",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoS0LAKAPcnVrP2IDwb4kqi"
@@ -17574,7 +17574,7 @@
         "date": "2021-11-30",
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "yoD51h2g5T0",
@@ -17909,7 +17909,7 @@
         "topics": [
             "satisfactory-updates",
             "satisfactory-updates\/pending\/satisfactory-1-0",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "2uxuRg2qmhY",
@@ -18119,7 +18119,7 @@
         "date": "2021-11-23",
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "2uxuRg2qmhY",
@@ -18214,7 +18214,7 @@
         "title": "Q&A: Any Teasers for what's coming next?",
         "date": "2021-11-23",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers"
         ],
         "duplicatedby": "yt-iVDRQg_aWpU,7189.732701135802,7273.149706"
@@ -18267,7 +18267,7 @@
         "title": "Q&A: What to expect for Update 6?",
         "date": "2021-11-23",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicatedby": "a-L9c5HwpqQ"
     },
@@ -18294,7 +18294,7 @@
         "title": "Q&A: Update 5 is history, what about Update 6?",
         "date": "2021-11-23",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "yt-iVDRQg_aWpU,6369.699443731482,6444.869612"
@@ -19530,7 +19530,7 @@
         "date": "2021-11-09",
         "topics": [
             "features\/multiplayer\/dedicated-servers",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
             "-MxqS9W0Gps",
@@ -20270,7 +20270,7 @@
         "title": "Q&A: What areas are going to be reworked in the next Update?",
         "date": "2021-11-09",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/world-update"
         ],
         "seealso": [
@@ -23352,7 +23352,7 @@
         "title": "Q&A: What major features are left for Update 6?",
         "date": "2021-10-19",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "PBqyEgsu2kM"
@@ -23415,7 +23415,7 @@
         "date": "2021-10-19",
         "topics": [
             "community\/wiki",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
@@ -25194,7 +25194,7 @@
         "title": "Q&A: Any idea what the focus of Update 6 will be?",
         "date": "2021-10-05",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR",
@@ -25829,7 +25829,7 @@
         "date": "2021-09-28",
         "topics": [
             "satisfactory-updates",
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seelaso": [
             "PBqyEgsu2kM",
@@ -26591,8 +26591,8 @@
         "title": "Q&A: Do you already have a plan after Update 5?",
         "date": "2021-09-28",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
             "satisfactory-updates\/released\/satisfactory-update-5",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/speculative\/satisfactory-update-7",
             "satisfactory-updates\/speculative\/satisfactory-update-8"
         ],
@@ -27176,7 +27176,7 @@
         "title": "Q&A: When is Update 6 coming?",
         "date": "2021-09-21",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR"
@@ -28425,7 +28425,7 @@
         "title": "Q&A: When will Update 6 be coming?",
         "date": "2021-09-14",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR",
@@ -30601,7 +30601,7 @@
         "title": "Q&A: Update 6, when?",
         "date": "2021-08-31",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "trolling"
         ],
         "seealso_topic_cards": [
@@ -34112,7 +34112,7 @@
         "title": "Q&A: When's Update 6?",
         "date": "2021-08-03",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/speculative\/satisfactory-update-7",
             "trolling"
         ],
@@ -40367,7 +40367,7 @@
         "title": "Q&A: What are the odds of an Update 6?",
         "date": "2021-06-29",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicates": [
             "bIyYDcFuAhA"
@@ -44799,9 +44799,9 @@
             "features\/fluids\/pipes",
             "features\/roadmap",
             "satisfactory-updates\/pending\/satisfactory-1-0",
-            "satisfactory-updates\/pending\/satisfactory-update-6",
             "satisfactory-updates\/released\/satisfactory-update-3",
-            "satisfactory-updates\/released\/satisfactory-update-5"
+            "satisfactory-updates\/released\/satisfactory-update-5",
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicatedby": "SOQlMqZBglM"
     },
@@ -51910,9 +51910,9 @@
         "title": "Q&A: Is there going to be Update 5 after Update 4, or is it going to be finished?",
         "date": "2021-03-09",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6",
             "satisfactory-updates\/released\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-update-5",
+            "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/speculative\/satisfactory-update-7"
         ],
         "seealso": [
@@ -68165,7 +68165,7 @@
         "title": "Q&A: When will we release Update 6?",
         "date": "2020-09-01",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "duplicatedby": "abjQnsElsdQ"
     },

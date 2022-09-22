@@ -186,7 +186,7 @@ class TopicData
 		'PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR' => [ // Satisfactory Update 6
 			6,
 			'Satisfactory Updates',
-			'Pending',
+			'Released',
 		],
 		'PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO' => [ // Satisfactory Update 7
 			7,
