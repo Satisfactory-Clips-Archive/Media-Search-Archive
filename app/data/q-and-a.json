@@ -3964,7 +3964,7 @@
         "title": "Q&A: Volumetric fog in the morning, when?",
         "date": "2022-07-12",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "features\/requested-features",
             "technology\/graphics"
         ]
@@ -4671,8 +4671,8 @@
         "date": "2022-07-05",
         "topics": [
             "environment\/plants",
+            "environment\/weather-systems",
             "features\/possible-features\/farming",
-            "features\/possible-features\/weather-systems",
             "features\/requested-features"
         ],
         "seealso": [
@@ -4953,7 +4953,7 @@
         "title": "Q&A: Weather, someday?",
         "date": "2022-07-05",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
@@ -5228,7 +5228,7 @@
         "title": "Q&A: Please add a console command to toggle Rain?",
         "date": "2022-07-05",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "features\/requested-features"
         ],
         "duplicates": [
@@ -6257,7 +6257,7 @@
         "date": "2022-06-14",
         "topics": [
             "environment",
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "satisfactory-updates\/released\/satisfactory-update-6",
             "technology\/graphics"
         ],
@@ -6739,7 +6739,7 @@
         "title": "Q&A: Any upcoming videos on the atmosphere changes?",
         "date": "2022-06-07",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "satisfactory-updates\/released\/satisfactory-update-6",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
             "technology\/graphics",
@@ -6766,7 +6766,7 @@
         "title": "Q&A: Any moving rain events, or just random?",
         "date": "2022-06-07",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "features\/requested-features",
             "satisfactory-updates\/released\/satisfactory-update-6"
         ],
@@ -6799,7 +6799,7 @@
         "topics": [
             "environment\/resources",
             "environment\/resources\/water",
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "features\/requested-features"
         ],
         "seealso": [
@@ -6826,8 +6826,8 @@
         "title": "Q&A: Will it snow, or have acid rain?",
         "date": "2022-06-07",
         "topics": [
+            "environment\/weather-systems",
             "features\/equipment\/nobelisk",
-            "features\/possible-features\/weather-systems",
             "features\/requested-features",
             "satisfactory-updates\/teasers-and-trailers\/update-6-teasers"
         ],
@@ -7436,7 +7436,7 @@
         "title": "Q&A: How will Weather affect general performance?",
         "date": "2022-05-17",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso": [
             "CM3yWyHEU3Q",
@@ -9237,7 +9237,7 @@
         "title": "Q&A: I thought the leak was the Weather being introduced to the game?",
         "date": "2022-04-21",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
@@ -11233,7 +11233,7 @@
         "title": "Q&A: Do you wanna add more Weather options, or just rain?",
         "date": "2022-03-22",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso": [
             "6O2mdDMAFes",
@@ -12722,7 +12722,7 @@
         "title": "Q&A: Any plans for extreme weather that affect productivity?",
         "date": "2022-03-01",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "features\/requested-features"
         ],
         "duplicates": [
@@ -13590,7 +13590,7 @@
         "title": "Q&A: Weather effects?",
         "date": "2022-02-22",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEovsoSQPihKXk6g7ttQ95sI"
@@ -16517,7 +16517,7 @@
         "title": "Q&A: Will we ever have a Weather System?",
         "date": "2021-12-14",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEovsoSQPihKXk6g7ttQ95sI"
@@ -16667,7 +16667,7 @@
         "title": "Q&A: Will there be any kind of Weather in the future?",
         "date": "2021-12-07",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso_video_cards": [
             "7fqgLdCPlU0"
@@ -24660,7 +24660,7 @@
         "title": "Q&A: Will there ever be rain and extreme Weather in Satisfactory?",
         "date": "2021-10-12",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEovsoSQPihKXk6g7ttQ95sI"
@@ -25468,7 +25468,7 @@
         "date": "2021-10-05",
         "topics": [
             "environment\/biomes\/northern-forest",
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "satisfactory-updates\/released\/satisfactory-update-5",
             "satisfactory-updates\/world-update"
         ],
@@ -28681,7 +28681,7 @@
         "title": "Q&A: Have you considered adding Weather effects to the game?",
         "date": "2021-09-14",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEovsoSQPihKXk6g7ttQ95sI"
@@ -39296,7 +39296,7 @@
         "title": "Q&A: Will you be adding Weather Systems?",
         "date": "2021-07-06",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq-eP01Lynsg2Jv-wLEWQ7e"
@@ -39307,7 +39307,7 @@
         "title": "Q&A: Random clouds would be good?",
         "date": "2021-07-06",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso": [
             "6O2mdDMAFes"
@@ -46943,8 +46943,8 @@
         "title": "Q&A: Can you tell us what Power change content were taken out of Update 4?",
         "date": "2021-04-27",
         "topics": [
+            "environment\/weather-systems",
             "features\/fluids\/pipes",
-            "features\/possible-features\/weather-systems",
             "features\/power-management",
             "features\/roadmap",
             "satisfactory-updates\/released\/satisfactory-update-4"
@@ -47885,7 +47885,7 @@
         "title": "Q&A: Gonna be weather changes, like rain, snow, and sand storms?",
         "date": "2021-04-20",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "duplicatedby": "6O2mdDMAFes"
     },
@@ -51748,7 +51748,7 @@
         "title": "Q&A: Will there be Weather in the game?",
         "date": "2021-03-09",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "satisfactory-updates\/satisfactory-prototypes"
         ],
         "duplicatedby": "6O2mdDMAFes"
@@ -54484,7 +54484,7 @@
         "title": "Q&A: Storm or natural disasters in the game?",
         "date": "2021-02-16",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "satisfactory-updates\/satisfactory-prototypes"
         ],
         "seealso": [
@@ -57124,7 +57124,7 @@
         "title": "Q&A: Acid rain?",
         "date": "2021-01-26",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "features\/requested-features\/pollution"
         ],
         "seealso": [
@@ -61558,7 +61558,7 @@
         "title": "Q&A: Any plans on Weather cycles?",
         "date": "2020-11-17",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "duplicatedby": "6O2mdDMAFes"
     },
@@ -62571,7 +62571,7 @@
         "title": "Q&A: Can we get Weather to change?",
         "date": "2020-11-10",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "duplicatedby": "6O2mdDMAFes"
     },
@@ -62660,7 +62660,7 @@
         "title": "Q&A: Will we have Weather events?",
         "date": "2020-11-10",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "duplicatedby": "6O2mdDMAFes"
     },
@@ -64385,7 +64385,7 @@
         "title": "Q&A: Will one of the Quality of Life Updates be turning down the fog?",
         "date": "2020-10-13",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "satisfactory-updates\/released\/satisfactory-fluids-update",
             "satisfactory-updates\/released\/satisfactory-update-4",
             "technology\/graphics"
@@ -65482,7 +65482,7 @@
         "title": "Q&A: Will there be any environmental influences later on, like climate change or heatwave storms?",
         "date": "2020-10-01",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso_video_cards": [
             "8WYNwGDLYNE",
@@ -66618,7 +66618,7 @@
         "title": "Q&A: Weather in Satisfactory?",
         "date": "2020-09-22",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "duplicatedby": "6O2mdDMAFes"
     },
@@ -67945,7 +67945,7 @@
         "title": "Q&A: Do we intend to add rain\/storms ?",
         "date": "2020-09-08",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "satisfactory-updates\/satisfactory-prototypes"
         ],
         "duplicatedby": "6O2mdDMAFes"
@@ -69837,7 +69837,7 @@
         "date": "2020-08-25",
         "topics": [
             "environment\/plants",
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "features\/requested-features\/pollution"
         ],
         "legacyalts": [
@@ -71310,7 +71310,7 @@
         "title": "Q&A: What about Weather systems?",
         "date": "2020-08-11",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "duplicatedby": "6O2mdDMAFes"
     },
@@ -71563,8 +71563,8 @@
         "title": "Q&A: What do you think about a game mode with weather effects doing damage or slowing machines?",
         "date": "2020-07-21",
         "topics": [
+            "environment\/weather-systems",
             "features\/possible-features\/game-modes",
-            "features\/possible-features\/weather-systems",
             "features\/unplanned-features\/factory-maintenance"
         ],
         "seealso": [
@@ -72404,7 +72404,7 @@
         "title": "Q&A: Will there be weather changes?",
         "date": "2020-05-15",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso_video_cards": [
             "VHr4x1vNeoY",
@@ -73013,8 +73013,8 @@
             "coffee-stainers\/jace",
             "coffee-stainers\/simon",
             "environment\/plants",
-            "features\/buildables\/foundations",
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems",
+            "features\/buildables\/foundations"
         ],
         "seealso": [
             "bvMAe2VTC5A",
@@ -76756,8 +76756,8 @@
         "title": "Q&A: Will water affect items on the belts?",
         "date": "2019-02-20",
         "topics": [
+            "environment\/weather-systems",
             "features\/buildables\/conveyor-belts",
-            "features\/possible-features\/weather-systems",
             "features\/requested-features"
         ],
         "seealso": [
@@ -77616,7 +77616,7 @@
         "title": "Q&A: Weather confirmed?",
         "date": "2019-02-20",
         "topics": [
-            "features\/possible-features\/weather-systems",
+            "environment\/weather-systems",
             "level-design-stream"
         ],
         "duplicatedby": "6O2mdDMAFes"
@@ -77733,7 +77733,7 @@
         "date": "2019-02-20",
         "topics": [
             "environment\/biomes\/unplanned-biomes\/snow",
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso": [
             "I_JT2xkr4Q0",
@@ -79218,7 +79218,7 @@
         "title": "Q&A: Is there Weather in the game?",
         "date": "2018-08-01",
         "topics": [
-            "features\/possible-features\/weather-systems"
+            "environment\/weather-systems"
         ],
         "seealso_video_cards": [
             "IxoCzb2M0vQ",

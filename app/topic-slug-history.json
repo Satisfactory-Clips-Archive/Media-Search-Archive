@@ -248,7 +248,8 @@
         "features\/possible-features\/third-party-service-integration": 1611444659
     },
     "PLbjDnnBIxiEovsoSQPihKXk6g7ttQ95sI": {
-        "features\/possible-features\/weather-systems": 1611444659
+        "features\/possible-features\/weather-systems": 1611444659,
+        "environment\/weather-systems": 1663886482
     },
     "PLbjDnnBIxiEqbVv5qFvJ7SDFemhz9imET": {
         "features\/power-management": 1611444659

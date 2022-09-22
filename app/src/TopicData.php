@@ -470,8 +470,7 @@ class TopicData
 			'Features',
 		],
 		'PLbjDnnBIxiEovsoSQPihKXk6g7ttQ95sI' => [ // Weather
-			'Features', // to later be moved under environment
-			'Possible Features', // to later be removed once under environment
+			'Environment',
 		],
 		'PLbjDnnBIxiEqkzbujtsOp2ySj671M8CR3' => [ // Crafting
 			'Features',
