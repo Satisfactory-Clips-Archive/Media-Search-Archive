@@ -1729,6 +1729,7 @@ class TopicData
 		'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY' => 'Satisfactory Update 4 Patch Notes vid commentary',
 		'2021-04-23' => 'Video',
 		'2021-10-26' => 'Update 5 Launch Stream and Patch Notes Video',
+		'2022-09-20' => 'Update 6 Release Stream',
 	];
 
 	/**
