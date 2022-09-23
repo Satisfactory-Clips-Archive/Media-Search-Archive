@@ -1063,10 +1063,12 @@
         "features\/equipment\/gas-mask": 1619030968
     },
     "PLbjDnnBIxiEpQHQYvzPxQNBl2NvsugIO0": {
-        "features\/requested-features\/holstering-equipment": 1619030968
+        "features\/requested-features\/holstering-equipment": 1619030968,
+        "features\/holstering-equipment": 1663893404
     },
     "PLbjDnnBIxiEq6HX-1Nude7wjby2B29wEt": {
-        "features\/requested-features\/multiple-body-slots": 1619030968
+        "features\/requested-features\/multiple-body-slots": 1619030968,
+        "features\/multiple-body-slots": 1663893404
     },
     "PLbjDnnBIxiEq4mhfpNDUXpX3dVhF5Vnmw": {
         "features\/equipment\/rifle": 1619030968

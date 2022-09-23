@@ -7248,8 +7248,8 @@
         "title": "Q&A: Are there going to be more Body Slots?",
         "date": "2022-05-24",
         "topics": [
+            "features\/multiple-body-slots",
             "features\/requested-features",
-            "features\/requested-features\/multiple-body-slots",
             "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
@@ -8538,7 +8538,7 @@
         "title": "Q&A: Can we finally have two body slots?",
         "date": "2022-05-03",
         "topics": [
-            "features\/requested-features\/multiple-body-slots",
+            "features\/multiple-body-slots",
             "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "replaces": [
@@ -8591,7 +8591,7 @@
         "title": "Q&A: Can we get an empty hand slot so we don't have to unequip something every time?",
         "date": "2022-05-03",
         "topics": [
-            "features\/requested-features\/holstering-equipment"
+            "features\/holstering-equipment"
         ],
         "duplicates": [
             "D2NO_tzXhVg",
@@ -10573,7 +10573,7 @@
         "title": "Q&A: Will we ever be able to equip all the Equipment at once?",
         "date": "2022-03-29",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "duplicates": [
             "1r0kKFc_mW4",
@@ -14043,7 +14043,7 @@
         "title": "Q&A: Will we get a second Body slot?",
         "date": "2022-02-22",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq6HX-1Nude7wjby2B29wEt"
@@ -16334,7 +16334,7 @@
         "title": "Q&A: Why don't you want us to equip the Blade Runners and Jetpack at the same time?",
         "date": "2021-12-14",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "duplicatedby": "i7Oym1g9yio"
     },
@@ -17042,7 +17042,7 @@
         "title": "Q&A: Weapon item holstering coming soon?",
         "date": "2021-12-07",
         "topics": [
-            "features\/requested-features\/holstering-equipment"
+            "features\/holstering-equipment"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpQHQYvzPxQNBl2NvsugIO0"
@@ -17296,7 +17296,7 @@
         "date": "2021-12-07",
         "topics": [
             "coffee-stainers\/snutt",
-            "features\/requested-features\/holstering-equipment",
+            "features\/holstering-equipment",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "seealso": [
@@ -20031,7 +20031,7 @@
         "title": "Q&A: Two body slots, maybe?",
         "date": "2021-11-09",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq6HX-1Nude7wjby2B29wEt",
@@ -25539,7 +25539,7 @@
         "title": "Q&A: Equipment Slots rework still in progress?",
         "date": "2021-10-05",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq6HX-1Nude7wjby2B29wEt"
@@ -27812,7 +27812,7 @@
         "title": "Q&A: Can we have Hover Pack & Hazmat Suit at the same time?",
         "date": "2021-09-21",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "seealso": [
             "ees_UTtAc7Q",
@@ -28692,7 +28692,7 @@
         "title": "Q&A: Tell me something good about Dual Body Slots?",
         "date": "2021-09-14",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq6HX-1Nude7wjby2B29wEt"
@@ -33313,7 +33313,7 @@
         "title": "Q&A: Will we be able to equip more than one item?",
         "date": "2021-08-10",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq6HX-1Nude7wjby2B29wEt"
@@ -37622,7 +37622,7 @@
         "title": "Q&A: Any chance we can get another Body Slot?",
         "date": "2021-07-13",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq6HX-1Nude7wjby2B29wEt"
@@ -45722,7 +45722,7 @@
         "title": "Q&A: Will there be a new body slot?",
         "date": "2021-05-04",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "duplicatedby": "i7Oym1g9yio"
     },
@@ -46833,7 +46833,7 @@
         "title": "Q&A: Holster Weapon toolkey?",
         "date": "2021-04-27",
         "topics": [
-            "features\/requested-features\/holstering-equipment"
+            "features\/holstering-equipment"
         ],
         "duplicatedby": "t4iLd8jEqQ4"
     },
@@ -47587,7 +47587,7 @@
         "title": "Q&A: Body Slots?",
         "date": "2021-04-20",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "duplicatedby": "i7Oym1g9yio"
     },
@@ -48493,7 +48493,7 @@
         "title": "Q&A: Multiple Body slots, when?",
         "date": "2021-04-06",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "duplicatedby": "i7Oym1g9yio"
     },
@@ -49255,7 +49255,7 @@
         "topics": [
             "features\/equipment\/blade-runners",
             "features\/equipment\/jetpack",
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "seealso": [
             "QDxgbHs6lC4"
@@ -50226,7 +50226,7 @@
             "coffee-stainers\/snutt",
             "features\/buildables\/conveyor-belts",
             "features\/buildables\/walls",
-            "features\/requested-features\/holstering-equipment",
+            "features\/holstering-equipment",
             "satisfactory-updates\/teasers-and-trailers",
             "technology\/user-interface"
         ],
@@ -50387,7 +50387,7 @@
         "title": "Q&A: Do you ever think you'll give us more than one Body Slot?",
         "date": "2021-03-23",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "duplicatedby": "i7Oym1g9yio"
     },
@@ -51884,7 +51884,7 @@
         "title": "Q&A: Will we ever get a second body slot?",
         "date": "2021-03-09",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "duplicatedby": "i7Oym1g9yio"
     },
@@ -52230,7 +52230,7 @@
         "title": "Q&A: When are we going to be able to use more than one Equipment at a time?",
         "date": "2021-03-02",
         "topics": [
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "duplicatedby": "i7Oym1g9yio"
     },
@@ -52706,7 +52706,7 @@
         "title": "Q&A: Are there any plans for adding a holster button?",
         "date": "2021-02-26",
         "topics": [
-            "features\/requested-features\/holstering-equipment"
+            "features\/holstering-equipment"
         ],
         "duplicatedby": "t4iLd8jEqQ4"
     },
@@ -67151,7 +67151,7 @@
             "features\/equipment\/blade-runners",
             "features\/equipment\/gas-mask",
             "features\/equipment\/jetpack",
-            "features\/requested-features\/multiple-body-slots"
+            "features\/multiple-body-slots"
         ],
         "duplicatedby": "i7Oym1g9yio"
     },
@@ -71407,7 +71407,7 @@
         "title": "Q&A: Does anyone know if there's a mod to holster weapon?",
         "date": "2020-07-30",
         "topics": [
-            "features\/requested-features\/holstering-equipment"
+            "features\/holstering-equipment"
         ],
         "seealso": [
             "t4iLd8jEqQ4"
@@ -72474,7 +72474,7 @@
         "title": "Q&A: Will we get more than one body slot?",
         "date": "2020-05-15",
         "topics": [
-            "features\/requested-features\/multiple-body-slots",
+            "features\/multiple-body-slots",
             "technology\/user-interface"
         ],
         "seealso_video_cards": [
@@ -72641,7 +72641,7 @@
         "title": "Q&A: Any chance of a holster keybind so we can lower our hand slot when not in use?",
         "date": "2020-05-15",
         "topics": [
-            "features\/requested-features\/holstering-equipment",
+            "features\/holstering-equipment",
             "technology\/user-interface"
         ],
         "seealso_video_cards": [

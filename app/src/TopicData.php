@@ -1109,7 +1109,6 @@ class TopicData
 		],
 		'PLbjDnnBIxiEq6HX-1Nude7wjby2B29wEt' => [ // Multiple Body Slots
 			'Features',
-			'Requested Features',
 		],
 		'PLbjDnnBIxiEqQq_lP1_OYqhjcEng5hkOx' => [ // Gas Mask
 			'Features',
@@ -1121,7 +1120,6 @@ class TopicData
 		],
 		'PLbjDnnBIxiEpQHQYvzPxQNBl2NvsugIO0' => [ // Holstering Equipment
 			'Features',
-			'Requested Features',
 		],
 		'PLbjDnnBIxiEo53bRP06aC5lXPWjSx84Cx' => [ // Cup
 			'Features',
