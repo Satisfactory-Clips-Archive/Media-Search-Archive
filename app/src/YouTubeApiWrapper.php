@@ -192,16 +192,21 @@ class YouTubeApiWrapper
 			}
 
 			if ($was_as_objects) {
+				$has_differences = [];
 				foreach ($was_as_objects as $playlist_id => $playlist_data) {
 					if (
 						property_exists($as_objects, $playlist_id)
 						&& $as_objects->{$playlist_id}->etag !== $playlist_data->etag
 					) {
-						throw new UnexpectedValueException(sprintf(
-							'Difference in playlist data found on %s',
-							$playlist_id
-						));
+						$has_differences[] = $playlist_id;
 					}
+				}
+
+				if (count($has_differences) > 0) {
+					throw new UnexpectedValueException(sprintf(
+						'Difference in playlist data found on %s',
+						implode("\n", $has_differences)
+					));
 				}
 			}
 

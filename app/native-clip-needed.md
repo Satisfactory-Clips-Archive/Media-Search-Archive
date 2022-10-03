@@ -1098,3 +1098,26 @@
 - [ ] yt-Z6bo0pjYghk,12140.575992,12189.344749108253 - Q&A: How does one backup save files?
 - [ ] yt-Z6bo0pjYghk,12191.890509,12236.083333333334 - Birk & Snutt Talk: Update 6 initial release Patch Notes (Part 2)
 - [ ] yt-Z6bo0pjYghk,12349.200313,12408.3994536901 - Birk & Snutt Talk: Remote Copy & Paste
+
+## 2022-09-20
+- [ ] yt-8WZYDHAVmio,5364.533333333334,5408.044584 - Crab Hatchers
+- [ ] yt-8WZYDHAVmio,5408.066666666667,5436.538936 - Boombox tease
+- [ ] yt-8WZYDHAVmio,5615.033333333334,5653.632021517541 - HUD warnings for Creature aggression
+- [ ] yt-8WZYDHAVmio,6079.066666666667,6121.153969 - Holstering Equipment
+- [ ] yt-8WZYDHAVmio,6121.2,6179.899114 - Equipment HUD
+- [ ] yt-8WZYDHAVmio,6179.933333333333,6196.740752 - Chainsaw Sounds
+- [ ] yt-8WZYDHAVmio,6196.766666666666,6212.533333333334 - Equipment Colour Schemes
+- [ ] yt-8WZYDHAVmio,6464.366666666667,6487.982612 - Lights on Trains
+- [ ] yt-8WZYDHAVmio,6488,6501.500221 - Build Menu is wider now
+- [ ] yt-8WZYDHAVmio,6501.533333333334,6519.518152 - Sign improvements
+- [ ] yt-8WZYDHAVmio,6709.67126,6763.068814 - Auto-regenerating Health
+- [ ] yt-8WZYDHAVmio,7178.233333333334,7217.641881 - Getting Update 6
+- [ ] yt-8WZYDHAVmio,7589.309474,7603.989731 - Q&A: Stable = Experimental?
+
+## 2022-09-30
+- [ ] yt-5Pz_dZbEx-4,17.884533333333334,56.79006666666667 - Trailer & lack of Patch Notes video
+- [ ] yt-5Pz_dZbEx-4,56.823433333333334,107.64086666666667 - New Build Pieces
+- [ ] yt-5Pz_dZbEx-4,107.67423333333333,134.30083333333334 - Post-release bugfixes
+- [ ] yt-5Pz_dZbEx-4,373.00596666666667,404.3039 - What's going to be in Update 7
+- [ ] yt-5Pz_dZbEx-4,404.33726666666666,414.614 - To Be Continued
+- [ ] yt-5Pz_dZbEx-4,414.64756666666665,442.442 - Shifting focus to reach 1.0

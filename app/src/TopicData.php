@@ -312,7 +312,7 @@ class TopicData
 		'Planned Features' => [
 			'Features',
 		],
-		'Possible Features' => [
+		'PLbjDnnBIxiErM4iiDcDRhjHFCEOWBCe0O' => [ // Possible Features
 			'Features',
 		],
 		'Unreleased Features' => [
@@ -1651,6 +1651,9 @@ class TopicData
 		'PLbjDnnBIxiEqYcK9flkYreg2WOtulKEki' => [ // Boombox
 			'Features',
 			'Equipment',
+		],
+		'PLbjDnnBIxiEqdAntA83_NEfB5D19rGlwh' => [ // Its_BitZ
+			'Community',
 		],
 	];
 
