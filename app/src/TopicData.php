@@ -82,13 +82,18 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
-		'PLbjDnnBIxiErc1n63NJjRMX1hAq4CqmxI' => [
+		'PLbjDnnBIxiErc1n63NJjRMX1hAq4CqmxI' => [ // Update 6 Teasers
 			600,
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
 		'PLbjDnnBIxiEruhM2QTAuTcg4QbgDFx_7u' => [ // Update 6 Patch Notes Video
 			601,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
+		'PLbjDnnBIxiEqmCgJaOWMdicmhcQuchNow' => [ // Update 7 Teasers
+			700,
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
