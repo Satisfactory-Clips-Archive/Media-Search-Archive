@@ -199,27 +199,13 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 
 function transcription_filename(string $video_id) : string
 {
-	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){1,2}/', $video_id)) {
+	$video_id = vendor_prefixed_video_id($video_id);
+
 		return
 			__DIR__
 			. '/../../video-clip-notes/docs/transcriptions/'
 			. $video_id
 			. '.md';
-	}
-
-	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
-		return
-			__DIR__
-			. '/../../video-clip-notes/docs/transcriptions/'
-			. $video_id
-			. '.md';
-	}
-
-	return
-		__DIR__
-		. '/../../video-clip-notes/docs/transcriptions/yt-'
-		. $video_id
-		. '.md';
 }
 
 /**
@@ -232,29 +218,13 @@ function maybe_transcript_link_and_video_url_data(
 	$url = video_url_from_id($video_id);
 	$initial_segment = false;
 
-	if (
-		preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){1,2}/', $video_id)) {
 		if (
 			is_file(
-				__DIR__
-				. '/../../video-clip-notes/docs/transcriptions/'
-				. $video_id
-				. '.md'
+				transcription_filename($video_id)
 			)
 		) {
 			$initial_segment = vendor_prefixed_video_id($video_id);
 		}
-	}
-
-	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
-		if (is_file(transcription_filename($video_id))) {
-			$initial_segment = vendor_prefixed_video_id($video_id);
-		}
-	} else {
-		if (is_file(transcription_filename($video_id))) {
-			$initial_segment = vendor_prefixed_video_id($video_id);
-		}
-	}
 
 	return [$title, $initial_segment, $url];
 }
@@ -264,6 +234,7 @@ function maybe_transcript_link_and_video_url(
 	string $title,
 	int $repeat_directory_up = 0
 ) : string {
+	$video_id = vendor_prefixed_video_id($video_id);
 	$url = video_url_from_id($video_id);
 	$initial_segment = $title;
 
@@ -272,13 +243,9 @@ function maybe_transcript_link_and_video_url(
 			? str_repeat('../', $repeat_directory_up)
 			: './';
 
-	if (preg_match('/^yt-.{11}(?:,(?:\d+(?:\.\d+)?)?){1,2}/', $video_id)) {
 		if (
 			is_file(
-				__DIR__
-				. '/../../video-clip-notes/docs/transcriptions/'
-				. $video_id
-				. '.md'
+				transcription_filename($video_id)
 			)
 		) {
 			$initial_segment = (
@@ -291,35 +258,6 @@ function maybe_transcript_link_and_video_url(
 				. '.md)'
 			);
 		}
-
-		return $initial_segment . ' [' . $url . '](' . $url . ')';
-	}
-
-	if (11 !== mb_strlen($video_id) && preg_match('/^(tc|is)\-/', $video_id)) {
-		if (is_file(transcription_filename($video_id))) {
-			$initial_segment = (
-				'['
-				. $title
-				. ']('
-				. $directory_up
-				. 'transcriptions/'
-				. $video_id
-				. '.md)'
-			);
-		}
-	} else {
-		if (is_file(transcription_filename($video_id))) {
-			$initial_segment = (
-				'['
-				. $title
-				. ']('
-				. $directory_up
-				. 'transcriptions/yt-'
-				. $video_id
-				. '.md)'
-			);
-		}
-	}
 
 	return $initial_segment . ' [' . $url . '](' . $url . ')';
 }
@@ -3180,10 +3118,7 @@ function process_dated_csv_for_alt_layout(
 
 			if (
 				is_file(
-					__DIR__
-					. '/../../video-clip-notes/docs/transcriptions/'
-					. $clip_id
-					. '.md'
+					transcription_filename($clip_id)
 				)
 			) {
 				$embed_data['has_captions'] = sprintf(

@@ -1414,7 +1414,7 @@ foreach (get_externals() as $date => $externals_data_groups) {
 			[$start, $end, $clip_title] = $line;
 			$clip_id = sprintf(
 				'%s,%s',
-				$video_id,
+				vendor_prefixed_video_id($video_id),
 				$start . ('' === $end ? '' : (',' . $end))
 			);
 
@@ -1488,10 +1488,7 @@ foreach (get_externals() as $date => $externals_data_groups) {
 				isset($csv_captions[$i])
 				&& '' !== trim($csv_captions[$i][3])
 				&& is_file(
-					__DIR__
-					. '/../video-clip-notes/docs/transcriptions/'
-					. $clip_id
-					. '.md'
+					transcription_filename($clip_id)
 				)
 			) {
 				$embed_data['has_captions'] = sprintf(
