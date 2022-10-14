@@ -1487,9 +1487,7 @@ foreach (get_externals() as $date => $externals_data_groups) {
 			if (
 				isset($csv_captions[$i])
 				&& '' !== trim($csv_captions[$i][3])
-				&& is_file(
-					transcription_filename($clip_id)
-				)
+				&& is_file(transcription_filename($clip_id))
 			) {
 				$embed_data['has_captions'] = sprintf(
 					'../transcriptions/%s',

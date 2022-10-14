@@ -218,11 +218,7 @@ function maybe_transcript_link_and_video_url_data(
 	$url = video_url_from_id($video_id);
 	$initial_segment = false;
 
-	if (
-		is_file(
-			transcription_filename($video_id)
-		)
-	) {
+	if (is_file(transcription_filename($video_id))) {
 		$initial_segment = vendor_prefixed_video_id($video_id);
 	}
 
@@ -243,11 +239,7 @@ function maybe_transcript_link_and_video_url(
 			? str_repeat('../', $repeat_directory_up)
 			: './';
 
-	if (
-		is_file(
-			transcription_filename($video_id)
-		)
-	) {
+	if (is_file(transcription_filename($video_id))) {
 		$initial_segment = (
 			'['
 			. $title
@@ -3116,11 +3108,7 @@ function process_dated_csv_for_alt_layout(
 				$embed_data['end'] = ceil((float) $embed_data['end']);
 			}
 
-			if (
-				is_file(
-					transcription_filename($clip_id)
-				)
-			) {
+			if (is_file(transcription_filename($clip_id))) {
 				$embed_data['has_captions'] = sprintf(
 					'/transcriptions/%s',
 					sprintf(
