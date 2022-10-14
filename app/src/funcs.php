@@ -218,13 +218,13 @@ function maybe_transcript_link_and_video_url_data(
 	$url = video_url_from_id($video_id);
 	$initial_segment = false;
 
-		if (
-			is_file(
-				transcription_filename($video_id)
-			)
-		) {
-			$initial_segment = vendor_prefixed_video_id($video_id);
-		}
+	if (
+		is_file(
+			transcription_filename($video_id)
+		)
+	) {
+		$initial_segment = vendor_prefixed_video_id($video_id);
+	}
 
 	return [$title, $initial_segment, $url];
 }
@@ -243,21 +243,21 @@ function maybe_transcript_link_and_video_url(
 			? str_repeat('../', $repeat_directory_up)
 			: './';
 
-		if (
-			is_file(
-				transcription_filename($video_id)
-			)
-		) {
-			$initial_segment = (
-				'['
-				. $title
-				. ']('
-				. $directory_up
-				. 'transcriptions/'
-				. $video_id
-				. '.md)'
-			);
-		}
+	if (
+		is_file(
+			transcription_filename($video_id)
+		)
+	) {
+		$initial_segment = (
+			'['
+			. $title
+			. ']('
+			. $directory_up
+			. 'transcriptions/'
+			. $video_id
+			. '.md)'
+		);
+	}
 
 	return $initial_segment . ' [' . $url . '](' . $url . ')';
 }
