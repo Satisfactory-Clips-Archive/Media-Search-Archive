@@ -1121,3 +1121,36 @@
 - [ ] yt-5Pz_dZbEx-4,373.00596666666667,404.3039 - What's going to be in Update 7
 - [ ] yt-5Pz_dZbEx-4,404.33726666666666,414.614 - To Be Continued
 - [ ] yt-5Pz_dZbEx-4,414.64756666666665,442.442 - Shifting focus to reach 1.0
+
+## 2022-11-11
+- [ ] yt-9KBQyjy-a6g,37.17046666666667,67.20046666666667 - Update 7 new Building Teaser
+- [ ] yt-9KBQyjy-a6g,67.23383333333334,95.06163333333333 - BLUEPRINTS (actually not kidding)
+- [ ] yt-9KBQyjy-a6g,95.095,123.85706666666667 - Blueprints are a long-requested Feature
+- [ ] yt-9KBQyjy-a6g,123.89043333333333,145.2451 - Community point of view vs. Coffee Stain Studio's point of view
+- [ ] yt-9KBQyjy-a6g,145.27846666666667,201.1009 - Unreal Engine Object Limit
+- [ ] yt-9KBQyjy-a6g,354.9879666666667,375.208167 - Plan ahead for expansion
+- [ ] yt-9KBQyjy-a6g,375.24153333333334,396.5962 - Power
+- [ ] yt-9KBQyjy-a6g,403.521306,426.25916666666666 - Resource Costs & Overclocking
+- [ ] yt-9KBQyjy-a6g,517.8166632027778,557.0231333333334 - Preparing an area for the Manifold Blueprint
+- [ ] yt-9KBQyjy-a6g,630.2296,653.4861666666667 - Integrating the freshly-applied Blueprint
+- [ ] yt-9KBQyjy-a6g,653.5195333333334,687.3533333333334 - Expanding the freshly-applied Blueprint
+- [ ] yt-9KBQyjy-a6g,772.3382333333334,792.4249666666667 - Examples & Suggestions
+- [ ] yt-9KBQyjy-a6g,792.4583333333334,842.6084333333333 - Limitations of the Blueprint Designer
+- [ ] yt-9KBQyjy-a6g,842.6418,892.6584333333334 - Blueprints are not persistent to your Save file
+- [ ] yt-9KBQyjy-a6g,974.0397333333334,988.7210666666667 - Sprint Mode for Ziplines
+
+## 2022-11-15
+- [ ] yt-CREPrQ23Dt4,3326.131639,3351.962562 - Q&A: What Tier are Blueprints unlocked in?
+- [ ] yt-CREPrQ23Dt4,3351.962562,3409.305696 - Q&A: How much do Blueprints cost?
+- [ ] yt-CREPrQ23Dt4,3926.202571,3971.563964 - Q&A: When did you decide to add Blueprints?
+- [ ] yt-CREPrQ23Dt4,3971.563964,4008.838937 - Q&A: What do you need to build Blueprints?
+- [ ] yt-CREPrQ23Dt4,4008.838937,4045.864719 - Q&A: Are Blueprints part of the MAM or part of general Tiers?
+- [ ] yt-CREPrQ23Dt4,5620.926718247916,5677.699392 - Dylan, Mark, and Snutt Talk: Passive Mode
+- [ ] yt-CREPrQ23Dt4,6021.4571249125,6033.634519959804 - Q&A: Will we get more Blueprints with more space for higher Tiers?
+- [ ] yt-CREPrQ23Dt4,6197.319266,6227.943388758088 - Q&A: Train lanes, no power?
+- [ ] yt-CREPrQ23Dt4,6227.943388758088,6240.003332 - Community FYI: Epic is slow as fuck
+- [ ] yt-CREPrQ23Dt4,6240.003332,6249.676934 - Q&A: 128x128?
+- [ ] yt-CREPrQ23Dt4,6670.77046,6678.607335 - Q&A: Will there be a Blueprint Designer Mk.2?
+- [ ] yt-CREPrQ23Dt4,6678.607335,6714.312943 - Q&A: Do you know when the Update is going to Early Access release?
+- [ ] yt-CREPrQ23Dt4,6900.448189,6942.736332 - Dylan, Mark, and Snutt Talk: Main Menu not updated
+- [ ] yt-CREPrQ23Dt4,8188.264471,8194.121731 - Q&A: Can you get the eyedropper to function?
