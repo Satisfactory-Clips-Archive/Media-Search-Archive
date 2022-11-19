@@ -1103,7 +1103,6 @@ class TopicData
 		],
 		'PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP' => [ // Blueprints
 			'Features',
-			'Possible Features',
 		],
 		'PLbjDnnBIxiEomDrLRY8jOvB_l8DEGgrnG' => [ // Satisfactory Calculator
 			'Community',
@@ -1194,6 +1193,10 @@ class TopicData
 			'Biomes',
 		],
 		'PLbjDnnBIxiEoGfsgeuz9AkG6fxwj9EHJz' => [ // Spire Coast
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiErav3ZtCkRrz9pFsE151oDk' => [ // Paradise Island
 			'Environment',
 			'Biomes',
 		],
@@ -1659,6 +1662,10 @@ class TopicData
 		],
 		'PLbjDnnBIxiEqdAntA83_NEfB5D19rGlwh' => [ // Its_BitZ
 			'Community',
+		],
+		'Blueprint Designer' => [
+			'Features',
+			'Buildings',
 		],
 	];
 

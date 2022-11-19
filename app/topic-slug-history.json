@@ -1021,7 +1021,8 @@
         "community\/satisfactory-calculator": 1617790706
     },
     "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP": {
-        "features\/possible-features\/blueprints": 1617790706
+        "features\/possible-features\/blueprints": 1617790706,
+        "features\/blueprints": 1668874609
     },
     "Tom": {
         "community\/tom": 1617993683
@@ -1672,5 +1673,11 @@
     "PLbjDnnBIxiEqmCgJaOWMdicmhcQuchNow": {
         "update-7-teasers": 1665150954,
         "satisfactory-updates\/teasers-and-trailers\/update-7-teasers": 1665152203
+    },
+    "PLbjDnnBIxiErav3ZtCkRrz9pFsE151oDk": {
+        "environment\/biomes\/paradise-island": 1668874609
+    },
+    "Blueprint Designer": {
+        "features\/buildings\/blueprint-designer": 1668874609
     }
 }
