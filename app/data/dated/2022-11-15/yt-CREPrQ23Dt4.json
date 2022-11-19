@@ -52,7 +52,7 @@
 		["Satisfactory Update 7", "Special Guests", "Zip Lines"],
 		false,
 		["Satisfactory Update 7", "Release Builds"],
-		false,
+		null,
 		["User Interface", "Build Modes"],
 		["Satisfactory Update 7", "Autosave"],
 		["Satisfactory Update 7", "Steam Store", "Epic Store"],
