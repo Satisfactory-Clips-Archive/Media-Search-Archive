@@ -187,7 +187,7 @@
 - [ ] yt-Dtm6xIj-wM4,2733.4333333333334,2765.667433 - Q&A: Who is the funniest at the stand-ups?
 - [ ] yt-Dtm6xIj-wM4,2765.6666666666665,2806.989791 - Q&A: How long does it take to build a medium-sized factory?
 - [ ] yt-Dtm6xIj-wM4,2806.989791,2816.5666666666666 - Q&A: Can I build as high as I want?
-- [ ] yt-Dtm6xIj-wM4,2816.569184,2836.733333333333 - Q&A: Any plans for stuff like Blueprints?
+- [x] yt-Dtm6xIj-wM4,2816.569184,2836.733333333333 - Q&A: Any plans for stuff like Blueprints?
 - [ ] yt-Dtm6xIj-wM4,2949.0666666666666,2974.665846 - Jace Talk: Getting a lot of questions that have been asked before?
 - [ ] yt-Dtm6xIj-wM4,2974.6666666666665,3016.687892 - Q&A: Besides the starting areas,will there be random spawns in the release?
 - [ ] yt-Dtm6xIj-wM4,3016.687892,3049.733333333333 - Q&A: How long have Jace, Hannah, and Snutt been in game dev?
@@ -621,7 +621,7 @@
 - [ ] yt-rATcozDE25c,435.5351,476.04223333333334 - Q&A: Will there be achievements?
 - [ ] yt-rATcozDE25c,476.04223333333334,527.5603666666667 - Q&A: Can we use Turbofuel in Jetpacks?
 - [ ] yt-rATcozDE25c,527.5603666666667,538.5713666666667 - Q&A: Will you add Pipes?
-- [ ] yt-rATcozDE25c,538.5713666666667,591.3240666666667 - Q&A: Are there any plans to put a blueprint system in the game?
+- [x] yt-rATcozDE25c,538.5713666666667,591.3240666666667 - Q&A: Are there any plans to put a blueprint system in the game?
 - [ ] yt-rATcozDE25c,591.3240666666667,600.6 - Q&A: What about the giant crab in the trailer, can we get that?
 - [ ] yt-rATcozDE25c,600.6,632.7321000000001 - Q&A: Will there be vehicle optimization for co-op?
 - [ ] yt-rATcozDE25c,696.7961,736.1020333333333 - Q&A: Will we ever be able to do something with Nuclear Waste?
@@ -731,7 +731,7 @@
 - [ ] yt--JXPsTlJIiI,1078.9779,1094.8270666666667 - Q&A: How do you have your coffee and/or tea?
 - [ ] yt--JXPsTlJIiI,1094.8270666666667,1151.6505 - Q&A: Do you look at the mods and think there are features you'd like to include in the full game?
 - [ ] yt--JXPsTlJIiI,1151.6505,1208.0401666666667 - Q&A: Dedicated Server status report!
-- [ ] yt--JXPsTlJIiI,1208.0401666666667,1266.3651 - Q&A: Do you plan to add copy & paste functionality / blueprints?
+- [x] yt--JXPsTlJIiI,1208.0401666666667,1266.3651 - Q&A: Do you plan to add copy & paste functionality / blueprints?
 
 ## 2021-01-15
 - [ ] yt-Jxh8kvtUuxY,46.3463,56.38966666666667 - Nitrogen
@@ -1121,36 +1121,3 @@
 - [ ] yt-5Pz_dZbEx-4,373.00596666666667,404.3039 - What's going to be in Update 7
 - [ ] yt-5Pz_dZbEx-4,404.33726666666666,414.614 - To Be Continued
 - [ ] yt-5Pz_dZbEx-4,414.64756666666665,442.442 - Shifting focus to reach 1.0
-
-## 2022-11-11
-- [ ] yt-9KBQyjy-a6g,37.17046666666667,67.20046666666667 - Update 7 new Building Teaser
-- [ ] yt-9KBQyjy-a6g,67.23383333333334,95.06163333333333 - BLUEPRINTS (actually not kidding)
-- [ ] yt-9KBQyjy-a6g,95.095,123.85706666666667 - Blueprints are a long-requested Feature
-- [ ] yt-9KBQyjy-a6g,123.89043333333333,145.2451 - Community point of view vs. Coffee Stain Studio's point of view
-- [ ] yt-9KBQyjy-a6g,145.27846666666667,201.1009 - Unreal Engine Object Limit
-- [ ] yt-9KBQyjy-a6g,354.9879666666667,375.208167 - Plan ahead for expansion
-- [ ] yt-9KBQyjy-a6g,375.24153333333334,396.5962 - Power
-- [ ] yt-9KBQyjy-a6g,403.521306,426.25916666666666 - Resource Costs & Overclocking
-- [ ] yt-9KBQyjy-a6g,517.8166632027778,557.0231333333334 - Preparing an area for the Manifold Blueprint
-- [ ] yt-9KBQyjy-a6g,630.2296,653.4861666666667 - Integrating the freshly-applied Blueprint
-- [ ] yt-9KBQyjy-a6g,653.5195333333334,687.3533333333334 - Expanding the freshly-applied Blueprint
-- [ ] yt-9KBQyjy-a6g,772.3382333333334,792.4249666666667 - Examples & Suggestions
-- [ ] yt-9KBQyjy-a6g,792.4583333333334,842.6084333333333 - Limitations of the Blueprint Designer
-- [ ] yt-9KBQyjy-a6g,842.6418,892.6584333333334 - Blueprints are not persistent to your Save file
-- [ ] yt-9KBQyjy-a6g,974.0397333333334,988.7210666666667 - Sprint Mode for Ziplines
-
-## 2022-11-15
-- [ ] yt-CREPrQ23Dt4,3326.131639,3351.962562 - Q&A: What Tier are Blueprints unlocked in?
-- [ ] yt-CREPrQ23Dt4,3351.962562,3409.305696 - Q&A: How much do Blueprints cost?
-- [ ] yt-CREPrQ23Dt4,3926.202571,3971.563964 - Q&A: When did you decide to add Blueprints?
-- [ ] yt-CREPrQ23Dt4,3971.563964,4008.838937 - Q&A: What do you need to build Blueprints?
-- [ ] yt-CREPrQ23Dt4,4008.838937,4045.864719 - Q&A: Are Blueprints part of the MAM or part of general Tiers?
-- [ ] yt-CREPrQ23Dt4,5620.926718247916,5677.699392 - Dylan, Mark, and Snutt Talk: Passive Mode
-- [ ] yt-CREPrQ23Dt4,6021.4571249125,6033.634519959804 - Q&A: Will we get more Blueprints with more space for higher Tiers?
-- [ ] yt-CREPrQ23Dt4,6197.319266,6227.943388758088 - Q&A: Train lanes, no power?
-- [ ] yt-CREPrQ23Dt4,6227.943388758088,6240.003332 - Community FYI: Epic is slow as fuck
-- [ ] yt-CREPrQ23Dt4,6240.003332,6249.676934 - Q&A: 128x128?
-- [ ] yt-CREPrQ23Dt4,6670.77046,6678.607335 - Q&A: Will there be a Blueprint Designer Mk.2?
-- [ ] yt-CREPrQ23Dt4,6678.607335,6714.312943 - Q&A: Do you know when the Update is going to Early Access release?
-- [ ] yt-CREPrQ23Dt4,6900.448189,6942.736332 - Dylan, Mark, and Snutt Talk: Main Menu not updated
-- [ ] yt-CREPrQ23Dt4,8188.264471,8194.121731 - Q&A: Can you get the eyedropper to function?
