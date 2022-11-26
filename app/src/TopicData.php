@@ -97,6 +97,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
+		'PLbjDnnBIxiErudM4oVI8PObNJ3llSQOC5' => [ // Update 7 Patch Notes Video
+			701,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
 		'Update 5 Quiz: Underrated/Overrated' => [
 			1,
 			'Satisfactory Updates',
@@ -1663,9 +1668,15 @@ class TopicData
 		'PLbjDnnBIxiEqdAntA83_NEfB5D19rGlwh' => [ // Its_BitZ
 			'Community',
 		],
-		'Blueprint Designer' => [
+		'PLbjDnnBIxiErMbbLL3R98Zi20naPbgCUT' => [ // Blueprint Designer
 			'Features',
 			'Buildings',
+		],
+		'PLbjDnnBIxiErnlskkk5ZE5FdX9Zo_qH_H' => [ // Runescape
+			'Off-Topic'
+		],
+		'PLbjDnnBIxiEr_TAa3FE8nm5yA3FCPl0SS' => [ // Monkey Island
+			'Off-Topic',
 		],
 	];
 
