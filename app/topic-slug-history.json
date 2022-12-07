@@ -242,7 +242,8 @@
         "features\/possible-features\/dlc": 1611444659
     },
     "PLbjDnnBIxiEralVcWNAwdbnP_tRGbAhFx": {
-        "features\/possible-features\/game-modes": 1611444659
+        "features\/possible-features\/game-modes": 1611444659,
+        "features\/game-modes": 1670441477
     },
     "PLbjDnnBIxiErmYlQEEHD-GrNpRC1_6R9b": {
         "features\/possible-features\/third-party-service-integration": 1611444659
@@ -748,13 +749,16 @@
         "features\/power-management\/power-switch": 1613779790
     },
     "PLbjDnnBIxiEoPhqRIy60XVEui9X3o6p0S": {
-        "features\/possible-features\/game-modes\/battle-royale": 1613829869
+        "features\/possible-features\/game-modes\/battle-royale": 1613829869,
+        "features\/possible-features\/battle-royale": 1670441477
     },
     "PLbjDnnBIxiEpI_eZ6JseCdaLBHV5IokQ1": {
-        "features\/possible-features\/game-modes\/creative-mode": 1613829869
+        "features\/possible-features\/game-modes\/creative-mode": 1613829869,
+        "features\/game-modes\/creative-mode": 1670441477
     },
     "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl": {
-        "features\/possible-features\/game-modes\/peaceful-mode": 1613829869
+        "features\/possible-features\/game-modes\/peaceful-mode": 1613829869,
+        "features\/game-modes\/peaceful-mode": 1670442039
     },
     "PLbjDnnBIxiEoxIy2QXhvKUmi6kTjM4sVS": {
         "features\/equipment\/blade-runners": 1614225057
@@ -798,7 +802,8 @@
     },
     "PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO": {
         "satisfactory-updates\/speculative\/satisfactory-update-7": 1615335822,
-        "satisfactory-updates\/pending\/satisfactory-update-7": 1664622807
+        "satisfactory-updates\/pending\/satisfactory-update-7": 1664622807,
+        "satisfactory-updates\/released\/satisfactory-update-7": 1670441477
     },
     "PLbjDnnBIxiEoxTyK_HelUP2U9cdXFgVK6": {
         "features\/buildings\/particle-accelerator": 1615923625

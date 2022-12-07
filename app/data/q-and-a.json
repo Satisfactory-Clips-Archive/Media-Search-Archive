@@ -5,7 +5,7 @@
         "topics": [
             "features\/buildings\/overclocking-and-underclocking",
             "features\/power-management",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "Ekab1HbNK5g",
@@ -20,8 +20,8 @@
         "title": "Q&A: Are you sure next week is a good plan? I cannot play Experimental due to crashes right now.",
         "date": "2022-11-29",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "GGrFhpmf7CY"
@@ -48,7 +48,7 @@
         "title": "Q&A: Update 7 release date, revealed?",
         "date": "2022-11-29",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "replaces": [
             "4WdFC3Y5fx4",
@@ -649,7 +649,7 @@
         "title": "Q&A: Are you ever adding PvP?",
         "date": "2022-11-29",
         "topics": [
-            "features\/possible-features\/game-modes\/battle-royale"
+            "features\/possible-features\/battle-royale"
         ],
         "duplicates": [
             "rYjU9Pa3p_M",
@@ -1038,8 +1038,8 @@
         "title": "Q&A: Update 7 in Early Access, when?",
         "date": "2022-11-22",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
-            "satisfactory-updates\/release-builds"
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO"
@@ -1205,7 +1205,7 @@
         "topics": [
             "environment\/resources",
             "features\/buildings\/space-elevator",
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/requested-features"
         ],
         "duplicates": [
@@ -1602,7 +1602,7 @@
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
             "features\/tiers",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "yt-CREPrQ23Dt4,4008.838937,4045.864719"
@@ -1615,7 +1615,7 @@
             "environment\/resources",
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "trolling"
         ],
         "seealso": [
@@ -1628,7 +1628,7 @@
         "topics": [
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "replaces": [
@@ -1682,7 +1682,7 @@
             "environment\/resources",
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "seealso": [
@@ -1697,7 +1697,7 @@
             "features\/buildings\/blueprint-designer",
             "features\/buildings\/m-a-m",
             "features\/tiers",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "seealso": [
@@ -1711,7 +1711,7 @@
             "features\/blueprints",
             "features\/build-modes\/zooping",
             "features\/buildings\/blueprint-designer",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "seealso": [
@@ -1725,7 +1725,7 @@
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
             "features\/tiers",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "duplicates": [
@@ -1744,7 +1744,7 @@
             "community\/satisfactory-calculator",
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "seealso": [
@@ -1758,7 +1758,7 @@
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
             "features\/transportation\/trains",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "seealso": [
@@ -1773,7 +1773,7 @@
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "duplicatedby": "yt-CREPrQ23Dt4,6021.4571249125,6033.634519959804"
@@ -1786,7 +1786,7 @@
             "features\/buildings\/blueprint-designer",
             "features\/buildings\/coal-generator",
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "seealso": [
@@ -1799,7 +1799,7 @@
         "topics": [
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "seealso": [
@@ -1814,7 +1814,7 @@
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
             "features\/unplanned-features\/mk-2-buildings",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "seealso": [
@@ -1828,8 +1828,8 @@
         "topics": [
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
             "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "replaces": [
@@ -1847,7 +1847,7 @@
         "topics": [
             "features\/blueprints",
             "features\/buildings\/blueprint-designer",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
         "seealso": [
@@ -1870,7 +1870,7 @@
         "date": "2022-11-15",
         "topics": [
             "features\/save-system\/autosave",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "GGrFhpmf7CY"
@@ -1925,7 +1925,7 @@
         "title": "Q&A: Any new planned Game Modes?",
         "date": "2022-11-08",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "mods\/mods-vs-features"
         ],
         "seealso": [
@@ -1995,7 +1995,7 @@
         "title": "Q&A: What is the biggest problem you're all working on right now?",
         "date": "2022-11-08",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "satisfactory-updates\/speculative\/satisfactory-update-8"
         ],
         "seealso": [
@@ -2023,7 +2023,7 @@
             "features\/crafting\/recipes\/alternate-recipes",
             "features\/equipment\/beacon",
             "features\/power-management\/nuclear-energy\/nuclear-refinement",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "duplicates": [
             "4tCjpG1zJc0",
@@ -2213,7 +2213,7 @@
         "date": "2022-11-01",
         "topics": [
             "features\/fluids",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "nTp7V3squaU"
@@ -2285,7 +2285,7 @@
             "features\/crafting\/recipes\/alternate-recipes",
             "features\/equipment\/beacon",
             "features\/power-management\/nuclear-energy\/nuclear-refinement",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "duplicatedby": "5YEG0e2Zrn0"
     },
@@ -2293,7 +2293,7 @@
         "title": "Q&A: Will the Z-fighting be addressed in Update 7?",
         "date": "2022-11-01",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "technology\/graphics"
         ],
         "duplicates": [
@@ -2714,8 +2714,8 @@
         "title": "Q&A: Any more patches planned for Update 6 before Update 7?",
         "date": "2022-10-25",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
-            "satisfactory-updates\/released\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "duplicates": [
             "vuY1wQYZpH4"
@@ -2778,7 +2778,7 @@
         "title": "Q&A: Game Mode with Base Defense?",
         "date": "2022-10-25",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/unplanned-features\/base-defense"
         ],
         "seealso_topic_cards": [
@@ -2913,7 +2913,7 @@
         "date": "2022-10-25",
         "topics": [
             "features\/fluids\/pipes",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEr6Nss4Y03AxUncqfZfcu1L"
@@ -2994,7 +2994,7 @@
         "title": "Q&A: Any possibility to make a hardcore mode?",
         "date": "2022-10-25",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/requested-features"
         ],
         "seealso": [
@@ -3008,7 +3008,7 @@
         "topics": [
             "environment\/biomes\/spire-coast",
             "environment\/resources",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "satisfactory-updates\/world-update"
         ],
         "duplicates": [
@@ -3083,7 +3083,7 @@
         "topics": [
             "features\/buildings\/overclocking-and-underclocking",
             "features\/power-management\/nuclear-energy",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "eOAOIWMkXM4",
@@ -3305,7 +3305,7 @@
         "title": "Q&A: Permanent FICSMAS?",
         "date": "2022-10-25",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/requested-features",
             "satisfactory-updates\/seasonal-events\/fics-mas"
         ],
@@ -3331,8 +3331,8 @@
         "title": "Q&A: Wouldn't it be better to name it 6.2?",
         "date": "2022-10-25",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
-            "satisfactory-updates\/released\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq_0QTxH7_C0c8quZsI1uMu",
@@ -3394,7 +3394,7 @@
         "topics": [
             "coffee-stainers",
             "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "3qwBTHuBu4M",
@@ -3459,7 +3459,7 @@
         "title": "Q&A: Prestige Mode?",
         "date": "2022-10-18",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/requested-features"
         ],
         "seealso": [
@@ -3562,7 +3562,7 @@
         "date": "2022-10-18",
         "topics": [
             "features\/crafting\/recipes\/alternate-recipes",
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/requested-features"
         ],
         "seealso": [
@@ -3902,7 +3902,7 @@
         "date": "2022-10-18",
         "topics": [
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "technology\/graphics"
         ],
         "duplicatedby": "uGPAFHOniIU"
@@ -4095,7 +4095,7 @@
         "date": "2022-10-04",
         "topics": [
             "features\/buildings\/overclocking-and-underclocking",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "duplicates": [
             "2811Pq6T12g",
@@ -4196,7 +4196,7 @@
         "date": "2022-10-04",
         "topics": [
             "environment\/resources\/sam-ore",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "duplicates": [
             "-b2L_nlW_Fo",
@@ -4392,7 +4392,7 @@
         "topics": [
             "features\/equipment",
             "features\/requested-features",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "3wiy2WlDVNY",
@@ -4846,7 +4846,7 @@
         "date": "2022-09-27",
         "topics": [
             "features\/buildings\/overclocking-and-underclocking",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErcP0g2Ihv6H7ZJUVB8sOqH"
@@ -4978,7 +4978,7 @@
         "topics": [
             "environment\/biomes\/red-jungle",
             "environment\/biomes\/titan-forest",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "satisfactory-updates\/world-update"
         ],
         "seealso": [
@@ -5217,8 +5217,8 @@
         "title": "What's Next?",
         "date": "2022-09-20",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
-            "satisfactory-updates\/released\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "po9Ba6ZL_UM",
@@ -5582,7 +5582,7 @@
         "date": "2022-09-13",
         "topics": [
             "features\/crafting\/recipes",
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/requested-features"
         ],
         "seealso": [
@@ -6632,7 +6632,7 @@
         "title": "Q&A: Plans for passive mode?",
         "date": "2022-08-30",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "duplicates": [
             "KFT0l0kO5qg",
@@ -6660,7 +6660,7 @@
         "title": "Q&A: Permadeath?",
         "date": "2022-08-30",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/requested-features"
         ],
         "seealso": [
@@ -7142,7 +7142,7 @@
         "title": "Q&A: Easy mode for Satisfactory?",
         "date": "2022-08-23",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/requested-features"
         ],
         "seealso": [
@@ -10815,7 +10815,7 @@
         "title": "Q&A: Peaceful Mode, ever?",
         "date": "2022-06-28",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl"
@@ -10849,7 +10849,7 @@
         "date": "2022-06-17",
         "topics": [
             "community",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "trolling"
         ],
         "replacedby": "yt-CREPrQ23Dt4,6678.607335,6714.312943"
@@ -11338,7 +11338,7 @@
         "date": "2022-06-07",
         "topics": [
             "community",
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO",
@@ -12017,7 +12017,7 @@
         "title": "Q&A: Any chance for a Peaceful Mode with no Creatures?",
         "date": "2022-05-24",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl"
@@ -16402,8 +16402,8 @@
         "title": "Q&A: Is there a rough estimate for the next Update?",
         "date": "2022-03-15",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
-            "satisfactory-updates\/released\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpOfQ2ATioPVEQvCuB6oJSR",
@@ -18089,7 +18089,7 @@
         "date": "2022-02-22",
         "topics": [
             "features\/buildings\/space-elevator",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "vI1MbFXJphw"
@@ -18159,7 +18159,7 @@
         "date": "2022-02-22",
         "topics": [
             "environment",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "Q7byNQ9xEkw"
@@ -18534,7 +18534,7 @@
         "topics": [
             "features\/buildings\/space-elevator",
             "features\/crafting\/recipes",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso_video_cards": [
             "Q7byNQ9xEkw"
@@ -19172,8 +19172,8 @@
         "topics": [
             "environment\/biomes\/spire-coast",
             "satisfactory-updates\/pending\/satisfactory-1-0",
-            "satisfactory-updates\/pending\/satisfactory-update-7",
             "satisfactory-updates\/released\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "satisfactory-updates\/world-update"
         ],
         "duplicates": [
@@ -19529,7 +19529,7 @@
         "title": "Q&A: Creative Mode?",
         "date": "2022-02-08",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicates": [
             "3m68c85bVUM",
@@ -20622,7 +20622,7 @@
         "title": "Q&A: Will you do Creative Mode?",
         "date": "2021-12-14",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpI_eZ6JseCdaLBHV5IokQ1"
@@ -22708,7 +22708,7 @@
         "title": "Q&A: Creative Mode?",
         "date": "2021-11-23",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -22976,7 +22976,7 @@
         "title": "Q&A: Will there ever be an option to toggle off monsters for those who want to just build?",
         "date": "2021-11-16",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl"
@@ -23807,7 +23807,7 @@
         "title": "Q&A: Any plans for sandbox\/Creative Mode?",
         "date": "2021-11-09",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpI_eZ6JseCdaLBHV5IokQ1",
@@ -24200,7 +24200,7 @@
         "title": "Q&A: Responsive mode?",
         "date": "2021-11-09",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "trolling"
         ],
         "seealso": [
@@ -24752,7 +24752,7 @@
         "title": "Q&A: Chance we'll see Peaceful Modes in the game soon?",
         "date": "2021-11-09",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl",
@@ -27794,7 +27794,7 @@
         "title": "Q&A: When is Update 7 coming out?",
         "date": "2021-10-19",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7"
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "NA6KIEms16E",
@@ -30940,9 +30940,9 @@
         "title": "Q&A: Do you already have a plan after Update 5?",
         "date": "2021-09-28",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
             "satisfactory-updates\/released\/satisfactory-update-5",
             "satisfactory-updates\/released\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "satisfactory-updates\/speculative\/satisfactory-update-8"
         ],
         "seealso": [
@@ -31055,7 +31055,7 @@
         "title": "Q&A: Do we get a \"Save+\"?",
         "date": "2021-09-28",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/requested-features"
         ],
         "seealso": [
@@ -31106,7 +31106,7 @@
         "date": "2021-09-28",
         "topics": [
             "features\/crafting\/recipes",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "duplicates": [
             "dUS1wSorYGA",
@@ -31350,7 +31350,7 @@
         "date": "2021-09-28",
         "topics": [
             "environment\/resources",
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/requested-features"
         ],
         "seealso_topic_cards": [
@@ -35229,7 +35229,7 @@
         "title": "Q&A: Is Satisfactory a racing game?",
         "date": "2021-08-31",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/transportation\/vehicles"
         ],
         "seealso": [
@@ -36677,7 +36677,7 @@
         "title": "Q&A: Any plans for peace mode in the game?",
         "date": "2021-08-17",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl",
@@ -36966,8 +36966,8 @@
         "date": "2021-08-17",
         "topics": [
             "features\/buildings\/the-hub",
+            "features\/game-modes",
             "features\/pioneer",
-            "features\/possible-features\/game-modes",
             "features\/unplanned-features"
         ],
         "seealso_video_cards": [
@@ -37847,7 +37847,7 @@
         "title": "Q&A: Is there going to be a sandbox mode in Satisfactory?",
         "date": "2021-08-10",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpI_eZ6JseCdaLBHV5IokQ1",
@@ -37923,7 +37923,7 @@
         "date": "2021-08-10",
         "topics": [
             "features\/equipment\/nobelisk\/detonator",
-            "features\/possible-features\/game-modes\/battle-royale"
+            "features\/possible-features\/battle-royale"
         ],
         "seealso": [
             "H_jxvn-F_WY"
@@ -37950,7 +37950,7 @@
         "date": "2021-08-10",
         "topics": [
             "environment\/creatures",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "1sDKlvkvGWY"
@@ -38463,8 +38463,8 @@
         "title": "Q&A: When's Update 6?",
         "date": "2021-08-03",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
             "satisfactory-updates\/released\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-7",
             "trolling"
         ],
         "seealso_topic_cards": [
@@ -39506,7 +39506,7 @@
         "title": "Q&A: Does Update 5 have a MOBA in?",
         "date": "2021-08-03",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "H_jxvn-F_WY"
@@ -40342,7 +40342,7 @@
         "title": "Q&A: When are you adding Battle Royale event?",
         "date": "2021-07-20",
         "topics": [
-            "features\/possible-features\/game-modes\/battle-royale"
+            "features\/possible-features\/battle-royale"
         ],
         "duplicates": [
             "-8W5tI5mRPM",
@@ -40456,7 +40456,7 @@
         "title": "Q&A: Maybe starting from scratch in Story Mode, importing save in Construction Mode?",
         "date": "2021-07-20",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "story-and-lore"
         ],
         "seealso": [
@@ -40961,7 +40961,7 @@
         "title": "Q&A: Casual & Ranked modes, when?",
         "date": "2021-07-20",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "H_jxvn-F_WY"
@@ -40999,7 +40999,7 @@
         "title": "Q&A: Satisfactory Battle Royale?",
         "date": "2021-07-20",
         "topics": [
-            "features\/possible-features\/game-modes\/battle-royale"
+            "features\/possible-features\/battle-royale"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoPhqRIy60XVEui9X3o6p0S",
@@ -41585,7 +41585,7 @@
         "title": "Q&A: Creative Mode?",
         "date": "2021-07-13",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpI_eZ6JseCdaLBHV5IokQ1"
@@ -42114,7 +42114,7 @@
         "title": "Q&A: Is there going to be some kind of Peaceful Mode?",
         "date": "2021-07-13",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl"
@@ -42252,7 +42252,7 @@
         "title": "Q&A: Any chance there will be survival mode soon like monsters attack your base at night and stuff?",
         "date": "2021-07-13",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/unplanned-features\/base-defense"
         ],
         "seealso": [
@@ -43869,7 +43869,7 @@
         "title": "Q&A: When are you guys adding Battle Royale mode?",
         "date": "2021-06-29",
         "topics": [
-            "features\/possible-features\/game-modes\/battle-royale"
+            "features\/possible-features\/battle-royale"
         ],
         "duplicatedby": "H_jxvn-F_WY"
     },
@@ -43897,7 +43897,7 @@
         "title": "Q&A: Is peaceful mode basically no creatures?",
         "date": "2021-06-29",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "seealso": [
             "XJ798jouqJE"
@@ -44507,7 +44507,7 @@
         "date": "2021-06-29",
         "topics": [
             "environment\/resources",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "x_RdJmv4yTw"
@@ -46233,7 +46233,7 @@
         "topics": [
             "features\/crafting",
             "features\/crafting\/superposition-oscillator",
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/tiers"
         ],
         "seealso": [
@@ -47474,7 +47474,7 @@
         "title": "Q&A: Will Satisfactory have PvP?",
         "date": "2021-06-01",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "june-2021-epic-mega-sale-stream"
         ],
         "duplicatedby": "qpRyAZihEEA"
@@ -47899,7 +47899,7 @@
         "title": "Q&A: When will there be a Creative Mode or Train remake?",
         "date": "2021-05-25",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode",
+            "features\/game-modes\/creative-mode",
             "features\/transportation\/trains\/train-signals"
         ],
         "seealso": [
@@ -48085,7 +48085,7 @@
         "title": "Q&A: Have you tossed around the idea of Survival?",
         "date": "2021-05-25",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "incoming_video_cards": [
             "9fORTos7008"
@@ -48098,7 +48098,7 @@
         "topics": [
             "coffee-stainers\/jace",
             "coffee-stainers\/mark",
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "story-and-lore"
         ],
@@ -49486,7 +49486,7 @@
         "title": "Q&A: Will there be a Peaceful mode?",
         "date": "2021-05-11",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "duplicatedby": "XJ798jouqJE"
     },
@@ -50203,8 +50203,8 @@
         "title": "Q&A: Will there be a Creative Mode?",
         "date": "2021-05-04",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode",
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/creative-mode",
+            "features\/game-modes\/peaceful-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -52185,7 +52185,7 @@
         "title": "Q&A: Will there be Creative Mode?",
         "date": "2021-04-20",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -53235,7 +53235,7 @@
         "title": "Q&A: Is Creative Mode coming?",
         "date": "2021-03-30",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -53458,7 +53458,7 @@
         "title": "Q&A: Will there be a Peaceful Mode like in Subnautica?",
         "date": "2021-03-30",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode",
+            "features\/game-modes\/peaceful-mode",
             "off-topic\/subnautica"
         ]
     },
@@ -54117,7 +54117,7 @@
         "title": "Q&A: Will there be a no-mob option ?",
         "date": "2021-03-23",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "duplicatedby": "XJ798jouqJE"
     },
@@ -54125,7 +54125,7 @@
         "title": "Q&A: Hard Mode?",
         "date": "2021-03-23",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "duplicatedby": "vMgvD3QPJqM"
     },
@@ -54133,7 +54133,7 @@
         "title": "Q&A: I play it with the Peacful Mode mod, how's that for feedback?",
         "date": "2021-03-23",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "seealso": [
             "XJ798jouqJE"
@@ -55747,7 +55747,7 @@
         "title": "Q&A: Will there be a Creative Mode?",
         "date": "2021-03-16",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -56258,10 +56258,10 @@
         "title": "Q&A: Is there going to be Update 5 after Update 4, or is it going to be finished?",
         "date": "2021-03-09",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-update-7",
             "satisfactory-updates\/released\/satisfactory-update-4",
             "satisfactory-updates\/released\/satisfactory-update-5",
-            "satisfactory-updates\/released\/satisfactory-update-6"
+            "satisfactory-updates\/released\/satisfactory-update-6",
+            "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
             "1seCWtzI5kM",
@@ -59058,7 +59058,7 @@
         "date": "2021-02-09",
         "topics": [
             "coffee-stainers\/mark",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "duplicatedby": "vMgvD3QPJqM"
     },
@@ -59193,7 +59193,7 @@
         "date": "2021-02-09",
         "topics": [
             "features\/buildings",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "vMgvD3QPJqM"
@@ -60541,7 +60541,7 @@
         "title": "Q&A: Is Creative Mode coming?",
         "date": "2021-02-02",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -61466,7 +61466,7 @@
         "title": "Q&A: Battle Royale mode?",
         "date": "2021-01-26",
         "topics": [
-            "features\/possible-features\/game-modes\/battle-royale",
+            "features\/possible-features\/battle-royale",
             "trolling"
         ],
         "duplicatedby": "H_jxvn-F_WY"
@@ -61577,7 +61577,7 @@
         "title": "Q&A: Will you guys eventually add survival elements like hunger & thirst?",
         "date": "2021-01-26",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "duplicatedby": "gh63LOO7fTk"
     },
@@ -63906,7 +63906,7 @@
         "title": "Q&A: Will we get a Battle Royale Update?",
         "date": "2020-12-15",
         "topics": [
-            "features\/possible-features\/game-modes\/battle-royale"
+            "features\/possible-features\/battle-royale"
         ],
         "duplicatedby": "H_jxvn-F_WY"
     },
@@ -64059,7 +64059,7 @@
         "topics": [
             "community\/signpostmarv",
             "environment\/world-map",
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/unplanned-features\/base-defense"
         ],
         "duplicatedby": "nYL4xlSiPpU"
@@ -64239,7 +64239,7 @@
         "title": "Q&A: How about Creative Mode?",
         "date": "2020-12-15",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -64636,7 +64636,7 @@
         "title": "Q&A: Will there be a creative-style mode in the future?",
         "date": "2020-12-08",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -64834,7 +64834,7 @@
         "title": "Q&A: Will there be any Base Defense?",
         "date": "2020-12-08",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/unplanned-features\/base-defense"
         ],
         "duplicatedby": "nYL4xlSiPpU"
@@ -66027,7 +66027,7 @@
         "title": "Q&A: When are you adding hunger & thirst?",
         "date": "2020-11-17",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "duplicatedby": "gh63LOO7fTk"
     },
@@ -66379,7 +66379,7 @@
         "date": "2020-11-10",
         "topics": [
             "environment\/resources",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "incoming_video_cards": [
             "f82WcT7hjGE"
@@ -66585,7 +66585,7 @@
         "title": "Q&A: Is there something you'll never add to the game that you recommend Modders add instead?",
         "date": "2020-11-10",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/unplanned-features\/base-defense",
             "mods",
             "mods\/mods-vs-features"
@@ -66770,7 +66770,7 @@
         "title": "Q&A: Is there going to be a Creative Mode?",
         "date": "2020-11-10",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -67320,7 +67320,7 @@
         "title": "Q&A: Is there going to be a Creative Mode?",
         "date": "2020-11-03",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -67405,9 +67405,9 @@
         "date": "2020-11-03",
         "topics": [
             "environment\/world-map",
+            "features\/game-modes",
             "features\/multiplayer",
-            "features\/multiplayer\/dedicated-servers",
-            "features\/possible-features\/game-modes"
+            "features\/multiplayer\/dedicated-servers"
         ],
         "duplicates": [
             "sMGWvbL09qA"
@@ -69710,8 +69710,8 @@
         "date": "2020-10-01",
         "topics": [
             "features\/buildings\/the-hub",
-            "features\/multiplayer",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes",
+            "features\/multiplayer"
         ],
         "seealso": [
             "CxDrVE9RIHc",
@@ -69808,7 +69808,7 @@
         "title": "Q&A: Can we get survival features added in a mode for those of us who want more of a challenge?",
         "date": "2020-10-01",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso_video_cards": [
             "8WYNwGDLYNE",
@@ -70138,7 +70138,7 @@
         "title": "Q&A: Will there be an official peaceful\/passive mode?",
         "date": "2020-10-01",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "seealso_video_cards": [
             "8WYNwGDLYNE",
@@ -70279,7 +70279,7 @@
         "title": "Q&A: Satisfactory Sandbox ever?",
         "date": "2020-09-29",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -70607,7 +70607,7 @@
         "title": "Q&A: Will there be a Creative Mode?",
         "date": "2020-09-22",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -70694,7 +70694,7 @@
         "title": "Q&A: Hoping for Base Defence?",
         "date": "2020-09-22",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/unplanned-features\/base-defense"
         ],
         "duplicatedby": "nYL4xlSiPpU"
@@ -71457,7 +71457,7 @@
         "title": "Q&A: Will there be more polish to the Survival aspects of the game?",
         "date": "2020-09-15",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEphc1QenCFLI8cOhJF8szkh"
@@ -71645,7 +71645,7 @@
         "title": "Q&A: Battle Royale Mode?",
         "date": "2020-09-08",
         "topics": [
-            "features\/possible-features\/game-modes\/battle-royale"
+            "features\/possible-features\/battle-royale"
         ],
         "duplicatedby": "H_jxvn-F_WY"
     },
@@ -71836,7 +71836,7 @@
         "title": "Q&A: Ever consider making a VR version of Satisfactory?",
         "date": "2020-09-08",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/unplanned-features\/vr"
         ],
         "duplicatedby": "A7toMdMe1sc"
@@ -71862,7 +71862,7 @@
         "date": "2020-09-08",
         "topics": [
             "features\/buildings\/space-elevator",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "xit3DLnmAhE"
@@ -71987,7 +71987,7 @@
         "title": "Q&A: Elements of Survival ?",
         "date": "2020-09-08",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "duplicatedby": "gh63LOO7fTk"
     },
@@ -72241,7 +72241,7 @@
         "title": "Q&A: Will there be a Peacfull Mode with no Hostile Creatures?",
         "date": "2020-09-08",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "duplicatedby": "XJ798jouqJE"
     },
@@ -72883,7 +72883,7 @@
         "title": "Q&A: Is there going to be creative mode?",
         "date": "2020-09-01",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -73515,7 +73515,7 @@
         "date": "2020-08-25",
         "topics": [
             "features\/multiplayer",
-            "features\/possible-features\/game-modes\/battle-royale"
+            "features\/possible-features\/battle-royale"
         ],
         "legacyalts": [
             "tc-SavorySlickWombatOSkomodo"
@@ -73540,7 +73540,7 @@
         "date": "2020-08-25",
         "topics": [
             "environment\/resources",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "rtOmNkt5whw"
@@ -73621,7 +73621,7 @@
         "topics": [
             "features\/equipment",
             "features\/pioneer",
-            "features\/possible-features\/game-modes\/battle-royale",
+            "features\/possible-features\/battle-royale",
             "features\/power-management\/nuclear-energy\/nuclear-waste"
         ],
         "seealso": [
@@ -74712,7 +74712,7 @@
         "date": "2020-08-25",
         "topics": [
             "community",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "pGu4gQkQI1w"
@@ -75184,7 +75184,7 @@
         "title": "Q&A: When is Creative Mode coming?",
         "date": "2020-08-18",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -75320,7 +75320,7 @@
         "title": "Q&A: Will there be a no combat\/fight version?",
         "date": "2020-08-18",
         "topics": [
-            "features\/possible-features\/game-modes\/peaceful-mode"
+            "features\/game-modes\/peaceful-mode"
         ],
         "duplicatedby": "XJ798jouqJE"
     },
@@ -75564,7 +75564,7 @@
         "title": "Q&A: Any plans for Difficulty Levels?",
         "date": "2020-08-11",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "duplicatedby": "vMgvD3QPJqM"
     },
@@ -75839,7 +75839,7 @@
         "title": "Q&A: Will you be expanding on the survival aspect of the game?",
         "date": "2020-07-28",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "duplicatedby": "gh63LOO7fTk"
     },
@@ -75923,7 +75923,7 @@
         "date": "2020-07-21",
         "topics": [
             "environment\/weather-systems",
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/unplanned-features\/factory-maintenance"
         ],
         "seealso": [
@@ -76002,7 +76002,7 @@
         "title": "Q&A: What about Game Modes?",
         "date": "2020-06-08",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "H_jxvn-F_WY",
@@ -77330,7 +77330,7 @@
         "title": "Q&A: Wouldn't you split normal & Creative Mode then not allow switching?",
         "date": "2020-03-24",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -77358,7 +77358,7 @@
         "title": "Q&A: Creative Mode without having to Mod?",
         "date": "2020-03-24",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode",
+            "features\/game-modes\/creative-mode",
             "mods\/mods-vs-features"
         ],
         "duplicatedby": "si20TQaDIXs"
@@ -77681,7 +77681,7 @@
         "title": "Q&A: Battle Royale?",
         "date": "2020-02-11",
         "topics": [
-            "features\/possible-features\/game-modes\/battle-royale",
+            "features\/possible-features\/battle-royale",
             "satisfactory-updates\/released\/satisfactory-update-4",
             "trolling"
         ],
@@ -77980,7 +77980,7 @@
         "title": "Q&A: I just joined, thought this was Update 3?",
         "date": "2020-02-11",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "off-topic\/the-cycle",
             "satisfactory-updates\/released\/satisfactory-update-3"
         ],
@@ -78920,7 +78920,7 @@
         "date": "2019-12-19",
         "topics": [
             "features\/buildings\/the-hub",
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "mods\/mods-vs-features"
         ],
         "duplicatedby": "rtOmNkt5whw"
@@ -80067,7 +80067,7 @@
         "date": "2019-03-09",
         "topics": [
             "environment\/world-map",
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "features\/unplanned-features\/procedural-generation"
         ],
         "duplicatedby": "7pRzB0LIl64"
@@ -80100,7 +80100,7 @@
         "title": "Q&A: Will there be a creative mode?",
         "date": "2019-03-09",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -82197,7 +82197,7 @@
         "date": "2019-02-06",
         "topics": [
             "environment\/creatures",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "duplicatedby": "qpRyAZihEEA"
     },
@@ -82467,7 +82467,7 @@
         "title": "Q&A: Any plans for PvP?",
         "date": "2019-02-06",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "duplicatedby": "qpRyAZihEEA"
     },
@@ -82485,8 +82485,8 @@
         "title": "Q&A: Is co-op style in line or are you focussed on solo?",
         "date": "2019-02-06",
         "topics": [
-            "features\/multiplayer",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes",
+            "features\/multiplayer"
         ],
         "seealso": [
             "1iHSFaYoEow"
@@ -82619,7 +82619,7 @@
         "title": "Q&A: Sandbox mode available?",
         "date": "2019-02-06",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "duplicatedby": "si20TQaDIXs"
     },
@@ -82723,7 +82723,7 @@
         "title": "Q&A: Is there going to be Survival elements to keep the player alive?",
         "date": "2019-02-06",
         "topics": [
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "yt-Dtm6xIj-wM4,2685.5,2726.329682"
@@ -82772,7 +82772,7 @@
             "environment\/creatures",
             "environment\/creatures\/lizard-doggo",
             "environment\/creatures\/non-flying-bird",
-            "features\/possible-features\/game-modes"
+            "features\/game-modes"
         ],
         "seealso": [
             "yt-Dtm6xIj-wM4,2410.697848,2436.980614"
@@ -82868,7 +82868,7 @@
         "title": "Q&A: Can we crush our friends with orbital drops, like Sanctum-style?",
         "date": "2019-02-06",
         "topics": [
-            "features\/possible-features\/game-modes",
+            "features\/game-modes",
             "off-topic\/sanctum"
         ],
         "seealso": [
@@ -83563,7 +83563,7 @@
         "title": "Q&A: Will there be a Creative Mode?",
         "date": "2018-08-01",
         "topics": [
-            "features\/possible-features\/game-modes\/creative-mode"
+            "features\/game-modes\/creative-mode"
         ],
         "seealso_video_cards": [
             "IxoCzb2M0vQ",

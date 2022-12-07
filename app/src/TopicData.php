@@ -201,7 +201,7 @@ class TopicData
 		'PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO' => [ // Satisfactory Update 7
 			7,
 			'Satisfactory Updates',
-			'Pending',
+			'Released',
 		],
 		'PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo' => [ // Satisfactory Update 8
 			8,
@@ -507,22 +507,18 @@ class TopicData
 		],
 		'PLbjDnnBIxiEralVcWNAwdbnP_tRGbAhFx' => [ // Game Modes
 			'Features',
-			'Possible Features',
 		],
 		'PLbjDnnBIxiEpI_eZ6JseCdaLBHV5IokQ1' => [ // Creative Mode
 			'Features',
-			'Possible Features',
 			'Game Modes',
 		],
 		'PLbjDnnBIxiEpP_8-58Z-qL-wqL5BQGgNl' => [ // Peaceful Mode
 			'Features',
-			'Possible Features',
 			'Game Modes',
 		],
 		'PLbjDnnBIxiEoPhqRIy60XVEui9X3o6p0S' => [ // Battle Royale
 			'Features',
 			'Possible Features',
-			'Game Modes',
 		],
 		'PLbjDnnBIxiErqg0B590-PblxF9Yu5aGnR' => [ // World Map
 			'Environment',

@@ -2509,7 +2509,7 @@ foreach ($undated_topic_ids as $topic_id) {
 		$sub_slug_string = implode('/', $sub_slugs);
 
 		if ( ! isset($playlist_topic_strings_reverse_lookup[$sub_slug_string])) {
-			throw new UnexpectedValueException('Could not find topic id!');
+			throw new UnexpectedValueException(sprintf('Could not find topic id %s', $sub_slug_string));
 		}
 
 		$slug_breadcrumbs[$sub_slug_string] = determine_topic_name(
