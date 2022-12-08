@@ -1121,3 +1121,62 @@
 - [ ] yt-5Pz_dZbEx-4,373.00596666666667,404.3039 - What's going to be in Update 7
 - [ ] yt-5Pz_dZbEx-4,404.33726666666666,414.614 - To Be Continued
 - [ ] yt-5Pz_dZbEx-4,414.64756666666665,442.442 - Shifting focus to reach 1.0
+
+## 2022-11-30
+- [ ] yt-kw3epGt82yk,38.5,91.76666666666667 - FICS*MAS
+- [ ] yt-kw3epGt82yk,91.8,151.13333333333333 - Update 7 Release Date
+- [ ] yt-kw3epGt82yk,151.16666666666666,205.7 - Update 7 Release Stream
+
+## 2022-12-06
+- [ ] yt-fVCw51TOHeA,842.341524,855.466643 - State of Dave
+- [ ] yt-fVCw51TOHeA,2901.036688,2913.105688 - Did someone say "bridge review"?
+- [ ] yt-fVCw51TOHeA,6220.988365,6229.213893 - Q&A: Golf?
+- [ ] yt-fVCw51TOHeA,6229.213893,6235.886678 - Community FYI: The honest is refreshing
+- [ ] yt-fVCw51TOHeA,6239.331693,6279.508815 - Q&A: Will Blueprints work on GeForce Now?
+- [ ] yt-fVCw51TOHeA,6295.590683,6312.586282 - Q&A: Is it possible to build multiple Blueprint Designers?
+- [ ] yt-fVCw51TOHeA,6410.197256,6433.66694 - Q&A: Will y'all ever consider expanding the game to Consoles?
+- [ ] yt-fVCw51TOHeA,6435.649753,6489.175972 - Q&A: More seasonal events in 2023?
+- [ ] yt-fVCw51TOHeA,6490.626193,6499.250417 - Q&A: FICSMAS mixtape for Boombox?
+- [ ] yt-fVCw51TOHeA,6574.089203,6582.076074722869 - Q&A: Do you guys need more programmers?
+- [ ] yt-fVCw51TOHeA,6582.471997,6599.734864 - Q&A: May the 4th- can we get a light saber?
+- [ ] yt-fVCw51TOHeA,6605.396899,6628.030045 - Q&A: What is Update 1.0?
+- [ ] yt-fVCw51TOHeA,6630.291231,6652.871132 - Q&A: Can we have table & chairs?
+- [ ] yt-fVCw51TOHeA,6745.010982,6785.122799 - Q&A: Will there be any multi-seat Vehicle later?
+- [ ] yt-fVCw51TOHeA,6789.929672,6845.258495 - Q&A: When will the next patch go Experimental?
+- [ ] yt-fVCw51TOHeA,6848.700044,6855.954684 - Q&A: When will we get a hexagonal Foundation?
+- [ ] yt-fVCw51TOHeA,6855.954684,6879.332855 - Q&A: More variety in fauna?
+- [ ] yt-fVCw51TOHeA,6881.01802,6889.73222 - Q&A: Have you guys thought of adding leashes in the game for the Lizard Doggo?
+- [ ] yt-fVCw51TOHeA,6897.644689,6908.887133 - Q&A: Can Coalgens fit in the Blueprint Designer?
+- [ ] yt-fVCw51TOHeA,6913.195827,6933.041651 - Q&A: Any interest internally in a 6-way Pipe junction?
+- [ ] yt-fVCw51TOHeA,6939.004174,6949.353705 - Q&A: I missed the stream, are Patch Notes out?
+- [ ] yt-fVCw51TOHeA,6961.06383,6992.999004 - Q&A: Mirrored buildings?
+- [ ] yt-fVCw51TOHeA,6992.999004,7007.562425 - Q&A: Bridge review?
+- [ ] yt-fVCw51TOHeA,7013.335835,7051.338148 - Q&A: How much focus got Update 7 vs. 1.0?
+- [ ] yt-fVCw51TOHeA,7059.604385,7065.740414 - Q&A: Can Vehicles go faster with Power Shards?
+- [ ] yt-fVCw51TOHeA,7066.22617,7107.292289 - Q&A: What is the planned release date of 1.0, currently?
+- [ ] yt-fVCw51TOHeA,7109.788599,7129.118954 - Q&A: How's the team's mental health going, gotta check in the homies?
+- [ ] yt-fVCw51TOHeA,7129.684357,7166.653421 - Q&A: Did Update 7 break Mods?
+- [ ] yt-fVCw51TOHeA,7169.262979,7191.610626 - Q&A: Jace, what's your favourite game?
+- [ ] yt-fVCw51TOHeA,7195.174814,7205.979553 - Community FYI: Just came here to say you're one of my favourite game development companies
+- [ ] yt-fVCw51TOHeA,7206.817547,7242.884328 - Q&A: Are there any plans for cooperations with other games?
+- [ ] yt-fVCw51TOHeA,7249.692858,7255.899186 - Q&A: Is Sanctum the Tower Defense one?
+- [ ] yt-fVCw51TOHeA,7260.62112,7272.87499 - Q&A: Is there more work going to be done on Vehicles?
+- [ ] yt-fVCw51TOHeA,7276.012738,7299.165998 - Q&A: Can you try giving us a hint on what will be the late-game mechanics?
+- [ ] yt-fVCw51TOHeA,7299.600469,7315.5691 - Q&A: Are you celebrating FICSMAS?
+- [ ] yt-fVCw51TOHeA,7317.077326,7342.914257 - Q&A: Bigger drone-like aircraft, like a helicopter?
+- [ ] yt-fVCw51TOHeA,7359.318622,7370.415264 - Q&A: Will artefacts affect gameplay?
+- [ ] yt-fVCw51TOHeA,7373.877471,7400.318273 - Q&A: Are you working on Dedicated Servers?
+- [ ] yt-fVCw51TOHeA,7408.773281,7437.351342 - Q&A: Will there be ability to decorate the room in the HUB, it feels bare?
+- [ ] yt-fVCw51TOHeA,7439.45071,7445.300398 - Q&A: Why did you make the artefact woman's voice so bloody annoying?
+- [ ] yt-ST6V-a4u8Qs,95.06163535012458,150.35020318977232 - Game Modes
+- [ ] yt-ST6V-a4u8Qs,150.3668865234596,205.23837102092534 - Intro
+- [ ] yt-ST6V-a4u8Qs,205.2550543546126,232.03180492269792 - Conveyor Belt Ceiling Mounts & improvements
+- [ ] yt-ST6V-a4u8Qs,232.04848825638518,279.8128726030694 - Intro
+- [ ] yt-ST6V-a4u8Qs,279.82955593675666,303.28632310107315 - Zip Line Sprint
+- [ ] yt-ST6V-a4u8Qs,303.30300643476045,344.87787398346353 - Intro
+- [ ] yt-ST6V-a4u8Qs,344.8945573171508,386.41937486479213 - Overclocking exponent change
+- [ ] yt-ST6V-a4u8Qs,386.43605819847943,396.81309175196793 - Intro
+- [ ] yt-ST6V-a4u8Qs,396.82977508565517,433.16607585655225 - Designing Blueprints
+- [ ] yt-ST6V-a4u8Qs,433.1827591902395,451.5511095799354 - Blueprint files
+- [ ] yt-ST6V-a4u8Qs,451.56779291362267,476.775611 - Outro
+- [ ] yt-ST6V-a4u8Qs,476.79299344879087,497.18002721464774 - Outro
