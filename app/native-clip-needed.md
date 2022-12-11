@@ -1128,9 +1128,9 @@
 - [ ] yt-kw3epGt82yk,151.16666666666666,205.7 - Update 7 Release Stream
 
 ## 2022-12-06
-- [ ] yt-fVCw51TOHeA,842.341524,855.466643 - State of Dave
-- [ ] yt-fVCw51TOHeA,2901.036688,2913.105688 - Did someone say "bridge review"?
-- [ ] yt-fVCw51TOHeA,6220.988365,6229.213893 - Q&A: Golf?
+- [x] yt-fVCw51TOHeA,842.341524,855.466643 - State of Dave
+- [x] yt-fVCw51TOHeA,2901.036688,2913.105688 - Did someone say "bridge review"?
+- [x] yt-fVCw51TOHeA,6220.988365,6229.213893 - Q&A: Golf?
 - [ ] yt-fVCw51TOHeA,6229.213893,6235.886678 - Community FYI: The honest is refreshing
 - [ ] yt-fVCw51TOHeA,6239.331693,6279.508815 - Q&A: Will Blueprints work on GeForce Now?
 - [ ] yt-fVCw51TOHeA,6295.590683,6312.586282 - Q&A: Is it possible to build multiple Blueprint Designers?
@@ -1168,15 +1168,3 @@
 - [ ] yt-fVCw51TOHeA,7373.877471,7400.318273 - Q&A: Are you working on Dedicated Servers?
 - [ ] yt-fVCw51TOHeA,7408.773281,7437.351342 - Q&A: Will there be ability to decorate the room in the HUB, it feels bare?
 - [ ] yt-fVCw51TOHeA,7439.45071,7445.300398 - Q&A: Why did you make the artefact woman's voice so bloody annoying?
-- [ ] yt-ST6V-a4u8Qs,95.06163535012458,150.35020318977232 - Game Modes
-- [ ] yt-ST6V-a4u8Qs,150.3668865234596,205.23837102092534 - Intro
-- [ ] yt-ST6V-a4u8Qs,205.2550543546126,232.03180492269792 - Conveyor Belt Ceiling Mounts & improvements
-- [ ] yt-ST6V-a4u8Qs,232.04848825638518,279.8128726030694 - Intro
-- [ ] yt-ST6V-a4u8Qs,279.82955593675666,303.28632310107315 - Zip Line Sprint
-- [ ] yt-ST6V-a4u8Qs,303.30300643476045,344.87787398346353 - Intro
-- [ ] yt-ST6V-a4u8Qs,344.8945573171508,386.41937486479213 - Overclocking exponent change
-- [ ] yt-ST6V-a4u8Qs,386.43605819847943,396.81309175196793 - Intro
-- [ ] yt-ST6V-a4u8Qs,396.82977508565517,433.16607585655225 - Designing Blueprints
-- [ ] yt-ST6V-a4u8Qs,433.1827591902395,451.5511095799354 - Blueprint files
-- [ ] yt-ST6V-a4u8Qs,451.56779291362267,476.775611 - Outro
-- [ ] yt-ST6V-a4u8Qs,476.79299344879087,497.18002721464774 - Outro
