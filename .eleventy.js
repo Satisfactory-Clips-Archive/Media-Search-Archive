@@ -3,7 +3,7 @@ module.exports = (e) => {
 	const markdown = markdownIt({
 		html: true,
 		breaks: true,
-		linkify: true,
+		linkify: false,
 	});
 
 	//#region adapted from https://github.com/markdown-it/markdown-it/blob/bda94b0521f206a02427ec58cb9a848d9c993ccb/docs/architecture.md#renderer
