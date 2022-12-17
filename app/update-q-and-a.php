@@ -360,48 +360,48 @@ foreach (array_keys($faq) as $video_id) {
 
 	foreach ($thingsWithOtherVideoIds as $thingWithOtherVideoIds) {
 		foreach ($thingWithOtherVideoIds as $other_video_id) {
-		if (
-			! preg_match(
-				Jsonify::link_part_regex,
-				maybe_transcript_link_and_video_url(
-					$other_video_id,
-					$cache['playlistItems'][$other_video_id][1]
-				),
-				$link_parts
-			)
-		) {
-			throw new RuntimeException('Could not determine link parts!');
-		}
+			if (
+				! preg_match(
+					Jsonify::link_part_regex,
+					maybe_transcript_link_and_video_url(
+						$other_video_id,
+						$cache['playlistItems'][$other_video_id][1]
+					),
+					$link_parts
+				)
+			) {
+				throw new RuntimeException('Could not determine link parts!');
+			}
 
-		$faq_json[
-			$faq_date
-			. '_'
-			. $friendly_playist_name
-		][$video_id][5][$other_video_id] = [
-			$link_parts[1],
-			'',
-			$link_parts[2],
-		];
-
-		if (
-			preg_match(
-				Jsonify::transcript_part_regex,
+			$faq_json[
+				$faq_date
+				. '_'
+				. $friendly_playist_name
+			][$video_id][5][$other_video_id] = [
 				$link_parts[1],
-				$link_parts
-			)
-		) {
-			$faq_json[
-				$faq_date
-				. '_'
-				. $friendly_playist_name
-			][$video_id][5][$other_video_id][0] = $link_parts[1];
-			$faq_json[
-				$faq_date
-				. '_'
-				. $friendly_playist_name
-			][$video_id][5][$other_video_id][1] = $link_parts[2];
+				'',
+				$link_parts[2],
+			];
+
+			if (
+				preg_match(
+					Jsonify::transcript_part_regex,
+					$link_parts[1],
+					$link_parts
+				)
+			) {
+				$faq_json[
+					$faq_date
+					. '_'
+					. $friendly_playist_name
+				][$video_id][5][$other_video_id][0] = $link_parts[1];
+				$faq_json[
+					$faq_date
+					. '_'
+					. $friendly_playist_name
+				][$video_id][5][$other_video_id][1] = $link_parts[2];
+			}
 		}
-	}
 	}
 
 	echo $markdownify->content_if_video_has_other_parts($video_id, true)
