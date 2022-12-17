@@ -310,7 +310,56 @@ foreach (array_keys($faq) as $video_id) {
 		][$video_id][1] = $link_parts[2];
 	}
 
-	foreach ($filtered[$video_id]['duplicates'] ?? [] as $other_video_id) {
+	$thingsWithOtherVideoIds = [
+		$filtered[$video_id]['duplicates'] ?? [],
+		$filtered[$video_id]['replaces'] ?? [],
+	];
+
+	$deepCheck = [];
+	$doubleChecked = [$video_id];
+
+	while (count($deepCheck) > count($doubleChecked)) {
+		foreach ($thingsWithOtherVideoIds as $thingWithOtherVideoId) {
+			foreach ($thingWithOtherVideoId as $other_video_id) {
+				if (in_array($other_video_id, $doubleChecked, true)) {
+					continue;
+				}
+
+				if (isset($filtered[$other_video_id]['duplicates'])) {
+					$deepCheck = array_merge($deepCheck, $filtered[$other_video_id]['duplicates']);
+				}
+
+				if (isset($filtered[$other_video_id]['replaces'])) {
+					$deepCheck = array_merge($deepCheck, $filtered[$other_video_id]['replaces']);
+				}
+
+				$doubleChecked[] = $other_video_id;
+			}
+		}
+
+		foreach ($deepCheck as $other_video_id) {
+			if (in_array($other_video_id, $doubleChecked, true)) {
+				continue;
+			}
+
+			if (isset($filtered[$other_video_id]['duplicates'])) {
+				$deepCheck = array_merge($deepCheck, $filtered[$other_video_id]['duplicates']);
+			}
+
+			if (isset($filtered[$other_video_id]['replaces'])) {
+				$deepCheck = array_merge($deepCheck, $filtered[$other_video_id]['replaces']);
+			}
+
+			$doubleChecked[] = $other_video_id;
+		}
+	}
+
+	if (count($deepCheck)) {
+		$thingsWithOtherVideoIds[] = $deepCheck;
+	}
+
+	foreach ($thingsWithOtherVideoIds as $thingWithOtherVideoIds) {
+		foreach ($thingWithOtherVideoIds as $other_video_id) {
 		if (
 			! preg_match(
 				Jsonify::link_part_regex,
@@ -352,6 +401,7 @@ foreach (array_keys($faq) as $video_id) {
 				. $friendly_playist_name
 			][$video_id][5][$other_video_id][1] = $link_parts[2];
 		}
+	}
 	}
 
 	echo $markdownify->content_if_video_has_other_parts($video_id, true)
