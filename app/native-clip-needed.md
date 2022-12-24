@@ -1168,3 +1168,13 @@
 - [ ] yt-fVCw51TOHeA,7373.877471,7400.318273 - Q&A: Are you working on Dedicated Servers?
 - [ ] yt-fVCw51TOHeA,7408.773281,7437.351342 - Q&A: Will there be ability to decorate the room in the HUB, it feels bare?
 - [ ] yt-fVCw51TOHeA,7439.45071,7445.300398 - Q&A: Why did you make the artefact woman's voice so bloody annoying?
+
+## 2022-12-21
+- [ ] yt-nvBhG4URjMg,99.28,158.08 - Interlude
+- [ ] yt-nvBhG4URjMg,158.12,192.76 - Merry Christmas & Happy Holidays (Part 2)
+- [ ] yt-nvBhG4URjMg,192.8,223.16 - Office Doggos: Caesar!
+- [ ] yt-nvBhG4URjMg,223.2,242.04 - VAMONOS!
+- [ ] yt-nvBhG4URjMg,242.08,253.4 - Office Doggos: Eevee!
+- [ ] yt-nvBhG4URjMg,253.44,282.56 - Merry Christmas & Happy Holidays (Part 3)
+- [ ] yt-nvBhG4URjMg,282.6,328.190091 - Merry Christmas & Happy Holidays (Part 4)
+- [ ] yt-nvBhG4URjMg,328.24,352.48 - Returning around January 10th, 2023
