@@ -43,6 +43,7 @@ update:
 	php app/part-continued.php
 	php app/lunr-docs-preload.php
 	php app/statistics.php
+	php app/youtube-category-checker.php
 	cd . && ./node_modules/.bin/gulp charts 11ty-data
 
 build: tweets update build-post-update
