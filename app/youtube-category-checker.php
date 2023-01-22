@@ -46,7 +46,10 @@ $youtube_video_ids = array_reduce(
 	[],
 );
 
-$missing_category = [];
+$missing_category = array_filter(
+	(array) json_decode(file_get_contents(__DIR__ . '/data/youtube-video-subcategories--missing.json')),
+	'is_string'
+);
 
 $i = 0;
 
@@ -103,7 +106,7 @@ $emit_progress = static function () use (& $i, $youtube_video_ids, $start) : voi
 };
 
 foreach ($youtube_video_ids as $video_id) {
-	if (in_array($video_id, $supported_category)) {
+	if (in_array($video_id, $supported_category) || in_array($video_id, $missing_category, true)) {
 		++$i;
 		++$skipped;
 		$emit_progress();
@@ -120,8 +123,6 @@ foreach ($youtube_video_ids as $video_id) {
 
 	/** @var DOMQuery[] */
 	$html5qp = html5qp($html, 'script');
-
-	file_put_contents(__DIR__ . '/foo.txt', $html);
 
 	$nodes = [];
 

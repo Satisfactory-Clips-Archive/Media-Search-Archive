@@ -102,6 +102,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
+		'PLbjDnnBIxiEr446crgxZOiVsi-_Ltncyq' => [ // Update 8 Teasers
+			800,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
 		'Update 5 Quiz: Underrated/Overrated' => [
 			1,
 			'Satisfactory Updates',
@@ -1527,7 +1532,7 @@ class TopicData
 		'Joel' => [
 			'Coffee Stainers',
 		],
-		'Etienne' => [
+		'PLbjDnnBIxiEosbwjvWVnak8Pn-9SbPcI2' => [ // Etienne
 			'Coffee Stainers',
 		],
 		'Anna' => [
@@ -1536,7 +1541,7 @@ class TopicData
 		'Bogdan' => [
 			'Coffee Stainers',
 		],
-		'Lym' => [
+		'PLbjDnnBIxiEr_4xLQAm_Jk85CJRW6hjhT' => [ // Lym
 			'Coffee Stainers',
 		],
 		'PLbjDnnBIxiEoun-5sdS3OekZiIK9hdQkd' => [ // Final Fantasy

@@ -65,4 +65,16 @@ if (count($videos)) {
 			}
 		)))
 	);
+
+	$missing_subcategory = __DIR__ . '/data/youtube-video-subcategories--missing.json';
+
+	file_put_contents(
+		$missing_subcategory,
+		json_encode_pretty(array_values(array_filter(
+			json_decode(file_get_contents($missing_subcategory)),
+			static function (string $maybe) use ($videos) : bool {
+				return ! in_array($maybe, $videos, true);
+			}
+		)))
+	);
 }
