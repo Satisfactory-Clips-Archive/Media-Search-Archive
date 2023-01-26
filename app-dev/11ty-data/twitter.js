@@ -1,3 +1,5 @@
+const {createHash} = require("crypto");
+const {readFileSync} = require("fs");
 const twitter_card_defaults = [
 	['twitter:card', 'summary'],
 ];
@@ -106,12 +108,22 @@ module.exports = async () => {
 						! ('twitter:image' in out[permalink])
 						&& 'twitter:title' in out[permalink]
 					) {
+						const hash = createHash('sha512');
+						hash.update(readFileSync(
+							`${__dirname}/../../images/internal/content/${
+								permalink.slice(0, -1)
+							}.png`
+						));
 						out[permalink]['twitter:card'] = 'summary_large_image';
 						out[permalink][
 							'twitter:image'
 						] = `https://i.img.archive.satisfactory.video/content/${
 							permalink.slice(0, -1)
-						}.webp`;
+						}.png?h=${
+							encodeURIComponent(
+								hash.digest('hex').slice(0, 4)
+							)
+						}`;
 						out[permalink]['twitter:image:alt'] = `Embed for ${
 							out[permalink]['twitter:title']
 						}`;
