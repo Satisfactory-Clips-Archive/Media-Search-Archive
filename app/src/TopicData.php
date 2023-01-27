@@ -549,6 +549,10 @@ class TopicData
 		'PLbjDnnBIxiEoAqIqsBIdN_uoV-HsP8YDJ' => [ // Snutt
 			'Coffee Stainers',
 		],
+		'PLbjDnnBIxiErtgprdAliPEnLc7vfNT2Er' => [ // Eevee
+			'Coffee Stainers',
+			'Snutt',
+		],
 		'PLbjDnnBIxiErau2lNl-y0Uv9FHhiZc6Pl' => [ // Storage Containers
 			'Features',
 			'Buildables',
