@@ -1683,6 +1683,9 @@ class TopicData
 		'PLbjDnnBIxiEr_TAa3FE8nm5yA3FCPl0SS' => [ // Monkey Island
 			'Off-Topic',
 		],
+		'ChatGPT' => [
+			'Technology',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
