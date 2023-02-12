@@ -963,7 +963,7 @@ class TopicData
 			'Features',
 			'Buildings',
 		],
-		'Coffee Stain Holding' => [
+		'PLbjDnnBIxiEouF1RjsE2gpHJhjhoHNlCP' => [ // Coffee Stain Holding
 			'Embracer Group',
 		],
 		'PLbjDnnBIxiEqOpJsmyxhwRVWzfYKwmIKI' => [ // Gearbox Software
