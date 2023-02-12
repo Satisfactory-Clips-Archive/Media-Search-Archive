@@ -1686,6 +1686,9 @@ class TopicData
 		'ChatGPT' => [
 			'Technology',
 		],
+		'İlayda' => [
+			'Coffee Stainers',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
