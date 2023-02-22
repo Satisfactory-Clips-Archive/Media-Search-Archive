@@ -2432,7 +2432,6 @@ function process_externals(
  *	legacyAlts?:array<string, list<string>>
  * }
  *
- * @param CACHE $inject
  * @param array{
  *	0:string,
  *	1:list<array{
