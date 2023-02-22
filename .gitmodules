@@ -1,6 +1,3 @@
-[submodule "video-clip-notes"]
-	path = video-clip-notes
-	url = https://github.com/Satisfactory-Clips-Archive/video-clip-notes.git
 [submodule "Media-Archive-Metadata"]
 	path = Media-Archive-Metadata
 	url = https://github.com/Satisfactory-Clips-Archive/Media-Archive-Metadata.git

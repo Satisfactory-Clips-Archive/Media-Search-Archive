@@ -33,11 +33,7 @@ if (count($videos)) {
 		);
 
 		remove_captions_cache_file($video_id . '.html');
-		$captions_cache =
-			__DIR__
-			. '/captions-cache/'
-			. vendor_prefixed_video_id($video_id)
-			. '.json';
+		$captions_cache = captions_json_cache_filename($video_id);
 
 		if (is_file($captions_cache)) {
 			unlink($captions_cache);

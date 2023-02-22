@@ -631,15 +631,7 @@ class YouTubeApiWrapper
 				[new Filtering(), 'kvp_string_string'];
 
 			/** @var array<string, string> */
-			$dated_playlists = array_map(
-				static function (string $date) : string {
-					return date('Y-m-d', strtotime($date));
-				},
-				array_filter(
-					array_map(
-						static function (string $filename) : string {
-							return mb_substr($filename, 0, -3);
-						},
+			$dated_playlists = array_filter(
 						array_merge(
 							array_filter(
 								(array) json_decode(
@@ -663,12 +655,10 @@ class YouTubeApiWrapper
 								$playlists_filter,
 								ARRAY_FILTER_USE_BOTH
 							)
-						)
 					),
 					static function (string $maybe) : bool {
 						return false !== strtotime($maybe);
 					}
-				)
 			);
 
 			asort($dated_playlists);

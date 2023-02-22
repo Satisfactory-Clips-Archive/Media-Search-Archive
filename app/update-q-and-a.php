@@ -40,7 +40,6 @@ $slugify = new Slugify();
 $skipping = SkippingTranscriptions::i();
 $injected = new Injected($api, $slugify, $skipping);
 $questions = new Questions($injected);
-$markdownify = new Markdownify($injected, $questions);
 $jsonify = new Jsonify($injected, $questions);
 
 $global_topic_hierarchy = $injected->topics_hierarchy;
@@ -180,15 +179,7 @@ file_put_contents(
 
 ob_flush();
 
-ob_start();
-
 $faq = $questions->faq_threshold($duplicates);
-
-echo '---', "\n",
-	'title: "Frequently Asked Questions"', "\n",
-	'date: Last Modified', "\n",
-	'---', "\n",
-	'';
 
 /** @var string|null */
 $last_faq_date = null;
@@ -258,56 +249,38 @@ foreach (array_keys($faq) as $video_id) {
 
 	if ($faq_date !== $last_faq_date) {
 		$last_faq_date = $faq_date;
-
-		echo '## [',
-			$friendly_playist_name,
-			'](',
-			'./',
-			$faq_date,
-			'.md',
-			')',
-			"\n"
-		;
 	}
 
 	if ( ! isset($faq_json[$faq_date . '_' . $friendly_playist_name])) {
 		$faq_json[$faq_date . '_' . $friendly_playist_name] = [];
 	}
 
-	$link = maybe_transcript_link_and_video_url(
+	[$link_part_title, $has_cached_captions, $link_part_url] = maybe_transcript_link_and_video_url_data(
 		$video_id,
 		$cache['playlistItems'][$video_id][1]
 	);
 
-	echo '### ', $link,
-		"\n"
-	;
-
-	if ( ! preg_match(Jsonify::link_part_regex, $link, $link_parts)) {
-		throw new RuntimeException('Could not determine link parts!');
-	}
-
 	$faq_json[$faq_date . '_' . $friendly_playist_name][$video_id] = [
-		$link_parts[1],
+		$link_part_title,
 		'',
-		$link_parts[2],
+		$link_part_url,
 		$transcription,
 		$jsonify->description_if_video_has_duplicates($video_id),
 		[],
 		$jsonify->content_if_video_has_other_parts($video_id),
 	];
 
-	if (preg_match(Jsonify::transcript_part_regex, $link_parts[1], $link_parts)) {
+	if ($has_cached_captions) {
 		$faq_json[
 			$faq_date
 			. '_'
 			. $friendly_playist_name
-		][$video_id][0] = $link_parts[1];
+		][$video_id][0] = $link_part_title;
 		$faq_json[
 			$faq_date
 			. '_'
 			. $friendly_playist_name
-		][$video_id][1] = $link_parts[2];
+		][$video_id][1] = $link_part_url;
 	}
 
 	$thingsWithOtherVideoIds = [
@@ -360,73 +333,38 @@ foreach (array_keys($faq) as $video_id) {
 
 	foreach ($thingsWithOtherVideoIds as $thingWithOtherVideoIds) {
 		foreach ($thingWithOtherVideoIds as $other_video_id) {
-			if (
-				! preg_match(
-					Jsonify::link_part_regex,
-					maybe_transcript_link_and_video_url(
-						$other_video_id,
-						$cache['playlistItems'][$other_video_id][1]
-					),
-					$link_parts
-				)
-			) {
-				throw new RuntimeException('Could not determine link parts!');
-			}
+			[$link_part_title, $has_cached_captions, $link_part_url] = maybe_transcript_link_and_video_url_data(
+				$other_video_id,
+				$cache['playlistItems'][$other_video_id][1]
+			);
 
 			$faq_json[
 				$faq_date
 				. '_'
 				. $friendly_playist_name
 			][$video_id][5][$other_video_id] = [
-				$link_parts[1],
+				$link_part_title,
 				'',
-				$link_parts[2],
+				$link_part_url
 			];
 
 			if (
-				preg_match(
-					Jsonify::transcript_part_regex,
-					$link_parts[1],
-					$link_parts
-				)
+				$has_cached_captions
 			) {
 				$faq_json[
 					$faq_date
 					. '_'
 					. $friendly_playist_name
-				][$video_id][5][$other_video_id][0] = $link_parts[1];
+				][$video_id][5][$other_video_id][0] = $link_part_title;
 				$faq_json[
 					$faq_date
 					. '_'
 					. $friendly_playist_name
-				][$video_id][5][$other_video_id][1] = $link_parts[2];
+				][$video_id][5][$other_video_id][1] = $link_part_url;
 			}
 		}
 	}
-
-	echo $markdownify->content_if_video_has_other_parts($video_id, true)
-	;
-
-	if (count($transcription) > 0) {
-		echo "\n", '<details>', "\n";
-		echo "\n", '<summary>A transcript is available</summary>', "\n";
-		echo "\n", markdownify_transcription_lines(...$transcription), "\n";
-		echo "\n", '</details>', "\n";
-	}
-
-	echo $markdownify->content_if_video_has_duplicates($video_id, $questions)
-	;
-
-	echo "\n";
 }
-
-file_put_contents(
-	(
-		__DIR__
-		. '/../video-clip-notes/docs/FAQ.md'
-	),
-	ob_get_clean()
-);
 
 $data = json_encode_pretty($by_topic);
 

@@ -1,14 +1,11 @@
 # Media Search Archive
 
-Static site generator for
-	[video-clip-notes](https://github.com/Satisfactory-Clips-Archive/video-clip-notes)
-	data.
-
-# See Also
-
-* [Satisfactory Clips Archive](https://archive.satisfactory.video/) - Serves as an archive for Clips for Coffee Stain Studio's Satisfactory-related livestreams & other videos.
+Static site generator for [Satisfactory Clips Archive](https://archive.satisfactory.video/) - Serves as an archive for Clips for Coffee Stain Studio's Satisfactory-related livestreams & other videos.
 
 # Changelog
+
+## 2023-02-22
+* refactored to removed markdown support
 
 ## 2022-05-14
 * refactored code to remove redundant properties

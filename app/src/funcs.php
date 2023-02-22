@@ -197,17 +197,6 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 		]);
 }
 
-function transcription_filename(string $video_id) : string
-{
-	$video_id = vendor_prefixed_video_id($video_id);
-
-		return
-			__DIR__
-			. '/../../video-clip-notes/docs/transcriptions/'
-			. $video_id
-			. '.md';
-}
-
 /**
  * @return array{0:string, 1:false|string, 2:string}
  */
@@ -218,40 +207,11 @@ function maybe_transcript_link_and_video_url_data(
 	$url = video_url_from_id($video_id);
 	$initial_segment = false;
 
-	if (is_file(transcription_filename($video_id))) {
+	if (captions_json_cache_exists($video_id)) {
 		$initial_segment = vendor_prefixed_video_id($video_id);
 	}
 
 	return [$title, $initial_segment, $url];
-}
-
-function maybe_transcript_link_and_video_url(
-	string $video_id,
-	string $title,
-	int $repeat_directory_up = 0
-) : string {
-	$video_id = vendor_prefixed_video_id($video_id);
-	$url = video_url_from_id($video_id);
-	$initial_segment = $title;
-
-	$directory_up =
-		(1 <= $repeat_directory_up)
-			? str_repeat('../', $repeat_directory_up)
-			: './';
-
-	if (is_file(transcription_filename($video_id))) {
-		$initial_segment = (
-			'['
-			. $title
-			. ']('
-			. $directory_up
-			. 'transcriptions/'
-			. $video_id
-			. '.md)'
-		);
-	}
-
-	return $initial_segment . ' [' . $url . '](' . $url . ')';
 }
 
 function vendor_prefixed_video_id(string $video_id) : string
@@ -516,10 +476,8 @@ function prepare_injections(
 
 		$externals_cache = process_externals(
 			$cache,
-			$global_topic_hierarchy,
 			$not_a_livestream,
 			$not_a_livestream_date_lookup,
-			$slugify,
 			$skipping,
 			$injected,
 			false
@@ -1147,6 +1105,26 @@ function filter_video_ids_for_legacy_alts(
 	return array_values($video_ids);
 }
 
+function captions_json_cache_filename(string $video_id): string
+{
+	$video_id = preg_replace(
+		'/^yt-([^,]+)$/',
+		'$1',
+		vendor_prefixed_video_id($video_id)
+	);
+
+	return
+		__DIR__
+		. '/../captions-cache/'
+		. $video_id
+		. '.json';
+}
+
+function captions_json_cache_exists(string $video_id): bool
+{
+	return is_file(captions_json_cache_filename($video_id));
+}
+
 /**
  * @psalm-type ITEM = array{
  *	text:string|list<string|array{text:string, about?:string}>,
@@ -1181,13 +1159,9 @@ function captions(
 		return [];
 	}
 
-	$captions_cache_file =
-		__DIR__
-		. '/../captions-cache/'
-		. $video_id
-		. '.json';
+	$captions_cache_file = captions_json_cache_filename($video_id);
 
-	if (is_file($captions_cache_file)) {
+	if (captions_json_cache_exists($video_id)) {
 		/** @var list<string> */
 		return json_decode(
 			file_get_contents($captions_cache_file),
@@ -2343,7 +2317,6 @@ function get_dated_csv(
  *	stubPlaylists?:array<string, array{0:string, 1:string, 2:list<string>}>,
  *	legacyAlts?:array<string, list<string>>
  * } $cache
- * @param array<string, list<int|string>> $global_topic_hierarchy
  * @param array<string, string> $not_a_livestream
  * @param array<string, string> $not_a_livestream_date_lookup
  *
@@ -2365,10 +2338,8 @@ function get_dated_csv(
  */
 function process_externals(
 	array $cache,
-	array $global_topic_hierarchy,
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup,
-	Slugify $slugify,
 	SkippingTranscriptions $skipping,
 	Injected $injected,
 	bool $write_files = true
@@ -2398,12 +2369,9 @@ function process_externals(
 		foreach ($externals_data_groups as $externals_data) {
 			[$externals_video_id] = $externals_data;
 
-			$lines_to_write = [['', ''], []];
-
 			try {
 				[
 					$inject,
-					$lines_to_write,
 					$needs_alt_layout,
 					$embed_data_set,
 				] = process_dated_csv(
@@ -2411,15 +2379,9 @@ function process_externals(
 					$inject,
 					$externals_data,
 					$cache,
-					$global_topic_hierarchy,
 					$not_a_livestream,
 					$not_a_livestream_date_lookup,
-					$slugify,
-					$skipping,
-					$write_files,
-					true,
-					$file_blanked[$date],
-					$file_blanked[$date] && 1 === count($externals_data_groups)
+					$skipping
 				);
 			} catch (ErrorException $e) {
 				if (
@@ -2433,96 +2395,7 @@ function process_externals(
 				throw $e;
 			}
 
-			$filename = (
-				__DIR__
-				. '/../../video-clip-notes/docs/'
-				. $date .
-				'.md'
-			);
-
 			if ($write_files) {
-				if (
-					file_exists(
-						__DIR__
-						. '/../data/externals/'
-						. $date
-						. '.json'
-					)
-				) {
-					[, $playlist_friendly_name] = determine_playlist_id(
-						$date,
-						$cache,
-						$not_a_livestream,
-						$not_a_livestream_date_lookup
-					);
-
-					if (preg_match('/^title: ".+"\n$/', $lines_to_write[0][1])) {
-						$lines_to_write[0][1] = preg_replace(
-							'/"\n$/',
-							sprintf(' & %s"' . "\n", $playlist_friendly_name),
-							$lines_to_write[0][1]
-						);
-					}
-
-					/** @var list<string> */
-					$video_ids = array_keys((array) json_decode(
-						file_get_contents(
-							__DIR__
-							. '/../data/externals/'
-							. $date
-							. '.json'
-						),
-						true
-					));
-
-					usort(
-						$video_ids,
-						static function (string $a, string $b) use ($cache) : int {
-							return strnatcasecmp(
-								$cache['playlistItems'][$a][1],
-								$cache['playlistItems'][$b][1]
-							);
-						}
-					);
-
-					$lines_to_write[0][] = "\n";
-
-					$lines_to_write[0][] = sprintf(
-						'# %s' . "\n",
-						$playlist_friendly_name
-					);
-
-					foreach ($video_ids as $video_id) {
-						$lines_to_write[0][] = sprintf(
-							'* %s' . "\n",
-							maybe_transcript_link_and_video_url(
-								$video_id,
-								$cache['playlistItems'][$video_id][1]
-							)
-						);
-					}
-				}
-
-				[$processed_lines, $files_with_lines_to_write] = $lines_to_write;
-
-				if ( ! $file_blanked[$date]) {
-					$file_blanked[$date] = true;
-
-					file_put_contents($filename, '');
-				}
-
-				foreach ($processed_lines as $line) {
-					file_put_contents($filename, $line, FILE_APPEND);
-				}
-
-				if (count($externals_data_groups) > 1) {
-					file_put_contents($filename, "\n", FILE_APPEND);
-				}
-
-				foreach ($files_with_lines_to_write as $other_file => $lines) {
-					file_put_contents($other_file, implode('', $lines));
-				}
-
 				if ($needs_alt_layout) {
 					if ( ! isset($inject['externals_needing_alt_layout'][$date])) {
 						$inject['externals_needing_alt_layout'][$date] = [];
@@ -2572,15 +2445,13 @@ function process_externals(
  *		topics:array<int, list<string>>
  *	}
  * } $externals_data
- * @param CACHE $cache
- * @param array<string, list<int|string>> $global_topic_hierarchy
- * @param array<string, string> $not_a_livestream
  * @param array<string, string> $not_a_livestream_date_lookup
+ * @param CACHE $cache
+ * @param array<string, string> $not_a_livestream
  *
  * @return array{
  *	0:CACHE,
- *	1:array{0:list<string>, 1:array<string, list<string>>},
- *	2:bool
+ *	1:bool
  * }
  */
 function process_dated_csv(
@@ -2588,51 +2459,16 @@ function process_dated_csv(
 	array $inject,
 	array $externals_data,
 	array $cache,
-	array $global_topic_hierarchy,
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup,
-	Slugify $slugify,
 	SkippingTranscriptions $skipping,
-	bool $write_files = true,
-	bool $do_injection = true,
-	bool $skip_header = false,
-	bool $skip_header_title = null
+	bool $do_injection = true
 ) : array {
 	$needs_alt_layout = false;
-
-	/** @var list<string> */
-	$out = [];
-
-	if (null === $skip_header_title) {
-		$skip_header_title = $skip_header;
-	}
-
-	/** @var array<string, list<string>> */
-	$files_out = [];
 
 	[$video_id, $externals_csv, $data] = $externals_data;
 
 	$captions = raw_captions($video_id, $skipping);
-
-	$friendly_date = date('F jS, Y', (int) strtotime($date));
-
-	if ($write_files && ! $skip_header) {
-		$out = array_merge($out, [
-			'---' . "\n",
-			sprintf('title: "%s"', str_replace('"', '\"', $data['title'])) . "\n",
-			sprintf('date: "%s"', $date) . "\n",
-			'layout: livestream' . "\n",
-			'---' . "\n",
-		]);
-	}
-
-	if ($write_files && ! $skip_header_title) {
-		$out[] = sprintf(
-			'# %s %s' . "\n",
-			$friendly_date,
-			$data['title']
-		);
-	}
 
 	/**
 	 * @var list<array{
@@ -2834,12 +2670,6 @@ function process_dated_csv(
 	foreach ($externals_csv as $i => $line) {
 		[$start, $end, $clip_title] = $line;
 
-		/** @var numeric-string|null */
-		$start_or_null = '' === $start ? null : $start;
-
-		/** @var numeric-string|null */
-		$end_or_null = '' === $end ? null : $end;
-
 		$clip_id = sprintf(
 			'%s,%s',
 			$video_id,
@@ -2861,34 +2691,10 @@ function process_dated_csv(
 
 		$embed_data_set[] = $embed_data;
 
-		/** @var numeric-string */
-		$start = ($start ?: '0.0');
-
-		$decimals = mb_strlen(explode('.', $start)[1] ?? '');
-
-		$start_hours = str_pad((string) floor(((float) $start) / 3600), 2, '0', STR_PAD_LEFT);
-		$start_minutes = str_pad((string) floor((float) bcdiv(bcmod($start, '3600', $decimals) ?? '0', '60', $decimals)), 2, '0', STR_PAD_LEFT);
-		$start_seconds = str_pad((string) floor((float) bcmod($start, '60', $decimals)), 2, '0', STR_PAD_LEFT);
-
-		$clip_title_maybe = $clip_title;
-
 		if (isset($csv_captions[$i])) {
-			$basename = sprintf(
-				'%s.md',
-				$clip_id
-			);
-
 			if ($do_injection) {
 				$inject['playlistItems'][$clip_id] = ['', $clip_title];
 				$inject['videoTags'][$clip_id] = ['', []];
-			}
-
-			if ('' !== trim($csv_captions[$i][3])) {
-				$clip_title_maybe = sprintf(
-					'[%s](./transcriptions/%s)',
-					$clip_title,
-					$basename
-				);
 			}
 
 			if ($do_injection) {
@@ -2907,131 +2713,10 @@ function process_dated_csv(
 					$inject['playlists'][$playlist_id][2][] = $clip_id;
 				}
 			}
-
-			if ($write_files && '' !== trim($csv_captions[$i][3])) {
-				$files_out[
-					__DIR__
-					. '/../../video-clip-notes/docs/transcriptions/'
-					. $basename
-				] = [
-					'---' . "\n",
-					sprintf(
-						'title: "%s - %s"' . "\n",
-						$friendly_date,
-						str_replace('"', '\"', $clip_title)
-					),
-					sprintf('date: "%s"', $date) . "\n",
-					'layout: transcript' . "\n",
-					'topics:' . "\n",
-					'    - "',
-					implode('"' . "\n" . '    - "', array_map(
-						static function (
-							string $topic
-						) use (
-							$cache,
-							$global_topic_hierarchy,
-							$not_a_livestream,
-							$not_a_livestream_date_lookup,
-							$slugify
-						) : string {
-							return topic_to_slug(
-								determine_playlist_id(
-									$topic,
-									$cache,
-									$not_a_livestream,
-									$not_a_livestream_date_lookup
-								)[0],
-								$cache,
-								$global_topic_hierarchy,
-								$slugify
-							)[0];
-						},
-						($data['topics'][$i] ?? [])
-					)),
-					'"' . "\n",
-					'---' . "\n",
-					sprintf(
-						'# [%s %s](../%s.md)' . "\n",
-						$friendly_date,
-						$data['title'],
-						$date
-					),
-					sprintf('## %s', $clip_title) . "\n",
-					embed_link(
-						$video_id,
-						$start,
-						$end_or_null
-					),
-					"\n",
-					'### Topics' . "\n",
-					implode("\n", array_map(
-						static function (
-							string $topic
-						) use (
-							$cache,
-							$global_topic_hierarchy,
-							$not_a_livestream,
-							$not_a_livestream_date_lookup,
-							$slugify
-						) : string {
-							[$slug, $parts] = topic_to_slug(
-								determine_playlist_id(
-									$topic,
-									$cache,
-									$not_a_livestream,
-									$not_a_livestream_date_lookup
-								)[0],
-								$cache,
-								$global_topic_hierarchy,
-								$slugify
-							);
-
-							return sprintf(
-								'* [%s](../topics/%s.md)',
-								implode(' > ', $parts),
-								$slug
-							);
-						},
-						($data['topics'][$i] ?? [])
-					)),
-					"\n\n",
-					'### Transcript' . "\n\n",
-					implode("\n", array_map(
-						static function (string $line) : string {
-							return sprintf('> %s', $line);
-						},
-						explode("\n", $csv_captions[$i][3])
-					)),
-					"\n",
-				];
-			}
-		}
-
-		if ($write_files) {
-			$out[] = sprintf(
-				'* [%s:%s:%s](%s) %s' . "\n",
-				$start_hours,
-				$start_minutes,
-				$start_seconds,
-				(
-					(
-						is_array($data['topics'][$i] ?? null)
-						&& preg_match('/^ts\-\d+$/', $video_id)
-						&& '' !== $end
-					)
-						? embed_link(
-							$video_id,
-							$start_or_null,
-							$end_or_null
-						)
-						: timestamp_link($video_id, $start)
-				),
-				$clip_title_maybe
-			);
 		}
 	}
 
-	return [$inject, [$out, $files_out], $needs_alt_layout, $embed_data_set];
+	return [$inject, $needs_alt_layout, $embed_data_set];
 }
 
 function process_dated_csv_for_alt_layout(
@@ -3108,7 +2793,7 @@ function process_dated_csv_for_alt_layout(
 				$embed_data['end'] = ceil((float) $embed_data['end']);
 			}
 
-			if (is_file(transcription_filename($clip_id))) {
+			if (captions_json_cache_exists($clip_id)) {
 				$embed_data['has_captions'] = sprintf(
 					'/transcriptions/%s',
 					sprintf(
@@ -3286,33 +2971,6 @@ function embed_link(string $video_id, $start, $end) : string
 	}
 
 	return timestamp_link($video_id, $start ?? 0.0);
-}
-
-function markdownify_transcription_lines(
-	string $line,
-	string ...$lines
-) : string {
-	/** @var string */
-	static $transcription_blank_lines_regex = '/(>\n>\n)+/';
-
-	array_unshift($lines, $line);
-
-	$transcription_text = implode('', array_map(
-		static function (string $caption_line) : string {
-			return trim('> ' . $caption_line) . "\n" . '>' . "\n";
-		},
-		$lines
-	));
-
-	while (preg_match($transcription_blank_lines_regex, $transcription_text)) {
-		$transcription_text = preg_replace(
-			$transcription_blank_lines_regex,
-			'>' . "\n",
-			$transcription_text
-		);
-	}
-
-	return preg_replace('/>\n$/', '', $transcription_text);
 }
 
 /**

@@ -25,10 +25,6 @@ use UnexpectedValueException;
 
 class Jsonify
 {
-	public const link_part_regex = '/^(.+) \[[^\]]+\]\(([^\)]+)\)$/';
-
-	public const transcript_part_regex = '/^\[([^\]]+)\]\(\.([^\)]+)\.md\)$/';
-
 	private Injected $injected;
 
 	private Questions $questions;
