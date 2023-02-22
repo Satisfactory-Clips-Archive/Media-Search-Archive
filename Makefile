@@ -5,14 +5,14 @@ docker-image:
 
 install:
 	docker run --rm \
-		--volume=/${PWD}:/media-search-archive \
+		--volume=/$(shell pwd):/media-search-archive \
 		--user $(shell id -u):$(shell id -g) \
 		--workdir=/media-search-archive \
 		composer:2 install
 
 psalm:
 	docker run --rm \
-		--volume=/${PWD}:/media-search-archive \
+		--volume=/$(shell pwd):/media-search-archive \
 		--user $(shell id -u):$(shell id -g) \
 		--workdir=/media-search-archive \
 		php:8.0-cli ./vendor/bin/psalm --threads=$(nproc)
