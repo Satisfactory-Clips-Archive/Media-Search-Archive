@@ -1,6 +1,6 @@
 {
-	"name": "satisfactory-clips-archive/video-clip-notes",
-	"description": "Notes for twitch clips",
+	"name": "satisfactory-clips-archive/media-search-archive",
+	"description": "Static site generator for https://archive.satisfactory.video/",
 	"type": "project",
 	"license": "Apache-2.0",
 	"authors": [
