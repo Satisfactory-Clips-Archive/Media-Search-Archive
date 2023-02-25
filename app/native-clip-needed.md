@@ -8,7 +8,7 @@
 - [ ] yt-W1E6EWrAsII,91.24,120.52 - Q&A: Will there be mods?
 - [ ] yt-W1E6EWrAsII,120.52,176.6 - Q&A: Plans for post-launch?
 - [ ] yt-W1E6EWrAsII,176.6,214.36 - Q&A: Will we need to defend our factory?
-- [ ] yt-W1E6EWrAsII,214.36,238.12 - Q&A: Will there be Lizard Doggo plushies?
+- [x] yt-W1E6EWrAsII,214.36,238.12 - Q&A: Will there be Lizard Doggo plushies?
 - [ ] yt-W1E6EWrAsII,238.12,256.8 - Q&A: How many Alpha Keys will there be?
 - [ ] yt-W1E6EWrAsII,316.92,345.76 - Q&A: Is the Map procedurally generated?
 - [ ] yt-W1E6EWrAsII,345.76,375.64 - Q&A: Will you localise Satisfactory into x language?
