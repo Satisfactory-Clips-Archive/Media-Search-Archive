@@ -4,6 +4,9 @@ Static site generator for [Satisfactory Clips Archive](https://archive.satisfact
 
 # Changelog
 
+## 2023-02-25
+* started work on extracting questions from non-question clips
+
 ## 2023-02-22
 * refactored to removed markdown support
 

@@ -40,6 +40,7 @@ $slugify = new Slugify();
 $skipping = SkippingTranscriptions::i();
 $injected = new Injected($api, $slugify, $skipping);
 $questions = new Questions($injected);
+$sub_questions = new SubQuestions($injected);
 $jsonify = new Jsonify($injected, $questions);
 
 $global_topic_hierarchy = $injected->topics_hierarchy;
@@ -60,6 +61,10 @@ echo sprintf('Ready after %s seconds' . "\n", microtime(true) - $stat_start);
 [$existing, $duplicates] = $questions->process();
 
 echo sprintf('Processed after %s seconds' . "\n", microtime(true) - $stat_start);
+
+$sub_questions->update();
+
+echo sprintf('sub-questions extracted after %s seconds' . "\n", microtime(true) - $stat_start);
 
 $by_topic = [];
 
