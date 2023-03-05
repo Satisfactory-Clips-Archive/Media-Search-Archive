@@ -2985,6 +2985,8 @@ function determine_date_for_video(
 	/** @var array<string, string|false> */
 	static $matches = [];
 
+	$video_id = vendor_prefixed_video_id($video_id);
+
 	if (isset($matches[$video_id])) {
 		if (false === $matches[$video_id]) {
 			throw new RuntimeException(sprintf(

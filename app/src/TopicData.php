@@ -808,6 +808,9 @@ class TopicData
 		'PLbjDnnBIxiEp0LTS_gLsiacb7JQimuAra' => [ // The Cycle
 			'Off-Topic',
 		],
+		'PLbjDnnBIxiEpXfdIxaVNlbrgTajarPMeg' => [ // Midnight Ghost Hunt
+			'Off-Topic',
+		],
 		'PLbjDnnBIxiEqKzRDBMtWg2XJqwJzLgmQY' => [ // G2
 			'Coffee Stainers',
 		],
@@ -1368,6 +1371,18 @@ class TopicData
 			'Embracer Group',
 			'Coffee Stain Holding',
 		],
+		'PLbjDnnBIxiEon4YC9uF1z7ghCoifQKLnH' => [ // Coffee Stain Gothenburg
+			'Embracer Group',
+			'Coffee Stain Holding',
+		],
+		'PLbjDnnBIxiEqTZMJS_m2VuTmUNM_Vh_JQ' => [ // Easy Trigger Games
+			'Embracer Group',
+			'Coffee Stain Holding',
+		],
+		'PLbjDnnBIxiEoxEs7Cr_q6_oCNolhCLydl' => [ // Box Dragon
+			'Embracer Group',
+			'Coffee Stain Holding',
+		],
 		'PLbjDnnBIxiEoFLmKQaDWq_Rl7qd-H_GIA' => [ // Flannel
 			'Coffee Stainers',
 		],
@@ -1688,6 +1703,12 @@ class TopicData
 		],
 		'PLbjDnnBIxiEqkEjUcuv57s_DfvqYAnw0L' => [ // İlayda
 			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEoll0qbcokyoAZHnVeLgkUv' => [ // Ghostwood Empire
+			'Soundtrack',
+		],
+		'PLbjDnnBIxiEr4chbOlma5qHhDa_2PzFQ1' => [ // Mason
+			'Community',
 		],
 	];
 
