@@ -832,9 +832,6 @@
     "Panakotta00": {
         "community\/panakotta00": 1616021325
     },
-    "Dedicated SErvers": {
-        "dedicated-servers": 1616021325
-    },
     "Flags": {
         "mods\/flags": 1616021325
     },
@@ -1730,9 +1727,6 @@
     "PLbjDnnBIxiEr4chbOlma5qHhDa_2PzFQ1": {
         "community\/mason": 1677981804
     },
-    "Dedicated Server": {
-        "dedicated-server": 1677981804
-    },
     "PLbjDnnBIxiEoxEs7Cr_q6_oCNolhCLydl": {
         "embracer-group\/coffee-stain-holding\/box-dragon": 1677981804
     },
@@ -1748,13 +1742,8 @@
     "PLbjDnnBIxiEoll0qbcokyoAZHnVeLgkUv": {
         "soundtrack\/ghostwood-empire": 1677981804
     },
-    "Update 3": {
-        "update-3": 1677981804
-    },
     "Update 7 Patch Notes Video - Behind the Scenes": {
-        "update-7-patch-notes-video-behind-the-scenes": 1677981804
-    },
-    "Zip Line": {
-        "zip-line": 1677981804
+        "update-7-patch-notes-video-behind-the-scenes": 1677981804,
+        "satisfactory-updates\/teasers-and-trailers\/update-7-patch-notes-video\/update-7-patch-notes-video-behind-the-scenes": 1677992825
     }
 }

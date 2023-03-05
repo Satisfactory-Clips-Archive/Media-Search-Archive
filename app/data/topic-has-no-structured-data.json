@@ -31,7 +31,6 @@
     "community\/tom",
     "community\/vilsol",
     "concept-art",
-    "dedicated-server",
     "easter-eggs",
     "embracer-group",
     "embracer-group\/coffee-stain-holding",
@@ -373,6 +372,7 @@
     "satisfactory-updates\/teasers-and-trailers\/update-6-patch-notes-video",
     "satisfactory-updates\/teasers-and-trailers\/update-6-teasers",
     "satisfactory-updates\/teasers-and-trailers\/update-7-patch-notes-video",
+    "satisfactory-updates\/teasers-and-trailers\/update-7-patch-notes-video\/update-7-patch-notes-video-behind-the-scenes",
     "satisfactory-updates\/teasers-and-trailers\/update-7-teasers",
     "satisfactory-updates\/teasers-and-trailers\/update-8-teasers",
     "satisfactory-updates\/world-update",
@@ -405,8 +405,5 @@
     "technology\/user-interface\/markers",
     "technology\/user-interface\/ping",
     "technology\/user-interface\/stamps",
-    "trolling",
-    "update-3",
-    "update-7-patch-notes-video-behind-the-scenes",
-    "zip-line"
+    "trolling"
 ]

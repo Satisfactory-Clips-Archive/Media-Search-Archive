@@ -102,6 +102,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
+		'Update 7 Patch Notes Video - Behind the Scenes' => [
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+			'Update 7 Patch Notes Video',
+		],
 		'PLbjDnnBIxiEr446crgxZOiVsi-_Ltncyq' => [ // Update 8 Teasers
 			800,
 			'Satisfactory Updates',
