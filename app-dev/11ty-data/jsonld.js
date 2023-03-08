@@ -1,6 +1,7 @@
 const topics = require('../../src/topics.json');
 /** @var {[key:string]: string} */
 const reverse_lookup = require('../../11ty/data/topicStrings_reverse.json');
+const playlist_cache = require('../../app/data/api-cache/playlists-unmapped.json');
 
 module.exports = async () => {
 	const [
@@ -42,20 +43,38 @@ module.exports = async () => {
 		const archive_url = `https://archive.satisfactory.video${permalink}`;
 
 		if ( ! (permalink in out)) {
+			const playlist_id = reverse_lookup[slug];
+			const playlist_url = `https://www.youtube.com/playlist?list=${
+				encodeURIComponent(playlist_id)
+			}`;
+
 			out[permalink] = [
 				{
 					"@context": "https://schema.org",
 					"@type": "WebPage",
 					"name": data[data.length - 1],
-					"description": `Satisfactory clips about ${
+					"description": `Clips about ${
 						data[data.length - 1]
 					}`,
 					url: archive_url,
 					"about": [
-						satisfactory,
-					]
-				}
+						{
+							'@type': 'CreativeWorkSeries',
+							'name': data[data.length - 1],
+							url: playlist_url,
+						},
+					],
+				},
 			];
+
+			if (
+				playlist_id in playlist_cache
+				&& 'snippet' in playlist_cache[playlist_id]
+				&& 'description' in playlist_cache[playlist_id].snippet
+				&& '' !== playlist_cache[playlist_id].snippet.description.trim()
+			) {
+				out[permalink][0].description = playlist_cache[playlist_id].snippet.description.trim();
+			}
 		}
 	});
 
@@ -154,7 +173,17 @@ module.exports = async () => {
 				encodeURIComponent(reverse_lookup[slug])
 			}`;
 
-			if ( ! data[0].relatedLink.includes(playlist_url)) {
+			if (
+				! data[0].relatedLink.includes(playlist_url)
+				&& ! (
+					'WebPage' === data[0]['@type']
+					&& 'about' in data[0]
+					&& data[0].about instanceof Array
+					&& data[0].about.length > 0
+					&& 'CreativeWorkSeries' === data[0].about[0]['@type']
+					&& playlist_url === data[0].about[0].url
+				)
+			) {
 				data[0].relatedLink.push(playlist_url);
 			}
 		}
@@ -178,6 +207,9 @@ module.exports = async () => {
 					};
 				}),
 			};
+		}
+		if (('relatedLink' in data[0]) && data[0].relatedLink.length < 1) {
+			delete data[0].relatedLink;
 		}
 	})
 

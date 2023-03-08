@@ -8,7 +8,6 @@
 - [ ] yt-W1E6EWrAsII,91.24,120.52 - Q&A: Will there be mods?
 - [ ] yt-W1E6EWrAsII,120.52,176.6 - Q&A: Plans for post-launch?
 - [ ] yt-W1E6EWrAsII,176.6,214.36 - Q&A: Will we need to defend our factory?
-- [x] yt-W1E6EWrAsII,214.36,238.12 - Q&A: Will there be Lizard Doggo plushies?
 - [ ] yt-W1E6EWrAsII,238.12,256.8 - Q&A: How many Alpha Keys will there be?
 - [ ] yt-W1E6EWrAsII,316.92,345.76 - Q&A: Is the Map procedurally generated?
 - [ ] yt-W1E6EWrAsII,345.76,375.64 - Q&A: Will you localise Satisfactory into x language?
@@ -187,7 +186,6 @@
 - [ ] yt-Dtm6xIj-wM4,2733.4333333333334,2765.667433 - Q&A: Who is the funniest at the stand-ups?
 - [ ] yt-Dtm6xIj-wM4,2765.6666666666665,2806.989791 - Q&A: How long does it take to build a medium-sized factory?
 - [ ] yt-Dtm6xIj-wM4,2806.989791,2816.5666666666666 - Q&A: Can I build as high as I want?
-- [x] yt-Dtm6xIj-wM4,2816.569184,2836.733333333333 - Q&A: Any plans for stuff like Blueprints?
 - [ ] yt-Dtm6xIj-wM4,2949.0666666666666,2974.665846 - Jace Talk: Getting a lot of questions that have been asked before?
 - [ ] yt-Dtm6xIj-wM4,2974.6666666666665,3016.687892 - Q&A: Besides the starting areas,will there be random spawns in the release?
 - [ ] yt-Dtm6xIj-wM4,3016.687892,3049.733333333333 - Q&A: How long have Jace, Hannah, and Snutt been in game dev?
@@ -621,7 +619,6 @@
 - [ ] yt-rATcozDE25c,435.5351,476.04223333333334 - Q&A: Will there be achievements?
 - [ ] yt-rATcozDE25c,476.04223333333334,527.5603666666667 - Q&A: Can we use Turbofuel in Jetpacks?
 - [ ] yt-rATcozDE25c,527.5603666666667,538.5713666666667 - Q&A: Will you add Pipes?
-- [x] yt-rATcozDE25c,538.5713666666667,591.3240666666667 - Q&A: Are there any plans to put a blueprint system in the game?
 - [ ] yt-rATcozDE25c,591.3240666666667,600.6 - Q&A: What about the giant crab in the trailer, can we get that?
 - [ ] yt-rATcozDE25c,600.6,632.7321000000001 - Q&A: Will there be vehicle optimization for co-op?
 - [ ] yt-rATcozDE25c,696.7961,736.1020333333333 - Q&A: Will we ever be able to do something with Nuclear Waste?
@@ -731,7 +728,6 @@
 - [ ] yt--JXPsTlJIiI,1078.9779,1094.8270666666667 - Q&A: How do you have your coffee and/or tea?
 - [ ] yt--JXPsTlJIiI,1094.8270666666667,1151.6505 - Q&A: Do you look at the mods and think there are features you'd like to include in the full game?
 - [ ] yt--JXPsTlJIiI,1151.6505,1208.0401666666667 - Q&A: Dedicated Server status report!
-- [x] yt--JXPsTlJIiI,1208.0401666666667,1266.3651 - Q&A: Do you plan to add copy & paste functionality / blueprints?
 
 ## 2021-01-15
 - [ ] yt-Jxh8kvtUuxY,46.3463,56.38966666666667 - Nitrogen
@@ -1128,9 +1124,6 @@
 - [ ] yt-kw3epGt82yk,151.16666666666666,205.7 - Update 7 Release Stream
 
 ## 2022-12-06
-- [x] yt-fVCw51TOHeA,842.341524,855.466643 - State of Dave
-- [x] yt-fVCw51TOHeA,2901.036688,2913.105688 - Did someone say "bridge review"?
-- [x] yt-fVCw51TOHeA,6220.988365,6229.213893 - Q&A: Golf?
 - [ ] yt-fVCw51TOHeA,6229.213893,6235.886678 - Community FYI: The honest is refreshing
 - [ ] yt-fVCw51TOHeA,6239.331693,6279.508815 - Q&A: Will Blueprints work on GeForce Now?
 - [ ] yt-fVCw51TOHeA,6295.590683,6312.586282 - Q&A: Is it possible to build multiple Blueprint Designers?
@@ -1169,12 +1162,13 @@
 - [ ] yt-fVCw51TOHeA,7408.773281,7437.351342 - Q&A: Will there be ability to decorate the room in the HUB, it feels bare?
 - [ ] yt-fVCw51TOHeA,7439.45071,7445.300398 - Q&A: Why did you make the artefact woman's voice so bloody annoying?
 
-## 2022-12-21
-- [ ] yt-nvBhG4URjMg,99.28,158.08 - Interlude
-- [ ] yt-nvBhG4URjMg,158.12,192.76 - Merry Christmas & Happy Holidays (Part 2)
-- [ ] yt-nvBhG4URjMg,192.8,223.16 - Office Doggos: Caesar!
-- [ ] yt-nvBhG4URjMg,223.2,242.04 - VAMONOS!
-- [ ] yt-nvBhG4URjMg,242.08,253.4 - Office Doggos: Eevee!
-- [ ] yt-nvBhG4URjMg,253.44,282.56 - Merry Christmas & Happy Holidays (Part 3)
-- [ ] yt-nvBhG4URjMg,282.6,328.190091 - Merry Christmas & Happy Holidays (Part 4)
-- [ ] yt-nvBhG4URjMg,328.24,352.48 - Returning around January 10th, 2023
+## 2022-12-11
+- [ ] yt-KSDRo9lGXe4,3123.5771357846947,3157.606369 - Gooder - B-roll
+- [ ] yt-KSDRo9lGXe4,5111.215802,5152.433162 - Unused close-up
+- [ ] yt-KSDRo9lGXe4,7402.287065,7451.802428 - Q&A: Are those doors really tall or are you guys really short?
+- [ ] yt-KSDRo9lGXe4,7451.802428,7490.387772 - Nailed it
+- [ ] yt-KSDRo9lGXe4,7490.387772,7541.855456 - Setting up Snutt & Jace clones (Part 1)
+- [ ] yt-KSDRo9lGXe4,7541.855456,7569.013846 - Sus
+- [ ] yt-KSDRo9lGXe4,7569.013846,7622.591032 - Setting up Snutt & Jace clones (Part 2)
+- [ ] yt-KSDRo9lGXe4,7786.17766,7812.390782 - Simon Saga
+- [ ] yt-KSDRo9lGXe4,7901.282466,7914.06856 - Clips for Twitter
