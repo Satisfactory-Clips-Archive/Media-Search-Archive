@@ -36,45 +36,72 @@ module.exports = async () => {
 		}
 	);
 
-	Object.entries(topics).forEach((e) => {
-		const [slug, data] = e;
+	function definitely_has_playlist_url(slug) {
+		const playlist_id = reverse_lookup[slug];
+		if (undefined === playlist_id) {
+			throw new Error(`${slug} not found!`);
+		}
+
+		return `https://www.youtube.com/playlist?list=${
+			encodeURIComponent(playlist_id)
+		}`;
+	}
+
+	function playlist_object(slug, data, name) {
 		const permalink = `/topics/${slug}/`;
-
 		const archive_url = `https://archive.satisfactory.video${permalink}`;
+		const playlist_id = reverse_lookup[slug];
+		if (undefined === playlist_id) {
+			throw new Error(`${slug} not found!`);
+		}
+		const playlist_url = definitely_has_playlist_url(slug);
 
-		if ( ! (permalink in out)) {
-			const playlist_id = reverse_lookup[slug];
-			const playlist_url = `https://www.youtube.com/playlist?list=${
-				encodeURIComponent(playlist_id)
-			}`;
+		const playlist_object = {
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			name,
+			"description": `Clips about ${
+				name
+			}`,
+			url: archive_url,
+		};
 
-			out[permalink] = [
+		if (
+			(slug in reverse_lookup)
+			&& reverse_lookup[slug].startsWith('PLbjDnnBIxi')
+		) {
+			playlist_object.about = [
 				{
-					"@context": "https://schema.org",
-					"@type": "WebPage",
-					"name": data[data.length - 1],
-					"description": `Clips about ${
-						data[data.length - 1]
-					}`,
-					url: archive_url,
-					"about": [
-						{
-							'@type': 'CreativeWorkSeries',
-							'name': data[data.length - 1],
-							url: playlist_url,
-						},
-					],
+					'@type': 'CreativeWorkSeries',
+					name,
+					url: playlist_url,
 				},
 			];
+		}
 
-			if (
-				playlist_id in playlist_cache
-				&& 'snippet' in playlist_cache[playlist_id]
-				&& 'description' in playlist_cache[playlist_id].snippet
-				&& '' !== playlist_cache[playlist_id].snippet.description.trim()
-			) {
-				out[permalink][0].description = playlist_cache[playlist_id].snippet.description.trim();
-			}
+		if (
+			playlist_id in playlist_cache
+			&& 'snippet' in playlist_cache[playlist_id]
+			&& 'description' in playlist_cache[playlist_id].snippet
+			&& '' !== playlist_cache[playlist_id].snippet.description.trim()
+		) {
+			playlist_object.description = playlist_cache[playlist_id].snippet.description.trim();
+		}
+
+		return playlist_object;
+	}
+
+	Object.entries(topics).forEach((e) => {
+		const [slug] = e;
+		const permalink = `/topics/${slug}/`;
+		if (
+			! (permalink in out)
+		) {
+			const [, data] = e;
+
+			out[permalink] = [
+				playlist_object(slug, data, data[data.length - 1]),
+			];
 		}
 	});
 
@@ -83,6 +110,7 @@ module.exports = async () => {
 		const subslugs = [];
 
 		let breadcrumbs = [];
+		let add_playlist_as_related_link = true;
 
 		const maybe_topic_slugs = /^\/topics\/(.+)\//.exec(permalink);
 
@@ -114,10 +142,12 @@ module.exports = async () => {
 		});
 
 		const archive_url = `https://archive.satisfactory.video${permalink}`;
+		const original_data_0 = data[0];
 
 		if (
 			('@type' in data[0])
 			&& [
+				'Software',
 				'Person',
 				'CreativeWorkSeries',
 				'VideoGame',
@@ -126,13 +156,13 @@ module.exports = async () => {
 			data[0] = {
 				"@context": "https://schema.org",
 				"@type": "WebPage",
-				"name": data[0].name,
+				"name": original_data_0.name,
 				"description": `Satisfactory Livestream clips about ${
-					data[0].name
+					original_data_0.name
 				}`,
 				url: archive_url,
 				"about": [
-					data[0],
+					original_data_0,
 				]
 			};
 
@@ -152,6 +182,51 @@ module.exports = async () => {
 		) {
 			data[0].url = archive_url;
 		}
+
+			if (maybe_topic_slugs) {
+				const playlist_url = definitely_has_playlist_url(maybe_topic_slugs[1]);
+
+				function maybe_sub_is_about(maybe_about) {
+					return (
+						(
+							'CreativeWorkSeries' === maybe_about['@type']
+							&& playlist_url === maybe_about.url
+						)
+						|| has_about(maybe_about)
+					);
+				}
+
+				function has_about(maybe) {
+					return (
+						(
+							'about' in maybe
+							&& maybe.about instanceof Array
+							&& maybe.about.length > 0
+							&& maybe.about.find(maybe_sub_is_about)
+						)
+						|| (
+							'subjectOf' in maybe
+							&& maybe.subjectOf instanceof Array
+							&& maybe.subjectOf.find(maybe_sub_is_about)
+						)
+					);
+				}
+
+				if (! has_about(data[0])) {
+					if ( ! ('about' in data[0])) {
+						data[0].about = [];
+					}
+					const playlist_page = playlist_object(`${maybe_topic_slugs[1]}`, original_data_0, original_data_0.name);
+
+					if (data[0].url === playlist_page.url && 'about' in playlist_page) {
+						data[0].about.push(...playlist_page.about);
+					} else if (data[0].url !== playlist_page.url) {
+						data[0].about.push(playlist_page);
+					}
+
+					add_playlist_as_related_link = false;
+				}
+			}
 
 		const slug = permalink.replace(/^\/topics\/(.+)\//, '$1');
 
@@ -173,16 +248,36 @@ module.exports = async () => {
 				encodeURIComponent(reverse_lookup[slug])
 			}`;
 
+			function maybe_sub_is_about(maybe_about) {
+				return (
+					(
+						'CreativeWorkSeries' === maybe_about['@type']
+						&& playlist_url === maybe_about.url
+					)
+					|| has_about(maybe_about)
+				);
+			}
+
+			function has_about(maybe) {
+				return (
+					(
+						'about' in maybe
+						&& maybe.about instanceof Array
+						&& maybe.about.length > 0
+						&& maybe.about.find(maybe_sub_is_about)
+					)
+					|| (
+						'subjectOf' in maybe
+						&& maybe.subjectOf instanceof Array
+						&& maybe.subjectOf.find(maybe_sub_is_about)
+					)
+				);
+			}
+
 			if (
 				! data[0].relatedLink.includes(playlist_url)
-				&& ! (
-					'WebPage' === data[0]['@type']
-					&& 'about' in data[0]
-					&& data[0].about instanceof Array
-					&& data[0].about.length > 0
-					&& 'CreativeWorkSeries' === data[0].about[0]['@type']
-					&& playlist_url === data[0].about[0].url
-				)
+				&& add_playlist_as_related_link
+				&& ! data.find(has_about)
 			) {
 				data[0].relatedLink.push(playlist_url);
 			}
@@ -208,8 +303,29 @@ module.exports = async () => {
 				}),
 			};
 		}
-		if (('relatedLink' in data[0]) && data[0].relatedLink.length < 1) {
-			delete data[0].relatedLink;
+		if ('about' in data[0]) {
+			data[0].about = data[0].about.reduce(
+				(was, is) => {
+					const json = JSON.stringify(is);
+
+					if ( ! was[1].includes(json)) {
+						was[0].push(is);
+						was[1].push(json);
+					}
+
+					return was;
+				},
+				[[], []]
+			)[0];
+		}
+
+		for (const property of [
+			'relatedLink',
+			'about',
+		]) {
+			if ((property in data[0]) && data[0][property].length < 1) {
+				delete data[0][property];
+			}
 		}
 	})
 
