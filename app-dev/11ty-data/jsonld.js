@@ -183,50 +183,50 @@ module.exports = async () => {
 			data[0].url = archive_url;
 		}
 
-			if (maybe_topic_slugs) {
-				const playlist_url = definitely_has_playlist_url(maybe_topic_slugs[1]);
+		if (maybe_topic_slugs) {
+			const playlist_url = definitely_has_playlist_url(maybe_topic_slugs[1]);
 
-				function maybe_sub_is_about(maybe_about) {
-					return (
-						(
-							'CreativeWorkSeries' === maybe_about['@type']
-							&& playlist_url === maybe_about.url
-						)
-						|| has_about(maybe_about)
-					);
-				}
-
-				function has_about(maybe) {
-					return (
-						(
-							'about' in maybe
-							&& maybe.about instanceof Array
-							&& maybe.about.length > 0
-							&& maybe.about.find(maybe_sub_is_about)
-						)
-						|| (
-							'subjectOf' in maybe
-							&& maybe.subjectOf instanceof Array
-							&& maybe.subjectOf.find(maybe_sub_is_about)
-						)
-					);
-				}
-
-				if (! has_about(data[0])) {
-					if ( ! ('about' in data[0])) {
-						data[0].about = [];
-					}
-					const playlist_page = playlist_object(`${maybe_topic_slugs[1]}`, original_data_0, original_data_0.name);
-
-					if (data[0].url === playlist_page.url && 'about' in playlist_page) {
-						data[0].about.push(...playlist_page.about);
-					} else if (data[0].url !== playlist_page.url) {
-						data[0].about.push(playlist_page);
-					}
-
-					add_playlist_as_related_link = false;
-				}
+			function maybe_sub_is_about(maybe_about) {
+				return (
+					(
+						'CreativeWorkSeries' === maybe_about['@type']
+						&& playlist_url === maybe_about.url
+					)
+					|| has_about(maybe_about)
+				);
 			}
+
+			function has_about(maybe) {
+				return (
+					(
+						'about' in maybe
+						&& maybe.about instanceof Array
+						&& maybe.about.length > 0
+						&& maybe.about.find(maybe_sub_is_about)
+					)
+					|| (
+						'subjectOf' in maybe
+						&& maybe.subjectOf instanceof Array
+						&& maybe.subjectOf.find(maybe_sub_is_about)
+					)
+				);
+			}
+
+			if (! has_about(data[0])) {
+				if ( ! ('about' in data[0])) {
+					data[0].about = [];
+				}
+				const playlist_page = playlist_object(`${maybe_topic_slugs[1]}`, original_data_0, original_data_0.name);
+
+				if (data[0].url === playlist_page.url && 'about' in playlist_page) {
+					data[0].about.push(...playlist_page.about);
+				} else if (data[0].url !== playlist_page.url) {
+					data[0].about.push(playlist_page);
+				}
+
+				add_playlist_as_related_link = false;
+			}
+		}
 
 		const slug = permalink.replace(/^\/topics\/(.+)\//, '$1');
 
