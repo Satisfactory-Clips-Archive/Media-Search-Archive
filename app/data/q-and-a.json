@@ -1,4 +1,566 @@
 {
+    "0_tficF8QSQ": {
+        "title": "Q&A: Jace & Snutt Statues?",
+        "date": "2023-03-28",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/snutt",
+            "features\/buildings\/awesome-store",
+            "features\/requested-features"
+        ],
+        "duplicates": [
+            "IbOMZmlYbD8",
+            "jmLrJTUDpL8"
+        ],
+        "seealso": [
+            "bkv73fUWgD8",
+            "BxlM2EkXWlY",
+            "ikM8j671oEc",
+            "JuGh8i9uZ7I",
+            "sSUNc_iHBWc",
+            "_0GCCJccAl8",
+            "_t_XwMsiEN4"
+        ]
+    },
+    "1xUl3qOSnSw": {
+        "title": "Q&A: Does UE5 give you better tools to deal with the size of save files \/ engine limits?",
+        "date": "2023-03-28",
+        "topics": [
+            "features\/save-system",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/object-limit",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "7tsZ8A8tpEw",
+            "HOwtdGFlG5M",
+            "ic3frj67kt4"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO",
+            "PLbjDnnBIxiErFYB5etMa4dBURmJ9kDAH-"
+        ]
+    },
+    "2jeYKzZyymc": {
+        "title": "Q&A: Any idea when Update 8 will be available on Experimental?",
+        "date": "2023-03-28",
+        "topics": [
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "duplicates": [
+            "4wfaweBjsqU",
+            "udu51xqX-2w",
+            "ugS5beaw77Y",
+            "wv1Wugj_4TI"
+        ],
+        "seealso": [
+            "hha5efOML7Q",
+            "iARrB7UDN14",
+            "uwqBuRxnXow",
+            "YGUh1oKGqwg"
+        ]
+    },
+    "7tsZ8A8tpEw": {
+        "title": "Q&A: Is Unreal Engine 5 going to fix the problem of large saves crashing on load?",
+        "date": "2023-03-28",
+        "topics": [
+            "features\/save-system",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "1xUl3qOSnSw"
+        ]
+    },
+    "B_6GSsDEUXA": {
+        "title": "Q&A: How does one go about lining up everything after slapping a new engine in it?",
+        "date": "2023-03-28",
+        "topics": [
+            "satisfactory-updates",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "yt-HJyfSle4o_U,104.07063333333333,130.9308"
+        ]
+    },
+    "BcI8lezFZ9U": {
+        "title": "Q&A: Do you recommend backing up your saves?",
+        "date": "2023-03-28",
+        "topics": [
+            "features\/save-system",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "seealso": [
+            "n8-u6NP48xM"
+        ]
+    },
+    "EUWxoVBfxBI": {
+        "title": "Q&A: Will World Partition System help saving times?",
+        "date": "2023-03-28",
+        "topics": [
+            "features\/save-system",
+            "features\/save-system\/autosave",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "HOwtdGFlG5M",
+            "yt-dY__x2dq7Sk,510.957494,527.8940333333334",
+            "yt-oLl9SZht-bE,3049.205145,3147.312436"
+        ]
+    },
+    "HOwtdGFlG5M": {
+        "title": "Q&A: Will the pause be reduced for bigger saves in Update 8",
+        "date": "2023-03-28",
+        "topics": [
+            "features\/save-system\/autosave",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "1xUl3qOSnSw",
+            "EUWxoVBfxBI"
+        ],
+        "seealso_video_cards": [
+            "dY__x2dq7Sk"
+        ]
+    },
+    "IKf0aKbn-nQ": {
+        "title": "Q&A: How good is Unreal Engine 5 at rendering Willows, though?",
+        "date": "2023-03-28",
+        "topics": [
+            "satisfactory-updates\/released\/satisfactory-update-5\/save-the-willows",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "SbqxHSQO6_U",
+            "sgoAU6i2Fjk"
+        ]
+    },
+    "LsIa_1KWcIc": {
+        "title": "Q&A: Why is there no Stinger statue on the AWESOME Shop?",
+        "date": "2023-03-28",
+        "topics": [
+            "features\/accessibility\/arachnophobia-mode",
+            "features\/buildings\/awesome-store",
+            "features\/requested-features"
+        ],
+        "seealso": [
+            "QGK0C96KYz4"
+        ]
+    },
+    "QvgyGABRI7s": {
+        "title": "Q&A: How big is your QA Team?",
+        "date": "2023-03-28",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios"
+        ],
+        "seealso": [
+            "-z8ZeQDRv4s"
+        ]
+    },
+    "YZLryBB_Muw": {
+        "title": "Q&A: Will Unreal Engine 5 make it easier to add Golf?",
+        "date": "2023-03-28",
+        "topics": [
+            "features\/unplanned-features\/golf",
+            "technology\/unreal-engine\/unreal-engine-5",
+            "trolling"
+        ],
+        "duplicates": [
+            "5fao-wsp_CM",
+            "7izKxTtG3js",
+            "hhZq5M3I8Io",
+            "i2_4Ow9i_8M",
+            "IVZrSqBV5hM",
+            "IYiTB2D1hKk",
+            "kYn6eCYtK6w",
+            "lnYChdXeOJQ",
+            "STS5LemFXA0",
+            "URD7BgYve-I",
+            "yt-fVCw51TOHeA,6220.988365,6229.213893",
+            "yt-iVDRQg_aWpU,5188.73288641358,5195.520066"
+        ],
+        "seealso": [
+            "6eVeKq7a46Q",
+            "7etFcg21qH8",
+            "9Jd5xIwEGhY",
+            "70bU7AYdYBI",
+            "bU2vsHorHVg",
+            "c91XPaj8_rM",
+            "RgEkPdmaN7c"
+        ]
+    },
+    "_uyQnFxX4SI": {
+        "title": "Q&A: Where's Eevee?",
+        "date": "2023-03-28",
+        "topics": [
+            "coffee-stainers\/snutt\/eevee"
+        ],
+        "seealso": [
+            "GNvp86vzWwY"
+        ]
+    },
+    "iARrB7UDN14": {
+        "title": "Q&A: How will the engine update affect the Experimental to Early Access release?",
+        "date": "2023-03-28",
+        "topics": [
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "2jeYKzZyymc"
+        ]
+    },
+    "pvMPKBsVnWU": {
+        "title": "Q&A: Is Update 8 only Unreal Engine 5?",
+        "date": "2023-03-28",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "replaces": [
+            "fWstFh27K-8"
+        ],
+        "seealso": [
+            "F0rUD1cU_7A",
+            "XKcBgG1e1LE",
+            "yt-dY__x2dq7Sk,1282.7147666666667,1427.0589666666667",
+            "yt-dY__x2dq7Sk,2120.0846333333334,2129.58915",
+            "yt-dY__x2dq7Sk,2129.6275,2169.600766666667",
+            "yt-dY__x2dq7Sk,2169.6341333333335,2187.8523333333333",
+            "yt-dY__x2dq7Sk,2187.8857,2265.8969666666667",
+            "yt-HJyfSle4o_U,104.07063333333333,130.9308"
+        ]
+    },
+    "qM5PYpNzNtY": {
+        "title": "Q&A: Is Unreal Engine 5 update affect Occlusion Culling?",
+        "date": "2023-03-28",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/graphics",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "SauDZG88AFI"
+        ]
+    },
+    "sgoAU6i2Fjk": {
+        "title": "Q&A: If Lumen is being used, will more Lights be added?",
+        "date": "2023-03-28",
+        "topics": [
+            "features\/buildables\/lights",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "IKf0aKbn-nQ",
+            "OwwyjzKfDSQ",
+            "yt-dY__x2dq7Sk,367.4671,503.3028",
+            "yt-oLl9SZht-bE,2541.270661,2566.799974"
+        ],
+        "seealso_topic_cards": [
+            "PLbjDnnBIxiEqK9nRVDCg0Z3bb47I6gPod"
+        ]
+    },
+    "udu51xqX-2w": {
+        "title": "Q&A: Release Date?",
+        "date": "2023-03-28",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "duplicatedby": "2jeYKzZyymc"
+    },
+    "wJ4Lkk9GEf4": {
+        "title": "Q&A: Are you going to break the Satisfactory Calculator?",
+        "date": "2023-03-28",
+        "topics": [
+            "community\/satisfactory-calculator",
+            "features\/save-system",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "yt-dY__x2dq7Sk,2043.6749666666667,2120.051266666667"
+        ]
+    },
+    "x5z2HuiZaZ8": {
+        "title": "Q&A: Are you eating Burgers for dinner again?",
+        "date": "2023-03-28",
+        "topics": [
+            "coffee-stainers\/snutt\/snutt-burger-time"
+        ],
+        "seealso": [
+            "_ISlEoEUYT0"
+        ]
+    },
+    "xhEoMfBfZhQ": {
+        "title": "Q&A: Is ray-tracing a feature you want to implement now you're moving to Unreal Engine 5?",
+        "date": "2023-03-28",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/graphics\/ray-tracing",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "replaces": [
+            "hTn8X7yhRtU",
+            "KXKJxFYBxos",
+            "omr18rjqWZs",
+            "oNsfF8oCgl0",
+            "pb2KprHATHk",
+            "PKx5vpwPGW0",
+            "pvMET7F9BQ8",
+            "Rx_M6fLOzvM",
+            "tsUgV4Irw9I",
+            "UvUfiD8ZL0Q",
+            "xiTNXgLoNK8"
+        ],
+        "seealso": [
+            "1jJweErvkSM",
+            "b9mNEeXtILM",
+            "RubFX693enI"
+        ]
+    },
+    "yt-oLl9SZht-bE,2541.270661,2566.799974": {
+        "title": "Q&A: How will Lumen work with Vehicle Lights?",
+        "date": "2023-03-28",
+        "topics": [
+            "features\/buildables\/lights",
+            "features\/transportation\/vehicles",
+            "intro-and-unreal-engine-topics",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/graphics",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "sgoAU6i2Fjk",
+            "yt-dY__x2dq7Sk,367.4671,503.3028"
+        ]
+    },
+    "yt-oLl9SZht-bE,3049.205145,3147.312436": {
+        "title": "Q&A: Will the World Partition System affect Drones?",
+        "date": "2023-03-28",
+        "topics": [
+            "environment\/world-map",
+            "features\/transportation\/vehicles\/drones",
+            "intro-and-unreal-engine-topics",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "EUWxoVBfxBI"
+        ]
+    },
+    "yt-oLl9SZht-bE,3833.039021,3871.345033": {
+        "title": "Q&A: What about z-fighting?",
+        "date": "2023-03-28",
+        "topics": [
+            "intro-and-unreal-engine-topics",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/graphics",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "FX84LpxZoes",
+            "uGPAFHOniIU"
+        ]
+    },
+    "yt-oLl9SZht-bE,4007.827660,4332.286693": {
+        "title": "Q&A: Does the Physics update affect how stable or janky the Vehicles are in Multiplayer?",
+        "date": "2023-03-28",
+        "topics": [
+            "features\/buildables\/foundations",
+            "features\/transportation\/vehicles",
+            "intro-and-unreal-engine-topics",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/physics",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "replaces": [
+            "-EYhEmqds18",
+            "4qgk0863g0Y",
+            "cAHkNx4zF8A",
+            "D588ym-4A2k",
+            "vQjRcLqrXUM"
+        ],
+        "seealso": [
+            "yt-5Pz_dZbEx-4,291.72476666666665,372.979797",
+            "yt-dY__x2dq7Sk,1427.0923333333333,1509.1409666666666"
+        ]
+    },
+    "yt-dY__x2dq7Sk,367.4671,503.3028": {
+        "title": "Q&A: Do you have Lumen, Nanite, and Virtual Shadow Maps in Update 8?",
+        "date": "2023-03-24",
+        "topics": [
+            "features\/buildables\/lights",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/graphics",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "sgoAU6i2Fjk",
+            "yt-oLl9SZht-bE,2541.270661,2566.799974"
+        ]
+    },
+    "yt-dY__x2dq7Sk,510.957494,527.8940333333334": {
+        "title": "Q&A: Will you be using the World Partition System in Update 8?",
+        "date": "2023-03-24",
+        "topics": [
+            "environment\/world-map",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "EUWxoVBfxBI"
+        ]
+    },
+    "yt-dY__x2dq7Sk,1282.7147666666667,1427.0589666666667": {
+        "title": "Q&A: Are there going to be performance increases?",
+        "date": "2023-03-24",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/graphics",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "pvMPKBsVnWU"
+        ]
+    },
+    "yt-dY__x2dq7Sk,1427.0923333333333,1509.1409666666666": {
+        "title": "Q&A: Is the game going to be more stable on Unreal Engine 5?",
+        "date": "2023-03-24",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "yt-oLl9SZht-bE,4007.827660,4332.286693"
+        ]
+    },
+    "yt-dY__x2dq7Sk,1509.1743333333334,1621.4198000000001": {
+        "title": "Q&A: Will Unreal Engine 5 affect Hardware Requirements?",
+        "date": "2023-03-24",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "Q0wo21IdowE",
+            "uSQM8Q3aFIw"
+        ]
+    },
+    "yt-dY__x2dq7Sk,1621.4531666666667,1762.2938666666666": {
+        "title": "Q&A: Is DirectX 11 still supported?",
+        "date": "2023-03-24",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/directx",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "duplicates": [
+            "lV97VTEtsWs"
+        ],
+        "seealso": [
+            "Rh4ZuKAKnuw"
+        ]
+    },
+    "yt-dY__x2dq7Sk,1762.3272333333334,1931.0958333333333": {
+        "title": "Q&A: What about the Build Limit?",
+        "date": "2023-03-24",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/object-limit",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "replaces": [
+            "RzehTQWKTDI"
+        ],
+        "seealso": [
+            "XKcBgG1e1LE",
+            "YtQ3rlOUFW8"
+        ]
+    },
+    "yt-dY__x2dq7Sk,1931.1292,2043.6416": {
+        "title": "Q&A: Will Mods still work at Update 8 Experimental launch?",
+        "date": "2023-03-24",
+        "topics": [
+            "mods",
+            "satisfactory-updates\/release-builds",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "suD4O_vB1JE",
+            "yt-fVCw51TOHeA,7129.684357,7166.653421"
+        ]
+    },
+    "yt-dY__x2dq7Sk,2043.6749666666667,2120.051266666667": {
+        "title": "Q&A: Will Unreal Engine 5 break Dedicated Servers?",
+        "date": "2023-03-24",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers",
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "I_ZyhORDZjg",
+            "wJ4Lkk9GEf4"
+        ]
+    },
+    "yt-dY__x2dq7Sk,2120.0846333333334,2129.58915": {
+        "title": "Q&A: What version of Unreal Engine 5 are you using?",
+        "date": "2023-03-24",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "pvMPKBsVnWU"
+        ]
+    },
+    "yt-dY__x2dq7Sk,2129.6275,2169.600766666667": {
+        "title": "Q&A: Why did you decide to make the change to Unreal Engine 5?",
+        "date": "2023-03-24",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "pvMPKBsVnWU",
+            "yt-dY__x2dq7Sk,2169.6341333333335,2187.8523333333333"
+        ]
+    },
+    "yt-dY__x2dq7Sk,2169.6341333333335,2187.8523333333333": {
+        "title": "Q&A: How long did it take to switch to Unreal Engine 5?",
+        "date": "2023-03-24",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "pvMPKBsVnWU",
+            "yt-dY__x2dq7Sk,2129.6275,2169.600766666667",
+            "yt-dY__x2dq7Sk,2187.8857,2265.8969666666667"
+        ]
+    },
+    "yt-dY__x2dq7Sk,2187.8857,2265.8969666666667": {
+        "title": "Q&A: Do you think switching to Unreal Engine 5 was worth it?",
+        "date": "2023-03-24",
+        "topics": [
+            "satisfactory-updates\/speculative\/satisfactory-update-8",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "pvMPKBsVnWU",
+            "yt-dY__x2dq7Sk,2169.6341333333335,2187.8523333333333"
+        ]
+    },
     "-_TIZJVBADg": {
         "title": "Q&A: Is the view (fps move pan) a UE code or is it custom made?",
         "date": "2023-03-21",
@@ -150,8 +712,8 @@
             "9QEf5938sPk",
             "BM3zIM7od9A",
             "dm_Nlh1ZMm4",
-            "fWstFh27K-8",
             "oBy4_sq83HE",
+            "pvMPKBsVnWU",
             "qL0kXIhe6nw",
             "RzehTQWKTDI",
             "Wa_DYTtbz_s"
@@ -377,7 +939,8 @@
             "coffee-stainers\/snutt\/snutt-burger-time"
         ],
         "seealso": [
-            "oSz9s84NbeI"
+            "oSz9s84NbeI",
+            "x5z2HuiZaZ8"
         ]
     },
     "_fC1Yf3eoZk": {
@@ -504,6 +1067,7 @@
             "vRHcjLUjio8"
         ],
         "seealso": [
+            "1xUl3qOSnSw",
             "2zL_NHC2MfU",
             "8l0B-N5-TJg",
             "21diy9LWH8g",
@@ -826,6 +1390,9 @@
             "environment\/creatures\/lizard-doggo",
             "merch"
         ],
+        "seealso": [
+            "_uyQnFxX4SI"
+        ],
         "seealso_card_urls": [
             [
                 "Catching xSgtPepperx on the weekly dev stream",
@@ -900,7 +1467,8 @@
             "satisfactory-updates\/released\/satisfactory-update-5\/save-the-willows"
         ],
         "seealso": [
-            "g7AdCMFATk4"
+            "g7AdCMFATk4",
+            "IKf0aKbn-nQ"
         ]
     },
     "UC-nv6xc1CY": {
@@ -920,23 +1488,7 @@
         "topics": [
             "technology\/graphics\/ray-tracing"
         ],
-        "duplicates": [
-            "hTn8X7yhRtU",
-            "KXKJxFYBxos",
-            "omr18rjqWZs",
-            "oNsfF8oCgl0",
-            "pb2KprHATHk",
-            "PKx5vpwPGW0",
-            "pvMET7F9BQ8",
-            "Rx_M6fLOzvM",
-            "tsUgV4Irw9I",
-            "xiTNXgLoNK8"
-        ],
-        "seealso": [
-            "1jJweErvkSM",
-            "b9mNEeXtILM",
-            "RubFX693enI"
-        ]
+        "replacedby": "xhEoMfBfZhQ"
     },
     "Xdt1RRULypw": {
         "title": "Q&A: What would you consider a 100%-complete save with the current build?",
@@ -1936,15 +2488,7 @@
             "features\/transportation\/vehicles",
             "technology\/physics"
         ],
-        "duplicates": [
-            "-EYhEmqds18",
-            "4qgk0863g0Y",
-            "cAHkNx4zF8A",
-            "vQjRcLqrXUM"
-        ],
-        "seealso": [
-            "yt-5Pz_dZbEx-4,291.72476666666665,372.979797"
-        ]
+        "replacedby": "yt-oLl9SZht-bE,4007.827660,4332.286693"
     },
     "ES0y_yBlAck": {
         "title": "Q&A: Mk.3 Miner, dual-output solution?",
@@ -2286,7 +2830,8 @@
             "satisfactory-updates\/speculative\/satisfactory-update-8"
         ],
         "seealso": [
-            "A8VMu9hMZy0"
+            "A8VMu9hMZy0",
+            "yt-dY__x2dq7Sk,1931.1292,2043.6416"
         ]
     },
     "tRyR_hORLcI": {
@@ -2580,9 +3125,9 @@
         ],
         "seealso": [
             "-INlf08_wzc",
-            "fWstFh27K-8",
             "GMIgpp3V0A4",
-            "guEuZBJWV3s"
+            "guEuZBJWV3s",
+            "pvMPKBsVnWU"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo"
@@ -2654,6 +3199,7 @@
         ],
         "seealso": [
             "kwVBoyVxGik",
+            "LsIa_1KWcIc",
             "yt-Rumqu_lyapg,9048.466666666667,9052.844165"
         ],
         "seealso_topic_cards": [
@@ -2748,7 +3294,7 @@
         "seealso_video_cards": [
             "4qgk0863g0Y"
         ],
-        "duplicatedby": "D588ym-4A2k"
+        "replacedby": "yt-oLl9SZht-bE,4007.827660,4332.286693"
     },
     "f1xGBhCsL98": {
         "title": "Q&A: Who came up with the name MASSAGE-2(A-B)b?",
@@ -2991,7 +3537,8 @@
         ],
         "seealso": [
             "B-McxmgzE20",
-            "NqZsKBb7EN0"
+            "NqZsKBb7EN0",
+            "yt-dY__x2dq7Sk,2043.6749666666667,2120.051266666667"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl",
@@ -3153,7 +3700,7 @@
         ],
         "seealso": [
             "-INlf08_wzc",
-            "4wfaweBjsqU",
+            "2jeYKzZyymc",
             "NHAl4GYVVFQ",
             "v6eqwt8LTkA",
             "YGUh1oKGqwg"
@@ -3706,7 +4253,8 @@
             "features\/requested-features"
         ],
         "seealso": [
-            "OOalQW-Vsac"
+            "OOalQW-Vsac",
+            "sgoAU6i2Fjk"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqDSLRIdyHmUlI71j458DqR"
@@ -3908,15 +4456,11 @@
             "satisfactory-updates\/speculative\/satisfactory-update-8",
             "technology\/unreal-engine"
         ],
-        "seealso": [
-            "F0rUD1cU_7A",
-            "XKcBgG1e1LE",
-            "yt-HJyfSle4o_U,104.07063333333333,130.9308"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo",
             "PLbjDnnBIxiEp5eh0gKJcMENUPjCcoHNVH"
-        ]
+        ],
+        "replacedby": "pvMPKBsVnWU"
     },
     "f_oRf-E5wd0": {
         "title": "Q&A: Any plans to get nodes to align with the global grid?",
@@ -4248,31 +4792,10 @@
         "topics": [
             "features\/unplanned-features\/golf"
         ],
-        "duplicates": [
-            "5fao-wsp_CM",
-            "7izKxTtG3js",
-            "hhZq5M3I8Io",
-            "i2_4Ow9i_8M",
-            "IVZrSqBV5hM",
-            "IYiTB2D1hKk",
-            "kYn6eCYtK6w",
-            "lnYChdXeOJQ",
-            "STS5LemFXA0",
-            "yt-fVCw51TOHeA,6220.988365,6229.213893",
-            "yt-iVDRQg_aWpU,5188.73288641358,5195.520066"
-        ],
-        "seealso": [
-            "6eVeKq7a46Q",
-            "7etFcg21qH8",
-            "9Jd5xIwEGhY",
-            "70bU7AYdYBI",
-            "bU2vsHorHVg",
-            "c91XPaj8_rM",
-            "RgEkPdmaN7c"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
-        ]
+        ],
+        "duplicatedby": "YZLryBB_Muw"
     },
     "VjxuVdzNw9o": {
         "title": "Q&A: Snow Biome?",
@@ -4743,7 +5266,7 @@
             "PLbjDnnBIxiEqd09Y91Qt4sfvmiIY_jN_J",
             "PLbjDnnBIxiEp-vHRgDqKw29M-XZJOd8D7"
         ],
-        "duplicatedby": "UvUfiD8ZL0Q"
+        "replacedby": "xhEoMfBfZhQ"
     },
     "iio2qCxrt9E": {
         "title": "Q&A: Will Blueprints ever get Soft Clearance?",
@@ -5868,6 +6391,7 @@
         ],
         "seealso": [
             "DkJAo4STjvE",
+            "QvgyGABRI7s",
             "yt-fVCw51TOHeA,7109.788599,7129.118954"
         ],
         "seealso_topic_cards": [
@@ -5916,7 +6440,7 @@
         "incoming_video_cards": [
             "cAHkNx4zF8A"
         ],
-        "duplicatedby": "D588ym-4A2k"
+        "replacedby": "yt-oLl9SZht-bE,4007.827660,4332.286693"
     },
     "57MNnpD8azY": {
         "title": "Q&A: Why no Snow at FICSMAS?",
@@ -6622,7 +7146,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq1lyHQw0wVik2U0W0lmO1p"
         ],
-        "duplicatedby": "D588ym-4A2k"
+        "replacedby": "yt-oLl9SZht-bE,4007.827660,4332.286693"
     },
     "46uOtrt26gs": {
         "title": "Q&A: What are you looking forward to most for 2023?",
@@ -6949,7 +7473,7 @@
             "sQgy1-YJGzg"
         ],
         "seealso": [
-            "4wfaweBjsqU",
+            "2jeYKzZyymc",
             "hha5efOML7Q"
         ],
         "seealso_topic_cards": [
@@ -7008,9 +7532,9 @@
             "features\/requested-features"
         ],
         "seealso": [
+            "0_tficF8QSQ",
             "394eLDR3mFU",
             "BxlM2EkXWlY",
-            "jmLrJTUDpL8",
             "_0GCCJccAl8"
         ],
         "seealso_topic_cards": [
@@ -7344,18 +7868,10 @@
         "topics": [
             "satisfactory-updates\/speculative\/satisfactory-update-8"
         ],
-        "duplicates": [
-            "ugS5beaw77Y",
-            "wv1Wugj_4TI"
-        ],
-        "seealso": [
-            "hha5efOML7Q",
-            "uwqBuRxnXow",
-            "YGUh1oKGqwg"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo"
-        ]
+        ],
+        "duplicatedby": "2jeYKzZyymc"
     },
     "Aczp3aPhQgs": {
         "title": "Q&A: Can you continue after you finish the game?",
@@ -7679,7 +8195,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "isdEFNVoEQc": {
         "title": "Q&A: Was Snutt eaten by his clone?",
@@ -7881,7 +8397,8 @@
         ],
         "seealso": [
             "Q0wo21IdowE",
-            "yt-CB9bSigNYH8,2909.614069,2937.959243"
+            "yt-CB9bSigNYH8,2909.614069,2937.959243",
+            "yt-dY__x2dq7Sk,1509.1743333333334,1621.4198000000001"
         ]
     },
     "ui9y7vH9d8o": {
@@ -8003,7 +8520,7 @@
         "topics": [
             "features\/unplanned-features\/golf"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "yt-fVCw51TOHeA,6239.331693,6279.508815": {
         "title": "Q&A: Will Blueprints work on GeForce Now?",
@@ -8357,7 +8874,8 @@
             "satisfactory-updates\/released\/satisfactory-update-7"
         ],
         "seealso": [
-            "aPOh6hDve_o"
+            "aPOh6hDve_o",
+            "yt-dY__x2dq7Sk,1931.1292,2043.6416"
         ]
     },
     "yt-fVCw51TOHeA,7169.262979,7191.610626": {
@@ -9729,7 +10247,7 @@
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo",
             "PLbjDnnBIxiEpy0dbl8UJNZFunrmillCCR"
         ],
-        "duplicatedby": "4wfaweBjsqU"
+        "duplicatedby": "2jeYKzZyymc"
     },
     "vqb8dmFFFQQ": {
         "title": "Q&A: Will there be a feature to delete a whole Blueprint all at once?",
@@ -10361,7 +10879,8 @@
             "pXfB87_h8BQ"
         ],
         "seealso": [
-            "FX84LpxZoes"
+            "FX84LpxZoes",
+            "yt-oLl9SZht-bE,3833.039021,3871.345033"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO"
@@ -10498,7 +11017,7 @@
             "features\/requested-features"
         ],
         "seealso": [
-            "jmLrJTUDpL8",
+            "0_tficF8QSQ",
             "_t_XwMsiEN4"
         ],
         "seealso_topic_cards": [
@@ -11064,7 +11583,7 @@
         "topics": [
             "technology\/graphics\/ray-tracing"
         ],
-        "duplicatedby": "UvUfiD8ZL0Q"
+        "replacedby": "xhEoMfBfZhQ"
     },
     "kH2dOTO1b9w": {
         "title": "Q&A: Are you going to half Glass Foundations?",
@@ -11811,13 +12330,10 @@
             "technology\/unreal-engine\/object-limit",
             "technology\/unreal-engine\/unreal-engine-5"
         ],
-        "seealso": [
-            "XKcBgG1e1LE",
-            "YtQ3rlOUFW8"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqa47-NYtnxl93i8azA089W"
-        ]
+        ],
+        "replacedby": "yt-dY__x2dq7Sk,1762.3272333333334,1931.0958333333333"
     },
     "sec9STlUvB0": {
         "title": "Q&A: Are you actually going forward with the rebalance so there aren't precision issues?",
@@ -12160,13 +12676,13 @@
             "67AkkFFwmaY",
             "blWlTrXLMt0",
             "C2PmZj33BIE",
-            "D588ym-4A2k",
             "lFhd8pqpyPY",
             "pwh9QNRmqFY",
             "qQewNwoZxMI",
             "RzURMlItEvs",
             "wl76rNQbCAw",
-            "Y2lhP94DACU"
+            "Y2lhP94DACU",
+            "yt-oLl9SZht-bE,4007.827660,4332.286693"
         ]
     },
     "Z8TYjdqSd7o": {
@@ -13016,7 +13532,7 @@
         ],
         "seealso": [
             "6CjylFLFNyg",
-            "URD7BgYve-I"
+            "YZLryBB_Muw"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
@@ -13326,7 +13842,7 @@
         ],
         "seealso": [
             "Cc1dqI86IUw",
-            "URD7BgYve-I"
+            "YZLryBB_Muw"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
@@ -14232,6 +14748,7 @@
             "satisfactory-updates\/release-builds"
         ],
         "seealso": [
+            "BcI8lezFZ9U",
             "F-Q47hXTGMc"
         ],
         "seealso_card_urls": [
@@ -15700,7 +16217,8 @@
         ],
         "seealso": [
             "4iUdXfx0v5k",
-            "uGPAFHOniIU"
+            "uGPAFHOniIU",
+            "yt-oLl9SZht-bE,3833.039021,3871.345033"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6"
@@ -15830,7 +16348,7 @@
             "features\/unplanned-features\/golf"
         ],
         "seealso": [
-            "URD7BgYve-I"
+            "YZLryBB_Muw"
         ]
     },
     "LRqRZ3WaRaQ": {
@@ -16153,7 +16671,7 @@
             "technology\/physics",
             "technology\/unreal-engine"
         ],
-        "duplicatedby": "D588ym-4A2k"
+        "replacedby": "yt-oLl9SZht-bE,4007.827660,4332.286693"
     },
     "QDFmSwb_cOE": {
         "title": "Q&A: Any internal discussion on changing the default Foundation type?",
@@ -17025,7 +17543,7 @@
             "features\/unplanned-features\/golf"
         ],
         "seealso": [
-            "URD7BgYve-I"
+            "YZLryBB_Muw"
         ]
     },
     "Jlc7_epbkMw": {
@@ -20057,7 +20575,7 @@
             "features\/unplanned-features\/golf"
         ],
         "seealso": [
-            "URD7BgYve-I"
+            "YZLryBB_Muw"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
@@ -21265,7 +21783,7 @@
         ],
         "seealso": [
             "JhdDyDRBLjM",
-            "URD7BgYve-I"
+            "YZLryBB_Muw"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
@@ -23159,7 +23677,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "GErK58lZabs": {
         "title": "Q&A: What's your favourite retro game?",
@@ -23644,7 +24162,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "szP1t6ZFKR0": {
         "title": "Q&A: Will Console ever come out?",
@@ -24237,7 +24755,7 @@
         "incoming_video_cards": [
             "cYlH0sKb68A"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "y4Z1z86F5ks": {
         "title": "Q&A: Is Jace okay?",
@@ -24536,7 +25054,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "5fao-wsp_CM": {
         "title": "Q&A: Is it true you guys are adding Golf?",
@@ -24548,7 +25066,7 @@
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep",
             "PLbjDnnBIxiErdTAJdeOIHMN2m3pR245LA"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "kaQB-OZtK-8": {
         "title": "Q&A: Did you get your pay raise?",
@@ -25483,6 +26001,7 @@
             "eReH6Sdroq8",
             "RzehTQWKTDI",
             "WfU45N1EvQ0",
+            "yt-dY__x2dq7Sk,1762.3272333333334,1931.0958333333333",
             "zhXICAd27NQ"
         ],
         "seealso_topic_cards": [
@@ -28199,7 +28718,7 @@
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep",
             "PLbjDnnBIxiEqp_c5jfKfMjjFOjbTAWrFE"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "uEZ43YHhaRY": {
         "title": "Q&A: Can we have revolving signs?",
@@ -28575,7 +29094,7 @@
         "seealso_video_cards": [
             "yt-QfaReoks6OM,1068.1666666666667,1079.875"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "lvjgk5seKGc": {
         "title": "Q&A: Will there be any kind of Weather in the future?",
@@ -28932,12 +29451,10 @@
         "topics": [
             "technology\/directx"
         ],
-        "seealso": [
-            "Rh4ZuKAKnuw"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpS1BDtD6ZonY3QdNz6g9Gj"
-        ]
+        ],
+        "duplicatedby": "yt-dY__x2dq7Sk,1621.4531666666667,1762.2938666666666"
     },
     "JzPjAXwcKx8": {
         "title": "Q&A: Weapon item holstering coming soon?",
@@ -29894,7 +30411,7 @@
         "topics": [
             "features\/unplanned-features\/golf"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "yt-iVDRQg_aWpU,5201.332885246913,5221.387351": {
         "title": "Q&A: Any news on FICS\u2055MAS?",
@@ -31645,7 +32162,7 @@
             "PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep",
             "PLbjDnnBIxiEp1tfSvG0zuVBRf93GM6-Np"
         ],
-        "duplicatedby": "URD7BgYve-I"
+        "duplicatedby": "YZLryBB_Muw"
     },
     "5k0P-54_WHw": {
         "title": "Q&A: Snace Body Pillow, when?",
@@ -32951,7 +33468,7 @@
         ],
         "seealso": [
             "FvQdvAf9KL0",
-            "UvUfiD8ZL0Q"
+            "xhEoMfBfZhQ"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoNob1WtMvqzwc3KqxW9dvM"
@@ -36965,21 +37482,10 @@
             "features\/possible-features\/decor",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
-        "duplicates": [
-            "IbOMZmlYbD8"
-        ],
-        "seealso": [
-            "bkv73fUWgD8",
-            "BxlM2EkXWlY",
-            "ikM8j671oEc",
-            "JuGh8i9uZ7I",
-            "sSUNc_iHBWc",
-            "_0GCCJccAl8",
-            "_t_XwMsiEN4"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6"
-        ]
+        ],
+        "duplicatedby": "0_tficF8QSQ"
     },
     "IQTbgZsbfVc": {
         "title": "Q&A: Grid for Pipes?",
@@ -37769,7 +38275,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqd09Y91Qt4sfvmiIY_jN_J"
         ],
-        "duplicatedby": "UvUfiD8ZL0Q"
+        "replacedby": "xhEoMfBfZhQ"
     },
     "cClZj4mc7TI": {
         "title": "Q&A: What does Jace's hoodie say?",
@@ -37927,7 +38433,7 @@
             "yt-HJyfSle4o_U,252.01843333333335,276.1759"
         ],
         "seealso": [
-            "lV97VTEtsWs",
+            "yt-dY__x2dq7Sk,1621.4531666666667,1762.2938666666666",
             "Z1CxRWTQNco"
         ],
         "seealso_topic_cards": [
@@ -39708,8 +40214,8 @@
             "story-and-lore"
         ],
         "seealso": [
+            "0_tficF8QSQ",
             "IYOulexv3-g",
-            "jmLrJTUDpL8",
             "oDe_FdrcnYc",
             "w3aiQMS3xBA"
         ],
@@ -39910,7 +40416,8 @@
             "technology\/unreal-engine"
         ],
         "seealso": [
-            "fWstFh27K-8",
+            "B_6GSsDEUXA",
+            "pvMPKBsVnWU",
             "Rh4ZuKAKnuw",
             "yt-HJyfSle4o_U,48.58186666666667,104.07063333333333",
             "yt-HJyfSle4o_U,130.96416666666667,185.6855"
@@ -44593,9 +45100,9 @@
             "environment\/creatures"
         ],
         "seealso": [
+            "0_tficF8QSQ",
             "9e3AzoHz4yI",
-            "13K9Hn3mdnc",
-            "jmLrJTUDpL8"
+            "13K9Hn3mdnc"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqC9fXtj3M18h0ZeCfZ2u6I",
@@ -47562,7 +48069,7 @@
         ],
         "seealso": [
             "c2fTW3Re8e8",
-            "URD7BgYve-I"
+            "YZLryBB_Muw"
         ],
         "seealso_video_cards": [
             "rgQCCk5ohMc"
@@ -48148,7 +48655,8 @@
         ],
         "seealso": [
             "uSQM8Q3aFIw",
-            "yt-CB9bSigNYH8,2909.614069,2937.959243"
+            "yt-CB9bSigNYH8,2909.614069,2937.959243",
+            "yt-dY__x2dq7Sk,1509.1743333333334,1621.4198000000001"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
@@ -55112,8 +55620,8 @@
             "features\/possible-features\/character-customisation"
         ],
         "seealso": [
-            "8aKhUtVsGrw",
-            "jmLrJTUDpL8"
+            "0_tficF8QSQ",
+            "8aKhUtVsGrw"
         ]
     },
     "imDJ1KxXSgM": {
@@ -55993,7 +56501,7 @@
             "features\/possible-features\/decor",
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
-        "duplicatedby": "jmLrJTUDpL8"
+        "duplicatedby": "0_tficF8QSQ"
     },
     "N8sqIFGjwyk": {
         "title": "Q&A: Are you thinking of adding some type of Signs or screens?",
@@ -57000,8 +57508,8 @@
             "features\/possible-features\/decor"
         ],
         "seealso": [
+            "0_tficF8QSQ",
             "394eLDR3mFU",
-            "jmLrJTUDpL8",
             "_t_XwMsiEN4"
         ]
     },
@@ -57583,9 +58091,9 @@
             "X4heczNNOO8"
         ],
         "seealso": [
+            "0_tficF8QSQ",
             "2Bd9mFmmRFg",
             "hZcoSGtLmOU",
-            "jmLrJTUDpL8",
             "JSE233L0yRA",
             "yt-rATcozDE25c,1119.4850333333334,1132.131"
         ]
@@ -59920,7 +60428,7 @@
         "seealso": [
             "piDbzK70HdU"
         ],
-        "duplicatedby": "UvUfiD8ZL0Q"
+        "replacedby": "xhEoMfBfZhQ"
     },
     "URunN9abrss": {
         "title": "Q&A: Do you have a favourite Mod?",
@@ -68435,7 +68943,7 @@
         "topics": [
             "technology\/graphics\/ray-tracing"
         ],
-        "duplicatedby": "UvUfiD8ZL0Q"
+        "replacedby": "xhEoMfBfZhQ"
     },
     "lkPWRnkW9OU": {
         "title": "Q&A: Are we going to get googly eyes?",
@@ -72835,7 +73343,7 @@
         "topics": [
             "technology\/graphics\/ray-tracing"
         ],
-        "duplicatedby": "UvUfiD8ZL0Q"
+        "replacedby": "xhEoMfBfZhQ"
     },
     "q6tkuGjM4zY": {
         "title": "Q&A: Procedural generation of the World?",
@@ -74745,7 +75253,7 @@
         "topics": [
             "technology\/graphics\/ray-tracing"
         ],
-        "duplicatedby": "UvUfiD8ZL0Q"
+        "replacedby": "xhEoMfBfZhQ"
     },
     "zekvCEX_mv8": {
         "title": "Q&A: Can I play on Epic with someone on Steam?",
@@ -74932,7 +75440,7 @@
         "topics": [
             "technology\/graphics\/ray-tracing"
         ],
-        "duplicatedby": "UvUfiD8ZL0Q"
+        "replacedby": "xhEoMfBfZhQ"
     },
     "NQ8x2q2z55w": {
         "title": "Q&A: Does the kitchen come into the HUB, I want to cook a Lizard Doggo",
@@ -76519,7 +77027,7 @@
             "technology\/graphics\/ray-tracing",
             "technology\/unreal-engine\/custom-component-instanced-spline-mesh"
         ],
-        "duplicatedby": "UvUfiD8ZL0Q"
+        "replacedby": "xhEoMfBfZhQ"
     },
     "YPWIkvRbeHI": {
         "title": "Q&A: What do you use to test performance gains?",
@@ -76735,7 +77243,7 @@
         "topics": [
             "satisfactory-updates\/speculative\/satisfactory-update-8"
         ],
-        "duplicatedby": "4wfaweBjsqU"
+        "duplicatedby": "2jeYKzZyymc"
     },
     "rmduvSAc3P4": {
         "title": "Q&A: Won't it run on Linux with Wine\/Proton?",
@@ -77611,7 +78119,7 @@
             "technology\/graphics\/ray-tracing",
             "technology\/unreal-engine"
         ],
-        "duplicatedby": "UvUfiD8ZL0Q"
+        "replacedby": "xhEoMfBfZhQ"
     },
     "F212AWqzBVI": {
         "title": "Q&A: Giving people Solar, Wind, and Hydro means FICSIT gets more resources?",
@@ -83792,6 +84300,7 @@
             "technology\/unreal-engine"
         ],
         "seelso": [
+            "qM5PYpNzNtY",
             "JDJ5hvAkrWw",
             "nRYObYdENUQ",
             "8I6SrlovQvo"
