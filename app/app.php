@@ -1827,9 +1827,11 @@ foreach (filter_video_ids_for_legacy_alts($cache, ...$all_video_ids) as $video_i
 	)));
 
 	if ( ! isset($total_statistics[$date])) {
-		throw new UnexpectedValueException(
-			'Video found without prefilled statistics date!'
-		);
+		throw new UnexpectedValueException(sprintf(
+			'Video found without prefilled statistics date! (%s, %s)',
+			$video_id,
+			$date
+		));
 	}
 
 	++$total_statistics[$date][0];
