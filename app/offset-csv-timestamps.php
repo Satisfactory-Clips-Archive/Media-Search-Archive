@@ -41,7 +41,7 @@ if ( ! is_numeric($offset)) {
 	));
 }
 
-$glob = glob(__DIR__ . '/data/*/' . $video_id . '.csv');
+$glob = glob(__DIR__ . '/data/dated/*/' . $video_id . '.csv');
 
 if (1 !== count($glob)) {
 	throw new UnexpectedValueException(sprintf(
