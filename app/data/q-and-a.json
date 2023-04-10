@@ -8796,14 +8796,6 @@
             "satisfactory-updates\/teasers-and-trailers\/update-7-patch-notes-video"
         ]
     },
-    "yt-fVCw51TOHeA,6953.756207,6960.018653": {
-        "title": "Q&A: Do I have your permission to look at the Update now?",
-        "date": "2022-12-06",
-        "topics": [],
-        "seealso": [
-            "yt-fVCw51TOHeA,6939.004174,6949.353705"
-        ]
-    },
     "yt-fVCw51TOHeA,6961.06383,6992.999004": {
         "title": "Q&A: Mirrored buildings?",
         "date": "2022-12-06",
@@ -34170,14 +34162,6 @@
         ],
         "replacedby": "yt-Rumqu_lyapg,16555.266666666666,16579.106841"
     },
-    "yt-Rumqu_lyapg,2330.633333333333,2337.30185": {
-        "title": "Q&A: Can you dim the lights, it's a bit too bright?",
-        "date": "2021-10-26",
-        "topics": [],
-        "seealso": [
-            "15jG0o32Dqk"
-        ]
-    },
     "yt-Rumqu_lyapg,2901.156777,2943.766666666667": {
         "title": "Q&A: Are you a ceiling builder, Tobias?",
         "date": "2021-10-26",
@@ -42613,7 +42597,6 @@
             "oGSSaTIXPUU",
             "RFBNUCRN7cE",
             "wy6pur6OiWQ",
-            "yt-cF3QleeEiJo,1707.1683535024624,1739.877184",
             "yt-cF3QleeEiJo,6587.255816,6610.940808051914",
             "yt-Gdz6SUv9Om4,8653.206655,8715.730965",
             "yt-slNYE26evgc,83.45003333333334,131.86506666666668"
@@ -60589,12 +60572,6 @@
         ],
         "duplicatedby": "yt-Rumqu_lyapg,1873.1,2083.733333333333"
     },
-    "yt-cF3QleeEiJo,1707.1683535024624,1739.877184": {
-        "title": "Q&A: What're your plans for the future?",
-        "date": "2021-04-13",
-        "topics": [],
-        "duplicatedby": "Y7yqhenTqHE"
-    },
     "yt-cF3QleeEiJo,1739.877184,1807.6684721219358": {
         "title": "Q&A: What're your plans for dinner?",
         "date": "2021-04-13",
@@ -60699,11 +60676,6 @@
             "OenPMPl6VAY",
             "wPguHi5TsY4"
         ]
-    },
-    "yt-cF3QleeEiJo,6968.72916,6974.084313": {
-        "title": "Q&A: Did you meet the Swedish Chef yet?",
-        "date": "2021-04-13",
-        "topics": []
     },
     "yt-cF3QleeEiJo,6990.93473,7048.823771": {
         "title": "Q&A: Is the Engine Upgrade still on Experimental?",
@@ -63884,11 +63856,6 @@
             "yt-Gdz6SUv9Om4,13544.033333333333,13959.470751",
             "yt-Gdz6SUv9Om4,14091.666666666666,14121.70074"
         ]
-    },
-    "yt-Gdz6SUv9Om4,15228.814754,15258.120306": {
-        "title": "Q&A: Is the YouTube video out?",
-        "date": "2021-03-16",
-        "topics": []
     },
     "yt-Gdz6SUv9Om4,15312.360004,15343.929024": {
         "title": "Q&A: When is it going to be on Early Access?",
@@ -73963,8 +73930,7 @@
         ],
         "seealso": [
             "fgduj_wvIkQ",
-            "xXbrwFqiS5g",
-            "yt-Rumqu_lyapg,2330.633333333333,2337.30185"
+            "xXbrwFqiS5g"
         ]
     },
     "hro__pZa1pk": {
@@ -77973,11 +77939,6 @@
             "8WYNwGDLYNE",
             "PkozY8_q-LE"
         ]
-    },
-    "yt-rATcozDE25c,848.1473,854.7539": {
-        "title": "Q&A: Does this look infected to you?",
-        "date": "2020-10-01",
-        "topics": []
     },
     "yt-rATcozDE25c,854.7539,905.4712333333333": {
         "title": "Q&A: Will there be more optimisation for our low end PCs, both GPU and CPU side?",
@@ -91954,11 +91915,6 @@
             "yt--JXPsTlJIiI,450.7169333333333,464.29716666666667"
         ]
     },
-    "yt-Zo2ybvs7keI,100.72,105.96": {
-        "title": "Q&A: Am I handsome?",
-        "date": "2018-03-09",
-        "topics": []
-    },
     "yt-Zo2ybvs7keI,105.96,113.84": {
         "title": "Q&A: Can we get Sanctum Simulator instead?",
         "date": "2018-03-09",
@@ -92091,11 +92047,6 @@
             "yt-Rumqu_lyapg,9316.633333333333,9387.974187"
         ]
     },
-    "yt-Zo2ybvs7keI,326.32,344.96": {
-        "title": "Q&A: If aliens came to earth what would the best response from humanity be?",
-        "date": "2018-03-09",
-        "topics": []
-    },
     "yt-Zo2ybvs7keI,344.96,382.8": {
         "title": "Q&A: Are the first two letters of your next game's title really \"Sa\" ?",
         "date": "2018-03-09",
@@ -92118,11 +92069,6 @@
         "seealso": [
             "yt-Zo2ybvs7keI,428.16,439.88"
         ]
-    },
-    "yt-Zo2ybvs7keI,412.64,428.16": {
-        "title": "Q&A: Thoughts on current game industry situation when 30 games are released on Steam daily?",
-        "date": "2018-03-09",
-        "topics": []
     },
     "yt-Zo2ybvs7keI,428.16,439.88": {
         "title": "Q&A: What is your favourite character from Sanctum?",

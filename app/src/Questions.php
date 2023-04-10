@@ -309,7 +309,7 @@ class Questions extends AbstractQuestions
 
 			$csv = get_dated_csv($date, $video_id);
 
-			$csv_questions = array_map(
+			$was_csv_questions = $csv_questions = array_map(
 				static function (array $csv_entry) use ($video_id): array {
 					[$start, $end, $title] = $csv_entry;
 					return [
@@ -324,6 +324,25 @@ class Questions extends AbstractQuestions
 					}
 				)
 			);
+
+			$csv_questions = array_filter(
+				$csv_questions,
+				static function (int $key) use ($csv): bool {
+					return false !== ($csv[2]['topics'][$key] ?? null);
+				},
+				ARRAY_FILTER_USE_KEY
+			);
+
+			$missing = array_diff(
+				array_map('current', $was_csv_questions),
+				array_map('current', $csv_questions)
+			);
+
+			if (count($missing)) {
+				foreach ($missing as $missing_video_id) {
+					unset($existing[$missing_video_id]);
+				}
+			}
 
 			foreach ($csv_questions as $csv_question_entry) {
 				if (isset($questions[$video_id]) || isset($existing[$video_id])) {
