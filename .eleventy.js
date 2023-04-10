@@ -88,7 +88,7 @@ module.exports = (e) => {
 			return description;
 		}
 
-		return description.replaceAll(/(\d+:\d+) ([^\n]+)(\n)?/g, (
+		return description.replaceAll(/((?:\d*:)?\d+:\d+) ([^\n]+)(\n)?/g, (
 			_line,
 			timestamp,
 			text,
