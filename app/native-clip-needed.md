@@ -1,7 +1,25 @@
 ## 2018-03-09
+- [ ] yt-Zo2ybvs7keI,17.747482,24.76 - Q&A: How you doin?
+- [ ] yt-Zo2ybvs7keI,24.76,59.88 - Q&A: Would you be interested in offering placement positions?
+- [ ] yt-Zo2ybvs7keI,59.88,100.72 - Q&A: What's the biggest challenge you face in average day to day activities?
+- [ ] yt-Zo2ybvs7keI,105.96,113.84 - Q&A: Can we get Sanctum Simulator instead?
+- [ ] yt-Zo2ybvs7keI,113.84,147.96 - Q&A: Is Sweden a nice place to work?
+- [ ] yt-Zo2ybvs7keI,147.96,185.52 - Q&A: Did the Sanctum devs miss their meds and create Goat Simulator in the process?
+- [ ] yt-Zo2ybvs7keI,185.52,229.64 - Q&A: Are you moving towards a publisher-only role, or do you still have a dev team working on games?
+- [ ] yt-Zo2ybvs7keI,229.64,236.92 - Q&A: Any plans to bring the mobile-exclusive Goat Simulator levels to PC?
+- [ ] yt-Zo2ybvs7keI,236.92,243.48 - Q&A: Any plans for future Goat Simulator DLC or sequel, or another simulator game?
+- [ ] yt-Zo2ybvs7keI,243.48,263.04 - Q&A: Will you consider working on a brand new fabulous -something- simulator in the future?
+- [ ] yt-Zo2ybvs7keI,263.04,271.64 - Q&A: When will we see Goat Simulator VR?
+- [ ] yt-Zo2ybvs7keI,271.64,284.4 - Q&A: Are we going to get another absolute gem like A Story About my Uncle?
+- [ ] yt-Zo2ybvs7keI,285.76,300.32 - Q&A: What programming language do you prefer a developer to have when applying for a job?
 - [ ] yt-Zo2ybvs7keI,300.32,310.36 - Q&A: Who is the better colleague, Nathalie or Hannah?
+- [ ] yt-Zo2ybvs7keI,310.36,318.76 - Q&A: Wassup?
+- [ ] yt-Zo2ybvs7keI,318.76,325.2 - Q&A: How do you feel about your studio?
 - [ ] yt-Zo2ybvs7keI,344.96,382.8 - Q&A: Are the first two letters of your next game's title really "Sa" ?
+- [ ] yt-Zo2ybvs7keI,382.8,412.64 - Q&A: How did Skye Autumn get her scars?
 - [ ] yt-Zo2ybvs7keI,428.16,439.88 - Q&A: What is your favourite character from Sanctum?
+- [ ] yt-Zo2ybvs7keI,439.88,447.16 - Q&A: Is it true that you've built a golden statue of a goat in Japan?
+- [ ] yt-Zo2ybvs7keI,447.16,492.44 - Q&A: Is there someone at your office who is like a super under-appreciated kitchen hero?
 - [ ] yt-Zo2ybvs7keI,492.44,502.32 - Q&A: Coffee or tea?
 
 ## 2018-06-22
@@ -1172,3 +1190,50 @@
 - [ ] yt-KSDRo9lGXe4,7569.013846,7622.591032 - Setting up Snutt & Jace clones (Part 2)
 - [ ] yt-KSDRo9lGXe4,7786.17766,7812.390782 - Simon Saga
 - [ ] yt-KSDRo9lGXe4,7901.282466,7914.06856 - Clips for Twitter
+
+## 2023-03-24
+- [ ] yt-dY__x2dq7Sk,156.32283333333334,198.13126666666668 - Back Up Your Save Files
+- [ ] yt-dY__x2dq7Sk,277.4438333333333,307.37373333333335 - Lumen
+- [ ] yt-dY__x2dq7Sk,307.4071,350.3833666666667 - Nanite
+- [ ] yt-dY__x2dq7Sk,350.41673333333335,367.43373333333335 - Virtual Shadow Maps
+- [ ] yt-dY__x2dq7Sk,510.957494,527.8940333333334 - Q&A: Will you be using the World Partition System in Update 8?
+- [ ] yt-dY__x2dq7Sk,891.1569333333333,923.2556666666667 - FXAA (Fast Approximate Anti-Aliasing)
+- [ ] yt-dY__x2dq7Sk,975.2075666666667,1012.2779333333334 - Autopilot
+- [ ] yt-dY__x2dq7Sk,1012.3113000000001,1062.5948666666666 - Vehicles on Foundations
+- [ ] yt-dY__x2dq7Sk,1074.3733,1083.769159 - Trucks
+- [ ] yt-dY__x2dq7Sk,1084.17084,1093.921169 - Explorer
+- [ ] yt-dY__x2dq7Sk,1098.142864,1116.115 - Factory Cart
+- [ ] yt-dY__x2dq7Sk,1116.1483666666668,1129.681987 - Handbrake
+- [ ] yt-dY__x2dq7Sk,1129.681987,1158.0902666666666 - Air Control removed
+- [ ] yt-dY__x2dq7Sk,1158.1236333333334,1189.9554333333333 - New Sounds
+- [ ] yt-dY__x2dq7Sk,1193.8593333333333,1251.0498 - Enhanced Input System
+- [ ] yt-dY__x2dq7Sk,1251.0831666666668,1269.6684 - Audio Improvements
+- [ ] yt-dY__x2dq7Sk,2120.0846333333334,2129.58915 - Q&A: What version of Unreal Engine 5 are you using?
+- [ ] yt-dY__x2dq7Sk,2129.6275,2169.600766666667 - Q&A: Why did you decide to make the change to Unreal Engine 5?
+- [ ] yt-dY__x2dq7Sk,2169.6341333333335,2187.8523333333333 - Q&A: How long did it take to switch to Unreal Engine 5?
+
+## 2023-03-28
+- [ ] yt-oLl9SZht-bE,2464.489137,2517.925273 - Virtual Shadow Maps
+- [ ] yt-oLl9SZht-bE,2541.270661,2566.799974 - Q&A: How will Lumen work with Vehicle Lights?
+- [ ] yt-oLl9SZht-bE,3799.8851496024415,3833.039021 - Community FYI: TXAA can have nasty ghosting & blurs
+- [ ] yt-oLl9SZht-bE,3833.039021,3871.345033 - Q&A: What about z-fighting?
+- [ ] yt-oLl9SZht-bE,5150.495382,5167.124708 - Input System
+
+## 2023-04-01
+- [ ] yt-9GjKn5KyAd0,0,11.636624999999999 - Intro
+- [ ] yt-9GjKn5KyAd0,11.678333333333333,22.647624999999998 - Community Feedback
+- [ ] yt-9GjKn5KyAd0,22.68933333333333,41.29125 - Intro
+- [ ] yt-9GjKn5KyAd0,41.33295833333333,98.01458333333332 - Verified, Certified, Dipshit
+- [ ] yt-9GjKn5KyAd0,98.05629166666667,157.532375 - Trust™️
+- [ ] yt-9GjKn5KyAd0,157.57408333333333,187.741 - Outro
+
+## 2023-04-07
+- [ ] yt-6X4jqMUtCwI,83.11636666666666,103.3032 - No major changes
+- [ ] yt-6X4jqMUtCwI,103.33656666666667,131.131 - New Foliage
+- [ ] yt-6X4jqMUtCwI,231.26436666666666,270.5035666666667 - Minor Map Changes
+- [ ] yt-6X4jqMUtCwI,360.4934666666667,387.62056666666666 - Eastern Dune Forest & Coin Tree Forest
+- [ ] yt-6X4jqMUtCwI,387.6539333333333,417.1167 - Red Jungle
+- [ ] yt-6X4jqMUtCwI,1121.2201,1172.3378333333333 - Hog Variants
+- [ ] yt-6X4jqMUtCwI,1250.0154333333332,1262.1942666666666 - Update 8 Landscape & Foliage Changes
+- [ ] yt-6X4jqMUtCwI,1262.2276333333334,1271.4368333333334 - Post-Update 8 Landscape & Foliage Changes
+- [ ] yt-6X4jqMUtCwI,1271.4702,1284.5499333333335 - Update 8 Exploration Gameplay Changes
