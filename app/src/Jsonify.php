@@ -670,10 +670,10 @@ class Jsonify
 				}
 
 				if (!is_string($playlist_id)) {
-				throw new RuntimeException(sprintf(
-					'Could not find playlist id for %s',
-					$found
-				));
+					throw new RuntimeException(sprintf(
+						'Could not find playlist id for %s',
+						$found
+					));
 				}
 			}
 		}
