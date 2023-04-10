@@ -460,10 +460,7 @@ class Jsonify
 			'This question has '
 			. implode(', ', $opening_line_parts);
 
-		$content =
-			$this->content_from_other_video_parts(
-				$faq_duplicates_for_date_checking
-		);
+		$content = $this->content_from_other_video_parts($faq_duplicates_for_date_checking);
 
 		foreach ($topics_content as $row) {
 			$content[] = $row;
@@ -648,9 +645,9 @@ class Jsonify
 
 			if ( ! is_string($playlist_id)) {
 				throw new RuntimeException(sprintf(
-				'Could not find playlist id for %s',
-				$found
-			));
+					'Could not find playlist id for %s',
+					$found
+				));
 			}
 		}
 
@@ -739,9 +736,9 @@ class Jsonify
 
 				if ( ! is_string($playlist_id)) {
 					throw new RuntimeException(sprintf(
-					'Could not find playlist id for %s',
-					$other_video_id
-				));
+						'Could not find playlist id for %s',
+						$other_video_id
+					));
 				}
 
 				$out[] = maybe_transcript_link_and_video_url_data(
