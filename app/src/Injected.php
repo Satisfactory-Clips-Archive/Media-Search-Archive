@@ -190,7 +190,7 @@ class Injected
 								$this->not_a_livestream_date_lookup
 							)[0];
 						},
-						$csv[2]['topics'][$csv_offset]
+						($csv[2]['topics'][$csv_offset] ?? []) ?: []
 					);
 				}
 			}

@@ -3332,6 +3332,7 @@
             "3bYGyavB2Gs",
             "rjnWYKc03nA",
             "sBNBwZaHK_I",
+            "yt-Zo2ybvs7keI,243.48,263.04",
             "_Ft7yoUu0YI"
         ],
         "seealso": [
@@ -3717,7 +3718,8 @@
         ],
         "seealso": [
             "hx5tNE4nZcM",
-            "jM_iu4s-OJ8"
+            "jM_iu4s-OJ8",
+            "yt-Zo2ybvs7keI,185.52,229.64"
         ],
         "seealso_video_cards": [
             "8CilfQ1FeVg"
@@ -5472,6 +5474,11 @@
             "J4LlorYbVV0"
         ]
     },
+    "yt-_IHY_1L3pBY,882.5483333333334,1128.394": {
+        "title": "Could we do better?",
+        "date": "2023-01-20",
+        "topics": []
+    },
     "6uYltuXykY0": {
         "title": "Q&A: Can we have a telescope to look at the newly-added celestial bodies?",
         "date": "2023-01-17",
@@ -6545,6 +6552,7 @@
             "Vkkf1mR_nF8",
             "yt-CB9bSigNYH8,692.002303,698.226859",
             "yt-o6ao9-UIZIQ,275.8756,308.6750333333333",
+            "yt-Zo2ybvs7keI,285.76,300.32",
             "z7fe-_3-Al4"
         ],
         "seealso": [
@@ -8510,6 +8518,11 @@
         ],
         "duplicatedby": "cIclgefxFbU"
     },
+    "yt-fVCw51TOHeA,6105.517974": {
+        "title": "Wrap Up\/Q&A?",
+        "date": "2022-12-06",
+        "topics": []
+    },
     "yt-fVCw51TOHeA,6220.988365,6229.213893": {
         "title": "Q&A: Golf?",
         "date": "2022-12-06",
@@ -8786,10 +8799,7 @@
     "yt-fVCw51TOHeA,6953.756207,6960.018653": {
         "title": "Q&A: Do I have your permission to look at the Update now?",
         "date": "2022-12-06",
-        "topics": [
-            "features\/buildings",
-            "features\/requested-features"
-        ],
+        "topics": [],
         "seealso": [
             "yt-fVCw51TOHeA,6939.004174,6949.353705"
         ]
@@ -11819,6 +11829,9 @@
         ],
         "replaces": [
             "1mcwsT0WCvc"
+        ],
+        "seealso": [
+            "yt-Zo2ybvs7keI,263.04,271.64"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEo8-KZTgxIJ71UXOd1d9Vn9"
@@ -20521,6 +20534,11 @@
             "PLbjDnnBIxiEr97STV5beB_aCFM6jZaVDL"
         ]
     },
+    "yt-2vAUX3YLH-c,56.423033333333336,779.5788": {
+        "title": "Let's jump into the game, shall we?",
+        "date": "2022-05-13",
+        "topics": []
+    },
     "dIGez7lvcic": {
         "title": "Q&A: Any cool blueprint tool?",
         "date": "2022-05-10",
@@ -29025,7 +29043,8 @@
         ],
         "duplicates": [
             "0nVP8r62DHg",
-            "NdoDfVjkvG0"
+            "NdoDfVjkvG0",
+            "yt-Zo2ybvs7keI,24.76,59.88"
         ],
         "seealso": [
             "jSZRaISKTPA",
@@ -34151,6 +34170,14 @@
         ],
         "replacedby": "yt-Rumqu_lyapg,16555.266666666666,16579.106841"
     },
+    "yt-Rumqu_lyapg,2330.633333333333,2337.30185": {
+        "title": "Q&A: Can you dim the lights, it's a bit too bright?",
+        "date": "2021-10-26",
+        "topics": [],
+        "seealso": [
+            "15jG0o32Dqk"
+        ]
+    },
     "yt-Rumqu_lyapg,2901.156777,2943.766666666667": {
         "title": "Q&A: Are you a ceiling builder, Tobias?",
         "date": "2021-10-26",
@@ -34760,7 +34787,8 @@
         "seealso": [
             "ajE3JZsNZ8Y",
             "L5P4V2YcjBc",
-            "yt-CB9bSigNYH8,3025.590868,3090.973157"
+            "yt-CB9bSigNYH8,3025.590868,3090.973157",
+            "yt-Zo2ybvs7keI,318.76,325.2"
         ]
     },
     "yt-Rumqu_lyapg,9426.366666666667,9454.228668": {
@@ -42585,6 +42613,7 @@
             "oGSSaTIXPUU",
             "RFBNUCRN7cE",
             "wy6pur6OiWQ",
+            "yt-cF3QleeEiJo,1707.1683535024624,1739.877184",
             "yt-cF3QleeEiJo,6587.255816,6610.940808051914",
             "yt-Gdz6SUv9Om4,8653.206655,8715.730965",
             "yt-slNYE26evgc,83.45003333333334,131.86506666666668"
@@ -45467,7 +45496,8 @@
             "coffee-stainers\/jace"
         ],
         "seealso": [
-            "yt--JXPsTlJIiI,201.23436666666666,203.1029"
+            "yt--JXPsTlJIiI,201.23436666666666,203.1029",
+            "yt-Zo2ybvs7keI,17.747482,24.76"
         ]
     },
     "9e3AzoHz4yI": {
@@ -56818,6 +56848,9 @@
             "coffee-stainers\/snutt",
             "off-topic\/sweden"
         ],
+        "duplicates": [
+            "yt-Zo2ybvs7keI,113.84,147.96"
+        ],
         "seealso": [
             "3UbMqP40hXc",
             "yt-Rumqu_lyapg,1402.7666666666667,1406.3333333333333"
@@ -60556,6 +60589,12 @@
         ],
         "duplicatedby": "yt-Rumqu_lyapg,1873.1,2083.733333333333"
     },
+    "yt-cF3QleeEiJo,1707.1683535024624,1739.877184": {
+        "title": "Q&A: What're your plans for the future?",
+        "date": "2021-04-13",
+        "topics": [],
+        "duplicatedby": "Y7yqhenTqHE"
+    },
     "yt-cF3QleeEiJo,1739.877184,1807.6684721219358": {
         "title": "Q&A: What're your plans for dinner?",
         "date": "2021-04-13",
@@ -60660,6 +60699,11 @@
             "OenPMPl6VAY",
             "wPguHi5TsY4"
         ]
+    },
+    "yt-cF3QleeEiJo,6968.72916,6974.084313": {
+        "title": "Q&A: Did you meet the Swedish Chef yet?",
+        "date": "2021-04-13",
+        "topics": []
     },
     "yt-cF3QleeEiJo,6990.93473,7048.823771": {
         "title": "Q&A: Is the Engine Upgrade still on Experimental?",
@@ -63840,6 +63884,11 @@
             "yt-Gdz6SUv9Om4,13544.033333333333,13959.470751",
             "yt-Gdz6SUv9Om4,14091.666666666666,14121.70074"
         ]
+    },
+    "yt-Gdz6SUv9Om4,15228.814754,15258.120306": {
+        "title": "Q&A: Is the YouTube video out?",
+        "date": "2021-03-16",
+        "topics": []
     },
     "yt-Gdz6SUv9Om4,15312.360004,15343.929024": {
         "title": "Q&A: When is it going to be on Early Access?",
@@ -71185,7 +71234,8 @@
         ],
         "seealso": [
             "E0JzXKvdNeA",
-            "MySQXTvVYBQ"
+            "MySQXTvVYBQ",
+            "yt-Zo2ybvs7keI,59.88,100.72"
         ],
         "seealso_video_cards": [
             "KH5SkE4nzhg",
@@ -73913,7 +73963,8 @@
         ],
         "seealso": [
             "fgduj_wvIkQ",
-            "xXbrwFqiS5g"
+            "xXbrwFqiS5g",
+            "yt-Rumqu_lyapg,2330.633333333333,2337.30185"
         ]
     },
     "hro__pZa1pk": {
@@ -77922,6 +77973,11 @@
             "8WYNwGDLYNE",
             "PkozY8_q-LE"
         ]
+    },
+    "yt-rATcozDE25c,848.1473,854.7539": {
+        "title": "Q&A: Does this look infected to you?",
+        "date": "2020-10-01",
+        "topics": []
     },
     "yt-rATcozDE25c,854.7539,905.4712333333333": {
         "title": "Q&A: Will there be more optimisation for our low end PCs, both GPU and CPU side?",
@@ -91870,6 +91926,139 @@
             "MQSdhIKAjNc"
         ]
     },
+    "yt-Zo2ybvs7keI,17.747482,24.76": {
+        "title": "Q&A: How you doin?",
+        "date": "2018-03-09",
+        "topics": [
+            "coffee-stainers\/jace"
+        ],
+        "duplicates": [
+            "yt-Zo2ybvs7keI,310.36,318.76"
+        ]
+    },
+    "yt-Zo2ybvs7keI,24.76,59.88": {
+        "title": "Q&A: Would you be interested in offering placement positions?",
+        "date": "2018-03-09",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios"
+        ],
+        "duplicatedby": "6Wett6BcKU0"
+    },
+    "yt-Zo2ybvs7keI,59.88,100.72": {
+        "title": "Q&A: What's the biggest challenge you face in average day to day activities?",
+        "date": "2018-03-09",
+        "topics": [
+            "coffee-stainers\/jace"
+        ],
+        "seealso": [
+            "yt--JXPsTlJIiI,450.7169333333333,464.29716666666667"
+        ]
+    },
+    "yt-Zo2ybvs7keI,100.72,105.96": {
+        "title": "Q&A: Am I handsome?",
+        "date": "2018-03-09",
+        "topics": []
+    },
+    "yt-Zo2ybvs7keI,105.96,113.84": {
+        "title": "Q&A: Can we get Sanctum Simulator instead?",
+        "date": "2018-03-09",
+        "topics": [
+            "off-topic\/sanctum"
+        ]
+    },
+    "yt-Zo2ybvs7keI,113.84,147.96": {
+        "title": "Q&A: Is Sweden a nice place to work?",
+        "date": "2018-03-09",
+        "topics": [
+            "off-topic\/sweden"
+        ],
+        "duplicatedby": "rkXzMln6DcA"
+    },
+    "yt-Zo2ybvs7keI,147.96,185.52": {
+        "title": "Q&A: Did the Sanctum devs miss their meds and create Goat Simulator in the process?",
+        "date": "2018-03-09",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
+            "off-topic\/goat-simulator",
+            "off-topic\/sanctum"
+        ],
+        "seealso": [
+            "yt-Zo2ybvs7keI,229.64,236.92"
+        ]
+    },
+    "yt-Zo2ybvs7keI,185.52,229.64": {
+        "title": "Q&A: Are you moving towards a publisher-only role, or do you still have a dev team working on games?",
+        "date": "2018-03-09",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-publishing",
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios"
+        ],
+        "seealso": [
+            "kAEfs3aDIgs"
+        ]
+    },
+    "yt-Zo2ybvs7keI,229.64,236.92": {
+        "title": "Q&A: Any plans to bring the mobile-exclusive Goat Simulator levels to PC?",
+        "date": "2018-03-09",
+        "topics": [
+            "off-topic\/goat-simulator"
+        ],
+        "seealso": [
+            "yt-Zo2ybvs7keI,147.96,185.52"
+        ]
+    },
+    "yt-Zo2ybvs7keI,236.92,243.48": {
+        "title": "Q&A: Any plans for future Goat Simulator DLC or sequel, or another simulator game?",
+        "date": "2018-03-09",
+        "topics": [
+            "off-topic\/goat-simulator"
+        ],
+        "seealso": [
+            "yt-Zo2ybvs7keI,243.48,263.04"
+        ]
+    },
+    "yt-Zo2ybvs7keI,243.48,263.04": {
+        "title": "Q&A: Will you consider working on a brand new fabulous -something- simulator in the future?",
+        "date": "2018-03-09",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios"
+        ],
+        "seealso": [
+            "yt-Zo2ybvs7keI,236.92,243.48",
+            "yt-Zo2ybvs7keI,271.64,284.4"
+        ],
+        "duplicatedby": "m4WsPu7RulA"
+    },
+    "yt-Zo2ybvs7keI,263.04,271.64": {
+        "title": "Q&A: When will we see Goat Simulator VR?",
+        "date": "2018-03-09",
+        "topics": [
+            "features\/unplanned-features\/vr",
+            "off-topic\/goat-simulator"
+        ],
+        "seealso": [
+            "xYUcd4mhlm0"
+        ]
+    },
+    "yt-Zo2ybvs7keI,271.64,284.4": {
+        "title": "Q&A: Are we going to get another absolute gem like A Story About my Uncle?",
+        "date": "2018-03-09",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-north"
+        ],
+        "seealso": [
+            "yt-Zo2ybvs7keI,243.48,263.04"
+        ]
+    },
+    "yt-Zo2ybvs7keI,285.76,300.32": {
+        "title": "Q&A: What programming language do you prefer a developer to have when applying for a job?",
+        "date": "2018-03-09",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
+            "technology"
+        ],
+        "duplicatedby": "9Y8Y94E9-eQ"
+    },
     "yt-Zo2ybvs7keI,300.32,310.36": {
         "title": "Q&A: Who is the better colleague, Nathalie or Hannah?",
         "date": "2018-03-09",
@@ -91880,6 +92069,32 @@
         "seealso": [
             "hCcT5uhzwso"
         ]
+    },
+    "yt-Zo2ybvs7keI,310.36,318.76": {
+        "title": "Q&A: Wassup?",
+        "date": "2018-03-09",
+        "topics": [
+            "coffee-stainers\/jace"
+        ],
+        "seealso": [
+            "476NXSQVuK0"
+        ],
+        "duplicatedby": "yt-Zo2ybvs7keI,17.747482,24.76"
+    },
+    "yt-Zo2ybvs7keI,318.76,325.2": {
+        "title": "Q&A: How do you feel about your studio?",
+        "date": "2018-03-09",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios"
+        ],
+        "seealso": [
+            "yt-Rumqu_lyapg,9316.633333333333,9387.974187"
+        ]
+    },
+    "yt-Zo2ybvs7keI,326.32,344.96": {
+        "title": "Q&A: If aliens came to earth what would the best response from humanity be?",
+        "date": "2018-03-09",
+        "topics": []
     },
     "yt-Zo2ybvs7keI,344.96,382.8": {
         "title": "Q&A: Are the first two letters of your next game's title really \"Sa\" ?",
@@ -91894,6 +92109,21 @@
             "yt-Zo2ybvs7keI,645.8"
         ]
     },
+    "yt-Zo2ybvs7keI,382.8,412.64": {
+        "title": "Q&A: How did Skye Autumn get her scars?",
+        "date": "2018-03-09",
+        "topics": [
+            "off-topic\/sanctum"
+        ],
+        "seealso": [
+            "yt-Zo2ybvs7keI,428.16,439.88"
+        ]
+    },
+    "yt-Zo2ybvs7keI,412.64,428.16": {
+        "title": "Q&A: Thoughts on current game industry situation when 30 games are released on Steam daily?",
+        "date": "2018-03-09",
+        "topics": []
+    },
     "yt-Zo2ybvs7keI,428.16,439.88": {
         "title": "Q&A: What is your favourite character from Sanctum?",
         "date": "2018-03-09",
@@ -91903,7 +92133,26 @@
         "seealso": [
             "L4sE_adcahA",
             "yt-Zo2ybvs7keI,344.96,382.8",
+            "yt-Zo2ybvs7keI,382.8,412.64",
             "yt-Zo2ybvs7keI,645.8"
+        ]
+    },
+    "yt-Zo2ybvs7keI,439.88,447.16": {
+        "title": "Q&A: Is it true that you've built a golden statue of a goat in Japan?",
+        "date": "2018-03-09",
+        "topics": [
+            "off-topic\/goat-simulator"
+        ]
+    },
+    "yt-Zo2ybvs7keI,447.16,492.44": {
+        "title": "Q&A: Is there someone at your office who is like a super under-appreciated kitchen hero?",
+        "date": "2018-03-09",
+        "topics": [
+            "coffee-stainers",
+            "off-topic\/food-and-drink"
+        ],
+        "seealso": [
+            "yt-Zo2ybvs7keI,492.44,502.32"
         ]
     },
     "yt-Zo2ybvs7keI,492.44,502.32": {
@@ -91916,7 +92165,8 @@
         "seealso": [
             "-aoKEMcw0_o",
             "bNX04zqQ-uY",
-            "GWoHn3wkLTM"
+            "GWoHn3wkLTM",
+            "yt-Zo2ybvs7keI,447.16,492.44"
         ]
     },
     "yt-Zo2ybvs7keI,502.32,614.16": {

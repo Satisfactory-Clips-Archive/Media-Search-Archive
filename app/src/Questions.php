@@ -291,7 +291,18 @@ class Questions extends AbstractQuestions
 			)
 		);
 
-		foreach (TopicData::VIDEO_IS_FROM_A_LIVESTREAM as $video_id) {
+		$csv_sourced_video_ids = array_merge(
+			[],
+			TopicData::VIDEO_IS_FROM_A_LIVESTREAM
+		);
+
+		foreach (get_externals() as $dated) {
+			foreach ($dated as $external) {
+				$csv_sourced_video_ids[] = $external[0];
+			}
+		}
+
+		foreach ($csv_sourced_video_ids as $video_id) {
 			$video_id = vendor_prefixed_video_id($video_id);
 
 			$date = determine_date_for_video($video_id, $cache['playlists'], $playlists);
@@ -302,7 +313,7 @@ class Questions extends AbstractQuestions
 				static function (array $csv_entry) use ($video_id): array {
 					[$start, $end, $title] = $csv_entry;
 					return [
-						sprintf('%s,%s,%s', $video_id, $start, $end),
+						sprintf('' !== $end ? '%s,%s,%s' : '%s,%s', $video_id, $start, $end),
 						$title,
 					];
 				},

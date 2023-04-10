@@ -2091,7 +2091,7 @@ function get_externals() : array
 			 *			0:numeric-string|'',
 			 *			1:numeric-string|'',
 			 *			2:string
-			 *		}>,
+			 *		}>,#
 			 *		2:array{
 			 *			title:string,
 			 *			topics:array<int, list<string>>

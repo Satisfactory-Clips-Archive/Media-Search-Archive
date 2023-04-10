@@ -340,7 +340,14 @@ foreach (array_keys($faq) as $video_id) {
 		foreach ($thingWithOtherVideoIds as $other_video_id) {
 			[$link_part_title, $has_cached_captions, $link_part_url] = maybe_transcript_link_and_video_url_data(
 				$other_video_id,
-				$cache['playlistItems'][$other_video_id][1]
+				$cache['playlistItems'][$other_video_id][1] ?? get_dated_csv(
+					determine_date_for_video(
+						$other_video_id,
+						$cache['playlists'],
+						$playlists
+					),
+					explode(',', $other_video_id)[0]
+				)[2]['title']
 			);
 
 			$faq_json[
