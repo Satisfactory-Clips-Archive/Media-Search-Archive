@@ -633,11 +633,63 @@ class TopicData
 		'PLbjDnnBIxiEoD25ogJ2FI5QrNv6DMLSO_' => [ // Biomes
 			'Environment',
 		],
-		'Unplanned Biomes' => [
+		'PLbjDnnBIxiEqYVwptXS9sZ59BdRPk4L35' => [ // Red Jungle
 			'Environment',
 			'Biomes',
 		],
-		'PLbjDnnBIxiEqYVwptXS9sZ59BdRPk4L35' => [ // Red Jungle
+		'PLbjDnnBIxiEoOlTxmOqYZ2ZkyD1dtpyz5' => [ // Grass Fields
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEpHMQnntpucC_MweaYIIJ_U' => [ // Dune Desert
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEoCacOLYEU4xHZMKJwPyTzl' => [ // Blue Crater
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiErtxu53LKc8Z8vFR13XeKfG' => [ // Northern Forest
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEoGfsgeuz9AkG6fxwj9EHJz' => [ // Spire Coast
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiErav3ZtCkRrz9pFsE151oDk' => [ // Paradise Island
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEqK9nRVDCg0Z3bb47I6gPod' => [ // Caves
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEo7Ms7bNf5SWMTAacyDC6M1' => [ // Red Bamboo Fields
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEouDCpMNBcTf8W6gqQ85Qzz' => [ // Swamp
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEowf3xp2Div_KZ3R2y-Frn3' => [ // Desert Canyons
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEqI-OK9xVPZNsouE12dCynP' => [ // The Great Canyon
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEq7HBkdsrL-CNtflfQw2AOM' => [ // Rocky Desert
+			'Environment',
+			'Biomes',
+		],
+		'PLbjDnnBIxiEq-wqDyEyzuV3H3ng4CcdyD' => [ // Titan Forest
+			'Environment',
+			'Biomes',
+		],
+		'Unplanned Biomes' => [
 			'Environment',
 			'Biomes',
 		],
@@ -1194,30 +1246,6 @@ class TopicData
 			'Features',
 			'Possible Features',
 		],
-		'PLbjDnnBIxiEoOlTxmOqYZ2ZkyD1dtpyz5' => [ // Grass Fields
-			'Environment',
-			'Biomes',
-		],
-		'PLbjDnnBIxiEpHMQnntpucC_MweaYIIJ_U' => [ // Dune Desert
-			'Environment',
-			'Biomes',
-		],
-		'PLbjDnnBIxiEoCacOLYEU4xHZMKJwPyTzl' => [ // Blue Crater
-			'Environment',
-			'Biomes',
-		],
-		'PLbjDnnBIxiErtxu53LKc8Z8vFR13XeKfG' => [ // Northern Forest
-			'Environment',
-			'Biomes',
-		],
-		'PLbjDnnBIxiEoGfsgeuz9AkG6fxwj9EHJz' => [ // Spire Coast
-			'Environment',
-			'Biomes',
-		],
-		'PLbjDnnBIxiErav3ZtCkRrz9pFsE151oDk' => [ // Paradise Island
-			'Environment',
-			'Biomes',
-		],
 		'PLbjDnnBIxiErB5o0Ng2yayZnaugDJX4BM' => [ // Setting up a Coal Generator
 			'June 2021 Epic Mega Sale Stream',
 		],
@@ -1391,10 +1419,6 @@ class TopicData
 		'PLbjDnnBIxiEoFLmKQaDWq_Rl7qd-H_GIA' => [ // Flannel
 			'Coffee Stainers',
 		],
-		'PLbjDnnBIxiEqK9nRVDCg0Z3bb47I6gPod' => [ // Caves
-			'Environment',
-			'Biomes',
-		],
 		'PLbjDnnBIxiEqNe4SQNEAvhKRLQX39g9Ix' => [ // #SaveTheWillows
 			'Satisfactory Updates',
 			'Released',
@@ -1448,10 +1472,6 @@ class TopicData
 		],
 		'PLbjDnnBIxiEobP4EgydtWaC_BJKd0w9Vi' => [ // Rasmus
 			'Coffee Stainers',
-		],
-		'PLbjDnnBIxiEo7Ms7bNf5SWMTAacyDC6M1' => [ // Red Bamboo Fields
-			'Environment',
-			'Biomes',
 		],
 		'PLbjDnnBIxiEqilvgLbk4PUBQSyokspJyD' => [ // Tobias
 			'Coffee Stainers',
@@ -1636,22 +1656,6 @@ class TopicData
 			'Coffee Stainers',
 			'Snutt',
 		],
-		'PLbjDnnBIxiEouDCpMNBcTf8W6gqQ85Qzz' => [ // Swamp
-			'Environment',
-			'Biomes',
-		],
-		'PLbjDnnBIxiEowf3xp2Div_KZ3R2y-Frn3' => [ // Desert Canyons
-			'Environment',
-			'Biomes',
-		],
-		'PLbjDnnBIxiEqI-OK9xVPZNsouE12dCynP' => [ // The Great Canyon
-			'Environment',
-			'Biomes',
-		],
-		'PLbjDnnBIxiEq7HBkdsrL-CNtflfQw2AOM' => [ // Rocky Desert
-			'Environment',
-			'Biomes',
-		],
 		'PLbjDnnBIxiEoKi2d-j2Gh6JCb_5zeGEJ4' => [ // Beacon
 			'Features',
 			'Equipment',
@@ -1681,10 +1685,6 @@ class TopicData
 		'PLbjDnnBIxiErY8-S-JLKk_ewHAJHUrzwM' => [ // Rebar Gun
 			'Features',
 			'Equipment',
-		],
-		'PLbjDnnBIxiEq-wqDyEyzuV3H3ng4CcdyD' => [ // Titan Forest
-			'Environment',
-			'Biomes',
 		],
 		'PLbjDnnBIxiEqYcK9flkYreg2WOtulKEki' => [ // Boombox
 			'Features',
