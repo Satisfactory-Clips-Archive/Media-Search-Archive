@@ -1751,5 +1751,20 @@
     },
     "2023-03-24": {
         "we-re-upgrading-to-unreal-engine-5": 1681076219
+    },
+    "Abyss Cliffs": {
+        "environment\/biomes\/abyss-cliffs": 1681148370
+    },
+    "Crater Lakes": {
+        "environment\/biomes\/crater-lakes": 1681148370
+    },
+    "Eastern Dune Forest": {
+        "environment\/biomes\/eastern-dune-forest": 1681148370
+    },
+    "Coin Tree Forest": {
+        "environment\/biomes\/eastern-dune-forest\/coin-tree-forest": 1681148370
+    },
+    "2023-04-07": {
+        "the-world-is-changing-in-satisfactory": 1681148370
     }
 }

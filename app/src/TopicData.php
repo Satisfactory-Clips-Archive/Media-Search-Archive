@@ -689,6 +689,23 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
+		'Crater Lakes' => [
+			'Environment',
+			'Biomes',
+		],
+		'Eastern Dune Forest' => [
+			'Environment',
+			'Biomes',
+		],
+		'Coin Tree Forest' => [
+			'Environment',
+			'Biomes',
+			'Eastern Dune Forest',
+		],
+		'Abyss Cliffs' => [
+			'Environment',
+			'Biomes',
+		],
 		'Unplanned Biomes' => [
 			'Environment',
 			'Biomes',
