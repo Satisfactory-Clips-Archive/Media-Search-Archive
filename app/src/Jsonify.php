@@ -761,6 +761,21 @@ class Jsonify
 					}
 				}
 
+				if ( ! is_string($playlist_id) && false !== strpos($other_video_id, ',')) {
+					$other_video_date = determine_date_for_video(
+						$other_video_id,
+						$this->injected->cache['playlists'],
+						$this->injected->api->dated_playlists()
+					);
+
+					$playlist_id = determine_playlist_id(
+						$other_video_date,
+						$this->injected->cache,
+						$this->injected->not_a_livestream,
+						$this->injected->not_a_livestream_date_lookup
+					)[0];
+				}
+
 				if ( ! is_string($playlist_id)) {
 					throw new RuntimeException(sprintf(
 						'Could not find playlist id for %s',
