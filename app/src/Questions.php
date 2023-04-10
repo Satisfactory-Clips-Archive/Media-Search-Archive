@@ -291,6 +291,40 @@ class Questions extends AbstractQuestions
 			)
 		);
 
+		foreach (TopicData::VIDEO_IS_FROM_A_LIVESTREAM as $video_id) {
+			$video_id = vendor_prefixed_video_id($video_id);
+
+			$date = determine_date_for_video($video_id, $cache['playlists'], $playlists);
+
+			$csv = get_dated_csv($date, $video_id);
+
+			$csv_questions = array_map(
+				static function (array $csv_entry) use ($video_id): array {
+					[$start, $end, $title] = $csv_entry;
+					return [
+						sprintf('%s,%s,%s', $video_id, $start, $end),
+						$title,
+					];
+				},
+				array_filter(
+					$csv[1],
+					function (array $maybe): bool {
+						return $this->string_is_probably_question($maybe[2]);
+					}
+				)
+			);
+
+			foreach ($csv_questions as $csv_question_entry) {
+				if (isset($questions[$video_id]) || isset($existing[$video_id])) {
+					continue;
+				}
+
+				$questions[$csv_question_entry[0]] = [
+					'title' => $csv_question_entry[1],
+				];
+			}
+		}
+
 		foreach ($questions as $video_id => $data) {
 			$existing[$video_id] = $existing[$video_id] ?? [
 				'title' => $data['title'],
@@ -332,6 +366,7 @@ class Questions extends AbstractQuestions
 						$maybe_value,
 						$maybe_key
 					) use (
+						$existing,
 						$cache
 					) : bool {
 						return
@@ -344,6 +379,7 @@ class Questions extends AbstractQuestions
 									$this->twitter_thread_ids(),
 									true
 								)
+								|| isset($existing[$maybe_value])
 							)
 						;
 					},

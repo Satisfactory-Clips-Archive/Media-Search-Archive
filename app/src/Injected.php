@@ -135,7 +135,7 @@ class Injected
 		if ( ! isset($cache[$video_id])) {
 			$playlists = $this->api->dated_playlists();
 
-			$cache[$video_id] = array_keys(array_filter(
+			$determined_topics = array_keys(array_filter(
 				$this->cache['playlists'],
 				/**
 				 * @param array{2:list<string>} $maybe
@@ -153,6 +153,49 @@ class Injected
 				},
 				ARRAY_FILTER_USE_BOTH
 			));
+
+			if (0 === count($determined_topics) && false !== strpos($video_id, ',')) {
+				$video_id_parts = explode(',', $video_id);
+				$end = '';
+				[$csv_video_id, $start] = $video_id_parts;
+
+				if (isset($video_id_parts[2])) {
+					$end = $video_id_parts[2];
+				}
+
+				$date = determine_date_for_video(
+					$csv_video_id,
+					$this->cache['playlists'],
+					$this->playlists_date_ref
+				);
+
+				$csv = get_dated_csv($date, $csv_video_id);
+
+				$maybe_match_found = array_filter(
+					$csv[1],
+					static function (array $maybe) use ($start, $end) : bool {
+						return $maybe[0] === $start && $maybe[1] === $end;
+					}
+				);
+
+				if (1 === count($maybe_match_found)) {
+					$csv_offset = key($maybe_match_found);
+
+					$determined_topics = array_map(
+						function (string $topic_name): string {
+							return determine_playlist_id(
+								$topic_name,
+								$this->cache,
+								$this->not_a_livestream,
+								$this->not_a_livestream_date_lookup
+							)[0];
+						},
+						$csv[2]['topics'][$csv_offset]
+					);
+				}
+			}
+
+			$cache[$video_id] = $determined_topics;
 		}
 
 		return $cache[$video_id];
