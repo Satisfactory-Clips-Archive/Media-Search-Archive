@@ -126,7 +126,11 @@ foreach ($video_ids as $video_id) {
 
 	$urls = [video_url_from_id($video_id, true)];
 	$transcription = '';
-	$date = '0000-00-00';
+	$date = determine_date_for_video(
+		$video_id,
+		$cache['playlists'],
+		$dated_playlists
+	);
 
 	$playlists_for_video = array_keys(array_filter(
 		$cache['playlists'],
@@ -134,13 +138,6 @@ foreach ($video_ids as $video_id) {
 			return in_array($video_id, $playlist_data[2], true);
 		}
 	));
-
-	foreach ($playlists_for_video as $playlist_id) {
-		if (isset($dated_playlists[$playlist_id])) {
-			$date = $dated_playlists[$playlist_id];
-			break;
-		}
-	}
 
 	$topics_for_video = [];
 
