@@ -1,6 +1,6 @@
 # Media Search Archive
 
-Static site generator for [Satisfactory Clips Archive](https://archive.satisfactory.video/) - Serves as an archive for Clips for Coffee Stain Studio's Satisfactory-related livestreams & other videos.
+Static site generator for [Satisfactory Clips Archive](https://archive.satisfactory.video/) - Serves as an archive for Clips for Coffee Stain Studios' Satisfactory-related livestreams & other videos.
 
 # Changelog
 
