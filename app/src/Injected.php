@@ -266,14 +266,6 @@ class Injected
 		string $default_label = 'Livestream'
 	) : string {
 		if ( ! isset($this->playlists_date_ref[$playlist_id])) {
-			$maybe_playlist_id = array_search($playlist_id, $this->playlists_date_ref, true);
-
-			if (isset($this->playlists_date_ref[$maybe_playlist_id])) {
-				$playlist_id = $maybe_playlist_id;
-			}
-		}
-
-		if ( ! isset($this->playlists_date_ref[$playlist_id])) {
 			throw new InvalidArgumentException(sprintf(
 				'Argument 1 (%s) passed to %s() was not found in the playlists!',
 				$playlist_id,

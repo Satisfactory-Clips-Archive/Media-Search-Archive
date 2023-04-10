@@ -644,10 +644,37 @@ class Jsonify
 			}
 
 			if ( ! is_string($playlist_id)) {
+				if (false !== strpos($found, ',')) {
+					[$found] = explode(',', $found);
+
+					if (in_array($found, TopicData::VIDEO_IS_FROM_A_LIVESTREAM, true)) {
+						$found = preg_replace('/^yt-/', '', $found);
+
+						foreach (
+							array_keys(
+								$this->injected->api->dated_playlists()
+							) as $maybe_playlist_id
+						) {
+							if (
+								in_array(
+									$found,
+									$this->injected->cache['playlists'][$maybe_playlist_id][2],
+									true
+								)
+							) {
+								$playlist_id = $maybe_playlist_id;
+								break;
+							}
+						}
+					}
+				}
+
+				if (!is_string($playlist_id)) {
 				throw new RuntimeException(sprintf(
 					'Could not find playlist id for %s',
 					$found
 				));
+				}
 			}
 		}
 

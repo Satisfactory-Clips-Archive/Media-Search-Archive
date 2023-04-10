@@ -332,7 +332,6 @@
         "topics": [
             "features\/buildables\/lights",
             "features\/transportation\/vehicles",
-            "intro-and-unreal-engine-topics",
             "satisfactory-updates\/speculative\/satisfactory-update-8",
             "technology\/graphics",
             "technology\/unreal-engine\/unreal-engine-5"
@@ -348,7 +347,6 @@
         "topics": [
             "environment\/world-map",
             "features\/transportation\/vehicles\/drones",
-            "intro-and-unreal-engine-topics",
             "satisfactory-updates\/speculative\/satisfactory-update-8",
             "technology\/unreal-engine\/unreal-engine-5"
         ],
@@ -360,7 +358,6 @@
         "title": "Q&A: What about z-fighting?",
         "date": "2023-03-28",
         "topics": [
-            "intro-and-unreal-engine-topics",
             "satisfactory-updates\/speculative\/satisfactory-update-8",
             "technology\/graphics",
             "technology\/unreal-engine\/unreal-engine-5"
@@ -376,7 +373,6 @@
         "topics": [
             "features\/buildables\/foundations",
             "features\/transportation\/vehicles",
-            "intro-and-unreal-engine-topics",
             "satisfactory-updates\/speculative\/satisfactory-update-8",
             "technology\/physics",
             "technology\/unreal-engine\/unreal-engine-5"

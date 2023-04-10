@@ -2031,6 +2031,16 @@ function get_externals() : array
 		$csv_files = array_filter(
 			glob(__DIR__ . '/../data/dated/*/*.csv'),
 			static function (string $maybe) : bool {
+				if (
+					in_array(
+						preg_replace('/\.csv$/', '', basename($maybe)),
+						TopicData::VIDEO_IS_FROM_A_LIVESTREAM,
+						true
+					)
+				) {
+					return false;
+				}
+
 				$dir = dirname($maybe);
 				$info = pathinfo($maybe, PATHINFO_FILENAME);
 

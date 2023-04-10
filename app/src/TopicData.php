@@ -1795,6 +1795,10 @@ class TopicData
 		'2022-09-20' => 'Update 6 Release Stream',
 	];
 
+	public const VIDEO_IS_FROM_A_LIVESTREAM = [
+		'yt-oLl9SZht-bE',
+	];
+
 	/**
 	 * @var array<string, string>
 	 */
@@ -1813,6 +1817,16 @@ class TopicData
 				array_filter(
 					glob(__DIR__ . '/../data/dated/*/yt-*.json'),
 					static function (string $maybe) : bool {
+						if (
+							in_array(
+								preg_replace('/\.json$/', '', basename($maybe)),
+								self::VIDEO_IS_FROM_A_LIVESTREAM,
+								true
+							)
+						) {
+							return false;
+						}
+
 						$maybe_date = basename(dirname($maybe));
 
 						return
