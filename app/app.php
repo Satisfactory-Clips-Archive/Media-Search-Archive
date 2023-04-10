@@ -684,7 +684,33 @@ $title_unix_min = null;
 /** @var int|null */
 $title_unix_max = null;
 
-foreach ($all_video_ids as $video_id) {
+$transcriptable_video_ids = $all_video_ids;
+
+foreach (TopicData::VIDEO_IS_FROM_A_LIVESTREAM as $video_id) {
+	$csv = get_dated_csv(
+		determine_date_for_video(
+			$video_id,
+			$cache['playlists'],
+			$api->dated_playlists()
+		),
+		$video_id
+	);
+
+	foreach ($csv[1] as $offset => $csv_entry) {
+		if (is_array($csv[2]['topics'][$offset] ?? null)) {
+			continue;
+		}
+
+		[$start, $end] = $csv_entry;
+
+
+		$transcriptable_video_ids[] = sprintf('' !== $end ? '%s,%s,%s' : '%s,%s', $video_id, $start, $end);
+	}
+}
+
+usort($transcriptable_video_ids, [$sorting, 'sort_video_ids_by_date']);
+
+foreach ($transcriptable_video_ids as $video_id) {
 	++$checked;
 
 	$current_compile_date = determine_date_for_video(
@@ -791,10 +817,10 @@ foreach ($all_video_ids as $video_id) {
 			$not_a_livestream,
 			$not_a_livestream_date_lookup
 		)[1],
-		'title' => $cache['playlistItems'][$video_id][1],
+		'title' => $injected->determine_video_title($video_id, true),
 		'description' => $injected->determine_video_description($video_id),
 		'topics' => array_values(array_filter(
-			$video_playlists[$video_id],
+			$injected->determine_video_topics($video_id),
 			static function (string $maybe) use ($playlists) : bool {
 				return ! isset($playlists[$maybe]);
 			}
@@ -923,7 +949,11 @@ foreach (array_keys($transcripts_json) as $video_id) {
 	;
 
 	$maybe_playlist_id = array_values(array_filter(
-		$video_playlists[$video_id],
+		(
+			(
+				$video_playlists[$video_id] ?? $video_playlists[preg_replace('/^yt-/', '', preg_replace('/,.+$/', '', $video_id))]
+			)
+		),
 		static function (string $maybe) use ($playlists) : bool {
 			return isset($playlists[$maybe]);
 		}
@@ -965,7 +995,11 @@ foreach (array_keys($transcripts_json) as $video_id) {
 	}
 
 	$transcript_topic_strings = array_filter(
-		$video_playlists[$video_id],
+		(
+			(
+				$video_playlists[$video_id] ?? $video_playlists[preg_replace('/^yt-/', '', preg_replace('/,.+$/', '', $video_id))]
+			)
+		),
 		static function (
 			string $playlist_id
 		) use (
@@ -1471,6 +1505,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 }
 
 $grouped_dated_data_for_json_alt_layout = [];
+$transcription_data_for_json_alt_layout = [];
 
 foreach ($process_externals_result['externals_needing_alt_layout'] as $date => $externals_needing_alt_layout) {
 	$grouped_dated_data_for_json_alt_layout[$date] = $grouped_dated_data_for_json[$date];
@@ -1490,8 +1525,58 @@ foreach ($process_externals_result['externals_needing_alt_layout'] as $date => $
 	}
 }
 
+foreach (TopicData::VIDEO_IS_FROM_A_LIVESTREAM as $video_id) {
+	$date = determine_date_for_video(
+		$video_id,
+		$cache['playlists'],
+		$dated_playlists
+	);
+
+	$inject = [
+		'externals_needing_alt_layout' => [],
+		'playlists' => [],
+		'playlistItems' => [],
+		'videoTags' => [],
+	];
+
+	$externals_data = get_dated_csv($date, $video_id);
+
+	[
+		,
+		,
+		$embed_data_set,
+	] = process_dated_csv(
+		$date,
+		$inject,
+		$externals_data,
+		$cache,
+		$not_a_livestream,
+		$not_a_livestream_date_lookup,
+		$skipping
+	);
+
+	$transcription_data_for_json_alt_layout[$video_id] = process_dated_csv_for_alt_layout(
+		$date,
+		$externals_data,
+		$embed_data_set,
+		$injected
+	);
+	$transcription_data_for_json_alt_layout[$video_id]['id'] = vendor_prefixed_video_id($video_id);
+	$transcription_data_for_json_alt_layout[$video_id]['url'] = video_url_from_id($video_id, true);
+
+	foreach ($transcription_data_for_json_alt_layout[$video_id]['sections'] as $offset => $section) {
+		if ($section instanceof VideoSection) {
+			$transcription_data_for_json_alt_layout[$video_id]['sections'][$offset] = $section->jsonSerialize();
+		}
+	}
+}
+
 file_put_contents(__DIR__ . '/../11ty/data/dated_alt.json', json_encode(
 	array_values($grouped_dated_data_for_json_alt_layout),
+	JSON_PRETTY_PRINT
+));
+file_put_contents(__DIR__ . '/../11ty/data/transcriptions_alt.json', json_encode(
+	array_values($transcription_data_for_json_alt_layout),
 	JSON_PRETTY_PRINT
 ));
 file_put_contents(__DIR__ . '/../11ty/data/dated.json', json_encode(

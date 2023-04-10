@@ -1,0 +1,42 @@
+---
+pagination:
+    data: transcriptions_alt
+    size: 1
+    alias: transcript
+permalink: "transcriptions/{{ transcript.id }}/"
+layout: transcriptions
+---
+<section
+	itemscope
+	itemtype="https://schema.org/VideoObject"
+>
+	<header>
+		<h1>{{
+			transcript.date_friendly
+		}} <span itemprop="name">{{
+			transcript.title
+		}}</span></h1>
+			<p><a href="{{transcript.contentUrl}}" rel="noopener" target="_blank">External Link</a></p>
+	</header>
+	{% if transcript.description %}
+	<details>
+		<summary>Description</summary>
+		<section>{{transcript.description | escape | timestampify(transcript.url) | safe | nl2br }}</section>
+	</details>
+	{% endif %}
+	<ol>
+	{% for subsection in transcript.sections %}
+		{% include 'externals-alt-inner.njk' %}
+	{% endfor %}
+	</ol>
+	<meta itemprop="contentUrl" content="{{transcript.contentUrl}}">
+	{% if transcript.description %}
+	<meta itemprop="description" content="{{transcript.description}}">
+	{% else %}
+	<meta itemprop="description" content="clips from {{transcript.title}}">
+	{% endif %}
+	<meta itemprop="uploadDate" content="{{transcript.date}}">
+	{% if transcript.thumbnail %}
+	<meta itemprop="thumbnailUrl" content="{{transcript.thumbnail}}">
+	{% endif %}
+</section>

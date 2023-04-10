@@ -226,7 +226,7 @@ class Injected
 		return $cache[$video_id];
 	}
 
-	public function determine_video_title(string $video_id) : ? string
+	public function determine_video_title(string $video_id, bool $throw_if_not_found = false) : ? string
 	{
 		if ( ! isset($this->cache['playlistItems'][$video_id])) {
 			$video_id = preg_replace('/^yt-/', '', $video_id);
@@ -234,31 +234,36 @@ class Injected
 
 		if (isset($this->cache['playlistItems'][$video_id])) {
 			return $this->cache['playlistItems'][$video_id][1];
-		}
+		} elseif (false !== strpos($video_id, ',')) {
+			$video_id_parts = explode(',', $video_id);
 
-		foreach (get_externals() as $dated) {
-			foreach ($dated as $external) {
-				if (
-					vendor_prefixed_video_id($external[0])
-					=== vendor_prefixed_video_id(
-						preg_replace('/,.+$/', '', $video_id)
-					)
-				) {
-					foreach ($external[1] as $externals_csv) {
-						[$start, $end, $clip_title] = $externals_csv;
+			$end = '';
+			[$id, $start] = $video_id_parts;
 
-						$clip_id = sprintf(
-							'%s,%s',
-							vendor_prefixed_video_id($external[0]),
-							$start . ('' === $end ? '' : (',' . $end))
-						);
+			$id = vendor_prefixed_video_id($id);
 
-						if ($clip_id === vendor_prefixed_video_id($video_id)) {
-							return $clip_title;
-						}
-					}
+			if (isset($video_id_parts[2])) {
+				$end = $video_id_parts[2];
+			}
+
+			$csv = get_dated_csv(
+				determine_date_for_video(
+					$id,
+					$this->cache['playlists'],
+					$this->playlists_date_ref
+				),
+				$id
+			);
+
+			foreach ($csv[1] as $maybe) {
+				if ($maybe[0] === $start && ($maybe[1] ?? '') === $end) {
+					return $maybe[2];
 				}
 			}
+		}
+
+		if ($throw_if_not_found) {
+			throw new InvalidArgumentException(sprintf('No title found for %s', $video_id));
 		}
 
 		return null;
