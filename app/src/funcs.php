@@ -2997,6 +2997,8 @@ function determine_date_for_video(
 
 	$video_id = vendor_prefixed_video_id($video_id);
 
+	$video_id = preg_replace('/,.+$/', '', $video_id);
+
 	if (isset($matches[$video_id])) {
 		if (false === $matches[$video_id]) {
 			throw new RuntimeException(sprintf(
