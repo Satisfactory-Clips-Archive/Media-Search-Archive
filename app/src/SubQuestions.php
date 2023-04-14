@@ -6,6 +6,8 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use function uksort;
+
 class SubQuestions extends AbstractQuestions
 {
 	public readonly Injected $injected;
@@ -59,6 +61,8 @@ class SubQuestions extends AbstractQuestions
 				continue;
 			}
 
+			$chapter_id_starts = [];
+
 			foreach ($chapters as $chapter) {
 				$chapter_parts = explode(' ', $chapter);
 				$timestamp = array_shift($chapter_parts);
@@ -71,7 +75,19 @@ class SubQuestions extends AbstractQuestions
 					$seconds += ((int)$time_part * (60 ** $offset));
 				}
 
-				$sub_question_ids[] = $video_id . '#' . $timestamp;
+				$chapter_id_starts[] = $seconds;
+			}
+
+			foreach (array_keys($chapters) as $chapter_index) {
+				$start = $chapter_id_starts[$chapter_index];
+				$end = $chapter_id_starts[$chapter_index + 1] ?? null;
+
+				$sub_question_ids[] = (
+					'yt-'
+					. $video_id
+					. ','
+					. sprintf(null === $end ? '%s' : '%s,%s', $start, $end)
+				);
 			}
 		}
 
@@ -117,7 +133,33 @@ class SubQuestions extends AbstractQuestions
 
 			$url = video_url_from_id($video_id, true);
 
+			$chapter_id_starts = [];
+
 			foreach ($chapters as $chapter) {
+				$chapter_parts = explode(' ', $chapter);
+				$timestamp = array_shift($chapter_parts);
+
+				$time_parts = array_reverse(explode(':', $timestamp));
+
+				$seconds = 0;
+
+				foreach ($time_parts as $offset => $time_part) {
+					$seconds += ((int)$time_part * (60 ** $offset));
+				}
+
+				$chapter_id_starts[] = $seconds;
+			}
+
+			foreach ($chapters as $chapter_index => $chapter) {
+				$start = $chapter_id_starts[$chapter_index];
+				$end = $chapter_id_starts[$chapter_index + 1] ?? null;
+
+				$chapter_id = 'yt-' . $video_id . ',' . sprintf(null === $end ? '%s' : '%s,%s', $start, $end);
+
+				if ( ! in_array($chapter_id, $sub_question_ids, true)) {
+					continue;
+				}
+
 				$chapter_parts = explode(' ', $chapter);
 				$timestamp = array_shift($chapter_parts);
 				$title = implode(' ', $chapter_parts);
@@ -128,12 +170,6 @@ class SubQuestions extends AbstractQuestions
 
 				foreach ($time_parts as $offset => $time_part) {
 					$seconds += ((int) $time_part * (60 ** $offset));
-				}
-
-				$chapter_id = $video_id . '#' . $timestamp;
-
-				if ( ! in_array($chapter_id, $sub_question_ids, true)) {
-					continue;
 				}
 
 				if (isset($out[$chapter_id])) {
@@ -158,6 +194,8 @@ class SubQuestions extends AbstractQuestions
 				$out[$chapter_id] = $stub;
 			}
 		}
+
+		uksort($out, [$this->injected->sorting, 'sort_video_ids_by_date']);
 
 		file_put_contents(
 			__DIR__ . '/../data/q-and-a.sub.json',
