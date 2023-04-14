@@ -706,6 +706,22 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
+		'Western Beaches' => [
+			'Environment',
+			'Biomes',
+		],
+		'Western Dune Forest' => [
+			'Environment',
+			'Biomes',
+		],
+		'Southern Forest' => [
+			'Environment',
+			'Biomes',
+		],
+		'Desert Mountain Plateaus' => [
+			'Environment',
+			'Biomes',
+		],
 		'Unplanned Biomes' => [
 			'Environment',
 			'Biomes',

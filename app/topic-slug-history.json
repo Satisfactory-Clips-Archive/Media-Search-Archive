@@ -1766,5 +1766,17 @@
     },
     "2023-04-07": {
         "the-world-is-changing-in-satisfactory": 1681148370
+    },
+    "Desert Mountain Plateaus": {
+        "environment\/biomes\/desert-mountain-plateaus": 1681152602
+    },
+    "Southern Forest": {
+        "environment\/biomes\/southern-forest": 1681152602
+    },
+    "Western Beaches": {
+        "environment\/biomes\/western-beaches": 1681152602
+    },
+    "Western Dune Forest": {
+        "environment\/biomes\/western-dune-forest": 1681152602
     }
 }
