@@ -227,7 +227,8 @@ foreach (array_keys($faq) as $video_id) {
 	$transcription = captions(
 		$video_id,
 		$playlist_topic_strings_reverse_lookup,
-		$skipping
+		$skipping,
+		$injected
 	);
 
 	$faq_date = determine_date_for_video(

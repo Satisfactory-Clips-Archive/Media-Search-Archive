@@ -60,17 +60,9 @@ require_once(__DIR__ . '/../vendor/autoload.php');
 
 $stat_start = microtime(true);
 
-echo 'preloading captions data...';
-
-captions_data();
-
 register_shutdown_function(static function () use ($stat_start) {
 	echo "\n", sprintf('done in %s seconds', microtime(true) - $stat_start), "\n";
 });
-
-echo "\r"
-	, sprintf('preloaded captions data in %s seconds', microtime(true) - $stat_start)
-	, "\n";
 
 $api = new YouTubeApiWrapper();
 echo 'YouTube API Wrapper instantiated', "\n";
@@ -601,7 +593,8 @@ echo "\n", 'determining what needs fresh captions', "\n";
 
 $needs_fresh_data = prepare_uncached_captions_html_video_ids(
 	$all_video_ids,
-	'yes' === getenv('VCN_FRESH_CAPTIONS')
+	'yes' === getenv('VCN_FRESH_CAPTIONS'),
+	$injected
 );
 
 echo "\n", count($needs_fresh_data), ' fresh data needed', "\n";
@@ -627,7 +620,9 @@ file_put_contents(
 		array_combine(
 			$all_video_ids,
 			array_map(
-				__NAMESPACE__ . '\yt_cards',
+				static function (string $video_id) use ($injected) {
+					return yt_cards($video_id, $injected);
+				},
 				$all_video_ids
 			)
 		)
@@ -638,7 +633,7 @@ file_put_contents(
 	(__DIR__ . '/data/info-cards--augmented.json'),
 	json_encode_pretty(
 		array_map(
-			static function(string $video_id) use($cache, $api, $video_playlists, $playlists) : array {
+			static function(string $video_id) use($cache, $api, $video_playlists, $playlists, $injected) : array {
 				return [
 					'id' => vendor_prefixed_video_id($video_id),
 					'date' => determine_date_for_video(
@@ -648,7 +643,7 @@ file_put_contents(
 					),
 					'title' => $cache['playlistItems'][$video_id][1],
 					'video_url_from_id' => video_url_from_id(vendor_prefixed_video_id($video_id)),
-					'cards' => yt_cards($video_id),
+					'cards' => yt_cards($video_id, $injected),
 					'topics' => array_values(array_filter(
 						$video_playlists[$video_id],
 						static function (string $maybe) use ($playlists) : bool {
@@ -765,7 +760,8 @@ foreach ($transcriptable_video_ids as $video_id) {
 		$caption_lines = captions(
 			$video_id,
 			$playlist_topic_strings_reverse_lookup,
-			$skipping
+			$skipping,
+			$injected
 		);
 	} catch (ErrorException $e) {
 		if (
@@ -1041,7 +1037,7 @@ unset($transcripts_json);
 
 echo "\n";
 
-$skipping->sync($sorting);
+$skipping->sync($sorting, $injected);
 
 echo sprintf(
 		'%s subtitles checked of %s videos cached',
@@ -1078,7 +1074,7 @@ foreach (get_externals() as $date => $externals_data_groups) {
 			);
 		}
 
-		$captions = raw_captions($video_id, $skipping);
+		$captions = raw_captions($video_id, $skipping, $injected);
 
 		/**
 		 * @var list<array{
@@ -1552,7 +1548,8 @@ foreach (TopicData::VIDEO_IS_FROM_A_LIVESTREAM as $video_id) {
 		$cache,
 		$not_a_livestream,
 		$not_a_livestream_date_lookup,
-		$skipping
+		$skipping,
+		$injected
 	);
 
 	$transcription_data_for_json_alt_layout[$video_id] = process_dated_csv_for_alt_layout(

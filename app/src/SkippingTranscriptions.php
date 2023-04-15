@@ -26,7 +26,7 @@ class SkippingTranscriptions
 		$this->video_ids = $previously_skipped;
 	}
 
-	public function sync(Sorting $sorting) : void
+	public function sync(Sorting $sorting, Injected $injected) : void
 	{
 		$skipping = array_unique(array_map(
 			__NAMESPACE__ . '\vendor_prefixed_video_id',
@@ -87,7 +87,7 @@ class SkippingTranscriptions
 			$not_actually_skipped = [];
 
 			foreach (array_keys($probably_not_actually_skipped) as $maybe) {
-				if (count(raw_captions($maybe, $faux_skipping))) {
+				if (count(raw_captions($maybe, $faux_skipping, $injected))) {
 					$not_actually_skipped[] = $maybe;
 				}
 			}

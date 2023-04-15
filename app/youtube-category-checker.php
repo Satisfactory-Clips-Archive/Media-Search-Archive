@@ -105,6 +105,8 @@ $emit_progress = static function () use (& $i, $youtube_video_ids, $start) : voi
 	echo "\r", sprintf('%s of %s videos checked, %s estimated remaining', $i, count($youtube_video_ids), $remaining);
 };
 
+$captions_source = captions_source($injected);
+
 foreach ($youtube_video_ids as $video_id) {
 	if (in_array($video_id, $supported_category) || in_array($video_id, $missing_category, true)) {
 		++$i;
@@ -115,7 +117,7 @@ foreach ($youtube_video_ids as $video_id) {
 
 	$filename = mb_substr($video_id, 3) . '.html';
 
-	$html = captions_get_content($filename);
+	$html = $captions_source->get_content($filename);
 
 	if ('' === $html) {
 		throw new UnexpectedValueException(sprintf('%s does not have a page!', $video_id));

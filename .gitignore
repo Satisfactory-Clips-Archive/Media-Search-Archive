@@ -20,6 +20,7 @@
 /app/captions/
 /app/captions.*
 /app/captions-cache/
+/app/captions-dated-cache/
 /app/cache.json
 /app/topics-satisfactory.json
 /app/lunr/

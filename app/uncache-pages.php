@@ -13,6 +13,19 @@ require_once(__DIR__ . '/../vendor/autoload.php');
 
 array_shift($argv);
 
+$api = new YouTubeApiWrapper();
+echo 'YouTube API Wrapper instantiated', "\n";
+
+$slugify = new Slugify();
+
+$skipping = SkippingTranscriptions::i();
+echo 'SkippingTranscriptions instantiated', "\n";
+
+$injected = new Injected($api, $slugify, $skipping);
+echo 'Injected instantiated', "\n";
+
+$captions_source = captions_source($injected);
+
 /** @var list<string> */
 $videos = array_values(array_filter(
 	array_map(
@@ -32,7 +45,7 @@ if (count($videos)) {
 			vendor_prefixed_video_id($video_id)
 		);
 
-		remove_captions_cache_file($video_id . '.html');
+		$captions_source->remove_cached_file($video_id . '.html');
 		$captions_cache = captions_json_cache_filename($video_id);
 
 		if (is_file($captions_cache)) {

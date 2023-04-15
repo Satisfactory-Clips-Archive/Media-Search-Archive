@@ -6,6 +6,12 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use DateTimeImmutable;
+use SignpostMarv\VideoClipNotes\CaptionsSource\DynamicDatedTarballCaptionsSource;
+use SignpostMarv\VideoClipNotes\CaptionsSource\FilesystemCaptionsSource;
+use SignpostMarv\VideoClipNotes\CaptionsSource\MonolithicTarballCaptionsSource;
+use SignpostMarv\VideoClipNotes\CaptionsSource\PreferredCaptionsSource;
+use SignpostMarv\VideoClipNotes\CaptionsSource\ProxiedCaptionsSource;
 use function array_combine;
 use function array_diff;
 use function array_filter;
@@ -15,11 +21,9 @@ use function array_key_exists;
 use function array_keys;
 use function array_map;
 use function array_merge;
-use function array_merge_recursive;
 use function array_pop;
 use function array_reduce;
 use function array_unique;
-use function array_unshift;
 use function array_values;
 use function basename;
 use function ceil;
@@ -33,8 +37,6 @@ use ErrorException;
 use function explode;
 use function fclose;
 use function fgetcsv;
-use const FILE_APPEND;
-use function file_exists;
 use function file_get_contents;
 use function file_put_contents;
 use function filemtime;
@@ -472,7 +474,7 @@ function prepare_injections(
 			}
 		}
 
-		$cache = inject_caches($cache, $injected_cache);
+		$injected->cache = $cache = inject_caches($cache, $injected_cache);
 
 		$externals_cache = process_externals(
 			$cache,
@@ -483,7 +485,7 @@ function prepare_injections(
 			false
 		);
 
-		$cache = inject_caches($cache, $externals_cache);
+		$injected->cache = $cache = inject_caches($cache, $externals_cache);
 
 		/**
 		 * @var array{
@@ -1147,7 +1149,8 @@ function captions_json_cache_exists(string $video_id): bool
 function captions(
 	string $video_id,
 	array $playlist_topic_strings_reverse_lookup,
-	SkippingTranscriptions $skipping
+	SkippingTranscriptions $skipping,
+	Injected $injected
 ) : array {
 	if (
 		! preg_match(
@@ -1169,7 +1172,7 @@ function captions(
 		);
 	}
 
-	$maybe = raw_captions($video_id, $skipping);
+	$maybe = raw_captions($video_id, $skipping, $injected);
 
 	if ( ! isset($maybe[1])) {
 		return [];
@@ -1401,7 +1404,11 @@ function video_id_json_caption_source(string $video_id) : string
  *
  * @return list<string>
  */
-function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_expiry = false) : array
+function prepare_uncached_captions_html_video_ids(
+	array $video_ids,
+	bool $check_expiry,
+	Injected $injected
+) : array
 {
 	$does_not_have_json = array_filter(
 		$video_ids,
@@ -1410,9 +1417,11 @@ function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_
 		}
 	);
 
+	$captions_source = captions_source($injected);
+
 	$does_not_have_html = array_values(array_filter(
 		$does_not_have_json,
-		static function (string $maybe) use ($check_expiry) : bool {
+		static function (string $maybe) use ($check_expiry, $captions_source) : bool {
 			$video_id = preg_replace(
 				'/^yt-([^,]+).*/',
 				'$1',
@@ -1428,8 +1437,8 @@ function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_
 				])
 			);
 
-			if ($check_expiry && captions_content_exists($html_cache)) {
-				$page = captions_get_content($html_cache);
+			if ($check_expiry && $captions_source->exists($html_cache)) {
+				$page = $captions_source->get_content($html_cache);
 
 				$urls = preg_match_all(
 					(
@@ -1471,7 +1480,7 @@ function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_
 				}
 			}
 
-			return ! captions_content_exists($html_cache) || captions_get_content($html_cache) === $url;
+			return ! $captions_source->exists($html_cache) || $captions_source->get_content($html_cache) === $url;
 		}
 	));
 
@@ -1499,105 +1508,24 @@ function prepare_uncached_captions_html_video_ids(array $video_ids, bool $check_
 	return array_values($can_have_html);
 }
 
-/**
- * @param list<string> $video_ids
- */
-function prepare_uncached_captions_html(
-	array $video_ids,
-	SkippingTranscriptions $skipping,
-	bool $check_expiry = false
-) : void {
-	$can_have_html = prepare_uncached_captions_html_video_ids($video_ids, $check_expiry);
-
-	$i = 0;
-	$count = count($can_have_html);
-	foreach ($can_have_html as $video_id) {
-		echo "\r", sprintf('Prefetching %s of %s', ++$i, $count);
-
-		$video_id = preg_replace(
-			'/^yt-([^,]+).*/',
-			'$1',
-			vendor_prefixed_video_id($video_id)
-		);
-
-		$html_cache = $video_id . '.html';
-
-		remove_captions_cache_file($html_cache);
-
-		video_page($video_id);
-		raw_captions($video_id, $skipping);
-		yt_cards($video_id, true);
-	}
-}
-
-function captions_data() : PharData
+function captions_source(Injected $injected) : ProxiedCaptionsSource
 {
-	/** @var PharData|null */
-	static $captions_data = null;
+	/** @var array<int, ProxiedCaptionsSource> */
+	static $instances = [];
 
-	if (null === $captions_data) {
-		$captions_data = new PharData(
-			(
-				__DIR__
-				. '/../captions.tar'
-			),
-			(
-				PharData::CURRENT_AS_PATHNAME
-				| PharData::SKIP_DOTS
-				| PharData::UNIX_PATHS
-			)
+	$id = spl_object_id($injected);
+
+	if ( ! isset($instances[$id])) {
+		$instances[$id] = new ProxiedCaptionsSource(
+			new FilesystemCaptionsSource(),
+			new DynamicDatedTarballCaptionsSource($injected)
 		);
 	}
 
-	return $captions_data;
+	return $instances[$id];
 }
 
-function remove_captions_cache_file(string $filename) : void
-{
-	$filepath = __DIR__ . '/../captions/' . $filename;
-	if (is_file($filepath)) {
-		unlink($filepath);
-	}
-
-	$captions_data = captions_data();
-
-	unset($captions_data[$filename]);
-}
-
-function captions_add_from_string(string $filename, string $contents) : void
-{
-	if ( ! is_file(__DIR__ . '/../captions/' . $filename)) {
-		file_put_contents(__DIR__ . '/../captions/' . $filename, $contents);
-
-		return;
-	}
-	$captions_data = captions_data();
-
-	$captions_data->addFromString($filename, $contents);
-}
-
-function captions_get_content(string $filename) : string
-{
-	if (is_file(__DIR__ . '/../captions/' . $filename)) {
-		return file_get_contents(__DIR__ . '/../captions/' . $filename);
-	}
-
-	$captions_data = captions_data();
-
-	return file_get_contents($captions_data[$filename]->getPathname());
-}
-
-function captions_content_exists(string $filename) : bool
-{
-	if (is_file(__DIR__ . '/../captions/' . $filename)) {
-		return is_file(__DIR__ . '/../captions/' . $filename);
-	}
-	$captions_data = captions_data();
-
-	return isset($captions_data[$filename]);
-}
-
-function video_page(string $video_id) : string
+function video_page(string $video_id, Injected $injected) : string
 {
 	$vendor_prefixed = vendor_prefixed_video_id($video_id);
 
@@ -1620,11 +1548,13 @@ function video_page(string $video_id) : string
 		])
 	);
 
-	if ( ! captions_content_exists($html_cache)) {
-		captions_add_from_string($html_cache, file_get_contents($url));
+	$captions_source = captions_source($injected);
+
+	if ( ! $captions_source->exists($html_cache)) {
+		$captions_source->add_from_string($html_cache, file_get_contents($url));
 	}
 
-	return captions_get_content($html_cache);
+	return $captions_source->get_content($html_cache);
 }
 
 /**
@@ -1644,8 +1574,11 @@ function video_page(string $video_id) : string
  *
  * @return array<empty, empty>|array{0:SimpleXMLElement, 1:list<SimpleXMLElement>}|array{0:null, JSON}
  */
-function raw_captions(string $video_id, SkippingTranscriptions $skipping) : array
-{
+function raw_captions(
+	string $video_id,
+	SkippingTranscriptions $skipping,
+	Injected $injected
+) : array {
 	preg_match(
 		'/^yt-[^,]{11},(?<start>\d+(?:\.\d+)?)?(?:,(?<end>\d+(?:\.\d+)?)?)?$/',
 		vendor_prefixed_video_id($video_id),
@@ -1786,7 +1719,7 @@ function raw_captions(string $video_id, SkippingTranscriptions $skipping) : arra
 		vendor_prefixed_video_id($video_id)
 	);
 
-	$page = video_page($video_id);
+	$page = video_page($video_id, $injected);
 
 	$urls = preg_match_all(
 		(
@@ -1876,6 +1809,8 @@ function raw_captions(string $video_id, SkippingTranscriptions $skipping) : arra
 		. '.xml'
 	);
 
+	$captions_source = captions_source($injected);
+
 	while ('' !== $tt) {
 		if (null === key($url_matches)) {
 			break;
@@ -1889,12 +1824,12 @@ function raw_captions(string $video_id, SkippingTranscriptions $skipping) : arra
 			. '.xml'
 		);
 
-		if ( ! captions_content_exists($tt_cache)) {
+		if ( ! $captions_source->exists($tt_cache)) {
 			$tt = file_get_contents((string) current($url_matches));
 
-			captions_add_from_string($tt_cache, $tt);
+			$captions_source->add_from_string($tt_cache, $tt);
 		} else {
-			$tt = captions_get_content($tt_cache);
+			$tt = $captions_source->get_content($tt_cache);
 		}
 
 		if ('' !== $tt) {
@@ -1912,10 +1847,10 @@ function raw_captions(string $video_id, SkippingTranscriptions $skipping) : arra
 
 	$fallback_tt_cache = $video_id . '.xml';
 
-	if ('' === $tt && captions_content_exists($fallback_tt_cache)) {
+	if ('' === $tt && $captions_source->exists($fallback_tt_cache)) {
 		$tt_cache = $fallback_tt_cache;
 
-		$tt = captions_get_content($fallback_tt_cache);
+		$tt = $captions_source->get_content($fallback_tt_cache);
 	}
 
 	if ('' === (string) $tt) {
@@ -2389,7 +2324,8 @@ function process_externals(
 					$cache,
 					$not_a_livestream,
 					$not_a_livestream_date_lookup,
-					$skipping
+					$skipping,
+					$injected
 				);
 			} catch (ErrorException $e) {
 				if (
@@ -2469,13 +2405,14 @@ function process_dated_csv(
 	array $not_a_livestream,
 	array $not_a_livestream_date_lookup,
 	SkippingTranscriptions $skipping,
+	Injected $injected,
 	bool $do_injection = true
 ) : array {
 	$needs_alt_layout = false;
 
 	[$video_id, $externals_csv, $data] = $externals_data;
 
-	$captions = raw_captions($video_id, $skipping);
+	$captions = raw_captions($video_id, $skipping, $injected);
 
 	/**
 	 * @var list<array{
@@ -3190,7 +3127,7 @@ function other_video_parts(string $video_id, bool $include_self = true) : array
 	return $out;
 }
 
-function yt_cards(string $video_id, bool $skip_file = false) : array
+function yt_cards(string $video_id, Injected $injected, bool $skip_file = false) : array
 {
 	/**
 	 * @var array<string, list<array{
@@ -3248,7 +3185,7 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
 
 		if ( ! is_file($cache_file) || $skip_file) {
 			file_put_contents($cache_file, json_encode_pretty(
-				yt_cards_uncached($video_id)
+				yt_cards_uncached($video_id, $injected)
 			));
 		}
 
@@ -3336,9 +3273,9 @@ function yt_cards(string $video_id, bool $skip_file = false) : array
  *	}
  * }
  */
-function yt_cards_uncached(string $video_id) : array
+function yt_cards_uncached(string $video_id, Injected $injected) : array
 {
-	$page = video_page($video_id);
+	$page = video_page($video_id, $injected);
 
 	if ('' === $page) {
 		return [];

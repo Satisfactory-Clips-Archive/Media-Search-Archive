@@ -44,7 +44,7 @@ class Injected
 	 *	legacyAlts:array<string, list<string>>
 	 * }
 	 */
-	public readonly array $cache;
+	public array $cache = [];
 
 	/**
 	 * @var array<string, list<int|string>>
@@ -64,7 +64,7 @@ class Injected
 	/**
 	 * @var array<string, string>
 	 */
-	private array $playlists_date_ref;
+	public array $playlists_date_ref;
 
 	public function __construct(
 		YouTubeApiWrapper $api,
@@ -74,6 +74,7 @@ class Injected
 		$this->api = $api;
 		$this->slugify = $slugify;
 		$this->skipping = $skipping;
+		$this->playlists_date_ref = $api->dated_playlists();
 
 		echo "\n", 'preparing injections', "\n";
 		$prepared = prepare_injections(
@@ -92,6 +93,7 @@ class Injected
 		] = $prepared;
 
 		$this->topics_hierarchy = $prepared[1];
+
 		$this->playlists_date_ref = $api->dated_playlists();
 
 		$this->sorting = new Sorting($this->cache);
@@ -376,7 +378,7 @@ class Injected
 						$this->not_a_livestream,
 						$this->not_a_livestream_date_lookup
 					)[1],
-					'has_transcriptions' => count(captions($id, [], $this->skipping)) > 0,
+					'has_transcriptions' => count(captions($id, [], $this->skipping, $this)) > 0,
 					'embed_data' => [
 						$twitch_id,
 						$start,
