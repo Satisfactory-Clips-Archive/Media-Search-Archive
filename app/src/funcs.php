@@ -1652,8 +1652,6 @@ function raw_captions(string $video_id, SkippingTranscriptions $skipping) : arra
 		$video_id_matches
 	);
 
-	$video_id = preg_replace('/^yt-([^,]+).*/', '$1', vendor_prefixed_video_id($video_id));
-
 	if (
 		in_array(
 			vendor_prefixed_video_id($video_id),
