@@ -1260,3 +1260,12 @@
 - [ ] yt-5NBgetrxtpw,7189.340929,7213.66705 - Q&A: When is Story?
 - [ ] yt-5NBgetrxtpw,7213.66705,7236.193513 - Q&A: What do you use if you don't use Git?
 - [ ] yt-5NBgetrxtpw,7236.193513,7246.361129 - Q&A: Will progress carry over to 1.0?
+
+## 2023-04-21
+- [ ] yt-ZDN_b6TX5gg,25.392033333333334,36.26956666666667 - Q&A: Bigger Blueprint Designer?
+- [ ] yt-ZDN_b6TX5gg,36.302933333333335,60.897391 - Q&A: Better Blueprint Snapping?
+- [ ] yt-ZDN_b6TX5gg,240.40683333333334,276.1759 - Directional arrow for Blueprints
+- [ ] yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666 - Q&A: What is Nudge Mode?
+- [ ] yt-ZDN_b6TX5gg,312.97933333333333,336.5362 - Q&A: How does Nudge Mode work?
+- [ ] yt-ZDN_b6TX5gg,336.5695666666667,365.53183333333334 - Q&A: Will Nudge Mode work for Buildings as well as Blueprints?
+- [ ] yt-ZDN_b6TX5gg,365.5652,384.45073333333335 - Q&A: How far can things be nudged?
