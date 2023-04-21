@@ -1499,6 +1499,14 @@ class TopicData
 			'Features',
 			'Build Modes',
 		],
+		'Nudge Mode' => [
+			'Features',
+			'Build Modes',
+		],
+		'Blueprint Dismantle Mode' => [
+			'Features',
+			'Build Modes',
+		],
 		'PLbjDnnBIxiEo_Zh8wGap9N34W6DrbfWN-' => [ // Zooping
 			'Features',
 			'Build Modes',

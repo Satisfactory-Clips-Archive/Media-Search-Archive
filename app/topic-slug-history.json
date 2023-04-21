@@ -1778,5 +1778,11 @@
     },
     "Western Dune Forest": {
         "environment\/biomes\/western-dune-forest": 1681152602
+    },
+    "Blueprint Dismantle Mode": {
+        "features\/build-modes\/blueprint-dismantle-mode": 1682112417
+    },
+    "Nudge Mode": {
+        "features\/build-modes\/nudge-mode": 1682112417
     }
 }

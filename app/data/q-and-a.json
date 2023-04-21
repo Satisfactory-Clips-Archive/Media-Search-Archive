@@ -1,4 +1,135 @@
 {
+    "yt-ZDN_b6TX5gg,25.392033333333334,36.26956666666667": {
+        "title": "Q&A: Bigger Blueprint Designer?",
+        "date": "2023-04-21",
+        "topics": [
+            "features\/buildings\/blueprint-designer",
+            "features\/unplanned-features",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "duplicates": [
+            "KcwFoQZWFmA",
+            "Mgf5iLSptOA",
+            "yt-CREPrQ23Dt4,6021.4571249125,6033.634519959804",
+            "yt-CREPrQ23Dt4,6240.003332,6249.676934",
+            "yt-fVCw51TOHeA,6678.650146,6742.917853042708"
+        ],
+        "seealso": [
+            "yt-CREPrQ23Dt4,6670.77046,6678.607335",
+            "yt-fVCw51TOHeA,6897.644689,6908.887133"
+        ],
+        "seealso_video_cards": [
+            "J4LlorYbVV0"
+        ]
+    },
+    "yt-ZDN_b6TX5gg,36.302933333333335,60.897391": {
+        "title": "Q&A: Better Blueprint Snapping?",
+        "date": "2023-04-21",
+        "topics": [
+            "features\/blueprints",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "duplicates": [
+            "JyMaZmsGu1c"
+        ],
+        "seealso": [
+            "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666"
+        ],
+        "seealso_video_cards": [
+            "J4LlorYbVV0"
+        ]
+    },
+    "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666": {
+        "title": "Q&A: What is Nudge Mode?",
+        "date": "2023-04-21",
+        "topics": [
+            "features\/blueprints",
+            "features\/build-modes\/nudge-mode",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "replaces": [
+            "7FNFh-j_YjQ",
+            "nakeVz-2GZI",
+            "q_MH95NWEbQ"
+        ],
+        "seealso": [
+            "fliouDhnx8c",
+            "yt-ZDN_b6TX5gg,36.302933333333335,60.897391",
+            "yt-ZDN_b6TX5gg,312.97933333333333,336.5362",
+            "yt-ZDN_b6TX5gg,336.5695666666667,365.53183333333334",
+            "yt-ZDN_b6TX5gg,365.5652,384.45073333333335"
+        ],
+        "seealso_video_cards": [
+            "J4LlorYbVV0"
+        ]
+    },
+    "yt-ZDN_b6TX5gg,312.97933333333333,336.5362": {
+        "title": "Q&A: How does Nudge Mode work?",
+        "date": "2023-04-21",
+        "topics": [
+            "features\/build-modes\/nudge-mode",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "seealso": [
+            "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666"
+        ],
+        "seealso_video_cards": [
+            "J4LlorYbVV0"
+        ]
+    },
+    "yt-ZDN_b6TX5gg,336.5695666666667,365.53183333333334": {
+        "title": "Q&A: Will Nudge Mode work for Buildings as well as Blueprints?",
+        "date": "2023-04-21",
+        "topics": [
+            "features\/blueprints",
+            "features\/build-modes\/nudge-mode",
+            "features\/buildables",
+            "features\/buildings",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "seealso": [
+            "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666"
+        ],
+        "seealso_video_cards": [
+            "J4LlorYbVV0"
+        ]
+    },
+    "yt-ZDN_b6TX5gg,365.5652,384.45073333333335": {
+        "title": "Q&A: How far can things be nudged?",
+        "date": "2023-04-21",
+        "topics": [
+            "features\/build-modes\/nudge-mode",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "seealso": [
+            "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666"
+        ],
+        "seealso_video_cards": [
+            "J4LlorYbVV0"
+        ]
+    },
+    "yt-ZDN_b6TX5gg,426.25916666666666,510.7769333333333": {
+        "title": "Q&A: What is Blueprint Dismantle Mode?",
+        "date": "2023-04-21",
+        "topics": [
+            "features\/build-modes\/blueprint-dismantle-mode",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "replaces": [
+            "fliouDhnx8c",
+            "F_u-dKrP9Bs",
+            "Nms9QQa7bcc",
+            "OT6-9i4p5Dc",
+            "vqb8dmFFFQQ",
+            "yt-fVCw51TOHeA,6314.630245,6408.607182"
+        ],
+        "seealso": [
+            "VLmIcYiAAmk"
+        ],
+        "seealso_video_cards": [
+            "J4LlorYbVV0"
+        ]
+    },
     "yt-5NBgetrxtpw,329.5800566666667,431.561195": {
         "title": "Q&A: What Biome have each of you spent the most time in during development?",
         "date": "2023-04-18",
@@ -3522,9 +3653,9 @@
             "features\/requested-features"
         ],
         "seealso": [
-            "F_u-dKrP9Bs",
             "iio2qCxrt9E",
-            "uxo-xBbVKdU"
+            "uxo-xBbVKdU",
+            "yt-ZDN_b6TX5gg,426.25916666666666,510.7769333333333"
         ],
         "seealso_video_cards": [
             "F_u-dKrP9Bs"
@@ -3963,19 +4094,10 @@
         "topics": [
             "features\/buildings\/blueprint-designer"
         ],
-        "duplicates": [
-            "KcwFoQZWFmA",
-            "yt-CREPrQ23Dt4,6021.4571249125,6033.634519959804",
-            "yt-CREPrQ23Dt4,6240.003332,6249.676934",
-            "yt-fVCw51TOHeA,6678.650146,6742.917853042708"
-        ],
-        "seealso": [
-            "yt-CREPrQ23Dt4,6670.77046,6678.607335",
-            "yt-fVCw51TOHeA,6897.644689,6908.887133"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP"
-        ]
+        ],
+        "duplicatedby": "yt-ZDN_b6TX5gg,25.392033333333334,36.26956666666667"
     },
     "QGK0C96KYz4": {
         "title": "Q&A: Stinger plush?",
@@ -4351,7 +4473,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiErMbbLL3R98Zi20naPbgCUT"
         ],
-        "duplicatedby": "Mgf5iLSptOA"
+        "duplicatedby": "yt-ZDN_b6TX5gg,25.392033333333334,36.26956666666667"
     },
     "MA-7LFV-F1U": {
         "title": "Q&A: Will there be a Hardcore Mode?",
@@ -5454,22 +5576,13 @@
             "features\/build-modes",
             "features\/requested-features"
         ],
-        "duplicates": [
-            "fliouDhnx8c",
-            "Nms9QQa7bcc",
-            "OT6-9i4p5Dc",
-            "vqb8dmFFFQQ",
-            "yt-fVCw51TOHeA,6314.630245,6408.607182"
-        ],
-        "seealso": [
-            "VLmIcYiAAmk"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP"
         ],
         "incoming_video_cards": [
             "VLmIcYiAAmk"
-        ]
+        ],
+        "replacedby": "yt-ZDN_b6TX5gg,426.25916666666666,510.7769333333333"
     },
     "JX-sTD_N_vE": {
         "title": "Q&A: Timeframe for Update 8?",
@@ -5510,13 +5623,13 @@
             "satisfactory-updates\/release-builds"
         ],
         "seealso": [
-            "F_u-dKrP9Bs",
-            "iio2qCxrt9E"
+            "iio2qCxrt9E",
+            "yt-ZDN_b6TX5gg,426.25916666666666,510.7769333333333"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO"
         ],
-        "duplicatedby": "F_u-dKrP9Bs"
+        "replacedby": "yt-ZDN_b6TX5gg,426.25916666666666,510.7769333333333"
     },
     "QebwvKsk-f0": {
         "title": "Q&A: Will the Mk.3 Miner issue be worked on?",
@@ -6093,15 +6206,10 @@
             "features\/requested-features",
             "technology\/user-interface\/holograms"
         ],
-        "duplicates": [
-            "7FNFh-j_YjQ"
-        ],
-        "seealso": [
-            "JyMaZmsGu1c"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO"
-        ]
+        ],
+        "replacedby": "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666"
     },
     "rbgdyCf9KGs": {
         "title": "Q&A: Does Snutt know about the Treptow district in Berlin?",
@@ -6260,7 +6368,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP"
         ],
-        "duplicatedby": "nakeVz-2GZI"
+        "replacedby": "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666"
     },
     "BhhJ3BnFtPA": {
         "title": "Q&A: Can we put Floor Holes on an existing Conveyor Lift?",
@@ -8106,9 +8214,7 @@
             "features\/blueprints",
             "features\/requested-features"
         ],
-        "seealso": [
-            "nakeVz-2GZI"
-        ]
+        "duplicatedby": "yt-ZDN_b6TX5gg,36.302933333333335,60.897391"
     },
     "LQu4cSL5fbE": {
         "title": "Q&A: Will there be new content after 1.0?",
@@ -8153,7 +8259,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP"
         ],
-        "duplicatedby": "F_u-dKrP9Bs"
+        "replacedby": "yt-ZDN_b6TX5gg,426.25916666666666,510.7769333333333"
     },
     "OfcEvJbfSC0": {
         "title": "Q&A: Do you allow clipping of Belts or Machines in your builds?",
@@ -8886,10 +8992,13 @@
             "features\/requested-features",
             "technology\/user-interface\/holograms"
         ],
+        "seealso": [
+            "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666"
+        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpUuYgu0-pxFGsbN2YXpbOP"
         ],
-        "duplicatedby": "F_u-dKrP9Bs"
+        "replacedby": "yt-ZDN_b6TX5gg,426.25916666666666,510.7769333333333"
     },
     "hJjxoDXNg5A": {
         "title": "Q&A: When will the next Map revamp stuff be released?",
@@ -9298,7 +9407,7 @@
         "topics": [
             "features\/blueprints"
         ],
-        "duplicatedby": "F_u-dKrP9Bs"
+        "replacedby": "yt-ZDN_b6TX5gg,426.25916666666666,510.7769333333333"
     },
     "yt-fVCw51TOHeA,6410.197256,6433.66694": {
         "title": "Q&A: Will y'all ever consider expanding the game to Consoles?",
@@ -9416,7 +9525,7 @@
             "features\/buildings\/blueprint-designer",
             "features\/requested-features"
         ],
-        "duplicatedby": "Mgf5iLSptOA"
+        "duplicatedby": "yt-ZDN_b6TX5gg,25.392033333333334,36.26956666666667"
     },
     "yt-fVCw51TOHeA,6745.010982,6785.122799": {
         "title": "Q&A: Will there be any multi-seat Vehicle later?",
@@ -9484,7 +9593,7 @@
             "yt-CREPrQ23Dt4,6249.676934,6540.615837"
         ],
         "seealso": [
-            "Mgf5iLSptOA"
+            "yt-ZDN_b6TX5gg,25.392033333333334,36.26956666666667"
         ]
     },
     "yt-fVCw51TOHeA,6909.738879,6912.159366": {
@@ -10459,9 +10568,9 @@
         "seealso": [
             "Hndilx24J9o",
             "jl0bDeSq5aM",
-            "Mgf5iLSptOA",
             "yt-CREPrQ23Dt4,6670.77046,6678.607335",
-            "yt-fVCw51TOHeA,6295.590683,6312.586282"
+            "yt-fVCw51TOHeA,6295.590683,6312.586282",
+            "yt-ZDN_b6TX5gg,25.392033333333334,36.26956666666667"
         ],
         "seealso_video_cards": [
             "c91XPaj8_rM"
@@ -10978,7 +11087,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpy0dbl8UJNZFunrmillCCR"
         ],
-        "duplicatedby": "F_u-dKrP9Bs"
+        "replacedby": "yt-ZDN_b6TX5gg,426.25916666666666,510.7769333333333"
     },
     "yRK6QfAO83w": {
         "title": "Q&A: Can we get more Inventory and Hand Slots for the Pioneer?",
@@ -11135,7 +11244,7 @@
             "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
-        "duplicatedby": "Mgf5iLSptOA"
+        "duplicatedby": "yt-ZDN_b6TX5gg,25.392033333333334,36.26956666666667"
     },
     "yt-CREPrQ23Dt4,6033.634519959804,6197.319266": {
         "title": "Q&A: How long do you think it'll take for people to make a website that generates Blueprint files?",
@@ -11177,7 +11286,7 @@
             "satisfactory-updates\/released\/satisfactory-update-7",
             "special-guests"
         ],
-        "duplicatedby": "Mgf5iLSptOA"
+        "duplicatedby": "yt-ZDN_b6TX5gg,25.392033333333334,36.26956666666667"
     },
     "yt-CREPrQ23Dt4,6249.676934,6540.615837": {
         "title": "Q&A: Does the Coal Generator fit?",
@@ -11215,7 +11324,7 @@
         ],
         "seealso": [
             "0vXC2pZcyWA",
-            "Mgf5iLSptOA"
+            "yt-ZDN_b6TX5gg,25.392033333333334,36.26956666666667"
         ]
     },
     "yt-CREPrQ23Dt4,6678.607335,6714.312943": {
@@ -15274,8 +15383,8 @@
             "5PaZZUkPwjU",
             "94G4znvDbiA",
             "InwxX5I5XH4",
-            "q_MH95NWEbQ",
             "yrX3851FYKA",
+            "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666",
             "ZEyPxIhQ8bQ"
         ]
     },
@@ -16649,7 +16758,7 @@
             "0vZS0gvnuqg",
             "BmSeFBv2rAQ",
             "FoRaUJM8tYg",
-            "q_MH95NWEbQ",
+            "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666",
             "__WKPcHdDcA"
         ],
         "seealso_topic_cards": [
@@ -38225,7 +38334,8 @@
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqy8rMgGZL8AmMomES_Hzf8"
-        ]
+        ],
+        "replacedby": "yt-ZDN_b6TX5gg,286.8532333333333,312.94596666666666"
     },
     "lW2CuiAO-zw": {
         "title": "Q&A: Have you guys heard of Valheim?",
