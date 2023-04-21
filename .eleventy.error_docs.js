@@ -1,4 +1,8 @@
+const {common:commonConfig} = require('./.eleventy.common-config.js');
+
 module.exports = (e) => {
+	commonConfig(e);
+
 	return {
 		dir: {
 			data: '../11ty/data',

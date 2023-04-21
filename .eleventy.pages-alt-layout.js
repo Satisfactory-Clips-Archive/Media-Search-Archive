@@ -1,7 +1,9 @@
 const twitter_text = require('twitter-text');
+const {common:commonConfig} = require('./.eleventy.common-config.js');
 
 module.exports = (config) => {
 	config.addPlugin(require('eleventy-plugin-svg-contents'));
+	commonConfig(config);
 
 	return Object.assign(
 		{},

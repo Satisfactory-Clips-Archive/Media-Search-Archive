@@ -1,6 +1,9 @@
 const twitter_text = require('twitter-text');
+const {common:commonConfig} = require('./.eleventy.common-config.js');
 
 module.exports = (config) => {
+	commonConfig(config);
+
 	config.addFilter('tweet', (tweet) => {
 		return twitter_text.autoLink(
 			tweet.data.text,

@@ -16,7 +16,7 @@
     "lunr": "^2.3.9"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^2.0.1",
     "@gfx/zopfli": "^1.0.15",
     "@types/lunr": "^2.3.4",
     "@types/node": "^16.11.4",
