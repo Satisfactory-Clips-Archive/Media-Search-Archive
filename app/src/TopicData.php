@@ -1830,6 +1830,7 @@ class TopicData
 
 	public const VIDEO_IS_FROM_A_LIVESTREAM = [
 		'yt-oLl9SZht-bE',
+		'yt-5NBgetrxtpw',
 	];
 
 	/**

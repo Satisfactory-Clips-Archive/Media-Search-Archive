@@ -263,7 +263,7 @@ foreach (array_keys($faq) as $video_id) {
 
 	[$link_part_title, $has_cached_captions, $link_part_url] = maybe_transcript_link_and_video_url_data(
 		$video_id,
-		$cache['playlistItems'][$video_id][1]
+		$injected->determine_video_title($video_id, true)
 	);
 
 	$faq_json[$faq_date . '_' . $friendly_playist_name][$video_id] = [

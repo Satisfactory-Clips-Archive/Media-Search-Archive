@@ -1237,3 +1237,26 @@
 - [ ] yt-6X4jqMUtCwI,1250.0154333333332,1262.1942666666666 - Update 8 Landscape & Foliage Changes
 - [ ] yt-6X4jqMUtCwI,1262.2276333333334,1271.4368333333334 - Post-Update 8 Landscape & Foliage Changes
 - [ ] yt-6X4jqMUtCwI,1271.4702,1284.5499333333335 - Update 8 Exploration Gameplay Changes
+
+## 2023-04-18
+- [ ] yt-5NBgetrxtpw,1231.831712,1271.623497 - Q&A: Are you going to use Nanite for foliage?
+- [ ] yt-5NBgetrxtpw,1271.6467233333333,1300.737509 - Q&A: Big trees are Nanite, too?
+- [ ] yt-5NBgetrxtpw,1477.345513,1514.880256 - Q&A: Has Hannah personally noticed any benefits when hopping into the game?
+- [ ] yt-5NBgetrxtpw,1703.252983,1741.177234 - Roads & paths
+- [ ] yt-5NBgetrxtpw,1741.177234,1755.883196 - Reminiscing about the Train Signals announcement
+- [ ] yt-5NBgetrxtpw,1866.881433975521,1876.96685 - Colour balancing
+- [ ] yt-5NBgetrxtpw,1984.736455,2009.351977 - Rocky Desert vista
+- [ ] yt-5NBgetrxtpw,2562.6421335484747,2575.0949890553575 - Q&A: Can we build in this Cave now?
+- [ ] yt-5NBgetrxtpw,2764.237384,2810.715803 - Random things popping up in the Editor
+- [ ] yt-5NBgetrxtpw,2809.522003,2819.343562 - Q&A: Are giant Chainsaws back?
+- [ ] yt-5NBgetrxtpw,2892.020338844285,2935.670662 - Ben's Water changes
+- [ ] yt-5NBgetrxtpw,4206.700515,4230.848023 - Q&A: Is there much happening to base terrain?
+- [ ] yt-5NBgetrxtpw,5083.067331937382,5115.044228 - Abyss Cliffs
+- [ ] yt-5NBgetrxtpw,5282.902336,5296.693621 - Coin Tree Forest
+- [ ] yt-5NBgetrxtpw,5733.912565,5757.607474 - Lumen off vs. Lumen on
+- [ ] yt-5NBgetrxtpw,5757.607474,5766.130244 - Q&A: Showcase with Lumen?
+- [ ] yt-5NBgetrxtpw,6518.342208,6569.522826 - Final doesn't mean done
+- [ ] yt-5NBgetrxtpw,7020.05441,7059.568812 - Q&A: Any news on the World Perimeter at Paradise Island?
+- [ ] yt-5NBgetrxtpw,7189.340929,7213.66705 - Q&A: When is Story?
+- [ ] yt-5NBgetrxtpw,7213.66705,7236.193513 - Q&A: What do you use if you don't use Git?
+- [ ] yt-5NBgetrxtpw,7236.193513,7246.361129 - Q&A: Will progress carry over to 1.0?

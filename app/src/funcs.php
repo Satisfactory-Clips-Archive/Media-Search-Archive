@@ -2228,7 +2228,9 @@ function get_dated_csv(
 			. $video_id
 			. '.json'
 		),
-		true
+		true,
+        512,
+        JSON_THROW_ON_ERROR
 	);
 
 	/**
