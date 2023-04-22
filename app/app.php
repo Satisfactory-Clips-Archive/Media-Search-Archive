@@ -913,7 +913,7 @@ file_put_contents(
 		. '/../11ty/data/transcriptions.json'
 	),
 	json_encode_pretty(
-			array_values($transcripts_json)
+		array_values($transcripts_json)
 	)
 );
 
