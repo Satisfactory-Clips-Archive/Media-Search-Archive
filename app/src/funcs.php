@@ -487,6 +487,28 @@ function prepare_injections(
 
 		$injected->cache = $cache = inject_caches($cache, $externals_cache);
 
+		foreach (array_keys($global_topic_hierarchy) as $topic_parent_id) {
+			if (
+				! isset($injected->cache['playlists'][$topic_parent_id])
+				&& ! isset($injected->cache['stubPlaylists'][$topic_parent_id])
+			) {
+				if (preg_match('/^PLbjDnnBIxiE/', $topic_parent_id)) {
+					throw new RuntimeException(sprintf(
+						'Parent topic in hierarchy not already present! (%s)',
+						$topic_parent_id
+					));
+				}
+
+				$injected->cache['stubPlaylists'][$topic_parent_id] = [
+					'',
+					$topic_parent_id,
+					[],
+				];
+			}
+		}
+
+		$cache = $injected->cache;
+
 		/**
 		 * @var array{
 		 *	0:array{

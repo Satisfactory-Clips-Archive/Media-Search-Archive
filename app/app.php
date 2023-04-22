@@ -217,10 +217,11 @@ if (count($no_topics)) {
 	throw new RuntimeException('Found video with no topics!');
 }
 
-$all_topic_ids = array_merge(
+$all_topic_ids = array_unique(array_merge(
 	array_keys($cache['playlists']),
-	array_keys($cache['stubPlaylists'] ?? [])
-);
+	array_keys($cache['stubPlaylists'] ?? []),
+	array_keys($global_topic_hierarchy)
+));
 
 $topics_without_direct_content = array_filter(
 	$all_topic_ids,
@@ -302,6 +303,45 @@ foreach ($global_topic_hierarchy as $topic_id => $topic_ancestors) {
 }
 
 echo "\n", 'topic nesting data populated', "\n";
+
+foreach (TopicData::VIDEO_IS_FROM_A_LIVESTREAM as $video_id) {
+	$csv = get_dated_csv(
+		determine_date_for_video(
+			$video_id,
+			$cache['playlists'],
+			$api->dated_playlists()
+		),
+		$video_id
+	);
+
+	foreach ($csv[1] as $offset => $csv_entry) {
+		if ( ! is_array($csv[2]['topics'][$offset] ?? null)) {
+			continue;
+		}
+
+		foreach ($csv[2]['topics'][$offset] as $topic_name) {
+			if (
+				! in_array(
+					determine_playlist_id(
+						$topic_name,
+						$cache,
+						$not_a_livestream,
+						$not_a_livestream_date_lookup
+					)[0],
+					$all_topic_ids,
+					true
+				)
+				&& ! in_array(
+					$topic_name,
+					$missing_topics,
+					true
+				)
+			) {
+				$missing_topics[] = $topic_name;
+			}
+		}
+	}
+}
 
 if (count($missing_topics)) {
 	throw new RuntimeException(sprintf(
@@ -692,7 +732,7 @@ foreach (TopicData::VIDEO_IS_FROM_A_LIVESTREAM as $video_id) {
 	);
 
 	foreach ($csv[1] as $offset => $csv_entry) {
-		if (is_array($csv[2]['topics'][$offset] ?? null)) {
+		if ( ! is_array($csv[2]['topics'][$offset] ?? null)) {
 			continue;
 		}
 

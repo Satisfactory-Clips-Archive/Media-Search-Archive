@@ -1784,5 +1784,11 @@
     },
     "Nudge Mode": {
         "features\/build-modes\/nudge-mode": 1682112417
+    },
+    "Gates of Beugernath": {
+        "environment\/biomes\/gates-of-beugernath": 1682158105
+    },
+    "Green Valley": {
+        "environment\/biomes\/green-valley": 1682158105
     }
 }

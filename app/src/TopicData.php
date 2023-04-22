@@ -685,6 +685,14 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
+		'Green Valley' => [
+			'Environment',
+			'Biomes',
+		],
+		'Gates of Beugernath' => [
+			'Environment',
+			'Biomes',
+		],
 		'PLbjDnnBIxiEq-wqDyEyzuV3H3ng4CcdyD' => [ // Titan Forest
 			'Environment',
 			'Biomes',
