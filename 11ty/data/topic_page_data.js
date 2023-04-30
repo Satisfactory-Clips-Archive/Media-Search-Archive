@@ -107,8 +107,8 @@ for (const entry of Object.entries(id_to_permalink)) {
 		dates[date].references = references.filter((maybe) => {
 			return ! primary_keys.includes(maybe.id);
 		});
-		dates[date].primary = dates[date].primary.map(remapper);
-		dates[date].references = dates[date].references.map(remapper);
+		dates[date].primary = dates[date].primary.map(remapper).reverse();
+		dates[date].references = dates[date].references.map(remapper).reverse();
 	}
 
 	exportable_data.push({
