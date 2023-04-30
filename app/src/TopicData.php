@@ -1507,11 +1507,11 @@ class TopicData
 			'Features',
 			'Build Modes',
 		],
-		'Nudge Mode' => [
+		'PLbjDnnBIxiEolMY_wpcZjAioLu7rg_Ol2' => [ // Nudge Mode
 			'Features',
 			'Build Modes',
 		],
-		'Blueprint Dismantle Mode' => [
+		'PLbjDnnBIxiEp1xjfUrcMp_nkvxSUd5_Pf' => [ // Blueprint Dismantle Mode
 			'Features',
 			'Build Modes',
 		],
