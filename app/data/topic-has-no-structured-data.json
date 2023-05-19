@@ -105,6 +105,7 @@
     "features\/buildables\/ladders",
     "features\/buildables\/lights",
     "features\/buildables\/pillars",
+    "features\/buildables\/power-tower",
     "features\/buildables\/railings",
     "features\/buildables\/roofs",
     "features\/buildables\/signs",

@@ -1499,6 +1499,10 @@ class TopicData
 			'Features',
 			'Buildables',
 		],
+		'PLbjDnnBIxiEq3FD_LvPcP2toMFd8Go0Gm' => [ // Power Tower
+			'Features',
+			'Buildables',
+		],
 		'PLbjDnnBIxiErG8xome5LS0FQBrQsdR_vb' => [ // Hard & Soft Clearance
 			'Features',
 			'Build Modes',
