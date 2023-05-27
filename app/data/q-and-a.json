@@ -479,6 +479,70 @@
             "T_wPM_qGfD4"
         ]
     },
+    "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333": {
+        "title": "Q&A: What do the other Jetpack fuels do?",
+        "date": "2023-05-26",
+        "topics": [
+            "features\/crafting\/fuel",
+            "features\/equipment\/jetpack",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "replaces": [
+            "5fdrp06i8SM",
+            "5Ij3wWqZb8Q",
+            "5Z5pyzNiaVY",
+            "fo9YWVJyuVo",
+            "FqtXvF6LhVM",
+            "g-Om6IBMBq0",
+            "jQqOPZuB6Qk",
+            "l2VSTXaEtCY",
+            "PBccbfC_x2E",
+            "pSGEDxxLn2E",
+            "yt-rATcozDE25c,476.04223333333334,527.5603666666667",
+            "zJy_dyJfNLc"
+        ],
+        "seealso": [
+            "6DpfaPCLwD4",
+            "7wY9KAbiOpU",
+            "xY2wDhyE7ZE",
+            "ZArBtcPKnzE"
+        ],
+        "seealso_video_cards": [
+            "d-MGfaCJfrw",
+            "v4mbNy3gt7c",
+            "ZDN_b6TX5gg"
+        ]
+    },
+    "yt-9jDBEpAlS2s,727.0263,851.0502": {
+        "title": "Q&A: Can Fart Rocks be destroyed?",
+        "date": "2023-05-26",
+        "topics": [
+            "environment",
+            "satisfactory-updates\/speculative\/satisfactory-update-8"
+        ],
+        "replaces": [
+            "0nRCXveJemw",
+            "8s35osHP140",
+            "BRpEHi7W7u0",
+            "byPiSQZOAhw",
+            "KTTHPxhnpDM",
+            "Mrexbr9w4H8",
+            "PcJHdVtZSp0",
+            "QM6AXdaNYN4",
+            "wzI7K41TYLg",
+            "yQfU5GLx4eM"
+        ],
+        "seealso": [
+            "9Lsp_D_eYB8",
+            "jYbQ9z-nqe0",
+            "LyvW1dRpHdU"
+        ],
+        "seealso_video_cards": [
+            "d-MGfaCJfrw",
+            "v4mbNy3gt7c",
+            "ZDN_b6TX5gg"
+        ]
+    },
     "7oU4D1EVQow": {
         "title": "Q&A: How many spoons do you own?",
         "date": "2023-05-16",
@@ -4261,30 +4325,12 @@
             "features\/equipment\/jetpack",
             "features\/requested-features"
         ],
-        "duplicates": [
-            "5Ij3wWqZb8Q",
-            "5Z5pyzNiaVY",
-            "fo9YWVJyuVo",
-            "FqtXvF6LhVM",
-            "g-Om6IBMBq0",
-            "jQqOPZuB6Qk",
-            "l2VSTXaEtCY",
-            "PBccbfC_x2E",
-            "pSGEDxxLn2E",
-            "yt-rATcozDE25c,476.04223333333334,527.5603666666667",
-            "zJy_dyJfNLc"
-        ],
-        "seealso": [
-            "6DpfaPCLwD4",
-            "7wY9KAbiOpU",
-            "xY2wDhyE7ZE",
-            "ZArBtcPKnzE"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo",
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT",
             "PLbjDnnBIxiEpy0dbl8UJNZFunrmillCCR"
-        ]
+        ],
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "6VphMSLzaT4": {
         "title": "Q&A: When you optimise the game, are you aiming for better performance for super builds?",
@@ -11574,22 +11620,7 @@
             "environment",
             "features\/requested-features"
         ],
-        "duplicates": [
-            "0nRCXveJemw",
-            "8s35osHP140",
-            "BRpEHi7W7u0",
-            "byPiSQZOAhw",
-            "KTTHPxhnpDM",
-            "Mrexbr9w4H8",
-            "PcJHdVtZSp0",
-            "QM6AXdaNYN4",
-            "yQfU5GLx4eM"
-        ],
-        "seealso": [
-            "9Lsp_D_eYB8",
-            "jYbQ9z-nqe0",
-            "LyvW1dRpHdU"
-        ]
+        "replacedby": "yt-9jDBEpAlS2s,727.0263,851.0502"
     },
     "ydIA6UbDqr8": {
         "title": "Q&A: How about S.A.M. Ore and those WIP things?",
@@ -15537,7 +15568,7 @@
         "incoming_video_cards": [
             "7wY9KAbiOpU"
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "VNIuvJo_2wQ": {
         "title": "Q&A: Will I get a DMCA claim if I use the game OST as background music?",
@@ -18993,7 +19024,7 @@
             "environment",
             "features\/requested-features"
         ],
-        "duplicatedby": "wzI7K41TYLg"
+        "replacedby": "yt-9jDBEpAlS2s,727.0263,851.0502"
     },
     "fkgt6horxZY": {
         "title": "Q&A: Will it run on the Steam Deck?",
@@ -20515,7 +20546,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEogzZ5ihqFGBEDRmk9cEgAk"
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "RgEkPdmaN7c": {
         "title": "Q&A: Will there be any ball-centric mini-game?",
@@ -21282,7 +21313,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqqhOELGDMQdwRCiQAo99bW"
         ],
-        "duplicatedby": "wzI7K41TYLg"
+        "replacedby": "yt-9jDBEpAlS2s,727.0263,851.0502"
     },
     "_zfnXF_UMJU": {
         "title": "Q&A: Will there ever be a real Arachnophobia Mode instead of cats & scary sounds?",
@@ -22237,7 +22268,7 @@
             "satisfactory-updates\/released\/satisfactory-update-6"
         ],
         "seealso": [
-            "wzI7K41TYLg",
+            "yt-9jDBEpAlS2s,727.0263,851.0502",
             "Z2ncq57UyC0"
         ]
     },
@@ -23270,7 +23301,7 @@
                 "https:\/\/mobile.twitter.com\/SignpostMarv\/status\/1527405192458686472"
             ]
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "l-LVFsZi9_E": {
         "title": "Q&A: Map Marker limit as config thing?",
@@ -27890,7 +27921,7 @@
         "seealso": [
             "3x91IjO5rSI",
             "FrvzVaE9d7U",
-            "wzI7K41TYLg"
+            "yt-9jDBEpAlS2s,727.0263,851.0502"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpuOTI51V9B1koMUCsNYuIA"
@@ -31263,7 +31294,7 @@
         "topics": [
             "environment"
         ],
-        "duplicatedby": "wzI7K41TYLg"
+        "replacedby": "yt-9jDBEpAlS2s,727.0263,851.0502"
     },
     "HXO3vmkK0X0": {
         "title": "Q&A: Any update on the Slugs bug?",
@@ -44923,7 +44954,7 @@
             "PLbjDnnBIxiEogzZ5ihqFGBEDRmk9cEgAk",
             "PLbjDnnBIxiEpy0dbl8UJNZFunrmillCCR"
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "FKA_rMdiHtU": {
         "title": "Q&A: Will Update 5 mess up Mods like Update 4 did?",
@@ -46860,7 +46891,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEogzZ5ihqFGBEDRmk9cEgAk"
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "0nc0vXpzr8o": {
         "title": "Q&A: Are the old-style Rails we currently have now going to have a Ramp version as well?",
@@ -54852,7 +54883,7 @@
         "seealso_video_cards": [
             "pxBuKCXaE6Y"
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "m9Uh0DXTSss": {
         "title": "Q&A: Any plans for future videos with devs like the Lighting video?",
@@ -59484,7 +59515,7 @@
         ],
         "seealso": [
             "A6j0dU1ZGfk",
-            "wzI7K41TYLg"
+            "yt-9jDBEpAlS2s,727.0263,851.0502"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoDvA8WqCrij0iTUq44vMju"
@@ -60140,7 +60171,7 @@
             "features\/equipment\/jetpack",
             "technology\/user-interface"
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "jpy8YF462tk": {
         "title": "Q&A: How about using Batteries in Hover Packs?",
@@ -60656,7 +60687,7 @@
         "topics": [
             "features\/gases"
         ],
-        "duplicatedby": "wzI7K41TYLg"
+        "replacedby": "yt-9jDBEpAlS2s,727.0263,851.0502"
     },
     "HOv4TSMIrzU": {
         "title": "Q&A: Want to hear a UDP joke?",
@@ -60797,7 +60828,7 @@
             "features\/gases"
         ],
         "seealso": [
-            "wzI7K41TYLg"
+            "yt-9jDBEpAlS2s,727.0263,851.0502"
         ]
     },
     "gWHsFxVkY3k": {
@@ -63218,7 +63249,7 @@
         "topics": [
             "features\/equipment\/jetpack"
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "tdatHpgolVQ": {
         "title": "Q&A: Range upgrade for Hover Pack?",
@@ -64412,7 +64443,7 @@
         "topics": [
             "features\/gases"
         ],
-        "duplicatedby": "wzI7K41TYLg"
+        "replacedby": "yt-9jDBEpAlS2s,727.0263,851.0502"
     },
     "ANIKlhFcjkk": {
         "title": "Q&A: Is the World Update part of Update 4 or will that come later?",
@@ -65599,7 +65630,7 @@
         "topics": [
             "features\/gases"
         ],
-        "duplicatedby": "wzI7K41TYLg"
+        "replacedby": "yt-9jDBEpAlS2s,727.0263,851.0502"
     },
     "OhElJ-ySLD4": {
         "title": "Q&A: If the WIP items are for Story would you advise not collecting them yet?",
@@ -67904,7 +67935,7 @@
         "seealso": [
             "q07kHsvi3CU",
             "tc-ThirstyJoyousSparrowSoBayed",
-            "wzI7K41TYLg",
+            "yt-9jDBEpAlS2s,727.0263,851.0502",
             "yt-rATcozDE25c,839.8723666666667,848.1473"
         ],
         "duplicatedby": "pkKMsKoH6y4"
@@ -70374,7 +70405,7 @@
             "features\/equipment\/jetpack",
             "technology\/user-interface"
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "MbmXwZe8mXY": {
         "title": "Q&A: Can we sometimes drink Chai instead of Coffee?",
@@ -74682,7 +74713,7 @@
         "topics": [
             "environment\/resources"
         ],
-        "duplicatedby": "wzI7K41TYLg"
+        "replacedby": "yt-9jDBEpAlS2s,727.0263,851.0502"
     },
     "57Cc22ZK5aw": {
         "title": "Q&A: Are there hidden secrets and cameos in the game?",
@@ -74949,7 +74980,7 @@
         "seealso": [
             "KQmKBaywHHw"
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "dcK5sAXkSPg": {
         "title": "Q&A: Will you let us upgrade Storage Containers to Industrial Storage Containers?",
@@ -80672,7 +80703,7 @@
             "8WYNwGDLYNE",
             "PkozY8_q-LE"
         ],
-        "duplicatedby": "5fdrp06i8SM"
+        "replacedby": "yt-9jDBEpAlS2s,630.0627666666667,726.9929333333333"
     },
     "yt-rATcozDE25c,527.5603666666667,538.5713666666667": {
         "title": "Q&A: Will you add Pipes?",
@@ -82838,7 +82869,7 @@
         "topics": [
             "environment\/world-map"
         ],
-        "duplicatedby": "wzI7K41TYLg"
+        "replacedby": "yt-9jDBEpAlS2s,727.0263,851.0502"
     },
     "Mqso2kUIPVA": {
         "title": "Q&A: Can we get the stream starting video as the main menu?",
@@ -89628,7 +89659,7 @@
             "environment\/world-map",
             "features\/gases"
         ],
-        "duplicatedby": "wzI7K41TYLg"
+        "replacedby": "yt-9jDBEpAlS2s,727.0263,851.0502"
     },
     "ayGH9w3sEBo": {
         "title": "Q&A: Vehicle Lifts?",
@@ -91115,7 +91146,7 @@
             "features\/gases"
         ],
         "seealso": [
-            "wzI7K41TYLg"
+            "yt-9jDBEpAlS2s,727.0263,851.0502"
         ]
     },
     "wJ-LL985q_c": {
