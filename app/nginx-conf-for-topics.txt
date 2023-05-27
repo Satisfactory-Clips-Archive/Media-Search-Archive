@@ -434,7 +434,3 @@ location /topics/satisfactory-updates/pending/satisfactory-update-7/index.html {
 location /topics/satisfactory-updates/pending/satisfactory-update-7 {
 	return 301 /topics/satisfactory-updates/released/satisfactory-update-7/$is_args$args;
 }
-
-location ~* \.(css|js|json|map)$ {
-	add_header Cache-Control "public, max-age=31536000, immutable";
-}
