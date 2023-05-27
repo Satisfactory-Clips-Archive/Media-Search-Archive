@@ -3,7 +3,8 @@ import {writeFileSync} from "fs";
 const topic_slug_history = require(`${__dirname}/topic-slug-history.json`) as {[key: string]: {[key: string]: number}};
 
 const needs_redirects = Object.values(topic_slug_history).filter((maybe) => {
-	return Object.values(maybe).length > 1;
+	const values = Object.values(maybe);
+	return values.length > 1 && (((values as [number, number, ]).pop() as number) - (values as [number, ])[0]) > (3600 * 3);
 }).sort((a, b) => {
 	const last_timestamp_a = Object.values(a).slice(-1)[0];
 	const last_timestamp_b = Object.values(b).slice(-1)[0];
