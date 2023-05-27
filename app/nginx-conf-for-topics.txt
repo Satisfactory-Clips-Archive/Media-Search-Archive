@@ -1,14 +1,20 @@
-location /topics/wiki/index.html {
-	return 301 /topics/community/wiki$is_args$args;
+location /topics/features/tiers/tier-7/index.html {
+	return 301 /topics/tier-7/$is_args$args;
 }
-location /topics/wiki {
-	return 301 /topics/community/wiki$is_args$args;
+location /topics/features/tiers/tier-7 {
+	return 301 /topics/tier-7/$is_args$args;
+}
+location /topics/features/tiers/tier-8/index.html {
+	return 301 /topics/tier-8/$is_args$args;
+}
+location /topics/features/tiers/tier-8 {
+	return 301 /topics/tier-8/$is_args$args;
 }
 location /topics/features/autosave/index.html {
-	return 301 /topics/features/save-system/autosave$is_args$args;
+	return 301 /topics/features/save-system/autosave/$is_args$args;
 }
 location /topics/features/autosave {
-	return 301 /topics/features/save-system/autosave$is_args$args;
+	return 301 /topics/features/save-system/autosave/$is_args$args;
 }
 location /topics/satisfactory-updates/pending/satisfactory-update-4/index.html {
 	return 301 /topics/satisfactory-updates/released/satisfactory-update-4/$is_args$args;
@@ -16,47 +22,65 @@ location /topics/satisfactory-updates/pending/satisfactory-update-4/index.html {
 location /topics/satisfactory-updates/pending/satisfactory-update-4 {
 	return 301 /topics/satisfactory-updates/released/satisfactory-update-4/$is_args$args;
 }
-location /topics/satisfactory-updates/speculative/satisfactory-update-5/index.html {
-	return 301 /topics/satisfactory-updates/pending/satisfactory-update-5/$is_args$args;
-}
-location /topics/satisfactory-updates/speculative/satisfactory-update-5 {
-	return 301 /topics/satisfactory-updates/pending/satisfactory-update-5/$is_args$args;
-}
-location /topics/satisfactory-updates/speculative/satisfactory-update-6/index.html {
-	return 301 /topics/satisfactory-updates/pending/satisfactory-update-6/$is_args$args;
-}
-location /topics/satisfactory-updates/speculative/satisfactory-update-6 {
-	return 301 /topics/satisfactory-updates/pending/satisfactory-update-6/$is_args$args;
-}
 location /topics/features/planned-features/lights/index.html {
 	return 301 /topics/features/buildables/lights/$is_args$args;
 }
 location /topics/features/planned-features/lights {
 	return 301 /topics/features/buildables/lights/$is_args$args;
 }
-location /topics/off-topic/pizza/index.html {
-	return 301 /topics/off-topic/food-drink/pizza/$is_args$args;
+location /topics/coffee-stainers/coffee-stainers-can-t-pronounce-hannah-s-last-name/index.html {
+	return 301 /topics/coffee-stainers/hannah/coffee-stainers-cant-pronounce-hannahs-last-name/$is_args$args;
 }
-location /topics/off-topic/pizza {
-	return 301 /topics/off-topic/food-drink/pizza/$is_args$args;
+location /topics/coffee-stainers/coffee-stainers-can-t-pronounce-hannah-s-last-name {
+	return 301 /topics/coffee-stainers/hannah/coffee-stainers-cant-pronounce-hannahs-last-name/$is_args$args;
 }
-location /topics/off-topic/semlor/index.html {
-	return 301 /topics/off-topic/food-drink/semlor/$is_args$args;
+location /topics/coffee-stainers/coffee-stainers-cant-pronounce-hannahs-last-name/index.html {
+	return 301 /topics/coffee-stainers/hannah/coffee-stainers-cant-pronounce-hannahs-last-name/$is_args$args;
 }
-location /topics/off-topic/semlor {
-	return 301 /topics/off-topic/food-drink/semlor/$is_args$args;
+location /topics/coffee-stainers/coffee-stainers-cant-pronounce-hannahs-last-name {
+	return 301 /topics/coffee-stainers/hannah/coffee-stainers-cant-pronounce-hannahs-last-name/$is_args$args;
 }
-location /topics/localization/index.html {
-	return 301 /topics/localisation/$is_args$args;
+location /topics/satisfactory-updates/pending/world-update/index.html {
+	return 301 /topics/satisfactory-updates/world-update/$is_args$args;
 }
-location /topics/localization {
-	return 301 /topics/localisation/$is_args$args;
+location /topics/satisfactory-updates/pending/world-update {
+	return 301 /topics/satisfactory-updates/world-update/$is_args$args;
+}
+location /topics/environment/pollution/index.html {
+	return 301 /topics/features/requested-features/pollution/$is_args$args;
+}
+location /topics/environment/pollution {
+	return 301 /topics/features/requested-features/pollution/$is_args$args;
+}
+location /topics/meza/index.html {
+	return 301 /topics/community/meza/$is_args$args;
+}
+location /topics/meza {
+	return 301 /topics/community/meza/$is_args$args;
+}
+location /topics/roofs/index.html {
+	return 301 /topics/features/buildables/roofs/$is_args$args;
+}
+location /topics/roofs {
+	return 301 /topics/features/buildables/roofs/$is_args$args;
+}
+location /topics/windows/index.html {
+	return 301 /topics/features/buildables/windows/$is_args$args;
+}
+location /topics/windows {
+	return 301 /topics/features/buildables/windows/$is_args$args;
 }
 location /topics/features/planned-features/dedicated-servers/index.html {
 	return 301 /topics/features/multiplayer/dedicated-servers/$is_args$args;
 }
 location /topics/features/planned-features/dedicated-servers {
 	return 301 /topics/features/multiplayer/dedicated-servers/$is_args$args;
+}
+location /topics/satisfactory-updates/speculative/satisfactory-update-5/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/$is_args$args;
+}
+location /topics/satisfactory-updates/speculative/satisfactory-update-5 {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/$is_args$args;
 }
 location /topics/satisfactory-updates/pending/satisfactory-update-5/index.html {
 	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/$is_args$args;
@@ -70,14 +94,26 @@ location /topics/features/requested-features/golf/index.html {
 location /topics/features/requested-features/golf {
 	return 301 /topics/features/unplanned-features/golf/$is_args$args;
 }
-location /topics/satisfactory-updates\pending\satisfactory-update-5/save-the-willows/index.html {
-	return 301 /topics/satisfactory-updates\released\satisfactory-update-5/save-the-willows/$is_args$args;
+location /topics/savethewillows/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/save-the-willows/$is_args$args;
+}
+location /topics/savethewillows {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/save-the-willows/$is_args$args;
+}
+location /topics/satisfactory-updates/pending/satisfactory-update-5/save-the-willows/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/save-the-willows/$is_args$args;
 }
 location /topics/satisfactory-updates/pending/satisfactory-update-5/save-the-willows {
 	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/save-the-willows/$is_args$args;
 }
-location /topics/satisfactory-updates\pending\satisfactory-update-5northern-forest-world-update-q-and-a-with-hannah/index.html {
-	return 301 /topics/satisfactory-updates\released\satisfactory-update-5/northern-forest-world-update-q-and-a-with-hannah/$is_args$args;
+location /topics/northern-forest-world-update-q-a-with-hannah/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/northern-forest-world-update-q-and-a-with-hannah/$is_args$args;
+}
+location /topics/northern-forest-world-update-q-a-with-hannah {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/northern-forest-world-update-q-and-a-with-hannah/$is_args$args;
+}
+location /topics/satisfactory-updates/pending/satisfactory-update-5/northern-forest-world-update-q-and-a-with-hannah/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/northern-forest-world-update-q-and-a-with-hannah/$is_args$args;
 }
 location /topics/satisfactory-updates/pending/satisfactory-update-5/northern-forest-world-update-q-and-a-with-hannah {
 	return 301 /topics/satisfactory-updates/released/satisfactory-update-5/northern-forest-world-update-q-and-a-with-hannah/$is_args$args;
@@ -88,291 +124,275 @@ location /topics/features/planned-features/signs/index.html {
 location /topics/features/planned-features/signs {
 	return 301 /topics/features/buildables/signs/$is_args$args;
 }
-
-location /topics/off-topic/food-drink/pizza {
-	return 301 /topics/off-topic/food-and-drink/pizza$is_args$args;
+location /topics/features/equipment/the-customizer/index.html {
+	return 301 /topics/features/equipment/customizer/$is_args$args;
+}
+location /topics/features/equipment/the-customizer {
+	return 301 /topics/features/equipment/customizer/$is_args$args;
+}
+location /topics/off-topic/pizza/index.html {
+	return 301 /topics/off-topic/food-and-drink/pizza/$is_args$args;
+}
+location /topics/off-topic/pizza {
+	return 301 /topics/off-topic/food-and-drink/pizza/$is_args$args;
 }
 location /topics/off-topic/food-drink/pizza/index.html {
-	return 301 /topics/off-topic/food-and-drink/pizza$is_args$args;
+	return 301 /topics/off-topic/food-and-drink/pizza/$is_args$args;
 }
-
-location /topics/story-lore {
-	return 301 /topics/story-and-lore$is_args$args;
+location /topics/off-topic/food-drink/pizza {
+	return 301 /topics/off-topic/food-and-drink/pizza/$is_args$args;
 }
 location /topics/story-lore/index.html {
-	return 301 /topics/story-and-lore$is_args$args;
+	return 301 /topics/story-and-lore/$is_args$args;
 }
-
-location /topics/off-topic/food-drink/semlor {
-	return 301 /topics/off-topic/food-and-drink/semlor$is_args$args;
+location /topics/story-lore {
+	return 301 /topics/story-and-lore/$is_args$args;
+}
+location /topics/off-topic/semlor/index.html {
+	return 301 /topics/off-topic/food-and-drink/semlor/$is_args$args;
+}
+location /topics/off-topic/semlor {
+	return 301 /topics/off-topic/food-and-drink/semlor/$is_args$args;
 }
 location /topics/off-topic/food-drink/semlor/index.html {
-	return 301 /topics/off-topic/food-and-drink/semlor$is_args$args;
+	return 301 /topics/off-topic/food-and-drink/semlor/$is_args$args;
 }
-
-location /topics/story-lore/characters {
-	return 301 /topics/story-and-lore/characters$is_args$args;
+location /topics/off-topic/food-drink/semlor {
+	return 301 /topics/off-topic/food-and-drink/semlor/$is_args$args;
 }
 location /topics/story-lore/characters/index.html {
-	return 301 /topics/story-and-lore/characters$is_args$args;
+	return 301 /topics/story-and-lore/characters/$is_args$args;
 }
-
-location /topics/story-lore/characters/ada {
-	return 301 /topics/story-and-lore/characters/ada$is_args$args;
+location /topics/story-lore/characters {
+	return 301 /topics/story-and-lore/characters/$is_args$args;
 }
 location /topics/story-lore/characters/ada/index.html {
-	return 301 /topics/story-and-lore/characters/ada$is_args$args;
+	return 301 /topics/story-and-lore/characters/ada/$is_args$args;
 }
-
-location /topics/story-lore/characters/caterina-parks {
-	return 301 /topics/story-and-lore/characters/caterina-parks$is_args$args;
+location /topics/story-lore/characters/ada {
+	return 301 /topics/story-and-lore/characters/ada/$is_args$args;
+}
+location /topics/caterina-parks/index.html {
+	return 301 /topics/story-and-lore/characters/caterina-parks/$is_args$args;
+}
+location /topics/caterina-parks {
+	return 301 /topics/story-and-lore/characters/caterina-parks/$is_args$args;
 }
 location /topics/story-lore/characters/caterina-parks/index.html {
-	return 301 /topics/story-and-lore/characters/caterina-parks$is_args$args;
+	return 301 /topics/story-and-lore/characters/caterina-parks/$is_args$args;
 }
-
-location /topics/story-lore/characters/steve {
-	return 301 /topics/story-and-lore/characters/steve$is_args$args;
+location /topics/story-lore/characters/caterina-parks {
+	return 301 /topics/story-and-lore/characters/caterina-parks/$is_args$args;
 }
 location /topics/story-lore/characters/steve/index.html {
-	return 301 /topics/story-and-lore/characters/steve$is_args$args;
+	return 301 /topics/story-and-lore/characters/steve/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers$is_args$args;
+location /topics/story-lore/characters/steve {
+	return 301 /topics/story-and-lore/characters/steve/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-3-reveal-trailer {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-3-reveal-trailer$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-3-reveal-trailer/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-3-reveal-trailer$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-3-reveal-trailer/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-3-patch-notes-video {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-3-patch-notes-video$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-3-reveal-trailer {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-3-reveal-trailer/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-3-patch-notes-video/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-3-patch-notes-video$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-3-patch-notes-video/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-4-teasers {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-teasers$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-3-patch-notes-video {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-3-patch-notes-video/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-4-teasers/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-teasers$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-teasers/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-4-launch-stream {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-launch-stream$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-4-teasers {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-teasers/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-4-launch-stream/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-launch-stream$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-launch-stream/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-4-patch-notes-video {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-patch-notes-video$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-4-launch-stream {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-launch-stream/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-4-patch-notes-video/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-patch-notes-video$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-patch-notes-video/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-4-launch-trailer {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-launch-trailer$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-4-patch-notes-video {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-patch-notes-video/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-4-launch-trailer/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-launch-trailer$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-launch-trailer/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-teasers {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-teasers$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-4-launch-trailer {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-4-launch-trailer/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-teasers/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-teasers$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-teasers/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-patch-notes-video {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-teasers {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-teasers/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-patch-notes-video/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video/$is_args$args;
 }
-
-location /topics/features/buildings/overclocking-underclocking {
-	return 301 /topics/features/buildings/overclocking-and-underclocking$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-patch-notes-video {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video/$is_args$args;
 }
 location /topics/features/buildings/overclocking-underclocking/index.html {
-	return 301 /topics/features/buildings/overclocking-and-underclocking$is_args$args;
+	return 301 /topics/features/buildings/overclocking-and-underclocking/$is_args$args;
 }
-
-location /topics/off-topic/food-drink {
-	return 301 /topics/off-topic/food-and-drink$is_args$args;
+location /topics/features/buildings/overclocking-underclocking {
+	return 301 /topics/features/buildings/overclocking-and-underclocking/$is_args$args;
 }
 location /topics/off-topic/food-drink/index.html {
-	return 301 /topics/off-topic/food-and-drink$is_args$args;
+	return 301 /topics/off-topic/food-and-drink/$is_args$args;
 }
-
-location /topics/off-topic/food-drink/coffee {
-	return 301 /topics/off-topic/food-and-drink/coffee$is_args$args;
+location /topics/off-topic/food-drink {
+	return 301 /topics/off-topic/food-and-drink/$is_args$args;
 }
 location /topics/off-topic/food-drink/coffee/index.html {
-	return 301 /topics/off-topic/food-and-drink/coffee$is_args$args;
+	return 301 /topics/off-topic/food-and-drink/coffee/$is_args$args;
 }
-
-location /topics/off-topic/food-drink/milk {
-	return 301 /topics/off-topic/food-and-drink/milk$is_args$args;
+location /topics/off-topic/food-drink/coffee {
+	return 301 /topics/off-topic/food-and-drink/coffee/$is_args$args;
 }
 location /topics/off-topic/food-drink/milk/index.html {
-	return 301 /topics/off-topic/food-and-drink/milk$is_args$args;
+	return 301 /topics/off-topic/food-and-drink/milk/$is_args$args;
 }
-
-location /topics/story-lore/project-assembly {
-	return 301 /topics/story-and-lore/project-assembly$is_args$args;
+location /topics/off-topic/food-drink/milk {
+	return 301 /topics/off-topic/food-and-drink/milk/$is_args$args;
 }
 location /topics/story-lore/project-assembly/index.html {
-	return 301 /topics/story-and-lore/project-assembly$is_args$args;
+	return 301 /topics/story-and-lore/project-assembly/$is_args$args;
 }
-
-location /topics/off-topic/food-drink/bacon {
-	return 301 /topics/off-topic/food-and-drink/bacon$is_args$args;
+location /topics/story-lore/project-assembly {
+	return 301 /topics/story-and-lore/project-assembly/$is_args$args;
 }
 location /topics/off-topic/food-drink/bacon/index.html {
-	return 301 /topics/off-topic/food-and-drink/bacon$is_args$args;
+	return 301 /topics/off-topic/food-and-drink/bacon/$is_args$args;
 }
-
-location /topics/features/planned-features/build-modes/hard-soft-clearance {
-	return 301 /topics/features/planned-features/build-modes/hard-and-soft-clearance$is_args$args;
-}
-location /topics/features/planned-features/build-modes/hard-soft-clearance/index.html {
-	return 301 /topics/features/planned-features/build-modes/hard-and-soft-clearance$is_args$args;
-}
-
-location /topics/features/planned-features/build-modes/hard-soft-clearance/complex-clearance {
-	return 301 /topics/features/planned-features/build-modes/hard-and-soft-clearance/complex-clearance$is_args$args;
+location /topics/off-topic/food-drink/bacon {
+	return 301 /topics/off-topic/food-and-drink/bacon/$is_args$args;
 }
 location /topics/features/planned-features/build-modes/hard-soft-clearance/complex-clearance/index.html {
-	return 301 /topics/features/planned-features/build-modes/hard-and-soft-clearance/complex-clearance$is_args$args;
+	return 301 /topics/features/planned-features/build-modes/hard-and-soft-clearance/complex-clearance/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/art-giveaway {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/art-giveaway$is_args$args;
+location /topics/features/planned-features/build-modes/hard-soft-clearance/complex-clearance {
+	return 301 /topics/features/planned-features/build-modes/hard-and-soft-clearance/complex-clearance/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/art-giveaway/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/art-giveaway$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/art-giveaway/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/challenge-run {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/challenge-run$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/art-giveaway {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/art-giveaway/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/challenge-run/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/challenge-run$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/challenge-run/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/its-the-final-countdown {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/its-the-final-countdown$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/challenge-run {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/challenge-run/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/its-the-final-countdown/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/its-the-final-countdown$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/its-the-final-countdown/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/loot {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/loot$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/its-the-final-countdown {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/its-the-final-countdown/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/loot/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/loot$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/loot/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/underrated-or-overrated-quiz {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/underrated-or-overrated-quiz$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/loot {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/loot/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/underrated-or-overrated-quiz/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/underrated-or-overrated-quiz$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/underrated-or-overrated-quiz/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/update-5-revealed {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/update-5-revealed$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/underrated-or-overrated-quiz {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/underrated-or-overrated-quiz/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/update-5-revealed/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/update-5-revealed$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/update-5-revealed/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-patch-notes-video/snutty-mays-and-juice-velvet-present-the-customizer {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video/snutty-mays-and-juice-velvet-present-the-customizer$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/update-5-revealed {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/update-5-revealed/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-patch-notes-video/snutty-mays-and-juice-velvet-present-the-customizer/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video/snutty-mays-and-juice-velvet-present-the-customizer$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video/snutty-mays-and-juice-velvet-present-the-customizer/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-patch-notes-video/update-5-wager-on-releasing-golf-versus-dedicated-servers {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video/update-5-wager-on-releasing-golf-versus-dedicated-servers$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-patch-notes-video/snutty-mays-and-juice-velvet-present-the-customizer {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video/snutty-mays-and-juice-velvet-present-the-customizer/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-patch-notes-video/update-5-wager-on-releasing-golf-versus-dedicated-servers/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video/update-5-wager-on-releasing-golf-versus-dedicated-servers$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video/update-5-wager-on-releasing-golf-versus-dedicated-servers/$is_args$args;
 }
-
-location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-patch-notes-video/update-5-wager-on-releasing-golf-versus-dedicated-servers {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-patch-notes-video/update-5-wager-on-releasing-golf-versus-dedicated-servers/$is_args$args;
 }
 location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream/index.html {
-	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream$is_args$args;
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/$is_args$args;
 }
-
-location /topics/features/equipment/the-customizer {
-	return 301 /topics/features/equipment/customizer$is_args$args;
+location /topics/satisfactory-updates/teasers-trailers/update-5-launch-stream {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-5-launch-stream/$is_args$args;
 }
-location /topics/features/equipment/the-customizer/index.html {
-	return 301 /topics/features/equipment/customizer$is_args$args;
+location /topics/vilsol/index.html {
+	return 301 /topics/community/vilsol/$is_args$args;
 }
-
-location /topics/features/requested-features/global-build-grid {
-	return 301 /topics/features/global-build-grid$is_args$args;
+location /topics/vilsol {
+	return 301 /topics/community/vilsol/$is_args$args;
 }
 location /topics/features/requested-features/global-build-grid/index.html {
-	return 301 /topics/features/global-build-grid$is_args$args;
+	return 301 /topics/features/global-build-grid/$is_args$args;
 }
-location /topics/features/global-guild-grid {
-	return 301 /topics/features/global-build-grid$is_args$args;
-}
-location /topics/features/global-guild-grid/index.html {
-	return 301 /topics/features/global-build-grid$is_args$args;
-}
-
-location /topics/features/planned-features/build-modes {
-	return 301 /topics/features/build-modes$is_args$args;
+location /topics/features/requested-features/global-build-grid {
+	return 301 /topics/features/global-build-grid/$is_args$args;
 }
 location /topics/features/planned-features/build-modes/index.html {
-	return 301 /topics/features/build-modes$is_args$args;
+	return 301 /topics/features/build-modes/$is_args$args;
 }
-
-location /topics/features/planned-features/build-modes/quick-switch {
-	return 301 /topics/features/build-modes/quick-switch$is_args$args;
+location /topics/features/planned-features/build-modes {
+	return 301 /topics/features/build-modes/$is_args$args;
 }
-location /topics/features/planned-features/build-modes/quick-switch/index.html {
-	return 301 /topics/features/build-modes/quick-switch$is_args$args;
+location /topics/features/planned-features/build-modes/hard-soft-clearance/index.html {
+	return 301 /topics/features/build-modes/hard-and-soft-clearance/$is_args$args;
 }
-
-location /topics/features/planned-features/build-modes/zooping {
-	return 301 /topics/features/build-modes/zooping$is_args$args;
-}
-location /topics/features/planned-features/build-modes/zooping/index.html {
-	return 301 /topics/features/build-modes/zooping$is_args$args;
-}
-
-location /topics/features/planned-features/build-modes/hard-and-soft-clearance {
-	return 301 /topics/features/build-modes/hard-and-soft-clearance$is_args$args;
+location /topics/features/planned-features/build-modes/hard-soft-clearance {
+	return 301 /topics/features/build-modes/hard-and-soft-clearance/$is_args$args;
 }
 location /topics/features/planned-features/build-modes/hard-and-soft-clearance/index.html {
-	return 301 /topics/features/build-modes/hard-and-soft-clearance$is_args$args;
+	return 301 /topics/features/build-modes/hard-and-soft-clearance/$is_args$args;
 }
-
-location /topics/features/planned-features/build-modes/hard-and-soft-clearance/complex-clearance {
-	return 301 /topics/features/build-modes/hard-and-soft-clearance/complex-clearance$is_args$args;
+location /topics/features/planned-features/build-modes/hard-and-soft-clearance {
+	return 301 /topics/features/build-modes/hard-and-soft-clearance/$is_args$args;
+}
+location /topics/features/planned-features/build-modes/quick-switch/index.html {
+	return 301 /topics/features/build-modes/quick-switch/$is_args$args;
+}
+location /topics/features/planned-features/build-modes/quick-switch {
+	return 301 /topics/features/build-modes/quick-switch/$is_args$args;
+}
+location /topics/features/planned-features/build-modes/zooping/index.html {
+	return 301 /topics/features/build-modes/zooping/$is_args$args;
+}
+location /topics/features/planned-features/build-modes/zooping {
+	return 301 /topics/features/build-modes/zooping/$is_args$args;
 }
 location /topics/features/planned-features/build-modes/hard-and-soft-clearance/complex-clearance/index.html {
-	return 301 /topics/features/build-modes/hard-and-soft-clearance/complex-clearance$is_args$args;
+	return 301 /topics/features/build-modes/hard-and-soft-clearance/complex-clearance/$is_args$args;
+}
+location /topics/features/planned-features/build-modes/hard-and-soft-clearance/complex-clearance {
+	return 301 /topics/features/build-modes/hard-and-soft-clearance/complex-clearance/$is_args$args;
+}
+location /topics/satisfactory-updates/speculative/satisfactory-update-6/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-6/$is_args$args;
+}
+location /topics/satisfactory-updates/speculative/satisfactory-update-6 {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-6/$is_args$args;
 }
 location /topics/satisfactory-updates/pending/satisfactory-update-6/index.html {
 	return 301 /topics/satisfactory-updates/released/satisfactory-update-6/$is_args$args;
@@ -410,11 +430,11 @@ location /topics/features/possible-features/game-modes/index.html {
 location /topics/features/possible-features/game-modes {
 	return 301 /topics/features/game-modes/$is_args$args;
 }
-location /topics/features/possible-features/game-modes/peaceful-mode/index.html {
-	return 301 /topics/features/game-modes/peaceful-mode/$is_args$args;
+location /topics/features/possible-features/game-modes/battle-royale/index.html {
+	return 301 /topics/features/possible-features/battle-royale/$is_args$args;
 }
-location /topics/features/possible-features/game-modes/peaceful-mode {
-	return 301 /topics/features/game-modes/peaceful-mode/$is_args$args;
+location /topics/features/possible-features/game-modes/battle-royale {
+	return 301 /topics/features/possible-features/battle-royale/$is_args$args;
 }
 location /topics/features/possible-features/game-modes/creative-mode/index.html {
 	return 301 /topics/features/game-modes/creative-mode/$is_args$args;
@@ -422,15 +442,27 @@ location /topics/features/possible-features/game-modes/creative-mode/index.html 
 location /topics/features/possible-features/game-modes/creative-mode {
 	return 301 /topics/features/game-modes/creative-mode/$is_args$args;
 }
-location /topics/features/possible-features/game-modes/battle-royale/index.html {
-	return 301 /topics/features/possible-features/battle-royale/$is_args$args;
+location /topics/satisfactory-updates/speculative/satisfactory-update-7/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-7/$is_args$args;
 }
-location /topics/features/possible-features/game-modes/battle-royale {
-	return 301 /topics/features/possible-features/battle-royale/$is_args$args;
+location /topics/satisfactory-updates/speculative/satisfactory-update-7 {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-7/$is_args$args;
 }
 location /topics/satisfactory-updates/pending/satisfactory-update-7/index.html {
 	return 301 /topics/satisfactory-updates/released/satisfactory-update-7/$is_args$args;
 }
 location /topics/satisfactory-updates/pending/satisfactory-update-7 {
 	return 301 /topics/satisfactory-updates/released/satisfactory-update-7/$is_args$args;
+}
+location /topics/features/possible-features/game-modes/peaceful-mode/index.html {
+	return 301 /topics/features/game-modes/peaceful-mode/$is_args$args;
+}
+location /topics/features/possible-features/game-modes/peaceful-mode {
+	return 301 /topics/features/game-modes/peaceful-mode/$is_args$args;
+}
+location /topics/update-7-patch-notes-video-behind-the-scenes/index.html {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-7-patch-notes-video/update-7-patch-notes-video-behind-the-scenes/$is_args$args;
+}
+location /topics/update-7-patch-notes-video-behind-the-scenes {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-7-patch-notes-video/update-7-patch-notes-video-behind-the-scenes/$is_args$args;
 }
