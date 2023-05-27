@@ -21,10 +21,10 @@ for (const topic_set of needs_redirects) {
 
 	for (const url of values) {
 		lines.push(`location /topics/${url}/index.html {`);
-		lines.push(`\treturn 301 /topics/${destination}$is_args$args;`);
+		lines.push(`\treturn 301 /topics/${destination}/$is_args$args;`);
 		lines.push('}');
 		lines.push(`location /topics/${url} {`);
-		lines.push(`\treturn 301 /topics/${destination}$is_args$args;`);
+		lines.push(`\treturn 301 /topics/${destination}/$is_args$args;`);
 		lines.push('}');
 	}
 }
