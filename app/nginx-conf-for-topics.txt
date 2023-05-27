@@ -4,18 +4,6 @@ location /topics/wiki/index.html {
 location /topics/wiki {
 	return 301 /topics/community/wiki$is_args$args;
 }
-location /2020-02-17/index.html {
-	return 301 /2020-02-11$is_args$args;
-}
-location /2020-02-17 {
-	return 301 /2020-02-11$is_args$args;
-}
-location /2020-05-26/index.html {
-	return 301 /2020-05-19$is_args$args;
-}
-location /2020-05-26 {
-	return 301 /2020-05-19$is_args$args;
-}
 location /topics/features/autosave/index.html {
 	return 301 /topics/features/save-system/autosave$is_args$args;
 }
