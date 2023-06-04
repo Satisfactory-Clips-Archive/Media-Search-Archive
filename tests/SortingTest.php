@@ -179,14 +179,14 @@ class SortingTest extends TestCase
 							'',
 							'1970-01-01',
 							[
-								'a',
+								'yt-a',
 							],
 						],
 						'd' => [
 							'',
 							'1970-01-02',
 							[
-								'b',
+								'yt-b',
 							],
 						],
 					],
@@ -213,14 +213,14 @@ class SortingTest extends TestCase
 							'',
 							'1970-01-01',
 							[
-								'a',
+								'yt-a',
 							],
 						],
 						'd' => [
 							'',
 							'1970-01-01',
 							[
-								'b',
+								'yt-b',
 							],
 						],
 					],
