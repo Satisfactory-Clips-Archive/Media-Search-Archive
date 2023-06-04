@@ -89,6 +89,38 @@ class Questions extends AbstractQuestions
 							return false;
 						}
 					}
+				} elseif (
+					'talk' === $type
+					&& false === $result
+					&& !preg_match('/^[^:]+ Talk:/', $this->injected->determine_video_title(
+						$maybe
+					) ?? '')
+				) {
+					$maybe_something_else = false;
+
+					foreach (
+						array_keys($this->title_pattern_check) as $other_str
+					) {
+						if ('talk' === $other_str) {
+							continue;
+						}
+
+						foreach ($this->title_pattern_check[$other_str] as $regex) {
+							if (
+								preg_match(
+									$regex,
+									$this->injected->determine_video_title(
+										$maybe
+									) ?? ''
+								)
+							) {
+								$maybe_something_else = true;
+								break;
+							}
+						}
+					}
+
+					return !$maybe_something_else;
 				}
 
 				return $result;

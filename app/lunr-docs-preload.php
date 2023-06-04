@@ -78,7 +78,7 @@ foreach (
 	$topics[$playlist_id] = implode('/', array_map([$slugify, 'slugify'], $slug));
 }
 
-$video_ids = array_keys($cache['playlistItems']);
+$video_ids = $injected->all_video_ids();
 
 $has_legacy_alts = array_filter(
 	$video_ids,
