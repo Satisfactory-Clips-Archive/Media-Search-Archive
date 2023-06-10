@@ -1834,9 +1834,6 @@
     "No Unlock Cost": {
         "features\/game-modes\/ags\/no-unlock-cost": 1686400572
     },
-    "Select Starting Tier": {
-        "features\/game-modes\/ags\/select-starting-tier": 1686400572
-    },
     "Set Game Phase": {
         "features\/game-modes\/ags\/set-game-phase": 1686400572
     },
@@ -1855,7 +1852,7 @@
     "Unlock All Tiers": {
         "features\/game-modes\/ags\/unlock\/all-tiers": 1686400572
     },
-    "Selecting Start Tier": {
-        "selecting-start-tier": 1686400572
+    "Set Starting Tier": {
+        "features\/game-modes\/ags\/set-starting-tier": 1686412862
     }
 }

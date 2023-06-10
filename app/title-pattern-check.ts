@@ -36,8 +36,12 @@ import {
 
 			docs_keys.forEach((maybe) => {
 				if (keys.includes(maybe)) {
-					console.error(maybe);
-					throw new Error('Duplicate id found!');
+					const a = JSON.stringify(flattened[maybe]);
+					const b = JSON.stringify(docs[maybe]);
+
+					if (a !== b) {
+						throw new Error('Duplicate id found!');
+					}
 				}
 
 				flattened[maybe] = docs[maybe];

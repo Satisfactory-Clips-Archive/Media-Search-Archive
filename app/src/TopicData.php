@@ -565,7 +565,7 @@ class TopicData
 			'Game Modes',
 			'Advanced Game Settings',
 		],
-		'Select Starting Tier' => [
+		'Set Starting Tier' => [
 			'Features',
 			'Game Modes',
 			'Advanced Game Settings',
