@@ -4,16 +4,27 @@
 		"\\?$"
 	],
 	"talk": [
-		"^(?:[^:]+ (?:Talk|Math)|(?:(?:Snutt) )?PSA|Special Guest|State of Stream): "
+		"^(?:[^:]+ (?:Talk|Math)|(?:(?:Snutt) )?PSA|Special Guest|State of Stream|Snutt talk): ",
+		"^Hannah talks ",
+		"^(Tools Video FAQ|RE: Reporting Issues|AI Uprising|Mark joins the fight|\uD83D\uDCE3 Satisfactory Update 7 Patch Notes Director Commentary with Snutt)$"
 	],
 	"community_fyi": [
 		"^Community FYI: "
 	],
 	"state_of_dev": [
-		"^State of Dev: "
+		"^State of Dev: ",
+		"^State of Dev$",
+		"^State of Dave$",
+		" & State of Dave$",
+		" \\\/ State of Dev$",
+		" \\\/ State of Dev \\\/",
+		"^State of Vacation$",
+		"^News$",
+		"^(World Changes with Hannah|EOS Reset Account|Re: Reporting Issues|Update 6: (Spire Coast Teaser|Future Updates & Linear Overclocking change)|Blueprints Video)$"
 	],
 	"community_highlights": [
-		"^(?:(?:(?:Localization) )?Community|Mod)(?: (?:Highlights?|highlight))?(?: part \\d+)?: "
+		"^(?:(?:(?:Localization) )?Community|Mod)(?: (?:Highlights?|highlight))?(?: part \\d+)?: ",
+		"^Community Highlights - "
 	],
 	"trolling": [
 		"^Trolling: "
@@ -26,5 +37,13 @@
 	],
 	"terrible_jokes": [
 		"^Terrible Jokes?: "
+	],
+	"special_guest": [
+		"^Special Guest ",
+		"^Special Guest$"
+	],
+	"intro": [
+		"^Intro$",
+		"^Intro &"
 	]
 }

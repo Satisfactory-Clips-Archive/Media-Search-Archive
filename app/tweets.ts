@@ -32,7 +32,9 @@ const auth = require(`${__dirname}/twitter-auth.json`);
 const tweet_threads = require(`${__dirname}/data/tweets.json`) as TweetThread[];
 const tweets_not_found = require(`${__dirname}/data/tweets-not-found.json`) as string[];
 
+console.error('disabling tweets');
 
+/*
 const {
 	readFile,
 	writeFile,
@@ -277,3 +279,4 @@ const client = (new TwitterApi(auth)).readOnly;
 		JSON.stringify(eleventy_tweets, null, '\t')
 	);
 })();
+*/

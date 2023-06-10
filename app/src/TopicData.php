@@ -526,6 +526,88 @@ class TopicData
 			'Features',
 			'Game Modes',
 		],
+		'Advanced Game Settings' => [
+			'Features',
+			'Game Modes',
+		],
+		'Flight Mode' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'God Mode' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'Give Items' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'No Build Cost' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'No Unlock Cost' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'Unlock Alternate Recipe Instantly' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'No Power' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'Select Starting Tier' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'Set Game Phase' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'Unlock All' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'Unlock All Tiers' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+			'Unlock All',
+		],
+		'Unlock All Research in the M.A.M.' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+			'Unlock All',
+		],
+		'Unlock All in the A.W.E.S.O.M.E. Shop' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+			'Unlock All',
+		],
+		'Keep Inventory' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
+		'Disable Arachnid Creatures' => [
+			'Features',
+			'Game Modes',
+			'Advanced Game Settings',
+		],
 		'PLbjDnnBIxiEoPhqRIy60XVEui9X3o6p0S' => [ // Battle Royale
 			'Features',
 			'Possible Features',

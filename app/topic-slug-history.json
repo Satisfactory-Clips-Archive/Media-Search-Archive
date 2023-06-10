@@ -1806,5 +1806,56 @@
     },
     "PLbjDnnBIxiErrTkpIMaw_Tux2tBC2jANp": {
         "features\/equipment\/parachute": 1685726832
+    },
+    "Advanced Game Settings": {
+        "features\/game-modes\/ags": 1686400572
+    },
+    "Disable Arachnid Creatures": {
+        "features\/game-modes\/ags\/disable-arachnid-creatures": 1686400572
+    },
+    "Flight Mode": {
+        "features\/game-modes\/ags\/flight-mode": 1686400572
+    },
+    "Give Items": {
+        "features\/game-modes\/ags\/give-items": 1686400572
+    },
+    "God Mode": {
+        "features\/game-modes\/ags\/god-mode": 1686400572
+    },
+    "Keep Inventory": {
+        "features\/game-modes\/ags\/keep-inventory": 1686400572
+    },
+    "No Build Cost": {
+        "features\/game-modes\/ags\/no-build-cost": 1686400572
+    },
+    "No Power": {
+        "features\/game-modes\/ags\/no-power": 1686400572
+    },
+    "No Unlock Cost": {
+        "features\/game-modes\/ags\/no-unlock-cost": 1686400572
+    },
+    "Select Starting Tier": {
+        "features\/game-modes\/ags\/select-starting-tier": 1686400572
+    },
+    "Set Game Phase": {
+        "features\/game-modes\/ags\/set-game-phase": 1686400572
+    },
+    "Unlock Alternate Recipe Instantly": {
+        "features\/game-modes\/ags\/unlock-alternate-recipe-instantly": 1686400572
+    },
+    "Unlock All": {
+        "features\/game-modes\/ags\/unlock": 1686400572
+    },
+    "Unlock All in the A.W.E.S.O.M.E. Shop": {
+        "features\/game-modes\/ags\/unlock\/all-shop-items": 1686400572
+    },
+    "Unlock All Research in the M.A.M.": {
+        "features\/game-modes\/ags\/unlock\/all-research": 1686400572
+    },
+    "Unlock All Tiers": {
+        "features\/game-modes\/ags\/unlock\/all-tiers": 1686400572
+    },
+    "Selecting Start Tier": {
+        "selecting-start-tier": 1686400572
     }
 }

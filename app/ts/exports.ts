@@ -20,6 +20,8 @@ export declare type regexes_type = {
 	jace_art: string[],
 	random: string[],
 	terrible_jokes: string[],
+	special_guest: string[],
+	intro: string[],
 };
 
 export const regexes_title_pattern_check = Object.fromEntries(

@@ -6,6 +6,7 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use ErrorException;
 use function array_filter;
 use const ARRAY_FILTER_USE_BOTH;
 use function array_keys;
@@ -106,6 +107,11 @@ class Questions extends AbstractQuestions
 						}
 
 						foreach ($this->title_pattern_check[$other_str] as $regex) {
+							try {
+								preg_match($regex, '');
+							} catch (ErrorException $e) {
+								throw new RuntimeException(sprintf('Regex issue in php: %s', $regex));
+							}
 							if (
 								preg_match(
 									$regex,

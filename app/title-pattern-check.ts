@@ -73,6 +73,10 @@ import {
 
 	const terrible_jokes = filter(keys, 'terrible_jokes', titles);
 
+	const special_guest = filter(keys, 'special_guest', titles);
+
+	const intro = filter(keys, 'intro', titles);
+
 	let not_matching = keys.filter((maybe) => {
 		return (
 			! qanda.includes(maybe)
@@ -84,6 +88,8 @@ import {
 			&& ! jace_art.includes(maybe)
 			&& ! terrible_jokes.includes(maybe)
 			&& ! random.includes(maybe)
+			&& ! special_guest.includes(maybe)
+			&& ! intro.includes(maybe)
 		);
 	});
 

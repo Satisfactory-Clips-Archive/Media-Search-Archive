@@ -47,6 +47,12 @@ class Slugify extends Base
 			'Skövde' => 'skovde',
 			'Coffee Stainer Karaoke' => 'karaoke',
 			'Malmö' => 'malmo',
+			'Advanced Game Settings' => 'ags',
+			'advanced game settings' => 'ags',
+			'Unlock All' => 'unlock',
+			'Unlock All Tiers' => 'all-tiers',
+			'Unlock All Research in the M.A.M.' => 'all-research',
+			'Unlock All in the A.W.E.S.O.M.E. Shop' => 'all-shop-items',
 		];
 
 		parent::__construct($options, $provider);

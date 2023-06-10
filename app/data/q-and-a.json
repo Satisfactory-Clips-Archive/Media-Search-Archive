@@ -1,4 +1,99 @@
 {
+    "yt-T2lOiHtygVM,670.67,842.9754666666666": {
+        "title": "Q&A: Aren't these a little too overpowered?",
+        "date": "2023-06-09",
+        "topics": [
+            "features\/game-modes\/ags",
+            "satisfactory-updates\/pending\/satisfactory-update-8"
+        ],
+        "seealso": [
+            "yt-T2lOiHtygVM,843.0088333333333,1003.8028",
+            "yt-T2lOiHtygVM,1036.2018333333333,1139.138"
+        ]
+    },
+    "yt-T2lOiHtygVM,843.0088333333333,1003.8028": {
+        "title": "Q&A: How do you access the features?",
+        "date": "2023-06-09",
+        "topics": [
+            "features\/game-modes\/ags",
+            "satisfactory-updates\/pending\/satisfactory-update-8"
+        ],
+        "seealso": [
+            "yt-T2lOiHtygVM,670.67,842.9754666666666",
+            "yt-T2lOiHtygVM,1003.8361666666667,1036.1684666666667"
+        ]
+    },
+    "yt-T2lOiHtygVM,1003.8361666666667,1036.1684666666667": {
+        "title": "Q&A: How do I tell which save file has AGS enabled?",
+        "date": "2023-06-09",
+        "topics": [
+            "features\/game-modes\/ags",
+            "features\/save-system",
+            "satisfactory-updates\/pending\/satisfactory-update-8",
+            "technology\/user-interface"
+        ],
+        "seealso": [
+            "yt-T2lOiHtygVM,843.0088333333333,1003.8028"
+        ]
+    },
+    "yt-T2lOiHtygVM,1036.2018333333333,1139.138": {
+        "title": "Q&A: What happens in Multiplayer with AGS?",
+        "date": "2023-06-09",
+        "topics": [
+            "features\/game-modes\/ags",
+            "features\/multiplayer",
+            "features\/multiplayer\/dedicated-servers",
+            "satisfactory-updates\/pending\/satisfactory-update-8"
+        ],
+        "seealso": [
+            "yt-T2lOiHtygVM,670.67,842.9754666666666"
+        ]
+    },
+    "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667": {
+        "title": "Q&A: Update 8, when?",
+        "date": "2023-06-08",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-8",
+            "satisfactory-updates\/release-builds"
+        ],
+        "replaces": [
+            "4y8qFnefc5o"
+        ],
+        "seealso": [
+            "hha5efOML7Q",
+            "iARrB7UDN14",
+            "uwqBuRxnXow",
+            "YGUh1oKGqwg",
+            "yt-d-MGfaCJfrw,207.77423333333334,314.88123333333334",
+            "yt-d-MGfaCJfrw,314.9146,433.86676666666665",
+            "yt-zu0aY3UNhvU,80.94753333333334,175.34183333333334"
+        ]
+    },
+    "yt-zu0aY3UNhvU,80.94753333333334,175.34183333333334": {
+        "title": "Q&A: How long will Update 8 be in Experimental for?",
+        "date": "2023-06-08",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-8",
+            "satisfactory-updates\/release-builds"
+        ],
+        "seealso": [
+            "iARrB7UDN14",
+            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667",
+            "yt-zu0aY3UNhvU,175.3752,206.1059"
+        ]
+    },
+    "yt-zu0aY3UNhvU,175.3752,206.1059": {
+        "title": "Q&A: Coffee Stain Studios is going on vacation?",
+        "date": "2023-06-08",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
+            "off-topic\/sweden"
+        ],
+        "seealso": [
+            "Jlc7_epbkMw",
+            "pQWgPFIzCyI"
+        ]
+    },
     "yt-Jqj6l9wXip4,7.06,49.84": {
         "title": "Q&A: Why is your name G2?",
         "date": "2023-06-02",
@@ -699,14 +794,7 @@
             "KNyOArBUPLg",
             "yt-d-MGfaCJfrw,125.6255,207.74086666666668"
         ],
-        "seealso": [
-            "hha5efOML7Q",
-            "iARrB7UDN14",
-            "uwqBuRxnXow",
-            "YGUh1oKGqwg",
-            "yt-d-MGfaCJfrw,207.77423333333334,314.88123333333334",
-            "yt-d-MGfaCJfrw,314.9146,433.86676666666665"
-        ]
+        "replacedby": "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667"
     },
     "BfgPaUef3LI": {
         "title": "Q&A: Does the Pass It On event have to be vanilla, or can it be modded?",
@@ -2678,8 +2766,8 @@
             "satisfactory-updates\/teasers-and-trailers\/update-8-teasers"
         ],
         "seealso": [
-            "4y8qFnefc5o",
-            "yt-d-MGfaCJfrw,314.9146,433.86676666666665"
+            "yt-d-MGfaCJfrw,314.9146,433.86676666666665",
+            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667"
         ],
         "seealso_video_cards": [
             "7r_QUHV82bU"
@@ -2694,8 +2782,8 @@
             "satisfactory-updates\/teasers-and-trailers\/update-8-teasers"
         ],
         "seealso": [
-            "4y8qFnefc5o",
-            "yt-d-MGfaCJfrw,207.77423333333334,314.88123333333334"
+            "yt-d-MGfaCJfrw,207.77423333333334,314.88123333333334",
+            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667"
         ],
         "seealso_video_cards": [
             "7r_QUHV82bU"
@@ -4489,7 +4577,8 @@
             "technology\/unreal-engine\/unreal-engine-5"
         ],
         "seealso": [
-            "4y8qFnefc5o"
+            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667",
+            "yt-zu0aY3UNhvU,80.94753333333334,175.34183333333334"
         ]
     },
     "pvMPKBsVnWU": {
@@ -7552,10 +7641,10 @@
         ],
         "seealso": [
             "-INlf08_wzc",
-            "4y8qFnefc5o",
             "NHAl4GYVVFQ",
             "v6eqwt8LTkA",
-            "YGUh1oKGqwg"
+            "YGUh1oKGqwg",
+            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo",
@@ -11196,8 +11285,8 @@
             "sQgy1-YJGzg"
         ],
         "seealso": [
-            "4y8qFnefc5o",
-            "hha5efOML7Q"
+            "hha5efOML7Q",
+            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo"
@@ -20136,6 +20225,7 @@
             "off-topic\/sweden"
         ],
         "seaelso": [
+            "yt-zu0aY3UNhvU,175.3752,206.1059",
             "JCjsuvpwbPI"
         ]
     },
@@ -21048,7 +21138,8 @@
         ],
         "seealso": [
             "fLW4ttkFBDo",
-            "JCjsuvpwbPI"
+            "JCjsuvpwbPI",
+            "yt-zu0aY3UNhvU,175.3752,206.1059"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqC9fXtj3M18h0ZeCfZ2u6I"
