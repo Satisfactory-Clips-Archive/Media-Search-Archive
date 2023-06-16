@@ -723,9 +723,18 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
+		'Snaketree Forest' => [
+			'Environment',
+			'Biomes',
+		],
 		'PLbjDnnBIxiEpHMQnntpucC_MweaYIIJ_U' => [ // Dune Desert
 			'Environment',
 			'Biomes',
+		],
+		'Dune Desert Maze' => [
+			'Environment',
+			'Biomes',
+			'Dune Desert',
 		],
 		'PLbjDnnBIxiEoCacOLYEU4xHZMKJwPyTzl' => [ // Blue Crater
 			'Environment',
@@ -734,6 +743,11 @@ class TopicData
 		'PLbjDnnBIxiErtxu53LKc8Z8vFR13XeKfG' => [ // Northern Forest
 			'Environment',
 			'Biomes',
+		],
+		'Maze Canyons' => [
+			'Environment',
+			'Biomes',
+			'Northern Forest',
 		],
 		'PLbjDnnBIxiEoGfsgeuz9AkG6fxwj9EHJz' => [ // Spire Coast
 			'Environment',
@@ -800,6 +814,11 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
+		'Beach Islands' => [
+			'Environment',
+			'Biomes',
+			'Western Beaches',
+		],
 		'Western Dune Forest' => [
 			'Environment',
 			'Biomes',
@@ -809,6 +828,10 @@ class TopicData
 			'Biomes',
 		],
 		'Desert Mountain Plateaus' => [
+			'Environment',
+			'Biomes',
+		],
+		'Lake Forest' => [
 			'Environment',
 			'Biomes',
 		],

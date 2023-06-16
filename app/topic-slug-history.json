@@ -1854,5 +1854,20 @@
     },
     "Set Starting Tier": {
         "features\/game-modes\/ags\/set-starting-tier": 1686412862
+    },
+    "Dune Desert Maze": {
+        "environment\/biomes\/dune-desert\/dune-desert-maze": 1686794887
+    },
+    "Beach Islands": {
+        "environment\/biomes\/western-beaches\/beach-islands": 1686794887
+    },
+    "Snaketree Forest": {
+        "environment\/biomes\/snaketree-forest": 1686794887
+    },
+    "Maze Canyons": {
+        "environment\/biomes\/northern-forest\/maze-canyons": 1686794887
+    },
+    "Lake Forest": {
+        "environment\/biomes\/lake-forest": 1686912644
     }
 }
