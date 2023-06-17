@@ -1,4 +1,43 @@
 {
+    "yt-6H79BTIrlbc,91.65823333333333,120.85406666666667": {
+        "title": "Q&A: What the is Experimental branch?",
+        "date": "2023-06-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-8",
+            "satisfactory-updates\/release-builds"
+        ],
+        "seealso": [
+            "yt-6H79BTIrlbc,120.88743333333333,168.3682"
+        ]
+    },
+    "yt-6H79BTIrlbc,120.88743333333333,168.3682": {
+        "title": "Q&A: How do I get Experimental branch?",
+        "date": "2023-06-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-8",
+            "satisfactory-updates\/release-builds"
+        ],
+        "duplicates": [
+            "yt-GeKE40L2cSw,8501.312634,8543.977299"
+        ],
+        "seealso": [
+            "yt-6H79BTIrlbc,91.65823333333333,120.85406666666667",
+            "yt-GeKE40L2cSw,3217.609413,3331.754881",
+            "yt-jmrABq4cCzY,67.75,92.66666666666667"
+        ]
+    },
+    "yt-6H79BTIrlbc,1196.195,1249.8819666666666": {
+        "title": "Q&A: What does the minimum requirement represent?",
+        "date": "2023-06-16",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-8",
+            "satisfactory-updates\/release-builds",
+            "technology\/graphics"
+        ],
+        "seealso": [
+            "yt-dY__x2dq7Sk,1509.1743333333334,1621.4198000000001"
+        ]
+    },
     "yt-GeKE40L2cSw,3145.932215,3212.465834": {
         "title": "Q&A: Are Advanced Game Settings related to any Achievements?",
         "date": "2023-06-13",
@@ -20,7 +59,7 @@
             "satisfactory-updates\/release-builds"
         ],
         "seealso": [
-            "yt-GeKE40L2cSw,8501.312634,8543.977299"
+            "yt-6H79BTIrlbc,120.88743333333333,168.3682"
         ]
     },
     "yt-GeKE40L2cSw,3335.730466674179,3356.909638": {
@@ -93,10 +132,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-8",
             "satisfactory-updates\/release-builds"
         ],
-        "seealso": [
-            "yt-GeKE40L2cSw,3217.609413,3331.754881",
-            "yt-jmrABq4cCzY,67.75,92.66666666666667"
-        ]
+        "duplicatedby": "yt-6H79BTIrlbc,120.88743333333333,168.3682"
     },
     "yt-T2lOiHtygVM,670.67,842.9754666666666": {
         "title": "Q&A: Aren't these a little too overpowered?",
@@ -4907,7 +4943,8 @@
         ],
         "seealso": [
             "Q0wo21IdowE",
-            "uSQM8Q3aFIw"
+            "uSQM8Q3aFIw",
+            "yt-6H79BTIrlbc,1196.195,1249.8819666666666"
         ]
     },
     "yt-dY__x2dq7Sk,1621.4531666666667,1762.2938666666666": {
