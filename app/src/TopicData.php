@@ -1844,7 +1844,7 @@ class TopicData
 			'Features',
 			'Equipment',
 		],
-		'PLbjDnnBIxiEqYcK9flkYreg2WOtulKEki' => [ // Boombox
+		'PLbjDnnBIxiEqYcK9flkYreg2WOtulKEki' => [ // Boom Box
 			'Features',
 			'Equipment',
 		],

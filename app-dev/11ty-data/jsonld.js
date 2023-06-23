@@ -1,7 +1,10 @@
-const topics = require('../../src/topics.json');
+const topics = require('../../11ty/data/topics.json');
 /** @var {[key:string]: string} */
 const reverse_lookup = require('../../11ty/data/topicStrings_reverse.json');
 const playlist_cache = require('../../app/data/api-cache/playlists-unmapped.json');
+
+/** @var {[key: string]: {[key: string]: number}} */
+const topic_slug_history = require('../../app/topic-slug-history.json');
 
 module.exports = async () => {
 	const [
@@ -36,11 +39,25 @@ module.exports = async () => {
 		}
 	);
 
-	function definitely_has_playlist_url(slug) {
-		const playlist_id = reverse_lookup[slug];
+	/**
+	 * @return {string}
+	 */
+	function playlist_id_from_slug(slug) {
+		const playlist_id = reverse_lookup[slug] || Object.keys(topic_slug_history).find((topic_id) => {
+			const slugs = Object.keys(topic_slug_history[topic_id]);
+
+			return !!slugs.includes(slug);
+		});
+
 		if (undefined === playlist_id) {
 			throw new Error(`${slug} not found!`);
 		}
+
+		return playlist_id;
+	}
+
+	function definitely_has_playlist_url(slug) {
+		const playlist_id = playlist_id_from_slug(slug);
 
 		return `https://www.youtube.com/playlist?list=${
 			encodeURIComponent(playlist_id)
@@ -48,13 +65,13 @@ module.exports = async () => {
 	}
 
 	function playlist_object(slug, data, name) {
-		const permalink = `/topics/${slug}/`;
+		const playlist_id = playlist_id_from_slug(slug);
+
+		const slug_to_use = Object.keys(topic_slug_history[playlist_id]).findLast(e => true);
+		const permalink = `/topics/${slug_to_use}/`;
 		const archive_url = `https://archive.satisfactory.video${permalink}`;
-		const playlist_id = reverse_lookup[slug];
-		if (undefined === playlist_id) {
-			throw new Error(`${slug} not found!`);
-		}
-		const playlist_url = definitely_has_playlist_url(slug);
+
+		const playlist_url = definitely_has_playlist_url(slug_to_use);
 
 		const playlist_object = {
 			"@context": "https://schema.org",
@@ -67,8 +84,8 @@ module.exports = async () => {
 		};
 
 		if (
-			(slug in reverse_lookup)
-			&& reverse_lookup[slug].startsWith('PLbjDnnBIxi')
+			(slug_to_use in reverse_lookup)
+			&& reverse_lookup[slug_to_use].startsWith('PLbjDnnBIxi')
 		) {
 			playlist_object.about = [
 				{
