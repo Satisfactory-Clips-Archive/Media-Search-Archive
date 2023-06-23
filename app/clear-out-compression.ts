@@ -9,7 +9,7 @@ const glob = promisify(require('glob'));
 
 (async () => {
 	let removed = 0;
-	const files = await glob('./{tmp,dist}/**/*.{gz,br}');
+	const files = await glob('./{tmp,dist,images}/**/*.{gz,br}');
 
 	for (const file of files) {
 		await unlink(file);
