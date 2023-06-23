@@ -1,4 +1,24 @@
 {
+    "yt-sLPX6TovVNU,219.7,265.433": {
+        "title": "Q&A: But what about Dedicated Servers?",
+        "date": "2023-06-23",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers",
+            "satisfactory-updates\/pending\/satisfactory-update-8",
+            "satisfactory-updates\/release-builds"
+        ],
+        "duplicates": [
+            "B-McxmgzE20",
+            "e5ZJVaXwNdw",
+            "tYXlgqvxHKQ",
+            "xTskUwijOeE",
+            "ZdjQT4YcrYg"
+        ],
+        "seealso": [
+            "BgpByGk1o5U",
+            "I_ZyhORDZjg"
+        ]
+    },
     "4t0B5j0i274": {
         "title": "Q&A: Will Jace be here next week?",
         "date": "2023-06-20",
@@ -37,17 +57,6 @@
         "topics": [
             "features\/multiplayer\/dedicated-servers",
             "satisfactory-updates\/pending\/satisfactory-update-8"
-        ],
-        "duplicates": [
-            "B-McxmgzE20",
-            "e5ZJVaXwNdw",
-            "tYXlgqvxHKQ",
-            "xTskUwijOeE",
-            "ZdjQT4YcrYg"
-        ],
-        "seealso": [
-            "BgpByGk1o5U",
-            "I_ZyhORDZjg"
         ]
     },
     "LWq3w-17lxA": {
@@ -1353,7 +1362,7 @@
         "topics": [
             "features\/multiplayer\/dedicated-servers"
         ],
-        "duplicatedby": "WxsL-SeBSXc"
+        "duplicatedby": "yt-sLPX6TovVNU,219.7,265.433"
     },
     "yt-wg5s72g60UQ,556.6227333333334,629.0951333333334": {
         "title": "Q&A: What are Jace's plans?",
@@ -1854,7 +1863,7 @@
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo",
             "PLbjDnnBIxiEq99AIuldrDf7WJJpvEtkEO"
         ],
-        "duplicatedby": "WxsL-SeBSXc"
+        "duplicatedby": "yt-sLPX6TovVNU,219.7,265.433"
     },
     "RifVZgjTu8s": {
         "title": "Q&A: Jace looks like he has a Factory Cart shirt?",
@@ -2598,7 +2607,7 @@
         "topics": [
             "features\/multiplayer\/dedicated-servers"
         ],
-        "duplicatedby": "WxsL-SeBSXc"
+        "duplicatedby": "yt-sLPX6TovVNU,219.7,265.433"
     },
     "9I6oWWN2HFI": {
         "title": "Q&A: What are some of the critical bugs in the game, out of curiosity?",
@@ -3067,7 +3076,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-8"
         ],
         "seealso": [
-            "WxsL-SeBSXc"
+            "yt-sLPX6TovVNU,219.7,265.433"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo"
@@ -3483,7 +3492,7 @@
         "topics": [
             "features\/multiplayer\/dedicated-servers"
         ],
-        "duplicatedby": "WxsL-SeBSXc"
+        "duplicatedby": "yt-sLPX6TovVNU,219.7,265.433"
     },
     "cAdV8X6wb8k": {
         "title": "Q&A: Was upgrading to 5.1 more work than going from 4.22 to 4.25?",
@@ -7111,7 +7120,7 @@
             "features\/multiplayer\/dedicated-servers",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "WxsL-SeBSXc"
+        "duplicatedby": "yt-sLPX6TovVNU,219.7,265.433"
     },
     "D588ym-4A2k": {
         "title": "Q&A: Are there Vehicle physics getting overhauled?",
@@ -8082,8 +8091,8 @@
         ],
         "seealso": [
             "NqZsKBb7EN0",
-            "WxsL-SeBSXc",
-            "yt-dY__x2dq7Sk,2043.6749666666667,2120.051266666667"
+            "yt-dY__x2dq7Sk,2043.6749666666667,2120.051266666667",
+            "yt-sLPX6TovVNU,219.7,265.433"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErU4o7RRN4bcc2H_F-wO-dl",
