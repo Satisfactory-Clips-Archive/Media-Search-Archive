@@ -25,7 +25,7 @@ module.exports = async () => {
 						out[permalink] = [
 							[
 								'og:image:url',
-								`https://i.img.archive.satisfactory.video/content/${
+								`https://i-img-archive.satisfactory.video/content/${
 									permalink.slice(0, -1)
 								}.png?h=${
 									encodeURIComponent(

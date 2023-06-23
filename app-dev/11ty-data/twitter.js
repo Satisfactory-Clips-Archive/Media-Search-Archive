@@ -117,7 +117,7 @@ module.exports = async () => {
 						out[permalink]['twitter:card'] = 'summary_large_image';
 						out[permalink][
 							'twitter:image'
-						] = `https://i.img.archive.satisfactory.video/content/${
+						] = `https://i-img-archive.satisfactory.video/content/${
 							permalink.slice(0, -1)
 						}.png?h=${
 							encodeURIComponent(
