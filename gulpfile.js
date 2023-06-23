@@ -680,15 +680,19 @@ gulp.task('build', gulp.series(...[
 	'lunr-clean',
 	'rev',
 	'html',
+	/*
 	gulp.parallel(
 		...brotli_subtasks
 	),
+	*/
 	gulp.parallel(
 		'sync-favicon',
 	),
 	'sync-tmp-to-store',
 	'sitemap',
+	/*
 	'brotli--most-everything',
+	 */
 	'sync-tmp-to-store',
 ]));
 
