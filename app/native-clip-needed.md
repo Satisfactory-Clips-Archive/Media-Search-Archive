@@ -1449,7 +1449,6 @@
 - [ ] yt-y1Znn6SBS6w,2677.360738,2713.717175 - Reworking the compass
 - [ ] yt-y1Znn6SBS6w,2713.717175,2737.048334 - Teasers vs. Gameplay
 - [ ] yt-y1Znn6SBS6w,2737.048334,2751.486541 - Old Train model
-- [ ] yt-y1Znn6SBS6w,2751.486541,2764.601335 - Floating Rocks
 - [ ] yt-y1Znn6SBS6w,2764.601335,2795.033427304565 - Things before Slugs
 - [ ] yt-y1Znn6SBS6w,2795.0667606390193,2834.861589 - Old Train model / Station model
 - [ ] yt-y1Znn6SBS6w,2834.861589,2876.3667633723894 - Old game UI
