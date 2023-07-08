@@ -178,7 +178,7 @@ licenses apply where appropriate or necessary.
 
    END OF TERMS AND CONDITIONS
 
-   Copyright 2021 SignpostMarv
+   Copyright 2023 SignpostMarv
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -195,5 +195,5 @@ licenses apply where appropriate or necessary.
 # Additional Licenses
 
 ## Satisfactory
-**Content** intended for distribution in the [Satisfactory Wiki](https://satisfactory.fandom.com/) is licensed under
-[Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
+**Content** intended for distribution in the [Satisfactory Wiki](https://satisfactory.wiki.gg/) is licensed under
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
