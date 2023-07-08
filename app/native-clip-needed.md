@@ -1269,3 +1269,221 @@
 - [ ] yt-ZDN_b6TX5gg,312.97933333333333,336.5362 - Q&A: How does Nudge Mode work?
 - [ ] yt-ZDN_b6TX5gg,336.5695666666667,365.53183333333334 - Q&A: Will Nudge Mode work for Buildings as well as Blueprints?
 - [ ] yt-ZDN_b6TX5gg,365.5652,384.45073333333335 - Q&A: How far can things be nudged?
+
+## 2023-04-28
+- [ ] yt-d-MGfaCJfrw,67.00026666666666,125.59213333333334 - Development for Update 8
+
+## 2023-05-19
+- [ ] yt-v4mbNy3gt7c,18.785433333333334,56.823433333333334 - Development history
+- [ ] yt-v4mbNy3gt7c,56.8568,78.34493333333333 - Unlocks
+- [ ] yt-v4mbNy3gt7c,78.3783,133.36656666666667 - Attachment Points
+- [ ] yt-v4mbNy3gt7c,133.39993333333334,170.43693333333334 - Longer cables
+- [ ] yt-v4mbNy3gt7c,170.4703,218.18463333333332 - Lord of the things: The Two Towers
+- [ ] yt-v4mbNy3gt7c,245.17826666666667,281.81486666666666 - Managing power cuts
+- [ ] yt-v4mbNy3gt7c,386.7864,414.88113333333337 - Adapting to your power grid
+- [ ] yt-v4mbNy3gt7c,414.91450000000003,441.0072333333333 - Power cuts can still happen
+
+## 2023-05-26
+- [ ] yt-9jDBEpAlS2s,20.687333333333335,63.63023333333334 - Housekeeping
+- [ ] yt-9jDBEpAlS2s,63.6636,111.17773333333334 - Parachute
+- [ ] yt-9jDBEpAlS2s,111.2111,155.78896666666668 - Smooth ziplining
+- [ ] yt-9jDBEpAlS2s,155.82233333333335,212.14526666666666 - Zipline Steering
+- [ ] yt-9jDBEpAlS2s,212.17863333333332,232.36546666666666 - Power Tower aside
+- [ ] yt-9jDBEpAlS2s,232.39883333333333,252.78586666666666 - Zipline toggle
+- [ ] yt-9jDBEpAlS2s,252.81923333333333,298.1979 - Automatic Poles
+- [ ] yt-9jDBEpAlS2s,298.23126666666667,352.5855666666667 - Validity improvements
+- [ ] yt-9jDBEpAlS2s,417.7173,471.2708 - Mass Dismantle
+- [ ] yt-9jDBEpAlS2s,471.3041666666667,498.8984 - Reworked Update 7 feature
+- [ ] yt-9jDBEpAlS2s,583.9166666666666,630.033152 - Intro
+
+## 2023-05-30
+- [ ] yt-wg5s72g60UQ,0,9.843166666666667 - Intro
+- [ ] yt-wg5s72g60UQ,274.5743,311.114218 - Memories
+- [ ] yt-wg5s72g60UQ,393.55983333333336,442.8424 - Thanks Moderators, Helps A Lot.
+- [ ] yt-wg5s72g60UQ,442.87576666666666,500.16633333333334 - Thanks Friends, Helps A Lot.
+- [ ] yt-wg5s72g60UQ,500.1997,556.5893666666667 - Thanks Snutt, Helps A Lot.
+- [ ] yt-wg5s72g60UQ,629.1285,681.4140666666667 - It has been an honour
+
+## 2023-06-02
+- [ ] yt-Jqj6l9wXip4,7.06,49.84 - Q&A: Why is your name G2?
+- [ ] yt-Jqj6l9wXip4,49.86,70.04 - Intro
+- [ ] yt-Jqj6l9wXip4,70.06,123.18 - Q&A: What does a Lead Programmer do?
+- [ ] yt-Jqj6l9wXip4,123.2,132.94 - Q&A: Do you miss being a regular programmer?
+- [ ] yt-Jqj6l9wXip4,132.96,147.36 - Q&A: How many programmers are working on Satisfactory?
+- [ ] yt-Jqj6l9wXip4,147.38,159.9 - Q&A: What software does G2 use?
+- [ ] yt-Jqj6l9wXip4,159.92,174.24 - Q&A: What hardware does G2 use?
+- [ ] yt-Jqj6l9wXip4,174.26,186.12 - Q&A: What engine do you use at Coffee Stain Studios?
+- [ ] yt-Jqj6l9wXip4,186.14,213.12 - Q&A: How was the upgrade from UE4 to UE5?
+- [ ] yt-Jqj6l9wXip4,213.14,240.8 - Q&A: What programming language do you use for Satisfactory?
+- [ ] yt-Jqj6l9wXip4,240.82,282.26 - Q&A: What is a typical day like as a Lead Programmer?
+- [ ] yt-Jqj6l9wXip4,282.28,327.1 - Q&A: How does working on Satisfactory compare to Goat Simulator?
+- [ ] yt-Jqj6l9wXip4,327.12,355.1 - Q&A: What is G2's favourite part of programming?
+- [ ] yt-Jqj6l9wXip4,437.66,455.52 - Q&A: What other features was G2 involved with?
+- [ ] yt-Jqj6l9wXip4,455.54,512.74 - Q&A: What are some of the hardest challenges G2 has had with Satisfactory?
+- [ ] yt-Jqj6l9wXip4,512.76,558 - Q&A: What is G2's least favourite aspects of programming?
+- [ ] yt-Jqj6l9wXip4,725.82,781.92 - Q&A: What programming language should I learn?
+- [ ] yt-Jqj6l9wXip4,781.94,809.4 - Q&A: Anything G2 would like to say to the Community?
+
+## 2023-06-08
+- [ ] yt-zu0aY3UNhvU,175.3752,206.1059 - Q&A: Coffee Stain Studios is going on vacation?
+
+## 2023-06-09
+- [ ] yt-T2lOiHtygVM,31.6316,54.621233333333336 - Intro
+- [ ] yt-T2lOiHtygVM,54.6546,87.087 - Abbreviating to "AGS"
+- [ ] yt-T2lOiHtygVM,87.12036666666667,110.01400247395833 - Intro
+- [ ] yt-T2lOiHtygVM,193.3932,206.33946666666668 - Intro
+- [ ] yt-T2lOiHtygVM,206.37283333333335,224.9247 - World Perimeter exception
+- [ ] yt-T2lOiHtygVM,224.95806666666667,261.4945666666667 - Give Items
+- [ ] yt-T2lOiHtygVM,261.52793333333335,315.8822333333333 - No Build Cost
+- [ ] yt-T2lOiHtygVM,315.9156,352.6856666666667 - No Unlock Cost
+- [ ] yt-T2lOiHtygVM,421.8881333333333,465.09796666666665 - No Power
+- [ ] yt-T2lOiHtygVM,465.1313333333333,492.7255666666667 - Set Starting Tier
+- [ ] yt-T2lOiHtygVM,492.75893333333335,515.7152 - Set Game Phase
+- [ ] yt-T2lOiHtygVM,515.7485666666666,532.9324 - Unlock All
+- [ ] yt-T2lOiHtygVM,657.8238333333334,670.6366333333333 - Menus have changed
+- [ ] yt-T2lOiHtygVM,1003.8361666666667,1036.1684666666667 - Q&A: How do I tell which save file has AGS enabled?
+
+## 2023-06-13
+- [ ] yt-GeKE40L2cSw,3335.730466674179,3356.909638 - Q&A: Is Unreal Engine 5 coming out with Update 8?
+- [ ] yt-GeKE40L2cSw,3774.803918,3804.616633 - Embroidered Patch Set
+- [ ] yt-GeKE40L2cSw,4268.13447,4287.744433 - Check Kickstarter Soon
+- [ ] yt-GeKE40L2cSw,4630.483365,4665.871808 - Xeno-Basher Giveaway!
+- [ ] yt-GeKE40L2cSw,6010.933464,6051.457975 - Crater Lakes
+- [ ] yt-GeKE40L2cSw,6051.457975,6094.797313 - Abyss Cliffs
+- [ ] yt-GeKE40L2cSw,6094.797313,6134.787648 - Blue Crater
+- [ ] yt-GeKE40L2cSw,6134.787648,6190.124209 - Coral Cliffs?
+- [ ] yt-GeKE40L2cSw,6190.124209,6224.998513 - Western Dune Forest
+- [ ] yt-GeKE40L2cSw,6224.998513,6256.933664 - Desert Canyons
+- [ ] yt-GeKE40L2cSw,6256.933664,6292.482687 - Dune Desert Maze
+- [ ] yt-GeKE40L2cSw,6292.482687,6336.224812 - Eastern Dune Forest
+- [ ] yt-GeKE40L2cSw,6336.224812,6386.44277 - Beach Islands
+- [ ] yt-GeKE40L2cSw,6386.44277,6443.880024 - Lake Forest
+- [ ] yt-GeKE40L2cSw,6443.880024,6483.888251 - Swamp
+- [ ] yt-GeKE40L2cSw,6483.888251,6527.679139 - Maze Canyons
+- [ ] yt-GeKE40L2cSw,6527.679139,6552.70276 - Snaketree Forest
+- [ ] yt-GeKE40L2cSw,6552.70276,6576.998621 - Southern Forest
+- [ ] yt-GeKE40L2cSw,6576.998621,6615.088464 - Spire Coast
+- [ ] yt-GeKE40L2cSw,6614.838178,6648.242874 - Western Dune Forest
+- [ ] yt-GeKE40L2cSw,6646.948283,6683.822817 - Paradise Island
+- [ ] yt-GeKE40L2cSw,7040.660943,7076.534353 - Update 8 Benchmark
+- [ ] yt-GeKE40L2cSw,7076.534353,7109.981859 - TSR will switch on with Ultra settings
+- [ ] yt-GeKE40L2cSw,7109.981859,7126.027032 - Report issues on the QA Site
+- [ ] yt-GeKE40L2cSw,7151.118652,7196.576042 - Intro
+- [ ] yt-GeKE40L2cSw,7196.576042,7213.08779 - Update-in-place for Splitters
+- [ ] yt-GeKE40L2cSw,7211.1143908854165,7263.043749 - Fuse Groups renamed
+- [ ] yt-GeKE40L2cSw,7469.16982,7498.414535 - World Update
+- [ ] yt-GeKE40L2cSw,7498.414535,7553.073366 - Advanced Game Settings
+- [ ] yt-GeKE40L2cSw,7798.642842,7855.018107 - Parachute
+- [ ] yt-GeKE40L2cSw,7965.008232,8016.253442 - No longer need to place Poles before Belts/Pipes
+- [ ] yt-GeKE40L2cSw,8501.312634,8543.977299 - Q&A: How to get Experimental?
+
+## 2023-06-16
+- [ ] yt-6H79BTIrlbc,91.65823333333333,120.85406666666667 - Q&A: What the is Experimental branch?
+- [ ] yt-6H79BTIrlbc,120.88743333333333,168.3682 - Q&A: How do I get Experimental branch?
+- [ ] yt-6H79BTIrlbc,216.0158,233.1329 - Rotated train tracks
+- [ ] yt-6H79BTIrlbc,233.16626666666667,250.540799 - Inability to slide under belts
+- [ ] yt-6H79BTIrlbc,250.540799,260.92733333333337 - Missing water
+- [ ] yt-6H79BTIrlbc,260.96070000000003,268.8018666666667 - Collision issues in Southern Forest
+- [ ] yt-6H79BTIrlbc,268.83523333333335,289.289 - Fart rocks
+- [ ] yt-6H79BTIrlbc,289.32236666666665,323.2896333333333 - Vacation period
+- [ ] yt-6H79BTIrlbc,410.5434666666667,428.16106666666667 - Update your drivers
+- [ ] yt-6H79BTIrlbc,428.19443333333334,454.72093333333333 - Studio Ready Drivers
+- [ ] yt-6H79BTIrlbc,454.7543,513.0792333333334 - Vulkan
+- [ ] yt-6H79BTIrlbc,513.1126,528.0275 - Stock overclock
+- [ ] yt-6H79BTIrlbc,642.1415000000001,697.8304666666667 - Lumen
+- [ ] yt-6H79BTIrlbc,697.8638333333333,727.3599666666667 - Cinematic Quality Global Illumination setting removed
+- [ ] yt-6H79BTIrlbc,744.139458,749.3819666666667 - 1. Update your graphics drivers
+- [ ] yt-6H79BTIrlbc,749.4153333333334,776.3088666666666 - 2. Verify your game files
+- [ ] yt-6H79BTIrlbc,776.3422333333333,828.364444 - 3. Disable TSR Anti-Aliasing
+- [ ] yt-6H79BTIrlbc,828.364444,867.5667 - 4. Check if you're running out of VRAM
+- [ ] yt-6H79BTIrlbc,867.6000666666666,909.7755333333333 - 5. Try TSR in performance mode
+- [ ] yt-6H79BTIrlbc,909.8089,943.3424 - 6. Turn off Lumen (Global Illumination)
+- [ ] yt-6H79BTIrlbc,943.3757666666667,973.6727 - 7. Switch to lower video presets
+- [ ] yt-6H79BTIrlbc,973.7060666666666,1001.1668333333333 - 8. D3D12 Crashes
+- [ ] yt-6H79BTIrlbc,1001.2002,1041.7407 - 9. Last resort, try using DirectX 11
+- [ ] yt-6H79BTIrlbc,1041.7740666666666,1075.6412333333333 - Run Hardware Benchmark
+- [ ] yt-6H79BTIrlbc,1144.6101333333334,1196.1616333333334 - The New Minimum Hardware Requirements
+- [ ] yt-6H79BTIrlbc,1196.195,1249.8819666666666 - Q&A: What does the minimum requirement represent?
+- [ ] yt-6H79BTIrlbc,1297.8966,1323.161 - End Tag
+
+## 2023-06-23
+- [ ] yt-sLPX6TovVNU,0,12.933333333333334 - Snutt's eyes are up here
+- [ ] yt-sLPX6TovVNU,58.333333333333336,66.461575 - Coffee Stain Studios on vacation
+- [ ] yt-sLPX6TovVNU,66.461575,93.53333333333333 - Stability of Update 8 Experimental
+- [ ] yt-sLPX6TovVNU,93.56666666666666,137.9 - Performance Issues & Stuttering
+- [ ] yt-sLPX6TovVNU,137.93333333333334,186.5 - Other Issues
+- [ ] yt-sLPX6TovVNU,186.53333333333333,219.66666666666666 - Issued marked as "Fixed Internally"
+- [ ] yt-sLPX6TovVNU,219.7,265.433 - Q&A: But what about Dedicated Servers?
+- [ ] yt-sLPX6TovVNU,265.46666666666664,288.3333333333333 - Intro
+- [ ] yt-sLPX6TovVNU,288.3666666666667,330.074314 - History of the wiki
+- [ ] yt-sLPX6TovVNU,330.074314,364.7 - Moving to wiki.gg
+- [ ] yt-sLPX6TovVNU,364.73333333333335,403 - Jace and Snutt at TwitchCon Paris 2023
+- [ ] yt-sLPX6TovVNU,403.03333333333336,436.1 - Outro
+
+## 2023-07-04
+- [ ] yt-y1Znn6SBS6w,1190.399531,1237.8000416158152 - Intro
+- [ ] yt-y1Znn6SBS6w,1457.377507,1472.061002 - Still ironing out the technical issues
+- [ ] yt-y1Znn6SBS6w,1472.061002,1494.531092 - Community FYI: Jace's accent has changed
+- [ ] yt-y1Znn6SBS6w,1788.1000601173366,1811.896288 - Double-checking technical issues are resolved
+- [ ] yt-y1Znn6SBS6w,1918.333507,1929.353617 - Video Description
+- [ ] yt-y1Znn6SBS6w,1929.353617,1975.756746 - Discussing the old office
+- [ ] yt-y1Znn6SBS6w,1975.756746,2001.856786 - Intro
+- [ ] yt-y1Znn6SBS6w,2001.856786,2043.782532 - Snutt's interview with Coffee Stain Studios
+- [ ] yt-y1Znn6SBS6w,2111.004511278067,2149.3667389300745 - This chair spins
+- [ ] yt-y1Znn6SBS6w,2149.4000722645283,2196.7334071892456 - Another meeting
+- [ ] yt-y1Znn6SBS6w,2196.7667405237,2235.5334084937326 - More coffee
+- [ ] yt-y1Znn6SBS6w,2235.5667418281864,2251.768309 - Dropping coats
+- [ ] yt-y1Znn6SBS6w,2251.768309,2280.8000766823 - Tuesday programming meeting
+- [ ] yt-y1Znn6SBS6w,2281.038084,2302.4667440774174 - Intro
+- [ ] yt-y1Znn6SBS6w,2302.499994,2357.26432 - Name-dropping Satisfactory before Satisfactory was announced
+- [ ] yt-y1Znn6SBS6w,2357.26432,2369.709257 - Jace directed this
+- [ ] yt-y1Znn6SBS6w,2369.709257,2416.001968 - Reused animation
+- [ ] yt-y1Znn6SBS6w,2416.001968,2441.840561 - Old-ass Logo
+- [ ] yt-y1Znn6SBS6w,2441.8667487641555,2460.469628 - Intro
+- [ ] yt-y1Znn6SBS6w,2563.9000862003463,2577.326893 - Old-ass Splitters & Mergers
+- [ ] yt-y1Znn6SBS6w,2577.326893,2586.771792 - Project Assembly
+- [ ] yt-y1Znn6SBS6w,2586.771792,2595.373808 - Q&A: Crab Boss, where is that?
+- [ ] yt-y1Znn6SBS6w,2595.373808,2603.87747 - Outro
+- [ ] yt-y1Znn6SBS6w,2603.900087545178,2660.0378549453126 - Intro
+- [ ] yt-y1Znn6SBS6w,2660.0378549453126,2677.360738 - Snutt might be in the background
+- [ ] yt-y1Znn6SBS6w,2677.360738,2713.717175 - Reworking the compass
+- [ ] yt-y1Znn6SBS6w,2713.717175,2737.048334 - Teasers vs. Gameplay
+- [ ] yt-y1Znn6SBS6w,2737.048334,2751.486541 - Old Train model
+- [ ] yt-y1Znn6SBS6w,2751.486541,2764.601335 - Floating Rocks
+- [ ] yt-y1Znn6SBS6w,2764.601335,2795.033427304565 - Things before Slugs
+- [ ] yt-y1Znn6SBS6w,2795.0667606390193,2834.861589 - Old Train model / Station model
+- [ ] yt-y1Znn6SBS6w,2834.861589,2876.3667633723894 - Old game UI
+- [ ] yt-y1Znn6SBS6w,2876.3667633723894,2885.197946 - Outro
+- [ ] yt-y1Znn6SBS6w,2960.1334328553576,2967.394272 - Intro
+- [ ] yt-y1Znn6SBS6w,2967.394272,3004.509103 - That's a weird question
+- [ ] yt-y1Znn6SBS6w,3004.509103,3032.970168 - I'm going on my motorbike tonight
+- [ ] yt-y1Znn6SBS6w,3032.970168,3043.172713 - Outro
+- [ ] yt-y1Znn6SBS6w,3043.2001023147914,3089.419833 - Alpha Release Date
+- [ ] yt-y1Znn6SBS6w,3223.4333670673072,3262.246696 - Rickrolling
+- [ ] yt-y1Znn6SBS6w,3262.246696,3320.988306 - Simon Saga: Episode 1
+- [ ] yt-y1Znn6SBS6w,3829.140099,3868.264191 - Simon Saga: Episode 6
+- [ ] yt-y1Znn6SBS6w,4304.890316,4353.203692 - Simon Saga: Episode 12
+- [ ] yt-y1Znn6SBS6w,5425.942406,5480.723334 - Minor Patch Info - Train fixes & Cloud Saves
+- [ ] yt-y1Znn6SBS6w,5915.690088,5969.509741 - Intro
+- [ ] yt-y1Znn6SBS6w,6048.529032,6081.718865 - Pipe in the wild
+- [ ] yt-y1Znn6SBS6w,6280.816339,6319.672208 - Nailed the improv
+- [ ] yt-y1Znn6SBS6w,6319.672208,6379.204797 - Intro
+- [ ] yt-y1Znn6SBS6w,6379.204797,6400.789979 - Q&AL What does Peter Jenni do?
+- [ ] yt-y1Znn6SBS6w,6400.789979,6440.709241 - Q&A: How long is that time then?
+- [ ] yt-y1Znn6SBS6w,6524.706197,6541.0335532480485 - Outro
+- [ ] yt-y1Znn6SBS6w,6716.777524,6734.741172 - Intro
+- [ ] yt-y1Znn6SBS6w,6734.741172,6782.813328 - Origin of one of Jace's catchphrases
+- [ ] yt-y1Znn6SBS6w,6847.958385,6871.03356434291 - Plutonium Pellets
+- [ ] yt-y1Znn6SBS6w,7019.52695,7059.526942 - Why socks, though?
+- [ ] yt-y1Znn6SBS6w,7054.489384,7103.695417125 - Particle Accelerator reveal
+- [ ] yt-y1Znn6SBS6w,7169.800241054348,7213.155463 - Resource Wells
+- [ ] yt-y1Znn6SBS6w,7213.200242513491,7233.334939 - Intro
+- [ ] yt-y1Znn6SBS6w,7233.334939,7249.176469 - Still referenced on the Steam Forums
+- [ ] yt-y1Znn6SBS6w,7314.636991,7365.566914302844 - Intro
+- [ ] yt-y1Znn6SBS6w,7448.629436,7497.391889 - Patch Notes Subtitles
+- [ ] yt-y1Znn6SBS6w,7497.391889,7553.088724 - Into Knee Woods
+- [ ] yt-y1Znn6SBS6w,7866.886178,7903.2565487551865 - Intro
+- [ ] yt-y1Znn6SBS6w,8098.22383,8141.847131 - End Tag
+- [ ] yt-y1Znn6SBS6w,8141.847131,8179.670448 - Outro
+- [ ] yt-y1Znn6SBS6w,8179.700275007985,8225.766073 - Intro
+- [ ] yt-y1Znn6SBS6w,9864.200331642207,9917.034 - End Tag
