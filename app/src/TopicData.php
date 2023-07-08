@@ -1951,9 +1951,11 @@ class TopicData
 		'2021-04-23' => 'Video',
 		'2021-10-26' => 'Update 5 Launch Stream and Patch Notes Video',
 		'2022-09-20' => 'Update 6 Release Stream',
+		'2023-07-05' => 'Last stream with Jace 💔',
 	];
 
 	public const VIDEO_IS_FROM_A_LIVESTREAM = [
+		'yt-y1Znn6SBS6w',
 		'yt-oLl9SZht-bE',
 		'yt-5NBgetrxtpw',
 	];

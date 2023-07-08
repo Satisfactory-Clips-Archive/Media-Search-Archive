@@ -12,6 +12,10 @@ use const JSON_PRETTY_PRINT;
 
 class SkippingTranscriptions
 {
+	const ALWAYS_SKIP_THESE_EXACT_TRANSCRIPTIONS = [
+		'yt-y1Znn6SBS6w',
+	];
+
 	/** @var list<string> */
 	public array $video_ids = [];
 

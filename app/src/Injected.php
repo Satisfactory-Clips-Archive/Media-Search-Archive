@@ -315,6 +315,14 @@ class Injected
 		string $playlist_id,
 		string $default_label = 'Livestream'
 	) : string {
+		if (
+			! isset($this->playlists_date_ref[$playlist_id])
+			&& preg_match('/^\d{4,}-\d{2}-\d{2}$/', $playlist_id)
+			&& false !== ($maybe_playlist_id = array_search($playlist_id, $this->playlists_date_ref))
+		) {
+			$playlist_id = $maybe_playlist_id;
+		}
+
 		if ( ! isset($this->playlists_date_ref[$playlist_id])) {
 			throw new InvalidArgumentException(sprintf(
 				'Argument 1 (%s) passed to %s() was not found in the playlists!',

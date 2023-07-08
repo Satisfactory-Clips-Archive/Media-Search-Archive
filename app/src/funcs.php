@@ -1180,6 +1180,7 @@ function captions(
 			video_url_from_id($video_id, true)
 		)
 		|| in_array($video_id, $skipping->video_ids, true)
+		|| in_array($video_id, SkippingTranscriptions::ALWAYS_SKIP_THESE_EXACT_TRANSCRIPTIONS, true)
 	) {
 		return [];
 	}

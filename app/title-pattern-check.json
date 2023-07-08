@@ -4,6 +4,7 @@
 		"\\?$"
 	],
 	"talk": [
+		" - Last stream with Jace",
 		"^(?:[^:]+ (?:Talk|Math)|(?:(?:Snutt) )?PSA|Special Guest|State of Stream|Snutt talk): ",
 		"^Hannah talks ",
 		"^(Tools Video FAQ|RE: Reporting Issues|AI Uprising|Mark joins the fight|\uD83D\uDCE3 Satisfactory Update 7 Patch Notes Director Commentary with Snutt)$"
@@ -18,6 +19,7 @@
 		" & State of Dave$",
 		" \\\/ State of Dev$",
 		" \\\/ State of Dev \\\/",
+		" \\\/ State of Dave \\\/",
 		"^State of Vacation$",
 		"^News$",
 		"^(World Changes with Hannah|EOS Reset Account|Re: Reporting Issues|Update 6: (Spire Coast Teaser|Future Updates & Linear Overclocking change)|Blueprints Video)$"
