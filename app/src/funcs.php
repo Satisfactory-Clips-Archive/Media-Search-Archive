@@ -1540,8 +1540,8 @@ function captions_source(Injected $injected) : ProxiedCaptionsSource
 
 	if ( ! isset($instances[$id])) {
 		$instances[$id] = new ProxiedCaptionsSource(
-			new FilesystemCaptionsSource(),
-			new DynamicDatedTarballCaptionsSource($injected)
+			new DynamicDatedTarballCaptionsSource($injected),
+			new FilesystemCaptionsSource()
 		);
 	}
 
