@@ -1,4 +1,46 @@
 {
+    "yt-RIZS_qyiLH4,358.52076973397294,381.0403946794592": {
+        "title": "Q&A: DLSS, when?",
+        "date": "2023-08-18",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-8",
+            "technology\/graphics\/dlss"
+        ],
+        "replaces": [
+            "99SoH5ZXCO4",
+            "e5RgS7iEH8s",
+            "HhhszNFilFY",
+            "inVzZQ99Acs",
+            "m6GfDtkUlbQ",
+            "NSj2WyK44tw",
+            "ugj2T8du2zg"
+        ],
+        "seealso": [
+            "8WFqndHJR_0",
+            "EL7KHnIvLcw",
+            "yt-HJyfSle4o_U,130.96416666666667,185.6855"
+        ]
+    },
+    "yt-RIZS_qyiLH4,381.0820976886175,460.98506323593546": {
+        "title": "Q&A: Update 8 on EA, when?",
+        "date": "2023-08-18",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-update-8",
+            "satisfactory-updates\/release-builds"
+        ],
+        "duplicates": [
+            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667"
+        ],
+        "seealso": [
+            "hha5efOML7Q",
+            "iARrB7UDN14",
+            "uwqBuRxnXow",
+            "YGUh1oKGqwg",
+            "yt-d-MGfaCJfrw,207.77423333333334,314.88123333333334",
+            "yt-d-MGfaCJfrw,314.9146,433.86676666666665",
+            "yt-zu0aY3UNhvU,80.94753333333334,175.34183333333334"
+        ]
+    },
     "egW41XvycQY": {
         "title": "Q&A: Why is Snutt not playing Update 8?",
         "date": "2023-08-15",
@@ -168,7 +210,7 @@
         "title": "Q&A: Will there ever be a Satisfactory 2?",
         "date": "2023-08-15",
         "topics": [
-            "satisfactory-updates\/speculative\/satisfacwtory-2-0"
+            "satisfactory-updates\/speculative\/satisfactory-2-0"
         ],
         "duplicates": [
             "btvWr5Xtdyo",
@@ -468,19 +510,7 @@
             "technology\/graphics\/dlss",
             "technology\/unreal-engine\/unreal-engine-5"
         ],
-        "duplicates": [
-            "99SoH5ZXCO4",
-            "e5RgS7iEH8s",
-            "HhhszNFilFY",
-            "inVzZQ99Acs",
-            "m6GfDtkUlbQ",
-            "ugj2T8du2zg"
-        ],
-        "seealso": [
-            "8WFqndHJR_0",
-            "EL7KHnIvLcw",
-            "yt-HJyfSle4o_U,130.96416666666667,185.6855"
-        ]
+        "replacedby": "yt-RIZS_qyiLH4,358.52076973397294,381.0403946794592"
     },
     "eELqE0JrggA": {
         "title": "Q&A: When are Multiplayer bugs going to be addressed?",
@@ -1376,14 +1406,6 @@
             "yZXHPXd_Edk"
         ]
     },
-    "yt-GeKE40L2cSw,3614.731776,4630.483365": {
-        "title": "But... What's next?",
-        "date": "2023-06-13",
-        "topics": [],
-        "seealso": [
-            "yt-GeKE40L2cSw,4565.025617,4630.483365"
-        ]
-    },
     "yt-GeKE40L2cSw,4287.744433,4565.025617": {
         "title": "Q&A: Jace & Snutt Body Pillows, when?",
         "date": "2023-06-13",
@@ -1413,8 +1435,7 @@
         ],
         "seealso": [
             "icWsNbhuL7g",
-            "rtDdvxdzGAM",
-            "yt-GeKE40L2cSw,3614.731776,4630.483365"
+            "rtDdvxdzGAM"
         ]
     },
     "yt-GeKE40L2cSw,6134.787648,6190.124209": {
@@ -1500,15 +1521,7 @@
         "replaces": [
             "4y8qFnefc5o"
         ],
-        "seealso": [
-            "hha5efOML7Q",
-            "iARrB7UDN14",
-            "uwqBuRxnXow",
-            "YGUh1oKGqwg",
-            "yt-d-MGfaCJfrw,207.77423333333334,314.88123333333334",
-            "yt-d-MGfaCJfrw,314.9146,433.86676666666665",
-            "yt-zu0aY3UNhvU,80.94753333333334,175.34183333333334"
-        ]
+        "duplicatedby": "yt-RIZS_qyiLH4,381.0820976886175,460.98506323593546"
     },
     "yt-zu0aY3UNhvU,80.94753333333334,175.34183333333334": {
         "title": "Q&A: How long will Update 8 be in Experimental for?",
@@ -1519,7 +1532,7 @@
         ],
         "seealso": [
             "iARrB7UDN14",
-            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667",
+            "yt-RIZS_qyiLH4,381.0820976886175,460.98506323593546",
             "yt-zu0aY3UNhvU,175.3752,206.1059"
         ]
     },
@@ -4066,7 +4079,7 @@
         ],
         "seealso": [
             "yt-d-MGfaCJfrw,314.9146,433.86676666666665",
-            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667"
+            "yt-RIZS_qyiLH4,381.0820976886175,460.98506323593546"
         ],
         "seealso_video_cards": [
             "7r_QUHV82bU"
@@ -4082,7 +4095,7 @@
         ],
         "seealso": [
             "yt-d-MGfaCJfrw,207.77423333333334,314.88123333333334",
-            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667"
+            "yt-RIZS_qyiLH4,381.0820976886175,460.98506323593546"
         ],
         "seealso_video_cards": [
             "7r_QUHV82bU"
@@ -5818,7 +5831,7 @@
             "technology\/unreal-engine\/unreal-engine-5"
         ],
         "seealso": [
-            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667",
+            "yt-RIZS_qyiLH4,381.0820976886175,460.98506323593546",
             "yt-zu0aY3UNhvU,80.94753333333334,175.34183333333334"
         ]
     },
@@ -8873,7 +8886,7 @@
             "NHAl4GYVVFQ",
             "v6eqwt8LTkA",
             "YGUh1oKGqwg",
-            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667"
+            "yt-RIZS_qyiLH4,381.0820976886175,460.98506323593546"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo",
@@ -10513,11 +10526,6 @@
             "ST6V-a4u8Qs",
             "J4LlorYbVV0"
         ]
-    },
-    "yt-_IHY_1L3pBY,882.5483333333334,1128.394": {
-        "title": "Could we do better?",
-        "date": "2023-01-20",
-        "topics": []
     },
     "6uYltuXykY0": {
         "title": "Q&A: Can we have a telescope to look at the newly-added celestial bodies?",
@@ -12440,7 +12448,7 @@
         ],
         "seealso": [
             "hha5efOML7Q",
-            "yt-zu0aY3UNhvU,7.874533333333334,80.91416666666667"
+            "yt-RIZS_qyiLH4,381.0820976886175,460.98506323593546"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpmeKjnMqZxXfE3hxJ7ntQo"
@@ -13430,11 +13438,6 @@
             "Y_4szpo-kjw"
         ],
         "duplicatedby": "Y_4szpo-kjw"
-    },
-    "yt-fVCw51TOHeA,6105.517974": {
-        "title": "Wrap Up\/Q&A?",
-        "date": "2022-12-06",
-        "topics": []
     },
     "yt-fVCw51TOHeA,6220.988365,6229.213893": {
         "title": "Q&A: Golf?",
@@ -17158,7 +17161,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqY1dlDDnwf4Fo9Z9l7YtM4"
         ],
-        "duplicatedby": "NSj2WyK44tw"
+        "replacedby": "yt-RIZS_qyiLH4,358.52076973397294,381.0403946794592"
     },
     "7hyn0Ga2fKM": {
         "title": "Q&A: Does it support multiple cores well?",
@@ -18095,7 +18098,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqY1dlDDnwf4Fo9Z9l7YtM4"
         ],
-        "duplicatedby": "NSj2WyK44tw"
+        "replacedby": "yt-RIZS_qyiLH4,358.52076973397294,381.0403946794592"
     },
     "LnZWyYccFEQ": {
         "title": "Q&A: Are you going to use Unreal Engine 5 for better performance?",
@@ -19574,7 +19577,7 @@
             "technology\/graphics"
         ],
         "seealso": [
-            "NSj2WyK44tw"
+            "yt-RIZS_qyiLH4,358.52076973397294,381.0403946794592"
         ]
     },
     "GudEIWIRltY": {
@@ -20846,7 +20849,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqY1dlDDnwf4Fo9Z9l7YtM4"
         ],
-        "duplicatedby": "NSj2WyK44tw"
+        "replacedby": "yt-RIZS_qyiLH4,358.52076973397294,381.0403946794592"
     },
     "FX84LpxZoes": {
         "title": "Q&A: Z-fighting?",
@@ -23530,7 +23533,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqY1dlDDnwf4Fo9Z9l7YtM4"
         ],
-        "duplicatedby": "NSj2WyK44tw"
+        "replacedby": "yt-RIZS_qyiLH4,358.52076973397294,381.0403946794592"
     },
     "yt-acZOxaTkcCY,179.64613333333332,190.552814": {
         "title": "Q&A: When's Update 7?",
@@ -23657,21 +23660,6 @@
         ],
         "seealso": [
             "yt-Z6bo0pjYghk,12015.144401285379,12065.79417320965"
-        ]
-    },
-    "yt-4pGTnG6Cy5E,222.25536666666667,268.43483333333336": {
-        "title": "Q&A: What is that cabbage-looking yolk thing?",
-        "date": "2022-06-10",
-        "topics": [
-            "environment\/creatures",
-            "satisfactory-updates\/released\/satisfactory-update-6",
-            "satisfactory-updates\/teasers-and-trailers\/update-6-teasers"
-        ],
-        "seealso": [
-            "llJeyL1axW8"
-        ],
-        "seealso_video_cards": [
-            "hkMTFsxa7rQ"
         ]
     },
     "d2IRgOwEIUY": {
@@ -25140,11 +25128,6 @@
             "PLbjDnnBIxiEr97STV5beB_aCFM6jZaVDL"
         ]
     },
-    "yt-2vAUX3YLH-c,56.423033333333336,779.5788": {
-        "title": "Let's jump into the game, shall we?",
-        "date": "2022-05-13",
-        "topics": []
-    },
     "dIGez7lvcic": {
         "title": "Q&A: Any cool blueprint tool?",
         "date": "2022-05-10",
@@ -25799,7 +25782,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqY1dlDDnwf4Fo9Z9l7YtM4"
         ],
-        "duplicatedby": "NSj2WyK44tw"
+        "replacedby": "yt-RIZS_qyiLH4,358.52076973397294,381.0403946794592"
     },
     "aOsUEy25oPQ": {
         "title": "Q&A: Will Recipes get a do-over before 1.0?",
@@ -27671,7 +27654,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqY1dlDDnwf4Fo9Z9l7YtM4"
         ],
-        "duplicatedby": "NSj2WyK44tw"
+        "replacedby": "yt-RIZS_qyiLH4,358.52076973397294,381.0403946794592"
     },
     "xM0G0PWaCnc": {
         "title": "Q&A: Do you already have plans to go to XBox\/PS5?",

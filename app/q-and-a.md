@@ -1,15 +1,16 @@
 # Progress
-* 7380 questions found out of 10982 clips
-* 7086 non-trolling & on-topic questions found out of 7380 total questions
-* 369 questions found with no other references
+* 7377 questions found out of 10993 clips
+* 7083 non-trolling & on-topic questions found out of 7377 total questions
+* 366 questions found with no other references
 ## grouped by date
+* 2023-08-18: 0 of 2 questions found with no other references
 * 2023-08-15: 8 of 15 questions found with no other references
 * 2023-07-04: 1 of 7 questions found with no other references
 * 2023-06-27: 2 of 19 questions found with no other references
 * 2023-06-23: 0 of 1 questions found with no other references
 * 2023-06-20: 8 of 33 questions found with no other references
 * 2023-06-16: 0 of 3 questions found with no other references
-* 2023-06-13: 1 of 8 questions found with no other references
+* 2023-06-13: 1 of 7 questions found with no other references
 * 2023-06-09: 0 of 4 questions found with no other references
 * 2023-06-08: 0 of 3 questions found with no other references
 * 2023-06-02: 0 of 20 questions found with no other references
@@ -37,12 +38,12 @@
 * 2023-01-31: 1 of 18 questions found with no other references
 * 2023-01-27: 0 of 7 questions found with no other references
 * 2023-01-24: 3 of 23 questions found with no other references
-* 2023-01-20: 1 of 3 questions found with no other references
+* 2023-01-20: 0 of 2 questions found with no other references
 * 2023-01-17: 6 of 47 questions found with no other references
 * 2023-01-10: 5 of 45 questions found with no other references
 * 2022-12-20: 1 of 40 questions found with no other references
 * 2022-12-13: 3 of 41 questions found with no other references
-* 2022-12-06: 5 of 46 questions found with no other references
+* 2022-12-06: 4 of 45 questions found with no other references
 * 2022-11-29: 4 of 40 questions found with no other references
 * 2022-11-22: 5 of 31 questions found with no other references
 * 2022-11-15: 0 of 17 questions found with no other references
@@ -65,11 +66,9 @@
 * 2022-06-28: 7 of 64 questions found with no other references
 * 2022-06-17: 0 of 2 questions found with no other references
 * 2022-06-14: 0 of 8 questions found with no other references
-* 2022-06-10: 0 of 1 questions found with no other references
 * 2022-06-07: 2 of 36 questions found with no other references
 * 2022-05-24: 1 of 35 questions found with no other references
 * 2022-05-17: 8 of 27 questions found with no other references
-* 2022-05-13: 1 of 1 questions found with no other references
 * 2022-05-10: 4 of 18 questions found with no other references
 * 2022-05-03: 0 of 51 questions found with no other references
 * 2022-04-26: 1 of 14 questions found with no other references

@@ -77,6 +77,24 @@ foreach (array_keys($injected->all_topics()) as $topic_id) {
 
 uksort($existing, [$sorting, 'sort_video_ids_by_date']);
 
+$nullsAndFalses = [];
+
+foreach (get_externals() as $externals_data_groups) {
+	foreach ($externals_data_groups as $externals_data) {
+		[$video_id, $externals_csv, $data_for_external] = $externals_data;
+
+		foreach ($data_for_external['topics'] as $i => $external_data_row) {
+			if (null === $external_data_row || false === $external_data_row) {
+				[$start, $end] = $externals_csv[$i];
+
+				$skipping_qand_id = sprintf('' !== $end ? '%s,%s,%s' : '%s,%s', $video_id, $start, $end);
+
+				unset($existing[$skipping_qand_id]);
+			}
+		}
+	}
+}
+
 $data = json_encode_pretty($existing);
 
 file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
