@@ -223,31 +223,36 @@ class TopicData
 			'Satisfactory Updates',
 			'Speculative',
 		],
+		'PLbjDnnBIxiErDHmsYYI45RArzpcfAk9lu' => [ // Satisfactory Update 10
+			10,
+			'Satisfactory Updates',
+			'Speculative',
+		],
 		'PLbjDnnBIxiErIs7tyigBsVwTUg4hsKvx1' => [ // Modular Builds
-			98,
+			998,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEqrvp3UlLgVHZbY9Yb045zj' => [ // Release Builds
-			99,
+			999,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT' => [ // Satisfactory 1.0
-			100,
+			1000,
 			'Satisfactory Updates',
 			'Pending',
 		],
 		'PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS' => [ // Satisfactory 2.0
-			200,
+			2000,
 			'Satisfactory Updates',
 			'Speculative',
 		],
-		'PLbjDnnBIxiEqS1vHwtV1OOqDluevVNZx5' => [ // Satisfactory 2.0
-			300,
+		'PLbjDnnBIxiEqS1vHwtV1OOqDluevVNZx5' => [ // Satisfactory 3.0
+			3000,
 			'Satisfactory Updates',
 			'Speculative',
 		],
 		'PLbjDnnBIxiErq1cTFe-14F7UISclc1uc-' => [ // Seasonal Events
-			11,
+			800,
 			'Satisfactory Updates',
 		],
 		'PLbjDnnBIxiEq84iBBkP2g69rPYXD-yWMy' => [ // FICS⁕MAS
@@ -1405,6 +1410,11 @@ class TopicData
 		'PLbjDnnBIxiErcP0g2Ihv6H7ZJUVB8sOqH' => [ // Overclocking & Underclocking
 			'Features',
 			'Buildings',
+		],
+		'PLbjDnnBIxiEonaHIGbDAvB_2O_6WVLwSp' => [ // Overclocked Mk.3 Miner output bottlenecked by Mk.5 Belts
+			'Features',
+			'Buildings',
+			'Overclocking & Underclocking',
 		],
 		'PLbjDnnBIxiErj8197l1Qd4RzczUtlYgF4' => [ // Coal
 			'Environment',

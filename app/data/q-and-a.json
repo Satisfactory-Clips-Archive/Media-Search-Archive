@@ -3718,6 +3718,7 @@
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
             "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue",
             "features\/requested-features"
         ],
         "duplicates": [
@@ -6366,7 +6367,8 @@
         "topics": [
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
-            "features\/buildings\/overclocking-and-underclocking"
+            "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "duplicatedby": "y9ljhM79ZVQ"
     },
@@ -6566,7 +6568,8 @@
         "title": "Q&A: Is Update 10 going to be 1.0 release?",
         "date": "2023-03-21",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-1-0"
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/speculative\/satisfactory-update-10"
         ],
         "duplicates": [
             "dvCRDVGePX0",
@@ -6864,6 +6867,7 @@
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
             "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue",
             "features\/requested-features"
         ],
         "duplicatedby": "y9ljhM79ZVQ"
@@ -7766,7 +7770,8 @@
         "date": "2023-02-28",
         "topics": [
             "features\/buildings\/miner",
-            "features\/buildings\/overclocking-and-underclocking"
+            "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErcP0g2Ihv6H7ZJUVB8sOqH"
@@ -8124,6 +8129,7 @@
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
             "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue",
             "features\/requested-features"
         ],
         "duplicatedby": "y9ljhM79ZVQ"
@@ -9844,6 +9850,7 @@
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
             "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue",
             "features\/possible-features"
         ],
         "duplicatedby": "y9ljhM79ZVQ"
@@ -10191,6 +10198,7 @@
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
             "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue",
             "features\/fluids\/pipes",
             "features\/requested-features"
         ],
@@ -10571,6 +10579,7 @@
         "topics": [
             "features\/buildings\/miner",
             "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue",
             "features\/fluids\/pipes"
         ],
         "seealso_topic_cards": [
@@ -11702,7 +11711,8 @@
         "topics": [
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
-            "features\/buildings\/overclocking-and-underclocking"
+            "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEpy0dbl8UJNZFunrmillCCR",
@@ -12726,6 +12736,7 @@
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
             "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue",
             "features\/requested-features"
         ],
         "duplicates": [
@@ -14281,6 +14292,7 @@
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
             "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue",
             "features\/requested-features"
         ],
         "duplicatedby": "y9ljhM79ZVQ"
@@ -14661,6 +14673,7 @@
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
             "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue",
             "features\/power-management\/nuclear-energy"
         ],
         "seealso_topic_cards": [
@@ -16260,7 +16273,8 @@
         "date": "2022-10-25",
         "topics": [
             "features\/buildings\/miner",
-            "features\/buildings\/overclocking-and-underclocking"
+            "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso": [
             "zQp4XNB2bU4"
@@ -29553,6 +29567,7 @@
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
             "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue",
             "features\/requested-features"
         ],
         "seealso_video_cards": [
@@ -33758,7 +33773,8 @@
         "topics": [
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
-            "features\/buildings\/overclocking-and-underclocking"
+            "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso": [
             "zQp4XNB2bU4"
@@ -34898,7 +34914,8 @@
         "title": "Q&A: Is Update 10 the official release of the game?",
         "date": "2021-11-23",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-1-0"
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/speculative\/satisfactory-update-10"
         ],
         "seealso": [
             "yt-Gdz6SUv9Om4,8629.687946,8638.987881"
@@ -40317,7 +40334,8 @@
         "date": "2021-10-19",
         "topics": [
             "features\/buildings\/miner",
-            "features\/buildings\/overclocking-and-underclocking"
+            "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoIpaioyzE9nqrU_5CxfkUC",
@@ -41737,7 +41755,8 @@
         "topics": [
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
-            "features\/buildings\/overclocking-and-underclocking"
+            "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoIpaioyzE9nqrU_5CxfkUC"
@@ -42182,7 +42201,8 @@
         "topics": [
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
-            "features\/buildings\/overclocking-and-underclocking"
+            "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso_video_cards": [
             "CQNpIStn7SM"
@@ -44459,7 +44479,8 @@
         "date": "2021-09-21",
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0",
-            "satisfactory-updates\/released\/satisfactory-update-5"
+            "satisfactory-updates\/released\/satisfactory-update-5",
+            "satisfactory-updates\/speculative\/satisfactory-update-10"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEov1pe4Y3Fr8AFfJuu7jIR6",
@@ -47890,7 +47911,8 @@
         "date": "2021-08-31",
         "topics": [
             "features\/buildings\/miner",
-            "features\/buildings\/overclocking-and-underclocking"
+            "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso_video_cards": [
             "x2VBWUAqpoQ"
@@ -48166,7 +48188,8 @@
         "topics": [
             "features\/buildables\/conveyor-belts",
             "features\/buildings\/miner",
-            "features\/buildings\/overclocking-and-underclocking"
+            "features\/buildings\/overclocking-and-underclocking",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso_video_cards": [
             "PZRI1IfStY0"
@@ -62451,7 +62474,8 @@
         "date": "2021-05-04",
         "topics": [
             "features\/buildables\/conveyor-belts",
-            "features\/buildings\/miner"
+            "features\/buildings\/miner",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErcP0g2Ihv6H7ZJUVB8sOqH"
@@ -63760,7 +63784,8 @@
         "title": "Q&A: Will there ever be a belt that goes faster, like a Mk.6 one?",
         "date": "2021-04-27",
         "topics": [
-            "features\/buildables\/conveyor-belts"
+            "features\/buildables\/conveyor-belts",
+            "features\/buildings\/overclocking-and-underclocking\/mk3-miner-overclocking-issue"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErcP0g2Ihv6H7ZJUVB8sOqH"
@@ -69052,7 +69077,8 @@
         "title": "Q&A: Update 10 is 1.0?",
         "date": "2021-03-02",
         "topics": [
-            "satisfactory-updates\/pending\/satisfactory-1-0"
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/speculative\/satisfactory-update-10"
         ],
         "duplicatedby": "n9wl9h0hBos"
     },

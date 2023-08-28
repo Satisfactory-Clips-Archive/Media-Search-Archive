@@ -53,6 +53,7 @@ class Slugify extends Base
 			'Unlock All Tiers' => 'all-tiers',
 			'Unlock All Research in the M.A.M.' => 'all-research',
 			'Unlock All in the A.W.E.S.O.M.E. Shop' => 'all-shop-items',
+			'Overclocked Mk.3 Miner output bottlenecked by Mk.5 Belts' => 'mk3-miner-overclocking-issue',
 		];
 
 		parent::__construct($options, $provider);
