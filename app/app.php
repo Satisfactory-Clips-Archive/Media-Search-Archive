@@ -1760,10 +1760,9 @@ $topic_slug_history = array_map(
 	$topic_slug_history
 );
 
-file_put_contents(__DIR__ . '/topic-slug-history.json', json_encode(
-	$topic_slug_history,
-	JSON_PRETTY_PRINT
-));
+file_put_contents(__DIR__ . '/topic-slug-history.json', json_encode_pretty(
+	$topic_slug_history
+) . "\n");
 
 usleep(100);
 
