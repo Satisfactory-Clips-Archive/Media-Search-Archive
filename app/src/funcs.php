@@ -189,7 +189,14 @@ function video_url_from_id(string $video_id, bool $short = false) : string
 			rawurlencode(mb_substr($video_id, 3))
 		);
 	} elseif ($short) {
-		return sprintf('https://youtu.be/%s', rawurlencode($video_id));
+		return sprintf(
+			'https://youtu.be/%s',
+			preg_replace(
+				'/^yt-/',
+				'',
+				rawurlencode($video_id)
+			)
+		);
 	}
 
 	return
