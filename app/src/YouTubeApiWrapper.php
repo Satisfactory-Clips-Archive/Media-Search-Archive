@@ -687,6 +687,22 @@ class YouTubeApiWrapper
 		if ( ! is_string($directory)) {
 			throw new RuntimeException('Could not find playlists api cache!');
 		}
+		if ( ! is_file(__DIR__ . '/../playlists-recently-updated.json')) {
+			throw new RuntimeException('Could not find recently updated playlists cache!');
+		}
+
+		/** @var list<string> */
+		$recently_updated = array_map(
+			static function (string $playlist_id) : string {
+				return $playlist_id . '.json';
+			},
+			array_keys(json_decode(
+				file_get_contents(
+					__DIR__ . '/../playlists-recently-updated.json'),
+				true,
+				JSON_THROW_ON_ERROR
+			))
+		);
 
 		$to_delete = array_values(array_filter(
 			glob(__DIR__ . '/../data/api-cache/playlists/*.json'),
@@ -706,7 +722,9 @@ class YouTubeApiWrapper
 		));
 
 		foreach ($to_delete as $file) {
-			unlink($file);
+			if (in_array(basename($file), $recently_updated, true)) {
+				unlink($file);
+			}
 		}
 	}
 

@@ -46,6 +46,10 @@ update:
 	php app/youtube-category-checker.php
 	cd . && ./node_modules/.bin/gulp charts 11ty-data
 
+update-playlists-cache:
+	npm run -s update-playlists-html-cache
+	php ./app/extract-last-updated-date-for-playlists-from-html-cache.php
+
 build: tweets update build-post-update
 
 tweets:
