@@ -54,6 +54,8 @@ class Slugify extends Base
 			'Unlock All Research in the M.A.M.' => 'all-research',
 			'Unlock All in the A.W.E.S.O.M.E. Shop' => 'all-shop-items',
 			'Overclocked Mk.3 Miner output bottlenecked by Mk.5 Belts' => 'mk3-miner-overclocking-issue',
+			'Lizard Doggo Biology' => 'biology',
+			'Snutt\'s on-stream playthrough' => 'on-stream-playthrough',
 		];
 
 		parent::__construct($options, $provider);

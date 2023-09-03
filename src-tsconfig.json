@@ -10,6 +10,7 @@
 		"newLine": "lf",
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "node",
 		"strict": true
 	}
 }

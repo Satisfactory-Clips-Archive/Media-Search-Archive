@@ -11,7 +11,7 @@ import {
 	const glob = promisify(require('glob'));
 
 	const files = (
-		await glob(`${__dirname}/../src/lunr/docs-*.json`) as string[]
+		await glob(`${__dirname}/lunr/docs-*.json`) as string[]
 	);
 
 	if (files.length < 1) {

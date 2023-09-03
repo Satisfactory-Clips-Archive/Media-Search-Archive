@@ -641,6 +641,10 @@ class TopicData
 		'PLbjDnnBIxiEoAqIqsBIdN_uoV-HsP8YDJ' => [ // Snutt
 			'Coffee Stainers',
 		],
+		'PLbjDnnBIxiEpUlcYrbBsHT-yeqGGhuH02' => [ // Snutt's on-stream playthrough
+			'Coffee Stainers',
+			'Snutt',
+		],
 		'PLbjDnnBIxiErtgprdAliPEnLc7vfNT2Er' => [ // Eevee
 			'Coffee Stainers',
 			'Snutt',
@@ -851,6 +855,11 @@ class TopicData
 		'PLbjDnnBIxiEpeue2wFBDqf_qrb1h1Fvgs' => [ // Lizard Doggo
 			'Environment',
 			'Creatures',
+		],
+		'PLbjDnnBIxiEpKeYAwpLKTlSswecwcGpR7' => [ // Lizard Doggo Biology
+			'Environment',
+			'Creatures',
+			'Lizard Doggo',
 		],
 		'PLbjDnnBIxiEpNdRJ8p4FPF7P0Ll5YIpYV' => [ // M.A.M.
 			'Features',
