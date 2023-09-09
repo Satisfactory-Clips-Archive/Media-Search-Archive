@@ -56,6 +56,7 @@ class Slugify extends Base
 			'Overclocked Mk.3 Miner output bottlenecked by Mk.5 Belts' => 'mk3-miner-overclocking-issue',
 			'Lizard Doggo Biology' => 'biology',
 			'Snutt\'s on-stream playthrough' => 'on-stream-playthrough',
+			'Snutt\'s Adventures with Creatures' => 'adventures-with-creatures',
 		];
 
 		parent::__construct($options, $provider);

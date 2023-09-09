@@ -645,6 +645,11 @@ class TopicData
 			'Coffee Stainers',
 			'Snutt',
 		],
+		'PLbjDnnBIxiEpCLYuhM0AvprUEscp3hebv' => [ // Snutt's Adventures with Creatures
+			'Coffee Stainers',
+			'Snutt',
+			'Snutt\'s on-stream playthrough',
+		],
 		'PLbjDnnBIxiErtgprdAliPEnLc7vfNT2Er' => [ // Eevee
 			'Coffee Stainers',
 			'Snutt',
@@ -1386,6 +1391,9 @@ class TopicData
 			'Community',
 		],
 		'PLbjDnnBIxiEppNaw6qpmiVy9MlWIiTQnY' => [ // SignpostMarv
+			'Community',
+		],
+		'PLbjDnnBIxiEq__Ywoco-mzedChOI5rI5s' => [ // Weebl
 			'Community',
 		],
 		'PLbjDnnBIxiEoaUKIHhuYY0F1iQexBj2ll' => [ // Distance Fields
