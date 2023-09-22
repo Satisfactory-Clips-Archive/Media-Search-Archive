@@ -16,8 +16,8 @@ const playlists_ids = Object.keys(require(`${__dirname}/data/api-cache/playlists
 
 		const cache_html = `${__dirname}/playlists-html-cache/${playlist_id}.html`;
 
-			const html = await (await fetch(`https://www.youtube.com/playlist?list=${playlist_id}`)).text();
+		const html = await (await fetch(`https://www.youtube.com/playlist?list=${playlist_id}`)).text();
 
-			await writeFile(cache_html, html);
+		await writeFile(cache_html, html);
 	}
 })();
