@@ -155,7 +155,7 @@ $output = array_map(static function (int $timestamp) : string {
 	return date('c', $timestamp);
 }, $output);
 
-$today = new \DateTimeImmutable('today');
+$today = new \DateTimeImmutable('tomorrow');
 $last_tuesday = new \DateTimeImmutable('last tuesday');
 
 $number_of_days = $today->diff($last_tuesday)->days;
