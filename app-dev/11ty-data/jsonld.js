@@ -10,6 +10,7 @@ module.exports = async () => {
 	const [
 		{default:satisfactory},
 		{default:data},
+		{SignpostMarv},
 	] = await Promise.all([
 		import(
 			'../../Media-Archive-Metadata/src/common/satisfactory.js'
@@ -17,11 +18,28 @@ module.exports = async () => {
 		import(
 			'../../Media-Archive-Metadata/index.js'
 		),
+		import(
+			'../../Media-Archive-Metadata/src/permalinked/topics/community/signpostmarv.js'
+		),
 	]);
 
 	const out = Object.assign(
 		{},
-		data,
+		Object.fromEntries(Object.entries(data).map((entry) => {
+			return [entry[0], entry[1].map((item) => {
+				if (
+					item['@type'] !== 'WebpPage'
+					&& '@context' in item
+					&& 'https://schema.org' === item['@context']
+				) {
+					item = Object.assign({}, item);
+
+					delete item['@context'];
+				}
+
+				return item;
+			})];
+		})),
 		{
 			"/": [
 				{
@@ -33,7 +51,8 @@ module.exports = async () => {
 						"@type": "SearchAction",
 						"target": "https://archive.satisfactory.video/search?q={search_term_string}",
 						"query-input": "required name=search_term_string"
-					}
+					},
+					author: SignpostMarv,
 				}
 			],
 		}
