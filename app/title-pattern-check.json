@@ -7,6 +7,7 @@
 		" - Last stream with Jace",
 		"^(?:[^:]+ (?:Talk|Math)|(?:(?:Snutt) )?PSA|Special Guest|State of Stream|Snutt talk): ",
 		"^Hannah talks ",
+		"^Blame Hannah: ",
 		"^(Tools Video FAQ|RE: Reporting Issues|AI Uprising|Mark joins the fight|\uD83D\uDCE3 Satisfactory Update 7 Patch Notes Director Commentary with Snutt)$"
 	],
 	"community_fyi": [

@@ -49,6 +49,7 @@ update:
 update-playlists-cache:
 	npm run -s update-playlists-html-cache
 	php ./app/extract-last-updated-date-for-playlists-from-html-cache.php
+	php ./app/cleanup-playlist-api-cache.php
 
 build: tweets update build-post-update
 
