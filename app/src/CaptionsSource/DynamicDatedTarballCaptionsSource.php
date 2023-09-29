@@ -24,7 +24,8 @@ final class DynamicDatedTarballCaptionsSource extends AbstractCaptionsSource
 	private array $tarballs = [];
 
 	public function __construct(
-		private readonly Injected $injected
+		private readonly Injected $injected,
+		private readonly FilesystemCaptionsSource $fallback
 	) {}
 
 	private function captions_data(DateTimeImmutable $date) : AbstractTarballCaptionsSource
@@ -107,6 +108,12 @@ final class DynamicDatedTarballCaptionsSource extends AbstractCaptionsSource
 	{
 		$date = $this->filename_to_datetimeimmutable($filename);
 
-		return $this->captions_data($date)->exists($filename);
+		$result = $this->captions_data($date)->exists($filename);
+
+		if ($result && $this->fallback->exists($filename)) {
+			$this->fallback->remove_cached_file($filename);
+		}
+
+		return $result;
 	}
 }
