@@ -228,6 +228,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Speculative',
 		],
+		'PLbjDnnBIxiEppd05OYJXBsjk1nu8ZHL4g' => [ // Satisfactory Update 11
+			11,
+			'Satisfactory Updates',
+			'Speculative',
+		],
 		'PLbjDnnBIxiErIs7tyigBsVwTUg4hsKvx1' => [ // Modular Builds
 			998,
 			'Satisfactory Updates',
