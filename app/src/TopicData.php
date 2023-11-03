@@ -112,6 +112,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
+		'PLbjDnnBIxiEp-iNKKFdFOt-2pFR2GQpYI' => [ // Update 8 Patch Notes Video
+			801,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
 		'Update 5 Quiz: Underrated/Overrated' => [
 			1,
 			'Satisfactory Updates',
