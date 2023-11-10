@@ -153,6 +153,13 @@ class Jsonify
 			}
 		}
 
+		if (false === current($faq_duplicate_dates)) {
+			throw new RuntimeException(sprintf(
+				'No duplicate dates for %s',
+				$video_id,
+			));
+		}
+
 		return [
 			(
 				sprintf(
