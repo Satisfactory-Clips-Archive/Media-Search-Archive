@@ -76,7 +76,14 @@
             "coffee-stainers\/hannah",
             "environment\/biomes\/paradise-island"
         ],
+        "duplicates": [
+            "GvMq40xfqns",
+            "tVI4gHKbb_I",
+            "yt-5NBgetrxtpw,7020.05441,7059.568812"
+        ],
         "seealso": [
+            "oHHr-VYsx0k",
+            "yt-5NBgetrxtpw,7246.361129,7328.881836354332",
             "Yw66GuDQaus"
         ]
     },
@@ -2717,8 +2724,8 @@
             "satisfactory-updates\/seasonal-events\/fics-mas"
         ],
         "seealso": [
-            "yt-ToXUov_ylfo,9692.197745,9785.21217",
-            "MA3Ixcvf4G4"
+            "MA3Ixcvf4G4",
+            "yt-ToXUov_ylfo,9692.197745,9785.21217"
         ]
     },
     "QfilIQUMnfI": {
@@ -3627,8 +3634,8 @@
             "trolling"
         ],
         "seealso": [
-            "yt-ToXUov_ylfo,10922.544677,10935.720306",
-            "KtQiaEntVDQ"
+            "KtQiaEntVDQ",
+            "yt-ToXUov_ylfo,10922.544677,10935.720306"
         ]
     },
     "44UilmfNRMY": {
@@ -5220,8 +5227,8 @@
             "satisfactory-updates\/pending\/satisfactory-update-8"
         ],
         "seealso": [
-            "yt-ToXUov_ylfo,9637.412759192577,9663.714391",
-            "Vj94QBTvMgE"
+            "Vj94QBTvMgE",
+            "yt-ToXUov_ylfo,9637.412759192577,9663.714391"
         ]
     },
     "Bhw5aDw85uY": {
@@ -5355,7 +5362,6 @@
             "environment\/biomes\/paradise-island"
         ],
         "seealso": [
-            "tVI4gHKbb_I",
             "yt-ToXUov_ylfo,6742.264973,6894.532268"
         ]
     },
@@ -10600,8 +10606,8 @@
             "features\/possible-features\/console-release"
         ],
         "seealso": [
-            "yt-ToXUov_ylfo,9554.594138,9584.523964",
-            "D8KFt3dK700"
+            "D8KFt3dK700",
+            "yt-ToXUov_ylfo,9554.594138,9584.523964"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
@@ -12082,18 +12088,10 @@
         "topics": [
             "environment\/biomes\/paradise-island"
         ],
-        "duplicates": [
-            "GvMq40xfqns",
-            "yt-5NBgetrxtpw,7020.05441,7059.568812"
-        ],
-        "seealso": [
-            "oHHr-VYsx0k",
-            "yt-5NBgetrxtpw,7246.361129,7328.881836354332",
-            "Yw66GuDQaus"
-        ],
         "seealso_video_cards": [
             "5NBgetrxtpw"
-        ]
+        ],
+        "duplicatedby": "yt-ToXUov_ylfo,6742.264973,6894.532268"
     },
     "CC-yQlPvt-o": {
         "title": "Q&A: Do you have any desire to implement any Mods from the Community and make them part the game?",
@@ -13143,7 +13141,7 @@
             "satisfactory-updates\/pending\/satisfactory-update-8",
             "satisfactory-updates\/world-update"
         ],
-        "duplicatedby": "tVI4gHKbb_I"
+        "duplicatedby": "yt-ToXUov_ylfo,6742.264973,6894.532268"
     },
     "yt-5NBgetrxtpw,7059.568812,7122.389337": {
         "title": "Q&A: Do you have any information about the Beacon Recipe?",
@@ -13227,7 +13225,7 @@
             "satisfactory-updates\/world-update"
         ],
         "seealso": [
-            "tVI4gHKbb_I"
+            "yt-ToXUov_ylfo,6742.264973,6894.532268"
         ]
     },
     "yt-5NBgetrxtpw,7328.881836354332,7524.814798514275": {
@@ -14658,7 +14656,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqNB46ydy3DN3k5Pn2ZyHrS"
         ],
-        "duplicatedby": "tVI4gHKbb_I"
+        "duplicatedby": "yt-ToXUov_ylfo,6742.264973,6894.532268"
     },
     "NHAl4GYVVFQ": {
         "title": "Q&A: When is the next bugfix coming?",
@@ -20128,8 +20126,8 @@
         ],
         "seealso": [
             "hJjxoDXNg5A",
-            "tVI4gHKbb_I",
-            "yt-5NBgetrxtpw,7122.389337,7189.340929"
+            "yt-5NBgetrxtpw,7122.389337,7189.340929",
+            "yt-ToXUov_ylfo,6742.264973,6894.532268"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErav3ZtCkRrz9pFsE151oDk"
@@ -20991,10 +20989,10 @@
             "yt-fVCw51TOHeA,6499.77807,6503.172942"
         ],
         "seealso": [
-            "yt-ToXUov_ylfo,9692.197745,9785.21217",
             "loIp2bJMtkM",
             "rUMZTGJBZNk",
-            "ta0gk-D5Wl8"
+            "ta0gk-D5Wl8",
+            "yt-ToXUov_ylfo,9692.197745,9785.21217"
         ]
     },
     "yt-fVCw51TOHeA,6490.626193,6499.250417": {
@@ -58527,8 +58525,8 @@
             "satisfactory-updates\/released\/satisfactory-update-5\/northern-forest-world-update-q-and-a-with-hannah"
         ],
         "seealso": [
-            "yt-ToXUov_ylfo,9666.280783168102,9692.197745",
-            "ItA7tWo8dsc"
+            "ItA7tWo8dsc",
+            "yt-ToXUov_ylfo,9666.280783168102,9692.197745"
         ],
         "seealso_video_cards": [
             "Gu_MSs0-G-Y",
@@ -101795,8 +101793,8 @@
         ],
         "seealso": [
             "BM5bcGcDAws",
-            "yt-ToXUov_ylfo,9666.280783168102,9692.197745",
-            "HnS56FsEXSU"
+            "HnS56FsEXSU",
+            "yt-ToXUov_ylfo,9666.280783168102,9692.197745"
         ]
     },
     "yt-Dtm6xIj-wM4,271.997687,278.693237": {
