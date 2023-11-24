@@ -66,6 +66,11 @@ class Injected
 	 */
 	public array $playlists_date_ref;
 
+	/**
+	 * @var array{playlists:non-empty-list<string>, non-empty-array<string, non-empty-list<string>>}
+	 */
+	public array $yt_shorts;
+
 	public function __construct(
 		YouTubeApiWrapper $api,
 		Slugify $slugify,
@@ -98,6 +103,11 @@ class Injected
 
 		$this->sorting = new Sorting($this->cache);
 		$this->sorting->playlists_date_ref = $this->playlists_date_ref;
+
+		/**
+		 * @var array{playlists:non-empty-list<string>, non-empty-array<string, non-empty-list<string>>}
+		 */
+		$this->yt_shorts = json_decode(file_get_contents(__DIR__ . '/../data/yt-shorts.json'), true);
 	}
 
 	/**
@@ -306,6 +316,18 @@ class Injected
 	public function all_video_ids() : array
 	{
 		$all_video_ids = array_keys($this->cache['playlistItems']);
+		$shorts_ids = array_values(array_reduce(
+			array_map('array_values', $this->yt_shorts['videos']),
+			static function (array $was, array $is): array {
+				return array_merge($was, $is);
+			},
+			[]
+		));
+
+		$all_video_ids = array_filter($all_video_ids, static function (string $maybe) use ($shorts_ids) : bool {
+			return !in_array($maybe, $shorts_ids, true);
+		});
+
 		usort($all_video_ids, [$this->sorting, 'sort_video_ids_by_date']);
 
 		return $all_video_ids;

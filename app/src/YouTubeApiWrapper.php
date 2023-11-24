@@ -147,6 +147,9 @@ class YouTubeApiWrapper
 			$cache_file_objects = __DIR__ . '/../data/api-cache/playlists-unmapped.json';
 			$cache_file_objects_was = __DIR__ . '/../data/api-cache/playlists-unmapped--.json';
 
+			/** @var non-empty-list<string> $yt_shorts */
+			$yt_shorts = json_decode(file_get_contents(__DIR__ . '/../data/yt-shorts.json'))->playlists;
+
 			$was_as_objects = null;
 
 			if (is_file($cache_file)) {
@@ -228,7 +231,11 @@ class YouTubeApiWrapper
 
 			$playlists = array_filter(
 				$playlists,
-				static function (string $a, string $b) : bool {
+				static function (string $a, string $b) use ($yt_shorts) : bool {
+					if (in_array($b, $yt_shorts, true)) {
+						return false;
+					}
+
 					return $a !== $b;
 				},
 				ARRAY_FILTER_USE_BOTH
@@ -337,9 +344,17 @@ class YouTubeApiWrapper
 				[]
 			);
 
+			$yt_shorts = array_reduce(
+				json_decode(file_get_contents(__DIR__ . '/../data/yt-shorts.json'), true)['videos'],
+				static function (array $was, array $is): array {
+					return array_merge($was, $is);
+				},
+				[]
+			);
+
 			$filtered = array_filter(
 				$reduced,
-				static function (string $video_id) : bool {
+				static function (string $video_id) use ($yt_shorts) : bool {
 					$cache_file = (
 						__DIR__
 						. '/../data/api-cache/videos/'
@@ -352,6 +367,10 @@ class YouTubeApiWrapper
 						. $video_id
 						. '.json'
 					);
+
+					if (in_array($video_id, $yt_shorts, true)) {
+						return false;
+					}
 
 					if (
 						realpath(
