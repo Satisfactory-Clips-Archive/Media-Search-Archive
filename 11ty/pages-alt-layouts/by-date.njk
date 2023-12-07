@@ -10,7 +10,7 @@ layout: livestream
 <aside>
 	<p>Community Highlights: <a href="https://communityhighlights.satisfactory.video/dated/{{group.date}}/">{{group.date}}</a>
 {% for highlights in community_highlights[group.date] %}
-	<a href="{{highlights.link}}">{{highlights.title}}</a>
+	<a href="{{highlights.link}}"><abbr title="Video on Demand">VOD</abbr>: {{highlights.title}}</a>
 {% endfor %}
 	</p>
 </aside>
