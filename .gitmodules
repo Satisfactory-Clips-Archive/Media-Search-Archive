@@ -4,3 +4,6 @@
 [submodule "blamehannah.com"]
 	path = blamehannah.com
 	url = https://github.com/Satisfactory-Clips-Archive/blamehannah.com.git
+[submodule "Community-Highlights-Archive-Data"]
+	path = Community-Highlights-Archive-Data
+	url = https://github.com/Satisfactory-Clips-Archive/Community-Highlights-Archive-Data
