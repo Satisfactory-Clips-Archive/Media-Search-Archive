@@ -36,6 +36,7 @@ shell-npm:
 		satisfactory-clips-archive/media-search-archive:npm-latest
 
 update:
+	php app/check-yt-shorts.php
 	php app/app.php
 	npm run -s typescript
 	cd . && ./node_modules/.bin/ts-node ./app/title-pattern-check.ts

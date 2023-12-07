@@ -967,7 +967,7 @@ class YouTubeApiWrapper
 	 *
 	 * @return list<string>
 	 */
-	private function listPlaylistItems(
+	public function listPlaylistItems(
 		array $args,
 		array $out = []
 	) : array {
