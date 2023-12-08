@@ -6,15 +6,6 @@ pagination:
 permalink: "{{ group.date }}/"
 layout: livestream
 ---
-{% if group.date in community_highlights %}
-<aside>
-	<p>Community Highlights: <a href="https://communityhighlights.satisfactory.video/dated/{{group.date}}/">{{group.date}}</a>
-{% for highlights in community_highlights[group.date] %}
-	<a href="{{highlights.link}}"><abbr title="Video on Demand">VOD</abbr>: {{highlights.title}}</a>
-{% endfor %}
-	</p>
-</aside>
-{% endif %}
 {% for external in group.externals %}
 <section
 	itemscope

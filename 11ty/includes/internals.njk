@@ -5,6 +5,13 @@
 	<h1>{{internal.title}}</h1>
 	{% if internal.contentUrl %}
 		<p><a href="{{internal.contentUrl}}" rel="noopener" target="_blank">External Link</a></p>
+{% if group.date in community_highlights %}
+		<p>Community Highlights: <a href="https://communityhighlights.satisfactory.video/dated/{{group.date}}/">archive</a>,
+{% for highlights in community_highlights[group.date] %}
+			<a href="{{highlights.link}}" title="VOD for {{highlights.title}}"><abbr title="Video on Demand">VOD</abbr></a>
+{% endfor %}
+		</p>
+{% endif %}
 	{% endif %}
 	</header>
 	{% for category in internal.categorised %}
