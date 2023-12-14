@@ -4,6 +4,7 @@
 		"\\?$"
 	],
 	"talk": [
+		"^The Official Satisfactory PODCAST: Episode \\d+$",
 		" - Last stream with Jace",
 		"^(?:[^:]+ (?:Talk|Math)|(?:(?:Snutt) )?PSA|Special Guest|State of Stream|Snutt talk): ",
 		"^Hannah talks ",
