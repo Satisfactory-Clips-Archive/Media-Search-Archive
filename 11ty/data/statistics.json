@@ -5,11 +5,11 @@
     },
     {
         "title": "Total Topics",
-        "count": 515
+        "count": 523
     },
     {
         "title": "Number of days worth of source streams & videos indexed",
-        "count": 299
+        "count": 300
     },
     {
         "title": "Clips probably having standard description",
@@ -28,7 +28,7 @@
     },
     {
         "title": "Topics with structured data",
-        "progress": "0.137864",
-        "percentage": "13.78"
+        "progress": "0.135755",
+        "percentage": "13.57"
     }
 ]

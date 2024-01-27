@@ -1913,6 +1913,30 @@ class TopicData
 		'PLbjDnnBIxiEpI1ms7j_6oBnugsgNUvKr-' => [ // Mikael
 			'Coffee Stainers',
 		],
+		'Vladimir' => [
+			'Coffee Stainers',
+		],
+		'Guru' => [
+			'Coffee Stainers',
+		],
+		'David' => [
+			'Coffee Stainers',
+		],
+		'Gab' => [
+			'Coffee Stainers',
+		],
+		'Max' => [
+			'Coffee Stainers',
+		],
+		'Vilhelm' => [
+			'Coffee Stainers',
+		],
+		'Conrad' => [
+			'Coffee Stainers',
+		],
+		'K2' => [
+			'Coffee Stainers',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
