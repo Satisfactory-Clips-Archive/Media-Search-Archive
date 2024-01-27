@@ -466,12 +466,6 @@ location /topics/update-7-patch-notes-video-behind-the-scenes/index.html {
 location /topics/update-7-patch-notes-video-behind-the-scenes {
 	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-7-patch-notes-video/update-7-patch-notes-video-behind-the-scenes/$is_args$args;
 }
-location /topics/satisfactory-updates/speculative/satisfactory-update-8/index.html {
-	return 301 /topics/satisfactory-updates/pending/satisfactory-update-8/$is_args$args;
-}
-location /topics/satisfactory-updates/speculative/satisfactory-update-8 {
-	return 301 /topics/satisfactory-updates/pending/satisfactory-update-8/$is_args$args;
-}
 location /topics/features/transportation/hyper-tubes/index.html {
 	return 301 /topics/features/transportation/hypertubes/$is_args$args;
 }
@@ -489,4 +483,16 @@ location /topics/update-8-patch-notes-video/index.html {
 }
 location /topics/update-8-patch-notes-video {
 	return 301 /topics/satisfactory-updates/teasers-and-trailers/update-8-patch-notes-video/$is_args$args;
+}
+location /topics/satisfactory-updates/speculative/satisfactory-update-8/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-8/$is_args$args;
+}
+location /topics/satisfactory-updates/speculative/satisfactory-update-8 {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-8/$is_args$args;
+}
+location /topics/satisfactory-updates/pending/satisfactory-update-8/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-8/$is_args$args;
+}
+location /topics/satisfactory-updates/pending/satisfactory-update-8 {
+	return 301 /topics/satisfactory-updates/released/satisfactory-update-8/$is_args$args;
 }
