@@ -117,6 +117,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
+		'PLbjDnnBIxiErYA3_jozBFWgptVsuJEatP' => [ // 1.0 Teasers
+			900,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
 		'Update 5 Quiz: Underrated/Overrated' => [
 			1,
 			'Satisfactory Updates',
@@ -250,6 +255,12 @@ class TopicData
 			1000,
 			'Satisfactory Updates',
 			'Pending',
+		],
+		'PLbjDnnBIxiErF0fgx4tkyBd-6AS142lat' => [ // Satisfactory 1.0 Closed Beta
+			1001,
+			'Satisfactory Updates',
+			'Pending',
+			'Satisfactory 1.0',
 		],
 		'PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS' => [ // Satisfactory 2.0
 			2000,

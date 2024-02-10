@@ -57,6 +57,7 @@ class Slugify extends Base
 			'Lizard Doggo Biology' => 'biology',
 			'Snutt\'s on-stream playthrough' => 'on-stream-playthrough',
 			'Snutt\'s Adventures with Creatures' => 'adventures-with-creatures',
+			'Satisfactory 1.0 Closed Beta' => 'closed-beta',
 		];
 
 		parent::__construct($options, $provider);
