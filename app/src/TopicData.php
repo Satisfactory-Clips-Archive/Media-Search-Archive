@@ -1615,6 +1615,9 @@ class TopicData
 			'Embracer Group',
 			'Coffee Stain Holding',
 		],
+		'Ghost Ship Games' => [
+			'Embracer Group',
+		],
 		'PLbjDnnBIxiEoFLmKQaDWq_Rl7qd-H_GIA' => [ // Flannel
 			'Coffee Stainers',
 		],
