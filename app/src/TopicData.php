@@ -1191,8 +1191,7 @@ class TopicData
 		],
 		'PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK' => [ // Achievements
 			'Features',
-			'Possible Features',
-			'Third-Party Service Integration',
+			'Planned Features',
 		],
 		'PLbjDnnBIxiEoIpaioyzE9nqrU_5CxfkUC' => [ // Miner
 			'Features',

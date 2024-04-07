@@ -1,4 +1,509 @@
 {
+    "LK42vx3Ei70": {
+        "title": "Q&A: Can the new Dedicated Server port number be changed?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/multiplayer\/dedicated-servers",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "o3Mu0GJSpPk": {
+        "title": "Q&A: Was there any content that came from requests or modders that was not planned originally?",
+        "date": "2024-04-02",
+        "topics": [
+            "community",
+            "mods\/mods-vs-features"
+        ],
+        "seealso": [
+            "gDeZve9tX_s",
+            "Siu0XZLwf2o"
+        ]
+    },
+    "LVTC_xoXC58": {
+        "title": "Q&A: Will Rain be added back in 1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "environment\/weather-systems",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "duplicates": [
+            "6_NXqu5n558",
+            "awYa_yKQf7I",
+            "iwV_TROqXlc"
+        ],
+        "seealso": [
+            "5Opts7tOZys",
+            "FFwnguFgMYk",
+            "naWYQPyx1VU"
+        ]
+    },
+    "PYJlABJsMT0": {
+        "title": "Q&A: How many more hours will 1.0 content add?",
+        "date": "2024-04-02",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "seealso": [
+            "uNBTNpdImkM"
+        ]
+    },
+    "zWsf3PNNAKc": {
+        "title": "Q&A: Video this Friday?",
+        "date": "2024-04-02",
+        "topics": [
+            "satisfactory-updates\/teasers-and-trailers\/1-0-teasers"
+        ],
+        "seealso": [
+            "zVL5GA8Hs7Y"
+        ]
+    },
+    "9J6E-3J-v30": {
+        "title": "Q&A: How many sales has the Soundtrack as of now?",
+        "date": "2024-04-02",
+        "topics": [
+            "retail\/steam-store",
+            "soundtrack"
+        ],
+        "replaces": [
+            "yt-lK-kN8QOrJw,1572.1038666666666,1619.7181",
+            "yt-ToXUov_ylfo,9595.595299,9623.857765397632"
+        ],
+        "seealso": [
+            "2NgEQ7n2y-g",
+            "3CC_Mn2jBbE",
+            "mfx77NlzfJI",
+            "VlJsz3lP4qo",
+            "yiZORn32BA0"
+        ]
+    },
+    "nGe2U8QiZ4U": {
+        "title": "Q&A: Will there be a \"hard mode\" or an \"easy mode\" in 1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/game-modes",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "seealso": [
+            "vMgvD3QPJqM"
+        ]
+    },
+    "WleMMuaUikk": {
+        "title": "Q&A: Will saves carry across to 1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/save-system",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "z7cPeaNZwvY": {
+        "title": "Q&A: Will there be any future engine updates post-1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "pgXCVTm9kdc"
+        ]
+    },
+    "twdKBk28OeA": {
+        "title": "Q&A: What are the chances of a sequel to Satisfactory?",
+        "date": "2024-04-02",
+        "topics": [
+            "off-topic\/terrible-jokes",
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/speculative\/satisfactory-2-0",
+            "satisfactory-updates\/speculative\/satisfactory-3-0"
+        ],
+        "duplicates": [
+            "btvWr5Xtdyo",
+            "DPa5d5MrNDw",
+            "jCdv8qJMTKo",
+            "jdNrrWCP_ZY",
+            "NGfVEfni-DM",
+            "N_PROqMFWaY",
+            "xPMJIQ1VbY4"
+        ],
+        "seealso": [
+            "-mQ7p9GwJ7k",
+            "5lP82eZn9ZM",
+            "qL0kXIhe6nw"
+        ]
+    },
+    "nVKtt9rI4Kk": {
+        "title": "Q&A: How much has performance improved in 1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "o2f5UQq9O_0": {
+        "title": "Q&A: Is 1.0 something you're confident on being released this year?",
+        "date": "2024-04-02",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "QlpiAzJcvvg": {
+        "title": "Q&A: Does Snutt miss being a programmer on the game?",
+        "date": "2024-04-02",
+        "topics": [
+            "coffee-stainers\/snutt",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "seealso": [
+            "ymMXE01z6CE",
+            "yt-iVDRQg_aWpU,5385.766201503086,5400.303715"
+        ]
+    },
+    "efDLS8kfu4U": {
+        "title": "Q&A: Since Flowers are no longer part of the special foliage system will they get Nanite support?",
+        "date": "2024-04-02",
+        "topics": [
+            "environment\/plants",
+            "features\/paint",
+            "features\/unplanned-features",
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "jqV5D-SbU2Q"
+        ]
+    },
+    "A_sIm0EFV8Y": {
+        "title": "Q&A: Will 1.0 release before Summer vacation?",
+        "date": "2024-04-02",
+        "topics": [
+            "embracer-group\/coffee-stain-holding\/coffee-stain-studios",
+            "off-topic\/sweden",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "seealso": [
+            "JCjsuvpwbPI",
+            "Ofu4g8smOZ8"
+        ]
+    },
+    "m36433IHoyc": {
+        "title": "Q&A: Did moving to 5.3 set you back at all?",
+        "date": "2024-04-02",
+        "topics": [
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "52PI8tzVZ8M"
+        ]
+    },
+    "e8csDaggVHY": {
+        "title": "Q&A: Will the early-game Recipes change?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/crafting\/recipes",
+            "features\/crafting\/recipes\/alternate-recipes",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "seealso": [
+            "A6j0dU1ZGfk"
+        ]
+    },
+    "jqV5D-SbU2Q": {
+        "title": "Q&A: Did Hannah get upset about the flowers being removed?",
+        "date": "2024-04-02",
+        "topics": [
+            "coffee-stainers\/hannah",
+            "features\/paint",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "seealso": [
+            "efDLS8kfu4U"
+        ]
+    },
+    "jGyiKtQu_Ag": {
+        "title": "Q&A: If Snutt is the Swedish Chef, what Muppet is Mikael?",
+        "date": "2024-04-02",
+        "topics": [
+            "coffee-stainers\/mikael",
+            "coffee-stainers\/snutt",
+            "features\/possible-features\/console-release",
+            "off-topic\/sweden",
+            "satisfactory-updates\/teasers-and-trailers\/1-0-teasers",
+            "trolling"
+        ]
+    },
+    "vhUL810pDxE": {
+        "title": "Q&A: What exactly is the AI Limiter?",
+        "date": "2024-04-02",
+        "topics": [
+            "environment\/resources"
+        ]
+    },
+    "pgXCVTm9kdc": {
+        "title": "Q&A: Has the dev team looked at 5.4 yet?",
+        "date": "2024-04-02",
+        "topics": [
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "z7cPeaNZwvY"
+        ]
+    },
+    "TPNFy0zJVQE": {
+        "title": "Q&A: When 1.0 launches will you publish the .umap file to help modders?",
+        "date": "2024-04-02",
+        "topics": [
+            "environment\/world-map",
+            "mods",
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "technology\/unreal-engine"
+        ],
+        "seealso": [
+            "IN-Ij6BTzOE"
+        ]
+    },
+    "jn7n_ZS_xlM": {
+        "title": "Q&A: Any Steam Achievements coming in 1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/planned-features\/achievements",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "duplicates": [
+            "3KRCUE3VOxE",
+            "5hha6bAuTTc",
+            "9tNel2ksYnI",
+            "bkjIZH7adWI",
+            "bthe_Dhs6uo",
+            "DRVyx1w9oNc",
+            "fX8aYh6eokw",
+            "G8K0Bjs8mNo",
+            "Gi08SVnHyLU",
+            "i-9UAyVFe6s",
+            "i-NoVpZsHS0",
+            "i8-Bm9QidFw",
+            "Kf33x3tiM5w",
+            "scxr_vl9Pzk",
+            "tO60WajNJis",
+            "UKot9dXEPXk",
+            "vrBRxuX6YyA",
+            "wMol1AoQSFQ",
+            "yt-cF3QleeEiJo,6652.069241,6679.928238",
+            "yt-iFAy1NZUOGU,119.72,131.28",
+            "yt-NlIVwoRqjVk,301.33436666666665,346.41273333333334",
+            "yt-rATcozDE25c,435.5351,476.04223333333334",
+            "yt-Z6bo0pjYghk,5794.547222,5807.542091",
+            "_wKUYaG0Hwc"
+        ],
+        "seealso": [
+            "Af1ZflWKJoU",
+            "yt-GeKE40L2cSw,3145.932215,3212.465834"
+        ]
+    },
+    "I1mbAHhkIfE": {
+        "title": "Q&A: Since Virtual Shadow Maps are production-ready in 5.3, has your position changed?",
+        "date": "2024-04-02",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "technology\/graphics",
+            "technology\/unreal-engine\/unreal-engine-5"
+        ],
+        "seealso": [
+            "yt-dY__x2dq7Sk,367.4671,503.3028"
+        ]
+    },
+    "0Y27LVIA-cY": {
+        "title": "Q&A: Why did the Pioneer trash Pilgor's birthday invite?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/pioneer",
+            "off-topic\/goat-simulator"
+        ]
+    },
+    "rokM96zXMEE": {
+        "title": "Q&A: As a Community Manager, should Mikael not also wear a beanie?",
+        "date": "2024-04-02",
+        "topics": [
+            "coffee-stainers\/jace",
+            "coffee-stainers\/mikael",
+            "coffee-stainers\/snutt"
+        ],
+        "seealso": [
+            "C570R_zqRv4",
+            "MezRAcpczbY"
+        ]
+    },
+    "5qTZ_nG4w58": {
+        "title": "Q&A: Are Mk.2 Pipes lowered in bandwidth in 1.0, or is the issue fixed?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/fluids\/pipes",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "duplciates": [
+            "gptVs-XZA_4",
+            "TRGU0TmrMxk",
+            "kelwvyM2sOI",
+            "6cDYMZdF3fk",
+            "1mrJkO17-nw"
+        ],
+        "seealso": [
+            "0w6CZ5yCTy8",
+            "4BOuWtw1xoc",
+            "NyhQ5YEDFpw",
+            "rpM6yCKgW7w",
+            "zbbsnx-fNoA"
+        ]
+    },
+    "FpyBdDEx1ms": {
+        "title": "Q&A: Will the Soundtrack be updated for 1.0 with new music?",
+        "date": "2024-04-02",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "soundtrack"
+        ],
+        "replaces": [
+            "A9BxvSR3aa0"
+        ]
+    },
+    "NlF0Vx7DlXo": {
+        "title": "Q&A: If the game isn't in the Milky Way, what galaxy is it?",
+        "date": "2024-04-02",
+        "topics": [
+            "coffee-stainers\/snutt",
+            "story-and-lore"
+        ]
+    },
+    "XIJi4t2Bbss": {
+        "title": "Q&A: Will the Somersloop \/ Mercer Sphere be single-use items or reusable like the Power Shards?",
+        "date": "2024-04-02",
+        "topics": [
+            "environment\/resources\/mercer-sphere",
+            "environment\/resources\/power-slug",
+            "environment\/resources\/somersloop",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "LNnS_yvfchw": {
+        "title": "Q&A: Is there any technical info behind the switch video?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/possible-features\/console-release",
+            "trolling"
+        ]
+    },
+    "eWvS2pmfZtA": {
+        "title": "Q&A: Did you cancel last week's stream because you were scared of the biogen questions?",
+        "date": "2024-04-02",
+        "topics": [
+            "coffee-stainers\/snutt",
+            "features\/buildings\/biomass-burner",
+            "satisfactory-updates\/teasers-and-trailers\/1-0-teasers"
+        ]
+    },
+    "jUHzPr-nLlE": {
+        "title": "Q&A: Are Blueprints getting any updates in 1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/blueprints",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "jjqbZZsK7SQ": {
+        "title": "Q&A: Should we make a new save for 1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/save-system",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "duplicates": [
+            "-w31iRNJdc4",
+            "fbIm1CfGGZQ",
+            "PPu_s5Gg8gs",
+            "XWaSY4K9P0U",
+            "z9tjeFkYXAY",
+            "zrHzxTVBc3w",
+            "_mN45-Fc7G0"
+        ],
+        "seealso": [
+            "3uqePr4WNrw",
+            "Jugnbd6aYwQ"
+        ]
+    },
+    "l0CzyhMReHA": {
+        "title": "Q&A: If there would be DLC after 1.0, would that be paid, free, or both?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/possible-features\/dlc",
+            "features\/possible-features\/dlc\/flushable-toilet-dlc",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "seealso": [
+            "crpQ5ZyNVMo"
+        ]
+    },
+    "gyvrqnomgaA": {
+        "title": "Q&A: Do you like Jazz?",
+        "date": "2024-04-02",
+        "topics": [
+            "off-topic"
+        ]
+    },
+    "fL8uc7hTme4": {
+        "title": "Q&A: Will Beacons in 1.0 just disappear or will we have to clear production lines manually?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/equipment\/beacon",
+            "features\/power-management\/nuclear-energy\/nuclear-refinement",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "seealso": [
+            "UweNG7yhAXM"
+        ]
+    },
+    "NvTpnuqlNqM": {
+        "title": "Q&A: Why is Snutt's handle \"bustasnutt\" ?",
+        "date": "2024-04-02",
+        "topics": [
+            "coffee-stainers\/snutt"
+        ]
+    },
+    "nA1alu4WjQ4": {
+        "title": "Q&A: What single item do you see having more use in 1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "environment\/resources\/mercer-sphere",
+            "environment\/resources\/somersloop",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ]
+    },
+    "bW0wie8AIyo": {
+        "title": "Q&A: Will the Refinery spam be addressed in 1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "features\/buildings\/refinery",
+            "features\/crafting\/recipes",
+            "features\/crafting\/recipes\/alternate-recipes",
+            "satisfactory-updates\/pending\/satisfactory-1-0"
+        ],
+        "duplicates": [
+            "FIsHFVHNdNU",
+            "Fp1WczBseIM",
+            "mZ4l1leFAWY",
+            "w6iM0Uigx24",
+            "ZUAoFCpE1vY"
+        ],
+        "seealso": [
+            "6Ow19L00bDc",
+            "DBIkWUDxdIk",
+            "JwRM9pJ7Htc"
+        ]
+    },
+    "zUKAEO-PokA": {
+        "title": "Q&A: Will there be an Experimental version after 1.0?",
+        "date": "2024-04-02",
+        "topics": [
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/release-builds"
+        ]
+    },
     "HUmedz9mghE": {
         "title": "Q&A: How much time did it take to develop a playable concept of Satisfactory initially?",
         "date": "2024-03-19",
@@ -355,6 +860,9 @@
         "date": "2024-03-19",
         "topics": [
             "satisfactory-updates\/teasers-and-trailers\/1-0-teasers"
+        ],
+        "seealso": [
+            "zWsf3PNNAKc"
         ]
     },
     "FsEY2MmOvJU": {
@@ -469,6 +977,9 @@
             "features\/build-modes\/zooping",
             "features\/fluids\/pipes",
             "mods\/mods-vs-features"
+        ],
+        "seealso": [
+            "o3Mu0GJSpPk"
         ]
     },
     "bcZiYa8JY1g": {
@@ -1601,6 +2112,7 @@
             "e4jKv2dwk0Q",
             "gAO072mzibQ",
             "GWygJUeqbHU",
+            "l0CzyhMReHA",
             "m4WsPu7RulA",
             "P7I5wjusdjs",
             "QL_YLSmR5pc",
@@ -1757,6 +2269,7 @@
             "technology\/unreal-engine\/unreal-engine-5"
         ],
         "seealso": [
+            "m36433IHoyc",
             "YsqvHXSzXFo"
         ]
     },
@@ -1862,15 +2375,7 @@
             "satisfactory-updates\/released\/satisfactory-update-8",
             "technology\/unreal-engine\/unreal-engine-5"
         ],
-        "duplicates": [
-            "6_NXqu5n558",
-            "iwV_TROqXlc"
-        ],
-        "seealso": [
-            "5Opts7tOZys",
-            "FFwnguFgMYk",
-            "naWYQPyx1VU"
-        ]
+        "duplicatedby": "LVTC_xoXC58"
     },
     "Xcx1ZQkSWss": {
         "title": "Q&A: Are you able to give something special to people that played in EA?",
@@ -2038,7 +2543,8 @@
         "topics": [
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "soundtrack"
-        ]
+        ],
+        "replacedby": "FpyBdDEx1ms"
     },
     "3CC_Mn2jBbE": {
         "title": "Q&A: Are there any plans to significantly improve save times?",
@@ -2048,7 +2554,7 @@
             "features\/save-system\/autosave"
         ],
         "seealso": [
-            "yt-ToXUov_ylfo,9595.595299,9623.857765397632"
+            "9J6E-3J-v30"
         ]
     },
     "fCrwOxBzBI4": {
@@ -2105,6 +2611,9 @@
         "topics": [
             "coffee-stainers\/snutt",
             "off-topic"
+        ],
+        "seealso": [
+            "rokM96zXMEE"
         ]
     },
     "itxRX2Ubi2E": {
@@ -2424,20 +2933,6 @@
         "topics": [
             "features\/fluids\/pipes",
             "satisfactory-updates\/pending\/satisfactory-1-0"
-        ],
-        "duplciates": [
-            "gptVs-XZA_4",
-            "TRGU0TmrMxk",
-            "kelwvyM2sOI",
-            "6cDYMZdF3fk",
-            "1mrJkO17-nw"
-        ],
-        "seealso": [
-            "0w6CZ5yCTy8",
-            "4BOuWtw1xoc",
-            "NyhQ5YEDFpw",
-            "rpM6yCKgW7w",
-            "zbbsnx-fNoA"
         ]
     },
     "AZaS8bVmHEc": {
@@ -2689,39 +3184,9 @@
         "date": "2024-02-20",
         "topics": [
             "coffee-stainers\/tim",
-            "features\/possible-features\/third-party-service-integration\/achievements",
+            "features\/planned-features\/achievements",
             "features\/power-management\/nuclear-energy\/nuclear-refinement",
             "satisfactory-updates\/pending\/satisfactory-1-0"
-        ],
-        "duplicates": [
-            "3KRCUE3VOxE",
-            "5hha6bAuTTc",
-            "9tNel2ksYnI",
-            "bkjIZH7adWI",
-            "bthe_Dhs6uo",
-            "DRVyx1w9oNc",
-            "fX8aYh6eokw",
-            "G8K0Bjs8mNo",
-            "Gi08SVnHyLU",
-            "i-9UAyVFe6s",
-            "i-NoVpZsHS0",
-            "i8-Bm9QidFw",
-            "Kf33x3tiM5w",
-            "scxr_vl9Pzk",
-            "tO60WajNJis",
-            "UKot9dXEPXk",
-            "vrBRxuX6YyA",
-            "wMol1AoQSFQ",
-            "yt-cF3QleeEiJo,6652.069241,6679.928238",
-            "yt-iFAy1NZUOGU,119.72,131.28",
-            "yt-NlIVwoRqjVk,301.33436666666665,346.41273333333334",
-            "yt-rATcozDE25c,435.5351,476.04223333333334",
-            "yt-Z6bo0pjYghk,5794.547222,5807.542091",
-            "_wKUYaG0Hwc"
-        ],
-        "seealso": [
-            "Af1ZflWKJoU",
-            "yt-GeKE40L2cSw,3145.932215,3212.465834"
         ]
     },
     "8q-naOmF9I4": {
@@ -2862,6 +3327,7 @@
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "seealso": [
+            "kA7f0639QnU",
             "VLbERKY2LUU"
         ]
     },
@@ -3614,18 +4080,7 @@
             "features\/save-system",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicates": [
-            "fbIm1CfGGZQ",
-            "PPu_s5Gg8gs",
-            "XWaSY4K9P0U",
-            "z9tjeFkYXAY",
-            "zrHzxTVBc3w",
-            "_mN45-Fc7G0"
-        ],
-        "seealso": [
-            "3uqePr4WNrw",
-            "Jugnbd6aYwQ"
-        ]
+        "duplicatedby": "jjqbZZsK7SQ"
     },
     "pUpNVhvgfIU": {
         "title": "Q&A: Do we need to buy the game again for 1.0?",
@@ -5493,10 +5948,10 @@
         "title": "Q&A: Can we get a Steam Achievement for playing before 1.0?",
         "date": "2023-12-05",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso": [
-            "7VSFqc8mD1s"
+            "jn7n_ZS_xlM"
         ]
     },
     "9pzJa6aMNFU": {
@@ -5777,6 +6232,7 @@
             "iKLjt35zvEU",
             "iL0zDfbIVi8",
             "quBufOSDaf8",
+            "TPNFy0zJVQE",
             "yt-Rumqu_lyapg,10609.866666666667,10689.526696"
         ]
     },
@@ -6006,6 +6462,7 @@
             "yt-5NBgetrxtpw,7059.568812,7122.389337"
         ],
         "seealso": [
+            "fL8uc7hTme4",
             "fszg24svtsg",
             "HRMC8w8XgGI"
         ]
@@ -6025,7 +6482,7 @@
             "satisfactory-updates\/released\/satisfactory-update-8"
         ],
         "seealso": [
-            "awYa_yKQf7I",
+            "LVTC_xoXC58",
             "yt-ToXUov_ylfo,10936.243830038326,11011.391048"
         ]
     },
@@ -6329,6 +6786,7 @@
             "satisfactory-updates\/speculative\/satisfactory-update-9"
         ],
         "seealso": [
+            "A_sIm0EFV8Y",
             "klbWLwr-xgI",
             "XePoVjZ-dw4"
         ]
@@ -6542,16 +7000,7 @@
         "topics": [
             "soundtrack"
         ],
-        "duplicates": [
-            "yt-lK-kN8QOrJw,1572.1038666666666,1619.7181"
-        ],
-        "seealso": [
-            "2NgEQ7n2y-g",
-            "3CC_Mn2jBbE",
-            "mfx77NlzfJI",
-            "VlJsz3lP4qo",
-            "yiZORn32BA0"
-        ]
+        "replacedby": "9J6E-3J-v30"
     },
     "yt-ToXUov_ylfo,9637.412759192577,9663.714391": {
         "title": "Q&A: Will it rain again?",
@@ -7945,10 +8394,10 @@
         "title": "Q&A: Will you have Achievements on release?",
         "date": "2023-10-17",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements",
+            "features\/planned-features\/achievements",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "pi_CaLSzx1c": {
         "title": "Q&A: How big container work?",
@@ -8436,7 +8885,7 @@
             "technology"
         ],
         "seealso": [
-            "p97oSw1IscA"
+            "5qTZ_nG4w58"
         ]
     },
     "nAHdV6z7YOw": {
@@ -9532,7 +9981,7 @@
             "environment\/weather-systems",
             "satisfactory-updates\/released\/satisfactory-update-8"
         ],
-        "duplicatedby": "awYa_yKQf7I"
+        "duplicatedby": "LVTC_xoXC58"
     },
     "cjt9AurLbU4": {
         "title": "Q&A: Will there be any aesthetic decoration items in the AWESOME Shop like benches, chairs, or bins?",
@@ -10317,7 +10766,7 @@
             "z4cypywhIks",
             "zoDYA4Y9jdE"
         ],
-        "duplicatedby": "yt-ToXUov_ylfo,9595.595299,9623.857765397632"
+        "replacedby": "9J6E-3J-v30"
     },
     "yt-lK-kN8QOrJw,1619.7514666666666,1662.8278333333333": {
         "title": "Q&A: Will we get more Lights to illuminate our factories?",
@@ -10906,8 +11355,8 @@
             "satisfactory-updates\/released\/satisfactory-update-8"
         ],
         "seealso": [
-            "awYa_yKQf7I",
             "LLGqAWe3ROk",
+            "LVTC_xoXC58",
             "Vj94QBTvMgE"
         ]
     },
@@ -11229,6 +11678,9 @@
             "features\/blueprints",
             "satisfactory-updates\/release-builds",
             "satisfactory-updates\/released\/satisfactory-update-8"
+        ],
+        "seealso": [
+            "_QtUE-110yA"
         ]
     },
     "yQ3wcA9qf_U": {
@@ -11309,7 +11761,8 @@
         "seealso": [
             "-ZE3BrvTn1g",
             "3WrMpHoUWFM",
-            "b8BSxuagqLI"
+            "b8BSxuagqLI",
+            "PYJlABJsMT0"
         ]
     },
     "kpS4cF5HvBI": {
@@ -11596,8 +12049,8 @@
             "soundtrack"
         ],
         "seealso": [
-            "yiZORn32BA0",
-            "yt-ToXUov_ylfo,9595.595299,9623.857765397632"
+            "9J6E-3J-v30",
+            "yiZORn32BA0"
         ]
     },
     "-7E7dSs-G44": {
@@ -11984,7 +12437,8 @@
             "mods\/mods-vs-features"
         ],
         "seealso": [
-            "CC-yQlPvt-o"
+            "CC-yQlPvt-o",
+            "o3Mu0GJSpPk"
         ]
     },
     "76qWkVr9TVo": {
@@ -12353,7 +12807,7 @@
         "replaces": [
             "F3CCULMKuAY"
         ],
-        "duplicatedby": "awYa_yKQf7I"
+        "duplicatedby": "LVTC_xoXC58"
     },
     "6_FJ27x2rcg": {
         "title": "Q&A: Will you release the Satisfactory music somewhere, either on Spotify or as a purchase on Steam?",
@@ -14354,19 +14808,7 @@
         "topics": [
             "satisfactory-updates\/speculative\/satisfactory-2-0"
         ],
-        "duplicates": [
-            "btvWr5Xtdyo",
-            "DPa5d5MrNDw",
-            "jCdv8qJMTKo",
-            "jdNrrWCP_ZY",
-            "N_PROqMFWaY",
-            "xPMJIQ1VbY4"
-        ],
-        "seealso": [
-            "-mQ7p9GwJ7k",
-            "5lP82eZn9ZM",
-            "qL0kXIhe6nw"
-        ]
+        "duplicatedby": "twdKBk28OeA"
     },
     "yt-y1Znn6SBS6w,1013.814641,1082.627646": {
         "title": "Q&A: Are you still planning to go to TwitchCon Paris 2023?",
@@ -14958,7 +15400,7 @@
         "topics": [
             "satisfactory-updates\/speculative\/satisfactory-2-0"
         ],
-        "duplicatedby": "NGfVEfni-DM"
+        "duplicatedby": "twdKBk28OeA"
     },
     "O7lGU9fAMt4": {
         "title": "Q&A: Did Snutt ride the train home with the Body Pillow?",
@@ -15206,12 +15648,12 @@
         "date": "2023-06-13",
         "topics": [
             "features\/game-modes\/ags",
-            "features\/possible-features\/third-party-service-integration\/achievements",
+            "features\/planned-features\/achievements",
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "satisfactory-updates\/released\/satisfactory-update-8"
         ],
         "seealso": [
-            "7VSFqc8mD1s"
+            "jn7n_ZS_xlM"
         ]
     },
     "yt-GeKE40L2cSw,3217.609413,3331.754881": {
@@ -19250,6 +19692,7 @@
             "technology\/unreal-engine\/unreal-engine-5"
         ],
         "seealso": [
+            "I1mbAHhkIfE",
             "Q7YCaii5qjo",
             "sgoAU6i2Fjk",
             "yt-5NBgetrxtpw,5757.607474,5766.130244",
@@ -20170,12 +20613,12 @@
         "title": "Q&A: Will you add any Achievements?",
         "date": "2023-03-14",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "iXXKcGnlW7I": {
         "title": "Q&A: Swatch labels?",
@@ -20553,12 +20996,12 @@
         "title": "Q&A: Are Steam Achievements planned?",
         "date": "2023-03-07",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "luIiJ-935TU": {
         "title": "Q&A: Video this Friday?",
@@ -21188,7 +21631,7 @@
             "technology"
         ],
         "seealso": [
-            "p97oSw1IscA"
+            "5qTZ_nG4w58"
         ]
     },
     "4lCz4D1pgV4": {
@@ -21918,7 +22361,7 @@
             "technology"
         ],
         "seealso": [
-            "p97oSw1IscA",
+            "5qTZ_nG4w58",
             "pJBLbD8iqEo",
             "UC-nv6xc1CY"
         ]
@@ -22412,12 +22855,12 @@
         "title": "Q&A: Are you going to add Achievements?",
         "date": "2023-02-07",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "ccnVx6a3P2A": {
         "title": "Q&A: Can we ask for the next game after Satisfactory on the QA Site?",
@@ -22617,20 +23060,10 @@
             "features\/crafting\/recipes",
             "features\/requested-features"
         ],
-        "duplicates": [
-            "FIsHFVHNdNU",
-            "Fp1WczBseIM",
-            "mZ4l1leFAWY",
-            "ZUAoFCpE1vY"
-        ],
-        "seealso": [
-            "6Ow19L00bDc",
-            "DBIkWUDxdIk",
-            "JwRM9pJ7Htc"
-        ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErPq-K_XJmklK3wFLBycvVr"
-        ]
+        ],
+        "duplicatedby": "bW0wie8AIyo"
     },
     "yF9Kx1FaRnM": {
         "title": "Q&A: When is Satisfactory e-sports coming?",
@@ -24927,7 +25360,7 @@
         ],
         "seealso": [
             "fYAvTIMRZkM",
-            "NGfVEfni-DM"
+            "twdKBk28OeA"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqWsWfqsODRxzdiXYbKbHzX"
@@ -26122,6 +26555,7 @@
         ],
         "seealso": [
             "07skmCOlWLk",
+            "QlpiAzJcvvg",
             "yt-iVDRQg_aWpU,5385.766201503086,5400.303715"
         ],
         "seealso_video_cards": [
@@ -29412,8 +29846,8 @@
             "features\/requested-features"
         ],
         "seealso": [
+            "bW0wie8AIyo",
             "hueKBGRZMCk",
-            "w6iM0Uigx24",
             "yt-NlIVwoRqjVk,917.1162,957.1562"
         ],
         "seealso_topic_cards": [
@@ -34252,14 +34686,14 @@
         "title": "Q&A: Will there be Achievements for 1.0?",
         "date": "2022-07-05",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements",
+            "features\/planned-features\/achievements",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT",
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "MrPbasBXKEQ": {
         "title": "Q&A: Will the alt Nuclear Fuel be part of the next Update?",
@@ -34875,7 +35309,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS"
         ],
-        "duplicatedby": "NGfVEfni-DM"
+        "duplicatedby": "twdKBk28OeA"
     },
     "-xHKBN-3tiM": {
         "title": "Q&A: A harvester Vehicle?",
@@ -34924,7 +35358,7 @@
             "trolling"
         ],
         "seealso": [
-            "NGfVEfni-DM"
+            "twdKBk28OeA"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErbdgIq2TL2rTjyGvOiwC9O",
@@ -35065,7 +35499,7 @@
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT",
             "PLbjDnnBIxiEoVPxq0wwyMpJfdC5xitGeZ"
         ],
-        "duplicatedby": "-w31iRNJdc4"
+        "duplicatedby": "jjqbZZsK7SQ"
     },
     "dl2buXhcHcM": {
         "title": "Q&A: Will there ever be a logic system?",
@@ -35147,6 +35581,7 @@
             "off-topic\/sweden"
         ],
         "seealso": [
+            "A_sIm0EFV8Y",
             "Jlc7_epbkMw",
             "pQWgPFIzCyI"
         ],
@@ -35210,8 +35645,8 @@
             "yt-Z6bo0pjYghk,8276.579761613913,8293.536733681256"
         ],
         "seealso": [
-            "awYa_yKQf7I",
-            "G9tg6XTEBuU"
+            "G9tg6XTEBuU",
+            "LVTC_xoXC58"
         ]
     },
     "dc4gXq8yq0A": {
@@ -35760,8 +36195,8 @@
         ],
         "seealso": [
             "05JLnN_3XE0",
-            "yiZORn32BA0",
-            "yt-ToXUov_ylfo,9595.595299,9623.857765397632"
+            "9J6E-3J-v30",
+            "yiZORn32BA0"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErTu2VvA2vgW-Iy2hMXtRkM"
@@ -36128,9 +36563,9 @@
         "title": "Q&A: Will you add Achievements?",
         "date": "2022-06-14",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "yt-Z6bo0pjYghk,8276.579761613913,8293.536733681256": {
         "title": "Q&A: Did we ever get around to adding so you can turn Rain off?",
@@ -41328,7 +41763,7 @@
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "seealso": [
-            "-w31iRNJdc4",
+            "jjqbZZsK7SQ",
             "mFPSgNO5cIk"
         ],
         "seealso_topic_cards": [
@@ -44366,12 +44801,12 @@
         "title": "Q&A: Are there Achievements planned for Satisfactory?",
         "date": "2022-02-08",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "aArVqGLCABg": {
         "title": "Q&A: What do you consider \"finishing the game\"?",
@@ -45192,8 +45627,8 @@
         ],
         "seealso": [
             "2tGeaE7H_5A",
-            "gPGdsMEHwm0",
-            "p97oSw1IscA"
+            "5qTZ_nG4w58",
+            "gPGdsMEHwm0"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEr5Ks1V8bqkO3qCZeI796Xk",
@@ -47115,12 +47550,12 @@
         "title": "Q&A: Steam Achivements?",
         "date": "2021-11-30",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "DYb3hFnv9iA": {
         "title": "Q&A: Why doesn't Snutt have a strong accent?",
@@ -47531,6 +47966,7 @@
             "e0zlCy61u4w",
             "hrzcMd0csWE",
             "PccFeGsFlE4",
+            "QlpiAzJcvvg",
             "Yif8SgooUPA",
             "ymMXE01z6CE",
             "_YMb9-PyjTQ"
@@ -50165,12 +50601,12 @@
         "title": "Q&A: When are we going to get Achievements?",
         "date": "2021-11-02",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "6Trsm-es3TQ": {
         "title": "Q&A: Dedicated Servers don't show up in my Steam Library, is it a regional thing?",
@@ -52582,7 +53018,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiErPq-K_XJmklK3wFLBycvVr"
         ],
-        "duplicatedby": "w6iM0Uigx24"
+        "duplicatedby": "bW0wie8AIyo"
     },
     "JfLx0VAvE34": {
         "title": "Q&A: Will Satisfactory be supported on the Steam Deck?",
@@ -55216,6 +55652,7 @@
         ],
         "seealso": [
             "5KThzhNUTLY",
+            "rokM96zXMEE",
             "wXL47XfKxp8"
         ],
         "seealso_topic_cards": [
@@ -55900,12 +56337,12 @@
         "title": "Q&A: Do you plan to make Steam Achievements?",
         "date": "2021-09-28",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "uJ5CvJE_DgE": {
         "title": "Q&A: Is a helpful description like \"I played the game\" good enough?",
@@ -56038,6 +56475,7 @@
             "kjtEzfP8fPE",
             "MA-7LFV-F1U",
             "n6Wck4EawK0",
+            "nGe2U8QiZ4U",
             "_BU-t6yfoYY"
         ],
         "seealso_topic_cards": [
@@ -59447,14 +59885,14 @@
         "title": "Q&A: Will you add Steam Achievements when the game is done?",
         "date": "2021-09-07",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK",
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT",
             "PLbjDnnBIxiEoRw9O4Lx_d3-RNK0Grlm1c"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "jEt3dU9LTw4": {
         "title": "Q&A: 1.0 at 5000 Upvotes",
@@ -59496,7 +59934,7 @@
         ],
         "seealso": [
             "k3IBcDlRl68",
-            "NGfVEfni-DM"
+            "twdKBk28OeA"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS",
@@ -62440,14 +62878,14 @@
         "title": "Q&A: Will there be Steam Achievements in 1.0?",
         "date": "2021-08-10",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements",
+            "features\/planned-features\/achievements",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT",
             "PLbjDnnBIxiErZMU9GqSYTxgx4QvM_i2hK"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "476NXSQVuK0": {
         "title": "Q&A: How is Jace feeling?",
@@ -62500,7 +62938,7 @@
             "soundtrack"
         ],
         "seealso": [
-            "yt-ToXUov_ylfo,9595.595299,9623.857765397632"
+            "9J6E-3J-v30"
         ],
         "seealso_topic_cards": [
             "PLbjDnnBIxiEoztbnzfvEZjurwzZnL1wv4",
@@ -64661,7 +65099,7 @@
             "features\/fluids\/pipes"
         ],
         "seealso": [
-            "p97oSw1IscA",
+            "5qTZ_nG4w58",
             "ZiAvo3uDBCM"
         ],
         "seealso_topic_cards": [
@@ -64991,7 +65429,7 @@
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
-            "w6iM0Uigx24"
+            "bW0wie8AIyo"
         ],
         "seealso_video_cards": [
             "jeKOLTOqbeo"
@@ -65221,7 +65659,7 @@
         "incoming_video_cards": [
             "3uqePr4WNrw"
         ],
-        "duplicatedby": "-w31iRNJdc4"
+        "duplicatedby": "jjqbZZsK7SQ"
     },
     "WbKIIe_sffI": {
         "title": "Q&A: Is there any Lore behind the World, it looks like it was underwater judging by landscape?",
@@ -65363,7 +65801,7 @@
             "story-and-lore"
         ],
         "seealso": [
-            "-w31iRNJdc4"
+            "jjqbZZsK7SQ"
         ],
         "seealso_video_cards": [
             "z9tjeFkYXAY"
@@ -65703,7 +66141,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEqVBjXPO21-ZkvLV76plSGV"
         ],
-        "duplicatedby": "w6iM0Uigx24"
+        "duplicatedby": "bW0wie8AIyo"
     },
     "Rn_yVlZsyOY": {
         "title": "Q&A: Are Vehicle concepts actually something that Mods could provide?",
@@ -68704,9 +69142,9 @@
         "date": "2021-06-29",
         "topics": [
             "features\/buildings\/space-elevator",
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "V96viZIrKfQ": {
         "title": "Q&A: Do you do any work outside of the streams?",
@@ -71309,7 +71747,8 @@
             "features\/gases"
         ],
         "seealso": [
-            "chbKKOzgpl8"
+            "chbKKOzgpl8",
+            "e8csDaggVHY"
         ],
         "seealso_video_cards": [
             "zjpwvKcY2ss"
@@ -76750,9 +77189,9 @@
         "title": "Q&A: Will achievements be added?",
         "date": "2021-04-20",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "kd-VVREKHLE": {
         "title": "Q&A: Why did the anti-spider mode went off?",
@@ -77180,7 +77619,7 @@
         "topics": [
             "story-and-lore"
         ],
-        "duplicatedby": "-w31iRNJdc4"
+        "duplicatedby": "jjqbZZsK7SQ"
     },
     "8NEorsLWk6k": {
         "title": "Q&A: How about making Crash Sites deconstructable after looting?",
@@ -77580,9 +78019,9 @@
         "title": "Q&A: Anything about achievements?",
         "date": "2021-04-13",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "yt-cF3QleeEiJo,6681.040890790472,6698.939684": {
         "title": "Q&A: Train Collision?",
@@ -82572,7 +83011,7 @@
             "satisfactory-updates\/pending\/satisfactory-1-0",
             "story-and-lore"
         ],
-        "duplicatedby": "-w31iRNJdc4"
+        "duplicatedby": "jjqbZZsK7SQ"
     },
     "oojAhgClrl0": {
         "title": "Q&A: Are there going to be more recipes- not new item recipes but more recipes for old items?",
@@ -82792,7 +83231,7 @@
             "satisfactory-updates\/released\/satisfactory-update-5"
         ],
         "seealso": [
-            "NGfVEfni-DM",
+            "twdKBk28OeA",
             "WllD2Ql611s"
         ]
     },
@@ -83640,9 +84079,9 @@
         "title": "Q&A: Will Achievements ever be created?",
         "date": "2021-02-16",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "8pFxd37RLxk": {
         "title": "Q&A: What's the point of batteries if we don't have variable power?",
@@ -89901,12 +90340,12 @@
         "title": "Q&A: Epic-only Achievements?",
         "date": "2020-12-01",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements",
+            "features\/planned-features\/achievements",
             "retail\/epic-store",
             "trolling"
         ],
         "seealso": [
-            "7VSFqc8mD1s"
+            "jn7n_ZS_xlM"
         ],
         "seealso_card_urls": [
             [
@@ -89915,7 +90354,7 @@
                 "https:\/\/twitter.com\/SatisfactoryAF\/status\/1329014289303285761"
             ]
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "yt-0kmDHBWf640,65.79906666666666,154.401842": {
         "title": "Q&A: Why do we upgrade the engine?",
@@ -91158,7 +91597,7 @@
         "topics": [
             "story-and-lore"
         ],
-        "duplicatedby": "-w31iRNJdc4"
+        "duplicatedby": "jjqbZZsK7SQ"
     },
     "hUYyIETHuJ4": {
         "title": "Q&A: Can you summarise the upcoming builds for the next months?",
@@ -91225,9 +91664,9 @@
         "title": "Q&A: Achievements system?",
         "date": "2020-11-10",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "eTALbWgKmuE": {
         "title": "Q&A: Randomising nodes?",
@@ -92145,9 +92584,9 @@
         "title": "Q&A: Are Steam Achievements going to be added in the future?",
         "date": "2020-11-03",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "gZoINqh_HAY": {
         "title": "Q&A: Can you give us a hint about the Story of the game?",
@@ -92902,7 +93341,7 @@
         "topics": [
             "satisfactory-updates\/speculative\/satisfactory-2-0"
         ],
-        "duplicatedby": "NGfVEfni-DM"
+        "duplicatedby": "twdKBk28OeA"
     },
     "L1Ur5X7gVH8": {
         "title": "Q&A: Any word on farming Pale Berries \/ Nuts \/ Bacon?",
@@ -93442,7 +93881,7 @@
             "satisfactory-updates\/released\/satisfactory-fluids-update"
         ],
         "seealso": [
-            "w6iM0Uigx24",
+            "bW0wie8AIyo",
             "yt-iahxEfLCFWU,101.66823333333333,162.12863333333334"
         ]
     },
@@ -94727,13 +95166,13 @@
         "title": "Q&A: Will there be achievements?",
         "date": "2020-10-01",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso_video_cards": [
             "8WYNwGDLYNE",
             "PkozY8_q-LE"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "yt-rATcozDE25c,476.04223333333334,527.5603666666667": {
         "title": "Q&A: Can we use Turbofuel in Jetpacks?",
@@ -95330,9 +95769,9 @@
         "title": "Q&A: Give us Steam Achievements already?",
         "date": "2020-09-29",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "P1hgqMJ8MW0": {
         "title": "Q&A: Can we get Signs in the game?",
@@ -95489,7 +95928,7 @@
         "incoming_video_cards": [
             "z9tjeFkYXAY"
         ],
-        "duplicatedby": "-w31iRNJdc4"
+        "duplicatedby": "jjqbZZsK7SQ"
     },
     "9rIz0jDCQY0": {
         "title": "Q&A: Update on Fluids?",
@@ -95730,7 +96169,7 @@
         "seealso_topic_cards": [
             "PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS"
         ],
-        "duplicatedby": "NGfVEfni-DM"
+        "duplicatedby": "twdKBk28OeA"
     },
     "BuC0nQS2Kqs": {
         "title": "Q&A: Confused on the use of Controllers?",
@@ -96494,7 +96933,7 @@
             "PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS",
             "PLbjDnnBIxiEpH9vCWSguzYfXrsjagXgyE"
         ],
-        "duplicatedby": "NGfVEfni-DM"
+        "duplicatedby": "twdKBk28OeA"
     },
     "qo8WFOlPkTc": {
         "title": "Q&A: Battle Royale Mode?",
@@ -98288,7 +98727,7 @@
         "incoming_video_cards": [
             "Fp1WczBseIM"
         ],
-        "duplicatedby": "w6iM0Uigx24"
+        "duplicatedby": "bW0wie8AIyo"
     },
     "gj-NgdVYap8": {
         "title": "Q&A: AI in an Electricity Management System that can handle power surges when we're away from base?",
@@ -98804,7 +99243,7 @@
             "tc-CoweringHotZebraTheTarFu",
             "tc-MildNurturingWoodcockYouWHY"
         ],
-        "duplicatedby": "w6iM0Uigx24"
+        "duplicatedby": "bW0wie8AIyo"
     },
     "k6ZS5wzlNKs": {
         "title": "Q&A: Is the sink going to accept liquids in the future?",
@@ -101574,7 +102013,7 @@
         "title": "Q&A: Will there be Steam Cards and Achievements? Also do you intend to use Steam Workshop?",
         "date": "2020-05-15",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements",
+            "features\/planned-features\/achievements",
             "retail\/steam-store\/steam-release"
         ],
         "seealso_video_cards": [
@@ -101583,7 +102022,7 @@
             "fI7gnbG4Omk",
             "mci92Mhr7MM"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "yt-NlIVwoRqjVk,346.41273333333334,368.9352333333333": {
         "title": "Q&A: Do you intend to use Steam Workshop in any way?",
@@ -102328,9 +102767,9 @@
         "title": "Q&A: Achievements?",
         "date": "2020-03-24",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "fKXR3PibLLA": {
         "title": "Q&A: Will the Steam release make reliability better?",
@@ -103031,7 +103470,7 @@
         "incoming_video_cards": [
             "Ts3PbTEeg_I"
         ],
-        "duplicatedby": "NGfVEfni-DM"
+        "duplicatedby": "twdKBk28OeA"
     },
     "FHqvzjGbhvg": {
         "title": "Q&A: Will there be DLC after 1.0?",
@@ -108551,13 +108990,13 @@
         "title": "Q&A: Will there be Steam achievements?",
         "date": "2018-08-01",
         "topics": [
-            "features\/possible-features\/third-party-service-integration\/achievements"
+            "features\/planned-features\/achievements"
         ],
         "seealso_video_cards": [
             "IxoCzb2M0vQ",
             "7gRGSXP0rW4"
         ],
-        "duplicatedby": "7VSFqc8mD1s"
+        "duplicatedby": "jn7n_ZS_xlM"
     },
     "yt-iFAy1NZUOGU,131.28,147.92": {
         "title": "Q&A: Did the Vehicle dev blog cover everything?",
