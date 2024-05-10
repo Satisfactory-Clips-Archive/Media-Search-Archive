@@ -1,8 +1,9 @@
 # Progress
-* 8622 questions found out of 12495 clips
-* 8286 non-trolling & on-topic questions found out of 8622 total questions
-* 624 questions found with no other references
+* 8652 questions found out of 12527 clips
+* 8316 non-trolling & on-topic questions found out of 8652 total questions
+* 635 questions found with no other references
 ## grouped by date
+* 2024-05-07: 11 of 30 questions found with no other references
 * 2024-04-23: 7 of 32 questions found with no other references
 * 2024-04-16: 5 of 23 questions found with no other references
 * 2024-04-02: 12 of 38 questions found with no other references
