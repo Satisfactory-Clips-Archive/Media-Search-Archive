@@ -1336,7 +1336,7 @@ class TopicData
 		'PLbjDnnBIxiErIOO8TJyFU5Z1Snw8Ze7-O' => [ // Blastroid
 			'Community',
 		],
-		'PLbjDnnBIxiEpmM6BAdgD_uXd_IcsFZ75Y' => [ // Light It Up
+		'Light It Up' => [
 			'Mods',
 		],
 		'PLbjDnnBIxiEoqFaAHiwnkN6nPi2T2LPzi' => [ // Lars
