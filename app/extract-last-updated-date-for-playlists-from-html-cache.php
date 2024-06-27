@@ -17,8 +17,18 @@ $output = [];
 
 $playlists = $api->fetch_all_playlists();
 
+$index = 0;
+$count = count($playlists);
 foreach (array_keys($playlists) as $playlist_id) {
+	++$index;
+
+	echo sprintf('checking %s out of %s', $index, $count), "\r";
+
 	$page = file_get_contents(__DIR__ . '/playlists-html-cache/' . $playlist_id . '.html');
+
+	if (false === strpos($page, '<meta property="og:url" content="http://www.youtube.com/playlist?list=' . $playlist_id . '">')) {
+		throw new \RuntimeException('Playlist ID not found!');
+	}
 
 	$scripts = html5qp($page, 'script');
 
@@ -66,26 +76,9 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	$raw = json_decode($matches[1], true, JSON_THROW_ON_ERROR);
 
-	if (
-		!isset(
-			$raw['header']['playlistHeaderRenderer']['playlistId'],
-			$raw['header']['playlistHeaderRenderer']['byline']
-		)
-	) {
-		throw new \UnexpectedValueException(sprintf(
-			'Required properties were not present in json for %s',
-			$playlist_id
-		));
-	}
+	$bylines = [];
 
-	if ($playlist_id !== $raw['header']['playlistHeaderRenderer']['playlistId']) {
-		throw new \UnexpectedValueException(sprintf(
-			'Unexpected playlist metadata found, expecting %s found %s',
-			$playlist_id,
-			$raw['header']['playlistHeaderRenderer']['playlistId']
-		));
-	}
-
+	if (isset($raw['header']['playlistHeaderRenderer']['byline'])) {
 	$bylines = array_map(
 		/**
 		 * @param array{playlistBylineRenderer: array{text: array{runs: list<array{text: string}>}}} $runs
@@ -107,6 +100,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 					isset($maybe['playlistBylineRenderer']['text']['runs'])
 					&& is_array($maybe['playlistBylineRenderer']['text']['runs'])
 					&& array_is_list($maybe['playlistBylineRenderer']['text']['runs'])
+					&& count($maybe['playlistBylineRenderer']['text']['runs']) >= 1
 					&& count($maybe['playlistBylineRenderer']['text']['runs']) === count(
 						array_filter(
 							$maybe['playlistBylineRenderer']['text']['runs'],
@@ -118,6 +112,53 @@ foreach (array_keys($playlists) as $playlist_id) {
 			}
 		))
 	);
+	} else if (isset($raw['sidebar']['playlistSidebarRenderer']['items'])) {
+		$bylines = array_values(array_filter(
+			array_reduce(array_map(
+				static function (array $has_stats): array {
+					return array_reduce(
+						$has_stats['playlistSidebarPrimaryInfoRenderer']['stats'],
+						static function (array $was, array $is): array {
+							if (isset($is['simpleText'])) {
+								$was[] = $is['simpleText'];
+							} else {
+								$was[] = implode('', array_map(
+									static function (array $row): string {
+										return $row['text'];
+									},
+									$is['runs']
+								));
+							}
+
+							return $was;
+						},
+						[]
+					);
+				},
+				array_filter(
+					$raw['sidebar']['playlistSidebarRenderer']['items'],
+					static function (array $maybe) : bool {
+						return isset(
+							$maybe['playlistSidebarPrimaryInfoRenderer'],
+							$maybe['playlistSidebarPrimaryInfoRenderer']['stats']
+						);
+					}
+				)
+			), static function (array $was, array $is) {
+				return array_merge($was, $is);
+			}, []),
+			static function (string $maybe) {
+				return preg_match('/^(?:Updated|Last updated) /', $maybe);
+			}
+		));
+
+		$bylines = array_map(
+			static function (string $in): array {
+				return [$in];
+			},
+			$bylines
+		);
+	}
 
 	if (0 === count($bylines)) {
 		throw new \UnexpectedValueException(sprintf(
