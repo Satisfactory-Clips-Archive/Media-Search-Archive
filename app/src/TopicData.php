@@ -875,6 +875,10 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
+		'Jungle Spires' => [
+			'Environment',
+			'Biomes',
+		],
 		'Unplanned Biomes' => [
 			'Environment',
 			'Biomes',
