@@ -1,31 +1,32 @@
 # Progress
-* 8752 questions found out of 12655 clips
-* 8411 non-trolling & on-topic questions found out of 8752 total questions
-* 647 questions found with no other references
+* 8798 questions found out of 12704 clips
+* 8454 non-trolling & on-topic questions found out of 8798 total questions
+* 648 questions found with no other references
 ## grouped by date
+* 2024-07-02: 9 of 43 questions found with no other references
 * 2024-06-28: 1 of 1 questions found with no other references
-* 2024-06-25: 6 of 27 questions found with no other references
+* 2024-06-25: 5 of 27 questions found with no other references
 * 2024-05-28: 5 of 23 questions found with no other references
-* 2024-05-14: 11 of 44 questions found with no other references
+* 2024-05-14: 12 of 44 questions found with no other references
 * 2024-05-07: 10 of 30 questions found with no other references
 * 2024-04-23: 6 of 32 questions found with no other references
-* 2024-04-16: 5 of 23 questions found with no other references
+* 2024-04-16: 4 of 23 questions found with no other references
 * 2024-04-02: 13 of 38 questions found with no other references
 * 2024-03-19: 7 of 37 questions found with no other references
 * 2024-03-12: 6 of 39 questions found with no other references
 * 2024-03-05: 10 of 39 questions found with no other references
 * 2024-02-27: 8 of 32 questions found with no other references
 * 2024-02-20: 11 of 39 questions found with no other references
-* 2024-02-13: 11 of 38 questions found with no other references
+* 2024-02-13: 10 of 38 questions found with no other references
 * 2024-02-09: 2 of 14 questions found with no other references
-* 2024-02-06: 5 of 54 questions found with no other references
+* 2024-02-06: 3 of 54 questions found with no other references
 * 2024-02-02: 0 of 2 questions found with no other references
 * 2024-01-30: 2 of 31 questions found with no other references
 * 2024-01-23: 2 of 3 questions found with no other references
 * 2023-12-12: 9 of 31 questions found with no other references
 * 2023-12-08: 0 of 1 questions found with no other references
 * 2023-12-05: 13 of 50 questions found with no other references
-* 2023-11-21: 5 of 39 questions found with no other references
+* 2023-11-21: 3 of 39 questions found with no other references
 * 2023-11-14: 5 of 20 questions found with no other references
 * 2023-11-10: 0 of 3 questions found with no other references
 * 2023-11-07: 36 of 57 questions found with no other references
@@ -36,7 +37,7 @@
 * 2023-09-29: 5 of 35 questions found with no other references
 * 2023-09-26: 14 of 55 questions found with no other references
 * 2023-09-19: 5 of 40 questions found with no other references
-* 2023-09-05: 15 of 69 questions found with no other references
+* 2023-09-05: 14 of 69 questions found with no other references
 * 2023-09-01: 1 of 2 questions found with no other references
 * 2023-08-29: 8 of 84 questions found with no other references
 * 2023-08-22: 21 of 79 questions found with no other references
@@ -205,7 +206,7 @@
 * 2020-10-20: 3 of 51 questions found with no other references
 * 2020-10-13: 0 of 48 questions found with no other references
 * 2020-10-09: 5 of 24 questions found with no other references
-* 2020-10-06: 1 of 51 questions found with no other references
+* 2020-10-06: 0 of 51 questions found with no other references
 * 2020-10-01: 0 of 33 questions found with no other references
 * 2020-09-29: 3 of 38 questions found with no other references
 * 2020-09-22: 2 of 59 questions found with no other references
