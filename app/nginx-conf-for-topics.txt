@@ -502,3 +502,9 @@ location /topics/features/possible-features/third-party-service-integration/achi
 location /topics/features/possible-features/third-party-service-integration/achievements {
 	return 301 /topics/features/planned-features/achievements/$is_args$args;
 }
+location /topics/features/possible-features/dlc/flushable-toilet-dlc/index.html {
+	return 301 /topics/features/buildings/the-hub/flushable-toilet/$is_args$args;
+}
+location /topics/features/possible-features/dlc/flushable-toilet-dlc {
+	return 301 /topics/features/buildings/the-hub/flushable-toilet/$is_args$args;
+}

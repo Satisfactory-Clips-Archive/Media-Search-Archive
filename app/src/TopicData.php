@@ -1527,10 +1527,10 @@ class TopicData
 		'PLbjDnnBIxiErB8iPe1PpO-x4cGtPIEN24' => [ // Build Modes
 			'Features',
 		],
-		'PLbjDnnBIxiEo6-Jsza66SWDUgX688DEh5' => [ // Flushable Toilet DLC
+		'PLbjDnnBIxiEo6-Jsza66SWDUgX688DEh5' => [ // Flushable Toilet
 			'Features',
-			'Possible Features',
-			'DLC',
+			'Buildings',
+			'The HUB',
 		],
 		'PLbjDnnBIxiEprsambYVkRLAij70izxfVD' => [ // Toilet Paper DLC
 			'Features',
