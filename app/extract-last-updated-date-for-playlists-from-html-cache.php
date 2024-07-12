@@ -26,8 +26,17 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	$page = file_get_contents(__DIR__ . '/playlists-html-cache/' . $playlist_id . '.html');
 
-	if (false === strpos($page, '<meta property="og:url" content="http://www.youtube.com/playlist?list=' . $playlist_id . '">')) {
-		throw new \RuntimeException('Playlist ID not found!');
+	if (
+		false === strpos($page, '<meta property="og:url" content="http://www.youtube.com/playlist?list=' . $playlist_id . '">')
+		&& false === strpos(
+			$page,
+			'{"webCommandMetadata":{"url":"/playlist?list=' . $playlist_id . '",'
+		)
+	) {
+		throw new \RuntimeException(sprintf(
+			'Playlist ID not found %s!',
+			$playlist_id
+		));
 	}
 
 	$scripts = html5qp($page, 'script');
