@@ -1,4 +1,33 @@
 {
+    "yt-oQEZC_tIoP8,195.49486575875486,244.17672429127293": {
+        "title": "Q&A: Won't the reduction in RNG choices mean needing to scan way more drives?",
+        "date": "2024-08-09",
+        "topics": [
+            "features\/buildings\/crash-site",
+            "features\/buildings\/m-a-m",
+            "features\/crafting\/recipes\/alternate-recipes",
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/teasers-and-trailers\/1-0-teasers"
+        ]
+    },
+    "yt-oQEZC_tIoP8,292.3247173429683,303.2022265147304": {
+        "title": "Q&A: Will there still be more Hard Drives than Alt Recipes?",
+        "date": "2024-08-09",
+        "topics": [
+            "features\/buildings\/crash-site",
+            "features\/crafting\/recipes\/alternate-recipes",
+            "satisfactory-updates\/pending\/satisfactory-1-0",
+            "satisfactory-updates\/teasers-and-trailers\/1-0-teasers"
+        ],
+        "replaces": [
+            "s1xVYNExkUc"
+        ],
+        "seealso": [
+            "08AYOkrt2dM",
+            "awtYncMFbBo",
+            "yt-oQEZC_tIoP8,195.49486575875486,244.17672429127293"
+        ]
+    },
     "-e_B1_MPzPQ": {
         "title": "Q&A: Video this week?",
         "date": "2024-07-09",
@@ -2414,10 +2443,7 @@
             "features\/crafting\/recipes\/alternate-recipes",
             "satisfactory-updates\/pending\/satisfactory-1-0"
         ],
-        "seealso": [
-            "08AYOkrt2dM",
-            "awtYncMFbBo"
-        ]
+        "replacedby": "yt-oQEZC_tIoP8,292.3247173429683,303.2022265147304"
     },
     "tbCBDSjF6VM": {
         "title": "Q&A: Will the Blueprint Designer be getting any changes in 1.0?",
@@ -41228,7 +41254,7 @@
         ],
         "seealso": [
             "o62O0oCl7yw",
-            "s1xVYNExkUc"
+            "yt-oQEZC_tIoP8,292.3247173429683,303.2022265147304"
         ]
     },
     "Mi7GvyXRA3g": {
@@ -89821,7 +89847,7 @@
             "P7JCgZ-mLDE"
         ],
         "seealso": [
-            "s1xVYNExkUc"
+            "yt-oQEZC_tIoP8,292.3247173429683,303.2022265147304"
         ],
         "replacedby": "PoEuuDU4jpo"
     },
