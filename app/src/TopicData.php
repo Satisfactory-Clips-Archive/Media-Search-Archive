@@ -688,6 +688,26 @@ class TopicData
 			'Features',
 			'Crafting',
 		],
+		'AI Expansion Server' => [
+			'Features',
+			'Crafting',
+		],
+		'Dark Matter Crystal' => [
+			'Features',
+			'Crafting',
+		],
+		'Dark Matter Residue' => [
+			'Features',
+			'Crafting',
+		],
+		'Excited Photonic Matter' => [
+			'Features',
+			'Crafting',
+		],
+		'Ficsonium' => [
+			'Features',
+			'Crafting',
+		],
 		'PLbjDnnBIxiEr8-tKvQxrwXxCKw4R5_PoP' => [ // Arachnophobia Mode
 			'Features',
 			'Accessibility',
@@ -1470,6 +1490,14 @@ class TopicData
 			'Features',
 			'Buildings',
 		],
+		'Quantum Converter' => [
+			'Features',
+			'Buildings',
+		],
+		'Quantum Encoder' => [
+			'Features',
+			'Buildings',
+		],
 		'PLbjDnnBIxiEqE6cyJPicfKslpaX5zwjCq' => [ // Unreal Engine 5
 			'Technology',
 			'Unreal Engine',
@@ -1958,6 +1986,9 @@ class TopicData
 		],
 		'K2' => [
 			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEosbfE0UQ1jAsYX7vikvCW4' => [ // Quantum Technology
+			'Features',
 		],
 	];
 

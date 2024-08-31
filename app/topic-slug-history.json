@@ -1969,5 +1969,29 @@
     },
     "2024-08-09": {
         "we-decided-to-redo-this-feature": 1723229773
+    },
+    "PLbjDnnBIxiEosbfE0UQ1jAsYX7vikvCW4": {
+        "features\/quantum-technology": 1725052485
+    },
+    "Quantum Converter": {
+        "features\/buildings\/quantum-converter": 1725052485
+    },
+    "Quantum Encoder": {
+        "features\/buildings\/quantum-encoder": 1725052485
+    },
+    "AI Expansion Server": {
+        "features\/crafting\/ai-expansion-server": 1725052485
+    },
+    "Dark Matter Crystal": {
+        "features\/crafting\/dark-matter-crystal": 1725052485
+    },
+    "Dark Matter Residue": {
+        "features\/crafting\/dark-matter-residue": 1725052485
+    },
+    "Excited Photonic Matter": {
+        "features\/crafting\/excited-photonic-matter": 1725052485
+    },
+    "Ficsonium": {
+        "features\/crafting\/ficsonium": 1725052485
     }
 }

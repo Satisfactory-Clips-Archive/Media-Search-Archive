@@ -723,6 +723,10 @@ function adjust_nesting(
 
 	++$current_left;
 
+	if (!isset($data[$current]['children'])) {
+		throw new InvalidArgumentException(sprintf('%s has no children!', $current));
+	}
+
 	$all_have_custom_sort = count(
 		array_filter(
 			$data[$current]['children'],
