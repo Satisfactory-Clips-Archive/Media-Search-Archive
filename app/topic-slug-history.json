@@ -1993,5 +1993,11 @@
     },
     "Ficsonium": {
         "features\/crafting\/ficsonium": 1725052485
+    },
+    "PLbjDnnBIxiEqxcLZFqCYFQ3rWBOcmY_Mw": {
+        "features\/buildings\/quantum-converter": 1725555310
+    },
+    "PLbjDnnBIxiEokd3ivH8Ri4t0-rOcr6f3g": {
+        "features\/buildings\/quantum-encoder": 1725555310
     }
 }

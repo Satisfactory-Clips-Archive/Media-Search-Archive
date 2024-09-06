@@ -1490,11 +1490,11 @@ class TopicData
 			'Features',
 			'Buildings',
 		],
-		'Quantum Converter' => [
+		'PLbjDnnBIxiEqxcLZFqCYFQ3rWBOcmY_Mw' => [ // Quantum Converter
 			'Features',
 			'Buildings',
 		],
-		'Quantum Encoder' => [
+		'PLbjDnnBIxiEokd3ivH8Ri4t0-rOcr6f3g' => [ // Quantum Encoder
 			'Features',
 			'Buildings',
 		],
