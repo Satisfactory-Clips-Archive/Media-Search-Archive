@@ -1999,5 +1999,17 @@
     },
     "PLbjDnnBIxiEokd3ivH8Ri4t0-rOcr6f3g": {
         "features\/buildings\/quantum-encoder": 1725555310
+    },
+    "Finishes": {
+        "features\/finishes": 1725650284
+    },
+    "Dimensional Depot": {
+        "features\/buildables\/storage-containers\/dimensional-depot": 1725650284
+    },
+    "Alien Power Augmenter": {
+        "features\/buildings\/alien-power-augmenter": 1725650284
+    },
+    "Blueprint Designer Mk.2": {
+        "features\/buildings\/blueprint-designer\/mk-2": 1725650284
     }
 }

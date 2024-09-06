@@ -684,6 +684,11 @@ class TopicData
 			'Features',
 			'Buildables',
 		],
+		'Dimensional Depot' => [
+			'Features',
+			'Buildables',
+			'Storage Containers',
+		],
 		'PLbjDnnBIxiErkd_71h9F1jHbOJBnku5mI' => [ // Superposition Oscillators
 			'Features',
 			'Crafting',
@@ -1490,6 +1495,10 @@ class TopicData
 			'Features',
 			'Buildings',
 		],
+		'Alien Power Augmenter' => [
+			'Features',
+			'Buildings',
+		],
 		'PLbjDnnBIxiEqxcLZFqCYFQ3rWBOcmY_Mw' => [ // Quantum Converter
 			'Features',
 			'Buildings',
@@ -1789,6 +1798,9 @@ class TopicData
 			'Features',
 			'Equipment',
 		],
+		'Finishes' => [
+			'Features',
+		],
 		'PLbjDnnBIxiErPJIX0NWiekKXFIrs8d4mO' => [ // Snutty Mays
 			'Coffee Stainers',
 			'Snutt',
@@ -1941,6 +1953,11 @@ class TopicData
 		'PLbjDnnBIxiErMbbLL3R98Zi20naPbgCUT' => [ // Blueprint Designer
 			'Features',
 			'Buildings',
+		],
+		'Blueprint Designer Mk.2' => [
+			'Features',
+			'Buildings',
+			'Blueprint Designer',
 		],
 		'PLbjDnnBIxiErnlskkk5ZE5FdX9Zo_qH_H' => [ // Runescape
 			'Off-Topic'

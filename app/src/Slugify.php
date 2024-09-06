@@ -58,6 +58,7 @@ class Slugify extends Base
 			'Snutt\'s on-stream playthrough' => 'on-stream-playthrough',
 			'Snutt\'s Adventures with Creatures' => 'adventures-with-creatures',
 			'Satisfactory 1.0 Closed Beta' => 'closed-beta',
+			'Blueprint Designer Mk.2' => 'mk.2',
 		];
 
 		parent::__construct($options, $provider);
