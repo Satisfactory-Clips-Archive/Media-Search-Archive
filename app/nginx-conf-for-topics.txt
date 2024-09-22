@@ -508,3 +508,15 @@ location /topics/features/possible-features/dlc/flushable-toilet-dlc/index.html 
 location /topics/features/possible-features/dlc/flushable-toilet-dlc {
 	return 301 /topics/features/buildings/the-hub/flushable-toilet/$is_args$args;
 }
+location /topics/satisfactory-updates/pending/satisfactory-1-0/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-1-0/$is_args$args;
+}
+location /topics/satisfactory-updates/pending/satisfactory-1-0 {
+	return 301 /topics/satisfactory-updates/released/satisfactory-1-0/$is_args$args;
+}
+location /topics/satisfactory-updates/pending/satisfactory-1-0/closed-beta/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-1-0/closed-beta/$is_args$args;
+}
+location /topics/satisfactory-updates/pending/satisfactory-1-0/closed-beta {
+	return 301 /topics/satisfactory-updates/released/satisfactory-1-0/closed-beta/$is_args$args;
+}

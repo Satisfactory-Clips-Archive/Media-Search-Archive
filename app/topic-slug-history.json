@@ -387,7 +387,8 @@
         "satisfactory-updates\/pending": 1611444659
     },
     "PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT": {
-        "satisfactory-updates\/pending\/satisfactory-1-0": 1611444659
+        "satisfactory-updates\/pending\/satisfactory-1-0": 1611444659,
+        "satisfactory-updates\/released\/satisfactory-1-0": 1726954308
     },
     "PLbjDnnBIxiEpH9vCWSguzYfXrsjagXgyE": {
         "satisfactory-updates\/pending\/satisfactory-update-4": 1611444659,
@@ -1952,7 +1953,8 @@
         "satisfactory-updates\/teasers-and-trailers\/1-0-teasers": 1707526840
     },
     "PLbjDnnBIxiErF0fgx4tkyBd-6AS142lat": {
-        "satisfactory-updates\/pending\/satisfactory-1-0\/closed-beta": 1707526840
+        "satisfactory-updates\/pending\/satisfactory-1-0\/closed-beta": 1707526840,
+        "satisfactory-updates\/released\/satisfactory-1-0\/closed-beta": 1726954308
     },
     "PLbjDnnBIxiEoBCg8SDvadXeU8IlQmRLbf": {
         "coffee-stainers\/conrad": 1708705805
@@ -2014,5 +2016,8 @@
     },
     "Sacha": {
         "coffee-stainers\/sacha": 1726096670
+    },
+    "PLbjDnnBIxiEpEFyjc7EIHVjKwQDfUpYMS": {
+        "satisfactory-updates\/speculative\/satisfactory-1-1": 1726954308
     }
 }

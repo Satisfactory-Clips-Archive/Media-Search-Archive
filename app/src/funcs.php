@@ -2967,7 +2967,11 @@ function determine_date_for_video(
 	/** @var array<string, string|false> */
 	static $matches = [];
 
+	$initial_video_id = $video_id;
+
 	$video_id = vendor_prefixed_video_id($video_id);
+
+	$vendor_prefixed = $video_id;
 
 	$video_id = preg_replace('/,.+$/', '', $video_id);
 

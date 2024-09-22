@@ -259,13 +259,18 @@ class TopicData
 		'PLbjDnnBIxiEppntOHbTUyrFhnKNkZZVpT' => [ // Satisfactory 1.0
 			1000,
 			'Satisfactory Updates',
-			'Pending',
+			'Released',
 		],
 		'PLbjDnnBIxiErF0fgx4tkyBd-6AS142lat' => [ // Satisfactory 1.0 Closed Beta
 			1001,
 			'Satisfactory Updates',
-			'Pending',
+			'Released',
 			'Satisfactory 1.0',
+		],
+		'PLbjDnnBIxiEpEFyjc7EIHVjKwQDfUpYMS' => [ // Satisfactory 1.1
+			1100,
+			'Satisfactory Updates',
+			'Speculative',
 		],
 		'PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS' => [ // Satisfactory 2.0
 			2000,

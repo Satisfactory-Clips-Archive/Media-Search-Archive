@@ -40,6 +40,26 @@ import {
 					const b = JSON.stringify(docs[maybe]);
 
 					if (a !== b) {
+						const common_keys = new Set<string>([
+							...Object.keys(flattened[maybe]),
+							...Object.keys(docs[maybe]),
+						]);
+						const different_values: { [key: string]: {
+							flattened: unknown,
+							docs: unknown,
+						} } = {};
+
+						for (const value of common_keys.values()) {
+							if (JSON.stringify((flattened[maybe] as unknown as any)[value]) !== JSON.stringify((docs[maybe] as unknown as any)[value])) {
+								different_values[value] = {
+									flattened: (flattened[maybe] as unknown as any)[value],
+									docs: (docs[maybe] as unknown as any)[value],
+								}
+							}
+						}
+
+						console.error(different_values);
+
 						throw new Error('Duplicate id found!');
 					}
 				}
