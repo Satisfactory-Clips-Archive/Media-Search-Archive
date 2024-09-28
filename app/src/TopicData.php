@@ -428,6 +428,11 @@ class TopicData
 			'Features',
 			'Possible Features',
 		],
+		'PLbjDnnBIxiEqtHXWfST1R6GksAclU7-ES' => [ // FISHLABS
+			'Features',
+			'Possible Features',
+			'Console Release',
+		],
 		'PLbjDnnBIxiEqVTlmqhbpntiX-LNPSHZqz' => [ // Decor
 			'Features',
 			'Possible Features',
@@ -883,6 +888,11 @@ class TopicData
 		'Western Beaches' => [
 			'Environment',
 			'Biomes',
+		],
+		'PLbjDnnBIxiEpj8SNfavR1AzoRISHvpi6Z' => [ // Long Beach
+			'Environment',
+			'Biomes',
+			'Western Beaches',
 		],
 		'PLbjDnnBIxiEq9lwnDNBMwgh9TCrRWeBPQ' => [ // Beach Islands
 			'Environment',
@@ -1504,6 +1514,10 @@ class TopicData
 			'Buildings',
 		],
 		'Alien Power Augmenter' => [
+			'Features',
+			'Buildings',
+		],
+		'PLbjDnnBIxiErc9wI1JHHSzSswjQs9PRdF' => [ // Dimensional Depot
 			'Features',
 			'Buildings',
 		],
