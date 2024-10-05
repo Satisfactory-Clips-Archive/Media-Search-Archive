@@ -1,11 +1,12 @@
 # Progress
-* 9180 questions found out of 13204 clips
-* 8809 non-trolling & on-topic questions found out of 9180 total questions
-* 720 questions found with no other references
+* 9239 questions found out of 13265 clips
+* 8862 non-trolling & on-topic questions found out of 9239 total questions
+* 729 questions found with no other references
 ## grouped by date
-* 2024-09-24: 14 of 53 questions found with no other references
-* 2024-09-17: 20 of 51 questions found with no other references
-* 2024-09-03: 18 of 43 questions found with no other references
+* 2024-10-01: 14 of 53 questions found with no other references
+* 2024-09-24: 12 of 53 questions found with no other references
+* 2024-09-17: 19 of 51 questions found with no other references
+* 2024-09-03: 17 of 43 questions found with no other references
 * 2024-08-30: 0 of 1 questions found with no other references
 * 2024-08-27: 12 of 40 questions found with no other references
 * 2024-08-16: 0 of 2 questions found with no other references
@@ -23,7 +24,7 @@
 * 2024-04-02: 10 of 38 questions found with no other references
 * 2024-03-19: 7 of 37 questions found with no other references
 * 2024-03-12: 5 of 39 questions found with no other references
-* 2024-03-05: 9 of 39 questions found with no other references
+* 2024-03-05: 10 of 39 questions found with no other references
 * 2024-02-27: 8 of 32 questions found with no other references
 * 2024-02-20: 11 of 39 questions found with no other references
 * 2024-02-13: 9 of 38 questions found with no other references
@@ -35,7 +36,7 @@
 * 2023-12-12: 9 of 31 questions found with no other references
 * 2023-12-08: 0 of 1 questions found with no other references
 * 2023-12-05: 13 of 50 questions found with no other references
-* 2023-11-21: 4 of 39 questions found with no other references
+* 2023-11-21: 3 of 39 questions found with no other references
 * 2023-11-14: 5 of 20 questions found with no other references
 * 2023-11-10: 0 of 3 questions found with no other references
 * 2023-11-07: 34 of 57 questions found with no other references
@@ -45,7 +46,7 @@
 * 2023-10-03: 3 of 47 questions found with no other references
 * 2023-09-29: 6 of 35 questions found with no other references
 * 2023-09-26: 13 of 55 questions found with no other references
-* 2023-09-19: 5 of 40 questions found with no other references
+* 2023-09-19: 4 of 40 questions found with no other references
 * 2023-09-05: 14 of 69 questions found with no other references
 * 2023-09-01: 1 of 2 questions found with no other references
 * 2023-08-29: 8 of 84 questions found with no other references
