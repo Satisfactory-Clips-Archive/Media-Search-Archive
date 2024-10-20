@@ -272,6 +272,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Speculative',
 		],
+		'PLbjDnnBIxiEruo0Lbpj6lJAWFcxyKZpJY' => [ // Satisfactory 1.2
+			1200,
+			'Satisfactory Updates',
+			'Speculative',
+		],
 		'PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS' => [ // Satisfactory 2.0
 			2000,
 			'Satisfactory Updates',
@@ -2028,6 +2033,13 @@ class TopicData
 		],
 		'PLbjDnnBIxiEosbfE0UQ1jAsYX7vikvCW4' => [ // Quantum Technology
 			'Features',
+		],
+		'Portals' => [
+			'Features',
+			'Quantum Technology',
+		],
+		'PLbjDnnBIxiEppd5l36c5OFfQst74E9zpt' => [ // Emmet
+			'Coffee Stainers',
 		],
 	];
 
