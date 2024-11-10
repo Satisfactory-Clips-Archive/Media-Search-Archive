@@ -1,17 +1,18 @@
 # Progress
-* 9292 questions found out of 13340 clips
-* 8910 non-trolling & on-topic questions found out of 9292 total questions
-* 743 questions found with no other references
+* 9345 questions found out of 13395 clips
+* 8963 non-trolling & on-topic questions found out of 9345 total questions
+* 763 questions found with no other references
 ## grouped by date
-* 2024-10-15: 14 of 48 questions found with no other references
-* 2024-10-01: 14 of 53 questions found with no other references
+* 2024-11-05: 22 of 53 questions found with no other references
+* 2024-10-15: 15 of 48 questions found with no other references
+* 2024-10-01: 13 of 53 questions found with no other references
 * 2024-09-24: 13 of 53 questions found with no other references
-* 2024-09-17: 18 of 51 questions found with no other references
+* 2024-09-17: 17 of 51 questions found with no other references
 * 2024-09-03: 17 of 43 questions found with no other references
 * 2024-08-30: 0 of 1 questions found with no other references
-* 2024-08-27: 12 of 40 questions found with no other references
+* 2024-08-27: 11 of 40 questions found with no other references
 * 2024-08-16: 0 of 2 questions found with no other references
-* 2024-08-13: 7 of 58 questions found with no other references
+* 2024-08-13: 8 of 58 questions found with no other references
 * 2024-08-09: 0 of 2 questions found with no other references
 * 2024-07-09: 15 of 105 questions found with no other references
 * 2024-07-02: 10 of 43 questions found with no other references
@@ -43,7 +44,7 @@
 * 2023-11-07: 34 of 57 questions found with no other references
 * 2023-10-31: 9 of 48 questions found with no other references
 * 2023-10-17: 9 of 57 questions found with no other references
-* 2023-10-10: 15 of 65 questions found with no other references
+* 2023-10-10: 14 of 65 questions found with no other references
 * 2023-10-03: 3 of 47 questions found with no other references
 * 2023-09-29: 6 of 35 questions found with no other references
 * 2023-09-26: 13 of 55 questions found with no other references
