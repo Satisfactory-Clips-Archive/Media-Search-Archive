@@ -496,12 +496,6 @@ location /topics/satisfactory-updates/pending/satisfactory-update-8/index.html {
 location /topics/satisfactory-updates/pending/satisfactory-update-8 {
 	return 301 /topics/satisfactory-updates/released/satisfactory-update-8/$is_args$args;
 }
-location /topics/features/possible-features/third-party-service-integration/achievements/index.html {
-	return 301 /topics/features/planned-features/achievements/$is_args$args;
-}
-location /topics/features/possible-features/third-party-service-integration/achievements {
-	return 301 /topics/features/planned-features/achievements/$is_args$args;
-}
 location /topics/features/possible-features/dlc/flushable-toilet-dlc/index.html {
 	return 301 /topics/features/buildings/the-hub/flushable-toilet/$is_args$args;
 }
@@ -519,4 +513,16 @@ location /topics/satisfactory-updates/pending/satisfactory-1-0/closed-beta/index
 }
 location /topics/satisfactory-updates/pending/satisfactory-1-0/closed-beta {
 	return 301 /topics/satisfactory-updates/released/satisfactory-1-0/closed-beta/$is_args$args;
+}
+location /topics/features/possible-features/third-party-service-integration/achievements/index.html {
+	return 301 /topics/features/achievements/$is_args$args;
+}
+location /topics/features/possible-features/third-party-service-integration/achievements {
+	return 301 /topics/features/achievements/$is_args$args;
+}
+location /topics/features/planned-features/achievements/index.html {
+	return 301 /topics/features/achievements/$is_args$args;
+}
+location /topics/features/planned-features/achievements {
+	return 301 /topics/features/achievements/$is_args$args;
 }
