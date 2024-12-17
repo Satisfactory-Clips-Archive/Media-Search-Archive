@@ -277,8 +277,38 @@ class TopicData
 			'Satisfactory Updates',
 			'Speculative',
 		],
+		'PLbjDnnBIxiEpF2A_3mRQgPp91Wzvw9vBQ' => [ // Satisfactory 1.3
+			1300,
+			'Satisfactory Updates',
+			'Speculative',
+		],
 		'PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS' => [ // Satisfactory 2.0
 			2000,
+			'Satisfactory Updates',
+			'Speculative',
+		],
+		'PLbjDnnBIxiEoRob6NyQbluiHfVVGjCyoJ' => [ // Satisfactory 2.1
+			2100,
+			'Satisfactory Updates',
+			'Speculative',
+		],
+		'PLbjDnnBIxiEqSwg9dGzkBJA9_2ONaz2O1' => [ // Satisfactory 2.2
+			2200,
+			'Satisfactory Updates',
+			'Speculative',
+		],
+		'PLbjDnnBIxiEoai53GV4a7pwFhnxXv_ru_' => [ // Satisfactory 2.3
+			2300,
+			'Satisfactory Updates',
+			'Speculative',
+		],
+		'PLbjDnnBIxiEqE5DASA1__JLm7-DBlT-i5' => [ // Satisfactory 2.4
+			2400,
+			'Satisfactory Updates',
+			'Speculative',
+		],
+		'PLbjDnnBIxiErRrH_qPAYNMWNmORwXhGh2' => [
+			2500,
 			'Satisfactory Updates',
 			'Speculative',
 		],
@@ -2009,7 +2039,7 @@ class TopicData
 		'Vladimir' => [
 			'Coffee Stainers',
 		],
-		'Guru' => [
+		'PLbjDnnBIxiEpAW5w66c_j6zkWrmCx1H55' => [ // Guru
 			'Coffee Stainers',
 		],
 		'David' => [

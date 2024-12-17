@@ -1,19 +1,20 @@
 # Progress
-* 9513 questions found out of 13589 clips
-* 9123 non-trolling & on-topic questions found out of 9513 total questions
-* 795 questions found with no other references
+* 9554 questions found out of 13632 clips
+* 9162 non-trolling & on-topic questions found out of 9554 total questions
+* 803 questions found with no other references
 ## grouped by date
+* 2024-12-10: 15 of 39 questions found with no other references
 * 2024-12-09: 0 of 1 questions found with no other references
-* 2024-12-03: 16 of 52 questions found with no other references
-* 2024-11-26: 12 of 41 questions found with no other references
+* 2024-12-03: 15 of 52 questions found with no other references
+* 2024-11-26: 11 of 41 questions found with no other references
 * 2024-11-19: 2 of 17 questions found with no other references
 * 2024-11-12: 14 of 49 questions found with no other references
 * 2024-11-05: 22 of 53 questions found with no other references
 * 2024-10-15: 14 of 48 questions found with no other references
-* 2024-10-01: 13 of 53 questions found with no other references
+* 2024-10-01: 12 of 53 questions found with no other references
 * 2024-09-24: 13 of 53 questions found with no other references
-* 2024-09-17: 16 of 51 questions found with no other references
-* 2024-09-03: 15 of 43 questions found with no other references
+* 2024-09-17: 14 of 51 questions found with no other references
+* 2024-09-03: 14 of 43 questions found with no other references
 * 2024-08-30: 0 of 1 questions found with no other references
 * 2024-08-27: 11 of 40 questions found with no other references
 * 2024-08-16: 0 of 2 questions found with no other references
@@ -92,7 +93,7 @@
 * 2023-02-07: 3 of 33 questions found with no other references
 * 2023-01-31: 2 of 18 questions found with no other references
 * 2023-01-27: 0 of 7 questions found with no other references
-* 2023-01-24: 2 of 23 questions found with no other references
+* 2023-01-24: 1 of 23 questions found with no other references
 * 2023-01-20: 0 of 2 questions found with no other references
 * 2023-01-17: 6 of 47 questions found with no other references
 * 2023-01-10: 5 of 45 questions found with no other references
