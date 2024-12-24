@@ -2070,6 +2070,18 @@ class TopicData
 		'PLbjDnnBIxiEppd5l36c5OFfQst74E9zpt' => [ // Emmet
 			'Coffee Stainers',
 		],
+		'Angelica' => [
+			'Coffee Stainers',
+		],
+		'Margit' => [
+			'Coffee Stainers',
+		],
+		'Robert' => [
+			'Coffee Stainers',
+		],
+		'Nick' => [
+			'Coffee Stainers',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
