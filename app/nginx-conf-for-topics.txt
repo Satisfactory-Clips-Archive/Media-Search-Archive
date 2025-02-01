@@ -1,15 +1,3 @@
-location /topics/features/tiers/tier-7/index.html {
-	return 301 /topics/tier-7/$is_args$args;
-}
-location /topics/features/tiers/tier-7 {
-	return 301 /topics/tier-7/$is_args$args;
-}
-location /topics/features/tiers/tier-8/index.html {
-	return 301 /topics/tier-8/$is_args$args;
-}
-location /topics/features/tiers/tier-8 {
-	return 301 /topics/tier-8/$is_args$args;
-}
 location /topics/features/autosave/index.html {
 	return 301 /topics/features/save-system/autosave/$is_args$args;
 }
