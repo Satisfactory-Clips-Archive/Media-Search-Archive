@@ -16,6 +16,7 @@
 		"^Community FYI: "
 	],
 	"state_of_dev": [
+		"^Intro \\\/ State of Everything$",
 		"^State of Dev: ",
 		"^State of Dev$",
 		"^State of Dave$",

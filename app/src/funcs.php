@@ -1453,9 +1453,23 @@ function prepare_uncached_captions_html_video_ids(
 
 	$captions_source = captions_source($injected);
 
+	echo 'checking what does not have html', "\n";
+
+	$total = count($does_not_have_json);
+	$current = 0;
+
 	$does_not_have_html = array_values(array_filter(
 		$does_not_have_json,
-		static function (string $maybe) use ($check_expiry, $captions_source) : bool {
+		static function (string $maybe) use (
+			$check_expiry,
+			$captions_source,
+			$total,
+			& $current
+		) : bool {
+			++$current;
+
+			echo "\r", 'checking ', $current, ' of ', $total;
+
 			$video_id = preg_replace(
 				'/^yt-([^,]+).*/',
 				'$1',
@@ -1538,6 +1552,8 @@ function prepare_uncached_captions_html_video_ids(
 			}
 		)
 	));
+
+	echo 'done', "\n";
 
 	return array_values($can_have_html);
 }
