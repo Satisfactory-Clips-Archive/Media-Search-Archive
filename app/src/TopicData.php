@@ -127,7 +127,7 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
-		'1.1 Teasers' => [
+		'PLbjDnnBIxiEpXQI-Sa6xvbYt7NvygO7v1' => [ // 1.1 Teasers
 			1000,
 			'Satisfactory Updates',
 			'Teasers & Trailers',
