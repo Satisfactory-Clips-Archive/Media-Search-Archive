@@ -1568,8 +1568,7 @@ function captions_source(Injected $injected) : ProxiedCaptionsSource
 	if ( ! isset($instances[$id])) {
 		$fallback = new FilesystemCaptionsSource();
 		$instances[$id] = new ProxiedCaptionsSource(
-			new DynamicDatedTarballCaptionsSource($injected, $fallback),
-			$fallback
+			new DynamicDatedTarballCaptionsSource($injected, $fallback)
 		);
 	}
 

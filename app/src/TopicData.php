@@ -912,7 +912,7 @@ class TopicData
 			'Environment',
 			'Biomes',
 		],
-		'Eastern Dune Forest' => [
+		'PLbjDnnBIxiEqPt1VZbD73L2ZFH2xxqndu' => [ // Eastern Dune Forest
 			'Environment',
 			'Biomes',
 		],
@@ -939,7 +939,7 @@ class TopicData
 			'Biomes',
 			'Western Beaches',
 		],
-		'Western Dune Forest' => [
+		'PLbjDnnBIxiEq7ogXSsK2gmzp4Z8qejtw-' => [ // Western Dune Forest
 			'Environment',
 			'Biomes',
 		],
