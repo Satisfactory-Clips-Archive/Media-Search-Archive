@@ -2087,6 +2087,16 @@ class TopicData
 		'Nick' => [
 			'Coffee Stainers',
 		],
+		'Theo' => [
+			'Coffee Stainers',
+		],
+		'Josef' => [
+			'Coffee Stainers',
+		],
+		'Rosario' => [
+			'Coffee Stainers',
+		],
+
 	];
 
 	public const NOT_A_LIVESTREAM = [
