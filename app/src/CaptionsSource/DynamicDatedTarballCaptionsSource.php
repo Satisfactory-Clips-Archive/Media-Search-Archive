@@ -110,6 +110,11 @@ final class DynamicDatedTarballCaptionsSource extends AbstractCaptionsSource
 
 		$result = $this->captions_data($date)->exists($filename);
 
+		if (!$result && $this->fallback->exists($filename)) {
+			$this->add_from_string($filename, $this->fallback->get_content($filename));
+			$result = $this->captions_data($date)->exists($filename);
+		}
+
 		if ($result && $this->fallback->exists($filename)) {
 			$this->fallback->remove_cached_file($filename);
 		}
