@@ -9,7 +9,11 @@ const playlists_ids = Object.keys(require(`${__dirname}/data/api-cache/playlists
 
 (async () => {
 	let progress = 0;
-	for (const playlist_id of playlists_ids) {
+	const batch_size = 8;
+	for (let index = 0; index < playlists_ids.length; index += batch_size) {
+		const playlist_ids_in_batch = playlists_ids.slice(index, index + batch_size);
+
+		await Promise.all(playlist_ids_in_batch.map(async (playlist_id) => {
 		++progress;
 
 		console.log(`${progress} of ${playlists_ids.length}`);
@@ -19,5 +23,6 @@ const playlists_ids = Object.keys(require(`${__dirname}/data/api-cache/playlists
 		const html = await (await fetch(`https://www.youtube.com/playlist?list=${playlist_id}`)).text();
 
 		await writeFile(cache_html, html);
+		}))
 	}
 })();
