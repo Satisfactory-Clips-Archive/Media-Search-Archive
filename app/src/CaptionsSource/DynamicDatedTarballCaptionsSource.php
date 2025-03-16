@@ -7,7 +7,9 @@ declare(strict_types=1);
 namespace SignpostMarv\VideoClipNotes\CaptionsSource;
 
 use DateTimeImmutable;
+use FilesystemIterator;
 use InvalidArgumentException;
+use Phar;
 use PharData;
 use SignpostMarv\VideoClipNotes\Injected;
 use function SignpostMarv\VideoClipNotes\determine_date_for_video;
@@ -42,14 +44,29 @@ final class DynamicDatedTarballCaptionsSource extends AbstractCaptionsSource
 				protected function captions_data(): PharData
 				{
 					if ( ! isset($this->data)) {
+						$tarball = __DIR__ . '/../../captions-dated-cache/captions.' . $this->date . '.tar';
+
+						if (is_file($tarball . '.bz2')) {
+							if (is_file($tarball)) {
+								unlink($tarball);
+							}
+
+							$tarball = $tarball . '.bz2';
+						}
+
 						$this->data = new PharData(
-							__DIR__ . '/../../captions-dated-cache/captions.' . $this->date . '.tar',
+							$tarball,
 							(
-								PharData::CURRENT_AS_PATHNAME
-								| PharData::SKIP_DOTS
-								| PharData::UNIX_PATHS
-							)
+								FilesystemIterator::CURRENT_AS_PATHNAME
+								| FilesystemIterator::SKIP_DOTS
+								| FilesystemIterator::UNIX_PATHS
+							),
+							format: Phar::TAR,
 						);
+
+						if (!$this->data->isCompressed()) {
+							$this->data = $this->data->compress(Phar::BZ2);
+						}
 					}
 
 					return $this->data;
