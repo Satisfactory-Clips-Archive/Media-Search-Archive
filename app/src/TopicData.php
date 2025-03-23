@@ -699,9 +699,14 @@ class TopicData
 		'PLbjDnnBIxiErQ8_2rnJ749i4017On9Ss3' => [ // Dylan
 			'Coffee Stainers',
 		],
-		'PLbjDnnBIxiEoKp-47IB5MQO0gc_m6I_k6' => [ // Hyper Tubes
+		'PLbjDnnBIxiEoKp-47IB5MQO0gc_m6I_k6' => [ // Hypertubes
 			'Features',
 			'Transportation',
+		],
+		'PLbjDnnBIxiEpAPImk7F8X3ri0poiQrhf2' => [ // Hypertube Junctions
+			'Features',
+			'Transportation',
+			'Hypertubes',
 		],
 		'PLbjDnnBIxiEqC9fXtj3M18h0ZeCfZ2u6I' => [ // Jace
 			'Coffee Stainers',

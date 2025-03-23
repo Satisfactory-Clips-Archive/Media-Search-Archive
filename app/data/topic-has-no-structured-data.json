@@ -284,6 +284,7 @@
     "features\/tiers\/tier-10",
     "features\/transportation",
     "features\/transportation\/hypertubes",
+    "features\/transportation\/hypertubes\/junctions",
     "features\/transportation\/trains",
     "features\/transportation\/trains\/train-signals",
     "features\/transportation\/vehicles",

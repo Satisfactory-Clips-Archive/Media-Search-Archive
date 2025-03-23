@@ -59,6 +59,7 @@ class Slugify extends Base
 			'Snutt\'s Adventures with Creatures' => 'adventures-with-creatures',
 			'Satisfactory 1.0 Closed Beta' => 'closed-beta',
 			'Blueprint Designer Mk.2' => 'mk.2',
+			'Hypertube Junctions' => 'junctions',
 		];
 
 		parent::__construct($options, $provider);
