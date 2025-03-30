@@ -18,6 +18,10 @@ const playlists_ids = Object.keys(require(`${__dirname}/data/api-cache/playlists
 
 		console.log(`${progress} of ${playlists_ids.length}`);
 
+		if (!playlist_id.startsWith('PL')) {
+			return;
+		}
+
 		const cache_html = `${__dirname}/playlists-html-cache/${playlist_id}.html`;
 
 		const html = await (await fetch(`https://www.youtube.com/playlist?list=${playlist_id}`)).text();
