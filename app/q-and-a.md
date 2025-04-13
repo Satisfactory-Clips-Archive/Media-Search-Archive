@@ -1,5 +1,5 @@
 # Progress
-* 9755 questions found out of 13923 clips
+* 9755 questions found out of 13924 clips
 * 9353 non-trolling & on-topic questions found out of 9755 total questions
 * 846 questions found with no other references
 ## grouped by date
