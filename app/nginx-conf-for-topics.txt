@@ -514,3 +514,15 @@ location /topics/features/planned-features/achievements/index.html {
 location /topics/features/planned-features/achievements {
 	return 301 /topics/features/achievements/$is_args$args;
 }
+location /topics/hypertube-junctions/index.html {
+	return 301 /topics/features/transportation/hypertubes/junctions/$is_args$args;
+}
+location /topics/hypertube-junctions {
+	return 301 /topics/features/transportation/hypertubes/junctions/$is_args$args;
+}
+location /topics/satisfactory-updates/speculative/satisfactory-1-1/index.html {
+	return 301 /topics/satisfactory-updates/pending/satisfactory-1-1/$is_args$args;
+}
+location /topics/satisfactory-updates/speculative/satisfactory-1-1 {
+	return 301 /topics/satisfactory-updates/pending/satisfactory-1-1/$is_args$args;
+}
