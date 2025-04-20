@@ -275,7 +275,7 @@ class TopicData
 		'PLbjDnnBIxiEpEFyjc7EIHVjKwQDfUpYMS' => [ // Satisfactory 1.1
 			1100,
 			'Satisfactory Updates',
-			'Speculative',
+			'Pending',
 		],
 		'PLbjDnnBIxiEruo0Lbpj6lJAWFcxyKZpJY' => [ // Satisfactory 1.2
 			1200,
