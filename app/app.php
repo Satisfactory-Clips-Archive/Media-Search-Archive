@@ -990,7 +990,21 @@ foreach (array_keys($transcripts_json) as $video_id) {
 				$video_playlists[$video_id] ?? $video_playlists[preg_replace('/^yt-/', '', preg_replace('/,.+$/', '', $video_id))]
 			)
 		),
-		static function (string $maybe) use ($playlists) : bool {
+		static function (string $maybe) use ($playlists, $video_id) : bool {
+			if (
+				in_array(
+					$video_id,
+					[
+						'V_YXOp7VQqc',
+						'6xKMiQJdZxg',
+					],
+					true,
+				)
+				&& 'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY' === $maybe
+			) {
+				return false;
+			}
+
 			return isset($playlists[$maybe]);
 		}
 	));

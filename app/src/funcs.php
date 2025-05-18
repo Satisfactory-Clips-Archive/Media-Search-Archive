@@ -3052,6 +3052,19 @@ function determine_date_for_video(
 	}
 
 	foreach (array_keys($playlist_date_ref) as $playlist_id) {
+		if (
+			in_array(
+				$video_id,
+				[
+					'V_YXOp7VQqc',
+					'6xKMiQJdZxg',
+				],
+				true,
+			)
+			&& 'PLbjDnnBIxiEqJudZvNZcnhrq0tQG_JSBY' === $playlist_id
+		) {
+			continue;
+		}
 		if ( ! $ignore_lack_of_data && ! isset($playlists[$playlist_id])) {
 			throw new RuntimeException(sprintf(
 				'No data available for playlist %s',
@@ -3065,9 +3078,10 @@ function determine_date_for_video(
 				$matches[$video_id] = false;
 
 				throw new InvalidArgumentException(sprintf(
-					'Video %s already found on %s',
+					'Video %s already found on %s when checking %s',
 					$video_id,
-					$found
+					$found,
+					$playlist_id,
 				));
 			}
 
