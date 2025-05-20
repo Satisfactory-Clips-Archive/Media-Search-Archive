@@ -2101,7 +2101,9 @@ class TopicData
 		'Rosario' => [
 			'Coffee Stainers',
 		],
-
+		'Jason' => [
+			'Coffee Stainers',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
