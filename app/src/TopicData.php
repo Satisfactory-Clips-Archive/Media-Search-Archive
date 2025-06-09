@@ -287,6 +287,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Speculative',
 		],
+		'PLbjDnnBIxiEplw0-EILli-fUEWMi19oPp' => [ // Satisfactory 1.4
+			1400,
+			'Satisfactory Updates',
+			'Speculative',
+		],
 		'PLbjDnnBIxiEp3NZrYFYvIXhstYb2TAZNS' => [ // Satisfactory 2.0
 			2000,
 			'Satisfactory Updates',
@@ -2102,6 +2107,9 @@ class TopicData
 			'Coffee Stainers',
 		],
 		'PLbjDnnBIxiEruT5Zg7JLcY5LC8fkn2Wkq' => [ // Jason
+			'Coffee Stainers',
+		],
+		'PLbjDnnBIxiEqR9ixLOUWOXOLEv0Igt_-e' => [ // Samuel
 			'Coffee Stainers',
 		],
 	];
