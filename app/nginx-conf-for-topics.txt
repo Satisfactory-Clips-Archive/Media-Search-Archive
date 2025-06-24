@@ -520,9 +520,33 @@ location /topics/hypertube-junctions/index.html {
 location /topics/hypertube-junctions {
 	return 301 /topics/features/transportation/hypertubes/junctions/$is_args$args;
 }
+location /topics/satisfactory-1-4/index.html {
+	return 301 /topics/satisfactory-updates/speculative/satisfactory-1-4/$is_args$args;
+}
+location /topics/satisfactory-1-4 {
+	return 301 /topics/satisfactory-updates/speculative/satisfactory-1-4/$is_args$args;
+}
+location /topics/samuel/index.html {
+	return 301 /topics/coffee-stainers/samuel/$is_args$args;
+}
+location /topics/samuel {
+	return 301 /topics/coffee-stainers/samuel/$is_args$args;
+}
+location /topics/features/requested-features/elevators/index.html {
+	return 301 /topics/features/buildables/elevators/$is_args$args;
+}
+location /topics/features/requested-features/elevators {
+	return 301 /topics/features/buildables/elevators/$is_args$args;
+}
 location /topics/satisfactory-updates/speculative/satisfactory-1-1/index.html {
-	return 301 /topics/satisfactory-updates/pending/satisfactory-1-1/$is_args$args;
+	return 301 /topics/satisfactory-updates/released/satisfactory-1-1/$is_args$args;
 }
 location /topics/satisfactory-updates/speculative/satisfactory-1-1 {
-	return 301 /topics/satisfactory-updates/pending/satisfactory-1-1/$is_args$args;
+	return 301 /topics/satisfactory-updates/released/satisfactory-1-1/$is_args$args;
+}
+location /topics/satisfactory-updates/pending/satisfactory-1-1/index.html {
+	return 301 /topics/satisfactory-updates/released/satisfactory-1-1/$is_args$args;
+}
+location /topics/satisfactory-updates/pending/satisfactory-1-1 {
+	return 301 /topics/satisfactory-updates/released/satisfactory-1-1/$is_args$args;
 }

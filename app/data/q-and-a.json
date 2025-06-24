@@ -760,7 +760,7 @@
         "title": "Q&A: Could you add more Zoop capabilities?",
         "date": "2025-06-10",
         "topics": [
-            "zoop"
+            "features\/build-modes\/zooping"
         ]
     },
     "yt-m_UVVHl1CxA,3565.21029,3691.812567": {
@@ -980,7 +980,7 @@
         "date": "2025-06-10",
         "topics": [
             "coffee-stainers\/emmet",
-            "elevator",
+            "features\/buildables\/elevators",
             "satisfactory-updates\/released\/satisfactory-1-1",
             "soundtrack",
             "special-guests"
@@ -1067,7 +1067,7 @@
         "date": "2025-06-10",
         "topics": [
             "coffee-stainers\/emmet",
-            "elevator",
+            "features\/buildables\/elevators",
             "satisfactory-updates\/released\/satisfactory-1-1",
             "special-guests",
             "story-and-lore\/characters\/ada"
@@ -1300,8 +1300,8 @@
         "topics": [
             "coffee-stainers\/lym",
             "coffee-stainers\/sacha",
-            "elevator",
             "features\/blueprints",
+            "features\/buildables\/elevators",
             "satisfactory-updates\/released\/satisfactory-1-1",
             "special-guests"
         ],
