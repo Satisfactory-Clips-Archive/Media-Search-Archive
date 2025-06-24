@@ -1168,7 +1168,8 @@
         "features\/requested-features": 1622921459
     },
     "PLbjDnnBIxiEqGt2sjZVdmGPpirMrXcDkA": {
-        "features\/requested-features\/elevators": 1622921459
+        "features\/requested-features\/elevators": 1622921459,
+        "features\/buildables\/elevators": 1750616091
     },
     "PLbjDnnBIxiErdHt5qAosuMOe7KcAEH69N": {
         "june-2021-epic-mega-sale-stream": 1622921459
@@ -2018,7 +2019,8 @@
     },
     "PLbjDnnBIxiEpEFyjc7EIHVjKwQDfUpYMS": {
         "satisfactory-updates\/speculative\/satisfactory-1-1": 1726954308,
-        "satisfactory-updates\/pending\/satisfactory-1-1": 1745150353
+        "satisfactory-updates\/pending\/satisfactory-1-1": 1745150353,
+        "satisfactory-updates\/released\/satisfactory-1-1": 1750616091
     },
     "PLbjDnnBIxiEpj8SNfavR1AzoRISHvpi6Z": {
         "environment\/biomes\/western-beaches\/long-beach": 1727525567

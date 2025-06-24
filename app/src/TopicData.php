@@ -275,7 +275,7 @@ class TopicData
 		'PLbjDnnBIxiEpEFyjc7EIHVjKwQDfUpYMS' => [ // Satisfactory 1.1
 			1100,
 			'Satisfactory Updates',
-			'Pending',
+			'Released',
 		],
 		'PLbjDnnBIxiEruo0Lbpj6lJAWFcxyKZpJY' => [ // Satisfactory 1.2
 			1200,
@@ -1529,7 +1529,7 @@ class TopicData
 		],
 		'PLbjDnnBIxiEqGt2sjZVdmGPpirMrXcDkA' => [ // Elevators
 			'Features',
-			'Requested Features',
+			'Buildables',
 		],
 		'PLbjDnnBIxiEqpoKbEqKcyh5D006HnL3xJ' => [ // Underground Biome
 			'Features',
@@ -1798,9 +1798,11 @@ class TopicData
 		'PLbjDnnBIxiEobP4EgydtWaC_BJKd0w9Vi' => [ // Rasmus
 			'Coffee Stainers',
 		],
+		/*
 		'PLbjDnnBIxiEqilvgLbk4PUBQSyokspJyD' => [ // Tobias
 			'Coffee Stainers',
 		],
+		*/
 		'PLbjDnnBIxiEpJ3RlWlRcK-b0kRERkWQvC' => [ // Foundation Stencils
 			'Features',
 			'Buildables',
@@ -2110,6 +2112,9 @@ class TopicData
 			'Coffee Stainers',
 		],
 		'PLbjDnnBIxiEqR9ixLOUWOXOLEv0Igt_-e' => [ // Samuel
+			'Coffee Stainers',
+		],
+		'Nikita' => [
 			'Coffee Stainers',
 		],
 	];

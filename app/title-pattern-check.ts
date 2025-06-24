@@ -58,7 +58,7 @@ import {
 							}
 						}
 
-						console.error(different_values);
+						console.error(different_values, maybe);
 
 						throw new Error('Duplicate id found!');
 					}
