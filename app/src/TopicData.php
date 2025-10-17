@@ -331,6 +331,10 @@ class TopicData
 			800,
 			'Satisfactory Updates',
 		],
+		'Anniversary' => [
+			'Satisfactory Updates',
+			'Seasonal Events',
+		],
 		'PLbjDnnBIxiEq84iBBkP2g69rPYXD-yWMy' => [ // FICS⁕MAS
 			'Satisfactory Updates',
 			'Seasonal Events',
