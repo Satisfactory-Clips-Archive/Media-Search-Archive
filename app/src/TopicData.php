@@ -132,6 +132,11 @@ class TopicData
 			'Satisfactory Updates',
 			'Teasers & Trailers',
 		],
+		'1.2 Teasers' => [
+			1100,
+			'Satisfactory Updates',
+			'Teasers & Trailers',
+		],
 		'Update 5 Quiz: Underrated/Overrated' => [
 			1,
 			'Satisfactory Updates',
