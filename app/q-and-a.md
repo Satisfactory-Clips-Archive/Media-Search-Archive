@@ -3,7 +3,7 @@
 * 9788 non-trolling & on-topic questions found out of 10212 total questions
 * 944 questions found with no other references
 ## grouped by date
-* 2025-10-30: 11 of 44 questions found with no other references
+* 2025-10-28: 11 of 44 questions found with no other references
 * 2025-10-21: 1 of 17 questions found with no other references
 * 2025-10-14: 17 of 45 questions found with no other references
 * 2025-10-03: 4 of 10 questions found with no other references
