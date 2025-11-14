@@ -51,7 +51,7 @@ const done_keys = Object.keys(done);
 			Array<[string, string, string]>,
 			{
 				title: string,
-				topics: (false|string[])[]
+				topics: (false|string[]|{from_video: string, skip?: true})[]
 			}
 		]> => {
 			const data = csv(fileset[2]) as Promise<Array<[string, string, string]>>;
@@ -73,6 +73,10 @@ const done_keys = Object.keys(done);
 
 		return Object.entries(json_data.topics).filter((e) => {
 			const [, maybe] = e;
+
+			if (null !== maybe && 'object' === typeof maybe && 'from_video' in maybe) {
+				return false;
+			}
 
 			return maybe !== false && maybe !== null;
 		}).map((e) : [string, string, [string, string, string]] => {

@@ -46,6 +46,10 @@ class Injected
 	 */
 	public array $cache = [];
 
+	public array $from_a_livestream = [
+		...TopicData::VIDEO_IS_FROM_A_LIVESTREAM,
+	];
+
 	/**
 	 * @var array<string, list<int|string>>
 	 */
@@ -166,6 +170,49 @@ class Injected
 				ARRAY_FILTER_USE_BOTH
 			));
 
+			if (
+				1 === count($determined_topics)
+				&& false !== strpos($video_id, ',')
+				&& preg_match('/^\d{4,}-\d{2}-\d{2}$/', $determined_topics[0])
+			) {
+				$video_id_parts = explode(',', $video_id);
+				$end = '';
+				[$csv_video_id, $start] = $video_id_parts;
+
+				if (isset($video_id_parts[2])) {
+					$end = $video_id_parts[2];
+				}
+
+				$date = determine_date_for_video(
+					$csv_video_id,
+					$this->cache['playlists'],
+					$this->playlists_date_ref
+				);
+
+				$csv = get_dated_csv($date, $csv_video_id);
+
+				$maybe_match_found = array_filter(
+					$csv[1],
+					static function (array $maybe) use ($start, $end) : bool {
+						return $maybe[0] === $start && $maybe[1] === $end;
+					}
+				);
+				if (1 === count($maybe_match_found)) {
+					$csv_offset = key($maybe_match_found);
+
+					if (isset($csv[2]['topics'][$csv_offset]['skip'])) {
+						$determined_topics = [];
+					} else if (isset($csv[2]['topics'][$csv_offset]['from_video'])) {
+						$determined_topics = [
+							...$determined_topics,
+							...$this->determine_video_topics(
+								preg_replace('/^yt-/', '', $csv[2]['topics'][$csv_offset]['from_video'])
+							),
+						];
+					}
+				}
+			}
+
 			if (0 === count($determined_topics) && false !== strpos($video_id, ',')) {
 				$video_id_parts = explode(',', $video_id);
 				$end = '';
@@ -192,7 +239,13 @@ class Injected
 
 				if (1 === count($maybe_match_found)) {
 					$csv_offset = key($maybe_match_found);
-
+					if (isset($csv[2]['topics'][$csv_offset]['skip'])) {
+						$determined_topics = [];
+					} else if (isset($csv[2]['topics'][$csv_offset]['from_video'])) {
+						$determined_topics = $this->determine_video_topics(
+							preg_replace('/^yt-/', '', $csv[2]['topics'][$csv_offset]['from_video'])
+						);
+					} else {
 					$determined_topics = array_map(
 						function (string $topic_name): string {
 							return determine_playlist_id(
@@ -204,6 +257,7 @@ class Injected
 						},
 						($csv[2]['topics'][$csv_offset] ?? []) ?: []
 					);
+					}
 				}
 			}
 

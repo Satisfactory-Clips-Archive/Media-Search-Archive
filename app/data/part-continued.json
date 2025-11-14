@@ -1,4 +1,442 @@
 {
+    "yt-gfGIx-hPelQ,1142.266383,1235.157977": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,1343.682511,1377.015626",
+        "title": "Final Fantasy 14 (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,1343.682511,1377.015626": {
+        "previous": "yt-gfGIx-hPelQ,1142.266383,1235.157977",
+        "next": null,
+        "title": "Final Fantasy 14 (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,4106.290367875,4272.983242": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,4309.179504,4345.204455",
+        "title": "Mikael & Jason Talk: Doughnuts (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,4309.179504,4345.204455": {
+        "previous": "yt-gfGIx-hPelQ,4106.290367875,4272.983242",
+        "next": null,
+        "title": "Mikael & Jason Talk: Doughnuts (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2464.527699,2559.01644": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,2580.689211,2597.221986",
+        "title": "Mikael Talk: 1.1 Update for PC (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2580.689211,2597.221986": {
+        "previous": "yt-gfGIx-hPelQ,2464.527699,2559.01644",
+        "next": null,
+        "title": "Mikael Talk: 1.1 Update for PC (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,1626.262771,1942.993884": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,2016.957714,2088.690821",
+        "title": "Mikael Talk: Console Launch; Thank You (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2016.957714,2088.690821": {
+        "previous": "yt-gfGIx-hPelQ,1626.262771,1942.993884",
+        "next": "yt-gfGIx-hPelQ,2559.835521,2580.011852",
+        "title": "Mikael Talk: Console Launch; Thank You (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2559.835521,2580.011852": {
+        "previous": "yt-gfGIx-hPelQ,2016.957714,2088.690821",
+        "next": null,
+        "title": "Mikael Talk: Console Launch; Thank You (Part 3)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,5439.525602,5456.039836": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,5858.450094625,5917.579709",
+        "title": "Q&A: Did you ever expect the Community to make such impressive builds? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,5858.450094625,5917.579709": {
+        "previous": "yt-gfGIx-hPelQ,5439.525602,5456.039836",
+        "next": "yt-gfGIx-hPelQ,6640.578669,6751.30646",
+        "title": "Q&A: Did you ever expect the Community to make such impressive builds? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,6640.578669,6751.30646": {
+        "previous": "yt-gfGIx-hPelQ,5858.450094625,5917.579709",
+        "next": null,
+        "title": "Q&A: Did you ever expect the Community to make such impressive builds? (Part 3)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,5044.601612,5084.702099": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,5473.632788,5558.819209",
+        "title": "Q&A: How can I play with my friend who plays on PS5 when I play on Xbox? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,5473.632788,5558.819209": {
+        "previous": "yt-gfGIx-hPelQ,5044.601612,5084.702099",
+        "next": null,
+        "title": "Q&A: How can I play with my friend who plays on PS5 when I play on Xbox? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,1235.619485,1241.714734": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,1377.015626,1385.9070954637098",
+        "title": "Q&A: How is Hannah doing? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,1377.015626,1385.9070954637098": {
+        "previous": "yt-gfGIx-hPelQ,1235.619485,1241.714734",
+        "next": null,
+        "title": "Q&A: How is Hannah doing? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,1289.015179,1343.682511": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,1385.9070954637098,1443.972271",
+        "title": "Q&A: I have 1000 hours in Satisfactory and I still haven't beaten it, what am I doing wrong? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,1385.9070954637098,1443.972271": {
+        "previous": "yt-gfGIx-hPelQ,1289.015179,1343.682511",
+        "next": "yt-gfGIx-hPelQ,1556.752549,1565.560465",
+        "title": "Q&A: I have 1000 hours in Satisfactory and I still haven't beaten it, what am I doing wrong? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,1556.752549,1565.560465": {
+        "previous": "yt-gfGIx-hPelQ,1385.9070954637098,1443.972271",
+        "next": "yt-gfGIx-hPelQ,2409.033088,2414.179106",
+        "title": "Q&A: I have 1000 hours in Satisfactory and I still haven't beaten it, what am I doing wrong? (Part 3)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2409.033088,2414.179106": {
+        "previous": "yt-gfGIx-hPelQ,1556.752549,1565.560465",
+        "next": null,
+        "title": "Q&A: I have 1000 hours in Satisfactory and I still haven't beaten it, what am I doing wrong? (Part 4)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,866.045147,895.4470157986112": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,940.2062688750001,963.762889",
+        "title": "Q&A: Satisfactory on 3DS? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,940.2062688750001,963.762889": {
+        "previous": "yt-gfGIx-hPelQ,866.045147,895.4470157986112",
+        "next": null,
+        "title": "Q&A: Satisfactory on 3DS? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,4581.921155,4658.216119": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,4739.299352,4758.958841",
+        "title": "Q&A: What did you guys accidentally leak in the past? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,4739.299352,4758.958841": {
+        "previous": "yt-gfGIx-hPelQ,4581.921155,4658.216119",
+        "next": null,
+        "title": "Q&A: What did you guys accidentally leak in the past? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,3086.797728,3159.126668": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,5607.161116,5612.569335",
+        "title": "Q&A: When does 1.2 start getting Teasers? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,5607.161116,5612.569335": {
+        "previous": "yt-gfGIx-hPelQ,3086.797728,3159.126668",
+        "next": "yt-gfGIx-hPelQ,6204.670916,6318.256504",
+        "title": "Q&A: When does 1.2 start getting Teasers? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,6204.670916,6318.256504": {
+        "previous": "yt-gfGIx-hPelQ,5607.161116,5612.569335",
+        "next": null,
+        "title": "Q&A: When does 1.2 start getting Teasers? (Part 3)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2356.696641,2400.278077": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,6151.454704,6178.69985",
+        "title": "Q&A: When will Rain be coming back? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,6151.454704,6178.69985": {
+        "previous": "yt-gfGIx-hPelQ,2356.696641,2400.278077",
+        "next": null,
+        "title": "Q&A: When will Rain be coming back? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,6986.954098,7046.133294965278": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,7060.344927,7070.454847",
+        "title": "Q&A: Where is the No Man's Sky Easter Egg? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,7060.344927,7070.454847": {
+        "previous": "yt-gfGIx-hPelQ,6986.954098,7046.133294965278",
+        "next": null,
+        "title": "Q&A: Where is the No Man's Sky Easter Egg? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,1458.905875,1556.079041": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,1565.560465,1625.633324",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,1565.560465,1625.633324": {
+        "previous": "yt-gfGIx-hPelQ,1458.905875,1556.079041",
+        "next": "yt-gfGIx-hPelQ,2090.087389,2355.488737",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2090.087389,2355.488737": {
+        "previous": "yt-gfGIx-hPelQ,1565.560465,1625.633324",
+        "next": "yt-gfGIx-hPelQ,2401.056487,2409.033088",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 3)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2401.056487,2409.033088": {
+        "previous": "yt-gfGIx-hPelQ,2090.087389,2355.488737",
+        "next": "yt-gfGIx-hPelQ,2612.821375,2622.22119",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 4)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2612.821375,2622.22119": {
+        "previous": "yt-gfGIx-hPelQ,2401.056487,2409.033088",
+        "next": "yt-gfGIx-hPelQ,2623.874675,2754.338026",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 5)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2623.874675,2754.338026": {
+        "previous": "yt-gfGIx-hPelQ,2612.821375,2622.22119",
+        "next": "yt-gfGIx-hPelQ,2776.35633,2785.592651",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 6)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2776.35633,2785.592651": {
+        "previous": "yt-gfGIx-hPelQ,2623.874675,2754.338026",
+        "next": "yt-gfGIx-hPelQ,2793.616715,2842.882164",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 7)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,2793.616715,2842.882164": {
+        "previous": "yt-gfGIx-hPelQ,2776.35633,2785.592651",
+        "next": "yt-gfGIx-hPelQ,3159.126668,3314.172512",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 8)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,3159.126668,3314.172512": {
+        "previous": "yt-gfGIx-hPelQ,2793.616715,2842.882164",
+        "next": "yt-gfGIx-hPelQ,3456.069822,3476.879675",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 9)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,3456.069822,3476.879675": {
+        "previous": "yt-gfGIx-hPelQ,3159.126668,3314.172512",
+        "next": "yt-gfGIx-hPelQ,4345.204455,4482.205796",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 10)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,4345.204455,4482.205796": {
+        "previous": "yt-gfGIx-hPelQ,3456.069822,3476.879675",
+        "next": "yt-gfGIx-hPelQ,4511.116544,4523.970373",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 11)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,4511.116544,4523.970373": {
+        "previous": "yt-gfGIx-hPelQ,4345.204455,4482.205796",
+        "next": "yt-gfGIx-hPelQ,4548.12464,4553.73308",
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 12)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,4548.12464,4553.73308": {
+        "previous": "yt-gfGIx-hPelQ,4511.116544,4523.970373",
+        "next": null,
+        "title": "Q&A: Will there be some new\/bigger Update like the ones before 1.0? (Part 13)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,4658.216119,4739.299352": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,4758.958841,4766.644791",
+        "title": "Q&A: Will you guys add an unlimited Graphics mode for taking screenshots? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,4758.958841,4766.644791": {
+        "previous": "yt-gfGIx-hPelQ,4658.216119,4739.299352",
+        "next": null,
+        "title": "Q&A: Will you guys add an unlimited Graphics mode for taking screenshots? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,6786.058392,6981.393305": {
+        "previous": null,
+        "next": "yt-gfGIx-hPelQ,7046.133294965278,7054.545983",
+        "title": "Q&A: Would Mikael want to move to Japan? (Part 1)",
+        "date": "2025-11-11"
+    },
+    "yt-gfGIx-hPelQ,7046.133294965278,7054.545983": {
+        "previous": "yt-gfGIx-hPelQ,6786.058392,6981.393305",
+        "next": null,
+        "title": "Q&A: Would Mikael want to move to Japan? (Part 2)",
+        "date": "2025-11-11"
+    },
+    "yt-P12elmeK-NU,5652.514745,5804.113892": {
+        "previous": null,
+        "next": "yt-P12elmeK-NU,5838.646316330644,5854.893911",
+        "title": "Mikael, Jason, Guru, Uzu Talk: QA Tester job ad (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,5838.646316330644,5854.893911": {
+        "previous": "yt-P12elmeK-NU,5652.514745,5804.113892",
+        "next": null,
+        "title": "Mikael, Jason, Guru, Uzu Talk: QA Tester job ad (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,11548.616031,11690.310172": {
+        "previous": null,
+        "next": "yt-P12elmeK-NU,11737.092903,11802.380111",
+        "title": "Q&A: Are there any things that have been compromised from PC on Console? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,11737.092903,11802.380111": {
+        "previous": "yt-P12elmeK-NU,11548.616031,11690.310172",
+        "next": null,
+        "title": "Q&A: Are there any things that have been compromised from PC on Console? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,4784.167208,4858.436001": {
+        "previous": null,
+        "next": "yt-P12elmeK-NU,7586.633235,7713.874936",
+        "title": "Q&A: Can we see auto-pickup? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,7586.633235,7713.874936": {
+        "previous": "yt-P12elmeK-NU,4784.167208,4858.436001",
+        "next": null,
+        "title": "Q&A: Can we see auto-pickup? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,1883.035806,1903.911336": {
+        "previous": null,
+        "next": null,
+        "title": "Q&A: Can you play with controller on PC? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,4219.60097,4225.876534": {
+        "previous": null,
+        "next": null,
+        "title": "Q&A: Can you play with controller on PC? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,4609.25281,4748.279636": {
+        "previous": null,
+        "next": "yt-P12elmeK-NU,9951.96491,10040.633398",
+        "title": "Q&A: Does Mikael know programming? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,9951.96491,10040.633398": {
+        "previous": "yt-P12elmeK-NU,4609.25281,4748.279636",
+        "next": null,
+        "title": "Q&A: Does Mikael know programming? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,6625.576555,6657.752344": {
+        "previous": null,
+        "next": null,
+        "title": "Q&A: Golf? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,10525.546819,10543.241203": {
+        "previous": null,
+        "next": null,
+        "title": "Q&A: Golf? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,11692.787969,11737.092903": {
+        "previous": null,
+        "next": "yt-P12elmeK-NU,11817.76317,11840.231869",
+        "title": "Q&A: How do you play Crossplay between PS5 & XBox? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,11817.76317,11840.231869": {
+        "previous": "yt-P12elmeK-NU,11692.787969,11737.092903",
+        "next": null,
+        "title": "Q&A: How do you play Crossplay between PS5 & XBox? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,1903.911336,1950.896316": {
+        "previous": null,
+        "next": "yt-P12elmeK-NU,11840.231869,11904.727546",
+        "title": "Q&A: Samsung Fridge release, when? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,11840.231869,11904.727546": {
+        "previous": "yt-P12elmeK-NU,1903.911336,1950.896316",
+        "next": null,
+        "title": "Q&A: Samsung Fridge release, when? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,1987.851168,2004.194478": {
+        "previous": null,
+        "next": "yt-P12elmeK-NU,4456.555224,4553.036847",
+        "title": "Q&A: Steam Deck compatibility? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,4456.555224,4553.036847": {
+        "previous": "yt-P12elmeK-NU,1987.851168,2004.194478",
+        "next": null,
+        "title": "Q&A: Steam Deck compatibility? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,2198.208058,2300.741245": {
+        "previous": null,
+        "next": "yt-P12elmeK-NU,10694.556427,10783.583421",
+        "title": "Q&A: Switch 2 release, when? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,10694.556427,10783.583421": {
+        "previous": "yt-P12elmeK-NU,2198.208058,2300.741245",
+        "next": null,
+        "title": "Q&A: Switch 2 release, when? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,6202.76068,6230.182137": {
+        "previous": null,
+        "next": "yt-P12elmeK-NU,6249.57865,6455.107649",
+        "title": "Q&A: What is planned for after Console release? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,6249.57865,6455.107649": {
+        "previous": "yt-P12elmeK-NU,6202.76068,6230.182137",
+        "next": null,
+        "title": "Q&A: What is planned for after Console release? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,1757.635999,1788.264984": {
+        "previous": null,
+        "next": "yt-P12elmeK-NU,2004.194478,2017.507959",
+        "title": "Q&A: When will Consoles get 1.2? (Part 1)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,2004.194478,2017.507959": {
+        "previous": "yt-P12elmeK-NU,1757.635999,1788.264984",
+        "next": "yt-P12elmeK-NU,4225.876534,4234.640902",
+        "title": "Q&A: When will Consoles get 1.2? (Part 2)",
+        "date": "2025-11-04"
+    },
+    "yt-P12elmeK-NU,4225.876534,4234.640902": {
+        "previous": "yt-P12elmeK-NU,2004.194478,2017.507959",
+        "next": null,
+        "title": "Q&A: When will Consoles get 1.2? (Part 3)",
+        "date": "2025-11-04"
+    },
     "yt-m_UVVHl1CxA,4035.282961,4256.348691": {
         "previous": null,
         "next": null,

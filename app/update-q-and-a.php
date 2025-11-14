@@ -79,20 +79,34 @@ uksort($existing, [$sorting, 'sort_video_ids_by_date']);
 
 $nullsAndFalses = [];
 
+$remove_these = [];
+
 foreach (get_externals() as $externals_data_groups) {
 	foreach ($externals_data_groups as $externals_data) {
 		[$video_id, $externals_csv, $data_for_external] = $externals_data;
 
 		foreach ($data_for_external['topics'] as $i => $external_data_row) {
-			if (null === $external_data_row || false === $external_data_row) {
+			if (
+				null === $external_data_row
+				|| false === $external_data_row
+				|| isset($external_data_row['skip'])
+			) {
 				[$start, $end] = $externals_csv[$i];
 
 				$skipping_qand_id = sprintf('' !== $end ? '%s,%s,%s' : '%s,%s', $video_id, $start, $end);
 
 				unset($existing[$skipping_qand_id]);
 			}
+
+			if (isset($external_data_row['from_video'])) {
+				$remove_these[] = $external_data_row['from_video'];
+			}
 		}
 	}
+}
+
+foreach ($remove_these as $video_id) {
+	unset($existing[preg_replace('/^yt-/', '', $video_id)]);
 }
 
 $data = json_encode_pretty($existing);

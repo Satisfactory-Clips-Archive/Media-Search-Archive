@@ -480,11 +480,9 @@ class TopicData
 		],
 		'PLbjDnnBIxiEoiskJRYH3hrAA192_4QTQ_' => [ // Console Release
 			'Features',
-			'Possible Features',
 		],
 		'PLbjDnnBIxiEqtHXWfST1R6GksAclU7-ES' => [ // FISHLABS
 			'Features',
-			'Possible Features',
 			'Console Release',
 		],
 		'PLbjDnnBIxiEqVTlmqhbpntiX-LNPSHZqz' => [ // Decor

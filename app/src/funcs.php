@@ -130,6 +130,61 @@ function url_overrides() : array
 			[new Filtering(), 'kvp_string_string'],
 			ARRAY_FILTER_USE_BOTH
 		);
+
+		$dated_json = glob(__DIR__ . '/../data/dated/*/*.json');
+		$dated_json = array_combine($dated_json, array_map(
+			static function(string $filepath): string {
+				return file_get_contents($filepath);
+			},
+			$dated_json
+		));
+		$dated_json = array_filter($dated_json, static function (string $contents): bool {
+			return str_contains($contents, '"from_video"');
+		});
+		$dated_json = array_map(
+			static function (string $contents): array {
+				return array_map(
+					static function (array $topics): string {
+						return $topics['from_video'];
+					},
+					array_filter(
+						json_decode($contents, true)['topics'] ?: [],
+						static function (array|bool|null $topics): bool {
+							return is_array($topics) && isset($topics['from_video']);
+						}
+					),
+				);
+			},
+			$dated_json,
+		);
+
+		foreach ($dated_json as $filepath_json => $video_ids) {
+			$csv = array_map(
+				static function (string $line) use ($filepath_json): string {
+					[$start, $end] = explode(',', $line);
+
+					return sprintf(
+						'%s,%s,%s',
+						str_replace('.json', '', basename($filepath_json)),
+						$start,
+						$end,
+					);
+				},
+				array_filter(
+					explode("\n", file_get_contents(
+						str_replace('.json', '.csv', $filepath_json)
+					)),
+					static function (int $row) use ($video_ids): bool {
+						return isset($video_ids[$row]);
+					},
+					ARRAY_FILTER_USE_KEY,
+				)
+			);
+
+			foreach ($video_ids as $offset => $video_id) {
+				$overrides[$csv[$offset]] = video_url_from_id($video_id);
+			}
+		}
 	}
 
 	return $overrides;
@@ -2629,6 +2684,13 @@ function process_dated_csv(
 		array_filter(
 			$externals_csv,
 			static function (int $k) use ($data) : bool {
+				if (
+					is_array($data['topics'][$k] ?? null)
+					&& isset($data['topics'][$k]['skip'])
+				) {
+					return false;
+				}
+
 				return false !== ($data['topics'][$k] ?? false) && null !== ($data['topics'][$k] ?? null);
 			},
 			ARRAY_FILTER_USE_KEY
@@ -2694,6 +2756,29 @@ function process_dated_csv(
 			}
 
 			if ($do_injection) {
+				if (
+					is_array($data['topics'][$i])
+					&& isset($data['topics'][$i]['from_video'])
+				) {
+					if (!in_array($data['topics'][$i]['from_video'], $injected->from_a_livestream, true )) {
+						$injected->from_a_livestream[] = $data['topics'][$i]['from_video'];
+					}
+					if (isset($data['topics'][$i]['skip'])) {
+						throw new RuntimeException('Data not filtered!');
+					}
+					foreach (
+						$injected->determine_video_topics($data['topics'][$i]['from_video']) as $playlist_id
+					) {
+						if ( ! isset($inject['playlists'][$playlist_id])) {
+							$inject['playlists'][$playlist_id] = ['', $playlist_id, []];
+						}
+
+						$inject['playlists'][$playlist_id][2][] = $clip_id;
+					}
+
+					continue;
+				}
+
 				foreach (($data['topics'][$i] ?? []) as $topic) {
 					[$playlist_id] = determine_playlist_id(
 						$topic,
@@ -3169,7 +3254,10 @@ function other_video_parts(string $video_id, bool $include_self = true) : array
 
 		while (null !== $checking['previous']) {
 			if (in_array($checking['previous'], $checked, true)) {
-				throw new RuntimeException('Infinite loop detected!');
+				throw new RuntimeException(sprintf(
+					'Infinite loop detected! (%s)',
+					$checking['previous'],
+				));
 			}
 
 			$checked[] = $checking['previous'];
@@ -3181,7 +3269,10 @@ function other_video_parts(string $video_id, bool $include_self = true) : array
 
 		while (null !== $checking['next']) {
 			if (in_array($checking['next'], $out, true)) {
-				throw new RuntimeException('Infinite loop detected!');
+				throw new RuntimeException(sprintf(
+					'Infinite loop detected! (%s)',
+					$checking['next'],
+				));
 			}
 
 			$out[] = $checking['next'];

@@ -233,7 +233,8 @@
         "features\/possible-features\/character-customisation": 1611444659
     },
     "PLbjDnnBIxiEoiskJRYH3hrAA192_4QTQ_": {
-        "features\/possible-features\/console-release": 1611444659
+        "features\/possible-features\/console-release": 1611444659,
+        "features\/console-release": 1763133805
     },
     "PLbjDnnBIxiEqVTlmqhbpntiX-LNPSHZqz": {
         "features\/possible-features\/decor": 1611444659
@@ -2029,7 +2030,8 @@
         "features\/buildings\/dimensional-depot": 1727525567
     },
     "PLbjDnnBIxiEqtHXWfST1R6GksAclU7-ES": {
-        "features\/possible-features\/console-release\/fishlabs": 1727525567
+        "features\/possible-features\/console-release\/fishlabs": 1727525567,
+        "features\/console-release\/fishlabs": 1763133805
     },
     "PLbjDnnBIxiErQILANE8dcNqmJhRi5s9bK": {
         "the-spill": 1728152203
@@ -2136,5 +2138,11 @@
     "PLbjDnnBIxiEoDBSAv-MLc4NJSyQCHsAl4": {
         "1-2-teasers": 1761856225,
         "satisfactory-updates\/teasers-and-trailers\/1-2-teasers": 1761908938
+    },
+    "2025-11-11": {
+        "11-11-twas-the-week-after-console-launch": 1763133805
+    },
+    "2025-11-04": {
+        "console-launch-stream": 1763133805
     }
 }

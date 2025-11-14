@@ -158,7 +158,9 @@ $existing = array_merge($existing, $maybe_with_part);
 $playlists = $api->dated_playlists();
 
 foreach (array_keys($existing) as $video_id) {
+	if (isset($cache['playlistItems'][$video_id])) {
 	$existing[$video_id]['title'] = $cache['playlistItems'][$video_id][1];
+	}
 	$existing[$video_id]['date'] = determine_date_for_video(
 		$video_id,
 		$cache['playlists'],

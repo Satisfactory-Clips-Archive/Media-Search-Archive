@@ -1814,7 +1814,7 @@
 - [ ] yt-dXCo0ANW0xA,301.92404424250765,312.90128046261873 - Nathalie
 - [ ] yt-dXCo0ANW0xA,312.93464592225433,320.308412501721 - Angelica
 - [ ] yt-dXCo0ANW0xA,320.3417779613566,329.85093395750147 - Margit
-- [ ] yt-dXCo0ANW0xA,329.8842994171371,340.294322823443 -
+- [ ] yt-dXCo0ANW0xA,329.8842994171371,340.294322823443 - 
 - [ ] yt-dXCo0ANW0xA,354.1409885722153,363.1830281334618 - Robert
 - [ ] yt-dXCo0ANW0xA,363.2163935930974,372.6921841296067 - Tech Team
 - [ ] yt-dXCo0ANW0xA,372.72554958924223,410.42851897746567 - Nick & Dylan
@@ -1940,3 +1940,17 @@
 ## 2025-10-24
 - [ ] yt-FwmpNWuKIJ0,74.67455497111322,108.5750678623782 - Golden Joystick Awards 2025
 - [ ] yt-FwmpNWuKIJ0,263.8968075364318,306.0388821246874 - Upcoming Console Release
+
+## 2025-11-04
+- [ ] yt-P12elmeK-NU,1621.286486,1647.781428 - Streaming on YouTube & Twitch going forward
+- [ ] yt-P12elmeK-NU,2560.11798,2583.887999 - 25% Dutch
+- [ ] yt-P12elmeK-NU,4553.036847,4592.574333 - Q&A: Do any of you play Factorio?
+- [ ] yt-P12elmeK-NU,4858.436001,4888.652232 - Community FYI: 100% PC first, Console second
+- [ ] yt-P12elmeK-NU,5012.144157,5017.527365 - Q&A: What's the max number of players on Console?
+- [ ] yt-P12elmeK-NU,5804.113892,5838.646316330644 - Mikael & Jason Talk: Merch
+- [ ] yt-P12elmeK-NU,7313.336785,7354.683477 - Q&A: Did people at FISHLABS play the game before working on it?
+- [ ] yt-P12elmeK-NU,9473.672015,9514.990919 - Q&A: Will FISHLABS continue working with Coffee Stain Studios in future?
+- [ ] yt-P12elmeK-NU,9826.292354,9884.993849 - Q&A: Are there any player counts for Console players yet?
+- [ ] yt-P12elmeK-NU,11692.787969,11737.092903 - Q&A: How do you play Crossplay between PS5 & XBox? (Part 1)
+- [ ] yt-P12elmeK-NU,11817.76317,11840.231869 - Q&A: How do you play Crossplay between PS5 & XBox? (Part 2)
+- [ ] yt-P12elmeK-NU,12298.553866203703,12304.339543 - Q&A: 1.2, when?
