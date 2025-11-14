@@ -1497,3 +1497,446 @@
 - [ ] yt-RIZS_qyiLH4,321.90552769297864,344.5919646750981 - Optimised Sign Rendering
 - [ ] yt-RIZS_qyiLH4,344.6336676842564,358.47906672481463 - Render Pipeline State Object Utilisation
 - [ ] yt-RIZS_qyiLH4,358.52076973397294,381.0403946794592 - Q&A: DLSS, when?
+
+## 2023-09-01
+- [ ] yt-Hdn9tYv_iLw,0,23.055407659816137 - Intro
+- [ ] yt-Hdn9tYv_iLw,345.69765378198986,379.2631242679161 - Q&A: 0.8.2, when?
+- [ ] yt-Hdn9tYv_iLw,379.29648954672916,416.16512263514716 - Unreal Engine 5
+- [ ] yt-Hdn9tYv_iLw,504.6498420473503,518.5297980335782 - We don't handle distribution
+- [ ] yt-Hdn9tYv_iLw,582.6578639122564,634.8077946970504 - Q&A: What can Coffee Stain do to reduce the size of patches?
+- [ ] yt-Hdn9tYv_iLw,634.8411599758634,680.2179391616087 - Patch Notes size does not equate to Patch Download size
+
+## 2023-09-29
+- [ ] yt-lK-kN8QOrJw,158.4583,197.16363333333334 - Q&A: When is 1.0 coming out?
+- [ ] yt-lK-kN8QOrJw,197.197,246.5463 - Q&A: When can I use Mercer Sphere and Somersloops?
+- [ ] yt-lK-kN8QOrJw,246.57966666666667,252.91933333333333 - Q&A: SAM Ore?
+- [ ] yt-lK-kN8QOrJw,255.48856666666669,272.80586666666665 - Q&A: Console release when?
+- [ ] yt-lK-kN8QOrJw,284.95133333333337,290.5235666666667 - Q&A: Golf?
+- [ ] yt-lK-kN8QOrJw,402.9358666666667,433.29953333333333 - Q&A: How would you feel about adding VR to the game?
+- [ ] yt-lK-kN8QOrJw,433.3329,460.1597 - Q&A: Would you add a snow biome to the game?
+- [ ] yt-lK-kN8QOrJw,541.7745666666667,578.9116666666666 - Q&A: What should I do to stop my fellow multiplayer friends from building like Let's Game It Out?
+- [ ] yt-lK-kN8QOrJw,578.9450333333333,621.1538666666667 - Q&A: Is it possible to have more than 4 players in Multiplayer mode?
+- [ ] yt-lK-kN8QOrJw,834.9341000000001,864.0632 - Q&A: Why do the mining nodes not align with the World Grid?
+- [ ] yt-lK-kN8QOrJw,864.0965666666667,903.8029 - Q&A: Will there ever be round-shaped Foundations or Walls?
+- [ ] yt-lK-kN8QOrJw,903.8362666666667,935.6347000000001 - Q&A: Will we ever be able to flip the asymmetrical buildings?
+- [ ] yt-lK-kN8QOrJw,1083.7493333333334,1142.7416 - Q&A: Has the upgrade to Unreal Engine 5 increased the planned scope of the game?
+- [ ] yt-lK-kN8QOrJw,1204.3031,1237.6697666666666 - Q&A: What inspired you to make this game?
+- [ ] yt-lK-kN8QOrJw,1237.7031333333334,1292.3243666666667 - Q&A: Are there any plans to include large Blueprint Designers?
+- [ ] yt-lK-kN8QOrJw,1292.3577333333333,1328.1601666666668 - Q&A: What's the situation with the Mk.3 Miner?
+- [ ] yt-lK-kN8QOrJw,1448.1800666666668,1497.6294666666668 - Q&A: Will there ever be Mk.3 or Mk.4 Fluid Pipes?
+- [ ] yt-lK-kN8QOrJw,1572.1038666666666,1619.7181 - Q&A: When do you think you'll release the OST?
+- [ ] yt-lK-kN8QOrJw,1619.7514666666666,1662.8278333333333 - Q&A: Will we get more Lights to illuminate our factories?
+
+## 2023-11-10
+- [ ] yt-MfDPCzHzAJw,23.663804,78.145333 - Q&A: Update 8 on EA, when?
+- [ ] yt-MfDPCzHzAJw,478.76666666666665,516.9 - Account Linking / Unlinking
+
+## 2023-11-14
+- [ ] yt-BIZieuScBmE,187.71058601134217,217.9724952741021 - Priority Power Switch
+- [ ] yt-BIZieuScBmE,218.00586011342156,270.75567107750476 - Power Towers
+- [ ] yt-BIZieuScBmE,270.7890359168242,304.6877126654064 - Nudge Mode
+- [ ] yt-BIZieuScBmE,304.72107750472594,325.14035916824196 - Changing the validity check of Conveyor Belts
+- [ ] yt-BIZieuScBmE,325.1737240075615,371.721528 - Blueprint Dismantle Mode
+- [ ] yt-BIZieuScBmE,371.721528,378.7576559546314 - Blueprint Sampling
+- [ ] yt-BIZieuScBmE,378.79102079395085,400.81181474480155 - Dismantle Filters
+- [ ] yt-BIZieuScBmE,400.845179584121,434.8105860113422 - Parachute Improvements
+- [ ] yt-BIZieuScBmE,434.84395085066166,453.9953686200378 - Zip Line Improvements
+- [ ] yt-BIZieuScBmE,454.0287334593573,508.54688090737244 - Multiple Fuel types for the Jetpack
+- [ ] yt-BIZieuScBmE,508.5802457466919,527.1978260869565 - Minor Terrain changes to Titan Forest
+- [ ] yt-BIZieuScBmE,527.231190926276,547.083270321361 - World boundary vistas
+- [ ] yt-BIZieuScBmE,547.1166351606805,554.5236294896031 - Red Jungle & Cave Improvements
+- [ ] yt-BIZieuScBmE,554.5569943289225,564.1660680529301 - Lighting changes to the starting areas + Titan Forest, Red Jungle, and Spire Coast
+- [ ] yt-BIZieuScBmE,574.4424385633271,610.943572778828 - Explodable Gas Pillars
+- [ ] yt-BIZieuScBmE,610.9769376181475,623.270017 - Updates of Creature Spawns, hazards, and collectibles
+- [ ] yt-BIZieuScBmE,623.270017,657.0537807183365 - New Hog variants added
+- [ ] yt-ToXUov_ylfo,490.968107,534.025372 - Cool new things
+- [ ] yt-ToXUov_ylfo,631.265219,690.732634 - Community Highlights returns!
+- [ ] yt-ToXUov_ylfo,707.050294,725.648314 - Snutt's stand-up
+- [ ] yt-ToXUov_ylfo,820.338002,869.75171 - Satisfactory is DRM free
+- [ ] yt-ToXUov_ylfo,869.75171,913.499688 - Some caveats
+- [ ] yt-ToXUov_ylfo,1887.982744,1916.191327 - FICSIT Branded DUCT TAPE
+- [ ] yt-ToXUov_ylfo,3834.699929,3877.291984 - Snutt Talk: Snutt discovers half of Oil production Recipes not noticed since Update 3
+- [ ] yt-ToXUov_ylfo,5112.8312382644,5142.353302 - Q&A: What does Hannah do?
+- [ ] yt-ToXUov_ylfo,6894.532268,6933.291696 - Snutt & Hannah Talk: The planned map changes *might* get updated
+- [ ] yt-ToXUov_ylfo,8725.697342,8770.752163 - Flipping the build
+- [ ] yt-ToXUov_ylfo,9490.678985,9535.305718 - The game is on sale
+- [ ] yt-ToXUov_ylfo,9554.594138,9584.523964 - Q&A: Console release?
+- [ ] yt-ToXUov_ylfo,9584.523964,9595.595299 - Q&A: How's the puppy?
+- [ ] yt-ToXUov_ylfo,9595.595299,9623.857765397632 - Q&A: Soundtrack?
+- [ ] yt-ToXUov_ylfo,9637.412759192577,9663.714391 - Q&A: Will it rain again?
+- [ ] yt-ToXUov_ylfo,9666.280783168102,9692.197745 - Q&A: Snow Biome?
+- [ ] yt-ToXUov_ylfo,10892.605,10922.544677 - Q&A: What if the game doesn't update in my Library?
+- [ ] yt-ToXUov_ylfo,10922.544677,10935.720306 - Q&A: Update 9, when?
+- [ ] yt-ToXUov_ylfo,11170.151447,11178.686216 - Q&A: Has the Cover Art updated?
+- [ ] yt-ToXUov_ylfo,11334.392253,11342.243502 - Q&A: Please make ability to make Slugs out of Power Shards
+- [ ] yt-ToXUov_ylfo,11342.886987,11376.097636651784 - Dedicated Server Version Mismatch
+- [ ] yt-ToXUov_ylfo,11376.097636651784,11393.380961 - Community FYI: I didn't have to redownload the game after switching to Early Access
+- [ ] yt-ToXUov_ylfo,11646.138238,11669.060946 - Q&A: Will there be an official Update 8 trailer?
+
+## 2023-11-24
+- [ ] yt-UW1uFElp7ZE,153.3797384757628,194.27433628318585 - Ultrawide Monitor Support
+- [ ] yt-UW1uFElp7ZE,322.15744287412497,338.55527671377627 - Factory Animations slowing down
+- [ ] yt-UW1uFElp7ZE,338.5886056443447,397.9141020560912 - Multiplayer Issues
+- [ ] yt-UW1uFElp7ZE,397.94743098665964,456.0064280368071 - Controller Support
+- [ ] yt-UW1uFElp7ZE,489.8019636331616,512.1990049751244 - Update your Graphics Drivers
+- [ ] yt-UW1uFElp7ZE,512.2323339056928,524.0307753269053 - Reset the Shader Cache
+- [ ] yt-UW1uFElp7ZE,524.0641042574737,563.5255580504557 - Switching the Rendering API
+- [ ] yt-UW1uFElp7ZE,563.5588869810241,595.5879892572535 - Verify your Game Files
+- [ ] yt-UW1uFElp7ZE,595.621318187822,617.5184255712588 - Identifying if a crash is GPU-related
+- [ ] yt-UW1uFElp7ZE,798.2612160436755,816.2921674811782 - Account Unlinking
+- [ ] yt-UW1uFElp7ZE,818.200455,866.8521551534363 - FICSMAS 2023
+
+## 2023-12-08
+- [ ] yt-ZdawVdgyG7k,25.774451,63.13385196201808 - Q&A: Does Mikael like Final Fantasy?
+- [ ] yt-ZdawVdgyG7k,112.63179270106396,141.655016588491 - De-loading Snutt
+- [ ] yt-ZdawVdgyG7k,210.5434732868093,221.2603821073104 - Expect more Final Fantasy talk
+
+## 2023-12-19
+- [ ] yt-QHFvdOJUIyU,20.866666666666667,39.56666666666667 - Last Patch of 2023
+- [ ] yt-QHFvdOJUIyU,39.6,49.96666666666667 - Weekly Dev Streams resuming in 2024
+- [ ] yt-QHFvdOJUIyU,50,68.06666666666666 - Online Integration System changes coming in 2024
+
+## 2023-12-24
+- [ ] yt-Jet2sPMW0g4,0,26.89910246571686 - Intro
+- [ ] yt-Jet2sPMW0g4,97.761056,111.74108 - Update 9 Confirmed
+- [ ] yt-Jet2sPMW0g4,111.74108,129.79566914684196 - Over 5.5 million Sales
+- [ ] yt-Jet2sPMW0g4,190.754406,218.261 - Thank You
+
+## 2024-01-26
+- [ ] yt-gOol0ri7u8o,1179.98,1214.68 - Snacks, Pizzas, and Good Company
+
+## 2024-02-02
+- [ ] yt-YTxziQw8fJQ,78.78704166666667,102.39395833333333 - Update 9
+- [ ] yt-YTxziQw8fJQ,102.43566666666666,120.11999999999999 - Update X
+- [ ] yt-YTxziQw8fJQ,120.16170833333332,137.05358333333334 - Update Eleven
+- [ ] yt-YTxziQw8fJQ,137.09529166666667,181.18099999999998 - Even more trolling
+- [ ] yt-YTxziQw8fJQ,213.29641666666666,243.20129166666666 - Update 9 is 1.0
+- [ ] yt-YTxziQw8fJQ,384.4257083333333,421.045625 - Q&A: What does 1.0 mean?
+
+## 2024-02-09
+- [ ] yt-TSyQr113OkU,137.78639763437118,194.3355366150635 - Q&A: Will the Closed Beta be under an NDA?
+- [ ] yt-TSyQr113OkU,194.37723951991651,211.767350843625 - Q&A: Why is it a Closed Beta and not an open beta?
+- [ ] yt-TSyQr113OkU,211.809053748478,224.82036006261959 - Q&A: Do I have a higher chance of being selected if I sign up early?
+- [ ] yt-TSyQr113OkU,224.8620629674726,250.2174291181075 - Q&A: When will people be notified of whether they can join the Closed Beta?
+- [ ] yt-TSyQr113OkU,250.25913202296053,260.643155331362 - Q&A: If I signed up for the closed alpha, why do I have to sign up again?
+- [ ] yt-TSyQr113OkU,260.684858236215,294.9646460253957 - Q&A: Will my Save File work in Closed Beta?
+- [ ] yt-TSyQr113OkU,295.00634893024875,325.94990433118807 - Q&A: Will we be able to play Multiplayer in the Closed Beta?
+- [ ] yt-TSyQr113OkU,325.99160723604103,341.83871108018786 - Q&A: Will the Closed Beta include Dedicated Servers?
+- [ ] yt-TSyQr113OkU,341.8804139850409,354.39128544094626 - Q&A: Will Mods work in the Closed Beta?
+- [ ] yt-TSyQr113OkU,354.4329883457993,383.958644981736 - Q&A: Do number of hours played factor into who is chosen for the Closed Beta?
+- [ ] yt-TSyQr113OkU,384.000347886589,437.04644285962775 - Q&A: Can we share footage from the Closed Beta later?
+- [ ] yt-TSyQr113OkU,437.08814576448077,446.13767611758567 - Q&A: Does it matter which platform I own the game on?
+- [ ] yt-TSyQr113OkU,446.1793790224387,455.81275004348583 - Q&A: Will I need to buy the game again for 1.0 if I already own it?
+
+## 2024-03-22
+- [ ] yt-QZJ27aFaoJc,442.6422,493.8600333333333 - Roads
+
+## 2024-03-29
+- [ ] yt-v8piXNQwcUw,35.18273309605013,71.7717 - Soundtrack Released on Steam
+- [ ] yt-v8piXNQwcUw,71.80506666666666,119.98653333333334 - As We Descend from Box Dragon
+- [ ] yt-v8piXNQwcUw,120.0199,161.9618 - Coffee Stain Publishing & Ghost Ship Publishing Sale
+- [ ] yt-v8piXNQwcUw,177.64413333333334,216.38283333333334 - Known Issues
+- [ ] yt-v8piXNQwcUw,224.05716666666666,232.73250000000002 - Easier to Install
+- [ ] yt-v8piXNQwcUw,232.76586666666668,251.58466666666666 - TCP/UDP 7777
+- [ ] yt-v8piXNQwcUw,251.61803333333333,263.5966666666667 - IPv4 & IPv6
+- [ ] yt-v8piXNQwcUw,263.63003333333336,285.5185666666667 - Windowed & Console applications
+- [ ] yt-v8piXNQwcUw,285.55193333333335,327.56056666666666 - TLS Support
+- [ ] yt-v8piXNQwcUw,327.5939333333333,356.1558 - Unreal Console
+- [ ] yt-v8piXNQwcUw,356.18916666666667,371.7046666666667 - Setting up Game Sessions
+- [ ] yt-v8piXNQwcUw,371.73803333333336,389.0219666666667 - Advanced Game Settings
+- [ ] yt-v8piXNQwcUw,389.05533333333335,414.8477666666667 - New Configuration Settings
+- [ ] yt-v8piXNQwcUw,414.88113333333337,423.58983333333333 - Download Save File direct from the server
+- [ ] yt-v8piXNQwcUw,423.6232,444.2438 - Client Notification when about to save
+- [ ] yt-v8piXNQwcUw,444.2771666666667,472.9725 - Planned Features
+- [ ] yt-v8piXNQwcUw,577.5102666666667,610.2429666666667 - Now also supporting Steam services
+- [ ] yt-v8piXNQwcUw,610.2763333333334,654.9209333333333 - Disable the online subsystem for solo play
+- [ ] yt-v8piXNQwcUw,654.9543,677.8438333333334 - Direct IP Address connection
+
+## 2024-05-03
+- [ ] yt-yIKjR5jVv9Y,106.4063,157.42393333333334 - State of Dev
+- [ ] yt-yIKjR5jVv9Y,520.6201,542.1416 - Memory Optimization
+- [ ] yt-yIKjR5jVv9Y,542.1749666666667,555.9887666666667 - Scalability
+- [ ] yt-yIKjR5jVv9Y,556.0221333333334,588.9550333333333 - Unreal Engine 5.3
+- [ ] yt-yIKjR5jVv9Y,588.9884,601.9346666666667 - Upgraded Upscalers
+- [ ] yt-yIKjR5jVv9Y,601.9680333333333,651.0837666666666 - Dedicated Servers
+
+## 2024-06-14
+- [ ] yt-fkzumQ1A9Ms,157.09026666666668,195.42856666666668 - Sulfur
+- [ ] yt-fkzumQ1A9Ms,195.46193333333335,228.09453333333335 - Caterium
+- [ ] yt-fkzumQ1A9Ms,228.1279,261.62803333333335 - Quartz
+- [ ] yt-fkzumQ1A9Ms,261.6614,275.1749 - Purity Changes
+- [ ] yt-fkzumQ1A9Ms,275.20826666666665,309.6426666666667 - Coal
+- [ ] yt-fkzumQ1A9Ms,323.62330000000003,338.4381 - Iron
+- [ ] yt-fkzumQ1A9Ms,338.4714666666667,352.41873333333336 - Geysers
+- [ ] yt-fkzumQ1A9Ms,352.45210000000003,382.44873333333334 - Uranium
+- [ ] yt-fkzumQ1A9Ms,382.4821,404.93786666666665 - Summary
+- [ ] yt-fkzumQ1A9Ms,409.248,459.0586 - Supercomputers
+- [ ] yt-fkzumQ1A9Ms,487.05323333333337,497.76393333333334 - Gas Mask
+- [ ] yt-fkzumQ1A9Ms,497.7973,504.68375 - Jetpack
+- [ ] yt-fkzumQ1A9Ms,504.68375,512.2117000000001 - Truck & Fuel Generator
+- [ ] yt-fkzumQ1A9Ms,512.2450666666667,531.202433 - Trains & Fuel Generators
+- [ ] yt-fkzumQ1A9Ms,531.202433,545.1446 - Heavy Modular Frames
+- [ ] yt-fkzumQ1A9Ms,545.1779666666666,552.9190333333333 - Circuit Boards & Electromagnetic Control Rods
+- [ ] yt-fkzumQ1A9Ms,556.562226,590.9570333333334 - Computers
+- [ ] yt-fkzumQ1A9Ms,590.9904,624.3570666666667 - Encased Industrial Beams & Heavy Modular Frames
+- [ ] yt-fkzumQ1A9Ms,624.3904333333334,657.657 - Fuel Generators
+- [ ] yt-fkzumQ1A9Ms,681.0470333333334,734.6339 - Progression & the Story
+
+## 2024-06-28
+- [ ] yt-DiHsFjgFAws,8.489686,38.593721 - Price Increase
+- [ ] yt-DiHsFjgFAws,38.593721,66.731282 - Steam & Humble Bundle Sale
+- [ ] yt-DiHsFjgFAws,66.731282,109.565574 - Price Change rules
+- [ ] yt-DiHsFjgFAws,109.565574,127.088 - Q&A: 1.0 Release Date?
+
+## 2024-07-12
+- [ ] yt-GAU_fayM-u8,0,55.922467135986615 - Intro
+- [ ] yt-GAU_fayM-u8,55.95583376315606,108.20797191050393 - CSS going on vacation
+- [ ] yt-GAU_fayM-u8,117.44102,166.99996898306264 - Toilet Paper
+- [ ] yt-GAU_fayM-u8,167.0333356102321,180.61355286819543 - Challenge Coin
+- [ ] yt-GAU_fayM-u8,180.64691949536487,201.70126123928347 - T-Shirt
+- [ ] yt-GAU_fayM-u8,201.7346278664529,210.176384540322 - Enamel Pin Set
+- [ ] yt-GAU_fayM-u8,210.20975116749145,249.78257099045095 - Satisfactory OST on Vinyl & USB
+- [ ] yt-GAU_fayM-u8,249.8159376176204,297.6970476057712 - DIY Build Gun Kit
+- [ ] yt-GAU_fayM-u8,353.41931497874117,410.9767468460305 - Tier 9
+- [ ] yt-GAU_fayM-u8,411.01011347319997,441.7074104690876 - Phase 4 Requirements
+
+## 2024-08-09
+- [ ] yt-oQEZC_tIoP8,65.56535436353529,113.24621511951084 - Intro
+- [ ] yt-oQEZC_tIoP8,113.27958171206225,141.3075194552529 - Funny Side Note
+- [ ] yt-oQEZC_tIoP8,141.34088604780433,150.6501653696498 - Intro
+- [ ] yt-oQEZC_tIoP8,150.68353196220122,195.46149916620345 - Hard Drive Rewards
+- [ ] yt-oQEZC_tIoP8,195.49486575875486,244.17672429127293 - Q&A: Won't the reduction in RNG choices mean needing to scan way more drives?
+- [ ] yt-oQEZC_tIoP8,244.21009088382434,292.2913507504169 - Side Note regarding the rewards pool
+- [ ] yt-oQEZC_tIoP8,292.3247173429683,303.2022265147304 - Q&A: Will there still be more Hard Drives than Alt Recipes?
+- [ ] yt-oQEZC_tIoP8,303.23559310728183,336.2685197331851 - Outro
+- [ ] yt-oQEZC_tIoP8,336.2685197331851,360.211156 - End Tag
+
+## 2024-08-16
+- [ ] yt-899Owtx-vz8,9.662752,51.91852450646699 - A long, long time ago
+- [ ] yt-899Owtx-vz8,199.29906611640573,230.56362746766507 - Q&A: How does Story work in Multiplayer?
+- [ ] yt-899Owtx-vz8,230.59699412865896,249.88292418311778 - Q&A: What about Somersloops and Mercer Spheres?
+- [ ] yt-899Owtx-vz8,374.414149646875,392.185034 - The mystery purple swirl returns again
+
+## 2024-08-30
+- [ ] yt-DkZ6CDH7Zss,169.3691808239361,217.953279 - Outro
+- [ ] yt-DkZ6CDH7Zss,343.00929449764834,361.66125905253017 - Intro
+- [ ] yt-DkZ6CDH7Zss,361.6946257154191,390.4566891256304 - Different yields of Ficsite Ingots
+- [ ] yt-DkZ6CDH7Zss,390.4900557885193,421.98818555561854 - Ficsite Trigon
+- [ ] yt-DkZ6CDH7Zss,422.0215522185074,470.33648008160026 - Time Crystal
+- [ ] yt-DkZ6CDH7Zss,470.36984674448917,487.72051144670485 - Converter Logistics
+- [ ] yt-DkZ6CDH7Zss,500.6000433218111,527.0264403298011 - Intro
+- [ ] yt-DkZ6CDH7Zss,671.0703240210801,689.8557552275174 - Intro
+- [ ] yt-DkZ6CDH7Zss,689.8891218904063,741.5740827052757 - No input required
+- [ ] yt-DkZ6CDH7Zss,741.6074493681646,783.5159779565932 - Some scientific bullshit
+- [ ] yt-DkZ6CDH7Zss,783.5493446194821,811.9777414008047 - Dark Matter Residue
+- [ ] yt-DkZ6CDH7Zss,812.0111080636935,829.5619727432424 - Superposition Oscillator
+- [ ] yt-DkZ6CDH7Zss,938.404027086757,973.0719898282995 - AI Expansion Server
+- [ ] yt-DkZ6CDH7Zss,984.3832885476285,1017.4496514705049 - Synthetic Power Shards
+- [ ] yt-DkZ6CDH7Zss,1137.9033044993485,1177.7161 - Blueprints tease
+
+## 2024-09-06
+- [ ] yt-qtPseN3OyNU,90.85743333333333,134.96816666666666 - Rocket Fuel
+- [ ] yt-qtPseN3OyNU,135.00153333333333,179.64613333333332 - Ionized Fuel
+- [ ] yt-qtPseN3OyNU,179.6795,200.16663333333332 - New Fuels in the Jetpack
+- [ ] yt-qtPseN3OyNU,200.20000000000002,219.95306666666667 - Drones
+- [ ] yt-qtPseN3OyNU,256.40463,274.10716666666667 - Conveyor Belt snapping
+- [ ] yt-qtPseN3OyNU,274.14053333333334,327.86086666666665 - Guidelines
+- [ ] yt-qtPseN3OyNU,327.8942333333333,377.54383333333334 - Conveyor Belt Build Modes
+- [ ] yt-qtPseN3OyNU,377.5772,416.24916666666667 - Not for Pipes (yet)
+- [ ] yt-qtPseN3OyNU,416.28253333333333,435.60183333333333 - Build Mode for Train Tracks
+- [ ] yt-qtPseN3OyNU,435.6352,469.4356333333333 - Chainsaw Modes
+- [ ] yt-qtPseN3OyNU,490.7903,506.2390666666667 - Barriers & Windows
+- [ ] yt-qtPseN3OyNU,506.27243333333337,534.6341 - Finishes
+- [ ] yt-qtPseN3OyNU,894.8606333333333,950.0491000000001 - Alien Production Amplification
+- [ ] yt-qtPseN3OyNU,1203.0351666666668,1230.1956333333333 - The M.A.M.
+
+## 2024-09-10
+- [ ] yt-1GH5SZkrv2M,1274.925641,1333.588816 - Estimated time to finish Satisfactory
+- [ ] yt-1GH5SZkrv2M,2881.771671,2911.214912 - No Patch Notes Video just yet
+- [ ] yt-1GH5SZkrv2M,4445.617534,4500.239189 - Satisfactory Lego Sets (Part 2)
+- [ ] yt-1GH5SZkrv2M,11096.464369,11133.99971621408 - It's the final countdown
+- [ ] yt-1GH5SZkrv2M,11716.644085,11750.364138 - Special Guests: Linus (stalling for Mark)
+
+## 2024-09-20
+- [ ] yt-gtfr2jtaG34,74.9749,112.27883333333334 - Working on hiccups
+- [ ] yt-gtfr2jtaG34,112.3122,126.082366 - Reddit
+- [ ] yt-gtfr2jtaG34,126.082366,138.302797 - Verify your game files
+- [ ] yt-gtfr2jtaG34,138.302797,151.5203 - Update your GPU drivers
+- [ ] yt-gtfr2jtaG34,217.78423333333333,232.1319 - Try a different rendering API
+- [ ] yt-gtfr2jtaG34,293.2262666666667,339.339 - Mods
+- [ ] yt-gtfr2jtaG34,339.37236666666666,356.330003 - Missing Buildables
+- [ ] yt-gtfr2jtaG34,444.81103333333334,492.55873333333335 - Early Access Reward DLC
+- [ ] yt-gtfr2jtaG34,492.5921,527.4269 - Console Release
+- [ ] yt-gtfr2jtaG34,527.4602666666667,543.7098333333333 - Controller Support
+
+## 2024-10-25
+- [ ] yt-u5qJTWhNtb8,0,53.5535 - Intro
+- [ ] yt-u5qJTWhNtb8,53.586866666666666,108.108 - Intro
+- [ ] yt-u5qJTWhNtb8,108.14136666666667,136.87006666666667 - Emmet & Mark
+- [ ] yt-u5qJTWhNtb8,136.90343333333334,162.8627 - Satisfactory 1.1
+- [ ] yt-u5qJTWhNtb8,162.89606666666666,196.82996666666668 - FICSMAS
+- [ ] yt-u5qJTWhNtb8,196.86333333333334,226.55966666666666 - Console Release
+- [ ] yt-u5qJTWhNtb8,226.59303333333332,262.12853333333334 - DLC
+- [ ] yt-u5qJTWhNtb8,262.1619,275.6086666666667 - Outro
+- [ ] yt-u5qJTWhNtb8,275.64203333333336,335.335 - Intro
+- [ ] yt-u5qJTWhNtb8,335.36836666666665,359.4257333333333 - Show Clearance
+- [ ] yt-u5qJTWhNtb8,359.4591,382.1150666666667 - Holograms
+- [ ] yt-u5qJTWhNtb8,382.14843333333334,396.085466 - Tamed Lizard Doggos disabling Creature spawns
+- [ ] yt-u5qJTWhNtb8,398.572869,405.40500000000003 - Localisation Updates
+- [ ] yt-u5qJTWhNtb8,405.4383666666667,432.5321 - Outro
+- [ ] yt-u5qJTWhNtb8,432.5654666666667,464.79766666666666 - Golden Joystick Award
+- [ ] yt-u5qJTWhNtb8,464.8310333333333,512.048 - Outro
+
+## 2024-11-22
+- [ ] yt-T5Va14sl5Xo,72.47240000000001,80.88080000000001 - What FICSMAS is
+- [ ] yt-T5Va14sl5Xo,80.91416666666667,88.25483333333334 - FICSMAS is optional
+- [ ] yt-T5Va14sl5Xo,88.2882,101.53476666666667 - Presents falling from the sky
+- [ ] yt-T5Va14sl5Xo,175.756851,185.3852 - Reduction in size of FICSMAS presents
+- [ ] yt-T5Va14sl5Xo,185.41856666666666,216.64976666666666 - Change in FICSMAS Recipe unlocks
+
+## 2024-12-09
+- [ ] yt-ts38TQO9oDw,0,30.138343 - Intro
+- [ ] yt-ts38TQO9oDw,30.138343,87.227955 - Reminiscing
+- [ ] yt-ts38TQO9oDw,87.227955,115.768528 - Community
+- [ ] yt-ts38TQO9oDw,115.768528,144.960229 - Reminiscing
+- [ ] yt-ts38TQO9oDw,144.960229,175.354004 - Community
+- [ ] yt-ts38TQO9oDw,546.318031,555.9220333333334 - Thank You
+- [ ] yt-ts38TQO9oDw,555.9554,567.768 - Outro
+
+## 2024-12-20
+- [ ] yt-w3U7KhojDko,98.86543333333333,125.45866666666667 - Steam Awards
+- [ ] yt-w3U7KhojDko,125.49203333333334,143.143 - Holiday Break
+
+## 2024-12-24
+- [ ] yt-dXCo0ANW0xA,42.47423011611363,98.99531873881315 - Thank You
+- [ ] yt-dXCo0ANW0xA,99.02868419844876,127.68961402542567 - Satisfactory 1.1
+- [ ] yt-dXCo0ANW0xA,277.73408600670064,301.8906787828721 - Emmet
+- [ ] yt-dXCo0ANW0xA,301.92404424250765,312.90128046261873 - Nathalie
+- [ ] yt-dXCo0ANW0xA,312.93464592225433,320.308412501721 - Angelica
+- [ ] yt-dXCo0ANW0xA,320.3417779613566,329.85093395750147 - Margit
+- [ ] yt-dXCo0ANW0xA,329.8842994171371,340.294322823443 -
+- [ ] yt-dXCo0ANW0xA,354.1409885722153,363.1830281334618 - Robert
+- [ ] yt-dXCo0ANW0xA,363.2163935930974,372.6921841296067 - Tech Team
+- [ ] yt-dXCo0ANW0xA,372.72554958924223,410.42851897746567 - Nick & Dylan
+- [ ] yt-dXCo0ANW0xA,410.4618844371013,415.56679976134745 - Uzu
+- [ ] yt-dXCo0ANW0xA,415.60016522098306,447.7644683096975 - Guru
+- [ ] yt-dXCo0ANW0xA,447.7978337693331,457.8408371196475 - Fix That In Post
+- [ ] yt-dXCo0ANW0xA,457.8742025792831,507.120812 - Snutt
+
+## 2025-01-17
+- [ ] yt-s7H3vrje1nQ,2394.6923,2440.0709666666667 - Custom Tools
+- [ ] yt-s7H3vrje1nQ,2616.146866666667,2651.4488 - Outro
+- [ ] yt-s7H3vrje1nQ,2651.4821666666667,2672.168 - End Tag
+
+## 2025-01-31
+- [ ] yt-jUsBE8JYNdo,417.0830062094069,445.7115837556206 - Satisfactory 1.1 Teasing
+- [ ] yt-jUsBE8JYNdo,556.6556634073229,603.790946 - Vacations are over
+- [ ] yt-jUsBE8JYNdo,666.0982442366712,684.948 - End Tag
+
+## 2025-02-14
+- [ ] yt-Z3UtGdftZbc,182.95,198.18333333333334 - Accessing the Experimental Branch on Steam
+- [ ] yt-Z3UtGdftZbc,201.18333333333334,250.01666666666668 - Port binding fixes for Dedicated Servers
+- [ ] yt-Z3UtGdftZbc,250.03333333333333,289.01666666666665 - Customizer performance improvements
+- [ ] yt-Z3UtGdftZbc,289.03333333333336,324.46666666666664 - Lightweight Buildable fixes on Dedicated Servers
+- [ ] yt-Z3UtGdftZbc,324.48333333333335,333.1666666666667 - Fixes & Optimisations
+- [ ] yt-Z3UtGdftZbc,345.970637,404.81666666666666 - Replication systems
+- [ ] yt-Z3UtGdftZbc,404.8333333333333,415.46666666666664 - Advanced Game Settings
+- [ ] yt-Z3UtGdftZbc,415.48333333333335,439.21666666666664 - TCP Port
+- [ ] yt-Z3UtGdftZbc,439.23333333333335,469.1666666666667 - Report issues on the QA Site
+
+## 2025-02-28
+- [ ] yt-kSrUXtpuH34,1100.4166666666667,1125.9666666666667 - Pång
+- [ ] yt-kSrUXtpuH34,1125.9833333333333,1140.4166666666667 - Cheat Me If You Can
+
+## 2025-03-28
+- [ ] yt-Ty7GdZvCETo,92.231377,123.79992852193995 - Q&A: What comes out first, 1.1 or the game on Consoles?
+- [ ] yt-Ty7GdZvCETo,123.81659517898383,177.93323060046188 - Rain
+- [ ] yt-Ty7GdZvCETo,191.6998893187067,239.51652837759815 - Photo Mode
+- [ ] yt-Ty7GdZvCETo,239.53319503464203,275.51650759237873 - Hypertube Junctions
+- [ ] yt-Ty7GdZvCETo,275.53317424942264,301.1164928117783 - Vertical Splitters & Mergers
+- [ ] yt-Ty7GdZvCETo,301.13315946882216,318.1498163106236 - Priority Mergers
+- [ ] yt-Ty7GdZvCETo,398.11643680715935,411.9497621535797 - Curved Build Mode
+- [ ] yt-Ty7GdZvCETo,411.96642881062354,421.08309021362584 - Straight Pipe Mode
+- [ ] yt-Ty7GdZvCETo,421.09975687066975,471.828953 - Elevators
+- [ ] yt-Ty7GdZvCETo,471.828953,487.138942 - Railway Buffer Stops
+- [ ] yt-Ty7GdZvCETo,487.138942,503.8163757794457 - New Architectural Pieces
+- [ ] yt-Ty7GdZvCETo,519.731624,535.285237 - 1.1 on Experimental Release Date
+- [ ] yt-Ty7GdZvCETo,535.285237,577.340952 - Controller Support
+
+## 2025-04-25
+- [ ] yt-Kk0bnT3VoTA,84.939915,141.86659179903953 - Epic Store issues
+- [ ] yt-Kk0bnT3VoTA,327.18821,361.8498090400549 - Vertical Splitters / Mergers, Left-handed Signals being their own separate Buildables
+- [ ] yt-Kk0bnT3VoTA,361.866475697926,396.04979099160903 - Throughput Monitors for Pipes
+- [ ] yt-Kk0bnT3VoTA,396.0664576494802,406.483118818935 - Multiple Personnel Elevator Entrances
+- [ ] yt-Kk0bnT3VoTA,406.49978547680615,454.099760356747 - Freely-placeable Vertical Splitters & Mergers
+
+## 2025-05-16
+- [ ] yt-1uma1Z3yRUc,247.1,294.3666666666667 - Q&A: So why go into Community Management?
+- [ ] yt-1uma1Z3yRUc,294.4,308.26666666666665 - Q&A: What are your plans as Community Manager?
+
+## 2025-06-10
+- [ ] yt-m_UVVHl1CxA,2107.829291,2150.128319 - Q&A: What made Gabriele want to follow tech art rather than just general 3d artist?
+- [ ] yt-m_UVVHl1CxA,2150.128319,2203.180689 - Q&A: How much does Gabriele code on a day-to-day basis?
+- [ ] yt-m_UVVHl1CxA,2203.180689,2252.812687 - Q&A: What does Gabriele's day-to-day look like?
+- [ ] yt-m_UVVHl1CxA,2529.120941,2575.458312 - Mikael, Jason, Gabriele Talk: Photo Mode vs. Controller Support
+- [ ] yt-m_UVVHl1CxA,3190.006682,3244.430028 - Q&A: Weather filters for Photo Mode?
+- [ ] yt-m_UVVHl1CxA,3246.232458,3284.532015 - Q&A: What's Gabriele's favourite feature in 1.1 that is not Photo Mode?
+- [ ] yt-m_UVVHl1CxA,3427.4974254678145,3453.138837 - Q&A: Could you add more Zoop capabilities?
+- [ ] yt-m_UVVHl1CxA,3691.812567,3720.068683 - Q&A: What's your favourite factory building game?
+- [ ] yt-m_UVVHl1CxA,3756.392638,3772.0773437160324 - Community FYI: I cannot play Factorio but I can play Satisfactory
+- [ ] yt-m_UVVHl1CxA,3772.0773437160324,3812.925181 - Q&A: What's Jason's rank in Rocket League?
+- [ ] yt-m_UVVHl1CxA,4256.348691,4315.057924 - Jason's Hog
+- [ ] yt-m_UVVHl1CxA,4315.057924,4337.197407 - Q&A: Does Jason use Foundations?
+- [ ] yt-m_UVVHl1CxA,4848.332324,4886.688766 - Q&A: Who is Emmet?
+- [ ] yt-m_UVVHl1CxA,5093.549783,5140.340959 - Q&A: To what extent does Emmet work on the game?
+- [ ] yt-m_UVVHl1CxA,5869.367867,5923.77607 - Q&A: Has Emmet ever come close to completely up-ending internal builds?
+- [ ] yt-m_UVVHl1CxA,5999.885376,6054.565357 - Q&A: Will you add Skateboarding?
+- [ ] yt-m_UVVHl1CxA,8357.165667,8375.76252 - Q&A: Is 1.1 even more optimised than 1.0?
+- [ ] yt-m_UVVHl1CxA,8603.989846,8629.681859 - Q&A: What hairdresser does Lym go to?
+- [ ] yt-m_UVVHl1CxA,10147.008072,10179.367992 - Q&A: Has Lym or any of the devs made a mod for Satisfactory?
+- [ ] yt-m_UVVHl1CxA,10297.34203,10309.4758 - Community FYI: Everyone at CSS is very pretty
+- [ ] yt-m_UVVHl1CxA,10379.253692,10429.905821 - Q&A: Was Lym around when the focus of Satisfactory shifted?
+- [ ] yt-m_UVVHl1CxA,11043.146606,11081.801908 - Q&A: Did Mikael fix the camera overheating issue?
+- [ ] yt-m_UVVHl1CxA,11369.785837,11379.111255 - Q&A: Are you going to play a new save for the 1.1 release on-stream?
+- [ ] yt-m_UVVHl1CxA,14754.407309,14783.657154 - Crossplay between Consoles but not between Console and PC
+- [ ] yt-m_UVVHl1CxA,14854.847872767858,14872.594457 - Q&A: Please do full Crossplay?
+
+## 2025-07-04
+- [ ] yt-hmdqb4tLYm4,25.583333333333332,75.08333333333333 - 1.1 has been Live for a few weeks
+- [ ] yt-hmdqb4tLYm4,75.1,110.46666666666667 - Bugs
+- [ ] yt-hmdqb4tLYm4,110.48333333333333,149.66666666666666 - Patch 1.1.1.1
+- [ ] yt-hmdqb4tLYm4,149.68333333333334,208.2 - Vacation Times
+- [ ] yt-hmdqb4tLYm4,208.21666666666667,233.88333333333333 - Summer Sale
+- [ ] yt-hmdqb4tLYm4,233.9,256.68333333333334 - Big Merch Box
+
+## 2025-08-29
+- [ ] yt-HOM0z0AXzD0,26.033293206427498,63.507235 - In case you missed it
+- [ ] yt-HOM0z0AXzD0,63.507235,93.71652221494355 - Satisfactory's Birthday
+- [ ] yt-HOM0z0AXzD0,93.73318885592077,113.46649177295673 - FICSMAS 2025
+
+## 2025-09-10
+- [ ] yt-eZsxG3h6CqE,209.7332636405928,232.89992260915795 - Hannah
+- [ ] yt-eZsxG3h6CqE,232.9332559314149,255.59991506612613 - ADA
+- [ ] yt-eZsxG3h6CqE,255.63324838838304,271.16657656011165 - Uzu
+- [ ] yt-eZsxG3h6CqE,271.19990988236856,318.69989409849137 - Birk
+- [ ] yt-eZsxG3h6CqE,318.7332274207483,345.09988532597856 - Gabriele
+- [ ] yt-eZsxG3h6CqE,345.1332186482355,362.6998794776367 - Max
+- [ ] yt-eZsxG3h6CqE,362.73321279989364,398.2998676480361 - Mikael
+- [ ] yt-eZsxG3h6CqE,398.33320097029303,415.3665286435834 - Jason
+- [ ] yt-eZsxG3h6CqE,487.4998380075762,495.8665018940652 - Emmet
+
+## 2025-10-03
+- [ ] yt-pV_fYCOpw34,69.70292800296131,129.56269479918564 - Q&A: How the hell is Satisfactory gonna run on my console?
+- [ ] yt-pV_fYCOpw34,129.59606144734408,143.87698685915234 - Q&A: Will Satisfactory have an enhanced tag on the PS5 Pro?
+- [ ] yt-pV_fYCOpw34,244.27723116786973,298.7316009624283 - Q&A: Will Satisfactory be verified on Steamdeck?
+- [ ] yt-pV_fYCOpw34,298.7649676105867,356.2557023875625 - Q&A: Can we do Couch Co-Op on console?
+- [ ] yt-pV_fYCOpw34,356.2890690357209,376.8429243013141 - Q&A: Will my save file transfer from PC to console?
+- [ ] yt-pV_fYCOpw34,376.87629094947255,403.504392 - Q&A: Who do you think is the most well-rounded character in Melee?
+- [ ] yt-pV_fYCOpw34,403.504392,422.557697 - Q&A: Can I use mouse & keyboard on Console?
+- [ ] yt-pV_fYCOpw34,422.5885989265223,437.37002406070707 - Q&A: Will updates come out simultaneously on console and PC?
+- [ ] yt-pV_fYCOpw34,437.40339070886546,452.78541550990195 - Q&A: Will console limitations constrain update sizes in future?
+- [ ] yt-pV_fYCOpw34,452.81878215806034,483.5828317601333 - Q&A: Is developing on console meaning we're gonna get less updates?
+
+## 2025-10-24
+- [ ] yt-FwmpNWuKIJ0,74.67455497111322,108.5750678623782 - Golden Joystick Awards 2025
+- [ ] yt-FwmpNWuKIJ0,263.8968075364318,306.0388821246874 - Upcoming Console Release
