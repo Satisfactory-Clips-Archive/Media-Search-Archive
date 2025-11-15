@@ -98,10 +98,10 @@ for (const video_id of checking) {
 		await writeFile(
 			`${__dirname}/captions-cache/${video_id}.json`,
 			JSON.stringify(
-				result
+				[result
 					.filter((item) => item.text.length > 0)
 					.map((item) => item.text)
-					.join(' '),
+					.join(' ')],
 				null,
 				'\t',
 			)
