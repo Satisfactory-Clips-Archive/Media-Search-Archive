@@ -2263,7 +2263,7 @@ class TopicData
 					$data = json_decode(file_get_contents($file));
 
 					if (!isset($data->title)) {
-						var_dump($data);exit(1);
+						var_dump($data, 'no title', $file);exit(1);
 					}
 
 					$title = $data->title;

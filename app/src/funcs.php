@@ -283,7 +283,7 @@ function vendor_prefixed_video_id(string $video_id) : string
 	if (
 		(
 			11 !== mb_strlen($video_id)
-			&& preg_match('/^(tc|is|ts)\-/', $video_id)
+			&& preg_match('/^(tc|is|ts|tt)\-/', $video_id)
 		)
 		|| preg_match('/^yt-.{11}(?:(?:,(?:\d+(?:\.\d+)?)?){1,2})?$/', $video_id)
 	) {
@@ -1930,7 +1930,18 @@ function raw_captions(
 		);
 
 		if ( ! $captions_source->exists($tt_cache)) {
-			$tt = file_get_contents((string) current($url_matches));
+			try {
+			$tt = file_get_contents((string)current($url_matches));
+			} catch (\Throwable $e) {
+				if (
+					false !== mb_strpos($e->getMessage(), 'failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found')
+					|| false !== mb_strpos($e->getMessage(), 'Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found')
+				) {
+					$tt = '';
+				} else {
+					throw $e;
+				}
+			}
 
 			$captions_source->add_from_string($tt_cache, $tt);
 		} else {
@@ -3092,9 +3103,19 @@ function determine_date_for_video(
 		if (isset($twitter_threads[$video_id])) {
 			$matches[$video_id] = $twitter_threads[$video_id]['archive_date'];
 		} else {
-			throw new InvalidArgumentException(
-				'Twitter thread not found!'
-			);
+			$first_id = explode(',', preg_replace('/^tt-/', '', $video_id))[0];
+			foreach ($twitter_threads as $thread) {
+				if (in_array($first_id, $thread['tweet_ids'])) {
+					$matches[$video_id] = $thread['archive_date'];
+
+					return $matches[$video_id];
+				}
+			}
+
+			throw new InvalidArgumentException(sprintf(
+				'Twitter thread %s not found!',
+				$video_id,
+			));
 		}
 
 		return $matches[$video_id];
