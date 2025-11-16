@@ -1371,6 +1371,9 @@ class TopicData
 		'PLbjDnnBIxiEqRI8yWKc7Oxm5T5P3q4Kx6' => [ // Sacha
 			'Coffee Stainers',
 		],
+		'Mykhailo' => [
+			'Coffee Stainers',
+		],
 		'PLbjDnnBIxiEr-AG-93Qqd43nuzOUIcufC' => [ // Power Switch
 			'Features',
 			'Power Management',

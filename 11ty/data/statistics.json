@@ -5,7 +5,7 @@
     },
     {
         "title": "Total Topics",
-        "count": 571
+        "count": 572
     },
     {
         "title": "Number of days worth of source streams & videos indexed",
@@ -18,8 +18,8 @@
     },
     {
         "title": "Clips with any transcription",
-        "progress": "0.830560",
-        "percentage": "83.05"
+        "progress": "0.879283",
+        "percentage": "87.92"
     },
     {
         "title": "Clips with structured transcription",
@@ -28,7 +28,7 @@
     },
     {
         "title": "Topics with structured data",
-        "progress": "0.127845",
-        "percentage": "12.78"
+        "progress": "0.127622",
+        "percentage": "12.76"
     }
 ]
