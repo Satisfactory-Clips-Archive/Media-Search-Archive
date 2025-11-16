@@ -550,3 +550,21 @@ location /topics/satisfactory-updates/pending/satisfactory-1-1/index.html {
 location /topics/satisfactory-updates/pending/satisfactory-1-1 {
 	return 301 /topics/satisfactory-updates/released/satisfactory-1-1/$is_args$args;
 }
+location /topics/1-2-teasers/index.html {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/1-2-teasers/$is_args$args;
+}
+location /topics/1-2-teasers {
+	return 301 /topics/satisfactory-updates/teasers-and-trailers/1-2-teasers/$is_args$args;
+}
+location /topics/features/possible-features/console-release/index.html {
+	return 301 /topics/features/console-release/$is_args$args;
+}
+location /topics/features/possible-features/console-release {
+	return 301 /topics/features/console-release/$is_args$args;
+}
+location /topics/features/possible-features/console-release/fishlabs/index.html {
+	return 301 /topics/features/console-release/fishlabs/$is_args$args;
+}
+location /topics/features/possible-features/console-release/fishlabs {
+	return 301 /topics/features/console-release/fishlabs/$is_args$args;
+}
