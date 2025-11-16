@@ -19,6 +19,7 @@
 /.php-cs-fixer.cache
 /app/captions/
 /app/captions.*
+/app/captions-cache-with-timings/
 /app/captions-cache/
 /app/captions-dated-cache/
 /app/cache.json

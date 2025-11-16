@@ -96,6 +96,11 @@ for (const video_id of checking) {
 		}
 
 		await writeFile(
+			`${__dirname}/captions-cache-with-timings/${video_id}.json`,
+			JSON.stringify(result, null, '\t'),
+		);
+
+		await writeFile(
 			`${__dirname}/captions-cache/${video_id}.json`,
 			JSON.stringify(
 				[result
