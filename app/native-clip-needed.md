@@ -1954,3 +1954,39 @@
 - [ ] yt-P12elmeK-NU,11692.787969,11737.092903 - Q&A: How do you play Crossplay between PS5 & XBox? (Part 1)
 - [ ] yt-P12elmeK-NU,11817.76317,11840.231869 - Q&A: How do you play Crossplay between PS5 & XBox? (Part 2)
 - [ ] yt-P12elmeK-NU,12298.553866203703,12304.339543 - Q&A: 1.2, when?
+
+## 2025-11-11
+- [ ] yt-gfGIx-hPelQ,734.031829,746.599328 - #NotSponsored
+- [ ] yt-gfGIx-hPelQ,1106.441885,1142.266383 - Not streaming next week
+- [ ] yt-gfGIx-hPelQ,1235.619485,1241.714734 - Q&A: How is Hannah doing? (Part 1)
+- [ ] yt-gfGIx-hPelQ,1289.015179,1343.682511 - Q&A: I have 1000 hours in Satisfactory and I still haven't beaten it, what am I doing wrong? (Part 1)
+- [ ] yt-gfGIx-hPelQ,1343.682511,1377.015626 - Final Fantasy 14 (Part 2)
+- [ ] yt-gfGIx-hPelQ,1377.015626,1385.9070954637098 - Q&A: How is Hannah doing? (Part 2)
+- [ ] yt-gfGIx-hPelQ,1385.9070954637098,1443.972271 - Q&A: I have 1000 hours in Satisfactory and I still haven't beaten it, what am I doing wrong? (Part 2)
+- [ ] yt-gfGIx-hPelQ,1451.511101,1458.905875 - Q&A: Controller joystick sensitivity on Xbox needs to be higher?
+- [ ] yt-gfGIx-hPelQ,1556.752549,1565.560465 - Q&A: I have 1000 hours in Satisfactory and I still haven't beaten it, what am I doing wrong? (Part 3)
+- [ ] yt-gfGIx-hPelQ,1963.821933,2013.984571 - Q&A: Where to report bugs?
+- [ ] yt-gfGIx-hPelQ,2356.696641,2400.278077 - Q&A: When will Rain be coming back? (Part 1)
+- [ ] yt-gfGIx-hPelQ,2409.033088,2414.179106 - Q&A: I have 1000 hours in Satisfactory and I still haven't beaten it, what am I doing wrong? (Part 4)
+- [ ] yt-gfGIx-hPelQ,2435.485425,2453.632792 - Q&A: Please make beans tameable?
+- [ ] yt-gfGIx-hPelQ,2559.835521,2580.011852 - Mikael Talk: Console Launch; Thank You (Part 3)
+- [ ] yt-gfGIx-hPelQ,2580.689211,2597.221986 - Mikael Talk: 1.1 Update for PC (Part 2)
+- [ ] yt-gfGIx-hPelQ,2754.901992,2776.35633 - Q&A: What is the Discord?
+- [ ] yt-gfGIx-hPelQ,2785.592651,2793.616715 - Community FYI: I love the game on PC but not on PS5
+- [ ] yt-gfGIx-hPelQ,4309.179504,4345.204455 - Mikael & Jason Talk: Doughnuts (Part 2)
+- [ ] yt-gfGIx-hPelQ,4739.299352,4758.958841 - Q&A: What did you guys accidentally leak in the past? (Part 2)
+- [ ] yt-gfGIx-hPelQ,6000.4859000993265,6030.145246 - Community FYI: I really enjoyed the video on sound
+- [ ] yt-gfGIx-hPelQ,6151.454704,6178.69985 - Q&A: When will Rain be coming back? (Part 2)
+- [ ] yt-gfGIx-hPelQ,6180.130487,6203.141427 - Q&A: Mini golf on Paradise Island?
+- [ ] yt-gfGIx-hPelQ,6318.256504,6340.727124 - Q&A: Will we get more music in the game, possibly as a DLC?
+- [ ] yt-gfGIx-hPelQ,6356.871740961571,6371.904806 - Q&A: Is it Santa Hannah or BeugerClaus?
+- [ ] yt-gfGIx-hPelQ,6374.036098,6394.022699 - Q&A: Is there plans on bringing the Boom Box back into the Merch store?
+- [ ] yt-gfGIx-hPelQ,6465.697349,6513.300551 - Q&A: When is Golf coming to a DLC?
+- [ ] yt-gfGIx-hPelQ,6529.157307,6534.724192 - Q&A: When sauna?
+- [ ] yt-gfGIx-hPelQ,6778.174026920437,6786.058392 - Community FYI: Fingers crossed for the Golden Joystick!
+- [ ] yt-gfGIx-hPelQ,6986.954098,7046.133294965278 - Q&A: Where is the No Man's Sky Easter Egg? (Part 1)
+- [ ] yt-gfGIx-hPelQ,7046.133294965278,7054.545983 - Q&A: Would Mikael want to move to Japan? (Part 2)
+- [ ] yt-gfGIx-hPelQ,7060.344927,7070.454847 - Q&A: Where is the No Man's Sky Easter Egg? (Part 2)
+- [ ] yt-mYB5dR7Pl_s,44.53332065372132,101.96663763453107 - Put on your headphones
+- [ ] yt-mYB5dR7Pl_s,177.6666160810888,223.53326968851434 - Q&A: What is Wwise?
+- [ ] yt-mYB5dR7Pl_s,656.8664796423894,678.466473492398 - Outside Reverb
