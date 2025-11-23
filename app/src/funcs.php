@@ -2846,7 +2846,24 @@ function process_dated_csv_for_alt_layout(
 			array_key_exists($i, $data['topics'])
 			&& null === $data['topics'][$i]
 		) {
+			/** @var 'CSS'|'SCA'|null $highlight_channel_source */
+			$highlight_channel_source = null;
+
+			$highlight_channel_source_url = video_url_from_id($video_id);
+
+			if (
+				str_starts_with($video_id, 'yt-')
+				&& strtotime($date) >= strtotime('2025-11-04')
+			) {
+				if (preg_match('/\/(embed|clip)\//', $highlight_channel_source_url)) {
+					$highlight_channel_source = 'CSS';
+				} else {
+					$highlight_channel_source = 'SCA';
+				}
+			}
+
 			$sections[] = new VideoSection(
+				$highlight_channel_source,
 				$title,
 				timestamp_link($video_id, $start),
 				$start,
@@ -2862,7 +2879,24 @@ function process_dated_csv_for_alt_layout(
 			$start_minutes = str_pad((string) floor((float) bcdiv(bcmod($start, '3600', $decimals) ?? '0', '60', $decimals)), 2, '0', STR_PAD_LEFT);
 			$start_seconds = str_pad((string) floor((float) bcmod($start, '60', $decimals)), 2, '0', STR_PAD_LEFT);
 
+			/** @var 'CSS'|'SCA'|null $highlight_channel_source */
+			$highlight_channel_source = null;
+
+			$highlight_channel_source_url = video_url_from_id($clip_id);
+
+			if (
+				str_starts_with($clip_id, 'yt-')
+				&& strtotime($date) >= strtotime('2025-11-04')
+			) {
+				if (preg_match('/(\/(embed|clip)\/|\?t=0)/', $highlight_channel_source_url)) {
+					$highlight_channel_source = 'CSS';
+				} else {
+					$highlight_channel_source = 'SCA';
+				}
+			}
+
 			$embed_data = [
+				'highlight_channel_source' => $highlight_channel_source,
 				'autoplay' => 1,
 				'start' => $start,
 				'end' => $end,

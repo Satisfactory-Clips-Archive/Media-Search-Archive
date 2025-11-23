@@ -5,6 +5,13 @@
 			</li>
 		{% else %}
 			<li itemprop="hasPart" itemscope itemtype="https://schema.org/Clip">
+				{% if subsection.highlight_channel_source %}
+				{% if 'CSS' === subsection.highlight_channel_source %}
+					<abbr title="This clip is on the Coffee Stain Studios channel">(CSS)</abbr>
+				{% elseif 'SCA' === subsection.highlight_channel_source %}
+					<abbr title="This clip is on the Satisfactory Clips Archive channel">(SCA)</abbr>
+				{% endif %}
+				{% endif %}
 				<a
 					rel="noopener"
 					target="_blank"

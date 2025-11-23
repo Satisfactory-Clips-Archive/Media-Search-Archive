@@ -44,7 +44,10 @@ class VideoSection
 	 */
 	public array $subsections = [];
 
+	public ?string $highlight_channel_source;
+
 	/**
+	 * @param 'CSS'|'SCA'|null $highlight_channel_source
 	 * @param VideoSection|array{
 	 *	link:string,
 	 *	started_formatted:string,
@@ -55,17 +58,19 @@ class VideoSection
 	 * } ...$subsections
 	 */
 	public function __construct(
+		?string $highlight_channel_source,
 		string $title,
 		string $link,
 		string $start,
 		?string $end,
 		array|VideoSection ...$subsections
 	) {
+		$this->highlight_channel_source = $highlight_channel_source;
 		$this->title = $title;
-		$this->is_all_section = count($subsections) === array_filter(
+		$this->is_all_section = count($subsections) === count(array_filter(
 			$subsections,
 			'is_object'
-		);
+		));
 		$this->subsections = $subsections;
 		$this->link = $link;
 		$this->start = $start;
@@ -101,6 +106,7 @@ class VideoSection
 				$start_seconds
 			),
 			'end' => $this->end,
+			'highlight_channel_source' => $this->highlight_channel_source,
 			'subsections' => array_map(
 				static function (array|VideoSection $subsection) : array {
 					if (is_array($subsection)) {
