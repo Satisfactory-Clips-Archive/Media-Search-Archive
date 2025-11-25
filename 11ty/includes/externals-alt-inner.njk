@@ -12,12 +12,21 @@
 					<abbr title="This clip is on the Satisfactory Clips Archive channel">(SCA)</abbr>
 				{% endif %}
 				{% endif %}
+				{% if '/embed/' in subsection.link %}
+				<a
+					rel="noopener"
+					target="_blank"
+					href="{{subsection.timestamp_link}}"
+					itemprop="url"
+				>{{subsection.started_formated}}</a>
+				{% else %}
 				<a
 					rel="noopener"
 					target="_blank"
 					href="{{subsection.link}}"
 					itemprop="url"
 				>{{subsection.started_formated}}</a>
+				{% endif %}
 				{% if subsection.has_captions %}<a
 					itemprop="url"
 					href="{{subsection.has_captions}}"

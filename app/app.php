@@ -1363,6 +1363,7 @@ foreach (get_externals() as $date => $externals_data_groups) {
 						)
 						: timestamp_link($video_id, $start)
 				),
+				'timestamp_link' => timestamp_link($video_id, $start),
 				'video_url_from_id' => video_url_from_id(vendor_prefixed_video_id($video_id)),
 				'topics' => $data_for_external['topics'][$i] ?? [],
 			];

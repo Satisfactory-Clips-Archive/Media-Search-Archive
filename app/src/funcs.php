@@ -2910,6 +2910,7 @@ function process_dated_csv_for_alt_layout(
 					$start_seconds
 				),
 				'link' => video_url_from_id($clip_id),
+				'timestamp_link' => timestamp_link($clip_id, $start),
 				'topics' => $data['topics'][$i] ?? [],
 			];
 
