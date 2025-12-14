@@ -4,6 +4,7 @@
 		"\\?$"
 	],
 	"talk": [
+		"^State of (Silksong|Final Fantasy XIV)$",
 		"Hannah Talk via [^:]+:.+",
 		"^The Official Satisfactory PODCAST: Episode \\d+$",
 		" - Last stream with Jace",

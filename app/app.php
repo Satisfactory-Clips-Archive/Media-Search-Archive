@@ -83,6 +83,7 @@ echo 'Jsonify instantiated', "\n";
 
 $cache = $injected->cache;
 $global_topic_hierarchy = $injected->topics_hierarchy;
+
 $not_a_livestream = $injected->not_a_livestream;
 $not_a_livestream_date_lookup = $injected->not_a_livestream_date_lookup;
 file_put_contents(
@@ -242,7 +243,13 @@ echo "\n", 'prepping topic nesting', "\n";
  */
 $topic_nesting = [];
 
+$dated_playlists = $api->dated_playlists();
+
 foreach ($all_topic_ids as $topic_id) {
+	if (in_array($topic_id, $dated_playlists, true)) {
+		continue;
+	}
+
 	$topic_nesting[$topic_id] = [
 		'children' => [],
 		'left' => -1,
@@ -502,8 +509,6 @@ $playlist_topic_strings = [];
 $playlist_topic_strings_reverse_lookup = [];
 $topic_statistics = [];
 
-$dated_playlists = $api->dated_playlists();
-
 foreach ($all_topic_ids as $topic_id) {
 	[$slug_string, $slug] = topic_to_slug(
 		$topic_id,
@@ -512,7 +517,10 @@ foreach ($all_topic_ids as $topic_id) {
 		$slugify
 	);
 
-	if ( ! isset($playlists[$topic_id])) {
+	if (
+		! isset($playlists[$topic_id])
+		&& !in_array($topic_id, $dated_playlists, true)
+	) {
 		$topics_json[$slug_string] = $slug;
 	}
 	$playlist_topic_strings[$topic_id] = $slug_string;

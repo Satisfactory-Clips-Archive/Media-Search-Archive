@@ -2127,6 +2127,9 @@ class TopicData
 		'Nikita' => [
 			'Coffee Stainers',
 		],
+		'PLbjDnnBIxiEq4FChhe3eP5-Dk940L5cdY' => [ // Silksong
+			'Off-Topic',
+		],
 	];
 
 	public const NOT_A_LIVESTREAM = [
