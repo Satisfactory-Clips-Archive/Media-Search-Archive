@@ -41,7 +41,7 @@ if ( ! is_numeric($offset)) {
 	));
 }
 
-$glob = glob(__DIR__ . '/data/dated/*/' . $video_id . '.csv');
+$glob = glob(__DIR__ . '/../Media-Search-Archive-Data/data/dated/*/' . $video_id . '.csv');
 
 if (1 !== count($glob)) {
 	throw new UnexpectedValueException(sprintf(
@@ -120,7 +120,7 @@ if (count($replace_old_with_new)) {
 	foreach (
 		[
 			__DIR__ . '/skipping-transcriptions.json',
-			__DIR__ . '/data/skipping-cards.json',
+			__DIR__ . '/../Media-Search-Archive-Data/data/skipping-cards.json',
 		] as $skipping_filepath
 	) {
 		echo $skipping_filepath, "\n";
@@ -170,7 +170,7 @@ if (count($replace_old_with_new)) {
 	 * }>
 	 */
 	$qanda = json_decode(
-		file_get_contents(__DIR__ . '/data/q-and-a.json'),
+		file_get_contents(__DIR__ . '/../Media-Search-Archive-Data/data/q-and-a.json'),
 		true
 	);
 
@@ -236,7 +236,7 @@ if (count($replace_old_with_new)) {
 		$fresh[$k] = $v;
 	}
 
-	file_put_contents(__DIR__ . '/data/q-and-a.json', json_encode_pretty(
+	file_put_contents(__DIR__ . '/../Media-Search-Archive-Data/data/q-and-a.json', json_encode_pretty(
 		$fresh
 	));
 }

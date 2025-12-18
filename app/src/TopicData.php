@@ -2233,7 +2233,7 @@ class TopicData
 			self::NOT_A_LIVESTREAM,
 			array_reduce(
 				array_filter(
-					glob(__DIR__ . '/../data/dated/*/yt-*.json'),
+					glob(__DIR__ . '/../../Media-Search-Archive-Data/data/dated/*/yt-*.json'),
 					static function (string $maybe) : bool {
 						if (
 							in_array(

@@ -30,7 +30,7 @@ $date = $argv[1] ?? null;
  * }>
  */
 $questions = json_decode(
-	file_get_contents(__DIR__ . '/data/q-and-a.json'),
+	file_get_contents(__DIR__ . '/../Media-Search-Archive-Data/data/q-and-a.json'),
 	true
 );
 

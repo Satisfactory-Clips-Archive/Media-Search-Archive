@@ -111,7 +111,7 @@ class Injected
 		/**
 		 * @var array{playlists:non-empty-list<string>, non-empty-array<string, non-empty-list<string>>}
 		 */
-		$this->yt_shorts = json_decode(file_get_contents(__DIR__ . '/../data/yt-shorts.json'), true);
+		$this->yt_shorts = json_decode(file_get_contents(__DIR__ . '/../../Media-Search-Archive-Data/data/yt-shorts.json'), true);
 	}
 
 	/**
@@ -260,6 +260,20 @@ class Injected
 					}
 				}
 			}
+
+			$date = determine_date_for_video(
+				$video_id,
+				$this->cache['playlists'],
+				$this->playlists_date_ref,
+				true
+			);
+
+			$determined_topics = array_filter(
+				$determined_topics,
+				static function (string $maybe) use ($date) : bool {
+					return $maybe !== $date;
+				}
+			);
 
 			$cache[$video_id] = $determined_topics;
 		}

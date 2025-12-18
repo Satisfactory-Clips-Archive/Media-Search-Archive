@@ -97,7 +97,7 @@ echo 'app/data/play.json updated', "\n";
 $playlist_satisfactory =
 	realpath(
 		__DIR__
-		. '/playlists/youtube.json'
+		. '/../Media-Search-Archive-Data/playlists/youtube.json'
 	);
 
 if ( ! is_string($playlist_satisfactory)) {

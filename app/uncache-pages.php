@@ -63,7 +63,7 @@ if (count($videos)) {
 		}
 	}
 
-	$skipping_cache = __DIR__ . '/data/skipping-cards.json';
+	$skipping_cache = __DIR__ . '/../Media-Search-Archive-Data/data/skipping-cards.json';
 
 	file_put_contents(
 		$skipping_cache,
@@ -75,7 +75,7 @@ if (count($videos)) {
 		)))
 	);
 
-	$missing_subcategory = __DIR__ . '/data/youtube-video-subcategories--missing.json';
+	$missing_subcategory = __DIR__ . '/../Media-Search-Archive-Data/data/youtube-video-subcategories--missing.json';
 
 	file_put_contents(
 		$missing_subcategory,

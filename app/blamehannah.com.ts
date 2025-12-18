@@ -8,9 +8,9 @@ const {
 	existsSync,
 } = require('fs');
 const export_these = require(
-	`${__dirname}/data/blamehannah.com.json`
+	`${__dirname}/../Media-Search-Archive-Data/data/blamehannah.com.json`
 ) as [string, number, string][];
-const url_overrides = require(`${__dirname}/playlists/url-overrides.json`);
+const url_overrides = require(`${__dirname}/../Media-Search-Archive-Data/playlists/url-overrides.json`);
 const csv = promisify(require('csv-parse'));
 const readFile = promisify(readFileAsync);
 const writeFile = promisify(writeFileAsync);
@@ -95,7 +95,7 @@ export_these.forEach(async (data, i) => {
 
 		const [source_id, start, end] = id.substring(3).split(',');
 
-		const maybe = await glob(`${__dirname}/data/dated/*/yt-${source_id}.csv`);
+		const maybe = await glob(`${__dirname}/../Media-Search-Archive-Data/data/dated/*/yt-${source_id}.csv`);
 
 		if (1 !== maybe.length) {
 			throw new Error(

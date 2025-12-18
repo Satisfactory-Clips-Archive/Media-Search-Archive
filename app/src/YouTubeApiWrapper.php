@@ -148,7 +148,7 @@ class YouTubeApiWrapper
 			$cache_file_objects_was = __DIR__ . '/../data/api-cache/playlists-unmapped--.json';
 
 			/** @var non-empty-list<string> $yt_shorts */
-			$yt_shorts = json_decode(file_get_contents(__DIR__ . '/../data/yt-shorts.json'))->playlists;
+			$yt_shorts = json_decode(file_get_contents(__DIR__ . '/../../Media-Search-Archive-Data/data/yt-shorts.json'))->playlists;
 
 			$was_as_objects = null;
 
@@ -345,7 +345,7 @@ class YouTubeApiWrapper
 			);
 
 			$yt_shorts = array_reduce(
-				json_decode(file_get_contents(__DIR__ . '/../data/yt-shorts.json'), true)['videos'],
+				json_decode(file_get_contents(__DIR__ . '/../../Media-Search-Archive-Data/data/yt-shorts.json'), true)['videos'],
 				static function (array $was, array $is): array {
 					return array_merge($was, $is);
 				},
@@ -656,7 +656,7 @@ class YouTubeApiWrapper
 								(array) json_decode(
 									file_get_contents(
 										__DIR__
-										. '/../playlists/youtube.json'
+										. '/../../Media-Search-Archive-Data/playlists/youtube.json'
 									),
 									true
 								),
@@ -667,7 +667,7 @@ class YouTubeApiWrapper
 								(array) json_decode(
 									file_get_contents(
 										__DIR__
-										. '/../playlists/injected.json'
+										. '/../../Media-Search-Archive-Data/playlists/injected.json'
 									),
 									true
 								),
@@ -694,7 +694,7 @@ class YouTubeApiWrapper
 			(array) json_decode(
 				(string) file_get_contents(
 					__DIR__
-					. '/../playlists/youtube.json'
+					. '/../../Media-Search-Archive-Data/playlists/youtube.json'
 				)
 			),
 			'is_string',

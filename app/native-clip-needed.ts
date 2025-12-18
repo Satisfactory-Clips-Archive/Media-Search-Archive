@@ -15,7 +15,7 @@ const writeFile = promisify(writeFileAsync);
 const glob = promisify(require('glob'));
 const csv = promisify(require('csv-parse'));
 
-const done = require(`${__dirname}/playlists/url-overrides.json`);
+const done = require(`${__dirname}/../Media-Search-Archive-Data/playlists/url-overrides.json`);
 const done_keys = Object.keys(done);
 
 (async () => {
@@ -23,7 +23,7 @@ const done_keys = Object.keys(done);
 
 	const files = (await Promise.all(((await Promise.all(
 		(
-			await glob('./app/data/dated/*/yt-*.csv')
+			await glob('../Media-Search-Archive-Data/data/dated/*/yt-*.csv')
 		).filter((maybe:string) => {
 			if ( ! existsSync(maybe.replace(/\.csv$/, '.json'))) {
 				console.error(`Corresponding JSON file for ${maybe} missing!`);

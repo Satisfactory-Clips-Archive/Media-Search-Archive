@@ -1,6 +1,6 @@
 declare type info_card = [string, number, 'video'|'playlist'|'url'|'channel', string];
 
-const questions = require(`${__dirname}/../data/q-and-a.json`) as {
+const questions = require(`${__dirname}/../../Media-Search-Archive-Data/data/q-and-a.json`) as {
 	[key: string]: {
 		title:string,
 		date:string,
@@ -18,7 +18,7 @@ const questions = require(`${__dirname}/../data/q-and-a.json`) as {
 		legacyalts?:string[]
 	}
 };
-const skipping = require(`${__dirname}/../data/skipping-cards.json`);
+const skipping = require(`${__dirname}/../../Media-Search-Archive-Data/data/skipping-cards.json`);
 
 async function questions_needing_qasite_reference() : Promise<string[]> {
 	return Object.entries(questions).filter(

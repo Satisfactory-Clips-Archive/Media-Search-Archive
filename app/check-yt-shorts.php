@@ -8,7 +8,7 @@ namespace SignpostMarv\VideoClipNotes;
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 
-$data = json_decode(file_get_contents(__DIR__ . '/data/yt-shorts.json'), true);
+$data = json_decode(file_get_contents(__DIR__ . '/../Media-Search-Archive-Data/data/yt-shorts.json'), true);
 
 $api = new YouTubeApiWrapper();
 
@@ -47,7 +47,7 @@ foreach ($data['playlists'] as $playlist_id) {
 	}
 }
 
-file_put_contents(__DIR__ . '/data/yt-shorts.json', json_encode_pretty($data) . "\n");
+file_put_contents(__DIR__ . '/../Media-Search-Archive-Data/data/yt-shorts.json', json_encode_pretty($data) . "\n");
 
 if (count($data['pending'])) {
 	throw new \RuntimeException('Shorts sources not mapped for some videos!');

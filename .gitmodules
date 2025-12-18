@@ -7,3 +7,6 @@
 [submodule "Community-Highlights-Archive-Data"]
 	path = Community-Highlights-Archive-Data
 	url = https://github.com/Satisfactory-Clips-Archive/Community-Highlights-Archive-Data
+[submodule "Media-Search-Archive-Data"]
+	path = Media-Search-Archive-Data
+	url = https://github.com/Satisfactory-Clips-Archive/Media-Search-Archive-Data.git

@@ -111,7 +111,7 @@ foreach ($remove_these as $video_id) {
 
 $data = json_encode_pretty($existing);
 
-file_put_contents(__DIR__ . '/data/q-and-a.json', $data);
+file_put_contents(__DIR__ . '/../Media-Search-Archive-Data/data/q-and-a.json', $data);
 
 echo sprintf('Written after %s seconds' . "\n", microtime(true) - $stat_start);
 
@@ -124,7 +124,7 @@ echo sprintf('Written after %s seconds' . "\n", microtime(true) - $stat_start);
  * }>
  */
 $part_continued = json_decode(
-	file_get_contents(__DIR__ . '/data/part-continued.json'),
+	file_get_contents(__DIR__ . '/../Media-Search-Archive-Data/data/part-continued.json'),
 	true
 );
 

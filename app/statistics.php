@@ -56,7 +56,7 @@ $has_no_structured_data = array_keys(array_filter(
 natsort($has_no_structured_data);
 
 file_put_contents(
-	(__DIR__ . '/data/topic-has-no-structured-data.json'),
+	(__DIR__ . '/../Media-Search-Archive-Data/data/topic-has-no-structured-data.json'),
 	json_encode_pretty(array_values($has_no_structured_data))
 );
 

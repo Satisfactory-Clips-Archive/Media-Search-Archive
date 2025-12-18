@@ -59,7 +59,7 @@ $existing = array_filter(
 	(array) json_decode(
 		file_get_contents(
 			__DIR__
-			. '/data/part-continued.json'
+			. '/../Media-Search-Archive-Data/data/part-continued.json'
 		),
 		true
 	),
@@ -195,7 +195,7 @@ uksort(
 );
 
 file_put_contents(
-	__DIR__ . '/data/part-continued.json',
+	__DIR__ . '/../Media-Search-Archive-Data/data/part-continued.json',
 	json_encode($existing, JSON_PRETTY_PRINT)
 );
 

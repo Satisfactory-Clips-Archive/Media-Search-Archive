@@ -144,7 +144,7 @@ class Questions extends AbstractQuestions
 		 */
 		$existing = array_filter(
 			(array) json_decode(
-				file_get_contents(__DIR__ . '/../data/q-and-a.json'),
+				file_get_contents(__DIR__ . '/../../Media-Search-Archive-Data/data/q-and-a.json'),
 				true
 			),
 			[$this, 'filter_cached_questions'],
@@ -584,7 +584,7 @@ class Questions extends AbstractQuestions
 			 * }>
 			 */
 			$data = json_decode(
-				file_get_contents(__DIR__ . '/../data/tweets.json'),
+				file_get_contents(__DIR__ . '/../../Media-Search-Archive-Data/data/tweets.json'),
 				true
 			);
 

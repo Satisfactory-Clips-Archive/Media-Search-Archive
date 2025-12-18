@@ -27,7 +27,7 @@ $swaps = json_decode(
 $data = json_decode(
 	file_get_contents(
 		__DIR__
-		. '/data/q-and-a.json'
+		. '/../Media-Search-Archive-Data/data/q-and-a.json'
 	),
 	true
 );
@@ -60,6 +60,6 @@ file_put_contents(
 );
 
 file_put_contents(
-	__DIR__ . '/data/q-and-a.json',
+	__DIR__ . '/../Media-Search-Archive-Data/data/q-and-a.json',
 	json_encode_pretty($data) . "\n"
 );

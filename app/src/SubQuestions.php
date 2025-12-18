@@ -97,7 +97,7 @@ class SubQuestions extends AbstractQuestions
 	public function update(): void
 	{
 		$out = json_decode(
-			file_get_contents(__DIR__ . '/../data/q-and-a.sub.json'),
+			file_get_contents(__DIR__ . '/../../Media-Search-Archive-Data/data/q-and-a.sub.json'),
 			true,
 			512,
 			JSON_THROW_ON_ERROR
@@ -198,7 +198,7 @@ class SubQuestions extends AbstractQuestions
 		uksort($out, [$this->injected->sorting, 'sort_video_ids_by_date']);
 
 		file_put_contents(
-			__DIR__ . '/../data/q-and-a.sub.json',
+			__DIR__ . '/../../Media-Search-Archive-Data/data/q-and-a.sub.json',
 			json_encode_pretty(array_map(
 				static function (array $stub): array {
 					foreach (['seealso', 'duplicates', 'replaces'] as $cross_reference) {

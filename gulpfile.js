@@ -284,7 +284,7 @@ gulp.task('sitemap', () => {
 
 gulp.task('q-and-a-tracking', (cb) => {
 	const data = Object.fromEntries(Object.entries(
-		require('./app/data/q-and-a.json')
+		require('./Media-Search-Archive-Data/data/q-and-a.json')
 	).map((e) => {
 		const [video_id, video_data] = e;
 

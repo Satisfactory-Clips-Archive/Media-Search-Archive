@@ -29,8 +29,8 @@ declare type TweetThreadWithTweets = TweetThread & {
 };
 
 const auth = require(`${__dirname}/twitter-auth.json`);
-const tweet_threads = require(`${__dirname}/data/tweets.json`) as TweetThread[];
-const tweets_not_found = require(`${__dirname}/data/tweets-not-found.json`) as string[];
+const tweet_threads = require(`${__dirname}/../Media-Search-Archive-Data/data/tweets.json`) as TweetThread[];
+const tweets_not_found = require(`${__dirname}/../Media-Search-Archive-Data/data/tweets-not-found.json`) as string[];
 
 console.error('disabling tweets');
 
@@ -203,7 +203,7 @@ const client = (new TwitterApi(auth)).readOnly;
 
 	if (tweets_not_found_changed) {
 		await writeFile(
-			`${__dirname}/data/tweets-not-found.json`,
+			`${__dirname}/../Media-Search-Archive-Data/data/tweets-not-found.json`,
 			JSON.stringify(
 				[...new Set(tweets_not_found)].sort(),
 				null,

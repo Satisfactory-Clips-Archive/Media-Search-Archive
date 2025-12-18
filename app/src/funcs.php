@@ -123,7 +123,7 @@ function url_overrides() : array
 			(array) json_decode(
 				file_get_contents(
 					__DIR__
-					. '/../playlists/url-overrides.json'
+					. '/../../Media-Search-Archive-Data/playlists/url-overrides.json'
 				),
 				true
 			),
@@ -131,7 +131,7 @@ function url_overrides() : array
 			ARRAY_FILTER_USE_BOTH
 		);
 
-		$dated_json = glob(__DIR__ . '/../data/dated/*/*.json');
+		$dated_json = glob(__DIR__ . '/../../Media-Search-Archive-Data/data/dated/*/*.json');
 		$dated_json = array_combine($dated_json, array_map(
 			static function(string $filepath): string {
 				return file_get_contents($filepath);
@@ -2078,7 +2078,7 @@ function get_externals() : array
 
 	if (null === $cached) {
 		$csv_files = array_filter(
-			glob(__DIR__ . '/../data/dated/*/*.csv'),
+			glob(__DIR__ . '/../../Media-Search-Archive-Data/data/dated/*/*.csv'),
 			static function (string $maybe) : bool {
 				if (
 					in_array(
@@ -2198,7 +2198,7 @@ function get_additional_externals() : array
 
 	if (null === $cached) {
 		$inject_externals = array_filter(
-			glob(__DIR__ . '/../data/externals/*.json'),
+			glob(__DIR__ . '/../../Media-Search-Archive-Data/data/externals/*.json'),
 			static function (string $path) : bool {
 				$info = pathinfo($path, PATHINFO_FILENAME);
 
@@ -2262,7 +2262,7 @@ function get_dated_csv(
 	string $video_id,
 	bool $require_json = true
 ) : array {
-	$path = __DIR__ . '/../data/dated/' . $date . '/' . $video_id . '.csv';
+	$path = __DIR__ . '/../../Media-Search-Archive-Data/data/dated/' . $date . '/' . $video_id . '.csv';
 
 	if ( ! is_file($path)) {
 		throw new InvalidArgumentException(sprintf(
@@ -3165,7 +3165,7 @@ function determine_date_for_video(
 	if (null === $externals_unpacked) {
 		$externals_unpacked = [];
 
-		foreach (glob(__DIR__ . '/../data/dated/*/*.csv') as $file) {
+		foreach (glob(__DIR__ . '/../../Media-Search-Archive-Data/data/dated/*/*.csv') as $file) {
 			$externals_unpacked[
 				mb_substr(basename($file), 0, -4)
 			] = basename(dirname($file));
@@ -3274,7 +3274,7 @@ function cached_part_continued() : array
 		 * }>
 		 */
 		$part_continued = json_decode(
-			file_get_contents(__DIR__ . '/../data/part-continued.json'),
+			file_get_contents(__DIR__ . '/../../Media-Search-Archive-Data/data/part-continued.json'),
 			true
 		);
 	}
@@ -3365,7 +3365,7 @@ function yt_cards(string $video_id, Injected $injected, bool $skip_file = false)
 		/** @var list<string> */
 		$skipping = array_values(array_filter(
 			(array) json_decode(
-				file_get_contents(__DIR__ . '/../data/skipping-cards.json')
+				file_get_contents(__DIR__ . '/../../Media-Search-Archive-Data/data/skipping-cards.json')
 			),
 			'is_string'
 		));
@@ -3377,7 +3377,7 @@ function yt_cards(string $video_id, Injected $injected, bool $skip_file = false)
 			file_put_contents(
 				(
 					__DIR__
-					. '/../data/skipping-cards.json'
+					. '/../../Media-Search-Archive-Data/data/skipping-cards.json'
 				),
 				json_encode_pretty(
 					$skipping

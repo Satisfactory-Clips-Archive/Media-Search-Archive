@@ -47,7 +47,7 @@ $youtube_video_ids = array_reduce(
 );
 
 $missing_category = array_filter(
-	(array) json_decode(file_get_contents(__DIR__ . '/data/youtube-video-subcategories--missing.json')),
+	(array) json_decode(file_get_contents(__DIR__ . '/../Media-Search-Archive-Data/data/youtube-video-subcategories--missing.json')),
 	'is_string'
 );
 
@@ -70,14 +70,14 @@ $expected_categories = [
 $start = microtime(true);
 
 $supported_category = array_filter(
-	(array) json_decode(file_get_contents(__DIR__ . '/data/youtube-video-subcategories--supported.json')),
+	(array) json_decode(file_get_contents(__DIR__ . '/../Media-Search-Archive-Data/data/youtube-video-subcategories--supported.json')),
 'is_string'
 );
 
 $flush_stat_data = static function () use (& $unsupported_categories, & $missing_category, & $supported_category) : void {
-	file_put_contents(__DIR__ . '/data/youtube-video-subcategories--unsupported.json', json_encode_pretty($unsupported_categories));
-	file_put_contents(__DIR__ . '/data/youtube-video-subcategories--missing.json', json_encode_pretty($missing_category));
-	file_put_contents(__DIR__ . '/data/youtube-video-subcategories--supported.json', json_encode_pretty($supported_category));
+	file_put_contents(__DIR__ . '/../Media-Search-Archive-Data/data/youtube-video-subcategories--unsupported.json', json_encode_pretty($unsupported_categories));
+	file_put_contents(__DIR__ . '/../Media-Search-Archive-Data/data/youtube-video-subcategories--missing.json', json_encode_pretty($missing_category));
+	file_put_contents(__DIR__ . '/../Media-Search-Archive-Data/data/youtube-video-subcategories--supported.json', json_encode_pretty($supported_category));
 };
 
 $emit_progress = static function () use (& $i, $youtube_video_ids, $start) : void {

@@ -18,3 +18,7 @@ indent_size = 2
 [app/data/q-and-a.json]
 indent_style = space
 insert_final_newline = false
+
+[Media-Search-Archive-Data/data/q-and-a.json]
+indent_style = space
+insert_final_newline = false
