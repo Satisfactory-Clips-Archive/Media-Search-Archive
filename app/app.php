@@ -251,13 +251,13 @@ foreach ($all_topic_ids as $topic_id) {
 	}
 
 	$topic_nesting[$topic_id] = [
+		'id' => $topic_id,
 		'children' => [],
-		'left' => -1,
-		'right' => -1,
 		'level' => -1,
 		'hdepth_for_templates' => 1,
 		'clips' => 0,
-		'id' => $topic_id,
+		'left' => -1,
+		'right' => -1,
 	];
 }
 
