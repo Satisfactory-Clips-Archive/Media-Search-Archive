@@ -409,8 +409,8 @@ usort(
 	static function (
 		string $a,
 		string $b
-	) use ($cache) : int {
-		return strnatcasecmp(
+	) use ($cache, $sorting) : int {
+		return strcoll(
 			determine_topic_name($a, $cache),
 			determine_topic_name($b, $cache)
 		);
@@ -421,6 +421,7 @@ $current_left = 0;
 
 foreach ($topic_nesting_roots as $topic_id) {
 	[$current_left, $topic_nesting] = adjust_nesting(
+		$sorting,
 		$topic_nesting,
 		$topic_id,
 		$current_left,
@@ -453,7 +454,7 @@ $api->sort_playlists_by_nested_data($topic_nesting);
 usort($all_topic_ids, static function (
 	string $a,
 	string $b
-) use ($topic_nesting, $cache) : int {
+) use ($topic_nesting, $cache, $sorting) : int {
 	/**
 	 * @var null|array{
 	 *	children: list<string>,
@@ -475,7 +476,7 @@ usort($all_topic_ids, static function (
 	$nested_b = $topic_nesting[$b] ?? null;
 
 	if ( ! isset($nested_a, $nested_b)) {
-		return strnatcasecmp(
+		return strcoll(
 			$cache['playlists'][$a][1] ?? $a,
 			$cache['playlists'][$b][1] ?? $b
 		);
@@ -579,7 +580,7 @@ file_put_contents(
 );
 
 $video_playlists = array_map(
-	static function (array $topic_ids) use ($playlist_topic_strings) : array {
+	static function (array $topic_ids) use ($playlist_topic_strings, $sorting) : array {
 		usort(
 			$topic_ids,
 			static function (
@@ -1456,6 +1457,7 @@ foreach (array_keys($playlists) as $playlist_id) {
 
 	if (count($video_ids) > 0) {
 		$topics_for_date = filter_nested(
+			$sorting,
 			$playlist_id,
 			$topic_nesting,
 			$cache,
@@ -1894,7 +1896,7 @@ $undated_topic_ids = array_filter(
 usort($undated_topic_ids, static function (
 	string $a,
 	string $b
-) use ($topic_nesting, $cache) : int {
+) use ($topic_nesting, $cache, $sorting) : int {
 	/**
 	 * @var null|array{
 	 *	children: list<string>,
@@ -1916,7 +1918,7 @@ usort($undated_topic_ids, static function (
 	$nested_b = $topic_nesting[$b] ?? null;
 
 	if ( ! isset($nested_a, $nested_b)) {
-		return strnatcasecmp(
+		return strcoll(
 			$cache['playlists'][$a][1] ?? $a,
 			$cache['playlists'][$b][1] ?? $b
 		);

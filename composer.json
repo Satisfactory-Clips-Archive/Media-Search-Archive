@@ -43,6 +43,7 @@
 		"ext-bcmath": "*",
 		"ext-ctype": "*",
 		"ext-hash": "*",
+		"ext-intl": "*",
 		"ext-json": "*",
 		"ext-mbstring": "*",
 		"ext-simplexml": "*",

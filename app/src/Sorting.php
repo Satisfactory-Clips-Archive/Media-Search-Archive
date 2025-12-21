@@ -6,6 +6,8 @@ declare(strict_types=1);
 
 namespace SignpostMarv\VideoClipNotes;
 
+use Collator;
+use RuntimeException;
 use const ARRAY_FILTER_USE_BOTH;
 use function count;
 use function in_array;
@@ -44,6 +46,8 @@ class Sorting
 	 */
 	public array $playlists_date_ref = [];
 
+	public Collator $collator;
+
 	/**
 	 * @param CACHE|null $cache
 	 */
@@ -52,6 +56,19 @@ class Sorting
 		if (null !== $cache) {
 			$this->cache = $cache;
 		}
+
+		$this->collator = new Collator('en_GB');
+		setlocale(LC_ALL, 'en_GB');
+	}
+
+	public function collator_compare(string $a, string $b): int {
+		$compare = $this->collator->compare($a, $b);
+
+		if (false === $compare) {
+			throw new RuntimeException('Unable to compare strings!');
+		}
+
+		return $compare;
 	}
 
 	public function sort_video_ids_alphabetically(string $a, string $b) : int

@@ -766,6 +766,7 @@ function determine_playlist_id(
  * @return array{0:int, 1:DATA}
  */
 function adjust_nesting(
+	Sorting $sorting,
 	array $data,
 	string $current,
 	int $current_left,
@@ -813,7 +814,7 @@ function adjust_nesting(
 			static function (
 				string $a,
 				string $b
-			) use ($cache, $data, $topics_hierarchy) : int {
+			) use ($cache, $data, $topics_hierarchy, $sorting) : int {
 				$maybe_a = count($data[$a]['children'] ?? []) > 0;
 				$maybe_b = count($data[$b]['children'] ?? []) > 0;
 
@@ -842,7 +843,7 @@ function adjust_nesting(
 					return $a_int - $b_int;
 				}
 
-				return strnatcasecmp(
+				return strcoll(
 					determine_topic_name($a, $cache),
 					determine_topic_name($b, $cache)
 				);
@@ -852,6 +853,7 @@ function adjust_nesting(
 
 	foreach ($data[$current]['children'] as $child) {
 		[$current_left, $data] = adjust_nesting(
+			$sorting,
 			$data,
 			$child,
 			$current_left,
@@ -998,6 +1000,7 @@ function determine_topic_name(string $topic, array $cache) : string
  * }>
  */
 function filter_nested(
+	Sorting $sorting,
 	string $_playlist_id,
 	array $nested,
 	array $cache,
@@ -1113,8 +1116,8 @@ function filter_nested(
 		static function (
 			string $a,
 			string $b
-		) use ($cache) : int {
-			return strnatcasecmp(
+		) use ($cache, $sorting) : int {
+			return strcoll(
 				determine_topic_name($a, $cache),
 				determine_topic_name($b, $cache)
 			);
@@ -1123,6 +1126,7 @@ function filter_nested(
 
 	foreach ($roots as $topic_id) {
 		[$current_left, $filtered] = adjust_nesting(
+			$sorting,
 			$filtered,
 			$topic_id,
 			$current_left,
