@@ -566,6 +566,22 @@ file_put_contents(
 			$topic_statistics
 	)
 );
+
+uksort(
+	$playlist_topic_strings,
+	static function (string $a, string $b) use ($topic_nesting): int {
+		if (!isset($topic_nesting[$a]) && !isset($topic_nesting[$b])) {
+			return 0;
+		} else if (!isset($topic_nesting[$a])) {
+			return -1;
+		} else if (!isset($topic_nesting[$b])) {
+			return 1;
+		}
+
+		return $topic_nesting[$a]['left'] - $topic_nesting[$b]['left'];
+	}
+);
+
 file_put_contents(
 	__DIR__ . '/../11ty/data/topicStrings.json',
 	json_encode($playlist_topic_strings, JSON_PRETTY_PRINT)
