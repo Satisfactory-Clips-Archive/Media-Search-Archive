@@ -262,7 +262,7 @@ gulp.task('html', () => {
 });
 
 gulp.task('sync-favicon', () => {
-	return gulp.src('./images/internal/favicon.ico').pipe(gulp.dest('./dist/'));
+	return gulp.src('./Media-Search-Archive-Images/images/internal/favicon.ico').pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('sitemap', () => {
@@ -369,7 +369,7 @@ gulp.task('images-svg--background--flannel', () => {
 	squoosh_options.preprocessOptions.resize.height = 504;
 
 	return gulp.src(
-		'./images-ref/red-flannel/12951396883_d05fb22ed8_o.webp'
+		'./Media-Search-Archive-Images/images-ref/red-flannel/12951396883_d05fb22ed8_o.webp'
 	).pipe(
 		squoosh(squoosh_options)
 	).pipe(
@@ -386,7 +386,7 @@ gulp.task('images-svg--background--golf', () => {
 	squoosh_options.preprocessOptions.resize.height = 504;
 
 	return gulp.src(
-		'./images-ref/golf-2571830/golf-2571830.jpg'
+		'./Media-Search-Archive-Images/images-ref/golf-2571830/golf-2571830.jpg'
 	).pipe(
 		squoosh(squoosh_options)
 	).pipe(
@@ -404,7 +404,7 @@ gulp.task('images-svg--background--vulkan', () => {
 	squoosh_options.preprocessOptions.resize.height = 504;
 
 	return gulp.src(
-		'./images-ref/vulkan.webp'
+		'./Media-Search-Archive-Images/images-ref/vulkan.webp'
 	).pipe(
 		squoosh(squoosh_options)
 	).pipe(
@@ -421,7 +421,7 @@ gulp.task('images-svg--background--final-fantasy', () => {
 	squoosh_options.preprocessOptions.resize.width = 504;
 
 	return gulp.src(
-		'./images-ref/final-fantasy.webp'
+		'./Media-Search-Archive-Images/images-ref/final-fantasy.webp'
 	).pipe(
 		squoosh(squoosh_options)
 	).pipe(

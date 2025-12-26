@@ -10,3 +10,6 @@
 [submodule "Media-Search-Archive-Data"]
 	path = Media-Search-Archive-Data
 	url = https://github.com/Satisfactory-Clips-Archive/Media-Search-Archive-Data.git
+[submodule "Media-Search-Archive-Images"]
+	path = Media-Search-Archive-Images
+	url = https://github.com/Satisfactory-Clips-Archive/Media-Search-Archive-Images.git

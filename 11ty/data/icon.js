@@ -7,7 +7,7 @@ const mime = {
 const size = /logo\-(\d+)\./;
 
 module.exports = glob(
-	'./images/internal/logo*.{svg,png,webp}'
+	'./Media-Search-Archive-Images/images/internal/logo*.{svg,png,webp}'
 ).map((filename) => {
 	const href = `https://i-img-archive.satisfactory.video/${
 		filename.replace('./images/internal/', '')

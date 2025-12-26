@@ -5,7 +5,7 @@ const {
 const bgs = {
 	blue_graph_paper: `data:image/webp;base64,${
 		readFileSync(
-			`${__dirname}/../../images-ref/banner-1571861/blue-graph-paper.webp`,
+			`${__dirname}/../../Media-Search-Archive-Images/images-ref/banner-1571861/blue-graph-paper.webp`,
 			{
 				encoding: 'base64'
 			}
